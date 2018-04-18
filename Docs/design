@@ -1,0 +1,18 @@
+Design for OptionSmooth
+
+Overview
+	This program is for determining which symbols (AAPL) are a good earnings play.
+	
+Requirements
+
+	must support alternate time frames for determining the options to use
+	must show all options ready to trade during earnings.
+	
+Usage
+
+	optionSmooth.pl [-d date] [-ot typeOfOptionsToGather] 
+	
+	-d date to use instead of default
+	-ot option type. weekly|monthly default is weekly
+	
+	
