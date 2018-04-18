@@ -9,12 +9,12 @@
        "profitPercentTrigger": ".01",
        "profitPercentTriggerBar": "3",
        "reversalPercentTrigger": "50",
-       "volumeRangeBars": "5"
-       "amountPercent": ".2"
-       "aggressiveOpen": "True"
-       "aggressiveClose": "True"
-       "aggressiveOpenPercent": ".25"
-       "aggressiveClosePercent": ".25"
+       "volumeRangeBars": "5",
+       "amountPercent": ".2",
+       "aggressiveOpen": "True",
+       "aggressiveClose": "True",
+       "aggressiveOpenPercent": ".25",
+       "aggressiveClosePercent": ".25",
        "rangeTrade": "True"
     } 
 }

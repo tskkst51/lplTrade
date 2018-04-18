@@ -72,7 +72,7 @@ parser.add_option("-q", "--quiet",
 with open(options.profile) as jsonData:
     d = json.load(jsonData)
     print (d["profile"])
-    print (d["profiles"]["chartTypeBars"])
+    print (d["profile"]["algorithm"])
     ##or key, val in d.iteritems():
     	#print ("attr: " + key + "value:" + val)
 
@@ -80,7 +80,7 @@ log = Log()
 time = Time()
 
 # Configure price array
-price = Price(d["profiles"]["profile1"]["chartTypeBars"], d["profiles"]["profile1"]["endTime"])
+price = Price(d["profile"]["timeBar"], d["profile"]["endTime"])
 
 log.debug("Chart type: " + price.numBars + "bars")
 log.debug("End Time: " + price.endTime)
