@@ -1,0 +1,15 @@
+{
+    "profile": {
+       "service": "bitstamp",
+       "algorithm": "2BarOpen2BarClose",
+       "tradingDelayBars": "10",
+       "chartTypeBars": "5",
+       "endTime": "none",
+       "currency": "BTCUSD",
+       "profitPercentTrigger": ".01",
+       "profitPercentTriggerBar": "2",
+       "reversalPercentTrigger": "50",
+       "volumeRangeBars": "5"
+       "positionTotalAmountPercent": ".2"
+    } 
+}
