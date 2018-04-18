@@ -1,7 +1,7 @@
 {
     "profile": {
        "service": "bitstamp",
-       "algorithm": "2BarOpen2BarClose",
+       "algorithm": "5BarOpen5BarClose",
        "tradingDelayBars": "10",
        "chartTypeBars": "5",
        "endTime": "none",
@@ -11,5 +11,6 @@
        "reversalPercentTrigger": "50",
        "volumeRangeBars": "5"
        "positionTotalAmountPercent": ".2"
+       "aggressive": "False"
     } 
 }

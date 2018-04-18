@@ -1,0 +1,35 @@
+# This doc describes the different algorithms and the meanings of their values.
+
+algorithm parameters:
+  tradingDelayBars: Don't start trading till the number of trading bars
+                    has been exceeded.
+  timeBar: The amount of time with a bar.
+  endTime: The time to end trading. (8,none) hours
+  currency: The asset to trade. (BTCUSD)
+  profitPctTrigger: The minimum amount of profit before closing position (.01)
+  profitPctTriggerBar: The minimum amount of profit to take per bar. 
+                       If current baris greater than x times the previous n
+		       bars range then take profit 
+  reversalPctTrigger: The percentage the current bar must reverse in order
+                      to take an opposite position. e.g. If reversal bar
+		      reverses more than n percent then take a position.
+  volumeRangeBars: The number of bars used to calculate a range of price
+                   movement. 
+  amountPercent: The dollar amount to trade with based on total funds avail.
+  aggressiveOpen: Open position when bar crossess n bars lowest or highest
+                  close. Default is to open position when bar crosses the
+		  highest close and open of the previous n bars
+  aggressiveOpenPct: The percent the price must be > or < to open position
+  aggressiveClose: Close position when bar crossess n bars lowest or highest
+                  open. Default is to close position when bar crosses the
+		  highest open and close of the previous n bars
+  aggressiveOpenPct: The percent the price must be > or < to close position
+  rangeTrade: Trade when price is within the previous n bars range (True|False)
+
+NBarOpenNBarClose:
+2BarOpen1BarClose:
+  open position when third bar crosses the close of 2 bars. +/-
+  close position when second bar crosses close of one bar. +/-
+  the 2 bar open must also have consecutive higher lows from the previous n bars
+  the 1 bar close must also have consecutive lower highs from the previous n bars
+
