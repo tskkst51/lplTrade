@@ -1,18 +1,108 @@
-Design for OptionSmooth
+	Design: auto trading system
 
-Overview
-	This program is for determining which symbols (AAPL) are a good earnings play.
-	
-Requirements
+Parameters: (use properties file)
+   network:
 
-	must support alternate time frames for determining the options to use
-	must show all options ready to trade during earnings.
-	
-Usage
+   authentication:
 
-	optionSmooth.pl [-d date] [-ot typeOfOptionsToGather] 
+   global:
+	chart size (1hr 2hr 1day 5min...)
+	volume per bar 
+	volume per range of bars
+	target gain. once hit set a stop so loss doesn't occur
+	percentage gain (close out of position after reaching gain) [optional]
+	percentage loss (before signal reached, sell given this percentage)[optional]
+	seed value (number of bars of history before trading)
+	trade amount to get out of a position even including fees
+	the algorithm to use algo1,algo2,algo3
+	buy and/or sell methodology; buy,sell,buySell
+
+   algo1:
+	buy signal (3bars 4bars...) BSN
+	buy trigger
+		double encompassing move; buy
+		BSN consecutive higher lows and BSN higher highs; buy
+		if lower bar gets broke for a sell, don’t sell if same bar 
+			made a previous high and doesn’t close lower than the 
+			2nd previous bar
+
+	sell trigger
+		double encompassing move; sell
+		BSN consecutive higher lows and BSN higher highs; sell
+		if higher bar gets broke for a sell, don’t sell if same bar 
+			made a previous low and doesn’t close higher than the 
+			2nd previous bar
+
+		3 consecutive higher lows (buy trigger)
+		3 consecutive lower lows and 3 lower high's (sell trigger)
+		3 consecutive lower lows  (sell trigger)
+
+
+	spike situation: 
+
+
+	algorithm (support multiple... ) buy signal number; sell signal number
+		
+		first trade a buy only
+		first trade either ar buy/sell
+		
+		If higher high OR higher low. Counts as a trend bar
+		keep buy/sell pairs together
+		accumulate buys and sell at once
+		accumulate sells and buy at once
+		use % to get out of trade. Bars indicate initial buy/sell
+			sell -% loss 
+			sell % gain 
+		
+		if reversal is greater than the avg percentage movement, close 
+		
+    algo2: use percentage moves to trigger buy/sell
 	
-	-d date to use instead of default
-	-ot option type. weekly|monthly default is weekly
+	use point system:
+	buy:
+		1 HL and 1 HH = 2
+		1 HL and 1 LH = 1
+		1 LL and 1 HH = 1
 	
+	sell:
+		1 LH and 1 LL = 2
+		1 LH and 1 HL = 1
+		1 LL and 1 HH = 1 maybe a half
 	
+
+	then change point total to trigger bu/sell
+	
+	5 required to sell
+	4 required to buy ...
+	
+	more aggressive
+	4 required to sell
+	3 required to buy ...
+	
+	reversal signal
+	open lower than previous low. close higher than previous high with
+	greater volume buy at 2nd bar when it's a higher high
+	
+   algo3: trend lines
+
+   algo4: use a 3-5 bar buy/sell trigger instead of one bar. works well with 5m chart. uses less commission. Use with two bar  encompassing initiate buy/sell triggers.
+
+   algo5: use close of bar instead of high/low of the bar. works well all losses are smaller and gains a little larger. works well with app 5m 4/9/18 chart
+
+   algo6: Use close bar and two bar trigger with 5 bar closer
+
+
+	project a sell action by taking the 2 highest highs in a period, add the prices together and divide by 2. add the avg to the highest price and that is your approximate sell price. If the price doesn’t go higher next bar, sell at the high of the 2nd bar
+
+
+	project a buy action by taking the 2 highest lows in a period, add their prices together and divide by 2. add the avg to the highest low price and that is your approximate buy price. If the price doesn’t go lower next bar, buy at the high of the 2nd bar
+
+
+REQUIREMENT
+	keep connection and trading modular so one or the other can be changed for different platforms.
+
+	
+
+
+
+
