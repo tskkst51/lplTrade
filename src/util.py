@@ -2,75 +2,31 @@
 # Let's trade some assets
 #
 
+#import krakenex
+#from pykrakenapi import KrakenAPI
+#import pusher
+#import bitstamp.client
+#from pusher import Pusher
+
 import sys
 import os
 import io
-from time import gmtime, strftime, sleep, time
-#import krakenex
-#from pykrakenapi import KrakenAPI
-import bitstamp.client
-from pusher import Pusher
 import json
-from optparse import OptionParser
+from time import time
+from classes import *
+from algorithms import *
 from array import array
-import numpy
-
-#import pusher
-
-class Log:
-  def __init__(self):
-    pass
-  def debug(self, msg):
-    self.msg = msg
-    print ("DEBUG: " + self.msg)
-  def error(self, msg):
-    self.msg = msg
-    print ("ERROR: " + self.msg)
-  def warning(self, msg):
-    self.msg = msg
-    print ("WARNING: " + self.msg)
-  def info(self, msg):
-    self.msg = msg
-    print ("INFO: " + self.msg)
-  def success(self, msg):
-    self.msg = msg
-    print ("SUCCESS: " + self.msg)
-  def execution(self, ticker, closed, time):
-    self.ticker = ticker
-    self.closed = closed
-    self.time = time
-    print ("SUCCESS: " + self.msg)
-# end Log
-
-class MyTime:
-  def __init__(self):
-    tm = ""
-    pass
-  def now(self):
-    self.tm = strftime("%a, %d %b %Y %H:%M:%S", gmtime())
-    #now = strftime("%a, %d %b %Y %H:%M:%S +0000", gmtime())
-    print (self.tm)
-#end Time
-
-class Price:
-  def __init__(self, numBars, endTime=None):
-    self.numBars = numBars
-    self.endTime = endTime
-  def load(self):
-    print (self.numBars)
-    print (self.endTime)
-  def evaluatePrice(self):
-    print (self.numbars)
-	
-#end Time
+from optparse import OptionParser
 
 if __name__ == "__main__":
         pass
 
-# Parse options
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Parse Command Line Options
+
 parser = OptionParser()
 
-parser.add_option("-p"  , "--profile", dest="profile",
+parser.add_option("-p"  , "--profilePath", dest="profilePath",
   help="write report to FILE", metavar="FILE")
 parser.add_option("-q", "--quiet",
   action="store_true", dest="quiet", default=False,
@@ -84,133 +40,148 @@ parser.add_option("-c", "--currency", type="string",
 parser.add_option("-a", "--alt", type="string",
   action="store", dest="alt", default=False,
   help="alternate currency to buy: usd... uer... btc... eth... bch...")
-parser.add_option("-l", "--log",
-  action="store", dest="log",
-  help="write report to FILE", metavar="FILE")
 
-(options, args) = parser.parse_args()
-print (options.verbose)
-print (options.profile)
-print (options.currency)
-print (options.alt)
+(clOptions, args) = parser.parse_args()
 
-with open(options.profile) as jsonData:
-	d = json.load(jsonData)
-print (d["profile"])
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Load profile data
+
+with open(clOptions.profilePath) as jsonData:
+  d = json.load(jsonData)
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Set globals
 
 # Price array hi lo open close volume
 hi = 0
 lo = 1
-open = 2
-close = 3
+op = 2
+cl = 3
 volume = 4
-barChart = [[0,0,0,0,0]]
+barChart = [[0.0,0.0,0.0,0.0,0.0]]
 i = 0;
 
 currency = d["profile"]["currency"]
 alt = d["profile"]["alt"]
 timeBar = d["profile"]["timeBar"]
 service = d["profile"]["service"]
-log = d["profile"]["log"]
+algorithm = d["profile"]["algorithm"]
+tradingDelayBars = d["profile"]["tradingDelayBars"]
+profile = str(d["profile"])
 
-# publicClient = connection.connect(service)
-publicClient = bitstamp.client.Public()
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Overide profile data with command line data
 
-print ("any currency: ")
-print (options.currency)
-print ("any alt: ")
-print (options.alt)
+if clOptions.currency:
+  currency = clOptions.currency
+  
+if clOptions.alt:
+  alt = clOptions.alt
+  
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Setup log file based on profile path
 
-# Overide from the CL
-if options.currency:
-	currency = options.currency
-	
-if options.alt:
-	alt = options.alt
-	
-print ("currency: ")
-print (currency)
-print ("alt: ")
-print (alt)
+logPath = clOptions.profilePath.replace(".json", ".log")
+logPath = logPath.replace("profiles", "logs")
 
-print ("loop for " + timeBar + " minutes")
+lg = Log()
+tm = Time()
 
-tm = MyTime()
+with open(logPath, "a+", encoding="utf-8") as logFile:
+  logFile.write(lg.header(tm.now()))
 
-#f = open("myfile.txt", "r", encoding="utf-8")
-# Endless loop
+lg.info ("Reading profile data from: " + clOptions.profilePath)
+lg.info ("Using currency: " + currency + " Alt currency: " + alt)
+lg.message (timeBar + " Minute bar chart")
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Setup connection to the exchange service
+
+cn = Connect(service)
+cn.connectPublic()
+# cn.connectPrivate()
+
+# Initialize algorithm
+algo = Algorithm(d)
+
+# Main loop
 while True:
-	# Set the loop time from the profile
-	endBarLoop = time() + 60 * int(timeBar)
-	#endBarLoop = time() + 10 * 1
-	
-	intitialVol = float(publicClient.ticker(currency, alt)['volume'])
-	barChart[i][open] = barChart[i][hi] = barChart[i][lo] = float(publicClient.ticker(currency, alt)['last'])
-	while True:
-		
-		vol = float(publicClient.ticker(currency, alt)['volume'])
-		currentPrice = float(publicClient.ticker(currency, alt)['last'])
-		stamp = publicClient.ticker(currency, alt)['timestamp']
-		
-		if currentPrice > barChart[i][hi]:
-			barChart[i][hi] = currentPrice
-			
-		if currentPrice < barChart[i][lo]:
-			barChart[i][lo] = currentPrice
-					
-		barChart[i][volume] =  vol - intitialVol
-			
-		sleep(10)
+  # Set the initial loop time from the profile. Default None
+  
+  #endBarLoopTime = time() + 60 * int(timeBar)
+  endBarLoopTime = time() + 60
+  
+  # initialVol = float(publicClient.ticker(currency, alt)['volume'])
+  initialVol = cn.getVolume(currency, alt)
+  
+  barChart[i][op] = barChart[i][hi] = barChart[i][lo] = cn.getCurrentPrice(currency, alt)
+  
+  # Loop until each bar has ended
+  while True:
+    # Load the barChart 
+    vol = cn.getVolume(currency, alt)
+    currentPrice = cn.getCurrentPrice(currency, alt)
+    stamp = cn.getTimeStamp(currency, alt)
+    
+    if currentPrice > barChart[i][hi]:
+      barChart[i][hi] = currentPrice
+      
+    if currentPrice < barChart[i][lo]:
+      barChart[i][lo] = currentPrice
+          
+    barChart[i][volume] =  vol - initialVol
+      
+    sleep(3)
 
-		print (tm.now())
-		print ("bar " + str(i) + " currentPrice: " + str(currentPrice))
-		print ("hi:     lo:    open:   close: vol")
-		print(barChart[i])
-		if time() >= endBarLoop:
-			print ("\n")
-			barChart[i][close] = currentPrice
-			print (barChart[i])
-			barChart.append([0,0,0,0,0])
-			i += 1
-			break
-			
-		priceEval = Price(timeBar)
-		#action = priceEval.EvaluatePrice() "buy/sell..."
-		HandleAction(action)
+    print (tm.now())
+    print ("bar " + str(i) + " currentPrice: " + str(currentPrice))
+    print ("hi:     lo:    open:   close: vol")
+    print(barChart[i])
+          
+    if time() >= endBarLoopTime:
+      print ("\n")
+      barChart[i][close] = currentPrice
+      print (barChart[i])
+      barChart.append([0,0,0,0,0])
+      i += 1
+      break
+      
+    if not algo.ready(i):
+      continue
+      
+    action = algo.takeAction(currentPrice, i, barChart)
+    
+    if action == "buy" or action == "sell":
+      triggered = algo.trigger()
+      if triggered:
+        pass
+        # create thread to monitor position
+        # Thread(createPosition)
+      
 
-	# end bar loop
-	if i == 20: break
-	
+  # end bar loop
+  if i == 20: break
+  
 # end execution loop
-
-def HandleAction(action):
-	algorithm = d['profile']['algorithm']
-	
-	
-	return 1
-	
+  
 exit()
 os.environ['TZ'] = 'MST'
 # os.environ['TZ'] = 'EST+05EDT,M4.1.0,M10.5.0'
 tzset()
 
-log = Log()
-
 # Create array for n d.timeBar
-	
+  
 
-log.debug("Chart type: " + price.numBars + "bars")
-log.debug("End Time: " + price.endTime)
+lg.debug("Chart type: " + price.numBars + "bars")
+lg.debug("End Time: " + price.endTime)
 
-log.error("yikes")
-log.info("info")
-log.warning("warning")
-log.success("success")
-
-tm.now()
+lg.error("yikes")
+lg.info("info")
+lg.warning("warning")
+lg.success("success")
 
 
-#json.dump(options.profile)
+#json.dump(clOptions.profilePath)
 
 #api = krakenex.API()
 #k = KrakenAPI(api)
@@ -228,7 +199,7 @@ tm.now()
 # bitstamp client
 #
 # currencies: btcusd, btceur, eurusd, xrpusd, xrpeur, xrpbtc, ltcusd, 
-# 		ltceur, ltcbtc, ethusd, etheur, ethbtc, bchusd, bcheur, bchbtc
+#     ltceur, ltcbtc, ethusd, etheur, ethbtc, bchusd, bcheur, bchbtc
 
 # pusher
 # pusher = Pusher(

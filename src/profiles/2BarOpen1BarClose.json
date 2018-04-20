@@ -7,16 +7,15 @@
        "endTime": "none",
        "currency": "btc",
        "alt": "usd",
-       "log": "/tmp/log",
-       "profitPercentTrigger": ".01",
-       "profitPercentTriggerBar": "3",
-       "reversalPercentTrigger": "50",
+       "profitPctTrigger": ".01",
+       "profitPctTriggerBar": "3",
+       "reversalPctTrigger": "50",
        "volumeRangeBars": "5",
-       "amountPercent": ".2",
+       "amountPct": ".2",
        "aggressiveOpen": "True",
        "aggressiveClose": "True",
-       "aggressiveOpenPercent": ".25",
-       "aggressiveClosePercent": ".25",
+       "aggressiveOpenPct": ".25",
+       "aggressiveClosePct": ".25",
        "rangeTrade": "True"
     } 
 }
