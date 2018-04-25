@@ -1,0 +1,200 @@
+'''
+Algorithms module
+'''
+import io
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+class Algorithm(object):
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def __init__(self, data):
+		self.algorithm = data['profile']['algorithm']
+		self.delay = data['profile']['tradingDelayBars']
+		self.profitPctTrigger = data['profile']['profitPctTrigger']
+		self.profitPctTriggerBar = data['profile']['profitPctTriggerBar']
+		self.reversalPctTrigger = data['profile']['reversalPctTrigger']
+		self.volumeRangeBars = data['profile']['volumeRangeBars']
+		self.amountPct = data['profile']['amountPct']
+		self.aggressiveOpen = data['profile']['aggressiveOpen']
+		self.aggressiveClose = data['profile']['aggressiveClose']
+		self.aggressiveOpenPct = data['profile']['aggressiveOpenPct']
+		self.aggressiveClosePct = data['profile']['aggressiveClosePct']
+		self.rangeTrade = data['profile']['rangeTrade']
+		self.currency = data['profile']['currency']
+		self.alt = data['profile']['alt']
+		self.openBars = data['profile']['openBars']
+		self.closeBars = data['profile']['closeBars']
+		self.stopLoss = 0.0
+		self.stopGain = 0.0
+		
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def ready(self, currentNumBars):
+		if int(self.delay) < currentNumBars:
+			return True
+		else:
+			return False
+				
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def takeAction(self, currentPrice, bar, barChart, decisionBar):
+		self.barChart = barChart
+		
+		if decisionBar == 0:
+			bars = self.openBars
+		else:
+			bars = self.closeBars
+			
+		twobo1bc = TwoBarOpen1BarClose(bars, barChart)
+		#fivebo5bc = FiveBarOpen5BarClose(5)
+		#fivebo2bc = FiveBarOpen2BarClose(5)
+		
+		if self.algorithm == "2BarOpen1BarClose":
+			action = twobo1bc.algorithm(currentPrice, bar)
+		'''if self.algorithm == "5BarOpen5BarClose":
+			action = fivebo5bc.algorithm(currentPrice, bar)
+		if self.algorithm == "5BarOpen2BarClose":
+			action = fivebo2bc.algorithm(currentPrice,bar)
+		'''
+		return action
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def setStopLoss(self, price):
+		self.stopLoss = price
+		return
+
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getStopLoss(self):
+
+		return self.stopLoss
+
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def setStopGain(self, price):
+
+		self.stopGain = price
+
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getStopGain(self):
+
+		return self.stopGain
+
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getProfitPctTriggerBar(self):
+
+		return self.profitPctTriggerBar
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+class TwoBarOpen1BarClose(Algorithm):
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def __init__(self, numBars, barChart):
+		self.hi = 0
+		self.lo = 1
+		self.open = 2
+		self.close = 3
+		self.volume = 4
+		self.numBars = numBars
+		self.barChart = barChart
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def algorithm(self, currentPrice, bar):
+		returnVal = 0
+		dirty = False
+
+		# Compare the current price to the previous n bars.
+		# Action triggered if current price is < or > lowest/highest close/open
+
+		# Get the price of the combined bars
+		previousHigh = self.highestCloseOpenPrice(bar)
+		previousLow = self.lowestCloseOpenPrice(bar)
+
+		print("Bar:	 " + str(bar))
+		print(str(currentPrice) + " Current price") 
+		print(str(previousHigh) + " Previous High") 
+		print(str(previousLow) + " Previous Low") 		
+		
+		# Get the difference of the previousHigh and previousLow
+		# multiplied by the profitPctTriggerBar
+		outGain = (int(previousHigh) - int(previousLow)) * int(super(TwoBarOpen1BarClose,self).getProfitPctTriggerBar())
+		if dirty:
+			self.setStopGain(outGain) 
+	  
+		print (outGain)
+	  
+		if currentPrice > previousHigh:
+			dirty = True
+			super(TwoBarOpen1BarClose, self).setStopLoss(previousLow) 
+			# self.setStopLoss(previousLow) 
+			return 1
+		if currentPrice < previousLow:
+			dirty = True
+			super(TwoBarOpen1BarClose, self).setStopLoss(previousLow) 
+			self.setStopLoss(previousHigh) 
+			return 2
+
+		return returnVal
+				
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def highestCloseOpenPrice(self, bar):
+		n = 0
+		maxPriceArr = [0.0] * int(self.numBars)		
+		barChartLen = len(self.barChart) - 2
+	
+		while n < int(self.numBars):
+			assert (n >= 0)
+			open = self.barChart[barChartLen - n][self.open]
+			close = self.barChart[barChartLen - n][self.close]
+ 
+			maxPriceArr[n] = open
+			if close > open:
+				maxPriceArr[n] = close
+			n += 1
+		# End while
+	
+		print (str(maxPriceArr) + " maximum price arr")
+	
+		# Compare all max prices and find the highest price
+		clean = True
+		n = 0
+		while n < int(self.numBars):
+			if clean:
+				maxPrice = maxPriceArr[n]
+				clean = False
+				continue
+			
+			if maxPriceArr[n] > maxPrice:
+				maxPrice = maxPriceArr[n]
+			
+			n += 1
+		return maxPrice
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def lowestCloseOpenPrice(self, bar):
+		n = 0
+		minPriceArr = [0.0] * int(self.numBars)
+		barChartLen = len(self.barChart) - 2
+
+		while n < int(self.numBars):
+			open = self.barChart[barChartLen - n][self.open]
+			close = self.barChart[barChartLen - n][self.close]
+ 
+			minPriceArr[n] = open
+			if close < open:
+				minPriceArr[n] = close
+			n += 1
+		# End while
+	
+		print (str(minPriceArr) + " minimum price arr")
+
+		# Compare all max prices and find the highest price
+		clean = True
+		n = 0
+		while n < int(self.numBars):
+			if clean:
+				minPrice = minPriceArr[n]
+				clean = False
+				continue
+			
+			if minPriceArr[n] < minPrice:
+				minPrice = minPriceArr[n]
+			
+			n += 1
+		return minPrice
+						
+	

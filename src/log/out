@@ -1,0 +1,81 @@
+False
+/Users/tsk/git/lplTrade/src/profiles/2BarOpen1BarClose.json
+False
+False
+{'service': 'bitstamp', 'algorithm': '2BarOpen1BarClose', 'tradingDelayBars': '10', 'timeBar': '5', 'endTime': 'none', 'currency': 'btc', 'alt': 'usd', 'profitPercentTrigger': '.01', 'profitPercentTriggerBar': '3', 'reversalPercentTrigger': '50', 'volumeRangeBars': '5', 'amountPercent': '.2', 'aggressiveOpen': 'True', 'aggressiveClose': 'True', 'aggressiveOpenPercent': '.25', 'aggressiveClosePercent': '.25', 'rangeTrade': 'True'}
+any currency: 
+False
+any alt: 
+False
+currency: 
+btc
+alt: 
+usd
+loop for 5 minutes
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8330.0, 8330.0, 0, 0.0]
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8326.11, 8330.0, 0, -0.3618388300001243]
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8321.01, 8330.0, 0, -0.21173198999895249]
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8321.01, 8330.0, 0, -0.06573199000013119]
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8321.01, 8330.0, 0, -1.4119383999986894]
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8321.0, 8330.0, 0, -1.0220332499993674]
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8321.0, 8330.0, 0, -2.085608469998988]
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8321.0, 8330.0, 0, -2.5158473499996035]
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8321.0, 8330.0, 0, -2.2437823500004015]
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8321.0, 8330.0, 0, -0.5085822599994572]
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8321.0, 8330.0, 0, -0.21905074999995122]
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8321.0, 8330.0, 0, -0.48138015999938943]
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8321.0, 8330.0, 0, -0.11046790999898803]
+bar: 0 hi:         lo:        open:         close:     vol
+[8330.0, 8321.0, 8330.0, 0, 0.0947129699998186]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, 1.1623104500013142]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, -2.359094069999628]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, -2.3484296899987385]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, -2.723120419999759]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, 2.430915279999681]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, 1.498841270000412]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, -1.8306930500002636]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, 5.823930430000473]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, 5.243724769999972]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, 5.095514149999872]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, 0.9409057699995174]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, 1.4741161500005546]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, 1.5703649099996255]
+bar: 0 hi:         lo:        open:         close:     vol
+[8333.8, 8321.0, 8330.0, 0, -0.8679671499994583]
+
+
+[8333.8, 8321.0, 8330.0, 8321.01, -0.8679671499994583]
+bar: 1 hi:         lo:        open:         close:     vol
+[8321.09, 8321.09, 8321.09, 0, 0.0]
+bar: 1 hi:         lo:        open:         close:     vol
+[8322.39, 8321.09, 8321.09, 0, 0.3209854600008839]
+bar: 1 hi:         lo:        open:         close:     vol
+[8326.13, 8321.09, 8321.09, 0, 0.28305230000114534]
+bar: 1 hi:         lo:        open:         close:     vol
+[8329.81, 8321.09, 8321.09, 0, 2.8957611599998927]

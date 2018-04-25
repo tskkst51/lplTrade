@@ -2,8 +2,10 @@
     "profile": {
        "service": "bitstamp",
        "algorithm": "2BarOpen1BarClose",
-       "tradingDelayBars": "10",
-       "timeBar": "5",
+       "tradingDelayBars": "3",
+       "timeBar": "1",
+       "openBars": "3",
+       "closeBars": "1",
        "endTime": "none",
        "currency": "btc",
        "alt": "usd",
@@ -16,6 +18,9 @@
        "aggressiveClose": "True",
        "aggressiveOpenPct": ".25",
        "aggressiveClosePct": ".25",
-       "rangeTrade": "True"
+       "rangeTrade": "True",
+       "shortTermTrend": "5",
+       "longTermTrend": "15",
+       "exitThreshHold": "2"
     } 
 }
