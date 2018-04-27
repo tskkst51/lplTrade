@@ -1,0 +1,13 @@
+
+
+
+
+Waiting: 36 seconds to start trading!! ...
+INFO: Reading profile data from:
+src/profiles/2BarOpen1BarCloseAgr.json
+INFO: Using currency: btcusd
+INFO: 1 Minute bar chart
+INFO: [8791.98, 8780.09, 8791.98, 8786.8, -45.86798054999963]
+INFO: current price: 8786.8
+INFO: [8800.98, 8787.01, 8787.01, 8792.3, -20.832783860001655]
+INFO: current price: 8792.3
