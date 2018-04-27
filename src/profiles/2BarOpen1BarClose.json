@@ -6,6 +6,9 @@
        "timeBar": "1",
        "openBars": "3",
        "closeBars": "1",
+       "useIntras": "1",
+       "intraLowerHighsBars": "2",
+       "intraHigherLowsBars": "2",
        "endTime": "none",
        "currency": "btc",
        "alt": "usd",
@@ -14,13 +17,17 @@
        "reversalPctTrigger": "50",
        "volumeRangeBars": "5",
        "amountPct": ".2",
-       "aggressiveOpen": "True",
-       "aggressiveClose": "True",
+       "aggressiveOpen": "0",
+       "aggressiveClose": "0",
        "aggressiveOpenPct": ".25",
        "aggressiveClosePct": ".25",
-       "rangeTrade": "True",
+       "rangeTrade": "0",
+       "rangeTradeBars": "3",
        "shortTermTrend": "5",
        "longTermTrend": "15",
-       "exitThreshHold": "2"
+       "exitThreshHold": "2",
+       "reverseLogic": "1",
+       "buyNearLow": "0",
+       "sellNearHi": "0"
     } 
 }

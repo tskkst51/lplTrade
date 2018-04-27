@@ -41,23 +41,34 @@ class Log:
 		self.time = time
 		print ("SUCCESS: " + self.msg)
 		
-	def trigger(self, symbol, action, price, time, logPath):
+	def logIt(self, symbol, action, price, time, logPath):
 		
 		if action == 1:
 			strAction = "buy"
-			self.lossGain = float(price)
+			self.priceSet = float(price)
 		elif action == 2:
 			strAction = "sell"
-			self.lossGain = float(price)
+			self.priceSet = float(price)
 		else:
 			strAction = "close"
-			self.totGain = float(self.lossGain) - float(price)
-			self.lossGain = 0
+			self.totGain = float(self.priceSet) - float(price)
+			if action > 1:
+				#self.totGain = "-" + str(self.totGain)
+				self.totGain = self.totGain*-1
+				print (str(self.totGain) + str(self.totGain*-1))
+			elif action == 2:
+				if self.totGain < 0:
+					self.totGain = self.totGain * -1
+				
+			self.priceSet = 0.0
 
+		truncTotGain = format(self.totGain, '.2f')
+		
 		with open(logPath, "a+", encoding="utf-8") as logFile:
 			logFile.write (str(symbol) + " " +
-				strAction + " " + str(price) + " " + str(time) + " " + str(self.totGain)  + "\n")
+				strAction + " " + str(price) + " " + str(time) + " " + str(truncTotGain)  + "\n")
 		
+		self.totGain = 0.0
 		return 1
 
 # end Log

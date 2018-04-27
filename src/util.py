@@ -63,9 +63,17 @@ lo = 1
 op = 2
 cl = 3
 volume = 4
+
 barChart = [[0.0,0.0,0.0,0.0,0.0]]
+
 i = 0
 debug = 1
+
+close = 0
+buyAction = 1
+sellAction = 2
+dirty = False
+
 
 currency = str(d["profile"]["currency"])
 alt = str(d["profile"]["alt"])
@@ -111,7 +119,8 @@ debug = Log()
 tm = Time()
 
 # Delay start time to sync with top of the minute
-#tm.waitUntillTopMinute()
+#tm.waitUntilTopMinute()
+
 with open(logPath, "a+", encoding="utf-8") as logFile:
 	logFile.write(lg.header(tm.now()))
 
@@ -119,9 +128,9 @@ if debug:
 	with open(debugPath, "a+", encoding="utf-8") as debugFile:
 		debugFile.write(debug.header(tm.now()))
 
-lg.info ("Reading profile data from:\n" + clOptions.profilePath)
+lg.info ("Reading profile data from:\n" + clOptions.profilePath + "\n")
 lg.info ("Using currency: " + symbol)
-lg.info (str(timeBar) + " Minute bar chart")
+lg.info (str(timeBar) + " Minute bar chart\n")
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup connection to the exchange service
@@ -133,17 +142,12 @@ cn.connectPublic()
 # Initialize algorithm
 a = Algorithm(d)
 
-close = 0
-buyAction = 1
-sellAction = 2
-dirty = False
-
 # Main loop
 while True:
 	# Set the initial loop time from the profile. Default None
 	
-	endBarLoopTime = time() + 15 * timeBar
-	#endBarLoopTime = time() + 60 * timeBar
+	#endBarLoopTime = time() + 30 * timeBar
+	endBarLoopTime = time() + 60 * timeBar
 
 	initialVol = cn.getVolume(currency, alt)
 	
@@ -164,88 +168,111 @@ while True:
 					
 		barChart[i][volume] =	vol - initialVol
 		
-		sleep(3)
+		sleep(4)
 		
+		# Next bar
 		if time() >= endBarLoopTime:
+			tm.now()
 			barChart[i][cl] = currentPrice
+			print("\n")
 			lg.info (str(barChart[i]))
 			lg.info ("current price: " + str(currentPrice))
+				
 			barChart.append([0,0,0,0,0])
+			#if a.inPosition():
+				#a.setClosePrices(currentPrice)
 			i += 1
 			break
 			
+		# Wait n number of bars before trading
 		if not a.ready(i):
 			continue
+					
+		if not a.inPosition():
+			print ("\n") 
+			if i < a.getNextBar():
+				lg.info("current bar: " + str(i) + " next bar: " + str(a.getNextBar()))
+				continue
 				
 		# buy/sell connect to third party service
+		# connect to third party service
 		
 		action = a.takeAction(float(currentPrice), barChart)
-		
-		if action == buyAction or action == sellAction:
-			lg.info ("action 0 none, 1 buy, 2 sell: " + str(action))
-		
+		lg.info ("current price: " + str(currentPrice))
+			
 		if (action == buyAction or action == sellAction) and not a.inPosition():
+		
 			a.openPosition(action, currentPrice)
 			a.setCurrentBar(i)
+
+			lg.logIt(symbol, action, currentPrice, tm.now(), logPath)
 			
-			lg.trigger(symbol, action, currentPrice, tm.now(), logPath)
-			lg.info("Position Open" + "\n")
-			lg.info(str(symbol) + "\n" + str(sellAction) + "\n" + str(currentPrice) + "\n" + str(tm.now() + "\n"))
-							
-		if a.inPosition():	
-			lg.info ("initial bar: " + str(a.getCurrentBar()))
-			lg.info ("current bar: " + str(i))
-			lg.info ("current price: " + str(currentPrice))
+			stopLoss = a.getInitialStopLoss()
+			stopGain = a.getInitialStopGain()
+
+			lg.info("Position Open")
+			lg.info("buy/sell: " + str(action))
+			lg.info("Initial stopGain: " + str(stopGain))
+			lg.info("currentPrice: " + str(currentPrice))
+			lg.info("Initial stopLoss: " + str(stopLoss))
+						
+		if a.inPosition():
+			triggered = False
+			
+			lg.info("stop gain: " + str(a.getStopGain()))
+			lg.info("stop loss: " + str(a.getStopLoss()))
+			
 			# In a position and still in first bar
 			if a.getCurrentBar() == i:
-				lg.info ("INITIAL close prices set!!")
-				a.setInitialClosePrices(currentPrice)
-				stopLoss = a.getInitialStopLoss()
-				stopGain = a.getInitialStopGain()
-				lg.info("stop gain: " + str(stopGain))
-				lg.info("stop loss: " + str(stopLoss))
+				#a.setInitialClosePrices(currentPrice)
+				#stopLoss = a.getInitialStopLoss()
+				#stopGain = a.getInitialStopGain()
 				
+				if a.getReverseLogic():
+					buyAction = sellAction
+					
+				if a.getPositionType() == buyAction:
+					if float(currentPrice) > float(stopGain) or float(currentPrice) < float(stopLoss):
+						triggered = True
+				elif a.getPositionType() == sellAction:
+					if float(currentPrice) < float(stopGain) or float(currentPrice) > float(stopLoss):
+						triggered = True
+
 			# In a position and in next bar
-			if a.getCurrentBar() < i:
+			else:
+			# elif a.getCurrentBar() > i:
 				a.setClosePrices(currentPrice)
 				stopLoss = a.getStopLoss()
 				stopGain = a.getStopGain()
-				lg.info ("NEXT close prices set!!")
+				
+				lg.info("current price: " + str(currentPrice))
 				lg.info("stop gain: " + str(stopGain))
 				lg.info("stop loss: " + str(stopLoss))
-				
-			triggered = False
-			
-			if a.getCurrentBar() == i:
-				if action == buyAction:
-					if float(currentPrice) > float(stopGain) or float(currentPrice) < float(stopLoss):
-						triggered = True
-				elif action == sellAction:
-					if float(currentPrice) < float(stopGain) or float(currentPrice) > float(stopLoss):
-						triggered = True
-			else:
-				if action == buyAction:
+
+				if a.getPositionType() == buyAction:
 					if float(currentPrice) < float(stopLoss):
 						triggered = True
-				elif action == sellAction:
+				elif a.getPositionType() == sellAction:
 					if float(currentPrice) > float(stopGain):
 						triggered = True
-					
+						
+								
 			if triggered:
-					lg.trigger(symbol, close, currentPrice, tm.now(), logPath)
-					lg.info(str(symbol) + str(sellAction) + str(currentPrice) + str(tm.now()))
+					lg.logIt(symbol, close, currentPrice, tm.now(), logPath)					
+					print ("\n")
+					lg.info("Position Closed")
 					lg.info("Close info. currentPrice: " + str(currentPrice))
 					lg.info("Close info. stopGain: " + str(stopGain))
-					lg.info("Close info. stopLoss: " + str(stopLoss))
+					lg.info("Close info. stopLoss: " + str(stopLoss) + "\n")
+					
 					# Position is closed
 					a.closePosition()
-					lg.info("Position Closed" + "\n")
-					lg.info ("current close price: " + str(currentPrice))
-					#a.setCurrentBar(i)
+					#a.setcurrentBar(i)
+					a.setNextBar(i+1)
 			continue
 				
-		# th = Thread(a.trigger(action, currentPrice, tm.now(), logPath))
-		#triggered = a.trigger(action, currentPrice, tm.now(), logPath)
+		# th = Thread(a.logIt(action, currentPrice, tm.now(), logPath))
+		#triggered = a.logIt(action, currentPrice, tm.now(), logPath)
 		# Write to log file
 		
 	# end bar loop
@@ -253,7 +280,7 @@ while True:
 	
 # end execution loop
 
-lg.error("yikes")
+lg.error("error")
 lg.info("info")
 lg.warning("warning")
 lg.success("success")
