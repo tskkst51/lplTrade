@@ -67,13 +67,11 @@ volume = 4
 barChart = [[0.0,0.0,0.0,0.0,0.0]]
 
 i = 0
-debug = 1
+debug = 0
 
 close = 0
 buyAction = 1
 sellAction = 2
-dirty = False
-
 
 currency = str(d["profile"]["currency"])
 alt = str(d["profile"]["alt"])
@@ -95,38 +93,37 @@ profile = str(d["profile"])
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Overide profile data with command line data
 
-if clOptions.currency:
+if int(clOptions.currency):
 	currency = clOptions.currency
 	
 if clOptions.alt:
 	alt = clOptions.alt
 	
 if clOptions.debug:
-	debug = clOptions.alt
+	debug = int(clOptions.debug)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup log file based on profile path
-
 logPath = clOptions.profilePath.replace(".json", ".log")
 logPath = logPath.replace("profiles", "logs")
+debugPath = clOptions.profilePath.replace(".json", ".debug")
+debugPath = logPath.replace("profiles", "logs")
 
 if debug:
 	debugPath = clOptions.profilePath.replace(".json", ".debug")
 	debugPath = debugPath.replace("profiles", "logs")
 
 lg = Log()
-debug = Log()
+debugLog = Log()
 tm = Time()
 
 # Delay start time to sync with top of the minute
-#tm.waitUntilTopMinute()
+if not debug:
+  tm.waitUntilTopMinute()
 
-with open(logPath, "a+", encoding="utf-8") as logFile:
-	logFile.write(lg.header(tm.now()))
-
-if debug:
-	with open(debugPath, "a+", encoding="utf-8") as debugFile:
-		debugFile.write(debug.header(tm.now()))
+#if debug:
+	#with open(debugPath, "a+", encoding="utf-8") as debugFile:
+		#debugFile.write(debugLog.header(tm.now()))
 
 lg.info ("Reading profile data from:\n" + clOptions.profilePath + "\n")
 lg.info ("Using currency: " + symbol)
@@ -142,21 +139,37 @@ cn.connectPublic()
 # Initialize algorithm
 a = Algorithm(d)
 
+if debug:
+	with open(debugPath, "a+", encoding="utf-8") as debugFile:
+		debugFile.write(lg.infoStamp(service, symbol, timeBar, openBars, closeBars))
+
+with open(logPath, "a+", encoding="utf-8") as logFile:
+	logFile.write(lg.infoStamp(service, symbol, timeBar, openBars, closeBars))
+with open(logPath, "a+", encoding="utf-8") as logFile:
+	logFile.write(lg.header(tm.now()))
+
+
 # Main loop
 while True:
 	# Set the initial loop time from the profile. Default None
 	
-	#endBarLoopTime = time() + 30 * timeBar
 	endBarLoopTime = time() + 60 * timeBar
+	if debug:
+	  endBarLoopTime = time() + 10 * timeBar
 
-	initialVol = cn.getVolume(currency, alt)
+	# initialVol = cn.getVolume(currency, alt)
+	initialVol = 1.0
 	
 	barChart[i][op] = barChart[i][hi] = barChart[i][lo] = cn.getCurrentPrice(currency, alt)
+	stopLoss = 0.0
+	stopGain = 0.0
 	
 	# Loop until each bar has ended
 	while True:
 		# Load the barChart 
-		vol = cn.getVolume(currency, alt)
+		# vol = cn.getVolume(currency, alt)
+		vol = 1.0
+
 		currentPrice = cn.getCurrentPrice(currency, alt)
 		stamp = cn.getTimeStamp(currency, alt)
 		
@@ -168,17 +181,24 @@ while True:
 					
 		barChart[i][volume] =	vol - initialVol
 		
-		sleep(4)
+		sleep(5)
 		
 		# Next bar
 		if time() >= endBarLoopTime:
 			tm.now()
 			barChart[i][cl] = currentPrice
-			print("\n")
-			lg.info (str(barChart[i]))
-			lg.info ("current price: " + str(currentPrice))
+			lg.info ("BAR: " + str(barChart[i]))
 				
 			barChart.append([0,0,0,0,0])
+			lg.info("stop gain: " + str(stopGain))
+			lg.info("stop loss: " + str(stopLoss))
+			
+			a.setRangeLimits(barChart)
+			a.setIntraLimits(barChart)
+			a.setOpenCloseLimits(barChart)
+			a.setLoLimits(barChart)
+			#a.setReversalLimit(barChart)
+			
 			#if a.inPosition():
 				#a.setClosePrices(currentPrice)
 			i += 1
@@ -187,11 +207,9 @@ while True:
 		# Wait n number of bars before trading
 		if not a.ready(i):
 			continue
-					
-		if not a.inPosition():
-			print ("\n") 
-			if i < a.getNextBar():
-				lg.info("current bar: " + str(i) + " next bar: " + str(a.getNextBar()))
+
+		if not a.inPosition():				
+			if a.getWaitForNextBar() and i < a.getNextBar():
 				continue
 				
 		# buy/sell connect to third party service
@@ -200,12 +218,16 @@ while True:
 		action = a.takeAction(float(currentPrice), barChart)
 		lg.info ("current price: " + str(currentPrice))
 			
+		# Block trading if we are in a range and range trading is set
+		if not a.inPosition() and a.getInRangeTrade(float(currentPrice)) and not a.inPosition():
+			continue
+			
 		if (action == buyAction or action == sellAction) and not a.inPosition():
 		
 			a.openPosition(action, currentPrice)
 			a.setCurrentBar(i)
 
-			lg.logIt(symbol, action, currentPrice, tm.now(), logPath)
+			lg.logIt(action, currentPrice, tm.now(), logPath)
 			
 			stopLoss = a.getInitialStopLoss()
 			stopGain = a.getInitialStopGain()
@@ -214,13 +236,11 @@ while True:
 			lg.info("buy/sell: " + str(action))
 			lg.info("Initial stopGain: " + str(stopGain))
 			lg.info("currentPrice: " + str(currentPrice))
-			lg.info("Initial stopLoss: " + str(stopLoss))
+			lg.info("Initial stopLoss: " + str(stopLoss) + "\n")
+
 						
 		if a.inPosition():
 			triggered = False
-			
-			lg.info("stop gain: " + str(a.getStopGain()))
-			lg.info("stop loss: " + str(a.getStopLoss()))
 			
 			# In a position and still in first bar
 			if a.getCurrentBar() == i:
@@ -228,8 +248,11 @@ while True:
 				#stopLoss = a.getInitialStopLoss()
 				#stopGain = a.getInitialStopGain()
 				
-				if a.getReverseLogic():
-					buyAction = sellAction
+				#lg.info("Initial stop gain: " + str(stopGain))
+				#lg.info("Initial stop loss: " + str(stopLoss))
+			
+				#if a.getReverseLogic():
+					#buyAction = sellAction
 					
 				if a.getPositionType() == buyAction:
 					if float(currentPrice) > float(stopGain) or float(currentPrice) < float(stopLoss):
@@ -240,25 +263,33 @@ while True:
 
 			# In a position and in next bar
 			else:
-			# elif a.getCurrentBar() > i:
 				a.setClosePrices(currentPrice)
 				stopLoss = a.getStopLoss()
 				stopGain = a.getStopGain()
 				
-				lg.info("current price: " + str(currentPrice))
-				lg.info("stop gain: " + str(stopGain))
-				lg.info("stop loss: " + str(stopLoss))
-
 				if a.getPositionType() == buyAction:
+					#if a.getProfitPctTriggerAmt() > 0.0:
+						#lg.info("getProfitPctTriggerAmt > 0.0:")
+						#lg.info("initial position price: " + str(a.getPositionPrice()))
+						#if float(currentPrice) > (a.getPositionPrice() + a.getProfitPctTriggerAmt()):
+							#lg.info("triggered 1")
+							#triggered = True
 					if float(currentPrice) < float(stopLoss):
 						triggered = True
 				elif a.getPositionType() == sellAction:
-					if float(currentPrice) > float(stopGain):
+					if float(currentPrice) > float(stopLoss):
 						triggered = True
-						
+					#if a.getProfitPctTriggerAmt() > 0.0:
+						#lg.info("getProfitPctTriggerAmt > 0.0:")
+						#lg.info("initial position price: " + str(a.getPositionPrice()))
+						#if float(currentPrice) < (a.getPositionPrice() - a.getProfitPctTriggerAmt()):
+							#lg.info("currentPrice: <	initial position + current price")
+						#if float(currentPrice) < (a.getPositionPrice() + a.getProfitPctTriggerAmt()):
+							#triggered = True
+							#lg.info("triggered 2")
 								
-			if triggered:
-					lg.logIt(symbol, close, currentPrice, tm.now(), logPath)					
+				if triggered:
+					lg.logIt(close, currentPrice, tm.now(), logPath)
 					print ("\n")
 					lg.info("Position Closed")
 					lg.info("Close info. currentPrice: " + str(currentPrice))
@@ -269,6 +300,8 @@ while True:
 					a.closePosition()
 					#a.setcurrentBar(i)
 					a.setNextBar(i+1)
+					triggered = False
+
 			continue
 				
 		# th = Thread(a.logIt(action, currentPrice, tm.now(), logPath))

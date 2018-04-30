@@ -1,9 +1,9 @@
 {
     "profile": {
        "service": "bitstamp",
-       "algorithm": "2BarOpen1BarClose",
-       "tradingDelayBars": "3",
-       "timeBar": "1",
+       "algorithm": "generic",
+       "tradingDelayBars": "5",
+       "timeBar": "5",
        "openBars": "3",
        "closeBars": "1",
        "closeBuyBars": "3",
@@ -18,7 +18,7 @@
        "volumeRangeBars": "5",
        "useIntras": "1",
        "endTradingTime": "0.0",
-       "currency": "btc",
+       "currency": "bch",
        "alt": "usd",
        "profitPctTrigger": ".01",
        "profitPctTriggerBar": "2",
