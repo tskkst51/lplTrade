@@ -1373,3 +1373,8 @@ close  8908.5 -25.52 -476.43 Tue, 01 May 2018 14:22:09
 sell 8903.3                  Tue, 01 May 2018 14:23:07
 close  8918.98 -15.68 -492.11 Tue, 01 May 2018 14:27:11
 buy 8918.41                  Tue, 01 May 2018 14:27:20
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 5 Open bars: 2 Clase Bars: 1
+Tue, 01 May 2018 21:47:15
+ACTION OPEN GAIN/(LOSS)  TOTAL  TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

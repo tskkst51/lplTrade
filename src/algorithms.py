@@ -8,6 +8,7 @@ class Algorithm(object):
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	def __init__(self, data):
+	
 		# Required standard settings
 		self.algorithmName = str(data['profile']['algorithm'])
 		self.currency = str(data['profile']['currency'])
@@ -54,18 +55,19 @@ class Algorithm(object):
 
 		# Use trend indicators ot increase amount to trade
 		self.shortTermTrendBars = int(data['profile']['shortTermTrendBars'])
+		self.midTermTrendBars = int(data['profile']['shortTermTrendBars'])
 		self.longTermTrendBars = int(data['profile']['longTermTrendBars'])
 		
 		# Before open/closing a position, wait for the close
 		# Default is to open/close when intra bar passes limit
-		self.waitForClose = int(data['profile']['waitForClose'])
+		self.executeOnClose = int(data['profile']['executeOnClose'])
 		
 		# Class variables
 		self.position = "closed"
 		self.positionType = 0
 		self.positionPrice = 0.0
-		self.stopLoss = 0.0
-		self.stopGain = 0.0
+		self.stopBuy = 0.0
+		self.stopSell = 0.0
 		self.initialStopGain = 0.0
 		self.initialStopLoss = 0.0
 				
@@ -92,7 +94,67 @@ class Algorithm(object):
 		self.intraHiValues = [0.0]	
 		self.intraLowValues = [0.0]	
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def takeAction(self, currentPrice, barChart):
+		barChart = barChart
+								
+		action = self.algorithm(currentPrice, self.triggerBars, barChart)
+
+		return action
+
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def triggerExecution(self, price):
+	
+		# Call service to make execution
+		
+		self.closePosition()
+		
+		print ("\n")
+		lg.info("Position Closed")
+		lg.info("Close info. currentPrice: " + str(currentPrice))
+		lg.info("Close info. stopPrice: " + str(a.getStopPrice()) + "\n")
+	
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def algorithm(self, currentPrice, bars, barChart):
+		returnVal = 0
+		
+		if self.useIntras:
+			intraBuy = intraSell = False
+						
+			print("self.intraLowValues: ")
+			print(self.intraLowValues)
+			print("self.intraHighValues: ")
+			print(self.intraHiValues)
+			
+			print("intraHigherLows intraLowerLows " + str(self.intraHigherLows) + " " + str(self.intraLowerLows))
+			print("intraLowerHighs intraHigherHighs " + str(self.intraLowerHigh) + " " +  str(self.intraHigherHighs))
+			
+			if self.aggressiveOpen:
+				if intraHigherHighs and intraHigherLows:
+					intraBuy = True
+				if intraLowerLows and intraLowerHighs:
+					intraSell = True
+			else:
+				if intraHigherLows and not intraLowerHighs:
+					intraBuy = True
+				if intraLowerHighs and not intraHigherLows:
+					intraSell = True
+				
+				if currentPrice > self.openBuyLimit and intraBuy:
+					return 1
+				if currentPrice < self.openSellLimit and intraSell:
+					return 2
+
+			if currentPrice > self.openBuyLimit:
+				print( self.openBuyLimit)
+				return 1
+			if currentPrice < self.openSellLimit:
+				print( self.openSellLimit)
+				return 2
+
+		return returnVal
+			
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def ready(self, currentNumBars):
 	
 		if self.rangeTradeBars > self.delay:
@@ -108,111 +170,7 @@ class Algorithm(object):
 			return True
 		else:
 			return False
-				
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def setClosePrices(self, currentPrice):
 	
-		posOut = 0.0
-		
-		if self.positionType == self.buy:
-			posOut = self.closeBuyLimit
-			#posOut = float(self.closeBuyLimit) - self.closePositionFudge
-		elif self.positionType == self.sell:
-			posOut = self.closeSellLimit
-			#posOut = float(self.closeSellLimit) + self.closePositionFudge
-
-		self.stopGain = self.stopLoss = posOut
-		
-		return
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def setInitialClosePrices(self, currentPrice):
-				
-		hiLoDiff = self.hiOpenCloseLimit - self.loOpenCloseLimit
-		
-		print ("Hi Lo diff: " + str(hiLoDiff) + "\n")
-		
-		if self.positionType == self.buy:
-			posGain = float(currentPrice) + (float(hiLoDiff) * float(self.profitPctTriggerBar))
-			posLoss = self.loOpenCloseLimit - self.closePositionFudge
-		elif self.positionType == self.sell:
-			posGain = float(currentPrice) - (float(hiLoDiff) * float(self.profitPctTriggerBar)) 
-			posLoss = self.hiOpenCloseLimit + self.closePositionFudge
-
-		self.initialStopGain = posGain
-		self.initialStopLoss = posLoss
-				
-		return
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getInitialStopLoss(self):
-
-		return self.initialStopLoss
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getInitialStopGain(self):
-
-		return self.initialStopGain
-		
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getStopLoss(self):
-
-		return self.stopLoss
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getStopGain(self):
-
-		return self.stopGain
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getPositionType(self):
-
-		return self.positionType
-		#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getRangeBars(self):
-	
-		if self.rangeBars >= currentBar:
-			return 1
-		
-		return 0
-		
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getInRangeTrade(self, currentPrice):
-
-		if self.rangeTradeBars:
-			return self.inRangeTrade(currentPrice)
-
-		return False
-		
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getOpenBars(self):
-	
-		return self.openBars
-		
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getCloseBars(self):
-	
-		return self.closeBars
-			
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def setReversalLimit(self):
-	
-		if not self.reverseLogic:
-			return False
-
-		
-		return self.reverseLogic
-
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getReversalLimit(self):
-	
-		return self.reverseLogic
-
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getWaitForNextBar(self):
-	
-		return self.waitForNextBar
-		
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getProfitPctTriggerAmt(self):
-	
-		return self.profitPctTriggerAmt
-
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def inRangeTrade(self, currentPrice):
 	
@@ -232,7 +190,9 @@ class Algorithm(object):
 		self.position = "open"
 		self.positionPrice = price
 		self.triggerBars = self.closeBars
-		#self.setInitialClosePrices(price)
+		self.setInitialClosePrices(price)
+		
+		return
 		
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def closePosition(self):
@@ -241,6 +201,9 @@ class Algorithm(object):
 		self.position = "close"
 		self.positionPrice = 0.0
 		self.triggerBars = self.openBars
+		
+		return
+		
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def inPosition(self):
 			
@@ -248,163 +211,19 @@ class Algorithm(object):
 			return True
 		else:
 			return False
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getPrice(self):
 
-		return self.price
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def setCurrentBar(self, bar):
-
-		self.currentBar = bar
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getCurrentBar(self):
-
-		return self.currentBar
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def setNextBar(self, nextBar):
-		
-		self.nextBar = nextBar
-		
-		return
-		
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getNextBar(self):
+	# Setter definitions
 	
-		return self.nextBar
-
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getPositionPrice(self):
+	def setIntraLimits(self):
 	
-		return self.positionPrice		
-		
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def setRangeLimits(self, barChart):
-
-		if not self.rangeTradeBars:
-			return
-			
-		if len(barChart) < self.rangeTradeBars:
-			return
-			
-		if self.rangeTradeBars:
-			self.rangeHi = self.getHighestCloseOpenPrice(self.rangeTradeBars, barChart)
-			self.rangeLo = self.getLowestCloseOpenPrice(self.rangeTradeBars, barChart)
-			
-		return
-		
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def setAllLimits(self, barChart):
-
-		if len(barChart) < self.rangeTradeBars:
-			return
-		
-		self.setRangeLimits(barChart)
-		self.setIntraLimits(barChart)
-		self.setOpenCloseLimits(barChart)
-		self.setReversalLimit()
-
-		return
+			self.intraHigherHighs = self.getIntraHigherHighs()
+			self.intraLowerLows = self.getIntraLowerLows()
+			self.intraLowerHighs = self.getIntraLowerHighs()
+			self.intraHigherLows = self.getIntraHigherLows()
 
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def takeAction(self, currentPrice, barChart):
-		barChart = barChart
-								
-		action = self.algorithm(currentPrice, self.triggerBars, barChart)
-
-		return action
-
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def algorithm(self, currentPrice, bars, barChart):
-		returnVal = 0
-		
-		if self.useIntras:
-			intraLowerHighs = intraHigherLows = 0
-			intraLowerLows = intraHigherHighs = 0
-			intraBuy = intraSell = False
-			
-			intraHigherHighs = self.getIntraHigherHighs()
-			intraLowerLows = self.getIntraLowerLows()
-			intraLowerHighs = self.getIntraLowerHighs()
-			intraHigherLows = self.getIntraHigherLows()
-			print("self.intraLowValues: ")
-			print(self.intraLowValues)
-			print("self.intraHighValues: ")
-			print(self.intraHiValues)
-			
-			print("intraHigherLows intraLowerLows " + str(intraHigherLows) + " " + str(intraLowerLows))
-			print("intraLowerHighs intraHigherHighs " + str(intraLowerHighs) + " " +  str(intraHigherHighs))
-			
-			if self.aggressiveOpen:
-				if intraHigherLows and not intraLowerHighs:
-					intraBuy = True
-				if intraLowerHighs and not intraHigherLows:
-					intraSell = True
-			else:
-				if intraHigherHighs and intraHigherLows:
-					intraBuy = True
-				if intraLowerHighs and not intraLowerLows:
-					intraSell = True
-				
-			if not self.inPosition():
-				if currentPrice > self.openBuyLimit and intraBuy:
-					return 1
-				if currentPrice < self.openSellLimit and intraSell:
-					return 2
-			else:
-				if currentPrice > self.closeBuyLimit and intraBuy:
-					return 1
-				if currentPrice < self.closeSellLimit and intraSell:
-					return 2
-		else:
-			if currentPrice > self.openBuyLimit:
-				print( self.openBuyLimit)
-				return 1
-			if currentPrice < self.openSellLimit:
-				print( self.openSellLimit)
-				return 2
-
-		return returnVal
-			
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def getLowestCloseOpenPrice(self, numBars, barChart):
-		n = 0
-		minPriceArr = [0.0] * numBars
-		barChartLen = len(barChart) - 1
-		
-		if len(barChart) < self.closeBars:
-			return
-		if len(barChart) <	self.openBars:
-			return
-			
-		while n < numBars:
-			open = barChart[barChartLen - n][self.open]
-			close = barChart[barChartLen - n][self.close]
- 
-			minPriceArr[n] = open
-			if close < open:
-				minPriceArr[n] = close
-			n += 1
-			
-		#print ("min price arr: " + str(minPriceArr))
-		
-		# Compare all min prices and find the lowest price
-		clean = True
-		n = 0
-		while n < numBars:
-			if clean:
-				minPrice = minPriceArr[n]
-				clean = False
-				continue
-			
-			if minPriceArr[n] < minPrice:
-				minPrice = minPriceArr[n]
-			
-			n += 1
-
-		return float(minPrice)
-
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def setIntraLimits(self, barChart):
+	def setIntraListLimits(self, barChart):
 	
 		if self.useIntras:
 			if len(barChart) < self.intraLowerHighsBars:
@@ -440,17 +259,83 @@ class Algorithm(object):
 			n = 0
 			while n < loopHiIterator:
 				self.intraHiValues[n] = barChart[barChartLen - n][self.hi]
-				n += 1
-		return
-	
+				n += 1	
+
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def setOpenCloseLimits(self, barChart):
+	def setClosePrices(self, currentPrice):
+	
+		posOut = 0.0
 		
-		self.setOpenBuyLimit(barChart)
-		self.setOpenSellLimit(barChart)
-		self.setCloseBuyLimit(barChart)
-		self.setCloseSellLimit(barChart)
+		if self.positionType == self.buy:
+			posOut = self.closeBuyLimit
+			#posOut = self.closeBuyLimit - self.closePositionFudge
+		elif self.positionType == self.sell:
+			posOut = self.closeSellLimit
+			#posOut = self.closeSellLimit + self.closePositionFudge
+
+		self.stopGain = self.stopLoss = posOut
+				
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def setInitialClosePrices(self, currentPrice):
+				
+		hiLoDiff = self.openBuyLimit - self.closeBuyLimit
+		
+		print ("Hi Lo diff: " + str(hiLoDiff) + "\n")
+		
+		if self.positionType == self.buy:
+			posGain = float(currentPrice) + (float(hiLoDiff) * float(self.profitPctTriggerBar))
+			posLoss = self.closeBuyLimit - self.closePositionFudge
+		elif self.positionType == self.sell:
+			posGain = float(currentPrice) - (float(hiLoDiff) * float(self.profitPctTriggerBar)) 
+			posLoss = self.closeSellLimit + self.closePositionFudge
+
+		self.initialStopGain = posGain
+		self.initialStopLoss = posLoss
+
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def setReversalLimit(self):
+	
+		if not self.reverseLogic:
+			return False
+
+		
+		return self.reverseLogic
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def setCurrentBar(self, bar):
+
+		self.currentBar = bar
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def setNextBar(self, nextBar):
+		
+		self.nextBar = nextBar
+
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def setRangeLimits(self, barChart):
+
+		if not self.rangeTradeBars:
+			return
 			
+		if len(barChart) < self.rangeTradeBars:
+			return
+			
+		if self.rangeTradeBars:
+			self.rangeHi = self.getHighestCloseOpenPrice(self.rangeTradeBars, barChart)
+			self.rangeLo = self.getLowestCloseOpenPrice(self.rangeTradeBars, barChart)
+					
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def setAllLimits(self, barChart):
+
+		if len(barChart) < self.rangeTradeBars:
+			return
+		
+		self.setRangeLimits(barChart)
+		self.setIntraListLimits(barChart)
+		self.setIntraLimits()
+		self.setOpenCloseLimits(barChart)
+		self.setReversalLimit()
+		
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def setOpenBuyLimit(self, barChart):
 	
@@ -500,6 +385,143 @@ class Algorithm(object):
 			
 		return
 '''
+
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def setOpenCloseLimits(self, barChart):
+		
+		self.openBuy = self.setOpenBuyLimit(barChart)
+		self.openSell = self.setOpenSellLimit(barChart)
+		self.closeBuy = self.setCloseBuyLimit(barChart)
+		self.closeSell = self.setCloseSellLimit(barChart)
+
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getInitialStopLoss(self):
+
+		return self.initialStopLoss
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getInitialStopGain(self):
+
+		return self.initialStopGain
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getStopPrice(self):
+
+		if self.positionType == self.buy:
+			return self.closeBuy
+		else:
+			return self.closeSell
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getStopGain(self):
+
+		return self.stopGain
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getPositionType(self):
+
+		return self.positionType
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getRangeBars(self):
+	
+		if self.rangeBars >= currentBar:
+			return 1
+		
+		return 0
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getInRangeTrade(self, currentPrice):
+
+		if self.rangeTradeBars:
+			return self.inRangeTrade(currentPrice)
+
+		return False
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getOpenBars(self):
+	
+		return self.openBars
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getCloseBars(self):
+	
+		return self.closeBars
+
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getReversalLimit(self):
+	
+		return self.reverseLogic
+
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getWaitForNextBar(self):
+	
+		return self.waitForNextBar
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getProfitPctTriggerAmt(self):
+	
+		return self.profitPctTriggerAmt
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getCurrentBar(self):
+
+		return self.currentBar
+						
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getNextBar(self):
+	
+		return self.nextBar
+
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getPositionPrice(self):
+	
+		return self.positionPrice		
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getExecuteOnClose(self):
+	
+		return self.executeOnClose
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getLowestCloseOpenPrice(self, numBars, barChart):
+	
+		n = 0
+		minPriceArr = [0.0] * numBars
+		barChartLen = len(barChart) - 1
+		
+		if len(barChart) < self.closeBars:
+			return
+		if len(barChart) <	self.openBars:
+			return
+			
+		while n < numBars:
+			open = barChart[barChartLen - n][self.open]
+			close = barChart[barChartLen - n][self.close]
+ 
+			minPriceArr[n] = open
+			if close < open:
+				minPriceArr[n] = close
+			n += 1
+			
+		#print ("min price arr: " + str(minPriceArr))
+		
+		# Compare all min prices and find the lowest price
+		clean = True
+		n = 0
+		while n < numBars:
+			if clean:
+				minPrice = minPriceArr[n]
+				clean = False
+				continue
+			
+			if minPriceArr[n] < minPrice:
+				minPrice = minPriceArr[n]
+			
+			n += 1
+
+		return float(minPrice)
+
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def getIntraHigherHighs(self):
 		if len(self.intraHiValues) < self.intraHigherHighsBars:
@@ -529,7 +551,6 @@ class Algorithm(object):
 				return False
 			n += 1
 		return True
- 		
 
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def getIntraLowerLows(self):	
@@ -601,7 +622,8 @@ class Algorithm(object):
 			n += 1
 
 		return float(maxPrice)
-		#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def getLowestClosePrice(self, numBars, barChart):
 	
 		if len(barChart) < numBars:
@@ -665,7 +687,7 @@ class Algorithm(object):
 
 		return float(maxPrice)
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def getLowestOpenPrice(self, numBars, barChart):
 	
 		if len(barChart) < numBars:
@@ -696,7 +718,8 @@ class Algorithm(object):
 			n += 1
 
 		return float(minPrice)
-		#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def getHighestOpenPrice(self, numBars, barChart):
 	
 		if len(barChart) < numBars:
@@ -728,7 +751,7 @@ class Algorithm(object):
 
 		return float(maxPrice)
 		
-		#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def getLowestIntraBarPrice(self, numBars, barChart):
 	
 		if len(barChart) < numBars:
@@ -760,7 +783,7 @@ class Algorithm(object):
 
 		return float(minPrice)
 		
-		#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def getHighestIntraBarPrice(self, numBars, barChart):
 
 		if len(barChart) < numBars:
@@ -826,40 +849,3 @@ class Algorithm(object):
 			n += 1
 
 		return float(minPrice)
-
-	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def highestHiLoIntraBarPrice(self, numBars, barChart):
-	
-		if len(barChart) < numBars:
-			return 0.0
-
-		n = 0
-		maxPriceArr = [0.0] * numBars	
-		barChartLen = len(barChart) - 1
-	
-		while n < numBars:
-			hi = barChart[barChartLen - n][self.hi]
-			lo = barChart[barChartLen - n][self.lo]
- 
-			maxPriceArr[n] = hi
-			if lo > hi:
-				maxPriceArr[n] = lo
-			n += 1
-		# End while
-		
-		# Compare all max prices and find the highest price
-		clean = True
-		n = 0
-		while n < numBars:
-			if clean:
-				maxPrice = maxPriceArr[n]
-				clean = False
-				continue
-			
-			if maxPriceArr[n] > maxPrice:
-				maxPrice = maxPriceArr[n]
-			
-			n += 1
-		# End while
-
-		return float(maxPrice)

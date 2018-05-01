@@ -5,7 +5,6 @@
 #import krakenex
 #from pykrakenapi import KrakenAPI
 #import pusher
-#import bitstamp.client
 #from pusher import Pusher
 
 import sys
@@ -30,18 +29,23 @@ parser = OptionParser()
 
 parser.add_option("-p"	, "--profilePath", dest="profilePath",
 	help="write report to FILE", metavar="FILE")
+	
 parser.add_option("-q", "--quiet",
 	action="store_true", dest="quiet", default=False,
 	help="don't print to stdout")
+	
 parser.add_option("-d", "--debug",
 	action="store_true", dest="debug", default=False,
 	help="don't print to logfile")
+	
 parser.add_option("-v", "--verbose",
 	action="store_true", dest="verbose", default=False,
 	help="verbose")
+	
 parser.add_option("-c", "--currency", type="string",
 	action="store", dest="currency", default=False,
 	help="currency to buy: btc... eth... bch...")
+	
 parser.add_option("-a", "--alt", type="string",
 	action="store", dest="alt", default=False,
 	help="alternate currency to buy: usd... uer... btc... eth... bch...")
@@ -57,7 +61,7 @@ with open(clOptions.profilePath) as jsonData:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set globals
 
-# Price array hi lo open close volume
+# Price array hi lo open close volume indexes
 hi = 0
 lo = 1
 op = 2
@@ -103,9 +107,11 @@ if clOptions.debug:
 	debug = int(clOptions.debug)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Setup log file based on profile path
+# Setup log and debug file based on profile name and path
+
 logPath = clOptions.profilePath.replace(".json", ".log")
 logPath = logPath.replace("profiles", "logs")
+
 debugPath = clOptions.profilePath.replace(".json", ".debug")
 debugPath = logPath.replace("profiles", "logs")
 
@@ -127,7 +133,7 @@ if not debug:
 
 lg.info ("Reading profile data from:\n" + clOptions.profilePath + "\n")
 lg.info ("Using currency: " + symbol)
-lg.info (str(timeBar) + " Minute bar chart\n")
+lg.info ("Start time: " + str(timeBar) + " Minute bar chart\n")
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup connection to the exchange service
@@ -136,8 +142,13 @@ cn = Connect(service)
 cn.connectPublic()
 # cn.connectPrivate()
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize algorithm
+
 a = Algorithm(d)
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Write header data to logs
 
 if debug:
 	with open(debugPath, "a+", encoding="utf-8") as debugFile:
@@ -149,10 +160,10 @@ with open(logPath, "a+", encoding="utf-8") as logFile:
 	logFile.write(lg.header(tm.now()))
 
 
-# Main loop
+# Main loop. Loop forever or to a.endTime
 while True:
+
 	# Set the initial loop time from the profile. Default None
-	
 	endBarLoopTime = time() + 60 * timeBar
 	if debug:
 	  endBarLoopTime = time() + 5 * timeBar
@@ -161,8 +172,8 @@ while True:
 	initialVol = 1.0
 	
 	barChart[i][op] = barChart[i][hi] = barChart[i][lo] = cn.getCurrentPrice(currency, alt)
-	stopLoss = 0.0
-	stopGain = 0.0
+	stopPrice = 0.0
+	stopPriceGain = 0.0
 	
 	# Loop until each bar has ended
 	while True:
@@ -192,6 +203,14 @@ while True:
 			a.setAllLimits(barChart)
 			barChart.append([0.0,0.0,0.0,0.0,0.0])
 			
+			if a.inPosition() and getExecuteOnClose():
+				if a.getPositionType() == buyAction:
+					if float(currentPrice) < stopPrice:
+						a.triggerExecution()
+				elif a.getPositionType() == sellAction:
+					if float(currentPrice) > stopPrice:
+						a.triggerExecution()
+			
 			i += 1
 			break
 			
@@ -215,58 +234,43 @@ while True:
 			
 		if (action == buyAction or action == sellAction) and not a.inPosition():
 		
-			a.openPosition(action, currentPrice)
 			a.setCurrentBar(i)
+			a.openPosition(action, currentPrice)
 
 			lg.logIt(action, currentPrice, tm.now(), logPath)
 			
-			stopLoss = a.getStopLoss()
-			stopGain = a.getStopGain()
-
-			#stopLoss = a.getInitialStopLoss()
-			#stopGain = a.getInitialStopGain()
-
-			lg.info("")
-			lg.info("Position Open")
+			print("\n")
+			lg.info("POSITION OPEN")
 			lg.info("buy/sell: " + str(action))
-			lg.info("Initial stopGain: " + str(stopGain))
+			lg.info("Initial stopGain: " + str(a.getInitialStopGain()))
+			lg.info("Initial stopLoss: " + str(a.getInitialStopLoss()) + "\n")
 			lg.info("currentPrice: " + str(currentPrice))
-			lg.info("Initial stopLoss: " + str(stopLoss) + "\n")
-
 						
 		if a.inPosition():
-			a.setClosePrices(currentPrice)
 			triggered = False
 			
-			stopLoss = a.getStopLoss()
-			stopGain = a.getStopGain()
-			print("stopLoss " + str(stopLoss))
-			print("stopGain " + str(stopLoss))
+			stopPrice = a.getStopPrice()
+
+			print("stopPrice " + str(stopPrice))
+			
 			# In a position and still in first bar
 			if a.getCurrentBar() == i:
-				#a.setInitialClosePrices(currentPrice)
-				#stopLoss = a.getInitialStopLoss()
-				#stopGain = a.getInitialStopGain()
+				a.setInitialClosePrices(currentPrice)
+				stopLoss = a.getInitialStopLoss()
+				stopGain = a.getInitialStopGain()
 				
-				#lg.info("Initial stop gain: " + str(stopGain))
-				#lg.info("Initial stop loss: " + str(stopLoss))
-			
-				#if a.getReverseLogic():
-					#buyAction = sellAction
-					
+				lg.info("Initial stop gain: " + str(stopPriceGain))
+				lg.info("Initial stop loss: " + str(stopPrice))
+								
 				if a.getPositionType() == buyAction:
-					if float(currentPrice) > float(stopGain) or float(currentPrice) < float(stopLoss):
+					if float(currentPrice) > stopGain or float(currentPrice) < stopLoss:
 						triggered = True
 				elif a.getPositionType() == sellAction:
-					if float(currentPrice) < float(stopGain) or float(currentPrice) > float(stopLoss):
+					if float(currentPrice) < stopGain or float(currentPrice) > stopLoss:
 						triggered = True
 
 			# In a position and in next bar
-			else:
-				#a.setClosePrices(currentPrice)
-				#stopLoss = a.getStopLoss()
-				#stopGain = a.getStopGain()
-				
+			else:				
 				if a.getPositionType() == buyAction:
 					#if a.getProfitPctTriggerAmt() > 0.0:
 						#lg.info("getProfitPctTriggerAmt > 0.0:")
@@ -274,10 +278,10 @@ while True:
 						#if float(currentPrice) > (a.getPositionPrice() + a.getProfitPctTriggerAmt()):
 							#lg.info("triggered 1")
 							#triggered = True
-					if float(currentPrice) < float(stopLoss):
+					if float(currentPrice) < stopPrice:
 						triggered = True
 				elif a.getPositionType() == sellAction:
-					if float(currentPrice) > float(stopLoss):
+					if float(currentPrice) > stopPrice:
 						triggered = True
 					#if a.getProfitPctTriggerAmt() > 0.0:
 						#lg.info("getProfitPctTriggerAmt > 0.0:")
@@ -290,15 +294,11 @@ while True:
 								
 				if triggered:
 					lg.logIt(close, currentPrice, tm.now(), logPath)
-					print ("\n")
-					lg.info("Position Closed")
-					lg.info("Close info. currentPrice: " + str(currentPrice))
-					lg.info("Close info. stopGain: " + str(stopGain))
-					lg.info("Close info. stopLoss: " + str(stopLoss) + "\n")
+										
+					a.triggerExecution(currentPrice)
 					
 					# Position is closed
 					a.closePosition()
-					#a.setcurrentBar(i)
 					a.setNextBar(i+1)
 					triggered = False
 

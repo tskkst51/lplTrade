@@ -22,6 +22,7 @@
        "closeSellBars": "1",
        "dynamicBars": "0",
        "shortTermTrendBars": "0",
+       "midTermTrendBars": "0",
        "longTermTrendBars": "0",
        "volumeRangeBars": "5",
        "endTradingTime": "0.0",
@@ -34,7 +35,7 @@
        "buyNearLow": "0",
        "sellNearHi": "0",
        "waitForNextBar": "0",
-       "waitForClose": "0",
+       "executeOnClose": "1",
        "exitThreshHold": "2",
        "aggressiveOpenPct": ".25",
        "aggressiveClosePct": ".25"
