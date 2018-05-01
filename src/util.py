@@ -155,7 +155,7 @@ while True:
 	
 	endBarLoopTime = time() + 60 * timeBar
 	if debug:
-	  endBarLoopTime = time() + 10 * timeBar
+	  endBarLoopTime = time() + 5 * timeBar
 
 	# initialVol = cn.getVolume(currency, alt)
 	initialVol = 1.0
@@ -181,7 +181,7 @@ while True:
 					
 		barChart[i][volume] =	vol - initialVol
 		
-		sleep(5)
+		sleep(4)
 		
 		# Next bar
 		if time() >= endBarLoopTime:
@@ -189,18 +189,9 @@ while True:
 			barChart[i][cl] = currentPrice
 			lg.info ("BAR: " + str(barChart[i]))
 				
-			barChart.append([0,0,0,0,0])
-			lg.info("stop gain: " + str(stopGain))
-			lg.info("stop loss: " + str(stopLoss))
+			a.setAllLimits(barChart)
+			barChart.append([0.0,0.0,0.0,0.0,0.0])
 			
-			a.setRangeLimits(barChart)
-			a.setIntraLimits(barChart)
-			a.setOpenCloseLimits(barChart)
-			a.setLoLimits(barChart)
-			#a.setReversalLimit(barChart)
-			
-			#if a.inPosition():
-				#a.setClosePrices(currentPrice)
 			i += 1
 			break
 			
@@ -216,10 +207,10 @@ while True:
 		# connect to third party service
 		
 		action = a.takeAction(float(currentPrice), barChart)
-		lg.info ("current price: " + str(currentPrice))
+		lg.info ("current price: " + str(currentPrice) + " " + str(action))
 			
 		# Block trading if we are in a range and range trading is set
-		if not a.inPosition() and a.getInRangeTrade(float(currentPrice)) and not a.inPosition():
+		if a.getInRangeTrade(float(currentPrice)) and not a.inPosition():
 			continue
 			
 		if (action == buyAction or action == sellAction) and not a.inPosition():
@@ -229,9 +220,13 @@ while True:
 
 			lg.logIt(action, currentPrice, tm.now(), logPath)
 			
-			stopLoss = a.getInitialStopLoss()
-			stopGain = a.getInitialStopGain()
+			stopLoss = a.getStopLoss()
+			stopGain = a.getStopGain()
 
+			#stopLoss = a.getInitialStopLoss()
+			#stopGain = a.getInitialStopGain()
+
+			lg.info("")
 			lg.info("Position Open")
 			lg.info("buy/sell: " + str(action))
 			lg.info("Initial stopGain: " + str(stopGain))
@@ -240,8 +235,13 @@ while True:
 
 						
 		if a.inPosition():
+			a.setClosePrices(currentPrice)
 			triggered = False
 			
+			stopLoss = a.getStopLoss()
+			stopGain = a.getStopGain()
+			print("stopLoss " + str(stopLoss))
+			print("stopGain " + str(stopLoss))
 			# In a position and still in first bar
 			if a.getCurrentBar() == i:
 				#a.setInitialClosePrices(currentPrice)
@@ -263,9 +263,9 @@ while True:
 
 			# In a position and in next bar
 			else:
-				a.setClosePrices(currentPrice)
-				stopLoss = a.getStopLoss()
-				stopGain = a.getStopGain()
+				#a.setClosePrices(currentPrice)
+				#stopLoss = a.getStopLoss()
+				#stopGain = a.getStopGain()
 				
 				if a.getPositionType() == buyAction:
 					#if a.getProfitPctTriggerAmt() > 0.0:

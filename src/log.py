@@ -32,7 +32,7 @@ class Log:
 		print ("SUCCESS: " + self.msg)
 		
 	def header(self, date):
-		self.hdr =		 "OPEN PRICE TOTAL GRAND TOTAL  TIME"
+		self.hdr =		 "ACTION OPEN GAIN/(LOSS)  TOTAL  TIME"
 		self.hdrLine = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 		return ("\n" + date + "\n" + self.hdr + "\n" + self.hdrLine + "\n")
 		
@@ -74,7 +74,7 @@ class Log:
 		if self.strAction == "close":
 			with open(logPath, "a+", encoding="utf-8") as logFile:
 				logFile.write (
-					self.strAction + " " + str(price) + " " + str(totGain) + " " + str(grandTotal)	 + " " + str(time) + "\n")
+					self.strAction + "  " + str(price) + " " + str(totGain) + " " + str(grandTotal)	 + " " + str(time) + "\n")
 		else:
 			with open(logPath, "a+", encoding="utf-8") as logFile:
 				logFile.write (

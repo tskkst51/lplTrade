@@ -125,3 +125,34 @@ close 9390.16 16.88 -269.00 Mon, 30 Apr 2018 00:25:10
 sell 9380.0                  Mon, 30 Apr 2018 00:25:21
 close 9378.99 1.01 -267.99 Mon, 30 Apr 2018 00:30:28
 buy 9383.75                  Mon, 30 Apr 2018 00:30:45
+
+Ex: bitstamp SYM: bchusd Bar chart (min): 10 Open bars: 2 Clase Bars: 1
+Tue, 01 May 2018 07:20:00
+ACTION OPEN GAIN/(LOSS)  TOTAL  TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: bchusd Bar chart (min): 10 Open bars: 2 Clase Bars: 1
+Tue, 01 May 2018 07:26:01
+ACTION OPEN GAIN/(LOSS)  TOTAL  TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+buy 1303.99                  Tue, 01 May 2018 08:17:51
+close  1320.99 17.00 17.00 Tue, 01 May 2018 09:13:29
+sell 1320.99                  Tue, 01 May 2018 09:13:47
+close  1313.99 7.00 24.00 Tue, 01 May 2018 09:43:17
+buy 1313.99                  Tue, 01 May 2018 09:43:21
+close  1301.54 -12.45 11.55 Tue, 01 May 2018 09:57:17
+sell 1301.54                  Tue, 01 May 2018 09:57:21
+close  1304.28 -2.74 8.81 Tue, 01 May 2018 10:21:53
+buy 1304.28                  Tue, 01 May 2018 10:21:58
+close  1314.12 9.84 18.65 Tue, 01 May 2018 11:20:47
+sell 1314.12                  Tue, 01 May 2018 11:20:52
+close  1280.99 33.13 51.78 Tue, 01 May 2018 12:41:36
+buy 1280.99                  Tue, 01 May 2018 12:41:41
+close  1282.76 1.77 53.55 Tue, 01 May 2018 13:01:11
+sell 1282.76                  Tue, 01 May 2018 13:01:16
+close  1286.88 -4.12 49.43 Tue, 01 May 2018 13:14:53
+buy 1286.88                  Tue, 01 May 2018 13:14:57
+close  1285.34 -1.54 47.89 Tue, 01 May 2018 13:36:19
+sell 1285.34                  Tue, 01 May 2018 13:36:24
+close  1287.42 -2.08 45.81 Tue, 01 May 2018 13:44:16
+buy 1287.42                  Tue, 01 May 2018 13:44:21

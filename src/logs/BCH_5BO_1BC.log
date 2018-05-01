@@ -18,3 +18,18 @@ close 1430.99 4.88 15.42 Mon, 30 Apr 2018 00:32:39
 sell 1426.96                  Mon, 30 Apr 2018 00:36:28
 close 1435.02 -8.06 7.36 Mon, 30 Apr 2018 00:55:20
 buy 1436.82                  Mon, 30 Apr 2018 00:55:25
+
+Ex: bitstamp SYM: xmrusd Bar chart (min): 15 Open bars: 2 Clase Bars: 1
+Tue, 01 May 2018 06:05:00
+ACTION OPEN GAIN/(LOSS)  TOTAL  TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: xmrusd Bar chart (min): 15 Open bars: 2 Clase Bars: 1
+Tue, 01 May 2018 07:16:00
+ACTION OPEN GAIN/(LOSS)  TOTAL  TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: xmrusd Bar chart (min): 15 Open bars: 2 Clase Bars: 1
+Tue, 01 May 2018 07:26:00
+ACTION OPEN GAIN/(LOSS)  TOTAL  TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
