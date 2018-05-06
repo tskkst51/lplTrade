@@ -3,10 +3,37 @@
 import bitstamp.client
 from log import *
 from time import sleep
+#from bitfinex.client import Client
+
+class ConnectBitFinex:
+	def __init__(self, service="bitstamp"):
+		self.service = service
+
+		self.clientBFX = Client()
+
+		#symbols = client.symbols()
+		#print(symbols)
+
+		symbol = 'btcusd'
+
+		#print(self.clientBFX.ticker(symbol))
+		#print(client.today(symbol))
+		#print(client.stats(symbol))
+
+		#parameters = {'limit_asks': 2, 'limit_bids': 2}
+
+		#print(client.lendbook('btc', parameters))
+		#print(client.order_book(symbol, parameters))
+
+	def getCurrentPrice(self, currency="btc", alt="usd"):
+		symbol = currency + alt
+		mid = self.clientBFX.ticker(symbol)["mid"]
+		return mid
+
 
 # Connect to API service providers: bit stamp kraken etrade ibkr lakebtc
 
-class Connect:
+class ConnectBitStamp:
 	def __init__(self, service="bitstamp"):
 		self.service = service
 		
@@ -35,7 +62,7 @@ class Connect:
 					vol = float(self.publicClient.ticker(currency, alt)['volume'])
 			except:
 				#print("Caught exception in getVolume for bitstamp. Retrying...")
-				sleep(1)
+				sleep(2)
 				continue
 			break
 			
@@ -49,7 +76,7 @@ class Connect:
 					cp = float(self.publicClient.ticker(currency, alt)['last'])
 			except:
 				#print("Caught exception in getCurrentPrice for bitstamp. Retrying...")
-				sleep(1)
+				sleep(2)
 				continue
 			break
 			
@@ -63,7 +90,7 @@ class Connect:
 					stamp = float(self.publicClient.ticker(currency, alt)['timestamp'])
 			except:
 				#print ("Caught exception in getCurrentPrice for bitstamp. Retrying...")		
-				sleep(1)
+				sleep(2)
 				continue
 			break
 			

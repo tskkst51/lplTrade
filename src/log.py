@@ -32,8 +32,8 @@ class Log:
 		print ("SUCCESS: " + self.msg)
 		
 	def header(self, date):
-		self.hdr =		 "ACTION OPEN GAIN/(LOSS)  TOTAL  TIME"
-		self.hdrLine = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+		self.hdr =		 "ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME"
+		self.hdrLine = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 		return ("\n" + date + "\n" + self.hdr + "\n" + self.hdrLine + "\n")
 		
 	def infoStamp(self, service, sym, chartType, openBars, closeBars):
@@ -46,7 +46,7 @@ class Log:
 		self.time = time
 		print ("SUCCESS: " + self.msg)
 		
-	def logIt(self, action, price, time, logPath):
+	def logIt(self, action, price, barLength, time, logPath):
 		totGain = grandTotal = ""
 		if action == 1:
 			self.strAction = "buy"
@@ -74,11 +74,11 @@ class Log:
 		if self.strAction == "close":
 			with open(logPath, "a+", encoding="utf-8") as logFile:
 				logFile.write (
-					self.strAction + "  " + str(price) + " " + str(totGain) + " " + str(grandTotal)	 + " " + str(time) + "\n")
+					self.strAction + "	" + str(price) + " " + str(totGain) + " " + str(grandTotal)	 + "		" + str(barLength) + " " + str(time) + "\n")
 		else:
 			with open(logPath, "a+", encoding="utf-8") as logFile:
 				logFile.write (
-					self.strAction + " " + str(price) + "                  " + str(time) + "\n")
+					self.strAction + " " + str(price) + "									" + str(time) + "\n")
 		
 		self.totGain = 0.0
 		return 1
