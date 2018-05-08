@@ -235,7 +235,8 @@ while True:
 			barChart[i][cl] = currentPrice
 			lg.info ("BAR: " + str(barChart[i]) + " action " + str(action))
 				
-			a.setAllLimits(barChart)
+			a.setAllLimits(barChart, currentPrice, i)
+			
 			barChart.append([0.0,0.0,0.0,0.0,0.0])
 			if a.getStopPrice() != 0.0:
 				lg.info ("stopPrice: " + str(a.getStopPrice()))
@@ -249,27 +250,27 @@ while True:
 				print("currentPrice  getOpenPrice " + str(currentPrice) + " " +	str(a.getOpenPrice()))
 				if a.getPositionType() == buyAction:
 					if currentPrice >= a.getOpenPrice():
-						a.triggerExecution(currentPrice, i)
-						lg.logIt(buy, str(currentPrice), tm.now(), logPath)
+						a.openPosition(currentPrice, i)
+						lg.logIt(buy, str(currentPrice), str(a.getBarsInPosition), tm.now(), logPath)
 				if a.getPositionType() == sellAction:
 					if currentPrice >= a.getOpenPrice():
-						a.triggerExecution(currentPrice, i)
-						lg.logIt(buy, str(currentPrice), tm.now(), logPath)
+						a.openPosition(currentPrice, i)
+						lg.logIt(buy, str(currentPrice), str(a.getBarsInPosition), tm.now(), logPath)
 
-			# Execute on the close of the previous bar range
+			# Close position on open of previous bar range
 			if action and a.inPosition() and a.getExecuteOnClose():
 				print("Executing on close...")
 				print("currentPrice  getStopPrice " + str(currentPrice) + " " +	str(a.getStopPrice()))
 
 				if a.getPositionType() == buyAction:
 					if currentPrice <= a.getStopPrice():
-						a.triggerExecution(currentPrice, i)
-						lg.logIt(close, str(currentPrice), tm.now(), logPath)
+						a.closePosition(currentPrice, i)
+						lg.logIt(close, str(currentPrice), str(a.getBarsInPosition), str(a.getBarsInPosition), tm.now(), logPath)
 						triggered = False
 				elif a.getPositionType() == sellAction:
 					if currentPrice >= a.getStopPrice():
-						a.triggerExecution(currentPrice, i)
-						lg.logIt(close, str(currentPrice), tm.now(), logPath)
+						a.closePosition(currentPrice, i)
+						lg.logIt(close, str(currentPrice), str(a.getBarsInPosition), tm.now(), logPath)
 						triggered = False
 			
 			i += 1
@@ -283,12 +284,10 @@ while True:
 		if not a.ready(i):
 			continue
 
+		# Wait till next bar before trading
 		if not a.inPosition():				
 			if a.getWaitForNextBar() and i < a.getNextBar():
 				continue
-				
-		# buy/sell connect to third party service
-		# connect to third party service
 		
 		action = a.takeAction(currentPrice, barChart)
 
@@ -296,49 +295,42 @@ while True:
 		if a.getInRangeTrade(currentPrice) and not a.inPosition():
 			continue
 
-		#if a.getExecuteOnClose():
-			#continue
-
 		# Detect a reversal pattern in the current bar
 		# Exit position 
-		if action and a.inPosition() and a.reversalPctTrigger > 0.0:
+		if action and a.inPosition() and a.doReversal():
 			previousBarLen = float(barChart[i-1][cl] - barChart[i-1][op])
 			currentBarLen = barChart[i][hi] - barChart[i][op]
 			if previousBarLen < 0.0 and currentBarLen > 0.0:
-				# Bars going different directios
+				# Bars going different directions
 				continue
+				
 			if previousBarLen < 0.0:
 				previousBarLen = previousBarLen * -1
 			if currentBarLen < 0.0:
 				currentBarLen = currentBarLen * -1
+				
 			if action == buyAction:
 				currentHi = barChart[i][hi]
-				currentOpen = barChart[i][op]
 			else:
 				currentHi = barChart[i][lo]
-				currentOpen = barChart[i][op]
+				
+			currentOpen = barChart[i][op]
 			
-			print(str(currentBarLen) + " " + str(previousBarLen))
+			print("barLengths; current: prev " + str(currentBarLen) + ": " + str(previousBarLen))
+			
+			# Add an aditional percentage to currentBarLen for larger moves
 			if currentBarLen > previousBarLen: 
 				if a.getReversalLimit(currentHi, currentOpen, currentPrice):
 					lg.info("triggered due to reversal detected!")
-					a.triggerExecution(currentPrice, i)
-					lg.logIt(close, str(currentPrice), tm.now(), logPath)
+					a.closePosition(currentPrice, i)
+					lg.logIt(close, str(currentPrice), str(a.getBarsInPosition), tm.now(), logPath)
 
 		if (action == buyAction or action == sellAction) and not a.inPosition():
 		
-			a.setCurrentBar(i)
-			a.openPosition(action, currentPrice)
+			a.openPosition(action, currentPrice, i)
 
-			lg.logIt(action, str(currentPrice), str(a.getBarsInPosition), tm.now(), logPath)
-			
-			print("\n")
-			lg.info("POSITION OPEN")
-			lg.info("buy/sell: " + str(action))
-			lg.info("Initial stopGain: " + str(a.getInitialStopGain()))
-			lg.info("Initial stopLoss: " + str(a.getInitialStopLoss()))
-			lg.info("Position Price: " + str(currentPrice))
-						
+			lg.logIt(action, str(currentPrice), str(a.getBarsInPosition), str(a.getBarsInPosition), tm.now(), logPath)
+									
 		triggered = False
 
 		if a.inPosition() and not a.getExecuteOnClose():
@@ -346,16 +338,9 @@ while True:
 			stopPrice = a.getStopPrice()
 			
 			# In a position and still in first bar
-			if a.getCurrentBar() == i:
-				#a.setInitialClosePrices(currentPrice)
-				#stopLoss = a.getInitialStopLoss()
-				#stopGain = a.getInitialStopGain()
-				
-				#lg.info("Initial stop gain: " + str(stopGain))
-				#lg.info("Initial stop loss: " + str(stopLoss))
-								
+			if a.getCurrentBar() == i:								
 				if a.getPositionType() == buyAction:
-					if currentPrice > a.initialStopGain or currentPrice < a.initialStopLoss:
+					if currentPrice > a.getInitialStopGain() or currentPrice < a.getInitialStopGain():
 						triggered = True
 				elif a.getPositionType() == sellAction:
 					if currentPrice < a.initialStopGain or currentPrice > a.initialStopLoss:
@@ -363,49 +348,32 @@ while True:
 
 			# In a position and in next bar
 			else:				
+				profitTarget = a.getProfitTarget()
 				if a.getPositionType() == buyAction:
-					#if a.getProfitPctTriggerAmt() > 0.0:
-						#lg.info("getProfitPctTriggerAmt > 0.0:")
-						#lg.info("initial position price: " + str(a.getPositionPrice()))
-						#if currentPrice > (a.getPositionPrice() + a.getProfitPctTriggerAmt()):
-							#lg.info("triggered 1")
-							#triggered = True
-					profitTarget = a.getProfitTarget() + currentPrice
 					if currentPrice > profitTarget:
 						lg.info("PROFIT TARGET MET: " + profitTarget)
 						triggered = True
 					if currentPrice < stopPrice:
 						triggered = True
 				elif a.getPositionType() == sellAction:
-					profitTarget = a.getProfitTarget() - currentPrice
 					if currentPrice < profitTarget:
 						lg.info("PROFIT TARGET MET: " + profitTarget)
 						triggered = True
 					if currentPrice > stopPrice:
 						triggered = True
-					#if a.getProfitPctTriggerAmt() > 0.0:
-						#lg.info("getProfitPctTriggerAmt > 0.0:")
-						#lg.info("initial position price: " + str(a.getPositionPrice()))
-						#if currentPrice < (a.getPositionPrice() - a.getProfitPctTriggerAmt()):
-							#lg.info("currentPrice: <	initial position + current price")
-						#if currentPrice < (a.getPositionPrice() + a.getProfitPctTriggerAmt()):
-							#triggered = True
-							#lg.info("triggered 2")
 								
 			if triggered:
-				lg.logIt(close, str(currentPrice), str(a.getBarsInPosition()), tm.now(),	logPath)
+				lg.logIt(close, str(currentPrice), str(a.getBarsInPosition()), str(a.getBarsInPosition), tm.now(),	logPath)
 									
-				a.triggerExecution(currentPrice, i)
-				
 				# Position is closed
-				#a.closePosition()
-				#a.setNextBar(i+1)
+				a.closePosition(currentPrice, i)
+				
 				triggered = False
 
 			continue
 				
-		# th = Thread(a.logIt(action, currentPrice, tm.now(), logPath))
-		#triggered = a.logIt(action, currentPrice, tm.now(), logPath)
+		# th = Thread(a.logIt(action, currentPrice, str(a.getBarsInPosition), tm.now(), logPath))
+		#triggered = a.logIt(action, currentPrice, str(a.getBarsInPosition), tm.now(), logPath)
 		# Write to log file
 		
 	# end bar loop

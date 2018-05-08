@@ -1907,3 +1907,39 @@ Fri, 04 May 2018 07:03:00
 ACTION OPEN GAIN/(LOSS)  TOTAL  TIME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 sell 776.23                  Fri, 04 May 2018 07:34:53
+
+Ex: bitstamp SYM: ethusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Mon, 07 May 2018 22:28:19
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: ethusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Mon, 07 May 2018 22:41:05
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: ethusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Mon, 07 May 2018 22:43:08
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: ethusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Mon, 07 May 2018 22:45:32
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: ethusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Mon, 07 May 2018 22:48:36
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: ethusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Mon, 07 May 2018 23:19:46
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+buy 742.53									Mon, 07 May 2018 23:25:32
+
+Ex: bitstamp SYM: ethusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Tue, 08 May 2018 17:25:20
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
