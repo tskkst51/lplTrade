@@ -74,11 +74,11 @@ class Log:
 		if self.strAction == "close":
 			with open(logPath, "a+", encoding="utf-8") as logFile:
 				logFile.write (
-					self.strAction + "	" + str(price) + " " + str(totGain) + " " + str(grandTotal)	 + "		" + str(barLength) + " " + str(time) + "\n")
+					self.strAction + "	" + str(price) + " " + str(totGain) + " " + str(grandTotal)	 + "		" + str(barLength) + "   " + str(time) + "\n")
 		else:
 			with open(logPath, "a+", encoding="utf-8") as logFile:
 				logFile.write (
-					self.strAction + " " + str(price) + "									" + str(time) + "\n")
+					self.strAction + " " + str(price) + "							  		" + str(time) + "\n")
 		
 		self.totGain = 0.0
 		return 1

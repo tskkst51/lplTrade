@@ -3,6 +3,7 @@
 import bitstamp.client
 from log import *
 from time import sleep
+import traceback
 #from bitfinex.client import Client
 
 class ConnectBitFinex:
@@ -43,23 +44,20 @@ class ConnectBitStamp:
 		# currencies: btcusd, btceur, eurusd, xrpusd, xrpeur, xrpbtc, ltcusd, 
 		#		 ltceur, ltcbtc, ethusd, etheur, ethbtc, bchusd, bcheur, bchbtc
 
-		if (self.service == "bitstamp"):
-			self.publicClient = bitstamp.client.Public()
+		self.publicClient = bitstamp.client.Public()
 		return (self.publicClient)
 		# publicClient = connection.connect(service)
 		
 	def connectPrivate(self):	
 		# TODO
-		if (self.service == "bitstamp"):
-			self.privateClient = ""
+		self.privateClient = ""
 		return (self.privateClient)
 		
 	def getVolume(self, currency="btc", alt="usd"):	
 		vol = 0.0
 		while True:
 			try:
-				if (self.service == "bitstamp"):
-					vol = float(self.publicClient.ticker(currency, alt)['volume'])
+				vol = float(self.publicClient.ticker(currency, alt)['volume'])
 			except:
 				#print("Caught exception in getVolume for bitstamp. Retrying...")
 				sleep(2)
@@ -70,13 +68,15 @@ class ConnectBitStamp:
 			
 	def getCurrentPrice(self, currency="btc", alt="usd"):		
 		cp = 0.0
+		ctr = 0
 		while True:
+			ctr += 1
 			try:
-				if (self.service == "bitstamp"):
-					cp = float(self.publicClient.ticker(currency, alt)['last'])
+				cp = float(self.publicClient.ticker(currency, alt)['last'])
 			except:
 				#print("Caught exception in getCurrentPrice for bitstamp. Retrying...")
-				sleep(2)
+				#sleep(1)
+				print(traceback.format_exc())
 				continue
 			break
 			
@@ -86,8 +86,7 @@ class ConnectBitStamp:
 		stamp = 0.0
 		while True:
 			try:
-				if (self.service == "bitstamp"):
-					stamp = float(self.publicClient.ticker(currency, alt)['timestamp'])
+				stamp = float(self.publicClient.ticker(currency, alt)['timestamp'])
 			except:
 				#print ("Caught exception in getCurrentPrice for bitstamp. Retrying...")		
 				sleep(2)

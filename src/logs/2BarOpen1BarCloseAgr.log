@@ -1830,3 +1830,9 @@ Ex: bitstamp SYM: ethusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
 Sun, 06 May 2018 23:44:00
 ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+buy 790.99									Mon, 07 May 2018 00:18:41
+
+Ex: bitstamp SYM: ethusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Tue, 08 May 2018 18:34:21
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
