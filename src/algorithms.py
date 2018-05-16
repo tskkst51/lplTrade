@@ -128,34 +128,36 @@ class Algorithm(object):
 			intraBuy = intraSell = False
 			higherHighs = higherLows = lowerHighs = lowerLows = False
 
-			# Set boolean if intra bar condition is true 
-			if self.intraHigherHighsBars:
-				if self.intraHigherHighs:
-					higherHighs = True
+			# Set boolean if intra bar conditions are true 
+			if self.intraHigherHighsBars and self.intraHigherLowsBars:
+				if self.intraHigherHighs and self.intraHigherLows:
 					print ("HERE1")
-			if self.intraHigherLowsBars:
-				if self.intraHigherLows:
-					higherLows = True
-					print ("HERE2")
-			if self.intraLowerHighsBars:
-				if self.intraLowerHighs:
-					lowerHighs = True
-					print ("HERE3")
-			if self.intraLowerLowsBars:
-				if self.intraLowerLows:
-					lowerLows = True
-					print ("HERE4")
+					intraBuy = True
 
-			if self.aggressiveOpen : 
-				if higherLows:
-					 intraBuy = True
-			elif self.aggressiveClose:
-				if lowerLows:
-					 intraSell = True
-			elif higherHighs and higherLows:
-				 intraBuy = True
-			elif lowerLows and lowerHighs:
-				 intraSell = True
+			elif self.intraHigherHighsBars and not self.intraHigherLowsBars:
+				if self.intraHigherHighs:
+					print ("HERE2")
+					intraBuy = True
+
+			elif self.intraHigherLowsBars and not self.intraHigherHighsBars:
+				if self.intraHigherLows:
+					print ("HERE3")
+					intraBuy = True
+
+			if self.intraLowerLowsBars and self.intraLowerHighsBars:
+				if self.intraLowerLows and self.intraLowerHighs:
+					print ("HERE4")
+					intraSell = True
+
+			elif self.intraLowerLowsBars and not self.intraLowerHighsBars:
+				if self.intraLowerLows:
+					print ("HERE5")
+					intraSell = True
+
+			elif self.intraLowerHighsBars and not self.intraLowerLowsBars:
+				if self.intraLowerHighs:
+					print ("HERE6")
+					intraSell = True
 
 			if not self.inPosition():
 				if currentPrice > self.openBuyLimit and intraBuy:
@@ -168,7 +170,7 @@ class Algorithm(object):
 			if self.inPosition():
 				print ("close buy limit " + str(self.closeBuyLimit))
 				print ("close sell limit " +	str(self.closeSellLimit))
-				if currentPrice < self.closeBuyLimit:
+				if currentPrice > self.closeBuyLimit:
 					return 1
 				if currentPrice > self.closeSellLimit:
 					return 2
@@ -292,6 +294,11 @@ class Algorithm(object):
 
 	# Setter definitions
 
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	def getReverseLogic(self):
+	
+		return self.reverseLogic
+	
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def setCloseBuyStop(self, currentPrice):
 	
@@ -897,8 +904,13 @@ class Algorithm(object):
 
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def getIntraHigherHighs(self):
+		if not self.intraHigherHighsBars:
+			return False
+
 		if len(self.intraHiValues) < self.intraHigherHighsBars:
 			return False
+
+		print (str(len(self.intraHiValues)))
 
 		n = 1
 		highest = self.intraHiValues[0]
@@ -913,6 +925,8 @@ class Algorithm(object):
 
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def getIntraLowerHighs(self):	
+		if not self.intraLowerHighsBars:
+			return False
 		if len(self.intraHiValues) < self.intraLowerHighsBars:
 			return False
 			
@@ -929,6 +943,8 @@ class Algorithm(object):
 
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def getIntraLowerLows(self):	
+		if not self.intraLowerLowsBars:
+			return False
 		if len(self.intraLowValues) < self.intraLowerLowsBars:
 			return False
 			
@@ -945,6 +961,8 @@ class Algorithm(object):
  		
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def getIntraHigherLows(self):	
+		if not self.intraHigherLowsBars:
+			return False
 		if len(self.intraLowValues) < self.intraHigherLowsBars:
 			return False
 

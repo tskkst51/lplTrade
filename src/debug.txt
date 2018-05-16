@@ -1,0 +1,73 @@
+
+
+
+
+Waiting: 25 seconds to start trading!! ...
+INFO: Reading profile data from:
+/Users/tsk/git/lplTrade/src/profiles/2BarOpen1BarClose.json
+
+INFO: Using currency: ethusd
+INFO: Start time: 3 Minute bar chart
+
+INFO: symbol ethusd
+INFO: timeBar 3
+INFO: openBuyBars 5
+INFO: closeBuyBars 1
+INFO: intraHigherHighsBars 0
+INFO: intraLowerLowsBars 0
+INFO: intraLowerHighsBars 1
+INFO: intraHigherLowsBars 1
+719.82
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+719.94
+721.99
+721.99
+721.99
+721.99
+721.99
+721.99
+721.99
+721.99
+721.99
+721.99
+721.99

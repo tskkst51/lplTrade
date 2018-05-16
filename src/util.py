@@ -287,12 +287,13 @@ while True:
 			continue
 
 		# Wait till next bar before trading
-		if not a.inPosition():				
+		if not a.inPosition():
 			if a.getWaitForNextBar() and i < a.getNextBar():
+				print("Waiting for next bar...")
 				continue
 
 		action = a.takeAction(currentPrice, barChart)
-
+		print(str(action))
 
 		# Block trading if we are in a range and range trading is set
 		if a.getInRangeTrade(currentPrice) and not a.inPosition():
@@ -330,14 +331,33 @@ while True:
 		print (str(currentPrice))
 
 		if (action == buyAction or action == sellAction) and not a.inPosition():
-		
+			if a.getReverseLogic():
+				if action == buyAction:
+					print ("OPEN reversal logic applied buy -> sell...")
+					action = sellAction
+					a.openBuyLimit = a.openSellLimit
+				elif action == sellAction:
+					print ("OPEN reversal logic applied sell -> buy...")
+					action = buyAction
+					a.openSellLimit = a.openBuyLimit
+
 			a.openPosition(action, currentPrice, i)
 
 			lg.logIt(action, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
 									
 			triggered = False
 
+
 		if a.inPosition() and not a.getExecuteOnCloseSell():
+			if a.getReverseLogic():
+				if action == buyAction:
+					print ("CLOSE reversal logic applied buy -> sell...")
+					action = sellAction
+					a.closeBuyLimit = a.closeSellLimit
+				elif action == sellAction:
+					print ("CLOSE reversal logic applied sell -> buy...")
+					action = buyAction
+					a.closeSellLimit = a.closeBuyLimit
 			# In a position and still in first bar
 			#if a.getCurrentBar() == i:								
 			#	print ("In first bar...")
@@ -356,15 +376,15 @@ while True:
 			if a.getPositionType() == buyAction:
 				if currentPrice > profitTarget:
 					lg.info("PROFIT TARGET MET: " + str(profitTarget))
-					a.setCloseBuyStop(currentPrice)
-					# triggered = True
+					#a.setCloseBuyStop(currentPrice)
+					triggered = True
 				elif currentPrice < a.getStopPrice():
 					triggered = True
 			elif a.getPositionType() == sellAction:
 				if currentPrice < profitTarget:
 					lg.info("PROFIT TARGET MET: " + str(profitTarget))
-					a.setCloseSellStop(currentPrice)
-					# triggered = True
+					# a.setCloseSellStop(currentPrice)
+					triggered = True
 				elif currentPrice > a.getStopPrice():
 					triggered = True
 							
