@@ -253,15 +253,14 @@ while True:
 						a.openPosition(currentPrice, i)
 						lg.logIt(buy, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
 				if a.getPositionType() == sellAction:
-					if currentPrice >= a.getOpenPrice():
+					if currentPrice <= a.getOpenPrice():
 						a.openPosition(currentPrice, i)
-						lg.logIt(buy, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+						lg.logIt(sell, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
 
 			# Close position on open of previous bar range
 			if a.inPosition() and a.getExecuteOnCloseSell():
 				print("Executing on close...")
 				print("currentPrice	getStopPrice " + str(currentPrice) + " " +	str(a.getStopPrice()))
-
 				if a.getPositionType() == buyAction:
 					if currentPrice <= a.getStopPrice():
 						a.closePosition(currentPrice, i)
@@ -275,6 +274,7 @@ while True:
 			
 			i += 1
 
+			# Keep track of the bars in a position
 			if a.inPosition():
 				a.setBarCount(i)
 
@@ -286,39 +286,42 @@ while True:
 		if not a.ready(i):
 			continue
 
-		# Wait till next bar before trading
+		# Wait till next bar before trading if set
 		if not a.inPosition():
 			if a.getWaitForNextBar() and i < a.getNextBar():
 				print("Waiting for next bar...")
 				continue
 
 		action = a.takeAction(currentPrice, barChart)
-		print(str(action))
 
 		# Block trading if we are in a range and range trading is set
 		if a.getInRangeTrade(currentPrice) and not a.inPosition():
 			continue
 
-		# Detect a reversal pattern in the current bar 
+		# Detect a reversal pattern in the current bar. triggerring when
+		# current bar is > than previous bar
 		if a.inPosition() and a.doReversal():
 			previousBarLen = float(barChart[i-1][cl] - barChart[i-1][op])
 			currentBarLen = barChart[i][op] - currentPrice
+			
 			if previousBarLen < 0.0 and currentBarLen > 0.0:
 				# Bars going different directions
 				continue
-				
+			
+			# Get rid of negative length bars
 			if previousBarLen < 0.0:
 				previousBarLen = previousBarLen * -1
 			if currentBarLen < 0.0:
 				currentBarLen = currentBarLen * -1
 				
+			currentOpen = barChart[i][op]
+
+			currentHi = 0.0
 			if action == buyAction:
 				currentHi = barChart[i][hi]
 			else:
 				currentHi = barChart[i][lo]
 				
-			currentOpen = barChart[i][op]
-			
 			print("barLengths; current: " + str(currentBarLen) + " prev: " + str(previousBarLen))
 			
 			# Add an aditional percentage to currentBarLen for larger moves
@@ -331,15 +334,15 @@ while True:
 		print (str(currentPrice))
 
 		if (action == buyAction or action == sellAction) and not a.inPosition():
-			if a.getReverseLogic():
-				if action == buyAction:
-					print ("OPEN reversal logic applied buy -> sell...")
-					action = sellAction
-					a.openBuyLimit = a.openSellLimit
-				elif action == sellAction:
-					print ("OPEN reversal logic applied sell -> buy...")
-					action = buyAction
-					a.openSellLimit = a.openBuyLimit
+			#if a.getReverseLogic():
+				#if action == buyAction:
+					#print ("OPEN reversal logic applied buy -> sell...")
+					#action = sellAction
+					#a.openBuyLimit = a.openSellLimit
+				#elif action == sellAction:
+					#print ("OPEN reversal logic applied sell -> buy...")
+					#action = buyAction
+					#a.openSellLimit = a.openBuyLimit
 
 			a.openPosition(action, currentPrice, i)
 
@@ -349,15 +352,15 @@ while True:
 
 
 		if a.inPosition() and not a.getExecuteOnCloseSell():
-			if a.getReverseLogic():
-				if action == buyAction:
-					print ("CLOSE reversal logic applied buy -> sell...")
-					action = sellAction
-					a.closeBuyLimit = a.closeSellLimit
-				elif action == sellAction:
-					print ("CLOSE reversal logic applied sell -> buy...")
-					action = buyAction
-					a.closeSellLimit = a.closeBuyLimit
+			#if a.getReverseLogic():
+				#if action == buyAction:
+					#print ("CLOSE reversal logic applied buy -> sell...")
+					#action = sellAction
+					#a.closeBuyLimit = a.closeSellLimit
+				#elif action == sellAction:
+					#print ("CLOSE reversal logic applied sell -> buy...")
+					#action = buyAction
+					#a.closeSellLimit = a.closeBuyLimit
 			# In a position and still in first bar
 			#if a.getCurrentBar() == i:								
 			#	print ("In first bar...")

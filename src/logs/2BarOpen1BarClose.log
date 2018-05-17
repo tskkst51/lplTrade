@@ -1770,3 +1770,245 @@ Ex: bitstamp SYM: ethusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
 Wed, 16 May 2018 00:27:22
 ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: ethusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Wed, 16 May 2018 14:18:15
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Wed, 16 May 2018 18:57:35
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Wed, 16 May 2018 18:59:16
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 2 Open bars: 3 Clase Bars: 2
+Wed, 16 May 2018 19:02:11
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 2 Open bars: 3 Clase Bars: 2
+Wed, 16 May 2018 19:03:45
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 2 Open bars: 3 Clase Bars: 2
+Wed, 16 May 2018 19:06:11
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sell 8280.2							  		Wed, 16 May 2018 19:10:34
+close	8288.4 -8.20 -8.20		2   Wed, 16 May 2018 19:11:44
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 2 Open bars: 3 Clase Bars: 2
+Wed, 16 May 2018 19:13:54
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sell 8292.48							  		Wed, 16 May 2018 19:15:55
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 2 Open bars: 3 Clase Bars: 2
+Wed, 16 May 2018 19:19:27
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 2 Open bars: 3 Clase Bars: 2
+Wed, 16 May 2018 19:20:37
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+buy 8291.48							  		Wed, 16 May 2018 19:21:59
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 2 Open bars: 3 Clase Bars: 2
+Wed, 16 May 2018 19:22:17
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+buy 8301.99							  		Wed, 16 May 2018 19:26:51
+close	8303.66 1.67 1.67		2   Wed, 16 May 2018 19:27:42
+sell 8294.46							  		Wed, 16 May 2018 19:28:41
+close	8311.99 -17.53 -15.86		2   Wed, 16 May 2018 19:29:38
+sell 8299.96							  		Wed, 16 May 2018 19:30:31
+close	8308.24 -8.28 -24.14		6   Wed, 16 May 2018 19:33:15
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 2 Open bars: 3 Clase Bars: 2
+Wed, 16 May 2018 19:34:07
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+buy 8325.94							  		Wed, 16 May 2018 19:37:16
+close	8315.63 -10.31 -10.31		1   Wed, 16 May 2018 19:37:38
+buy 8373.89							  		Wed, 16 May 2018 19:39:13
+close	8354.12 -19.77 -30.08		1   Wed, 16 May 2018 19:39:35
+sell 8327.62							  		Wed, 16 May 2018 19:39:48
+close	8331.65 -4.03 -34.11		2   Wed, 16 May 2018 19:40:44
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 2 Open bars: 3 Clase Bars: 2
+Wed, 16 May 2018 22:11:23
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 5 Clase Bars: 2
+Wed, 16 May 2018 22:17:00
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+buy 8365.84							  		Wed, 16 May 2018 22:37:10
+close	8297.81 -68.03 -68.03		3   Wed, 16 May 2018 22:50:43
+sell 8295.02							  		Wed, 16 May 2018 22:53:01
+close	8306.3 -11.28 -79.31		1   Wed, 16 May 2018 23:05:03
+buy 8313.54							  		Wed, 16 May 2018 23:08:37
+close	8308.53 -5.01 -84.32		1   Wed, 16 May 2018 23:14:41
+buy 8325.42							  		Wed, 16 May 2018 23:33:56
+close	8375.88 50.46 -33.86		9   Thu, 17 May 2018 00:07:55
+buy 8379.92							  		Thu, 17 May 2018 00:10:41
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 5 Clase Bars: 2
+Thu, 17 May 2018 00:58:05
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 5 Clase Bars: 3
+Thu, 17 May 2018 00:59:00
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+buy 8360.01							  		Thu, 17 May 2018 01:24:09
+close	8337.98 -22.03 -22.03		1   Thu, 17 May 2018 01:30:39
+sell 8324.03							  		Thu, 17 May 2018 01:39:14
+close	8372.2 -48.17 -70.20		1   Thu, 17 May 2018 01:50:56
+buy 8366.6							  		Thu, 17 May 2018 01:54:29
+close	8370.26 3.66 -66.54		6   Thu, 17 May 2018 02:15:14
+sell 8375.99							  		Thu, 17 May 2018 02:18:06
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 5 Clase Bars: 3
+Thu, 17 May 2018 02:50:00
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 5 Clase Bars: 3
+Thu, 17 May 2018 02:59:01
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 03:29:38
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 1 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 03:31:28
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 1 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 03:35:03
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 1 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 03:42:25
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 1 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 03:44:22
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sell 8375.89							  		Thu, 17 May 2018 03:49:10
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 1 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 03:53:21
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+buy 8365.4							  		Thu, 17 May 2018 03:56:27
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 1 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 04:06:52
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sell 8364.62							  		Thu, 17 May 2018 04:17:19
+close	8370.43 -5.81 -5.81		2   Thu, 17 May 2018 04:18:15
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 1 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 04:26:58
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sell 8363.81							  		Thu, 17 May 2018 04:28:13
+close	8368.45 -4.64 -4.64		13   Thu, 17 May 2018 04:30:15
+buy 8372.61							  		Thu, 17 May 2018 04:32:17
+close	8371.89 -0.72 -5.36		1   Thu, 17 May 2018 04:32:34
+sell 8362.3							  		Thu, 17 May 2018 04:36:12
+close	8365.45 -3.15 -8.51		16   Thu, 17 May 2018 04:38:39
+buy 8369.0							  		Thu, 17 May 2018 04:39:57
+close	8365.42 -3.58 -12.09		1   Thu, 17 May 2018 04:40:14
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 1 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 04:51:40
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+buy 8365.19							  		Thu, 17 May 2018 04:54:43
+close	8356.69 -8.50 -8.50		2   Thu, 17 May 2018 04:55:09
+sell 8336.2							  		Thu, 17 May 2018 04:57:27
+close	8346.21 -10.01 -18.51		0   Thu, 17 May 2018 04:57:36
+sell 8314.77							  		Thu, 17 May 2018 05:00:04
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 1 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 05:02:50
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 05:27:24
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 05:37:00
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 05:42:40
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 05:58:00
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sell 8232.7							  		Thu, 17 May 2018 08:00:12
+close	8258.69 -25.99 -25.99		0   Thu, 17 May 2018 08:02:55
+sell 8256.91							  		Thu, 17 May 2018 08:28:34
+close	8272.78 -15.87 -41.86		0   Thu, 17 May 2018 08:32:47
+buy 8295.99							  		Thu, 17 May 2018 09:10:44
+close	8293.31 -2.68 -44.54		2   Thu, 17 May 2018 09:20:49
+sell 8268.24							  		Thu, 17 May 2018 10:16:49
+close	8313.6 -45.36 -89.90		4   Thu, 17 May 2018 10:38:23
+sell 8275.42							  		Thu, 17 May 2018 11:47:12
+close	8298.98 -23.56 -113.46		0   Thu, 17 May 2018 11:49:22
+buy 8328.0							  		Thu, 17 May 2018 12:19:33
+close	8307.51 -20.49 -133.95		2   Thu, 17 May 2018 12:27:04
+buy 8304.99							  		Thu, 17 May 2018 13:40:46
+close	8295.0 -9.99 -143.94		0   Thu, 17 May 2018 13:40:53
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 21:50:42
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sell 8151.0							  		Thu, 17 May 2018 21:55:45
+
+Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 3 Clase Bars: 2
+Thu, 17 May 2018 22:03:41
+ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sell 8040.0							  		Thu, 17 May 2018 22:07:10
+close	8036.06 3.94 3.94		11   Thu, 17 May 2018 22:10:34
+buy 8042.99							  		Thu, 17 May 2018 22:11:42
+close	8037.0 -5.99 -2.05		4   Thu, 17 May 2018 22:13:06
+sell 8028.7							  		Thu, 17 May 2018 22:14:31
+close	8000.0 28.70 26.65		14   Thu, 17 May 2018 22:18:47
+buy 8021.82							  		Thu, 17 May 2018 22:19:21
+close	8068.91 47.09 73.74		27   Thu, 17 May 2018 22:27:27
+buy 8069.2							  		Thu, 17 May 2018 22:27:40
+close	8045.51 -23.69 50.05		4   Thu, 17 May 2018 22:29:01
+sell 8054.0							  		Thu, 17 May 2018 22:30:47
+close	8069.34 -15.34 34.71		5   Thu, 17 May 2018 22:32:25
+buy 8069.34							  		Thu, 17 May 2018 22:34:33
