@@ -32,7 +32,7 @@ class Log:
 		print ("SUCCESS: " + self.msg)
 		
 	def header(self, date):
-		self.hdr =		 "ACTION OPEN GAIN/(LOSS)	BARSINPOS TOTAL	TIME"
+		self.hdr =		 "ACTION OPEN GAIN/(LOSS)	TOTAL BARSINPOS	TIME"
 		self.hdrLine = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 		return ("\n" + date + "\n" + self.hdr + "\n" + self.hdrLine + "\n")
 		
