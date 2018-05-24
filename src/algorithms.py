@@ -231,8 +231,8 @@ class Algorithm(object):
 		if self.rangeTradeBars > self.delay:
 			self.delay = self.rangeTradeBars
 			
-		if self.shortTrendBars > self.delay:
-			self.delay = self.shortTrendBars
+		#if self.shortTrendBars > self.delay:
+			#self.delay = self.shortTrendBars
 			
 		#if self.longTrendBars > self.delay:
 			#self.delay = self.longTrendBars

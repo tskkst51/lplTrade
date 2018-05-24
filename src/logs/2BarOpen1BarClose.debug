@@ -1682,3 +1682,6 @@ Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 3 Clase Bars: 1
 Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 3 Clase Bars: 1
 Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 3 Clase Bars: 1
 Ex: bitstamp SYM: btcusd Bar chart (min): 3 Open bars: 3 Clase Bars: 1
+Ex: bitstamp SYM: btcusd Bar chart (min): 15 Open bars: 3 Clase Bars: 1
+Ex: bitstamp SYM: ethusd Bar chart (min): 15 Open bars: 3 Clase Bars: 1
+Ex: bitstamp SYM: ethusd Bar chart (min): 15 Open bars: 3 Clase Bars: 1

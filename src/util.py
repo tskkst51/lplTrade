@@ -188,7 +188,7 @@ elif service == "bitfinex":
 	cn = ConnectBitFinex()
 
 #cn.connectPrivate()
-inBullTrade = inBearTrade = 0
+inBullTrade = inBearTrade = False
 # Main loop. Loop forever or to a.endTime
 while True:
 
@@ -226,7 +226,7 @@ while True:
 		if debug:
 			sleep(4)
 		else:
-			sleep(2)
+			sleep(3)
 		
 		# Next bar
 		if time() >= endBarLoopTime:
@@ -262,6 +262,7 @@ while True:
 			elif a.inPosition() and a.getExecuteOnClose() and a.ready(i):
 				print("Executing on close...")
 				print("currentPrice	gethighestCloseBuyPrice getLowestCloseSellPrice\n" + str(currentPrice) + "        " +	str(a.getHighestCloseBuyPrice()) + "        " +	str(a.getLowestCloseSellPrice()))
+				
 				if a.getPositionType() == buyAction:
 					if currentPrice <= a.getHighestCloseBuyPrice():
 						a.closePosition(currentPrice, i)
