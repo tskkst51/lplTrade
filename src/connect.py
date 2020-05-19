@@ -47,7 +47,7 @@ class ConnectEtrade:
    
       self.symbol = stock
 
-   def setValues(self):
+   def setValues(self, debug=False):
    
       mktData = pyetrade.market.ETradeMarket(self.consumerKey, 
          self.consumerSecret, self.oauthToken, self.oauthSecret, self.dev)
@@ -63,52 +63,54 @@ class ConnectEtrade:
       self.low = sym['QuoteResponse']['QuoteData']['Intraday']['low']   
       self.totalVolume = sym['QuoteResponse']['QuoteData']['Intraday']['totalVolume'] 
       self.dateTimeUTC = sym['QuoteResponse']['QuoteData']['dateTimeUTC']   
-      self.quoteStatus = sym['QuoteResponse']['QuoteData']['quoteStatus']   
-        
+      self.quoteStatus = sym['QuoteResponse']['QuoteData']['quoteStatus']
+
+      if debug:
+         print ("\nask: " + self.ask)
+         print ("bid: " + self.bid)
+         print ("changeClose: " + self.changeClose)
+         print ("changeClosePct: " + self.changeClosePct)
+         print ("companyName: " + self.companyName)
+         print ("high: " + self.high)
+         print ("low: " + self.low)
+         print ("totalVolume: " + self.totalVolume)
+         print ("dateTimeUTC: " + self.dateTimeUTC)
+         print ("quoteStatus: " + self.quoteStatus)
+         print ("")
+  
       return
 
    def getCurrentPrice(self):
-      self.setValues()
       return float(self.ask)
       
    def getCurrentAsk(self):
-      self.setValues()
       return float(self.ask)
 
    def getCurrentBid(self):
-      self.setValues()
       return float(self.bid)
 
    def getChangeClose(self):
-      self.setValues()
       return float(self.changeClose)
 
    def getChangeClosePct(self):
-      self.setValues()
       return float(self.changeClosePct)
 
    def getCompanyName(self):
-      self.setValues()
       return self.companyName
 
    def getHigh(self):
-      self.setValues()
       return float(self.high)
 
    def getLow(self):
-      self.setValues()
       return float(self.low)
 
    def getVolume(self):
-      self.setValues()
       return int(self.totalVolume)
 
    def getDateTimeUTC(self):
-      self.setValues()
       return self.dateTimeUTC
 
    def getQuoteStatus(self):
-      self.setValues()
       return self.quoteStatus
 
    def getTimeStamp(self): 
