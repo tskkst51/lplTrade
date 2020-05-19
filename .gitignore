@@ -2,11 +2,10 @@
 src/.DS_Store
 src/*pyc
 src/.creds
-profiles
 debug
 logs
-src/profiles/et.json
-src/profiles/oauthKeys.txt
+profiles/et.json
+profiles/oauthKeys.txt
 pyetrade/*pyc
 venv/
 __pycache__/
