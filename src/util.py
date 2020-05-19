@@ -42,6 +42,10 @@ parser.add_option("-v", "--verbose",
 	action="store_true", dest="verbose", default=False,
 	help="verbose")
 	
+parser.add_option("-s", "--stock", type="string",
+	action="store", dest="stock", default=False,
+	help="stock to bua/selly: AAPL")
+	
 parser.add_option("-c", "--currency", type="string",
 	action="store", dest="currency", default=False,
 	help="currency to buy: btc... eth... bch...")
@@ -186,6 +190,8 @@ if service == "bitstamp":
 	cn.connectPublic()
 elif service == "bitfinex":
 	cn = ConnectBitFinex()
+elif service == "eTrade":
+	cn = ConnectEtrade()
 
 #cn.connectPrivate()
 inBullTrade = inBearTrade = False

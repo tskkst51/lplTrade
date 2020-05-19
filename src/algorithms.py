@@ -10,74 +10,74 @@ class Algorithm(object):
 	def __init__(self, data):
 	
 		# Required standard settings
-		self.algorithmName = str(data['profile']['algorithm'])
-		self.currency = str(data['profile']['currency'])
-		self.alt = str(data['profile']['alt'])
-		self.openBuyBars = int(data['profile']['openBuyBars'])
-		self.closeBuyBars = int(data['profile']['closeBuyBars'])
-		self.openSellBars = int(data['profile']['openSellBars'])
-		self.closeSellBars = int(data['profile']['closeSellBars'])
-		self.delay = int(data['profile']['tradingDelayBars'])
+		self.algorithmName = str(data['profileTradeData']['algorithm'])
+		self.currency = str(data['profileTradeData']['currency'])
+		self.alt = str(data['profileTradeData']['alt'])
+		self.openBuyBars = int(data['profileTradeData']['openBuyBars'])
+		self.closeBuyBars = int(data['profileTradeData']['closeBuyBars'])
+		self.openSellBars = int(data['profileTradeData']['openSellBars'])
+		self.closeSellBars = int(data['profileTradeData']['closeSellBars'])
+		self.tradingDelayBars = int(data['profileTradeData']['tradingDelayBars'])
 		
 		# Open position using lowest close bars 
 		# Close position using highest open bars 
 		# Make sure their are >= 2 bars when using 
-		self.aggressiveOpen = int(data['profile']['aggressiveOpen'])
-		self.aggressiveClose = int(data['profile']['aggressiveClose'])
+		self.aggressiveOpen = int(data['profileTradeData']['aggressiveOpen'])
+		self.aggressiveClose = int(data['profileTradeData']['aggressiveClose'])
 
 		# Increase the number of bars used determining close price
-		self.increaseCloseBars = int(data['profile']['increaseCloseBars'])
-		self.increaseCloseBarsMax = int(data['profile']['increaseCloseBarsMax'])
-		self.gainTrailStop = int(data['profile']['gainTrailStop'])
+		self.increaseCloseBars = int(data['profileTradeData']['increaseCloseBars'])
+		self.increaseCloseBarsMax = int(data['profileTradeData']['increaseCloseBarsMax'])
+		self.gainTrailStop = int(data['profileTradeData']['gainTrailStop'])
 		
 		# Additional value to add to close triggers
-		self.closePositionFudge = float(data['profile']['closePositionFudge'])
+		self.closePositionFudge = float(data['profileTradeData']['closePositionFudge'])
 		
 		# Don't trade unless out of a range
-		self.rangeTradeBars = int(data['profile']['rangeTradeBars'])
+		self.rangeTradeBars = int(data['profileTradeData']['rangeTradeBars'])
 		
 		# Use intras for determining open/close
-		self.useIntras = int(data['profile']['useIntras'])
-		self.intraHigherHighsBars = int(data['profile']['intraHigherHighsBars'])
-		self.intraLowerLowsBars = int(data['profile']['intraLowerLowsBars'])
-		self.intraLowerHighsBars = int(data['profile']['intraLowerHighsBars'])
-		self.intraHigherLowsBars = int(data['profile']['intraHigherLowsBars'])
+		self.useIntras = int(data['profileTradeData']['useIntras'])
+		self.intraHigherHighsBars = int(data['profileTradeData']['intraHigherHighsBars'])
+		self.intraLowerLowsBars = int(data['profileTradeData']['intraLowerLowsBars'])
+		self.intraLowerHighsBars = int(data['profileTradeData']['intraLowerHighsBars'])
+		self.intraHigherLowsBars = int(data['profileTradeData']['intraHigherLowsBars'])
 		
 		# Wait for next bar before opening a position
-		self.waitForNextBar = int(data['profile']['waitForNextBar'])
+		self.waitForNextBar = int(data['profileTradeData']['waitForNextBar'])
 
 		# Yet to implement.	BELOW HERE HASN"T BEEN IMPLEMENTED yet
 		
-		self.endTradingTime = float(data['profile']['endTradingTime'])
-		self.profitPctTriggerAmt = float(data['profile']['profitPctTriggerAmt'])
+		self.endTradingTime = float(data['profileTradeData']['endTradingTime'])
+		self.profitPctTriggerAmt = float(data['profileTradeData']['profitPctTriggerAmt'])
 		
 		# reverseLogic appears to be best for short term charts and
 		# low liquidity
-		self.reverseLogic = int(data['profile']['reverseLogic'])
-		self.buyNearLow = int(data['profile']['buyNearLow'])
-		self.sellNearHi = int(data['profile']['sellNearHi'])
-		self.aggressiveOpenPct = float(data['profile']['aggressiveOpenPct'])
-		self.aggressiveClosePct = float(data['profile']['aggressiveClosePct'])
-		self.profitPctTrigger = float(data['profile']['profitPctTrigger'])
-		self.profitPctTriggerBar = float(data['profile']['profitPctTriggerBar'])
-		self.reversalPctTrigger = float(data['profile']['reversalPctTrigger'])
-		self.volumeRangeBars = int(data['profile']['volumeRangeBars'])
-		self.amountPct = float(data['profile']['amountPct'])
+		self.reverseLogic = int(data['profileTradeData']['reverseLogic'])
+		self.buyNearLow = int(data['profileTradeData']['buyNearLow'])
+		self.sellNearHi = int(data['profileTradeData']['sellNearHi'])
+		self.aggressiveOpenPct = float(data['profileTradeData']['aggressiveOpenPct'])
+		self.aggressiveClosePct = float(data['profileTradeData']['aggressiveClosePct'])
+		self.profitPctTrigger = float(data['profileTradeData']['profitPctTrigger'])
+		self.profitPctTriggerBar = float(data['profileTradeData']['profitPctTriggerBar'])
+		self.reversalPctTrigger = float(data['profileTradeData']['reversalPctTrigger'])
+		self.volumeRangeBars = int(data['profileTradeData']['volumeRangeBars'])
+		self.amountPct = float(data['profileTradeData']['amountPct'])
 
-		# Use trend indicators ot increase amount to trade
-		self.shortTrendBars = int(data['profile']['shortTrendBars'])
-		self.midTrendBars = int(data['profile']['midTrendBars'])
-		self.longTrendBars = int(data['profile']['longTrendBars'])
-		self.megaTrendBars = int(data['profile']['megaTrendBars'])
+		# Use trend indicators to increase amount to trade
+		self.shortTrendBars = int(data['profileTradeData']['shortTrendBars'])
+		self.midTrendBars = int(data['profileTradeData']['midTrendBars'])
+		self.longTrendBars = int(data['profileTradeData']['longTrendBars'])
+		self.megaTrendBars = int(data['profileTradeData']['megaTrendBars'])
 		
-		self.trendTrigger = int(data['profile']['trendTrigger'])
+		self.trendTrigger = int(data['profileTradeData']['trendTrigger'])
 		
-		self.executeOnClose = int(data['profile']['executeOnClose'])
-		self.executeOnOpen = int(data['profile']['executeOnOpen'])
+		self.executeOnClose = int(data['profileTradeData']['executeOnClose'])
+		self.executeOnOpen = int(data['profileTradeData']['executeOnOpen'])
 
-		self.intraBarMaxCounter = int(data['profile']['intraBarMaxCounter'])
+		self.intraBarMaxCounter = int(data['profileTradeData']['intraBarMaxCounter'])
 
-		self.dynamic = int(data['profile']['dynamic'])
+		self.dynamic = int(data['profileTradeData']['dynamic'])
 		
 		# Class variables
 		self.position = "close"
@@ -138,7 +138,8 @@ class Algorithm(object):
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def algorithm(self, currentPrice, barChart):
 		returnVal = 0
-			
+		
+		# Use intraday bars. e.g. don't wait for next bar to enter trade
 		if self.useIntras:
 			intraBuy = intraSell = False
 			higherHighs = higherLows = lowerHighs = lowerLows = False
@@ -228,16 +229,16 @@ class Algorithm(object):
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def ready(self, currentNumBars):
 	
-		if self.rangeTradeBars > self.delay:
-			self.delay = self.rangeTradeBars
+		if self.rangeTradeBars > self.tradingDelayBars:
+			self.tradingDelayBars = self.rangeTradeBars
 			
-		#if self.shortTrendBars > self.delay:
-			#self.delay = self.shortTrendBars
+		#if self.shortTrendBars > self.tradingDelayBars:
+			#self.tradingDelayBars = self.shortTrendBars
 			
-		#if self.longTrendBars > self.delay:
-			#self.delay = self.longTrendBars
+		#if self.longTrendBars > self.tradingDelayBars:
+			#self.tradingDelayBars = self.longTrendBars
 		
-		if self.delay <= currentNumBars:
+		if self.tradingDelayBars <= currentNumBars:
 			return True
 		else:
 			return False
@@ -576,8 +577,10 @@ class Algorithm(object):
 		self.barCountInPosition = bar - self.currentBar
 
 		if self.useIntras:
-			print ("intraHigherLows intraHigherHighs " + str(self.intraHigherLows) + " " + str(self.intraHigherHighs)) 
-			print ("intraLowerHighs intraLowerLows " + str(self.intraLowerHighs) + " " + str(self.intraLowerLows))
+			print ("intraHigherLows intraHigherHighs " + str(self.intraHigherLows) + 
+			   " " + str(self.intraHigherHighs)) 
+			print ("intraLowerHighs intraLowerLows " + str(self.intraLowerHighs) + 
+			   " " + str(self.intraLowerLows))
 
 		self.setDynamic(currentPrice, bar)
 
@@ -588,6 +591,7 @@ class Algorithm(object):
 		self.setMidTrend("mid", barChart, currentPrice)
 		self.setLongTrend("long", barChart, currentPrice)
 		self.setMegaTrend("mega", barChart, currentPrice)
+		
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def setShortTrend(self, trendType, barChart, currentPrice):
 
@@ -712,6 +716,7 @@ class Algorithm(object):
 			self.megaTrend = trend
 
 		print(trendType + "Trend: " + str(trend))
+		
 		#print("loBarPosition: " + str(loBarPosition))
 		#print("hiBarPosition: " + str(hiBarPosition))
 		#print("highest: " + str(highest))
@@ -721,6 +726,7 @@ class Algorithm(object):
 		#print("pctInTrend: " + str(pctInTrend))
 		#print("pctInTrendRnd: " + str(pctInTrendRnd) + "\n")
 		#print("current: " + str(currentPrice))
+		
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def setOpenBuyLimit(self, barChart):
 	
@@ -971,10 +977,12 @@ class Algorithm(object):
 	def getMegaTrend(self):
 
 		return self.megaTrend
+		
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def getTrendTrigger(self):
 
 		return self.trendTrigger
+		
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def getBearTrend(self):
 		# Bear trend means mid, mega and long trends are bearish

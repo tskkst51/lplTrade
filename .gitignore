@@ -1,4 +1,9 @@
 .virtualenv
 src/.DS_Store
+src/*pyc
+src/.creds
+src/profiles/et.json
+src/profiles/oauthKeys.txt
+pyetrade/*pyc
 venv/
 __pycache__/
