@@ -1,4 +1,5 @@
 import pyetrade
+#import order
 import sys
 import os
 import time
@@ -116,17 +117,6 @@ elif service == "eTrade":
    
    if debug:
       cn.setValues()
-      #print (cn.getCompanyName())
-      #print (cn.getTimeStamp())
-      #print (str(cn.getCurrentPrice()))
-      #print (str(cn.getCurrentBid()))
-      #print (str(cn.getChangeClose()))
-      #print (str(cn.getChangeClosePct()))
-      #print (str(cn.getHigh()))
-      #print (str(cn.getLow()))
-      #print (str(cn.getVolume()))
-      #print (cn.getDateTimeUTC())
-      #print (cn.getQuoteStatus())
          
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup log and debug file based on profileTradeData name and path
@@ -216,9 +206,10 @@ while True:
    # Set the initial loop time from the profileTradeData. Default None
    
    endBarLoopTime = cn.getTimeHrMnSecs() + (100 * timeBar)
-   
+         
+   cn.setValues()
+
    initialVol = cn.getVolume()   
-   
    cp = cn.getCurrentPrice()
 
    # Initialize the bar chart to the current price

@@ -1,6 +1,6 @@
 #!/usr/bin/evn python3
 
-__ALL__ = ["connect", "algorithms", "log", "classes"]
+__ALL__ = ["connect", "algorithms", "log", "classes", "order"]
 
 __title__ = "lplTrade"
 __version__ = "1.0.0"
@@ -17,3 +17,6 @@ from .log import Log  # noqa: F401
 
 from . import classes  # noqa: F401
 from .classes import Time, Price, Trade  # noqa: F401
+
+from . import order  # noqa: F401
+from .order import Order  # noqa: F401

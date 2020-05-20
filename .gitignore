@@ -6,6 +6,8 @@ debug
 logs
 profiles/et.json
 profiles/oauthKeys.txt
+profiles/*debug
+profiles/*log
 pyetrade/*pyc
 venv/
 __pycache__/
