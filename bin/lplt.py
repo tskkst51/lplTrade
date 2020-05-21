@@ -66,6 +66,7 @@ lo = 1
 op = 2
 cl = 3
 vl = 4
+avgVol = 0.0
 
 barChart = [[0.0,0.0,0.0,0.0,0.0]]
 
@@ -135,10 +136,6 @@ lg = lpl.Log()
 debugLog = lpl.Log()
 tm = lpl.Time()
 
-# Delay start time to sync with top of the minute
-if not debug:
-   tm.waitUntilTopMinute()
-
 #if debug:
    #with open(debugPath, "a+", encoding="utf-8") as debugFile:
       #debugFile.write(debugLog.header(tm.now()))
@@ -199,16 +196,23 @@ if int(a.useIntras) > 0:
 
 inBullTrade = inBearTrade = False
 
-print ("\nStart time: " + cn.getTimeStamp())
+# Wait till a couple minutes before market opens
+#while cn.getTimeHrMnSecs() < 92700:
+#   sleep (1)
+
+# Delay start time to sync with top of the minute
+if not debug:
+   tm.waitUntilTopMinute()
 
 while True:
 
-   # Set the initial loop time from the profileTradeData. Default None
-   
+   sleep (0.5)
+   # Set the initial loop time from the profileTradeData. Default None   
    endBarLoopTime = cn.getTimeHrMnSecs() + (100 * timeBar)
-         
+      
+   print ("\nStart time: " + cn.getTimeStamp())
    cn.setValues()
-
+      
    initialVol = cn.getVolume()   
    cp = cn.getCurrentPrice()
 
@@ -217,10 +221,19 @@ while True:
    
    print ("\ninitialize i: " + str(i))
    print ("currentPrice: " + str(cp))
-
+   
+   totalVol = 0
+   if i > 0:
+      for n in range(i):
+         totalVol += barChart[n][vl]
+      avgVol = totalVol / i
+   
+   print ("\nAverage Volume: " + str(avgVol))
+   
    # Loop until each bar has ended
    while True:
       # Load the barChart 
+      cn.setValues()
       vol = cn.getVolume()
       currentPrice = cn.getCurrentPrice()
       stamp = cn.getTimeStamp()
@@ -237,68 +250,74 @@ while True:
       if currentPrice < barChart[i][lo]:
          barChart[i][lo] = currentPrice
                
-      barChart[i][vl] = vol - initialVol      
-      
+      barChart[i][vl] = vol - initialVol
+              
       if debug:
          sleep(2)
       
-      # Next bar      
+      # Next bar
       if cn.getTimeHrMnSecs() >= endBarLoopTime:
          lg.info(tm.now())
          barChart[i][cl] = currentPrice
          
+         # Block trading if we are in a range and range trading is set
+         if a.getPriceInRange(currentPrice) and not a.inPosition():
+            continue
+
          # Open position on close of previous bar range
          if not a.inPosition() and a.getExecuteOnOpen() and a.ready(i):
-         
-            print("Executing on open...")
-            print("currentPrice getOpenBuyPrice getOpenSellPrice\n" + str(currentPrice) + "     " + str(a.getOpenBuyPrice()) + "      " + str(a.getOpenSellPrice()))
-            
+                        
+            print("Open a position on the open of the next bar\n")
+                        
             action = a.takeAction(currentPrice, barChart)
             if action == buyAction:
-               if currentPrice >= a.getOpenBuyPrice():
-                  a.openPosition(buy, currentPrice, i)
-                  
-                  if a.getReverseLogic():
-                     lg.logIt(sell, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
-                     lg.info("revAction: " + str(action))
-                  else: 
-                     lg.logIt(buy, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
-            elif action == sellAction:
-               if currentPrice <= a.getOpenSellPrice():
+               #if currentPrice >= a.getOpenBuyPrice():
+               
+               if a.getReverseLogic():
                   a.openPosition(sell, currentPrice, i)
-                  
-                  if a.getReverseLogic():
-                     lg.logIt(buy, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
-                  else: 
-                     lg.logIt(sell, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+                  lg.logIt(sell, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+                  lg.info("revAction: " + str(action))
+               else: 
+                  lg.logIt(buy, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+               a.openPosition(buy, currentPrice, i)
+            elif action == sellAction:
+               #if currentPrice <= a.getOpenSellPrice():
+               a.openPosition(sell, currentPrice, i)
+               
+               if a.getReverseLogic():
+                  lg.logIt(buy, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+                  a.openPosition(buy, currentPrice, i)
+               else: 
+                  lg.logIt(sell, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
 
          # Close position on open of previous bar range
-         elif a.inPosition() and a.getExecuteOnClose() and a.ready(i):
-            print("Executing on close...")
-            print("currentPrice  gethighestCloseBuyPrice getLowestCloseSellPrice\n" + 
-               str(currentPrice) + "        " +  str(a.getHighestCloseBuyPrice()) + "        " + 
-               str(a.getLowestCloseSellPrice()))
+         elif a.inPosition() and a.getExecuteOnOpen() and a.ready(i):
+         
+            print("Close a position on the open of the next bar\n")
             
-            if a.getPositionType() == buyAction:
-               if currentPrice <= a.getHighestCloseBuyPrice():
-                  a.closePosition(currentPrice, i)
-                  lg.logIt(close, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
-                  triggered = False
-            elif a.getPositionType() == sellAction:
-               if currentPrice >= a.getLowestCloseSellPrice():
-                  a.closePosition(currentPrice, i)
-                  lg.logIt(close, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
-                  triggered = False
+            action = a.takeAction(currentPrice, barChart)
 
+            if action == buyAction:
+               a.closePosition(currentPrice, i)
+               lg.logIt(close, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+               triggered = False
+            elif action == sellAction:
+               a.closePosition(currentPrice, i)
+               lg.logIt(close, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+               triggered = False
+
+         # Print out the bar chart
          ctr = 0
          while ctr <= i:
             lg.info ("BAR: " + str(barChart[ctr]) + " action " + str(action))
             ctr += 1
 
          lg.info ("current price: " + str(currentPrice) + " " + str(action))
+         
          a.setAllLimits(barChart, currentPrice, i)
          barChart.append([0.0,0.0,0.0,0.0,0.0])
 
+         # Increment bar counter
          i += 1
 
          # Keep track of the bars in a position
@@ -367,6 +386,9 @@ while True:
 
       # Detect a reversal pattern in the current bar. triggerring when
       # current bar is > than previous bar
+
+      # REVIEW THIS DO A REVERSAL IN A POSITION AND NOT IN A POSITION
+            
       if a.inPosition() and a.doReversal():
          previousBarLen = float(barChart[i-1][cl] - barChart[i-1][op])
          currentBarLen = barChart[i][op] - currentPrice
@@ -398,7 +420,7 @@ while True:
                a.closePosition(currentPrice, i)
                lg.logIt(close, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
 
-      print (str(currentPrice))
+      #print (str(currentPrice))
 
       if (action == buyAction or action == sellAction) and not a.inPosition() and not a.getExecuteOnOpen():
          #if a.getReverseLogic():
@@ -425,7 +447,11 @@ while True:
          triggered = False
 
 
-      if a.inPosition() and not a.getExecuteOnClose():
+      if a.inPosition() or (not a.getExecuteOnClose() and not a.getExecuteOnClose()):
+         print ("In a position and getExecuteOnClose: " + str(a.getExecuteOnClose()))
+         print ("and getExecuteOnClose() " + a.getExecuteOnClose())
+         print ("both faluse should be False")
+         
          #if a.getReverseLogic():
             #if action == buyAction:
                #print ("CLOSE reversal logic applied buy -> sell...")
@@ -448,16 +474,17 @@ while True:
          #        triggered = True
 
          # In a position and in next bar
-         #else:            
+         #else:
          profitTarget = a.getProfitTarget()
          if a.getPositionType() == buyAction:
-            if currentPrice > profitTarget:
-               lg.info("PROFIT TARGET MET: " + str(profitTarget))
-               #a.setCloseBuyStop(currentPrice)
+            if currentPrice < a.getClosePrice():
                triggered = True
-            #elif currentPrice < a.getHighestCloseBuyPrice():
-            elif currentPrice < a.getClosePrice():
-               triggered = True
+            print (str(a.getProfitPctTrigger()))
+            if a.getProfitPctTrigger() > 0.0:
+               if currentPrice > profitTarget:
+                  lg.info("PROFIT TARGET MET: " + str(profitTarget))
+                  #a.setCloseBuyStop(currentPrice)
+                  triggered = True
          elif a.getPositionType() == sellAction:
             if currentPrice < profitTarget:
                lg.info("PROFIT TARGET MET: " + str(profitTarget))
