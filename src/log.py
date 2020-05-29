@@ -9,6 +9,9 @@ class Log:
       self.verboseFlag = verboseFlag
       self.logPath = logPath
       self.debugPath = debugPath
+      self.wins = 0
+      self.losses = 0
+      self.totalTrades = 0
       
    def debug(self, msg):
       if self.debugFlag:
@@ -17,10 +20,9 @@ class Log:
          #print ("DEBUG: " + msg)
          print (msg)
       
-   def verboseFlag(self, msg):
-      self.msg = msg
+   def verbose(self, msg):
       if self.verboseFlag:
-         print ("verboseFlag: " + self.msg)
+         self.debug (msg)
       
    def error(self, msg):
       self.msg = msg
@@ -33,8 +35,8 @@ class Log:
    def info(self, msg):
       self.msg = msg
       print ("INFO: " + msg)
-      if self.debugFlag:
-         self.debug("INFO: " + msg)
+      #if self.debugFlag:
+      #   self.debug("INFO: " + msg)
       
    def mg(self, msg):
       self.msg = msg
@@ -47,7 +49,7 @@ class Log:
       print ("SUCCESS: " + self.msg)
       
    def header(self, date):
-      self.hdr =      "ACTION OPEN GAIN/(LOSS)  TOTAL BARSINPOS   TIME"
+      self.hdr =      "ACTION OPEN GAIN/(LOSS)  TOTAL WIN %  BARSINPOS   TIME"
       self.hdrLine = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
       return ("\n" + date + "\n" + self.hdr + "\n" + self.hdrLine + "\n")
       
@@ -72,12 +74,21 @@ class Log:
 
       else:
          self.totGain = float(self.priceSet) - float(price)
+         if self.totGain > 0 and self.strAction == "sell":
+            self.wins += 1
+            self.totalTrades += 1
+         elif self.totGain < 0 and self.strAction == "sell":
+            self.losses += 1
+            self.totalTrades += 1
+         elif self.totGain > 0 and self.strAction == "buy":
+            self.losses += 1
+            self.totalTrades += 1
+         elif self.totGain < 0 and self.strAction == "buy":
+            self.wins += 1
+            self.totalTrades += 1
+            
          if self.strAction == "buy":
-            #if self.totGain < 0:
             self.totGain = self.totGain*-1
-         #elif self.strAction == "sell":
-            #if self.totGain < 0:
-            #self.totGain = self.totGain*-1
                
          self.strAction = "close"
          self.priceSet = 0.0
@@ -87,9 +98,18 @@ class Log:
          grandTotal = format(self.grandTotal, '.2f')
 
       if self.strAction == "close":
+         winPct = 0
+         print ("wins: " + str(self.wins) + " losses: " + str(self.losses))
+         
+         if self.wins == 0 or self.losses == 0:
+            print("Not calculating win % ")
+         else:
+            winPct = self.wins / self.totalTrades * 100
+            winPct = float("%2.f" % winPct)
+         
          with open(logPath, "a+", encoding="utf-8") as logFile:
             logFile.write (
-               self.strAction + "   " + str(price) + " " + str(totGain) + " " + str(grandTotal)  + "     " + str(barLength) + "   " + str(time) + "\n")
+               self.strAction + "   " + str(price) + " " + str(totGain) + " " + str(grandTotal)  + " " + str(winPct)  + "     " + str(barLength) + "   " + str(time) + "\n")
       else:
          with open(logPath, "a+", encoding="utf-8") as logFile:
             logFile.write (

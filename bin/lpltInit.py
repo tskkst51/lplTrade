@@ -12,6 +12,9 @@ parser = OptionParser()
 
 parser.add_option("-c"	, "--profileConnectPath", dest="profileConnectPath",
 	help="write report to FILE", metavar="FILE")
+	
+parser.add_option("-b", "--sandBox",
+   action="store_true", dest="sandBox", help="sandBox connection type")
 
 (clOptions, args) = parser.parse_args()
 
@@ -31,17 +34,21 @@ sandConsumerSecret = str(c["profileConnectET"]["sandConsumerSecret"])
 consumerKey = str(c["profileConnectET"]["consumerKey"])
 consumerSecret = str(c["profileConnectET"]["consumerSecret"])
 oauthKeysPath = str(c["profileConnectET"]["oauthKeysPath"])
+sandBox = int(c["profileConnectET"]["sandBox"])
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Overide profileTradeData data with command line data
+
+if clOptions.sandBox:
+   sandBox = 1
 
 # Set the proper consumer keys, sandbox or live
-live = True
-if c["profileConnectET"]["live"] == "False":
-   live = False
-
-if not live:
+if sandBox:
    consumerKey = sandConsumerKey
    consumerSecret = sandConsumerSecret
-
-print ("Live account: " + str(live))
+   print ("Sandbox account is true: " + str(sandBox))
+else:
+   print ("Live account: Sandbox value: " + str(sandBox))
 
 oauth = pyetrade.ETradeOAuth(consumerKey, consumerSecret)
 

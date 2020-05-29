@@ -1,7 +1,6 @@
 # Library for connection to API's
 
 #import bitstamp.client
-#from log import *
 
 from time import sleep
 from time import time
@@ -12,32 +11,39 @@ import traceback
 #from bitfinex.client import Client
 
 class ConnectEtrade:
-   def __init__(self, d, stock="TSLA", debug=False):
+   def __init__(self, d, stock="TSLA", debug=False, verbose=False, clMarketDataType="intraday", sandBox=False, offLine=False):
+   
+      # Set class variables
       self.sandConsumerKey = str(d["profileConnectET"]["sandConsumerKey"])
       self.sandConsumerSecret = str(d["profileConnectET"]["sandConsumerSecret"])
       self.consumerKey = str(d["profileConnectET"]["consumerKey"])
       self.consumerSecret = str(d["profileConnectET"]["consumerSecret"])
       self.oauthKeysPath = str(d["profileConnectET"]["oauthKeysPath"])
+      self.marketDataType = str(d["profileConnectET"]["marketDataType"])
+      self.offLine = int(d["profileConnectET"]["offLine"])
+      self.sandBox = False
+      self.debug = debug
+      self.verbose = verbose
       
-      live = True
-      self.dev = False
+      if offLine:
+         self.offLine = True
+         
+      if clMarketDataType != "intraday":
+         self.marketDataType = clMarketDataType
       
-      if d["profileConnectET"]["live"] == "False":
+      if sandBox:
+         self.sandBox = sandBox
          self.consumerKey = self.sandConsumerKey
          self.consumerSecret = self.sandConsumerSecret
-         live = False
-         self.dev = True
-      
-      if debug:
-         print ("\nLive account: " + str(live))
-      
+            
       with open(self.oauthKeysPath, 'r') as reader:
          lines = reader.readlines()
       
       self.oauthToken = lines[0].strip()
       self.oauthSecret = lines[1].strip()
  
-      if debug:     
+      if self.debug:     
+         print ("\nSandbox account: " + str(self.sandBox))
          print ("\nconsumerKey, consumer secret, auth token, auth secret\n")
          print (self.consumerKey)
          print (self.consumerSecret)
@@ -47,36 +53,84 @@ class ConnectEtrade:
    
       self.symbol = stock
 
-   def setValues(self, debug=False):
+   def setValues(self, barChart, i):
    
-      mktData = pyetrade.market.ETradeMarket(self.consumerKey, 
-         self.consumerSecret, self.oauthToken, self.oauthSecret, self.dev)
+      if self.offLine:
+         self.cp = 33.44
+      
+      # Read data from chart on the disk
+      if self.offLine:
+         self.ask = self.cp
+         self.bid = self.cp - 1   
+         self.changeClose = ""   
+         self.changeClosePct = 0.0   
+         self.companyName = "QQQ"   
+         self.high = barChart[i][0]   
+         self.low = barChart[i][1]   
+         self.op = barChart[i][2]   
+         self.cl = barChart[i][3]   
+         self.totalVolume = barChart[i][4] 
+         self.quoteStatus = "CLOSING"
 
-      sym = mktData.get_quote([self.symbol],"intraday")
-           
-      self.ask = sym['QuoteResponse']['QuoteData']['Intraday']['ask']   
-      self.bid = sym['QuoteResponse']['QuoteData']['Intraday']['bid']   
-      self.changeClose = sym['QuoteResponse']['QuoteData']['Intraday']['changeClose']   
-      self.changeClosePct = sym['QuoteResponse']['QuoteData']['Intraday']['changeClosePercentage']   
-      self.companyName = sym['QuoteResponse']['QuoteData']['Intraday']['companyName']   
-      self.high = sym['QuoteResponse']['QuoteData']['Intraday']['high']   
-      self.low = sym['QuoteResponse']['QuoteData']['Intraday']['low']   
-      self.totalVolume = sym['QuoteResponse']['QuoteData']['Intraday']['totalVolume'] 
-      self.dateTimeUTC = sym['QuoteResponse']['QuoteData']['dateTimeUTC']   
-      self.quoteStatus = sym['QuoteResponse']['QuoteData']['quoteStatus']
-
-      if debug:
-         print ("\nask: " + self.ask)
-         print ("bid: " + self.bid)
-         print ("changeClose: " + self.changeClose)
-         print ("changeClosePct: " + self.changeClosePct)
-         print ("companyName: " + self.companyName)
-         print ("high: " + self.high)
-         print ("low: " + self.low)
-         print ("totalVolume: " + self.totalVolume)
-         print ("dateTimeUTC: " + self.dateTimeUTC)
-         print ("quoteStatus: " + self.quoteStatus)
-         print ("")
+      else: # Live
+         mktData = pyetrade.market.ETradeMarket(self.consumerKey, 
+            self.consumerSecret, self.oauthToken, self.oauthSecret, self.sandBox)
+            
+         sym = mktData.get_quote([self.symbol], self.marketDataType)
+                    
+         if self.marketDataType == "Week52":
+            self.w52Hi = float(sym['QuoteResponse']['QuoteData']['Week52']['high52']) 
+            self.w52Lo = float(sym['QuoteResponse']['QuoteData']['Week52']['low52'])
+            self.lastTrade = float(sym['QuoteResponse']['QuoteData']['Week52']['lastTrade'])
+            self.perf12Months = float(sym['QuoteResponse']['QuoteData']['Week52']['perf12Months'])
+            
+            print ("\n52 week high: " + str(self.w52Hi))
+            print ("52 week low: " + str(self.w52Lo))
+            print ("lastTrade: " + str(self.lastTrade))
+            print ("perf12Months: " + str(self.perf12Months    ) + "\n")
+                  
+         elif self.sandBox:
+            self.ask = sym['QuoteResponse']['QuoteData']['All']['ask'] 
+            self.bid = sym['QuoteResponse']['QuoteData']['All']['bid'] 
+            self.changeClose = sym['QuoteResponse']['QuoteData']['All']['changeClose'] 
+            self.changeClosePct = sym['QuoteResponse']['QuoteData']['All']['changeClosePercentage']   
+            self.companyName = sym['QuoteResponse']['QuoteData']['All']['companyName']   
+            self.high = sym['QuoteResponse']['QuoteData']['All']['high']   
+            self.low = sym['QuoteResponse']['QuoteData']['All']['low']   
+            self.totalVolume = sym['QuoteResponse']['QuoteData']['All']['totalVolume']   
+            self.dateTimeUTC = sym['QuoteResponse']['QuoteData']['dateTimeUTC']   
+            self.dateTime = sym['QuoteResponse']['QuoteData']['dateTime']   
+            self.quoteStatus = sym['QuoteResponse']['QuoteData']['quoteStatus']   
+            
+         else:
+            self.ask = sym['QuoteResponse']['QuoteData']['Intraday']['ask']   
+            self.bid = sym['QuoteResponse']['QuoteData']['Intraday']['bid']   
+            self.changeClose = sym['QuoteResponse']['QuoteData']['Intraday']['changeClose']   
+            self.changeClosePct = sym['QuoteResponse']['QuoteData']['Intraday']['changeClosePercentage']   
+            self.companyName = sym['QuoteResponse']['QuoteData']['Intraday']['companyName']   
+            self.high = sym['QuoteResponse']['QuoteData']['Intraday']['high']   
+            self.low = sym['QuoteResponse']['QuoteData']['Intraday']['low']   
+            self.totalVolume = sym['QuoteResponse']['QuoteData']['Intraday']['totalVolume'] 
+            self.dateTimeUTC = sym['QuoteResponse']['QuoteData']['dateTimeUTC']   
+            self.dateTime = sym['QuoteResponse']['QuoteData']['dateTime']   
+            self.quoteStatus = sym['QuoteResponse']['QuoteData']['quoteStatus']
+   
+         if self.verbose:
+            print ("\nAll Data:" )
+            print (sym)
+            print ("\nask: " + self.ask)
+            print ("bid: " + self.bid)
+            print ("changeClose: " + self.changeClose)
+            print ("changeClosePct: " + self.changeClosePct)
+            print ("companyName: " + self.companyName)
+            print ("high: " + self.high)
+            print ("low: " + self.low)
+            print ("totalVolume: " + self.totalVolume)
+            print ("dateTimeUTC: " + self.dateTimeUTC)
+            print ("dateTime: " + self.dateTime)
+            print ("quoteStatus: " + self.quoteStatus)
+            print ("marketDataType: " + self.marketDataType)
+            print ("")
   
       return
 
@@ -108,7 +162,14 @@ class ConnectEtrade:
       return int(self.totalVolume)
 
    def getDateTimeUTC(self):
-      return self.dateTimeUTC
+      return
+
+   def getChangeClosePct(self):
+      return self.changeClosePct
+      
+   def getDateTime(self):
+      # Fix formatting it causes a compile error
+      return datetime.strptime(self.dateTime, '%H%M%S')
 
    def getQuoteStatus(self):
       return self.quoteStatus
