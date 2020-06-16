@@ -18,7 +18,7 @@ parser.add_option("-b", "--sandBox",
 
 (clOptions, args) = parser.parse_args()
 
-print ("Getting connection profile from :" + clOptions.profileConnectPath + "\n")
+print ("Getting connection profile from : " + clOptions.profileConnectPath + "\n")
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Load profile data
@@ -62,9 +62,9 @@ print("\n" + URL + "\n")
 verifierCode = input("Enter verification code: ")
 tokens = oauth.get_access_token(verifierCode)
 
-print ("\nconsumerKey:" + consumerKey)
-print ("consumerSecret:" + consumerSecret)
-print(tokens)
+print("Generated token/secret:")
+print(tokens['oauth_token'])
+print(tokens['oauth_token_secret'])
 
 with open(oauthKeysPath, 'w') as writer:
    writer.write(tokens['oauth_token'] + "\n")

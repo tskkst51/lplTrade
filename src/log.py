@@ -1,7 +1,11 @@
 # Log class
 
+import random
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Log:
-   def __init__(self, debugFlag, verboseFlag, logPath, debugPath):
+
+   def __init__(self, debugFlag, verboseFlag, logPath, debugPath, offLine):
       self.totGain = 0.0
       self.grandTotal = 0.0
       self.strAction = ""
@@ -12,12 +16,13 @@ class Log:
       self.wins = 0
       self.losses = 0
       self.totalTrades = 0
+      self.offLine = 0
       
    def debug(self, msg):
       if self.debugFlag:
          #with open(self.debugPath, "a+", encoding="utf-8") as debugFile:
          #   debugFile.write (msg + "\n")
-         #print ("DEBUG: " + msg)
+         #print ("DBG : " + msg)
          print (msg)
       
    def verbose(self, msg):
@@ -26,11 +31,11 @@ class Log:
       
    def error(self, msg):
       self.msg = msg
-      print ("ERROR: " + self.msg)
+      print ("ERR : " + self.msg)
       
    def warning(self, msg):
       self.msg = msg
-      print ("WARNING: " + self.msg)
+      print ("WARN: " + self.msg)
       
    def info(self, msg):
       self.msg = msg
@@ -49,7 +54,7 @@ class Log:
       print ("SUCCESS: " + self.msg)
       
    def header(self, date):
-      self.hdr =      "ACTION OPEN GAIN/(LOSS)  TOTAL WIN %  BARSINPOS   TIME"
+      self.hdr =      "ACTION      GAIN  TOTAL WIN %  BARS   TIME"
       self.hdrLine = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
       return ("\n" + date + "\n" + self.hdr + "\n" + self.hdrLine + "\n")
       
@@ -63,7 +68,7 @@ class Log:
       self.time = time
       print ("SUCCESS: " + self.msg)
       
-   def logIt(self, action, price, barLength, time, logPath):
+   def logIt(self, action, price, barLength, time):
       totGain = grandTotal = ""
       if action == 1:
          self.strAction = "buy"
@@ -98,22 +103,25 @@ class Log:
          grandTotal = format(self.grandTotal, '.2f')
 
       if self.strAction == "close":
-         winPct = 0
+         winPct = 0.0
          print ("wins: " + str(self.wins) + " losses: " + str(self.losses))
          
-         if self.wins == 0 or self.losses == 0:
+         if self.wins == 0:
             print("Not calculating win % ")
          else:
-            winPct = self.wins / self.totalTrades * 100
-            winPct = float("%2.f" % winPct)
+            winPct = int(self.wins / self.totalTrades * 100)
+            #winPct = round(winPct, 0)
+            #winPct = round(float("%2.f" % winPct), 0)
          
-         with open(logPath, "a+", encoding="utf-8") as logFile:
+         price = round(float(price), 2)
+         
+         with open(self.logPath, "a+", encoding="utf-8") as logFile:
             logFile.write (
-               self.strAction + "   " + str(price) + " " + str(totGain) + " " + str(grandTotal)  + " " + str(winPct)  + "     " + str(barLength) + "   " + str(time) + "\n")
+               self.strAction + "   " + str(price) + " " + str(totGain) + " " + str(grandTotal)  + " " + str(winPct)  + "%   " + str(barLength) + "     " + str(time) + "\n")
       else:
-         with open(logPath, "a+", encoding="utf-8") as logFile:
+         with open(self.logPath, "a+", encoding="utf-8") as logFile:
             logFile.write (
-               self.strAction + " " + str(price) + "                          " + str(time) + "\n")
+               self.strAction + " " + str(price) + "                             " + str(time) + "\n")
       
       self.totGain = 0.0
       return 1

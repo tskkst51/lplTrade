@@ -7,11 +7,14 @@ from time import time
 from datetime import datetime
 import pyetrade
 import traceback
+import random
 
 #from bitfinex.client import Client
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class ConnectEtrade:
-   def __init__(self, d, stock="TSLA", debug=False, verbose=False, clMarketDataType="intraday", sandBox=False, offLine=False):
+
+   def __init__(self, d, lg, stock="TSLA", debug=False, verbose=False, clMarketDataType="intraday", sandBox=False, setoffLine=False):
    
       # Set class variables
       self.sandConsumerKey = str(d["profileConnectET"]["sandConsumerKey"])
@@ -21,11 +24,20 @@ class ConnectEtrade:
       self.oauthKeysPath = str(d["profileConnectET"]["oauthKeysPath"])
       self.marketDataType = str(d["profileConnectET"]["marketDataType"])
       self.offLine = int(d["profileConnectET"]["offLine"])
+      self.usePricesFromFile = int(d["profileConnectET"]["usePricesFromFile"])
       self.sandBox = False
       self.debug = debug
+      self.ask = 0.0
+      self.hi = 0
+      self.lo = 1
       self.verbose = verbose
+      self.lg = lg
+      self.lastTrade = 0
+      self.dateTimeUTC = "123456"   
+      self.dateTime = self.getTimeHrMnSecs()
+      self.quoteStatus = "CLOSING"
       
-      if offLine:
+      if setoffLine:
          self.offLine = True
          
       if clMarketDataType != "intraday":
@@ -53,31 +65,34 @@ class ConnectEtrade:
    
       self.symbol = stock
 
-   def setValues(self, barChart, i):
-   
-      if self.offLine:
-         self.cp = 33.44
+   def setValues(self, barChart, i, cp):
       
       # Read data from chart on the disk
       if self.offLine:
+         self.cp = float(cp)
          self.ask = self.cp
-         self.bid = self.cp - 1   
+         self.bid = self.cp - 1.0
          self.changeClose = ""   
          self.changeClosePct = 0.0   
-         self.companyName = "QQQ"   
+         self.companyName = "QQQ"
+         
+         self.lg.debug("i: " + str(i))
          self.high = barChart[i][0]   
          self.low = barChart[i][1]   
          self.op = barChart[i][2]   
          self.cl = barChart[i][3]   
          self.totalVolume = barChart[i][4] 
-         self.quoteStatus = "CLOSING"
+         self.quoteStatus = ""
+         self.lastTrade = self.cp
+         self.dateTime = self.getTimeHrMnSecs()
+         self.dateTimeUTC = "123456"   
 
-      else: # Live
+      else: # New data
          mktData = pyetrade.market.ETradeMarket(self.consumerKey, 
             self.consumerSecret, self.oauthToken, self.oauthSecret, self.sandBox)
             
          sym = mktData.get_quote([self.symbol], self.marketDataType)
-                    
+         
          if self.marketDataType == "Week52":
             self.w52Hi = float(sym['QuoteResponse']['QuoteData']['Week52']['high52']) 
             self.w52Lo = float(sym['QuoteResponse']['QuoteData']['Week52']['low52'])
@@ -90,8 +105,8 @@ class ConnectEtrade:
             print ("perf12Months: " + str(self.perf12Months    ) + "\n")
                   
          elif self.sandBox:
-            self.ask = sym['QuoteResponse']['QuoteData']['All']['ask'] 
-            self.bid = sym['QuoteResponse']['QuoteData']['All']['bid'] 
+            self.ask = float(sym['QuoteResponse']['QuoteData']['All']['ask']) 
+            self.bid = flost(sym['QuoteResponse']['QuoteData']['All']['bid']) 
             self.changeClose = sym['QuoteResponse']['QuoteData']['All']['changeClose'] 
             self.changeClosePct = sym['QuoteResponse']['QuoteData']['All']['changeClosePercentage']   
             self.companyName = sym['QuoteResponse']['QuoteData']['All']['companyName']   
@@ -99,12 +114,12 @@ class ConnectEtrade:
             self.low = sym['QuoteResponse']['QuoteData']['All']['low']   
             self.totalVolume = sym['QuoteResponse']['QuoteData']['All']['totalVolume']   
             self.dateTimeUTC = sym['QuoteResponse']['QuoteData']['dateTimeUTC']   
-            self.dateTime = sym['QuoteResponse']['QuoteData']['dateTime']   
+            self.dateTime = sym['QuoteResponse']['QuoteData']['dateTime']
             self.quoteStatus = sym['QuoteResponse']['QuoteData']['quoteStatus']   
             
-         else:
-            self.ask = sym['QuoteResponse']['QuoteData']['Intraday']['ask']   
-            self.bid = sym['QuoteResponse']['QuoteData']['Intraday']['bid']   
+         else: # Live
+            self.ask = float(sym['QuoteResponse']['QuoteData']['Intraday']['ask'])
+            self.bid = float(sym['QuoteResponse']['QuoteData']['Intraday']['bid'])
             self.changeClose = sym['QuoteResponse']['QuoteData']['Intraday']['changeClose']   
             self.changeClosePct = sym['QuoteResponse']['QuoteData']['Intraday']['changeClosePercentage']   
             self.companyName = sym['QuoteResponse']['QuoteData']['Intraday']['companyName']   
@@ -114,6 +129,7 @@ class ConnectEtrade:
             self.dateTimeUTC = sym['QuoteResponse']['QuoteData']['dateTimeUTC']   
             self.dateTime = sym['QuoteResponse']['QuoteData']['dateTime']   
             self.quoteStatus = sym['QuoteResponse']['QuoteData']['quoteStatus']
+            self.lastTrade = float(sym['QuoteResponse']['QuoteData']['Intraday']['lastTrade'])
    
          if self.verbose:
             print ("\nAll Data:" )
@@ -130,12 +146,63 @@ class ConnectEtrade:
             print ("dateTime: " + self.dateTime)
             print ("quoteStatus: " + self.quoteStatus)
             print ("marketDataType: " + self.marketDataType)
+            print ("lastTrade: " + str(self.lastTrade))
             print ("")
   
-      return
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getHighestHiChart(self, bc, numBars):
+
+      if numBars < 1:
+         return 0.0
+
+      maxHi = bc[0][self.hi]
+      
+      n = 1
+      while n < numBars:
+         if bc[n][self.hi] > maxHi:
+            maxHi = bc[n][self.hi]
+         n += 1
+      
+      return maxHi   
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getLowestLoChart(self, bc, numBars):
+
+      if numBars < 1:
+         return 0.0
+
+      maxLo = bc[0][self.lo]
+      
+      n = 1
+      while n < numBars:         
+         if bc[n][self.lo] < maxLo:
+            maxLo = bc[n][self.lo]
+         n += 1
+      
+      return maxLo     
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getMarketDataType(self):
+      return self.marketDataType
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getCurrentPrice(self):
-      return float(self.ask)
+      #f'rounded2    \t {var3:.2f} \n' 
+      
+      return self.ask
+      
+      #return round(self.ask, 2)
+      
+      #return float("%06.2f"%float(self.ask))
+      
+      #return '{%:6.2f}'.format(float(self.ask))
+
+      #return {float(self.ask):.2f}   #.float(self.ask)
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getLastTrade(self):
+      return self.lastTrade
       
    def getCurrentAsk(self):
       return float(self.ask)
@@ -162,14 +229,16 @@ class ConnectEtrade:
       return int(self.totalVolume)
 
    def getDateTimeUTC(self):
-      return
+      return str(self.dateTimeUTC)
 
    def getChangeClosePct(self):
       return self.changeClosePct
       
    def getDateTime(self):
+      return str(self.dateTime)
+      
       # Fix formatting it causes a compile error
-      return datetime.strptime(self.dateTime, '%H%M%S')
+      #return datetime.strptime(self.dateTime, '%H%M%S')
 
    def getQuoteStatus(self):
       return self.quoteStatus
@@ -180,9 +249,26 @@ class ConnectEtrade:
       return (st)
       
    def getTimeHrMnSecs(self): 
+         
       ts = time()
       st = datetime.fromtimestamp(ts).strftime('%H%M%S')
+      
       return (int(st))
+            
+   def adjustTimeToTopMinute(self, time):
+   
+      timeS = str(time)
+      timeLen = len(timeS)
+      
+      self.lg.debug ("timeS: " + timeS)
+      self.lg.debug ("timeLen: " + str(timeLen))
+      
+      if timeS[timeLen - 2] != '0':
+         time = time - (int(timeS[timeLen - 2]) + int(timeS[timeLen - 1]))       
+      elif timeS[timeLen - 1] != '0':
+         time = time - int(timeS[timeLen - 1])
+         
+      return time
       
 class ConnectBitFinex:
    def __init__(self, service="bitstamp"):
@@ -275,6 +361,7 @@ class ConnectBitStamp:
          
       return (stamp)
       
+
 # pusher
 # pusher = Pusher(
 #   app_id='511221',

@@ -3,7 +3,9 @@ Classes module
 '''
 from time import strftime, gmtime, sleep
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Time:
+
 	def __init__(self):
 		tm = ""
 		

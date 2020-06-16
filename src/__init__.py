@@ -1,6 +1,6 @@
 #!/usr/bin/evn python3
 
-__ALL__ = ["connect", "algorithms", "log", "classes", "order", "barchart"]
+__ALL__ = ["connect", "algorithms", "log", "classes", "order", "barchart", "pattern","price"]
 
 __title__ = "lplTrade"
 __version__ = "1.0.0"
@@ -23,3 +23,9 @@ from .order import Order
 
 from . import barchart
 from .barchart import Barchart
+
+from . import pattern
+from .pattern import Pattern
+
+from . import price
+from .price import Price
