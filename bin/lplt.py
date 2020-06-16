@@ -84,7 +84,9 @@ op = 2
 cl = 3
 vl = 4
 bl = 5
-dt = 6
+sH = 6
+sL = 7
+dt = 8
 
 # Keep track of average volume based on all bars
 avgVol = 0

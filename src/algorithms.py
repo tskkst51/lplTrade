@@ -132,7 +132,9 @@ class Algorithm():
       self.cl = 3
       self.vl = 4
       self.bl = 5
-      self.dt = 6
+      self.sH = 6
+      self.sL = 7
+      self.dt = 8
       
       self.close = 0
       self.buy = 1

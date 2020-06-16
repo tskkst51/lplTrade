@@ -16,9 +16,9 @@ class Barchart:
       self.cl = 3
       self.vl = 4
       self.bl = 5
-      self.dt = 6
-      self.sH = 7 # Session Hi
-      self.sL = 8 # Session Li
+      self.sH = 6 # Session Hi
+      self.sL = 7 # Session Li
+      self.dt = 8
       
       self.avgBL = 0.0
       self.avgVol = 0
@@ -30,8 +30,8 @@ class Barchart:
    def init(self):
    
       #      Hi  Lo  Op  Cl  V BarL Date SH SL
-      bc = [[0.0,0.0,0.0,0.0,0,0.0,""]]
-      #bc = [[0.0,0.0,0.0,0.0,0,0.0,"",0,0]]
+      #bc = [[0.0,0.0,0.0,0.0,0,0.0,""]]
+      bc = [[0.0,0.0,0.0,0.0,0,0.0,0,0,""]]
    
       return bc
    
@@ -155,6 +155,8 @@ class Barchart:
             bc[ctr][self.cl] = float(bar[self.cl])
             bc[ctr][self.vl] = int(bar[self.vl])
             bc[ctr][self.bl] = float(bar[self.bl])
+            bc[ctr][self.sH] = str(bar[self.sH])
+            bc[ctr][self.sL] = str(bar[self.sL])
             bc[ctr][self.dt] = str(bar[self.dt])
             ctr += 1
      
@@ -170,13 +172,15 @@ class Barchart:
          bcData.write('%s,' % str(bc[bar][self.cl]))
          bcData.write('%s,' % str(bc[bar][self.vl]))
          bcData.write('%s,' % str(bc[bar][self.bl]))
+         bcData.write('%s,' % str(bc[bar][self.sH]))
+         bcData.write('%s,' % str(bc[bar][self.sL]))
          bcData.write('%s' % bc[bar][self.dt] + "\n")
-                     
+
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def appendBar(self, bc):
    
-      bc.append([0.0,0.0,0.0,0.0,0.0,0,""])
-            
+      bc.append([0.0,0.0,0.0,0.0,0,0.0,0,0,""])
+
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def displayLastNBars(self, bc, numBars):
    
