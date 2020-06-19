@@ -4,7 +4,7 @@
        "algorithms": "default|hiLows|executeOnClose",
        "service": "eTrade",
        "stock": "IWM",
-       "timeBar": "3",
+       "timeBar": "4",
        "currency": "eth",
        "usePricesFromFile": "1",
        "alt": "usd",
