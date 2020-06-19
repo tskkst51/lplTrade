@@ -50,11 +50,12 @@ class ConnectEtrade:
             
       with open(self.oauthKeysPath, 'r') as reader:
          lines = reader.readlines()
-      
-      self.oauthToken = lines[0].strip()
-      self.oauthSecret = lines[1].strip()
+
+      if not setoffLine:
+         self.oauthToken = lines[0].strip()
+         self.oauthSecret = lines[1].strip()
  
-      if self.debug:     
+      if self.debug and not self.offLine:     
          print ("\nSandbox account: " + str(self.sandBox))
          print ("\nconsumerKey, consumer secret, auth token, auth secret\n")
          print (self.consumerKey)
@@ -70,8 +71,8 @@ class ConnectEtrade:
       # Read data from chart on the disk
       if self.offLine:
          self.cp = float(cp)
-         self.ask = self.cp
-         self.bid = self.cp - 1.0
+         self.ask = self.cp + 0.01
+         self.bid = self.cp - 0.01
          self.changeClose = ""   
          self.changeClosePct = 0.0   
          self.companyName = "QQQ"
@@ -82,6 +83,9 @@ class ConnectEtrade:
          self.op = barChart[i][2]   
          self.cl = barChart[i][3]   
          self.totalVolume = barChart[i][4] 
+         self.barLen = barChart[i][5] 
+         self.hiBarValue = barChart[i][6] 
+         self.loBarValue = barChart[i][7] 
          self.quoteStatus = ""
          self.lastTrade = self.cp
          self.dateTime = self.getTimeHrMnSecs()
@@ -192,14 +196,6 @@ class ConnectEtrade:
       
       return self.ask
       
-      #return round(self.ask, 2)
-      
-      #return float("%06.2f"%float(self.ask))
-      
-      #return '{%:6.2f}'.format(float(self.ask))
-
-      #return {float(self.ask):.2f}   #.float(self.ask)
-      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getLastTrade(self):
       return self.lastTrade
@@ -236,9 +232,6 @@ class ConnectEtrade:
       
    def getDateTime(self):
       return str(self.dateTime)
-      
-      # Fix formatting it causes a compile error
-      #return datetime.strptime(self.dateTime, '%H%M%S')
 
    def getQuoteStatus(self):
       return self.quoteStatus
@@ -264,7 +257,7 @@ class ConnectEtrade:
       self.lg.debug ("timeLen: " + str(timeLen))
       
       if timeS[timeLen - 2] != '0':
-         time = time - (int(timeS[timeLen - 2]) + int(timeS[timeLen - 1]))       
+         time = time - int(timeS[timeLen - 2] + timeS[timeLen - 1])     
       elif timeS[timeLen - 1] != '0':
          time = time - int(timeS[timeLen - 1])
          

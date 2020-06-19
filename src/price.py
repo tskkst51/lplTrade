@@ -14,51 +14,57 @@ class Price:
       self.upff = usePricesFromFile
       self.offLine = offLine
       
+      self.priceArr = [0.0]
+      self.idxArr = [0]
+      self.nextBar = 0
       self.priceIdx = 0
-      self.idxFromFile = 0
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def skipFirstBar(self, numPrices):
+
+      i = 0
+      while i < numPrices:
+         if self.idxArr[i] == 0:
+            self.priceIdx += 1
+            i += 1
+         else:
+            break
+            
+      self.nextBar = 2
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getIdxFromFile(self):
+   def initPriceBuffer(self, path):
 
-      return self.idxFromFile
-
+      with open(path, 'r') as pcData:
+         lines = pcData.readlines()
+         
+      i = 0
+      for line in lines:
+         # Skip the first and second index numbers
+         line = line.replace("\n", "")
+         line = line.split(",")
+                     
+         self.priceArr[i] = float(line[0])
+         self.idxArr[i] = int(line[1])
+         self.priceArr.append(0.0)
+         self.idxArr.append(0)
+         i += 1
+      
+      return i
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getNextPrice(self, bc, numBars, path, bar):
+   def getNextPrice(self, bc, numBars, bar):
             
       price = 0
-      
-      with open(path, 'r') as bcData:
-         for line in bcData:
-            line = line.strip("\n")
-            bar = line.split(",")
-
-
-      # Randomly
-      if self.offLine:         
+            
+      # Get price from file, randomly or live
+      if self.offLine:      
+         
          # From file
          if self.upff:
-            if os.path.getsize(path) == 0:
-               return 0.0
-               
-            with open(path, 'r') as pcData:
-               lines = pcData.readlines()
-               
-               ctr = 0
-               for line in lines:
-                  if ctr == self.priceIdx:
-                     line = line.split(",")
-                     price = line[0]
-                     self.idxFromFile = int(line[1])
-                     break
-                  ctr += 1
-                  
-               self.priceIdx += 1
-
-               #price = int(line[0])
-               #self.idxFromFile = int(line[1])
-
-               #price = float(priceLines[self.priceIdx])
-               #priceIdx = float(priceLines[self.priceIdx])
+            price = self.priceArr[self.priceIdx]
+            self.priceIdx += 1
+         # Randomly
          else:
             price = self.getRandomPrice(bc, numBars, bar)
 
@@ -67,6 +73,21 @@ class Price:
          price = self.cn.getCurrentPrice()
          
       return float(price)
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isNextBar(self, bar):
+      
+      if not self.offLine:
+         return 0
+      
+      #if bar == 0:
+      #   print ("self.priceArr self.priceIdx " + str(self.priceArr) + " " + str(self.priceIdx))
+
+      if self.getNextBar() == self.idxArr[self.priceIdx]:
+         self.setNextBar()
+         return 1
+         
+      return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getRandomPrice(self, bc, numBars, bar):
@@ -83,45 +104,13 @@ class Price:
          priceFile.write ('%s' % str(price) + "," + str(bar) + "\n")
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getPriceIdx(self):
-
-      return self.priceIdx
-
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getIdxFromFile(self):
-
-      return self.idxFromFile
-      
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def doNextBar(self, offLine):
+   def setNextBar(self):
    
-      if not offLine:
-         return 0
-         
-      if not self.upff:
-         return 0
+      self.nextBar += 1
 
-      value = self.priceIdx % self.upff
-      
-      print ("self.priceIdx " + str(self.priceIdx)  + " self.upff " + str(self.upff))
-      print ("self.priceIdx mod self.upff " + str(value) )
-      if self.priceIdx % self.upff == 0:
-         return 1
-      
-      return 0
-      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def doNextBarFromFile(self, offLine, bar):
+   def getNextBar(self):
    
-      if not offLine:
-         return 0
-         
-      if not self.upff:
-         return 0
-      
-      if self.getIdxFromFile() > bar:
-         return 1
-
-      return 0
-      
+      return self.nextBar
+            
 # end price

@@ -91,7 +91,6 @@ dt = 8
 # Keep track of average volume based on all bars
 avgVol = 0
 
-#            Hi  Lo  Op  Cl  V BarL Date
 barChart = [[]]
 
 resumedBarCharCtr = 0
@@ -259,8 +258,15 @@ lg.info (a.getAlgorithmMsg())
 
 cn.setValues(barChart, i, currentPrice)
 
+# Fill buffer with prices
+if usePricesFromFile and offLine:
+   numPrices = pr.initPriceBuffer(pricesPath)
+   barIdx = pr.skipFirstBar(numPrices)
+   lg.debug ("number of prices from file: " + str(numPrices))
+
 # Set the initial price
-currentPrice = pr.getNextPrice(barChart, numBars, pricesPath, i)
+if not offLine:
+   currentPrice = pr.getNextPrice(barChart, numBars, i)
 
 # Read in barChart and resume from it
 if resume:
@@ -277,9 +283,6 @@ if resume:
       
       bc.displayLastNBars(barChart, numBars)
 
-      #Start trading right away after a restart
-      #a.setTradingDelayBars(0)
-      
    # If offline then iterate over the stored bar chart
    if usePricesFromFile and offLine:
       i = 0
@@ -288,10 +291,6 @@ if resume:
    else:
       bc.appendBar(barChart)
       a.setAllLimits(d, barChart, currentPrice, i)
-
-if offLine:
-   if usePricesFromFile:
-      loopItr = round(60 / usePricesFromFile)
       
 lg.debug ("Start bar: " + str(i))
 
@@ -312,17 +311,14 @@ while True:
       
    if offLine:
       if usePricesFromFile:
-         #if pr.doNextBar(offLine):
-         if pr.doNextBarFromFile(offLine, i):
-            i += 1
-         if i >= numBars:
+         if i >= numBars - 1:
             exit()
          
    lg.debug ("End bar time : " + str(endBarLoopTime))
    lg.debug ("Start time: " + str(cn.getTimeStamp()))
    
    # Set the prices from the current exchange (Etrade...)
-   cn.setValues(barChart, i, currentPrice)
+   #cn.setValues(barChart, i, currentPrice)
       
    initialVol = cn.getVolume()
    
@@ -336,21 +332,15 @@ while True:
    dirty = 0
             
    # Loop until each bar has ended
+   
    while True:
-      #if offLine:
-      #   sleep(0.33)
       
       # Load the barChart on each iteration
       cn.setValues(barChart, i, currentPrice)
       
       a.unsetActionOnNewBar()
       
-      currentPrice = pr.getNextPrice(barChart, numBars, pricesPath, i)
-
-      #if offLine:
-      #   currentPrice = cn.getRandomPrice(barChart, numBars)
-      #else:
-      #   currentPrice = cn.getCurrentPrice()
+      currentPrice = pr.getNextPrice(barChart, numBars, i)
 
       lg.info ("\nbar: " + str(i))
       lg.info ("HI: " + str(barChart[i][hi]))
@@ -363,18 +353,19 @@ while True:
          bc.loadBeginBar(barChart, currentPrice, cn.getCurrentBid(), tradeVolume, i)
    
       # Halt program at end of trading day
-      if cn.getTimeHrMnSecs() > lastMinuteOfLiveTrading and not a.getAfterMarket():
-         if a.inPosition():
-            a.closePosition(currentPrice)
-         lg.info("Program exiting due to end of day trading")
-         exit()
+      if cn.getTimeHrMnSecs() > lastMinuteOfLiveTrading:
+         if not offLine and not a.getAfterMarket():
+            if a.inPosition():
+               a.closePosition(d, currentPrice, barChart, i)
+            lg.info("Program exiting due to end of day trading")
+            exit()
          
       # Save off the prices so they can be later used in offLine mode
       if usePricesFromFile and not offLine:
             pr.write(pricesPath, currentPrice, i)
          
       # Beginning of next bar
-      if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.doNextBar(offLine):      
+      if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isNextBar(i):      
          
          if dirty:
             continue
@@ -392,13 +383,9 @@ while True:
          if not offLine:
             bc.write(barChart, resumePath, i)
             bc.displayLastNBars(barChart, 20)
-
-         if offLine:
-            bc.setAvgVol(barChart, numBars)
-            bc.setAvgBarLen(barChart, numBars)
-         else:   
-            bc.setAvgVol(barChart, i)
-            bc.setAvgBarLen(barChart, i)
+            
+         bc.setAvgVol(barChart, i)
+         bc.setAvgBarLen(barChart, i)
       
          lg.info ("current price: " + str(currentPrice) + " " + str(positionTaken))
          lg.info ("Average Volume: " + str(bc.getAvgVol()))
@@ -413,12 +400,7 @@ while True:
          a.setActionOnNewBar()
          positionTaken = a.takePosition(d, currentPrice, barChart, i)
 
-         #if not offLine:
-         #   bc.appendBar(barChart)
-
-         if not offLine:
-            # Increment bar counter
-            i += 1
+         i += 1
          
          if not offLine:
             bc.appendBar(barChart)

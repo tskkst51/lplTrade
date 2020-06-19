@@ -6,24 +6,32 @@
 # Set 
 # Configure cron to Wait 10 seconds before checking
 
-user="tsk"
+user=tsk
 userPath=$(echo ~)
-lpltPath="$userPath/git/lplTrade
+lpltPath=$userPath/w/gitWS/lplTrade
+runPath=$userPath/w/gitWS/lplW/bin
 
+py3=$runPath/python3
 
-# Resume running the program from disk
-CMD="py3 $lplyPath/bin/lplt.py -r -c $userPath/profiles/et.json -p $lpltPath/profiles/active.json"
+activate=$(. $HOME/w/gitWS/lplW/bin/activate) || echo activation failed
+CMD="$py3 $lpltPath/bin/lplt.py -o -r -c $userPath/profiles/et.json -p $lpltPath/profiles/active.json"
 
-PROGRAM=basename$($CMD)
+while true ; do
+  echo $CMD
+  PROGRAM=lplt.py
 
-RUNNING=$(ps | grep $PROGRAM | grep -v grep) || exit 1
+  RUNNING=$(ps | grep $PROGRAM | grep -v grep) 
 
-if $RUNNING; then
-   exit 0
-fi
+  echo $RUNNING
+  if $RUNNING; then
+     sleep 5
+     continue
+  fi
 
-#$(CMD) || exit 1
-echo "TESTING CRON" > /tmp/test
+  # Resume running the program from disk
+  $($py3 $lpltPath/bin/lplt.py -o -r -c $userPath/profiles/et.json -p $lpltPath/profiles/active.json > $lpltPath/logs/tempp)
+
+done
 
 exit 0
 

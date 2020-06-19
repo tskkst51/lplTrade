@@ -35,6 +35,8 @@ class Algorithm():
       self.doQuickProfit = int(data['profileTradeData']['doQuickProfit'])
       self.doTrends = int(data['profileTradeData']['doTrends'])
       self.doDynamic = int(data['profileTradeData']['doDynamic'])
+      self.doOnlyBuys = int(data['profileTradeData']['doOnlyBuys'])
+      self.doOnlySells = int(data['profileTradeData']['doOnlySells'])
 
       self.currency = str(data['profileTradeData']['currency'])
       self.alt = str(data['profileTradeData']['alt'])
@@ -177,7 +179,7 @@ class Algorithm():
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def takePosition(self, d, currentPrice, barChart, bar):
    
-      # Determine if position should be opened          
+      # Determine if position should be opened
       action = self.takeAction(d, currentPrice, barChart, bar)
 
       # Open position 
@@ -271,7 +273,7 @@ class Algorithm():
          
          if previousBarLen < 0.0 and currentBarLen > 0.0:
             # Bars going different directions
-            return 0
+            return 1
          
          # Get rid of negative length bars
          if previousBarLen < 0.0:
@@ -295,7 +297,7 @@ class Algorithm():
                self.lg.info("triggered due to reversal detected!")
                self.closePosition(d, currentPrice, bar, barChart)
 
-      return 0
+      return 1
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmReverseBuySell(self):
@@ -389,7 +391,7 @@ class Algorithm():
          return 1
       else:
          if action > 0:
-            return 1
+            return action
          else:
             return 0
       
@@ -410,10 +412,6 @@ class Algorithm():
 
       # Take position on the open if execute on open is set 
       if not self.inPosition():
-         #if self.getBarsInPosition() < self.getTriggerBars():
-         #   print ("No action taken getBarsInPosition() " + str(self.getBarsInPosition()) + " < getTriggerBars :" + str(self.getTriggerBars()))
-         #   return 0
-
          # Open a buy position on the open if closes are sequentially higher
          if self.isHigherCloses():
             self.lg.debug("TAKING POSITION isHigherCloses: ")
@@ -501,7 +499,6 @@ class Algorithm():
 
       # Make decisions when hi's or lo's are breached
       else:
-      
          self.lg.debug ("In Hi Lo: open limits buy " + str(self.openBuyLimit) + " sell " + str(self.openSellLimit))
          self.lg.debug ("In Hi Lo: close limits buy " + str(self.closeBuyLimit) + " sell " + str(self.closeSellLimit))
          self.lg.debug ("currentPrice " + str(currentPrice))
@@ -642,11 +639,11 @@ class Algorithm():
          return
 
       if self.inPosition() and self.doTrends:      
-         if self.isBearMidTrend() and buyOrSell == self.buy:
+         if self.isBearShortTrend() and buyOrSell == self.buy:
             self.lg.debug("not buying on signal, In bearMidTrend " + str(self.isBearMidTrend()))
             return        
          
-         elif self.isBullMidTrend() and buyOrSell == self.sell:
+         elif self.isBullShortTrend() and buyOrSell == self.sell:
             self.lg.debug("not selling on signal, In bullMidTrend " + str(self.isBullMidTrend()))
             return        
          
@@ -667,6 +664,13 @@ class Algorithm():
          
       self.triggerBars = 0
 
+      if self.doOnlyBuys and buyOrSell == self.sell:
+         return
+      
+      if self.doOnlySells and buyOrSell == self.buy:
+         return
+      
+      price = round(price, 2)
       if buyOrSell == self.buy:
          if self.offLine:
             self.lg.logIt(self.buy, str(price), str(self.getBarsInPosition()), bc[bar][self.dt])
@@ -759,6 +763,7 @@ class Algorithm():
       self.barCounter = self.currentBar = 0
       self.highestcloseBuyLimit = 0.0
       self.lowestcloseSellLimit = 0.0
+      self.barCountInPosition = 0
 
       self.resetLimits(d)
       
@@ -1029,7 +1034,7 @@ class Algorithm():
       self.initialStopLoss = posLoss
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getReversalLimit(self, top, open, currentPrice):
+   def getReversalLimit(self, top, op, currentPrice):
    
       if self.reversalPctTrigger == 0.0:
          return False
@@ -1062,7 +1067,7 @@ class Algorithm():
          #  self.topIntraBar = top
          #  return False
 
-         barLen = top - open
+         barLen = top - op
 
       elif self.positionType == self.sell:
          bottom = top
@@ -1075,10 +1080,10 @@ class Algorithm():
          #  self.topIntraBar = top
          #  return False
 
-         barLen = open - top
+         barLen = op - top
 
          print ("top " + str(top))
-         print ("open " + str(open))
+         print ("open " + str(op))
          print ("self.topIntraBar " + str(self.topIntraBar))
          print ("currentPrice " + str(currentPrice))
          print ("self.barCounter " + str(self.barCounter))
@@ -1286,9 +1291,7 @@ class Algorithm():
       loBarPosition = hiBarPosition = i = 0
          
       b = 0       
-      #for i in range(barChartLen):
       while b < bar: 
-      #while bar < barChartLen:
          if barChart[b][self.lo] < lowest:
             lowest = barChart[b][self.lo]
             loBarPosition = b
@@ -1730,7 +1733,7 @@ class Algorithm():
       # Bear trend means mid, long and mega trends are bearish
       
       #if self.getShortTrend() >= 3.0 and self.getMidTrend() >= 3.0 and self.getLongTrend() >= 3.0:
-      if self.getShortTrend() >= 3.5 and self.getShortTrend() <= 4.0:
+      if self.getShortTrend() >= 3.6 and self.getShortTrend() <= 4.0:
          print("IN BEAR SHORT TREND " + str(self.getShortTrend()))
          self.inTrend = 1
          self.unsetShortTrend()
@@ -1744,7 +1747,7 @@ class Algorithm():
    def isBullMidTrend(self):
       
       #if self.getShortTrend() >= 3.0 and self.getMidTrend() >= 3.0 and self.getLongTrend() >= 3.0:
-      if self.getMidTrend() >= 1.5 and self.getMidTrend() <= 2.0:
+      if self.getMidTrend() >= 1.6 and self.getMidTrend() <= 2.0:
          print("IN BULL MID TREND " + str(self.getMidTrend()))
          self.inTrend = 1
          self.unsetMidTrend()
@@ -1756,8 +1759,8 @@ class Algorithm():
    def isBearMidTrend(self):
       
       #if self.getShortTrend() >= 3.0 and self.getMidTrend() >= 3.0 and self.getLongTrend() >= 3.0:
-      if self.getMidTrend() >= 3.5 and self.getMidTrend() <= 4.0:
-         print("IN BULL MID TREND " + str(self.getMidTrend()))
+      if self.getMidTrend() >= 3.6 and self.getMidTrend() <= 4.0:
+         print("IN BEAR MID TREND " + str(self.getMidTrend()))
          self.inTrend = 1
          self.unsetMidTrend()
          return True
@@ -1772,7 +1775,7 @@ class Algorithm():
       
       #if self.getShortTrend() >= 3.0 and self.getMidTrend() >= 3.0 and self.getLongTrend() >= 3.0:
       if self.getMegaTrend() >= 3.0 and self.getMidTrend() >= 3.0 and self.getLongTrend() >= 3.0:
-         print("IN BEAR TREND")
+         print("IN LONG BEAR TREND")
          return True
       
       return False
@@ -1790,7 +1793,7 @@ class Algorithm():
       if midTrend >= 1.0 and midTrend <= 2.0:
          if longTrend >= 1.0 and longTrend <= 2.0:
             if megaTrend >= 1.0 and megaTrend <= 2.0:
-               print("IN BULL TREND")
+               print("IN LONG BULL TREND")
                return True
       
       return False
@@ -2142,7 +2145,7 @@ class Algorithm():
          return 0.0
       
       minPriceLen = len(self.hiValues)
-      minPrice = self.hiValues[0]
+      minPrice = self.lowValues[0]
       
       n = 1
       while n < minPriceLen:         

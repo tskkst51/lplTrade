@@ -68,11 +68,19 @@ class Barchart:
       if bar < 1:
          return
          
-      if bc[bar][self.hi] > bc[bar - 1][self.hi]:
+      if bc[bar][self.hi] > self.sessionHi:
+         self.sessionHi = bc[bar][self.hi]
          bc[bar][self.sH] = 1
          
-      if bc[bar][self.lo] < bc[bar - 1][self.lo]:
-         bc[bar][self.sL] = 0
+      if bc[bar][self.lo] < self.sessionLo:
+         self.sessionLo = bc[bar][self.lo]
+         bc[bar][self.sL] = 1
+         
+#      if bc[bar][self.hi] > bc[bar - 1][self.hi]:
+#         bc[bar][self.sH] = 1
+#         
+#      if bc[bar][self.lo] < bc[bar - 1][self.lo]:
+#         bc[bar][self.sL] = 1
                
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setAvgVol(self, bc, numBars):

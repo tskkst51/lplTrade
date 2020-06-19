@@ -110,8 +110,6 @@ class Log:
             print("Not calculating win % ")
          else:
             winPct = int(self.wins / self.totalTrades * 100)
-            #winPct = round(winPct, 0)
-            #winPct = round(float("%2.f" % winPct), 0)
          
          price = round(float(price), 2)
          
