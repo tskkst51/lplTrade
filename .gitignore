@@ -3,7 +3,6 @@ src/.DS_Store
 src/*pyc
 src/.creds
 debug
-bc
 logs
 profiles/et.json
 profiles/oauthKeys.txt
