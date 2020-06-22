@@ -120,6 +120,7 @@ closeSellBars = int(d["profileTradeData"]["closeSellBars"])
 profileTradeData = str(d["profileTradeData"])
 resume = str(d["profileTradeData"]["resume"])
 usePricesFromFile = int(d["profileTradeData"]["usePricesFromFile"])
+write1_5MinData = int(d["profileTradeData"]["write1_5MinData"])
 
 offLine = int(c["profileConnectET"]["offLine"])
 sandBox = int(c["profileConnectET"]["sandBox"])
@@ -235,7 +236,7 @@ elif service == "eTrade":
 
 a = lpl.Algorithm(d, lg, cn, offLine)
 bc = lpl.Barchart()
-pr = lpl.Price(a, cn, usePricesFromFile, offLine)
+pr = lpl.Price(a, cn, usePricesFromFile, offLine, a.getMarketBeginTime())
 
 barChart = bc.init()
 
@@ -308,6 +309,8 @@ lg.debug ("Start bar: " + str(i))
 if not offLine:
    if a.getPreMarket():
       tm.waitUntilTopMinute()
+   if write1_5MinData:
+      pr.initWrite(pricesPath)
 
 a.setTradingDelayBars()
 
@@ -323,8 +326,13 @@ while True:
    if not offLine:
       sleep(0.2)
       
-   # Set the initial loop time from the minute chart time
-   endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * timeBar))
+   # Set the initial loop time from the profile
+   if write1_5MinData:
+      # Use the 1 min chart and save data for 1-5 min charts
+      timeBar = 1
+      endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * timeBar))
+   else:
+      endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * timeBar))
 
    lg.debug ("time : " + str(cn.getTimeHrMnSecs()))
    lg.debug ("End bar time : " + str(endBarLoopTime))
@@ -381,7 +389,8 @@ while True:
          
       # Save off the prices so they can be later used in offLine mode
       if usePricesFromFile and not offLine:
-            pr.write(pricesPath, currentPrice, i)
+         # Write prices and barcharts for 1-5 min charts
+         pr.write(pricesPath, currentPrice, i, write1_5MinData)
          
       # Beginning of next bar
       if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isNextBar(i):      
