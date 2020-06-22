@@ -36,6 +36,7 @@ class ConnectEtrade:
       self.dateTimeUTC = "123456"   
       self.dateTime = self.getTimeHrMnSecs()
       self.quoteStatus = "CLOSING"
+      self.marketEndTime = 163000
       
       if setoffLine:
          self.offLine = True
@@ -77,7 +78,6 @@ class ConnectEtrade:
          self.changeClosePct = 0.0   
          self.companyName = "QQQ"
          
-         self.lg.debug("i: " + str(i))
          self.high = barChart[i][0]   
          self.low = barChart[i][1]   
          self.op = barChart[i][2]   
@@ -252,10 +252,7 @@ class ConnectEtrade:
    
       timeS = str(time)
       timeLen = len(timeS)
-      
-      self.lg.debug ("timeS: " + timeS)
-      self.lg.debug ("timeLen: " + str(timeLen))
-      
+            
       if timeS[timeLen - 2] != '0':
          time = time - int(timeS[timeLen - 2] + timeS[timeLen - 1])     
       elif timeS[timeLen - 1] != '0':

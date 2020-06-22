@@ -4,6 +4,8 @@ src/*pyc
 src/.creds
 debug
 logs
+prices
+bc
 profiles/et.json
 profiles/oauthKeys.txt
 profiles/*debug

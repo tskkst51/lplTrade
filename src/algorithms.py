@@ -46,7 +46,8 @@ class Algorithm():
       self.closeSellBars = int(data['profileTradeData']['closeSellBars'])
       self.tradingDelayBars = int(data['profileTradeData']['tradingDelayBars'])
       self.afterMarket = int(data['profileTradeData']['afterMarket'])
-      
+      self.marketEndTime = int(data['profileTradeData']['marketEndTime'])
+
       # Open position using lowest close bars 
       # Close position using highest open bars 
       # Make sure their are >= 2 bars when using 
@@ -152,8 +153,10 @@ class Algorithm():
       
       self.hiValues = [0.0] 
       self.lowValues = [0.0]
-      self.openValues = [0.0] 
-      self.closeValues = [0.0]
+      self.openBuyValues = [0.0] 
+      self.closeBuyValues = [0.0]
+      self.openSellValues = [0.0] 
+      self.closeSellValues = [0.0]
 
       self.topIntraBar = 0.0
       self.barCounter = 0
@@ -413,25 +416,25 @@ class Algorithm():
       # Take position on the open if execute on open is set 
       if not self.inPosition():
          # Open a buy position on the open if closes are sequentially higher
-         if self.isHigherCloses():
+         if self.isHigherCloses(self.openBuyBars, self.openBuyValues):
             self.lg.debug("TAKING POSITION isHigherCloses: ")
             return self.buy
    
          # Open a sell position on the open if closes are sequentially lower
-         elif self.isLowerCloses():
+         elif self.isLowerCloses(self.openSellBars, self.openSellValues):
             self.lg.debug("TAKING POSITION isLowerCloses: ")
             return self.sell
          
       else:
          # Close a buy position on the open if closes are sequentially lower
          if self.positionType == self.buy:
-            if self.isLowerCloses():
+            if self.isLowerCloses(self.closeBuyBars, self.closeBuyValues):
                self.lg.debug("CLOSING POSITION isLowerCloses: ")
                return self.buy
    
          # Close a sell position on the open if closes are sequentially higher
          elif self.positionType == self.sell:
-            if self.isHigherCloses():
+            if self.isHigherCloses(self.closeSellBars, self.closeSellValues):
                self.lg.debug("CLOSING POSITION isHigherCloses: ")
                return self.sell
             
@@ -585,10 +588,41 @@ class Algorithm():
    
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def ready(self, currentNumBars):
+   def setTradingDelayBars(self):
    
       if self.doRangeTradeBars > self.tradingDelayBars:
          self.tradingDelayBars = self.doRangeTradeBars
+         
+      if self.openBuyBars > self.tradingDelayBars:
+         self.tradingDelayBars = self.openBuyBars
+         
+      if self.closeBuyBars > self.tradingDelayBars:
+         self.tradingDelayBars = self.closeBuyBars
+         
+      if self.openSellBars > self.tradingDelayBars:
+         self.tradingDelayBars = self.openSellBars
+         
+      if self.closeSellBars > self.tradingDelayBars:
+         self.tradingDelayBars = self.closeSellBars
+         
+      if self.lowerHighsBars > self.tradingDelayBars:
+         self.tradingDelayBars = self.lowerHighsBars
+         
+      if self.higherLowsBars > self.tradingDelayBars:
+         self.tradingDelayBars = self.higherLowsBars
+         
+      if self.lowerLowsBars > self.tradingDelayBars:
+         self.tradingDelayBars = self.lowerLowsBars
+         
+      if self.higherHighsBars > self.tradingDelayBars:
+         self.tradingDelayBars = self.higherHighsBars
+         
+      if self.offLine:
+         self.tradingDelayBars += 1
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def ready(self, currentNumBars):
+   
          
       #if self.shortTrendBars > self.tradingDelayBars:
          #self.tradingDelayBars = self.shortTrendBars
@@ -847,13 +881,6 @@ class Algorithm():
       return self.doOnCloseBar
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setTradingDelayBars(self, numBars):
-   
-      self.tradingDelayBars = numBars + self.tradingDelayBars
-      
-      return
-
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setRevBuySell(self):
       
       self.sell = 1
@@ -938,22 +965,33 @@ class Algorithm():
       if bar < self.closeBuyBars:   
          return
 
-      self.openValues = [0.0] * self.openBuyBars   
-      self.closeValues = [0.0] * self.closeBuyBars  
+      self.openBuyValues = [0.0] * self.openBuyBars   
+      self.closeBuyValues = [0.0] * self.closeBuyBars  
+      self.openSellValues = [0.0] * self.openSellBars   
+      self.closeSellValues = [0.0] * self.closeSellBars  
    
-      print ("self.openBuyBars " + str(self.openBuyBars))
-      print ("self.closeBuyBars " + str(self.closeBuyBars))
       n = 0
-      #for n in range(self.openBuyBars):
       while n < self.openBuyBars:
-         print ("open's: " + str(barChart[bar - n][self.op]))
-         self.openValues[n] = barChart[bar - n][self.op]
+         print ("open buy bars: " + str(barChart[bar - n][self.op]))
+         self.openBuyValues[n] = barChart[bar - n][self.op]
          n += 1
       
       n = 0
       while n < self.closeBuyBars:
-         print ("closes: " + str(barChart[bar - n][self.cl]))
-         self.closeValues[n] = barChart[bar - n][self.cl]
+         print ("close buy bars: " + str(barChart[bar - n][self.cl]))
+         self.closeBuyValues[n] = barChart[bar - n][self.cl]
+         n += 1
+
+      n = 0
+      while n < self.openSellBars:
+         print ("open sell bars: " + str(barChart[bar - n][self.op]))
+         self.openSellValues[n] = barChart[bar - n][self.op]
+         n += 1
+      
+      n = 0
+      while n < self.closeSellBars:
+         print ("close sell bars: " + str(barChart[bar - n][self.cl]))
+         self.closeSellValues[n] = barChart[bar - n][self.cl]
          n += 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1003,15 +1041,15 @@ class Algorithm():
       self.higherLows = self.isHigherLows()
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setOpenCloseValues(self):
+   def setOpenCloseBuyValues(self):
    
       #if not self.doOpensCloses:
       #   return
 
-      self.higherOpens = self.isHigherOpens()
-      self.higherCloses = self.isHigherCloses()
-      self.lowerOpens = self.isLowerOpens()
-      self.lowerCloses = self.isLowerCloses()
+      self.higherOpens = self.isHigherOpens(self.openBuyBars, self.openBuyValues)
+      self.higherCloses = self.isHigherCloses(self.closeBuyBars, self.closeBuyValues)
+      self.lowerOpens = self.isLowerOpens(self.openSellBars, self.openSellValues)
+      self.lowerCloses = self.isLowerCloses(self.closeSellBars, self.closeSellValues)
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setInitialClosePrices(self, currentPrice):
@@ -1159,7 +1197,7 @@ class Algorithm():
       self.setHiLowValues()
 
       self.setOpenCloseLimits(barChart, bar)
-      self.setOpenCloseValues()
+      self.setOpenCloseBuyValues()
       
       self.setBuySellLimits(barChart, bar, currentPrice)
 
@@ -1799,6 +1837,19 @@ class Algorithm():
       return False
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getEndOfMarketTime(self): 
+         
+      return self.marketEndTime
+            
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isMarketExitTime(self): 
+      
+      if self.cn.getTimeHrMnSecs() > self.getEndOfMarketTime():
+         return 1
+      
+      return 0
+            
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getDynamic(self):
 
       return self.doDynamic
@@ -1999,39 +2050,34 @@ class Algorithm():
       return True
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isLowerOpens(self):
+   def isLowerOpens(self, numBars, priceArr):
     
-      if not self.openBuyBars:
-         return False
-        
-      if len(self.openValues) < self.openBuyBars:
+      if len(priceArr) < numBars:
          return False
          
-      lowest = self.openValues[0]
+      lowest = priceArr[0]
       
       n = 1
-      while n < self.openBuyBars:
-         lo = self.openValues[n]
+      while n < numBars:
+         lo = priceArr[n]
          if lo <= lowest:
             return False
-         lowest = self.openValues[n]
+         lowest = priceArr[n]
          n += 1
 
       return True
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isLowerCloses(self):
+   def isLowerCloses(self, numBars, priceArr):
    
-      if not self.closeBuyBars:
-         return False
-        
-      if len(self.closeValues) < self.closeBuyBars:
+      if len(priceArr) < numBars:
          return False
          
-      lowest = self.closeValues[0]
+      lowest = priceArr[0]
+      
       n = 1
-      while n < self.closeBuyBars:
-         lo = self.closeValues[n]
+      while n < numBars:
+         lo = priceArr[n]
          if lo <= lowest:
             return False
          lowest = lo
@@ -2040,44 +2086,39 @@ class Algorithm():
       return True
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isHigherOpens(self):
+   def isHigherOpens(self, numBars, priceArr):
 
-      if not self.openBuyBars:
+      if len(priceArr) < numBars:
          return False
-        
-      if len(self.openValues) < self.openBuyBars:
-         return False
-         
-      highest = self.openValues[0]
+                  
+      highest = priceArr[0]
       
       n = 1
-      while n < self.openBuyBars:
-         hi = self.openValues[n]
+      while n < numBars:
+         hi = priceArr[n]
          if hi >= highest:
             return False
-         highest = self.openValues[n]
+         highest = priceArr[n]
          n += 1
          
       return True
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isHigherCloses(self):
+   def isHigherCloses(self, numBars, priceArr):
    
       if not self.closeBuyBars:
          return False
         
-      if len(self.closeValues) < self.closeBuyBars:
+      if len(self.closeBuyValues) < self.closeBuyBars:
          return False
          
-      highest = self.closeValues[0]
+      highest = priceArr[0]
       
-      print ("Highest " + str(highest))
       n = 1
-      while n < self.closeBuyBars:
-         hi = self.closeValues[n]
+      while n < numBars:
+         hi = priceArr[n]
          print ("Hi " + str(hi))
          if hi >= highest:
-            print ("Hi is >= highest")
             return False
          highest = hi
          n += 1
@@ -2090,14 +2131,13 @@ class Algorithm():
       if bar < numBars:
          return 0.0
       
-      priceArr = len(self.openValues)
-      price = self.closeValues[0]
+      priceArr = len(self.openBuyValues)
+      price = self.closeBuyValues[0]
       
       n = 1
       while n < priceArr:         
-         print ("n " + str(n) + " bar - n  " + str(bar - n))
-         if price < self.closeValues[n]:
-            price = self.closeValues[n]
+         if price < self.closeBuyValues[n]:
+            price = self.closeBuyValues[n]
          n += 1
 
       return float(price)      
@@ -2108,14 +2148,14 @@ class Algorithm():
       if bar < numBars:
          return 0.0
       
-      priceArr = len(self.openValues)
-      price = self.openValues[0]
+      priceArr = len(self.openBuyValues)
+      price = self.openBuyValues[0]
       
       n = 1
       while n < priceArr:         
          print ("n " + str(n) + " bar - n  " + str(bar - n))
-         if price < self.openValues[n]:
-            price = self.openValues[n]
+         if price < self.openBuyValues[n]:
+            price = self.openBuyValues[n]
          n += 1
 
       return float(price)      
@@ -2126,14 +2166,14 @@ class Algorithm():
       if bar < numBars:
          return 0.0
       
-      maxPriceArr = len(self.openValues)
+      maxPriceArr = len(self.openBuyValues)
       maxPrice = self.op[0]
       
       n = 1
       while n < maxPriceArr:         
          print ("n " + str(n) + " bar - n  " + str(bar - n))
-         if maxPrice < self.openValues[n]:
-            maxPrice = self.openValues[n]
+         if maxPrice < self.openBuyValues[n]:
+            maxPrice = self.openBuyValues[n]
          n += 1
 
       return float(maxPrice)      

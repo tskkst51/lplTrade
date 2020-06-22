@@ -24,7 +24,7 @@ class Barchart:
       self.avgVol = 0
       self.priceIdx = 0
       self.sessionHi = 0
-      self.sessionLo = 0
+      self.sessionLo = 99999
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def init(self):
@@ -64,10 +64,7 @@ class Barchart:
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadHiLoBar(self, bc, bar):
-   
-      if bar < 1:
-         return
-         
+            
       if bc[bar][self.hi] > self.sessionHi:
          self.sessionHi = bc[bar][self.hi]
          bc[bar][self.sH] = 1
