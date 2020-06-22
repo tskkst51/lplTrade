@@ -28,8 +28,14 @@ while true ; do
      continue
   fi
 
+  echo Starting lplt...
+
+  # Make sure latest code is in place
+  $HOME/bin/lplt.sh
+
   # Resume running the program from disk
-  $py3 $lpltPath/bin/lplt.py -r -c $HOME/profiles/et.json -p $lpltPath/profiles/active.json > $lpltPath/logs/tempp
+  $py3 $lpltPath/bin/lplt.py -r -c $HOME/profiles/et.json -p $lpltPath/profiles/active.json
+  #$py3 $lpltPath/bin/lplt.py -r -c $HOME/profiles/et.json -p $lpltPath/profiles/active.json > $lpltPath/logs/tempp
 
 done
 

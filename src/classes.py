@@ -25,10 +25,6 @@ class Time:
 		
 		return
 		
-	def waitTillMarketOpens(self):
-		
-		return
-		
 #end Time
 
 class Price:

@@ -131,6 +131,8 @@ numBars = 0
 
 lastMinuteOfLiveTrading = 155930
 
+marketOpen = 0
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Overide profileTradeData data with command line data
 
@@ -304,15 +306,19 @@ lg.debug ("Start bar: " + str(i))
 
 # Start trading at the top of the minute
 if not offLine:
-   tm.waitUntilTopMinute()
+   if a.getPreMarket():
+      tm.waitUntilTopMinute()
 
 a.setTradingDelayBars()
 
 while True:
 
-# Start trading at beginning of day
-#if not a.getAfterMarket():
-#   tm.waitTillMarketOpens()
+   # Start trading at beginning of day
+   if not offLine and not marketOpen:
+      if not a.getPreMarket() and a.getMarketBeginTime():
+         lg.info("Waiting till the market opens...")
+         cn.waitTillMarketOpens(a.getMarketOpenTime())
+         marketOpen += 1
 
    if not offLine:
       sleep(0.2)

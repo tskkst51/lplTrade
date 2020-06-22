@@ -200,47 +200,61 @@ class ConnectEtrade:
    def getLastTrade(self):
       return self.lastTrade
       
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getCurrentAsk(self):
       return float(self.ask)
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getCurrentBid(self):
       return float(self.bid)
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getChangeClose(self):
       return float(self.changeClose)
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getChangeClosePct(self):
       return float(self.changeClosePct)
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getCompanyName(self):
       return self.companyName
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getHigh(self):
       return float(self.high)
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getLow(self):
       return float(self.low)
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getVolume(self):
       return int(self.totalVolume)
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getDateTimeUTC(self):
       return str(self.dateTimeUTC)
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getChangeClosePct(self):
       return self.changeClosePct
       
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getDateTime(self):
       return str(self.dateTime)
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getQuoteStatus(self):
       return self.quoteStatus
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getTimeStamp(self): 
       ts = time()
       st = datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
       return (st)
       
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getTimeHrMnSecs(self): 
          
       ts = time()
@@ -248,6 +262,7 @@ class ConnectEtrade:
       
       return (int(st))
             
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def adjustTimeToTopMinute(self, time):
    
       timeS = str(time)
@@ -259,7 +274,19 @@ class ConnectEtrade:
          time = time - int(timeS[timeLen - 1])
          
       return time
-      
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def waitTillMarketOpens(self, openTime):
+
+      while True:
+         self.lg.debug("Time now: " + str(self.getTimeHrMnSecs()) + " Market start time: " + str(openTime))
+         if self.getTimeHrMnSecs() >= openTime:
+            return
+
+         sleep(1)
+
+      return
+
 class ConnectBitFinex:
    def __init__(self, service="bitstamp"):
       self.service = service

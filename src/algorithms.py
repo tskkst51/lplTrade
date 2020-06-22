@@ -45,8 +45,10 @@ class Algorithm():
       self.openSellBars = int(data['profileTradeData']['openSellBars'])
       self.closeSellBars = int(data['profileTradeData']['closeSellBars'])
       self.tradingDelayBars = int(data['profileTradeData']['tradingDelayBars'])
-      self.afterMarket = int(data['profileTradeData']['afterMarket'])
+      self.marketBeginTime = int(data['profileTradeData']['marketBeginTime'])
       self.marketEndTime = int(data['profileTradeData']['marketEndTime'])
+      self.preMarket = int(data['profileTradeData']['preMarket'])
+      self.afterMarket = int(data['profileTradeData']['afterMarket'])
 
       # Open position using lowest close bars 
       # Close position using highest open bars 
@@ -900,9 +902,24 @@ class Algorithm():
       return self.doReverseBuySell
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getMarketOpenTime(self):
+
+      return self.marketBeginTime
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getAfterMarket(self):
    
       return self.afterMarket
+            
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getPreMarket(self):
+   
+      return self.preMarket
+            
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getMarketBeginTime(self):
+   
+      return self.marketBeginTime
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def doReverseBuySell(self):
