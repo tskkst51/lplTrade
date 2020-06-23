@@ -19,10 +19,16 @@ class Price:
       self.idxArr = [0]
       self.nextBar = 0
       self.priceIdx = 0
+      
       self.minBar2 = 2
       self.minBar3 = 3
       self.minBar4 = 4
       self.minBar5 = 5
+      
+      self.next2mBar = 0
+      self.next3mBar = 0
+      self.next4mBar = 0
+      self.next5mBar = 0
       
       self.min2Ctr = 0
       self.min3Ctr = 0
@@ -108,52 +114,80 @@ class Price:
       return round(random.uniform(lo, hi), 2)      
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def write2m(self, path, price, bar):
-      
+   def write2m(self, price, bar):
+                     
       # Start time + 2 minutes
-      if bar % self.minBar2 == 0:
-         self.min2Ctr += 1
-
+      
+      if bar == 0:
          with open(self.path2m, "a+", encoding="utf-8") as priceFile:
             priceFile.write ('%s' % str(price) + "," + str(self.min2Ctr) + "\n")
-
+      else:
+         if (bar % self.minBar2) == 0:
+            if bar != self.next2mBar:
+               self.min2Ctr += 1
+               self.next2mBar = bar
+               
+         with open(self.path2m, "a+", encoding="utf-8") as priceFile:
+            priceFile.write ('%s' % str(price) + "," + str(self.min2Ctr) + "\n")
+            
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def write3m(self, path, price, bar, allMinutes):
+   def write3m(self, price, bar):
    
       # Start time + 3 minutes
-      if bar % self.minBar3 == 0:
-         self.min3Ctr += 1
-
+      
+      if bar == 0:
+         with open(self.path3m, "a+", encoding="utf-8") as priceFile:
+            priceFile.write ('%s' % str(price) + "," + str(self.min3Ctr) + "\n")
+      else:
+         if (bar % self.minBar3) == 0:
+            if bar != self.next3mBar:
+               self.min3Ctr += 1
+               self.next3mBar = bar
+               
          with open(self.path3m, "a+", encoding="utf-8") as priceFile:
             priceFile.write ('%s' % str(price) + "," + str(self.min3Ctr) + "\n")
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def write4m(self, path, price, bar, allMinutes):
+   def write4m(self, price, bar):
 
       # Start time + 4 minutes
-      if bar % self.minBar4 == 0:
-         self.min4Ctr += 1
-
+      
+      if bar == 0:
+         with open(self.path4m, "a+", encoding="utf-8") as priceFile:
+            priceFile.write ('%s' % str(price) + "," + str(self.min4Ctr) + "\n")
+      else:
+         if (bar % self.minBar4) == 0:
+            if bar != self.next4mBar:
+               self.min4Ctr += 1
+               self.next4mBar = bar
+               
          with open(self.path4m, "a+", encoding="utf-8") as priceFile:
             priceFile.write ('%s' % str(price) + "," + str(self.min4Ctr) + "\n")
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def write5m(self, path, price, bar, allMinutes):
+   def write5m(self, price, bar):
 
       # Start time + 5 minutes
-      if bar % self.minBar5 == 0:
-         self.min5Ctr += 1
-
+      
+      if bar == 0:
+         with open(self.path5m, "a+", encoding="utf-8") as priceFile:
+            priceFile.write ('%s' % str(price) + "," + str(self.min5Ctr) + "\n")
+      else:
+         if (bar % self.minBar5) == 0:
+            if bar != self.next5mBar:
+               self.min5Ctr += 1
+               self.next5mBar = bar
+               
          with open(self.path5m, "a+", encoding="utf-8") as priceFile:
             priceFile.write ('%s' % str(price) + "," + str(self.min5Ctr) + "\n")
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def initWrite(self, path):
                   
-      self.path2m = path.replace("active_", "active_2m_")
-      self.path3m = path.replace("active_", "active_3m_")
-      self.path4m = path.replace("active_", "active_4m_")
-      self.path5m = path.replace("active_", "active_5m_")
+      self.path2m = path.replace("active", "active_2m")
+      self.path3m = path.replace("active", "active_3m")
+      self.path4m = path.replace("active", "active_4m")
+      self.path5m = path.replace("active", "active_5m")
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def write(self, path, price, bar, doAllMinutes):
@@ -161,7 +195,7 @@ class Price:
       with open(path, "a+", encoding="utf-8") as priceFile:
          priceFile.write ('%s' % str(price) + "," + str(bar) + "\n")
          
-      if doAllMinutes and bar > 0:
+      if doAllMinutes:
          self.write2m(price, bar)
          self.write3m(price, bar)
          self.write4m(price, bar)

@@ -12,6 +12,7 @@ from time import time, sleep
 import pathlib
 import pickle
 import simplejson
+from shutil import copyfile
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Parse Command Line Options
@@ -60,6 +61,10 @@ parser.add_option("-u", "--currency", type="string",
 
 parser.add_option("-v", "--verbose",
    action="store_true", dest="verbose", help="verbose")
+   
+parser.add_option("-t", "--timeBar", type="string",
+   action="store", dest="timeBar", default=False,
+   help="time bar: 1 5 10 minute...")
    
 (clOptions, args) = parser.parse_args()
 
@@ -164,21 +169,38 @@ if clOptions.marketDataType:
 if clOptions.offLine:
    offLine = clOptions.offLine
 
+if clOptions.timeBar:
+   timeBar = clOptions.timeBar
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup log and debug file based on profileTradeData name and path
 # Write header data to logs
 
 tm = lpl.Time()
 
+# Create minute profile variables
+
+profile1m = clOptions.profileTradeDataPath
+profile2m = clOptions.profileTradeDataPath.replace("active", "active_2m")
+profile3m = clOptions.profileTradeDataPath.replace("active", "active_3m")
+profile4m = clOptions.profileTradeDataPath.replace("active", "active_4m")
+profile5m = clOptions.profileTradeDataPath.replace("active", "active_5m")
+
+print (profile1m)
+print (profile2m)
+print (profile3m)
+print (profile4m)
+print (profile5m)
+
 logPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
 debugPath = clOptions.profileTradeDataPath.replace("profiles", "debug")
 barChartPath = clOptions.profileTradeDataPath.replace("profiles", "bc")
 pricesPath = clOptions.profileTradeDataPath.replace("profiles", "prices")
 
-logPath = logPath.replace(".json", "_")
-debugPath = debugPath.replace(".json", "_")
-barChartPath = barChartPath.replace(".json", "_")
-pricesPath = pricesPath.replace(".json", "_")
+logPath = logPath.replace(".json", "")
+debugPath = debugPath.replace(".json", "")
+barChartPath = barChartPath.replace(".json", "")
+pricesPath = pricesPath.replace(".json", "")
 
 logPath += stock + ".log"
 debugPath += stock + ".debug"
@@ -311,17 +333,19 @@ if not offLine:
       tm.waitUntilTopMinute()
    if write1_5MinData:
       pr.initWrite(pricesPath)
+      bc.initWrite(barChartPath)
 
 a.setTradingDelayBars()
 
 while True:
 
    # Start trading at beginning of day
-   if not offLine and not marketOpen:
-      if not a.getPreMarket() and a.getMarketBeginTime():
-         lg.info("Waiting till the market opens...")
-         cn.waitTillMarketOpens(a.getMarketOpenTime())
-         marketOpen += 1
+   if not a.getPreMarket():
+      if not offLine and not marketOpen:
+         if a.getMarketBeginTime():
+            lg.info("Waiting till the market opens...")
+            cn.waitTillMarketOpens(a.getMarketOpenTime())
+            marketOpen += 1
 
    if not offLine:
       sleep(0.2)
@@ -409,7 +433,7 @@ while True:
          # Print out the bar chart,\. Only print the last 20 bars
                   
          if not offLine:
-            bc.write(barChart, barChartPath, i)
+            bc.write(barChart, barChartPath, i, write1_5MinData)
             bc.displayLastNBars(barChart, 20)
             
          bc.setAvgVol(barChart, i)
@@ -436,7 +460,7 @@ while True:
          # Keep track of the bars in a position
          if a.inPosition():
             a.setBarInPositionCount()
-
+            
          # End of bar reached. Done with on close processing
          break
       
@@ -461,8 +485,14 @@ while True:
    # Stop trading at the end of he day
    if not offLine and not a.getAfterMarket():
       if a.inPosition():
-         if isMarketExitTime():
+         if a.isMarketExitTime():
             a.closePosition(d, currentPrice, barChart, i)
+      # Create the 1 - 5 min profiles so they can be iterated later
+      if write1_5MinData:
+         copyfile(profile1m, profile2m)
+         copyfile(profile1m, profile3m)
+         copyfile(profile1m, profile4m)
+         copyfile(profile1m, profile5m)
 
       # th = Thread(a.logIt(action, currentPrice, str(a.getBarsInPosition()), tm.now(), logPath))
       # Write to log file

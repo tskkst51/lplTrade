@@ -25,7 +25,12 @@ class Barchart:
       self.priceIdx = 0
       self.sessionHi = 0
       self.sessionLo = 99999
-
+      
+      self.minBar2 = 2
+      self.minBar3 = 3
+      self.minBar4 = 4
+      self.minBar5 = 5
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def init(self):
    
@@ -168,9 +173,87 @@ class Barchart:
       return ctr
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def write(self, bc, path, bar):
+   def initWrite(self, path):
+                  
+      self.path2m = path.replace("active", "active_2m")
+      self.path3m = path.replace("active", "active_3m")
+      self.path4m = path.replace("active", "active_4m")
+      self.path5m = path.replace("active", "active_5m")
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def write(self, bc, path, bar, doAllMinutes):
    
       with open(path, 'a+') as bcData:
+         bcData.write('%s,' % str(bc[bar][self.hi]))
+         bcData.write('%s,' % str(bc[bar][self.lo]))
+         bcData.write('%s,' % str(bc[bar][self.op]))
+         bcData.write('%s,' % str(bc[bar][self.cl]))
+         bcData.write('%s,' % str(bc[bar][self.vl]))
+         bcData.write('%s,' % str(bc[bar][self.bl]))
+         bcData.write('%s,' % str(bc[bar][self.sH]))
+         bcData.write('%s,' % str(bc[bar][self.sL]))
+         bcData.write('%s' % bc[bar][self.dt] + "\n")
+         
+      if (doAllMinutes):
+         if bar == 0:
+            return
+         if (bar % self.minBar2) == 0:
+            self.write2m(bc, bar)
+         if (bar % self.minBar3) == 0:
+            self.write3m(bc, bar)
+         if (bar % self.minBar4) == 0:
+            self.write4m(bc, bar)
+         if (bar % self.minBar5) == 0:
+            self.write5m(bc, bar)
+
+      return
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def write2m(self, bc, bar):
+         
+      with open(self.path2m, 'a+') as bcData:
+         bcData.write('%s,' % str(bc[bar][self.hi]))
+         bcData.write('%s,' % str(bc[bar][self.lo]))
+         bcData.write('%s,' % str(bc[bar][self.op]))
+         bcData.write('%s,' % str(bc[bar][self.cl]))
+         bcData.write('%s,' % str(bc[bar][self.vl]))
+         bcData.write('%s,' % str(bc[bar][self.bl]))
+         bcData.write('%s,' % str(bc[bar][self.sH]))
+         bcData.write('%s,' % str(bc[bar][self.sL]))
+         bcData.write('%s' % bc[bar][self.dt] + "\n")
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def write3m(self, bc, bar):
+   
+      with open(self.path3m, 'a+') as bcData:
+         bcData.write('%s,' % str(bc[bar][self.hi]))
+         bcData.write('%s,' % str(bc[bar][self.lo]))
+         bcData.write('%s,' % str(bc[bar][self.op]))
+         bcData.write('%s,' % str(bc[bar][self.cl]))
+         bcData.write('%s,' % str(bc[bar][self.vl]))
+         bcData.write('%s,' % str(bc[bar][self.bl]))
+         bcData.write('%s,' % str(bc[bar][self.sH]))
+         bcData.write('%s,' % str(bc[bar][self.sL]))
+         bcData.write('%s' % bc[bar][self.dt] + "\n")
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def write4m(self, bc, bar):
+   
+      with open(self.path4m, 'a+') as bcData:
+         bcData.write('%s,' % str(bc[bar][self.hi]))
+         bcData.write('%s,' % str(bc[bar][self.lo]))
+         bcData.write('%s,' % str(bc[bar][self.op]))
+         bcData.write('%s,' % str(bc[bar][self.cl]))
+         bcData.write('%s,' % str(bc[bar][self.vl]))
+         bcData.write('%s,' % str(bc[bar][self.bl]))
+         bcData.write('%s,' % str(bc[bar][self.sH]))
+         bcData.write('%s,' % str(bc[bar][self.sL]))
+         bcData.write('%s' % bc[bar][self.dt] + "\n")
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def write5m(self, bc, bar):
+   
+      with open(self.path5m, 'a+') as bcData:
          bcData.write('%s,' % str(bc[bar][self.hi]))
          bcData.write('%s,' % str(bc[bar][self.lo]))
          bcData.write('%s,' % str(bc[bar][self.op]))
