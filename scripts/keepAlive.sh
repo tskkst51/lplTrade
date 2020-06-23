@@ -19,9 +19,9 @@ $shScript
 
 while true ; do
   echo $cmd
-  PROGRAM=lplt.py
+  program=lplt.py
 
-  ps | grep -q $PROGRAM | grep -v grep
+  ps | grep -q $program | grep -v grep
 
   if [ $? == 0 ]; then
      sleep 5
@@ -35,7 +35,6 @@ while true ; do
 
   # Resume running the program from disk
   $py3 $lpltPath/bin/lplt.py -r -c $HOME/profiles/et.json -p $lpltPath/profiles/active.json
-  #$py3 $lpltPath/bin/lplt.py -r -c $HOME/profiles/et.json -p $lpltPath/profiles/active.json > $lpltPath/logs/tempp
 
 done
 

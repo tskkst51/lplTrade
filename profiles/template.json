@@ -9,7 +9,7 @@
        "usePricesFromFile": "1",
        "alt": "usd",
        "afterMarket": "0",
-       "preMarket": "1",
+       "preMarket": "0",
        "marketEndTime": "155940",
        "marketBeginTime": "093000",
        "write1_5MinData": "1",
