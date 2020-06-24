@@ -707,6 +707,7 @@ class Algorithm():
          return
       
       price = round(price, 2)
+      
       if buyOrSell == self.buy:
          if self.offLine:
             self.lg.logIt(self.buy, str(price), str(self.getBarsInPosition()), bc[bar][self.dt])

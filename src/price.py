@@ -184,10 +184,10 @@ class Price:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def initWrite(self, path):
                   
-      self.path2m = path.replace("active", "active_2m")
-      self.path3m = path.replace("active", "active_3m")
-      self.path4m = path.replace("active", "active_4m")
-      self.path5m = path.replace("active", "active_5m")
+      self.path2m = path.replace("active", "active2m")
+      self.path3m = path.replace("active", "active3m")
+      self.path4m = path.replace("active", "active4m")
+      self.path5m = path.replace("active", "active5m")
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def write(self, path, price, bar, doAllMinutes):

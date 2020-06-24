@@ -487,12 +487,12 @@ while True:
       if a.inPosition():
          if a.isMarketExitTime():
             a.closePosition(d, currentPrice, barChart, i)
-      # Create the 1 - 5 min profiles so they can be iterated later
-      if write1_5MinData:
-         copyfile(profile1m, profile2m)
-         copyfile(profile1m, profile3m)
-         copyfile(profile1m, profile4m)
-         copyfile(profile1m, profile5m)
+            # Create the 1 - 5 min profiles so they can be iterated later
+            if write1_5MinData:
+               copyfile(profile1m, profile2m)
+               copyfile(profile1m, profile3m)
+               copyfile(profile1m, profile4m)
+               copyfile(profile1m, profile5m)
 
       # th = Thread(a.logIt(action, currentPrice, str(a.getBarsInPosition()), tm.now(), logPath))
       # Write to log file

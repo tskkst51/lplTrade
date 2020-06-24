@@ -2,6 +2,7 @@
 src/.DS_Store
 src/*pyc
 src/.creds
+test
 debug
 logs
 prices
