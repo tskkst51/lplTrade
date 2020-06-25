@@ -24,7 +24,7 @@
        "doHiLoOnClose": "0",
        "doHiLoOnOpen": "0",
        "doReversalPattern": "0",
-       "doTrends": "0",
+       "doTrends": "1",
        "doQuickProfit": "1",
        "doQuickReversal": "0",
        "doReverseBuySell": "0",

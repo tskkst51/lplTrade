@@ -179,34 +179,28 @@ if clOptions.timeBar:
 tm = lpl.Time()
 
 # Create minute profile variables
-
 profile1m = clOptions.profileTradeDataPath
-profile2m = clOptions.profileTradeDataPath.replace("active", "active_2m")
-profile3m = clOptions.profileTradeDataPath.replace("active", "active_3m")
-profile4m = clOptions.profileTradeDataPath.replace("active", "active_4m")
-profile5m = clOptions.profileTradeDataPath.replace("active", "active_5m")
-
-print (profile1m)
-print (profile2m)
-print (profile3m)
-print (profile4m)
-print (profile5m)
+profile2m = clOptions.profileTradeDataPath.replace("active", "active2m")
+profile3m = clOptions.profileTradeDataPath.replace("active", "active3m")
+profile4m = clOptions.profileTradeDataPath.replace("active", "active4m")
+profile5m = clOptions.profileTradeDataPath.replace("active", "active5m")
 
 logPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
 debugPath = clOptions.profileTradeDataPath.replace("profiles", "debug")
 barChartPath = clOptions.profileTradeDataPath.replace("profiles", "bc")
 pricesPath = clOptions.profileTradeDataPath.replace("profiles", "prices")
+testPath = clOptions.profileTradeDataPath.replace("profiles", "test")
 
 logPath = logPath.replace(".json", "")
 debugPath = debugPath.replace(".json", "")
 barChartPath = barChartPath.replace(".json", "")
 pricesPath = pricesPath.replace(".json", "")
+testPath = testPath.replace(".json", "")
 
 logPath += stock + ".log"
 debugPath += stock + ".debug"
 barChartPath += stock + ".bc"
 pricesPath += stock + ".pr"
-
 
 if service == "eTrade":
    symbol = stock
@@ -234,15 +228,8 @@ with open(pricesPath, "a+", encoding="utf-8") as priceFile:
    lg.info("Using " + pricesPath + " as prices file")
 
 
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-## Initialize  barchart                                
-#
-
-#bc = lpl.Barchart()
-#barChart = bc.init()
-#
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-## Setup connection to the exchange service
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Setup connection to the exchange service
 
 if service == "bitstamp":
    cn = lpl.ConnectBitStamp(service, currency, alt)
@@ -254,7 +241,7 @@ elif service == "eTrade":
    cn = lpl.ConnectEtrade(c, lg, stock, debug, verbose, marketDataType, sandBox, offLine)
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Initialize algorithm,  barchart, connection objects
+# Initialize algorithm,  barchart, prices objects
 
 a = lpl.Algorithm(d, lg, cn, offLine)
 bc = lpl.Barchart()
@@ -268,12 +255,12 @@ barChart = bc.init()
 lg.info ("Reading profileTrade data from:\n" + clOptions.profileTradeDataPath + "\n")
 lg.info ("Using symbol: " + symbol)
 lg.info ("Last trade: " + str(cn.getLastTrade()))
-lg.info (str(timeBar) + " minute bar chart\n")
-lg.info ("openBuyBars " + str(openBuyBars))
-lg.info ("closeBuyBars " + str(closeBuyBars))
-lg.info ("openSellBars " + str(openSellBars))
-lg.info ("closeSellBars " + str(closeSellBars))
-lg.info ("tradingDelayBars " + str(tradingDelayBars))
+lg.info ("Minute bar chart: " + str(timeBar))
+lg.info ("openBuyBars: " + str(openBuyBars))
+lg.info ("closeBuyBars: " + str(closeBuyBars))
+lg.info ("openSellBars: " + str(openSellBars))
+lg.info ("closeSellBars: " + str(closeSellBars))
+lg.info ("tradingDelayBars: " + str(tradingDelayBars))
 lg.info ("sand: " + str(sandBox))
 lg.info ("offLine: " + str(offLine))
 lg.info ("marketDataType: " + cn.getMarketDataType())
@@ -285,13 +272,9 @@ lg.info (a.getAlgorithmMsg())
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Main loop. Loop forever. Pause trading during and after market hours 
 
-# Wait till a couple minutes before market opens
-#while cn.getTimeHrMnSecs() < 92700:
-#   sleep (1)
-
 cn.setValues(barChart, i, currentPrice)
 
-# Fill buffer with prices
+# Fill buffers with prices
 if usePricesFromFile and offLine:
    numPrices = pr.initPriceBuffer(pricesPath)
    barIdx = pr.skipFirstBar(numPrices)
@@ -316,11 +299,11 @@ if resume:
       
       bc.displayLastNBars(barChart, numBars)
 
-   # If offline then iterate over the stored bar chart
+   # If offline then iterate over the stored bar chart starting at bar 0
    if usePricesFromFile and offLine:
       i = 0
          
-   # We're live, program halted and now resumed. Initilize a new bar and continue
+   # We're live, program halted and now resumed. Initilize a new bar and trade on
    else:
       bc.appendBar(barChart)
       a.setAllLimits(d, barChart, currentPrice, i)
@@ -329,6 +312,7 @@ lg.debug ("Start bar: " + str(i))
 
 # Start trading at the top of the minute
 if not offLine:
+   tm.waitUntilTopMinute()
    if a.getPreMarket():
       tm.waitUntilTopMinute()
    if write1_5MinData:
@@ -358,7 +342,7 @@ while True:
    else:
       endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * timeBar))
 
-   lg.debug ("time : " + str(cn.getTimeHrMnSecs()))
+   lg.debug ("Time : " + str(cn.getTimeHrMnSecs()))
    lg.debug ("End bar time : " + str(endBarLoopTime))
       
    if offLine:
@@ -386,9 +370,10 @@ while True:
    
    while True:
       
-      # Load the barChart on each iteration
+      # Set the values from the trading service
       cn.setValues(barChart, i, currentPrice)
       
+      # 
       a.unsetActionOnNewBar()
       
       currentPrice = pr.getNextPrice(barChart, numBars, i)
@@ -493,6 +478,10 @@ while True:
                copyfile(profile1m, profile3m)
                copyfile(profile1m, profile4m)
                copyfile(profile1m, profile5m)
+               testDir = testPath + "/" + str(cm.getDateMonthDayYear())
+               mkdir(testDir)
+               copytree(pricesPath, testDir)
+               copytree(bcPath, testDir)
 
       # th = Thread(a.logIt(action, currentPrice, str(a.getBarsInPosition()), tm.now(), logPath))
       # Write to log file

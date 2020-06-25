@@ -263,6 +263,14 @@ class ConnectEtrade:
       return (int(st))
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getDateMonthDayYear(self): 
+         
+      ts = time()
+      st = datetime.fromtimestamp(ts).strftime('%Y%m%d')
+      
+      return (int(st))
+            
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def adjustTimeToTopMinute(self, time):
    
       timeS = str(time)
