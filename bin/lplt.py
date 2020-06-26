@@ -207,26 +207,6 @@ if service == "eTrade":
 
 lg = lpl.Log(debug, verbose, logPath, debugPath, offLine)
 
-print ("Prices path: " + pricesPath)
-
-with open(debugPath, "a+", encoding="utf-8") as debugFile:
-   debugFile.write(lg.infoStamp(service, symbol, timeBar, openBuyBars, closeBuyBars))
-   debugFile.write(lg.header(tm.now()))
-
-lg.info("Using " + debugPath + " as debug file")
-
-with open(logPath, "a+", encoding="utf-8") as logFile:
-   logFile.write(lg.infoStamp(service, symbol, timeBar, openBuyBars, closeBuyBars))
-   logFile.write(lg.header(tm.now()))
-
-lg.info("Using " + logPath + " as log file")
-
-with open(barChartPath, "a+", encoding="utf-8") as resumeFile:
-   lg.info("Using " + barChartPath + " as bar chart file")
-
-with open(pricesPath, "a+", encoding="utf-8") as priceFile:
-   lg.info("Using " + pricesPath + " as prices file")
-
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup connection to the exchange service
@@ -246,6 +226,31 @@ elif service == "eTrade":
 a = lpl.Algorithm(d, lg, cn, offLine)
 bc = lpl.Barchart()
 pr = lpl.Price(a, cn, usePricesFromFile, offLine, a.getMarketBeginTime())
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Initialize files
+
+print ("Prices path: " + pricesPath)
+
+with open(debugPath, "a+", encoding="utf-8") as debugFile:
+   debugFile.write(lg.infoStamp(a.getLiveProfileValues(d)))
+   #debugFile.write(lg.infoStamp(service, symbol, timeBar, openBuyBars, closeBuyBars))
+   debugFile.write(lg.header(tm.now()))
+
+lg.info("Using " + debugPath + " as debug file")
+
+with open(logPath, "a+", encoding="utf-8") as logFile:
+   logFile.write(lg.infoStamp(a.getLiveProfileValues(d)))
+   #logFile.write(lg.infoStamp(service, symbol, timeBar, openBuyBars, closeBuyBars))
+   logFile.write(lg.header(tm.now()))
+
+lg.info("Using " + logPath + " as log file")
+
+with open(barChartPath, "a+", encoding="utf-8") as resumeFile:
+   lg.info("Using " + barChartPath + " as bar chart file")
+
+with open(pricesPath, "a+", encoding="utf-8") as priceFile:
+   lg.info("Using " + pricesPath + " as prices file")
 
 barChart = bc.init()
 
@@ -458,11 +463,12 @@ while True:
          lg.debug("Waiting for next bar...")
          continue
          
-      if a.quickProfitCtr > a.quickProfitMax:
-         lg.debug("Waiting for next bar. quickProfitCtr > max: " + str(a.quickProfitCtr) + " max: " + str(a.quickProfitMax))
-         a.quickProfitCtr = 0
-         a.setWaitForNextBar()
-         continue
+      if a.quickProfitMax:
+         if a.quickProfitCtr > a.quickProfitMax:
+            lg.debug("Waiting for next bar. quickProfitCtr > max: " + str(a.quickProfitCtr) + " max: " + str(a.quickProfitMax))
+            a.quickProfitCtr = 0
+            a.setWaitForNextBar()
+            continue
 
       #if a.inPosition() and i < a.getNextBar():
       #   lg.debug("In a position. Waiting for next bar...")

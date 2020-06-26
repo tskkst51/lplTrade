@@ -179,10 +179,24 @@ class Algorithm():
       
       self.doOnCloseBar = 0
       self.doOnNewBar = 0
-      self.dynPriceInARange = 0
+      self.dynPriceInRange = 0
 
       self.totalGain = 0.0
       self.quickProfitCtr = 0
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getLiveProfileValues(self, data):
+   
+      displayHeader = "Profile items: "
+      
+      for key, value in data.items():
+         for k, v in value.items():
+            if k == "currency" or k == "alt":
+               continue
+            if v >= '1':
+               displayHeader += v + " " + k + "\n"
+      
+      return displayHeader
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def takePosition(self, d, currentPrice, barChart, bar):
@@ -213,14 +227,12 @@ class Algorithm():
          if action == self.buy:
             self.closePosition(d, currentPrice, bar, barChart)
             if self.getQuickReversal() and not self.isPriceInRange(currentPrice):
-               #if self.lowerHighs and self.lowerLows:
                self.lg.debug("Quick reversal being used: " + str(action))
                self.openPosition(self.sell, currentPrice, bar, barChart)
             
          elif action == self.sell:
             self.closePosition(d, currentPrice, bar, barChart)
             if self.getQuickReversal() and not self.isPriceInRange(currentPrice):
-               #if self.higherHighs and self.higherLows:
                self.lg.debug("Quick reversal being used: " + str(action))
                self.openPosition(self.buy, currentPrice, bar, barChart)
 
@@ -331,16 +343,16 @@ class Algorithm():
                self.lg.debug ( "CLOSING BUY POSITION QUICK PROFIT TAKEN.")
                self.lg.debug (str(currentPrice) + " > " + str(profitTarget))
                self.quickProfitCtr += 1
-               #self.closePosition(d, currentPrice, bar, barChart)
-               return 1
+               self.closePosition(d, currentPrice, bar, barChart)
+               #return 1
                
          elif self.getPositionType() == self.sell:
             if currentPrice < profitTarget:
                self.lg.debug ( "CLOSING SELL POSITION QUICK PROFIT TAKEN.")
                self.lg.debug (str(currentPrice) + " < " + str(profitTarget))
                self.quickProfitCtr += 1
-               #self.closePosition(d, currentPrice, bar, barChart)
-               return 2
+               self.closePosition(d, currentPrice, bar, barChart)
+               #return 2
                  
       return action
       
@@ -549,12 +561,12 @@ class Algorithm():
       
       # Once price goes out of range reverse buys and sells
       if self.isPriceInRange(currentPrice):
-         self.dynPriceInARange += 1
+         self.dynPriceInRange += 1
 
-      if not self.isPriceInRange(currentPrice) and self.dynPriceInARange:
+      if not self.isPriceInRange(currentPrice) and self.dynPriceInRange:
          self.doReverseBuySell += 1
          self.setRevBuySell()
-         self.dynPriceInARange = 0
+         self.dynPriceInRange = 0
 
       if self.getBarsInPosition() > self.openBuyBars:
          self.openBuyBars -= 1
@@ -626,7 +638,7 @@ class Algorithm():
       if not self.doRangeTradeBars:
          return 0
          
-      if currentPrice <= self.rangeHi and currentPrice >= self.rangeLo:
+      if currentPrice >= self.rangeLo and currentPrice <= self.rangeHi:
          if not self.inPosition():
             print ("in range between " + str(self.rangeLo) +   " and " +  str(self.rangeHi))
 
@@ -814,9 +826,7 @@ class Algorithm():
       
       if self.doReverseBuySell:
          self.unsetRevBuySell()
-         
-      return
-      
+               
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def resetLimits(self, data):
    
