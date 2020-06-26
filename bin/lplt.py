@@ -457,6 +457,12 @@ while True:
       if a.getWaitForNextBar() and i < a.getNextBar():
          lg.debug("Waiting for next bar...")
          continue
+         
+      if a.quickProfitCtr > a.quickProfitMax:
+         lg.debug("Waiting for next bar. quickProfitCtr > max: " + str(a.quickProfitCtr) + " max: " + str(a.quickProfitMax))
+         a.quickProfitCtr = 0
+         a.setWaitForNextBar()
+         continue
 
       #if a.inPosition() and i < a.getNextBar():
       #   lg.debug("In a position. Waiting for next bar...")
