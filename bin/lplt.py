@@ -150,6 +150,7 @@ if clOptions.alt:
    
 if clOptions.stock:
    stock = clOptions.stock
+   d["profileTradeData"]["stock"] = str(stock)
    
 if clOptions.debug:
    debug = int(clOptions.debug)
@@ -171,7 +172,8 @@ if clOptions.offLine:
 
 if clOptions.timeBar:
    timeBar = clOptions.timeBar
-
+   d["profileTradeData"]["timeBar"] = str(timeBar)
+   
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup log and debug file based on profileTradeData name and path
 # Write header data to logs
@@ -223,8 +225,8 @@ elif service == "eTrade":
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize algorithm,  barchart, prices objects
 
-a = lpl.Algorithm(d, lg, cn, offLine)
 bc = lpl.Barchart()
+a = lpl.Algorithm(d, lg, cn, bc, offLine)
 pr = lpl.Price(a, cn, usePricesFromFile, offLine, a.getMarketBeginTime())
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -234,14 +236,12 @@ print ("Prices path: " + pricesPath)
 
 with open(debugPath, "a+", encoding="utf-8") as debugFile:
    debugFile.write(lg.infoStamp(a.getLiveProfileValues(d)))
-   #debugFile.write(lg.infoStamp(service, symbol, timeBar, openBuyBars, closeBuyBars))
    debugFile.write(lg.header(tm.now()))
 
 lg.info("Using " + debugPath + " as debug file")
 
 with open(logPath, "a+", encoding="utf-8") as logFile:
    logFile.write(lg.infoStamp(a.getLiveProfileValues(d)))
-   #logFile.write(lg.infoStamp(service, symbol, timeBar, openBuyBars, closeBuyBars))
    logFile.write(lg.header(tm.now()))
 
 lg.info("Using " + logPath + " as log file")
@@ -406,14 +406,16 @@ while True:
          # Write prices and barcharts for 1-5 min charts
          pr.write(pricesPath, currentPrice, i, write1_5MinData)
          
-      # Beginning of next bar
+      # Beginning of next bar. 2nd clause is for simulation mode
       if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isNextBar(i):      
-         
+         print ("NEW BAR NEW BAR NEW BAR NEW BAR NEW BAR NEW BAR NEW BAR\n")
          if dirty:
             continue
             
          dirty += 1
-         #a.setActionOnCloseBar()
+         
+         # Not implemented yet
+         a.setActionOnCloseBar()
          
          lg.debug("time now: " + str(cn.getTimeHrMnSecs()) + " end of bar time: " + str(endBarLoopTime))
       
