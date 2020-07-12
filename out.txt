@@ -1,9 +1,0 @@
-
-
-
-
-Waiting: 49 seconds to start trading!! ...
-INFO: Reading profile data from:
-src/profiles/2BarOpen1BarClose.json
-INFO: Using currency: btcusd
-INFO: 1 Minute bar chart

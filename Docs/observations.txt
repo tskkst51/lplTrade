@@ -1,0 +1,6 @@
+Observations
+
+5/28/20
+QQQ executeOnCLose, and quickReversal yielded a winning session
+   1 open and 1 close bar 1 min chart
+   profile, log, barChart stored to 

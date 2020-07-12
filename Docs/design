@@ -1,5 +1,22 @@
 	Design: auto trading system
 
+Latest notes
+
+Candidates based on viewing
+xli iwm qqq aapl fb csco orcl ugaz m msft v xbi smh abbv xlf bac c xom
+
+The longer in a trend the harder to reverse the trend. Increase decision bars in mid trend and >
+
+collect bar charts of day trade candidates, IWM, SPY, QQQ, APPL... Then iterate over them during premarket for most volitale
+implement useSignals. Instead of buy/sell at trigger set signal, buy lower sell higher based on closes/opens instead of hi los
+Use bar length avg for quick profits when in a position and it has started trading in a range
+Use a trailing stop after initial profit target met. Use with avg bar length. e.g. move stop to avg bar length / 2 ...
+
+Use vix to determine when not to trade. When vix is declining stock price flatons out
+Determine strength of move by counting sequential higher hi and higher low for a buy vice versa for sell.
+
+
+
 Parameters: (use properties file)
    network:
 

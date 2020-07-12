@@ -12,7 +12,6 @@ from time import time, sleep
 import pathlib
 import pickle
 import simplejson
-from shutil import copyfile
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Parse Command Line Options
@@ -61,10 +60,6 @@ parser.add_option("-u", "--currency", type="string",
 
 parser.add_option("-v", "--verbose",
    action="store_true", dest="verbose", help="verbose")
-   
-parser.add_option("-t", "--timeBar", type="string",
-   action="store", dest="timeBar", default=False,
-   help="time bar: 1 5 10 minute...")
    
 (clOptions, args) = parser.parse_args()
 
@@ -120,12 +115,9 @@ algorithms = str(d["profileTradeData"]["algorithms"])
 tradingDelayBars = int(d["profileTradeData"]["tradingDelayBars"])
 openBuyBars = int(d["profileTradeData"]["openBuyBars"])
 closeBuyBars = int(d["profileTradeData"]["closeBuyBars"])
-openSellBars = int(d["profileTradeData"]["openSellBars"])
-closeSellBars = int(d["profileTradeData"]["closeSellBars"])
 profileTradeData = str(d["profileTradeData"])
 resume = str(d["profileTradeData"]["resume"])
 usePricesFromFile = int(d["profileTradeData"]["usePricesFromFile"])
-write1_5MinData = int(d["profileTradeData"]["write1_5MinData"])
 
 offLine = int(c["profileConnectET"]["offLine"])
 sandBox = int(c["profileConnectET"]["sandBox"])
@@ -136,8 +128,6 @@ marketDataType = "intraday"
 numBars = 0
 
 lastMinuteOfLiveTrading = 155930
-
-marketOpen = 0
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Overide profileTradeData data with command line data
@@ -150,7 +140,6 @@ if clOptions.alt:
    
 if clOptions.stock:
    stock = clOptions.stock
-   d["profileTradeData"]["stock"] = str(stock)
    
 if clOptions.debug:
    debug = int(clOptions.debug)
@@ -170,48 +159,59 @@ if clOptions.marketDataType:
 if clOptions.offLine:
    offLine = clOptions.offLine
 
-if clOptions.timeBar:
-   timeBar = clOptions.timeBar
-   d["profileTradeData"]["timeBar"] = str(timeBar)
-   
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup log and debug file based on profileTradeData name and path
 # Write header data to logs
 
 tm = lpl.Time()
 
-# Create minute profile variables
-profile1m = clOptions.profileTradeDataPath
-profile2m = clOptions.profileTradeDataPath.replace("active", "active2m")
-profile3m = clOptions.profileTradeDataPath.replace("active", "active3m")
-profile4m = clOptions.profileTradeDataPath.replace("active", "active4m")
-profile5m = clOptions.profileTradeDataPath.replace("active", "active5m")
-
 logPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
 debugPath = clOptions.profileTradeDataPath.replace("profiles", "debug")
-barChartPath = clOptions.profileTradeDataPath.replace("profiles", "bc")
+resumePath = clOptions.profileTradeDataPath.replace("profiles", "bc")
 pricesPath = clOptions.profileTradeDataPath.replace("profiles", "prices")
-testPath = clOptions.profileTradeDataPath.replace("profiles", "test")
 
-logPath = logPath.replace(".json", "")
-debugPath = debugPath.replace(".json", "")
-barChartPath = barChartPath.replace(".json", "")
-pricesPath = pricesPath.replace(".json", "")
-testPath = testPath.replace(".json", "")
+logPath = logPath.replace(".json", "_")
+debugPath = debugPath.replace(".json", "_")
+resumePath = resumePath.replace(".json", "_")
+pricesPath = pricesPath.replace(".json", "_")
 
 logPath += stock + ".log"
 debugPath += stock + ".debug"
-barChartPath += stock + ".bc"
+resumePath += stock + ".bc"
 pricesPath += stock + ".pr"
+
 
 if service == "eTrade":
    symbol = stock
 
 lg = lpl.Log(debug, verbose, logPath, debugPath, offLine)
 
+print ("Prices path: " + pricesPath)
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Setup connection to the exchange service
+with open(debugPath, "a+", encoding="utf-8") as debugFile:
+   debugFile.write(lg.infoStamp(service, symbol, timeBar, openBuyBars, closeBuyBars))
+   debugFile.write(lg.header(tm.now()))
+
+with open(logPath, "a+", encoding="utf-8") as logFile:
+   logFile.write(lg.infoStamp(service, symbol, timeBar, openBuyBars, closeBuyBars))
+   logFile.write(lg.header(tm.now()))
+
+with open(resumePath, "a+", encoding="utf-8") as resumeFile:
+   print ("Opening bar chart file")
+
+with open(pricesPath, "a+", encoding="utf-8") as priceFile:
+   print ("Opening price list")
+
+
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## Initialize  barchart                                
+#
+
+#bc = lpl.Barchart()
+#barChart = bc.init()
+#
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## Setup connection to the exchange service
 
 if service == "bitstamp":
    cn = lpl.ConnectBitStamp(service, currency, alt)
@@ -223,34 +223,11 @@ elif service == "eTrade":
    cn = lpl.ConnectEtrade(c, lg, stock, debug, verbose, marketDataType, sandBox, offLine)
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Initialize algorithm,  barchart, prices objects
+# Initialize algorithm,  barchart, connection objects
 
+a = lpl.Algorithm(d, lg, cn, offLine)
 bc = lpl.Barchart()
-a = lpl.Algorithm(d, lg, cn, bc, offLine)
-pr = lpl.Price(a, cn, usePricesFromFile, offLine, a.getMarketBeginTime())
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Initialize files
-
-print ("Prices path: " + pricesPath)
-
-with open(debugPath, "a+", encoding="utf-8") as debugFile:
-   debugFile.write(lg.infoStamp(a.getLiveProfileValues(d)))
-   debugFile.write(lg.header(tm.now()))
-
-lg.info("Using " + debugPath + " as debug file")
-
-with open(logPath, "a+", encoding="utf-8") as logFile:
-   logFile.write(lg.infoStamp(a.getLiveProfileValues(d)))
-   logFile.write(lg.header(tm.now()))
-
-lg.info("Using " + logPath + " as log file")
-
-with open(barChartPath, "a+", encoding="utf-8") as resumeFile:
-   lg.info("Using " + barChartPath + " as bar chart file")
-
-with open(pricesPath, "a+", encoding="utf-8") as priceFile:
-   lg.info("Using " + pricesPath + " as prices file")
+pr = lpl.Price(a, cn, usePricesFromFile, offLine)
 
 barChart = bc.init()
 
@@ -260,12 +237,10 @@ barChart = bc.init()
 lg.info ("Reading profileTrade data from:\n" + clOptions.profileTradeDataPath + "\n")
 lg.info ("Using symbol: " + symbol)
 lg.info ("Last trade: " + str(cn.getLastTrade()))
-lg.info ("Minute bar chart: " + str(timeBar))
-lg.info ("openBuyBars: " + str(openBuyBars))
-lg.info ("closeBuyBars: " + str(closeBuyBars))
-lg.info ("openSellBars: " + str(openSellBars))
-lg.info ("closeSellBars: " + str(closeSellBars))
-lg.info ("tradingDelayBars: " + str(tradingDelayBars))
+lg.info (str(timeBar) + " minute bar chart\n")
+lg.info ("openBuyBars " + str(openBuyBars))
+lg.info ("closeBuyBars " + str(closeBuyBars))
+lg.info ("tradingDelayBars " + str(tradingDelayBars))
 lg.info ("sand: " + str(sandBox))
 lg.info ("offLine: " + str(offLine))
 lg.info ("marketDataType: " + cn.getMarketDataType())
@@ -277,9 +252,13 @@ lg.info (a.getAlgorithmMsg())
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Main loop. Loop forever. Pause trading during and after market hours 
 
+# Wait till a couple minutes before market opens
+#while cn.getTimeHrMnSecs() < 92700:
+#   sleep (1)
+
 cn.setValues(barChart, i, currentPrice)
 
-# Fill buffers with prices
+# Fill buffer with prices
 if usePricesFromFile and offLine:
    numPrices = pr.initPriceBuffer(pricesPath)
    barIdx = pr.skipFirstBar(numPrices)
@@ -291,24 +270,24 @@ if not offLine:
 
 # Read in barChart and resume from it
 if resume:
-   bcSize = pathlib.Path(barChartPath).stat().st_size
+   bcSize = pathlib.Path(resumePath).stat().st_size
    
    lg.verbose ("Size of barchart file : " + str(bcSize))
 
    # Ignore reading from barChart if it is empty
    if bcSize:
-      numBars = bc.read(barChartPath, barChart)
+      numBars = bc.read(resumePath, barChart)
       
       lg.verbose ("Number of bars in file on disk : " + str(numBars))
       i = numBars
       
       bc.displayLastNBars(barChart, numBars)
 
-   # If offline then iterate over the stored bar chart starting at bar 0
+   # If offline then iterate over the stored bar chart
    if usePricesFromFile and offLine:
       i = 0
          
-   # We're live, program halted and now resumed. Initilize a new bar and trade on
+   # We're live, program halted and now resumed. Initilize a new bar and continue
    else:
       bc.appendBar(barChart)
       a.setAllLimits(d, barChart, currentPrice, i)
@@ -318,36 +297,21 @@ lg.debug ("Start bar: " + str(i))
 # Start trading at the top of the minute
 if not offLine:
    tm.waitUntilTopMinute()
-   if a.getPreMarket():
-      tm.waitUntilTopMinute()
-   if write1_5MinData:
-      pr.initWrite(pricesPath)
-      bc.initWrite(barChartPath)
 
-a.setTradingDelayBars()
+# Start trading at beginning of day
+#if not a.getAfterMarket():
+#   tm.waitTillMarketOpens()
+
 
 while True:
-
-   # Start trading at beginning of day
-   if not a.getPreMarket():
-      if not offLine and not marketOpen:
-         if a.getMarketBeginTime():
-            lg.info("Waiting till the market opens...")
-            cn.waitTillMarketOpens(a.getMarketOpenTime())
-            marketOpen += 1
 
    if not offLine:
       sleep(0.2)
       
-   # Set the initial loop time from the profile
-   if write1_5MinData:
-      # Use the 1 min chart and save data for 1-5 min charts
-      timeBar = 1
-      endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * timeBar))
-   else:
-      endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * timeBar))
+   # Set the initial loop time from the minute chart time
+   endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * timeBar))
 
-   lg.debug ("Time : " + str(cn.getTimeHrMnSecs()))
+   lg.debug ("time : " + str(cn.getTimeHrMnSecs()))
    lg.debug ("End bar time : " + str(endBarLoopTime))
       
    if offLine:
@@ -367,6 +331,7 @@ while True:
       bc.loadInit(barChart, currentPrice, cn.getTimeStamp(), cn.getVolume(), i)
          
    lg.debug ("initialize i: " + str(i))
+   lg.debug ("currentPrice: " + str(currentPrice))
    
    a.setCurrentBar(i)
    dirty = 0
@@ -375,10 +340,9 @@ while True:
    
    while True:
       
-      # Set the values from the trading service
+      # Load the barChart on each iteration
       cn.setValues(barChart, i, currentPrice)
       
-      # 
       a.unsetActionOnNewBar()
       
       currentPrice = pr.getNextPrice(barChart, numBars, i)
@@ -403,19 +367,16 @@ while True:
          
       # Save off the prices so they can be later used in offLine mode
       if usePricesFromFile and not offLine:
-         # Write prices and barcharts for 1-5 min charts
-         pr.write(pricesPath, currentPrice, i, write1_5MinData)
+            pr.write(pricesPath, currentPrice, i)
          
-      # Beginning of next bar. 2nd clause is for simulation mode
+      # Beginning of next bar
       if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isNextBar(i):      
-         print ("NEW BAR NEW BAR NEW BAR NEW BAR NEW BAR NEW BAR NEW BAR\n")
+         
          if dirty:
             continue
             
          dirty += 1
-         
-         # Not implemented yet
-         a.setActionOnCloseBar()
+         #a.setActionOnCloseBar()
          
          lg.debug("time now: " + str(cn.getTimeHrMnSecs()) + " end of bar time: " + str(endBarLoopTime))
       
@@ -425,7 +386,7 @@ while True:
          # Print out the bar chart,\. Only print the last 20 bars
                   
          if not offLine:
-            bc.write(barChart, barChartPath, i, write1_5MinData)
+            bc.write(barChart, resumePath, i)
             bc.displayLastNBars(barChart, 20)
             
          bc.setAvgVol(barChart, i)
@@ -452,7 +413,7 @@ while True:
          # Keep track of the bars in a position
          if a.inPosition():
             a.setBarInPositionCount()
-            
+
          # End of bar reached. Done with on close processing
          break
       
@@ -464,13 +425,6 @@ while True:
       if a.getWaitForNextBar() and i < a.getNextBar():
          lg.debug("Waiting for next bar...")
          continue
-         
-      if a.quickProfitMax:
-         if a.quickProfitCtr > a.quickProfitMax:
-            lg.debug("Waiting for next bar. quickProfitCtr > max: " + str(a.quickProfitCtr) + " max: " + str(a.quickProfitMax))
-            a.quickProfitCtr = 0
-            a.setWaitForNextBar()
-            continue
 
       #if a.inPosition() and i < a.getNextBar():
       #   lg.debug("In a position. Waiting for next bar...")
@@ -479,28 +433,68 @@ while True:
       # Take a position if conditions exist
       positionTaken = a.takePosition(d, currentPrice, barChart, i)
 
-   # end bar loop
-
-   # Stop trading at the end of he day
-   if not offLine and not a.getAfterMarket():
-      if a.inPosition():
-         if a.isMarketExitTime():
-            a.closePosition(d, currentPrice, barChart, i)
-            # Create the 1 - 5 min profiles so they can be iterated later
-            if write1_5MinData:
-               copyfile(profile1m, profile2m)
-               copyfile(profile1m, profile3m)
-               copyfile(profile1m, profile4m)
-               copyfile(profile1m, profile5m)
-               testDir = testPath + "/" + str(cm.getDateMonthDayYear())
-               mkdir(testDir)
-               copytree(pricesPath, testDir)
-               copytree(bcPath, testDir)
-
+#      if action:
+#         lg.debug ("Action set. Not on close " + str(action))
+#                     
+#      # Block trading if we are in a range and range trading is set
+#      if a.getPriceInRange(currentPrice) and not a.inPosition():
+#         continue
+#
+#      #if not a.inPosition() and NOT a.getExecuteOnClose():
+#      if not a.inPosition():
+#         if action == buyAction:
+#            if a.getReverseLogic():
+#               a.openPosition(sell, currentPrice, i)
+#               lg.logIt(sell, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+#               lg.debug("reversing the buy -> sell: " + str(action))
+#            else: 
+#               currentPrice = cn.getCurrentAsk()
+#               a.openPosition(buy, currentPrice, i)
+#
+#               lg.logIt(buy, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+#            
+#         elif action == sellAction:               
+#            if a.getReverseLogic():
+#               a.openPosition(buy, currentPrice, i)
+#               lg.logIt(buy, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+#               lg.debug("reversing the sell -> buy: " + str(action))
+#            else: 
+#               currentPrice = cn.getCurrentBid()
+#
+#               a.openPosition(sell, currentPrice, i)
+#               lg.logIt(sell, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+#
+#      # Close position
+#      elif a.inPosition():
+#         if action == buyAction:
+#            a.closePosition(currentPrice, i)
+#            lg.logIt(close, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+#            if a.getQuickReversal():
+#               a.openPosition(2, currentPrice, i)
+#               lg.logIt(sell, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+#            
+#         elif action == sellAction:
+#            a.closePosition(currentPrice, i)
+#            lg.logIt(close, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+#            if a.getQuickReversal():
+#               a.openPosition(1, currentPrice, i)
+#               lg.logIt(buy, str(currentPrice), str(a.getBarsInPosition()), tm.now(), logPath)
+               
+      # REVIEW REVERSAL LOGIC
+      #if not a.inPosition() and action != noAction and not a.getExecuteOnClose():
+                           
+         #continue
+            
       # th = Thread(a.logIt(action, currentPrice, str(a.getBarsInPosition()), tm.now(), logPath))
       # Write to log file
       
+   # end bar loop
    #if i == 20: break
    
 # end execution loop
+
+lg.error("error")
+lg.info("info")
+lg.warning("warning")
+lg.success("success")
 

@@ -2,8 +2,11 @@
 src/.DS_Store
 src/*pyc
 src/.creds
+test
 debug
 logs
+prices
+bc
 profiles/et.json
 profiles/oauthKeys.txt
 profiles/*debug
