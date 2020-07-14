@@ -15,7 +15,8 @@ class Price:
       self.offLine = offLine
       self.startTime = startTime
       
-      self.priceArr = [0.0]
+      # Price Array bid, ask
+      self.priceArr = [0.0,0.0]
       self.idxArr = [0]
       self.nextBar = 0
       self.priceIdx = 0
@@ -56,39 +57,41 @@ class Price:
          
       i = 0
       for line in lines:
-         # Skip the first and second index numbers
          line = line.replace("\n", "")
          line = line.split(",")
-                     
-         self.priceArr[i] = float(line[0])
-         self.idxArr[i] = int(line[1])
-         self.priceArr.append(0.0)
-         self.idxArr.append(0)
+
+         self.priceArr.append([float(line[0]), float(line[1])])
+         self.idxArr.append(int(line[2]))
+         
          i += 1
-      
+               
       return i
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getNextPrice(self, bc, numBars, bar):
             
-      price = 0
+      price = bid = ask = 0.0
             
       # Get price from file, randomly or live
       if self.offLine:      
          
          # From file
-         if self.upff:
-            price = self.priceArr[self.priceIdx]
+         if self.upff:                        
+            price = ask = self.priceArr[self.priceIdx][0]
+            bid = self.priceArr[self.priceIdx][1]
             self.priceIdx += 1
          # Randomly
          else:
             price = self.getRandomPrice(bc, numBars, bar)
+            bid = ask = price
 
       # Live      
       else:
          price = self.cn.getCurrentPrice()
+         bid = self.cn.getCurrentBid()
+         ask = self.cn.getCurrentAsk()
          
-      return float(price)
+      return float(price), float(bid), float(ask)
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isNextBar(self, bar):
@@ -114,13 +117,14 @@ class Price:
       return round(random.uniform(lo, hi), 2)      
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def write2m(self, price, bar):
+   def write2m(self, price, bid, bar):
                      
       # Start time + 2 minutes
       
       if bar == 0:
          with open(self.path2m, "a+", encoding="utf-8") as priceFile:
-            priceFile.write ('%s' % str(price) + "," + str(self.min2Ctr) + "\n")
+            #priceFile.write ('%s' % str(price) + "," + str(self.min2Ctr) + "\n")
+            priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(bar) + "\n")
       else:
          if (bar % self.minBar2) == 0:
             if bar != self.next2mBar:
@@ -128,16 +132,18 @@ class Price:
                self.next2mBar = bar
                
          with open(self.path2m, "a+", encoding="utf-8") as priceFile:
-            priceFile.write ('%s' % str(price) + "," + str(self.min2Ctr) + "\n")
+            #priceFile.write ('%s' % str(price) + "," + str(self.min2Ctr) + "\n")
+            priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(self.min2Ctr) + "\n")
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def write3m(self, price, bar):
+   def write3m(self, price, bid, bar):
    
       # Start time + 3 minutes
       
       if bar == 0:
          with open(self.path3m, "a+", encoding="utf-8") as priceFile:
-            priceFile.write ('%s' % str(price) + "," + str(self.min3Ctr) + "\n")
+            #priceFile.write ('%s' % str(price) + "," + str(self.min3Ctr) + "\n")
+            priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(bar) + "\n")
       else:
          if (bar % self.minBar3) == 0:
             if bar != self.next3mBar:
@@ -145,16 +151,18 @@ class Price:
                self.next3mBar = bar
                
          with open(self.path3m, "a+", encoding="utf-8") as priceFile:
-            priceFile.write ('%s' % str(price) + "," + str(self.min3Ctr) + "\n")
+            #priceFile.write ('%s' % str(price) + "," + str(self.min3Ctr) + "\n")
+            priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(self.min3Ctr) + "\n")
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def write4m(self, price, bar):
+   def write4m(self, price, bid, bar):
 
       # Start time + 4 minutes
       
       if bar == 0:
          with open(self.path4m, "a+", encoding="utf-8") as priceFile:
-            priceFile.write ('%s' % str(price) + "," + str(self.min4Ctr) + "\n")
+            #priceFile.write ('%s' % str(price) + "," + str(self.min4Ctr) + "\n")
+            priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(bar) + "\n")
       else:
          if (bar % self.minBar4) == 0:
             if bar != self.next4mBar:
@@ -162,16 +170,18 @@ class Price:
                self.next4mBar = bar
                
          with open(self.path4m, "a+", encoding="utf-8") as priceFile:
-            priceFile.write ('%s' % str(price) + "," + str(self.min4Ctr) + "\n")
+            #priceFile.write ('%s' % str(price) + "," + str(self.min4Ctr) + "\n")
+            priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(self.min4Ctr) + "\n")
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def write5m(self, price, bar):
+   def write5m(self, price, bid, bar):
 
       # Start time + 5 minutes
       
       if bar == 0:
          with open(self.path5m, "a+", encoding="utf-8") as priceFile:
-            priceFile.write ('%s' % str(price) + "," + str(self.min5Ctr) + "\n")
+            #priceFile.write ('%s' % str(price) + "," + str(self.min5Ctr) + "\n")
+            priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(bar) + "\n")
       else:
          if (bar % self.minBar5) == 0:
             if bar != self.next5mBar:
@@ -179,7 +189,8 @@ class Price:
                self.next5mBar = bar
                
          with open(self.path5m, "a+", encoding="utf-8") as priceFile:
-            priceFile.write ('%s' % str(price) + "," + str(self.min5Ctr) + "\n")
+            #priceFile.write ('%s' % str(price) + "," + str(self.min5Ctr) + "\n")
+            priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(self.min5Ctr) + "\n")
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def initWrite(self, path):
@@ -190,16 +201,17 @@ class Price:
       self.path5m = path.replace("active", "active5m")
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def write(self, path, price, bar, doAllMinutes):
+   def write(self, path, price, bid, bar, doAllMinutes):
 
       with open(path, "a+", encoding="utf-8") as priceFile:
-         priceFile.write ('%s' % str(price) + "," + str(bar) + "\n")
+         #priceFile.write ('%s' % str(price) + "," + str(bar) + "\n")
+         priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(bar) + "\n")
          
       if doAllMinutes:
-         self.write2m(price, bar)
-         self.write3m(price, bar)
-         self.write4m(price, bar)
-         self.write5m(price, bar)
+         self.write2m(price, bid, bar)
+         self.write3m(price, bid, bar)
+         self.write4m(price, bid, bar)
+         self.write5m(price, bid, bar)
          
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setNextBar(self):

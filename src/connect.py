@@ -67,13 +67,14 @@ class ConnectEtrade:
    
       self.symbol = stock
 
-   def setValues(self, barChart, i, cp):
+   def setValues(self, barChart, i, cp, bid):
       
       # Read data from chart on the disk
       if self.offLine:
          self.cp = float(cp)
-         self.ask = self.cp + 0.01
-         self.bid = self.cp - 0.01
+         self.ask = self.cp
+         self.bid = float(bid)
+         # self.bid = self.cp - self.spread
          self.changeClose = ""   
          self.changeClosePct = 0.0   
          self.companyName = "QQQ"

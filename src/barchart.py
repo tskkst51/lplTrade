@@ -41,28 +41,27 @@ class Barchart:
       return bc
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def loadInit(self, bc, price, date, volume, bar):
+   def loadInit(self, bc, date, bar):
    
-      #self.appendBar(bc)
-
-      bc[bar][self.op] = bc[bar][self.cl] = bc[bar][self.hi] = bc[bar][self.lo] = price
+      bc[bar][self.op] = bc[bar][self.cl] = bc[bar][self.hi] = self.cn.getCurrentAsk()
+      bc[bar][self.lo] = self.cn.getCurrentBid()
       bc[bar][self.dt] = date
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def loadBeginBar(self, bc, price, bid, volume, bar):
+   def loadBeginBar(self, bc, volume, bar):
    
       if price > bc[bar][self.hi]:
-         bc[bar][self.hi] = price
+         bc[bar][self.hi] = self.cn.getCurrentAsk()
          
       if price < bc[bar][self.lo]:
-         bc[bar][self.lo] = bid
+         bc[bar][self.lo] = self.cn.getCurrentBid()
                
       bc[bar][self.vl] = volume
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def loadEndBar(self, bc, price, date, bar):
+   def loadEndBar(self, bc, date, bar):
    
-      bc[bar][self.cl] = price
+      bc[bar][self.cl] = self.cn.getCurrentAsk()
       bc[bar][self.dt] = date            
       bc[bar][self.bl] = round((bc[bar][self.hi] - bc[bar][self.lo]), 2)
       self.loadHiLoBar(bc, bar)
