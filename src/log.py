@@ -58,11 +58,7 @@ class Log:
       self.hdrLine = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
       return ("\n" + date + "\n" + self.hdr + "\n" + self.hdrLine + "\n")
       
-   #def infoStamp(self, service, sym, chartType, openBars, closeBars):
    def infoStamp(self, liveActions):
-      #self.hdr = "Ex: " + service + " SYM: " + sym + " Bar chart (min): " + str(chartType) + " Open bars: " + str(openBars) + " Clase Bars: " + str(closeBars)
-      #self.hdr = liveActions
-      #return ("\n" + self.hdr)
       return ("\n" + liveActions)
       
    def execution(self, ticker, closed, time):

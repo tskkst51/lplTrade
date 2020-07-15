@@ -100,7 +100,7 @@ barChart = [[]]
 
 resumedBarCharCtr = 0
 
-i = 0
+barCtr = 0
 
 positionTaken = 0
 close = action = noAction = 0
@@ -108,7 +108,7 @@ buyAction = buy = 1
 sellAction = sell = 2
 executeOnOpenPosition = 1
 executeOnClosePosition = 2
-price = bid = ask = 0.0
+last = bid = ask = 0.0
 
 stock = str(d["profileTradeData"]["stock"])
 profileName = str(d["profileTradeData"]["profileName"])
@@ -277,7 +277,7 @@ lg.info (a.getAlgorithmMsg())
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Main loop. Loop forever. Pause trading during and after market hours 
 
-cn.setValues(barChart, i, ask, bid)
+cn.setValues(barChart, barCtr, ask, bid)
 
 # Fill buffers with prices
 if usePricesFromFile and offLine:
@@ -287,7 +287,7 @@ if usePricesFromFile and offLine:
 
 # Set the initial price
 if not offLine:
-   price, bid, ask = pr.getNextPrice(barChart, numBars, i)
+   last, bid, ask = pr.getNextPrice(barChart, numBars, barCtr)
 
 # Read in barChart and resume from it
 if resume:
@@ -300,25 +300,25 @@ if resume:
       numBars = bc.read(barChartPath, barChart)
       
       lg.verbose ("Number of bars in file on disk : " + str(numBars))
-      i = numBars
+      barCtr = numBars
       
       bc.displayLastNBars(barChart, numBars)
 
    # If offline then iterate over the stored bar chart starting at bar 0
    if usePricesFromFile and offLine:
-      i = 0
+      barCtr = 0
          
    # We're live, program halted and now resumed. Initilize a new bar and trade on
    else:
       bc.appendBar(barChart)
-      a.setAllLimits(d, barChart, i)
+      a.setAllLimits(d, barChart, barCtr)
       
-lg.debug ("Start bar: " + str(i))
+lg.debug ("Start bar: " + str(barCtr))
 
 # Start trading at the top of the minute
 if not offLine:
    tm.waitUntilTopMinute()
-   if a.getPreMarket():
+   if a.doPreMarket():
       tm.waitUntilTopMinute()
    if write1_5MinData:
       pr.initWrite(pricesPath)
@@ -329,7 +329,7 @@ a.setTradingDelayBars()
 while True:
 
    # Start trading at beginning of day
-   if not a.getPreMarket():
+   if not a.doPreMarket():
       if not offLine and not marketOpen:
          if a.getMarketBeginTime():
             lg.info("Waiting till the market opens...")
@@ -352,7 +352,7 @@ while True:
       
    if offLine:
       if usePricesFromFile:
-         if i >= numBars - 1:
+         if barCtr >= numBars - 1:
             exit()
          
    lg.debug ("End bar time : " + str(endBarLoopTime))
@@ -361,11 +361,11 @@ while True:
    initialVol = cn.getVolume()
    
    if not offLine:
-      bc.loadInit(barChart, cn.getTimeStamp(), i)
+         bc.loadInit(barChart, cn.getTimeStamp(), barCtr, bid, ask, last)
          
-   lg.debug ("initialize i: " + str(i))
+   lg.debug ("initialize i: " + str(barCtr))
    
-   a.setCurrentBar(i)
+   a.setCurrentBar(barCtr)
    dirty = 0
             
    # Loop until each bar has ended
@@ -373,39 +373,42 @@ while True:
    while True:
       
       # Set the values from the trading service
-      cn.setValues(barChart, i, ask, bid)
+      cn.setValues(barChart, barCtr, ask, bid)
       
       # 
       a.unsetActionOnNewBar()
       
-      price, bid, ask = pr.getNextPrice(barChart, numBars, i)
+      last, bid, ask = pr.getNextPrice(barChart, numBars, barCtr)
 
-      lg.info ("\nbar: " + str(i))
-      lg.info ("HI: " + str(barChart[i][hi]))
-      lg.info ("CP: " + str(price))
-      lg.info ("LO: " + str(barChart[i][lo]) + "\n")
+      lg.info ("\nbar: " + str(barCtr))
+      lg.info ("HI  : " + str(barChart[barCtr][hi]))
+      lg.info ("LAST: " + str(last))
+      lg.info ("LO  : " + str(barChart[barCtr][lo]) + "\n")
       
       tradeVolume = cn.getVolume() - initialVol
          
       if not offLine:
-         bc.loadBeginBar(barChart, tradeVolume, i)
+         bc.loadBeginBar(barChart, tradeVolume, barCtr, bid, ask, last)
    
       # Halt program at end of trading day
       if cn.getTimeHrMnSecs() > lastMinuteOfLiveTrading:
          if not offLine and not a.getAfterMarket():
             if a.inPosition():
-               a.closePosition(d, barChart, i)
+               a.closePosition(d, barChart, barCtr)
             lg.info("Program exiting due to end of day trading")
             exit()
          
       # Save off the prices so they can be later used in offLine mode
       if usePricesFromFile and not offLine:
+      
          # Write prices and barcharts for 1-5 min charts
-         pr.write(pricesPath, ask, bid, i, write1_5MinData)
+         pr.write(pricesPath, ask, bid, barCtr, write1_5MinData)
          
-      # Beginning of next bar. 2nd clause is for simulation mode
-      if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isNextBar(i):      
-         print ("NEW BAR NEW BAR NEW BAR NEW BAR NEW BAR NEW BAR NEW BAR\n")
+      # Beginning of next bar. 2nd clause is for offline mode
+      if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isNextBar(barCtr):      
+         print ("NEW BAR =========================================== NEW BAR\n")
+         
+         # Only do this section once
          if dirty:
             continue
             
@@ -417,31 +420,30 @@ while True:
          lg.debug("time now: " + str(cn.getTimeHrMnSecs()) + " end of bar time: " + str(endBarLoopTime))
       
          if not offLine:
-            bc.loadEndBar(barChart, cn.getTimeStamp(), i)
+            bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last)
                
-         # Print out the bar chart,\. Only print the last 20 bars
-                  
+         # Print out the bar chart. Only print the last 20 bars
          if not offLine:
-            bc.write(barChart, barChartPath, i, write1_5MinData)
+            bc.write(barChart, barChartPath, barCtr, write1_5MinData)
             bc.displayLastNBars(barChart, 20)
             
-         bc.setAvgVol(barChart, i)
-         bc.setAvgBarLen(barChart, i)
+         bc.setAvgVol(barChart, barCtr)
+         bc.setAvgBarLen(barChart, barCtr)
       
-         lg.info ("current price: " + str(price) + " " + str(positionTaken))
+         lg.info ("Last price: " + str(last) + " Position: " + str(positionTaken))
          lg.info ("Average Volume: " + str(bc.getAvgVol()))
          lg.info ("Average Bar length: " + str(bc.getAvgBarLen()))
 
-         # Set all decision points based on the end of the previous bar
-         a.setAllLimits(d, barChart, i)
+         # Set all decision points at the end of the previous bar
+         a.setAllLimits(d, barChart, barCtr)
 
          # Take a position if conditions exist
          # Action here is really action on the open of the next bar since it comes after 
          # setAllLimits
          a.setActionOnNewBar()
-         positionTaken = a.takePosition(d, barChart, i)
+         positionTaken = a.takePosition(d, barChart, barCtr)
 
-         i += 1
+         barCtr += 1
          
          if not offLine:
             bc.appendBar(barChart)
@@ -456,9 +458,9 @@ while True:
       # COMBINE THESE TWO AND JUST CALL ready()
       
       # Wait till next bar before trading if set
-      # if not a.inPosition() and a.getWaitForNextBar() and i < a.getNextBar():
+      # if not a.inPosition() and a.getWaitForNextBar() and barCtr < a.getNextBar():
 
-      if a.getWaitForNextBar() and i < a.getNextBar():
+      if a.getWaitForNextBar() and barCtr < a.getNextBar():
          lg.debug("Waiting for next bar...")
          continue
          
@@ -469,12 +471,12 @@ while True:
             a.setWaitForNextBar()
             continue
 
-      #if a.inPosition() and i < a.getNextBar():
+      #if a.inPosition() and barCtr < a.getNextBar():
       #   lg.debug("In a position. Waiting for next bar...")
       #   continue
 
       # Take a position if conditions exist
-      positionTaken = a.takePosition(d, barChart, i)
+      positionTaken = a.takePosition(d, barChart, barCtr)
 
    # end bar loop
 
@@ -482,7 +484,7 @@ while True:
    if not offLine and not a.getAfterMarket():
       if a.inPosition():
          if a.isMarketExitTime():
-            a.closePosition(d, barChart, i)
+            a.closePosition(d, barChart, barCtr)
             # Create the 1 - 5 min profiles so they can be iterated later
             if write1_5MinData:
                copyfile(profile1m, profile2m)
@@ -497,7 +499,7 @@ while True:
       # th = Thread(a.logIt(action, str(a.getBarsInPosition()), tm.now(), logPath))
       # Write to log file
       
-   #if i == 20: break
+   #if barCtr == 20: break
    
 # end execution loop
 

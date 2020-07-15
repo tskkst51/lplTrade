@@ -125,6 +125,7 @@ class ConnectEtrade:
          else: # Live
             self.ask = float(sym['QuoteResponse']['QuoteData']['Intraday']['ask'])
             self.bid = float(sym['QuoteResponse']['QuoteData']['Intraday']['bid'])
+            self.lastTrade = float(sym['QuoteResponse']['QuoteData']['Intraday']['lastTrade'])
             self.changeClose = sym['QuoteResponse']['QuoteData']['Intraday']['changeClose']   
             self.changeClosePct = sym['QuoteResponse']['QuoteData']['Intraday']['changeClosePercentage']   
             self.companyName = sym['QuoteResponse']['QuoteData']['Intraday']['companyName']   
@@ -134,7 +135,6 @@ class ConnectEtrade:
             self.dateTimeUTC = sym['QuoteResponse']['QuoteData']['dateTimeUTC']   
             self.dateTime = sym['QuoteResponse']['QuoteData']['dateTime']   
             self.quoteStatus = sym['QuoteResponse']['QuoteData']['quoteStatus']
-            self.lastTrade = float(sym['QuoteResponse']['QuoteData']['Intraday']['lastTrade'])
    
          if self.verbose:
             print ("\nAll Data:" )
@@ -296,6 +296,8 @@ class ConnectEtrade:
 
       return
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class ConnectBitFinex:
    def __init__(self, service="bitstamp"):
       self.service = service
@@ -324,6 +326,8 @@ class ConnectBitFinex:
 
 # Connect to API service providers: bit stamp kraken etrade ibkr lakebtc
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class ConnectBitStamp:
    def __init__(self, service="bitstamp", currency="btc", alt="usd"):
       self.service = service

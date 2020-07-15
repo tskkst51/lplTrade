@@ -547,11 +547,13 @@ class Algorithm():
          # in sequential profit taking
          if self.quickProfitCtr:
             self.setAvgBarLenLimits(barChart, bar)
-            self.lg.debug ("In Hi Lo: profit taking limits buy: " + str(self.closeBuyLimit) + " sell " + str(self.closeSellLimit))
-               
+            self.lg.debug ("self.quickProfitCtr set: " + str(self.quickProfitCtr))
+
          self.lg.debug ("In Hi Lo: open limits buy " + str(self.openBuyLimit) + " sell " + str(self.openSellLimit))
          self.lg.debug ("In Hi Lo: close limits buy " + str(self.closeBuyLimit) + " sell " + str(self.closeSellLimit))
+            
          self.lg.debug ("currentPrice " + str(self.cn.getCurrentAsk()))
+         
          if self.inPosition():
             if self.positionType == self.buy:
                self.lg.debug ("Hi Lo: in buy position " + str(self.positionType))
@@ -666,8 +668,8 @@ class Algorithm():
       if self.higherHighsBars > self.tradingDelayBars:
          self.tradingDelayBars = self.higherHighsBars
          
-      if self.offLine:
-         self.tradingDelayBars += 1
+      #if self.offLine:
+      #   self.tradingDelayBars += 1
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def ready(self, currentNumBars):
@@ -800,7 +802,7 @@ class Algorithm():
          self.positionType = self.sell
 
       self.lg.info("\n")
-      self.lg.info("POSITION OPEN")
+      self.lg.info("POSITION OPEN\n")
       self.lg.info("buy/sell: " + str(buyOrSell))
       self.lg.info("Position Price: " + str(price))
       
@@ -870,7 +872,7 @@ class Algorithm():
       self.closePositionPrice = price
 
       print ("\n")
-      print ("POSITION CLOSED")
+      print ("POSITION CLOSED\need")
       print ("open price: " + str(self.openPositionPrice))
       print ("close price: " + str(self.closePositionPrice))
       print ("current Price: " + str(price))
@@ -1002,7 +1004,7 @@ class Algorithm():
       return self.afterMarket
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getPreMarket(self):
+   def doPreMarket(self):
    
       return self.preMarket
             
@@ -1047,11 +1049,14 @@ class Algorithm():
       profitAmt = self.cn.getCurrentAsk() * self.profitPctTrigger
       
       if self.quickProfitCtr:
-         profitAmt /= self.quickProfitCtr
+         divisor = self.quickProfitCtr + 1
+         if self.increaseCloseBarsMax < self.quickProfitCtr:
+            divisor = self.increaseCloseBarsMax
+         profitAmt /= divisor
          self.lg.debug ("reducing profit target by : " + str(self.quickProfitCtr))
          
       # Use bar length passed in if set
-      if useBars > 0:
+      elif useBars > 0:
          profitAmt = self.bc.getAvgBarLen()
          self.lg.debug ("profit pct using avg bar length: " + str(profitAmt))
          
@@ -1106,7 +1111,6 @@ class Algorithm():
       if bar < self.lowerHighsBars or bar < self.higherLowsBars or bar < self.lowerLowsBars or bar < self.higherHighsBars:
          return
       
-      
       # Find the Hi Lo bars with the max number of bars defined
       # lowerHighsBars could be 2 where lowerLowsBars could be 3
       loopLowIterator = loopHiIterator = 0
@@ -1122,10 +1126,8 @@ class Algorithm():
       self.lowValues = [0.0] * loopLowIterator   
       self.hiValues = [0.0] * loopHiIterator  
    
-      barChartLen = len(barChart) - 1
-
-      print ("loopLowIterator " + str(loopLowIterator))
-      print (str(bar))
+      print ("loopLowIterator for lower lo's" + str(loopLowIterator))
+      print ("Bar number: " + str(bar))
       
       for n in range(loopLowIterator):
          print ("low's: " + str(barChart[bar - n][self.lo]))
@@ -1531,7 +1533,7 @@ class Algorithm():
 
       # Tighten up the limit when profit has been taken
       if self.quickProfitCtr:
-         divisor = self.quickProfitCtr
+         divisor = self.quickProfitCtr + 1
          if self.increaseCloseBarsMax < self.quickProfitCtr:
             divisor = self.increaseCloseBarsMax
          avgBarLen = avgBarLen / divisor
@@ -1557,7 +1559,7 @@ class Algorithm():
          
       # Tighten up the limit when profit has been taken
       if self.quickProfitCtr:
-         divisor = self.quickProfitCtr
+         divisor = self.quickProfitCtr + 1
          if self.increaseCloseBarsMax < self.quickProfitCtr:
             divisor = self.increaseCloseBarsMax
          avgBarLen = avgBarLen / divisor
@@ -2308,7 +2310,6 @@ class Algorithm():
       n = 1
       while n < numBars:
          hi = priceArr[n]
-         print ("Hi " + str(hi))
          if hi >= highest:
             return 0
          highest = hi

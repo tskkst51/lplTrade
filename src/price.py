@@ -70,28 +70,28 @@ class Price:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getNextPrice(self, bc, numBars, bar):
             
-      price = bid = ask = 0.0
+      last = bid = ask = 0.0
             
       # Get price from file, randomly or live
       if self.offLine:      
          
          # From file
          if self.upff:                        
-            price = ask = self.priceArr[self.priceIdx][0]
+            last = ask = self.priceArr[self.priceIdx][0]
             bid = self.priceArr[self.priceIdx][1]
             self.priceIdx += 1
          # Randomly
          else:
             price = self.getRandomPrice(bc, numBars, bar)
-            bid = ask = price
+            bid = ask = last
 
       # Live      
       else:
-         price = self.cn.getCurrentPrice()
+         last = self.cn.getLastTrade()
          bid = self.cn.getCurrentBid()
          ask = self.cn.getCurrentAsk()
          
-      return float(price), float(bid), float(ask)
+      return float(last), float(bid), float(ask)
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isNextBar(self, bar):
@@ -123,7 +123,6 @@ class Price:
       
       if bar == 0:
          with open(self.path2m, "a+", encoding="utf-8") as priceFile:
-            #priceFile.write ('%s' % str(price) + "," + str(self.min2Ctr) + "\n")
             priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(bar) + "\n")
       else:
          if (bar % self.minBar2) == 0:
@@ -132,7 +131,6 @@ class Price:
                self.next2mBar = bar
                
          with open(self.path2m, "a+", encoding="utf-8") as priceFile:
-            #priceFile.write ('%s' % str(price) + "," + str(self.min2Ctr) + "\n")
             priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(self.min2Ctr) + "\n")
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -142,7 +140,6 @@ class Price:
       
       if bar == 0:
          with open(self.path3m, "a+", encoding="utf-8") as priceFile:
-            #priceFile.write ('%s' % str(price) + "," + str(self.min3Ctr) + "\n")
             priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(bar) + "\n")
       else:
          if (bar % self.minBar3) == 0:
@@ -151,7 +148,6 @@ class Price:
                self.next3mBar = bar
                
          with open(self.path3m, "a+", encoding="utf-8") as priceFile:
-            #priceFile.write ('%s' % str(price) + "," + str(self.min3Ctr) + "\n")
             priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(self.min3Ctr) + "\n")
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -161,7 +157,6 @@ class Price:
       
       if bar == 0:
          with open(self.path4m, "a+", encoding="utf-8") as priceFile:
-            #priceFile.write ('%s' % str(price) + "," + str(self.min4Ctr) + "\n")
             priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(bar) + "\n")
       else:
          if (bar % self.minBar4) == 0:
@@ -170,7 +165,6 @@ class Price:
                self.next4mBar = bar
                
          with open(self.path4m, "a+", encoding="utf-8") as priceFile:
-            #priceFile.write ('%s' % str(price) + "," + str(self.min4Ctr) + "\n")
             priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(self.min4Ctr) + "\n")
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -180,7 +174,6 @@ class Price:
       
       if bar == 0:
          with open(self.path5m, "a+", encoding="utf-8") as priceFile:
-            #priceFile.write ('%s' % str(price) + "," + str(self.min5Ctr) + "\n")
             priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(bar) + "\n")
       else:
          if (bar % self.minBar5) == 0:
@@ -189,7 +182,6 @@ class Price:
                self.next5mBar = bar
                
          with open(self.path5m, "a+", encoding="utf-8") as priceFile:
-            #priceFile.write ('%s' % str(price) + "," + str(self.min5Ctr) + "\n")
             priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(self.min5Ctr) + "\n")
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -204,7 +196,6 @@ class Price:
    def write(self, path, price, bid, bar, doAllMinutes):
 
       with open(path, "a+", encoding="utf-8") as priceFile:
-         #priceFile.write ('%s' % str(price) + "," + str(bar) + "\n")
          priceFile.write ('%s' % str(price) + "," + str(bid) + "," + str(bar) + "\n")
          
       if doAllMinutes:

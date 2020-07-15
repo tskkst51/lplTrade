@@ -35,35 +35,39 @@ class Barchart:
    def init(self):
    
       #      Hi  Lo  Op  Cl  V BarL Date SH SL
-      #bc = [[0.0,0.0,0.0,0.0,0,0.0,""]]
       bc = [[0.0,0.0,0.0,0.0,0,0.0,0,0,""]]
    
       return bc
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def loadInit(self, bc, date, bar):
+   def loadInit(self, bc, date, bar, bid, ask, last):
    
-      bc[bar][self.op] = bc[bar][self.cl] = bc[bar][self.hi] = self.cn.getCurrentAsk()
-      bc[bar][self.lo] = self.cn.getCurrentBid()
+      bc[bar][self.op] = bc[bar][self.cl] = last
+      bc[bar][self.hi] = ask
+      bc[bar][self.lo] = bid
       bc[bar][self.dt] = date
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def loadBeginBar(self, bc, volume, bar):
+   def loadBeginBar(self, bc, volume, bar, bid, ask, last):
    
-      if price > bc[bar][self.hi]:
-         bc[bar][self.hi] = self.cn.getCurrentAsk()
+      if ask > bc[bar][self.hi]:
+         bc[bar][self.hi] = ask
          
-      if price < bc[bar][self.lo]:
-         bc[bar][self.lo] = self.cn.getCurrentBid()
+      if bid < bc[bar][self.lo]:
+         bc[bar][self.lo] = bid
+               
+      if bid < bc[bar][self.op]:
+         bc[bar][self.lo] = last
                
       bc[bar][self.vl] = volume
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def loadEndBar(self, bc, date, bar):
+   def loadEndBar(self, bc, date, bar, bid, ask, last):
    
-      bc[bar][self.cl] = self.cn.getCurrentAsk()
+      bc[bar][self.cl] = last
       bc[bar][self.dt] = date            
       bc[bar][self.bl] = round((bc[bar][self.hi] - bc[bar][self.lo]), 2)
+      
       self.loadHiLoBar(bc, bar)
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -76,12 +80,6 @@ class Barchart:
       if bc[bar][self.lo] < self.sessionLo:
          self.sessionLo = bc[bar][self.lo]
          bc[bar][self.sL] = 1
-         
-#      if bc[bar][self.hi] > bc[bar - 1][self.hi]:
-#         bc[bar][self.sH] = 1
-#         
-#      if bc[bar][self.lo] < bc[bar - 1][self.lo]:
-#         bc[bar][self.sL] = 1
                
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setAvgVol(self, bc, numBars):
