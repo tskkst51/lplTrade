@@ -1,0 +1,6 @@
+AAPL
+MA
+TSLA
+GS
+UNH
+MSFT

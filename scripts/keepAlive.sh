@@ -2,40 +2,81 @@
 
 ## Detect the status of lplTrade and restart if not running
 
-# Set 
-# Configure cron to Wait 10 seconds before checking
+# Command to kill all processes:
+# kill $(ps | grep lplt.py|awk '{printf $1 " " }')
 
-lpltPath=$HOME/git/lplTrade
-runPath=$HOME/git/venv/bin
+wp=$(pwd)
 
-py3=$runPath/python3
+lpltPath=$wp
+lpltPath+="/bin/lplt.py"
 
-activate=$(. $runPath/activate) || echo activation failed
-shScript=$HOME/bin/lplt.sh
-cmd="$py3 $lpltPath/bin/lplt.py -r -c $HOME/profiles/et.json -p $lpltPath/profiles/active.json"
+if [[ ! -e $lpltPath ]]; then
+   echo $lpltPath not found!
+   exit 1
+fi
 
-echo $shScript
-$shScript
+host=$(hostname -s)
+
+if [[ $host -eq "ML-C02C8546LVDL" ]]; then
+   activateDir="/lplW"
+else
+   activateDir="/venv" 
+fi
+
+activateCmd=$(dirname $wp)
+activateCmd+=$activateDir
+activateCmd+="/bin/activate"
+
+py3=$(dirname $wp)
+py3+=$activateDir
+py3+="/bin/python3"
+
+stocksPath=$wp
+stocksPath+="/profiles/stocks.txt"
+
+echo $activateCmd
+echo $lpltPath
+echo $py3
+echo $stocksPath
+
+echo Running lplt against the following symbols...
+cat $stocksPath
+
+#activate=$(. $activateCmd) || echo activation failed
+
+. $activateCmd || echo activation failed 
+
+# Execute script to populate source library path
+$HOME/bin/lplt.sh
+dt=$(date "+%Y%m%d")
 
 while true ; do
-  echo $cmd
-  program=lplt.py
-
-  ps | grep -q $program | grep -v grep
-
-  if [ $? == 0 ]; then
-     sleep 5
-     continue
-  fi
-
-  echo Starting lplt...
-
-  # Make sure latest code is in place
-  $HOME/bin/lplt.sh
-
-  # Resume running the program from disk
-  $py3 $lpltPath/bin/lplt.py -r -c $HOME/profiles/et.json -p $lpltPath/profiles/active.json
-
+   
+   # Open the stock path and launch the trading program against all stocks
+   while read stock; do      
+            
+      log=$wp
+      log+="/logs/TEMPP_"
+      log+=$stock
+      log+="_"
+      log+=$dt
+      
+      cmd="$py3 $lpltPath -r -s $stock -c $HOME/profiles/et.json -p $wp/profiles/active.json"
+      
+      program=lplt.py
+      
+      ps | grep $program | grep $stock | grep -qv grep
+      
+      if [ $? == 0 ]; then
+        sleep 3
+        continue
+      fi
+      
+      echo Re-starting $stock $(date) ...
+      
+      # Resume running the program from disk
+      $cmd >> $log &
+   done < $stocksPath
 done
 
 exit 0

@@ -340,7 +340,7 @@ while True:
             marketOpen += 1
 
    if not offLine:
-      sleep(0.2)
+      sleep(0.1)
       
    # Set the initial loop time from the profile
    if write1_5MinData:

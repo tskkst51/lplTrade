@@ -21,7 +21,7 @@
        "doDynamic": "0",
        "doOnlySells": "0",
        "doOnlyBuys": "0",
-       "afterMarket": "0",
+       "afterMarket": "1",
        "preMarket": "0",
        "usePricesFromFile": "1",
        "write1_5MinData": "1",
