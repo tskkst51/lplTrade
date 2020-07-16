@@ -182,6 +182,7 @@ class Algorithm():
       self.dynPriceInRange = 0
 
       self.totalGain = 0.0
+      self.totalProfit = 0.0
       self.quickProfitCtr = 0
       self.useAvgBarLen = 0
       self.avgBarLenCtr = 0
@@ -880,6 +881,8 @@ class Algorithm():
       print ("stopPrice: " + str(self.getClosePrice()))
       print ("bar Count In Position: " + str(self.barCountInPosition))
       print ("Total Bar Count: " + str(self.barCount) + "\n")
+      print ("Loss/Gain: " + str(gain) + "\n")
+      print ("Total Gain: " + str(self.totalGain) + "\n")
 
       if gain < 0:
          self.setAllLimits(d, bc, bar)
@@ -993,6 +996,21 @@ class Algorithm():
       
       return self.doReverseBuySell
       
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getTotalGain(self):
+
+      return round(self.totalGain, 2)
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getTotalProfit(self):
+
+      return self.totalProfit
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setTotalProfit(self, price, percentage):
+
+      self.totalProfit = round(price * percentage, 2)
+   
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getMarketOpenTime(self):
 

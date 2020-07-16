@@ -47,6 +47,7 @@
        "waitForNextBar": "0",
        "hiLowBarMaxCounter": "10",
        "profitPctTrigger": "0.0010",
+       "quitMaxProfit": "0.0125",
        "shortTrendBars": "8",
        "midTrendBars": "16",
        "longTrendBars": "32",

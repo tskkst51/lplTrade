@@ -126,6 +126,7 @@ profileTradeData = str(d["profileTradeData"])
 resume = str(d["profileTradeData"]["resume"])
 usePricesFromFile = int(d["profileTradeData"]["usePricesFromFile"])
 write1_5MinData = int(d["profileTradeData"]["write1_5MinData"])
+quitMaxProfit = float(d["profileTradeData"]["quitMaxProfit"])
 
 offLine = int(c["profileConnectET"]["offLine"])
 sandBox = int(c["profileConnectET"]["sandBox"])
@@ -326,6 +327,8 @@ if not offLine:
 
 a.setTradingDelayBars()
 
+dirtyProfit = 0
+
 while True:
 
    # Start trading at beginning of day
@@ -375,14 +378,21 @@ while True:
       # Set the values from the trading service
       cn.setValues(barChart, barCtr, ask, bid)
       
-      # 
       a.unsetActionOnNewBar()
       
       last, bid, ask = pr.getNextPrice(barChart, numBars, barCtr)
 
-      lg.info ("\nbar: " + str(barCtr))
+      # Set the profit to gain
+      if not dirtyProfit:
+         if quitMaxProfit > 0.0:
+            dirtyProfit += 1
+            a.setTotalProfit(last, quitMaxProfit)
+
+      lg.info ("\nBAR : " + str(barCtr))
       lg.info ("HI  : " + str(barChart[barCtr][hi]))
       lg.info ("LAST: " + str(last))
+      lg.info ("BID : " + str(bid))
+      lg.info ("ASK:  " + str(ask))
       lg.info ("LO  : " + str(barChart[barCtr][lo]) + "\n")
       
       tradeVolume = cn.getVolume() - initialVol
@@ -398,6 +408,11 @@ while True:
             lg.info("Program exiting due to end of day trading")
             exit()
          
+      if quitMaxProfit > 0.0:
+         if a.getTotalGain() >= a.getTotalProfit():
+            lg.info ("QUITTING MAX PROFIT REACHED Gain: " + str(a.getTotalGain()) + " Target: " + str(a.getTotalProfit()))
+            # exit()
+            
       # Save off the prices so they can be later used in offLine mode
       if usePricesFromFile and not offLine:
       
