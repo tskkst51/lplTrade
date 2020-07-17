@@ -340,8 +340,7 @@ class Algorithm():
       
       if not self.inPosition():         
          return action
-         
-      
+
       if self.quickProfitCtr:
          # Use avg bar length as the stop instead of original limits
          self.setAvgBarLenLimits(barChart, bar)
@@ -780,41 +779,48 @@ class Algorithm():
       
       if self.doOnlySells and buyOrSell == self.buy:
          return
-            
-      if buyOrSell == self.buy:
-         price = self.cn.getCurrentAsk()
-      else:
-         price = self.cn.getCurrentBid()
       
-      price = round(price, 2)
-
+      # Open a BUY position
       if buyOrSell == self.buy:
+         price = round(self.cn.getCurrentAsk(), 2)
+         
+         # Execute order here ========================
+         
          if self.offLine:
             self.lg.logIt(self.buy, str(price), str(self.getBarsInPosition()), bc[bar][self.dt])
          else:
             self.lg.logIt(self.buy, str(price), str(self.getBarsInPosition()), self.cn.getTimeStamp())
          self.positionType = self.buy
-            
-      elif buyOrSell == self.sell:
+         
+      # Open a SELL position
+      else:
+         price = round(self.cn.getCurrentBid(), 2)
+         
+         # Execute order here ========================
+         
          if self.offLine:
             self.lg.logIt(self.sell, str(price), str(self.getBarsInPosition()), bc[bar][self.dt])
          else:
             self.lg.logIt(self.sell, str(price), str(self.getBarsInPosition()), self.cn.getTimeStamp())
          self.positionType = self.sell
 
+      # Set all values appropriate with the opening of a position
+
       self.lg.info("\n")
       self.lg.info("POSITION OPEN\n")
       self.lg.info("buy/sell: " + str(buyOrSell))
-      self.lg.info("Position Price: " + str(price))
-      
-      # Set all values appropriate with the opening of a position
-      
+      self.lg.info("Open buy limit: " + str(self.openBuyLimit))
+      self.lg.info("Open position Price: " + str(price))
+      self.lg.info("Open sell limit: " + str(self.openSellLimit))
+            
       if self.offLine:
          self.lg.info("Position Time: " + bc[bar][self.dt])
       else:
-         self.lg.info("Position Time: " + str(price))
+         self.lg.info("Position Time: " + str(self.cn.getTimeStamp()))
          
-      self.setInitialClosePrices()
+      # Using avg bar length or percentage instead (setProfitTarget), Remove eventually
+      #self.setInitialClosePrices()
+      
       self.setCurrentBar(bar)
             
       self.setProfitTarget(0)
@@ -838,9 +844,9 @@ class Algorithm():
 
       gain = price = 0
 
-      print ("self.isBullMidTrend() " + str(self.isBullMidTrend()))
-      print ("self.doTrends() " + str(self.doTrends))
-      print ("self.positionType() " + str(self.positionType))
+      self.lg.debug ("self.isBullMidTrend() " + str(self.isBullMidTrend()))
+      self.lg.debug ("self.doTrends() " + str(self.doTrends))
+      self.lg.debug ("self.positionType() " + str(self.positionType))
       
       #if self.doTrends:
       #   if self.positionType == self.buy:         
@@ -853,9 +859,9 @@ class Algorithm():
       #         return        
 
       if self.positionType == self.buy:
-         price = self.cn.getCurrentAsk()
-      else:
          price = self.cn.getCurrentBid()
+      else:
+         price = self.cn.getCurrentAsk()
          
       if self.positionType == self.buy:
          gain = price - self.openPositionPrice
@@ -873,21 +879,28 @@ class Algorithm():
       self.closePositionPrice = price
 
       print ("\n")
-      print ("POSITION CLOSED\need")
-      print ("open price: " + str(self.openPositionPrice))
-      print ("close price: " + str(self.closePositionPrice))
-      print ("current Price: " + str(price))
-      print ("gain: " + str(gain))
-      print ("stopPrice: " + str(self.getClosePrice()))
-      print ("bar Count In Position: " + str(self.barCountInPosition))
-      print ("Total Bar Count: " + str(self.barCount) + "\n")
-      print ("Loss/Gain: " + str(gain) + "\n")
-      print ("Total Gain: " + str(self.totalGain) + "\n")
+      self.lg.info ("POSITION CLOSED")
+      
+      if self.offLine:
+         self.lg.info("Position Time: " + bc[bar][self.dt])
+      else:
+         self.lg.info("Position Time: " + str(self.cn.getTimeStamp()))
+
+      self.lg.info ("open price: " + str(self.openPositionPrice))
+      self.lg.info ("close price: " + str(self.closePositionPrice))
+      self.lg.info ("current Price: " + str(price))
+      self.lg.info ("gain: " + str(gain))
+      self.lg.info ("stopPrice: " + str(self.getClosePrice()))
+      self.lg.info ("bar Count In Position: " + str(self.barCountInPosition))
+      self.lg.info ("Total Bar Count: " + str(self.barCount) + "\n")
+      self.lg.info ("Loss/Gain: " + str(gain) + "\n")
+      self.lg.info ("Total Gain: " + str(self.totalGain) + "\n")
 
       if gain < 0:
          self.setAllLimits(d, bc, bar)
          self.quickProfitCtr = 0
          self.avgBarLenCtr = 0
+         self.setWaitForNextBar()
          
       self.openPositionPrice = self.closePositionPrice = 0.0
       self.topIntraBar = 0.0
@@ -1061,22 +1074,26 @@ class Algorithm():
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setProfitTarget(self, useBars):
 
-      self.lg.debug ("open position price: " + str(self.cn.getCurrentAsk()))
       self.lg.debug ("profit pct trigger: " + str(self.profitPctTrigger))
 
-      profitAmt = self.cn.getCurrentAsk() * self.profitPctTrigger
+      profitAmt = 0.0
+      if self.positionType == self.buy: 
+         profitAmt = self.cn.getCurrentBid() * self.profitPctTrigger
+      else:
+         profitAmt = self.cn.getCurrentAsk() * self.profitPctTrigger
       
       if self.quickProfitCtr:
          divisor = self.quickProfitCtr + 1
          if self.increaseCloseBarsMax < self.quickProfitCtr:
             divisor = self.increaseCloseBarsMax
          profitAmt /= divisor
-         self.lg.debug ("reducing profit target by : " + str(self.quickProfitCtr))
+         self.lg.debug ("reducing profit target by : " + str(divisor))
+         self.lg.debug ("profit amount : " + str(profitAmt))
          
-      # Use bar length passed in if set
+      # Use bar length if set
       elif useBars > 0:
          profitAmt = self.bc.getAvgBarLen()
-         self.lg.debug ("profit pct using avg bar length: " + str(profitAmt))
+         self.lg.debug ("profit amount using avg bar length: " + str(profitAmt))
          
       if self.positionType == self.buy:
          self.profitTarget = round((self.cn.getCurrentAsk() + profitAmt), 2)
@@ -1331,7 +1348,7 @@ class Algorithm():
       if self.useAvgBarLen:
          self.setAvgBarLenLimits(barChart, bar)
       
-      self.setNextBar(bar+1)
+      self.setNextBar(bar + 1)
       self.unsetWaitForNextBar()
       
       self.revDirty = 0
@@ -1557,6 +1574,7 @@ class Algorithm():
          avgBarLen = avgBarLen / divisor
          print ("divisor: " + str(divisor))
          print ("avgBarLen: " + str(avgBarLen))
+         print ("self.quickProfitCtr: " + str(self.quickProfitCtr))
 
       # only raise the limit
       if self.closeBuyLimit < self.cn.getCurrentAsk() - avgBarLen:
@@ -1581,6 +1599,9 @@ class Algorithm():
          if self.increaseCloseBarsMax < self.quickProfitCtr:
             divisor = self.increaseCloseBarsMax
          avgBarLen = avgBarLen / divisor
+         print ("divisor: " + str(divisor))
+         print ("avgBarLen: " + str(avgBarLen))
+         print ("self.quickProfitCtr: " + str(self.quickProfitCtr))
 
       # only lower the limit
       if self.closeSellLimit > self.cn.getCurrentBid() + avgBarLen:

@@ -14,3 +14,5 @@ profiles/*log
 pyetrade/*pyc
 venv/
 __pycache__/
+python_client.log
+saved

@@ -233,6 +233,13 @@ pr = lpl.Price(a, cn, usePricesFromFile, offLine, a.getMarketBeginTime())
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize files
 
+#date = cn.getDateMonthDayYear()
+
+#logPath += stock + "_" + str(date) + ".log"
+#debugPath += stock + "_" + str(date) + ".debug"
+#barChartPath += stock + "_" + str(date) + ".bc"
+#pricesPath += stock + "_" + str(date) + ".pr"
+
 print ("Prices path: " + pricesPath)
 
 with open(debugPath, "a+", encoding="utf-8") as debugFile:
@@ -364,7 +371,7 @@ while True:
    initialVol = cn.getVolume()
    
    if not offLine:
-         bc.loadInit(barChart, cn.getTimeStamp(), barCtr, bid, ask, last)
+         bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last)
          
    lg.debug ("initialize i: " + str(barCtr))
    
@@ -398,7 +405,7 @@ while True:
       tradeVolume = cn.getVolume() - initialVol
          
       if not offLine:
-         bc.loadBeginBar(barChart, tradeVolume, barCtr, bid, ask, last)
+         bc.loadBar(barChart, tradeVolume, barCtr, bid, ask, last)
    
       # Halt program at end of trading day
       if cn.getTimeHrMnSecs() > lastMinuteOfLiveTrading:
@@ -410,7 +417,7 @@ while True:
          
       if quitMaxProfit > 0.0:
          if a.getTotalGain() >= a.getTotalProfit():
-            lg.info ("QUITTING MAX PROFIT REACHED Gain: " + str(a.getTotalGain()) + " Target: " + str(a.getTotalProfit()))
+            lg.info ("QUITTING MAX PROFIT REACHED Gain: " + str(a.getTotalGain()) + " Target: " + str(a.getTotalProfit()) + " Bar: " + str(barCtr))
             # exit()
             
       # Save off the prices so they can be later used in offLine mode
@@ -501,15 +508,15 @@ while True:
          if a.isMarketExitTime():
             a.closePosition(d, barChart, barCtr)
             # Create the 1 - 5 min profiles so they can be iterated later
-            if write1_5MinData:
-               copyfile(profile1m, profile2m)
-               copyfile(profile1m, profile3m)
-               copyfile(profile1m, profile4m)
-               copyfile(profile1m, profile5m)
-               testDir = testPath + "/" + str(cm.getDateMonthDayYear())
-               mkdir(testDir)
-               copytree(pricesPath, testDir)
-               copytree(bcPath, testDir)
+#            if write1_5MinData:
+#               copyfile(profile1m, profile2m)
+#               copyfile(profile1m, profile3m)
+#               copyfile(profile1m, profile4m)
+#               copyfile(profile1m, profile5m)
+#               testDir = testPath + "/" + str(cm.getDateMonthDayYear())
+#               mkdir(testDir)
+#               copytree(pricesPath, testDir)
+#               copytree(bcPath, testDir)
 
       # th = Thread(a.logIt(action, str(a.getBarsInPosition()), tm.now(), logPath))
       # Write to log file

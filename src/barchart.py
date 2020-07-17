@@ -40,15 +40,15 @@ class Barchart:
       return bc
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def loadInit(self, bc, date, bar, bid, ask, last):
+   def loadInitBar(self, bc, date, bar, bid, ask, last):
    
       bc[bar][self.op] = bc[bar][self.cl] = last
-      bc[bar][self.hi] = ask
-      bc[bar][self.lo] = bid
+      bc[bar][self.hi] = last
+      bc[bar][self.lo] = last
       bc[bar][self.dt] = date
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def loadBeginBar(self, bc, volume, bar, bid, ask, last):
+   def loadBar(self, bc, volume, bar, bid, ask, last):
    
       if ask > bc[bar][self.hi]:
          bc[bar][self.hi] = ask
@@ -57,7 +57,7 @@ class Barchart:
          bc[bar][self.lo] = bid
                
       if bid < bc[bar][self.op]:
-         bc[bar][self.lo] = last
+         bc[bar][self.op] = last
                
       bc[bar][self.vl] = volume
 
