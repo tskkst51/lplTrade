@@ -15,6 +15,7 @@ if [[ ! -e $lpltPath ]]; then
    exit 1
 fi
 
+exitTime="160000"
 host=$(hostname -s)
 
 if [[ $host -eq "ML-C02C8546LVDL" ]]; then
@@ -42,8 +43,6 @@ echo $stocksPath
 echo Running lplt against the following symbols...
 cat $stocksPath
 
-#activate=$(. $activateCmd) || echo activation failed
-
 . $activateCmd || echo activation failed 
 
 # Execute script to populate source library path
@@ -54,7 +53,21 @@ while true ; do
    
    # Open the stock path and launch the trading program against all stocks
    while read stock; do      
-            
+      
+      # Exit when time is after 4pm
+      timeNow=$(date "+%H%M%S")
+
+      echo $timeNow
+      echo $exitTime
+      
+      if [[ "$timeNow" > "$exitTime" ]]; then
+         echo Exiting time is after 4PM: $(date)
+         
+         # Kill all process and exit
+         kill $(ps | grep lplt.py|awk '{printf $1 " " }')
+         exit 0
+      fi
+      
       log=$wp
       log+="/logs/TEMPP_"
       log+=$stock
