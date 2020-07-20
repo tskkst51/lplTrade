@@ -54,7 +54,7 @@ class Log:
       print ("SUCCESS: " + self.msg)
       
    def header(self, date):
-      self.hdr =      "ACTION      GAIN  TOTAL WIN %  BARS   TIME"
+      self.hdr =      "ACTION      GAIN  TOTAL WIN %  BARS TRADES TIME"
       self.hdrLine = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
       return ("\n" + date + "\n" + self.hdr + "\n" + self.hdrLine + "\n")
       
@@ -67,7 +67,7 @@ class Log:
       self.time = time
       print ("SUCCESS: " + self.msg)
       
-   def logIt(self, action, price, barLength, time):
+   def logIt(self, action, price, barLength, time, numTrades):
       totGain = grandTotal = ""
       if action == 1:
          self.strAction = "buy"
@@ -114,7 +114,7 @@ class Log:
          
          with open(self.logPath, "a+", encoding="utf-8") as logFile:
             logFile.write (
-               self.strAction + "   " + str(price) + " " + str(totGain) + " " + str(grandTotal)  + " " + str(winPct)  + "%   " + str(barLength) + "     " + str(time) + "\n")
+               self.strAction + "   " + str(price) + " " + str(totGain) + " " + str(grandTotal)  + " " + str(winPct)  + "%   " + str(barLength) + " "  + str(numTrades) + "     " + str(time) + "\n")
       else:
          with open(self.logPath, "a+", encoding="utf-8") as logFile:
             logFile.write (

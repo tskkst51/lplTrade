@@ -68,7 +68,7 @@ while true ; do
          echo Exiting... Time is after 4PM: $(date)
          
          # Kill all process and exit
-         kill $(ps | grep lplt.py|awk '{printf $1 " " }')
+         kill $(ps | grep lplt.py | awk '{printf $1 " " }')
          
          # Move data to test directory
          testDir="${wp}/test/${dt}"         

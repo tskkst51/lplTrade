@@ -283,7 +283,7 @@ lg.info ("getQuoteStatus: " + cn.getQuoteStatus())
 lg.info (a.getAlgorithmMsg())
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Main loop. Loop forever. Pause trading during and after market hours 
+# Initialize based on live or offLine state 
 
 cn.setValues(barChart, barCtr, ask, bid)
 
@@ -319,7 +319,7 @@ if resume:
    # We're live, program halted and now resumed. Initilize a new bar and trade on
    else:
       bc.appendBar(barChart)
-      a.setAllLimits(d, barChart, barCtr)
+      a.setAllLimits(barChart, barCtr)
       
 lg.debug ("Start bar: " + str(barCtr))
 
@@ -335,6 +335,9 @@ if not offLine:
 a.setTradingDelayBars()
 
 dirtyProfit = 0
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Main loop. Loop forever. Pause trading during and after market hours 
 
 while True:
 
@@ -372,10 +375,9 @@ while True:
    
    if not offLine:
          bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last)
-         
-   lg.debug ("initialize i: " + str(barCtr))
    
    a.setCurrentBar(barCtr)
+   a.setNextBar(barCtr + 1)
    dirty = 0
             
    # Loop until each bar has ended
@@ -417,7 +419,11 @@ while True:
          
       if quitMaxProfit > 0.0:
          if a.getTotalGain() >= a.getTotalProfit():
-            lg.info ("QUITTING MAX PROFIT REACHED Gain: " + str(a.getTotalGain()) + " Target: " + str(a.getTotalProfit()) + " Bar: " + str(barCtr))
+            lg.info ("QUITTING MAX PROFIT REACHED Gain: " + str(a.getTotalGain()))
+            lg.info ("Bar: " + str(barCtr))
+            lg.info ("Time: " + str(cn.getTimeStamp()))
+            # Instead of exiting set a trailing stop a few points below target to 
+            # capture more gain
             # exit()
             
       # Save off the prices so they can be later used in offLine mode
@@ -428,8 +434,7 @@ while True:
          
       # Beginning of next bar. 2nd clause is for offline mode
       if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isNextBar(barCtr):      
-         print ("NEW BAR =========================================== NEW BAR\n")
-         
+               
          # Only do this section once
          if dirty:
             continue
@@ -457,8 +462,10 @@ while True:
          lg.info ("Average Bar length: " + str(bc.getAvgBarLen()))
 
          # Set all decision points at the end of the previous bar
-         a.setAllLimits(d, barChart, barCtr)
+         a.setAllLimits(barChart, barCtr)
 
+         print ("\nNEW BAR ===========================================\n")
+         
          # Take a position if conditions exist
          # Action here is really action on the open of the next bar since it comes after 
          # setAllLimits
@@ -502,21 +509,11 @@ while True:
 
    # end bar loop
 
-   # Stop trading at the end of he day
-   if not offLine and not a.getAfterMarket():
-      if a.inPosition():
-         if a.isMarketExitTime():
-            a.closePosition(d, barChart, barCtr)
-            # Create the 1 - 5 min profiles so they can be iterated later
-#            if write1_5MinData:
-#               copyfile(profile1m, profile2m)
-#               copyfile(profile1m, profile3m)
-#               copyfile(profile1m, profile4m)
-#               copyfile(profile1m, profile5m)
-#               testDir = testPath + "/" + str(cm.getDateMonthDayYear())
-#               mkdir(testDir)
-#               copytree(pricesPath, testDir)
-#               copytree(bcPath, testDir)
+      # Stop trading at the end of he day
+      if not offLine and not a.getAfterMarket():
+         if a.inPosition():
+            if a.isMarketExitTime():
+               a.closePosition(d, barChart, barCtr)
 
       # th = Thread(a.logIt(action, str(a.getBarsInPosition()), tm.now(), logPath))
       # Write to log file
