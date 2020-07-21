@@ -109,6 +109,7 @@ sellAction = sell = 2
 executeOnOpenPosition = 1
 executeOnClosePosition = 2
 last = bid = ask = 0.0
+forceClose = 1
 
 stock = str(d["profileTradeData"]["stock"])
 profileName = str(d["profileTradeData"]["profileName"])
@@ -366,6 +367,8 @@ while True:
    if offLine:
       if usePricesFromFile:
          if barCtr >= numBars - 1:
+            if a.inPosition():
+               a.closePosition(barCtr, barChart, forceClose)
             exit()
          
    lg.debug ("End bar time : " + str(endBarLoopTime))
@@ -396,6 +399,7 @@ while True:
          if quitMaxProfit > 0.0:
             dirtyProfit += 1
             a.setTotalProfit(last, quitMaxProfit)
+            lg.debug("Max profit set to: " + str(a.getTotalProfit()))
 
       lg.info ("\nBAR : " + str(barCtr))
       lg.info ("HI  : " + str(barChart[barCtr][hi]))
@@ -413,7 +417,7 @@ while True:
       if cn.getTimeHrMnSecs() > lastMinuteOfLiveTrading:
          if not offLine and not a.getAfterMarket():
             if a.inPosition():
-               a.closePosition(d, barChart, barCtr)
+               a.closePosition(barCtr, barChart, forceClose)
             lg.info("Program exiting due to end of day trading")
             exit()
          
@@ -513,7 +517,7 @@ while True:
       if not offLine and not a.getAfterMarket():
          if a.inPosition():
             if a.isMarketExitTime():
-               a.closePosition(d, barChart, barCtr)
+               a.closePosition(barChart, barCtr, forceClose)
 
       # th = Thread(a.logIt(action, str(a.getBarsInPosition()), tm.now(), logPath))
       # Write to log file

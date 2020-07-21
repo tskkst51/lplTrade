@@ -16,6 +16,7 @@ class Algorithm():
       self.lg = lg
       self.offLine = offLine
       self.bc = bc
+      self.data = data
       
       # Required standard settings
       self.algorithms = str(data['profileTradeData']['algorithms'])
@@ -234,13 +235,13 @@ class Algorithm():
       # Close position
       elif self.inPosition():
          if action == self.buy:
-            self.closePosition(d, bar, barChart)
+            self.closePosition(bar, barChart, 0)
             if self.getQuickReversal() and not self.isPriceInRange():
                self.lg.debug("Quick reversal being used: " + str(action))
                self.openPosition(self.sell, bar, barChart)
             
          elif action == self.sell:
-            self.closePosition(d, bar, barChart)
+            self.closePosition(bar, barChart, 0)
             if self.getQuickReversal() and not self.isPriceInRange():
                self.lg.debug("Quick reversal being used: " + str(action))
                self.openPosition(self.buy, bar, barChart)
@@ -327,14 +328,14 @@ class Algorithm():
          if currentBarLen > previousBarLen: 
             if self.getReversalLimit(currentHi, currentOpen):
                self.lg.info("triggered due to reversal detected!")
-               self.closePosition(d, bar, barChart)
+               self.closePosition(bar, barChart, 0)
 
       return 1
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmReverseBuySell(self):
 
-      self.lg.debug ("In algorithmReverseBuySell: " + str(action))
+      self.lg.debug ("In algorithmReverseBuySell: ")
 
       if self.doReverseBuySell:
          self.setRevBuySell()
@@ -363,14 +364,14 @@ class Algorithm():
             self.lg.debug ( "CLOSING BUY POSITION QUICK PROFIT TAKEN.")
             self.lg.debug (str(self.cn.getCurrentAsk()) + " > " + str(profitTarget))
             self.quickProfitCtr += 1
-            self.closePosition(d, bar, barChart)
+            self.closePosition(bar, barChart, 0)
             
       elif self.getPositionType() == self.sell:
          if self.cn.getCurrentBid() < profitTarget:
             self.lg.debug ( "CLOSING SELL POSITION QUICK PROFIT TAKEN.")
             self.lg.debug (str(self.cn.getCurrentBid()) + " < " + str(profitTarget))
             self.quickProfitCtr += 1
-            self.closePosition(d, bar, barChart)
+            self.closePosition(bar, barChart, 0)
                  
       return action
       
@@ -646,22 +647,16 @@ class Algorithm():
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setTradingDelayBars(self):
-   
-      self.tradingDelayBars = self.maxNumBars
-      
+         
       if self.doRangeTradeBars > self.tradingDelayBars:
          self.tradingDelayBars = self.doRangeTradeBars
    
+      if self.tradingDelayBars < self.maxNumBars:
+         self.tradingDelayBars = self.maxNumBars
+   
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def ready(self, currentNumBars):
-   
-         
-      #if self.shortTrendBars > self.tradingDelayBars:
-         #self.tradingDelayBars = self.shortTrendBars
-         
-      #if self.longTrendBars > self.tradingDelayBars:
-         #self.tradingDelayBars = self.longTrendBars
-       
+          
       self.lg.debug("tradingDelayBars currentNumBars " + str(self.tradingDelayBars) + " " + str(currentNumBars))
       
       if self.tradingDelayBars <= currentNumBars:
@@ -696,7 +691,7 @@ class Algorithm():
 
       # Block taking a position if we are in a range and range trading is set or delay bars are set
       if not self.ready(bar):
-         self.lg.debug("BLOCKING TRADING DUE TO DELAY BARS " + str(self.ready(bar)))         
+         self.lg.debug("BLOCKING TRADING DUE TO DELAY BARS " + str(self.tradingDelayBars))         
          return
 
 #      if self.isPriceInRange():
@@ -735,7 +730,7 @@ class Algorithm():
             self.lg.debug("and got a BUY signal... " + str(buyOrSell))
             return        
          
-         elif self.isBearMidTrend() and self.isBearShortTrend() and buyOrSell == self.buy:
+         elif self.isBearMidTrend() and buyOrSell == self.buy:
             self.lg.debug("In isBearMidTrend BLOCKING ")
             self.lg.debug("and got a BUY signal... " + str(buyOrSell))
             return        
@@ -744,19 +739,7 @@ class Algorithm():
             self.lg.debug("In isBearShortTrend BLOCKING ")
             self.lg.debug("and got a BUY signal... " + str(buyOrSell))
             return        
-         
-         
-#      if self.doRangeTradeBars:
-#         if self.priceInRange > 1:
-#            self.lg.debug("reversing buy sell due first time out of range")
-#            if buyOrSell == self.buy:
-#               buyOrSell = self.sell
-#            elif buyOrSell == self.sell:
-#               buyOrSell = self.buy
-#            
-#            setRangeBuySellLimits(bar, bc)
-#            self.priceInRange = 0
-         
+                  
       # Open position in oposite direction when first time out of a range
       #if self.priceInRange >= 1:
       # set quick profit based on avg bar length
@@ -821,30 +804,27 @@ class Algorithm():
       self.lowestcloseSellLimit = self.closeSellLimit
       self.highestcloseBuyLimit = self.closeBuyLimit
 
-      #print("Initial stopGain: " + str(self.getInitialStopGain()))
-      #print("Initial stopLoss: " + str(self.getInitialStopLoss()))
-      
       return
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def closePosition(self, d, bar, bc):
+   def closePosition(self, bar, bc, force):
 
       self.lg.debug("IN CLOSE POSITION: " + str(self.positionType))
 
       gain = price = 0
 
-      if self.doTrends:      
-#         if self.isBullMegaTrend() and self.positionType == self.buy:
-#            self.lg.debug("In isBullMegaTrend BLOCKING ")
-#            self.lg.debug("and got a SELL signal... " + str(self.positionType))
-#            return        
-#
-#         elif self.isBullLongTrend() and self.positionType == self.buy:
-#            self.lg.debug("In isBullLongTrend BLOCKING ")
-#            self.lg.debug("and got a SELL signal... " + str(self.positionType))
-#            return        
+      if self.doTrends and not force:      
+         if self.isBullMegaTrend() and self.positionType == self.buy:
+            self.lg.debug("In isBullMegaTrend BLOCKING ")
+            self.lg.debug("and got a SELL signal... " + str(self.positionType))
+            return        
 
-         if self.isBullMidTrend() and self.positionType == self.buy:
+         elif self.isBullLongTrend() and self.positionType == self.buy:
+            self.lg.debug("In isBullLongTrend BLOCKING ")
+            self.lg.debug("and got a SELL signal... " + str(self.positionType))
+            return        
+
+         elif self.isBullMidTrend() and self.positionType == self.buy:
             self.lg.debug("In isBullMidTrend BLOCKING ")
             self.lg.debug("and got a SELL signal... " + str(self.positionType))
             return        
@@ -854,17 +834,18 @@ class Algorithm():
             self.lg.debug("and got a SELL signal... " + str(self.positionType))
             return        
          
-#         elif self.isBearMegaTrend() and self.positionType == self.sell:
-#            self.lg.debug("In isBearMegaTrend BLOCKING ")
-#            self.lg.debug("and got a BUY signal... " + str(self.positionType))
-#            return        
-#
-#         elif self.isBearLongTrend() and self.positionType == self.sell:
-#            self.lg.debug("In isBearLongTrend BLOCKING ")
-#            self.lg.debug("and got a BUY signal... " + str(self.positionType))
-#            return        
+         elif self.isBearMegaTrend() and self.positionType == self.sell:
+            self.lg.debug("In isBearMegaTrend BLOCKING ")
+            self.lg.debug("and got a BUY signal... " + str(self.positionType))
+            return        
+
+         elif self.isBearLongTrend() and self.positionType == self.sell:
+            self.lg.debug("In isBearLongTrend BLOCKING ")
+            self.lg.debug("and got a BUY signal... " + str(self.positionType))
+            return        
          
-         elif self.isBearMidTrend() and self.isBearShortTrend() and self.positionType == self.sell:
+        # elif self.isBearMidTrend() and self.isBearShortTrend() and self.positionType == self.sell:
+         elif self.isBearMidTrend() and self.positionType == self.sell:
             self.lg.debug("In isBearMidTrend BLOCKING ")
             self.lg.debug("and got a BUY signal... " + str(self.positionType))
             return        
@@ -885,7 +866,7 @@ class Algorithm():
          gain = self.openPositionPrice - price
          
       self.totalGain += gain
-      
+            
       # Update the log
       if self.offLine:
          self.lg.logIt(self.close, str(price), str(self.getBarsInPosition()), bc[bar][self.dt], self.numTrades)
@@ -931,11 +912,11 @@ class Algorithm():
       self.lastCloseBuyLimit = 0.0
       self.lastCloseSellLimit = 999.99
 
-      self.resetLimits(d)
+      self.resetLimits(self.data)
       self.setExecuteOnClosePosition(0)
       
-      if self.doReverseBuySell:
-         self.unsetRevBuySell()
+      #if self.doReverseBuySell:
+      #   self.unsetRevBuySell()
                
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def resetLimits(self, data):
