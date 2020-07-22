@@ -10,7 +10,7 @@
        "doDefault": "0",
        "doHiLoSeq": "1",
        "doExecuteOnOpen": "0",
-       "doTrends": "1",
+       "doTrends": "0",
        "doQuickProfit": "0",
        "doRangeTradeBars": "0",
        "doOpensCloses": "0",
