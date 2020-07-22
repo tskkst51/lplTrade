@@ -228,20 +228,15 @@ elif service == "eTrade":
 # Initialize algorithm,  barcharts objects
 
 bc = lpl.Barchart()
-a = lpl.Algorithm(d, lg, cn, bc, offLine)
+tr = lpl.Trends(d, lg, cn, bc, offLine)
+lm = lpl.Limits(d, lg, cn, bc, offLine)
+a = lpl.Algorithm(d, lg, cn, bc, tr, lm, offLine)
 pr = lpl.Price(a, cn, usePricesFromFile, offLine, a.getMarketBeginTime())
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize files
 
-#date = cn.getDateMonthDayYear()
-
-#logPath += stock + "_" + str(date) + ".log"
-#debugPath += stock + "_" + str(date) + ".debug"
-#barChartPath += stock + "_" + str(date) + ".bc"
-#pricesPath += stock + "_" + str(date) + ".pr"
-
-print ("Prices path: " + pricesPath)
+lg.info("Using " + pricesPath + " as prices file")
 
 with open(debugPath, "a+", encoding="utf-8") as debugFile:
    debugFile.write(lg.infoStamp(a.getLiveProfileValues(d)))
@@ -333,7 +328,7 @@ if not offLine:
       pr.initWrite(pricesPath)
       bc.initWrite(barChartPath)
 
-a.setTradingDelayBars()
+lm.setTradingDelayBars()
 
 dirtyProfit = 0
 
@@ -366,13 +361,16 @@ while True:
       
    if offLine:
       if usePricesFromFile:
-         if barCtr >= numBars - 1:
+         if barCtr >= numBars - 1 or last == pr.getLastToken():
             if a.inPosition():
                a.closePosition(barCtr, barChart, forceClose)
             exit()
-         
-   lg.debug ("End bar time : " + str(endBarLoopTime))
-   lg.debug ("Start time: " + str(cn.getTimeStamp()))
+   
+   if offLine:
+      lg.debug ("Start time: " + str(bc.getTimeFromFile(barChart, barCtr)) + "\n")
+   else:
+      lg.debug ("End bar time : " + str(endBarLoopTime))
+      lg.debug ("Start time: " + str(cn.getTimeStamp()))
          
    initialVol = cn.getVolume()
    
@@ -399,7 +397,7 @@ while True:
          if quitMaxProfit > 0.0:
             dirtyProfit += 1
             a.setTotalProfit(last, quitMaxProfit)
-            lg.debug("Max profit set to: " + str(a.getTotalProfit()))
+            lg.debug("Max profit set to: " + str(a.getTargetProfit()))
 
       lg.info ("\nBAR : " + str(barCtr))
       lg.info ("HI  : " + str(barChart[barCtr][hi]))
@@ -422,8 +420,9 @@ while True:
             exit()
          
       if quitMaxProfit > 0.0:
-         if a.getTotalGain() >= a.getTotalProfit():
+         if a.getTotalGain() >= a.getTargetProfit():
             lg.info ("QUITTING MAX PROFIT REACHED Gain: " + str(a.getTotalGain()))
+            lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
             lg.info ("Bar: " + str(barCtr))
             lg.info ("Time: " + str(cn.getTimeStamp()))
             # Instead of exiting set a trailing stop a few points below target to 

@@ -29,3 +29,9 @@ from .pattern import Pattern
 
 from . import price
 from .price import Price
+
+from . import trends
+from .trends import Trends
+
+from . import limits
+from .limits import Limits

@@ -36,6 +36,9 @@ class Price:
       self.min4Ctr = 0
       self.min5Ctr = 0
       
+      self.numLines = 0
+      self.lastToken = 99999.99
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def skipFirstBar(self, numPrices):
 
@@ -55,17 +58,21 @@ class Price:
       with open(path, 'r') as pcData:
          lines = pcData.readlines()
          
-      i = 0
+      self.numLines = len(lines)
+      
       for line in lines:
          line = line.replace("\n", "")
          line = line.split(",")
 
          self.priceArr.append([float(line[0]), float(line[1])])
          self.idxArr.append(int(line[2]))
-         
-         i += 1
-               
-      return i
+                
+      return self.numLines
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getLastToken(self):
+   
+      return self.lastToken
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getNextPrice(self, bc, numBars, bar):
@@ -76,7 +83,10 @@ class Price:
       if self.offLine:      
          
          # From file
-         if self.upff:                        
+         if self.upff:
+            if self.priceIdx >= self.numLines:
+               return self.getLastToken(), 0, 0
+                              
             last = ask = self.priceArr[self.priceIdx][0]
             bid = self.priceArr[self.priceIdx][1]
             self.priceIdx += 1
@@ -99,8 +109,8 @@ class Price:
       if not self.offLine:
          return 0
       
-      #if bar == 0:
-      #   print ("self.priceArr self.priceIdx " + str(self.priceArr) + " " + str(self.priceIdx))
+      if self.priceIdx >= self.numLines:
+         return self.getLastToken()
 
       if self.getNextBar() == self.idxArr[self.priceIdx]:
          self.setNextBar()
