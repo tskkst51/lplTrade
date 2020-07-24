@@ -7,11 +7,9 @@ Execute on close gives better gains  when there are more decision bars
    the SPY chart on 7/13 shows 3 decision bars being best
  high and lows algo with one minute chart works best with two bars
 
-Instead of using trends when there is a reversal decision going from buy to sell or sell to buy tighten up the limits.
+TSLA does better with avgBarLengths as close limits
 
-Combine prices into two columns
-awk -v FS=',' '{print $1, $1, $2}' prices/activeAAPL.pr | sed 's/ /,/g'
-awk -v FS=',' '{print $1, $1, $2}' prices/activeIWM.pr | sed 's/ /,/g'
+Instead of using trends when there is a reversal decision going from buy to sell or sell to buy tighten up the limits.
 
 If VIX goes down do rangetrading??
 
@@ -21,8 +19,12 @@ doExecuteOpen
 
 to do don't restart progrm if profit target met, only when a timeout occurs
 
+Combine prices into two columns
+awk -v FS=',' '{print $1, $1, $2}' prices/activeAAPL.pr | sed 's/ /,/g'
+awk -v FS=',' '{print $1, $1, $2}' prices/activeIWM.pr | sed 's/ /,/g'
+
 Candidates based on viewing, in order, low spread
-msft .02 qqq .01 spy .01 iwm .01 aapl .06 ma .07 unh .10 tsla .76 lmt xli fb v xbi smh
+msft .02 qqq .01 unh .10 tsla .76 goog lmt xli fb v xbi smh
 
 The longer in a trend the harder to reverse the trend. Increase decision bars in mid trend and >
 

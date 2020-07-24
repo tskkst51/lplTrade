@@ -31,6 +31,8 @@ class Barchart:
       self.minBar4 = 4
       self.minBar5 = 5
       
+      self.barCountInPosition = 0
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def init(self):
    
@@ -298,5 +300,20 @@ class Barchart:
          ctr += 1
       print ("\n")
             
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def resetBarsInPosition(self):
+
+      self.barCountInPosition = 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setBarsInPosition(self):
+
+      self.barCountInPosition += 1
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getBarsInPosition(self):
+   
+      return self.barCountInPosition 
+      
 
 # end bc

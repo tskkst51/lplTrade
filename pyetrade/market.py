@@ -195,7 +195,7 @@ class ETradeMarket(object):
 
       #print ("API URL: ", api_url, "\n")
       
-      req = self.session.get(api_url)
+      req = self.session.get(api_url, timeout=25)
             
       req.raise_for_status()
 

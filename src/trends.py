@@ -34,6 +34,50 @@ class Trends:
       self.shortTrend = self.midTrend = self.longTrend = self.megaTrend = 0.0
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isShortMidBullLongMegaBear(self):
+   
+      if self.isBullShortTrend():
+         if self.isBullMidTrend():
+            if self.isBearLongTrend():
+               if self.isBearMegaTrend():
+                  self.lg.debug("In isShortMidBullLongMegaBear")
+                  return 1
+      return 0
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isShortMidBearLongMegaBull(self):
+   
+      if self.isBearShortTrend():
+         if self.isBearMidTrend():
+            if self.isBullLongTrend():
+               if self.isBullMegaTrend():
+                  self.lg.debug("In isShortMidBearLongMegaBull")
+                  return 1
+      return 0
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isShortBullMidLongMegaBear(self):
+   
+      if self.isBullShortTrend():
+         if self.isBearMidTrend():
+            if self.isBearLongTrend():
+               if self.isBearMegaTrend():
+                  self.lg.debug("In isShortBullMidLongMegaBear")
+                  return 1
+      return 0
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isShortBearMidLongMegaBull(self):
+   
+      if self.isBearShortTrend():
+         if self.isBullMidTrend():
+            if self.isBullLongTrend():
+               if self.isBullMegaTrend():
+                  self.lg.debug("In isShortBearMidLongMegaBull")
+                  return 1
+      return 0
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isBearTrend(self):
    
       if self.isBearMegaTrend():

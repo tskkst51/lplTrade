@@ -78,8 +78,10 @@ while true ; do
          mv "prices" $testDir || echo Unable to move prices directory to $testDir
          mv "bc" $testDir || echo Unable to move bc directory to $testDir
          mv "logs" $testDir || echo Unable to move logs directory to $testDir
+         mv "debug" $testDir || echo Unable to move debug directory to $testDir
          mkdir "prices" "bc" "logs"  || echo Unable to mkdir "prices" "bc" "logs"
-         tar -cf ${testDir}/${dt}.tar ${testDir} || echo Unable to tar test dir $testDir
+         tar -cf ${testDir}.tar ${testDir} || echo Unable to tar test dir $testDir
+         gzip ${testDir}.tar || echo Unable to gzip ${testDir}.tar
          exit 0
       fi
       

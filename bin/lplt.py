@@ -18,6 +18,7 @@ from shutil import copyfile
 # Parse Command Line Options
 
 verbose = debug = quiet = False
+testMode = 0
 
 parser = OptionParser()
 
@@ -65,6 +66,13 @@ parser.add_option("-v", "--verbose",
 parser.add_option("-t", "--timeBar", type="string",
    action="store", dest="timeBar", default=False,
    help="time bar: 1 5 10 minute...")
+   
+parser.add_option("-w", "--workPath", type="string",
+   action="store", dest="workPath", default=False,
+   help="work directory. default lplTrade...")
+   
+parser.add_option("-e", "--testMode",
+   action="store_true", dest="testMode", help="testMode, used for automated testing")
    
 (clOptions, args) = parser.parse_args()
 
@@ -128,6 +136,7 @@ resume = str(d["profileTradeData"]["resume"])
 usePricesFromFile = int(d["profileTradeData"]["usePricesFromFile"])
 write1_5MinData = int(d["profileTradeData"]["write1_5MinData"])
 quitMaxProfit = float(d["profileTradeData"]["quitMaxProfit"])
+workPath = str(d["profileTradeData"]["workPath"])
 
 offLine = int(c["profileConnectET"]["offLine"])
 sandBox = int(c["profileConnectET"]["sandBox"])
@@ -176,6 +185,11 @@ if clOptions.timeBar:
    timeBar = clOptions.timeBar
    d["profileTradeData"]["timeBar"] = str(timeBar)
    
+if clOptions.workPath:
+   workPath = clOptions.workPath
+   d["profileTradeData"]["workPath"] = str(workPath)
+
+   
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup log and debug file based on profileTradeData name and path
 # Write header data to logs
@@ -188,6 +202,11 @@ profile2m = clOptions.profileTradeDataPath.replace("active", "active2m")
 profile3m = clOptions.profileTradeDataPath.replace("active", "active3m")
 profile4m = clOptions.profileTradeDataPath.replace("active", "active4m")
 profile5m = clOptions.profileTradeDataPath.replace("active", "active5m")
+
+# Setup paths
+
+if workPath:
+   os.chdir(workPath)
 
 logPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
 debugPath = clOptions.profileTradeDataPath.replace("profiles", "debug")
@@ -209,7 +228,7 @@ pricesPath += stock + ".pr"
 if service == "eTrade":
    symbol = stock
 
-lg = lpl.Log(debug, verbose, logPath, debugPath, offLine)
+lg = lpl.Log(debug, verbose, logPath, debugPath, offLine, testMode)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -482,7 +501,7 @@ while True:
          
          # Keep track of the bars in a position
          if a.inPosition():
-            a.setBarInPositionCount()
+            bc.setBarsInPosition()
             
          # End of bar reached. Done with on close processing
          break

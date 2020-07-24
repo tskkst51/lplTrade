@@ -36,6 +36,7 @@ class Limits:
       self.aggressiveOpenPct = float(data['profileTradeData']['aggressiveOpenPct'])
       self.aggressiveClosePct = float(data['profileTradeData']['aggressiveClosePct'])
       self.doOpensCloses = int(data['profileTradeData']['doOpensCloses'])
+      self.useAvgBarLimits = int(data['profileTradeData']['useAvgBarLimits'])
 
       self.higherHighs = self.higherCloses = 0
       self.lowerHighs = self.lowerCloses = 0
@@ -109,66 +110,40 @@ class Limits:
 
       avgBarLen = self.bc.getAvgBarLen()
 
-#      # Tighten up the limit when new bar seen. Indicates a range
-#      if self.positionType == self.buy:
-#         if self.avgBarLenCtr == bar and self.quickProfitCtr:
-#            print ("self.avgBarLenCtr == bar incrementing quickProfitCtr: " + str(self.avgBarLenCtr))
-#            self.quickProfitCtr += 1
-#
-#      # Tighten up the limit when profit has been taken
-#      if self.quickProfitCtr:
-#         divisor = self.quickProfitCtr + 1
-#         if self.increaseCloseBarsMax < self.quickProfitCtr:
-#            divisor = self.increaseCloseBarsMax
-#         avgBarLen = avgBarLen / divisor
-#         print ("divisor: " + str(divisor))
-#         print ("avgBarLen: " + str(avgBarLen))
-#         print ("self.quickProfitCtr: " + str(self.quickProfitCtr))
-
+      if self.bc.getBarsInPosition() > 1:
+         avgBarLen /= 2.0
+                 
+      print ("\navgBarLen: " + str(avgBarLen))
+      print ("previous buy limit: " + str(self.closeBuyLimit))
+      print ("getCurrentAsk() " + str(self.cn.getCurrentAsk()))
+      
       # only raise the limit
-      if self.closeBuyLimit < self.cn.getCurrentAsk() + avgBarLen:
-         self.closeBuyLimit = self.cn.getCurrentAsk() + avgBarLen
+      if self.closeBuyLimit == 0.0:
+         self.closeBuyLimit = round(self.cn.getCurrentAsk() - avgBarLen, 2)
+      elif self.closeBuyLimit < self.cn.getCurrentAsk() - avgBarLen:
+         self.closeBuyLimit = round(self.cn.getCurrentAsk() - avgBarLen, 2)
 
-#      if self.lastCloseBuyLimit < self.closeBuyLimit or self.lastCloseBuyLimit == 0.0:
-#         if self.closeBuyLimit < self.lastCloseBuyLimit:
-#            self.closeBuyLimit = self.lastCloseBuyLimit
-#      else:
-#         self.closeBuyLimit = self.cn.getCurrentAsk() - avgBarLen
-               
-      print ("AvgBarLen: setCloseBuyLimit: " + str(self.closeBuyLimit))
+      print ("\nAvgBarLen: setCloseBuyLimit: " + str(self.closeBuyLimit))
          
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setAvgBarLenCloseSellLimit(self, barChart, bar):
 
       avgBarLen = self.bc.getAvgBarLen()
 
-#      # Tighten up the limit when new bar seen. Indicates a range
-#      if self.positionType == self.sell:
-#         if self.avgBarLenCtr == bar and self.quickProfitCtr:
-#            print ("self.avgBarLenCtr == bar incrementing quickProfitCtr: " + str(self.avgBarLenCtr))
-#            self.quickProfitCtr += 1
-#         
-#      # Tighten up the limit when profit has been taken
-#      if self.quickProfitCtr:
-#         divisor = self.quickProfitCtr + 1
-#         if self.increaseCloseBarsMax < self.quickProfitCtr:
-#            divisor = self.increaseCloseBarsMax
-#         avgBarLen = avgBarLen / divisor
-#         print ("divisor: " + str(divisor))
-#         print ("avgBarLen: " + str(avgBarLen))
-#         print ("self.quickProfitCtr: " + str(self.quickProfitCtr))
-
-#      if self.lastCloseSellLimit > self.closeSellLimit or self.lastCloseSellLimit == 9999.99:
-#         if self.closeSellLimit > self.lastCloseSellLimit:
-#            self.closeSellLimit = self.lastCloseSellLimit
-#      else:
-#         self.closeSellLimit = self.cn.getCurrentAsk() - avgBarLen
+      if self.bc.getBarsInPosition() > 1:
+         avgBarLen /= 2.0
+        
+      print ("\navgBarLen: " + str(avgBarLen))
+      print ("previous sell limit: " + str(self.closeSellLimit))
+      print ("getCurrentBid() " + str(self.cn.getCurrentBid()))
 
       # only lower the limit
-      if self.closeSellLimit > self.cn.getCurrentBid() + avgBarLen:
-         self.closeSellLimit = self.cn.getCurrentBid() + avgBarLen
+      if self.closeSellLimit == 0.0:
+         self.closeSellLimit = round(self.cn.getCurrentBid() + avgBarLen, 2)
+      elif self.closeSellLimit > self.cn.getCurrentBid() + avgBarLen:
+         self.closeSellLimit = round(self.cn.getCurrentBid() + avgBarLen, 2)
       
-      print ("AvgBarLen: setCloseSellLimit: " + str(self.closeSellLimit))
+      print ("\nAvgBarLen: setCloseSellLimit: " + str(self.closeSellLimit))
          
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setOpenBuyLimit(self, numBars):
@@ -183,11 +158,9 @@ class Limits:
       
       elif self.doExecuteOnOpen:
          if self.aggressiveOpen:
-            #self.openBuyLimit = self.getLowestOpenPrice(numBars)
             self.openBuyLimit = self.getLowestClosePrice(numBars)
             self.lg.debug("AGR doExecuteOnOpen: setOpenBuyLimit to the lowest open ")
          else:
-            #self.openBuyLimit = self.getHighestOpenPrice(numBars)
             self.openBuyLimit = self.getHighestClosePrice(numBars)
             self.lg.debug("doExecuteOnOpen: setOpenBuyLimit to the highest open")
           
@@ -274,19 +247,27 @@ class Limits:
       self.lg.debug(str(self.closeSellLimit))
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setBuySellLimits(self, numBars, bar):
+   def setOpenBuySellLimits(self, numBars, bar):
       
       if not numBars:
          self.setOpenBuyLimit(self.openBuyBars)
          self.setOpenSellLimit(self.openSellBars)
+               
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setCloseBuySellLimits(self, numBars, bar):
+      
+      if not numBars:
          self.setCloseBuyLimit(self.closeBuyBars)
          self.setCloseSellLimit(self.closeSellBars)
-         
-      # This will be called by dynamic algo which will pass in dynamic values
-      # based on condition.
+               
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def unsetCloseAvgBarLenLimits(self, barChart, bar):
+   
+      self.closeBuyLimit = 0.0
+      self.closeSellLimit = 0.0
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setAvgBarLenLimits(self, barChart, bar):
+   def setCloseAvgBarLenLimits(self, barChart, bar):
       
       #self.setAvgBarLenOpenBuyLimit(barChart, bar)
       #self.setAvgBarLenOpenSellLimit(barChart, bar)

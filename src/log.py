@@ -5,7 +5,7 @@ import random
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Log:
 
-   def __init__(self, debugFlag, verboseFlag, logPath, debugPath, offLine):
+   def __init__(self, debugFlag, verboseFlag, logPath, debugPath, offLine, testMode=0):
       self.totGain = 0.0
       self.grandTotal = 0.0
       self.strAction = ""
@@ -17,6 +17,7 @@ class Log:
       self.losses = 0
       self.totalTrades = 0
       self.offLine = 0
+      self.testMode = testMode
       
    def debug(self, msg):
       if self.debugFlag:
