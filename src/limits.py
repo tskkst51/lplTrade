@@ -4,7 +4,7 @@ trends module
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Limits:
-   def __init__(self, data, lg, cn, bc, offLine):
+   def __init__(self, data, lg, cn, bc, offLine, stock=""):
       
       self.data = data
       self.lg = lg
@@ -42,6 +42,8 @@ class Limits:
       self.lowerHighs = self.lowerCloses = 0
       self.lowerLows = self.lowerOpens = 0
       self.higherLows = self.higherOpens = 0
+      self.hiValues = []
+      self.loValues = []
       
       self.openBuyLimit = 0.0
       self.closeBuyLimit = 0.0
@@ -51,6 +53,8 @@ class Limits:
       self.lowestcloseSellLimit = 99999999.999999
       self.openSellLimit = 0.0
       self.closeSellLimit = 0.0
+      
+      self.stock = stock
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setRangeLimits(self, barChart, bar):
@@ -88,7 +92,7 @@ class Limits:
       if self.quickProfitCtr:
          avgBarLen = avgBarLen / self.quickProfitCtr
          
-      self.openBuyLimit = self.cn.getCurrentAsk() + avgBarLen
+      self.openBuyLimit = self.cn.getCurrentAsk(self.stock) + avgBarLen
       
       print ("AvgBarLen: setOpenBuyLimit: " + str(self.openBuyLimit))
          
@@ -101,7 +105,7 @@ class Limits:
       if self.quickProfitCtr:
          avgBarLen = avgBarLen / self.quickProfitCtr
 
-      self.openSellLimit = self.cn.getCurrentBid() + avgBarLen
+      self.openSellLimit = self.cn.getCurrentBid(self.stock) + avgBarLen
       
       print ("AvgBarLen: setOpenSellLimit: " + str(self.openSellLimit))
          
@@ -115,13 +119,13 @@ class Limits:
                  
       print ("\navgBarLen: " + str(avgBarLen))
       print ("previous buy limit: " + str(self.closeBuyLimit))
-      print ("getCurrentAsk() " + str(self.cn.getCurrentAsk()))
+      print ("getCurrentAsk() " + str(self.cn.getCurrentAsk(self.stock)))
       
       # only raise the limit
       if self.closeBuyLimit == 0.0:
-         self.closeBuyLimit = round(self.cn.getCurrentAsk() - avgBarLen, 2)
-      elif self.closeBuyLimit < self.cn.getCurrentAsk() - avgBarLen:
-         self.closeBuyLimit = round(self.cn.getCurrentAsk() - avgBarLen, 2)
+         self.closeBuyLimit = self.cn.getCurrentAsk(self.stock) - avgBarLen
+      elif self.closeBuyLimit < self.cn.getCurrentAsk(self.stock) - avgBarLen:
+         self.closeBuyLimit = self.cn.getCurrentAsk(self.stock) - avgBarLen
 
       print ("\nAvgBarLen: setCloseBuyLimit: " + str(self.closeBuyLimit))
          
@@ -135,13 +139,13 @@ class Limits:
         
       print ("\navgBarLen: " + str(avgBarLen))
       print ("previous sell limit: " + str(self.closeSellLimit))
-      print ("getCurrentBid() " + str(self.cn.getCurrentBid()))
+      print ("getCurrentBid() " + str(self.cn.getCurrentBid(self.stock)))
 
       # only lower the limit
       if self.closeSellLimit == 0.0:
-         self.closeSellLimit = round(self.cn.getCurrentBid() + avgBarLen, 2)
-      elif self.closeSellLimit > self.cn.getCurrentBid() + avgBarLen:
-         self.closeSellLimit = round(self.cn.getCurrentBid() + avgBarLen, 2)
+         self.closeSellLimit = self.cn.getCurrentBid(self.stock) + avgBarLen
+      elif self.closeSellLimit > self.cn.getCurrentBid(self.stock) + avgBarLen:
+         self.closeSellLimit = self.cn.getCurrentBid(self.stock) + avgBarLen
       
       print ("\nAvgBarLen: setCloseSellLimit: " + str(self.closeSellLimit))
          
@@ -552,7 +556,7 @@ class Limits:
 
       if self.closeSellBars > maxNumBars:
          maxNumBars = self.closeSellBars
-         
+      
       return maxNumBars
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -618,10 +622,10 @@ class Limits:
          hiLoDiff = 5.0
 
       if self.positionType == self.buy:
-         posGain = self.cn.getCurrentAsk() + hiLoDiff * self.profitPctTriggerBar
+         posGain = self.cn.getCurrentAsk(self.stock) + hiLoDiff * self.profitPctTriggerBar
          posLoss = self.closeBuyLimit - self.closePositionFudge
       elif self.positionType == self.sell:
-         posGain = self.cn.getCurrentBid() - hiLoDiff * self.profitPctTriggerBar
+         posGain = self.cn.getCurrentBid(self.stock) - hiLoDiff * self.profitPctTriggerBar
          posLoss = self.closeSellLimit + self.closePositionFudge
 
       self.initialStopGain = posGain
@@ -639,10 +643,10 @@ class Limits:
 
       # if not in a gain position get out
       if self.positionType == self.buy:
-         if self.cn.getCurrentAsk() < self.openPositionPrice:
+         if self.cn.getCurrentAsk(self.stock) < self.openPositionPrice:
             return 0
       elif self.positionType == self.sell:
-         if self.cn.getCurrentBid() > self.openPositionPrice:
+         if self.cn.getCurrentBid(self.stock) > self.openPositionPrice:
             return 0
 
       if not self.revDirty:
@@ -652,8 +656,8 @@ class Limits:
          return 0
 
       if self.positionType == self.buy:
-         if self.cn.getCurrentAsk() >= top:
-            self.topIntraBar = self.cn.getCurrentAsk()
+         if self.cn.getCurrentAsk(self.stock) >= top:
+            self.topIntraBar = self.cn.getCurrentAsk(self.stock)
             self.barCounter = 0
             return
 
@@ -665,8 +669,8 @@ class Limits:
 
       elif self.positionType == self.sell:
          bottom = top
-         if self.cn.getCurrentBid() <= bottom:
-            self.topIntraBar = self.cn.getCurrentBid()
+         if self.cn.getCurrentBid(self.stock) <= bottom:
+            self.topIntraBar = self.cn.getCurrentBid(self.stock)
             self.barCounter = 0
             return
 
@@ -679,7 +683,7 @@ class Limits:
          print ("top " + str(top))
          print ("open " + str(op))
          print ("self.topIntraBar " + str(self.topIntraBar))
-         print ("currentPrice " + str(self.cn.getCurrentAsk()))
+         print ("currentPrice " + str(self.cn.getCurrentAsk(self.stock)))
          print ("self.barCounter " + str(self.barCounter))
          print ("self.hiLowBarMaxCounter " + str(self.hiLowBarMaxCounter))
          print ("self.revDirty " + str(self.revDirty))
@@ -698,10 +702,10 @@ class Limits:
       print ("sell price " + str(sellPrice))
 
       if self.positionType == self.buy:
-         if sellPrice < self.cn.getCurrentAsk():
+         if sellPrice < self.cn.getCurrentAsk(self.stock):
             return 1
       elif self.positionType == self.sell:
-         if sellPrice > self.cn.getCurrentBid():
+         if sellPrice > self.cn.getCurrentBid(self.stock):
             return 1
 
       return 0

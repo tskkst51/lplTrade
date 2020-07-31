@@ -39,6 +39,10 @@ class Price:
       self.numLines = 0
       self.lastToken = 99999.99
       
+      self.bid = 0
+      self.ask = 1
+      self.last = 2
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def skipFirstBar(self, numPrices):
 
@@ -74,6 +78,23 @@ class Price:
    
       return self.lastToken
       
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getNextPriceArr(self, serviceValues):
+   
+      if self.offLine:
+         if self.priceIdx >= self.numLines:
+            return self.getLastToken(), 0, 0
+                           
+         last = ask = self.priceArr[self.priceIdx][0]
+         bid = self.priceArr[self.priceIdx][1]
+         self.priceIdx += 1
+      else:
+         bid = serviceValues[self.bid]
+         ask = serviceValues[self.ask]
+         last = serviceValues[self.last]
+         
+      return float(bid), float(ask), float(last)
+          
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getNextPrice(self, bc, numBars, bar):
             

@@ -38,13 +38,24 @@ class Barchart:
    
       #      Hi  Lo  Op  Cl  V BarL Date SH SL
       bc = [[0.0,0.0,0.0,0.0,0,0.0,0,0,""]]
-   
+      
       return bc
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def loadInitBarArr(self, bc, date, bar, bid, ask, last, vol):
+   
+      bc[bar][self.op] = last
+      bc[bar][self.cl] = last
+      bc[bar][self.hi] = last
+      bc[bar][self.lo] = last
+      bc[bar][self.dt] = date
+      bc[bar][self.vl] = vol
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadInitBar(self, bc, date, bar, bid, ask, last):
    
-      bc[bar][self.op] = bc[bar][self.cl] = last
+      #bc[bar][self.op] = bc[bar][self.cl] = last
+      bc[bar][self.op] = last
       bc[bar][self.hi] = last
       bc[bar][self.lo] = last
       bc[bar][self.dt] = date
@@ -58,17 +69,19 @@ class Barchart:
       if bid < bc[bar][self.lo]:
          bc[bar][self.lo] = bid
                
-      if bid < bc[bar][self.op]:
-         bc[bar][self.op] = last
+#      if bid < bc[bar][self.op]:
+#         bc[bar][self.op] = last
                
       bc[bar][self.vl] = volume
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadEndBar(self, bc, date, bar, bid, ask, last):
    
-      bc[bar][self.cl] = last
-      bc[bar][self.dt] = date            
-      bc[bar][self.bl] = round((bc[bar][self.hi] - bc[bar][self.lo]), 2)
+      bc[bar][self.cl] = ask
+      
+      # Using date from begin bar matches date on etrade bars
+      #bc[bar][self.dt] = date            
+      bc[bar][self.bl] = round(bc[bar][self.hi] - bc[bar][self.lo], 2)
       
       self.loadHiLoBar(bc, bar)
       

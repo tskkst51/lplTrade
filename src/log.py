@@ -5,7 +5,7 @@ import random
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Log:
 
-   def __init__(self, debugFlag, verboseFlag, logPath, debugPath, offLine, testMode=0):
+   def __init__(self, debugFlag, verboseFlag, logPath, debugPath, offLine, testMode):
       self.totGain = 0.0
       self.grandTotal = 0.0
       self.strAction = ""
@@ -54,10 +54,10 @@ class Log:
       self.msg = msg
       print ("SUCCESS: " + self.msg)
       
-   def header(self, date):
+   def header(self, date, stock):
       self.hdr =      "ACTION      GAIN  TOTAL WIN %  BARS TRADES TIME"
       self.hdrLine = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-      return ("\n" + date + "\n" + self.hdr + "\n" + self.hdrLine + "\n")
+      return ("\n" + stock + " " + date + "\n" + self.hdr + "\n" + self.hdrLine + "\n")
       
    def infoStamp(self, liveActions):
       return ("\n" + liveActions)
@@ -111,7 +111,8 @@ class Log:
          else:
             winPct = int(self.wins / self.totalTrades * 100)
          
-         price = round(float(price), 2)
+         #price = round(float(price), 2)
+         price = float(price)
          
          with open(self.logPath, "a+", encoding="utf-8") as logFile:
             logFile.write (

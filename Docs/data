@@ -1,0 +1,2 @@
+Item is not a list, neither a dict and not even a tuple
+OrderedDict([('dateTime', '19:59:58 EDT 07-24-2020'), ('dateTimeUTC', '1595635198'), ('quoteStatus', 'CLOSING'), ('ahFlag', 'true'), ('hasMiniOptions', 'false'), ('Intraday', OrderedDict([('ask', '254.92'), ('bid', '254.88'), ('changeClose', '-3.05'), ('changeClosePercentage', '-1.18'), ('companyName', 'INVESCO QQQ TRUST'), ('high', '256.93'), ('lastTrade', '254.96'), ('low', '251.32'), ('totalVolume', '54054536')])), ('Product', OrderedDict([('securitySubType', 'ETF'), ('securityType', 'EQ'), ('symbol', 'QQQ')]))])

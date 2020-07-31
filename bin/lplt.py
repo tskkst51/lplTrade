@@ -163,6 +163,7 @@ if clOptions.stock:
    stock = clOptions.stock
    d["profileTradeData"]["stock"] = str(stock)
    
+   
 if clOptions.debug:
    debug = int(clOptions.debug)
 
@@ -189,12 +190,13 @@ if clOptions.workPath:
    workPath = clOptions.workPath
    d["profileTradeData"]["workPath"] = str(workPath)
 
-   
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup log and debug file based on profileTradeData name and path
 # Write header data to logs
 
 tm = lpl.Time()
+
 
 # Create minute profile variables
 profile1m = clOptions.profileTradeDataPath
@@ -230,7 +232,6 @@ if service == "eTrade":
 
 lg = lpl.Log(debug, verbose, logPath, debugPath, offLine, testMode)
 
-
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup connection to the exchange service
 
@@ -258,13 +259,13 @@ pr = lpl.Price(a, cn, usePricesFromFile, offLine, a.getMarketBeginTime())
 lg.info("Using " + pricesPath + " as prices file")
 
 with open(debugPath, "a+", encoding="utf-8") as debugFile:
-   debugFile.write(lg.infoStamp(a.getLiveProfileValues(d)))
+   debugFile.write(lg.infoStamp(a.getLiveProfileValues(d, clOptions.profileTradeDataPath)))
    debugFile.write(lg.header(tm.now()))
 
 lg.info("Using " + debugPath + " as debug file")
 
 with open(logPath, "a+", encoding="utf-8") as logFile:
-   logFile.write(lg.infoStamp(a.getLiveProfileValues(d)))
+   logFile.write(lg.infoStamp(a.getLiveProfileValues(d, clOptions.profileTradeDataPath)))
    logFile.write(lg.header(tm.now()))
 
 lg.info("Using " + logPath + " as log file")
@@ -275,7 +276,8 @@ with open(barChartPath, "a+", encoding="utf-8") as resumeFile:
 with open(pricesPath, "a+", encoding="utf-8") as priceFile:
    lg.info("Using " + pricesPath + " as prices file")
 
-barChart = bc.init()
+barChart, stockBarChart = bc.init()
+sb = stockBarChart
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Display profile data
@@ -295,12 +297,14 @@ lg.info ("marketDataType: " + cn.getMarketDataType())
 lg.info ("dateTimeUTC: " + cn.getDateTimeUTC())
 lg.info ("dateTime: " + cn.getDateTime())
 lg.info ("getQuoteStatus: " + cn.getQuoteStatus())
+lg.info ("workPath: " + workPath)
 lg.info (a.getAlgorithmMsg())
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize based on live or offLine state 
 
 cn.setValues(barChart, barCtr, ask, bid)
+#cn.setStockValues(barChart, barCtr, ask, bid)
 
 # Fill buffers with prices
 if usePricesFromFile and offLine:

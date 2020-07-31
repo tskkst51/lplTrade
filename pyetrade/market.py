@@ -201,9 +201,13 @@ class ETradeMarket(object):
 
       LOGGER.debug(req.text)
 
-      dictData = xmltodict.parse(req.text) if resp_format.lower() == "xml" else req.json()
+      #dictData = xmltodict.parse(req.text) if resp_format.lower() == "xml" else req.json()
+      
+      #print (str(req.text))
+      #print (str(xmltodict.parse(req.text)))
             
       return xmltodict.parse(req.text)
+      #return dictData
       #return xmltodict.parse(req.text) if resp_format.lower() == "xml" else req.json()
 
    def get_option_chains(

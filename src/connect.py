@@ -8,13 +8,14 @@ from datetime import datetime
 import pyetrade
 import traceback
 import random
+import collections
 
 #from bitfinex.client import Client
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class ConnectEtrade:
 
-   def __init__(self, d, lg, stock="TSLA", debug=False, verbose=False, clMarketDataType="intraday", sandBox=False, setoffLine=False):
+   def __init__(self, d, stock="DEFAULT", debug=False, verbose=False, clMarketDataType="intraday", sandBox=False, setoffLine=False, stocksStr="DEFAULT"):
    
       # Set class variables
       self.sandConsumerKey = str(d["profileConnectET"]["sandConsumerKey"])
@@ -27,11 +28,12 @@ class ConnectEtrade:
       self.usePricesFromFile = int(d["profileConnectET"]["usePricesFromFile"])
       self.sandBox = False
       self.debug = debug
+      self.stocksStr = stocksStr
       self.ask = 0.0
+      self.bid = 0.0
       self.hi = 0
       self.lo = 1
       self.verbose = verbose
-      self.lg = lg
       self.lastTrade = 0
       self.dateTimeUTC = "123456"   
       self.dateTime = self.getTimeHrMnSecs()
@@ -66,6 +68,84 @@ class ConnectEtrade:
          print ("")
    
       self.symbol = stock
+      self.symbols = stocksStr  
+      self.serviceValues = {}
+      self.stocks = stocksStr.split(",")
+      
+      for stock in self.stocks:
+         self.serviceValues[stock] = [0.0,0.0,0.0,0,""]
+      
+      self.isStockValues = 0
+      
+      self.bidIdx = 0
+      self.askIdx = 1
+      self.lastIdx = 2
+      self.totVolIdx = 3
+      self.dateIdx = 4
+
+      self.hi = 0
+      self.lo = 1
+      self.op = 2
+      self.cl = 3
+      self.vl = 4
+      self.bl = 5
+      self.sH = 6
+      self.sL = 7
+      self.dt = 8
+      
+   def setStockValues(self, stocksChart, bar, stocks):
+   
+      self.isStockValues += 1
+      
+      if self.offLine:
+         for stock in stocks:
+            self.symbolDetails = [0.0,0.0,0.0,0.0,""]
+
+            self.symbolDetails[self.bidIdx] = stocksChart[stock][bar][self.bidIdx]
+            self.symbolDetails[self.askIdx] = stocksChart[stock][bar][self.askIdx]
+            self.symbolDetails[self.lastIdx] = stocksChart[stock][bar][self.lastIdx]
+            self.symbolDetails[self.totVolIdx] = stocksChart[stock][bar][self.totVolIdx]
+            self.symbolDetails[self.dateIdx] = stocksChart[stock][bar][self.dateIdx]
+            
+            self.serviceValues[stock] = self.symbolDetails
+                        
+         return self.serviceValues
+
+      else: # Live
+      
+         mktData = pyetrade.market.ETradeMarket(self.consumerKey, 
+            self.consumerSecret, self.oauthToken, self.oauthSecret, self.sandBox)
+                        
+         sym = mktData.get_quote([self.stocksStr], self.marketDataType)
+              
+         symbol = ""
+         for item in sym['QuoteResponse']['QuoteData']:
+            
+            self.symbolDetails = [0.0,0.0,0.0,0.0,""]
+                     
+            for key, value in item['Product'].items():
+               if key == 'symbol':
+                  symbol = value
+                                   
+            for key, val in item['Intraday'].items():
+               if key == 'bid':
+                  self.symbolDetails[self.bidIdx] = round(float(val), 2)
+                  print (str(val))
+               elif key == 'ask':
+                  self.symbolDetails[self.askIdx] = round(float(val), 2)
+                  print (str(val))
+               elif key == 'lastTrade':
+                  self.symbolDetails[self.lastIdx] = round(float(val), 2)
+                  print (str(val))
+               elif key == 'totalVolume':
+                  self.symbolDetails[self.totVolIdx] = int(val)
+                  print ("totalVolume " + str(val))
+                  
+            self.symbolDetails[self.dateIdx] = item['dateTime']
+                     
+            self.serviceValues[symbol] = (self.symbolDetails)
+            
+      return self.serviceValues
 
    def setValues(self, barChart, i, cp, bid):
       
@@ -79,25 +159,20 @@ class ConnectEtrade:
          self.changeClosePct = 0.0   
          self.companyName = "QQQ"
          
-         self.high = barChart[i][0]   
-         self.low = barChart[i][1]   
-         self.op = barChart[i][2]   
-         self.cl = barChart[i][3]   
-         self.totalVolume = barChart[i][4] 
-         self.barLen = barChart[i][5] 
-         self.hiBarValue = barChart[i][6] 
-         self.loBarValue = barChart[i][7] 
+         self.high = barChart[0]   
+         self.low = barChart[1]   
+         self.op = barChart[2]   
+         self.cl = barChart[3]   
+         self.totalVolume = barChart[4] 
+         self.barLen = barChart[5] 
+         self.hiBarValue = barChart[6] 
+         self.loBarValue = barChart[7] 
          self.quoteStatus = ""
          self.lastTrade = self.cp
          self.dateTime = self.getTimeHrMnSecs()
          self.dateTimeUTC = "123456"   
 
       else: # New data
-         mktData = pyetrade.market.ETradeMarket(self.consumerKey, 
-            self.consumerSecret, self.oauthToken, self.oauthSecret, self.sandBox)
-            
-         sym = mktData.get_quote([self.symbol], self.marketDataType)
-         
          if self.marketDataType == "Week52":
             self.w52Hi = float(sym['QuoteResponse']['QuoteData']['Week52']['high52']) 
             self.w52Lo = float(sym['QuoteResponse']['QuoteData']['Week52']['low52'])
@@ -153,8 +228,7 @@ class ConnectEtrade:
             print ("marketDataType: " + self.marketDataType)
             print ("lastTrade: " + str(self.lastTrade))
             print ("")
-  
-
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getHighestHiChart(self, bc, numBars):
 
@@ -192,21 +266,47 @@ class ConnectEtrade:
       return self.marketDataType
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getCurrentPrice(self):
+   def getCurrentPrice(self, stock):
       #f'rounded2    \t {var3:.2f} \n' 
       
+      self.bidIdx = 0
+      self.askIdx = 1
+      self.lastIdx = 2
+      self.totVolIdx = 3
+      self.dateIdx = 4
+
+
+      if self.isStockValues:
+         if stock:
+            return self.serviceValues[stock][self.lastIdx]
+         
       return self.ask
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getLastTrade(self):
+   def getLastTrade(self, stock):
+   
+      if self.isStockValues:
+         if stock:
+            return self.serviceValues[stock][self.lastIdx]
+
       return self.lastTrade
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getCurrentAsk(self):
+   def getCurrentAsk(self, stock):
+   
+      if self.isStockValues:
+         if stock:
+            return self.serviceValues[stock][self.askIdx]
+            
       return float(self.ask)
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getCurrentBid(self):
+   def getCurrentBid(self, stock):
+
+      if self.isStockValues:
+         if stock:
+            return self.serviceValues[stock][self.bidIdx]
+
       return float(self.bid)
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -232,6 +332,11 @@ class ConnectEtrade:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getVolume(self):
       return int(self.totalVolume)
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getTotalVolume(self, symbol):
+   
+      return self.serviceValues[symbol][3]
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getDateTimeUTC(self):
@@ -288,7 +393,7 @@ class ConnectEtrade:
    def waitTillMarketOpens(self, openTime):
 
       while True:
-         self.lg.debug("Time now: " + str(self.getTimeHrMnSecs()) + " Market start time: " + str(openTime))
+         print("Time now: " + str(self.getTimeHrMnSecs()) + " Market start time: " + str(openTime))
          if self.getTimeHrMnSecs() >= openTime:
             return
 

@@ -10,7 +10,7 @@ import lplTrade as lpl
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Algorithm():
 
-   def __init__(self, data, lg, cn, bc, tr, lm, offLine=0):
+   def __init__(self, data, lg, cn, bc, tr, lm, offLine=0, stock=""):
    
       self.cn = cn
       self.lg = lg
@@ -19,6 +19,7 @@ class Algorithm():
       self.data = data
       self.tr = tr
       self.lm = lm
+      self.stock = stock
       
       # Required standard settings
       self.algorithms = str(data['profileTradeData']['algorithms'])
@@ -153,8 +154,6 @@ class Algorithm():
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setAllLimits(self, barChart, bar):
-
-      print ( str(bar) + str(self.lm.getMaxNumBars()))
       
       if bar <= self.lm.getMaxNumBars():
          return
@@ -193,9 +192,10 @@ class Algorithm():
       #   self.algorithmDynamic(bar)
                
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getLiveProfileValues(self, data):
+   def getLiveProfileValues(self, data, profilePath):
    
-      displayHeader = "Profile items: "
+      displayHeader = profilePath
+      displayHeader += "\nProfile items: "
          
       for key, value in data.items():
          for k, v in value.items():
@@ -301,7 +301,7 @@ class Algorithm():
    
       if self.inPosition() and self.doReversal():
          previousBarLen = float(barChart[i-1][cl] - barChart[i-1][op])
-         currentBarLen = barChart[i][op] - self.cn.getCurrentAsk()
+         currentBarLen = barChart[i][op] - self.cn.getCurrentAsk(self.stock)
          
          if previousBarLen < 0.0 and currentBarLen > 0.0:
             # Bars going different directions
@@ -366,16 +366,16 @@ class Algorithm():
       self.lg.debug ("Target profit set to: " + str(profitTarget))
       
       if self.getPositionType() == self.buy:
-         if self.cn.getCurrentAsk() > profitTarget:
+         if self.cn.getCurrentAsk(self.stock) > profitTarget:
             self.lg.debug ( "CLOSING BUY POSITION QUICK PROFIT TAKEN.")
-            self.lg.debug (str(self.cn.getCurrentAsk()) + " > " + str(profitTarget))
+            self.lg.debug (str(self.cn.getCurrentAsk(self.stock)) + " > " + str(profitTarget))
             self.quickProfitCtr += 1
             self.closePosition(bar, barChart, 0)
             
       elif self.getPositionType() == self.sell:
-         if self.cn.getCurrentBid() < profitTarget:
+         if self.cn.getCurrentBid(self.stock) < profitTarget:
             self.lg.debug ( "CLOSING SELL POSITION QUICK PROFIT TAKEN.")
-            self.lg.debug (str(self.cn.getCurrentBid()) + " < " + str(profitTarget))
+            self.lg.debug (str(self.cn.getCurrentBid(self.stock)) + " < " + str(profitTarget))
             self.quickProfitCtr += 1
             self.closePosition(bar, barChart, 0)
                  
@@ -521,11 +521,11 @@ class Algorithm():
          if self.inPosition():
             if self.positionType == self.buy:
                if self.lm.lowerHighs and self.lm.lowerLows and self.lm.lowerCloses and self.lm.lowerOpens :
-                  #if self.cn.getCurrentAsk() < self.closeBuyLimit:
+                  #if self.cn.getCurrentAsk(self.stock) < self.closeBuyLimit:
                   return 1
             if self.positionType == self.sell:
                if self.lm.higherHighs and self.lm.higherLows:
-                  #if self.cn.getCurrentBid() > self.closeSellLimit:
+                  #if self.cn.getCurrentBid(self.stock) > self.closeSellLimit:
                   return 2
          elif not self.inPosition():
             if self.lm.higherHighs and self.lm.higherLows:
@@ -547,18 +547,18 @@ class Algorithm():
             if self.positionType == self.buy:
                self.lg.debug ("Hi Lo: in buy position " + str(self.positionType))
                self.lg.debug ("closeBuyLimit " + str(self.lm.closeBuyLimit))
-               if self.cn.getCurrentAsk() < self.lm.closeBuyLimit:
+               if self.cn.getCurrentAsk(self.stock) < self.lm.closeBuyLimit:
                   return 1
             if self.positionType == self.sell:
                self.lg.debug ("Hi Lo: in sell position " + str(self.positionType))
                self.lg.debug ("closeSellLimit " + str(self.lm.closeSellLimit))
-               if self.cn.getCurrentBid() > self.lm.closeSellLimit:
+               if self.cn.getCurrentBid(self.stock) > self.lm.closeSellLimit:
                   return 2
          elif not self.inPosition():
-            if self.cn.getCurrentAsk() > self.lm.openBuyLimit:
+            if self.cn.getCurrentAsk(self.stock) > self.lm.openBuyLimit:
                self.lg.debug ("Opening BUY Hi Lo position")
                return 1
-            if self.cn.getCurrentBid() < self.lm.openSellLimit:
+            if self.cn.getCurrentBid(self.stock) < self.lm.openSellLimit:
                self.lg.debug ("Opening SELL Hi Lo position")
                return 2
 
@@ -572,15 +572,15 @@ class Algorithm():
       if self.inPosition():
          print ("close buy limit " + str(self.lm.closeBuyLimit))
          print ("close sell limit " +  str(self.lm.closeSellLimit))
-         if self.cn.getCurrentAsk() < self.lm.closeBuyLimit:
+         if self.cn.getCurrentAsk(self.stock) < self.lm.closeBuyLimit:
             return 1
-         if self.cn.getCurrentBid() > self.lm.closeSellLimit:
+         if self.cn.getCurrentBid(self.stock) > self.lm.closeSellLimit:
             return 2
       else:
-         if self.cn.getCurrentAsk() >= self.lm.openBuyLimit and self.lm.openBuyLimit != 0.0:
+         if self.cn.getCurrentAsk(self.stock) >= self.lm.openBuyLimit and self.lm.openBuyLimit != 0.0:
             print ( "open buy limit set " + str(self.openBuyLimit))
             return 1
-         if self.cn.getCurrentBid() <= self.lm.openSellLimit and self.lm.openSellLimit != 0.0:
+         if self.cn.getCurrentBid(self.stock) <= self.lm.openSellLimit and self.lm.openSellLimit != 0.0:
             print ("open sell limit set " +  str(self.lm.openSellLimit))
             return 2
       
@@ -642,7 +642,7 @@ class Algorithm():
       if not self.lm.doRangeTradeBars:
          return 0
 
-      if self.cn.getCurrentBid() >= self.rangeLo and self.cn.getCurrentAsk() <= self.rangeHi:
+      if self.cn.getCurrentBid(self.stock) >= self.rangeLo and self.cn.getCurrentAsk(self.stock) <= self.rangeHi:
          if not self.inPosition():
             self.lg.debug ("IN RANGE BETWEEN " + str(self.rangeLo) +  " >" + str(self.cn.getLastTrade()) + "< " +  str(self.rangeHi))
 
@@ -672,32 +672,23 @@ class Algorithm():
 #         return
 #
          
-#      if self.doTrends:
-#         self.tr.setTrendLimits(bc, bar)
-#         if self.tr.isShortBearMidLongMegaBull() and buyOrSell == self.buy:
-#            self.lg.debug("isShortBearMidLongMegaBull... ")
-#            return
-#         if self.tr.isShortBullMidLongMegaBear() and buyOrSell == self.sell:
-#            self.lg.debug("isShortBullMidLongMegaBear... ")
-#            return
-            
       if self.doTrends:
          self.tr.setTrendLimits(bc, bar)
-         if self.tr.isBullTrend() and buyOrSell == self.sell:
-            self.lg.debug("got a SELL signal... " + str(buyOrSell))
+         if self.tr.isShortBearMidLongMegaBull() and buyOrSell == self.buy:
+            self.lg.debug("isShortBearMidLongMegaBull... ")
             return
-         if self.tr.isBearTrend() and buyOrSell == self.buy:
-            self.lg.debug("got a BUY signal... " + str(buyOrSell))
+         if self.tr.isShortBullMidLongMegaBear() and buyOrSell == self.sell:
+            self.lg.debug("isShortBullMidLongMegaBear... ")
             return
                         
-#      if self.doTrends:
-#         self.tr.setTrendLimits(bc, bar)
-#         if self.tr.isShortMidBullLongMegaBear() and buyOrSell == self.buy:
-#            self.lg.debug("isShortMidBullLongMegaBear... ")
-#            return
-#         if self.tr.isShortMidBearLongMegaBull() and buyOrSell == self.sell:
-#            self.lg.debug("isShortMidBearLongMegaBull... ")
-#            return
+      if self.doTrends:
+         self.tr.setTrendLimits(bc, bar)
+         if self.tr.isShortMidBullLongMegaBear() and buyOrSell == self.buy:
+            self.lg.debug("isShortMidBullLongMegaBear... ")
+            return
+         if self.tr.isShortMidBearLongMegaBull() and buyOrSell == self.sell:
+            self.lg.debug("isShortMidBearLongMegaBull... ")
+            return
                         
       if self.doOnlyBuys and buyOrSell == self.sell:
          return
@@ -707,7 +698,7 @@ class Algorithm():
       
       # Open a BUY position
       if buyOrSell == self.buy:
-         price = round(self.cn.getCurrentAsk(), 2)
+         price = self.cn.getCurrentAsk(self.stock)
          
          # Execute order here ========================
          
@@ -719,7 +710,7 @@ class Algorithm():
          
       # Open a SELL position
       else:
-         price = round(self.cn.getCurrentBid(), 2)
+         price = self.cn.getCurrentBid(self.stock)
          
          # Execute order here ========================
          
@@ -770,18 +761,20 @@ class Algorithm():
 
       if self.doTrends and not force:
          self.tr.setTrendLimits(bc, bar)    
-         if self.tr.isBullTrend() and self.positionType == self.buy:
-            self.lg.debug("Got a BUY close signal... BLOCKING" + str(self.positionType))
+         if self.positionType == self.buy and self.tr.isBullTrend():
+            self.lg.debug("Got a BUY close signal... BLOCKING " + str(self.positionType))
+            self.setWaitForNextBar()
             return        
 
-         if self.tr.isBearTrend() and self.positionType == self.sell:
-            self.lg.debug("Got a SELL close signal... BLOCKING" + str(self.positionType))
+         if self.positionType == self.sell and self.tr.isBearTrend():
+            self.lg.debug("Got a SELL close signal... BLOCKING " + str(self.positionType))
+            self.setWaitForNextBar()
             return        
 
       if self.positionType == self.buy:
-         price = self.cn.getCurrentBid()
+         price = self.cn.getCurrentBid(self.stock)
       else:
-         price = self.cn.getCurrentAsk()
+         price = self.cn.getCurrentAsk(self.stock)
          
       if self.positionType == self.buy:
          gain = price - self.openPositionPrice
@@ -799,7 +792,7 @@ class Algorithm():
       self.closePositionPrice = price
 
       print ("\n")
-      self.lg.info ("POSITION CLOSED")
+      self.lg.info ("POSITION CLOSED " + self.stock)
       
       if self.offLine:
          self.lg.info("Position Time: " + bc[bar][self.dt])
@@ -955,12 +948,12 @@ class Algorithm():
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setCloseBuyStop(self):
    
-      self.closeBuyLimit = self.cn.getCurrentAsk()
+      self.closeBuyLimit = self.cn.getCurrentAsk(self.stock)
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setCloseSellStop(self):
    
-      self.closeSellLimit = self.cn.getCurrentBid()
+      self.closeSellLimit = self.cn.getCurrentBid(self.stock)
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setDynamic(self, bar):
@@ -979,9 +972,9 @@ class Algorithm():
 
       profitAmt = 0.0
       if self.positionType == self.buy: 
-         profitAmt = self.cn.getCurrentBid() * self.profitPctTrigger
+         profitAmt = self.cn.getCurrentBid(self.stock) * self.profitPctTrigger
       else:
-         profitAmt = self.cn.getCurrentAsk() * self.profitPctTrigger
+         profitAmt = self.cn.getCurrentAsk(self.stock) * self.profitPctTrigger
       
       if self.quickProfitCtr:
          divisor = self.quickProfitCtr + 1
@@ -997,11 +990,11 @@ class Algorithm():
          self.lg.debug ("profit amount using avg bar length: " + str(profitAmt))
          
       if self.positionType == self.buy:
-         self.profitTarget = round((self.cn.getCurrentAsk() + profitAmt), 2)
+         self.profitTarget = self.cn.getCurrentAsk(self.stock) + profitAmt
       elif self.positionType == self.sell:
-         self.profitTarget = round((self.cn.getCurrentBid() - profitAmt), 2)
+         self.profitTarget = self.cn.getCurrentBid(self.stock) - profitAmt
 
-      self.lg.debug ("profit value: " + str(round(self.profitTarget, 2)))
+      self.lg.debug ("profit value: " + str(self.profitTarget))
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setCurrentBar(self, bar):
@@ -1076,7 +1069,7 @@ class Algorithm():
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getGain(self):
 
-      if self.cn.getCurrentBid() > self.openPositionPrice:
+      if self.cn.getCurrentBid(self.stock) > self.openPositionPrice:
          return 1
 
       return 0

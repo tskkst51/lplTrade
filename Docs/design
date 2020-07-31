@@ -24,7 +24,7 @@ awk -v FS=',' '{print $1, $1, $2}' prices/activeAAPL.pr | sed 's/ /,/g'
 awk -v FS=',' '{print $1, $1, $2}' prices/activeIWM.pr | sed 's/ /,/g'
 
 Candidates based on viewing, in order, low spread
-msft .02 qqq .01 unh .10 tsla .76 goog lmt xli fb v xbi smh
+msft .02 qqq .01 unh .10 tsla .76 goog lmt xli fb v xbi smh twtr
 
 The longer in a trend the harder to reverse the trend. Increase decision bars in mid trend and >
 

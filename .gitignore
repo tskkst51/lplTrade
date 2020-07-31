@@ -1,4 +1,6 @@
 .DS_Store
+bin.or
+src.or
 .virtualenv
 src/.DS_Store
 src/*pyc
