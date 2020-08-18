@@ -15,7 +15,7 @@ import collections
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class ConnectEtrade:
 
-   def __init__(self, d, stock="DEFAULT", debug=False, verbose=False, clMarketDataType="intraday", sandBox=False, setoffLine=False, stocksStr="DEFAULT"):
+   def __init__(self, d, stocks="DEFAULT", debug=False, verbose=False, clMarketDataType="intraday", sandBox=False, setoffLine=False):
    
       # Set class variables
       self.sandConsumerKey = str(d["profileConnectET"]["sandConsumerKey"])
@@ -28,7 +28,6 @@ class ConnectEtrade:
       self.usePricesFromFile = int(d["profileConnectET"]["usePricesFromFile"])
       self.sandBox = False
       self.debug = debug
-      self.stocksStr = stocksStr
       self.ask = 0.0
       self.bid = 0.0
       self.hi = 0
@@ -67,10 +66,14 @@ class ConnectEtrade:
          print (self.oauthSecret)
          print ("")
    
-      self.symbol = stock
-      self.symbols = stocksStr  
+      self.stocksStr = stocks
+      
+      if stocks.find(","):
+         self.symbols = self.stocks = stocks.split(",")
+      else:
+         self.symbol = stocks
+
       self.serviceValues = {}
-      self.stocks = stocksStr.split(",")
       
       for stock in self.stocks:
          self.serviceValues[stock] = [0.0,0.0,0.0,0,""]
@@ -83,94 +86,114 @@ class ConnectEtrade:
       self.totVolIdx = 3
       self.dateIdx = 4
 
-      self.hi = 0
-      self.lo = 1
-      self.op = 2
-      self.cl = 3
-      self.vl = 4
-      self.bl = 5
-      self.sH = 6
-      self.sL = 7
-      self.dt = 8
+      self.hiIdx = 0
+      self.loIdx = 1
+      self.opIdx = 2
+      self.clIdx = 3
+      self.vlIdx = 4
+      self.blIdx = 5
+      self.sHIdx = 6
+      self.sLIdx = 7
+      self.dtIdx = 8
       
+      self.askArr = {}
+      self.bidArr = {}
+      self.lastTradeArr = {}
+      self.highArr = {}
+      self.lowArr = {}
+      self.opArr = {}
+      self.clArr = {}
+      self.totalVolumeArr = {}
+      self.barLenArr = {}
+      self.hiBarValueArr = {}
+      self.loBarValueArr = {}
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setStockValues(self, stocksChart, bar, stocks):
    
       self.isStockValues += 1
       
       if self.offLine:
          for stock in stocks:
-            self.symbolDetails = [0.0,0.0,0.0,0.0,""]
-
-            self.symbolDetails[self.bidIdx] = stocksChart[stock][bar][self.bidIdx]
-            self.symbolDetails[self.askIdx] = stocksChart[stock][bar][self.askIdx]
-            self.symbolDetails[self.lastIdx] = stocksChart[stock][bar][self.lastIdx]
-            self.symbolDetails[self.totVolIdx] = stocksChart[stock][bar][self.totVolIdx]
-            self.symbolDetails[self.dateIdx] = stocksChart[stock][bar][self.dateIdx]
+            self.askArr[stock] = stocksChart[stock][bar][self.askIdx]
+            self.bidArr[stock] = stocksChart[stock][bar][self.bidIdx]
+            self.lastTradeArr[stock] = stocksChart[stock][bar][self.lastIdx]
+            self.highArr[stock] = stocksChart[stock][bar][self.hiIdx]
+            self.lowArr[stock] = stocksChart[stock][bar][self.loIdx]   
+            self.opArr[stock] = stocksChart[stock][bar][self.opIdx]   
+            self.clArr[stock] = stocksChart[stock][bar][self.clIdx]   
+            self.totalVolumeArr[stock] = stocksChart[stock][bar][self.vlIdx] 
+            self.barLenArr[stock] = stocksChart[stock][bar][self.blIdx] 
+            self.hiBarValueArr[stock] = stocksChart[stock][bar][self.sHIdx] 
+            self.loBarValueArr[stock] = stocksChart[stock][bar][self.sLIdx] 
             
-            self.serviceValues[stock] = self.symbolDetails
-                        
-         return self.serviceValues
-
       else: # Live
-      
-         mktData = pyetrade.market.ETradeMarket(self.consumerKey, 
-            self.consumerSecret, self.oauthToken, self.oauthSecret, self.sandBox)
-                        
-         sym = mktData.get_quote([self.stocksStr], self.marketDataType)
-              
-         symbol = ""
-         for item in sym['QuoteResponse']['QuoteData']:
+         for attempt in range(1500):
+            try:
+               mktData = pyetrade.market.ETradeMarket(self.consumerKey, 
+               self.consumerSecret, self.oauthToken, self.oauthSecret, self.sandBox)
+               
+               sym = mktData.get_quote([self.stocksStr], self.marketDataType)
             
-            self.symbolDetails = [0.0,0.0,0.0,0.0,""]
-                     
-            for key, value in item['Product'].items():
-               if key == 'symbol':
-                  symbol = value
-                                   
-            for key, val in item['Intraday'].items():
-               if key == 'bid':
-                  self.symbolDetails[self.bidIdx] = round(float(val), 2)
-                  print (str(val))
-               elif key == 'ask':
-                  self.symbolDetails[self.askIdx] = round(float(val), 2)
-                  print (str(val))
-               elif key == 'lastTrade':
-                  self.symbolDetails[self.lastIdx] = round(float(val), 2)
-                  print (str(val))
-               elif key == 'totalVolume':
-                  self.symbolDetails[self.totVolIdx] = int(val)
-                  print ("totalVolume " + str(val))
+               symbol = ""
+               for item in sym['QuoteResponse']['QuoteData']:
                   
-            self.symbolDetails[self.dateIdx] = item['dateTime']
-                     
-            self.serviceValues[symbol] = (self.symbolDetails)
-            
+                  self.symbolDetails = [0.0,0.0,0.0,0.0,""]
+                           
+                  for key, value in item['Product'].items():
+                     if key == 'symbol':
+                        symbol = value
+                                         
+                  for key, val in item['Intraday'].items():
+                     if key == 'bid':
+                        self.symbolDetails[self.bidIdx] = round(float(val), 2)
+                        print (str(val))
+                     elif key == 'ask':
+                        self.symbolDetails[self.askIdx] = round(float(val), 2)
+                        print (str(val))
+                     elif key == 'lastTrade':
+                        self.symbolDetails[self.lastIdx] = round(float(val), 2)
+                        print (str(val))
+                     elif key == 'totalVolume':
+                        self.symbolDetails[self.totVolIdx] = int(val)
+                        print ("totalVolume " + str(val))
+                        
+                  self.symbolDetails[self.dateIdx] = item['dateTime']
+                           
+                  self.serviceValues[symbol] = (self.symbolDetails)
+            except:
+               print ("Etrade is crap " + str(attempt))
+               sleep(2)
+            else:
+               break
+         else:
+            print ("Etrade is really crap " + str(attempt))
+               
       return self.serviceValues
 
-   def setValues(self, barChart, i, cp, bid):
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setValues(self, barChart, i, bid, ask, last):
       
       # Read data from chart on the disk
       if self.offLine:
-         self.cp = float(cp)
-         self.ask = self.cp
+         self.ask = float(ask)
          self.bid = float(bid)
-         # self.bid = self.cp - self.spread
+         self.lastTrade = float(last)
+         self.high = barChart[i][self.hiIdx]
+         self.low = barChart[i][self.loIdx]   
+         self.op = barChart[i][self.opIdx]   
+         self.cl = barChart[i][self.clIdx]   
+         self.totalVolume = barChart[i][self.vlIdx] 
+         self.barLen = barChart[i][self.blIdx] 
+         self.hiBarValue = barChart[i][self.sHIdx] 
+         self.loBarValue = barChart[i][self.sLIdx] 
+         
+         self.quoteStatus = ""
+         self.dateTime = self.getTimeHrMnSecs()
+         self.dateTimeUTC = "123456"   
          self.changeClose = ""   
          self.changeClosePct = 0.0   
          self.companyName = "QQQ"
-         
-         self.high = barChart[0]   
-         self.low = barChart[1]   
-         self.op = barChart[2]   
-         self.cl = barChart[3]   
-         self.totalVolume = barChart[4] 
-         self.barLen = barChart[5] 
-         self.hiBarValue = barChart[6] 
-         self.loBarValue = barChart[7] 
-         self.quoteStatus = ""
-         self.lastTrade = self.cp
-         self.dateTime = self.getTimeHrMnSecs()
-         self.dateTimeUTC = "123456"   
 
       else: # New data
          if self.marketDataType == "Week52":
@@ -275,7 +298,6 @@ class ConnectEtrade:
       self.totVolIdx = 3
       self.dateIdx = 4
 
-
       if self.isStockValues:
          if stock:
             return self.serviceValues[stock][self.lastIdx]
@@ -288,6 +310,7 @@ class ConnectEtrade:
       if self.isStockValues:
          if stock:
             return self.serviceValues[stock][self.lastIdx]
+            #return self.lastTradeArr[stock]
 
       return self.lastTrade
       
@@ -297,7 +320,8 @@ class ConnectEtrade:
       if self.isStockValues:
          if stock:
             return self.serviceValues[stock][self.askIdx]
-            
+            #return self.askArr[stock]
+
       return float(self.ask)
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -306,6 +330,7 @@ class ConnectEtrade:
       if self.isStockValues:
          if stock:
             return self.serviceValues[stock][self.bidIdx]
+            #return self.bidArr[stock]
 
       return float(self.bid)
 
@@ -336,7 +361,7 @@ class ConnectEtrade:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getTotalVolume(self, symbol):
    
-      return self.serviceValues[symbol][3]
+      return self.serviceValues[symbol][self.totVolIdx]
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getDateTimeUTC(self):

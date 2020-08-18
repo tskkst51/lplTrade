@@ -54,7 +54,7 @@ class Price:
          else:
             break
             
-      self.nextBar = 2
+      self.nextBar = 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def initPriceBuffer(self, path):
@@ -82,18 +82,23 @@ class Price:
    def getNextPriceArr(self, serviceValues):
    
       if self.offLine:
-         if self.priceIdx >= self.numLines:
+         print ("self.priceIdx " + str(self.priceIdx))
+         print ("self.priceArr[self.priceIdx] " + str(self.priceArr[self.priceIdx]))
+         print ("numLines] " + str(self.numLines))
+         if self.priceIdx >= self.numLines - 20:
             return self.getLastToken(), 0, 0
                            
-         last = ask = self.priceArr[self.priceIdx][0]
+         ask = last = self.priceArr[self.priceIdx][0]
          bid = self.priceArr[self.priceIdx][1]
          self.priceIdx += 1
+         
       else:
+      
          bid = serviceValues[self.bid]
          ask = serviceValues[self.ask]
          last = serviceValues[self.last]
          
-      return float(bid), float(ask), float(last)
+      return float(bid), float(ask), float(last) 
           
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getNextPrice(self, bc, numBars, bar):
@@ -105,10 +110,12 @@ class Price:
          
          # From file
          if self.upff:
-            if self.priceIdx >= self.numLines:
+            print ("self.priceIdx " + str(self.priceIdx)	)
+            print ("self.priceArr[self.priceIdx] " + str(self.priceArr[self.priceIdx]))
+            if self.priceIdx >= self.numLines - 10:
                return self.getLastToken(), 0, 0
                               
-            last = ask = self.priceArr[self.priceIdx][0]
+            ask = last = self.priceArr[self.priceIdx][0]
             bid = self.priceArr[self.priceIdx][1]
             self.priceIdx += 1
          # Randomly
@@ -122,10 +129,10 @@ class Price:
          bid = self.cn.getCurrentBid()
          ask = self.cn.getCurrentAsk()
          
-      return float(last), float(bid), float(ask)
+      return float(bid), float(ask), float(last)
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isNextBar(self, bar):
+   def isNextBar(self, bar, bars):
       
       if not self.offLine:
          return 0
@@ -133,8 +140,11 @@ class Price:
       if self.priceIdx >= self.numLines:
          return self.getLastToken()
 
+      print ("self.getNextBar() " + str(self.getNextBar()))
+      print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
+      
       if self.getNextBar() == self.idxArr[self.priceIdx]:
-         self.setNextBar()
+         self.setNextBar(bars)
          return 1
          
       return 0
@@ -236,9 +246,12 @@ class Price:
          self.write5m(ask, bid, bar)
          
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setNextBar(self):
+   def setNextBar(self, timeBar):
    
-      self.nextBar += 1
+      if timeBar:
+         self.nextBar += timeBar
+      else:
+         self.nextBar += 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getNextBar(self):

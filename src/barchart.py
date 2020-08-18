@@ -42,47 +42,39 @@ class Barchart:
       return bc
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def loadInitBarArr(self, bc, date, bar, bid, ask, last, vol):
-   
+   def loadInitBar(self, bc, date, bar, bid, ask, last, vol):
+      print ("loadInitBar bar : " + str(bar))
       bc[bar][self.op] = last
       bc[bar][self.cl] = last
-      bc[bar][self.hi] = last
-      bc[bar][self.lo] = last
+      bc[bar][self.hi] = ask
+      bc[bar][self.lo] = bid
       bc[bar][self.dt] = date
       bc[bar][self.vl] = vol
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def loadInitBar(self, bc, date, bar, bid, ask, last):
-   
-      #bc[bar][self.op] = bc[bar][self.cl] = last
-      bc[bar][self.op] = last
-      bc[bar][self.hi] = last
-      bc[bar][self.lo] = last
-      bc[bar][self.dt] = date
-
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def loadBar(self, bc, volume, bar, bid, ask, last):
+   def loadBar(self, bc, vol, bar, bid, ask, last):
    
       if ask > bc[bar][self.hi]:
          bc[bar][self.hi] = ask
-         
+               
       if bid < bc[bar][self.lo]:
          bc[bar][self.lo] = bid
                
-#      if bid < bc[bar][self.op]:
-#         bc[bar][self.op] = last
-               
-      bc[bar][self.vl] = volume
+      bc[bar][self.vl] = vol
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def loadEndBar(self, bc, date, bar, bid, ask, last):
+   def loadEndBar(self, bc, date, bar, bid, ask, last, vol):
    
-      bc[bar][self.cl] = ask
-      
-      # Using date from begin bar matches date on etrade bars
-      #bc[bar][self.dt] = date            
+      bc[bar][self.cl] = last
       bc[bar][self.bl] = round(bc[bar][self.hi] - bc[bar][self.lo], 2)
+      #bc[bar][self.vl] = vol
       
+      if last > bc[bar][self.hi]:
+         bc[bar][self.hi] = last
+               
+      if last < bc[bar][self.lo]:
+         bc[bar][self.lo] = last
+
       self.loadHiLoBar(bc, bar)
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -137,6 +129,8 @@ class Barchart:
          n += 1
             
       self.avgBL = round(totalBL / numBars, 2)
+      
+      print ("self.avgBL :" + str(self.avgBL)) 
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getAvgBarLen(self):
@@ -153,6 +147,8 @@ class Barchart:
    
       price = 0
       
+      print ("self.priceIdx " + str(self.priceIdx))
+      
       with open(path, 'r') as pcData:
          price = pcData[self.priceIdx].line.strip("\n")
          self.priceIdx += 1
@@ -160,8 +156,154 @@ class Barchart:
       return price
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def read(self, path, bc):
+   # Create a bar chart every n minutes
+   def readMin(self, path, bc, minutes):
    
+      lo = 99999
+      hi = op = cl = bl = 0.0
+      sH = sL = vl = 0
+      dt = ""
+      bcCtr = dirty = 0
+      lineCtr = 1
+
+      with open(path, 'r') as bcData:
+         for line in bcData:
+            line = line.strip("\n")
+            bar = line.split(",")
+                    
+            if lineCtr % minutes == 0:
+               bc.append(bar)
+               
+               if hi < float(bar[self.hi]):
+                  hi = float(bar[self.hi])
+                  
+               if lo > float(bar[self.lo]):
+                  lo = float(bar[self.lo])
+                  
+               vl += int(bar[self.vl])
+               
+               if int(bar[self.sH]) == 1:
+                  sH = int(bar[self.sH])
+                  
+               if int(bar[self.sL]) == 1:
+                  sL = int(bar[self.sL])
+               
+               bc[bcCtr][self.hi] = round(hi, 2)
+               bc[bcCtr][self.lo] = round(lo, 2)
+               bc[bcCtr][self.op] = round(op, 2)
+               bc[bcCtr][self.cl] = float(bar[self.cl])
+               bc[bcCtr][self.vl] = vl
+               bc[bcCtr][self.bl] = round(hi - lo, 2)
+               
+               bc[bcCtr][self.sH] = sH
+               bc[bcCtr][self.sL] = sL
+               bc[bcCtr][self.dt] = str(bar[self.dt])
+               
+               lo = 99999
+               hi = op = cl = bl = 0.0
+               sH = sL = vl = 0
+               dt = ""
+               dirty = 0
+               bcCtr += 1
+               
+            else:
+               if not dirty:
+                  dirty += 1
+                  op = float(bar[self.op])
+                  
+               if hi < float(bar[self.hi]):
+                  hi = float(bar[self.hi])
+                  
+               if lo > float(bar[self.lo]):
+                  lo = float(bar[self.lo])
+                  
+               vl += int(bar[self.vl])
+               
+               if int(bar[self.sH]) == 1:
+                  sH = int(bar[self.sH])
+                  
+               if int(bar[self.sL]) == 1:
+                  sL = int(bar[self.sL])
+                  
+            lineCtr += 1
+     
+      return bcCtr
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getSessionHi(self, bc, barCtr):
+      
+      if barCtr == 0:
+         return 0.0, 0
+
+      bar = barCtr
+      while bar > 0:
+         if bc[bar][self.sH] == 1:
+            print("sessionHi " + str(bc[bar][self.hi]))
+            return bc[bar][self.hi], bar
+         bar -= 1
+      
+      return 0, 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getSessionLo(self, bc, barCtr):
+
+      if barCtr == 0:
+         return 0, 0
+         
+      bar = barCtr
+      while bar > 0:
+         if bc[bar][self.sL] == 1:
+            print("sessionLo " + str(bc[bar][self.lo]))
+            return bc[bar][self.lo], bar
+         bar -= 1
+      
+      return 0.0, 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def fixSessionHiLo(self, path):
+      
+      highest = 0.0
+      lowest = 99999.99
+      tmpPath = path + "tmp"
+      
+      with open(tmpPath, 'a+') as bcDataTmp:
+         with open(path, 'r') as bcData:
+            for line in bcData:
+               line = line.strip("\n")
+               bar = line.split(",")
+               
+               hi = float(bar[self.hi])
+               if hi > highest:
+                  highest = hi
+                  bar[self.sH] = 1
+
+               lo = float(bar[self.lo])
+               if lo < lowest:
+                  lowest = lo
+                  bar[self.sL] = 1
+                  
+               bcDataTmp.write('%s,' % str(bar[self.hi]))
+               bcDataTmp.write('%s,' % str(bar[self.lo]))
+               bcDataTmp.write('%s,' % str(bar[self.op]))
+               bcDataTmp.write('%s,' % str(bar[self.cl]))
+               bcDataTmp.write('%s,' % str(bar[self.vl]))
+               bcDataTmp.write('%s,' % str(bar[self.bl]))
+               bcDataTmp.write('%s,' % str(bar[self.sH]))
+               bcDataTmp.write('%s,' % str(bar[self.sL]))
+               bcDataTmp.write('%s' % bar[self.dt] + "\n")
+      
+      # Enbale this after verification of above
+      #os.remove(path)      
+      #os.rename(tempPath, path)
+      
+      return 
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def read(self, path, bc, timeBar):
+            
+      if timeBar > 1:
+         return self.readMin(path, bc, timeBar)
+
       ctr = 0
       with open(path, 'r') as bcData:
          for line in bcData:
@@ -177,8 +319,8 @@ class Barchart:
             bc[ctr][self.cl] = float(bar[self.cl])
             bc[ctr][self.vl] = int(bar[self.vl])
             bc[ctr][self.bl] = float(bar[self.bl])
-            bc[ctr][self.sH] = str(bar[self.sH])
-            bc[ctr][self.sL] = str(bar[self.sL])
+            bc[ctr][self.sH] = int(bar[self.sH])
+            bc[ctr][self.sL] = int(bar[self.sL])
             bc[ctr][self.dt] = str(bar[self.dt])
             ctr += 1
      

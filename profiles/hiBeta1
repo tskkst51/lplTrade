@@ -4,7 +4,7 @@
     "algorithms": "do\\*",
     "service": "eTrade",
     "stock": "SPY",
-    "stocks": "AAPL,TSLA,GOOG,AMZN,ZEN,IWM,CSCO,INCY,MSFT,NFLX,SNAP,QQQ,QCOM,NVDA,ADBE,BABA,PDD,ZIOP,VXX,GDX,TWLO,AMD,TQQQ,SQQQ,FB",
+    "stocks": "CCL,LNC,AAL,SUM,HT,CAR,HAL,RCL,MSFT,SRTY,QLD,TQQQ,TSLA,AAPL,FB,MIK,NCLH,CIT",
     "timeBar": "1",
     "aggressiveOpen": "0",
     "aggressiveClose": "0",

@@ -7,14 +7,14 @@
 
 wp=$(pwd)
 
-lpltPath="${wp}/bin/lpltS.py"
+lpltPathS="${wp}/bin/lpltS.py"
 
-if [[ ! -e $lpltPath ]]; then
-   echo $lpltPath not found!
+if [[ ! -e $lpltPathS ]]; then
+   echo $lpltPathS not found!
    exit 1
 fi
 
-exitTime="160000"
+exitTime="160001"
 host=$(hostname -s)
 
 if [[ $host == "ML-C02C8546LVDL" ]]; then
@@ -34,20 +34,27 @@ stocksPath="${wp}/profiles/stocks.txt"
 
 echo "Paths:"
 echo $activateCmd
-echo $lpltPath
+echo $lpltPathS
 echo $py3
 echo $stocksPath
-echo
-
-echo Running lplt against the following symbols...
-cat $stocksPath
 echo
 
 . $activateCmd || echo activation failed 
 
 # Execute script to populate source library path
 $HOME/bin/lplt.sh
-dt=$(date "+%Y%m%d")
+
+#dt=$(date "+%Y%m%d")
+dt=$(date "+%d%m%Y")
+
+program="lpltS.py"
+
+# Check if a rogue program is running. kill it if it is
+ps | grep $program | grep -qv grep
+
+if [ $? == 0 ]; then
+   kill $(ps | grep $program | awk '{printf $1 " " }')
+fi
 
 while true ; do
       
@@ -58,10 +65,10 @@ while true ; do
       echo Exiting... Time is after 4PM: $(date)
       
       # Kill all process and exit
-      kill $(ps | grep lplt.py | awk '{printf $1 " " }')
+      kill $(ps | grep $program | awk '{printf $1 " " }')
       
       # Move data to test directory
-      testDir="${wp}/test/${dt}"         
+      testDir="${wp}/test/${dt}"        
       echo $testDir
       
       mkdir $testDir || echo Unable to make directory $testDir
@@ -69,29 +76,36 @@ while true ; do
       mv "bc" $testDir || echo Unable to move bc directory to $testDir
       mv "logs" $testDir || echo Unable to move logs directory to $testDir
       mv "debug" $testDir || echo Unable to move debug directory to $testDir
-      mkdir "prices" "bc" "logs"  || echo Unable to mkdir "prices" "bc" "logs"
-      tar -cf ${testDir}.tar ${testDir} || echo Unable to tar test dir $testDir
-      gzip ${testDir}.tar || echo Unable to gzip ${testDir}.tar
+      mkdir ${testDir}/results || echo Unable to mkdir ${testDir}/results
+      mkdir -p ${testDir}/profiles/saved || echo Unable to mkdir ${testDir}/profiles/saved
+      cp profiles/* ${testDir}/profiles || echo Unable to copy profiles
+      cp ${testDir}/profiles/zerod  ${testDir}/profiles/active.json || echo Unable to copy active.json
+      mkdir "prices" "bc" "logs" "debug"  || echo Unable to mkdir "prices" "bc" "logs"
+      tar -cf ${dt}.tar ${testDir} || echo Unable to tar test dir $dt
+      gzip ${dt}.tar || echo Unable to gzip ${dt}.tar
+      mv ${dt}.tar.gz archives || echo Unable to mv archives to archive
       exit 0
    fi
    
-   log="${wp}/logs/TEMPP_${dt}"
+   log="${wp}/logs/output_${dt}"
    
-   cmd="$py3 $lpltPath -r -c $HOME/profiles/et.json -p $wp/profiles/active.json"
+   cmd="$py3 $lpltPathS -d -r -c $HOME/profiles/et.json -p $wp/profiles/active.json"
    
-   program=lplt.py
-   
-   ps | grep $program | grep $stock | grep -qv grep
+   ps | grep $program | grep -qv grep
    
    if [ $? == 0 ]; then
-     sleep 3
+     sleep 2
      continue
    fi
    
-   echo Re-starting $stock $(date) ...
+   echo Re-starting $cmd $(date) ...
    
    # Resume running the program from disk if program exits a non 0
+   $HOME/bin/lplt.sh
    $cmd >> $log &
+   #$cmd
+   sleep 1
+
 done
 
 exit 0

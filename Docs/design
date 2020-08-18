@@ -13,6 +13,15 @@ Instead of using trends when there is a reversal decision going from buy to sell
 
 If VIX goes down do rangetrading??
 
+Change MAX PROFIT based on volitility
+
+Compare first n bars of mutiple charts for best stock to trade throughout the the day?
+
+Need to add a dirty lock file so the session hi/lo's can be fixed if restarted.
+
+DYNAMIC:::::
+When bar length is greater
+
 VERIFIED ALGO's
 doHiLos
 doExecuteOpen

@@ -1,2 +1,23 @@
 Item is not a list, neither a dict and not even a tuple
 OrderedDict([('dateTime', '19:59:58 EDT 07-24-2020'), ('dateTimeUTC', '1595635198'), ('quoteStatus', 'CLOSING'), ('ahFlag', 'true'), ('hasMiniOptions', 'false'), ('Intraday', OrderedDict([('ask', '254.92'), ('bid', '254.88'), ('changeClose', '-3.05'), ('changeClosePercentage', '-1.18'), ('companyName', 'INVESCO QQQ TRUST'), ('high', '256.93'), ('lastTrade', '254.96'), ('low', '251.32'), ('totalVolume', '54054536')])), ('Product', OrderedDict([('securitySubType', 'ETF'), ('securityType', 'EQ'), ('symbol', 'QQQ')]))])
+
+stocks that look volitole
+PINS,QCOM,TSLA,GILD,BABA,PDD,ZEN,XLNX,LVS,CAT,WFC,EXPE,NVDA,SGEN,MCHP,INCY,VIX,FISV
+
+High Beta stocksg
+CCL,NCLH,LNC,AAL,ABCB,ABTX,MIK,APA,SUM,HT,OVV,CIT,HLX,RRR,DXC,CAR,HAL,RCL,JELD,SRTY,URTY,QLD,TQQQ,TSLA,AAPL,FB,FLR,TPR
+
+leveraged ETF's 
+S&P 500	        SPXU	SDS	SH	SSO	UPRO
+NASDAQ-100	     SQQQ	QID	PSQ	QLD	TQQQ
+Dow Jones 	     SDOW	DXD	DOG	DDM	UDOW
+S&P MidCap 400	  SMDD	MZZ	MYY	MVV	UMDD
+S&P SmallCap 600 SDD	SBB	SAA TNA TZA
+Russell 2000	  SRTY	TWM	UWM	URTY  
+
+Winners based on logs/parse*pr results
+g VXX results/gains |wc -l;g VXX results/loss |wc -l
+
+FB,TQQQ,ZIOP,AMD,GDX,SNAP,ZEN,MSFT,AAPL,TSLA,SQQQ,NVDA,SDOW,AMD,QCOM,BABA,INCY,VIX,AAL,BA,NFLX
+
+8/10, INCY 8/10, NVDA 8/10

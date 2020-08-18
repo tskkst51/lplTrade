@@ -4,12 +4,12 @@ trends module
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Limits:
-   def __init__(self, data, lg, cn, bc, offLine, stock=""):
+   def __init__(self, data, lg, cn, ba, offLine, stock=""):
       
       self.data = data
       self.lg = lg
       self.cn = cn
-      self.bc = bc
+      self.ba = ba
 
       self.hi = 0
       self.lo = 1
@@ -53,7 +53,8 @@ class Limits:
       self.lowestcloseSellLimit = 99999999.999999
       self.openSellLimit = 0.0
       self.closeSellLimit = 0.0
-      
+      self.rangeHi = 0.0
+      self.rangeLo = 0.0
       self.stock = stock
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -86,7 +87,7 @@ class Limits:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setAvgBarLenOpenBuyLimit(self, barChart):
 
-      avgBarLen = self.bc.getAvgBarLen()
+      avgBarLen = self.ba.getAvgBarLen()
       
       # Tighten up the limit when profit has been taken
       if self.quickProfitCtr:
@@ -99,7 +100,7 @@ class Limits:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setAvgBarLenOpenSellLimit(self, barChart, bar):
 
-      avgBarLen = self.bc.getAvgBarLen()
+      avgBarLen = self.ba.getAvgBarLen()
 
       # Tighten up the limit when profit has been taken
       if self.quickProfitCtr:
@@ -112,38 +113,43 @@ class Limits:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setAvgBarLenCloseBuyLimit(self, barChart, bar):
 
-      avgBarLen = self.bc.getAvgBarLen()
+      avgBarLen = self.ba.getAvgBarLen()
 
-      if self.bc.getBarsInPosition() > 1:
+      if self.ba.getBarsInPosition() > 1:
          avgBarLen /= 2.0
-                 
+      
       print ("\navgBarLen: " + str(avgBarLen))
       print ("previous buy limit: " + str(self.closeBuyLimit))
-      print ("getCurrentAsk() " + str(self.cn.getCurrentAsk(self.stock)))
+      #print ("getCurrentAsk() " + str(self.cn.getCurrentAsk(self.stock)))
+
+      if self.ba.getBarsInPosition() == 0:
+         self.closeBuyLimit = self.cn.getCurrentAsk(self.stock) - avgBarLen
       
       # only raise the limit
-      if self.closeBuyLimit == 0.0:
-         self.closeBuyLimit = self.cn.getCurrentAsk(self.stock) - avgBarLen
+      #if self.closeBuyLimit == 0.0:
+      #   self.closeBuyLimit = self.cn.getCurrentAsk(self.stock) - avgBarLen
       elif self.closeBuyLimit < self.cn.getCurrentAsk(self.stock) - avgBarLen:
          self.closeBuyLimit = self.cn.getCurrentAsk(self.stock) - avgBarLen
-
+      
       print ("\nAvgBarLen: setCloseBuyLimit: " + str(self.closeBuyLimit))
          
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setAvgBarLenCloseSellLimit(self, barChart, bar):
 
-      avgBarLen = self.bc.getAvgBarLen()
+      avgBarLen = self.ba.getAvgBarLen()
 
-      if self.bc.getBarsInPosition() > 1:
+      if self.ba.getBarsInPosition() > 1:
          avgBarLen /= 2.0
         
       print ("\navgBarLen: " + str(avgBarLen))
       print ("previous sell limit: " + str(self.closeSellLimit))
-      print ("getCurrentBid() " + str(self.cn.getCurrentBid(self.stock)))
+      #print ("getCurrentBid() " + str(self.cn.getCurrentBid(self.stock)))
 
-      # only lower the limit
-      if self.closeSellLimit == 0.0:
+      if self.ba.getBarsInPosition() == 0:
          self.closeSellLimit = self.cn.getCurrentBid(self.stock) + avgBarLen
+      # only lower the limit
+      #if self.closeSellLimit == 0.0:
+      #   self.closeSellLimit = self.cn.getCurrentBid(self.stock) + avgBarLen
       elif self.closeSellLimit > self.cn.getCurrentBid(self.stock) + avgBarLen:
          self.closeSellLimit = self.cn.getCurrentBid(self.stock) + avgBarLen
       
@@ -269,6 +275,11 @@ class Limits:
    
       self.closeBuyLimit = 0.0
       self.closeSellLimit = 0.0
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setAvgBarLenLimits(self, barChart, bar):
+      
+      self.setCloseAvgBarLenLimits(barChart, bar)
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setCloseAvgBarLenLimits(self, barChart, bar):
@@ -562,9 +573,6 @@ class Limits:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setOpenCloseHiLoValues(self, barChart, bar, numBars):
                      
-      if bar < numBars:
-         return 0
-         
       self.openValues = [0.0] * numBars   
       self.closeValues = [0.0] * numBars  
       self.lowValues = [0.0] * numBars   
@@ -683,7 +691,7 @@ class Limits:
          print ("top " + str(top))
          print ("open " + str(op))
          print ("self.topIntraBar " + str(self.topIntraBar))
-         print ("currentPrice " + str(self.cn.getCurrentAsk(self.stock)))
+         #print ("currentPrice " + str(self.cn.getCurrentAsk(self.stock)))
          print ("self.barCounter " + str(self.barCounter))
          print ("self.hiLowBarMaxCounter " + str(self.hiLowBarMaxCounter))
          print ("self.revDirty " + str(self.revDirty))

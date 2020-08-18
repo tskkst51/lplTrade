@@ -4,8 +4,8 @@
     "algorithms": "do\\*",
     "service": "eTrade",
     "stock": "SPY",
-    "stocks": "AAPL,TSLA,GOOG,AMZN,ZEN,IWM,CSCO,INCY,MSFT,NFLX,SNAP,QQQ,QCOM,NVDA,ADBE,BABA,PDD,ZIOP,VXX,GDX,TWLO,AMD,TQQQ,SQQQ,FB",
-    "timeBar": "1",
+    "stocks": "AAPL,TSLA,GOOG,AMZN,ZEN,XLNX,MRNA,MCHP,INCY,MSFT,NFLX,SNAP,QQQ,QCOM,EXPE,NVDA,SGEN,BABA,PDD,FISV",
+    "timeBar": "5",
     "aggressiveOpen": "0",
     "aggressiveClose": "0",
     "doDefault": "0",
@@ -33,7 +33,7 @@
     "resume": "1",
     "spread": "0.05",
     "workPath": "",
-    "tradingDelayBars": "8",
+    "tradingDelayBars": "10",
     "quickProfitMax": "0",
     "openBuyBars": "2",
     "openSellBars": "2",
@@ -74,3 +74,4 @@
     "waitForBestPrice": "0"
   }
 }
+
