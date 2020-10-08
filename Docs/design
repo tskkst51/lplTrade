@@ -19,6 +19,11 @@ Compare first n bars of mutiple charts for best stock to trade throughout the th
 
 Need to add a dirty lock file so the session hi/lo's can be fixed if restarted.
 
+Determine whic hstock to trade by comparing first few bars volume
+
+New observation... sequential higher opens and lower closes and vice versa. 
+Good to beat beginning day craziness
+
 DYNAMIC:::::
 When bar length is greater
 

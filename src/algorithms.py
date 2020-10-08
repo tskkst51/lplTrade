@@ -10,7 +10,7 @@ import lplTrade as lpl
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Algorithm():
 
-   def __init__(self, data, lg, cn, ba, tr, lm, offLine=0, stock=""):
+   def __init__(self, data, lg, cn, ba, tr, lm, pattern, offLine=0, stock=""):
    
       self.cn = cn
       self.lg = lg
@@ -19,6 +19,7 @@ class Algorithm():
       self.data = data
       self.tr = tr
       self.lm = lm
+      self.pa = pattern
       self.stock = stock
 
       print (str(self.ba))
@@ -28,6 +29,7 @@ class Algorithm():
             
       # Algorithms
       self.doDefault = int(data['profileTradeData']['doDefault'])
+      self.doHiLo = int(data['profileTradeData']['doHiLo'])
       self.doHiLoSeq = int(data['profileTradeData']['doHiLoSeq'])
       self.doOpensCloses = int(data['profileTradeData']['doOpensCloses'])
       self.doExecuteOnClose = int(data['profileTradeData']['doExecuteOnClose'])
@@ -43,6 +45,10 @@ class Algorithm():
       self.doOnlyBuys = int(data['profileTradeData']['doOnlyBuys'])
       self.doOnlySells = int(data['profileTradeData']['doOnlySells'])
       self.doOnlyTrends = int(data['profileTradeData']['doOnlyTrends'])
+      self.doSessions = int(data['profileTradeData']['doSessions'])
+      self.doInPosTracking = int(data['profileTradeData']['doInPosTracking'])
+      self.doPatterns = int(data['profileTradeData']['doPatterns'])
+      self.doVolatility = int(data['profileTradeData']['doVolatility'])
 
       self.currency = str(data['profileTradeData']['currency'])
       self.alt = str(data['profileTradeData']['alt'])
@@ -159,12 +165,13 @@ class Algorithm():
       self.ask = 0.0
       self.last = 0.0
       self.reversAction = 0
+      self.hammer = 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setAllLimits(self, bc, bar):
       
       # bar count starts at 0 sub 1
-      if bar < self.lm.getMaxNumBars() - 1:
+      if bar < self.lm.getMaxNumWaitBars() - 1:
          return
          
       if self.lm.doRangeTradeBars:
@@ -175,8 +182,8 @@ class Algorithm():
          
       self.ba.setAvgBarLen(bc, bar)
       
-      if self.lm.setOpenCloseHiLoValues(bc, bar, self.lm.getMaxNumBars()):
-         self.lm.setOpenCloseHiLoConditions(self.lm.getMaxNumBars())
+      if self.lm.setOpenCloseHiLoValues(bc, bar, self.lm.getMaxNumWaitBars()):
+         self.lm.setOpenCloseHiLoConditions(self.lm.getMaxNumWaitBars())
 
       defaultNumBars = 0
       self.lm.setOpenBuySellLimits(defaultNumBars, bar)
@@ -225,7 +232,7 @@ class Algorithm():
       self.setCurrentAsk(ask)
       self.setCurrentLast(last)
       
-      if bar <= self.lm.getMaxNumBars():
+      if bar <= self.lm.getMaxNumWaitBars():
          return 0
          
       # Determine if position should be opened
@@ -279,6 +286,15 @@ class Algorithm():
       if self.doDynamic:
          self.algorithmDynamic(action)
      
+      if self.doInPosTracking:
+         self.algorithmPosTracking(action)
+     
+      if self.doVolatility:
+         self.algorithmVolatility(action)
+     
+      if self.doPatterns:
+         self.algorithmPatterns(barChart, bar, action)
+     
       if self.doQuickProfit:
          action = self.algorithmTakeProfit(barChart, bar, action)
       
@@ -292,6 +308,9 @@ class Algorithm():
 # close is higher than open for a sell position or a
 # close is lower than an open for a buy position
 
+      if self.doHiLo:
+         action = self.algorithmHiLo(barChart, bar, action)
+         
       if self.doHiLoSeq:
          action = self.algorithmHiLoSeq(barChart, bar, action)
          
@@ -381,6 +400,7 @@ class Algorithm():
 
       self.lg.debug ("In algorithmTakeProfit: " + str(action))
       
+      # We've taken at least one profit so set the avg bar length
       if self.quickProfitCtr:
          # Use avg bar length as the stop instead of original limits
          self.lm.setAvgBarLenLimits(barChart, bar)
@@ -413,6 +433,14 @@ class Algorithm():
       self.reversAction = 0
 
       if self.inPosition():
+         # Take profit once limit hit
+#         if self.positionType == self.sell:
+#            if self.cn.getCurrentAsk(self.stock) < self.lm.closeBuyLimit:
+#               return 2
+#         elif self.positionType == self.buy:
+#            if self.cn.getCurrentBid(self.stock) > self.lm.closeSellLimit:
+#               return 1
+               
          return action
          
       # Return 0 if price is within a range 
@@ -449,28 +477,29 @@ class Algorithm():
       # We set the trend linits here since the calculation is dynamic and values
       # change as the price moves
       # This algo takes much CPU time and may need rethinking
-      
-      #self.tr.setTrendLimits(barChart, bar)
-      
+            
       self.tr.setTrendLimits(bc, bar)
             
       self.tr.isBearTrend()
       self.tr.isBullTrend()
 
-      hi, hiBar = self.ba.getSessionHi(bc, bar)
-      lo, loBar = self.ba.getSessionLo(bc, bar)
+      self.setSessionData(bc, bar)
 
-      sessionTrendValue = self.tr.getSessionTrendValue(hi, hiBar, lo, loBar)
-      self.tr.setSessionTrend(sessionTrendValue)
+#      hi, hiBar = self.ba.getSessionHi(bc, bar)
+#      lo, loBar = self.ba.getSessionLo(bc, bar)
+#
+#      sessionTrendValue = self.tr.getSessionTrendValue(hi, hiBar, lo, loBar)
+#      self.tr.setSessionTrend(sessionTrendValue)
 
       if not self.inPosition():
-         if self.tr.isBullShortTrend() and not self.tr.isBearTrend():
+         if self.tr.isBullSessionTrend() and (self.tr.isBullTrend() and not self.tr.isBearTrend()):
             action = 1
-         elif self.tr.isBearShortTrend() and not self.tr.isBullTrend():
+         elif self.tr.isBearSessionTrend() and self.tr.isBearTrend():
             action = 2
       else:
          if self.positionType == self.buy:
-            if self.tr.isBearShortTrend() and not self.tr.isBullTrend():
+            #if self.tr.isBearShortTrend() and not self.tr.isBullTrend():
+            if self.tr.isBullMegaTrend() and self.tr.isBearShortTrend():
                action = 2
          elif self.positionType == self.sell:
             if self.tr.isBullShortTrend() and not self.tr.isBearTrend():
@@ -528,6 +557,33 @@ class Algorithm():
    # Take position if price is higher than high or lower than the low
    
    def algorithmHiLoSeq(self, barChart, bar, action=0):
+   
+      self.lg.debug("In algorithmHiLoSeq")
+      
+      if self.inPosition():
+         if self.positionType == self.buy:
+            if self.lm.lowerHighs and self.lm.lowerLows:
+               self.lg.debug ("InPos Hi Lo Seq algo. Higher hi's and Higher lo's detected")
+               return 1
+         elif self.positionType == self.sell:
+            if self.lm.higherHighs and self.lm.higherLows:
+               self.lg.debug ("InPos Hi Lo Seq algo. Lower hi's and Lower lo's detected")
+               return 2
+      else:
+         if self.lm.higherHighs and self.lm.higherLows:
+            self.lg.debug ("Hi Lo Seq algo. Higher hi's and Higher lo's detected")
+            return 1
+         if self.lm.lowerHighs and self.lm.lowerLows:
+            self.lg.debug ("Hi Lo Seq algo. Lower hi's and Lower lo's detected")
+            return 2
+
+      return 0
+      
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   # Take position if price is higher than high or lower than the low
+   
+   def algorithmHiLo(self, barChart, bar, action=0):
 
       adjustDoToExecuteOnOpenClose = 0
       
@@ -535,7 +591,7 @@ class Algorithm():
          print ("Using highs and lo's to close/open a position on execute on open/close: " + str(action))
          adjustDoToExecuteOnOpenClose = 1
 
-      self.lg.debug("In algorithmHiLoSeq")
+      self.lg.debug("In algorithmHiLo")
 
       # Adjust execute on close decision based on hi's lo's
       if adjustDoToExecuteOnOpenClose:
@@ -641,6 +697,36 @@ class Algorithm():
       return 0
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def algorithmPatterns(self, bc, bar, action=0):
+   
+      # First should be the hammer. In sell position if hammer found close out
+      # regardless of number of decision bars
+      
+      if not self.inPosition():
+         return 0
+      
+      if self.positionType == self.buy:
+         if self.pa.isHammer(bc, bar):
+            action = 2
+            self.lg.debug("Hammer detected!")
+      elif self.positionType == self.sell:
+         if self.pa.isInvHammer(bc, bar):
+            action = 1
+            self.lg.debug("Inverted Hammer detected!")
+      return action
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def algorithmPosTracking(self, action=0):
+   
+      # Move decision bars depending how long in pos
+      # Take profit depending on how long in pos
+      # Track how many bars price in a range. 
+      # see where price is relative to session his/los
+      # 
+      pass
+      return action
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmDynamic(self, action=0):
    
       # if in a oscilating trade get out
@@ -655,6 +741,15 @@ class Algorithm():
       ## if trend is sell then sell when 1st hi out of the range. : Winning ticket!!!!
       
       # After 3 quickProfit wins use avg bar length as stop when buying/selling again
+      
+      # When in a long trend turn quick profiit on or 
+      #   reduce decision bars by 1 for each new bar. This will capture more gains in
+      #.  when using decision bars > 3 BABA 8/21/20 time 12:54 5 MB 4 DB
+      
+      # after gains using trends turn on in range to avoid little losing trades
+      #   BABA 8/21/20 time 12:54 5 MB 4 DB
+      
+      # After min profit hit use it as a stop and continue to bank profit
       
       self.lg.debug("In algorithmDynamic: " + str(action))
       
@@ -711,9 +806,9 @@ class Algorithm():
          return
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def openPosition(self, buyOrSell, bar, bc):
+   def openPosition(self, action, bar, bc):
       
-      self.lg.debug("START OF OPEN POSITION: " + str(buyOrSell))
+      self.lg.debug("START OF OPEN POSITION: " + str(action))
 
       # Block taking a position if we are in a range and range trading is set or delay bars are set
       if not self.ready(bar):
@@ -725,33 +820,53 @@ class Algorithm():
          self.lg.debug("NOT TRADING IN PRICE RANGE AND NOT IN A POSITION " + str(self.lm.doRangeTradeBars))         
          return
 
-         
+      if self.doSessions:
+         self.setSessionData(bc, bar)
+         if action == self.buy and self.tr.isBearSessionTrend():
+            self.lg.debug("isBearSessionTrend... ")
+            return
+         elif action == self.sell and self.tr.isBullSessionTrend():
+            self.lg.debug("isBullSessionTrend... ")
+            return
+
       if self.doTrends:
          self.tr.setTrendLimits(bc, bar)
-         if self.tr.isBearTrend() and buyOrSell == self.buy:
+         if action == self.buy and self.tr.isBearTrend():
             self.lg.debug("isBearTrend... ")
             return
-         if self.tr.isBullTrend() and buyOrSell == self.sell:
+         elif action == self.sell and self.tr.isBullTrend():
             self.lg.debug("isBullTrend... ")
             return
-                        
+            
+         # Only open new position if we are in a trend after reaching profit
+#         if self.getTotalGain() >= self.getTargetProfit():
+#            if action == self.buy:
+#               if not self.tr.isBullTrend():
+#                  self.lg.debug("NOT TRADING MAX PROFIT REACHED AND NOT IN A TREND")         
+#                  return
+#                  
+#            if action == self.sell:
+#               if not self.tr.isBearTrend():
+#                  self.lg.debug("NOT TRADING MAX PROFIT REACHED AND NOT IN A TREND")         
+#                  return
+
 #      if self.doTrends:
 #         self.tr.setTrendLimits(bc, bar)
-#         if self.tr.isShortMidBullLongMegaBear() and buyOrSell == self.buy:
+#         if self.tr.isShortMidBullLongMegaBear() and action == self.buy:
 #            self.lg.debug("isShortMidBullLongMegaBear... ")
 #            return
-#         if self.tr.isShortMidBearLongMegaBull() and buyOrSell == self.sell:
+#         if self.tr.isShortMidBearLongMegaBull() and action == self.sell:
 #            self.lg.debug("isShortMidBearLongMegaBull... ")
 #            return
                         
-      if self.doOnlyBuys and buyOrSell == self.sell:
+      if self.doOnlyBuys and action == self.sell:
          return
       
-      if self.doOnlySells and buyOrSell == self.buy:
-         return
-      
+      if self.doOnlySells and action == self.buy:
+         return      
+
       # Open a BUY position
-      if buyOrSell == self.buy:
+      if action == self.buy:
          price = self.cn.getCurrentAsk(self.stock)
          
          # Execute order here ========================
@@ -778,7 +893,7 @@ class Algorithm():
 
       print ("\n")
       self.lg.info("POSITION OPEN " + str(self.stock))
-      self.lg.info("buy/sell: " + str(buyOrSell))
+      self.lg.info("buy/sell: " + str(action))
       self.lg.info("Open buy limit: " + str(self.lm.openBuyLimit))
       self.lg.info("Open position Price: " + str(price))
       self.lg.info("Open sell limit: " + str(self.lm.openSellLimit))
@@ -815,16 +930,25 @@ class Algorithm():
 
       if self.doTrends and not force:
          self.tr.setTrendLimits(bc, bar)    
-         if self.positionType == self.buy and self.tr.isBullTrend():
-            self.lg.debug("Got a BUY close signal... BLOCKING " + str(self.positionType))
+         if self.positionType == self.buy and self.tr.isBullTrend() and not self.getGain():
+            self.lg.debug("Got a BUY close signal... BLOCKING isBullTrend " + str(self.positionType))
             self.setWaitForNextBar()
             return        
-
-         if self.positionType == self.sell and self.tr.isBearTrend():
-            self.lg.debug("Got a SELL close signal... BLOCKING " + str(self.positionType))
+         if self.positionType == self.sell and self.tr.isBearTrend() and not self.getGain():
+            self.lg.debug("Got a SELL close signal... BLOCKING isBearTrend" + str(self.positionType))
             self.setWaitForNextBar()
             return        
+#         if self.positionType == self.buy and (not self.tr.isBearTrend() and not self.tr.isBullTrend()):
+#            self.lg.debug("Got a BUY close signal... BLOCKING no trend" + str(self.positionType))
+#            self.setWaitForNextBar()
+#            return        
+#         if self.positionType == self.sell and (not self.tr.isBearTrend() and not self.tr.isBullTrend()):
+#            self.lg.debug("Got a SELL close signal... BLOCKING no trend" + str(self.positionType))
+#            self.setWaitForNextBar()
+#            return        
 
+      print (str(self.cn.getCurrentBid(self.stock)))
+      
       if self.positionType == self.buy:
          price = self.cn.getCurrentBid(self.stock)
       else:
@@ -909,6 +1033,15 @@ class Algorithm():
 
    # Setter definitions
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setSessionData(self, bc, bar):
+   
+      hi, hiBar = self.ba.getSessionHi(bc, bar)
+      lo, loBar = self.ba.getSessionLo(bc, bar)
+
+      sessionTrendValue = self.tr.getSessionTrendValue(hi, hiBar, lo, loBar)
+      self.tr.setSessionTrend(sessionTrendValue)
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setActionOnNewBar(self):
    
@@ -1117,6 +1250,8 @@ class Algorithm():
       
       if self.doDefault:
          self.algoMsg += "         Default\n"
+      if self.doHiLo:
+         self.algoMsg += "         Hi Lo's\n"
       if self.doHiLoSeq:
          self.algoMsg += "         Hi Lo's Sequential\n"
       if self.doOpensCloses:

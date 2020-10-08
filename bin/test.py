@@ -23,7 +23,8 @@ closeSellBars = [3,4,5]   # CS
 timeBar = [1,2,3,4,5]       # TB
 aggressiveOpen = [0,1]      # AO
 aggressiveClose = [0,1]     # AC
-doHiLoSeq = [1]           # HL
+doHiLo = [1]           # HL
+doHiLoSeq = [1]           # HLS
 doExecuteOnOpen = [0,1]     # EO
 doTrends = [1]            # TR
 doQuickProfit = [1]       # QP
@@ -39,6 +40,7 @@ doDynamic = [0,1]           # DY
 doOnlySells = [0,1]         # OS
 doOnlyBuys = [0,1]          # OB
 useAvgBarLimits = [1]     # ABL
+doTrendsdoPatterndoRT = [1]
 usePricesFromFile = 1
 write1_5MinData = 1
 resume = 1
@@ -82,6 +84,10 @@ def parseLastLine(line, info):
 
    parsedLine = ""
    lineTokens = line.split()
+
+   if len(lineTokens) < 2:
+      print ("Last line " + str(line))
+      return ""
    
    lastClose = lineTokens[1]
    gain = lineTokens[3]
@@ -107,7 +113,7 @@ def writeParsedHeader(path, line):
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def getHeader(stock):
 
-   bars = "BARS: Open/Close: OB Trend: TS TM TL TM TS Range: RT"
+   bars = "BARS: Open/Close: DB Trend: TS TM TL TM TS Range: RT"
    
    algos = "ALGOs: HiLoSeq: HL ExOnOpen: EO Trends: TR Range: IR Quick Rev: Quick Profit: QP QR,RP,DY,OS,OB,ABL"
    
@@ -122,14 +128,14 @@ def getParseInfo():
    return parseInfo
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def setBuyValues(value, info):
+def setBuySellValues(value, info):
 
    d["profileTradeData"]["openBuyBars"] = str(value)
    d["profileTradeData"]["openSellBars"] = str(value)
    d["profileTradeData"]["closeBuyBars"] = str(value)
    d["profileTradeData"]["closeSellBars"] = str(value)
    
-   info += "OB " + str(value) + " "
+   info += "DB " + str(value) + " "
    
    return info 
 
@@ -140,10 +146,18 @@ def setAlgoValues(algo, value, info):
       d["profileTradeData"]["timeBar"] = str(value)
       info += " TB " + str(value) + " "
 
+   if algo == "doHiLo":
+      d["profileTradeData"]["doHiLo"] = str(value)
+      info += "HL " + str(value) + " "
+   #else:
+   #   d["profileTradeData"]["doHiLo"] = str(0)
+
    if algo == "doHiLoSeq":
       d["profileTradeData"]["doHiLoSeq"] = str(value)
-   #   info += "HL " + str(value) + " "
-      
+      info += "HLS " + str(value) + " "
+   else:
+      d["profileTradeData"]["doHiLoSeq"] = str(0)
+
    if algo == "doTrends":
       d["profileTradeData"]["doTrends"] = str(value)
       info += "TR " + str(value) + " "
@@ -173,13 +187,23 @@ def setAlgoValues(algo, value, info):
       info += "ABL " + str(value) + " "
    else:
       d["profileTradeData"]["useAvgBarLimits"] = str(0)
-      
 
    if algo == "doTrendsdoABLdoRT":
       d["profileTradeData"]["doTrends"] = str(1)
       d["profileTradeData"]["useAvgBarLimits"] = str(1)
       d["profileTradeData"]["doRangeTradeBars"] = str(value)
       info += "TR 1 ABL 1 IR " + str(value) + " "
+
+   if algo == "doTrendsdoPatterndoRT":
+      d["profileTradeData"]["doTrends"] = str(1)
+      d["profileTradeData"]["doPatterns"] = str(1)
+      d["profileTradeData"]["doRangeTradeBars"] = str(value)
+      info += "TR 1 PT 1 IR " + str(value) + " "
+
+   if algo == "doPatterndoRT":
+      d["profileTradeData"]["doPatterns"] = str(1)
+      d["profileTradeData"]["doRangeTradeBars"] = str(value)
+      info += "PT 1 IR " + str(value) + " "
 
    if algo == "doTR_RBS_ABL_RT":
       d["profileTradeData"]["doTrends"] = str(1)
@@ -199,6 +223,31 @@ def setAlgoValues(algo, value, info):
       d["profileTradeData"]["doRangeTradeBars"] = str(value)
       info += "TR 1 IR " + str(value) + " "
 
+   if algo == "doTrendsOnly":
+      d["profileTradeData"]["doTrends"] = str(1)
+      info += "TR " + str(value) + " "
+
+   if algo == "doTrendsdoQP":
+      d["profileTradeData"]["doTrends"] = str(1)
+      d["profileTradeData"]["doQuickProfit"] = str(1)
+      info += "TR 1 QP " + str(value) + " "
+
+   if algo == "doTrendsdoABL":
+      d["profileTradeData"]["doTrends"] = str(1)
+      d["profileTradeData"]["useAvgBarLimits"] = str(1)
+      info += "TR 1 ABL " + str(value) + " "
+
+   if algo == "doOnlyTrends":
+      d["profileTradeData"]["doOnlyTrends"] = str(1)
+      info += "DOTR " + str(value) + " "
+
+   if algo == "doAgrOpenClose":
+      d["profileTradeData"]["aggressiveClose"] = str(1)
+      d["profileTradeData"]["aggressiveOpen"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      d["profileTradeData"]["doRangeTradeBars"] = str(value)
+      info += "AC 1 TR 1 IR: " + str(value) + " "
+
    return info
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -212,9 +261,13 @@ def getProfileValues():
          if value > str(0):
             readinfo += " TB " + str(value) + " "
    
-#      if algo == "doHiLoSeq":
-#         if value > str(0):
-#            readinfo += "HL " + str(value) + " "
+      if algo == "doHiLo":
+         if value > str(0):
+            readinfo += "HL " + str(value) + " "
+         
+      if algo == "doHiLoSeq":
+         if value > str(0):
+            readinfo += "HLS " + str(value) + " "
          
       if algo == "doTrends":
          if value > str(0):
@@ -238,7 +291,7 @@ def getProfileValues():
 
       if algo == "openBuyBars":
          if value > str(0):
-            readinfo += "OB " + str(value) + " "
+            readinfo += "DB " + str(value) + " "
 
    return readinfo
 
@@ -330,6 +383,10 @@ testAlgos = {}
 if algo:
    if algo == "doTrendsdoRT":
       testAlgos['doTrendsdoRT'] = doRangeTradeBars
+   elif algo == "doPatterndoRT":
+      testAlgos['doPatterndoRT'] = doRangeTradeBars
+   elif algo == "doTrendsdoPatterndoRT":
+      testAlgos['doTrendsdoPatterndoRT'] = doRangeTradeBars
    elif algo == "doTrendsdoABLdoRT":
       testAlgos['doTrendsdoABLdoRT'] = doRangeTradeBars
    elif algo == "doTR_RBS_ABL_RT":
@@ -338,15 +395,26 @@ if algo:
       testAlgos['doTrendsdoQPdoRT'] = doRangeTradeBars
    elif algo == "doReverseBuySell":
       testAlgos['doReverseBuySell'] = [1]
-else:
-   testAlgos['doHiLoSeq'] = doHiLoSeq # Set as default in orig profile
+   elif algo == "doTrendsOnly":
+      testAlgos['doTrendsOnly'] = [1]
+   elif algo == "doTrendsdoQP":
+      testAlgos['doTrendsdoQP'] = [1]      
+   elif algo == "doTrendsdoABL":
+      testAlgos['doTrendsdoABL'] = [1]   
+   elif algo == "doOnlyTrends":
+      testAlgos['doOnlyTrends'] = [1]   
+   elif algo == "doAgrOpenClose":
+      testAlgos['doAgrOpenClose'] = [1]
+   elif algo == "doRangeTradeBars":
+      testAlgos['doRangeTradeBars'] = doRangeTradeBars
+      
+else: # Default
+   #testAlgos['doHiLoSeq'] = doHiLoSeq # Set as default in orig profile
+   testAlgos['doHiLo'] = doHiLo # Set as default in orig profile
    testAlgos['doTrends'] = doTrends
    testAlgos['doRangeTradeBars'] = doRangeTradeBars
    testAlgos['useAvgBarLimits'] = useAvgBarLimits
-
-#testAlgos['doTrendsdoABLdoRT'] = doTrends + useAvgBarLimits
-#testAlgos['doTrendsdoQPdoRT'] = doRangeTradeBars
-
+   testAlgos['doTrendsdoPatterndoRT'] = doTrendsdoPatterndoRT
 
 #testAlgos['doQuickProfit'] = doQuickProfit
 #testAlgos['doReverseBuySell'] = doReverseBuySell FIXXX
@@ -407,9 +475,9 @@ for minBar in timeBar:
          for bars in openBuyBars:
             info = initParseInfo()
             info = setAlgoValues("timeBar", minBar, info)
-            #info = setAlgoValues("doHiLoSeq", 1, info)
+            #info = setAlgoValues("doHiLo", 1, info)
             info = setAlgoValues(algo, value, info)
-            info = setBuyValues(bars, info)
+            info = setBuySellValues(bars, info)
             
             # Dump new settings
             with open(tdp, 'w') as fp:
@@ -435,6 +503,11 @@ for minBar in timeBar:
                
                lastLine = getLastLine(resultsPath) 
                parsedLine = parseLastLine(lastLine, info)
+               
+               if parsedLine == "":
+                  print (str(stock) + " produced no results" + str(parsedLine))
+                  continue
+                  
                gain = getGain(lastLine)
                if gain > highestGain:
                   lastGain = highestGain

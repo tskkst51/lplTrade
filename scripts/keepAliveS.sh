@@ -14,7 +14,9 @@ if [[ ! -e $lpltPathS ]]; then
    exit 1
 fi
 
-exitTime="160001"
+#exitTime="160001"
+exitTime="155941"
+
 host=$(hostname -s)
 
 if [[ $host == "ML-C02C8546LVDL" ]]; then
@@ -30,13 +32,10 @@ activateCmd+="/bin/activate"
 py3=$(dirname $wp)
 py3+="${activateDir}/bin/python3"
 
-stocksPath="${wp}/profiles/stocks.txt"
-
 echo "Paths:"
 echo $activateCmd
 echo $lpltPathS
 echo $py3
-echo $stocksPath
 echo
 
 . $activateCmd || echo activation failed 
@@ -55,6 +54,14 @@ ps | grep $program | grep -qv grep
 if [ $? == 0 ]; then
    kill $(ps | grep $program | awk '{printf $1 " " }')
 fi
+
+ret=99
+
+function endIt {
+   if [[ $1 == 0 ]]; then  
+      echo
+   fi
+}
 
 while true ; do
       
@@ -76,10 +83,11 @@ while true ; do
       mv "bc" $testDir || echo Unable to move bc directory to $testDir
       mv "logs" $testDir || echo Unable to move logs directory to $testDir
       mv "debug" $testDir || echo Unable to move debug directory to $testDir
+      rm ${testDir}/logs/output_${dt} || echo Unable to remove output file output_${dt}
       mkdir ${testDir}/results || echo Unable to mkdir ${testDir}/results
       mkdir -p ${testDir}/profiles/saved || echo Unable to mkdir ${testDir}/profiles/saved
       cp profiles/* ${testDir}/profiles || echo Unable to copy profiles
-      cp ${testDir}/profiles/zerod  ${testDir}/profiles/active.json || echo Unable to copy active.json
+      cp ${testDir}/profiles/good  ${testDir}/profiles/active.json || echo Unable to copy active.json
       mkdir "prices" "bc" "logs" "debug"  || echo Unable to mkdir "prices" "bc" "logs"
       tar -cf ${dt}.tar ${testDir} || echo Unable to tar test dir $dt
       gzip ${dt}.tar || echo Unable to gzip ${dt}.tar
@@ -103,10 +111,13 @@ while true ; do
    # Resume running the program from disk if program exits a non 0
    $HOME/bin/lplt.sh
    $cmd >> $log &
-   #$cmd
+      
    sleep 1
 
 done
+
+# Execute the tests
+$HOME/bin/test.sh $dt
 
 exit 0
 

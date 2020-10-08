@@ -244,7 +244,8 @@ elif service == "eTrade":
 bc = lpl.Barchart()
 tr = lpl.Trends(d, lg, cn, bc, offLine)
 lm = lpl.Limits(d, lg, cn, bc, offLine)
-a = lpl.Algorithm(d, lg, cn, bc, tr, lm, offLine, stock)
+pa = lpl.Pattern()
+a = lpl.Algorithm(d, lg, cn, bc, tr, lm, pa, offLine, stock)
 pr = lpl.Price(a, cn, usePricesFromFile, offLine, a.getMarketBeginTime())
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -461,7 +462,7 @@ while True:
             # Write last bar
             bc.write(barChart, barChartPath, barCtr, write1_5MinData)
             lg.info("Program exiting due to end of day trading")
-            bc.fixSessionHiLo(barChartPath)
+            # bc.fixSessionHiLo(barChartPath)
             
             if a.getTotalGain() >= a.getTargetProfit():
                exit(2)

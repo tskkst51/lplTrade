@@ -35,3 +35,6 @@ from .trends import Trends
 
 from . import limits
 from .limits import Limits
+
+from . import pattern
+from .pattern import Pattern

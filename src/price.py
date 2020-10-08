@@ -79,13 +79,27 @@ class Price:
       return self.lastToken
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getVolTime(self):
+   
+      # Get the volume at the time in bar
+      # Use for trigger confirmation
+      pass
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getAvgVolTime(self, minChart, bc, bar):
+   
+      # Get the average volume at the time in bar
+      # Use for trigger confirmation
+      pass
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getNextPriceArr(self, serviceValues):
    
       if self.offLine:
          print ("self.priceIdx " + str(self.priceIdx))
          print ("self.priceArr[self.priceIdx] " + str(self.priceArr[self.priceIdx]))
          print ("numLines] " + str(self.numLines))
-         if self.priceIdx >= self.numLines - 20:
+         if self.priceIdx >= self.numLines - 10:
             return self.getLastToken(), 0, 0
                            
          ask = last = self.priceArr[self.priceIdx][0]
@@ -113,6 +127,7 @@ class Price:
             print ("self.priceIdx " + str(self.priceIdx)	)
             print ("self.priceArr[self.priceIdx] " + str(self.priceArr[self.priceIdx]))
             if self.priceIdx >= self.numLines - 10:
+               print (str(self.getLastToken()))
                return self.getLastToken(), 0, 0
                               
             ask = last = self.priceArr[self.priceIdx][0]

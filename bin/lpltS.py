@@ -155,7 +155,7 @@ symbol = [""]
 marketDataType = "intraday"
 numBars = {}
 
-lastMinuteOfLiveTrading = 155930
+lastMinuteOfLiveTrading = 155940
 
 marketOpen = 0
 
@@ -589,26 +589,25 @@ while True:
             for stock in stocks:
                if a[stock].inPosition():
                   a[stock].closePosition(barCtr, stocksChart[stock], forceClose)
-               lg1.info("Program exiting due to end of day trading")
 
                # Write last bar
                ba[stock].write(stocksChart[stock], pathsChart[stock]['barChartPath'], barCtr, write1_5MinData)
-               ba[stock].fixSessionHiLo(pathsChart[stock]['barChartPath'])
-               exit(0)
+               # ba[stock].fixSessionHiLo(pathsChart[stock]['barChartPath'])
          
                #if a.inPosition() and barCtr < a.getNextBar():
                #   lg.debug("In a position. Waiting for next bar...")
                #   continue
    
                # Take a position if conditions exist
-               positionTaken[stock] = a[stock].takePosition(bid[stock], ask[stock], last[stock], stocksChart[stock], barCtr)
+               #positionTaken[stock] = a[stock].takePosition(bid[stock], ask[stock], last[stock], stocksChart[stock], barCtr)
                
                # Stop trading at the end of he day
-               if not offLine and not a1.getAfterMarket():
-                  if a[stock].inPosition():
-                     if a[stock].isMarketExitTime():
-                        a[stock].closePosition(stocksChart[stock], barCtr, forceClose)
-                        ba[stock].write(stocksChart[stock], pathsChart[stock]['barChartPath'], barCtr, write1_5MinData)
+#               if not offLine and not a1.getAfterMarket():
+#                  if a[stock].inPosition():
+#                     if a[stock].isMarketExitTime():
+#                        a[stock].closePosition(stocksChart[stock], barCtr, forceClose)
+#                        ba[stock].write(stocksChart[stock], pathsChart[stock]['barChartPath'], barCtr, write1_5MinData)
+            lg1.info("Program exiting due to end of day trading")
          exit (0)
       # end minute loop
    # end continuous loop

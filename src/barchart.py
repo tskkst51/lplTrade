@@ -236,7 +236,7 @@ class Barchart:
          return 0.0, 0
 
       bar = barCtr
-      while bar > 0:
+      while bar >= 0:
          if bc[bar][self.sH] == 1:
             print("sessionHi " + str(bc[bar][self.hi]))
             return bc[bar][self.hi], bar
@@ -251,7 +251,7 @@ class Barchart:
          return 0, 0
          
       bar = barCtr
-      while bar > 0:
+      while bar >= 0:
          if bc[bar][self.sL] == 1:
             print("sessionLo " + str(bc[bar][self.lo]))
             return bc[bar][self.lo], bar
@@ -291,7 +291,8 @@ class Barchart:
                bcDataTmp.write('%s,' % str(bar[self.sH]))
                bcDataTmp.write('%s,' % str(bar[self.sL]))
                bcDataTmp.write('%s' % bar[self.dt] + "\n")
-      
+         
+         
       # Enbale this after verification of above
       #os.remove(path)      
       #os.rename(tempPath, path)

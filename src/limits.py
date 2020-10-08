@@ -294,6 +294,8 @@ class Limits:
    
       highest = self.hiValues[0]
       
+      print ("NUMBARS isHigherHighs: " + str(numBars))
+      
       for n in range(1, numBars):
          hi = self.hiValues[n]
          if hi >= highest:
@@ -306,6 +308,8 @@ class Limits:
    def isHigherLows(self, numBars): 
    
       lowest = self.lowValues[0]
+      
+      print ("NUMBARS isHigherLows: " + str(numBars))
       
       for n in range(1, numBars):
          lo = self.lowValues[n]
@@ -546,8 +550,8 @@ class Limits:
       if self.doRangeTradeBars > self.tradingDelayBars:
          self.tradingDelayBars = self.doRangeTradeBars
    
-      if self.tradingDelayBars < self.getMaxNumBars():
-         self.tradingDelayBars = self.getMaxNumBars()
+      if self.tradingDelayBars < self.getMaxNumWaitBars():
+         self.tradingDelayBars = self.getMaxNumWaitBars()
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getTradingDelayBars(self):
@@ -555,7 +559,7 @@ class Limits:
       return self.tradingDelayBars
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getMaxNumBars(self):
+   def getMaxNumWaitBars(self):
       
       maxNumBars = self.openBuyBars
       
@@ -567,6 +571,9 @@ class Limits:
 
       if self.closeSellBars > maxNumBars:
          maxNumBars = self.closeSellBars
+      
+      #if self.getTradingDelayBars() > maxNumBars:
+      #   maxNumBars = self.getTradingDelayBars()
       
       return maxNumBars
             

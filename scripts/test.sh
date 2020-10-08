@@ -6,7 +6,6 @@ args=" "
 algo=""
 stock=""
 
-# Supply args as "-x <profile>"
 loc=$1
 algo=$2
 stock=$3
@@ -59,6 +58,10 @@ fi
 
 algos="doTrendsdoRT doTrendsdoQPdoRT doTR_RBS_ABL_RT"
 
+if [[ -n $algo ]]; then
+   algos=$algo
+fi
+
 for testPath in $testPaths; do
    log="${testResults}/${testPath}_testOut_${dt}"
    
@@ -72,11 +75,7 @@ for testPath in $testPaths; do
       for algo in $algos; do
          cmd="$py3 $testCmd -a $algo -c $HOME/profiles/et.json -w ${wp}/${testPath} -p ${wp}/${testPath}/profiles/active.json"
          
-         echo "command: ${cmd}"
-
          $HOME/bin/lplt.sh
-         #$cmd >> $log
-         #$cmd | tee $log
          $cmd
       done
 
@@ -84,13 +83,10 @@ for testPath in $testPaths; do
       echo "command: ${cmd}"
    
       $HOME/bin/lplt.sh
-      #$cmd >> $log
-      #$cmd | tee $log
       $cmd
       
    fi
       
-
 done
 
 exit 0
