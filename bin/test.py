@@ -24,8 +24,8 @@ timeBar = [1,2,3,4,5]       # TB
 aggressiveOpen = [0,1]      # AO
 aggressiveClose = [0,1]     # AC
 doHiLo = [1]           # HL
-doHiLoSeq = [1]           # HLS
-doExecuteOnOpen = [0,1]     # EO
+doHiLoSeq = [1]           # Hi Lo Sequence
+doEOO = [1]     # Execute on open
 doTrends = [1]            # TR
 doQuickProfit = [1]       # QP
 doRangeTradeBars = [2,3,4,5]    # IR
@@ -40,7 +40,37 @@ doDynamic = [0,1]           # DY
 doOnlySells = [0,1]         # OS
 doOnlyBuys = [0,1]          # OB
 useAvgBarLimits = [1]     # ABL
-doTrendsdoPatterndoRT = [1]
+doTRdoPTdoRT = [2,3,4,5]
+doTRdoPTdoRTdoAV = [2,3,4,5]
+doTRdoPTdoRTdoVL = [2,3,4,5]
+doTRdoPTdoRTdoAVdoVL = [2,3,4,5]
+doTRdoPTdoRTdoAVdoVLdoQP = [2,3,4,5]
+doAVdoVLdoQPdoTRdoRT = [2,3,4,5]
+doAVdoVLdoQPdoTRdoAOdoACdoRT = [2,3,4,5]
+doAVdoVLdoQPdoTRdoAOdoAC = [1]
+doAverageVolume = [1]
+doVolumeLastBar = [1]
+doVolumeLastBardoTR = [1]
+doAVdoVL = [1]
+doPM = [1]
+doAVdoVLdoQP = [1]
+doAVdoTR = [1]
+doAVdoTRdoAL = [1]
+doAVdoTRdoPT = [1]
+doQPdoAV = [1]
+doAVdoVLdoPM = [1]
+doAVdoVLdoACdoAO = [1]
+doAVdoVLdoACdoAOdoQP = [1]
+doAVdoVLdoACdoAOdoPT = [1]
+doAVdoTRdoACdoAO = [1]
+doAVdoTRdoACdoAOdoPT = [1]
+doAVdoVLdoQPdoTR = [1]
+doAVdoVLdoQPdoTRdoPT = [1]
+doAVdoTRdoACdoAOdoPTdoQP = [1]
+doAVdoVLdoAOdoACdoTR = [1]
+doHiLoSeqdoAVdoVLdoAOdoACdoTR = [1]
+doAVdoAOdoACdoTR = [1]
+doAVdoAOdoACdoTRdoIR = [2,3,4,5]
 usePricesFromFile = 1
 write1_5MinData = 1
 resume = 1
@@ -146,107 +176,424 @@ def setAlgoValues(algo, value, info):
       d["profileTradeData"]["timeBar"] = str(value)
       info += " TB " + str(value) + " "
 
+   # Turn off all algo's 
+   d["profileTradeData"]["doHiLoSeq"] = str(0)
+   d["profileTradeData"]["doHiLo"] = str(0)
+   d["profileTradeData"]["doTrends"] = str(0)
+   d["profileTradeData"]["doQuickProfit"] = str(0)
+   d["profileTradeData"]["doReverseBuySell"] = str(0)
+   d["profileTradeData"]["doRangeTradeBars"] = str(0)
+   d["profileTradeData"]["useAvgBarLimits"] = str(0)
+   d["profileTradeData"]["doPatterns"] = str(0)
+   d["profileTradeData"]["doAverageVolume"] = str(0)
+   d["profileTradeData"]["doVolumeLastBar"] = str(0)
+   d["profileTradeData"]["aggressiveClose"] = str(0)
+   d["profileTradeData"]["aggressiveOpen"] = str(0)
+   d["profileTradeData"]["doPatterns"] = str(0)
+   d["profileTradeData"]["doPriceMovement"] = str(0)
+   d["profileTradeData"]["doExecuteOnOpen"] = str(0)
+   
+#   if algo == "HL":
+#      d["profileTradeData"]["doHiLo"] = str(1)
+#      info += "HL "
+#
+#   if algo == "HS":
+#      d["profileTradeData"]["doHiLoSeq"] = str(1)
+#      info += "HS "
+#
+#   if algo == "TR":
+#      d["profileTradeData"]["doTrends"] = str(1)
+#      info += "TR "
+#
+#   if algo == "QP":
+#      d["profileTradeData"]["doQuickProfit"] = str(1)
+#      info += "QP "
+#
+#   if algo == "RV":
+#      d["profileTradeData"]["doReverseBuySell"] = str(1)
+#      info += "RV "
+#
+#   if algo == "AV":
+#      d["profileTradeData"]["useAvgBarLimits"] = str(1)
+#      info += "AV "
+#
+#   if algo == "AL":
+#      d["profileTradeData"]["useAvgBarLimits"] = str(1)
+#      info += "AL "
+#
+#   if algo == "PT":
+#      d["profileTradeData"]["doPatterns"] = str(1)
+#      info += "PT "
+#
+#   if algo == "AC":
+#      d["profileTradeData"]["aggressiveClose"] = str(1)
+#      info += "AC "
+#
+#   if algo == "AO":
+#      d["profileTradeData"]["aggressiveOpen"] = str(1)
+#      info += "AO "
+#
+#   if algo == "PM":
+#      d["profileTradeData"]["doPriceMovement"] = str(1)
+#      info += "PM "
+#
+#   if algo == "EO":
+#      d["profileTradeData"]["doExecuteOnOpen"] = str(1)
+#      info += "EO "
+#
+#   if algo == "RT":
+#      d["profileTradeData"]["doRangeTradeBars"] = str(1)
+#      info += "RT " + str(value) + " "
+#
+   # Turn on specifc algo
    if algo == "doHiLo":
-      d["profileTradeData"]["doHiLo"] = str(value)
-      info += "HL " + str(value) + " "
-   #else:
-   #   d["profileTradeData"]["doHiLo"] = str(0)
+      d["profileTradeData"]["doHiLo"] = str(1)
+      info += "HL "
 
    if algo == "doHiLoSeq":
-      d["profileTradeData"]["doHiLoSeq"] = str(value)
-      info += "HLS " + str(value) + " "
-   else:
-      d["profileTradeData"]["doHiLoSeq"] = str(0)
+      d["profileTradeData"]["doHiLoSeq"] = str(1)
+      info += "HLS "
+      
+   if algo == "doEOO":
+      d["profileTradeData"]["doExecuteOnOpen"] = str(1)
+      info += "EO "
 
    if algo == "doTrends":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      info += "HL TR "
+
+   if algo == "doAverageVolume":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      info += "HL AV "
+      
+   if algo == "doVolumeLastBar":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(value)
+      info += "HL AL "
+
+   if algo == "doVolumeLastBardoTR":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(value)
       d["profileTradeData"]["doTrends"] = str(value)
-      info += "TR " + str(value) + " "
-   else:
-      d["profileTradeData"]["doTrends"] = str(0)
+      info += "HL TR "
 
-   if algo == "doQuickProfit":
+   if algo == "doPM":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doPriceMovement"] = str(value)
+      info += "HL AL "
+
+   if algo == "doAVdoVL":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(value)
+      d["profileTradeData"]["doVolumeLastBar"] = str(value)
+      info += "HL AV AL "
+      
+   if algo == "doAVdoVLdoPM":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(value)
+      d["profileTradeData"]["doVolumeLastBar"] = str(value)
+      d["profileTradeData"]["doPriceMovement"] = str(value)
+      info += "HL AV AL PM "
+      
+   if algo == "doAVdoVLdoQPdoTR":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(value)
+      d["profileTradeData"]["doVolumeLastBar"] = str(value)
       d["profileTradeData"]["doQuickProfit"] = str(value)
-      info += "QP " + str(value) + " "
-   else:
-      d["profileTradeData"]["doQuickProfit"] = str(0)
-     
-   if algo == "doReverseBuySell":
-      d["profileTradeData"]["doReverseBuySell"] = str(value)
-      info += "RBS " + str(value) + " "
-   else:
-      d["profileTradeData"]["doReverseBuySell"] = str(0)
-
-   if algo == "doRangeTradeBars":
+      d["profileTradeData"]["doTrends"] = str(value)
+      info += "HL AV AL QP TR " 
+            
+   if algo == "doAVdoVLdoQPdoTRdoRT":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(value)
+      d["profileTradeData"]["doVolumeLastBar"] = str(value)
+      d["profileTradeData"]["doQuickProfit"] = str(value)
+      d["profileTradeData"]["doTrends"] = str(value)
+      d["profileTradeData"]["doPatterns"] = str(value)
       d["profileTradeData"]["doRangeTradeBars"] = str(value)
-      info += "IR " + str(value) + " "
-   else:
-      d["profileTradeData"]["doRangeTradeBars"] = str(0)
+      info += "HL AV AL QP TR PT IR " + str(value) + " "
+      
+   if algo == "doAVdoVLdoQPdoTRdoAOdoACdoRT":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(value)
+      d["profileTradeData"]["doVolumeLastBar"] = str(value)
+      d["profileTradeData"]["doQuickProfit"] = str(value)
+      d["profileTradeData"]["doTrends"] = str(value)
+      d["profileTradeData"]["doPatterns"] = str(value)
+      d["profileTradeData"]["aggressiveClose"] = str(value)
+      d["profileTradeData"]["aggressiveOpen"] = str(value)
+      d["profileTradeData"]["doRangeTradeBars"] = str(value)
+      info += "HL AV AL QP TR PT AO AC IR " + str(value) + " "
+      
+   if algo == "doAVdoVLdoQPdoTRdoAOdoAC":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(value)
+      d["profileTradeData"]["doVolumeLastBar"] = str(value)
+      d["profileTradeData"]["doQuickProfit"] = str(value)
+      d["profileTradeData"]["doTrends"] = str(value)
+      d["profileTradeData"]["doPatterns"] = str(value)
+      d["profileTradeData"]["aggressiveClose"] = str(value)
+      d["profileTradeData"]["aggressiveOpen"] = str(value)
+      info += "HL AV AL QP TR PT AO AC "
+      
+   if algo == "doAVdoVLdoQP":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(value)
+      d["profileTradeData"]["doVolumeLastBar"] = str(value)
+      d["profileTradeData"]["doQuickProfit"] = str(value)
+      info += "HL AV AL QP "
+      
+   if algo == "doAVdoVLdoQPdoTRdoPT":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(value)
+      d["profileTradeData"]["doVolumeLastBar"] = str(value)
+      d["profileTradeData"]["doQuickProfit"] = str(value)
+      d["profileTradeData"]["doTrends"] = str(value)
+      d["profileTradeData"]["doPatterns"] = str(value)
+      info += "HL AV AL QP TR PT "
+      
+   if algo == "doAVdoTR":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(value)
+      d["profileTradeData"]["doTrends"] = str(value)
+      info += "HL AV TR "
+
+   if algo == "doAVdoTRdoPT":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(value)
+      d["profileTradeData"]["doTrends"] = str(value)
+      d["profileTradeData"]["doPatterns"] = str(value)
+      info += "HL AV TR PT "
+
+   if algo == "doAVdoTRdoAL":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(value)
+      d["profileTradeData"]["doVolumeLastBar"] = str(value)
+      d["profileTradeData"]["doTrends"] = str(value)
+      info += "HL AV AL TR "
+
+   if algo == "doQPdoAV":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doQuickProfit"] = str(value)
+      d["profileTradeData"]["doAverageVolume"] = str(value)
+      info += "HL QP AV "
+              
+   if algo == "doQuickProfit":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doQuickProfit"] = str(value)
+      info += "HL QP "
+              
+   if algo == "doReverseBuySell":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doReverseBuySell"] = str(value)
+      info += "HL RBS "
+      
+   if algo == "doRangeTradeBars":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doRangeTradeBars"] = str(value)
+      info += "HL IR " + str(value) + " "
 
    if algo == "useAvgBarLimits":
+      d["profileTradeData"]["doHiLo"] = str(1)
       d["profileTradeData"]["useAvgBarLimits"] = str(value)
-      info += "ABL " + str(value) + " "
-   else:
-      d["profileTradeData"]["useAvgBarLimits"] = str(0)
+      info += "HL ABL "
 
-   if algo == "doTrendsdoABLdoRT":
+   if algo == "doTRdoABLdoRT":
+      d["profileTradeData"]["doHiLo"] = str(1)
       d["profileTradeData"]["doTrends"] = str(1)
       d["profileTradeData"]["useAvgBarLimits"] = str(1)
       d["profileTradeData"]["doRangeTradeBars"] = str(value)
-      info += "TR 1 ABL 1 IR " + str(value) + " "
+      info += "HL TR ABL IR " + str(value) + " "
 
-   if algo == "doTrendsdoPatterndoRT":
+   if algo == "doTRdoPTdoRT":
+      d["profileTradeData"]["doHiLo"] = str(1)
       d["profileTradeData"]["doTrends"] = str(1)
-      d["profileTradeData"]["doPatterns"] = str(1)
+      d["profileTradeData"]["doPTs"] = str(1)
       d["profileTradeData"]["doRangeTradeBars"] = str(value)
-      info += "TR 1 PT 1 IR " + str(value) + " "
+      info += "HL TR PT IR " + str(value) + " "
 
-   if algo == "doPatterndoRT":
-      d["profileTradeData"]["doPatterns"] = str(1)
+   if algo == "doTRdoPTdoRTdoAV":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      d["profileTradeData"]["doPTs"] = str(1)
       d["profileTradeData"]["doRangeTradeBars"] = str(value)
-      info += "PT 1 IR " + str(value) + " "
+      info += "HL AV TR PT IR " + str(value) + " "
+
+   if algo == "doTRdoPTdoRTdoVL":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      d["profileTradeData"]["doPTs"] = str(1)
+      d["profileTradeData"]["doRangeTradeBars"] = str(value)
+      info += "HL AL TR PT IR " + str(value) + " "
+
+   if algo == "doTRdoPTdoRTdoAVdoVL":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      d["profileTradeData"]["doPTs"] = str(1)
+      d["profileTradeData"]["doRangeTradeBars"] = str(value)
+      info += "HL AV AL TR PT IR " + str(value) + " "
+
+   if algo == "doTRdoPTdoRTdoAVdoVLdoQP":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      d["profileTradeData"]["doPTs"] = str(1)
+      d["profileTradeData"]["doQuickProfit"] = str(1)
+      d["profileTradeData"]["doRangeTradeBars"] = str(value)
+      info += "HL AV AL TR PT QP IR " + str(value) + " "
+
+   if algo == "doPTdoRT":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doPTs"] = str(1)
+      d["profileTradeData"]["doRangeTradeBars"] = str(value)
+      info += "HL PT IR " + str(value) + " "
 
    if algo == "doTR_RBS_ABL_RT":
+      d["profileTradeData"]["doHiLo"] = str(1)
       d["profileTradeData"]["doTrends"] = str(1)
       d["profileTradeData"]["useAvgBarLimits"] = str(1)
       d["profileTradeData"]["doReverseBuySell"] = str(1)
       d["profileTradeData"]["doRangeTradeBars"] = str(value)
-      info += "TR 1 RBS 1 ABL 1 IR " + str(value) + " "
+      info += "HL TR RBS ABL IR " + str(value) + " "
 
-   if algo == "doTrendsdoQPdoRT":
+   if algo == "doTRdoQPdoRT":
+      d["profileTradeData"]["doHiLo"] = str(1)
       d["profileTradeData"]["doTrends"] = str(1)
       d["profileTradeData"]["doQuickProfit"] = str(1)
       d["profileTradeData"]["doRangeTradeBars"] = str(value)
-      info += "TR 1 QP 1 IR " + str(value) + " "
+      info += "HL TR QP IR " + str(value) + " "
 
-   if algo == "doTrendsdoRT":
+   if algo == "doTRdoRT":
+      d["profileTradeData"]["doHiLo"] = str(1)
       d["profileTradeData"]["doTrends"] = str(1)
       d["profileTradeData"]["doRangeTradeBars"] = str(value)
-      info += "TR 1 IR " + str(value) + " "
+      info += "HL TR IR " + str(value) + " "
 
    if algo == "doTrendsOnly":
+      d["profileTradeData"]["doHiLo"] = str(1)
       d["profileTradeData"]["doTrends"] = str(1)
-      info += "TR " + str(value) + " "
+      info += "HL TRO "
 
-   if algo == "doTrendsdoQP":
+   if algo == "doTRdoQP":
+      d["profileTradeData"]["doHiLo"] = str(1)
       d["profileTradeData"]["doTrends"] = str(1)
       d["profileTradeData"]["doQuickProfit"] = str(1)
-      info += "TR 1 QP " + str(value) + " "
+      info += "HL TR QP "
 
-   if algo == "doTrendsdoABL":
+   if algo == "doTRdoABL":
+      d["profileTradeData"]["doHiLo"] = str(1)
       d["profileTradeData"]["doTrends"] = str(1)
       d["profileTradeData"]["useAvgBarLimits"] = str(1)
-      info += "TR 1 ABL " + str(value) + " "
+      info += "HL TR ABL "
 
    if algo == "doOnlyTrends":
+      d["profileTradeData"]["doHiLo"] = str(1)
       d["profileTradeData"]["doOnlyTrends"] = str(1)
-      info += "DOTR " + str(value) + " "
+      info += "HL DOTR "
 
+   if algo == "doAVdoVLdoACdoAO":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["aggressiveClose"] = str(1)
+      d["profileTradeData"]["aggressiveOpen"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(1)
+      info += "HL AO AC AV AL "
+      
+   if algo == "doAVdoVLdoACdoAOdoPT":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["aggressiveClose"] = str(1)
+      d["profileTradeData"]["aggressiveOpen"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(1)
+      d["profileTradeData"]["doPatterns"] = str(1)
+      info += "HL AO AC AV AL PT "
+      
+   if algo == "doAVdoVLdoACdoAOdoQP":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["aggressiveClose"] = str(1)
+      d["profileTradeData"]["aggressiveOpen"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(1)
+      d["profileTradeData"]["doQuickProfit"] = str(1)
+      info += "HL AO AC AV AL QP "
+      
+   if algo == "doAVdoTRdoACdoAO":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["aggressiveClose"] = str(1)
+      d["profileTradeData"]["aggressiveOpen"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      info += "HL AO AC AV TR "
+      
+   if algo == "doAVdoTRdoACdoAOdoPT":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["aggressiveClose"] = str(1)
+      d["profileTradeData"]["aggressiveOpen"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      d["profileTradeData"]["doPatterns"] = str(1)
+      info += "HL AO AC AV TR PT "
+      
+   if algo == "doAVdoTRdoACdoAOdoPTdoQP":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["aggressiveClose"] = str(1)
+      d["profileTradeData"]["aggressiveOpen"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      d["profileTradeData"]["doPatterns"] = str(1)
+      d["profileTradeData"]["doQuickProfit"] = str(1)
+      info += "HL AO AC AV TR PT QP "
+      
+   if algo == "doAVdoAOdoACdoTR":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["aggressiveClose"] = str(1)
+      d["profileTradeData"]["aggressiveOpen"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      info += "HL AO AC AV TR "
+      
+   if algo == "doAVdoAOdoACdoTRdoIR":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["aggressiveClose"] = str(1)
+      d["profileTradeData"]["aggressiveOpen"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      d["profileTradeData"]["doRangeTradeBars"] = str(value)
+      info += "HL AO AC AV TR IR " + str(value) + " "
+      
+   if algo == "doAVdoVLdoAOdoACdoTR":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["aggressiveClose"] = str(1)
+      d["profileTradeData"]["aggressiveOpen"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      info += "HL AO AC AV AL TR "
+      
+   if algo == "doHiLoSeqdoAVdoVLdoAOdoACdoTR":
+      d["profileTradeData"]["doHiLoSeq"] = str(1)
+      d["profileTradeData"]["aggressiveClose"] = str(1)
+      d["profileTradeData"]["aggressiveOpen"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      d["profileTradeData"]["doHiLo"] = str(0)
+      info += "HLS AO AC AV AL TR "
+      
    if algo == "doAgrOpenClose":
+      d["profileTradeData"]["doHiLo"] = str(1)
       d["profileTradeData"]["aggressiveClose"] = str(1)
       d["profileTradeData"]["aggressiveOpen"] = str(1)
       d["profileTradeData"]["doTrends"] = str(1)
       d["profileTradeData"]["doRangeTradeBars"] = str(value)
-      info += "AC 1 TR 1 IR: " + str(value) + " "
+      info += "AC TR IR: " + str(value) + " "
 
    return info
 
@@ -381,42 +728,140 @@ exitMaxProfit = clOptions.exitMaxProfit
 
 testAlgos = {}
 if algo:
-   if algo == "doTrendsdoRT":
-      testAlgos['doTrendsdoRT'] = doRangeTradeBars
-   elif algo == "doPatterndoRT":
-      testAlgos['doPatterndoRT'] = doRangeTradeBars
-   elif algo == "doTrendsdoPatterndoRT":
-      testAlgos['doTrendsdoPatterndoRT'] = doRangeTradeBars
-   elif algo == "doTrendsdoABLdoRT":
-      testAlgos['doTrendsdoABLdoRT'] = doRangeTradeBars
+   if algo == "doTRdoRT":
+      testAlgos['doTRdoRT'] = doRangeTradeBars
+   elif algo == "doPTdoRT":
+      testAlgos['doPTdoRT'] = doRangeTradeBars
+   elif algo == "doTRdoPTdoRT":
+      testAlgos['doTRdoPTdoRT'] = doTRdoPTdoRT
+   elif algo == "doAVdoTRdoAL":
+      testAlgos['doAVdoTRdoAL'] = doAVdoTRdoAL
+   elif algo == "doAVdoVLdoQPdoTR":
+      testAlgos['doAVdoVLdoQPdoTR'] = doAVdoVLdoQPdoTR
+   elif algo == "doAVdoVLdoQPdoTRdoPT":
+      testAlgos['doAVdoVLdoQPdoTRdoPT'] = doAVdoVLdoQPdoTRdoPT
+   elif algo == "doAVdoTR":
+      testAlgos['doAVdoTR'] = doAVdoTR
+   elif algo == "doAVdoTRdoPT":
+      testAlgos['doAVdoTRdoPT'] = doAVdoTRdoPT
+   elif algo == "doAVdoVLdoQP":
+      testAlgos['doAVdoVLdoQP'] = doAVdoVLdoQP
+   elif algo == "doAVdoVLdoACdoAO":
+      testAlgos['doAVdoVLdoACdoAO'] = doAVdoVLdoACdoAO
+   elif algo == "doAVdoTRdoACdoAO":
+      testAlgos['doAVdoTRdoACdoAO'] = doAVdoTRdoACdoAO
+   elif algo == "doAVdoTRdoACdoAOdoPT":
+      testAlgos['doAVdoTRdoACdoAOdoPT'] = doAVdoTRdoACdoAOdoPT
+   elif algo == "doAVdoTRdoACdoAOdoPTdoQP":
+      testAlgos['doAVdoTRdoACdoAOdoPTdoQP'] = doAVdoTRdoACdoAOdoPTdoQP
+   elif algo == "doAVdoVLdoAOdoACdoTR":
+      testAlgos['doAVdoVLdoAOdoACdoTR'] = doAVdoVLdoAOdoACdoTR
+   elif algo == "doAVdoAOdoACdoTR":
+      testAlgos['doAVdoAOdoACdoTR'] = doAVdoAOdoACdoTR
+   elif algo == "doAVdoAOdoACdoTRdoIR":
+      testAlgos['doAVdoAOdoACdoTRdoIR'] = doAVdoAOdoACdoTRdoIR
+   elif algo == "doHiLoSeqdoAVdoVLdoAOdoACdoTR":
+      testAlgos['doHiLoSeqdoAVdoVLdoAOdoACdoTR'] = doHiLoSeqdoAVdoVLdoAOdoACdoTR
+   elif algo == "doAVdoVL":
+      testAlgos['doAVdoVL'] = doAVdoVL
+   elif algo == "doTRdoPTdoRTdoAV":
+      testAlgos['doTRdoPTdoRTdoAV'] = doTRdoPTdoRTdoAV
+   elif algo == "doTRdoPTdoRTdoVL":
+      testAlgos['doTRdoPTdoRTdoVL'] = doTRdoPTdoRTdoVL
+   elif algo == "doTRdoPTdoRTdoAVdoVL":
+      testAlgos['doTRdoPTdoRTdoAVdoVL'] = doTRdoPTdoRTdoAVdoVL
+   elif algo == "doAVdoVLdoQPdoTRdoRT":
+      testAlgos['doAVdoVLdoQPdoTRdoRT'] = doAVdoVLdoQPdoTRdoRT
+   elif algo == "doAVdoVLdoQPdoTRdoAOdoACdoRT":
+      testAlgos['doAVdoVLdoQPdoTRdoAOdoACdoRT'] = doAVdoVLdoQPdoTRdoAOdoACdoRT
+   elif algo == "doAVdoVLdoQPdoTRdoAOdoAC":
+      testAlgos['doAVdoVLdoQPdoTRdoAOdoAC'] = doAVdoVLdoQPdoTRdoAOdoAC
+      
+   elif algo == "doTRdoPTdoRTdoAVdoVLdoQP":
+      testAlgos['doTRdoPTdoRTdoAVdoVLdoQP'] = doTRdoPTdoRTdoAVdoVLdoQP
+   elif algo == "doTRdoABLdoRT":
+      testAlgos['doTRdoABLdoRT'] = doTRdoABLdoRT
    elif algo == "doTR_RBS_ABL_RT":
       testAlgos['doTR_RBS_ABL_RT'] = doRangeTradeBars
-   elif algo == "doTrendsdoQPdoRT":
-      testAlgos['doTrendsdoQPdoRT'] = doRangeTradeBars
+   elif algo == "doTRdoQPdoRT":
+      testAlgos['doTRdoQPdoRT'] = doRangeTradeBars
    elif algo == "doReverseBuySell":
       testAlgos['doReverseBuySell'] = [1]
    elif algo == "doTrendsOnly":
       testAlgos['doTrendsOnly'] = [1]
-   elif algo == "doTrendsdoQP":
-      testAlgos['doTrendsdoQP'] = [1]      
-   elif algo == "doTrendsdoABL":
-      testAlgos['doTrendsdoABL'] = [1]   
+   elif algo == "doTRdoQP":
+      testAlgos['doTRdoQP'] = [1]      
+   elif algo == "doTRdoABL":
+      testAlgos['doTRdoABL'] = [1]   
    elif algo == "doOnlyTrends":
       testAlgos['doOnlyTrends'] = [1]   
    elif algo == "doAgrOpenClose":
       testAlgos['doAgrOpenClose'] = [1]
    elif algo == "doRangeTradeBars":
       testAlgos['doRangeTradeBars'] = doRangeTradeBars
+   elif algo == "doVolumeLastBar":
+      testAlgos['doVolumeLastBar'] = doVolumeLastBar
+   elif algo == "doAverageVolume":
+      testAlgos['doAverageVolume'] = doVolumeLastBar
+   elif algo == "doAVdoVLdoQPdoTR":
+      testAlgos['doAVdoVLdoQPdoTR'] = doAVdoVLdoQPdoTR
+   elif algo == "doQuickProfit":
+      testAlgos['doQuickProfit'] = doQuickProfit
+   elif algo == "doAVdoVLdoQPdoTRdoPT":
+      testAlgos['doAVdoVLdoQPdoTRdoPT'] = doAVdoVLdoQPdoTRdoPT
+   elif algo == "doTrends":
+      testAlgos['doTrends'] = doTrends
+   elif algo == "doAVdoVLdoACdoAOdoQP":
+      testAlgos['doAVdoVLdoACdoAOdoQP'] = doAVdoVLdoACdoAOdoQP
+   elif algo == "doAVdoVLdoACdoAOdoPT":
+      testAlgos['doAVdoVLdoACdoAOdoPT'] = doAVdoVLdoACdoAOdoPT
+   elif algo == "doAVdoVLdoPM":
+      testAlgos['doAVdoVLdoPM'] = doAVdoVLdoPM
+   elif algo == "doPM":
+      testAlgos['doPM'] = doPM
+   elif algo == "doHiLo":
+      testAlgos['doHiLo'] = doHiLo
+   elif algo == "doHiLoSeq":
+      testAlgos['doHiLoSeq'] = doHiLoSeq
+   elif algo == "doEOO":
+      testAlgos['doEOO'] = doEOO
+   elif algo == "doVolumeLastBardoTR":
+      testAlgos['doVolumeLastBardoTR'] = doVolumeLastBardoTR
+      
+      
       
 else: # Default
    #testAlgos['doHiLoSeq'] = doHiLoSeq # Set as default in orig profile
    testAlgos['doHiLo'] = doHiLo # Set as default in orig profile
    testAlgos['doTrends'] = doTrends
-   testAlgos['doRangeTradeBars'] = doRangeTradeBars
-   testAlgos['useAvgBarLimits'] = useAvgBarLimits
-   testAlgos['doTrendsdoPatterndoRT'] = doTrendsdoPatterndoRT
+   testAlgos['doAverageVolume'] = doAverageVolume
+   testAlgos['doVolumeLastBar'] = doVolumeLastBar
+   testAlgos['doAVdoVL'] = doAVdoVL
+   testAlgos['doAVdoVLdoPM'] = doAVdoVLdoPM
+   testAlgos['doAVdoTR'] = doAVdoTR
+   testAlgos['doAVdoVLdoQP'] = doAVdoVLdoQP
+   testAlgos['doAVdoVLdoQPdoTR'] = doAVdoVLdoQPdoTR
+   testAlgos['doAVdoTRdoAL'] = doAVdoTRdoAL
+   testAlgos['doAVdoVLdoACdoAO'] = doAVdoVLdoACdoAO
 
-#testAlgos['doQuickProfit'] = doQuickProfit
+   #testAlgos['doAVdoTRdoPT'] = doAVdoTRdoPT
+   #testAlgos['doTRdoPTdoRTdoAVdoVL'] = doTRdoPTdoRTdoAVdoVL
+   #testAlgos['doTRdoPTdoRTdoAVdoVLdoQP'] = doTRdoPTdoRTdoAVdoVL
+   
+   
+   #testAlgos['doQPdoAV'] = doQPdoAV
+   
+   #testAlgos['doRangeTradeBars'] = doRangeTradeBars
+   
+   # useAvgBarLimits seems to not work. Fix it
+   #testAlgos['useAvgBarLimits'] = useAvgBarLimits
+   
+#   testAlgos['doTRdoPTdoRT'] = doTRdoPTdoRT
+#   testAlgos['doTRdoPTdoRTdoAV'] = doTRdoPTdoRTdoAV
+#   testAlgos['doTRdoPTdoRTdoVL'] = doTRdoPTdoRTdoVL
+#   testAlgos['doTRdoPTdoRTdoAVdoVL'] = doTRdoPTdoRTdoAVdoVL
+#   testAlgos['doTRdoPTdoRTdoAVdoVLdoQP'] = doTRdoPTdoRTdoAVdoVLdoQP
+
 #testAlgos['doReverseBuySell'] = doReverseBuySell FIXXX
 
 if not wp:
@@ -471,8 +916,14 @@ for minBar in timeBar:
 
       readProfile(tdp)
       
-      for value in values:      
+      for value in values:
          for bars in openBuyBars:
+#            # Reduce the iterations for range trading
+#            if value > 1:
+#               #if value % bars == 0:
+#               if bars % value == 0:
+#                  continue       
+            
             info = initParseInfo()
             info = setAlgoValues("timeBar", minBar, info)
             #info = setAlgoValues("doHiLo", 1, info)
@@ -500,7 +951,7 @@ for minBar in timeBar:
                cmd = prog + args + " -c " + cdp + " -s " + stock + " -p " + tdp + " > " + lgFile
                
                exitVal = os.system(cmd)
-               
+
                lastLine = getLastLine(resultsPath) 
                parsedLine = parseLastLine(lastLine, info)
                
@@ -520,9 +971,11 @@ for minBar in timeBar:
                   svPath = "profiles/saved/active" + stock + "_hiGain_" + str(highestGain) + ".sv"
                   rsPath = "profiles/saved/results" + stock + "_hiGain_" + str(highestGain) + ".rs"
                   pfPath = "profiles/saved/profiles" + stock + "_hiGain_" + str(highestGain) + ".pr"
+
                   writeLog(lgFile, svPath)
                   writeLog(resultsPath, rsPath)
                   writeLog(tdp, pfPath)
+                  
                   #removeLog(tdp, pfPath)
 
                print (str(stock) + " " + str(parsedLine))

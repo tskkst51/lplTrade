@@ -30,6 +30,7 @@ class ConnectEtrade:
       self.debug = debug
       self.ask = 0.0
       self.bid = 0.0
+      self.vl = 0
       self.hi = 0
       self.lo = 1
       self.verbose = verbose
@@ -99,11 +100,11 @@ class ConnectEtrade:
       self.askArr = {}
       self.bidArr = {}
       self.lastTradeArr = {}
+      self.totalVolumeArr = {}
       self.highArr = {}
       self.lowArr = {}
       self.opArr = {}
       self.clArr = {}
-      self.totalVolumeArr = {}
       self.barLenArr = {}
       self.hiBarValueArr = {}
       self.loBarValueArr = {}
@@ -118,11 +119,11 @@ class ConnectEtrade:
             self.askArr[stock] = stocksChart[stock][bar][self.askIdx]
             self.bidArr[stock] = stocksChart[stock][bar][self.bidIdx]
             self.lastTradeArr[stock] = stocksChart[stock][bar][self.lastIdx]
+            self.totalVolumeArr[stock] = stocksChart[stock][bar][self.vlIdx] 
             self.highArr[stock] = stocksChart[stock][bar][self.hiIdx]
             self.lowArr[stock] = stocksChart[stock][bar][self.loIdx]   
             self.opArr[stock] = stocksChart[stock][bar][self.opIdx]   
             self.clArr[stock] = stocksChart[stock][bar][self.clIdx]   
-            self.totalVolumeArr[stock] = stocksChart[stock][bar][self.vlIdx] 
             self.barLenArr[stock] = stocksChart[stock][bar][self.blIdx] 
             self.hiBarValueArr[stock] = stocksChart[stock][bar][self.sHIdx] 
             self.loBarValueArr[stock] = stocksChart[stock][bar][self.sLIdx] 
@@ -138,7 +139,7 @@ class ConnectEtrade:
                symbol = ""
                for item in sym['QuoteResponse']['QuoteData']:
                   
-                  self.symbolDetails = [0.0,0.0,0.0,0.0,""]
+                  self.symbolDetails = [0.0,0.0,0.0,0,""]
                            
                   for key, value in item['Product'].items():
                      if key == 'symbol':
@@ -172,13 +173,14 @@ class ConnectEtrade:
       return self.serviceValues
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setValues(self, barChart, i, bid, ask, last):
+   def setValues(self, barChart, i, bid, ask, last, vol):
       
       # Read data from chart on the disk
       if self.offLine:
          self.ask = float(ask)
          self.bid = float(bid)
          self.lastTrade = float(last)
+         self.vol = int(vol)
          self.high = barChart[i][self.hiIdx]
          self.low = barChart[i][self.loIdx]   
          self.op = barChart[i][self.opIdx]   
@@ -229,7 +231,7 @@ class ConnectEtrade:
             self.companyName = sym['QuoteResponse']['QuoteData']['Intraday']['companyName']   
             self.high = sym['QuoteResponse']['QuoteData']['Intraday']['high']   
             self.low = sym['QuoteResponse']['QuoteData']['Intraday']['low']   
-            self.totalVolume = sym['QuoteResponse']['QuoteData']['Intraday']['totalVolume'] 
+            self.totalVolume = self.vol = int(sym['QuoteResponse']['QuoteData']['Intraday']['totalVolume'])
             self.dateTimeUTC = sym['QuoteResponse']['QuoteData']['dateTimeUTC']   
             self.dateTime = sym['QuoteResponse']['QuoteData']['dateTime']   
             self.quoteStatus = sym['QuoteResponse']['QuoteData']['quoteStatus']
@@ -239,6 +241,7 @@ class ConnectEtrade:
             print (sym)
             print ("\nask: " + self.ask)
             print ("bid: " + self.bid)
+            print ("vol: " + self.vol)
             print ("changeClose: " + self.changeClose)
             print ("changeClosePct: " + self.changeClosePct)
             print ("companyName: " + self.companyName)
@@ -333,6 +336,15 @@ class ConnectEtrade:
             #return self.bidArr[stock]
 
       return float(self.bid)
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getCurrentVol(self, stock):
+
+      if self.isStockValues:
+         if stock:
+            return self.serviceValues[stock][self.totVolIdx]
+
+      return int(self.vol)
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getChangeClose(self):

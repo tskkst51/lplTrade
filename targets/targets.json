@@ -1,0 +1,19 @@
+{
+  "profileTargetData": {
+    "profileName": "targets",
+    "stocks": "XLF,XLK,XLY,XLP,XLV,XLE,XLI,XLB,IWM,XSD,XLU,QQQ"
+    "xlf": "GS,JPM,BAC,C,WFC,FITB",
+    "xlk": "AAPL,FB,MA,V,ORCL,PYPL,CSCO,MSFT,NFLX,GOOG,AMZN",
+    "qqq": "AAPL,FB,ORCL,TSLA,PYPL,ADBE,CRM,MSFT,NFLX,GOOG,AMZN",
+    "xly": "GM,SBUX,WMT,NKE,TGT,MCD,HD",
+    "xlp": "KO,MO,WBA,MDLZ,PG,CL,PM",
+    "xlv": "PFE,ABBV,BMY,GILD,MRK,JNJ,UNH,ABT,AMGN",
+    "xle": "XOM,OXY,SLB,COP,KMI,CVX,MPC",
+    "xli": "GE,BA,CSX,CAT,HON,LMT",
+    "xlb": "FCX,NEM,LIN,LYB,BLL",
+    "iwm": "ETSY,CIEN,PLNT,TTD,CREE,FIVE",
+    "xsd": "AMD,INTC,MRVL,NVDA,QCOM,CRUS",
+    "cas": "WYNN,LVS,MGM,IGT",
+    "xlu": "NEE,EXC,D,SO,DUK,XEL"
+  }
+}

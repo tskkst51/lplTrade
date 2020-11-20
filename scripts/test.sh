@@ -43,7 +43,7 @@ py3+="${activateDir}/bin/python3"
 
 # Execute script to populate source library path
 
-dt=$(date "+%d%m%Y")
+dt=$(date "+%m%d%Y")
 
 testPaths=$(ls test)  
 testResults="${wp}/resultsTest"
@@ -56,7 +56,8 @@ if [[ ! -d $testResults ]]; then
    mkdir $testResults
 fi
 
-algos="doTrendsdoRT doTrendsdoQPdoRT doTR_RBS_ABL_RT"
+# Removed doTR_RBS_ABL_RT
+algos="doTrendsdoRT doTrendsdoQPdoRT"
 
 if [[ -n $algo ]]; then
    algos=$algo
@@ -69,7 +70,7 @@ for testPath in $testPaths; do
    
    echo Testing ${testPath}...
    
-   cmd="$py3 $testCmd $args -c $HOME/profiles/et.json -w ${wp}/${testPath} -p ${wp}/${testPath}/profiles/active.json"
+   cmd="$py3 $testCmd $args -f -c $HOME/profiles/et.json -w ${wp}/${testPath} -p ${wp}/${testPath}/profiles/active.json"
 
    if [[ -n $aglo ]]; then
       for algo in $algos; do

@@ -136,13 +136,13 @@ class Trends:
          self.lg.debug("In isBearLongTrend")
          retCode += 1
       
-#      if self.isBearMidTrend():
-#         self.lg.debug("In isBearMidTrend")
-#         retCode += 1
+      if self.isBearMidTrend():
+         self.lg.debug("In isBearMidTrend")
+         retCode += 1
       
-#      if self.isBearShortTrend():
-#         self.lg.debug("In isBearShortTrend")
-#         retCode += 1
+      if self.isBearShortTrend():
+         self.lg.debug("In isBearShortTrend")
+         retCode += 1
               
       return retCode
 
@@ -159,13 +159,13 @@ class Trends:
          self.lg.debug("In isBullLongTrend")
          retCode += 1
       
-#      if self.isBullMidTrend():
-#         self.lg.debug("In isBullMidTrend")
-#         retCode += 1
+      if self.isBullMidTrend():
+         self.lg.debug("In isBullMidTrend")
+         retCode += 1
       
-#      if self.isBullShortTrend():
-#         self.lg.debug("In isBullShortTrend")
-#         retCode += 1
+      if self.isBullShortTrend():
+         self.lg.debug("In isBullShortTrend")
+         retCode += 1
               
       return retCode
 

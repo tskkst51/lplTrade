@@ -7,16 +7,15 @@ import os.path
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Price:
-   def __init__(self, a, cn, usePricesFromFile=0, offLine=0, startTime=0):
+   def __init__(self, cn, usePricesFromFile=0, offLine=0):
    
-      self.a = a
       self.cn = cn
       self.upff = usePricesFromFile
       self.offLine = offLine
-      self.startTime = startTime
       
       # Price Array bid, ask
-      self.priceArr = [0.0,0.0]
+      #self.priceArr = [0.0,0.0,0.0,0]
+      self.priceArr = []
       self.idxArr = [0]
       self.nextBar = 0
       self.priceIdx = 0
@@ -39,23 +38,50 @@ class Price:
       self.numLines = 0
       self.lastToken = 99999.99
       
-      self.bid = 0
-      self.ask = 1
+      self.ask = 0
+      self.bid = 1
       self.last = 2
+      self.vl = 3
+      self.bar = 4
+      self.startIdx = 0
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def skipFirstBar(self, numPrices):
+   def setStartPriceIdx(self, idx):
+      
+      self.startIdx = idx
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getStartPriceIdx(self):
+      
+      return self.startIdx
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getCurrentPriceIdx(self):
+      
+      return self.priceIdx - 1
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getVolPriceIdx(self, idx):
+      
+      return self.priceArr[idx][self.vl]
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def skipFirstBar(self, numPrices, timeBar):
 
       i = 0
       while i < numPrices:
-         if self.idxArr[i] == 0:
+      
+         print ("self.priceArr[self.priceIdx] " + str(self.priceArr[i]))
+         print ("self.idxArr[i] " + str(self.idxArr[i]))
+         print ("timeBar " + str(timeBar))
+
+         if self.idxArr[i] < timeBar:
             self.priceIdx += 1
             i += 1
          else:
+            self.setStartPriceIdx(self.priceIdx)
             break
             
-      self.nextBar = 1
-
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def initPriceBuffer(self, path):
 
@@ -63,14 +89,14 @@ class Price:
          lines = pcData.readlines()
          
       self.numLines = len(lines)
-      
+
       for line in lines:
          line = line.replace("\n", "")
          line = line.split(",")
 
-         self.priceArr.append([float(line[0]), float(line[1])])
-         self.idxArr.append(int(line[2]))
-                
+         self.priceArr.append([float(line[self.bid]), float(line[self.ask]), float(line[self.last]), int(line[self.vl])])
+         self.idxArr.append(int(line[self.bar]))
+         
       return self.numLines
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -90,35 +116,128 @@ class Price:
    
       # Get the average volume at the time in bar
       # Use for trigger confirmation
-      pass
+      pass      
       
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getAvgVol(self, bar):
+   
+      # Get the average volume at the index
+      
+      if bar < 1:
+         return 0
+      
+      totalVol = volIdx = b = 0
+      
+      idx = self.getStartPriceIdx()
+      curIdx = self.getCurrentPriceIdx()
+
+      print ("idx " + str(idx))
+      print ("curIdx " + str(curIdx))
+      
+      #for b in range(1, bar):
+      while b <= bar:
+         volIdx = curIdx - (b * idx)
+         if volIdx < 0:
+            break
+         print ("volIdx " + str(volIdx))
+         print ("b " + str(b))
+         print ("bar " + str(bar))
+         totalVol += self.getVolPriceIdx(volIdx) 
+         print ("getVolPriceIdx(volIdx) " + str(self.getVolPriceIdx(volIdx)))
+         print ("totalVol " + str(totalVol))
+         b += 1
+      
+      print ("totalVol / bar " + str(totalVol / bar))
+      
+      return int(round(totalVol,2) / bar)
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getAverageAskChange(self, bar):
+   
+      if bar < 2:
+         return 0
+      
+      previousPrice = totalChange = 0.0
+      numPrices = 1
+      
+      idx = self.getStartPriceIdx()
+      lastIdx = idx * bar - 2
+            
+      previousPrice = self.priceArr[idx][0]
+      idx += 1
+      
+      while idx < lastIdx:
+         priceChange = round(previousPrice - self.priceArr[idx][self.ask], 2)
+         previousPrice = round(self.priceArr[idx][0], 2)
+         if priceChange < 0:
+            priceChange = priceChange*-1
+         totalChange = round(totalChange + priceChange, 2)
+         numPrices += 1
+         idx += 1
+            
+      print ("totalChange / numPrices " + str(totalChange / numPrices))
+      
+      return round(totalChange / numPrices, 2)
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getAverageBidChange(self, bar):
+   
+      if bar < 2:
+         return 0
+      
+      previousPrice = totalChange = 0.0
+      numPrices = 1
+      
+      idx = self.getStartPriceIdx()
+      lastIdx = idx * bar - 2
+            
+      previousPrice = self.priceArr[idx][1]
+      idx += 1
+      
+      while idx < lastIdx:
+         priceChange = round(previousPrice - self.priceArr[idx][self.bid], 2)
+         previousPrice = round(self.priceArr[idx][0], 2)
+         if priceChange < 0:
+            priceChange = priceChange*-1
+         totalChange = round(totalChange + priceChange, 2)
+         numPrices += 1
+         idx += 1
+            
+      print ("totalChange / numPrices " + str(totalChange / numPrices))
+      
+      return round(totalChange / numPrices, 2)
+
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getNextPriceArr(self, serviceValues):
    
       if self.offLine:
-         print ("self.priceIdx " + str(self.priceIdx))
-         print ("self.priceArr[self.priceIdx] " + str(self.priceArr[self.priceIdx]))
-         print ("numLines] " + str(self.numLines))
-         if self.priceIdx >= self.numLines - 10:
-            return self.getLastToken(), 0, 0
+#         print ("self.priceIdx " + str(self.priceIdx))
+#         print ("self.priceArr[self.priceIdx] " + str(self.priceArr[self.priceIdx]))
+#         print ("numLines] " + str(self.numLines))
                            
-         ask = last = self.priceArr[self.priceIdx][0]
-         bid = self.priceArr[self.priceIdx][1]
+         ask = last = self.priceArr[self.priceIdx][self.ask]
+         bid = self.priceArr[self.priceIdx][self.bid]
+         last = self.priceArr[self.priceIdx][self.last]
+         vl = self.priceArr[self.priceIdx][self.vl]
          self.priceIdx += 1
          
+         if self.priceIdx >= self.numLines - 10:
+            last = self.getLastToken()
       else:
       
          bid = serviceValues[self.bid]
          ask = serviceValues[self.ask]
          last = serviceValues[self.last]
+         vl = serviceValues[self.vl]
          
-      return float(bid), float(ask), float(last) 
+      return float(bid), float(ask), float(last), int(vl) 
           
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getNextPrice(self, bc, numBars, bar):
             
       last = bid = ask = 0.0
-            
+      vl = 0 
+      
       # Get price from file, randomly or live
       if self.offLine:      
          
@@ -126,28 +245,26 @@ class Price:
          if self.upff:
             print ("self.priceIdx " + str(self.priceIdx)	)
             print ("self.priceArr[self.priceIdx] " + str(self.priceArr[self.priceIdx]))
-            if self.priceIdx >= self.numLines - 10:
-               print (str(self.getLastToken()))
-               return self.getLastToken(), 0, 0
                               
-            ask = last = self.priceArr[self.priceIdx][0]
-            bid = self.priceArr[self.priceIdx][1]
+            ask = self.priceArr[self.priceIdx][self.ask]
+            bid = self.priceArr[self.priceIdx][self.bid]
+            last = self.priceArr[self.priceIdx][self.last]
+            vl = self.priceArr[self.priceIdx][self.vl]
             self.priceIdx += 1
-         # Randomly
-         else:
-            price = self.getRandomPrice(bc, numBars, bar)
-            bid = ask = last = price
-
+            
+            if self.priceIdx >= self.numLines - 10:
+               last = self.getLastToken()
       # Live      
       else:
          last = self.cn.getLastTrade()
          bid = self.cn.getCurrentBid()
          ask = self.cn.getCurrentAsk()
+         vl = self.cn.getCurrentVolume()
          
-      return float(bid), float(ask), float(last)
+      return float(bid), float(ask), float(last), int(vl)
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isNextBar(self, bar, bars):
+   def isNextBar(self, timeBar):
       
       if not self.offLine:
          return 0
@@ -159,18 +276,20 @@ class Price:
       print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
       
       if self.getNextBar() == self.idxArr[self.priceIdx]:
-         self.setNextBar(bars)
+         #self.setNextBar(timeBar)
          return 1
          
       return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getRandomPrice(self, bc, numBars, bar):
+   def setNextBar(self, timeBar):
+   
+      self.nextBar += timeBar
 
-      hi = self.a.getHighestHiBarPrice(numBars, bc, bar)
-      lo = self.a.getLowestLoBarPrice(numBars, bc, bar)
-            
-      return round(random.uniform(lo, hi), 2)      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getNextBar(self):
+   
+      return self.nextBar
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def write2m(self, ask, bid, bar):
@@ -249,28 +368,15 @@ class Price:
       self.path5m = path.replace("active", "active5m")
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def write(self, path, ask, bid, bar, doAllMinutes):
+   def write(self, path, ask, bid, last, vl, bar, doAllMinutes):
 
       with open(path, "a+", encoding="utf-8") as priceFile:
-         priceFile.write ('%s' % str(ask) + "," + str(bid) + "," + str(bar) + "\n")
+         priceFile.write ('%s' % str(ask) + "," + str(bid) + ","  + str(last) + "," + str(vl) + "," + str(bar) + "\n")
          
       if doAllMinutes:
          self.write2m(ask, bid, bar)
          self.write3m(ask, bid, bar)
          self.write4m(ask, bid, bar)
          self.write5m(ask, bid, bar)
-         
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setNextBar(self, timeBar):
-   
-      if timeBar:
-         self.nextBar += timeBar
-      else:
-         self.nextBar += 1
-
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getNextBar(self):
-   
-      return self.nextBar
-            
+                     
 # end price

@@ -2,7 +2,20 @@
 
 Latest notes
 
+TRENDS
+Use trends to stop start trading and to verify signal instead of holding 
+on to a trade after we get signals
+
+TARGETTING
+Use ETFS's within the first few minutes to determine best sector. Use best stock within that sector
+  for trading
+  Use the opening gap for initial measurement
+  Use https://thestockmarketwatch.com/markets/pre-market/today.aspx
+     make sure a buyout isn't selected, no price movement
+      
 OBSERVATIONS
+HiLoSeq with open on highest close/open looks promising
+
 Execute on close gives better gains  when there are more decision bars
    the SPY chart on 7/13 shows 3 decision bars being best
  high and lows algo with one minute chart works best with two bars

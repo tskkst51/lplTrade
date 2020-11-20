@@ -1,6 +1,20 @@
 Item is not a list, neither a dict and not even a tuple
 OrderedDict([('dateTime', '19:59:58 EDT 07-24-2020'), ('dateTimeUTC', '1595635198'), ('quoteStatus', 'CLOSING'), ('ahFlag', 'true'), ('hasMiniOptions', 'false'), ('Intraday', OrderedDict([('ask', '254.92'), ('bid', '254.88'), ('changeClose', '-3.05'), ('changeClosePercentage', '-1.18'), ('companyName', 'INVESCO QQQ TRUST'), ('high', '256.93'), ('lastTrade', '254.96'), ('low', '251.32'), ('totalVolume', '54054536')])), ('Product', OrderedDict([('securitySubType', 'ETF'), ('securityType', 'EQ'), ('symbol', 'QQQ')]))])
 
+Latest found tickers are put above the others
+
+These are found from thestockmarketwatch.com 
+HTB - hard to borrow use buys only
+TNA NNDM* PDD LI SOLO CCL XPEV CBAT (HTB)
+
+default:
+"stocks": "AAPL,MSFT,NFLX,NVDA,TSLA,BABA,BIDU,AMZN,FB,TQQQ,QCOM,PYPL,NFLX,AMD,SNAP,UNH",
+
+GOOG is terrible due to vol
+
+added: 11/19
+FENG,HUSN,DNK,SONO
+
 stocks that look volitole
 PINS,QCOM,TSLA,GILD,BABA,PDD,ZEN,XLNX,LVS,CAT,WFC,EXPE,NVDA,SGEN,MCHP,INCY,VIX,FISV
 
@@ -21,3 +35,18 @@ g VXX results/gains |wc -l;g VXX results/loss |wc -l
 FB,TQQQ,ZIOP,AMD,GDX,SNAP,ZEN,MSFT,AAPL,TSLA,SQQQ,NVDA,SDOW,AMD,QCOM,BABA,INCY,VIX,AAL,BA,NFLX,GOOG
 
 8/10, INCY 8/10, NVDA 8/10
+
+TSLA 423.82 12.46 100%  TB 3 AV 1 AL 1 DB 1  MP
+TSLA 423.82 9.45 33%  TB 3 AV 1 AL 1 DB 2  MP
+TSLA 423.82 9.01 33%  TB 3 AV 1 AL 1 DB 3  MP
+TSLA 423.82 2.89 33%  TB 3 AV 1 AL 1 DB 4 
+TSLA 423.82 2.89 33%  TB 3 AV 1 AL 1 DB 5 
+TSLA 423.82 8.91 33%  TB 3 AV 1 TR 1 DB 1  MP
+TSLA 423.82 9.45 33%  TB 3 AV 1 TR 1 DB 2  MP
+TSLA 423.82 9.01 33%  TB 3 AV 1 TR 1 DB 3  MP
+TSLA 423.82 2.89 33%  TB 3 AV 1 TR 1 DB 4 
+TSLA 423.82 2.89 33%  TB 3 AV 1 TR 1 DB 5 
+
+remove all test data:
+cdl;cd test;
+rm -f 07*/logs/*;rm -f 08*/logs/*;rm -f 09*/logs/*;rm -f 10*/logs/*;rm -f 11*/logs/*;rm -f 07*/profiles/saved/*;rm -f 08*/profiles/saved/*;rm -f 09*/profiles/saved/*;rm -f 10*/profiles/saved/*;rm -f 11*/profiles/saved/*

@@ -67,7 +67,6 @@ class Barchart:
    
       bc[bar][self.cl] = last
       bc[bar][self.bl] = round(bc[bar][self.hi] - bc[bar][self.lo], 2)
-      #bc[bar][self.vl] = vol
       
       if last > bc[bar][self.hi]:
          bc[bar][self.hi] = last
@@ -89,19 +88,22 @@ class Barchart:
          bc[bar][self.sL] = 1
                
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setAvgVol(self, bc, numBars):
+   def setAvgVol(self, bc, bars):
    
-      if numBars == 0:
+      if bars < 1:
          return 0
-         
-      n = avgVol = 0
+
+      # Ignore 1st bar
+      n = 0
       totalVol = 0
-      
-      while n < numBars:
+            
+      while n < bars:
          totalVol += int(bc[n][self.vl])
          n += 1
 
-      self.avgVol = round(totalVol / numBars, 2)
+      self.avgVol = round(totalVol / bars, 2)
+
+      print("setAvgVol bar: " + str(self.avgVol) + " " + str(bars))
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getAvgVol(self):
@@ -116,19 +118,19 @@ class Barchart:
       return (bc[bar][self.dt])
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setAvgBarLen(self, bc, numBars):
+   def setAvgBarLen(self, bc, bars):
    
-      if numBars == 0:
+      if bars == 0:
          return 0
-         
+
       n = 0
       totalBL = 0.0
 
-      while n < numBars:
+      while n < bars:
          totalBL += bc[n][self.bl]
          n += 1
             
-      self.avgBL = round(totalBL / numBars, 2)
+      self.avgBL = round(totalBL / bars, 2)
       
       print ("self.avgBL :" + str(self.avgBL)) 
 
@@ -425,14 +427,14 @@ class Barchart:
       bc.append([0.0,0.0,0.0,0.0,0,0.0,0,0,""])
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def displayLastNBars(self, bc, numBars):
+   def displayLastNBars(self, bc, bars):
    
       bcLen = len(bc)
       
-      if bcLen < numBars:
+      if bcLen < bars:
          ctr = 0
       else:
-         ctr = bcLen - numBars
+         ctr = bcLen - bars
       
       print ("\n")
       while ctr < bcLen:            
@@ -441,14 +443,14 @@ class Barchart:
       print ("\n")
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def loadValues(self, bc, numBars):
+   def loadValues(self, bc, bars):
    
       bcLen = len(bc)
       
-      if bcLen < numBars:
+      if bcLen < bars:
          ctr = bcLen
       else:
-         ctr = bcLen - numBars
+         ctr = bcLen - bars
       
       print ("\n")
       while ctr < bcLen:            

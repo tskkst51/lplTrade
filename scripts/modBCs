@@ -1,0 +1,23 @@
+#!/bin/bash
+
+## duplicate last line in bc files
+
+dir=$1
+
+wp=$(pwd)
+
+dt=$(date "+%m%d%Y")
+  
+testPaths=$(ls $dir)  
+
+for testPath in $testPaths; do
+   testPaths="${dir}/${testPath}/bc"
+   bcFiles=$(ls $testPaths) 
+   for f in $bcFiles; do
+      echo Modifying ${testPaths}/${f}...
+      tail -1 ${testPaths}/${f} >> ${testPaths}/${f}
+   done
+done
+
+exit 0
+
