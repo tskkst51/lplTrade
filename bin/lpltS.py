@@ -417,7 +417,7 @@ if not offLine:
       ba.initWrite(pathsChart[stock]['barChartPath'])
       
 if stock in stocks:
-   lm[stock].setTradingDelayBars()
+   lm[stock].setTradingDelayBars(timeBar)
 
 dirtyProfit = 0
 
@@ -433,8 +433,8 @@ while True:
             cn.waitTillMarketOpens(a1.getMarketOpenTime())
             marketOpen += 1
 
-   if not offLine:
-      sleep(0.02)
+   #if not offLine:
+      #sleep(0.02)
       
    # Set the initial loop time from the profile
    if write1_5MinData:
@@ -518,7 +518,7 @@ while True:
             pr[stock].write(pathsChart[stock]['pricesPath'], ask[stock], bid[stock], last[stock], vol[stock], barCtr, write1_5MinData)
          
       # Beginning of next bar. 2nd clause is for offline mode
-      if cn.getTimeHrMnSecs() >= endBarLoopTime or pr[stock].isNextBar(barCtr, timeBar):      
+      if cn.getTimeHrMnSecs() >= endBarLoopTime or pr[stock].isNextBar(timeBar):      
       
          # Only do beginning of the bar section once
          if dirty:
@@ -596,7 +596,6 @@ while True:
 
                # Write last bar
                ba[stock].write(stocksChart[stock], pathsChart[stock]['barChartPath'], barCtr, write1_5MinData)
-               ba[stock].write(stocksChart[stock], pathsChart[stock]['barChartPath'], barCtr + 1, write1_5MinData)
                # ba[stock].fixSessionHiLo(pathsChart[stock]['barChartPath'])
          
                #if a.inPosition() and barCtr < a.getNextBar():
