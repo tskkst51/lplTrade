@@ -344,7 +344,7 @@ class ConnectEtrade:
          if stock:
             return self.serviceValues[stock][self.totVolIdx]
 
-      return int(self.vol)
+      return self.vol
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getChangeClose(self):
@@ -369,6 +369,7 @@ class ConnectEtrade:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getVolume(self):
       return int(self.totalVolume)
+      #return int(self.vol)
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getTotalVolume(self, symbol):

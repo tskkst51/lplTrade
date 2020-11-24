@@ -51,6 +51,7 @@ doAVdoVLdoQPdoTRdoAOdoAC = [1]
 doAverageVolume = [1]
 doVolumeLastBar = [1]
 doVolumeLastBardoTR = [1]
+doVLdoQP = [1]
 doAVdoVL = [1]
 doPM = [1]
 doAVdoVLdoQP = [1]
@@ -272,6 +273,12 @@ def setAlgoValues(algo, value, info):
       d["profileTradeData"]["doHiLo"] = str(1)
       d["profileTradeData"]["doVolumeLastBar"] = str(value)
       info += "HL AL "
+
+   if algo == "doVLdoQP":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(value)
+      d["profileTradeData"]["doQuickProfit"] = str(value)
+      info += "HL AL QP "
 
    if algo == "doVolumeLastBardoTR":
       d["profileTradeData"]["doHiLo"] = str(1)
@@ -802,7 +809,7 @@ if algo:
    elif algo == "doVolumeLastBar":
       testAlgos['doVolumeLastBar'] = doVolumeLastBar
    elif algo == "doAverageVolume":
-      testAlgos['doAverageVolume'] = doVolumeLastBar
+      testAlgos['doAverageVolume'] = doAverageVolume
    elif algo == "doAVdoVLdoQPdoTR":
       testAlgos['doAVdoVLdoQPdoTR'] = doAVdoVLdoQPdoTR
    elif algo == "doQuickProfit":
@@ -827,6 +834,8 @@ if algo:
       testAlgos['doEOO'] = doEOO
    elif algo == "doVolumeLastBardoTR":
       testAlgos['doVolumeLastBardoTR'] = doVolumeLastBardoTR
+   elif algo == "doVLdoQP":
+      testAlgos['doVLdoQP'] = doVLdoQP
       
       
       
@@ -836,6 +845,8 @@ else: # Default
    testAlgos['doTrends'] = doTrends
    testAlgos['doAverageVolume'] = doAverageVolume
    testAlgos['doVolumeLastBar'] = doVolumeLastBar
+   testAlgos['doVLdoQP'] = doVLdoQP
+   
    testAlgos['doAVdoVL'] = doAVdoVL
    testAlgos['doAVdoVLdoPM'] = doAVdoVLdoPM
    testAlgos['doAVdoTR'] = doAVdoTR

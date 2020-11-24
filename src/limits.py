@@ -586,6 +586,7 @@ class Limits:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def resetLimits(self):
    
+      self.doHiLoSeq = int(self.data['profileTradeData']['doHiLoSeq'])
       self.openBuyBars = int(self.data['profileTradeData']['openBuyBars'])
       self.closeBuyBars = int(self.data['profileTradeData']['closeBuyBars'])
       self.openSellBars = int(self.data['profileTradeData']['openSellBars'])
@@ -598,14 +599,27 @@ class Limits:
       self.gainTrailStop = int(self.data['profileTradeData']['gainTrailStop'])
       self.closePositionFudge = float(self.data['profileTradeData']['closePositionFudge'])
 
+      # Must have two decision bars for doHiLoSeq
+      if self.doHiLoSeq:
+         if self.openBuyBars == 1:
+            self.openBuyBars = 2
+         if self.openSellBars == 1:
+            self.openSellBars = 2
+         if self.closeBuyBars == 1:
+            self.closeBuyBars = 2
+         if self.closeSellBars == 1:
+            self.closeSellBars = 2
+
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setTradingDelayBars(self):
+   def setTradingDelayBars(self, timeBar):
          
       if self.doRangeTradeBars > self.tradingDelayBars:
          self.tradingDelayBars = self.doRangeTradeBars
    
       if self.tradingDelayBars < self.getMaxNumWaitBars():
          self.tradingDelayBars = self.getMaxNumWaitBars()
+         
+      #self.tradingDelayBars *= timeBar
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getTradingDelayBars(self):
@@ -639,12 +653,16 @@ class Limits:
       self.lowValues = [0.0] * waitBars   
       self.hiValues = [0.0] * waitBars  
 
+   
+      self.lg.debug("waitBars+ " + str(waitBars))
+      self.lg.debug("bar+ " + str(bar))
+
       for n in range(waitBars):
          self.openValues[n] = barChart[bar - n][self.op]
          self.closeValues[n] = barChart[bar - n][self.cl]
          self.lowValues[n] = barChart[bar - n][self.lo]
          self.hiValues[n] = barChart[bar - n][self.hi]
-
+      
       # Remove before going live      
       for n in range(waitBars):
          self.lg.debug ("open's: " + str(barChart[bar - n][self.op]))  

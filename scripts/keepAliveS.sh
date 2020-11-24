@@ -113,7 +113,11 @@ if [[ "$retCode" == "3" ]]; then
    mkdir "prices" "bc" "logs" "debug"  || echo Unable to mkdir "prices" "bc" "logs"
    tar -cf ${dt}.tar ${testDir} || echo Unable to tar test dir $dt
    gzip ${dt}.tar || echo Unable to gzip ${dt}.tar
-   mv ${dt}.tar.gz archives || echo Unable to mv archives to archive
+   #mkdir archives || echo Unable to make Archives dir
+   mv ${dt}.tar.gz ../lpltArchives || echo Unable to mv archives to archive
+   git add ${dt}.tar.gz
+   git commit -am ${dt}.tar.gz
+   git push
    
    # Execute the tests
    echo Running ${wp}/scripts/test.sh $dt

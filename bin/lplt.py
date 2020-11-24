@@ -144,6 +144,8 @@ write1_5MinData = int(d["profileTradeData"]["write1_5MinData"])
 quitMaxProfit = float(d["profileTradeData"]["quitMaxProfit"])
 workPath = str(d["profileTradeData"]["workPath"])
 doRangeTradeBars = str(d["profileTradeData"]["doRangeTradeBars"])
+gainTrailStop = str(d["profileTradeData"]["gainTrailStop"])
+profitPctTrigger = float(d["profileTradeData"]["profitPctTrigger"])
 
 offLine = int(c["profileConnectET"]["offLine"])
 sandBox = int(c["profileConnectET"]["sandBox"])
@@ -156,6 +158,8 @@ numBars = 0
 lastMinuteOfLiveTrading = 155930
 
 marketOpen = 0
+
+stoppedOut = 4
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Overide profileTradeData data with command line data
@@ -353,6 +357,7 @@ if resume:
    if usePricesFromFile and offLine:
       #barCtr = 0
       barCtr = 1
+      a.setAllLimits(barChart, 0)
          
    # We're live, program halted and now resumed. Initilize a new bar and trade on
    else:
@@ -370,7 +375,10 @@ if not offLine:
       pr.initWrite(pricesPath)
       bc.initWrite(barChartPath)
 
-lm.setTradingDelayBars()
+lm.setTradingDelayBars(timeBar)
+
+# This counter matches the bar number displayed in etrade
+barInfoCtr = 2
 
 if offLine:
    pr.setNextBar(timeBar)
@@ -441,14 +449,15 @@ while True:
 
       # Set the profit to gain
       if not dirtyProfit:
-         if quitMaxProfit > 0.0:
+         if profitPctTrigger > 0:
             dirtyProfit += 1
-            a.setTotalProfit(last, quitMaxProfit)
+            a.setTotalProfit(last, profitPctTrigger)
             lg.debug("Max profit set to: " + str(a.getTargetProfit()))
-
+            
       tradeVol = cn.getVolume() - initialVol
-         
+      
       if not offLine:
+         #vol = cn.getVolume() - initialVol
          bc.loadBar(barChart, tradeVol, barCtr, bid, ask, last)
    
       # Halt program at end of trading day
@@ -467,17 +476,19 @@ while True:
             else:
                exit(0)
          
-      if quitMaxProfit > 0.0:
+      if profitPctTrigger > 0.0:
          if a.getTotalGain() >= a.getTargetProfit():
             lg.info ("QUITTING MAX PROFIT REACHED Gain: " + str(a.getTotalGain()) + " " + str(barCtr))
             lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
+            lg.info ("MAX PROFIT PRICE: " + str(last))
             lg.info ("MAX PROFIT Bar: " + str(barCtr))
             lg.info ("MAX PROFIT    Time: " + str(cn.getTimeStamp()))
             
-            # Instead of exiting set a trailing stop a few points below target to 
-            # capture more gain
-            if exitMaxProfit:
-               exit(2)
+            if quitMaxProfit and positionTaken == stoppedOut:
+               # We are out with our PROFIT
+               if a.inPosition():
+                  a.closePosition(barCtr, barChart, bid, ask, forceClose)
+                  exit (2)
             
       # Save off the prices so they can be later used in offLine mode
       if usePricesFromFile and not offLine:
@@ -488,25 +499,28 @@ while True:
       # Beginning of next bar. 2nd clause is for offline mode
       if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isNextBar(timeBar):      
                         
+         
          lg.info ("Stock: " + str(stock) + "\n")
          lg.info ("Last price: " + str(last) + " Position: " + str(positionTaken))
          lg.info ("Average Volume: " + str(bc.getAvgVol()))
          lg.info ("Average Bar length: " + str(bc.getAvgBarLen()))
 
-         lg.info ("\nSYM : " + str(stock))
-         lg.info ("BAR : " + str(barCtr))
-         lg.info ("HI  : " + str(barChart[barCtr][hi]))
-         lg.info ("LO  : " + str(barChart[barCtr][lo]))
-         lg.info ("OPEN : " + str(barChart[barCtr][op]))
-         lg.info ("CLOSE : " + str(barChart[barCtr][cl]))
+         lg.info ("\nSYM: " + str(stock))
+         lg.info ("BAR: " + str(barInfoCtr))
+         lg.info ("HI: " + str(barChart[barCtr][hi]))
+         lg.info ("LO: " + str(barChart[barCtr][lo]))
+         lg.info ("OPEN: " + str(barChart[barCtr][op]))
+         lg.info ("CLOSE: " + str(barChart[barCtr][cl]))
          lg.info ("LAST: " + str(last))
-         lg.info ("BID : " + str(bid))
-         lg.info ("ASK :  " + str(ask))
-         lg.info ("TIME  : " + str(barChart[barCtr][dt]))
-         lg.info ("VOL : " + str(barChart[barCtr][vl]) + "\n")
+         lg.info ("BID: " + str(bid))
+         lg.info ("ASK:  " + str(ask))
+         lg.info ("TIME: " + str(barChart[barCtr][dt]))
+         lg.info ("VOL: " + str(barChart[barCtr][vl]) + "\n")
          #lg.info ("VOL : " + str(vol) + "\n")
+                  
+         barInfoCtr += 1
 
-         print ("\nSTART NEW BAR " + str(barCtr + 1) + " ===========================================\n")
+         print ("\nSTART NEW BAR " + str(barInfoCtr) + " ====================================\n")
 
          # Only do this section once
          if dirty:

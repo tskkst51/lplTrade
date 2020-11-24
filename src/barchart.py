@@ -22,6 +22,7 @@ class Barchart:
       
       self.avgBL = 0.0
       self.avgVol = 0
+      self.avgVolTime = 0
       self.priceIdx = 0
       self.sessionHi = 0
       self.sessionLo = 99999
@@ -88,27 +89,74 @@ class Barchart:
          bc[bar][self.sL] = 1
                
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setAvgVol(self, bc, bars):
-   
-      if bars < 1:
+   def getPreviousBarVol(self, bars, timeBar):
+      
+      # if timeBar = 3 bars = 14 look at bars 12, 13, 14 
+
+      if timeBar > bars:
          return 0
+
+      totalVol = 0
+      idx = (bar - timeBar) + 1
+      
+      while idx <= bars:
+         totalVol += self.priceArr[idx][self.vl]
+         idx += 1
+         print("getPreviousBarVol totalVol: " + str(totalVol))
+               
+      return totalVol
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setAvgVol(self, bc, bar):
+   
+      if bar == 0:
+         self.avgVol = bc[0][self.vl]
+         print("setAvgVol bar: " + str(self.avgVol))
+         return
 
       # Ignore 1st bar
       n = 0
       totalVol = 0
             
-      while n < bars:
+      while n < bar:
+         print ("bc[n][self.vl " + str(bc[n][self.vl]))
          totalVol += int(bc[n][self.vl])
          n += 1
 
-      self.avgVol = round(totalVol / bars, 2)
+      self.avgVol = round(totalVol / bar, 2)
 
-      print("setAvgVol bar: " + str(self.avgVol) + " " + str(bars))
+      print("setAvgVol bar: " + str(self.avgVol) + " " + str(bar))
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setAvgVolTime(self, bc, bar, timeBar, currIdx):
+   
+      # if timeBar = 3 bar = 33 look at all bar divied up by the timebar 
+
+      #if timeBar > bar:
+      #   return 0
+      
+      print(" bar: " + str(bar)) 
+      print("currIdx: " + str(currIdx)) 
+         
+      if bar == 0:
+        self.avgVolTime = bc[0][self.vl]
+        return
+      
+      print("avgVol: " + str(avgVol))   
+      print("volCtr: " + str(volCtr))   
+      print("avgVol / volCtr: " + str(avgVol / volCtr)) 
+      
+      self.avgVolTime =  round(avgVol / volCtr, 2)
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getAvgVol(self):
             
       return self.avgVol  
+          
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getAvgVolTime(self):
+            
+      return self.avgVolTime
           
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getTimeFromFile(self, bc, bar): 
@@ -303,10 +351,10 @@ class Barchart:
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def read(self, path, bc, timeBar):
-            
+   
       if timeBar > 1:
          return self.readMin(path, bc, timeBar)
-
+         
       ctr = 0
       with open(path, 'r') as bcData:
          for line in bcData:

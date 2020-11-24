@@ -47,7 +47,8 @@ class Price:
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setStartPriceIdx(self, idx):
-      
+
+      print ("startIdx " + str(self.startIdx))
       self.startIdx = idx
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,7 +60,24 @@ class Price:
    def getCurrentPriceIdx(self):
       
       return self.priceIdx - 1
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getCurrentPriceIdx(self):
       
+      return self.idxArr[self.priceIdx]
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getVolPriceTimeIdx(self, idx, timeBar):
+      
+      totalVol = 0
+      bar = 1
+      
+      while bar <= timeBar:
+         idx -= bar
+         totalVol += self.priceArr[idx][self.vl]
+         
+      return totalVol
+
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getVolPriceIdx(self, idx):
       
@@ -161,12 +179,12 @@ class Price:
       numPrices = 1
       
       idx = self.getStartPriceIdx()
-      lastIdx = idx * bar - 2
+      curIdx = self.getCurrentPriceIdx()
             
       previousPrice = self.priceArr[idx][0]
       idx += 1
       
-      while idx < lastIdx:
+      while idx < curIdx:
          priceChange = round(previousPrice - self.priceArr[idx][self.ask], 2)
          previousPrice = round(self.priceArr[idx][0], 2)
          if priceChange < 0:
@@ -189,12 +207,16 @@ class Price:
       numPrices = 1
       
       idx = self.getStartPriceIdx()
-      lastIdx = idx * bar - 2
+      curIdx = self.getCurrentPriceIdx()
             
       previousPrice = self.priceArr[idx][1]
       idx += 1
       
-      while idx < lastIdx:
+      print ("idx " + str(idx))
+      print ("curIdx " + str(curIdx))
+      print ("previousPrice " + str(previousPrice))
+      
+      while idx < curIdx:
          priceChange = round(previousPrice - self.priceArr[idx][self.bid], 2)
          previousPrice = round(self.priceArr[idx][0], 2)
          if priceChange < 0:
@@ -202,7 +224,7 @@ class Price:
          totalChange = round(totalChange + priceChange, 2)
          numPrices += 1
          idx += 1
-            
+         
       print ("totalChange / numPrices " + str(totalChange / numPrices))
       
       return round(totalChange / numPrices, 2)
@@ -261,7 +283,7 @@ class Price:
          ask = self.cn.getCurrentAsk()
          vl = self.cn.getCurrentVolume()
          
-      return float(bid), float(ask), float(last), int(vl)
+      return float(bid), float(ask), float(last), vl
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isNextBar(self, timeBar):
