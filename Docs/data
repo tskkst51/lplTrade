@@ -5,7 +5,7 @@ Latest found tickers are put above the others
 
 These are found from thestockmarketwatch.com 
 HTB - hard to borrow use buys only
-TNA NNDM* PDD LI SOLO CCL XPEV CBAT (HTB)
+FCEL** TNA NNDM* PDD LI SOLO CCL XPEV CBAT (HTB)
 
 default:
 "stocks": "AAPL,MSFT,NFLX,NVDA,TSLA,BABA,BIDU,AMZN,FB,TQQQ,QCOM,PYPL,NFLX,AMD,SNAP,UNH",

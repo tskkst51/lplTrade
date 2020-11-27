@@ -55,6 +55,17 @@ doVLdoQP = [1]
 doAVdoVL = [1]
 doPM = [1]
 doAVdoVLdoQP = [1]
+doHiLoSeqdoHiLoDoAV = [1]
+doHiLoSeqdoHiLoDoAVdoAOdoAC = [1]
+doHiLoSeqdoHiLoDoAVdoAOdoACdoIT = [1]
+doHiLoSeqdoHiLo = [1]
+doHiLodoIT = [1]
+doHiLodoAVdoIT = [1]
+doHiLodoITdoQP = [1]
+doHiLodoITdoQPdoAL = [1]
+doHiLodoAVdoTR = [1]
+doHiLoSeqdoHiLoDoAL = [1]
+doHiLoSeqdoHiLoDoALDoAV = [1]
 doAVdoTR = [1]
 doAVdoTRdoAL = [1]
 doAVdoTRdoPT = [1]
@@ -193,6 +204,7 @@ def setAlgoValues(algo, value, info):
    d["profileTradeData"]["doPatterns"] = str(0)
    d["profileTradeData"]["doPriceMovement"] = str(0)
    d["profileTradeData"]["doExecuteOnOpen"] = str(0)
+   d["profileTradeData"]["doInPosTracking"] = str(0)
    
 #   if algo == "HL":
 #      d["profileTradeData"]["doHiLo"] = str(1)
@@ -251,10 +263,82 @@ def setAlgoValues(algo, value, info):
       d["profileTradeData"]["doHiLo"] = str(1)
       info += "HL "
 
+   if algo == "doHiLodoITdoQP":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doInPosTracking"] = str(1)
+      d["profileTradeData"]["doQuickProfit"] = str(1)
+      info += "HL IT QP "
+
+   if algo == "doHiLodoITdoQPdoAL":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doInPosTracking"] = str(1)
+      d["profileTradeData"]["doQuickProfit"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(1)
+      info += "HL IT QP AL "
+
+   if algo == "doHiLodoIT":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doInPosTracking"] = str(1)
+      info += "HL IT "
+
+   if algo == "doHiLodoAVdoIT":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doInPosTracking"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      info += "HL AV IT "
+
    if algo == "doHiLoSeq":
       d["profileTradeData"]["doHiLoSeq"] = str(1)
       info += "HLS "
       
+   if algo == "doHiLoSeqdoHiLo":
+      d["profileTradeData"]["doHiLoSeq"] = str(1)
+      d["profileTradeData"]["doHiLo"] = str(1)
+      info += "HLS HL "
+      
+   if algo == "doHiLoSeqdoHiLoDoAV":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doHiLoSeq"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      info += "HLS HL AV "
+      
+   if algo == "doHiLodoAVdoTR":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["doTrends"] = str(1)
+      info += "HL AV TR "
+      
+   if algo == "doHiLoSeqdoHiLoDoAVdoAOdoAC":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doHiLoSeq"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["aggressiveOpen"] = str(1)
+      d["profileTradeData"]["aggressiveClose"] = str(1)
+      info += "HLS HL AV AO AC "
+      
+   if algo == "doHiLoSeqdoHiLoDoAVdoAOdoACdoIT":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doHiLoSeq"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      d["profileTradeData"]["aggressiveOpen"] = str(1)
+      d["profileTradeData"]["aggressiveClose"] = str(1)
+      d["profileTradeData"]["doInPosTracking"] = str(1)
+      info += "HLS HL AV AO AC IT "
+
+
+   if algo == "doHiLoSeqdoHiLoDoAL":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doHiLoSeq"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(1)
+      info += "HLS HL AL "
+      
+   if algo == "doHiLoSeqdoHiLoDoALDoAV":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doHiLoSeq"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(1)
+      d["profileTradeData"]["doAverageVolume"] = str(1)
+      info += "HLS HL AL AV "
+            
    if algo == "doEOO":
       d["profileTradeData"]["doExecuteOnOpen"] = str(1)
       info += "EO "
@@ -836,8 +920,29 @@ if algo:
       testAlgos['doVolumeLastBardoTR'] = doVolumeLastBardoTR
    elif algo == "doVLdoQP":
       testAlgos['doVLdoQP'] = doVLdoQP
-      
-      
+   elif algo == "doHiLoSeqdoHiLoDoAV":
+      testAlgos['doHiLoSeqdoHiLoDoAV'] = doHiLoSeqdoHiLoDoAV
+   elif algo == "doHiLoSeqdoHiLoDoAL":
+      testAlgos['doHiLoSeqdoHiLoDoAL'] = doHiLoSeqdoHiLoDoAL
+   elif algo == "doHiLoSeqdoHiLoDoALDoAV":
+      testAlgos['doHiLoSeqdoHiLoDoALDoAV'] = doHiLoSeqdoHiLoDoALDoAV
+   elif algo == "doHiLoSeqdoHiLoDoAVdoAOdoAC":
+      testAlgos['doHiLoSeqdoHiLoDoAVdoAOdoAC'] = doHiLoSeqdoHiLoDoAVdoAOdoAC      
+   elif algo == "doHiLoSeqdoHiLoDoAVdoAOdoACdoIT":
+      testAlgos['doHiLoSeqdoHiLoDoAVdoAOdoACdoIT'] = doHiLoSeqdoHiLoDoAVdoAOdoACdoIT      
+   elif algo == "doHiLodoAVdoTR":
+      testAlgos['doHiLodoAVdoTR'] = doHiLodoAVdoTR
+   elif algo == "doHiLodoIT":
+      testAlgos['doHiLodoIT'] = doHiLodoIT
+   elif algo == "doHiLodoAVdoIT":
+      testAlgos['doHiLodoAVdoIT'] = doHiLodoAVdoIT
+   elif algo == "doHiLoSeqdoHiLo":
+      testAlgos['doHiLoSeqdoHiLo'] = doHiLoSeqdoHiLo
+   elif algo == "doHiLodoITdoQP":
+      testAlgos['doHiLodoITdoQP'] = doHiLodoITdoQP
+   elif algo == "doHiLodoITdoQPdoAL":
+      testAlgos['doHiLodoITdoQPdoAL'] = doHiLodoITdoQPdoAL
+            
       
 else: # Default
    #testAlgos['doHiLoSeq'] = doHiLoSeq # Set as default in orig profile
@@ -846,7 +951,8 @@ else: # Default
    testAlgos['doAverageVolume'] = doAverageVolume
    testAlgos['doVolumeLastBar'] = doVolumeLastBar
    testAlgos['doVLdoQP'] = doVLdoQP
-   
+   testAlgos['doHiLoSeqdoHiLoDoAV'] = doHiLoSeqdoHiLoDoAV
+   testAlgos['doHiLoSeqdoHiLoDoAVdoAOdoAC'] = doHiLoSeqdoHiLoDoAVdoAOdoAC
    testAlgos['doAVdoVL'] = doAVdoVL
    testAlgos['doAVdoVLdoPM'] = doAVdoVLdoPM
    testAlgos['doAVdoTR'] = doAVdoTR
@@ -918,6 +1024,8 @@ for stock in symbols:
 dirty = 0
 infoTime = ""
 highestGain = 0.0
+
+timeBar = [5]
 
 for minBar in timeBar:
 

@@ -119,7 +119,6 @@ class Barchart:
       totalVol = 0
             
       while n < bar:
-         print ("bc[n][self.vl " + str(bc[n][self.vl]))
          totalVol += int(bc[n][self.vl])
          n += 1
 

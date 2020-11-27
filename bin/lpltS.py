@@ -145,6 +145,8 @@ write1_5MinData = int(d["profileTradeData"]["write1_5MinData"])
 quitMaxProfit = float(d["profileTradeData"]["quitMaxProfit"])
 workPath = str(d["profileTradeData"]["workPath"])
 waitForTopMinute = int(d["profileTradeData"]["waitForTopMinute"])
+halfDayEndTime = str(d["profileTradeData"]["halfDayEndTime"])
+halfDays = str(d["profileTradeData"]["halfDays"])
 
 offLine = int(c["profileConnectET"]["offLine"])
 sandBox = int(c["profileConnectET"]["sandBox"])
@@ -292,15 +294,23 @@ for stock in stocks:
    pa[stock] = lpl.Pattern(d)
    a[stock] = lpl.Algorithm(d, lg[stock], cn, ba[stock], tr[stock], lm[stock], pa[stock], pr[stock], offLine, stock)
 
-print (str(ba))
-print (str(a))
-
 lg1 = lg[stocks[0]]
 a1 = a[stocks[0]]
 tr1 = tr[stocks[0]]
 lm1 = lm[stocks[0]]
 pr1 = pr[stocks[0]]
 pa1 = pa[stocks[0]]
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Set end time
+
+if str(cn.getDateMonthDayYear()) in halfDays:
+   lastMinuteOfLiveTrading = int(halfDayEndTime)
+   
+   lg1.info ("Half day trading is set to: " + halfDayEndTime)
+   lg1.info ("It must be a day after a holiday: " + halfDays)
+
+exit (1)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize files

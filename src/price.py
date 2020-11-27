@@ -13,8 +13,6 @@ class Price:
       self.upff = usePricesFromFile
       self.offLine = offLine
       
-      # Price Array bid, ask
-      #self.priceArr = [0.0,0.0,0.0,0]
       self.priceArr = []
       self.idxArr = [0]
       self.nextBar = 0
@@ -62,7 +60,7 @@ class Price:
       return self.priceIdx - 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getCurrentPriceIdx(self):
+   def getCurrentPriceIdxMinus(self):
       
       return self.idxArr[self.priceIdx]
 
@@ -82,6 +80,21 @@ class Price:
    def getVolPriceIdx(self, idx):
       
       return self.priceArr[idx][self.vl]
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getLastPriceIdx(self, idx):
+      
+      return self.priceArr[idx][self.last]
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getAskPriceIdx(self, idx):
+      
+      return self.priceArr[idx][self.ask]
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getBidPriceIdx(self, idx):
+      
+      return self.priceArr[idx][self.bid]
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def skipFirstBar(self, numPrices, timeBar):
@@ -193,7 +206,35 @@ class Price:
          numPrices += 1
          idx += 1
             
-      print ("totalChange / numPrices " + str(totalChange / numPrices))
+      print ("total Ask Change / numPrices " + str(totalChange / numPrices))
+      
+      return round(totalChange / numPrices, 2)
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getAverageLastChange(self, bar):
+   
+      if bar < 2:
+         return 0
+      
+      previousPrice = totalChange = 0.0
+      numPrices = 1
+      
+      idx = self.getStartPriceIdx()
+      curIdx = self.getCurrentPriceIdx()
+            
+      previousPrice = self.priceArr[idx][0]
+      idx += 1
+      
+      while idx < curIdx:
+         priceChange = round(previousPrice - self.priceArr[idx][self.last], 2)
+         previousPrice = round(self.priceArr[idx][self.last], 2)
+         if priceChange < 0:
+            priceChange = priceChange*-1
+         totalChange = round(totalChange + priceChange, 2)
+         numPrices += 1
+         idx += 1
+            
+      print ("total Last Change / numPrices " + str(totalChange / numPrices))
       
       return round(totalChange / numPrices, 2)
 
@@ -225,7 +266,7 @@ class Price:
          numPrices += 1
          idx += 1
          
-      print ("totalChange / numPrices " + str(totalChange / numPrices))
+      print ("total Bid Change / numPrices " + str(totalChange / numPrices))
       
       return round(totalChange / numPrices, 2)
 

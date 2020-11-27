@@ -21,9 +21,6 @@ class Log:
       
    def debug(self, msg):
       if self.debugFlag:
-         #with open(self.debugPath, "a+", encoding="utf-8") as debugFile:
-         #   debugFile.write (msg + "\n")
-         #print ("DBG : " + msg)
          print (msg)
       
    def verbose(self, msg):
@@ -41,8 +38,6 @@ class Log:
    def info(self, msg):
       self.msg = msg
       print ("INFO: " + msg)
-      #if self.debugFlag:
-      #   self.debug("INFO: " + msg)
       
    def mg(self, msg):
       self.msg = msg
@@ -111,8 +106,8 @@ class Log:
          else:
             winPct = int(self.wins / self.totalTrades * 100)
          
-         #price = round(float(price), 2)
-         price = float(price)
+         price = round(float(price), 2)
+         #price = float(price)
          
          with open(self.logPath, "a+", encoding="utf-8") as logFile:
             logFile.write (

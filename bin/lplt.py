@@ -424,7 +424,7 @@ while True:
    #a.setCurrentBar(barCtr)
    a.setNextBar(barCtr + 1)
       
-   dirty = 0
+   dirty = doOnce = 0
             
    # Loop until each bar has ended
    
@@ -433,10 +433,22 @@ while True:
       # Set the values from the trading service
       cn.setValues(barChart, barCtr, bid, ask, last, vol)
 
-      a.unsetActionOnNewBar()
+      #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      # First Bar do on open action only
       
-      bid, ask, last, vol = pr.getNextPrice(barChart, numBars, barCtr)
+      a.unsetActionOnNewBar()
 
+      bid, ask, last, vol = pr.getNextPrice(barChart, numBars, barCtr)
+      
+      if not doOnce:
+         a.setActionOnNewBar()
+         positionTaken = a.takePosition(bid, ask, last, vol, barChart, barCtr)
+         doOnce += 1
+         
+         if quitMaxProfit and positionTaken == stoppedOut:
+            # We are out with our PROFIT
+             exit (2)
+             
       if offLine:
          if usePricesFromFile:
             if barCtr > numBars or last == pr.getLastToken():
@@ -449,9 +461,9 @@ while True:
 
       # Set the profit to gain
       if not dirtyProfit:
-         if profitPctTrigger > 0:
+         if quitMaxProfit > 0:
             dirtyProfit += 1
-            a.setTotalProfit(last, profitPctTrigger)
+            a.setTotalProfit(last, quitMaxProfit)
             lg.debug("Max profit set to: " + str(a.getTargetProfit()))
             
       tradeVol = cn.getVolume() - initialVol
@@ -471,12 +483,12 @@ while True:
             lg.info("Program exiting due to end of day trading")
             # bc.fixSessionHiLo(barChartPath)
             
-            if a.getTotalGain() >= a.getTargetProfit():
-               exit(2)
-            else:
-               exit(0)
+            #if a.getTotalGain() >= a.getTargetProfit():
+            #   exit(2)
+            #else:
+            exit(0)
          
-      if profitPctTrigger > 0.0:
+      if quitMaxProfit > 0.0:
          if a.getTotalGain() >= a.getTargetProfit():
             lg.info ("QUITTING MAX PROFIT REACHED Gain: " + str(a.getTotalGain()) + " " + str(barCtr))
             lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
@@ -486,9 +498,7 @@ while True:
             
             if quitMaxProfit and positionTaken == stoppedOut:
                # We are out with our PROFIT
-               if a.inPosition():
-                  a.closePosition(barCtr, barChart, bid, ask, forceClose)
-                  exit (2)
+                exit (2)
             
       # Save off the prices so they can be later used in offLine mode
       if usePricesFromFile and not offLine:
@@ -551,7 +561,10 @@ while True:
                   
          positionTaken = a.takePosition(bid, ask, last, vol, barChart, barCtr)
 
-         
+         if quitMaxProfit and positionTaken == stoppedOut:
+            # We are out with our PROFIT
+             exit (2)
+            
          if not offLine:
             bc.appendBar(barChart)
          
@@ -588,6 +601,9 @@ while True:
       # Take a position if conditions exist
       positionTaken = a.takePosition(bid, ask, last, vol, barChart, barCtr)
 
+      if quitMaxProfit and positionTaken == stoppedOut:
+         # We are out with our PROFIT
+          exit (2)
    # end bar loop
 
       # Stop trading at the end of he day

@@ -23,8 +23,6 @@ class Algorithm():
       self.offLine = offLine
       self.stock = stock
 
-      print (str(self.bc))
-
       # Required standard settings
       self.algorithms = str(data['profileTradeData']['algorithms'])
             
@@ -33,6 +31,7 @@ class Algorithm():
       self.doDefault = int(data['profileTradeData']['doDefault'])
       self.doHiLo = int(data['profileTradeData']['doHiLo'])
       self.doHiLoSeq = int(data['profileTradeData']['doHiLoSeq'])
+      self.doOpenCloseSeq = int(data['profileTradeData']['doOpenCloseSeq'])
       self.doOpensCloses = int(data['profileTradeData']['doOpensCloses'])
       self.doExecuteOnClose = int(data['profileTradeData']['doExecuteOnClose'])
       self.doExecuteOnOpen = int(data['profileTradeData']['doExecuteOnOpen'])
@@ -54,6 +53,13 @@ class Algorithm():
       self.doAverageVolume = int(data['profileTradeData']['doAverageVolume'])
       self.doVolumeLastBar = int(data['profileTradeData']['doVolumeLastBar'])
       self.doPriceMovement = int(data['profileTradeData']['doPriceMovement'])
+      
+      self.aggressiveOpen = int(data['profileTradeData']['aggressiveOpen'])
+      self.aggressiveClose = int(data['profileTradeData']['aggressiveClose'])
+      self.agrBuyHiOpen = int(data['profileTradeData']['agrBuyHiOpen'])
+      self.agrSellLoOpen = int(data['profileTradeData']['agrSellLoOpen'])
+      self.agrBuyHiClose = int(data['profileTradeData']['agrBuyHiClose'])
+      self.agrSellLoClose = int(data['profileTradeData']['agrSellLoClose'])
 
       self.currency = str(data['profileTradeData']['currency'])
       self.alt = str(data['profileTradeData']['alt'])
@@ -130,8 +136,6 @@ class Algorithm():
       self.currentBar = 0
       self.nextBar = 0
       self.rangeTradeValue = 0
-      #self.rangeHi = 0.0
-      #self.rangeLo = 0.0
       self.priceInRange = 0
       
       self.hiValues = [0.0] 
@@ -173,8 +177,9 @@ class Algorithm():
       self.reversAction = 0
       self.hammer = 0
       self.priceMovement = 0
-      self.profitGained = 0.0
-      self.stopTarget = 0
+      self.stopBuyTarget = 0.0
+      self.stopSellTarget = 0.0
+      self.stopPct = 0.0
       self.runningVolume = 0
       self.runningAvgVolume = 0
       self.currentVol = 0
@@ -325,6 +330,7 @@ class Algorithm():
       if self.doInPosTracking:
          action = self.algorithmPosTracking(last, action)
          if action == self.stoppedOut:
+            self.closePosition(bar, barChart, bid, ask, 1)
             return self.stoppedOut
      
       if self.doVolatility:
@@ -345,11 +351,14 @@ class Algorithm():
 # close is higher than open for a sell position or a
 # close is lower than an open for a buy position
 
-      if self.doHiLo:
-         action = self.algorithmHiLo(barChart, bar, bid, ask, last, vol, action)
-         
       if self.doHiLoSeq:
          action = self.algorithmHiLoSeq(barChart, bar, bid, ask, last, vol, action)
+      
+      if self.doOpenCloseSeq:
+         action = self.algorithmOpensClosesSeq(barChart, bar, bid, ask, last, vol, action)
+         
+      if self.doHiLo:
+         action = self.algorithmHiLo(barChart, bar, bid, ask, last, vol, action)
          
       if self.doReversalPattern:
          action = self.algorithmReversalPattern(barChart, bar, ask, action)
@@ -388,7 +397,7 @@ class Algorithm():
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmPriceMovement(self, bar, bid, ask, last, action=0):
       
-      # Compare previous prices (ask) and don't take a position if the price
+      # Compare previous prices (last) and don't take a position if the price
       # moves 3x the average movement
       
       self.lg.debug ("In algorithmPriceMovement: " + str(action))
@@ -406,62 +415,135 @@ class Algorithm():
       if self.inPosition():
          return action
 
-      avgChange = lastChange = 0.0
+      avgChange = lastChange = prevLast = 0.0
 
-      if action == self.buy:
-         self.lg.debug ("ask: " + str(ask))
-         self.lg.debug ("self.priceMovement >= ask " + str(self.priceMovement >= ask))
-         #if self.priceMovement > 0 and self.priceMovement >= self.cn.getCurrentAsk(self.stock):
-         if self.priceMovement > 0 and self.priceMovement >= ask:
-            return action
-         elif self.priceMovement > 0:
-            return 0
-         lastChange = round(last - self.cn.getCurrentAsk(self.stock), 2)
-         avgChange = self.pr.getAverageAskChange(bar)
-      elif action == self.sell:
-         self.lg.debug ("bid: " + str(bid))
-         self.lg.debug ("self.priceMovement <= bid: " + str(self.priceMovement <= bid))
-         #if self.priceMovement > 0 and self.priceMovement <= self.cn.getCurrentBid(self.stock):
-         if self.priceMovement > 0 and self.priceMovement <= bid:
-            return action
-         elif self.priceMovement > 0:
-            return 0
-         #lastChange = round(last - self.cn.getCurrentBid(self.stock), 2)
-         lastChange = bid
-         avgChange = self.pr.getAverageBidChange(bar)
-            
+      curIdx = self.pr.getCurrentPriceIdx()
+      prevLast = self.pr.getLastPriceIdx(curIdx - 1)
+      
+      lastChange = round(last - prevLast, 2)
+
       if lastChange < 0:
          lastChange = lastChange*-1
-      
-      avgChange *= self.priceChangeMultiplier
-      
+
+      avgChange = (self.pr.getAverageLastChange(bar) * self.priceChangeMultiplier)
+
+      self.lg.debug ("last: " + str(last))
+      self.lg.debug ("prevLast: " + str(prevLast))
       self.lg.debug ("lastChange: " + str(lastChange))
       self.lg.debug ("avgChange: " + str(avgChange))
-      self.lg.debug ("last: " + str(last))
-      self.lg.debug ("ask " + str(ask))
-      self.lg.debug ("bid: " + str(bid))
-#      self.lg.debug ("self.getCurrentAsk(): " + str(self.cn.getCurrentAsk(self.stock)))
-#      self.lg.debug ("self.getCurrentBid: " + str(self.cn.getCurrentBid(self.stock)))
-               
+
       if lastChange > avgChange:
-         self.lg.debug ("lastChange > avgChange ")
+         self.lg.debug ("lastChange > avgChange set price target")
+         
+         # if priceMovement already set don't set it again
+         if self.priceMovement > 0:
+            return 0
          
          # Wait for price to come back to where it was
          if action == self.buy:
-            #self.priceMovement = round(self.cn.getCurrentAsk(self.stock) - lastChange, 2)
-            self.priceMovement = round(ask - lastChange, 2)
+            self.priceMovement = round(last - lastChange, 2)
          elif action == self.sell:
-            #self.priceMovement = round(self.cn.getCurrentBid(self.stock) + lastChange, 2)
-            self.priceMovement = round(bid + lastChange, 2)
-         self.lg.debug ("self.priceMovement " + str(self.priceMovement))
-         return 0
+            self.priceMovement = round(last + lastChange, 2)
             
-      return action
+         self.lg.debug ("self.priceMovement " + str(self.priceMovement))
+         
+         return 0
+      
+      elif lastChange <= avgChange:
+         if self.priceMovement > 0:
+            if action == self.buy:
+               if last <= self.priceMovement:
+                  self.lg.debug ("PRICE MOVED BACK TO WHERE IT WAS " + str(self.priceMovement))
+                  return action
+            if action == self.sell:
+               if last >= self.priceMovement:
+                  self.lg.debug ("PRICE MOVED BACK TO WHERE IT WAS " + str(self.priceMovement))
+                  return action
+
+      return 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#   def algorithmPriceMovement(self, bar, bid, ask, last, action=0):
+#      
+#      # Compare previous prices (last) and don't take a position if the price
+#      # moves 3x the average movement
+#      
+#      self.lg.debug ("In algorithmPriceMovement: " + str(action))
+#      
+#      if bar < 2:
+#         return action
+#
+#      # If no signal or priceMovement not set then return
+#      if not action:
+#         if self.priceMovement == 0:
+#            return 0
+#
+#      self.lg.debug ("self.priceMovement: " + str(self.priceMovement))
+#
+#      if self.inPosition():
+#         return action
+#
+#      avgChange = lastChange = 0.0
+#
+#      if action == self.buy:
+#         self.lg.debug ("ask: " + str(ask))
+#         self.lg.debug ("self.priceMovement >= ask " + str(self.priceMovement >= ask))
+#         #if self.priceMovement > 0 and self.priceMovement >= self.cn.getCurrentAsk(self.stock):
+#         if self.priceMovement > 0 and self.priceMovement >= ask:
+#            return action
+#         elif self.priceMovement > 0:
+#            return 0
+#         lastChange = round(last - self.cn.getCurrentAsk(self.stock), 2)
+#         avgChange = self.pr.getAverageAskChange(bar)
+#      elif action == self.sell:
+#         self.lg.debug ("bid: " + str(bid))
+#         self.lg.debug ("self.priceMovement <= bid: " + str(self.priceMovement <= bid))
+#         #if self.priceMovement > 0 and self.priceMovement <= self.cn.getCurrentBid(self.stock):
+#         if self.priceMovement > 0 and self.priceMovement <= bid:
+#            return action
+#         elif self.priceMovement > 0:
+#            return 0
+#            
+#         #lastChange = round(last - self.cn.getCurrentBid(self.stock), 2)
+#         lastChange = bid
+#         avgChange = self.pr.getAverageBidChange(bar)
+#            
+#      if lastChange < 0:
+#         lastChange = lastChange*-1
+#      
+#      avgChange *= self.priceChangeMultiplier
+#      
+#      self.lg.debug ("lastChange: " + str(lastChange))
+#      self.lg.debug ("avgChange: " + str(avgChange))
+#      self.lg.debug ("last: " + str(last))
+#      self.lg.debug ("ask " + str(ask))
+#      self.lg.debug ("bid: " + str(bid))
+##      self.lg.debug ("self.getCurrentAsk(): " + str(self.cn.getCurrentAsk(self.stock)))
+##      self.lg.debug ("self.getCurrentBid: " + str(self.cn.getCurrentBid(self.stock)))
+#               
+#      if lastChange > avgChange:
+#         self.lg.debug ("lastChange > avgChange ")
+#         
+#         # Wait for price to come back to where it was
+#         if action == self.buy:
+#            #self.priceMovement = round(self.cn.getCurrentAsk(self.stock) - lastChange, 2)
+#            self.priceMovement = round(ask - lastChange, 2)
+#         elif action == self.sell:
+#            #self.priceMovement = round(self.cn.getCurrentBid(self.stock) + lastChange, 2)
+#            self.priceMovement = round(bid + lastChange, 2)
+#         self.lg.debug ("self.priceMovement " + str(self.priceMovement))
+#         return 0
+#            
+#      return action
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmVolumeLastBar(self, barChart, bar, vol, action=0):
          
       self.lg.debug ("In algorithmAverageLastBar: " + str(action))
+
+      # If no signal then return
+      if not action:
+         return action
 
       # Use last bar volume to verify signal
 
@@ -478,22 +560,18 @@ class Algorithm():
             self.currentVol = self.runningAvgVolume + vol
       else:
          self.currentVol = vol
-               
-      # If no signal then return
-      if not action:
-         return action
-
+      
       # using average volume to get out of a position
       if not self.inPosition():
          return action
       # using average volume to get into a position
       #if self.inPosition():
       #   return action
-      
+
       previousBarVol = int(barChart[bar - 1][self.vl])
       
       self.lg.debug ("self.currentVol: " + str(self.currentVol))
-      self.lg.debug ("self.runningVolume: " + str(self.runningVolume))
+      self.lg.debug ("self.runningAvgVolume: " + str(self.runningAvgVolume))
       self.lg.debug ("previousBarVol: " + str(previousBarVol))
          
       # If volume isn't > previous bar volume, cancel signal
@@ -518,6 +596,10 @@ class Algorithm():
 
       # Implement volume plus price direction. high volume coming down even though trend is up
       
+      # If no signal then return
+      if not action:
+         return action
+
       self.barSegment = self.pr.getCurrentPriceIdx() % self.timeBar
       
       self.lg.debug ("self.barSegment: " + str(self.barSegment))
@@ -536,14 +618,10 @@ class Algorithm():
       self.lg.debug ("self.currentVol: " + str(self.currentVol))
       self.lg.debug ("vol: " + str(vol))
 
-      # If no signal then return
-      if not action:
-         return action
-
-      # using average volume to get into a position
+      # using average volume to get out of a position
       if not self.inPosition():
          return action
-      # using average volume to get out of a position
+      # using average volume to get into a position
       #if self.inPosition():
       #   return action
 
@@ -762,29 +840,33 @@ class Algorithm():
       # Take position on the open if execute on open is set 
       if not self.inPosition():
          # Open a buy position on the open if closes are sequentially higher
-         if self.lm.isHigherCloses(self.lm.openBuyBars) and \
-            self.lm.isHigherOpens(self.lm.openBuyBars):
-            self.lg.debug("TAKING POSITION HigherOpens and HigherCloses: ")
+#         if self.lm.isHigherCloses(self.lm.openBuyBars) and \
+#            self.lm.isHigherOpens(self.lm.openBuyBars):
+         if self.lm.isHigherHighs(self.lm.openBuyBars):
+            self.lg.debug("TAKING POSITION  HigherCloses: ")
             return self.buy
    
          # Open a sell position on the open if closes are sequentially lower
-         elif self.lm.isLowerCloses(self.lm.openSellBars) and \
-            self.lm.isLowerOpens(self.lm.openSellBars):
-            self.lg.debug("TAKING POSITION LowerOpens and LowerCloses: ")
+#         elif self.lm.isLowerCloses(self.lm.openSellBars) and \
+#            self.lm.isLowerOpens(self.lm.openSellBars):
+         elif self.lm.isLowerLows(self.lm.openSellBars):
+            self.lg.debug("TAKING POSITION LowerCloses: ")
             return self.sell
          
       else:
          # Close a buy position on the open if closes are sequentially lower
          if self.positionType == self.buy:
-            if self.lm.isLowerCloses(self.lm.closeBuyBars) and \
-               self.lm.isLowerOpens(self.lm.closeBuyBars):
-               self.lg.debug("CLOSING POSITION LowerOpens LowerCloses: ")
+#            if self.lm.isLowerCloses(self.lm.closeBuyBars) and \
+#               self.lm.isLowerOpens(self.lm.closeBuyBars):
+            if self.lm.isLowerLows(self.lm.closeBuyBars):
+               self.lg.debug("CLOSING POSITION LowerCloses: ")
                return self.buy
    
          # Close a sell position on the open if closes are sequentially higher
          elif self.positionType == self.sell:
-            if self.lm.isHigherCloses(self.lm.closeSellBars) and \
-               self.lm.isHigherOpens(self.lm.closeSellBars):
+#            if self.lm.isHigherCloses(self.lm.closeSellBars) and \
+#               self.lm.isHigherOpens(self.lm.closeSellBars):
+            if self.lm.isHigherHighs(self.lm.closeSellBars):
                self.lg.debug("CLOSING POSITION HigherOpens HigherCloses: ")
                return self.sell
             
@@ -796,57 +878,69 @@ class Algorithm():
    def algorithmHiLoSeq(self, barChart, bar, bid, ask, last, vol, action=0):
    
       self.lg.debug("In algorithmHiLoSeq " + str(action))
+            
+      if self.inPosition():
+         if self.positionType == self.buy:
+            if self.lm.lowerHighs and self.lm.lowerLows:
+               self.lg.debug ("InPos Hi Lo Seq algo. lower hi's and lower lo's detected")
+               return self.sell
+         elif self.positionType == self.sell:
+            if self.lm.higherHighs and self.lm.higherLows:
+               self.lg.debug ("InPos Hi Lo Seq algo. higher hi's and higher lo's detected")
+               return self.buy
+      else:
+         if self.lm.higherHighs and self.lm.higherLows:
+            self.lg.debug ("Hi Lo Seq algo. Higher hi's and Higher lo's detected")
+            return self.buy
+         if self.lm.lowerHighs and self.lm.lowerLows:
+            self.lg.debug ("Hi Lo Seq algo. Lower hi's and Lower lo's detected")
+            return self.sell
+
+      return 0
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   # Take position if price is higher than high or lower than the low
+   
+   def algorithmOpensClosesSeq(self, barChart, bar, bid, ask, last, vol, action=0):
+   
+      self.lg.debug("In algorithmOpensClosesSeq " + str(action))
+      
+      retCode = 0
       
       if self.inPosition():
          if self.positionType == self.buy:
-            if self.doOpensCloses:
-               if self.lm.lowerCloses and self.lm.lowerOpens:
-                  self.lg.debug ("algorithmHiLoSeq: Higher closes and Higher opens detected")
-                  return 1
-            else: # Default higher hi's and los
-               if self.lm.lowerHighs and self.lm.lowerLows:
-                  self.lg.debug ("algorithmHiLoSeq: Higher closes and Higher opens detected")
-                  return 1
+            if self.lm.lowerOpens and self.lm.lowerCloses:
+               self.lg.debug ("algorithmOpensClosesSeq: Lower opens and Lower closes detected")
+               return 2
          elif self.positionType == self.sell:
-            if self.doOpensCloses:
-               if self.lm.higherCloses and self.lm.higherOpens:
-                  self.lg.debug ("algorithmHiLoSeq: Lower hi's and Lower lo's detected")
-                  return 2
-            else:
-               if self.lm.higherHighs and self.lm.higherLows:
-                  self.lg.debug ("algorithmHiLoSeq: Lower hi's and Lower lo's detected")
-                  return 2
+            if self.lm.higherOpens and self.lm.higherCloses:
+               self.lg.debug ("algorithmOpensClosesSeq: Higher opens and Higher closes detected")
+               return 1
       else:
-         if self.doOpensCloses:
-            if self.lm.higherCloses and self.lm.higherOpens:
-               self.lg.debug ("algorithmHiLoSeq: Higher closes Higher opens detected")
-               return 1
-            if self.lm.lowerCloses and self.lm.lowerOpens:
-               self.lg.debug ("algorithmHiLoSeq: Lower closes and Lower opens detected")
-               return 2
-         else: # Default higher hi's and los
-            if self.lm.higherHighs and self.lm.higherLows:
-               self.lg.debug ("algorithmHiLoSeq: Higher hi's and Higher lo's detected")
-               return 1
-            if self.lm.lowerHighs and self.lm.lowerLows:
-               self.lg.debug ("algorithmHiLoSeq: Lower hi's and Lower lo's detected")
-               return 2
+         if self.lm.higherOpens and self.lm.higherCloses:
+            self.lg.debug ("algorithmOpensClosesSeq: Higher opens and Higher closes detected")
+            return 1
+         if self.lm.lowerOpens and self.lm.lowerCloses:
+            self.lg.debug ("algorithmOpensClosesSeq: Lower opens and Lower closes detected")
+            return 2
 
-      return action
+      self.lg.debug ("self.doHiLoSeq " + str(self.doHiLoSeq))
+      self.lg.debug ("action " + str(action))
       
+      return 0      
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    # Take position if price is higher than high or lower than the low
    
    def algorithmHiLo(self, barChart, bar, bid, ask, last, vol, action=0):
 
-      adjustDoToExecuteOnOpenClose = 0
+      adjustDoToExecuteOnOpenClose = retCode = 0
       
       if action > 0 and (self.doExecuteOnOpen or self.doExecuteOnClose):
          print ("Using highs and lo's to close/open a position on execute on open/close: " + str(action))
          adjustDoToExecuteOnOpenClose = 1
 
-      self.lg.debug("In algorithmHiLo")
+      self.lg.debug("In algorithmHiLo " + str(action))
 
       # Adjust execute on close decision based on hi's lo's
       if adjustDoToExecuteOnOpenClose:
@@ -884,11 +978,13 @@ class Algorithm():
             if self.positionType == self.buy:
                if self.lm.lowerHighs and self.lm.lowerLows and self.lm.lowerCloses and self.lm.lowerOpens :
                   #if self.cn.getCurrentAsk(self.stock) < self.closeBuyLimit:
-                  return 1
+                  #return 1
+                  return 2
             if self.positionType == self.sell:
                if self.lm.higherHighs and self.lm.higherLows:
                   #if self.cn.getCurrentBid(self.stock) > self.closeSellLimit:
-                  return 2
+                  #return 2
+                  return 1
          elif not self.inPosition():
             if self.lm.higherHighs and self.lm.higherLows:
                return 1
@@ -897,22 +993,10 @@ class Algorithm():
          
       # Make decisions when hi's or lo's are breached
       else:
-         # in sequential profit taking
-         if self.quickProfitCtr:
-            self.lm.setAvgBarLenLimits(barChart, bar)
-            self.lg.debug ("self.quickProfitCtr set: " + str(self.quickProfitCtr))
 
          self.lg.debug ("In Hi Lo: open limits buy " + str(self.lm.openBuyLimit) + " sell " + str(self.lm.openSellLimit))
          self.lg.debug ("In Hi Lo: close limits buy " + str(self.lm.closeBuyLimit) + " sell " + str(self.lm.closeSellLimit))
-                  
-#         self.lg.debug ("self.cn.getCurrentAsk(self.stock) " + str(self.cn.getCurrentAsk(self.stock)))
-#         self.lg.debug ("self.cn.getCurrentBid(self.stock) " + str(self.cn.getCurrentBid(self.stock)))
-#         self.lg.debug ("self.cn.getCurrentVol(self.stock) " + str(self.cn.getCurrentVol(self.stock)))
-         
-         self.lg.debug ("ask " + str(ask))
-         self.lg.debug ("bid " + str(bid))
-         self.lg.debug ("vol " + str(vol))
-         
+                                 
          if self.inPosition():
             if self.positionType == self.buy:
                self.lg.debug ("Hi Lo: in buy position " + str(self.positionType))
@@ -920,23 +1004,40 @@ class Algorithm():
                #if self.cn.getCurrentBid(self.stock) < self.lm.closeBuyLimit:
                if bid < self.lm.closeBuyLimit:
                   self.lg.debug ("Closing algorithmHiLo BUY")
-                  return 1
+                  #return 1
+                  retCode = 2
             if self.positionType == self.sell:
                self.lg.debug ("Hi Lo: in sell position " + str(self.positionType))
                self.lg.debug ("closeSellLimit " + str(self.lm.closeSellLimit))
                #if self.cn.getCurrentAsk(self.stock) > self.lm.closeSellLimit:
                if ask > self.lm.closeSellLimit:
                   self.lg.debug ("Closing algorithmHiLo SELL")
-                  return 2
+                  #return 2
+                  retCode = 1
          elif not self.inPosition():
             #if self.cn.getCurrentAsk(self.stock) > self.lm.openBuyLimit:
             if ask > self.lm.openBuyLimit:
                self.lg.debug ("Opening algorithmHiLo BUY  1")
-               return 1
+               retCode = 1
+               #return 1
             #if self.cn.getCurrentBid(self.stock) < self.lm.openSellLimit:
             if bid < self.lm.openSellLimit:
                self.lg.debug ("Opening algorithmHiLo SELL 2 ")
-               return 2
+               #return 2
+               retCode = 2
+
+      self.lg.debug("self.doHiLoSeq " + str(self.doHiLoSeq))
+      self.lg.debug("self.doOpenCloseSeq " + str(self.doOpenCloseSeq))
+      self.lg.debug("action " + str(action))
+      self.lg.debug("retCode " + str(retCode))
+
+      if self.doHiLoSeq or self.doOpenCloseSeq:
+         if retCode > 0:
+            return action
+
+      # Sequential hi's lo's aren't in play
+      elif retCode:
+         return retCode
 
       return 0
       
@@ -945,6 +1046,8 @@ class Algorithm():
       
       # Ues the right flag here or continue to use this algo as the default
    
+      self.lg.debug("In algorithmDefault " + str(action))
+
       if self.inPosition():
          print ("close buy limit " + str(self.lm.closeBuyLimit))
          print ("close sell limit " +  str(self.lm.closeSellLimit))
@@ -972,7 +1075,7 @@ class Algorithm():
       # First should be the hammer. In sell position if hammer found close out
       # regardless of number of decision bars
 
-      self.lg.debug("In algorithmHiLo")
+      self.lg.debug("In algorithmPatterns " + str(action))
 
       if not self.inPosition():
          return action
@@ -1010,41 +1113,66 @@ class Algorithm():
       # see where price is relative to session his/los
       # 
       
-      self.lg.debug("In algorithmPosTracking")
-
-      stopPct = 0
-      
-      self.lg.debug("self.stopTarget " + str(self.stopTarget))
-      
-      if self.stopTarget > 0:
-         if last > self.profitGained:
-            # Raise stop
-            self.stopTarget += round((last - self.profitGained), 2)
-            self.profitGained = last
-            self.lg.debug("self.profitGained " + str(self.profitGained))
-            self.lg.debug("self.stopTarget " + str(self.stopTarget))
+      self.lg.debug("In algorithmPosTracking " + str(action))
+            
+      if self.stopPct > 0:         
+         # Raise/Lower stop
+         if self.inPosition():
+            self.lg.debug("self.stopBuyTarget " + str(self.stopBuyTarget))
+            self.lg.debug("self.stopSellTarget " + str(self.stopSellTarget))
             self.lg.debug("last " + str(last))
+            self.lg.debug("self.stopPct " + str(self.stopPct))
+            
+            if self.positionType == self.buy:
+               if last < self.stopBuyTarget:
+                  self.lg.debug("stopped out " + str(last))
+                  self.lg.debug("self.stopBuyTarget " + str(self.stopBuyTarget))
+                  # End trading
+                  return 4
+                  
+               self.lg.debug("last + self.stopPct " + str(last + self.stopPct))
+               # Raise target
+               if last - self.stopPct > self.stopBuyTarget:
+                  self.stopBuyTarget = round((last - self.stopPct), 2)
+            else:
+               if last > self.stopSellTarget:
+                  self.lg.debug("stopped out " + str(last))
+                  self.lg.debug("self.stopSellTarget " + str(self.stopSellTarget))
+                  # End trading
+                  return 4
+   
+               self.lg.debug("last - self.stopPct " + str(last - self.stopPct))
+               # Lower target
+               if last + self.stopPct < self.stopSellTarget:
+                  self.stopSellTarget = round((last + self.stopPct), 2)
+                  
+            self.lg.debug("self.stopBuyTarget after " + str(self.stopBuyTarget))
+            self.lg.debug("self.stopSellTarget after " + str(self.stopSellTarget))
+               
             return action
             
-         # Hit our stop
-         elif self.stopTarget > 0 and last < self.stopTarget:
-            self.lg.debug("stopped out " + str(last))
-            # End trading
-            return 4
+      elif self.getTotalGain() >= self.getTargetProfit():
+         profitGained = self.getTotalGain()
+         self.stopPct = profitGained * 0.15
+         self.stopBuyTarget = round(last - self.stopPct, 2)
+         self.stopSellTarget = round(last + self.stopPct, 2)
+            
+         self.lg.debug("profitGained " + str(profitGained))
 
-      if self.getTotalGain() >= self.getTargetProfit():
-         self.profitGained = last
-         stopPct = self.profitPctTrigger * 0.1
-         self.stopTarget = round(last - (stopPct * last), 2)
-         self.lg.debug("last " + str(last))
-         self.lg.debug("stopPct " + str(stopPct))
-         self.lg.debug("self.stopTarget " + str(self.stopTarget))
+      self.lg.debug("self.getTotalGain() " + str(self.getTotalGain()))
+      self.lg.debug("self.getTargetProfit() " + str(self.getTargetProfit()))
+
+      self.lg.debug("last " + str(last))
+      self.lg.debug("self.stopPct " + str(self.stopPct))
          
       return action
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmDynamic(self, action=0):
-   
+      
+      #                                     |   | |
+      # do hammer detection. once detected | |   |  turn on sells, buys and/or trends
+      
       # Turn on trends after the beginning of the day to keep from trading too much
       # during the slow lunch hours for TQQQ
       
@@ -1152,10 +1280,16 @@ class Algorithm():
       if self.doTrends:
          self.tr.setTrendLimits(bc, bar)
 
-         if action == self.buy and self.tr.isBearTrend():
+#         if action == self.buy and self.tr.isBearTrend():
+#            self.lg.debug("isBearTrend... ")
+#            return
+         if action == self.buy and not self.tr.isBullTrend():
             self.lg.debug("isBearTrend... ")
             return
-         elif action == self.sell and self.tr.isBullTrend():
+#         elif action == self.sell and self.tr.isBullTrend():
+#            self.lg.debug("isBullTrend... ")
+#            return
+         elif action == self.sell and not self.tr.isBearTrend():
             self.lg.debug("isBullTrend... ")
             return
             
@@ -1230,7 +1364,7 @@ class Algorithm():
       # Using avg bar length or percentage instead (setProfitTarget), Remove eventually
       #self.setInitialClosePrices()
             
-      self.setProfitTarget(0)
+      self.setProfitTarget(bid, ask, 0)
          
       self.setExecuteOnOpenPosition(0)
       
@@ -1257,12 +1391,14 @@ class Algorithm():
       
       if self.doTrends and not force:
          self.tr.setTrendLimits(bc, bar)    
-         if self.positionType == self.buy and self.tr.isBullTrend():
+         if self.positionType == self.buy and self.tr.isBullTrendClose():
+         #if self.positionType == self.buy and self.tr.isBullTrend():
          #if self.positionType == self.buy and self.tr.isBullTrend() and not self.getGain():
             self.lg.debug("Got a BUY close signal... BLOCKING isBullTrend " + str(self.positionType))
             self.setWaitForNextBar()
             return        
-         if self.positionType == self.sell and self.tr.isBearTrend():
+         if self.positionType == self.sell and self.tr.isBearTrendClose():
+         #if self.positionType == self.sell and self.tr.isBearTrend():
          #if self.positionType == self.sell and self.tr.isBearTrend() and not self.getGain():
             self.lg.debug("Got a SELL close signal... BLOCKING isBearTrend" + str(self.positionType))
             self.setWaitForNextBar()
@@ -1280,10 +1416,8 @@ class Algorithm():
       print (str(self.cn.getCurrentBid(self.stock)))
       
       if self.positionType == self.buy:
-         #price = self.cn.getCurrentBid(self.stock)
          price = bid
       else:
-         #price = self.cn.getCurrentAsk(self.stock)
          price = ask
          
       if self.positionType == self.buy:
@@ -1291,7 +1425,7 @@ class Algorithm():
       elif self.positionType == self.sell:
          gain = round(self.openPositionPrice - price, 2)
          
-      self.totalGain += gain
+      self.totalGain += round(gain, 2)
             
       # Update the log
       if self.offLine:
@@ -1372,6 +1506,7 @@ class Algorithm():
       lo, loBar = self.bc.getSessionLo(bc, bar)
 
       sessionTrendValue = self.tr.getSessionTrendValue(hi, hiBar, lo, loBar)
+      
       self.tr.setSessionTrend(sessionTrendValue)
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1432,7 +1567,7 @@ class Algorithm():
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getTotalGain(self):
 
-      return round(self.totalGain, 2)
+      return self.totalGain
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getTargetProfit(self):
@@ -1527,7 +1662,7 @@ class Algorithm():
       return
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setProfitTarget(self, useBars):
+   def setProfitTarget(self, bid, ask, useBars):
 
       if not self.doQuickProfit:
          return
@@ -1536,18 +1671,18 @@ class Algorithm():
 
       profitAmt = 0.0
       if self.positionType == self.buy: 
-         profitAmt = self.cn.getCurrentBid(self.stock) * self.profitPctTrigger
+         profitAmt = bid * self.profitPctTrigger
       else:
-         profitAmt = self.cn.getCurrentAsk(self.stock) * self.profitPctTrigger
+         profitAmt = ask * self.profitPctTrigger
       
       if useBars > 0:
          profitAmt = self.bc.getAvgBarLen()
          self.lg.debug ("profit amount using avg bar length: " + str(profitAmt))
          
       if self.positionType == self.buy:
-         self.profitTarget = self.cn.getCurrentAsk(self.stock) + profitAmt
+         self.profitTarget = ask + profitAmt
       elif self.positionType == self.sell:
-         self.profitTarget = self.cn.getCurrentBid(self.stock) - profitAmt
+         self.profitTarget = bid - profitAmt
 
       self.lg.debug ("profit value: " + str(self.profitTarget))
 
@@ -1614,13 +1749,27 @@ class Algorithm():
       if self.lm.doRangeTradeBars:
          self.algoMsg += "         In Range\n"
       if self.doAverageVolume:
-         self.algoMsg += "         AverageVolume\n"
+         self.algoMsg += "         Average Volume\n"
       if self.doVolumeLastBar:
          self.algoMsg += "         Volume Last Bar\n"
       if self.doPriceMovement:
          self.algoMsg += "         Price Movement\n"
-      if self.doPriceMovement:
-         self.doPriceMovement += " Price Tracking\n"
+      if self.doOpenCloseSeq:
+         self.algoMsg += "         Opens closes Sequential\n"
+      if self.aggressiveOpen:
+         self.algoMsg += "         Aggressive Open\n"
+      if self.aggressiveClose:
+         self.algoMsg += "         Aggressive Close\n"
+      if self.agrBuyHiOpen:
+         self.algoMsg += "         Aggressive Buy Hi Open\n"
+      if self.agrSellLoOpen:
+         self.algoMsg += "         Aggressive Sell Lo Open\n"
+      if self.agrBuyHiClose:
+         self.algoMsg += "         Aggressive Buy Hi Open\n"
+      if self.agrSellLoClose:
+         self.algoMsg += "         Aggressive Sell Lo Close\n"
+      if self.doInPosTracking:
+         self.algoMsg += "         In Position Tracking\n"
          
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
