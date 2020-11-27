@@ -310,8 +310,6 @@ if str(cn.getDateMonthDayYear()) in halfDays:
    lg1.info ("Half day trading is set to: " + halfDayEndTime)
    lg1.info ("It must be a day after a holiday: " + halfDays)
 
-exit (1)
-
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize files
 
