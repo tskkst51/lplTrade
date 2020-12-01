@@ -114,7 +114,6 @@ class Barchart:
          print("setAvgVol bar: " + str(self.avgVol))
          return
 
-      # Ignore 1st bar
       n = 0
       totalVol = 0
             
@@ -279,34 +278,46 @@ class Barchart:
       return bcCtr
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getSessionHi(self, bc, barCtr):
+   def getSessionHiAndBar(self, bc, bar):
       
-      if barCtr == 0:
-         return 0.0, 0
+      if bar == 0:
+         return 0
 
-      bar = barCtr
       while bar >= 0:
          if bc[bar][self.sH] == 1:
-            print("sessionHi " + str(bc[bar][self.hi]))
             return bc[bar][self.hi], bar
          bar -= 1
       
-      return 0, 0
+      return 0.0, 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getSessionLo(self, bc, barCtr):
+   def getSessionLoAndBar(self, bc, bar):
 
-      if barCtr == 0:
-         return 0, 0
+      if bar == 0:
+         return 0
          
-      bar = barCtr
       while bar >= 0:
          if bc[bar][self.sL] == 1:
-            print("sessionLo " + str(bc[bar][self.lo]))
             return bc[bar][self.lo], bar
          bar -= 1
       
       return 0.0, 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isSessionHi(self, bc, bar):
+      
+      if bc[bar][self.sH] == 1:
+         return 1
+      
+      return 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isSessionLo(self, bc, bar):
+      
+      if bc[bar][self.sL] == 1:
+         return 1
+      
+      return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def fixSessionHiLo(self, path):
@@ -385,7 +396,7 @@ class Barchart:
       self.path5m = path.replace("active", "active5m")
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def write(self, bc, path, bar, doAllMinutes):
+   def write(self, bc, path, bar):
    
       with open(path, 'a+') as bcData:
          bcData.write('%s,' % str(bc[bar][self.hi]))
@@ -398,17 +409,17 @@ class Barchart:
          bcData.write('%s,' % str(bc[bar][self.sL]))
          bcData.write('%s' % bc[bar][self.dt] + "\n")
          
-      if (doAllMinutes):
-         if bar == 0:
-            return
-         if (bar % self.minBar2) == 0:
-            self.write2m(bc, bar)
-         if (bar % self.minBar3) == 0:
-            self.write3m(bc, bar)
-         if (bar % self.minBar4) == 0:
-            self.write4m(bc, bar)
-         if (bar % self.minBar5) == 0:
-            self.write5m(bc, bar)
+#      if (doAllMinutes):
+#         if bar == 0:
+#            return
+#         if (bar % self.minBar2) == 0:
+#            self.write2m(bc, bar)
+#         if (bar % self.minBar3) == 0:
+#            self.write3m(bc, bar)
+#         if (bar % self.minBar4) == 0:
+#            self.write4m(bc, bar)
+#         if (bar % self.minBar5) == 0:
+#            self.write5m(bc, bar)
 
       return
       

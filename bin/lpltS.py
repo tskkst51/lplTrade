@@ -140,8 +140,6 @@ openSellBars = int(d["profileTradeData"]["openSellBars"])
 closeSellBars = int(d["profileTradeData"]["closeSellBars"])
 profileTradeData = str(d["profileTradeData"])
 resume = int(d["profileTradeData"]["resume"])
-usePricesFromFile = int(d["profileTradeData"]["usePricesFromFile"])
-write1_5MinData = int(d["profileTradeData"]["write1_5MinData"])
 quitMaxProfit = float(d["profileTradeData"]["quitMaxProfit"])
 workPath = str(d["profileTradeData"]["workPath"])
 waitForTopMinute = int(d["profileTradeData"]["waitForTopMinute"])
@@ -157,7 +155,7 @@ symbol = [""]
 marketDataType = "intraday"
 numBars = {}
 
-lastMinuteOfLiveTrading = 155955
+lastMinuteOfLiveTrading = 155958
 
 marketOpen = 0
 
@@ -290,8 +288,8 @@ for stock in stocks:
    ba[stock] = lpl.Barchart()
    tr[stock] = lpl.Trends(d, lg[stock], cn, ba[stock], offLine, stock)
    lm[stock] = lpl.Limits(d, lg[stock], cn, ba[stock], offLine, stock)
-   pr[stock] = lpl.Price(cn, usePricesFromFile, offLine)
-   pa[stock] = lpl.Pattern(d)
+   pr[stock] = lpl.Price(cn, offLine)
+   pa[stock] = lpl.Pattern(d, ba[stock])
    a[stock] = lpl.Algorithm(d, lg[stock], cn, ba[stock], tr[stock], lm[stock], pa[stock], pr[stock], offLine, stock)
 
 lg1 = lg[stocks[0]]
@@ -371,7 +369,7 @@ numPrices = {}
 barIdx = {}
 
 # Fill buffers with prices
-if usePricesFromFile and offLine:
+if offLine:
    for stock in stocks:
       numPrices = pr[stock].initPriceBuffer(pathsChart[stock]['pricesPath'])
       barIdx = pr[stock].skipFirstBar(numPrices)
@@ -403,7 +401,7 @@ if resume:
             barCtr = numBars[stock] - 1
             
       # If offline then iterate over the stored bar chart starting at bar 0
-      if usePricesFromFile and offLine:
+      if offLine:
          barCtr = 0
             
       # We're live, program halted and now resumed. Initilize a new bar and trade on
@@ -427,7 +425,7 @@ if not offLine:
 if stock in stocks:
    lm[stock].setTradingDelayBars(timeBar)
 
-dirtyProfit = 0
+setProfit = 0
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Main loop. Loop forever. Pause trading during and after market hours 
@@ -452,7 +450,7 @@ while True:
    else:
       endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * timeBar))
 
-   if offLine and usePricesFromFile:
+   if offLine:
       if barCtr >= numBars[stock] - 1 or last == pr[stock].getLastToken():
          for stock in stocks:
             if a[stock].inPosition():
@@ -484,11 +482,12 @@ while True:
       
       for stock in stocks:
          bid[stock], ask[stock], last[stock], vol[stock] = pr[stock].getNextPriceArr(serviceValues[stock])
+         vol[stock] = cn.getTotalVolume(stock) - initialVol[stock]         
 
       # Set the profit to gain
-      if not dirtyProfit:
+      if not setProfit:
          if quitMaxProfit > 0.0:
-            dirtyProfit += 1
+            setProfit += 1
             for stock in stocks:
                a[stock].setTotalProfit(last[stock], quitMaxProfit)
                lg[stock].debug("Max profit set to: " + str(a[stock].getTargetProfit()))
@@ -502,9 +501,7 @@ while True:
          lg[stock].info ("ASK : " + str(ask[stock]))
          lg[stock].info ("LO  : " + str(stocksChart[stock][barCtr][lo]))
          #lg[stock].info ("VOL : " + str(stocksChart[stock][barCtr][vl]) + "\n")
-               
-         vol[stock] = cn.getTotalVolume(stock) - initialVol[stock]         
-      
+                     
       if not offLine:
          for stock in stocks:
             ba[stock].loadBar(stocksChart[stock], vol[stock], barCtr, bid[stock], ask[stock], last[stock])
@@ -520,10 +517,10 @@ while True:
                # exit()
             
       # Save off the prices so they can be later used in offLine mode
-      if usePricesFromFile and not offLine:
+      if not offLine:
          for stock in stocks:
             # Write prices and barcharts for 1-5 min charts
-            pr[stock].write(pathsChart[stock]['pricesPath'], ask[stock], bid[stock], last[stock], vol[stock], barCtr, write1_5MinData)
+            pr[stock].write(pathsChart[stock]['pricesPath'], ask[stock], bid[stock], last[stock], vol[stock], barCtr)
          
       # Beginning of next bar. 2nd clause is for offline mode
       if cn.getTimeHrMnSecs() >= endBarLoopTime or pr[stock].isNextBar(timeBar):      
@@ -544,7 +541,7 @@ while True:
             
             # Print out the bar chart. Only print the last 20 bars
             if not offLine:
-               ba[stock].write(stocksChart[stock], pathsChart[stock]['barChartPath'], barCtr, write1_5MinData)
+               ba[stock].write(stocksChart[stock], pathsChart[stock]['barChartPath'], barCtr)
                
             #ba[stock].setAvgVol(stocksChart[stock], barCtr)
             #ba[stock].setAvgBarLen(stocksChart[stock], barCtr)
@@ -587,13 +584,6 @@ while True:
          if a[stock].getWaitForNextBar() and barCtr < a[stock].getNextBar():
             lg[stock].debug("Waiting for next bar...")
             continue
-            
-         if a[stock].quickProfitMax:
-            if a[stock].quickProfitCtr > a[stock].quickProfitMax:
-               lg[stock].debug("Waiting for next bar. quickProfitCtr > max: " + str(a[stock].quickProfitCtr) + " max: " + str(a[stock].quickProfitMax))
-               a[stock].quickProfitCtr = 0
-               a[stock].setWaitForNextBar()
-               continue
 
       # Halt program at end of trading day
       if cn.getTimeHrMnSecs() > lastMinuteOfLiveTrading and not a1.getAfterMarket():
@@ -603,7 +593,7 @@ while True:
                   a[stock].closePosition(barCtr, stocksChart[stock], bid[stock], ask[stock], forceClose)
 
                # Write last bar
-               ba[stock].write(stocksChart[stock], pathsChart[stock]['barChartPath'], barCtr, write1_5MinData)
+               ba[stock].write(stocksChart[stock], pathsChart[stock]['barChartPath'], barCtr)
                # ba[stock].fixSessionHiLo(pathsChart[stock]['barChartPath'])
          
                #if a.inPosition() and barCtr < a.getNextBar():
@@ -618,7 +608,7 @@ while True:
 #                  if a[stock].inPosition():
 #                     if a[stock].isMarketExitTime():
 #                        a[stock].closePosition(barCtr, stocksChart[stock], bid[stock], ask[stock], forceClose)
-#                        ba[stock].write(stocksChart[stock], pathsChart[stock]['barChartPath'], barCtr, write1_5MinData)
+#                        ba[stock].write(stocksChart[stock], pathsChart[stock]['barChartPath'], barCtr)
             lg1.info("Program exiting due to end of day trading")
          exit (3)
       # end minute loop

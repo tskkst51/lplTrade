@@ -67,7 +67,6 @@ class Algorithm():
       self.marketEndTime = int(data['profileTradeData']['marketEndTime'])
       self.preMarket = int(data['profileTradeData']['preMarket'])
       self.afterMarket = int(data['profileTradeData']['afterMarket'])
-      self.quickProfitMax = int(data['profileTradeData']['quickProfitMax'])
       self.priceChangeMultiplier = int(data['profileTradeData']['priceChangeMultiplier'])
 
       # Increase the number of bars used determining close price
@@ -88,7 +87,7 @@ class Algorithm():
       # Yet to implement.  BELOW HERE HASN"T BEEN IMPLEMENTED yet
       
       self.endTradingTime = float(data['profileTradeData']['endTradingTime'])
-      self.profitPctTriggerAmt = float(data['profileTradeData']['profitPctTriggerAmt'])
+      self.quickProfitPctTriggerAmt = float(data['profileTradeData']['quickProfitPctTriggerAmt'])
       
       # reverseLogic appears to be best for short term charts and
       # low liquidity
@@ -96,8 +95,8 @@ class Algorithm():
       self.buyNearLow = int(data['profileTradeData']['buyNearLow'])
       self.sellNearHi = int(data['profileTradeData']['sellNearHi'])
       
-      self.profitPctTrigger = float(data['profileTradeData']['profitPctTrigger'])
-      self.profitPctTriggerBar = float(data['profileTradeData']['profitPctTriggerBar'])
+      self.quickProfitPctTrigger = float(data['profileTradeData']['quickProfitPctTrigger'])
+      self.quickProfitPctTriggerBar = float(data['profileTradeData']['quickProfitPctTriggerBar'])
       self.reversalPctTrigger = float(data['profileTradeData']['reversalPctTrigger'])
       self.volumeRangeBars = int(data['profileTradeData']['volumeRangeBars'])
       self.amountPct = float(data['profileTradeData']['amountPct'])
@@ -158,7 +157,7 @@ class Algorithm():
       self.setAlgorithmMsg()
       
       self.doOnCloseBar = 0
-      self.doOnNewBar = 0
+      self.doOnOpenBar = 0
       self.dynPriceInRange = 0
 
       self.useAvgBarLen = 0
@@ -175,7 +174,8 @@ class Algorithm():
       self.ask = 0.0
       self.last = 0.0
       self.reversAction = 0
-      self.hammer = 0
+      self.inHammerPosition = self.inInvHammerPosition = 0
+      self.afterHammerBar = self.afterInvHammerBar = 0
       self.priceMovement = 0
       self.stopBuyTarget = 0.0
       self.stopSellTarget = 0.0
@@ -196,6 +196,11 @@ class Algorithm():
       
       self.lg.debug("self.pr.getCurrentPriceIdx() " + str(self.pr.getCurrentPriceIdx()))
       
+      if bar == 0:
+         return
+      
+      bar -= 1
+      
       if self.pr.getCurrentPriceIdx() % self.timeBar == 0:
          print ("self.pr.getCurrentPriceIdx() % self.timeBar " + str(self.pr.getCurrentPriceIdx() % self.timeBar))
          self.runningVolume = self.currentVol = 0
@@ -203,7 +208,6 @@ class Algorithm():
          self.previousBarSegment = self.barSegment = 0
          
       # bar count starts at 0 sub 1
-#      if bar < self.lm.getMaxNumWaitBars():
       if bar < self.lm.getMaxNumWaitBars() - 1:
          return
          
@@ -216,9 +220,7 @@ class Algorithm():
          
       self.bc.setAvgBarLen(bc, bar)
 
-      self.bc.setAvgVol(bc, bar + 1)
-      
-      #self.bc.setAvgVolTime(bc, bar, self.timeBar, self.pr.getCurrentPriceIdx())
+      self.bc.setAvgVol(bc, bar)
       
       if self.lm.setOpenCloseHiLoValues(bc, bar, self.lm.getMaxNumWaitBars()):
          self.lm.setOpenCloseHiLoConditions(self.lm.getMaxNumWaitBars())
@@ -240,8 +242,6 @@ class Algorithm():
       self.priceMovement = 0
 
       #self.setDynamic(bar)
-         
-      self.setAlgorithmMsg()
             
       #if self.doDynamic:
       #   self.algorithmDynamic(bar)
@@ -263,13 +263,8 @@ class Algorithm():
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def takePosition(self, bid, ask, last, vol, barChart, bar):
-   
-      self.setCurrentBid(bid)
-      self.setCurrentAsk(ask)
-      self.setCurrentLast(last)
-      self.setCurrentVol(vol)
-      
-      if bar < self.lm.getMaxNumWaitBars():
+         
+      if bar < self.lm.getMaxNumWaitBars() or bar < self.lm.getTradingDelayBars():
          return 0
          
       # Determine if position should be opened
@@ -387,7 +382,7 @@ class Algorithm():
             # Don't get caught opening a position on a skewed price
             
       if self.doPatterns:
-         action = self.algorithmPatterns(barChart, bar, action)
+         action = self.algorithmPatterns(barChart, bar, bid, ask, action)
      
       if action  > 0:
          print ("Action being taken!! " + str(action))
@@ -832,7 +827,7 @@ class Algorithm():
    def algorithmOnOpen(self, barChart, bar, action=0):
       
       # If we are not on the beginning of a new bar, there's nothing to do, get out
-      if not self.doActionOnNewBar():
+      if not self.doActionOnOpenBar():
          return 0
 
       self.lg.debug("In algorithmOnOpen: " + str(action))
@@ -1070,37 +1065,114 @@ class Algorithm():
       return 0
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def algorithmPatterns(self, bc, bar, action=0):
+   def algorithmPatterns(self, bc, bar, bid, ask, action=0):
    
       # First should be the hammer. In sell position if hammer found close out
       # regardless of number of decision bars
 
       self.lg.debug("In algorithmPatterns " + str(action))
 
-      if not self.inPosition():
+      #if not self.inPosition():
+      #   return action
+      
+      # bar starts at 0. Need 3 bars
+      if bar < 2:
          return action
       
-      if bar < 3:
-         return action
+      #if not action:
+      #   return action
          
-      if self.positionType == self.buy:
-         if self.pa.isHammer(bc, bar):
-            self.lg.debug("In buy position, Hammer detected. Doing nothing")
-            #self.closePosition(self, bar, bc, 1)
-         elif self.pa.isInvHammer(bc, bar) and self.algorithmVolumeLastBar(bc, bar-1, 2):
-            self.lg.debug("In buy position. Inverted Hammer detected! Closing buy:")
-            action = 2
-            self.setWaitForNextBar()
-            #self.closePosition(bar, bc, 1)
-      elif self.positionType == self.sell:
-         if self.pa.isInvHammer(bc, bar):
-            self.lg.debug("In sell position. Inverted Hammer detected! doing nothing:")
-            #self.closePosition(bar, bc, 1)
-         if self.pa.isHammer(bc, bar) and self.algorithmVolumeLastBar(bc, bar-1, 1):
-            self.lg.debug("In sell position. Hammer detected! Closing sell:")
-            self.setWaitForNextBar()
-            action = 1
-            #self.closePosition(bar, bc, 1)
+      self.lg.debug("bar in pattern " + str(bar))
+      
+
+      actionOnOpen = self.doActionOnOpenBar()
+      actionOnClose = self.doActionOnCloseBar()
+      
+      self.lg.debug("actionOnOpen " + str(actionOnOpen))
+      self.lg.debug("actionOnClose " + str(actionOnClose))
+
+      if not actionOnOpen and not actionOnClose:
+         return action
+      
+      endOfBarAfterHammer = beginOfBarAfterHammer = 0
+      hammer = invHammer = 1
+      lowerHammer = higherInvHammer = 2
+      invReversal = reversal = 3
+            
+      # Logic: Take position if hammer or invHammer on open of next bar
+      # hammer = session hi; invHammer = sessionlo
+      # Get out of position on hammer not at session hi or lo
+            
+      # Get out if really not a hammer. Do once on after bar close.
+      if self.inHammerPosition:
+         if actionOnClose:
+            if bar == self.afterHammerBar:
+               if self.pa.isBarAfterHammerHigher(bc, bar, bar - 1):
+                  self.closePosition(bar, bc, bid, ask, 1)
+                  self.inHammerPosition = 0
+               
+         # Close out of Hammer. Open invHammer if at session hi
+         elif actionOnOpen:
+            if self.pa.isInvHammer(bc, bar) == invHammer:
+               self.closePosition(bar, bc, bid, ask, 1)
+               self.openPosition(self.buy, bar, bc, bid, ask)
+               self.inInvHammerPosition += 1
+               self.inHammerPosition = 0
+               
+#            elif self.pa.isInvHammer(bc, bar) == lowerHammer:
+#               self.closePosition(bar, bc, bid, ask, 1)
+#               self.inHammerPosition = 0
+#               
+#            elif self.pa.isInvHammer(bc, bar) == invReversal:
+#               self.closePosition(bar, bc, bid, ask, 1)
+#               #self.openPosition(self.buy, bar, bc, bid, ask)
+#               #self.inInvHammerPosition += 1
+#               self.inHammerPosition = 0
+#               #self.afterInvHammerBar = bar
+
+      # Get out if really not an invHammer
+      elif self.inInvHammerPosition:
+         if actionOnClose:
+            if bar == self.afterInvHammerBar:
+               if self.pa.isBarAfterInvHammerLower(bc, bar, bar -1):
+                  self.closePosition(bar, bc, bid, ask, 1)
+                  self.inInvHammerPosition = 0
+                              
+         # Close out of InvHammer. Open Hammer if at session lo
+         elif actionOnOpen:
+            if self.pa.isHammer(bc, bar) == hammer:
+               self.closePosition(bar, bc, bid, ask, 1)
+               #self.openPosition(self.sell, bar, bc, bid, ask)
+               #self.inHammerPosition += 1
+               #self.afterHammerBar = bar
+               self.inInvHammerPosition = 0
+               
+#            elif self.pa.isHammer(bc, bar) == lowerHammer:
+#               self.closePosition(bar, bc, bid, ask, 1)
+#               self.inInvHammerPosition = 0
+#               
+#            elif self.pa.isHammer(bc, bar) == reversal:
+#               self.closePosition(bar, bc, bid, ask, 1)
+#               self.inInvHammerPosition = 0
+               
+      else:
+         if actionOnOpen:
+            if self.pa.isHammer(bc, bar):
+               action = 2
+               self.lg.debug("Hammer detected! setting action " + str(action))
+               #self.setWaitForNextBar()
+               self.inHammerPosition += 1
+               self.afterHammerBar = bar
+            
+            elif self.pa.isInvHammer(bc, bar):
+               action = 1
+               self.lg.debug("invHammer detected! setting action " + str(action))
+               self.inInvHammerPosition += 1
+               self.afterInvHammerBar = bar
+            else:
+               self.inInvHammerPosition = self.inHammerPosition = 0
+               self.afterHammerBar = self.afterInvHammerBar = 0
+               
       return action
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1502,27 +1574,27 @@ class Algorithm():
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setSessionData(self, bc, bar):
    
-      hi, hiBar = self.bc.getSessionHi(bc, bar)
-      lo, loBar = self.bc.getSessionLo(bc, bar)
+      hi, hiBar = self.bc.getSessionHiAndBar(bc, bar)
+      lo, loBar = self.bc.getSessionLoAndBar(bc, bar)
 
       sessionTrendValue = self.tr.getSessionTrendValue(hi, hiBar, lo, loBar)
       
       self.tr.setSessionTrend(sessionTrendValue)
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setActionOnNewBar(self):
+   def setActionOnOpenBar(self):
    
-      self.doOnNewBar += 1
+      self.doOnOpenBar += 1
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def unsetActionOnNewBar(self):
+   def unsetActionOnOpenBar(self):
    
-      self.doOnNewBar = 0
+      self.doOnOpenBar = 0
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def doActionOnNewBar(self):
+   def doActionOnOpenBar(self):
    
-      return self.doOnNewBar
+      return self.doOnOpenBar
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setActionOnCloseBar(self):
@@ -1667,13 +1739,13 @@ class Algorithm():
       if not self.doQuickProfit:
          return
          
-      self.lg.debug ("profit pct trigger: " + str(self.profitPctTrigger))
+      self.lg.debug ("profit pct trigger: " + str(self.quickProfitPctTrigger))
 
       profitAmt = 0.0
       if self.positionType == self.buy: 
-         profitAmt = bid * self.profitPctTrigger
+         profitAmt = bid * self.quickProfitPctTrigger
       else:
-         profitAmt = ask * self.profitPctTrigger
+         profitAmt = ask * self.quickProfitPctTrigger
       
       if useBars > 0:
          profitAmt = self.bc.getAvgBarLen()
@@ -1875,9 +1947,9 @@ class Algorithm():
       return self.waitForNextBar
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getProfitPctTriggerAmt(self):
+   def getQuickProfitPctTriggerAmt(self):
    
-      return self.profitPctTriggerAmt
+      return self.quickProfitPctTriggerAmt
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getCurrentBar(self):

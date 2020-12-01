@@ -7,10 +7,9 @@ import os.path
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Price:
-   def __init__(self, cn, usePricesFromFile=0, offLine=0):
+   def __init__(self, cn, offLine=0):
    
       self.cn = cn
-      self.upff = usePricesFromFile
       self.offLine = offLine
       
       self.priceArr = []
@@ -97,7 +96,7 @@ class Price:
       return self.priceArr[idx][self.bid]
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def skipFirstBar(self, numPrices, timeBar):
+   def findStartPriceIdx(self, numPrices, timeBar):
 
       i = 0
       while i < numPrices:
@@ -304,19 +303,17 @@ class Price:
       # Get price from file, randomly or live
       if self.offLine:      
          
-         # From file
-         if self.upff:
-            print ("self.priceIdx " + str(self.priceIdx)	)
-            print ("self.priceArr[self.priceIdx] " + str(self.priceArr[self.priceIdx]))
-                              
-            ask = self.priceArr[self.priceIdx][self.ask]
-            bid = self.priceArr[self.priceIdx][self.bid]
-            last = self.priceArr[self.priceIdx][self.last]
-            vl = self.priceArr[self.priceIdx][self.vl]
-            self.priceIdx += 1
-            
-            if self.priceIdx >= self.numLines - 10:
-               last = self.getLastToken()
+         print ("self.priceIdx " + str(self.priceIdx)	)
+         print ("self.priceArr[self.priceIdx] " + str(self.priceArr[self.priceIdx]))
+                           
+         ask = self.priceArr[self.priceIdx][self.ask]
+         bid = self.priceArr[self.priceIdx][self.bid]
+         last = self.priceArr[self.priceIdx][self.last]
+         vl = self.priceArr[self.priceIdx][self.vl]
+         self.priceIdx += 1
+         
+         if self.priceIdx >= self.numLines - 10:
+            last = self.getLastToken()
       # Live      
       else:
          last = self.cn.getLastTrade()

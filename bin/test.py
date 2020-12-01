@@ -63,6 +63,9 @@ doHiLodoIT = [1]
 doHiLodoAVdoIT = [1]
 doHiLodoITdoQP = [1]
 doHiLodoITdoQPdoAL = [1]
+doHiLodoITdoQPdoHM = [1]
+doHammer = [1]
+doHMdoITdoQP = [1]
 doHiLodoAVdoTR = [1]
 doHiLoSeqdoHiLoDoAL = [1]
 doHiLoSeqdoHiLoDoALDoAV = [1]
@@ -263,11 +266,28 @@ def setAlgoValues(algo, value, info):
       d["profileTradeData"]["doHiLo"] = str(1)
       info += "HL "
 
+   if algo == "doHammer":
+      d["profileTradeData"]["doPatterns"] = str(1)
+      info += "HM "
+
+   if algo == "doHMdoITdoQP":
+      d["profileTradeData"]["doPatterns"] = str(1)
+      d["profileTradeData"]["doInPosTracking"] = str(1)
+      d["profileTradeData"]["doVolumeLastBar"] = str(1)
+      info += "HM IT VL "
+
    if algo == "doHiLodoITdoQP":
       d["profileTradeData"]["doHiLo"] = str(1)
       d["profileTradeData"]["doInPosTracking"] = str(1)
       d["profileTradeData"]["doQuickProfit"] = str(1)
       info += "HL IT QP "
+      
+   if algo == "doHiLodoITdoQPdoHM":
+      d["profileTradeData"]["doHiLo"] = str(1)
+      d["profileTradeData"]["doInPosTracking"] = str(1)
+      d["profileTradeData"]["doQuickProfit"] = str(1)
+      d["profileTradeData"]["doPatterns"] = str(1)
+      info += "HL IT QP HM "
 
    if algo == "doHiLodoITdoQPdoAL":
       d["profileTradeData"]["doHiLo"] = str(1)
@@ -942,6 +962,12 @@ if algo:
       testAlgos['doHiLodoITdoQP'] = doHiLodoITdoQP
    elif algo == "doHiLodoITdoQPdoAL":
       testAlgos['doHiLodoITdoQPdoAL'] = doHiLodoITdoQPdoAL
+   elif algo == "doHammer":
+      testAlgos['doHammer'] = doHammer
+   elif algo == "doHMdoITdoQP":
+      testAlgos['doHMdoITdoQP'] = doHMdoITdoQP
+   elif algo == "doHiLodoITdoQPdoHM":
+      testAlgos['doHiLodoITdoQPdoHM'] = doHiLodoITdoQPdoHM
             
       
 else: # Default
@@ -1025,7 +1051,7 @@ dirty = 0
 infoTime = ""
 highestGain = 0.0
 
-timeBar = [5]
+#timeBar = [5]
 
 for minBar in timeBar:
 
