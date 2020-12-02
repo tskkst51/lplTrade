@@ -313,7 +313,7 @@ class Barchart:
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isSessionLo(self, bc, bar):
-      
+
       if bc[bar][self.sL] == 1:
          return 1
       

@@ -53,7 +53,9 @@ class Algorithm():
       self.doAverageVolume = int(data['profileTradeData']['doAverageVolume'])
       self.doVolumeLastBar = int(data['profileTradeData']['doVolumeLastBar'])
       self.doPriceMovement = int(data['profileTradeData']['doPriceMovement'])
-      
+      self.doAllPatterns = int(data['profileTradeData']['doAllPatterns'])
+      self.doHammers = int(data['profileTradeData']['doHammers'])
+
       self.aggressiveOpen = int(data['profileTradeData']['aggressiveOpen'])
       self.aggressiveClose = int(data['profileTradeData']['aggressiveClose'])
       self.agrBuyHiOpen = int(data['profileTradeData']['agrBuyHiOpen'])
@@ -382,7 +384,7 @@ class Algorithm():
             # Don't get caught opening a position on a skewed price
             
       if self.doPatterns:
-         action = self.algorithmPatterns(barChart, bar, bid, ask, action)
+         action = self.algorithmPatterns(barChart, bar, action)
      
       if action  > 0:
          print ("Action being taken!! " + str(action))
@@ -1065,7 +1067,7 @@ class Algorithm():
       return 0
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def algorithmPatterns(self, bc, bar, bid, ask, action=0):
+   def algorithmPatterns(self, bc, bar, action=0):
    
       # First should be the hammer. In sell position if hammer found close out
       # regardless of number of decision bars
@@ -1082,23 +1084,66 @@ class Algorithm():
       #if not action:
       #   return action
          
-      self.lg.debug("bar in pattern " + str(bar))
-      
-
       actionOnOpen = self.doActionOnOpenBar()
       actionOnClose = self.doActionOnCloseBar()
       
-      self.lg.debug("actionOnOpen " + str(actionOnOpen))
-      self.lg.debug("actionOnClose " + str(actionOnClose))
-
       if not actionOnOpen and not actionOnClose:
          return action
       
-      endOfBarAfterHammer = beginOfBarAfterHammer = 0
-      hammer = invHammer = 1
-      lowerHammer = higherInvHammer = 2
-      invReversal = reversal = 3
-            
+      self.lg.debug("actionOnOpen " + str(actionOnOpen))
+      self.lg.debug("actionOnClose " + str(actionOnClose))
+      self.lg.debug("bar in pattern " + str(bar))
+
+      if self.doHammers or self.doAllPatterns:
+         #action = self.algorithmHammers(bc, bar, actionOnOpen, actionOnClose, action)
+         action = self.algorithmReversals(bc, bar, actionOnOpen, actionOnClose, action)
+
+      return action
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def algorithmReversals(self, bc, bar, actionOnOpen, actionOnClose, action=0):
+
+      if not actionOnClose:
+         return 0
+         
+      if self.pa.isHiReversal(bc, bar):
+         return 1
+         
+      if self.pa.isLoReversal(bc, bar):
+         return 2
+
+      return action
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def algorithmEncompassing(self, bc, bar, action=0):
+
+      if self.pa.isHiEncompassing(bc, bar, action):
+         return 1
+         
+      if self.pa.isLoEncompassing(bc, bar, action):
+         return 1
+
+      return 0
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def algorithmHammers(self, bc, bar, actionOnOpen, actionOnClose, action=0):
+
+      hammer = invHammer = hiReversal = loReversal = hiEncompassing = loEncompassing = 0
+      barAfterHammerHigher = barAfterHammerLower = invHammerInner = 0
+      
+      if self.pa.isHammer(bc, bar):
+         hammer = 1
+         self.lg.debug("hammer " + str(hammer))
+         
+      if self.pa.isInvHammer(bc, bar):
+         invHammer = 1
+         
+      if self.pa.isHammerInner(bc, bar):
+         hammerInner = 1
+         
+      if self.pa.isInvHammerInner(bc, bar):
+         invHammerInner = 1
+                     
       # Logic: Take position if hammer or invHammer on open of next bar
       # hammer = session hi; invHammer = sessionlo
       # Get out of position on hammer not at session hi or lo
@@ -1107,60 +1152,41 @@ class Algorithm():
       if self.inHammerPosition:
          if actionOnClose:
             if bar == self.afterHammerBar:
-               if self.pa.isBarAfterHammerHigher(bc, bar, bar - 1):
+               if self.pa.isPreviousBarLower(bc, bar - 1, bar):
                   self.closePosition(bar, bc, bid, ask, 1)
                   self.inHammerPosition = 0
                
          # Close out of Hammer. Open invHammer if at session hi
          elif actionOnOpen:
-            if self.pa.isInvHammer(bc, bar) == invHammer:
+            if invHammer:
                self.closePosition(bar, bc, bid, ask, 1)
                self.openPosition(self.buy, bar, bc, bid, ask)
                self.inInvHammerPosition += 1
                self.inHammerPosition = 0
                
-#            elif self.pa.isInvHammer(bc, bar) == lowerHammer:
-#               self.closePosition(bar, bc, bid, ask, 1)
-#               self.inHammerPosition = 0
-#               
-#            elif self.pa.isInvHammer(bc, bar) == invReversal:
-#               self.closePosition(bar, bc, bid, ask, 1)
-#               #self.openPosition(self.buy, bar, bc, bid, ask)
-#               #self.inInvHammerPosition += 1
-#               self.inHammerPosition = 0
-#               #self.afterInvHammerBar = bar
-
       # Get out if really not an invHammer
       elif self.inInvHammerPosition:
          if actionOnClose:
             if bar == self.afterInvHammerBar:
-               if self.pa.isBarAfterInvHammerLower(bc, bar, bar -1):
+               if self.pa.isPreviousBarHigher(bc, bar - 1, bar):
                   self.closePosition(bar, bc, bid, ask, 1)
                   self.inInvHammerPosition = 0
                               
          # Close out of InvHammer. Open Hammer if at session lo
          elif actionOnOpen:
-            if self.pa.isHammer(bc, bar) == hammer:
+            if hammer:
                self.closePosition(bar, bc, bid, ask, 1)
-               #self.openPosition(self.sell, bar, bc, bid, ask)
-               #self.inHammerPosition += 1
-               #self.afterHammerBar = bar
+               self.openPosition(self.sell, bar, bc, bid, ask)
+               self.inHammerPosition += 1
+               self.afterHammerBar = bar
                self.inInvHammerPosition = 0
-               
-#            elif self.pa.isHammer(bc, bar) == lowerHammer:
-#               self.closePosition(bar, bc, bid, ask, 1)
-#               self.inInvHammerPosition = 0
-#               
-#            elif self.pa.isHammer(bc, bar) == reversal:
-#               self.closePosition(bar, bc, bid, ask, 1)
-#               self.inInvHammerPosition = 0
                
       else:
          if actionOnOpen:
-            if self.pa.isHammer(bc, bar):
+            if hammer:
+            #if self.pa.isHammer(bc, bar):
                action = 2
                self.lg.debug("Hammer detected! setting action " + str(action))
-               #self.setWaitForNextBar()
                self.inHammerPosition += 1
                self.afterHammerBar = bar
             
@@ -1174,7 +1200,7 @@ class Algorithm():
                self.afterHammerBar = self.afterInvHammerBar = 0
                
       return action
-      
+
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmPosTracking(self, last, action=0):
    

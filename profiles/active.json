@@ -23,6 +23,8 @@
     "doDefault": "0",
     "doInPosTracking": "0",
     "doPatterns": "0",
+    "doAllPatterns": "0",
+    "doHammers": "0",
     "doTrends": "0",
     "doSessions": "0",
     "doOnlyTrends": "0",
@@ -87,6 +89,6 @@
     "sellNearHi": "0",
     "exitThreshHold": "2",
     "waitForBestPrice": "0",
-    "doTrendsdoPatterndoRT": "1"
+    "doTrendsdoPatterndoRT": "0"
   }
 }

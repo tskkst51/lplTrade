@@ -21,105 +21,79 @@ class Pattern:
       self.dt = 8
 
       self.reversalPctTrigger = float(data['profileTradeData']['reversalPctTrigger'])
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getSessionBar(self, bc, bar):
+
+      # return bar's session hi and lo
+      return self.ba.isSessionLo(bc, bar), self.ba.isSessionHi(bc, bar)
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isBarBeforeHammer(self, bc, candidateBar, hammerBar):
-                     
-      print ("hammer Candidate hi and bar " + str(self.ba.getSessionHiAndBar(bc, candidateBar)))
-      print ("hammer bar " + str(self.ba.getSessionHiAndBar(bc, hammerBar)))
-
-      print ("isSessionHi Candidate " + str(self.ba.isSessionHi(bc, candidateBar)))      
-      print ("isSessionHi hammer " + str(self.ba.isSessionHi(bc, hammerBar)))
-      print ("isSessionLo hammer " + str(self.ba.isSessionLo(bc, hammerBar)))
-      
-      sessionHi = 1
-      notSessionLo = 0
-      
-      candidateSessionHi = self.ba.isSessionHi(bc, candidateBar)
-      candidateSessionLo = self.ba.isSessionLo(bc, candidateBar)
-      hammerSessionHi = self.ba.isSessionHi(bc, hammerBar)
-      hammerSessionLo = self.ba.isSessionLo(bc, hammerBar)
-      
-      if hammerSessionHi == sessionHi and \
-         hammerSessionLo == 0 and \
-         bc[candidateBar][self.hi] < bc[hammerBar][self.hi] and \
-         bc[candidateBar][self.lo] < bc[hammerBar][self.lo]:
-         return 1
-     
-#      if hammerSessionHi == sessionHi and hammerSessionLo == notSessionLo:
-#         if hammerSessionHi == sessionHi and candidateSessionHi == sessionHi:
-#            return 1
-      
-      if bc[candidateBar][self.hi] < bc[hammerBar][self.hi] and \
-         bc[candidateBar][self.lo] < bc[hammerBar][self.lo]:
-         return 2
-      
-      if bc[hammerBar][self.hi] < bc[candidateBar][self.hi] and \
-         bc[hammerBar][self.lo] < bc[candidateBar][self.lo] and \
-         bc[hammerBar][self.cl] < bc[candidateBar][self.cl]:
-         return 3
-
-      return 0
-      
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isBarBeforeInvHammer(self, bc, candidateBar, invHammerBar):
+   def isPreviousBarHigher(self, bc, prevBar, bar):
                
-      print ("candidateSessionLo " + str(self.ba.getSessionLoAndBar(bc, candidateBar)))
-      print ("invHammerSessionLo " + str(self.ba.getSessionLoAndBar(bc, invHammerBar)))
-
-      print ("isSessionLo Candidate bar " + str(self.ba.isSessionLo(bc, candidateBar)))
-      print ("isSessionLo invHammer bar " + str(self.ba.isSessionLo(bc, invHammerBar)))
-      print ("isSessionHi invHammer bar " + str(self.ba.isSessionHi(bc, invHammerBar)))
-
-      sessionLo = sessionHi = 1
-      notSessionHi = notSessionLo = 0
-
-      candidateSessionLo = self.ba.isSessionLo(bc, candidateBar)
-      candidateSessionHi = self.ba.isSessionHi(bc, candidateBar)
-      invHammerSessionLo = self.ba.isSessionLo(bc, invHammerBar)
-      invHammerSessionHi = self.ba.isSessionHi(bc, invHammerBar)
-      
-      # Inverted hammer at the low
-      if invHammerSessionLo == sessionLo and \
-         invHammerSessionHi == 0 and \
-         bc[candidateBar][self.hi] > bc[invHammerBar][self.hi] and \
-         bc[candidateBar][self.lo] > bc[invHammerBar][self.lo]:
+      if bc[prevBar][self.hi] > bc[bar][self.hi] and \
+         bc[prevBar][self.lo] > bc[bar][self.lo]:
          return 1
-         
-#      if invHammerSessionLo == sessionLo and invHammerSessionHi == notSessionHi:
-#         if invHammerSessionLo == sessionLo and candidateSessionLo == sessionLo: 
-#            return 1
-
-      # Inverted hammer between session lo and hi
-      if bc[candidateBar][self.hi] > bc[invHammerBar][self.hi] and \
-         bc[candidateBar][self.lo] > bc[invHammerBar][self.lo]:
-         return 2
-      
-      # Reversal bar
-      if bc[invHammerBar][self.hi] > bc[candidateBar][self.hi] and \
-         bc[invHammerBar][self.lo] > bc[candidateBar][self.lo] and \
-         bc[invHammerBar][self.cl] > bc[candidateBar][self.cl]:
-         return 3
-                  
+                        
       return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isBarAfterInvHammerLower(self, bc, barAfterInvHammer, invHammerBar):
-      
-      if bc[barAfterInvHammer][self.lo] < bc[invHammerBar][self.lo] and \
-         bc[barAfterInvHammer][self.hi] < bc[invHammerBar][self.hi]:
-         print ("isBarAfterInvHammerLower 1 ")
+   def isPreviousBarOpenLower(self, bc, prevBar, bar):
+               
+      if bc[prevBar][self.op] < bc[bar][self.op]:
          return 1
-         
+                        
       return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isBarAfterHammerHigher(self, bc, barAfterHammer, hammerBar):
-      
-      if bc[barAfterHammer][self.hi] > bc[hammerBar][self.hi]:
-         print ("isBarAfterHammerHigher 1 ")
-         return 1
-         
+   def isPreviousBarCloseHigher(self, bc, prevBar, bar):
+               
+      if bc[prevBar][self.cl] > bc[bar][self.cl]:
+            return 1
+                        
+      return 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isPreviousBarLower(self, bc, prevBar, bar):
+               
+      if bc[prevBar][self.hi] < bc[bar][self.hi] and \
+         bc[prevBar][self.lo] < bc[bar][self.lo]:
+            return 1
+                        
+      return 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isPreviousBarOpenHigher(self, bc, prevBar, bar):
+               
+      if bc[prevBar][self.op] > bc[bar][self.op]:
+            return 1
+                        
+      return 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isPreviousBarCloseLower(self, bc, prevBar, bar):
+               
+      if bc[prevBar][self.cl] < bc[bar][self.cl]:
+            return 1
+                        
+      return 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isPreviousBarOpenCloseLower(self, bc, prevBar, bar):
+               
+      if bc[prevBar][self.op] < bc[bar][self.op] and \
+         bc[prevBar][self.cl] < bc[bar][self.cl]:
+            return 1
+                        
+      return 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isPreviousBarOpenCloseHigher(self, bc, prevBar, bar):
+               
+      if bc[prevBar][self.op] > bc[bar][self.op] and \
+         bc[prevBar][self.cl] > bc[bar][self.cl]:
+            return 1
+                        
       return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -252,42 +226,30 @@ class Pattern:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isHammer(self, bc, bar):
 
+      #  b-2 b-1 bar
       #       |
       #       |
       #    | _|_ |
       #    |  |  |
       #    |     |
       #       
-      
-      hammerCandidateBar = bar - 2
-      hammerBar = bar - 1
-      
-      beginningOfBarAfterHammer = 1
-      endOfBarAfterHammer = 2
-      
-      hammer = 1
-      higherHammer = 2
-      reversal = 3
+                        
+      prevSessionBarLo, prevSessionBarHi = self.getSessionBar(bc, bar - 2)
 
-      print ("isHammer: current bar: " + str(bar))
-      print ("isHammer: hammerBar: " + str(hammerBar))
-      print ("isHammer: hammerCandidateBar: " + str(hammerCandidateBar))
-      
-      if self.isBarHammer(bc, hammerBar):
-         barType = self.isBarBeforeHammer(bc, hammerCandidateBar, hammerBar)
-         if barType == hammer:
-            return hammer
-            
-#         elif barType == higherHammer:
-#            return higherHammer
-#         elif barType == reversal:
-#            return reversal
+      if self.isBarHammer(bc, bar - 1):
+         if self.isPreviousBarLower(bc, bar - 2, bar - 1):
+            print ("isPreviousBarLower: " + str(self.isPreviousBarLower(bc, bar - 2, bar - 1)))
+            if prevSessionBarHi and not prevSessionBarLo:
+               print ("prevSessionBarHi: " + str(prevSessionBarHi))
+               print ("prevSessionBarLo: " + str(prevSessionBarLo))
+               return 1
 
       return 0
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isInvHammer(self, bc, bar):
 
+      #  b-2 b-1 bar
       #    |     |   
       #    |  |  |
       #    | _|_ |
@@ -295,32 +257,98 @@ class Pattern:
       #       |  
       #       |
 
-      invHammerCandidateBar = bar - 2
-      invHammerBar = bar - 1
-      
-      barType = 0
-      invHammer = 1
-      higherInvHammer = 2
-      reversal = 3
+      prevSessionBarLo, prevSessionBarHi = self.getSessionBar(bc, bar - 2)
 
-      print ("isInvHammer: current bar: " + str(bar))
-      print ("isInvHammer: invHammerBar: " + str(invHammerBar))
-      print ("isInvHammer: invHammerCandidateBar: " + str(invHammerCandidateBar))
-      
-      if self.isBarInvHammer(bc, invHammerBar):
-         barType = self.isBarBeforeInvHammer(bc, invHammerCandidateBar, invHammerBar)
-         if barType == invHammer:
-            return invHammer
-            
-#         elif barType == higherInvHammer:
-#            return higherInvHammer
-#         elif barType == reversal:
-#            return reversal
+      if self.isBarInvHammer(bc, bar - 1):
+         if self.isPreviousBarHigher(bc, bar - 2, bar - 1):
+            if prevSessionBarLo and not prevSessionBarHi:
+               return 1
                
       return 0
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isEncompassing(self, bc, bar):
+   def isHammerInner(self, bc, bar):
+
+      # |
+      #       |
+      #       |
+      #    | _|_ |
+      #    |  |  |
+      #    |     |
+      #       
+      #             |
+      
+      prevSessionBarLo, prevSessionBarHi = self.getSessionBar(bc, bar - 2)
+
+      if self.isBarHammer(bc, bar - 1):
+         if self.isPreviousBarLower(bc, bar - 2, bar - 1):
+            if not prevSessionBarHi:
+               return 1
+               
+      return 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isInvHammerInner(self, bc, bar):
+
+      # Inv Hammer in between session hi's and lo's
+      # |
+      #    |     |   
+      #    |  |  |
+      #    | _|_ |
+      #       |  
+      #       |  
+      #       |
+      #            |
+            
+      prevSessionBarLo, prevSessionBarHi = self.getSessionBar(bc, bar - 2)
+      
+      if self.isBarInvHammer(bc, bar - 1):
+         if self.isPreviousBarHigher(bc, bar - 2, bar - 1):
+            if not prevSessionBarLo:
+               return 1
+            
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isHiReversal(self, bc, bar):
+      
+      # reversal bar + must be done on the close
+      # |
+      # |
+      # |     |_
+      #   _|  |
+      #    | _|
+      #    |_ 
+
+      prevSessionBarLo, prevSessionBarHi = self.getSessionBar(bc, bar - 2)
+
+      if self.isPreviousBarLower(bc, bar - 1, bar):
+         if self.isPreviousBarOpenLower(bc, bar - 1, bar):
+            if self.isPreviousBarCloseLower(bc, bar - 1, bar):
+               if self.isPreviousBarHigher(bc, bar - 2, bar - 1):
+                  #if not prevSessionBarHi:
+                  return 1
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isLoReversal(self, bc, bar):
+      
+      # reversal bar -
+      #    |_  
+      #    | _|
+      # | _|  |
+      # |  |  |_
+      # |     |
+      # |
+
+      prevSessionBarLo, prevSessionBarHi = self.getSessionBar(bc, bar - 2)
+
+      if self.isPreviousBarHigher(bc, bar - 1, bar):
+         if self.isPreviousBarOpenLower(bc, bar - 1, bar):
+            if self.isPreviousBarCloseHigher(bc, bar - 1, bar):
+               if self.isPreviousBarLower(bc, bar - 2, bar - 1):
+                  #if not prevSessionBarLo:
+                  return 1
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isHiEncompassing(self, bc, bar):
    
       # encompassing bar +
       #       |
@@ -328,7 +356,12 @@ class Pattern:
       #    |  |
       #    | _|
       #       |
-      #
+      
+      pass
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isLoEncompassing(self, bc, bar):
+   
       # encompassing bar -
       #       |
       #    | _|
@@ -336,19 +369,18 @@ class Pattern:
       #    |  |_
       #       |
       
-      return 0
+      pass
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    # Find the hi's/lows throughout the day to help with buy/sell decisions
    # A high would be a low bar followed by a high then followed by a low
    def FindHiPoints(self, bc, i):
             
-      return 0
+      pass
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def FindLoPoints(self, bc, i):
             
-      return 0
-            
+      pass              
             
 # end Pattern
