@@ -50,7 +50,7 @@ for testPath in $testPaths; do
          head -6 $template > ${f}/${t}
          printf "%s%s" "    " $stocksLine >> ${f}/${t}
          echo >> ${f}/${t}
-         tail -86 $template >> ${f}/${t}
+         tail -88 $template >> ${f}/${t}
          cat ${f}/${t}
          cat ${f}/${t} >> /tmp/results
       done   

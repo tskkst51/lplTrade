@@ -491,7 +491,7 @@ while True:
       # Save off the prices so they can be later used in offLine mode
       if not offLine:
          # Write prices and barcharts for 1-5 min charts
-         pr.write(pricesPath, ask, bid, last, vol, barCtr, write1_5MinData)
+         pr.write(pricesPath, ask, bid, last, vol, barCtr)
          
       # Beginning of next bar. 2nd clause is for offline mode
       if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isNextBar(timeBar):      

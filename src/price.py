@@ -14,6 +14,7 @@ class Price:
       
       self.priceArr = []
       self.idxArr = [0]
+      self.priceChangeArr = []
       self.nextBar = 0
       self.priceIdx = 0
       
@@ -225,11 +226,11 @@ class Price:
       idx += 1
       
       while idx < curIdx:
-         priceChange = round(previousPrice - self.priceArr[idx][self.last], 2)
-         previousPrice = round(self.priceArr[idx][self.last], 2)
+         priceChange = previousPrice - self.priceArr[idx][self.last]
+         previousPrice = self.priceArr[idx][self.last]
          if priceChange < 0:
             priceChange = priceChange*-1
-         totalChange = round(totalChange + priceChange, 2)
+         totalChange = totalChange + priceChange
          numPrices += 1
          idx += 1
             
@@ -268,6 +269,65 @@ class Price:
       print ("total Bid Change / numPrices " + str(totalChange / numPrices))
       
       return round(totalChange / numPrices, 2)
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setPriceChangeArr(self, bar):
+   
+      previousPrice = totalChange = 0.0
+      numPrices = 1
+      priceIdx = bar - 1
+      
+      if bar == 1:
+         idx = 0
+      else:
+         idx = self.getStartPriceIdx()
+         
+      curIdx = self.getCurrentPriceIdx()
+            
+      previousPrice = self.priceArr[idx][1]
+      idx += 1
+      
+      print ("idx " + str(idx))
+      print ("curIdx " + str(curIdx))
+      print ("previousPrice " + str(previousPrice))      
+      
+      self.priceChangeArr.append([])
+      
+      while idx < curIdx:
+         # Add up the orices fill array
+         
+         priceChange = previousPrice - self.priceArr[idx][self.last]
+         previousPrice = self.priceArr[idx][0]
+         if priceChange < 0:
+            priceChange = priceChange*-1
+         totalChange = totalChange + priceChange
+         numPrices += 1
+         idx += 1
+         
+      print ("total Bid Change / numPrices " + str(totalChange / numPrices))
+      
+      self.priceChangeArr[priceIdx] = round(totalChange / numPrices, 2)
+
+      print ("self.priceChangeArr[priceIdx] " + str(self.priceChangeArr[priceIdx]))
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getAverageLastChangeArr(self, bar):
+   
+      if bar < 1:
+         return 0
+      
+      idx = 0
+      totalChange = 0.0
+         
+      print ("barr " + str(bar))
+      
+      while idx < bar:
+         totalChange += self.priceChangeArr[idx]
+         idx += 1
+      
+      print ("totalChange / idx " + str(totalChange / idx))
+      
+      return round(totalChange / idx, 2)
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getNextPriceArr(self, serviceValues):
@@ -428,15 +488,15 @@ class Price:
       self.path5m = path.replace("active", "active5m")
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def write(self, path, ask, bid, last, vl, bar, doAllMinutes):
+   def write(self, path, ask, bid, last, vl, bar):
 
       with open(path, "a+", encoding="utf-8") as priceFile:
          priceFile.write ('%s' % str(ask) + "," + str(bid) + ","  + str(last) + "," + str(vl) + "," + str(bar) + "\n")
          
-      if doAllMinutes:
-         self.write2m(ask, bid, bar)
-         self.write3m(ask, bid, bar)
-         self.write4m(ask, bid, bar)
-         self.write5m(ask, bid, bar)
+#      if doAllMinutes:
+#         self.write2m(ask, bid, bar)
+#         self.write3m(ask, bid, bar)
+#         self.write4m(ask, bid, bar)
+#         self.write5m(ask, bid, bar)
                      
 # end price

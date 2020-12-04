@@ -65,6 +65,8 @@ doHiLodoITdoQP = [1]
 doHiLodoITdoQPdoAL = [1]
 doHiLodoITdoQPdoHM = [1]
 doHammer = [1]
+doHHdoRVdoQPdoIT = [1]
+doHHdoRVdoQP = [1]
 doHMdoITdoQP = [1]
 doHiLodoAVdoTR = [1]
 doHiLoSeqdoHiLoDoAL = [1]
@@ -205,6 +207,8 @@ def setAlgoValues(algo, value, info):
    d["profileTradeData"]["aggressiveClose"] = str(0)
    d["profileTradeData"]["aggressiveOpen"] = str(0)
    d["profileTradeData"]["doPatterns"] = str(0)
+   d["profileTradeData"]["doHammers"] = str(0)
+   d["profileTradeData"]["doReversals"] = str(0)
    d["profileTradeData"]["doPriceMovement"] = str(0)
    d["profileTradeData"]["doExecuteOnOpen"] = str(0)
    d["profileTradeData"]["doInPosTracking"] = str(0)
@@ -269,6 +273,21 @@ def setAlgoValues(algo, value, info):
    if algo == "doHammer":
       d["profileTradeData"]["doPatterns"] = str(1)
       info += "HM "
+
+   if algo == "doHHdoRVdoQPdoIT":
+      d["profileTradeData"]["doPatterns"] = str(1)
+      d["profileTradeData"]["doInPosTracking"] = str(1)
+      d["profileTradeData"]["doQuickProfit"] = str(1)
+      d["profileTradeData"]["doHammers"] = str(1)
+      d["profileTradeData"]["doReversals"] = str(1)
+      info += "HM RV QP IT "
+
+   if algo == "doHHdoRVdoQP":
+      d["profileTradeData"]["doPatterns"] = str(1)
+      d["profileTradeData"]["doQuickProfit"] = str(1)
+      d["profileTradeData"]["doHammers"] = str(1)
+      d["profileTradeData"]["doReversals"] = str(1)
+      info += "HM RV QP "
 
    if algo == "doHMdoITdoQP":
       d["profileTradeData"]["doPatterns"] = str(1)
@@ -968,6 +987,10 @@ if algo:
       testAlgos['doHMdoITdoQP'] = doHMdoITdoQP
    elif algo == "doHiLodoITdoQPdoHM":
       testAlgos['doHiLodoITdoQPdoHM'] = doHiLodoITdoQPdoHM
+   elif algo == "doHHdoRVdoQPdoIT":
+      testAlgos['doHHdoRVdoQPdoIT'] = doHHdoRVdoQPdoIT
+   elif algo == "doHHdoRVdoQP":
+      testAlgos['doHHdoRVdoQP'] = doHHdoRVdoQP
             
       
 else: # Default
@@ -1060,7 +1083,7 @@ for minBar in timeBar:
    for algo, values in testAlgos.items():
 
       readProfile(tdp)
-      
+         
       for value in values:
          for bars in openBuyBars:
 #            # Reduce the iterations for range trading

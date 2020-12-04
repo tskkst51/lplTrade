@@ -7,7 +7,6 @@ class Pattern:
    def __init__(self, data, ba):
    
       self.ba = ba
-      self.data = data
       self.pattern = 0
       self.hammer = 1
       self.invHammer = 2
@@ -142,11 +141,6 @@ class Pattern:
       print ("opCl: " + str(opCl))
       print ("opLo: " + str(opLo))
       print ("opHi: " + str(opHi))
-
-      #if hiCl < loCl and hiCl != 0:
-#      if hiCl - loCl > 0:
-#         if hiCl > opCl:
-         #if opLo - opCl > 0:
          
       if hi > op:
          if lo < op:
@@ -322,9 +316,13 @@ class Pattern:
       prevSessionBarLo, prevSessionBarHi = self.getSessionBar(bc, bar - 2)
 
       if self.isPreviousBarLower(bc, bar - 1, bar):
+         print ("isPreviousBarLower " + str(self.isPreviousBarLower(bc, bar - 1, bar)))
          if self.isPreviousBarOpenLower(bc, bar - 1, bar):
+            print ("isPreviousBarOpenLower " + str(self.isPreviousBarOpenLower(bc, bar - 1, bar)))
             if self.isPreviousBarCloseLower(bc, bar - 1, bar):
+               print ("isPreviousBarCloseLower " + str(self.isPreviousBarCloseLower(bc, bar - 1, bar)))
                if self.isPreviousBarHigher(bc, bar - 2, bar - 1):
+                  print ("is Bar - 2 Higher " + str(self.isPreviousBarHigher(bc, bar - 2, bar - 1)))
                   #if not prevSessionBarHi:
                   return 1
 
@@ -342,9 +340,13 @@ class Pattern:
       prevSessionBarLo, prevSessionBarHi = self.getSessionBar(bc, bar - 2)
 
       if self.isPreviousBarHigher(bc, bar - 1, bar):
+         print ("isPreviousBarHigher " + str(self.isPreviousBarHigher(bc, bar - 1, bar)))
          if self.isPreviousBarOpenLower(bc, bar - 1, bar):
+            print ("isPreviousBarOpenLower " + str(self.isPreviousBarOpenLower(bc, bar - 1, bar)))
             if self.isPreviousBarCloseHigher(bc, bar - 1, bar):
+               print ("isPreviousBarCloseHigher " + str(self.isPreviousBarCloseHigher(bc, bar - 1, bar)))
                if self.isPreviousBarLower(bc, bar - 2, bar - 1):
+                  print ("is Bar - 2 Lower " + str(self.isPreviousBarLower(bc, bar - 2, bar - 1)))
                   #if not prevSessionBarLo:
                   return 1
 
