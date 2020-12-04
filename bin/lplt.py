@@ -246,7 +246,7 @@ elif service == "eTrade":
 
 bc = lpl.Barchart()
 tr = lpl.Trends(d, lg, cn, bc, offLine)
-lm = lpl.Limits(d, lg, cn, bc, offLine)
+lm = lpl.Limits(d, lg, cn, bc, offLine, symbol)
 pa = lpl.Pattern(d, bc)
 pr = lpl.Price(cn, offLine)
 a = lpl.Algorithm(d, lg, cn, bc, tr, lm, pa, pr, offLine, stock)

@@ -7,6 +7,7 @@ class Pattern:
    def __init__(self, data, ba):
    
       self.ba = ba
+      self.data = data
       self.pattern = 0
       self.hammer = 1
       self.invHammer = 2

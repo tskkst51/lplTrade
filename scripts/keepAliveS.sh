@@ -115,9 +115,11 @@ if [[ "$retCode" == "3" ]]; then
    gzip ${dt}.tar || echo Unable to gzip ${dt}.tar
    #mkdir archives || echo Unable to make Archives dir
    mv ${dt}.tar.gz ../lpltArchives || echo Unable to mv archives to archive
+   cd ../lpltArchives
    git add ${dt}.tar.gz
    git commit -am ${dt}.tar.gz
    git push
+   cd $wd
    
    # Execute the tests
    echo Running ${wp}/scripts/test.sh $dt
