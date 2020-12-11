@@ -76,16 +76,14 @@ class Log:
          self.totGain = float(self.priceSet) - float(price)
          if self.totGain > 0 and self.strAction == "sell":
             self.wins += 1
-            self.totalTrades += 1
          elif self.totGain < 0 and self.strAction == "sell":
             self.losses += 1
-            self.totalTrades += 1
          elif self.totGain > 0 and self.strAction == "buy":
             self.losses += 1
-            self.totalTrades += 1
          elif self.totGain < 0 and self.strAction == "buy":
             self.wins += 1
-            self.totalTrades += 1
+         
+         self.totalTrades += 1
             
          if self.strAction == "buy":
             self.totGain = self.totGain*-1

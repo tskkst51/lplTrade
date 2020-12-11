@@ -56,6 +56,7 @@ class Algorithm():
       self.doAllPatterns = int(data['profileTradeData']['doAllPatterns'])
       self.doHammers = int(data['profileTradeData']['doHammers'])
       self.doReversals = int(data['profileTradeData']['doReversals'])
+      self.profitGainedPct = float(data['profileTradeData']['profitGainedPct'])
 
       self.aggressiveOpen = int(data['profileTradeData']['aggressiveOpen'])
       self.aggressiveClose = int(data['profileTradeData']['aggressiveClose'])
@@ -346,11 +347,14 @@ class Algorithm():
             # We took profit exit algo's
             return 0
       
-      if self.doExecuteOnClose:
-         action = self.algorithmOnClose(barChart, bar, action)
+      if self.doAverageVolume or self.doVolumeLastBar:
+         self.algorithmCalculateRunningVolume(vol, bar)
 
       if self.doExecuteOnOpen:
-         action = self.algorithmOnOpen(barChart, bar, action)
+         action = self.algorithmOnOpen(action)
+
+      if self.doExecuteOnClose:
+         action = self.algorithmOnClose(action)
 
 # Do patterns. Stay in position when hi are higher or lows are lower except when 
 # close is higher than open for a sell position or a
@@ -381,7 +385,7 @@ class Algorithm():
          action = self.algorithmReverseBuySell(action)
          
       if self.doAverageVolume:
-         action = self.algorithmAverageVolume(barChart, bar, vol, action)
+         action = self.algorithmAverageVolume(action)
 
       if self.doVolumeLastBar:
          action = self.algorithmVolumeLastBar(barChart, bar, vol, action)
@@ -391,9 +395,9 @@ class Algorithm():
          #if self.algorithmPriceMovement(bar, bid, ask, last, action) == exitAlgo:
             # Don't get caught opening a position on a skewed price
             
-      if self.doPatterns:
+      if self.doPatterns or self.doAllPatterns:
          action = self.algorithmPatterns(barChart, bar, bid, ask, action)
-     
+
       if action  > 0:
          print ("Action being taken!! " + str(action))
      
@@ -470,69 +474,10 @@ class Algorithm():
       return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def algorithmVolumeLastBar(self, barChart, bar, vol, action=0):
+   def algorithmCalculateRunningVolume(self, vol, bar):
          
-      self.lg.debug ("In algorithmAverageLastBar: " + str(action))
-
-      # If no signal then return
-      if not action:
-         return action
-
-      # Use last bar volume to verify signal
-
-      self.barSegment = self.pr.getCurrentPriceIdx() % self.timeBar
+      self.lg.debug ("In algorithmCalculateRunningVloume: ")
       
-      self.lg.debug ("self.barSegment: " + str(self.barSegment))
-      self.lg.debug ("self.pr.getCurrentPriceIdx(): " + str(self.pr.getCurrentPriceIdx()))
-
-      if self.timeBar > 1:
-         if self.barSegment != self.previousBarSegment:
-            self.previousBarSegment = self.barSegment
-            self.runningAvgVolume += self.currentVol
-         else:
-            self.currentVol = self.runningAvgVolume + vol
-      else:
-         self.currentVol = vol
-      
-      # using average volume to get out of a position
-      if not self.inPosition():
-         return action
-      # using average volume to get into a position
-      #if self.inPosition():
-      #   return action
-
-      previousBarVol = int(barChart[bar - 1][self.vl])
-      
-      self.lg.debug ("self.currentVol: " + str(self.currentVol))
-      self.lg.debug ("self.runningAvgVolume: " + str(self.runningAvgVolume))
-      self.lg.debug ("previousBarVol: " + str(previousBarVol))
-         
-      # If volume isn't > previous bar volume, cancel signal
-      #if int(currentVol) > int(previousBarVol):
-      # If volume isn't > average volume, cancel signal
-      
-      if self.runningAvgVolume > previousBarVol:
-         self.lg.debug ("self.runningAvgVolume is > avgVol: " + str(self.runningAvgVolume) + " " + str(previousBarVol))
-         return action
-      elif self.currentVol > previousBarVol:
-         self.lg.debug ("currentVol is > avgVol: " + str(self.currentVol) + " " + str(previousBarVol))
-         return action
-      
-      return 0
-      
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def algorithmAverageVolume(self, barChart, bar, vol, action=0):
-         
-      self.lg.debug ("In algorithmAverageVolume: " + str(action))
-
-      # Use average volume to verify signal
-
-      # Implement volume plus price direction. high volume coming down even though trend is up
-      
-      # If no signal then return
-      if not action:
-         return action
-
       self.barSegment = self.pr.getCurrentPriceIdx() % self.timeBar
       
       self.lg.debug ("self.barSegment: " + str(self.barSegment))
@@ -551,20 +496,71 @@ class Algorithm():
       self.lg.debug ("self.currentVol: " + str(self.currentVol))
       self.lg.debug ("vol: " + str(vol))
 
+      return 
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def algorithmVolumeLastBar(self, barChart, bar, vol, action=0):
+         
+      self.lg.debug ("In algorithmAverageLastBar: " + str(action))
+
+      # If no signal then return
+      if not action:
+         return action
+
+      # Use last bar volume to verify signal
+      
+      # Using average volume last bar to get out of a position
+      if not self.inPosition():
+         return action
+
+      # using average volume last bar to get into a position
+      #if self.inPosition():
+      #   return action
+
+      previousBarVol = int(barChart[bar - 1][self.vl])
+      
+      self.lg.debug ("self.currentVol: " + str(self.currentVol))
+      self.lg.debug ("self.runningAvgVolume: " + str(self.runningAvgVolume))
+      self.lg.debug ("previousBarVol: " + str(previousBarVol))
+         
+      # If volume isn't > previous bar volume, cancel signal
+      
+      if self.runningAvgVolume > previousBarVol:
+         self.lg.debug ("self.runningAvgVolume is > avgVol: " + str(self.runningAvgVolume) + " " + str(previousBarVol))
+         return action
+      elif self.currentVol > previousBarVol:
+         self.lg.debug ("currentVol is > avgVol: " + str(self.currentVol) + " " + str(previousBarVol))
+         return action
+      
+      return 0
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def algorithmAverageVolume(self, action=0):
+         
+      self.lg.debug ("In algorithmAverageVolume: " + str(action))
+
+      # Use average volume to verify signal
+
+      # Implement volume plus price direction. high volume coming down even though trend is up
+      
+      # If no signal then return
+      if not action:
+         return action
+
       # using average volume to get out of a position
       if not self.inPosition():
          return action
+         
       # using average volume to get into a position
       #if self.inPosition():
       #   return action
 
       avgVol = self.bc.getAvgVol()
 
-      self.lg.debug ("self.runningAvgVolume: " + str(self.runningAvgVolume))
       self.lg.debug ("avgVol: " + str(avgVol))
 
       if avgVol < 1:
-         return 0
+         return action
          
       # If volume isn't > average volume, cancel signal
       if self.runningAvgVolume > avgVol :
@@ -752,49 +748,108 @@ class Algorithm():
       return action
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def algorithmOnClose(self, barChart, action=0):
+   def algorithmOnClose(self, action=0):
 
       self.lg.debug("In algorithmOnClose: " + str(action))
-      return 0
 
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def algorithmOnOpen(self, barChart, bar, action=0):
-      
       # If we are not on the beginning of a new bar, there's nothing to do, get out
-      if not self.doActionOnOpenBar():
-         return 0
+      if not self.doActionOnCloseBar():
+         return action
 
-      self.lg.debug("In algorithmOnOpen: " + str(action))
+      self.lg.debug("doActionOnCloseBar: " + str(self.doActionOnCloseBar()))         
+
+      # Only close a position when doExecuteOnOpen is set
+      if self.doExecuteOnOpen:
+         if self.inPosition():
+            # Close a buy position on the open if closes are sequentially lower
+            if self.positionType == self.buy:
+               if self.lm.isLowerLows(self.lm.closeBuyBars) and \
+                  self.lm.isLowerHighs(self.lm.closeBuyBars):
+                  self.lg.debug("CLOSING POSITION LowerLows LowerHighs: ")
+                  return self.sell
+      
+            # Close a sell position on the open if closes are sequentially higher
+            elif self.positionType == self.sell:
+               if self.lm.isHigherHighs(self.lm.closeSellBars) and \
+                  self.lm.isHigherLows(self.lm.closeSellBars):
+                  self.lg.debug("CLOSING POSITION HigherHighs HigherLows: ")
+                  return self.buy
 
       # Take position on the open if execute on open is set 
-      if not self.inPosition():
+      elif not self.inPosition():
          # Open a buy position on the open if closes are sequentially higher
-#         if self.lm.isHigherCloses(self.lm.openBuyBars) and \
-#            self.lm.isHigherOpens(self.lm.openBuyBars):
+         if self.lm.isHigherHighs(self.lm.openBuyBars) and \
+            self.lm.isHigherLows(self.lm.openBuyBars):
+            self.lg.debug("TAKING POSITION  HigherHighs HigherLows: ")
+            return self.buy
+   
+         # Open a sell position on the open if closes are sequentially lower
+         elif self.lm.isLowerLows(self.lm.openSellBars) and \
+            self.lm.isLowerHighs(self.lm.openSellBars):
+            self.lg.debug("TAKING POSITION LowerLows LowerHighs: ")
+            return self.sell
+      else:
+         # Close a buy position on the open if closes are sequentially lower
+         if self.positionType == self.buy:
+            if self.lm.isLowerLows(self.lm.closeBuyBars) and \
+               self.lm.isLowerHighs(self.lm.closeBuyBars):
+               self.lg.debug("CLOSING POSITION LowerLows LowerHighs: ")
+               return self.buy
+   
+         # Close a sell position on the open if closes are sequentially higher
+         elif self.positionType == self.sell:
+            if self.lm.isHigherHighs(self.lm.closeSellBars) and \
+               self.lm.isHigherLows(self.lm.closeSellBars):
+               self.lg.debug("CLOSING POSITION HigherOpens HigherCloses: ")
+               return self.sell
+            
+      return action
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def algorithmOnOpen(self, action=0):
+      
+      self.lg.debug("In algorithmOnOpen: " + str(action))
+
+      # If we are not on the beginning of a new bar, there's nothing to do, get out
+      if not self.doActionOnOpenBar():
+         return action
+
+      self.lg.debug("doActionOnOpenBar: " + str(self.doActionOnOpenBar()))
+
+      # Take position on the open if execute on open is set 
+      if self.doExecuteOnClose:
+         if not self.inPosition():
+            # Open a buy position on the open if closes are sequentially higher
+            if self.lm.isHigherHighs(self.lm.openBuyBars) and \
+               self.lm.isHigherLows(self.lm.openBuyBars):
+               self.lg.debug("TAKING POSITION HigherHighs HigherLows: ")
+               return self.buy
+      
+            # Open a sell position on the open if closes are sequentially lower
+            elif self.lm.isLowerLows(self.lm.openSellBars) and \
+               self.lm.isLowerHighs(self.lm.openBuyBars):
+               self.lg.debug("TAKING POSITION LowerLows LowerHighs: ")
+               return self.sell
+               
+      elif not self.inPosition():
+         # Open a buy position on the open if closes are sequentially higher
          if self.lm.isHigherHighs(self.lm.openBuyBars):
             self.lg.debug("TAKING POSITION  HigherCloses: ")
             return self.buy
    
          # Open a sell position on the open if closes are sequentially lower
-#         elif self.lm.isLowerCloses(self.lm.openSellBars) and \
-#            self.lm.isLowerOpens(self.lm.openSellBars):
          elif self.lm.isLowerLows(self.lm.openSellBars):
             self.lg.debug("TAKING POSITION LowerCloses: ")
             return self.sell
-         
       else:
          # Close a buy position on the open if closes are sequentially lower
          if self.positionType == self.buy:
-#            if self.lm.isLowerCloses(self.lm.closeBuyBars) and \
-#               self.lm.isLowerOpens(self.lm.closeBuyBars):
             if self.lm.isLowerLows(self.lm.closeBuyBars):
                self.lg.debug("CLOSING POSITION LowerCloses: ")
                return self.buy
    
          # Close a sell position on the open if closes are sequentially higher
          elif self.positionType == self.sell:
-#            if self.lm.isHigherCloses(self.lm.closeSellBars) and \
-#               self.lm.isHigherOpens(self.lm.closeSellBars):
             if self.lm.isHigherHighs(self.lm.closeSellBars):
                self.lg.debug("CLOSING POSITION HigherOpens HigherCloses: ")
                return self.sell
@@ -1042,20 +1097,24 @@ class Algorithm():
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmReversals(self, bc, bar, actionOnOpen, actionOnClose, action=0):
 
+      self.lg.debug("In algorithmReversals " + str(action))
+
       if not actionOnClose:
          return action
          
       if self.inPosition():
          if self.loReversal:
+            self.lg.debug("self.loReversal " + str(self.loReversal))
             if self.pa.isHiReversal(bc, bar):
-               self.lg.debug("isHiReversal exiting" + str(self.pa.isHiReversal(bc, bar)))
+               self.lg.debug("isHiReversal exiting " + str(self.pa.isHiReversal(bc, bar)))
                self.loReversal = 0
                return 2
             
          if self.hiReversal:  
+            self.lg.debug("self.hiReversal " + str(self.hiReversal))
             if self.pa.isLoReversal(bc, bar):
                self.hiReversal = 0
-               self.lg.debug("isLoReversal exiting" + str(self.pa.isLoReversal(bc, bar)))
+               self.lg.debug("isLoReversal exiting " + str(self.pa.isLoReversal(bc, bar)))
                return 1
       else:
          if self.pa.isHiReversal(bc, bar):
@@ -1074,6 +1133,8 @@ class Algorithm():
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmEncompassing(self, bc, bar, action=0):
+
+      self.lg.debug("In algorithmEncompassing " + str(action))
 
       if self.pa.isHiEncompassing(bc, bar, action):
          self.lg.debug("isHiEncompassing " + str(self.pa.isHiEncompassing(bc, bar)))
@@ -1216,7 +1277,8 @@ class Algorithm():
       elif self.inPosition():
          if self.getTotalGain() >= self.getTargetProfit():
             profitGained = self.getTotalGain()
-            self.stopPct = profitGained * 0.15
+            self.lg.debug("self.profitGainedPct " + str(self.profitGainedPct))
+            self.stopPct = profitGained * self.profitGainedPct
             self.stopBuyTarget = round(last - self.stopPct, 2)
             self.stopSellTarget = round(last + self.stopPct, 2)
                

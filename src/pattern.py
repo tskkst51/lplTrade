@@ -97,6 +97,22 @@ class Pattern:
       return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isPreviousBarOpenHigherClose(self, bc, prevBar, bar):
+               
+      if bc[prevBar][self.op] > bc[bar][self.cl]:
+            return 1
+                        
+      return 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isPreviousBarOpenLowerClose(self, bc, prevBar, bar):
+               
+      if bc[prevBar][self.op] < bc[bar][self.cl]:
+            return 1
+                        
+      return 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isBarHammer(self, bc, bar):
    
       # The distance from the lo to the close
@@ -315,16 +331,19 @@ class Pattern:
 
       prevSessionBarLo, prevSessionBarHi = self.getSessionBar(bc, bar - 2)
 
-      if self.isPreviousBarLower(bc, bar - 1, bar):
-         print ("isPreviousBarLower " + str(self.isPreviousBarLower(bc, bar - 1, bar)))
-         if self.isPreviousBarOpenLower(bc, bar - 1, bar):
-            print ("isPreviousBarOpenLower " + str(self.isPreviousBarOpenLower(bc, bar - 1, bar)))
-            if self.isPreviousBarCloseLower(bc, bar - 1, bar):
-               print ("isPreviousBarCloseLower " + str(self.isPreviousBarCloseLower(bc, bar - 1, bar)))
-               if self.isPreviousBarHigher(bc, bar - 2, bar - 1):
-                  print ("is Bar - 2 Higher " + str(self.isPreviousBarHigher(bc, bar - 2, bar - 1)))
-                  #if not prevSessionBarHi:
-                  return 1
+      if self.isPreviousBarOpenLowerClose(bc, bar - 1, bar):
+         print ("isPreviousBarOpenHigherClose " + str(self.isPreviousBarOpenHigherClose(bc, bar - 1, bar)))
+
+         if self.isPreviousBarLower(bc, bar - 1, bar):
+            print ("isPreviousBarLower " + str(self.isPreviousBarLower(bc, bar - 1, bar)))
+            if self.isPreviousBarOpenLower(bc, bar - 1, bar):
+               print ("isPreviousBarOpenLower " + str(self.isPreviousBarOpenLower(bc, bar - 1, bar)))
+               if self.isPreviousBarCloseLower(bc, bar - 1, bar):
+                  print ("isPreviousBarCloseLower " + str(self.isPreviousBarCloseLower(bc, bar - 1, bar)))
+                  if self.isPreviousBarHigher(bc, bar - 2, bar - 1):
+                     print ("is Bar - 2 Higher " + str(self.isPreviousBarHigher(bc, bar - 2, bar - 1)))
+                     #if not prevSessionBarHi:
+                     return 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isLoReversal(self, bc, bar):
@@ -339,16 +358,19 @@ class Pattern:
 
       prevSessionBarLo, prevSessionBarHi = self.getSessionBar(bc, bar - 2)
 
-      if self.isPreviousBarHigher(bc, bar - 1, bar):
-         print ("isPreviousBarHigher " + str(self.isPreviousBarHigher(bc, bar - 1, bar)))
-         if self.isPreviousBarOpenLower(bc, bar - 1, bar):
-            print ("isPreviousBarOpenLower " + str(self.isPreviousBarOpenLower(bc, bar - 1, bar)))
-            if self.isPreviousBarCloseHigher(bc, bar - 1, bar):
-               print ("isPreviousBarCloseHigher " + str(self.isPreviousBarCloseHigher(bc, bar - 1, bar)))
-               if self.isPreviousBarLower(bc, bar - 2, bar - 1):
-                  print ("is Bar - 2 Lower " + str(self.isPreviousBarLower(bc, bar - 2, bar - 1)))
-                  #if not prevSessionBarLo:
-                  return 1
+      if self.isPreviousBarOpenHigherClose(bc, bar - 1, bar):
+         print ("isPreviousBarOpenHigherClose " + str(self.isPreviousBarOpenHigherClose(bc, bar - 1, bar)))
+         
+         if self.isPreviousBarHigher(bc, bar - 1, bar):
+            print ("isPreviousBarHigher " + str(self.isPreviousBarHigher(bc, bar - 1, bar)))
+            if self.isPreviousBarOpenLower(bc, bar - 1, bar):
+               print ("isPreviousBarOpenLower " + str(self.isPreviousBarOpenLower(bc, bar - 1, bar)))
+               if self.isPreviousBarCloseHigher(bc, bar - 1, bar):
+                  print ("isPreviousBarCloseHigher " + str(self.isPreviousBarCloseHigher(bc, bar - 1, bar)))
+                  if self.isPreviousBarLower(bc, bar - 2, bar - 1):
+                     print ("is Bar - 2 Lower " + str(self.isPreviousBarLower(bc, bar - 2, bar - 1)))
+                     #if not prevSessionBarLo:
+                     return 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isHiEncompassing(self, bc, bar):

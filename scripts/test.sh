@@ -10,14 +10,6 @@ loc=$1
 algo=$2
 stock=$3
 
-args=$algo
-
-if [[ -n $3 ]]; then
-   args+=" ${stock}"   
-fi
-
-echo $args
-
 wp=$(pwd)
 
 testCmd="${wp}/bin/test.py"
@@ -56,38 +48,71 @@ if [[ ! -d $testResults ]]; then
    mkdir $testResults
 fi
 
-# Removed doTR_RBS_ABL_RT
-algos="doTrendsdoRT doTrendsdoQPdoRT"
-
 if [[ -n $algo ]]; then
-   algos=$algo
+   algos=($algo)
+else
+   algos=(
+   "HL" 
+   "HS" 
+   "HL,HS"
+   )
 fi
 
+if [[ -n $stock ]]; then
+   stockCL="-s $stock" 
+fi
+
+set -m
+
 for testPath in $testPaths; do
+   
+   trap - SIGINT
+   
    log="${testResults}/${testPath}_testOut_${dt}"
    
+   resultsPath="resultsTest/${testPath}"
    testPath="test/${testPath}"
    
    echo Testing ${testPath}...
    
-   cmd="$py3 $testCmd $args -f -c $HOME/profiles/et.json -w ${wp}/${testPath} -p ${wp}/${testPath}/profiles/active.json"
+   echo Creating results path: ${resultsPath}...
 
-   if [[ -n $aglo ]]; then
-      for algo in $algos; do
-         cmd="$py3 $testCmd -a $algo -c $HOME/profiles/et.json -w ${wp}/${testPath} -p ${wp}/${testPath}/profiles/active.json"
-         
-         $HOME/bin/lplt.sh
-         $cmd
-      done
-
-   else
-      echo "command: ${cmd}"
+   # Squirrel away the results in $resultsPath
+   if [[ ! -d $resultsPath ]]; then
+      mkdir $resultsPath || exit 1
+   fi
    
+   for a in ${algos[*]}; do
+      algoOpt="-a ${a}"
+      
+      cmd="$py3 $testCmd $algoOpt $stockCL -c $HOME/profiles/et.json -w ${wp}/${testPath} -p ${wp}/${testPath}/profiles/active.json"
+      
       $HOME/bin/lplt.sh
+
+      echo "command: ${cmd}"
+
       $cmd
       
-   fi
+      a=$(echo $a | sed 's/,/_/g')
+            
+      algoPath="${resultsPath}/${stock}_${a}_${dt}"
+
+      echo Results Path ${algoPath}...
+
+      if [[ -d $algoPath ]]; then
+         rm -fr $algoPath || exit 1
+      fi
       
+      mkdir $algoPath || exit 1
+      
+      # Move results to results path
+      mv ${testPath}/profiles/saved $algoPath
+      mv ${testPath}/logs $algoPath
+      
+      mkdir ${testPath}/profiles/saved
+      mkdir ${testPath}/logs
+      
+   done      
 done
 
 exit 0

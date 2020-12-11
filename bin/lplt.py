@@ -494,7 +494,8 @@ while True:
          pr.write(pricesPath, ask, bid, last, vol, barCtr)
          
       # Beginning of next bar. 2nd clause is for offline mode
-      if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isNextBar(timeBar):      
+      #if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isNextBar(timeBar):      
+      if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isLastBar(timeBar):      
 
          # Only do this section once
          if dirty:

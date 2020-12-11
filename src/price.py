@@ -384,6 +384,25 @@ class Price:
       return float(bid), float(ask), float(last), vl
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isLastBar(self, timeBar):
+      
+      if not self.offLine:
+         return 0
+      
+      if self.priceIdx >= self.numLines:
+         return self.getLastToken()
+
+      print ("self.getNextBar() " + str(self.getNextBar()))
+      print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
+      
+      if self.getNextBar() == self.idxArr[self.priceIdx + 1]:
+      #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
+         #self.setNextBar(timeBar)
+         return 1
+         
+      return 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isNextBar(self, timeBar):
       
       if not self.offLine:
@@ -396,6 +415,7 @@ class Price:
       print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
       
       if self.getNextBar() == self.idxArr[self.priceIdx]:
+      #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
          #self.setNextBar(timeBar)
          return 1
          
