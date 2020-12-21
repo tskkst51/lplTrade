@@ -50,3 +50,6 @@ TSLA 423.82 2.89 33%  TB 3 AV 1 TR 1 DB 5
 remove all test data:
 cdl;cd test;
 rm -f 07*/logs/*;rm -f 08*/logs/*;rm -f 09*/logs/*;rm -f 10*/logs/*;rm -f 11*/logs/*;rm -f 07*/profiles/saved/*;rm -f 08*/profiles/saved/*;rm -f 09*/profiles/saved/*;rm -f 10*/profiles/saved/*;rm -f 11*/profiles/saved/*
+
+https://polygon.io/dashboard private key
+qL6W5A65SakAuO1ffC2iCjGXY4NTtvP_

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## RUn the test program over all test directories
+## Run the allTest.sh program and iterate its results
 
 wp=$(pwd)
 

@@ -1,3 +1,11 @@
+Run result cmds in sequence:
+
+scripts/test.sh 07082020 HL,IT TSLA
+scripts/allTests.sh "" "" TSLA | sort -n -k 5
+
+Run trade program and set profile
+
+
 Tallied Results
 
 11/6/20

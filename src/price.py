@@ -60,7 +60,7 @@ class Price:
       return self.priceIdx - 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getCurrentPriceIdxMinus(self):
+   def getCurrentBar(self):
       
       return self.idxArr[self.priceIdx]
 
@@ -420,6 +420,32 @@ class Price:
          return 1
          
       return 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isNextSegment(self, timeBar):
+      
+      if not self.offLine:
+         return 0
+            
+      
+      print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
+      
+      if self.getNextBar() == self.idxArr[self.priceIdx]:
+      #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
+         #self.setNextBar(timeBar)
+         return 1
+         
+      return 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setSegment(self, timeBar):
+   
+      self.segment += timeBar
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setNextSegment(self, timeBar):
+   
+      self.nextSegment = self.segment + 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setNextBar(self, timeBar):

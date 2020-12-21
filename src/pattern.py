@@ -159,14 +159,14 @@ class Pattern:
       print ("opHi: " + str(opHi))
          
       if hi > op:
-         if lo < op:
+         if lo <= op:
             if opHi - opLo > 0:      
                if hiCl - loCl > 0:
-                  pctMoved = 100.00 - round(loCl / hiCl, 2)
+                  pctMoved = 100.00 * round(loCl / hiCl, 2)
                   print ("pctMoved: " + str(pctMoved))
                   print ("reversalPctTrigger: " + str(self.reversalPctTrigger))
          
-                  if pctMoved > self.reversalPctTrigger:
+                  if pctMoved < self.reversalPctTrigger:
                      print ("Hammer bar detected! pctMoved: " + str(pctMoved))
                      return 1
          
@@ -223,7 +223,7 @@ class Pattern:
          if hi > op:
             if opLo - opHi > 0:      
                if loCl - hiCl > 0:
-                  pctMoved = 100.00 - (hiCl / loCl)
+                  pctMoved = 100.00 * (hiCl / loCl)
                   print ("pctMoved: " + str(pctMoved))
                   print ("reversalPctTrigger: " + str(self.reversalPctTrigger))
          
@@ -331,7 +331,7 @@ class Pattern:
 
       prevSessionBarLo, prevSessionBarHi = self.getSessionBar(bc, bar - 2)
 
-      if self.isPreviousBarOpenLowerClose(bc, bar - 1, bar):
+      if self.isPreviousBarOpenHigherClose(bc, bar - 1, bar):
          print ("isPreviousBarOpenHigherClose " + str(self.isPreviousBarOpenHigherClose(bc, bar - 1, bar)))
 
          if self.isPreviousBarLower(bc, bar - 1, bar):
@@ -340,8 +340,8 @@ class Pattern:
                print ("isPreviousBarOpenLower " + str(self.isPreviousBarOpenLower(bc, bar - 1, bar)))
                if self.isPreviousBarCloseLower(bc, bar - 1, bar):
                   print ("isPreviousBarCloseLower " + str(self.isPreviousBarCloseLower(bc, bar - 1, bar)))
-                  if self.isPreviousBarHigher(bc, bar - 2, bar - 1):
-                     print ("is Bar - 2 Higher " + str(self.isPreviousBarHigher(bc, bar - 2, bar - 1)))
+                  if self.isPreviousBarLower(bc, bar - 2, bar - 1):
+                     print ("is Bar - 2 Lower " + str(self.isPreviousBarHigher(bc, bar - 2, bar - 1)))
                      #if not prevSessionBarHi:
                      return 1
 

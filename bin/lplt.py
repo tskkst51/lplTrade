@@ -139,11 +139,13 @@ openSellBars = int(d["profileTradeData"]["openSellBars"])
 closeSellBars = int(d["profileTradeData"]["closeSellBars"])
 profileTradeData = str(d["profileTradeData"])
 resume = str(d["profileTradeData"]["resume"])
-quitMaxProfit = float(d["profileTradeData"]["quitMaxProfit"])
 workPath = str(d["profileTradeData"]["workPath"])
 doRangeTradeBars = str(d["profileTradeData"]["doRangeTradeBars"])
 gainTrailStop = str(d["profileTradeData"]["gainTrailStop"])
 quickProfitPctTrigger = float(d["profileTradeData"]["quickProfitPctTrigger"])
+doTrailingStop = int(d["profileTradeData"]["doTrailingStop"])
+maxProfit = float(d["profileTradeData"]["maxProfit"])
+quitMaxProfit = int(d["profileTradeData"]["quitMaxProfit"])
 
 offLine = int(c["profileConnectET"]["offLine"])
 sandBox = int(c["profileConnectET"]["sandBox"])
@@ -158,6 +160,7 @@ lastMinuteOfLiveTrading = 155930
 marketOpen = 0
 
 stoppedOut = 4
+exitMaxProfit = 2
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Overide profileTradeData data with command line data
@@ -293,7 +296,7 @@ barChart = bc.init()
 lg.info ("Reading profileTrade data from: " + clOptions.profileTradeDataPath + "\n")
 lg.info ("Using symbol: " + symbol)
 lg.info ("Last trade: " + str(cn.getLastTrade(stock)))
-lg.info ("Minute bar chart: " + str(timeBar))
+lg.info ("Minute chart: " + str(timeBar))
 lg.info ("openBuyBars: " + str(openBuyBars))
 lg.info ("closeBuyBars: " + str(closeBuyBars))
 lg.info ("openSellBars: " + str(openSellBars))
@@ -344,10 +347,9 @@ if resume:
       
       lg.debug ("Number of bars in file on disk : " + str(numBars))
       
-      b = 0
-      while b < numBars:
-         lg.debug (str(barChart[b]))
-         b += 1
+      if timeBar == 1:
+         for b in range(numBars):
+            lg.debug (str(barChart[b]))
          
    # We're live, program halted and now resumed. Initilize a new bar and trade on
    if not offLine:
@@ -370,6 +372,29 @@ if offLine:
    pr.setNextBar(timeBar)
 
 dirtyProfit = 0
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+def isStoppedOut():
+
+   if a.getTotalGain() >= a.getTargetProfit():
+      if quitMaxProfit:
+         lg.info ("MAX PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
+         lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
+         lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
+         lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
+         
+         return 2
+         
+         # We are out with our PROFIT
+      if doTrailingStop and positionTaken == stoppedOut:
+         lg.info ("TRAILING STOP REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
+         lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
+         lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
+         lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
+         
+         return 4
+
+   return 0
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Main loop. Loop forever. Pause trading during and after market hours 
@@ -412,7 +437,7 @@ while True:
          pr.findStartPriceIdx(numPrices, timeBar)
          barCtr = 1
          
-   a.setNextBar(barCtr + 1)
+   #a.setNextBar(barCtr + 1)
 
    a.setAllLimits(barChart, barCtr)
 
@@ -427,6 +452,12 @@ while True:
       a.setCurrentAsk(ask)
       a.setCurrentLast(last)
       a.setCurrentVol(vol)
+      
+      # Set the profit to gain
+      if not dirtyProfit:
+         a.setTargetProfit(last, maxProfit)
+         lg.debug("Max profit set to: " + str(a.getTargetProfit()))
+         dirtyProfit += 1
 
       # Do one time on open
       if not doOnceOnOpen:
@@ -434,11 +465,11 @@ while True:
          positionTaken = a.takePosition(bid, ask, last, vol, barChart, barCtr)
          doOnceOnOpen += 1
          a.unsetActionOnOpenBar()
+
+      exitVal = isStoppedOut()
+      if exitVal > 0:
+         exit(exitVal)
          
-      if quitMaxProfit and positionTaken == stoppedOut:
-         # We are out with our PROFIT
-          exit (2)
-             
       if offLine:
          if barCtr > numBars or last == pr.getLastToken():
             if a.inPosition():
@@ -447,14 +478,7 @@ while True:
                exit(2)
             else:
                exit(0)
-
-      # Set the profit to gain
-      if not dirtyProfit:
-         if quitMaxProfit > 0:
-            dirtyProfit += 1
-            a.setTotalProfit(last, quitMaxProfit)
-            lg.debug("Max profit set to: " + str(a.getTargetProfit()))
-            
+         
       tradeVol = cn.getVolume() - initialVol
       
       if not offLine:
@@ -475,19 +499,7 @@ while True:
             #   exit(2)
             #else:
             exit(0)
-         
-      if quitMaxProfit > 0.0:
-         if a.getTotalGain() >= a.getTargetProfit():
-            lg.info ("QUITTING MAX PROFIT REACHED Gain: " + str(a.getTotalGain()) + " " + str(barCtr))
-            lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
-            lg.info ("MAX PROFIT PRICE: " + str(last))
-            lg.info ("MAX PROFIT Bar: " + str(barCtr))
-            lg.info ("MAX PROFIT    Time: " + str(cn.getTimeStamp()))
-            
-            if quitMaxProfit and positionTaken == stoppedOut:
-               # We are out with our PROFIT
-                exit (2)
-            
+                     
       # Save off the prices so they can be later used in offLine mode
       if not offLine:
          # Write prices and barcharts for 1-5 min charts
@@ -510,14 +522,14 @@ while True:
          if not offLine:
             bc.write(barChart, barChartPath, barCtr)
             bc.displayLastNBars(barChart, 20)
-                           
+         
          a.setActionOnCloseBar()
          positionTaken = a.takePosition(bid, ask, last, vol, barChart, barCtr)
          a.unsetActionOnCloseBar()
-         
-         if quitMaxProfit and positionTaken == stoppedOut:
-            # We are out with our PROFIT
-             exit (2)
+
+         exitVal = isStoppedOut()
+         if exitVal > 0:
+            exit(exitVal)
             
          if not offLine:
             bc.appendBar(barChart)
@@ -542,7 +554,7 @@ while True:
          lg.info ("LAST: " + str(last))
          lg.info ("BID: " + str(bid))
          lg.info ("ASK:  " + str(ask))
-         lg.info ("TIME: " + str(barChart[barCtr][dt]))
+         lg.info ("END TIME: " + str(barChart[barCtr][dt]))
          lg.info ("VOL: " + str(barChart[barCtr][vl]) + "\n")
          #lg.info ("VOL : " + str(vol) + "\n")
                   
@@ -559,9 +571,9 @@ while True:
       # Wait till next bar before trading if set
       # if not a.inPosition() and a.getWaitForNextBar() and barCtr < a.getNextBar():
          
-      if a.getWaitForNextBar() and barCtr < a.getNextBar():
-         lg.debug("Waiting for next bar...")
-         continue
+#      if a.getWaitForNextBar() and barCtr < a.getNextBar():
+#         lg.debug("Waiting for next bar...")
+#         continue
          
 #      if a.quickProfitMax:
 #         if a.quickProfitCtr > a.quickProfitMax:
@@ -577,11 +589,10 @@ while True:
       # Take a position if conditions exist
       positionTaken = a.takePosition(bid, ask, last, vol, barChart, barCtr)
 
-      if quitMaxProfit and positionTaken == stoppedOut:
-         # We are out with our PROFIT
-          exit (2)
-   # end bar loop
-
+      exitVal = isStoppedOut()
+      if exitVal > 0:
+         exit(exitVal)
+         
       # Stop trading at the end of he day
       if not offLine and not a.getAfterMarket():
          if a.inPosition():

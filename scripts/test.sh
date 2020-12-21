@@ -37,26 +37,59 @@ py3+="${activateDir}/bin/python3"
 
 dt=$(date "+%m%d%Y")
 
-testPaths=$(ls test)  
-testResults="${wp}/resultsTest"
+testPaths=$(ls test)
 
-if [[ -n $loc ]]; then
-   testPaths=$loc
-fi
+# Do volume algos after 11182020
+testResults="${wp}/resultsTest"
 
 if [[ ! -d $testResults ]]; then
    mkdir $testResults
 fi
 
+#   "HS,IT"
+
 if [[ -n $algo ]]; then
    algos=($algo)
 else
    algos=(
-   "HL" 
-   "HS" 
-   "HL,HS"
+   "HS,HL"
+   "HS,AV,QM"
+   "HS,AL,QM"
+   "HS,AL,AV,QM"
+   "HS,HL,AV,QM"
+   "HS,HL,AL,QM"
+   "EO,EC,AV,QM"
    )
 fi
+
+volDate=11182020
+newPaths=""
+
+# if the algo has AV or AL restrict dates to the initial volume date and later
+
+if echo $algos | grep -q "AV"  ||  echo $algos | grep -q "AL" ; then
+   echo Found volume in $algos. Restricting testing range to $volDate
+
+   for path in $testPaths; do
+      if [[ ${path:0:1} -eq 0 ]]; then
+         continue
+      fi
+      if (( path >= volDate )); then
+         newPaths="$newPaths $path"
+      fi  
+   done
+   
+   if [[ -n $newPaths ]]; then
+      testPaths=$newPaths
+   fi
+fi
+
+echo $testPaths
+
+if [[ -n $loc ]]; then
+   testPaths=$loc
+fi
+
 
 if [[ -n $stock ]]; then
    stockCL="-s $stock" 
@@ -91,7 +124,7 @@ for testPath in $testPaths; do
 
       echo "command: ${cmd}"
 
-      $cmd
+      $cmd 
       
       a=$(echo $a | sed 's/,/_/g')
             

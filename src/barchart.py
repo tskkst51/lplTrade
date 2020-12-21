@@ -47,19 +47,27 @@ class Barchart:
       print ("loadInitBar bar : " + str(bar))
       bc[bar][self.op] = last
       bc[bar][self.cl] = last
-      bc[bar][self.hi] = ask
-      bc[bar][self.lo] = bid
+#      bc[bar][self.hi] = ask
+#      bc[bar][self.lo] = bid
+      bc[bar][self.hi] = last
+      bc[bar][self.lo] = last
       bc[bar][self.dt] = date
       bc[bar][self.vl] = vol
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadBar(self, bc, vol, bar, bid, ask, last):
    
-      if ask > bc[bar][self.hi]:
-         bc[bar][self.hi] = ask
+#      if ask > bc[bar][self.hi]:
+#         bc[bar][self.hi] = ask
+#               
+#      if bid < bc[bar][self.lo]:
+#         bc[bar][self.lo] = bid
+         
+      if last > bc[bar][self.hi]:
+         bc[bar][self.hi] = last
                
-      if bid < bc[bar][self.lo]:
-         bc[bar][self.lo] = bid
+      if last < bc[bar][self.lo]:
+         bc[bar][self.lo] = last
                
       bc[bar][self.vl] = vol
 
@@ -117,13 +125,14 @@ class Barchart:
       n = 0
       totalVol = 0
             
-      while n < bar:
+      while n <= bar:
          totalVol += int(bc[n][self.vl])
          n += 1
 
-      self.avgVol = round(totalVol / bar, 2)
+      self.avgVol = round(totalVol / (bar + 1), 2)
 
-      print("setAvgVol bar: " + str(self.avgVol) + " " + str(bar))
+      print("setAvgVol:  bar: " + str(self.avgVol) + " " + str(bar))
+      print("totalVol: " + str(totalVol))
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setAvgVolTime(self, bc, bar, timeBar, currIdx):
@@ -275,6 +284,10 @@ class Barchart:
                   
             lineCtr += 1
      
+         print ("Min BC: ")
+         for b in range(bcCtr):
+            print (str(bc[b]))
+            
       return bcCtr
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

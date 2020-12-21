@@ -35,7 +35,6 @@ tradingDelayBars = range(2,20) # DB
 quickProfitMax = [0,1]         # QP
 waitForNextBar = [0,1]         # WN
 profitPctTrigger = [0.001,0.0011,0.0012,0.0013,0.0014,0.0015,0.0016,0.0017,0.0018,0.0019,0.002]
-quitMaxProfit = [0,1]          # QP
 bearTrendValue = [1.5,1.6,1.7,1.8,1.9]
 bullTrendValue = [3.5,3.4,3.3,3.2,3.1]
 shortTrendBars = [6,8,10,12]
@@ -80,16 +79,47 @@ def parseLastLine(line, info):
    gain = lineTokens[3]
    pct = lineTokens[4]
    
-   parsedLine = lastClose + " " + gain + " " + pct + info
+   parsedLine = lastClose + " " + gain + " " + pct + " " + info
 
    return parsedLine
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def writeParsedLine(path, line):
 
+#   if os.path.exists(path):
+#      os.remove(path)
+   
    line += parseInfo
    with open(path, "a") as f:
       f.write(line + "\n")
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+def writeParsedLineRemoveDups(path, date, newLine):
+   
+   tmpPath = "/tmp/fileBuffer"
+   
+   lines = []
+   found = 0
+   
+   if not os.path.exists(path):
+      newLine += parseInfo
+      with open(path, "a") as f:
+         f.write(newLine + "\n")
+      return
+
+   with open(path) as f:
+      lines = [line.rstrip() for line in f]
+   
+   with open(tmpPath, "w") as o:
+      for line in lines:
+         if date in line:
+            if not found:
+               o.write(newLine + "\n")
+            found += 1
+         else:
+            o.write(line + "\n")
+   
+   os.rename(tmpPath, path)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def writeParsedHeader(path, line):
@@ -156,7 +186,7 @@ def setCloseBuySellValues(value, info):
    d["profileTradeData"]["closeBuyBars"] = str(value)
    d["profileTradeData"]["closeSellBars"] = str(value)
    
-   info += "CB" + str(value) + " CS" + str(value) + " "
+   info += "CB" + str(value) + "_CS" + str(value)
 
    return info 
 
@@ -166,7 +196,7 @@ def setOpenBuySellValues(value, info):
    d["profileTradeData"]["openBuyBars"] = str(value)
    d["profileTradeData"]["openSellBars"] = str(value)
       
-   info += "OB" + str(value) + " OS" + str(value) + " "
+   info += "OB" + str(value) + "_OS" + str(value) + "_"
    
    return info 
 
@@ -189,7 +219,7 @@ def setAlgoValues(algo, value, info):
    info = ""
    
    d["profileTradeData"]["timeBar"] = str(value)
-   info += " TB" + str(value) + " "
+   info += "TB" + str(value) + "_"
       
    # Turn off all algo's 
    d["profileTradeData"]["doHiLoSeq"] = str(0)
@@ -210,88 +240,103 @@ def setAlgoValues(algo, value, info):
    d["profileTradeData"]["doPriceMovement"] = str(0)
    d["profileTradeData"]["doExecuteOnOpen"] = str(0)
    d["profileTradeData"]["doExecuteOnClose"] = str(0)
-   d["profileTradeData"]["doInPosTracking"] = str(0)
+   d["profileTradeData"]["doTrailingStop"] = str(0)
    d["profileTradeData"]["doOnlySells"] = str(0)
    d["profileTradeData"]["doOnlyBuys"] = str(0)
+   d["profileTradeData"]["quitMaxProfit"] = str(0)
+   d["profileTradeData"]["doSessions"] = str(0)
+   d["profileTradeData"]["waitForNextBar"] = str(0)
    
    # algo from the CL can be any combination of algorithms
    # HS AO AC AV AL AB TR QP HL TR PT RV HM RP IT BO SO "
 
    if "HL" in algo:
       d["profileTradeData"]["doHiLo"] = str(1)
-      info += "HL "
+      info += "HL_"
       
    if "HS" in algo:
       d["profileTradeData"]["doHiLoSeq"] = str(1)
-      info += "HS "
+      info += "HS_"
 
    if "TR" in algo:
       d["profileTradeData"]["doTrends"] = str(1)
-      info += "TR "
+      info += "TR_"
 
    if "AV" in algo:
       d["profileTradeData"]["doAverageVolume"] = str(1)
-      info += "AV "
+      info += "AV_"
 
    if "AL" in algo:
       d["profileTradeData"]["doVolumeLastBar"] = str(1)
-      info += "AL "
+      info += "AL_"
 
-   if "IT" in algo:
-      d["profileTradeData"]["doInPosTracking"] = str(1)
-      info += "IT "
+   if "TS" in algo:
+      d["profileTradeData"]["doTrailingStop"] = str(1)
+      info += "TS_"
+
+   if "SS" in algo:
+      d["profileTradeData"]["doSessions"] = str(1)
+      info += "SS_"
 
    if "BO" in algo:
       d["profileTradeData"]["doOnlyBuys"] = str(1)
-      info += "BO "
+      info += "BO_"
 
    if "SO" in algo:
       d["profileTradeData"]["doOnlySells"] = str(1)
-      info += "SO "
+      info += "SO_"
 
    if "QP" in algo:
       d["profileTradeData"]["doQuickProfit"] = str(1)
-      info += "QP "
+      info += "QP_"
 
    if "RP" in algo:
       d["profileTradeData"]["doReverseBuySell"] = str(1)
-      info += "RV "
+      info += "RV_"
 
    if "AB" in algo:
       d["profileTradeData"]["useAvgBarLimits"] = str(1)
-      info += "AB "
+      info += "AB_"
 
    if "PT" in algo:
       d["profileTradeData"]["doPatterns"] = str(1)
-      info += "PT "
+      info += "PT_"
 
    if "HM" in algo:
       d["profileTradeData"]["doHammers"] = str(1)
-      info += "HM "
+      info += "HM_"
 
    if "RV" in algo:
       d["profileTradeData"]["doReversals"] = str(1)
-      info += "RV "
+      info += "RV_"
 
    if "AC" in algo:
       d["profileTradeData"]["aggressiveClose"] = str(1)
-      info += "AC "
+      info += "AC_"
 
    if "AO" in algo:
       d["profileTradeData"]["aggressiveOpen"] = str(1)
-      info += "AO "
+      info += "AO_"
 
    if "PM" in algo:
       d["profileTradeData"]["doPriceMovement"] = str(1)
-      info += "PM "
+      info += "PM_"
 
    if "EO" in algo:
       d["profileTradeData"]["doExecuteOnOpen"] = str(1)
-      info += "EO "
+      info += "EO_"
 
    if "EC" in algo:
       d["profileTradeData"]["doExecuteOnClose"] = str(1)
-      info += "EC "
+      info += "EC_"
+
+   if "QM" in algo:
+      d["profileTradeData"]["quitMaxProfit"] = str(1)
+      info += "QM_"
+      
+   if "WT" in algo:
+      d["profileTradeData"]["waitForNextBar"] = str(1)
+      info += "WT_"
 
    return info
 
@@ -337,12 +382,16 @@ def writeLog(src, dst):
 
    return os.system("cp "+ src + " " + dst)
 
+#~~~~~~~~~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wp = cdp = tdp = stocks = lplt = ""
+
 fresh = False
 
 #lplt = "bin/lplt.py"
 lplt = "/Users/tknitter/w/gitWS/lplTrade/bin/lplt.py"
 prog = "/Users/tknitter/w/gitWS/lplW/bin/python3 " + lplt + " "
+
+cwd = os.getcwd()
 
 parser = OptionParser()
 
@@ -471,7 +520,12 @@ for minBar in timeBar:
                         if exitMaxProfit:
                            args += " -x " 
                
+                        # Create files based off of the stock, algo and date
                         cmd = prog + args + " -c " + cdp + " -s " + stock + " -p " + tdp + " > " + outFile
+                        
+                        date = os.path.basename(wp)
+                        
+                        algoPath = cwd + "/exitResults/" + stock + "_" + info + ".ex"
                         
                         exitVal = os.system(cmd)
                
@@ -486,7 +540,7 @@ for minBar in timeBar:
                         if gain > highestGain:
                            lastGain = highestGain
                            highestGain = gain
-                           parsedLine += str(highestGain)
+                           parsedLine += " " + str(highestGain)
                         
                         if exitVal == 512:
                            parsedLine += " MP"
@@ -500,6 +554,8 @@ for minBar in timeBar:
                      
                         # ... and save it's peices to be later examined
                         writeParsedLine(parsePath, stock + " " + parsedLine)
+                        #writeParsedLine(algoPath, date + " " + stock + " " + parsedLine)
+                        writeParsedLineRemoveDups(algoPath, date, date + " " + stock + " " + parsedLine)
                                     
    writeOriginalProfile(tdp, originalProfile) 
 
