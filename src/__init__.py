@@ -38,3 +38,6 @@ from .limits import Limits
 
 from . import pattern
 from .pattern import Pattern
+
+from . import profile
+from .profile import Profile

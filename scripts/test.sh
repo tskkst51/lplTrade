@@ -52,13 +52,12 @@ if [[ -n $algo ]]; then
    algos=($algo)
 else
    algos=(
-   "HS,HL"
-   "HS,AV,QM"
+   "HL,QM"
+   "HS,QM"
+   "HL,AL,QM"
    "HS,AL,QM"
-   "HS,AL,AV,QM"
-   "HS,HL,AV,QM"
    "HS,HL,AL,QM"
-   "EO,EC,AV,QM"
+   "EO,EC,AL,QM"
    )
 fi
 
@@ -83,8 +82,6 @@ if echo $algos | grep -q "AV"  ||  echo $algos | grep -q "AL" ; then
       testPaths=$newPaths
    fi
 fi
-
-echo $testPaths
 
 if [[ -n $loc ]]; then
    testPaths=$loc

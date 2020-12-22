@@ -22,6 +22,9 @@ class Pattern:
 
       self.reversalPctTrigger = float(data['profileTradeData']['reversalPctTrigger'])
       
+      if self.reversalPctTrigger == 0.0:
+         self.reversalPctTrigger = 60.0
+         
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getSessionBar(self, bc, bar):
 
@@ -152,17 +155,23 @@ class Pattern:
       if opHi < 0:
          opHi = opHi * -1
          
+      hiLo = hi - lo
+      if hiLo < 0:
+         hiLo = hiLo * -1
+         
       print ("loCl: " + str(loCl))
       print ("hiCl: " + str(hiCl))
       print ("opCl: " + str(opCl))
       print ("opLo: " + str(opLo))
       print ("opHi: " + str(opHi))
+      print ("hiLo: " + str(hiLo))
          
       if hi > op:
          if lo <= op:
             if opHi - opLo > 0:      
                if hiCl - loCl > 0:
-                  pctMoved = 100.00 * round(loCl / hiCl, 2)
+                  #pctMoved = 100.00 * round(loCl / hiCl, 2)
+                  pctMoved = 100.00 * round(hiCl / hiLo, 2)
                   print ("pctMoved: " + str(pctMoved))
                   print ("reversalPctTrigger: " + str(self.reversalPctTrigger))
          
@@ -213,17 +222,22 @@ class Pattern:
       if opHi < 0:
          opHi = opHi * -1
          
+      loHi = lo - hi
+      if loHi < 0:
+         loHi = loHi * -1
+
       print ("loCl: " + str(loCl))
       print ("hiCl: " + str(hiCl))
       print ("opCl: " + str(opCl))
       print ("opLo: " + str(opLo))
-      print ("opHi: " + str(opHi))
+      print ("loHi: " + str(loHi))
       
       if lo < op:
          if hi > op:
             if opLo - opHi > 0:      
                if loCl - hiCl > 0:
-                  pctMoved = 100.00 * (hiCl / loCl)
+                  #pctMoved = 100.00 * (hiCl / loCl)
+                  pctMoved = 100.00 * (loCl / loHi)
                   print ("pctMoved: " + str(pctMoved))
                   print ("reversalPctTrigger: " + str(self.reversalPctTrigger))
          

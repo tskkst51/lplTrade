@@ -193,6 +193,9 @@ class Algorithm():
       self.loReversal = self.hiReversal = 0
       self.totalGainLastPrice = 0.0
       
+      if not self.priceChangeMultiplier:
+         self.priceChangeMultiplier = 1
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setAllLimits(self, bc, bar):
       
@@ -759,58 +762,37 @@ class Algorithm():
 
       self.lg.debug("In algorithmOnClose: " + str(action))
 
-      # If we are not on the beginning of a new bar, there's nothing to do, get out
+      # If we are not at the end of a new bar, there's nothing to do, get out
       if not self.doActionOnCloseBar():
          return action
 
       self.lg.debug("doActionOnCloseBar: " + str(self.doActionOnCloseBar()))         
 
-      # Only close a position when doExecuteOnOpen is set
-      if self.doExecuteOnClose:
-         if self.inPosition():
-            # Close a buy position on the open if closes are sequentially lower
-            if self.positionType == self.buy:
-               if self.lm.isLowerLows(self.lm.closeBuyBars) and \
-                  self.lm.isLowerHighs(self.lm.closeBuyBars):
-                  self.lg.debug("CLOSING POSITION LowerLows LowerHighs: ")
-                  return self.sell
+      # Take position on the close if execute on close is set 
+      # Use hi's and lo's for opening a position
       
-            # Close a sell position on the open if closes are sequentially higher
-            elif self.positionType == self.sell:
-               if self.lm.isHigherHighs(self.lm.closeSellBars) and \
-                  self.lm.isHigherLows(self.lm.closeSellBars):
-                  self.lg.debug("CLOSING POSITION HigherHighs HigherLows: ")
-                  return self.buy
-
-      # Take position on the open if execute on open is set 
-      elif not self.inPosition():
-         # Open a buy position on the open if closes are sequentially higher
+      if not self.inPosition():
          if self.lm.isHigherHighs(self.lm.openBuyBars) and \
             self.lm.isHigherLows(self.lm.openBuyBars):
-            self.lg.debug("TAKING POSITION  HigherHighs HigherLows: ")
+            self.lg.debug("TAKING POSITION HigherHighs HigherLows: ")
             return self.buy
-   
-         # Open a sell position on the open if closes are sequentially lower
          elif self.lm.isLowerLows(self.lm.openSellBars) and \
             self.lm.isLowerHighs(self.lm.openSellBars):
             self.lg.debug("TAKING POSITION LowerLows LowerHighs: ")
             return self.sell
+      
+      # Use lo's or hi's on close to get out  
       else:
-         # Close a buy position on the open if closes are sequentially lower
          if self.positionType == self.buy:
-            if self.lm.isLowerLows(self.lm.closeBuyBars) and \
-               self.lm.isLowerHighs(self.lm.closeBuyBars):
-               self.lg.debug("CLOSING POSITION LowerLows LowerHighs: ")
+            if self.lm.isLowerLows(self.lm.closeBuyBars):
+               self.lg.debug("CLOSING POSITION LowerCloses: ")
                return self.buy
-   
-         # Close a sell position on the open if closes are sequentially higher
          elif self.positionType == self.sell:
-            if self.lm.isHigherHighs(self.lm.closeSellBars) and \
-               self.lm.isHigherLows(self.lm.closeSellBars):
+            if self.lm.isHigherHighs(self.lm.closeSellBars):
                self.lg.debug("CLOSING POSITION HigherOpens HigherCloses: ")
                return self.sell
             
-      return action
+      return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmOnOpen(self, action=0):
@@ -831,11 +813,11 @@ class Algorithm():
             self.lg.debug("TAKING POSITION HigherHighs HigherLows: ")
             return self.buy
          elif self.lm.isLowerLows(self.lm.openSellBars) and \
-            self.lm.isLowerHighs(self.lm.openBuyBars):
+            self.lm.isLowerHighs(self.lm.openSellBars):
             self.lg.debug("TAKING POSITION LowerLows LowerHighs: ")
             return self.sell
       
-      # Use lo's or hi's on close to get out  
+      # Use lo's or hi's on open to get out  
       else:
          if self.positionType == self.buy:
             if self.lm.isLowerLows(self.lm.closeBuyBars):
@@ -1101,16 +1083,19 @@ class Algorithm():
       
       if self.pa.isHammer(bc, bar):
          hammer = 1
-         self.lg.debug("hammer " + str(hammer))
+         self.lg.debug("HAMMER " + str(hammer))
          
-      if self.pa.isInvHammer(bc, bar):
+      elif self.pa.isInvHammer(bc, bar):
          invHammer = 1
+         self.lg.debug("INV HAMMER " + str(invHammer))
          
-      if self.pa.isHammerInner(bc, bar):
+      elif self.pa.isHammerInner(bc, bar):
          hammerInner = 1
+         self.lg.debug("HAMMER INNER " + str(hammerInner))
          
-      if self.pa.isInvHammerInner(bc, bar):
+      elif self.pa.isInvHammerInner(bc, bar):
          invHammerInner = 1
+         self.lg.debug("INV HAMMER INNER " + str(invHammerInner))
                      
       # Logic: Take position if hammer or invHammer on open of next bar
       # hammer = session hi; invHammer = sessionlo
@@ -1118,6 +1103,7 @@ class Algorithm():
             
       # Get out if really not a hammer. Do once on after bar close.
       if self.inPosition():
+         # Get out if really not an hammer
          if self.inHammerPosition:
             if actionOnClose:
                if bar == self.afterHammerBar:
@@ -1150,7 +1136,27 @@ class Algorithm():
                   self.inHammerPosition += 1
                   self.afterHammerBar = bar
                   self.inInvHammerPosition = 0
+                  
+         # In a position NOT initiated from a hammer or invHammer
+         else:
+            if hammer:
+               self.lg.debug("HAMMER DETECTED! CLOSING POSITION")
+               self.closePosition(bar, bc, bid, ask, 1)
                
+#               self.openPosition(self.sell, bar, bc, bid, ask)
+#               self.inHammerPosition += 1
+#               self.afterHammerBar = bar
+#               self.inInvHammerPosition = 0
+               
+            elif invHammer:
+               self.lg.debug("INV HAMMER DETECTED! CLOSING POSITION")
+               self.closePosition(bar, bc, bid, ask, 1)
+               
+#               self.openPosition(self.buy, bar, bc, bid, ask)
+#               self.afterInvHammerBar = bar
+#               self.inInvHammerPosition += 1
+#               self.inHammerPosition = 0
+
       else:
          if actionOnOpen:
             if hammer:
