@@ -410,7 +410,7 @@ class ConnectEtrade:
    def getDateMonthDayYear(self): 
          
       ts = time()
-      st = datetime.fromtimestamp(ts).strftime('%Y%m%d')
+      st = datetime.fromtimestamp(ts).strftime('%m%d%Y')
       
       return (int(st))
             

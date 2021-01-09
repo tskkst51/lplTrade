@@ -43,7 +43,8 @@ echo
 # Execute script to populate source library path
 $HOME/bin/lplt.sh
 
-dt=$(date "+%m%d%Y")
+#dt=$(date "+%m%d%Y")
+dt=$(date "+%Y%m%d")
 
 program="lpltS.py"
 
@@ -108,6 +109,7 @@ if [[ "$retCode" == "3" ]]; then
    rm ${testDir}/logs/output_${dt} || echo Unable to remove output file output_${dt}
    mkdir ${testDir}/results || echo Unable to mkdir ${testDir}/results
    mkdir -p ${testDir}/profiles/saved || echo Unable to mkdir ${testDir}/profiles/saved
+   cp profiles/saved/* ${testDir}/profiles/saved || echo Unable to copy profiles
    cp profiles/* ${testDir}/profiles || echo Unable to copy profiles
    cp ${testDir}/profiles/good  ${testDir}/profiles/active.json || echo Unable to copy active.json
    mkdir "prices" "bc" "logs" "debug"  || echo Unable to mkdir "prices" "bc" "logs"
@@ -122,8 +124,8 @@ if [[ "$retCode" == "3" ]]; then
    cd $wd
    
    # Execute the tests
-   echo Running ${wp}/scripts/test.sh $dt
-   ${wp}/scripts/test.sh $dt
+   #echo Running ${wp}/scripts/test.sh $dt
+   #${wp}/scripts/test.sh $dt
 fi
 
 exit 0
