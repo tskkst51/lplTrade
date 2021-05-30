@@ -180,8 +180,18 @@ wp = cdp = tdp = stocks = lplt = ""
 fresh = False
 
 #lplt = "bin/lplt.py"
-lplt = "/Users/tsk/w/lplTrade/bin/lplt.py"
-prog = "/Users/tsk/w/lplW/bin/python3 " + lplt + " "
+
+system = os.uname()
+
+binPath = "/Users/tsk/w/lplTrade/bin/"
+pyPath = "/Users/tsk/w/lplW/bin/"
+
+if system.nodename == "ML-C02C8546LVDL":
+   binPath = "/Users/tknitter/w/gitWS/lplTrade/bin/"
+   pyPath = "/Users/tknitter/w/gitWS/lplW/bin/"
+   
+lplt = binPath + "lplt.py"
+prog = pyPath + "python3 " + lplt + " "
 
 cwd = os.getcwd()
 

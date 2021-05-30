@@ -69,7 +69,7 @@ function init {
       rm -f $resultsPath
    fi
 
-   if [[ $host == "ML-C02C8546LVDL" ]]; then
+   if [[ $host == "ML-C02C8546LVDL" ]] or [[ $host == "tmm" ]]; then
       activateDir="/lplW"
    else
       activateDir="/venv" 
