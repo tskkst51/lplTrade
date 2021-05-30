@@ -7,8 +7,9 @@ dir=$1
 
 wp=$(pwd)
 
-dt=$(date "+%m%d%Y")
-  
+#dt=$(date "+%m%d%Y")
+dt=$(date "+%Y%m%d")
+
 testPaths=$(ls $dir)  
 
 for testPath in $testPaths; do

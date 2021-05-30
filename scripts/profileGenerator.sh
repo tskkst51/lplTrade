@@ -22,6 +22,7 @@ fi
 
 # Execute script to populate source library path
 
-dt=$(date "+%m%d%Y")
+dt=$(date "+%Y%m%d")
+
 
 

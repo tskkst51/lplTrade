@@ -18,7 +18,8 @@ testCmd="${wp}/scripts/test.sh "
 
 host=$(hostname -s)
 
-dt=$(date "+%H%M_%m%d%Y")
+#dt=$(date "+%H%M_%m%d%Y")
+dt=$(date "+%H%M_%Y%m%d")
 
 testPaths=$(ls test) 
 
@@ -31,12 +32,13 @@ if [[ -n $algo ]]; then
    algos=($algo)
 else
    algos=(
-   "HS,AV,QM"
-   "HS,AL,QM"
-   "HS,AL,AV,QM"
-   "HS,HL,AV,QM"
-   "HS,HL,AL,QM"
-   "EO,EC,AV,QM"
+   "HL_QM"
+   "HS_QM"
+   "HS_HL_QM"
+   "HL_AL_QM"
+   "HS_AL_QM"
+   "HS_HL_AL_QM"
+   "EO_EC_AL_QM"
    )
 fi
 
@@ -51,8 +53,7 @@ if [[ -z $report ]]; then
          a=$(echo $algo | sed 's/,/_/g')
       
          logFile="${testResults}/${testPath}/${stock}_${a}_${dt}/out.log"
-         #testIt="${testCmd} ${testPath} ${algo} ${stock} > $logFile 2>&1"
-         
+                  
          testIt="${testCmd} ${testPath} ${algo} ${stock}"
       
          echo Testing ${testIt}...

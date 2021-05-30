@@ -5,6 +5,7 @@ profile module
 '''
 
 import json
+import yaml
 import os
 import time
 import simplejson
@@ -16,14 +17,21 @@ import sys
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Profile:
-   def __init__(self, d):
+   def __init__(self):
+      return
    
-      info = ""
-      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def initProfile(self, d):
+   
       # Turn off all algo's 
       d["profileTradeData"]["timeBar"] = str(0)
       d["profileTradeData"]["doHiLoSeq"] = str(0)
       d["profileTradeData"]["doHiLo"] = str(0)
+      d["profileTradeData"]["doHiSeq"] = str(0)
+      d["profileTradeData"]["doLoSeq"] = str(0)
+      d["profileTradeData"]["doOpenCloseSeq"] = str(0)
+      d["profileTradeData"]["doOpensSeq"] = str(0)
+      d["profileTradeData"]["doOpensCloses"] = str(0)
       d["profileTradeData"]["doTrends"] = str(0)
       d["profileTradeData"]["doQuickProfit"] = str(0)
       d["profileTradeData"]["doReverseBuySell"] = str(0)
@@ -34,7 +42,7 @@ class Profile:
       d["profileTradeData"]["doVolumeLastBar"] = str(0)
       d["profileTradeData"]["aggressiveClose"] = str(0)
       d["profileTradeData"]["aggressiveOpen"] = str(0)
-      d["profileTradeData"]["doPatterns"] = str(0)
+      d["profileTradeData"]["doAllPatterns"] = str(0)
       d["profileTradeData"]["doHammers"] = str(0)
       d["profileTradeData"]["doReversals"] = str(0)
       d["profileTradeData"]["doPriceMovement"] = str(0)
@@ -44,9 +52,17 @@ class Profile:
       d["profileTradeData"]["doOnlySells"] = str(0)
       d["profileTradeData"]["doOnlyBuys"] = str(0)
       d["profileTradeData"]["quitMaxProfit"] = str(0)
+      d["profileTradeData"]["quitMaxLoss"] = str(0)
       d["profileTradeData"]["doSessions"] = str(0)
       d["profileTradeData"]["waitForNextBar"] = str(0)
-   
+      d["profileTradeData"]["tradingDelayBars"] = str(0)
+      d["profileTradeData"]["averageVolumeOpen"] = str(0)
+      d["profileTradeData"]["averageVolumeClose"] = str(0)
+      d["profileTradeData"]["volumeLastBarOpen"] = str(0)
+      d["profileTradeData"]["volumeLastBarClose"] = str(0)
+      d["profileTradeData"]["doOnlyTrends"] = str(0)
+      
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setOpenBuyValue(self, d, value, info):
    
@@ -117,6 +133,22 @@ class Profile:
       return info 
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setInRangeBars(self, d, value, info):
+   
+      d["profileTradeData"]["doRangeTradeBars"] = str(value)      
+      info += "IR" + str(value) + " "
+      
+      return info 
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setTradingDelayBars(self, d, value, info):
+   
+      d["profileTradeData"]["tradingDelayBars"] = str(value)      
+      info += "DB" + str(value) + " "
+      
+      return info 
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setAlgoValues(self, d, algo, value, info):
    
       # algo from the CL can be any combination of algorithms
@@ -134,18 +166,42 @@ class Profile:
       if "HS" in algo:
          d["profileTradeData"]["doHiLoSeq"] = str(1)
          info += "HS_"
-   
+
+      if "HI" in algo:
+         d["profileTradeData"]["doHiSeq"] = str(1)
+         info += "HI_"
+      
+      if "OC" in algo:
+         d["profileTradeData"]["doOpenCloseSeq"] = str(1)
+         info += "OC_"
+         
+      if "OO" in algo:
+         d["profileTradeData"]["doOpensSeq"] = str(1)
+         info += "OO_"
+         
+      if "CC" in algo:
+         d["profileTradeData"]["doClosesSeq"] = str(1)
+         info += "CC_"
+         
+      if "PL" in algo:
+         d["profileTradeData"]["doOpensCloses"] = str(1)
+         info += "PL_"
+      
+      if "LO" in algo:
+         d["profileTradeData"]["doLoSeq"] = str(1)
+         info += "LO_"
+      
+      if "EO" in algo:
+         d["profileTradeData"]["doExecuteOnOpen"] = str(1)
+         info += "EO_"
+      
+      if "EC" in algo:
+         d["profileTradeData"]["doExecuteOnClose"] = str(1)
+         info += "EC_"
+      
       if "TR" in algo:
          d["profileTradeData"]["doTrends"] = str(1)
          info += "TR_"
-   
-      if "AV" in algo:
-         d["profileTradeData"]["doAverageVolume"] = str(1)
-         info += "AV_"
-   
-      if "AL" in algo:
-         d["profileTradeData"]["doVolumeLastBar"] = str(1)
-         info += "AL_"
    
       if "TS" in algo:
          d["profileTradeData"]["doTrailingStop"] = str(1)
@@ -179,6 +235,10 @@ class Profile:
          d["profileTradeData"]["doPatterns"] = str(1)
          info += "PT_"
    
+      if "PA" in algo:
+         d["profileTradeData"]["doAllPatterns"] = str(1)
+         info += "PA_"
+   
       if "HM" in algo:
          d["profileTradeData"]["doHammers"] = str(1)
          info += "HM_"
@@ -199,35 +259,81 @@ class Profile:
          d["profileTradeData"]["doPriceMovement"] = str(1)
          info += "PM_"
    
-      if "EO" in algo:
-         d["profileTradeData"]["doExecuteOnOpen"] = str(1)
-         info += "EO_"
-   
-      if "EC" in algo:
-         d["profileTradeData"]["doExecuteOnClose"] = str(1)
-         info += "EC_"
-   
       if "QM" in algo:
          d["profileTradeData"]["quitMaxProfit"] = str(1)
          info += "QM_"
          
+      if "QL" in algo:
+         d["profileTradeData"]["quitMaxLoss"] = str(1)
+         info += "QL_"
+         
       if "WT" in algo:
          d["profileTradeData"]["waitForNextBar"] = str(1)
          info += "WT_"
-   
+
+      if "AV" in algo:
+         d["profileTradeData"]["averageVolumeClose"] = str(1)
+         info += "AV_"
+
+      if "AL" in algo:
+         d["profileTradeData"]["volumeLastBarClose"] = str(1)
+         info += "AL_"
+
+      if "VI" in algo:
+         d["profileTradeData"]["averageVolumeOpen"] = str(1)
+         info += "VI_"
+
+      if "LI" in algo:
+         d["profileTradeData"]["volumeLastBarOpen"] = str(1)
+         info += "LI_"
+         
+      if "OT" in algo:
+         d["profileTradeData"]["doOnlyTrends"] = str(1)
+         info += "OT_"
+
+      if "DB" in algo:
+         b, m, bar = algo.rpartition("DB")
+         bars, m, e = bar.partition("_")
+         self.setTradingDelayBars(d, bars, "")
+         
+      if "IR" in algo:
+         b, m, bar = algo.rpartition("IR")
+         bars, m, e = bar.partition("_")
+         self.setInRangeBars(d, bars, "")
+         
       return info
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def readProfileY(self, path):
+         
+      with open(path) as f:
+         return yaml.load(f, Loader=yaml.FullLoader)
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def readProfile(self, path):
    
-      with open(path) as jsonData:
-         return json.load(jsonData)
+      with open(path) as f:
+         return json.load(f)
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def writeProfile(self, path, data):
+   def writeProfile(self, path, data, stock):
    
-      with open(path, 'w') as fp:
-          json.dump(data, fp, indent=2)
+      if stock:
+         path = path + "_" + stock
+         
+      with open(path, 'w') as f:
+         json.dump(data, f, indent=2)
+         f.flush()
+         f.flush()
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def writeProfileY(self, path, data, stock):
+
+      with open("/tmp/" + path, 'w') as f:
+         yaml.dump(data, f, indent=2)
+         f.flush()
+         f.flush()
+       
        
 
 

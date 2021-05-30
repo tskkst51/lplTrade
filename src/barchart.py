@@ -33,6 +33,7 @@ class Barchart:
       self.minBar5 = 5
       
       self.barCountInPosition = 0
+      self.timeBarValue = 0
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def init(self):
@@ -44,15 +45,20 @@ class Barchart:
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadInitBar(self, bc, date, bar, bid, ask, last, vol):
-      print ("loadInitBar bar : " + str(bar))
-      bc[bar][self.op] = last
+   
+      #bc[bar][self.op] = last
+      bc[bar][self.op] = ask
+      
       bc[bar][self.cl] = last
+      
 #      bc[bar][self.hi] = ask
 #      bc[bar][self.lo] = bid
+
       bc[bar][self.hi] = last
       bc[bar][self.lo] = last
       bc[bar][self.dt] = date
       bc[bar][self.vl] = vol
+      print ("bc[bar] " + str(bc[bar]))
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadBar(self, bc, vol, bar, bid, ask, last):
@@ -71,6 +77,8 @@ class Barchart:
                
       bc[bar][self.vl] = vol
 
+      print ("bc[bar] " + str(bc[bar]))
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadEndBar(self, bc, date, bar, bid, ask, last, vol):
    
@@ -83,8 +91,11 @@ class Barchart:
       if last < bc[bar][self.lo]:
          bc[bar][self.lo] = last
 
+      bc[bar][self.vl] = vol
+
       self.loadHiLoBar(bc, bar)
-      
+      print ("bc[bar] " + str(bc[bar]))
+
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadHiLoBar(self, bc, bar):
             
@@ -291,6 +302,46 @@ class Barchart:
       return bcCtr
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setTimeBarValue(self, timeBar):
+      
+      self.timeBarValue = timeBar
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getTimeBarValue(self):
+      
+      return int(self.timeBarValue)
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getNumSessionLos(self, bc, bar):
+      
+      if bar == 0:
+         return 0
+
+      sessionLos = 0
+      
+      while bar >= 0:
+         if bc[bar][self.sL] == 1:
+            sessionLos += 1
+         bar -= 1
+      
+      return sessionLos
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getNumSessionHis(self, bc, bar):
+      
+      if bar == 0:
+         return 0
+
+      sessionHis = 0
+      
+      while bar >= 0:
+         if bc[bar][self.sH] == 1:
+            sessionHis += 1
+         bar -= 1
+      
+      return sessionHis
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getSessionHiAndBar(self, bc, bar):
       
       if bar == 0:
@@ -408,6 +459,21 @@ class Barchart:
       self.path4m = path.replace("active", "active4m")
       self.path5m = path.replace("active", "active5m")
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def writeFD(self, bc, pathFD, bar):
+   
+      pathFD.write('%s,' % str(bc[bar][self.hi]))
+      pathFD.write('%s,' % str(bc[bar][self.lo]))
+      pathFD.write('%s,' % str(bc[bar][self.op]))
+      pathFD.write('%s,' % str(bc[bar][self.cl]))
+      pathFD.write('%s,' % str(bc[bar][self.vl]))
+      pathFD.write('%s,' % str(bc[bar][self.bl]))
+      pathFD.write('%s,' % str(bc[bar][self.sH]))
+      pathFD.write('%s,' % str(bc[bar][self.sL]))
+      pathFD.write('%s' % bc[bar][self.dt] + "\n")
+         
+      return
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def write(self, bc, path, bar):
    

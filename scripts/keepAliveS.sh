@@ -65,7 +65,8 @@ function endIt {
       
 log="${wp}/logs/output_${dt}"
 
-cmd="$py3 $lpltPathS -d -r -c $HOME/profiles/et.json -p $wp/profiles/active.json"
+cmd="$py3 $lpltPathS -d -c $HOME/profiles/et.json -p $wp/profiles/active.json"
+#cmd="$py3 $lpltPathS -d -r -c $HOME/profiles/et.json -p $wp/profiles/active.json"
 
 ps | grep $program | grep -qv grep
 

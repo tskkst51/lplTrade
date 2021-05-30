@@ -5,7 +5,7 @@ import random
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Log:
 
-   def __init__(self, debugFlag, verboseFlag, logPath, debugPath, offLine, testMode):
+   def __init__(self, debugFlag, verboseFlag, logPath, debugPath, offLine):
       self.totGain = 0.0
       self.grandTotal = 0.0
       self.strAction = ""
@@ -16,29 +16,48 @@ class Log:
       self.wins = 0
       self.losses = 0
       self.totalTrades = 0
-      self.offLine = 0
-      self.testMode = testMode
+      self.offLine = offLine
       
    def debug(self, msg):
       if self.debugFlag:
-         print (msg)
+         if self.offLine:
+            print (msg)
+         else:
+            with open(self.debugPath, 'a+') as f:
+               f.write ('%s' % "DEB: " + str(msg) + "\n")
       
    def verbose(self, msg):
       if self.verboseFlag:
-         self.debug (msg)
+         if self.offLine:
+            self.debug (msg)
+         else:
+            with open(self.debugPath, 'a+') as f:
+               f.write ('%s' % "VER: " + str(msg) + "\n")
       
    def error(self, msg):
-      self.msg = msg
-      print ("ERR : " + self.msg)
-      
+      if self.offLine:
+         self.msg = msg
+         print ("ERR : " + self.msg)
+      else:
+         with open(self.debugPath, 'a+') as f:
+            f.write ('%s' % "ERR: " + str(msg) + "\n")
+
    def warning(self, msg):
-      self.msg = msg
-      print ("WARN: " + self.msg)
-      
+      if self.offLine:
+         self.msg = msg
+         print ("WARN: " + self.msg)
+      else:
+         with open(self.debugPath, 'a+') as f:
+            f.write ('%s' % "WARN: " + str(msg) + "\n")
+
    def info(self, msg):
-      self.msg = msg
-      print ("INFO: " + msg)
-      
+      if self.offLine:
+         self.msg = msg
+         print ("INFO: " + msg)
+      else:
+         with open(self.debugPath, 'a+') as f:
+            f.write ('%s' % "INFO: " + str(msg) + "\n")
+
    def mg(self, msg):
       self.msg = msg
       print (self.msg)

@@ -6,11 +6,13 @@ import time
 import json
 import os.path
 import lplTrade as lpl
+import trade_interface as ti
 from array import array
 from optparse import OptionParser
 from time import time, sleep
 import pathlib
 import pickle
+import simplejson
 import simplejson
 from shutil import copyfile
 
@@ -18,7 +20,6 @@ from shutil import copyfile
 # Parse Command Line Options
 
 verbose = debug = quiet = False
-testMode = 0
 
 parser = OptionParser()
 
@@ -73,9 +74,6 @@ parser.add_option("-t", "--timeBar", type="string",
 parser.add_option("-w", "--workPath", type="string",
    action="store", dest="workPath", default=False,
    help="work directory. default lplTrade...")
-   
-parser.add_option("-e", "--testMode",
-   action="store_true", dest="testMode", help="testMode, used for automated testing")
    
 (clOptions, args) = parser.parse_args()
 
@@ -145,7 +143,9 @@ gainTrailStop = str(d["profileTradeData"]["gainTrailStop"])
 quickProfitPctTrigger = float(d["profileTradeData"]["quickProfitPctTrigger"])
 doTrailingStop = int(d["profileTradeData"]["doTrailingStop"])
 maxProfit = float(d["profileTradeData"]["maxProfit"])
+maxLoss = float(d["profileTradeData"]["maxLoss"])
 quitMaxProfit = int(d["profileTradeData"]["quitMaxProfit"])
+quitMaxLoss = int(d["profileTradeData"]["quitMaxLoss"])
 
 offLine = int(c["profileConnectET"]["offLine"])
 sandBox = int(c["profileConnectET"]["sandBox"])
@@ -162,6 +162,8 @@ marketOpen = 0
 stoppedOut = 4
 exitMaxProfit = 2
 
+daily = 0
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Overide profileTradeData data with command line data
 
@@ -174,8 +176,7 @@ if clOptions.alt:
 if clOptions.stock:
    stock = clOptions.stock
    d["profileTradeData"]["stock"] = str(stock)
-   
-   
+      
 if clOptions.debug:
    debug = int(clOptions.debug)
 
@@ -230,11 +231,12 @@ testPath = testPath.replace(".json", stock + ".tt")
 if service == "eTrade":
    symbol = stock
 
-lg = lpl.Log(debug, verbose, logPath, debugPath, offLine, testMode)
+lg = lpl.Log(debug, verbose, logPath, debugPath, offLine)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup connection to the exchange service
 
+stockArr = []
 if service == "bitstamp":
    cn = lpl.ConnectBitStamp(service, currency, alt)
    cn.connectPublic()
@@ -242,7 +244,8 @@ elif service == "bitfinex":
    cn = lpl.ConnectBitFinex()
 elif service == "eTrade":
    symbol = stock
-   cn = lpl.ConnectEtrade(c, stock, debug, verbose, marketDataType, sandBox, offLine)
+   stockArr.append(stock)
+   cn = lpl.ConnectEtrade(c, stockArr, debug, verbose, marketDataType, sandBox, offLine)
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize algorithm,  barcharts objects
@@ -250,7 +253,7 @@ elif service == "eTrade":
 bc = lpl.Barchart()
 tr = lpl.Trends(d, lg, cn, bc, offLine)
 lm = lpl.Limits(d, lg, cn, bc, offLine, symbol)
-pa = lpl.Pattern(d, bc)
+pa = lpl.Pattern(d, bc, lg)
 pr = lpl.Price(cn, offLine)
 a = lpl.Algorithm(d, lg, cn, bc, tr, lm, pa, pr, offLine, stock)
 
@@ -363,7 +366,8 @@ if not offLine:
    if a.doPreMarket():
       tm.waitUntilTopMinute()
 
-lm.setTradingDelayBars(timeBar)
+lm.setTradingDelayBars()
+bc.setTimeBarValue(timeBar)
 
 # This counter matches the bar number displayed in etrade
 barInfoCtr = 2
@@ -372,6 +376,7 @@ if offLine:
    pr.setNextBar(timeBar)
 
 dirtyProfit = 0
+dirtyLoss = 0
 
 if (quitMaxProfit or doTrailingStop) and maxProfit == 0.0:
    lg.info ("Max profit not set! ")
@@ -380,24 +385,37 @@ if (quitMaxProfit or doTrailingStop) and maxProfit == 0.0:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def isStoppedOut():
 
-   if a.getTotalGain() >= a.getTargetProfit() and a.getTotalGain() != 0.0:
-      if quitMaxProfit:            
+   if quitMaxProfit:            
+      if a.getTotalGain() >= a.getTargetProfit() and a.getTotalGain() != 0.0:
          lg.info ("MAX PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
          lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
+         lg.info ("MAX PROFIT FACTOR: " + str(maxProfit))
          lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
          lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
          
          return 2
+                  
+      # We are out with our PROFIT
+   if doTrailingStop and positionTaken == stoppedOut:
+      lg.info ("TRAILING STOP REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
+      lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
+      lg.info ("MAX PROFIT FACTOR: " + str(maxProfit))
+      lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
+      lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
+      
+      return 4
          
-         # We are out with our PROFIT
-      if doTrailingStop and positionTaken == stoppedOut:
-         lg.info ("TRAILING STOP REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
-         lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
-         lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
-         lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
+   if quitMaxLoss:
+      lg.info ("a.getTotalLoss(): " + str(a.getTotalLoss()))
+      lg.info ("a.getTargetLoss(): " + str(a.getTargetLoss()))
+      if a.getTotalLoss() <= a.getTargetLoss() and a.getTotalLoss() != 0.0:
+         lg.info ("MAX LOSS REACHED, Gain: Bar: " + str(a.getTotalLoss()) + " " + str(barCtr))
+         lg.info ("MAX LOSS TARGET: " + str(a.getTargetLoss()))
+         lg.info ("MAX LOSS FACTOR: " + str(maxLoss))
+         lg.info ("MAX LOSS CLOSE PRICE: " + str(last))
+         lg.info ("MAX LOSS TIME: " + str(barCtr * timeBar) + " minutes")
          
-         return 4
-
+         return 3
    return 0
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -432,16 +450,12 @@ while True:
    if offLine:
       pr.setNextBar(timeBar)
       
-   #a.setCurrentBar(barCtr)
-      
    dirty = doOnceOnOpen = doOnceOnClose = 0
             
    if offLine:
       if barCtr == 0:
          pr.findStartPriceIdx(numPrices, timeBar)
          barCtr = 1
-         
-   #a.setNextBar(barCtr + 1)
 
    a.setAllLimits(barChart, barCtr)
 
@@ -450,18 +464,23 @@ while True:
       # Set the values from the trading service
       cn.setValues(barChart, barCtr, bid, ask, last, vol)
 
-      bid, ask, last, vol = pr.getNextPrice(barChart, numBars, barCtr)
+      bid, ask, last, vol = pr.getNextPrice(barChart, numBars, barCtr, stock)
       
       a.setCurrentBid(bid)
       a.setCurrentAsk(ask)
       a.setCurrentLast(last)
-      a.setCurrentVol(vol)
+      #a.setCurrentVol(vol)
       
       # Set the profit to gain
       if not dirtyProfit:
          a.setTargetProfit(last, maxProfit)
          lg.debug("Max profit set to: " + str(a.getTargetProfit()))
          dirtyProfit += 1
+
+      if not dirtyLoss:
+         a.setTargetLoss(last, maxLoss)
+         lg.debug("Max loss set to: " + str(a.getTargetLoss()))
+         dirtyLoss += 1
 
       # Do one time on open
       if not doOnceOnOpen:
@@ -480,6 +499,8 @@ while True:
                a.closePosition(barCtr, barChart, bid, ask, forceClose)
             if a.getTotalGain() >= a.getTargetProfit():
                exit(2)
+            if a.getTotalLoss() <= a.getTargetLoss():
+               exit(3)
             else:
                exit(0)
          

@@ -6,6 +6,7 @@ from time import sleep
 from time import time
 from datetime import datetime
 import pyetrade
+#import trade_interface
 import traceback
 import random
 import collections
@@ -32,7 +33,7 @@ class ConnectEtrade:
       self.bid = 0.0
       self.vl = 0
       self.hi = 0
-      self.lo = 1
+      self.lo = 0
       self.verbose = verbose
       self.lastTrade = 0
       self.dateTimeUTC = "123456"   
@@ -66,14 +67,9 @@ class ConnectEtrade:
          print (self.oauthToken)
          print (self.oauthSecret)
          print ("")
-   
-      self.stocksStr = stocks
+         
+      self.stocks = stocks
       
-      if stocks.find(","):
-         self.symbols = self.stocks = stocks.split(",")
-      else:
-         self.symbol = stocks
-
       self.serviceValues = {}
       
       for stock in self.stocks:
@@ -97,6 +93,8 @@ class ConnectEtrade:
       self.sLIdx = 7
       self.dtIdx = 8
       
+      self.totalVolume = 0
+      
       self.askArr = {}
       self.bidArr = {}
       self.lastTradeArr = {}
@@ -108,6 +106,7 @@ class ConnectEtrade:
       self.barLenArr = {}
       self.hiBarValueArr = {}
       self.loBarValueArr = {}
+      self.sym = {}
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setStockValues(self, stocksChart, bar, stocks):
@@ -129,42 +128,68 @@ class ConnectEtrade:
             self.loBarValueArr[stock] = stocksChart[stock][bar][self.sLIdx] 
             
       else: # Live
+         quoteData = []
+         
+         symbolDetails = [0.0,0.0,0.0,0,""]
+         #sleep(1)
          for attempt in range(1500):
             try:
                mktData = pyetrade.market.ETradeMarket(self.consumerKey, 
                self.consumerSecret, self.oauthToken, self.oauthSecret, self.sandBox)
                
-               sym = mktData.get_quote([self.stocksStr], self.marketDataType)
-            
+               
+               sym = mktData.get_quote(self.stocks, self.marketDataType)
+               
+               #print (str(len(self.stocks)))
+               #print (str(sym))
+               
                symbol = ""
-               for item in sym['QuoteResponse']['QuoteData']:
-                  
-                  self.symbolDetails = [0.0,0.0,0.0,0,""]
-                           
-                  for key, value in item['Product'].items():
-                     if key == 'symbol':
-                        symbol = value
-                                         
-                  for key, val in item['Intraday'].items():
-                     if key == 'bid':
-                        self.symbolDetails[self.bidIdx] = round(float(val), 2)
-                        print (str(val))
-                     elif key == 'ask':
-                        self.symbolDetails[self.askIdx] = round(float(val), 2)
-                        print (str(val))
-                     elif key == 'lastTrade':
-                        self.symbolDetails[self.lastIdx] = round(float(val), 2)
-                        print (str(val))
-                     elif key == 'totalVolume':
-                        self.symbolDetails[self.totVolIdx] = int(val)
-                        print ("totalVolume " + str(val))
+               if len(self.stocks) > 1:
+                  quoteData = sym['QuoteResponse']['QuoteData']
+               else:
+                  quoteData.append(sym['QuoteResponse']['QuoteData'])
+
+               for n in quoteData:
+                  for k, v in n.items():
+                     if k == "dateTime":
+                        dateT = v
                         
-                  self.symbolDetails[self.dateIdx] = item['dateTime']
+                     if k == "Product":
+                        for key, value in v.items():
+                           if key == 'symbol':
+                              symbol = value
+                              self.serviceValues[symbol] = (symbolDetails)
+                              #print ("symbol \n" + str(symbol))
+                              #print ("serviceValues[symbol] \n" + str(self.serviceValues[symbol]))
+                              symbolDetails = [0.0,0.0,0.0,0,""]
+
+                     if k == "Intraday":
+                        for key, val in v.items():
+                           #print ("key " + str(key))
+                           #print ("val " + str(val))
+                           if key == 'bid':
+                              symbolDetails[self.bidIdx] = round(float(val), 2)
+                              #print ("bid " + str(val))
+                           elif key == 'ask':
+                              symbolDetails[self.askIdx] = round(float(val), 2)
+                              #print ("ask " + str(val))
+                           elif key == 'lastTrade':
+                              symbolDetails[self.lastIdx] = round(float(val), 2)
+                              #print ("lastTrade " + str(val))
+                           elif key == 'totalVolume':
+                              symbolDetails[self.totVolIdx] = int(val)
+                              #print ("totalVolume " + str(val))
                            
-                  self.serviceValues[symbol] = (self.symbolDetails)
-            except:
+                        symbolDetails[self.dateIdx] = dateT
+                        
+               #print ("serviceValues \n" + str(self.serviceValues))
+               
+            except Exception as e: 
+               print(e)
+
                print ("Etrade is crap " + str(attempt))
-               sleep(2)
+               sleep(1)
+               
             else:
                break
          else:
@@ -338,7 +363,7 @@ class ConnectEtrade:
       return float(self.bid)
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getCurrentVol(self, stock):
+   def getCurrentVolume(self, stock):
 
       if self.isStockValues:
          if stock:
@@ -415,6 +440,14 @@ class ConnectEtrade:
       return (int(st))
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getDateYearMonthDay(self): 
+         
+      ts = time()
+      st = datetime.fromtimestamp(ts).strftime('%Y%m%d')
+      
+      return (int(st))
+            
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def adjustTimeToTopMinute(self, time):
    
       timeS = str(time)
@@ -439,7 +472,6 @@ class ConnectEtrade:
 
       return
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class ConnectBitFinex:
    def __init__(self, service="bitstamp"):
@@ -470,7 +502,6 @@ class ConnectBitFinex:
 # Connect to API service providers: bit stamp kraken etrade ibkr lakebtc
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class ConnectBitStamp:
    def __init__(self, service="bitstamp", currency="btc", alt="usd"):
       self.service = service
@@ -499,7 +530,7 @@ class ConnectBitStamp:
             vol = float(self.publicClient.ticker(self.currency, self.alt)['volume'])
          except:
             #print("Caught exception in getVolume for bitstamp. Retrying...")
-            sleep(2)
+            sleep(1)
             continue
          break
          

@@ -48,7 +48,9 @@ class Trends:
       self.sessionHiPrice = 0.0
       self.sessionLiPrice = 0.0
 
-         
+      self.setBullSessionValue(self.bullTrendValue)
+      self.setBearSessionValue(self.bearTrendValue)
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setTrendBars(self, timeBar):
    
@@ -126,21 +128,25 @@ class Trends:
          
       retCode = 0
 
+#      if self.isBearSuperTrend():
+#         self.lg.debug("In isBearSuperTrend")
+#         retCode += 1
+
       if self.isBearMegaTrend():
-         self.lg.debug("In isBearMegaTrend")
-         retCode += 1
+         self.lg.debug("In isBearTrend")
+         retCode += 2
 
       if self.isBearLongTrend():
          self.lg.debug("In isBearLongTrend")
-         retCode += 1
+         retCode += 3
       
       if self.isBearMidTrend():
          self.lg.debug("In isBearMidTrend")
-         retCode += 1
+         retCode += 4
       
       if self.isBearShortTrend():
          self.lg.debug("In isBearShortTrend")
-         retCode += 1
+         retCode += 5
               
       return retCode
 
@@ -149,21 +155,25 @@ class Trends:
    
       retCode = 0
 
+#      if self.isBearSuperTrend():
+#         self.lg.debug("In isBearSuperTrend")
+#         retCode += 1
+
       if self.isBullMegaTrend():
          self.lg.debug("In isBullMegaTrend")
-         retCode += 1
+         retCode += 2
 
       if self.isBullLongTrend():
          self.lg.debug("In isBullLongTrend")
-         retCode += 1
+         retCode += 3
       
       if self.isBullMidTrend():
          self.lg.debug("In isBullMidTrend")
-         retCode += 1
+         retCode += 4
       
       if self.isBullShortTrend():
          self.lg.debug("In isBullShortTrend")
-         retCode += 1
+         retCode += 5
               
       return retCode
 
@@ -225,7 +235,7 @@ class Trends:
    def isBullShortTrend(self):
       
       if self.shortTrend >= self.bullTrendValue and self.shortTrend <= 2.0:
-         print("IN BULL SHORT TREND " + str(self.shortTrend))
+         self.lg.debug("IN BULL SHORT TREND " + str(self.shortTrend))
          return 1
       
       return 0
@@ -234,7 +244,7 @@ class Trends:
    def isBullMidTrend(self):
       
       if self.midTrend >= self.bullTrendValue and self.midTrend <= 2.0:
-         print("IN BULL MID TREND " + str(self.midTrend))
+         self.lg.debug("IN BULL MID TREND " + str(self.midTrend))
          return 1
       
       return 0
@@ -243,7 +253,7 @@ class Trends:
    def isBullLongTrend(self):
       
       if self.longTrend >= self.bullTrendValue and self.longTrend <= 2.0:
-         print("IN BULL LONG TREND " + str(self.longTrend))
+         self.lg.debug("IN BULL LONG TREND " + str(self.longTrend))
          return 1
       
       return 0
@@ -252,7 +262,7 @@ class Trends:
    def isBullMegaTrend(self):
       
       if self.megaTrend >= self.bullTrendValue and self.megaTrend <= 2.0:
-         print("IN BULL MEGA TREND " + str(self.megaTrend))
+         self.lg.debug("IN BULL MEGA TREND " + str(self.megaTrend))
          return 1
       
       return 0
@@ -261,7 +271,7 @@ class Trends:
    def isBullSuperTrend(self):
       
       if self.superTrend >= self.bullTrendValue and self.superTrend <= 2.0:
-         print("IN BULL SUPER TREND " + str(self.superTrend))
+         self.lg.debug("IN BULL SUPER TREND " + str(self.superTrend))
          return 1
       
       return 0
@@ -270,7 +280,7 @@ class Trends:
    def isBearShortTrend(self):
       
       if self.shortTrend < self.bearTrendValue and self.shortTrend >= 3.0:
-         print("IN BEAR SHORT TREND " + str(self.shortTrend))
+         self.lg.debug("IN BEAR SHORT TREND " + str(self.shortTrend))
          return 1
       
       return 0
@@ -282,7 +292,7 @@ class Trends:
       self.lg.debug("self.bearTrendValue: " + str(self.bearTrendValue))
       
       if self.midTrend <= self.bearTrendValue and self.midTrend >= 3.0:
-         print("IN BEAR MID TREND " + str(self.midTrend))
+         self.lg.debug("IN BEAR MID TREND " + str(self.midTrend))
          return 1
 
       return 0
@@ -291,7 +301,7 @@ class Trends:
    def isBearLongTrend(self):
       
       if self.longTrend < self.bearTrendValue and self.longTrend >= 3.0:
-         print("IN BEAR LONG TREND " + str(self.longTrend))
+         self.lg.debug("IN BEAR LONG TREND " + str(self.longTrend))
          return 1
 
       return 0
@@ -300,7 +310,7 @@ class Trends:
    def isBearMegaTrend(self):
       
       if self.megaTrend < self.bearTrendValue and self.megaTrend >= 3.0:
-         print("IN BEAR MEGA TREND " + str(self.megaTrend))
+         self.lg.debug("IN BEAR MEGA TREND " + str(self.megaTrend))
          return 1
 
       return 0
@@ -309,19 +319,19 @@ class Trends:
    def isBearSuperTrend(self):
       
       if self.superTrend < self.bearTrendValue and self.superTrend >= 3.0:
-         print("IN BEAR SUPER TREND " + str(self.superTrend))
+         self.lg.debug("IN BEAR SUPER TREND " + str(self.superTrend))
          return 1
 
       return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setTrendLimits(self, bc, bar):
-      
-      self.setShortTrend("short", bc, bar)
-      self.setMidTrend("mid", bc, bar)
-      self.setLongTrend("long", bc, bar)
-      self.setMegaTrend("mega", bc, bar)
-      self.setSuperTrend("super", bc, bar)
+   def setTrendLimits(self, bc, bar, bid, ask):
+            
+      self.setShortTrend("short", bc, bar, bid, ask)
+      self.setMidTrend("mid", bc, bar, bid, ask)
+      self.setLongTrend("long", bc, bar, bid, ask)
+      self.setMegaTrend("mega", bc, bar, bid, ask)
+      self.setSuperTrend("super", bc, bar, bid, ask)
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isBullSessionTrend(self):
@@ -340,15 +350,41 @@ class Trends:
       return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setSessionInPositionTrend(self, trendValue):
+
+      self.inPosSessionBullTrend = self.inPosSessionBearTrend = 0.0
+      # FINISH!!      
+               
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setBullSessionValue(self, trendValue):
+   
+      self.bullSessionValue = trendValue
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setBearSessionValue(self, trendValue):
+   
+      self.bearSessionValue = trendValue
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getBullSessionValue(self):
+   
+      return float(self.bullSessionValue)
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getBearSessionValue(self):
+   
+      return float(self.bearSessionValue)
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setSessionTrend(self, trendValue):
 
       self.sessionBullTrend = self.sessionBearTrend = 0.0
          
       if trendValue > self.bullSessionValue and trendValue <= 2.0:
-         print("IN BULL SESSION TREND " + str(trendValue))
+         self.lg.debug("IN BULL SESSION TREND " + str(trendValue))
          self.sessionBullTrend = trendValue
       elif trendValue < self.bearSessionValue and trendValue >= 3.0:
-         print("IN BEAR SESSION TREND " + str(trendValue))
+         self.lg.debug("IN BEAR SESSION TREND " + str(trendValue))
          self.sessionBearTrend = trendValue
                
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -393,11 +429,12 @@ class Trends:
       self.lg.debug("session pctInTrend: " + str(pctInTrend))
       self.lg.debug("session penetration: " + str(penetration))
       self.lg.debug("session pctInTrendRnd: " + str(pctInTrendRnd))
+      self.lg.debug("trend + pctInTrendRnd: " + str(trend + pctInTrendRnd))
 
       return trend + pctInTrendRnd
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setShortTrend(self, trendType, bc, bar):
+   def setShortTrend(self, trendType, bc, bar, bid, ask):
       
       trendValue = 0
 
@@ -411,10 +448,10 @@ class Trends:
 
       self.shortTrend = 0.0
       
-      self.setTrendValues(trendType, bc, bar, trendValue)
+      self.setTrendValues(trendType, bc, bar, trendValue, bid, ask)
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setMidTrend(self, trendType, bc, bar):
+   def setMidTrend(self, trendType, bc, bar, bid, ask):
    
       trendValue = 0
 
@@ -428,10 +465,10 @@ class Trends:
 
       self.midTrend = 0.0
       
-      self.setTrendValues(trendType, bc, bar, trendValue)
+      self.setTrendValues(trendType, bc, bar, trendValue, bid, ask)
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setLongTrend(self, trendType, bc, bar):
+   def setLongTrend(self, trendType, bc, bar, bid, ask):
       
       trendValue = 0
       
@@ -448,10 +485,10 @@ class Trends:
 
       self.longTrend = 0.0
       
-      self.setTrendValues(trendType, bc, bar, trendValue)
+      self.setTrendValues(trendType, bc, bar, trendValue, bid, ask)
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setMegaTrend(self, trendType, bc, bar):
+   def setMegaTrend(self, trendType, bc, bar, bid, ask):
       
       trendValue = 0
       
@@ -465,10 +502,10 @@ class Trends:
 
       self.megaTrend = 0.0
       
-      self.setTrendValues(trendType, bc, bar, trendValue)
+      self.setTrendValues(trendType, bc, bar, trendValue, bid, ask)
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setSuperTrend(self, trendType, bc, bar):
+   def setSuperTrend(self, trendType, bc, bar, bid, ask):
       
       trendValue = 0
       
@@ -482,10 +519,15 @@ class Trends:
 
       self.superTrend = 0.0
       
-      self.setTrendValues(trendType, bc, bar, trendValue)
+      self.setTrendValues(trendType, bc, bar, trendValue, bid, ask)
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setTrendValues(self, trendType, bc, bar, trendBarLen):
+   def getTrendValues(self):
+
+      return self.shortTrend, self.midTrend , self.longTrend , self.megaTrend, self.superTrend 
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setTrendValues(self, trendType, bc, bar, trendBarLen, bid, ask):
       # 0.0 - no trend; 1.[0-9] - bull; 3.[0-9] - bear
       # the fractional value is the strength 0 weak 9 strong
 
@@ -496,8 +538,8 @@ class Trends:
       loBarPosition = hiBarPosition = i = b = 0
       loBartime = hiBarTime = ""
       
-      ask = self.cn.getCurrentAsk(self.stock)
-      bid = self.cn.getCurrentBid(self.stock)
+      #ask = self.cn.getCurrentAsk(self.stock)
+      #bid = self.cn.getCurrentBid(self.stock)
 
       if trendType == "short":
          if bar <= self.shortTrendBars:
@@ -569,13 +611,13 @@ class Trends:
          if highest > lowest:
             priceRange = highest - lowest
             penetration = highest - ask
-            pctInTrend = 1.0 - (penetration / priceRange)
          else:
             priceRange = lowest - highest
             penetration = lowest - bid
-            pctInTrend = 1.0 - (penetration / priceRange)
             self.lg.debug("priceRange: " + str(priceRange))
-            
+         
+         pctInTrend = 1.0 - (penetration / priceRange)
+
       pctInTrendRnd = round(pctInTrend, 2)
       
       self.lg.debug("pctInTrend: " + str(pctInTrend))
