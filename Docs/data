@@ -53,3 +53,11 @@ rm -f 07*/logs/*;rm -f 08*/logs/*;rm -f 09*/logs/*;rm -f 10*/logs/*;rm -f 11*/lo
 
 https://polygon.io/dashboard private key
 qL6W5A65SakAuO1ffC2iCjGXY4NTtvP_
+
+test.sh "" "" TSLA;results.sh TSLA; findBestAlgos.sh TSLA
+test.sh "" "" NVDA;results.sh NVDA; findBestAlgos.sh NVDA
+test.sh "" "" TQQQ;results.sh TQQQ; findBestAlgos.sh TQQQ
+test.sh "" "" AMZN;results.sh AMZN; findBestAlgos.sh AMZN
+test.sh "" "" BIDU;results.sh BIDU; findBestAlgos.sh BIDU
+test.sh "" "" BILI;results.sh BILI; findBestAlgos.sh BILI
+

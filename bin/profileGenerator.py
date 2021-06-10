@@ -35,12 +35,14 @@ algo = clOpts.algo
 day = clOpts.day
 stock = clOpts.stock
 
-if day == "":
-   profilePath = "profiles/active.json"
-else:
-   #profilePath = day + "/" + "profiles/active.json"
-   profilePath = "test/" + day + "/" + "profiles/active.json"
-   #profilePath = os.getcwd() + "/test/" + day + "/" + "profiles/active.json"
+profilePath = "profiles/active.json"
+
+#if day == "":
+#   profilePath = "profiles/active.json"
+#else:
+#   #profilePath = day + "/" + "profiles/active.json"
+#   profilePath = "test/" + day + "/" + "profiles/active.json"
+#   #profilePath = os.getcwd() + "/test/" + day + "/" + "profiles/active.json"
 
 pf = lpl.Profile()
 

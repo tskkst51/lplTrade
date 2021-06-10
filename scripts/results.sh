@@ -31,7 +31,7 @@ function init {
    
    stock=$1
    
-   host=$(hostname -s)
+   host=$(hostname -s|awk '{print $1}')
    
    tmpFile="/tmp/${stock}.rs"
    tmpFile2="/tmp/${stock}2.rs"
@@ -69,7 +69,13 @@ function init {
       rm -f $resultsPath
    fi
 
-   if [[ $host == "ML-C02C8546LVDL" ]] or [[ $host == "tmm" ]]; then
+   if [[ $host == "ML-C02C8546LVDL" ]]; then
+      activateDir="/lplW"
+   fi
+   if [[ $host == "tmm" ]]; then
+      activateDir="/lplW"
+   fi
+   if [[ $host == "mm" ]]; then
       activateDir="/lplW"
    else
       activateDir="/venv" 

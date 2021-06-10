@@ -36,7 +36,8 @@ parser.add_option("-d", "--debug",
 parser.add_option("-m", "--marketDataType", type="string",
    action="store", dest="marketDataType", default=False,
    help="currency to buy: btc... eth... bch...")
-   
+
+offLine = 0
 parser.add_option("-o", "--offLine",
    action="store_true", dest="offLine", help="offLine")
 
@@ -108,6 +109,22 @@ def isStoppedOut(stock):
          return 3
    return 0
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+def getStocksFromBCDir(path):
+
+   stocks = []
+
+   for rootPath, directories, paths in os.walk(path):
+      for path in paths:
+         if path.endswith(".bc"):
+            if os.stat(rootPath + "/" + path).st_size > 10000:
+               stockName = path.replace("active","") 
+               stockName = stockName.replace(".bc","")
+               if stockName not in stocks:
+                  #print ("stockName: " + str(stockName))
+                  stocks.append(stockName)      
+   
+   return stocks
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDailyStocks):
@@ -333,12 +350,13 @@ if clOptions.onlyUpdateDailyStocks:
 
 if offLine:
    resume = 1
+   preMarketAnalysis = 0
 
 if masterMode:
    timeBar = 1
    d["profileTradeData"]["timeBar"] = "1"
    
-if preMarketAnalysis and not offLine:
+if preMarketAnalysis:
 
    logPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
    
@@ -352,16 +370,20 @@ if preMarketAnalysis and not offLine:
    
    if onlyUpdateDailyStocks:
       exit (0)
-      
+
+if offLine:
+   if workPath:
+      stocks = getStocksFromBCDir(workPath + "/bc")
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set up stock arrays
 
 # Trim list of stocks to 21 max
-print ("stocks " + str(stocks))
-
-if len(stocks) > 21:
-   while len(stocks) > 21:
-      del stocks[-1]
+#print ("stocks " + str(stocks))
+#
+#if len(stocks) > 21:
+#   while len(stocks) > 21:
+#      del stocks[-1]
 
 print ("stocks " + str(stocks))
 print ("stocks len " + str(len(stocks)))
@@ -395,7 +417,8 @@ cwd = os.getcwd()
 
 if workPath:
    os.chdir(workPath)
-   
+   wcwd = os.getcwd()
+
 tm = lpl.Time()
 lg = {}
 
@@ -453,17 +476,18 @@ elif service == "bitfinex":
    cn = lpl.ConnectBitFinex()
 elif service == "eTrade":
    symbol = stock
-   cn = lpl.ConnectEtrade(c, stocks, debug, verbose, marketDataType, sandBox, offLine)
+   cn = lpl.ConnectEtrade(c, stocks, debug, verbose, marketDataType, sandBox, 0, offLine)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def genProfile(algo):
 
-   print ("genProfile algo " + str(algo))
-   
-   cmd = "python3 bin/profileGenerator.py -a " + algo + " -d \"\""
-   if os.system(cmd) > 0:
-      print("Cannot create profile from " + str(cmd) + " " + str(algo))
-      return 1
+   if not offLine:
+      print ("genProfile algo " + str(algo))
+      
+      cmd = "python3 bin/profileGenerator.py -a " + algo + " -d \"\""
+      if os.system(cmd) > 0:
+         print("Cannot create profile from " + str(cmd) + " " + str(algo))
+         return 1
       
    return 0
 
@@ -474,7 +498,7 @@ def genProfile(algo):
 
 # find best profile to run against list of stocks
 for stock in stocks:
-   if preMarketAnalysis and not offLine:
+   if preMarketAnalysis:
       if genProfile(algoData[stock]):
          exit (1)
       profileData[stock] = loadProfileData(clOptions.profileTradeDataPath)
@@ -489,7 +513,7 @@ for stock in stocks:
    pa[stock] = lpl.Pattern(profileData[stock], ba[stock], lg[stock])
    a[stock] = lpl.Algorithm(profileData[stock], lg[stock], cn, ba[stock], tr[stock], lm[stock], pa[stock], pr[stock], offLine, stock)
    ut = lpl.Util()
-   th = lpl.Thred(ut, offLine, cwd)
+   th = lpl.Thred(ut, offLine, cwd, wcwd)
 
 lg1 = lg[stocks[0]]
 a1 = a[stocks[0]]
@@ -631,11 +655,11 @@ if not offLine:
          lg1.info("Waiting till the market opens...")
          cn.waitTillMarketOpens(a1.getMarketOpenTime())
 
-print ("stocksChart\n" + str(stocksChart))
+#print ("stocksChart\n" + str(stocksChart))
 
 serviceValues = cn.setStockValues(stocksChart, 0, stocks)
 
-print ("serviceValues\n" + str(serviceValues))
+#print ("serviceValues\n" + str(serviceValues))
 
 #if preMarketAnalysis:
 #   for stock in stocks:
@@ -653,10 +677,21 @@ for stock in stocks:
 pid = {}
 numLaunchedPids = 0
 
-if preMarketAnalysis and not offLine:
-   pid = th.launchAlgos(algoData, maxStocksToTrade)
-else:
-   pid = th.launchStocks(stocks, maxStocksToTrade)
+if preMarketAnalysis:
+   pid = th.launchAlgos(algoData, maxStocksToTrade, os.path.basename(workPath))
+
+if offLine:
+   stockSegs = {}
+   sSegCtr = 0
+   for ctr in range(len(stocks)):
+      if ctr % maxStocksToTrade == 0:
+         stockSegs[sSegCtr] = stocks[ctr:(ctr+maxStocksToTrade)]
+         sSegCtr += 1
+
+   lg1.debug ("stockSegs " + str(stockSegs))
+
+   for stocks in stockSegs.items():
+      pid = th.launchStocks(stocks, maxStocksToTrade, os.path.basename(workPath))
    
 if pid:
    numLaunchedPids = len(pid)
@@ -852,7 +887,7 @@ while True:
                exitTrading += 1
 
       if exitTrading and afterMarketAnalysis:
-         if afterMarketEndTime:
+         if not offLine and afterMarketEndTime:
             # Wait for afterMarketEndTime 8pm
             while afterMarketEndTime > cn.getTimeHrMnSecs():
                print ("afterMarketEndTime " + str(afterMarketEndTime))

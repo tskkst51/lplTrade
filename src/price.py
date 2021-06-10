@@ -481,8 +481,8 @@ class Price:
       if not self.offLine:
          return 0
       
-      #print ("self.getNextBar() " + str(self.getNextBar()))
-      #print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
+      print ("self.getNextBar() " + str(self.getNextBar()))
+      print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
       
       if self.getNextBar() == self.idxArr[self.priceIdx]:
       #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:

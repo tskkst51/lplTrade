@@ -4,39 +4,39 @@
 
 stock=""
 algo=""
-workPath=""
+testDate=""
 
 stock=$1
 algo=$2
-workPath=$3
+testDate=$3
 
 wp=$(pwd)
 
 $HOME/bin/lplt.sh
 
-lpltPath="$HOME/w/lplTrade"
+lpltPath=""
 
 host=$(hostname -s)
 
 if [[ $host == "ML-C02C8546LVDL" ]]; then
-   activateDir="/lplW"
+   activateDir="${HOME}/w/gitWS/lplW"
+   lpltPath="/${HOME}/w/gitWS/lplTrade"
 elif [[ $host == "Mac-mini" ]]; then
-   activateDir="/lplW"
+   activateDir="${HOME}/w/lplW"
+   lpltPath="${HOME}/w/lplTrade"
 else
-   activateDir="/venv" 
+   activateDir="/Users/tknitter/w/git/venv"
+   lpltPath="${HOME}/w/git/lplTrade"
 fi
 
-py3=$(dirname $lpltPath)
-py3+="${activateDir}/bin/python3"
+py3="${activateDir}//bin/python3"
 
-if [[ -n $workPath ]]; then
-   echo changing to workpath $workPath
-   cd $workPath || exit 1
+if [[ -n $testDate ]]; then
+   workPath="test/${testDate}"
 fi
 
 echo stock $stock
 echo algo $algo
-echo offLine $offLine
 
 if [[ -z $stock ]]; then
    echo stock not provided on CL
@@ -46,13 +46,14 @@ fi
 if [[ -n $stock ]]; then
    profilePath="${wp}/profiles/active.json_${stock}"
 else
-   profilePath="${wp}/profiles/active.json"
+   if [[ -n $testDate ]]; then
+      profilePath="${workPath}/profiles/active.json"
+   else
+      profilePath="${wp}/profiles/active.json"
+   fi
 fi
 
-if [[ -z $algo ]]; then
-   echo algo not provided on CL
-   exit 1
-else
+if [[ -n $algo ]]; then
    algos=$algo   
 fi
 
@@ -60,21 +61,47 @@ set -m
 
 outFile="/tmp/out${stock}.ot"
 dirty=""
+if [[ -n $testDate ]]; then
+
+   if [[ -z $algo ]]; then
+      algos=(
+      # DON"T CHANGE ORDER!!!!
+      "HL_QM_AL"
+      "HS_QM_AL"
+      "HI_QM_AL"
+      "LO_QM_AL"
+      "OC_QM_AL"
+      "EO_EC_QM_AL"
+      "HL_HS_QM_AL"
+      "HL_HI_QM_AL"
+      "HL_LO_QM_AL"
+   
+      "HL_QM"
+      "HS_QM"
+      "HI_QM"
+      "LO_QM"
+      "OC_QM"
+      "OO_QM"
+      "CC_QM"
+      "PL_QM"
+      "EO_EC_QM"
+      "HL_HS_QM"
+      "HL_HI_QM"
+      "HL_LO_QM"
+      )
+   fi
+fi
 
 for algo in $algos; do
    a=$algo
-   
-   ${py3} ${lpltPath}/bin/profileGenerator.py -d "" -a $algo -s $stock || echo Fainle profile generator
-   
-   cmd="${py3} ${lpltPath}/bin/lpltSlave.py -d -c $HOME/profiles/et.json -p $profilePath -l -s $stock"
-
-#   if [[ -n $workPath ]]; then
-#      ${py3} ${lpltPath}/bin/profileGenerator.py -d $workPath -a $algo || echo Fainle profile generator
-#      cmd="${py3} ${lpltPath}/bin/lpltSlave.py -w ${wp} -c $HOME/profiles/et.json -p ${workPath}/profiles/active.json -l -o -s $stock"
-#   else
-#      ${py3} ${lpltPath}/bin/profileGenerator.py -d "" -a $algo || echo Fainle profile generator
-#      cmd="${py3} ${lpltPath}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/profiles/active.json -l -s $stock"
-#   fi
+      
+   if [[ -n $testDate ]]; then
+      ${py3} ${lpltPath}/bin/profileGenerator.py -d $testDate -a $algo || echo Fainle profile generator
+      cmd="${py3} ${lpltPath}/bin/lpltSlave.py -w $workPath -c $HOME/profiles/et.json -p $profilePath -o -d -s $stock"
+   else
+      ${py3} ${lpltPath}/bin/profileGenerator.py -d "" -a $algo || echo Fainle profile generator
+      cmd="${py3} ${lpltPath}/bin/lpltSlave.py -c $HOME/profiles/et.json -p $profilePath -l -s $stock"
+   fi
       
    echo $cmd
    $cmd

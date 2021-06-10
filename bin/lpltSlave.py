@@ -17,23 +17,24 @@ import simplejson
 from shutil import copyfile
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def waitForPopulatedPrices(pricesPath, barChartPath):
+def waitForPopulatedPrices(pricesPath, barChartPath):   
+   
+   if not offLine:
+      while True:
+         if not os.path.exists(pricesPath):
+            sleep(0.001)
+            continue
+         if pathlib.Path(pricesPath).stat().st_size < 5:
+            sleep(0.001)
+            continue
+         break
+   
+   barChartFD = open(barChartPath, 'r', os.O_NONBLOCK)
+   lg.info("Using " + barChartPath + " as bar chart file")
 
-   while True:
-      if not os.path.exists(pricesPath):
-         sleep(0.001)
-         continue
-                  
-      if pathlib.Path(pricesPath).stat().st_size < 5:
-         sleep(0.001)
-         continue
-   
-      barChartFD = open(barChartPath, 'r', os.O_NONBLOCK)
-      lg.info("Using " + barChartPath + " as bar chart file")
-   
-      pricesFD = open(pricesPath, 'r', os.O_NONBLOCK)
-      lg.info("Using " + pricesPath + " as process file")
-      break
+   pricesFD = open(pricesPath, 'r', os.O_NONBLOCK)
+   lg.info("Using " + pricesPath + " as process file")
+      #break
       
    return pricesFD, barChartFD
    
@@ -89,6 +90,7 @@ offLine = 0
 parser.add_option("-o", "--offLine",
    action="store_true", dest="offLine", help="offLine")
 
+slave = 0
 parser.add_option("-l", "--slave",
    action="store_true", dest="slave", help="slave")
 
@@ -264,8 +266,10 @@ tm = lpl.Time()
 
 # Setup paths
 
-if workPath:
-   os.chdir(workPath)
+print ("os.getcwd() " + os.getcwd())
+
+#if workPath:
+#   os.chdir(workPath)
 
 logPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
 debugPath = clOptions.profileTradeDataPath.replace("profiles", "debug")
@@ -303,8 +307,7 @@ elif service == "bitfinex":
 elif service == "eTrade":
    symbol = stock
    stockArr.append(stock)
-   cn = lpl.ConnectEtrade(c, stockArr, debug, verbose, marketDataType, sandBox, slave)
-   
+   cn = lpl.ConnectEtrade(c, stockArr, debug, verbose, marketDataType, sandBox, slave, offLine)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize algorithm,  barcharts objects
 
@@ -414,7 +417,9 @@ numPrices = 0
 #   # We're live, program halted and now resumed. Initilize a new bar and trade on
 #   bc.appendBar(barChart)
 
-if not offLine:
+if offLine:
+   pricesFD.seek(0, io.SEEK_SET)
+else:
    pricesFD.seek(0, io.SEEK_END)
 
 lg.debug ("Start bar: " + str(barCtr))
@@ -572,6 +577,7 @@ while True:
          if not a.getAfterMarket():
             if a.inPosition():
                a.closePosition(barCtr, barChart, bid, ask, forceClose)
+               bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
             lg.info("Program exiting due to end of day trading")
             exit(0)
       

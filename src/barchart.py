@@ -609,6 +609,24 @@ class Barchart:
    def getBarsInPosition(self):
    
       return self.barCountInPosition 
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getStocksFromBCDir(path):
+   
+      stocks = []
+   
+      for rootPath, directories, paths in os.walk(path):
+         for path in paths:
+            if path.endswith(".bc"):
+               if os.stat(rootPath + "/" + path).st_size > 10000:
+                  stockName = path.replace("active","") 
+                  stockName = stockName.replace(".bc","")
+                  if stockName not in stocks:
+                     #print ("stockName: " + str(stockName))
+                     stocks.append(stockName)      
+      
+      return stocks
+   
       
 
 # end bc

@@ -236,9 +236,10 @@ if not wp:
    print ("options are invalid. Need -w workPath -p profilePath ")
    exit(1)
 
-if os.chdir(wp):
-   exit(1)
-
+if not wp == os.getenv("LPLT"):
+   if os.chdir(wp):
+      exit(1)
+   
 if not os.path.exists(lplt):
    print ("Trading program doesn't exist!! " + lplt)
    exit(1)

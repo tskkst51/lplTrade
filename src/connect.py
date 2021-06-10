@@ -16,7 +16,7 @@ import collections
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class ConnectEtrade:
 
-   def __init__(self, d, stocks="DEFAULT", debug=False, verbose=False, clMarketDataType="intraday", sandBox=False, setoffLine=False):
+   def __init__(self, d, stocks="DEFAULT", debug=False, verbose=False, clMarketDataType="intraday", sandBox=False, slave=False, setoffLine=False):
    
       # Set class variables
       self.sandConsumerKey = str(d["profileConnectET"]["sandConsumerKey"])
@@ -55,7 +55,7 @@ class ConnectEtrade:
       with open(self.oauthKeysPath, 'r') as reader:
          lines = reader.readlines()
 
-      if not setoffLine:
+      if not self.offLine:
          self.oauthToken = lines[0].strip()
          self.oauthSecret = lines[1].strip()
  

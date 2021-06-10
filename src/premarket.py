@@ -151,7 +151,7 @@ class Premarket:
       #print ("stockData " + str(stockData))
       
       return stockData
-         
+
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getStockStrFromDailyCharts(self):
          
@@ -261,6 +261,7 @@ class Premarket:
             dailyData = eval(tg.getDailyData(stock, 13))
          except Exception: 
             traceback.print_exc()
+            sleep(13)
             continue
             
          #print ("dailyData " + str(dailyData))

@@ -188,7 +188,7 @@ class Target:
       allStocks = self.getAllStocksArr()
 
       for stocks in allStocks:
-         cn = lpl.ConnectEtrade(self.c, stocks, 1, 1, "intraday", False, 0)         
+         cn = lpl.ConnectEtrade(self.c, stocks, 1, 1, "intraday", False, 0, 1)         
                
          for stock in stocks:
             tr[stock] = lpl.Trends(self.d, self.l, cn, 0, 0, stock)
@@ -419,7 +419,7 @@ class Target:
 
       # Load all the bids and asks values from the service (Etrade) into the dicts
       for stocks in allStocks:
-         cn = lpl.ConnectEtrade(self.c, stocks, 1, 1, "intraday", False, 0)         
+         cn = lpl.ConnectEtrade(self.c, stocks, 1, 1, "intraday", False, 0, 1)         
          
          stockVals = []
          

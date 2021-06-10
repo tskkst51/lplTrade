@@ -146,6 +146,7 @@ maxProfit = float(d["profileTradeData"]["maxProfit"])
 maxLoss = float(d["profileTradeData"]["maxLoss"])
 quitMaxProfit = int(d["profileTradeData"]["quitMaxProfit"])
 quitMaxLoss = int(d["profileTradeData"]["quitMaxLoss"])
+slave = int(d["profileTradeData"]["slave"])
 
 offLine = int(c["profileConnectET"]["offLine"])
 sandBox = int(c["profileConnectET"]["sandBox"])
@@ -245,7 +246,7 @@ elif service == "bitfinex":
 elif service == "eTrade":
    symbol = stock
    stockArr.append(stock)
-   cn = lpl.ConnectEtrade(c, stockArr, debug, verbose, marketDataType, sandBox, offLine)
+   cn = lpl.ConnectEtrade(c, stockArr, debug, verbose, marketDataType, sandBox, slave, offLine)
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize algorithm,  barcharts objects

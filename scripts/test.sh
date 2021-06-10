@@ -16,7 +16,21 @@ doVol=$4
 modProfiles=$5
 testPath=$6
 
-wp=$(pwd)
+wp=$LPLT
+#wp=$(pwd)
+
+#if [[ -n $loc ]]; then
+#   
+#   testDate=$(basename $wp)
+#   if [[ $testDate != "lplTrade" ]] ;then
+#      echo testDate $testDate
+#      cwd=$(pwd)
+#      cd ../..
+#      wp=$(pwd)
+#      cd $cwd || exit 1
+#   fi
+#fi
+
 
 testCmd="${wp}/bin/test.py"
 
@@ -51,19 +65,21 @@ dt=$(date "+%Y%m%d")
 
 doResults=0
 if [[ -n $loc ]]; then
-      if [[ ! -d "${testPath}/${loc}" ]]; then
-      cd ../lpltArchives || exit 1
-      git pull
-      cd ../lplTrade/${testPath} || exit 1
-      tar -xf "../../lpltArchives/${dt}.tar.gz"
-      cd ../${testPath}
-      mv "Users/tsk/git/lplTrade/${testPath}/${loc}" .
-      rm -fr Users
-      cd ..
-      doResults=1
-      ${wp}/scripts/modProfiles.sh $testPath
-   fi
+      cd $LPLT
 fi
+#      if [[ ! -d "${testPath}/${loc}" ]]; then
+#      cd ../lpltArchives || exit 1
+#      git pull
+#      cd ../lplTrade/${testPath} || exit 1
+#      tar -xf "../../lpltArchives/${dt}.tar.gz"
+#      cd ../${testPath}
+#      mv "Users/tsk/git/lplTrade/${testPath}/${loc}" .
+#      rm -fr Users
+#      cd ..
+#      doResults=1
+#      ${wp}/scripts/modProfiles.sh $testPath
+#   fi
+#fi
 
 if [[ -n $modProfiles ]]; then
    ${wp}/scripts/modProfiles.sh $testPath
