@@ -38,7 +38,10 @@ class Premarket:
 
       bestAlgoD = {}
       defaultStocks = ["BABA","BIDU","TSLA","SNAP"]
-      defaultAlgo = "TB3_OC_QM_OB2_OS2_CB3_CS3_TR"
+      
+      defaultAlgo = "TB1_HL_QM_OB3_OS3_CB2_CS2"
+      #defaultAlgo = "TB1_OC_QM_OB5_OS5_CB2_CS2_TR_IR5"
+      #defaultAlgo = "TB3_OC_QM_OB2_OS2_CB3_CS3_TR"
       #defaultAlgo = "TB3_HI_QM_OB2_OS2_CB4_CS4_TR"
       #defaultAlgo = "TB2_HL_HS_AL_QM_OB2_OS2_CB3_CS3_QP"
       stocksBeingUsed = []
@@ -61,7 +64,6 @@ class Premarket:
                lines = baFile.readlines()
    
             lastLineItems = lines[len(lines) - 1].split()
-            #bestAlgoD[s] = lastLineItems[7] 
             bestAlgoD[s] = lastLineItems[len(lastLineItems) - 1] 
             stocksBeingUsed.append(s)   
    
@@ -78,7 +80,7 @@ class Premarket:
                   lines = baFile.readlines()
       
                lastLineItems = lines[len(lines) - 1].split()
-               bestAlgoD[s] = lastLineItems[7] 
+               bestAlgoD[s] = lastLineItems[len(lastLineItems) - 1]
                stocksBeingUsed.append(s)
                print ("bestAlgoD[s]\n" + str(bestAlgoD[s]))
          
@@ -260,6 +262,7 @@ class Premarket:
          try:  
             dailyData = eval(tg.getDailyData(stock, 13))
          except Exception: 
+            print ("Unable to get Daily data")
             traceback.print_exc()
             sleep(13)
             continue
@@ -269,10 +272,12 @@ class Premarket:
             
          # polygon.io is timing out
          if len(dailyData) == 0:
+            print ("len of dailyData == 0")
             break
             
          # IPO. One day of data. 8 items means only one day of data, an IPO skip
          if len(dailyData) == 8:
+            print ("len of dailyData == 8")
             sleep(13)
             continue
             
@@ -285,8 +290,43 @@ class Premarket:
          dc.writeDailyBarChart(dbc, stock, self.dailyChartPath)
          dc.writeDailyGapData(gapData, stock, self.dailyChartPath)
          
+         print ("writing of the new DC is successful")
+         
          sleep(13)
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getStocksWithDailyData(self, stocks, minDaysData):
+   
+      parsedStocks = []
+      
+      # Return a list of stocks with at least "minDaysData" worth of data
+      for stock in stocks:
+         path = "bestAlgos/" + stock + ".bs"
+         
+         if not os.path.exists(path):
+            continue
+         
+         # Get last line from path
+         with open(path, 'r') as sp:
+            lines = sp.readlines()
+         lastLine = lines[len(lines) - 1]
+
+         b, m, e = lastLine.rpartition(" days")
+         items = b.split()
+
+         print ("items " + str(items))
+
+         numDaysData = items[len(items) - 1]
+         print ("numDaysData " + str(numDaysData))
+         
+         if int(numDaysData) < int(minDaysData):
+            print ("skipping stock due to lack of data; minDaysData  " + " " + stock + " " + str(minDaysData))
+            continue
+         
+         parsedStocks.append(stock)
+         
+      return parsedStocks      
+       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getStockCandidates(self, tg, dc, stocks, findPreMarketMovers, useLiveDailyData):
    
@@ -306,15 +346,16 @@ class Premarket:
             # Only get stocks that have not been updated today
             
             if os.path.exists(dcPath):
-               if self.todaysDateInDcPath(dcPath):
-                  stocks.append(mover)
-                  continue
+               #if self.todaysDateInDcPath(dcPath):
+               stocks.append(mover)
+               continue
 
             print ("mover " + str(mover))
             
             try:
                dailyData = eval(tg.getDailyData(mover, 13))
             except Exception: 
+               print ("Unable to get Daily data")
                traceback.print_exc()
                continue
                
@@ -327,6 +368,7 @@ class Premarket:
                
             # IPO. One day of data. 8 items means only one day of data, an IPO skip
             if len(dailyData) == 8:
+               print ("IPO skipping " + str(mover))
                sleep(13)
                continue
                
@@ -339,6 +381,8 @@ class Premarket:
             
             dc.writeDailyBarChart(dbc, mover, self.dailyChartPath)
             dc.writeDailyGapData(gapData, mover, self.dailyChartPath)
+            print ("DC file written for " + str(mover))
+
             sleep(13)
 
             stocks.append(mover)
@@ -358,8 +402,8 @@ class Premarket:
                continue
                
             #if self.isPathsModTimeToday(dcPath):               
-            if self.todaysDateInDcPath(dcPath):
-               validLDStocks.append(stock)
+            #if self.todaysDateInDcPath(dcPath):
+            validLDStocks.append(stock)
 
          validStocks = validLDStocks
       

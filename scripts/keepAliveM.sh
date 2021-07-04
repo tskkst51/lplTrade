@@ -101,6 +101,7 @@ timeNow=$(date "+%H%M%S")
    
 #   echo Exiting... Return code is 3. Normal exitting. $(date)
 
+
 # Kill all process and exit
 #kill $(ps | grep $program | awk '{printf $1 " " }')
 echo timeNow $timeNow
@@ -123,9 +124,9 @@ echo exitTime $exitTime
 #   mv "debug" $testDir || echo Unable to move debug directory to $testDir
 #   rm ${testDir}/logs/output_${dt} || echo Unable to remove output file output_${dt}
 #   mkdir ${testDir}/results || echo Unable to mkdir ${testDir}/results
-#   mkdir -p ${testDir}/profiles/saved || echo Unable to mkdir ${testDir}/profiles/saved
-#   cp profiles/saved/* ${testDir}/profiles/saved || echo Unable to copy profiles
-#   cp profiles/* ${testDir}/profiles || echo Unable to copy profiles
+#   #mkdir -p ${testDir}/profiles/saved || echo Unable to mkdir ${testDir}/profiles/saved
+#   #cp profiles/saved/* ${testDir}/profiles/saved || echo Unable to copy profiles
+#   #cp profiles/* ${testDir}/profiles || echo Unable to copy profiles
 #   cp ${testDir}/profiles/good  ${testDir}/profiles/active.json || echo Unable to copy active.json
 #   mkdir "prices" "bc" "logs" "debug"  || echo Unable to mkdir "prices" "bc" "logs"
 #   tarNm="${dt}mm.tar"

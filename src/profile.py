@@ -31,6 +31,7 @@ class Profile:
       d["profileTradeData"]["doLoSeq"] = str(0)
       d["profileTradeData"]["doOpenCloseSeq"] = str(0)
       d["profileTradeData"]["doOpensSeq"] = str(0)
+      d["profileTradeData"]["doClosesSeq"] = str(0)
       d["profileTradeData"]["doOpensCloses"] = str(0)
       d["profileTradeData"]["doTrends"] = str(0)
       d["profileTradeData"]["doQuickProfit"] = str(0)
@@ -62,6 +63,7 @@ class Profile:
       d["profileTradeData"]["volumeLastBarClose"] = str(0)
       d["profileTradeData"]["doOnlyTrends"] = str(0)
       
+      return d
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setOpenBuyValue(self, d, value, info):
@@ -319,6 +321,7 @@ class Profile:
    def writeProfile(self, path, data, stock):
    
       if stock:
+         #path = path + "_" + stock + "_" + str(os.getpid())
          path = path + "_" + stock
          
       with open(path, 'w') as f:
@@ -329,7 +332,10 @@ class Profile:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def writeProfileY(self, path, data, stock):
 
-      with open("/tmp/" + path, 'w') as f:
+      if stock:
+         path = path + "_" + stock + "_" + str(os.getpid())
+         
+      with open(path, 'x') as f:
          yaml.dump(data, f, indent=2)
          f.flush()
          f.flush()

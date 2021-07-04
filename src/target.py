@@ -91,7 +91,7 @@ class Target:
       
       # Calculate the last day volume and the percent it's increased for each stock
 
-      print ("stockData: " + str(stockData))
+      #print ("stockData: " + str(stockData))
       
       for key, value in stockData.items():
          vLen = len(value)
@@ -103,7 +103,7 @@ class Target:
                volItems = []
                secondToLastDaysVol = v[self.vl]
             if ctr == vLen - 1:
-               print (str(v))
+               #print (str(v))
                if v[self.vl] or secondToLastDaysVol == 0:
                   continue
                if v[self.vl] > secondToLastDaysVol:
@@ -162,7 +162,7 @@ class Target:
       avgVol = {} 
       
       # Calculate the average volume for each stock
-
+      ctr = 0
       for key, value in stockData.items():
          ctr = 0
          totalVolume = 0
@@ -313,7 +313,7 @@ class Target:
          betaCandidates[key] = lastLineBetaGtr 
          #betaCandidates[key] = [round((totalBeta / ctr) / lastClose, 4), lastLine[key]]
                   
-      print ("\n Last line bar length > average beta over days " + str(ctr) + "\n" + str(betaCandidates))
+      #print ("\n Last line bar length > average beta over days " + str(ctr) + "\n" + str(betaCandidates))
       
       return betaCandidates
    
@@ -333,15 +333,12 @@ class Target:
 
       for gKey, gValue in gapData.items():
          for aKey, aValue in asks.items():
+            if aValue[0] == 0.0:
+               continue
             for lKey, lValue in lastLine.items():
                if gKey == aKey and gKey == lKey:
-                  print ("gKey\n" + str(gKey))
-                  print ("aKey\n" + str(aKey))
-                  print ("lKey\n" + str(lKey))
                   gAvg = self.getGapAvg(gValue)
                   gCurr = self.getCurrentGap(lValue, aValue)
-                  print ("lValue\n" + str(lValue))
-                  print ("aValue\n" + str(aValue))
                   gapCandidates[gKey] = gCurr / gAvg
                      
       print ("\ngap Candidates by amount > \n" + str(gapCandidates))
@@ -356,8 +353,8 @@ class Target:
       # d2 is an array. Get the avg of all values
       for ctr in range(self.numSpreadSamples):
          asks += d2[ctr]
-         print ("\nasks \n" + str(asks))
-         print ("\nctr \n" + str(ctr))
+         #print ("\nasks \n" + str(asks))
+         #print ("\nctr \n" + str(ctr))
          
       askAvg = round(asks / self.numSpreadSamples, 2)
       
@@ -397,7 +394,7 @@ class Target:
       # Create arrays of stocks, 20 at a time, since Etrade can only handle 20
       ctr = 1
       for key, value in stockData.items():
-         if ctr % 20 == 0:
+         if ctr % 21 == 0:
             self.allStocks.append(stocks)
             stocks = []
          stocks.append(key)
@@ -419,12 +416,19 @@ class Target:
 
       # Load all the bids and asks values from the service (Etrade) into the dicts
       for stocks in allStocks:
-         cn = lpl.ConnectEtrade(self.c, stocks, 1, 1, "intraday", False, 0, 1)         
+         cn = lpl.ConnectEtrade(self.c, stocks, 1, 1, "intraday", False, 0, 0)         
          
          stockVals = []
          
          for ctr in range(self.numSpreadSamples):
             stockValues = cn.setStockValues(0, 0, "")
+#            for item in stockValues.items():
+#               print ("item " + str(item))
+#               for v1, v2 in enumerate(item):
+#                  print ("v1 " + str(v1))
+#                  print ("v2 " + str(v2))
+#                  if v2[0] == 0.0:
+#                     break
             stockVals.append(stockValues)
          
          print ("stockVals\n" + str(stockVals))
@@ -582,7 +586,7 @@ class Target:
          volumeCandidates, spreadCandidates, trendCandidates, betaCandidates, avgVolData, stocks):
    
       doSpread = doGap = 1
-      doVolLess = doVolGtr  = doBeta = doTrend = doTestData = doAvgVol = doVolume = 0
+      doVolLess = doVolGtr = doTrend = doBeta = doTestData = doAvgVol = doVolume = 0
             
       ts = time()
       dt = str(datetime.fromtimestamp(ts).strftime('%Y%m%d'))
@@ -931,6 +935,7 @@ class Target:
          with urllib.request.urlopen(url) as response:
             data = str(response.read())
       except TimeoutError:
+         print ("Got a timeout from polygon" + url)
          return ""
          
       #print ("data1 " + str(data))

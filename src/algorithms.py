@@ -164,7 +164,6 @@ class Algorithm():
       self.topIntraBar = 0.0
       self.bcrCounter = 0
       self.revDirty = 0
-      self.dirtyWaitForNextBar = 0
       self.profitTarget = 0.0
       self.longMegaBars = 0.0
       
@@ -926,20 +925,20 @@ class Algorithm():
             self.lg.debug ("Hi Lo: in buy position " + str(self.positionType))
             self.lg.debug ("closeBuyLimit " + str(self.lm.closeBuyLimit))
             if last < self.lm.closeBuyLimit:
-               self.lg.debug ("Closing algorithmHiLo BUY")
+               self.lg.debug ("Closing algorithmHiLo BUY. closeBuyLimit breached " + str(last))
                retCode = 2
          if self.positionType == self.sell:
             self.lg.debug ("Hi Lo: in sell position " + str(self.positionType))
             self.lg.debug ("closeSellLimit " + str(self.lm.closeSellLimit))
             if last > self.lm.closeSellLimit:
-               self.lg.debug ("Closing algorithmHiLo SELL")
+               self.lg.debug ("Closing algorithmHiLo SELL. closeSellLimit breached " + str(last))
                retCode = 1
       elif not self.inPosition():
          if last > self.lm.openBuyLimit:
-            self.lg.debug ("Opening algorithmHiLo BUY. limit: " + str(self.lm.openBuyLimit))
+            self.lg.debug ("Opening algorithmHiLo BUY. limit: " + str(self.lm.openBuyLimit) + " last "  + str(last))
             retCode = 1
          if last < self.lm.openSellLimit:
-            self.lg.debug ("Opening algorithmHiLo SELL. limit: " + str(self.lm.openSellLimit))
+            self.lg.debug ("Opening algorithmHiLo SELL. limit: " + str(self.lm.openSellLimit) + " last "  + str(last))
             retCode = 2
 
       self.lg.debug("self.doHiLoSeq " + str(self.doHiLoSeq))

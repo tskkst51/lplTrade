@@ -43,7 +43,6 @@ algoModifiers=(
 "SS"
 "QL"
 "DB"
-#"DB10"
 )
 
 algoModifiersCombined=(
@@ -90,11 +89,11 @@ for algo in $algos; do
    # Get number of decision bars and add range value to IR
    tbv=$(echo $algo | awk -F_ '{print $1}' | sed 's/TB//')
 
-   if (( tbv == 1 )); then mtbv=$(echo "scale=2 ; $tbv + 4" | bc); dtbv="30"; fi
-   if (( tbv == 2 )); then mtbv=$(echo "scale=2 ; $tbv + 3" | bc); dtbv="15"; fi
-   if (( tbv == 3 )); then mtbv=$(echo "scale=2 ; $tbv + 2" | bc); dtbv="10"; fi
-   if (( tbv == 4 )); then mtbv=$(echo "scale=2 ; $tbv + 1" | bc); dtbv="8"; fi
-   if (( tbv == 5 )); then mtbv=$(echo "scale=2 ; $tbv + 0" | bc); dtbv="6"; fi
+   if (( tbv == 1 )); then mtbv="5"; dtbv="30"; fi
+   if (( tbv == 2 )); then mtbv="4"; dtbv="15"; fi
+   if (( tbv == 3 )); then mtbv="3"; dtbv="10"; fi
+   if (( tbv == 4 )); then mtbv="2"; dtbv="8"; fi
+   if (( tbv == 5 )); then mtbv="1"; dtbv="6"; fi
    
    # Run all modifiers individually
    for aMod in ${algoModifiers[*]}; do
@@ -102,6 +101,8 @@ for algo in $algos; do
          aMod=${aMod}${mtbv} 
       fi
       
+      #^\'.*\'$
+      #if [[ $aMod == *DB ]]; then
       if [[ $aMod == "DB" ]]; then
          aMod=${aMod}${dtbv} 
       fi
@@ -122,6 +123,10 @@ for algo in $algos; do
          aMod=${aMod}${mtbv} 
       fi
 
+      if [[ $ctbv == "DB" ]]; then
+         aMod=${aMod}${mtbv} 
+      fi
+
       modAlgo="${algo}_${aMod}"
       echo Running algo $modAlgo against $stock
       $run "" $modAlgo $stock > bestAlgos/${stock}.all
@@ -134,7 +139,7 @@ done
 
 if [[ -f bestAlgos/${stock}.bs ]]; then
    dt=$(date "+%Y%m%d")
-   mv bestAlgos/${stock}.bs bestAlgos/${stock}${dt}.bs
+   mv bestAlgos/${stock}.bs bestAlgos/${stock}_${dt}.bs
 fi
 sort -n -k 3,3 bestAlgos/${stock}.gn > bestAlgos/${stock}.bs
 

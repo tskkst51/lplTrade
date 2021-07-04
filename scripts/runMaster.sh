@@ -21,7 +21,7 @@ host=$(hostname -s)
 if [[ $host == "ML-C02C8546LVDL" ]]; then
    activateDir="${HOME}/w/gitWS/lplW"
    lpltPath="/${HOME}/w/gitWS/lplTrade"
-elif [[ $host == "Mac-mini" ]]; then
+elif [[ $host == "mm" ]]; then
    activateDir="${HOME}/w/lplW"
    lpltPath="${HOME}/w/lplTrade"
 else
@@ -44,7 +44,11 @@ if [[ -z $stock ]]; then
 fi
 
 if [[ -n $stock ]]; then
+   #cp ${wp}/profiles/active.json ${wp}/profiles/active.json_${stock}
    profilePath="${wp}/profiles/active.json_${stock}"
+   if [[ -f $profilePath ]]; then
+      rm -f $profilePath
+   fi
 else
    if [[ -n $testDate ]]; then
       profilePath="${workPath}/profiles/active.json"
@@ -99,8 +103,8 @@ for algo in $algos; do
       ${py3} ${lpltPath}/bin/profileGenerator.py -d $testDate -a $algo || echo Fainle profile generator
       cmd="${py3} ${lpltPath}/bin/lpltSlave.py -w $workPath -c $HOME/profiles/et.json -p $profilePath -o -d -s $stock"
    else
-      ${py3} ${lpltPath}/bin/profileGenerator.py -d "" -a $algo || echo Fainle profile generator
-      cmd="${py3} ${lpltPath}/bin/lpltSlave.py -c $HOME/profiles/et.json -p $profilePath -l -s $stock"
+      ${py3} ${lpltPath}/bin/profileGenerator.py -d "" -a $algo -s $stock || echo Fainle profile generator
+      cmd="${py3} ${lpltPath}/bin/lpltSlave.py -c $HOME/profiles/et.json -p $profilePath -d -l -s $stock"
    fi
       
    echo $cmd

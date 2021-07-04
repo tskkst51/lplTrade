@@ -2,7 +2,7 @@
 
 ## RUn the test program over all test directories
 
-args=" "
+loc=""
 algo=""
 stock=""
 doVol=""
@@ -17,6 +17,9 @@ modProfiles=$5
 testPath=$6
 
 wp=$LPLT
+
+echo $1 $2 $3
+
 #wp=$(pwd)
 
 #if [[ -n $loc ]]; then
@@ -47,7 +50,7 @@ host=$(hostname -s)
 
 if [[ $host == "ML-C02C8546LVDL" ]]; then
    activateDir="/lplW"
-elif [[ $host == "tmm" ]]; then
+elif [[ $host == "mm" ]]; then
    activateDir="/lplW"
 else
    activateDir="/venv" 
@@ -67,19 +70,17 @@ doResults=0
 if [[ -n $loc ]]; then
       cd $LPLT
 fi
-#      if [[ ! -d "${testPath}/${loc}" ]]; then
-#      cd ../lpltArchives || exit 1
-#      git pull
-#      cd ../lplTrade/${testPath} || exit 1
-#      tar -xf "../../lpltArchives/${dt}.tar.gz"
-#      cd ../${testPath}
-#      mv "Users/tsk/git/lplTrade/${testPath}/${loc}" .
-#      rm -fr Users
-#      cd ..
-#      doResults=1
-#      ${wp}/scripts/modProfiles.sh $testPath
-#   fi
-#fi
+
+if [[ ! -d "${testPath}/${loc}" ]]; then
+   cd ../lpltArchives || exit 1
+   git pull
+   tar -zxf "${loc}.tar.gz"
+   mv "Users/tsk/git/lplTrade/test/${loc}" ../lplTrade/${testPath}
+   rm -fr Users
+   cd ../lplTrade
+   doResults=1
+   ${wp}/scripts/modProfiles.sh $testPath
+fi
 
 if [[ -n $modProfiles ]]; then
    ${wp}/scripts/modProfiles.sh $testPath
@@ -96,7 +97,7 @@ fi
 
 #   "HS,IT"
 
-if [[ -n $algo ]]; then
+if [[ -n $algo ]] && [[ $algo != "none" ]]; then
    algos=($algo)
 else
    if [[ -n $doVol ]]; then
@@ -131,19 +132,25 @@ else
 fi
 
 #volDate=20201117
-newPaths=""
 
 if [[ -n $loc ]]; then
    testPaths=$loc
 fi
 
-
 if [[ -n $stock ]]; then
    stockCL="-s $stock"
 else
-   # Get stock from profile
-   stock=$(grep \"stock\" "${wp}/${testPath}/${loc}/profiles/active.json" \
-      | uniq | awk -F\" '{print $4}')
+   stocks=$(ls "${testPath}/${loc}/bc" | awk -F\. '{print $1}'|sed "s/active//")
+   #stocks=$(grep stocks ${wp}/${testPath}/${datePath}/profiles/active.json | \
+   #   awk -F\" '{print $4}')
+   for s in ${stocks[*]}; do
+      stock=$s
+      echo stock $stock
+      break
+   done
+   numStocks=$(echo $stocks | awk -F" " '{print NF}')
+   echo stocks $stocks
+   echo numStocks $numStocks
 fi
 
 set -m
@@ -153,7 +160,7 @@ $HOME/bin/lplt.sh
 
 for datePath in $testPaths; do
    
-   echo $datePath
+   echo datePath $datePath
    
    trap - SIGINT
       
@@ -196,7 +203,9 @@ for datePath in $testPaths; do
          p="exitResults/${stock}_TB3_${a}_OB3_OS3_CB2_CS2.ex"
          
       fi
+      
 #echo p $p
+
       # Already ran, skip
       grep -q $date $p > /dev/null 2>&1
       if (( $? == 0 )); then
@@ -210,15 +219,16 @@ for datePath in $testPaths; do
       ctr=0
       
       if [[ -z $stock ]]; then
-         stocks=$(grep stocks ${wp}/${testPath}/${datePath}/profiles/active.json | \
-            awk -F\" '{print $4}')
-         numStocks=$(echo $stocks | awk -F, '{print NF}')
+
+         #stocks=$(grep \"stock\" "${wp}/${testPath}/${loc}/profiles/active.json" \
+         #   | uniq | awk -F\" '{print $4}')
+echo numStocks $numStocks
 
          lastStock=$(echo $stocks | awk -F, -v ns="$numStocks" '{print $ns}')
          firstStock=$(echo $stocks | awk -F, '{print $1}')
    
          p="exitResults/${lastStock}_TB3_${a}_OB3_OS3_CB2_CS2.ex"
-#echo p $p
+echo p $p
          # Already ran, skip
          grep -q $date $p > /dev/null 2>&1
          if (( $? == 0 )); then
@@ -252,6 +262,14 @@ for datePath in $testPaths; do
       
    done      
 done
+
+if [[ $algo == "none" ]]; then
+   if [[ -n $stock ]]; then
+      cd $wp
+      scripts/results.sh $stock
+      scripts/findBestAlgos.sh $stock
+   fi
+fi
 
 #if (( doResults == 1 )); then
 #   stocks=($(grep stocks "test/${loc}/profiles/active.json"))

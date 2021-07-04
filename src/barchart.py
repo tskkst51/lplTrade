@@ -46,8 +46,8 @@ class Barchart:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadInitBar(self, bc, date, bar, bid, ask, last, vol):
    
-      #bc[bar][self.op] = last
-      bc[bar][self.op] = ask
+      bc[bar][self.op] = last
+      #bc[bar][self.op] = ask
       
       bc[bar][self.cl] = last
       
@@ -58,7 +58,7 @@ class Barchart:
       bc[bar][self.lo] = last
       bc[bar][self.dt] = date
       bc[bar][self.vl] = vol
-      print ("bc[bar] " + str(bc[bar]))
+      print ("b bc[bar] " + str(bc[bar]))
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadBar(self, bc, vol, bar, bid, ask, last):
@@ -77,7 +77,7 @@ class Barchart:
                
       bc[bar][self.vl] = vol
 
-      print ("bc[bar] " + str(bc[bar]))
+      print ("m bc[bar] " + str(bc[bar]))
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadEndBar(self, bc, date, bar, bid, ask, last, vol):
@@ -94,7 +94,7 @@ class Barchart:
       bc[bar][self.vl] = vol
 
       self.loadHiLoBar(bc, bar)
-      print ("bc[bar] " + str(bc[bar]))
+      print ("e bc[bar] " + str(bc[bar]))
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadHiLoBar(self, bc, bar):

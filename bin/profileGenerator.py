@@ -37,18 +37,18 @@ stock = clOpts.stock
 
 profilePath = "profiles/active.json"
 
-#if day == "":
-#   profilePath = "profiles/active.json"
-#else:
-#   #profilePath = day + "/" + "profiles/active.json"
-#   profilePath = "test/" + day + "/" + "profiles/active.json"
-#   #profilePath = os.getcwd() + "/test/" + day + "/" + "profiles/active.json"
+if day == "":
+   profilePath = "profiles/active.json"
+else:
+   #profilePath = day + "/" + "profiles/active.json"
+   profilePath = "test/" + day + "/" + "profiles/active.json"
+   #profilePath = os.getcwd() + "/test/" + day + "/" + "profiles/active.json"
 
 pf = lpl.Profile()
 
 d = pf.readProfile(profilePath)
 
-pf.initProfile(d)
+d = pf.initProfile(d)
       
 b, m, bar = algo.rpartition("TB")
 pf.setAlgoValues(d, algo, bar[0], "")
@@ -74,6 +74,11 @@ if "DB" in algo:
    b, m, bar = algo.rpartition("DB")
    bars, m, e = bar.partition("_")
    pf.setTradingDelayBars(d, bars, "")
+
+if "IR" in algo:
+   b, m, bar = algo.rpartition("IR")
+   bars, m, e = bar.partition("_")
+   pf.setInRangeBars(d, bars, "")
 
 exit(pf.writeProfile(profilePath, d, stock))
 

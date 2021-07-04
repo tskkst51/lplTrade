@@ -26,7 +26,7 @@ host=$(hostname -s)
 
 if [[ $host == "ML-C02C8546LVDL" ]]; then
    activateDir="/lplW"
-elif [[ $host == "tmm" ]]; then
+elif [[ $host == "mm" ]]; then
    activateDir="/lplW"
 else
    activateDir="/venv" 
@@ -81,16 +81,16 @@ for algo in $algos; do
    for day in $days; do
       
       trap - SIGINT
-      
-      fnd=$(echo "$day < $volDate" | bc)
-
-      if echo $a | grep -q "AV" || echo $a | grep -q "AL" ; then
-         if [[ $fnd -eq 1 ]] ; then
-            dirty="yesIAm"
-            #echo Found volume in $a. Restricting testing range to $volDate. Skipping ${day}...
-            continue
-         fi
-      fi
+            
+#      fnd=$(echo "$day < $volDate" | bc)
+#
+#      if echo $a | grep -q "AV" || echo $a | grep -q "AL" ; then
+#         if [[ $fnd -eq 1 ]] ; then
+#            dirty="yesIAm"
+#            #echo Found volume in $a. Restricting testing range to $volDate. Skipping ${day}...
+#            continue
+#         fi
+#      fi
 
       if [[ ! -s "${wp}/test/${day}/bc/active${stock}.bc" ]] || [[ ! -s "${wp}/test/${day}/prices/active${stock}.pr" ]]; then
          continue
@@ -129,12 +129,13 @@ for algo in $algos; do
    losers=$(grep \- $gainFile | wc -l  | awk '{print $1}')
    winners=$(grep -v \- $gainFile | wc -l | awk '{print $1}')
    total=$(echo "scale=2 ; $winners + $losers" | bc)
+   
    winPct=$(echo "scale=2 ; $winners / $total * 100" | bc)
-
+   
    amt=$(awk '{s+=$1} END {print s}' $gainFile)
    numDays=$(cat $gainFile | wc -l | awk '{print $1}')
    echo "Gain: \$ ${amt}" "in ${numDays} days with algo $a" >> $gainFile
-   echo Gain: \$ ${amt} Win %: $winPct in $numDays days with algo $a
+   echo $stock Gain: \$ ${amt} Win %: $winPct in $numDays days with algo $a
 done
 
 exit 0

@@ -1,4 +1,6 @@
-## loop reading lpltG writes
+## lpltSlave.py is invoked by lpltMaster.py
+## lpltMaster.py writes to the prices and bc files and slave reads from them
+## multiple slaves are running at the same time
 
 import pyetrade
 import sys
@@ -19,22 +21,20 @@ from shutil import copyfile
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def waitForPopulatedPrices(pricesPath, barChartPath):   
    
-   if not offLine:
-      while True:
-         if not os.path.exists(pricesPath):
-            sleep(0.001)
-            continue
-         if pathlib.Path(pricesPath).stat().st_size < 5:
-            sleep(0.001)
-            continue
-         break
-   
+   while True:
+      if not os.path.exists(pricesPath):
+         sleep(0.001)
+         continue
+      if pathlib.Path(pricesPath).stat().st_size < 5:
+         sleep(0.001)
+         continue
+      break
+
    barChartFD = open(barChartPath, 'r', os.O_NONBLOCK)
    lg.info("Using " + barChartPath + " as bar chart file")
 
    pricesFD = open(pricesPath, 'r', os.O_NONBLOCK)
    lg.info("Using " + pricesPath + " as process file")
-      #break
       
    return pricesFD, barChartFD
    
@@ -308,6 +308,7 @@ elif service == "eTrade":
    symbol = stock
    stockArr.append(stock)
    cn = lpl.ConnectEtrade(c, stockArr, debug, verbose, marketDataType, sandBox, slave, offLine)
+   
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize algorithm,  barcharts objects
 
@@ -337,22 +338,23 @@ lg.info("Using " + logPath + " as log file")
 
 pricesFD, barChartFD = waitForPopulatedPrices(pricesPath, barChartPath)
 
-#if slave:
-#   # Verify files are plump
-#   for path in pricesPath, barChartPath:
-#      if not os.path.exists(path):
-#         lg.error("Trying to read a file that doesn't exist: " + path)
-#         exit(1)
-#      else:
-#         if not os.path.getsize(path):
-#            lg.error("Trying to read an empty file: " + path)
-#            exit(1)
+if offLine:
+   # Verify files are plump
+   for path in pricesPath, barChartPath:
+      if not os.path.exists(path):
+         lg.error("Trying to read a file that doesn't exist: " + path)
+         exit(1)
+      else:
+         if not os.path.getsize(path):
+            lg.error("Trying to read an empty file: " + path)
+            exit(1)
 
-barChart = {}
+#barChart = {}
 
-for stock in stockArr:
-   lg.debug ("stock " + str(stock))
-   barChart = bc.init()
+#for stock in stockArr:
+#   lg.debug ("stock " + str(stock))
+
+barChart = bc.init()
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Display profile data
@@ -425,7 +427,7 @@ else:
 lg.debug ("Start bar: " + str(barCtr))
 
 # Start trading at the top of the minute
-#if not slave:
+#if not offLine:
 #   tm.waitUntilTopMinute()
 #   if a.doPreMarket():
 #      tm.waitUntilTopMinute()
@@ -480,7 +482,7 @@ if not a.doPreMarket():
 endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * int(timeBar)))
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Main loop. Loop forever. Pause trading during and after market hours 
+# Main loop. Loop forever until EOD trading or end of after market 
 
 while True:
          
@@ -568,6 +570,7 @@ while True:
       #lg.debug ("barChart[barCtr " + str(barChart[barCtr]))
       lg.debug ("barCtr " + str(barCtr))
       lg.debug ("last " + str(last))
+      lg.debug ("stock " + str(stock))
 
       bc.loadBar(barChart, tradeVol, barCtr, bid, ask, last)   
       
@@ -649,7 +652,7 @@ while True:
          lg.info ("BID: " + str(bid))
          lg.info ("ASK:  " + str(ask))
          #lg.info ("END TIME: " + str(barChart[barCtr][dt]))
-         lg.info ("END TIME: " + str(tm.now()))
+         lg.info ("END TIME: " + str(cn.getTimeStamp))
          lg.info ("VOL: " + str(barChart[barCtr][vl]) + "\n")
          
          barCtr += 1

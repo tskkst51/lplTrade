@@ -127,9 +127,10 @@ def getStocksFromBCDir(path):
    return stocks
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDailyStocks):
+def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDailyStocks, minDaysData):
 
-   if useStocksFromDailyCharts or onlyUpdateDailyStocks:
+   #f useStocksFromDailyCharts or onlyUpdateDailyStocks:
+   if useStocksFromDailyCharts:
       stocks = pr.getStockStrFromDailyCharts()
       if useTestMinuteCharts:
          stocks += pr.getStockStrFromTestMinuteCharts()
@@ -146,7 +147,11 @@ def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDai
 
    # Candidates come from premarket movers internet site, daily charts, ETF movers
    candidates = pr.getStockCandidates(tg, dc, stocks, findPreMarketMovers, useLiveDailyData)
-         
+   
+   # Only use candidates that have a minimum number of days data
+   if minDaysData:
+      candidates = pr.getStocksWithDailyData(candidates, minDaysData)
+      
    # Suck in the yearly data charts for the candidates
    dailyStockData = pr.getDailyStockData(tg, dc, candidates)
 
@@ -264,6 +269,7 @@ useLiveDailyData = int(d["profileTradeData"]["useLiveDailyData"])
 useDefaultAlgo = int(d["profileTradeData"]["useDefaultAlgo"])
 useStocksWithNoTestData = int(d["profileTradeData"]["useStocksWithNoTestData"])
 useTestMinuteCharts = int(d["profileTradeData"]["useTestMinuteCharts"])
+minDaysData = int(d["profileTradeData"]["minDaysData"])
 
 masterMode = 1
 
@@ -366,7 +372,7 @@ if preMarketAnalysis:
    tg = lpl.Target(c, d, l)
    dc = lpl.Dailychart()
    
-   algoData, stocks = analyzeStocks(pr, tg, dc, "pre", useLiveDailyData, stocks, onlyUpdateDailyStocks)
+   algoData, stocks = analyzeStocks(pr, tg, dc, "pre", useLiveDailyData, stocks, onlyUpdateDailyStocks, minDaysData)
    
    if onlyUpdateDailyStocks:
       exit (0)
@@ -379,11 +385,11 @@ if offLine:
 # Set up stock arrays
 
 # Trim list of stocks to 21 max
-#print ("stocks " + str(stocks))
-#
-#if len(stocks) > 21:
-#   while len(stocks) > 21:
-#      del stocks[-1]
+print ("stocks " + str(stocks))
+
+if len(stocks) > 21:
+   while len(stocks) > 21:
+      del stocks[-1]
 
 print ("stocks " + str(stocks))
 print ("stocks len " + str(len(stocks)))
@@ -414,6 +420,7 @@ for stock in stocks:
 # Setup paths
 
 cwd = os.getcwd()
+wcwd = ""
 
 if workPath:
    os.chdir(workPath)
@@ -479,10 +486,10 @@ elif service == "eTrade":
    cn = lpl.ConnectEtrade(c, stocks, debug, verbose, marketDataType, sandBox, 0, offLine)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def genProfile(algo):
+def genProfile(algo, stock):
 
    if not offLine:
-      print ("genProfile algo " + str(algo))
+      print ("genProfile algo " + str(algo) + " " + str(stock))
       
       cmd = "python3 bin/profileGenerator.py -a " + algo + " -d \"\""
       if os.system(cmd) > 0:
@@ -498,14 +505,15 @@ def genProfile(algo):
 
 # find best profile to run against list of stocks
 for stock in stocks:
-   if preMarketAnalysis:
-      if genProfile(algoData[stock]):
-         exit (1)
-      profileData[stock] = loadProfileData(clOptions.profileTradeDataPath)
-   else:
-      # Use default list
-      profileData[stock] = d
+#   if preMarketAnalysis:
+#      if genProfile(algoData[stock], stock):
+#         exit (1)
+#      profileData[stock] = loadProfileData(clOptions.profileTradeDataPath)
+#   else:
+#      # Use default list
+#      profileData[stock] = d
    
+   profileData[stock] = loadProfileData(clOptions.profileTradeDataPath)
    ba[stock] = lpl.Barchart()
    tr[stock] = lpl.Trends(profileData[stock], lg[stock], cn, ba[stock], offLine, stock)
    lm[stock] = lpl.Limits(profileData[stock], lg[stock], cn, ba[stock], offLine, stock)
@@ -533,6 +541,7 @@ if str(cn.getDateMonthDayYear()) in halfDays:
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize files
+
 
 for stock in stocks:
 
@@ -677,21 +686,46 @@ for stock in stocks:
 pid = {}
 numLaunchedPids = 0
 
-if preMarketAnalysis:
+if preMarketAnalysis and not offLine:
    pid = th.launchAlgos(algoData, maxStocksToTrade, os.path.basename(workPath))
+if not preMarketAnalysis and not offLine:
+   pid = th.launchStocks(stocks, maxStocksToTrade, os.path.basename(workPath))
+
+print ("offLine " + str(offLine))
 
 if offLine:
+   
    stockSegs = {}
    sSegCtr = 0
+   
+   # Setup a dict of stock arrays the size of maxStocksToTrade
    for ctr in range(len(stocks)):
       if ctr % maxStocksToTrade == 0:
          stockSegs[sSegCtr] = stocks[ctr:(ctr+maxStocksToTrade)]
          sSegCtr += 1
-
+         
    lg1.debug ("stockSegs " + str(stockSegs))
+   
+   # Launch the test program in parallel x maxStocksToTrade 
+   # waiting to launch the next set of stocks
+   for ctr in range(sSegCtr):
+      pid = th.launchStocks(stockSegs[ctr], maxStocksToTrade, os.path.basename(workPath))
+      lg1.debug ("pid " + str(pid))
+      lg1.debug ("stockSegs[ctr] " + str(stockSegs[ctr]))
 
-   for stocks in stockSegs.items():
-      pid = th.launchStocks(stocks, maxStocksToTrade, os.path.basename(workPath))
+      stk = stockSegs[ctr][len(stockSegs[ctr]) - 1]
+      lg1.debug ("stk " + str(stk))
+
+      # Wait till the last stock completes testing 
+      while True:
+         if pid[stk].poll() == None:
+            lg1.debug ("waiting 5")
+            sleep(5)
+         else:
+            break
+               
+      lg1.debug ("hereeeee ")
+   exit (0)
    
 if pid:
    numLaunchedPids = len(pid)
@@ -883,7 +917,9 @@ while True:
                if a[stock].inPosition():
                   if not masterMode:
                      a[stock].closePosition(barCtr, stocksChart[stock], bid, ask, forceClose)
-                  bc[stock].loadEndBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
+               bc[stock].loadEndBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
+               # Add another line 
+               bc[stock].loadEndBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
                exitTrading += 1
 
       if exitTrading and afterMarketAnalysis:
@@ -902,7 +938,7 @@ while True:
             tg = lpl.Target(c, d, l)
             dc = lpl.Dailychart()
             
-            algoData, stocks = analyzeStocks(pr, tg, dc, "post", useLiveDailyData, stocks, onlyUpdateDailyStocks)
+            algoData, stocks = analyzeStocks(pr, tg, dc, "post", useLiveDailyData, stocks, onlyUpdateDailyStocks, 0)
             exit (0)
          
       if exitTrading:

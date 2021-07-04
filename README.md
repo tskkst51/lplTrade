@@ -1,3 +1,0 @@
-# lplTrade
-
-__Test line

@@ -11,6 +11,7 @@ src/*pyc
 src/.creds
 test
 debug
+dc.o
 logs
 prices
 bc
@@ -23,4 +24,5 @@ venv/
 __pycache__/
 python_client.log
 saved
+tmp
 s

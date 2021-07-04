@@ -17,6 +17,42 @@ import simplejson
 from shutil import copyfile
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+def isStoppedOut():
+
+   if quitMaxProfit:            
+      if a.getTotalGain() >= a.getTargetProfit() and a.getTotalGain() != 0.0:
+         lg.info ("MAX PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
+         lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
+         lg.info ("MAX PROFIT FACTOR: " + str(maxProfit))
+         lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
+         lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
+         
+         return 2
+                  
+      # We are out with our PROFIT
+   if doTrailingStop and positionTaken == stoppedOut:
+      lg.info ("TRAILING STOP REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
+      lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
+      lg.info ("MAX PROFIT FACTOR: " + str(maxProfit))
+      lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
+      lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
+      
+      return 4
+         
+   if quitMaxLoss:
+      lg.info ("a.getTotalLoss(): " + str(a.getTotalLoss()))
+      lg.info ("a.getTargetLoss(): " + str(a.getTargetLoss()))
+      if a.getTotalLoss() <= a.getTargetLoss() and a.getTotalLoss() != 0.0:
+         lg.info ("MAX LOSS REACHED, Gain: Bar: " + str(a.getTotalLoss()) + " " + str(barCtr))
+         lg.info ("MAX LOSS TARGET: " + str(a.getTargetLoss()))
+         lg.info ("MAX LOSS FACTOR: " + str(maxLoss))
+         lg.info ("MAX LOSS CLOSE PRICE: " + str(last))
+         lg.info ("MAX LOSS TIME: " + str(barCtr * timeBar) + " minutes")
+         
+         return 3
+   return 0
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Parse Command Line Options
 
 verbose = debug = quiet = False
@@ -384,43 +420,7 @@ if (quitMaxProfit or doTrailingStop) and maxProfit == 0.0:
    exit (2)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def isStoppedOut():
-
-   if quitMaxProfit:            
-      if a.getTotalGain() >= a.getTargetProfit() and a.getTotalGain() != 0.0:
-         lg.info ("MAX PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
-         lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
-         lg.info ("MAX PROFIT FACTOR: " + str(maxProfit))
-         lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
-         lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
-         
-         return 2
-                  
-      # We are out with our PROFIT
-   if doTrailingStop and positionTaken == stoppedOut:
-      lg.info ("TRAILING STOP REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
-      lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
-      lg.info ("MAX PROFIT FACTOR: " + str(maxProfit))
-      lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
-      lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
-      
-      return 4
-         
-   if quitMaxLoss:
-      lg.info ("a.getTotalLoss(): " + str(a.getTotalLoss()))
-      lg.info ("a.getTargetLoss(): " + str(a.getTargetLoss()))
-      if a.getTotalLoss() <= a.getTargetLoss() and a.getTotalLoss() != 0.0:
-         lg.info ("MAX LOSS REACHED, Gain: Bar: " + str(a.getTotalLoss()) + " " + str(barCtr))
-         lg.info ("MAX LOSS TARGET: " + str(a.getTargetLoss()))
-         lg.info ("MAX LOSS FACTOR: " + str(maxLoss))
-         lg.info ("MAX LOSS CLOSE PRICE: " + str(last))
-         lg.info ("MAX LOSS TIME: " + str(barCtr * timeBar) + " minutes")
-         
-         return 3
-   return 0
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Main loop. Loop forever. Pause trading during and after market hours 
+# Main loop. Loop forever until EOD trading or end of after market 
 
 while True:
 
@@ -446,7 +446,7 @@ while True:
    initialVol = cn.getVolume()
    
    if not offLine:
-         bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, initialVol)
+      bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, initialVol)
 
    if offLine:
       pr.setNextBar(timeBar)

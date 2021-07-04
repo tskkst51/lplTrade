@@ -39,7 +39,9 @@ class Thred():
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def launchStocks(self, stocks, maxStocksToTrade, testDate):
       
-      algo = "TB3_OC_QM_OB2_OS2_CB3_CS3_TR"
+      # Change default algo in premarket.py as well
+      algo = "TB1_OC_QM_OB5_OS5_CB2_CS2_TR_IR5"
+      #algo = "TB3_OC_QM_OB2_OS2_CB3_CS3_TR"
       #algo = "TB3_HI_QM_OB2_OS2_CB4_CS4_TR"
       #algo = "TB2_HL_HS_AL_QM_OB2_OS2_CB3_CS3_QP"
       p = {}
@@ -51,16 +53,22 @@ class Thred():
          if ctr >= maxStocksToTrade:
             return p
             
+         print ("self.logPath " + str(self.logPath))
+         print ("self.debugPath " + str(self.debugPath))
+         print ("stock " + str(stock))
+         print ("algo " + str(algo))
+         print ("testDate " + str(testDate))
+         
          self.ut.writePath(self.logPath + "active" + stock + ".ls", algo)
          self.ut.writePath(self.debugPath + "active" + stock + ".ds", algo)
          
          if testDate:
-            print ("SLAVESSSSSSSSSS[stock]\n" + self.launchScript + " " + testDate + " " + stock)
-            algo = ""
-            p[stock] = Popen([self.launchScript, testDate, "", stock])
-
-         print ("SLAVESSSSSSSSSS[stock]\n" + self.launchScript + " " + stock + " " + algo)
-         p[stock] = Popen([self.launchScript, stock, algo, ""])
+            algo = "none"
+            print ("SLAVESSSSSSSSSSL[stock]\n" + self.launchScript + " " + testDate + " " + algo + " " + stock)
+            p[stock] = Popen([self.launchScript, testDate, algo, stock])
+         else:
+            print ("SLAVESSSSSSSSSS[stock]\n" + self.launchScript + " " + stock + " " + algo)
+            p[stock] = Popen([self.launchScript, stock, algo, ""])
          ctr += 1
          sleep(1)
 
@@ -77,19 +85,22 @@ class Thred():
       for stock, algo in algoData.items():
          if ctr >= maxStocksToTrade:
             return p
-
+         
+         print ("self.logPath " + str(self.logPath))
+         print ("self.debugPath " + str(self.debugPath))
+         print ("stock " + str(stock))
+         print ("algo " + str(algo))
+         
          # Log path needs to be created before the slave is invoked so stdout is cosher
          self.ut.writePath(self.logPath + "active" + stock + ".ls", algo)
          self.ut.writePath(self.debugPath + "active" + stock + ".ds", algo)
          
          if testDate:
-            print ("SLAVESSSSSSSSS launchAlgos\n" + self.launchScript + " " + stock + " " + algo)
+            print ("SLAVESS test launchAlgos\n" + self.launchScript + " " + stock + " " + algo)
             p[stock] = Popen([self.launchScript, stock, algo, testDate])
-            ctr += 1
-            sleep(1)
-
-         print ("SLAVESSSSSSSSS launchAlgos\n" + self.launchScript + " " + stock + " " + algo)
-         p[stock] = Popen([self.launchScript, stock, algo, ""])
+         else:
+            print ("SLAVESS live launchAlgos\n" + self.launchScript + " " + stock + " " + algo)
+            p[stock] = Popen([self.launchScript, stock, algo, ""])
          ctr += 1
          sleep(1)
 

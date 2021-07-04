@@ -95,7 +95,11 @@ def writeParsedLine(path, line):
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def writeParsedLineRemoveDups(path, stock, date, newLine):
    
-   tmpPath = "/tmp/fileBuffer_" + stock
+   tmpPath = "tmp/fileBuffer_" + stock
+   extTmp = "/Volumes/2T2/lplTrade/tmp"
+
+   if os.path.exists(extTmp):
+      tmpPath = extTmp + "/fileBuffer_" + stock
    
    lines = []
    
@@ -255,8 +259,18 @@ with open(tdp) as jsonData:
 with open(tdp) as jsonData:
    d = json.load(jsonData)
 
+symbols = []
 if not stocks:
-   stocks = str(d["profileTradeData"]["stocks"])
+   #stocks = str(d["profileTradeData"]["stocks"])
+
+   with os.scandir("bc") as bcp:
+      for entry in bcp:
+         if entry.name.endswith(".bc") and entry.is_file():
+            name = entry.name.removeprefix("active")
+            stock, m, e = name.partition('.')
+            symbols.append(stock)
+else:
+   symbols = stocks.split(",")
 
 # Execute shell sript to populate site path with latest code
 home = str(Path.home())
@@ -264,8 +278,6 @@ home = str(Path.home())
 shellCmd = home + "/bin/lplt.sh"
 
 os.system(shellCmd)
-
-symbols = stocks.split(",")
 
 removeFiles(fresh)
 
@@ -329,14 +341,15 @@ for minBar in timeBar:
          
             # Create files based off of the stock, algo and date
             cmd = prog + args + " -c " + cdp + " -s " + stock + " -p " + tdp + " > " + outFile
-            
+                        
             #print ("cmd: " + cmd)
+            
             date = os.path.basename(wp)
             
             algoPath = cwd + "/exitResults/" + stock + "_" + info + ".ex"
             
             exitVal = os.system(cmd)
-         
+                     
             lastLine = getLastLine(resultsPath) 
             parsedLine = parseLastLine(lastLine, info)
             
