@@ -387,9 +387,10 @@ if offLine:
 # Trim list of stocks to 21 max
 print ("stocks " + str(stocks))
 
-if len(stocks) > 21:
-   while len(stocks) > 21:
-      del stocks[-1]
+if not offLine:
+   if len(stocks) > 21:
+      while len(stocks) > 21:
+         del stocks[-1]
 
 print ("stocks " + str(stocks))
 print ("stocks len " + str(len(stocks)))
@@ -597,7 +598,6 @@ last = {}
 bid = {}
 ask = {}
 vol = {}
-tradeVol = {}
 initialVol = {}
 populatedStocks = []
 
@@ -664,11 +664,14 @@ if not offLine:
          lg1.info("Waiting till the market opens...")
          cn.waitTillMarketOpens(a1.getMarketOpenTime())
 
-#print ("stocksChart\n" + str(stocksChart))
+# CALL THREE times SKIPPING OPEN VALUE WHICH IS THE CLOSE OF THE LAST DAY   
 
 serviceValues = cn.setStockValues(stocksChart, 0, stocks)
-
-#print ("serviceValues\n" + str(serviceValues))
+print ("serviceValues 1\n" + str(serviceValues))
+serviceValues = cn.setStockValues(stocksChart, 0, stocks)
+print ("serviceValues 2\n" + str(serviceValues))
+serviceValues = cn.setStockValues(stocksChart, 0, stocks)
+print ("serviceValues 3\n" + str(serviceValues))
 
 #if preMarketAnalysis:
 #   for stock in stocks:
@@ -713,15 +716,18 @@ if offLine:
       lg1.debug ("pid " + str(pid))
       lg1.debug ("stockSegs[ctr] " + str(stockSegs[ctr]))
 
-      stk = stockSegs[ctr][len(stockSegs[ctr]) - 1]
+      #stk = stockSegs[ctr][len(stockSegs[ctr]) - 1] last
+      stk = stockSegs[ctr][0] # first
+      
       lg1.debug ("stk " + str(stk))
 
       # Wait till the last stock completes testing 
       while True:
          if pid[stk].poll() == None:
-            lg1.debug ("waiting 5")
+            lg1.debug ("waiting 5 for a poll != None")
             sleep(5)
          else:
+            lg1.debug ("Gotta poll value of: " + str(pid[stk].poll()))
             break
                
       lg1.debug ("hereeeee ")
@@ -765,7 +771,7 @@ while True:
          
    for stock in stocks:
       initialVol[stock] = serviceValues[stock][svcVol]
-   
+      
    if not offLine:
       for stock in stocks:
          ba[stock].loadInitBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid[stock], ask[stock], last[stock], initialVol[stock])
@@ -917,9 +923,9 @@ while True:
                if a[stock].inPosition():
                   if not masterMode:
                      a[stock].closePosition(barCtr, stocksChart[stock], bid, ask, forceClose)
-               bc[stock].loadEndBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
-               # Add another line 
-               bc[stock].loadEndBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
+               ba[stock].loadEndBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid[stock], ask[stock], last[stock], vol[stock])
+               ba[stock].write(stocksChart[stock], pathsChart[stock]['barChartPath'], barCtr)
+
                exitTrading += 1
 
       if exitTrading and afterMarketAnalysis:

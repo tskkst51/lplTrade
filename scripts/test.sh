@@ -197,14 +197,14 @@ for datePath in $testPaths; do
       
       date=$(basename $datePath)      
       
-      if [[ -n $algo ]]; then
-         p="exitResults/${stock}_${a}.ex"
-      else
-         p="exitResults/${stock}_TB3_${a}_OB3_OS3_CB2_CS2.ex"
+#      if [[ -n $algo ]]; then
+#         p="exitResults/${stock}_${a}.ex"
+#      else
+      p="exitResults/${stock}_TB5_${a}_OB3_OS3_CB2_CS2.ex"
          
-      fi
+#      fi
       
-#echo p $p
+# echo pPpPpPpPpPp $p
 
       # Already ran, skip
       grep -q $date $p > /dev/null 2>&1

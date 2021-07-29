@@ -62,6 +62,7 @@ class Profile:
       d["profileTradeData"]["volumeLastBarOpen"] = str(0)
       d["profileTradeData"]["volumeLastBarClose"] = str(0)
       d["profileTradeData"]["doOnlyTrends"] = str(0)
+      d["profileTradeData"]["doInPosTracking"] = str(0)
       
       return d
       
@@ -292,7 +293,11 @@ class Profile:
       if "OT" in algo:
          d["profileTradeData"]["doOnlyTrends"] = str(1)
          info += "OT_"
-
+         
+      if "IT" in algo:
+         d["profileTradeData"]["doInPosTracking"] = str(1)
+         info += "IT_"
+         
       if "DB" in algo:
          b, m, bar = algo.rpartition("DB")
          bars, m, e = bar.partition("_")

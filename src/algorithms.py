@@ -116,7 +116,7 @@ class Algorithm():
       self.quickProfitPctTriggerBar = float(data['profileTradeData']['quickProfitPctTriggerBar'])
       self.reversalPctTrigger = float(data['profileTradeData']['reversalPctTrigger'])
       self.volumeRangeBars = int(data['profileTradeData']['volumeRangeBars'])
-      self.amountPct = float(data['profileTradeData']['amountPct'])
+      self.inPosProfitPct = float(data['profileTradeData']['inPosProfitPct'])
       
       self.executeOnOpenPosition = 0
       self.executeOnClosePosition = 0
@@ -212,6 +212,8 @@ class Algorithm():
       self.loReversal = self.hiReversal = 0
       self.totalGainLastPrice = 0.0
       self.totalLossLastPrice = 0.0
+      self.exitWProfitVal = 0.0 
+      self.inPosGain = 0
       
       if not self.priceChangeMultiplier:
          self.priceChangeMultiplier = 1
@@ -269,14 +271,15 @@ class Algorithm():
 #      if self.lm.setOpenCloseHiLoValues(bc, bar, self.lm.getTradingDelayBars()):
 #         self.lm.setOpenCloseHiLoConditions(self.lm.getTradingDelayBars())
 
-#      self.lm.setOpenCloseHiLoValues(bc, bar, self.lm.getMaxNumTradeBars()):
-#      self.lm.setOpenCloseHiLoConditions(self.lm.getMaxNumTradeBars())
-      self.lm.setOpenCloseHiLoValues(bc, bar, self.lm.getTradingDelayBars())
-      self.lm.setOpenCloseHiLoConditions(self.lm.getTradingDelayBars())
+      self.lm.setRangeLimits(bc, bar)
+      #self.lm.setRangeLimits(bc, self.lm.getTradingDelayBars())
+
+      self.lm.setOpenCloseHiLoValues(bc, bar, self.lm.getMaxNumTradeBars())
+      self.lm.setOpenCloseHiLoConditions(self.lm.getMaxNumTradeBars())
+      #self.lm.setOpenCloseHiLoValues(bc, bar, self.lm.getTradingDelayBars())
+      #self.lm.setOpenCloseHiLoConditions(self.lm.getTradingDelayBars())
 
       self.lm.setOpenBuySellLimits()
-
-      self.lm.setRangeLimits(bc, self.lm.getTradingDelayBars())
 
       if self.useAvgBarLimits:
          if not self.inPosition():
@@ -375,7 +378,10 @@ class Algorithm():
       exitAlgo = 3
       
       if self.doInPosTracking:
-         self.algorithmPriceTracking(action)
+         if self.algorithmPriceTracking(action):
+            # We exited do to positive position turning negative
+            self.closePosition(bar, barChart, bid, ask, 1)
+            return 4
      
       if self.doDynamic:
          self.algorithmDynamic(action)
@@ -732,7 +738,7 @@ class Algorithm():
       self.lg.debug ("Target profit set to: " + str(profitTarget))
       
       if self.getPositionType() == self.buy:
-         if ask > profitTarget:
+         if ask > profitTarget and ask != 0.0:
             self.lg.debug ( "CLOSING BUY POSITION QUICK PROFIT TAKEN.")
             self.lg.debug (str(ask) + " > " + str(profitTarget))
             self.closePosition(bar, barChart, bid, ask, 1)
@@ -741,7 +747,7 @@ class Algorithm():
             return 3
             
       elif self.getPositionType() == self.sell:
-         if bid < profitTarget:
+         if bid < profitTarget and bid != 0.0:
             self.lg.debug ( "CLOSING SELL POSITION QUICK PROFIT TAKEN.")
             self.lg.debug (str(bid) + " < " + str(profitTarget))
             self.closePosition(bar, barChart, bid, ask, 1)
@@ -1111,18 +1117,18 @@ class Algorithm():
       if self.inPosition():
          if self.positionType == self.buy:
             if self.lm.lowerOpens:
-               self.lg.debug ("algorithmOpensSeq: Closing Lower opens and Lower closes detected")
+               self.lg.debug ("algorithmOpensSeq: Closing Lower opens detected")
                return 2
          elif self.positionType == self.sell:
             if self.lm.higherOpens:
-               self.lg.debug ("algorithmOpensSeq: Closing Higher opens and Higher closes detected")
+               self.lg.debug ("algorithmOpensSeq: Closing Higher opens detected")
                return 1
       else:
          if self.lm.higherOpens:
-            self.lg.debug ("algorithmOpensSeq: Higher opens and Higher closes detected")
+            self.lg.debug ("algorithmOpensSeq: Higher opens detected")
             return 1
          if self.lm.lowerOpens:
-            self.lg.debug ("algorithmOpensSeq: Lower opens and Lower closes detected")
+            self.lg.debug ("algorithmOpensSeq: Lower opens detected")
             return 2
 
       self.lg.debug ("self.doOpensSeq " + str(self.doOpensSeq))
@@ -1531,6 +1537,37 @@ class Algorithm():
       # If in a position and in a profit, monitor it
       # Don't let a profit turn into a loss.
       
+      if not self.inPosition():
+         return 0
+      
+      tGain = self.getTotalGain()
+      
+      # Do something different if this is the first position
+      if tGain == 0.0 and self.numTrades < 1:
+         return 0
+
+      self.lg.debug("self.getCurrentLast(): " + str (self.getCurrentLast()))
+      self.lg.debug("self.openPositionPrice: " + str (self.openPositionPrice))
+      
+      if self.getCurrentLast() < self.openPositionPrice:
+         if tGain > 0:
+            self.lg.debug("Position is losing money: ")
+            self.lg.debug("-" + str(self.openPositionPrice - self.getCurrentLast()))
+            if self.exitWProfit(tGain, self.openPositionPrice - self.getCurrentLast()):
+               self.lg.debug("Exiting with inPos profit: ")
+               self.setInPosGain()
+               return 1
+               
+         if tGain < 0:
+            self.lg.debug("Position is adding to the current loss: ")
+            self.lg.debug(str(tGain) + " -" + str(self.openPositionPrice - self.getCurrentLast()))
+               
+      else:
+         # In positive position let it ride
+         self.lg.debug("Position is gaining profit. Let it ride: ")
+         self.lg.debug(str(self.getCurrentLast() - self.openPositionPrice))
+    
+      return 0
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmDynamic(self, action=0):
@@ -1599,6 +1636,33 @@ class Algorithm():
          
       # if in a gain position set stop just above average bar length?
    
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def exitWProfit(self, lastGain, posDiff):
+      
+      # Calculate if we should exit with profit
+      
+      # How close is the price to the min profit amount?
+      
+      #profitAmt = lastGain * self.quickProfitPctTrigger
+
+      pctNearTrgt = lastGain / self.getTargetProfit()
+
+      if pctNearTrgt > 0.4: # 40%
+         profitAmt = lastGain - (self.exitWProfitVal * 0.6)
+      else:
+         profitAmt = lastGain - self.exitWProfitVal
+      
+      self.lg.debug("exitWProfit: profitAmt " + str(profitAmt))
+      self.lg.debug("exitWProfit: posDiff " + str(posDiff))
+      self.lg.debug("exitWProfit: self.exitWProfitVal " + str(self.exitWProfitVal))
+      self.lg.debug("exitWProfit: lastGain " + str(lastGain))
+      self.lg.debug("exitWProfit: pctNearTrgt " + str(pctNearTrgt))
+        
+      if posDiff >=  profitAmt:
+         return 1
+         
+      return 0
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def ready(self, currentNumBars):
           
@@ -1808,17 +1872,30 @@ class Algorithm():
       else:
          self.lg.info("Position Time: " + str(self.cn.getTimeStamp()) + "\n")
                
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getInPosGain(self):
+      
+      return self.inPosGain
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setInPosGain(self):
+      
+      self.inPosGain = 1
+   
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setOpenPositionValues(self, price, bid, ask):
    
       self.setGainLastPrice(price)
       self.setLossLastPrice(price)
-      self.setProfitTarget(bid, ask, 0)
+      self.setQuickProfitTarget(bid, ask, 0)
       self.setExecuteOnOpenPosition(0)
       
       self.position = "open"
       self.openPositionPrice = price
       
+      self.exitWProfitVal = self.openPositionPrice * self.quickProfitPctTrigger
+
       self.bc.setBarsInPosition()
 
       self.lm.lowestcloseSellLimit = self.lm.closeSellLimit
@@ -2266,17 +2343,17 @@ class Algorithm():
 
       for l in range(numPriceLimits):
          if price <= int(priceLimits[l]):
-            self.lg.info("Initial Min Profit pct set to " +  str(pct) + " number of prices " + str(numPriceLimits))
+            self.lg.info("Initial max loss pct set to " +  str(pct) + " number of prices " + str(numPriceLimits))
             self.lg.info("priceLimits "  + str(priceLimits))
             pct *= (numPriceLimits - l) / self.priceLimitDivider
             self.lg.info("numPriceLimits " + str(numPriceLimits) + " ctr " + str(l))
             self.lg.info("self.priceLimitDivider " + str(self.priceLimitDivider))
-            self.lg.info("Min Loss = price * (pct * (numPriceLimits - ctr / priceLimitDivider)) " + str(pct))
+            self.lg.info("Max loss = price * (pct * (numPriceLimits - ctr / priceLimitDivider)) " + str(pct))
             break
 
       self.targetLoss = round(price * pct, 2)*-1
       
-      self.lg.info("Min Loss set to: " +  str(self.targetLoss) + " for price " + str(price))
+      self.lg.info("Max Loss set to: " +  str(self.targetLoss) + " for price " + str(price))
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getMarketOpenTime(self):
@@ -2356,12 +2433,12 @@ class Algorithm():
       return
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setProfitTarget(self, bid, ask, useBars):
+   def setQuickProfitTarget(self, bid, ask, useBars):
 
       if not self.doQuickProfit:
          return
          
-      self.lg.debug ("profit pct trigger: " + str(self.quickProfitPctTrigger))
+      self.lg.debug("profit pct trigger: " + str(self.quickProfitPctTrigger))
 
       profitAmt = 0.0
       if self.positionType == self.buy: 
@@ -2410,6 +2487,7 @@ class Algorithm():
    def setAlgorithmMsg(self):
          
       self.algoMsg += "Algorithms set:\n"
+      delayBars = self.lm.getTradingDelayBars()
       
       if self.doDefault:
          self.algoMsg += "         Default\n"
@@ -2485,8 +2563,15 @@ class Algorithm():
          self.algoMsg += "         Hammers \n"
       if self.doReversals:
          self.algoMsg += "         Reversals \n"
+      if self.doOpensSeq:
+         self.algoMsg += "         Opens sequentially \n"
+      if self.doClosesSeq:
+         self.algoMsg += "         Closes sequentially \n"
+      if self.doInPosTracking:
+         self.algoMsg += "         In position tracking \n"
+      if delayBars > 0:
+         self.algoMsg += "         " + str(delayBars) + " Delay bars\n"
          
-
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getExecuteOnOpenPosition(self):
 

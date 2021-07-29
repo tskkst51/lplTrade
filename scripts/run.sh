@@ -38,7 +38,7 @@ py3+="${activateDir}/bin/python3"
 dayProvided=0
 
 if [[ -z $dt ]]; then
-   days=$(ls "test" | awk '{print $1'})
+   days=$(ls "test" | awk '{print $1'} | grep -v "mm")
 else
    dayProvided=1
    days=$dt
@@ -108,7 +108,7 @@ for algo in $algos; do
       
       # echo $cmd
       $cmd > $outFile
-      
+
       value=$(cat $outFile | grep "Total Gain" | tail -1 | awk '{print $4}')
       echo $value on $day >> $gainFile
       echo $value on $day

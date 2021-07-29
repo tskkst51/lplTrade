@@ -26,3 +26,8 @@ python_client.log
 saved
 tmp
 s
+historyBestAlgos
+bestAlgos/*.gn
+bestAlgos/*.all
+dc/*.gp
+analyzeResults

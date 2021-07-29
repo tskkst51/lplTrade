@@ -43,6 +43,7 @@ algoModifiers=(
 "SS"
 "QL"
 "DB"
+"IT" # In position tracking
 )
 
 algoModifiersCombined=(
@@ -50,13 +51,26 @@ algoModifiersCombined=(
 "TR_QP"
 "QP_IR"
 "RV_TR"
-"RV_TR_DB"
 "RV_AV"
 "RV_AL"
 "RV_QP"
 "HM_TR"
 "HM_AV"
 "HM_QP"
+"IT_QL"
+"IT_QP"
+"TR_QP_DB"
+"RV_TR_DB"
+"RV_TR_DB"
+"RV_AV_DB"
+"RV_AL_DB"
+"RV_QP_DB"
+"HM_TR_DB"
+"HM_AV_DB"
+"HM_QP_DB"
+"IT_QL_DB"
+"IT_QP_DB"
+
 )
 
 init $1 $2
@@ -139,9 +153,9 @@ done
 
 if [[ -f bestAlgos/${stock}.bs ]]; then
    dt=$(date "+%Y%m%d")
-   mv bestAlgos/${stock}.bs bestAlgos/${stock}_${dt}.bs
+   mv bestAlgos/${stock}.bs historyBestAlgos/${stock}_${dt}.bo
 fi
-sort -n -k 3,3 bestAlgos/${stock}.gn > bestAlgos/${stock}.bs
+sort -n -k 4,4 bestAlgos/${stock}.gn > bestAlgos/${stock}.bs
 
 exit 0
 

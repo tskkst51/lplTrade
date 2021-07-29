@@ -41,6 +41,15 @@ def waitForPopulatedPrices(pricesPath, barChartPath):
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def isStoppedOut():
 
+   if doInPosTracking:
+      if a.getInPosGain():
+         lg.info ("IN POS PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
+         lg.info ("MAX PROFIT FACTOR: " + str(maxProfit))
+         lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
+         lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
+         
+         return 2
+
    if a.getTotalGain() >= a.getTargetProfit() and a.getTotalGain() != 0.0:
       if quitMaxProfit:            
          lg.info ("MAX PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
@@ -60,6 +69,17 @@ def isStoppedOut():
          lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
          
          return 4
+         
+   if a.getTotalLoss() <= a.getTargetLoss() and a.getTotalLoss() != 0.0:
+      if quitMaxLoss:            
+         lg.info ("MAX LOSS REACHED, Gain: Bar: " + str(a.getTotalLoss()) + " " + str(barCtr))
+         lg.info ("MAX LOSS TARGET: " + str(a.getTargetLoss()))
+         lg.info ("MAX LOSS FACTOR: " + str(maxLoss))
+         lg.info ("MAX LOSS CLOSE PRICE: " + str(last))
+         lg.info ("MAX LOSS TIME: " + str(barCtr * timeBar) + " minutes")
+         
+         return 2
+         
    return 0
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -194,8 +214,11 @@ gainTrailStop = str(d["profileTradeData"]["gainTrailStop"])
 quickProfitPctTrigger = float(d["profileTradeData"]["quickProfitPctTrigger"])
 doTrailingStop = int(d["profileTradeData"]["doTrailingStop"])
 maxProfit = float(d["profileTradeData"]["maxProfit"])
+maxLoss = float(d["profileTradeData"]["maxLoss"])
 quitMaxProfit = int(d["profileTradeData"]["quitMaxProfit"])
+quitMaxLoss = int(d["profileTradeData"]["quitMaxLoss"])
 marketEndTime = int(d["profileTradeData"]["marketEndTime"])
+doInPosTracking = int(d["profileTradeData"]["doInPosTracking"])
 
 sandBox = int(c["profileConnectET"]["sandBox"])
 #offLine = int(c["profileConnectET"]["offLine"])
@@ -528,10 +551,12 @@ while True:
          lg.debug ("numZeroPrices " + str(numZeroPrices) + " exiting")
          #exit (1)
          
-      # Set the profit to gain
+      # Set the profit to gain and max loss
       if not dirtyProfit:
          a.setTargetProfit(last, maxProfit)
          lg.debug("Min profit set to: " + str(a.getTargetProfit()))
+         a.setTargetLoss(last, maxLoss)
+         lg.debug("Max loss set to: " + str(a.getTargetLoss()))
          dirtyProfit += 1
 
       # Do one time on open
@@ -651,8 +676,11 @@ while True:
          lg.info ("LAST: " + str(last))
          lg.info ("BID: " + str(bid))
          lg.info ("ASK:  " + str(ask))
-         #lg.info ("END TIME: " + str(barChart[barCtr][dt]))
-         lg.info ("END TIME: " + str(cn.getTimeStamp))
+         if offLine:
+            lg.info ("END TIME: " + str(barChart[barCtr][dt]))
+         else:
+            lg.info ("END TIME: " + str(cn.getTimeStamp()))
+            
          lg.info ("VOL: " + str(barChart[barCtr][vl]) + "\n")
          
          barCtr += 1
@@ -675,10 +703,11 @@ while True:
          
       # Stop trading at the end of he day
       if not a.getAfterMarket():
-         if a.inPosition():
-            if a.isMarketExitTime():
+         if a.isMarketExitTime():
+            if a.inPosition():
                a.closePosition(barCtr, barChart, bid, ask, forceClose)
-               bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
+            bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
+            #bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
 
       # th = Thread(a.logIt(action, str(a.getBarsInPosition()), tm.now(), logPath))
       # Write to log file

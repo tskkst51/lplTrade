@@ -33,6 +33,7 @@ class Limits:
       self.doHiSeq = int(data['profileTradeData']['doHiSeq'])
       self.doLoSeq = int(data['profileTradeData']['doLoSeq'])
       self.doOpenCloseSeq = int(data['profileTradeData']['doOpenCloseSeq'])      
+      self.doOpensSeq = int(data['profileTradeData']['doOpensSeq'])      
       self.doOpensCloses = int(data['profileTradeData']['doOpensCloses'])      
       self.doHiLo = int(data['profileTradeData']['doHiLo'])
       self.doExecuteOnOpen = int(data['profileTradeData']['doExecuteOnOpen'])
@@ -69,7 +70,7 @@ class Limits:
 
       # Must have 2 decision bars when doing hiLoSeq
       if self.doHiLoSeq or self.doHiSeq or self.doLoSeq or self.doOpenCloseSeq or \
-         self.doExecuteOnOpen or self.doExecuteOnClose:
+         self.doExecuteOnOpen or self.doExecuteOnClose or self.doOpensSeq:
          if self.openBuyBars < 2:
             self.openBuyBars = 2
          if self.closeBuyBars < 2:
@@ -88,10 +89,11 @@ class Limits:
       if bar < self.doRangeTradeBars:
          return
 
-      self.lg.debug("\nRange values...")
+      self.lg.debug("\nRange values... " + str(bar))
+      self.lg.debug("\self.doRangeTradeBars... " + str(self.doRangeTradeBars))
       
-      #if self.setOpenCloseHiLoValues(barChart, bar, self.doRangeTradeBars):
-      #   self.setOpenCloseHiLoConditions(self.doRangeTradeBars)
+      self.setOpenCloseHiLoValues(barChart, bar, self.doRangeTradeBars)
+      self.setOpenCloseHiLoConditions(self.doRangeTradeBars)
 
       # Use Hi and Los or open closes for determining range
       if self.doOpensCloses or self.doOpenCloseSeq:
@@ -636,6 +638,7 @@ class Limits:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getHighestHiPrice(self, numBars):
       
+      print ("len hiValues " + str(len(self.hiValues)))
       price = self.hiValues[0]
       
       for n in range(1, numBars):
@@ -724,7 +727,7 @@ class Limits:
       
       # Must have two decision bars for doHiLoSeq
       if self.doHiLoSeq or self.doHiSeq or self.doLoSeq or self.doOpenCloseSeq or \
-         self.doExecuteOnOpen or self.doExecuteOnClose:
+         self.doExecuteOnOpen or self.doExecuteOnClose or self.doOpensSeq:
          if self.openBuyBars < 2:
             self.openBuyBars = 2
          if self.openSellBars < 2:
@@ -736,10 +739,13 @@ class Limits:
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setTradingDelayBars(self):
-         
-      self.tradingDelayBars = self.getMaxNumTradeBars()
       
-      print ("self.getMaxNumTradeBars() " + str(self.getMaxNumTradeBars()))
+      maxNumTradeBars = self.getMaxNumTradeBars()
+      
+      if self.tradingDelayBars < maxNumTradeBars:
+         self.tradingDelayBars = maxNumTradeBars
+      
+      print ("maxNumTradeBars " + str(maxNumTradeBars))
 
       if self.doRangeTradeBars > self.tradingDelayBars:
          self.tradingDelayBars = self.doRangeTradeBars
@@ -775,8 +781,8 @@ class Limits:
       self.lowValues = [0.0] * waitBars
       self.hiValues = [0.0] * waitBars
    
-      self.lg.debug("waitBars+ " + str(waitBars))
-      self.lg.debug("bar+ " + str(bar))
+      self.lg.debug("waitBars " + str(waitBars))
+      self.lg.debug("bar " + str(bar))
 
       for n in range(waitBars):
          self.openValues[n] = barChart[bar - n][self.op]

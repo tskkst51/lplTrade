@@ -1,73 +1,126 @@
-Gain: $ -2.73 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_AV
-Gain: $ -2.73 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_AV
-Gain: $ -2.73 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_AV
-Gain: $ -2.73 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_AV
-Gain: $ -2.73 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_AV
-Gain: $ -2.73 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_AV
-Gain: $ -1.95 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_TR_IR5
-Gain: $ -1.95 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_TR_IR5
-Gain: $ -1.95 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_TR_IR5
-Gain: $ -1.95 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_TR_IR5
-Gain: $ -1.95 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_TR_IR5
-Gain: $ -1.95 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_TR_IR5
-Gain: $ -1.11 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_SS
-Gain: $ -1.11 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_SS
-Gain: $ -1.11 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_SS
-Gain: $ -1.11 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_SS
-Gain: $ -1.11 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_SS
-Gain: $ -1.11 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_SS
-Gain: $ -1.03 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_AL
-Gain: $ -1.03 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_AL
-Gain: $ -1 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_QP_IR5
-Gain: $ -1 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_QP_IR5
-Gain: $ -1 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_QP_IR5
-Gain: $ -1 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_QP_IR5
-Gain: $ -1 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_QP_IR5
-Gain: $ -1 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_QP_IR5
-Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_PA_TR
-Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_PA_TR
-Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_RV_TR
-Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_RV_TR
-Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_PA_TR
-Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_PA_TR
-Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_RV_TR
-Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_RV_TR
-Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_PA_TR
-Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_PA_TR
-Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_RV_TR
-Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_RV_TR
-Gain: $ -0.96 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_TR
-Gain: $ -0.96 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_TR
-Gain: $ -0.96 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_TR
-Gain: $ -0.96 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_TR
-Gain: $ -0.96 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_TR
-Gain: $ -0.96 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_TR
-Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_PA_AV
-Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_PA_AV
-Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_RV_AV
-Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_RV_AV
-Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_PA_AV
-Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_PA_AV
-Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_RV_AV
-Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_RV_AV
-Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_PA_AV
-Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_PA_AV
-Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_RV_AV
-Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_RV_AV
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_IR5
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_IR5
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_IR5
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_IR5
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_IR5
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_IR5
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_PA
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_PA
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_PA_QP
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_PA_QP
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_RV
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_RV
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_RV_QP
-Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_RV_QP
+IBM Gain: $ -6.21 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_SS
+IBM Gain: $ -6.21 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_SS
+IBM Gain: $ -5.33 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_SS
+IBM Gain: $ -5.33 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_SS
+IBM Gain: $ -2.69 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_QL
+IBM Gain: $ -2.69 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_QL
+IBM Gain: $ -2.54 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_IT_QP
+IBM Gain: $ -2.47 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_IT_QP
+IBM Gain: $ -2.3 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_IT_QP
+IBM Gain: $ -2.23 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_IT_QP
+IBM Gain: $ -2.14 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_AL
+IBM Gain: $ -2.14 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_AL
+IBM Gain: $ -1.75 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_QP_IR5
+IBM Gain: $ -1.63 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_TR_IR5
+IBM Gain: $ -1.58 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_SS
+IBM Gain: $ -1.58 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_SS
+IBM Gain: $ -1.54 Win %: 0 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_TR_QP
+IBM Gain: $ -1.54 Win %: 0 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_TR_QP
+IBM Gain: $ -1.52 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_AV
+IBM Gain: $ -1.52 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_AV
+IBM Gain: $ -1.52 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_HM_AV
+IBM Gain: $ -1.52 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_HM_AV
+IBM Gain: $ -1.52 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_AV
+IBM Gain: $ -1.52 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_AV
+IBM Gain: $ -1.52 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_HM_AV
+IBM Gain: $ -1.52 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_HM_AV
+IBM Gain: $ -1.49 Win %: 0 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_TR_QP_DB5
+IBM Gain: $ -1.47 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_QP_IR5
+IBM Gain: $ -1.42 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_QP_IR5
+IBM Gain: $ -1.11 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_IT_QL
+IBM Gain: $ -1.06 Win %: 0 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_HM_QP
+IBM Gain: $ -1.06 Win %: 0 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_HM_QP
+IBM Gain: $ -1.06 Win %: 0 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_HM_QP_DB5
+IBM Gain: $ -1.06 Win %: 0 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_QP
+IBM Gain: $ -1.06 Win %: 0 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_QP
+IBM Gain: $ -1.06 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_AV
+IBM Gain: $ -1.06 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_AV
+IBM Gain: $ -1.06 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_HM_AV
+IBM Gain: $ -1.06 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_HM_AV
+IBM Gain: $ -1.06 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_HM_AV_DB5
+IBM Gain: $ -1.01 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_HM_TR
+IBM Gain: $ -1.01 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_HM_TR
+IBM Gain: $ -1.01 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_HM_TR_DB5
+IBM Gain: $ -1.01 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_TR
+IBM Gain: $ -1.01 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_TR
+IBM Gain: $ -0.92 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_AL
+IBM Gain: $ -0.92 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_AL
+IBM Gain: $ -0.92 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_AL
+IBM Gain: $ -0.92 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_AL
+IBM Gain: $ -0.84 Win %: 33.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_AV
+IBM Gain: $ -0.84 Win %: 33.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_AV
+IBM Gain: $ -0.79 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_IT_QL
+IBM Gain: $ -0.79 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_IT_QL
+IBM Gain: $ -0.76 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_IT_QL
+IBM Gain: $ -0.76 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_IT_QL_DB5
+IBM Gain: $ -0.71 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_IR5
+IBM Gain: $ -0.65 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_HM_QP
+IBM Gain: $ -0.65 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_HM_QP
+IBM Gain: $ -0.65 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_QP
+IBM Gain: $ -0.65 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_QP
+IBM Gain: $ -0.52 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_LI
+IBM Gain: $ -0.52 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_LI
+IBM Gain: $ -0.52 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_TR
+IBM Gain: $ -0.52 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_TR
+IBM Gain: $ -0.52 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_TR_DB5
+IBM Gain: $ -0.52 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_TR_DB5
+IBM Gain: $ -0.52 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_TR_DB5
+IBM Gain: $ -0.47 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_IT
+IBM Gain: $ -0.47 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_IT
+IBM Gain: $ -0.43 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_QP
+IBM Gain: $ -0.43 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_QP
+IBM Gain: $ -0.41 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_HM_QP
+IBM Gain: $ -0.41 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_HM_QP
+IBM Gain: $ -0.41 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_QP
+IBM Gain: $ -0.41 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_QP
+IBM Gain: $ -0.38 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_LI
+IBM Gain: $ -0.38 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_LI
+IBM Gain: $ -0.31 Win %: 33.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_HM_AV
+IBM Gain: $ -0.31 Win %: 33.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_HM_AV
+IBM Gain: $ -0.31 Win %: 33.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_HM_AV_DB3
+IBM Gain: $ -0.28 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_HM
+IBM Gain: $ -0.28 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_HM
+IBM Gain: $ -0.27 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_QP
+IBM Gain: $ -0.27 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_QP
+IBM Gain: $ -0.27 Win %: 33.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_TR_QP
+IBM Gain: $ -0.27 Win %: 33.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_TR_QP
+IBM Gain: $ -0.27 Win %: 33.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_TR_QP_DB3
+IBM Gain: $ -0.04 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_IT_QP
+IBM Gain: $ -0.04 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_IT_QP_DB5
+Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_IR3
+Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_IR3
+Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_AL
+Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_AL
+Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_AL
+Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_AL
+Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_AL
+Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_AL
+Gain: $ -0.21 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_VI
+Gain: $ -0.21 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_VI
+Gain: $ -0.21 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_VI
+Gain: $ -0.21 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_VI
+Gain: $ -0.21 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_VI
+Gain: $ -0.21 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_VI
+Gain: $ -0.21 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_LI
+Gain: $ -0.21 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_LI
+Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_LI
+Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_LI
+Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_LI
+Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_LI
+Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_LI
+Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_LI
+Gain: $ -0.31 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_TR_IR3
+Gain: $ -0.31 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_TR_IR3
+Gain: $ -0.35 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_QP_IR3
+Gain: $ -0.35 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_QP_IR3
+Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_AV
+Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_AV
+Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_PA_AV
+Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_PA_AV
+Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_RV_AV
+Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_RV_AV
+Gain: $ -0.72 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_VI
+Gain: $ -0.72 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_VI
 Gain: $ -0.77 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5
 Gain: $ -0.77 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5
 Gain: $ -0.77 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_DB10
@@ -84,46 +137,83 @@ Gain: $ -0.77 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_SS
 Gain: $ -0.77 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_SS
 Gain: $ -0.77 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_TR
 Gain: $ -0.77 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_TR
-Gain: $ -0.72 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_VI
-Gain: $ -0.72 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_VI
-Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_AV
-Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_AV
-Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_PA_AV
-Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_PA_AV
-Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_RV_AV
-Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_RV_AV
-Gain: $ -0.35 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_QP_IR3
-Gain: $ -0.35 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_QP_IR3
-Gain: $ -0.31 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_TR_IR3
-Gain: $ -0.31 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_TR_IR3
-Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_LI
-Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_LI
-Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_LI
-Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_LI
-Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_LI
-Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_LI
-Gain: $ -0.21 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_VI
-Gain: $ -0.21 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_VI
-Gain: $ -0.21 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_VI
-Gain: $ -0.21 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_VI
-Gain: $ -0.21 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_VI
-Gain: $ -0.21 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_VI
-Gain: $ -0.21 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_LI
-Gain: $ -0.21 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_LI
-Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_AL
-Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_AL
-Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_AL
-Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_AL
-Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_AL
-Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_AL
-Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_IR3
-Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_IR3
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_IR5
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_IR5
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_IR5
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_IR5
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_IR5
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_IR5
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_PA
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_PA
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_PA_QP
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_PA_QP
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_RV
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_RV
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_RV_QP
+Gain: $ -0.89 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_RV_QP
+Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_PA_AV
+Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_PA_AV
+Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_RV_AV
+Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_RV_AV
+Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_PA_AV
+Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_PA_AV
+Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_RV_AV
+Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_RV_AV
+Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_PA_AV
+Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_PA_AV
+Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_RV_AV
+Gain: $ -0.93 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_RV_AV
+Gain: $ -0.96 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_TR
+Gain: $ -0.96 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_TR
+Gain: $ -0.96 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_TR
+Gain: $ -0.96 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_TR
+Gain: $ -0.96 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_TR
+Gain: $ -0.96 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_TR
+Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_PA_TR
+Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_PA_TR
+Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_RV_TR
+Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_RV_TR
+Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_PA_TR
+Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_PA_TR
+Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_RV_TR
+Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_RV_TR
+Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_PA_TR
+Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_PA_TR
+Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_RV_TR
+Gain: $ -0.97 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_RV_TR
+Gain: $ -1 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_QP_IR5
+Gain: $ -1 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_QP_IR5
+Gain: $ -1 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_QP_IR5
+Gain: $ -1 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_QP_IR5
+Gain: $ -1 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_QP_IR5
+Gain: $ -1 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_QP_IR5
+Gain: $ -1.03 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_AL
+Gain: $ -1.03 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_AL
+Gain: $ -1.11 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_SS
+Gain: $ -1.11 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_SS
+Gain: $ -1.11 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_SS
+Gain: $ -1.11 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_SS
+Gain: $ -1.11 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_SS
+Gain: $ -1.11 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_SS
+Gain: $ -1.95 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_TR_IR5
+Gain: $ -1.95 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_TR_IR5
+Gain: $ -1.95 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_TR_IR5
+Gain: $ -1.95 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_TR_IR5
+Gain: $ -1.95 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_TR_IR5
+Gain: $ -1.95 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_TR_IR5
+Gain: $ -2.73 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_AV
+Gain: $ -2.73 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_AV
+Gain: $ -2.73 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_AV
+Gain: $ -2.73 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_AV
+Gain: $ -2.73 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_AV
+Gain: $ -2.73 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_AV
 Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_QP
 Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_QP
 Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_QP
 Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_QP
 Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_QP
 Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_QP
+Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_PA_QP
 Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_PA_QP
 Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_PA_QP
 Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_PA_QP
@@ -161,3 +251,173 @@ Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_PA
 Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_PA
 Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_RV
 Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_RV
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_QP_IR_DB5
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_TR_IR_DB5
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_IR5
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_QP_IR5
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_QP_IR_DB5
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_TR_IR5
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_TR_IR_DB5
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_IR5
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_QP_IR5
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_QP_IR_DB5
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_TR_IR5
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_TR_IR_DB5
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_QP_IR_DB3
+IBM Gain: $ 0 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_TR_IR_DB3
+IBM Gain: $ 0.01 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_IT_QP
+IBM Gain: $ 0.01 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_IT_QP
+IBM Gain: $ 0.32 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_IT
+IBM Gain: $ 0.32 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_IT
+IBM Gain: $ 0.45 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_HM_TR
+IBM Gain: $ 0.45 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_HM_TR
+IBM Gain: $ 0.45 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_TR
+IBM Gain: $ 0.45 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_TR
+IBM Gain: $ 0.47 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_IT_QP_DB5
+IBM Gain: $ 0.48 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_HM_TR
+IBM Gain: $ 0.48 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_HM_TR
+IBM Gain: $ 0.48 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_HM_TR_DB3
+IBM Gain: $ 0.5 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_QL
+IBM Gain: $ 0.5 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_QL
+IBM Gain: $ 0.5 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_QL
+IBM Gain: $ 0.5 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_QL
+IBM Gain: $ 0.55 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_IT_QP_DB5
+IBM Gain: $ 0.55 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_TR_QP
+IBM Gain: $ 0.55 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_TR_QP
+IBM Gain: $ 0.56 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_TR
+IBM Gain: $ 0.56 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_TR
+IBM Gain: $ 0.56 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_TR_DB3
+IBM Gain: $ 0.56 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_TR_DB3
+IBM Gain: $ 0.56 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_TR_DB3
+IBM Gain: $ 0.56 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_TR
+IBM Gain: $ 0.56 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_TR
+IBM Gain: $ 0.57 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_TR_QP
+IBM Gain: $ 0.57 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_TR_QP
+IBM Gain: $ 0.61 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_QP_IR5
+IBM Gain: $ 0.61 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_IR5
+IBM Gain: $ 0.63 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_HM_TR
+IBM Gain: $ 0.63 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_HM_TR
+IBM Gain: $ 0.63 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_TR
+IBM Gain: $ 0.63 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_TR
+IBM Gain: $ 0.71 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_VI
+IBM Gain: $ 0.71 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_VI
+IBM Gain: $ 0.77 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_IT_QP
+IBM Gain: $ 0.77 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_IT_QP_DB3
+IBM Gain: $ 0.82 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_HM
+IBM Gain: $ 0.82 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_HM
+IBM Gain: $ 0.82 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3
+IBM Gain: $ 0.82 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3
+IBM Gain: $ 0.82 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_HM
+IBM Gain: $ 0.82 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_HM
+IBM Gain: $ 0.83 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_AL
+IBM Gain: $ 0.83 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_AL
+IBM Gain: $ 0.83 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_DB30
+IBM Gain: $ 0.83 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_DB30
+IBM Gain: $ 0.84 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_AL
+IBM Gain: $ 0.84 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_AL
+IBM Gain: $ 0.87 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_TR
+IBM Gain: $ 0.87 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_TR
+IBM Gain: $ 0.9 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_TR_IR3
+IBM Gain: $ 0.9 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_TR_IR3
+IBM Gain: $ 0.92 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_IT_QP
+IBM Gain: $ 1.05 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_TR
+IBM Gain: $ 1.05 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_TR
+IBM Gain: $ 1.08 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_TR_IR5
+IBM Gain: $ 1.09 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_IT
+IBM Gain: $ 1.1 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_HM_AV_DB5
+IBM Gain: $ 1.16 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV
+IBM Gain: $ 1.16 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV
+IBM Gain: $ 1.17 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV
+IBM Gain: $ 1.17 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV
+IBM Gain: $ 1.22 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_AL
+IBM Gain: $ 1.22 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_AL
+IBM Gain: $ 1.22 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_AL_DB5
+IBM Gain: $ 1.42 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_AV
+IBM Gain: $ 1.42 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_AV
+IBM Gain: $ 1.42 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_AV_DB3
+IBM Gain: $ 1.44 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_IT
+IBM Gain: $ 1.52 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_AV
+IBM Gain: $ 1.52 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_AV
+IBM Gain: $ 1.52 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_AV_DB5
+IBM Gain: $ 1.53 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_HM_QP_DB5
+IBM Gain: $ 1.63 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_HM_QP_DB5
+IBM Gain: $ 1.67 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_QP_DB5
+IBM Gain: $ 1.82 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_TR_IR5
+IBM Gain: $ 1.82 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_LI
+IBM Gain: $ 1.82 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_LI
+IBM Gain: $ 1.85 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_QP_DB5
+IBM Gain: $ 1.88 Win %: 33.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_IR5
+IBM Gain: $ 1.95 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_VI
+IBM Gain: $ 1.95 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_VI
+IBM Gain: $ 2.01 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_HM_AV_DB5
+IBM Gain: $ 2.17 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_IT_QL_DB5
+IBM Gain: $ 2.36 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_IT_QL_DB5
+IBM Gain: $ 2.55 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_LI
+IBM Gain: $ 2.55 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_LI
+IBM Gain: $ 2.57 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_HM_TR_DB5
+IBM Gain: $ 2.6 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_IR5
+IBM Gain: $ 2.63 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_IT
+IBM Gain: $ 2.63 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_IT_QL
+IBM Gain: $ 2.63 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_IT_QL_DB3
+IBM Gain: $ 2.68 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_DB30
+IBM Gain: $ 2.68 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_DB30
+IBM Gain: $ 2.68 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_DB30
+IBM Gain: $ 2.68 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_DB30
+IBM Gain: $ 2.75 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_IT
+IBM Gain: $ 2.75 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_IT_QL
+IBM Gain: $ 2.8 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_HM_TR_DB5
+IBM Gain: $ 2.99 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_TR_DB5
+IBM Gain: $ 2.99 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_TR_DB5
+IBM Gain: $ 2.99 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_TR_DB5
+IBM Gain: $ 3.22 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_TR_DB5
+IBM Gain: $ 3.22 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_TR_DB5
+IBM Gain: $ 3.22 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_TR_DB5
+IBM Gain: $ 3.25 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_TR_QP_DB5
+IBM Gain: $ 3.26 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_AL
+IBM Gain: $ 3.26 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_AL
+IBM Gain: $ 3.26 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_AL_DB3
+IBM Gain: $ 3.27 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_TR_QP_DB5
+IBM Gain: $ 3.31 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_AL
+IBM Gain: $ 3.31 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_AL
+IBM Gain: $ 3.32 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_TR_IR5
+IBM Gain: $ 3.41 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_VI
+IBM Gain: $ 3.41 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_VI
+IBM Gain: $ 3.41 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_VI
+IBM Gain: $ 3.41 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_VI
+IBM Gain: $ 3.42 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_QP
+IBM Gain: $ 3.42 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_QP
+IBM Gain: $ 3.42 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV_QP_DB3
+IBM Gain: $ 3.47 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_QP
+IBM Gain: $ 3.47 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_QP
+IBM Gain: $ 3.6 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_HM_QP
+IBM Gain: $ 3.6 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_HM_QP
+IBM Gain: $ 3.6 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_HM_QP_DB3
+IBM Gain: $ 3.6 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV
+IBM Gain: $ 3.6 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_RV
+IBM Gain: $ 3.61 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_AL_DB5
+IBM Gain: $ 3.65 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_QL
+IBM Gain: $ 3.65 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_QL
+IBM Gain: $ 3.73 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_SS
+IBM Gain: $ 3.73 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_SS
+IBM Gain: $ 3.77 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_HM
+IBM Gain: $ 3.77 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_HM
+IBM Gain: $ 3.78 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_QP
+IBM Gain: $ 3.78 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_QP
+IBM Gain: $ 3.78 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_QP_DB5
+IBM Gain: $ 3.94 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_QP_IR3
+IBM Gain: $ 3.94 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_QP_IR3
+IBM Gain: $ 4.06 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_AV
+IBM Gain: $ 4.06 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_AV
+IBM Gain: $ 4.07 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_AV
+IBM Gain: $ 4.07 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_AV
+IBM Gain: $ 4.12 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_DB10
+IBM Gain: $ 4.12 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_DB10
+IBM Gain: $ 4.12 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_IR3
+IBM Gain: $ 4.12 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB4_CS4_IR3
+IBM Gain: $ 4.44089e-16 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_IT_QL
+IBM Gain: $ 4.44089e-16 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_IT_QL
+IBM Gain: $ 4.45 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV
+IBM Gain: $ 4.45 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV
+IBM Gain: $ 4.53 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_AL_DB5
+IBM Gain: $ 6.68 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_RV_AV_DB5
+IBM Gain: $ 7.6 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB3_CS3_RV_AV_DB5

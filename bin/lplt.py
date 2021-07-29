@@ -19,6 +19,15 @@ from shutil import copyfile
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def isStoppedOut():
 
+   if doInPosTracking:
+      if a.getInPosGain():
+         lg.info ("IN POS PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
+         lg.info ("MAX PROFIT FACTOR: " + str(maxProfit))
+         lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
+         lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
+         
+         return 2
+
    if quitMaxProfit:            
       if a.getTotalGain() >= a.getTargetProfit() and a.getTotalGain() != 0.0:
          lg.info ("MAX PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
@@ -183,6 +192,7 @@ maxLoss = float(d["profileTradeData"]["maxLoss"])
 quitMaxProfit = int(d["profileTradeData"]["quitMaxProfit"])
 quitMaxLoss = int(d["profileTradeData"]["quitMaxLoss"])
 slave = int(d["profileTradeData"]["slave"])
+doInPosTracking = int(d["profileTradeData"]["doInPosTracking"])
 
 offLine = int(c["profileConnectET"]["offLine"])
 sandBox = int(c["profileConnectET"]["sandBox"])
@@ -438,7 +448,9 @@ while True:
    endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * int(timeBar)))
    
    if offLine:
-      lg.debug ("Start time: " + str(bc.getTimeFromFile(barChart, barCtr)) + "\n")
+      pass
+      # causing index errors
+      #lg.debug ("Start time: " + str(bc.getTimeFromFile(barChart, barCtr)) + "\n")
    else:
       lg.debug ("End bar time : " + str(endBarLoopTime))
       lg.debug ("Start time: " + str(cn.getTimeStamp()))
