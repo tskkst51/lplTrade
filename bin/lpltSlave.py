@@ -318,6 +318,9 @@ if service == "eTrade":
 
 lg = lpl.Log(debug, verbose, logPath, debugPath, 0)
 
+#import trade_interface as ti
+#ti = lpl.TradeInterface({'consumer_key': self.consumer_key, 'consumer_secret' = self.consumerSecret}) 
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup connection to the exchange service
 
@@ -340,6 +343,7 @@ tr = lpl.Trends(d, lg, cn, bc, slave)
 lm = lpl.Limits(d, lg, cn, bc, slave, symbol)
 pa = lpl.Pattern(d, bc, lg)
 pr = lpl.Price(cn, slave)
+#ac = lpl.Account(c)
 a = lpl.Algorithm(d, lg, cn, bc, tr, lm, pa, pr, slave, stock)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

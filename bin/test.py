@@ -18,6 +18,7 @@ import lplTrade as lpl
 openCloseBuySellBars = [1,2,3,4,5]     # OB OS CB CS
 
 openBuySellBars = [1,2,3,4,5]     # OB OS
+#closeBuySellBars = [2,3,4,5]     # CB CS
 closeBuySellBars = [1,2,3,4,5]     # CB CS
 
 openBuyBars = [1,2,3,4,5]     # OB

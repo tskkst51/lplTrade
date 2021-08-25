@@ -40,7 +40,9 @@ class TradeInterface:
     #
     #
     def __init__(self, keys: dict, use_sandbox: bool, browser_path: str):
+        print ("keys: " + str(keys)) 
         keys = keys['sandbox'] if use_sandbox else keys['production']
+        print ("keys: " + str(keys)) 
         self._consumer_key = keys['consumer_key']
         self._consumer_secret = keys['consumer_secret']
         self._browser_path = browser_path
@@ -72,13 +74,14 @@ class TradeInterface:
     #
     #
     @synchronized()
-    def connect(self) -> bool:
+    def connect(self) -> []:
         oauth = EtradeAuthorization()
 
         # 1) get request token
         #    exp: 5 min
         try:
             verifier_url = oauth.get_request_token(self._consumer_key, self._consumer_secret)
+            print("verifier_url "+ str(verifier_url))
         except Exception as e:
             return self.__error_report('connect', e)
 
@@ -106,9 +109,34 @@ class TradeInterface:
         except Exception as e:
             return self.__error_report('connect', e)
 
+        print ("self.__use_product_key " + str(self.__use_product_key))
         self._api = EtradeApi(session=session, use_product_key=self.__use_product_key)
-        return True
+        
+        #return True
+        return tokens
 
+    #
+    #
+    #
+    @synchronized()
+    def reconnect(self, tokens) -> []:
+        oauth = EtradeAuthorization()
+
+        try:
+            session = oauth.get_session(self._consumer_key, self._consumer_secret, tokens)
+
+        except Exception as e:
+            return self.__error_report('connect', e)
+
+        print ("self.__use_product_key " + str(self.__use_product_key))
+        self._api = EtradeApi(session=session, use_product_key=self.__use_product_key)
+        try:
+            self.get_current_price("AAPL")
+        except ValueError:
+            return False
+            
+        return True
+   
     #
     #
     #
@@ -123,6 +151,19 @@ class TradeInterface:
             print('disconnect: ' + str(e))
             return False
 
+    #
+    #
+    #
+    @synchronized()
+    def select_daytrade_account(self) -> None:
+        try:
+           accounts = self._api.list_accounts()
+           self._selected_account = accounts[0][3]
+           print("self._selected_account " + str(self._selected_account))
+        except Exception as e:
+           raise ValueError('select_account: ' + str(e))
+           
+        return True
     #
     #
     #
@@ -159,6 +200,7 @@ class TradeInterface:
             Amount of cash not settled
         """
         try:
+            print ("self._selected_account " + str(self._selected_account))
             return self._api.get_account_balance(account_id=self._selected_account)
         except KeyError:
             raise ValueError('get_account_balance: wrong response format.')

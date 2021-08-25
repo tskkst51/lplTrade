@@ -297,6 +297,44 @@ class Premarket:
          sleep(13)
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def removeStocksFromExclusionList(self, stocks):
+      
+      excludedStocks = []
+
+      with open("ignoreStocks/ignoreStocks.ig", 'r') as eFile:
+         symbols = eFile.read().split()
+                  
+      for stock in stocks:
+         if stock in symbols:
+            print ("excluding stock " + str(stock) + " it's in the exclusion list")
+            continue
+               
+         excludedStocks.append(stock)
+         
+      return excludedStocks
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getStocksWithinPriceRange(self, stocks, minStockPrice, maxStockPrice):
+      
+      stocksInRange = []
+      
+      # Return stocks that are greater than the min and less than the max
+      for stock in stocks:
+         with open("dc/" + stock + ".dc", 'r') as dFile:
+            lines = dFile.readlines()
+            lastLineItems = lines[len(lines) - 1].split(',')
+            lastPrice = float(lastLineItems[3])
+            
+         if lastPrice < minStockPrice or lastPrice > maxStockPrice:
+            print ("excluding stock " + str(stock) + " it's price is " + str(lastPrice))
+            
+            continue
+            
+         stocksInRange.append(stock)
+         
+      return stocksInRange
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getStocksWithDailyData(self, stocks, minDaysData):
    
       parsedStocks = []
@@ -339,9 +377,14 @@ class Premarket:
       # Find the premarket movers
       if findPreMarketMovers:
          movers = tg.getPreMarketMovers()
-                        
+         yahooMovers = tg.getYahooPreMarketMovers()
+         
+         for stock in yahooMovers:
+            movers.append(stock)
+            
          print ("movers " + str(movers))
-
+         print ("yahooMovers " + str(yahooMovers))
+         
          for mover in movers:
             dcPath = "dc/" + mover + ".dc"
             

@@ -84,6 +84,12 @@ function init {
 }
 
 algos=(
+"HI_QM"
+"LO_QM"
+"OC_QM"
+"OO_QM"
+"CC_QM"
+"PL_QM"
 "HL_QM"
 "HS_QM"
 "HL_HS_QM"
@@ -91,6 +97,10 @@ algos=(
 "HS_AL_QM"
 "HL_HS_AL_QM"
 "AL_EO_EC_QM"
+"EO_EC_QM"
+"HL_HS_QM"
+"HL_HI_QM"
+"HL_LO_QM"
 )
 
 init $1

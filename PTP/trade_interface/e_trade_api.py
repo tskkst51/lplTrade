@@ -89,12 +89,20 @@ class EtradeApi:
         """
         api_url = self.__get_url('accounts/' + account_id + '/balance?instType=BROKERAGE&realTimeNAV=true')
         resp = self.__session.get(api_url)
-
         info = self.__retrieve_response(resp)
+        
+        #print ("info " + str(info))
         info = info['BalanceResponse']['Computed']
-        return (float(info['RealTimeValues']['totalAccountValue']),
-                float(info['settledCashForInvestment']),
-                float(info['unSettledCashForInvestment']))
+        #print ("info " + str(info))
+        #print ("cashAvailableForInvestment " + str(info['cashAvailableForInvestment']))
+        #print ("margin amount " + str(info['marginBuyingPower']))
+        
+        return (float(info['cashAvailableForInvestment']),
+                round(float(info['marginBuyingPower']), 2))
+                
+#        return (float(info['RealTimeValues']['totalAccountValue']),
+#                float(info['settledCashForInvestment']),
+#                float(info['unSettledCashForInvestment']))
 
     #
     #

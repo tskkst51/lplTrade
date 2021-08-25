@@ -34,6 +34,7 @@ class Limits:
       self.doLoSeq = int(data['profileTradeData']['doLoSeq'])
       self.doOpenCloseSeq = int(data['profileTradeData']['doOpenCloseSeq'])      
       self.doOpensSeq = int(data['profileTradeData']['doOpensSeq'])      
+      self.doClosesSeq = int(data['profileTradeData']['doClosesSeq'])      
       self.doOpensCloses = int(data['profileTradeData']['doOpensCloses'])      
       self.doHiLo = int(data['profileTradeData']['doHiLo'])
       self.doExecuteOnOpen = int(data['profileTradeData']['doExecuteOnOpen'])
@@ -53,6 +54,25 @@ class Limits:
       self.lowerHighs = self.lowerCloses = 0
       self.lowerLows = self.lowerOpens = 0
       self.higherLows = self.higherOpens = 0
+      
+      self.higherOpensBuyOpen = self.higherOpensSellOpen = 0
+      self.higherOpensBuyClose = self.higherOpensSellClose = 0
+
+      self.lowerOpensBuyOpen = self.lowerOpensSellOpen = 0
+      self.lowerOpensBuyClose = self.lowerOpensSellClose = 0
+      
+      self.higherHighsBuyOpen = self.higherHighsSellOpen = 0
+      self.higherHighsBuyClose = self.higherHighsSellClose = 0
+
+      self.higherLowsBuyOpen = self.higherLowsSellOpen = 0
+      self.higherLowsBuyClose = self.higherLowsSellClose = 0
+
+      self.lowerHighsBuyOpen = self.lowerHighsSellOpen = 0
+      self.lowerHighsBuyClose = self.lowerHighsSellClose = 0
+      
+      self.lowerLowsBuyOpen = self.lowerLowsSellOpen = 0
+      self.lowerLowsBuyClose = self.lowerLowsSellClose = 0
+            
       self.hiValues = []
       self.loValues = []
       
@@ -70,7 +90,7 @@ class Limits:
 
       # Must have 2 decision bars when doing hiLoSeq
       if self.doHiLoSeq or self.doHiSeq or self.doLoSeq or self.doOpenCloseSeq or \
-         self.doExecuteOnOpen or self.doExecuteOnClose or self.doOpensSeq:
+         self.doExecuteOnOpen or self.doExecuteOnClose or self.doOpensSeq or self.doClosesSeq:
          if self.openBuyBars < 2:
             self.openBuyBars = 2
          if self.closeBuyBars < 2:
@@ -89,11 +109,22 @@ class Limits:
       if bar < self.doRangeTradeBars:
          return
 
+      if bar < self.getMaxNumTradeBars():
+         return
+
       self.lg.debug("\nRange values... " + str(bar))
-      self.lg.debug("\self.doRangeTradeBars... " + str(self.doRangeTradeBars))
+      self.lg.debug("self.doRangeTradeBars... " + str(self.doRangeTradeBars))
+      self.lg.debug("self.getMaxNumTradeBars()... " + str(self.getMaxNumTradeBars()))
       
-      self.setOpenCloseHiLoValues(barChart, bar, self.doRangeTradeBars)
-      self.setOpenCloseHiLoConditions(self.doRangeTradeBars)
+      maxBars = self.doRangeTradeBars
+      
+      if self.doRangeTradeBars < self.getMaxNumTradeBars():
+         maxBars = self.getMaxNumTradeBars()
+         
+      self.setOpenCloseHiLoValues(barChart, bar, maxBars)
+
+      self.setHiLoConditions()
+#      self.setOpenCloseHiLoConditions(self.doRangeTradeBars)
 
       # Use Hi and Los or open closes for determining range
       if self.doOpensCloses or self.doOpenCloseSeq:
@@ -727,7 +758,7 @@ class Limits:
       
       # Must have two decision bars for doHiLoSeq
       if self.doHiLoSeq or self.doHiSeq or self.doLoSeq or self.doOpenCloseSeq or \
-         self.doExecuteOnOpen or self.doExecuteOnClose or self.doOpensSeq:
+         self.doExecuteOnOpen or self.doExecuteOnClose or self.doOpensSeq or self.doClosesSeq:
          if self.openBuyBars < 2:
             self.openBuyBars = 2
          if self.openSellBars < 2:
@@ -775,7 +806,8 @@ class Limits:
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setOpenCloseHiLoValues(self, barChart, bar, waitBars):
-
+      
+      self.lg.debug ("waitBars " + str(waitBars))  
       self.openValues = [0.0] * waitBars   
       self.closeValues = [0.0] * waitBars  
       self.lowValues = [0.0] * waitBars
@@ -805,6 +837,89 @@ class Limits:
          self.lg.debug ("hi's: " + str(barChart[bar - n][self.hi]))
 
       return 1
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setHiLoConditions(self):
+   
+      self.higherOpensBuyOpen = self.isHigherOpens(self.openBuyBars)
+      self.higherOpensSellOpen = self.isHigherOpens(self.openSellBars)
+      self.higherOpensBuyClose = self.isHigherOpens(self.closeBuyBars)
+      self.higherOpensSellClose = self.isHigherOpens(self.closeSellBars)
+
+      self.lg.debug("higherOpens openBuyBars: " + str(self.higherOpensBuyOpen))
+      self.lg.debug("higherOpens openSellBars: " + str(self.higherOpensSellOpen))
+      self.lg.debug("higherOpens closeBuyBars: " + str(self.higherOpensBuyClose))
+      self.lg.debug("higherOpens closeSellBars: " + str(self.higherOpensSellClose))
+
+      self.lowerOpensBuyOpen = self.isLowerOpens(self.openBuyBars)
+      self.lowerOpensSellOpen = self.isLowerOpens(self.openSellBars)
+      self.lowerOpensBuyClose = self.isLowerOpens(self.closeBuyBars)
+      self.lowerOpensSellClose = self.isLowerOpens(self.closeSellBars)
+
+      self.lg.debug("isLowerOpens openBuyBars: " + str(self.lowerOpensBuyOpen))
+      self.lg.debug("isLowerOpens openSellBars: " + str(self.lowerOpensSellOpen))
+      self.lg.debug("isLowerOpens closeBuyBars: " + str(self.lowerOpensBuyClose))
+      self.lg.debug("isLowerOpens closeSellBars: " + str(self.lowerOpensSellClose))
+      
+      self.higherClosesBuyOpen = self.isHigherCloses(self.openBuyBars)
+      self.higherClosesSellOpen = self.isHigherCloses(self.openSellBars)
+      self.higherClosesBuyClose = self.isHigherCloses(self.closeBuyBars)
+      self.higherClosesSellClose = self.isHigherCloses(self.closeSellBars)
+      
+      self.lg.debug("isHigherCloses openBuyBars: " + str(self.higherClosesBuyOpen))
+      self.lg.debug("isHigherCloses openSellBars: " + str(self.higherClosesSellOpen))
+      self.lg.debug("isHigherCloses closeBuyBars: " + str(self.higherClosesBuyClose))
+      self.lg.debug("isHigherCloses closeSellBars: " + str(self.higherClosesSellClose))
+
+      self.lowerClosesBuyOpen = self.isLowerCloses(self.openBuyBars)
+      self.lowerClosesSellOpen = self.isLowerCloses(self.openSellBars)
+      self.lowerClosesBuyClose = self.isLowerCloses(self.closeBuyBars)
+      self.lowerClosesSellClose = self.isLowerCloses(self.closeSellBars)
+
+      self.lg.debug("isLowerCloses openBuyBars: " + str(self.lowerClosesBuyOpen))
+      self.lg.debug("isLowerCloses openSellBars: " + str(self.lowerClosesSellOpen))
+      self.lg.debug("isLowerCloses closeBuyBars: " + str(self.lowerClosesBuyClose))
+      self.lg.debug("isLowerCloses closeSellBars: " + str(self.lowerClosesSellClose))
+
+      self.higherHighsBuyOpen = self.isHigherHighs(self.openBuyBars)
+      self.higherHighsSellOpen = self.isHigherHighs(self.openSellBars)
+      self.higherHighsBuyClose = self.isHigherHighs(self.closeBuyBars)
+      self.higherHighsSellClose = self.isHigherHighs(self.closeSellBars)
+
+      self.lg.debug("isHigherHighs openBuyBars: " + str(self.higherHighsBuyOpen))
+      self.lg.debug("isHigherHighs openSellBars: " + str(self.higherHighsSellOpen))
+      self.lg.debug("isHigherHighs closeBuyBars: " + str(self.higherHighsBuyClose))
+      self.lg.debug("isHigherHighs closeSellBars: " + str(self.higherHighsSellClose))
+
+      self.higherLowsBuyOpen = self.isHigherLows(self.openBuyBars)
+      self.higherLowsSellOpen = self.isHigherLows(self.openSellBars)
+      self.higherLowsBuyClose = self.isHigherLows(self.closeBuyBars)
+      self.higherLowsSellClose = self.isHigherLows(self.closeSellBars)
+
+      self.lg.debug("isHigherLows openBuyBars: " + str(self.higherLowsBuyOpen))
+      self.lg.debug("isHigherLows openSellBars: " + str(self.higherLowsSellOpen))
+      self.lg.debug("isHigherLows closeBuyBars: " + str(self.higherLowsBuyClose))
+      self.lg.debug("isHigherLows closeSellBars: " + str(self.higherLowsSellClose))
+
+      self.lowerHighsBuyOpen = self.isLowerHighs(self.openBuyBars)
+      self.lowerHighsSellOpen = self.isLowerHighs(self.openSellBars)
+      self.lowerHighsBuyClose = self.isLowerHighs(self.closeBuyBars)
+      self.lowerHighsSellClose = self.isLowerHighs(self.closeSellBars)
+      
+      self.lg.debug("isLowerHighs openBuyBars: " + str(self.lowerHighsBuyOpen))
+      self.lg.debug("isLowerHighs openSellBars: " + str(self.lowerHighsSellOpen))
+      self.lg.debug("isLowerHighs closeBuyBars: " + str(self.lowerHighsBuyClose))
+      self.lg.debug("isLowerHighs closeSellBars: " + str(self.lowerHighsSellClose))
+
+      self.lowerLowsBuyOpen = self.isLowerLows(self.openBuyBars)
+      self.lowerLowsSellOpen = self.isLowerLows(self.openSellBars)
+      self.lowerLowsBuyClose = self.isLowerLows(self.closeBuyBars)
+      self.lowerLowsSellClose = self.isLowerLows(self.closeSellBars)      
+      
+      self.lg.debug("isLowerLows openBuyBars: " + str(self.lowerLowsBuyOpen))
+      self.lg.debug("isLowerLows openSellBars: " + str(self.lowerLowsSellOpen))
+      self.lg.debug("isLowerLows closeBuyBars: " + str(self.lowerLowsBuyClose))
+      self.lg.debug("isLowerLows closeSellBars: " + str(self.lowerLowsSellClose))
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setOpenCloseHiLoConditions(self, numBars):

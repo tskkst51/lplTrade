@@ -1,305 +1,153 @@
-Gain: $ -12.06 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2
-Gain: $ -11.74 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_RV
-Gain: $ -11.93 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_IR5
-Gain: $ -9.35 Win %: 33.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_TR
-Gain: $ -5.27 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_AV
-Gain: $ -9.27 Win %: 11.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_VI
-Gain: $ -6 Win %: 33.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_AL
-Gain: $ -10.76 Win %: 33.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_LI
-Gain: $ -15.51 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_QP
-Gain: $ -14.5 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_HM
-Gain: $ -7.86 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_SS
-Gain: $ -8.94 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_QL
-Gain: $ -12.06 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_DB10
-Gain: $ -10.28 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_TR_IR5
-Gain: $ -15.05 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_TR_QP
-Gain: $ -10.32 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_QP_IR5
-Gain: $ -8.97 Win %: 33.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_RV_TR
-Gain: $ -5.72 Win %: 88.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_RV_TR_DB
-Gain: $ 3.5 Win %: 66.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_RV_AV
-Gain: $ -9.66 Win %: 44.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_RV_AL
-Gain: $ -15.19 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_RV_QP
-Gain: $ -12.49 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_HM_TR
-Gain: $ -7.87 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_HM_AV
-Gain: $ -20.06 Win %: 22.00 in 9 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_HM_QP
-Gain: $ -10.23 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_RV
-Gain: $ 2.75 Win %: 77.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_IR5
-Gain: $ -4.93 Win %: 22.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_TR
-Gain: $ -6.89 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_AV
-Gain: $ -4.12 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_VI
-Gain: $ -5.09 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_AL
-Gain: $ -10.73 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_LI
-Gain: $ -10.74 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_QP
-Gain: $ -8.67 Win %: 55.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_HM
-Gain: $ -0.17 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_SS
-Gain: $ -7.99 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_QL
-Gain: $ -9.84 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_DB8
-Gain: $ 1.47 Win %: 55.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_TR_IR5
-Gain: $ -0.24 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_TR_QP
-Gain: $ 2.36 Win %: 66.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_QP_IR5
-Gain: $ -4.25 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_RV_TR
-Gain: $ 0 Win %: 100.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_RV_TR_DB
-Gain: $ 6.76 Win %: 66.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_RV_AV
-Gain: $ -6.41 Win %: 55.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_RV_AL
-Gain: $ -11.57 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_RV_QP
-Gain: $ -12.1 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_HM_TR
-Gain: $ -7.29 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_HM_AV
-Gain: $ -10.78 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_HM_QP
-Gain: $ -10.23 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV
-Gain: $ 2.75 Win %: 77.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_IR5
-Gain: $ -4.93 Win %: 22.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_TR
-Gain: $ -4.28 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_AV
-Gain: $ -4.12 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_VI
-Gain: $ -5.09 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_AL
-Gain: $ -10.73 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_LI
-Gain: $ -10.74 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_QP
-Gain: $ -8.67 Win %: 55.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_HM
-Gain: $ -0.17 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_SS
-Gain: $ -7.99 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_QL
-Gain: $ -9.84 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_DB8
-Gain: $ -6.8 Win %: 55.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_TR_IR5
-Gain: $ -3.53 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_TR_QP
-Gain: $ 2.36 Win %: 66.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_QP_IR5
-Gain: $ -4.77 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_TR
-Gain: $ 0 Win %: 100.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_TR_DB
-Gain: $ 7.39 Win %: 66.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_AV
-Gain: $ -6.41 Win %: 55.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_AL
-Gain: $ -11.57 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_QP
-Gain: $ -6.88 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_HM_TR
-Gain: $ -7.29 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_HM_AV
-Gain: $ -12.67 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_HM_QP
-Gain: $ -10.23 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV
-Gain: $ 2.75 Win %: 77.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_IR5
-Gain: $ -4.93 Win %: 22.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_TR
-Gain: $ 0.46 Win %: 55.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_AV
-Gain: $ -4.12 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_VI
-Gain: $ -5.09 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_AL
-Gain: $ -10.73 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_LI
-Gain: $ -10.74 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_QP
-Gain: $ -8.67 Win %: 55.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM
-Gain: $ -0.17 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_SS
-Gain: $ -7.99 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_QL
-Gain: $ -9.84 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_DB8
-Gain: $ 1.47 Win %: 55.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_TR_IR5
-Gain: $ -4.28 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_TR_QP
-Gain: $ 2.36 Win %: 66.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_QP_IR5
-Gain: $ -4.25 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_TR
-Gain: $ 0 Win %: 100.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_TR_DB
-Gain: $ 7.39 Win %: 66.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_AV
-Gain: $ -4.82 Win %: 66.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_AL
-Gain: $ -11.57 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_QP
-Gain: $ -6.88 Win %: 33.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM_TR
-Gain: $ -7.29 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM_AV
-Gain: $ -10.78 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM_QP
-Gain: $ -10.78 Win %: 44.00 in 9 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM_QP
-CRM Gain: $ 1.95 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2
-CRM Gain: $ 1.37 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV
-CRM Gain: $ -20.47 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_IR2
-CRM Gain: $ -7.29 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_TR
-CRM Gain: $ -11.08 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_AV
-CRM Gain: $ -4.33 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_VI
-CRM Gain: $ -4.4 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_AL
-CRM Gain: $ -7.86 Win %: 25.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_LI
-CRM Gain: $ -2.75 Win %: 50.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_QP
-CRM Gain: $ 1.5 Win %: 50.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_HM
-CRM Gain: $ 11.36 Win %: 75.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_SS
-CRM Gain: $ 1.43 Win %: 50.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_QL
-CRM Gain: $ 2.85 Win %: 75.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_DB8
-CRM Gain: $ -9.1 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_IT
-CRM Gain: $ -12.19 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_TR_IR2
-CRM Gain: $ -12.59 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_TR_QP
-CRM Gain: $ -19.2 Win %: 0 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_QP_IR2
-CRM Gain: $ -6.26 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_TR
-CRM Gain: $ -6.26 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_TR_DB2
-CRM Gain: $ 7.86 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_AV
-CRM Gain: $ -1.63 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_AL
-CRM Gain: $ -2.08 Win %: 50.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_QP
-CRM Gain: $ -9.35 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_HM_TR
-CRM Gain: $ -8.61 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_HM_AV
-CRM Gain: $ -7.14 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_HM_QP
-CRM Gain: $ 0.5 Win %: 75.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_IT_QL
-CRM Gain: $ -0.34 Win %: 87.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_IT_QP
-CRM Gain: $ 2.79 Win %: 75.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV
-CRM Gain: $ 1.47 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_IR2
-CRM Gain: $ -2.03 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_TR
-CRM Gain: $ 7.45 Win %: 62.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_AV
-CRM Gain: $ -1.54 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_VI
-CRM Gain: $ 0.34 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_AL
-CRM Gain: $ -6.4 Win %: 12.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_LI
-CRM Gain: $ -5.08 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_QP
-CRM Gain: $ -3.29 Win %: 62.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_HM
-CRM Gain: $ 2.56 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_SS
-CRM Gain: $ 1.28 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_QL
-CRM Gain: $ -1.62 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_DB8
-CRM Gain: $ -0.74 Win %: 62.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_IT
-CRM Gain: $ 3.66 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_TR_IR2
-CRM Gain: $ -4.44 Win %: 62.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_TR_QP
-CRM Gain: $ -0.73 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_QP_IR2
-CRM Gain: $ 2.96 Win %: 75.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV_TR
-CRM Gain: $ 2.97 Win %: 75.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV_TR_DB2
-CRM Gain: $ 10.85 Win %: 87.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV_AV
-CRM Gain: $ 4.18 Win %: 75.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV_AL
-CRM Gain: $ -1.38 Win %: 75.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV_QP
-CRM Gain: $ -4.3 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_HM_TR
-CRM Gain: $ 5.86 Win %: 62.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_HM_AV
-CRM Gain: $ -8.63 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_HM_QP
-CRM Gain: $ 2.57 Win %: 62.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_IT_QL
-CRM Gain: $ -3.42 Win %: 87.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_IT_QP
-CRM Gain: $ 2.62 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV
-CRM Gain: $ -15.55 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_IR2
-CRM Gain: $ -5.57 Win %: 25.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_TR
-CRM Gain: $ -11.08 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_AV
-CRM Gain: $ -7.59 Win %: 25.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_VI
-CRM Gain: $ -8.75 Win %: 25.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_AL
-CRM Gain: $ -6.33 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_LI
-CRM Gain: $ -2.75 Win %: 50.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_QP
-CRM Gain: $ -1.54 Win %: 50.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM
-CRM Gain: $ 10.9 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_SS
-CRM Gain: $ 3.96 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_QL
-CRM Gain: $ 2.85 Win %: 75.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_DB8
-CRM Gain: $ -1.51 Win %: 75.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_IT
-CRM Gain: $ -12.19 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_TR_IR2
-CRM Gain: $ -12.04 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_TR_QP
-CRM Gain: $ -13.45 Win %: 0 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_QP_IR2
-CRM Gain: $ -6.26 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_TR
-CRM Gain: $ -6.66 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_TR_DB2
-CRM Gain: $ 7.86 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_AV
-CRM Gain: $ -1.5 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_AL
-CRM Gain: $ -2.08 Win %: 50.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_QP
-CRM Gain: $ -7.58 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM_TR
-CRM Gain: $ -8.61 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM_AV
-CRM Gain: $ -2.7 Win %: 50.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM_QP
-CRM Gain: $ 0.5 Win %: 75.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_IT_QL
-CRM Gain: $ -0.34 Win %: 87.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_IT_QP
-CRM Gain: $ -1.92 Win %: 50.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_RV
-CRM Gain: $ -17.74 Win %: 0 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_IR2
-CRM Gain: $ -5.22 Win %: 25.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_TR
-CRM Gain: $ -10.98 Win %: 37.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_AV
-CRM Gain: $ -11.31 Win %: 12.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_VI
-CRM Gain: $ -19.24 Win %: 0 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_AL
-CRM Gain: $ -4.13 Win %: 12.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_LI
-CRM Gain: $ -4.79 Win %: 50.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_QP
-CRM Gain: $ 0.12 Win %: 62.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_HM
-CRM Gain: $ 9.75 Win %: 87.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_SS
-CRM Gain: $ 1.95 Win %: 62.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_QL
-CRM Gain: $ 5.27 Win %: 62.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_DB8
-CRM Gain: $ -21.74 Win %: 50.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_IT
-CRM Gain: $ -9.19 Win %: 50.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_TR_IR2
-CRM Gain: $ -14.55 Win %: 25.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_TR_QP
-CRM Gain: $ -17.28 Win %: 0 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_QP_IR2
-CRM Gain: $ -4.05 Win %: 25.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_RV_TR
-CRM Gain: $ -4.05 Win %: 25.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_RV_TR_DB2
-CRM Gain: $ 5.56 Win %: 62.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_RV_AV
-CRM Gain: $ -0.71 Win %: 37.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_RV_AL
-CRM Gain: $ -3.54 Win %: 50.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_RV_QP
-CRM Gain: $ -8.11 Win %: 25.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_HM_TR
-CRM Gain: $ -13.21 Win %: 25.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_HM_AV
-CRM Gain: $ -0.17 Win %: 50.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_HM_QP
-CRM Gain: $ -0.66 Win %: 62.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_IT_QL
-CRM Gain: $ 1.31 Win %: 87.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_IT_QP
-CRM Gain: $ 1.31 Win %: 87.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_IT_QP
-CRM Gain: $ 1.95 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2
-CRM Gain: $ 2.62 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV
-CRM Gain: $ -15.55 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_IR2
-CRM Gain: $ -7.29 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_TR
-CRM Gain: $ -11.08 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_AV
-CRM Gain: $ -3.72 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_VI
-CRM Gain: $ -4.4 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_AL
-CRM Gain: $ -6.33 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_LI
-CRM Gain: $ -2.75 Win %: 50.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_QP
-CRM Gain: $ 1.5 Win %: 50.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_HM
-CRM Gain: $ 6.7 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_SS
-CRM Gain: $ 3.96 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_QL
-CRM Gain: $ 2.85 Win %: 75.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_DB8
-CRM Gain: $ 0.09 Win %: 75.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_IT
-CRM Gain: $ -12.19 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_TR_IR2
-CRM Gain: $ -12.59 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_TR_QP
-CRM Gain: $ -13.45 Win %: 0 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_QP_IR2
-CRM Gain: $ -6.26 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_TR
-CRM Gain: $ -2.71 Win %: 25.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_TR_DB2
-CRM Gain: $ 7.86 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_AV
-CRM Gain: $ -1.5 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_AL
-CRM Gain: $ -2.08 Win %: 50.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_RV_QP
-CRM Gain: $ -9.35 Win %: 12.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_HM_TR
-CRM Gain: $ -8.61 Win %: 37.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_HM_AV
-CRM Gain: $ -2.7 Win %: 50.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_HM_QP
-CRM Gain: $ -2.09 Win %: 62.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_IT_QL
-CRM Gain: $ -0.89 Win %: 87.00 in 8 days with algo TB4_LO_QM_OB3_OS3_CB2_CS2_IT_QP
-CRM Gain: $ 2.79 Win %: 75.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV
-CRM Gain: $ 3.66 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_IR2
-CRM Gain: $ -2.03 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_TR
-CRM Gain: $ 7.45 Win %: 62.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_AV
-CRM Gain: $ -1.63 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_VI
-CRM Gain: $ 0.34 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_AL
-CRM Gain: $ -0.42 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_LI
-CRM Gain: $ -5.08 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_QP
-CRM Gain: $ -3.62 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_HM
-CRM Gain: $ 2.56 Win %: 50.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_SS
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_QL
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_DB8
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_IT
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_TR_IR2
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_TR_QP
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_QP_IR2
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV_TR
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV_TR_DB2
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV_AV
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV_AL
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV_QP
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_HM_TR
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_HM_AV
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_HM_QP
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_IT_QL
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_IT_QP
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_IR2
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_TR
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_AV
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_VI
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_AL
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_LI
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_QP
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_SS
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_QL
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_DB8
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_IT
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_TR_IR2
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_TR_QP
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_QP_IR2
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_TR
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_TR_DB2
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_AV
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_AL
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_QP
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM_TR
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM_AV
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM_QP
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_IT_QL
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_IT_QP
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_RV
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_IR2
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_TR
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_AV
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_VI
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_AL
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_LI
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_QP
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_HM
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_SS
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_QL
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_DB8
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_IT
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_TR_IR2
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_TR_QP
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_QP_IR2
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_RV_TR
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_RV_TR_DB2
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_RV_AV
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_RV_AL
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_RV_QP
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_HM_TR
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_HM_AV
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_HM_QP
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_IT_QL
-CRM Gain: $ 0 Win %: 100.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB3_CS3_IT_QP
+CRM Gain: $ 4.97 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4
+CRM Gain: $ -4.69 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_TR_QP_DB10
+CRM Gain: $ -1.13 Win %: 75.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_RV_TR_DB10
+CRM Gain: $ 7.2 Win %: 75.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_RV_AV_DB10
+CRM Gain: $ -0.02 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_RV_AL_DB10
+CRM Gain: $ 2.31 Win %: 75.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_RV_QP_DB10
+CRM Gain: $ -2.97 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_HM_TR_DB10
+CRM Gain: $ 3.34 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_HM_AV_DB10
+CRM Gain: $ -1.39 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_HM_QP_DB10
+CRM Gain: $ 7.22 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_IT_QL_DB10
+CRM Gain: $ 2.15 Win %: 75.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_IT_QP_DB10
+CRM Gain: $ -5.75 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_TR_IR3
+CRM Gain: $ -6.11 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_TR_QP
+CRM Gain: $ -12.99 Win %: 12.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_QP_IR3
+CRM Gain: $ -1.72 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_RV_TR
+CRM Gain: $ 4.09 Win %: 75.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_RV_AV
+CRM Gain: $ -2.09 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_RV_AL
+CRM Gain: $ 1.74 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_RV_QP
+CRM Gain: $ -4.57 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_HM_TR
+CRM Gain: $ -7.35 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_HM_AV
+CRM Gain: $ -3.22 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_HM_QP
+CRM Gain: $ 7.48 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_IT_QL
+CRM Gain: $ 2.68 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_IT_QP
+CRM Gain: $ 4.97 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_AO_AC
+CRM Gain: $ 7.07 Win %: 75.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_RV
+CRM Gain: $ -9.97 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_IR3
+CRM Gain: $ -2.35 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_TR
+CRM Gain: $ -4.47 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_AV
+CRM Gain: $ -4.64 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_AL
+CRM Gain: $ 1.96 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_VI
+CRM Gain: $ -1.25 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_LI
+CRM Gain: $ -0.63 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_QP
+CRM Gain: $ 2.24 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_HM
+CRM Gain: $ 6.57 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_SS
+CRM Gain: $ 4.97 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_QL
+CRM Gain: $ 5.4 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_DB10
+CRM Gain: $ 4.97 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_AO
+CRM Gain: $ 4.97 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_AC
+CRM Gain: $ 7.48 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_IT
+CRM Gain: $ -10.61 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_TR_QP_DB10
+CRM Gain: $ -5.79 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_RV_TR_DB10
+CRM Gain: $ 1.43 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_RV_AV_DB10
+CRM Gain: $ -5.67 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_RV_AL_DB10
+CRM Gain: $ -1.75 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_RV_QP_DB10
+CRM Gain: $ -8.57 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_HM_TR_DB10
+CRM Gain: $ -0.6 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_HM_AV_DB10
+CRM Gain: $ -6.18 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_HM_QP_DB10
+CRM Gain: $ 1.49 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_IT_QL_DB10
+CRM Gain: $ -0.77 Win %: 75.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_IT_QP_DB10
+CRM Gain: $ -8.42 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_TR_IR3
+CRM Gain: $ -9.14 Win %: 12.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_TR_QP
+CRM Gain: $ -17.14 Win %: 0 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_QP_IR3
+CRM Gain: $ -2.38 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_RV_TR
+CRM Gain: $ 4.33 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_RV_AV
+CRM Gain: $ -2.1 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_RV_AL
+CRM Gain: $ 0.7 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_RV_QP
+CRM Gain: $ -5.97 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_HM_TR
+CRM Gain: $ -7.87 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_HM_AV
+CRM Gain: $ -4.63 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_HM_QP
+CRM Gain: $ 4.23 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_IT_QL
+CRM Gain: $ 3.78 Win %: 100.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_IT_QP
+CRM Gain: $ 3.76 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_AO_AC
+CRM Gain: $ 7.09 Win %: 75.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_RV
+CRM Gain: $ -15.37 Win %: 12.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_IR3
+CRM Gain: $ -3.82 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_TR
+CRM Gain: $ -5.4 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_AV
+CRM Gain: $ -2.79 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_AL
+CRM Gain: $ 1 Win %: 75.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_VI
+CRM Gain: $ -1.43 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_LI
+CRM Gain: $ -2.68 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_QP
+CRM Gain: $ 2.48 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_HM
+CRM Gain: $ 2.92 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_SS
+CRM Gain: $ 2.22 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_QL
+CRM Gain: $ 0.65 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_DB10
+CRM Gain: $ 3.76 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_AO
+CRM Gain: $ 3.76 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_AC
+CRM Gain: $ 5.77 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_IT
+CRM Gain: $ -7.25 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_TR_QP_DB10
+CRM Gain: $ -3.68 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV_TR_DB10
+CRM Gain: $ 3.6 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV_AV_DB10
+CRM Gain: $ -3.32 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV_AL_DB10
+CRM Gain: $ -3.7 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV_QP_DB10
+CRM Gain: $ -5.8 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_HM_TR_DB10
+CRM Gain: $ 0.74 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_HM_AV_DB10
+CRM Gain: $ -5.92 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_HM_QP_DB10
+CRM Gain: $ 4.16 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_IT_QL_DB10
+CRM Gain: $ 0.03 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_IT_QP_DB10
+CRM Gain: $ -7.88 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_TR_IR3
+CRM Gain: $ -8.22 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_TR_QP
+CRM Gain: $ -9.23 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_QP_IR3
+CRM Gain: $ -3.62 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV_TR
+CRM Gain: $ 3.99 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV_AV
+CRM Gain: $ -1.89 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV_AL
+CRM Gain: $ -0.86 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV_QP
+CRM Gain: $ -6.41 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_HM_TR
+CRM Gain: $ -9.86 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_HM_AV
+CRM Gain: $ -5.93 Win %: 12.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_HM_QP
+CRM Gain: $ 4.13 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_IT_QL
+CRM Gain: $ 3.57 Win %: 100.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_IT_QP
+CRM Gain: $ 2.77 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_AO_AC
+CRM Gain: $ 7.12 Win %: 75.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV
+CRM Gain: $ -12.66 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_IR3
+CRM Gain: $ -4.81 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_TR
+CRM Gain: $ -6.22 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_AV
+CRM Gain: $ -3.02 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_AL
+CRM Gain: $ -1.25 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_VI
+CRM Gain: $ -5.5 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_LI
+CRM Gain: $ -5.54 Win %: 12.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_QP
+CRM Gain: $ 0.32 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_HM
+CRM Gain: $ 2.57 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_SS
+CRM Gain: $ 2.5 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_QL
+CRM Gain: $ 3.01 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_DB10
+CRM Gain: $ 2.77 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_AO
+CRM Gain: $ 2.77 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_AC
+CRM Gain: $ 4.4 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_IT
+CRM Gain: $ -7.25 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_TR_QP_DB10
+CRM Gain: $ -3.68 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_RV_TR_DB10
+CRM Gain: $ 3.6 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_RV_AV_DB10
+CRM Gain: $ -3.32 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_RV_AL_DB10
+CRM Gain: $ -3.7 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_RV_QP_DB10
+CRM Gain: $ -5.8 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_HM_TR_DB10
+CRM Gain: $ 0.74 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_HM_AV_DB10
+CRM Gain: $ -5.92 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_HM_QP_DB10
+CRM Gain: $ 4.16 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_IT_QL_DB10
+CRM Gain: $ 0.03 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_IT_QP_DB10
+CRM Gain: $ -7.88 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_TR_IR3
+CRM Gain: $ -8.22 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_TR_QP
+CRM Gain: $ -9.23 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_QP_IR3
+CRM Gain: $ -3.62 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_RV_TR
+CRM Gain: $ 3.99 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_RV_AV
+CRM Gain: $ -1.89 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_RV_AL
+CRM Gain: $ -0.86 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_RV_QP
+CRM Gain: $ -6.41 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_HM_TR
+CRM Gain: $ -9.86 Win %: 37.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_HM_AV
+CRM Gain: $ -5.93 Win %: 12.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_HM_QP
+CRM Gain: $ 4.13 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_IT_QL
+CRM Gain: $ 3.57 Win %: 100.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_IT_QP
+CRM Gain: $ 2.77 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_AO_AC
+CRM Gain: $ 7.12 Win %: 75.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_RV
+CRM Gain: $ -12.66 Win %: 25.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_IR3
+CRM Gain: $ -4.81 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_TR
+CRM Gain: $ -6.22 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_AV
+CRM Gain: $ -3.02 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_AL
+CRM Gain: $ -1.25 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_VI
+CRM Gain: $ -5.5 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_LI
+CRM Gain: $ -5.54 Win %: 12.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_QP
+CRM Gain: $ 0.32 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_HM
+CRM Gain: $ 2.57 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_SS
+CRM Gain: $ 2.5 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_QL
+CRM Gain: $ 3.01 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_DB10
+CRM Gain: $ 2.77 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_AO
+CRM Gain: $ 2.77 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_AC
+CRM Gain: $ 4.4 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_IT

@@ -152,6 +152,23 @@ def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDai
    if minDaysData:
       candidates = pr.getStocksWithDailyData(candidates, minDaysData)
       
+   print ("candidates getStocksWithDailyData\n" + str(candidates))
+   print ("candidates getStocksWithDailyData len " + str(len(candidates)))
+
+   # Only use candidates that have a minimum number of days data
+   if minStockPrice or maxStockPrice:
+      candidates = pr.getStocksWithinPriceRange(candidates, minStockPrice, maxStockPrice)
+   
+   print ("candidates getStocksWithinPriceRange\n" + str(candidates))
+   print ("candidates getStocksWithinPriceRange len " + str(len(candidates)))
+
+   # Exclude stocks from the exclusion list
+   if excludeStocks:
+      candidates = pr.removeStocksFromExclusionList(candidates)
+   
+   print ("candidates removeStocksFromExclusionList\n" + str(candidates))
+   print ("candidates removeStocksFromExclusionList len " + str(len(candidates)))
+   
    # Suck in the yearly data charts for the candidates
    dailyStockData = pr.getDailyStockData(tg, dc, candidates)
 
@@ -167,7 +184,7 @@ def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDai
 
    # Pick the proper algorithm to use based on saved minute chart data
    algoData, stocks = pr.getAlgorithm(orderedStocks, useDefaultAlgo, useStocksWithNoTestData)
-   
+
    # LIVE run lpltSlave.py with the #1 stock candidate
    # If it profits out. invoke with best performing at the moment
 
@@ -270,6 +287,9 @@ useDefaultAlgo = int(d["profileTradeData"]["useDefaultAlgo"])
 useStocksWithNoTestData = int(d["profileTradeData"]["useStocksWithNoTestData"])
 useTestMinuteCharts = int(d["profileTradeData"]["useTestMinuteCharts"])
 minDaysData = int(d["profileTradeData"]["minDaysData"])
+minStockPrice = float(d["profileTradeData"]["minStockPrice"])
+maxStockPrice = float(d["profileTradeData"]["maxStockPrice"])
+excludeStocks = int(d["profileTradeData"]["excludeStocks"])
 
 masterMode = 1
 
@@ -293,6 +313,7 @@ numBars = {}
 lastMinuteOfLiveTrading = 155958
 
 marketOpen = 0
+firstTimeThru = 0
 
 #new_dict = { new_list: [] for new_list in range(4)} 
 
@@ -406,17 +427,6 @@ for stock in stocks:
    doOnceOnOpen[stock] = 0
    doOnceOnClose[stock] = 0
    dirty[stock] = 0
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Setup log and debug file based on profileTradeData name and path
-# Write header data to logs
-
-# Create minute profile variables
-#profile1m = clOptions.profileTradeDataPath
-#profile2m = clOptions.profileTradeDataPath.replace("active", "active2m")
-#profile3m = clOptions.profileTradeDataPath.replace("active", "active3m")
-#profile4m = clOptions.profileTradeDataPath.replace("active", "active4m")
-#profile5m = clOptions.profileTradeDataPath.replace("active", "active5m")
 
 # Setup paths
 
@@ -664,14 +674,18 @@ if not offLine:
          lg1.info("Waiting till the market opens...")
          cn.waitTillMarketOpens(a1.getMarketOpenTime())
 
-# CALL THREE times SKIPPING OPEN VALUE WHICH IS THE CLOSE OF THE LAST DAY   
+# CALL setStockValues SKIPPING OPEN VALUE WHICH IS THE CLOSE OF THE LAST DAY   
+# observed at least 3 prices being the close of prev day
 
-serviceValues = cn.setStockValues(stocksChart, 0, stocks)
-print ("serviceValues 1\n" + str(serviceValues))
-serviceValues = cn.setStockValues(stocksChart, 0, stocks)
-print ("serviceValues 2\n" + str(serviceValues))
-serviceValues = cn.setStockValues(stocksChart, 0, stocks)
-print ("serviceValues 3\n" + str(serviceValues))
+if service == "eTrade":
+   serviceValues = cn.setStockValues(stocksChart, 0, stocks)
+   print ("serviceValues 1\n" + str(serviceValues))
+   sleep(0.3)
+   serviceValues = cn.setStockValues(stocksChart, 0, stocks)
+   print ("serviceValues 2\n" + str(serviceValues))
+   sleep(0.3)
+   serviceValues = cn.setStockValues(stocksChart, 0, stocks)
+   print ("serviceValues 3\n" + str(serviceValues))
 
 #if preMarketAnalysis:
 #   for stock in stocks:
@@ -724,7 +738,7 @@ if offLine:
       # Wait till the last stock completes testing 
       while True:
          if pid[stk].poll() == None:
-            lg1.debug ("waiting 5 for a poll != None")
+            #lg1.debug ("waiting 5 for a poll != None")
             sleep(5)
          else:
             lg1.debug ("Gotta poll value of: " + str(pid[stk].poll()))
@@ -774,7 +788,11 @@ while True:
       
    if not offLine:
       for stock in stocks:
-         ba[stock].loadInitBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid[stock], ask[stock], last[stock], initialVol[stock])
+         if firstTimeThru == 0:
+            ba[stock].loadFirstBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid[stock], ask[stock], last[stock], initialVol[stock])
+            firstTimeThru += 1
+         else:
+            ba[stock].loadInitBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid[stock], ask[stock], last[stock], initialVol[stock])
    
    a1.setCurrentBar(barCtr)
    a1.setNextBar(barCtr + 1)

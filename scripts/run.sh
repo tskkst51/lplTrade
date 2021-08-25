@@ -133,6 +133,7 @@ for algo in $algos; do
    winPct=$(echo "scale=2 ; $winners / $total * 100" | bc)
    
    amt=$(awk '{s+=$1} END {print s}' $gainFile)
+   amt=$(echo $amt | sed "/.*e-*/d")
    numDays=$(cat $gainFile | wc -l | awk '{print $1}')
    echo "Gain: \$ ${amt}" "in ${numDays} days with algo $a" >> $gainFile
    echo $stock Gain: \$ ${amt} Win %: $winPct in $numDays days with algo $a

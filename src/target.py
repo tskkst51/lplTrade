@@ -57,6 +57,12 @@ class Target:
       #self.url = 'https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/day/'
       
       self.url = "https://api.polygon.io/v2/aggs/ticker/"
+      
+      self.yahooUrl = "https://finance.yahoo.com/gainers/"
+      self.yahooSearchToken = "pageCategory\":\"YFINANCE:"
+      self.yahooEndToken = "\",\""
+      self.numYahooStocks = 9
+
       self.rang = "/range/1/day/"
       
       # Original
@@ -585,8 +591,9 @@ class Target:
    def orderStocks(self, gapCandidates, lastDaysVolGtrCandidates, lastDaysVolLessCandidates, \
          volumeCandidates, spreadCandidates, trendCandidates, betaCandidates, avgVolData, stocks):
    
-      doSpread = doGap = 1
-      doVolLess = doVolGtr = doTrend = doBeta = doTestData = doAvgVol = doVolume = 0
+      # Added doAvgVol 8/26/2021
+      doSpread = doGap = doAvgVol = 1
+      doVolLess = doVolGtr = doTrend = doBeta = doTestData = doVolume = 0
             
       ts = time()
       dt = str(datetime.fromtimestamp(ts).strftime('%Y%m%d'))
@@ -843,6 +850,35 @@ class Target:
             
       return avg, highest, lowest, hiDate, hiVol
                   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getYahooPreMarketMovers(self):
+      
+      data = {}
+      path = "/tmp/preMarketYSuckDown"
+      sanitizedStocks = []
+      
+      try:
+         data = os.system("curl " + self.yahooUrl + " >" + path + " 2>&1")
+      except (TimeoutError, URLError) as e:
+         return ""
+
+      with open(path, 'r') as yahooData:
+         for line in yahooData:
+            if self.yahooSearchToken in line:
+               b, m, e = line.partition(self.yahooSearchToken)
+               b, m, e = e.partition(self.yahooEndToken)
+
+      yahooStocks = b.split(",")
+
+      # Strip out stocks with 5 digits
+      for stock in yahooStocks:
+         if len(stock) > 4:
+            print ("Skipping yaho stock: " + str(stock))
+            continue
+         sanitizedStocks.append(stock)
+         
+      return sanitizedStocks[:self.numYahooStocks]
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getPreMarketMovers(self):
    

@@ -203,8 +203,6 @@ for datePath in $testPaths; do
       p="exitResults/${stock}_TB5_${a}_OB3_OS3_CB2_CS2.ex"
          
 #      fi
-      
-# echo pPpPpPpPpPp $p
 
       # Already ran, skip
       grep -q $date $p > /dev/null 2>&1

@@ -15,6 +15,7 @@ dc.o
 logs
 prices
 bc
+profiles/active.json_*
 profiles/et.json
 profiles/oauthKeys.txt
 profiles/*debug

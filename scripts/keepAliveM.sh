@@ -160,6 +160,12 @@ if [[ -z $offLine ]]; then
          if [[ -f "${wp}/debug/${logFile}" ]]; then
             cp "${wp}/logs/${logFile}" "${testDir}/debug" || echo cant copy $logFile to "${testDir}/logs"
          fi
+         
+         echo copying profiles...
+         if [[ ! -d "${testDir}/profiles" ]]; then
+            mkdir "${testDir}/profiles"
+            cp "${wp}/profiles/active.json" "${testDir}/profiles" || echo cant copy active.json to "${testDir}/profiles"
+         fi
       done
 
       tarNm="${dt}all.tar"
@@ -167,7 +173,7 @@ if [[ -z $offLine ]]; then
       gzip $tarNm || echo Unable to gzip $tarNm
       mv "${tarNm}.gz" ../lpltArchives || echo Unable to mv archive to archives
       
-      cd ../lpltArchives
+      cd ../lpltArchives || echo cant cd to ../lpltArchives
    
       git add "${tarNm}.gz"
       git commit -am "${tarNm}.gz"
@@ -177,9 +183,14 @@ if [[ -z $offLine ]]; then
       #rm -fr "debug/*" "logs/*" "bc/*" "prices/*"
 
       pwd
+
+      cd $wp || echo cant cd to $wp
+
+      #${wp}/scripts/modProfiles.sh "test"
+      #${wp}/scripts/keepAliveM.sh off $dt
       
-      ${wp}/scripts/modProfiles.sh "test"
-      ${wp}/scripts/keepAliveM.sh off $dt
+      scripts/modProfiles.sh "test"
+      scripts/keepAliveM.sh off $dt
    else
       cd "test"
       tar -xvf "../lpltArchives/${dt}.tar.gz"

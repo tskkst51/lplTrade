@@ -44,20 +44,30 @@ class Barchart:
       return bc
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def loadFirstBar(self, bc, date, bar, bid, ask, last, vol):
+   
+      # We use the ask initially since etrade sets the last to be the day 
+      # before close which could be a big gap away.
+       
+      bc[bar][self.op] = ask
+      bc[bar][self.cl] = ask
+      bc[bar][self.hi] = ask
+      bc[bar][self.lo] = bid
+      bc[bar][self.dt] = date
+      bc[bar][self.vl] = vol
+      
+      print ("very first bar " + str(bc[bar]))
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadInitBar(self, bc, date, bar, bid, ask, last, vol):
    
-      bc[bar][self.op] = last
-      #bc[bar][self.op] = ask
-      
+      bc[bar][self.op] = last      
       bc[bar][self.cl] = last
-      
-#      bc[bar][self.hi] = ask
-#      bc[bar][self.lo] = bid
-
       bc[bar][self.hi] = last
       bc[bar][self.lo] = last
       bc[bar][self.dt] = date
       bc[bar][self.vl] = vol
+      
       print ("b bc[bar] " + str(bc[bar]))
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
