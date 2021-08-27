@@ -135,6 +135,12 @@ if [[ -z $offLine ]]; then
       
       echo Merging results...
       
+      echo copying profiles...
+      if [[ ! -d "${testDir}/profiles" ]]; then
+         mkdir "${testDir}/profiles"
+         cp "${wp}/profiles/active.json" "${testDir}/profiles" || echo cant copy active.json to "${testDir}/profiles"
+      fi
+
       for mChart in $(ls "${wp}/bc"); do
          if [[ -f ${testDir}/bc/${mChart} ]]; then
             echo ${testDir}/bc/${mChart} exists, skipping...
@@ -159,12 +165,6 @@ if [[ -z $offLine ]]; then
          echo copying $logFile
          if [[ -f "${wp}/debug/${logFile}" ]]; then
             cp "${wp}/logs/${logFile}" "${testDir}/debug" || echo cant copy $logFile to "${testDir}/logs"
-         fi
-         
-         echo copying profiles...
-         if [[ ! -d "${testDir}/profiles" ]]; then
-            mkdir "${testDir}/profiles"
-            cp "${wp}/profiles/active.json" "${testDir}/profiles" || echo cant copy active.json to "${testDir}/profiles"
          fi
       done
 
@@ -191,6 +191,7 @@ if [[ -z $offLine ]]; then
       
       scripts/modProfiles.sh "test"
       scripts/keepAliveM.sh off $dt
+      scripts/daysBest.sh
    else
       cd "test"
       tar -xvf "../lpltArchives/${dt}.tar.gz"

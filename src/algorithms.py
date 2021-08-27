@@ -66,6 +66,8 @@ class Algorithm():
       self.doHammers = int(data['profileTradeData']['doHammers'])
       self.doReversals = int(data['profileTradeData']['doReversals'])
       self.profitGainedPct = float(data['profileTradeData']['profitGainedPct'])
+      self.inPosProfitPct = float(data['profileTradeData']['inPosProfitPct'])
+      
       self.quitMaxProfit = float(data['profileTradeData']['quitMaxProfit'])
       self.quitMaxLoss = float(data['profileTradeData']['quitMaxLoss'])
       
@@ -214,7 +216,7 @@ class Algorithm():
       self.totalLossLastPrice = 0.0
       self.exitWProfitVal = 0.0 
       self.inPosGain = 0
-      
+
       if not self.priceChangeMultiplier:
          self.priceChangeMultiplier = 1
          
@@ -1619,8 +1621,13 @@ class Algorithm():
                
       else:
          # In positive position let it ride
-         self.lg.debug("Position is gaining profit. Let it ride: ")
+         self.lg.debug("Position is gaining profit. Let it ride... ")
          self.lg.debug(str(self.getCurrentLast() - self.openPositionPrice))
+         
+         if self.exitWProfit(tGain, self.openPositionPrice - self.getCurrentLast()):
+            self.lg.debug("Exiting with inPos profit: ")
+            self.setInPosGain()
+            return 1
     
       return 0
       
@@ -1702,14 +1709,13 @@ class Algorithm():
    def exitWProfit(self, lastGain, posDiff):
       
       # Calculate if we should exit with profit
-      
       # How close is the price to the min profit amount?
       
       #profitAmt = lastGain * self.quickProfitPctTrigger
 
       pctNearTrgt = lastGain / self.getTargetProfit()
 
-      if pctNearTrgt > 0.4: # 40%
+      if pctNearTrgt > self.inPosProfitPct: # 60%
          profitAmt = lastGain - (self.exitWProfitVal * 0.6)
       else:
          profitAmt = lastGain - self.exitWProfitVal

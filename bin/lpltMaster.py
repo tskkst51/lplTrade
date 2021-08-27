@@ -162,7 +162,7 @@ def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDai
    print ("candidates getStocksWithinPriceRange\n" + str(candidates))
    print ("candidates getStocksWithinPriceRange len " + str(len(candidates)))
 
-   # Exclude stocks from the exclusion list
+   # Exclude stocks listed in the exclusion list
    if excludeStocks:
       candidates = pr.removeStocksFromExclusionList(candidates)
    
