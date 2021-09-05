@@ -75,6 +75,9 @@ for line in $(cat $stkpriceDayFile); do
    
 done
 
-sort -n -k 2,2 $ppdOut > "daysBest/daysBest.db.${dt}"
+sort -r -n -k 2,2 $ppdOut > "daysBest/daysBest.db.${dt}"
+rm daysBest/latest
+#ln -s "daysBest/daysBest.db.${dt}" "daysBest/latest"
+ln -s "daysBest.db.${dt}" "daysBest/latest"
 exit 0
 

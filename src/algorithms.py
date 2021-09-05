@@ -1526,7 +1526,8 @@ class Algorithm():
       
       self.lg.debug("In algorithmTrailingStop " + str(action))
         
-      # self.setTotalLiveGain(last)
+      liveGain = self.setTotalLiveGain(last)
+      self.lg.debug("liveGain " + str(liveGain))
         
       if self.stopPct > 0:         
          # Raise/Lower stop
@@ -1564,8 +1565,13 @@ class Algorithm():
          return 0
             
       elif self.inPosition():
-         if self.getTotalGain() >= self.getTargetProfit():
-            profitGained = self.getTotalGain()
+         #if self.getTotalGain() >= self.getTargetProfit():
+         if liveGain >= self.getTargetProfit():
+            # self.getTotalGain() will be 0 when in the first position
+            if self.getTotalGain() == 0.0:
+               profitGained = liveGain
+            else:
+               profitGained = self.getTotalGain()
             self.lg.debug("self.profitGainedPct " + str(self.profitGainedPct))
             self.stopPct = profitGained * self.profitGainedPct
             self.stopBuyTarget = round(last - self.stopPct, 2)
@@ -1594,7 +1600,7 @@ class Algorithm():
       
       tGain = self.getTotalGain()
       
-      # Do something different if this is the first position
+      # doTrailingStop handles the first position
       if tGain == 0.0 and self.numTrades < 1:
          return 0
 
@@ -2800,6 +2806,4 @@ class Algorithm():
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getDynamic(self):
 
-      return self.doDynamic
-
-         
+      return self.doDynamic      

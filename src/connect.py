@@ -40,6 +40,7 @@ class ConnectEtrade:
       self.dateTime = self.getTimeHrMnSecs()
       self.quoteStatus = "CLOSING"
       self.marketEndTime = 163000
+      self.tradeServiceMaxNumStocks = 21
       
       if setoffLine:
          self.offLine = True
@@ -107,6 +108,11 @@ class ConnectEtrade:
       self.hiBarValueArr = {}
       self.loBarValueArr = {}
       self.sym = {}
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getTradeServiceMaxNumStocks(self):
+   
+      return self.tradeServiceMaxNumStocks
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setStockValues(self, stocksChart, bar, stocks):

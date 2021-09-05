@@ -126,6 +126,49 @@ def getStocksFromBCDir(path):
    
    return stocks
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+def getAutoStocks(self, threshold, numStocks):
+
+   # threshold = 6
+   
+   srcPath="daysBest/latest"
+   dstPath="profiles/autoStocks.txt"
+   stock = 0
+   lastStock = ""
+   daysBestStocks = []
+   
+   assert(threshold)
+
+   print ("numStocks " + str(numStocks))
+   print ("threshold " + str(threshold))
+   print ("numStocks " + str(numStocks))
+
+   with open(srcPath, 'r') as pp:
+      lines = pp.readlines()
+   
+   print ("lines " + str(lines))
+   
+   # Read from last line
+   for line in lines:
+      line = line.split()
+      print ("line " + str(line))
+      if stock < numStocks:
+         # Check for dups
+         if line[0] == lastStock:
+            continue
+         if int(line[2]) < threshold:
+            print ("line[2] " + str(line[2]))
+            with open(dstPath, 'a') as pp:
+               pp.write(line[0] + "\n")
+               print ("line[0] " + str(line[0]))
+            
+            daysBestStocks.append(line[0])
+            
+            lastStock = line[0]
+            stock += 1
+
+   return daysBestStocks
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDailyStocks, minDaysData):
 
@@ -248,6 +291,7 @@ stocks = []
 
 stock = str(d["profileTradeData"]["stock"])
 stocksStr = str(d["profileTradeData"]["stocks"])
+stocksFile = str(d["profileTradeData"]["stocksFile"])
 stocks = stocksStr.split(',')
 etfs = str(d["profileTradeData"]["etfs"])
 profileName = str(d["profileTradeData"]["profileName"])
@@ -273,6 +317,7 @@ preMarketAnalysis = int(d["profileTradeData"]["preMarketAnalysis"])
 afterMarketAnalysis = int(d["profileTradeData"]["afterMarketAnalysis"])
 afterMarketEndTime = int(d["profileTradeData"]["afterMarketEndTime"])
 onlyUpdateDailyStocks = int(d["profileTradeData"]["onlyUpdateDailyStocks"])
+daysBestThreshold = int(d["profileTradeData"]["daysBestThreshold"])
 
 useStocksFromDailyCharts = int(d["profileTradeData"]["useStocksFromDailyCharts"])
 findPreMarketMovers = int(d["profileTradeData"]["findPreMarketMovers"])
@@ -372,6 +417,19 @@ if clOptions.workPath:
 if clOptions.onlyUpdateDailyStocks:
    onlyUpdateDailyStocks = 1
 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Setup connection to the exchange service
+
+if service == "bitstamp":
+   cn = lpl.ConnectBitStamp(service, currency, alt)
+   cn.connectPublic()
+elif service == "bitfinex":
+   cn = lpl.ConnectBitFinex()
+elif service == "eTrade":
+   symbol = stock
+   cn = lpl.ConnectEtrade(c, stocks, debug, verbose, marketDataType, sandBox, 0, offLine)
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set stocks to trade based on pre market analysis
 
@@ -383,7 +441,10 @@ if masterMode:
    timeBar = 1
    d["profileTradeData"]["timeBar"] = "1"
    
-if preMarketAnalysis:
+if stocksFile != "":
+   stocks = getAutoStocks(stocksFile, daysBestThreshold, cn.getTradeServiceMaxNumStocks())   
+
+elif preMarketAnalysis:
 
    logPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
    
@@ -398,6 +459,11 @@ if preMarketAnalysis:
    if onlyUpdateDailyStocks:
       exit (0)
 
+   print ("pre market analysis stocks " + str(stocks))
+
+print ("stocks " + str(stocks))
+print ("stocks len " + str(len(stocks)))
+
 if offLine:
    if workPath:
       stocks = getStocksFromBCDir(workPath + "/bc")
@@ -406,12 +472,7 @@ if offLine:
 # Set up stock arrays
 
 # Trim list of stocks to 21 max
-print ("stocks " + str(stocks))
 
-if not offLine:
-   if len(stocks) > 21:
-      while len(stocks) > 21:
-         del stocks[-1]
 
 print ("stocks " + str(stocks))
 print ("stocks len " + str(len(stocks)))
@@ -419,6 +480,11 @@ print ("stocks len " + str(len(stocks)))
 if isinstance(stocks, str):
    stocks = stocks.split(",")
    
+if not offLine:
+   if len(stocks) > 21:
+      while len(stocks) > 21:
+         del stocks[-1]
+
 for stock in stocks:
    stocksChart[stock] = [[0.0,0.0,0.0,0.0,0,0.0,0,0,""]]
    pathsChart[stock] = {}
@@ -483,18 +549,6 @@ lm = {}
 a = {}
 pr = {}
 pa = {}
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Setup connection to the exchange service
-
-if service == "bitstamp":
-   cn = lpl.ConnectBitStamp(service, currency, alt)
-   cn.connectPublic()
-elif service == "bitfinex":
-   cn = lpl.ConnectBitFinex()
-elif service == "eTrade":
-   symbol = stock
-   cn = lpl.ConnectEtrade(c, stocks, debug, verbose, marketDataType, sandBox, 0, offLine)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def genProfile(algo, stock):

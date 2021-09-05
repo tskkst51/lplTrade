@@ -6,6 +6,8 @@
     "stock": "TQQQ",
     "stocks": "TQQQ,AAPL,QADB,NVDA,TSLA,AMZN,NFLX,FB,BABA,FCEL,BIDU,SNAP,AUUD,NTLA,VERV,GME,SPCE,JKS,BSQR,CERE,AMC",
     "stocksStr2": "XPEV,PSP,AMBO,OXY,ADBE,GH",
+    "stocksFile": "",
+    "daysBestThreshold": "6",
     "defaultStocks": "SNAP",
     "defaultAlgos": "SNAP TB3_HI_QM_OB2_OS2_CB4_CS4_TR",
     "etfs": "XSD,XLF,XLK,XBI,XLE,XLV,XLY,XLP,SMH",

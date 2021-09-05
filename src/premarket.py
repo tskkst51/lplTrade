@@ -39,7 +39,7 @@ class Premarket:
       bestAlgoD = {}
       defaultStocks = ["BABA","BIDU","TSLA","SNAP"]
       
-      defaultAlgo = "TB1_HS_QM_OB2_OS2_CB3_CS3_DB30_IT"
+      defaultAlgo = "TB1_HS_QM_OB2_OS2_CB3_CS3_DB30_IT_TS"
       #defaultAlgo = "TB1_HL_QM_OB3_OS3_CB3_CS3_DB30_QL"
       #defaultAlgo = "TB1_HL_QM_OB3_OS3_CB2_CS2"
       #defaultAlgo = "TB1_OC_QM_OB5_OS5_CB2_CS2_TR_IR5"
@@ -65,6 +65,8 @@ class Premarket:
             with open(bestAlgoFile, 'r') as baFile:
                lines = baFile.readlines()
    
+            print ("bestAlgoFile " + str(bestAlgoFile))
+            
             lastLineItems = lines[len(lines) - 1].split()
             bestAlgoD[s] = lastLineItems[len(lastLineItems) - 1] 
             stocksBeingUsed.append(s)   

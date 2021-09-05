@@ -47,6 +47,7 @@ algoModifiers=(
 "AC"
 "IT" # In position tracking
 "PM" # Price movement
+"TS" # Trainling stop
 )
 
 algoModifiersCombined=(

@@ -183,6 +183,28 @@ class Dailychart:
                   
       return dbc
          
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getAutoStocks(self, threshold, numStocks):
+
+      # threshold = 6
+      
+      srcPath="daysBest/latest"
+      dstPath="profiles/stock.txt"
+      
+      assert(threshold)
+      
+      with open(srcPath, 'r') as pp:
+         lines = pp.readlines()
+      
+      
+      # Read from last line
+      for line in lines:
+         if stock > numStocks:
+            if line[2] < threshold:
+               with open(dstPath, 'a') as pp:
+                  pp.write(line[2] + "\n")
+               stock += 1
+
 
 
 

@@ -21,6 +21,8 @@ host=$(hostname -s)
 
 if [[ $host == "ML-C02C8546LVDL" ]]; then
    activateDir="/lplW"
+elif [[ $host == "mm" ]]; then
+   activateDir="/lplW2"
 else
    activateDir="/venv" 
 fi
