@@ -1520,7 +1520,7 @@ class Algorithm():
       # Take profit depending on how long in pos
       # Track how many bars price in a range. 
       # see where price is relative to session hi's/lo's
-      # 
+      # exit method if action > 0
       
       stoppedOut = 4
       
@@ -1528,7 +1528,11 @@ class Algorithm():
         
       liveGain = self.setTotalLiveGain(last)
       self.lg.debug("liveGain " + str(liveGain))
-        
+      
+      # If there is a signal to get out of a pos, get out. THIS ADDED AFTER ALGO WRITTEN
+      if action > 0:
+         return action       
+
       if self.stopPct > 0:         
          # Raise/Lower stop
          self.lg.debug("self.stopBuyTarget " + str(self.stopBuyTarget))
@@ -1603,34 +1607,38 @@ class Algorithm():
       # doTrailingStop handles the first position
       if tGain == 0.0 and self.numTrades < 1:
          return 0
-
-      last = self.getCurrentLast()
       
+      if self.positionType == self.buy:
+         last = self.getCurrentAsk()
+         self.lg.debug("Last ask price: " + str(last))
+      else:
+         self.lg.debug("Last bid price: " + str(last))
+         last = self.getCurrentBid()
+
       if last == 0.0 or last == 0:
          return 0
  
-      self.lg.debug("self.getCurrentLast(): " + str (self.getCurrentLast()))
-      self.lg.debug("self.openPositionPrice: " + str (self.openPositionPrice))
+      self.lg.debug("self.openPositionPrice: " + str(self.openPositionPrice))
       
-      if self.getCurrentLast() < self.openPositionPrice:
+      if last < self.openPositionPrice:
          if tGain > 0:
             self.lg.debug("Position is losing money: ")
-            self.lg.debug("-" + str(self.openPositionPrice - self.getCurrentLast()))
-            if self.exitWProfit(tGain, self.openPositionPrice - self.getCurrentLast()):
+            self.lg.debug("-" + str(self.openPositionPrice - last))
+            if self.exitWProfit(tGain, self.openPositionPrice - last):
                self.lg.debug("Exiting with inPos profit: ")
                self.setInPosGain()
                return 1
                
          if tGain < 0:
             self.lg.debug("Position is adding to the current loss: ")
-            self.lg.debug(str(tGain) + " -" + str(self.openPositionPrice - self.getCurrentLast()))
+            self.lg.debug(str(tGain) + " -" + str(self.openPositionPrice - last))
                
       else:
          # In positive position let it ride
          self.lg.debug("Position is gaining profit. Let it ride... ")
-         self.lg.debug(str(self.getCurrentLast() - self.openPositionPrice))
+         self.lg.debug(str(last - self.openPositionPrice))
          
-         if self.exitWProfit(tGain, self.openPositionPrice - self.getCurrentLast()):
+         if self.exitWProfit(tGain, self.openPositionPrice - last):
             self.lg.debug("Exiting with inPos profit: ")
             self.setInPosGain()
             return 1
@@ -1731,8 +1739,9 @@ class Algorithm():
       self.lg.debug("exitWProfit: self.exitWProfitVal " + str(self.exitWProfitVal))
       self.lg.debug("exitWProfit: lastGain " + str(lastGain))
       self.lg.debug("exitWProfit: pctNearTrgt " + str(pctNearTrgt))
+      self.lg.debug("exitWProfit: inPosProfitPct " + str(self.inPosProfitPct))
         
-      if posDiff >=  profitAmt:
+      if posDiff >= profitAmt:
          return 1
          
       return 0
@@ -2136,7 +2145,7 @@ class Algorithm():
       elif self.positionType == self.sell:
          gain = round(self.openPositionPrice - price, 2)
 
-      self.lg.debug ("gain exponential gain " + str(gain))
+      self.lg.debug ("gain at position close time " + str(gain))
 
       self.closePositionPrice = price
       self.totalGain += gain
@@ -2144,7 +2153,7 @@ class Algorithm():
       # This fixes exponential values in log file
       self.totalGain = round(self.totalGain ,2)
 
-      self.lg.debug ("gain exponential totalGain" + str(self.totalGain))
+      self.lg.debug ("total gain at position close time" + str(self.totalGain))
 
       self.totalLoss = self.totalGain
       self.setGainLastPrice(price)
@@ -2489,11 +2498,6 @@ class Algorithm():
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getCurrentLast(self):
-      
-      return self.last
-   
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getCurrentAsk(self):
       
       return self.last
    

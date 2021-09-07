@@ -338,8 +338,10 @@ excludeStocks = int(d["profileTradeData"]["excludeStocks"])
 
 masterMode = 1
 
+# Connection service profile 'c'
 offLine = int(c["profileConnectET"]["offLine"])
 sandBox = int(c["profileConnectET"]["sandBox"])
+maxNumStocksToTrade = int(c["profileConnectET"]["maxNumStocksToTrade"])
 
 dailyChartPath = "dc/"
 dailyChartExt = ".dc"
@@ -419,18 +421,6 @@ if clOptions.onlyUpdateDailyStocks:
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Setup connection to the exchange service
-
-if service == "bitstamp":
-   cn = lpl.ConnectBitStamp(service, currency, alt)
-   cn.connectPublic()
-elif service == "bitfinex":
-   cn = lpl.ConnectBitFinex()
-elif service == "eTrade":
-   symbol = stock
-   cn = lpl.ConnectEtrade(c, stocks, debug, verbose, marketDataType, sandBox, 0, offLine)
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set stocks to trade based on pre market analysis
 
 if offLine:
@@ -442,7 +432,7 @@ if masterMode:
    d["profileTradeData"]["timeBar"] = "1"
    
 if stocksFile != "":
-   stocks = getAutoStocks(stocksFile, daysBestThreshold, cn.getTradeServiceMaxNumStocks())   
+   stocks = getAutoStocks(stocksFile, daysBestThreshold, maxNumStocksToTrade)   
 
 elif preMarketAnalysis:
 
@@ -461,29 +451,37 @@ elif preMarketAnalysis:
 
    print ("pre market analysis stocks " + str(stocks))
 
-print ("stocks " + str(stocks))
+# Trim list of stocks to maxNumStocksToTrade max
+
+print ("stocks before" + str(stocks))
 print ("stocks len " + str(len(stocks)))
 
 if offLine:
    if workPath:
       stocks = getStocksFromBCDir(workPath + "/bc")
+else:
+   if isinstance(stocks, str):
+      stocks = stocks.split(",")
+      
+   if not offLine:
+      if len(stocks) > maxNumStocksToTrade:
+         while len(stocks) > maxNumStocksToTrade:
+            del stocks[-1]
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Setup connection to the exchange service
+
+if service == "bitstamp":
+   cn = lpl.ConnectBitStamp(service, currency, alt)
+   cn.connectPublic()
+elif service == "bitfinex":
+   cn = lpl.ConnectBitFinex()
+elif service == "eTrade":
+   symbol = stock
+   cn = lpl.ConnectEtrade(c, stocks, debug, verbose, marketDataType, sandBox, 0, offLine)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set up stock arrays
-
-# Trim list of stocks to 21 max
-
-
-print ("stocks " + str(stocks))
-print ("stocks len " + str(len(stocks)))
-
-if isinstance(stocks, str):
-   stocks = stocks.split(",")
-   
-if not offLine:
-   if len(stocks) > 21:
-      while len(stocks) > 21:
-         del stocks[-1]
 
 for stock in stocks:
    stocksChart[stock] = [[0.0,0.0,0.0,0.0,0,0.0,0,0,""]]
@@ -493,6 +491,9 @@ for stock in stocks:
    doOnceOnOpen[stock] = 0
    doOnceOnClose[stock] = 0
    dirty[stock] = 0
+
+print ("stocks after" + str(stocks))
+print ("stocks len " + str(len(stocks)))
 
 # Setup paths
 
@@ -731,6 +732,9 @@ if not offLine:
 # CALL setStockValues SKIPPING OPEN VALUE WHICH IS THE CLOSE OF THE LAST DAY   
 # observed at least 3 prices being the close of prev day
 
+print ("stocks " + str(stocks))
+print ("stocks len " + str(len(stocks)))
+
 if service == "eTrade":
    serviceValues = cn.setStockValues(stocksChart, 0, stocks)
    print ("serviceValues 1\n" + str(serviceValues))
@@ -746,8 +750,10 @@ if service == "eTrade":
 #      # Launch lpltL.py
 #      pass
 
+
 # Set the initial price
 for stock in stocks:
+   print ("serviceValues[stock] " + str(serviceValues[stock]))
    bid[stock], ask[stock], last[stock], vol[stock]  = \
       pr[stock].getNextPriceArr(serviceValues[stock])
 

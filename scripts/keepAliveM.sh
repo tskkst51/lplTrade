@@ -215,8 +215,7 @@ $cmd
 #$cmd > $log
 retCode=$?
    
-sleep 1
-waiting=5
+waiting=120
 
 # Exit when time is after 4pm
 timeNow=$(date "+%H%M%S")

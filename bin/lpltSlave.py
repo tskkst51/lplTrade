@@ -50,6 +50,16 @@ def isStoppedOut():
          
          return 2
 
+   # We are out with our PROFIT
+   if doTrailingStop and positionTaken == stoppedOut:
+      lg.info ("TRAILING STOP REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
+      lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
+      lg.info ("MAX PROFIT FACTOR: " + str(maxProfit))
+      lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
+      lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
+      
+      return 4
+         
    if a.getTotalGain() >= a.getTargetProfit() and a.getTotalGain() != 0.0:
       if quitMaxProfit:            
          lg.info ("MAX PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
@@ -59,16 +69,6 @@ def isStoppedOut():
          lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
          
          return 2
-         
-         # We are out with our PROFIT
-      if doTrailingStop and positionTaken == stoppedOut:
-         lg.info ("TRAILING STOP REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
-         lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
-         lg.info ("MAX PROFIT FACTOR: " + str(maxProfit))
-         lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
-         lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
-         
-         return 4
          
    if a.getTotalLoss() <= a.getTargetLoss() and a.getTotalLoss() != 0.0:
       if quitMaxLoss:            
