@@ -53,7 +53,12 @@ AYRO Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5_RV
 AYRO Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_TR_QP
 AYRO Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5_TR_QP
 AYRO Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB1_OS1_CB5_CS5_PM
+AYRO Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB1_OS1_CB5_CS5_PM
 AYRO Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB2_OS2_CB5_CS5_PM
+AYRO Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB1_OS1_CB5_CS5_TS
+AYRO Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB2_OS2_CB5_CS5_TS
+AYRO Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_TS
+AYRO Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5_TS
 AYRO Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB1_OS1_CB5_CS5_RV
 AYRO Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB1_OS1_CB5_CS5_RV_AL
 AYRO Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB1_OS1_CB5_CS5_RV_TR
@@ -147,6 +152,7 @@ AYRO Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_QL
 AYRO Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_RV_AV
 AYRO Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_SS
 AYRO Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_TR
+AYRO Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5
 AYRO Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5
 AYRO Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5_AC
 AYRO Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5_AL

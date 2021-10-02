@@ -70,6 +70,7 @@ EQ Gain: $ -0.09 Win %: 0 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_VI
 EQ Gain: $ -0.08 Win %: 0 in 1 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_PM
 EQ Gain: $ -0.05 Win %: 0 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_HM_QP_DB30
 EQ Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_PM
+EQ Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_PM
 EQ Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_QP_PM
 EQ Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_PM
 EQ Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_QP_PM
@@ -85,7 +86,11 @@ EQ Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_HM_A
 EQ Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_RV_AV
 EQ Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB3_CS3_SS
 EQ Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_IT
+EQ Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_TS
+EQ Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_TS
+EQ Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB3_CS3_TS
 EQ Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_AL
+EQ Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_TS
 EQ Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB3_CS3_HM_AV_DB30
 EQ Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_TR_IR5
 EQ Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB3_CS3_AO
@@ -150,6 +155,7 @@ EQ Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB3_CS3_IT_Q
 EQ Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB3_CS3_LI
 EQ Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB3_CS3_RV
 EQ Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB3_CS3_RV_AL
+EQ Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3
 EQ Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3
 EQ Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_AO_AC
 EQ Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_HM

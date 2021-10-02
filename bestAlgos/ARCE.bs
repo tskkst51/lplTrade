@@ -69,6 +69,7 @@ ARCE Gain: $ -0.13 Win %: 0 in 1 days with algo TB2_HL_LO_QM_OB4_OS4_CB4_CS4_VI
 ARCE Gain: $ -0.11 Win %: 0 in 1 days with algo TB2_HL_LO_QM_OB4_OS4_CB4_CS4_QP_PM
 ARCE Gain: $ -0.05 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
 ARCE Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_PM
+ARCE Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_PM
 ARCE Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_QP_PM
 ARCE Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_PM
 ARCE Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_QP_PM
@@ -86,6 +87,7 @@ ARCE Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4
 ARCE Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_RV
 ARCE Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB4_OS4_CB4_CS4_RV_TR_DB15
 ARCE Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB4_OS4_CB4_CS4_RV_AL_DB15
+ARCE Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB4_OS4_CB4_CS4_TS
 ARCE Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_QL
 ARCE Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB4_OS4_CB4_CS4_RV
 ARCE Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_AO_AC
@@ -104,6 +106,9 @@ ARCE Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5
 ARCE Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_HM_TR
 ARCE Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_RV_TR
 ARCE Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_TR_IR5
+ARCE Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_TS
+ARCE Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TS
+ARCE Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_TS
 ARCE Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_AC
 ARCE Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB4_OS4_CB4_CS4_AO_AC
 ARCE Gain: $ 0.84 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_TR_QP_DB30
@@ -155,6 +160,7 @@ ARCE Gain: $ 1.72 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5
 ARCE Gain: $ 1.72 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_LI
 ARCE Gain: $ 1.72 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_QL
 ARCE Gain: $ 1.72 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_RV_AL
+ARCE Gain: $ 1.78 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB4_OS4_CB4_CS4
 ARCE Gain: $ 1.78 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB4_OS4_CB4_CS4
 ARCE Gain: $ 1.78 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB4_OS4_CB4_CS4_IR4
 ARCE Gain: $ 1.78 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB4_OS4_CB4_CS4_IT

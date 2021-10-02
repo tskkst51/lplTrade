@@ -61,10 +61,13 @@ OLB Gain: $ -0.06 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_VI
 OLB Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_HM_TR
 OLB Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_RV_TR
 OLB Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_TR
+OLB Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_TS
 OLB Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB4_OS4_CB1_CS1_HM_TR_DB10
 OLB Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB4_OS4_CB1_CS1_RV_TR_DB10
 OLB Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB5_OS5_CB1_CS1_HM_TR_DB10
 OLB Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB5_OS5_CB1_CS1_RV_TR_DB10
+OLB Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB4_OS4_CB1_CS1_TS
+OLB Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB5_OS5_CB1_CS1_TS
 OLB Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB4_OS4_CB1_CS1_AL
 OLB Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB4_OS4_CB1_CS1_RV_AL
 OLB Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB5_OS5_CB1_CS1_AL
@@ -75,6 +78,7 @@ OLB Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB4_OS4_CB1_CS1_IT_
 OLB Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB5_OS5_CB1_CS1_IT
 OLB Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB5_OS5_CB1_CS1_IT_QL
 OLB Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB5_OS5_CB5_CS5_SS
+OLB Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB5_OS5_CB5_CS5_TS
 OLB Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB5_OS5_CB1_CS1_AO
 OLB Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB5_OS5_CB1_CS1_AO_AC
 OLB Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB5_OS5_CB5_CS5_HM_TR_DB30
@@ -91,6 +95,7 @@ OLB Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB5_OS5_CB5_CS5_AL
 OLB Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB5_OS5_CB5_CS5_RV_AL
 OLB Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB4_OS4_CB1_CS1_IR3
 OLB Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB5_OS5_CB1_CS1_IR3
+OLB Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_IT
 OLB Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_IT
 OLB Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_IT_QL
 OLB Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB5_OS5_CB5_CS5_HM_TR
@@ -144,6 +149,7 @@ OLB Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB5_OS5_CB1_CS1_HM
 OLB Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB5_OS5_CB1_CS1_QL
 OLB Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB5_OS5_CB1_CS1_RV
 OLB Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB5_OS5_CB1_CS1_SS
+OLB Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB5_OS5_CB5_CS5
 OLB Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB5_OS5_CB5_CS5
 OLB Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB5_OS5_CB5_CS5_AC
 OLB Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB5_OS5_CB5_CS5_AO

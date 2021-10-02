@@ -45,6 +45,7 @@ FRBK Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_QP_PM
 FRBK Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_PM
 FRBK Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_QP_PM
 FRBK Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_PM
+FRBK Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_PM
 FRBK Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_QP_PM
 FRBK Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_PM
 FRBK Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_QP_PM
@@ -94,6 +95,7 @@ FRBK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_RV
 FRBK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_SS
 FRBK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_TR
 FRBK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_TR_IR1
+FRBK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_TS
 FRBK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_AC
 FRBK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_AL
 FRBK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_AO
@@ -120,6 +122,7 @@ FRBK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_RV
 FRBK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_SS
 FRBK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_TR
 FRBK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_TR_IR1
+FRBK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_TS
 FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_AC
 FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_AL
 FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_AO
@@ -139,6 +142,8 @@ FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_RV
 FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_SS
 FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_TR
 FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_TR_IR1
+FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_TS
+FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5
 FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5
 FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_AC
 FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_AL
@@ -159,3 +164,4 @@ FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV
 FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_SS
 FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TR
 FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TR_IR1
+FRBK Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TS

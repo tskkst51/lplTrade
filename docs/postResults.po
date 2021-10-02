@@ -1,0 +1,2 @@
+on 20210924
+UHAL Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB4_OS4_CB1_CS1_AC

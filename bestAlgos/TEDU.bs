@@ -64,6 +64,7 @@ TEDU Gain: $ -0.02 Win %: 50.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_TR
 TEDU Gain: $ -0.01 Win %: 50.00 in 2 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_VI
 TEDU Gain: $ -0.01 Win %: 50.00 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_VI
 TEDU Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_PM
+TEDU Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_PM
 TEDU Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_QP_PM
 TEDU Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_TR_IR5
 TEDU Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_DB30
@@ -126,10 +127,12 @@ TEDU Gain: $ 0.14 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3
 TEDU Gain: $ 0.14 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_LI
 TEDU Gain: $ 0.14 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_LI
 TEDU Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_LI
+TEDU Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_TS
 TEDU Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_AL
 TEDU Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_AL
 TEDU Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_AL
 TEDU Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_RV_AL
+TEDU Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_TS
 TEDU Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_AL
 TEDU Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_RV_AL
 TEDU Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_AC
@@ -149,6 +152,7 @@ TEDU Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3
 TEDU Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_IT_QL
 TEDU Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_QL
 TEDU Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3
+TEDU Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3
 TEDU Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_AC
 TEDU Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_AO
 TEDU Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_AO_AC
@@ -159,3 +163,5 @@ TEDU Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_QL
 TEDU Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_RV
 TEDU Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_AC
 TEDU Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_AC
+TEDU Gain: $ 0.19 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_TS
+TEDU Gain: $ 0.19 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_TS

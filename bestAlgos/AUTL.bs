@@ -57,6 +57,7 @@ AUTL Gain: $ -0.24 Win %: 0 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_RV_
 AUTL Gain: $ -0.18 Win %: 0 in 1 days with algo TB1_LO_QM_OB1_OS1_CB3_CS3_IT_QL_DB30
 AUTL Gain: $ -0.18 Win %: 0 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3_IT_QL_DB30
 AUTL Gain: $ -0.12 Win %: 0 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_QP_PM
+AUTL Gain: $ -0.1 Win %: 0 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3
 AUTL Gain: $ -0.06 Win %: 0 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_RV_TR_DB30
 AUTL Gain: $ -0.05 Win %: 0 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_QP_PM
 AUTL Gain: $ -0.01 Win %: 0 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_IT_QP_DB30
@@ -72,6 +73,10 @@ AUTL Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4
 AUTL Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_TR_QP
 AUTL Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_TR_QP_DB30
 AUTL Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_RV_QP
+AUTL Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB3_CS3_TS
+AUTL Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3_TS
+AUTL Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_TS
+AUTL Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_TS
 AUTL Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_AC
 AUTL Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_AO_AC
 AUTL Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_AC
@@ -84,6 +89,7 @@ AUTL Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB3_CS3_TR
 AUTL Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3_HM_TR
 AUTL Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3_RV_TR
 AUTL Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3_TR
+AUTL Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_PM
 AUTL Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_PM
 AUTL Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_PM
 AUTL Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB3_CS3_LI

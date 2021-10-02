@@ -70,6 +70,7 @@ WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_HM_QP
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_HM_TR
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_IT
+WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_IT
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QP
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_LI
@@ -83,6 +84,7 @@ WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_SS
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_TR
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_TR_QP
+WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_TS
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_VI
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_AC
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_AL
@@ -105,6 +107,7 @@ WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_SS
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_TR
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_TR_QP
+WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_TS
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_VI
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_AC
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_AL
@@ -127,7 +130,9 @@ WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_SS
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_TR
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_TR_QP
+WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_TS
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_VI
+WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_AC
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_AL
@@ -150,4 +155,5 @@ WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_SS
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_TR
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_TR_QP
+WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_TS
 WMPN Gain: $ 0.03 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_VI

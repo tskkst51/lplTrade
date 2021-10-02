@@ -57,6 +57,10 @@ MOS Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB2_CS2_QP_
 MOS Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB2_CS2_PM
 MOS Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_PM
 MOS Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_PM
+MOS Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_PM
+MOS Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB2_CS2_TS
+MOS Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_TS
+MOS Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_TS
 MOS Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_HM_QP_DB10
 MOS Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_RV_QP_DB10
 MOS Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB2_CS2_HM_QP_DB6
@@ -111,6 +115,7 @@ MOS Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB2_CS2_DB6
 MOS Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB2_CS2_IT_QL_DB6
 MOS Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_RV_AL_DB30
 MOS Gain: $ 0.91 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_SS
+MOS Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB2_CS2_TS
 MOS Gain: $ 0.95 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_DB30
 MOS Gain: $ 0.95 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_IT_QL_DB30
 MOS Gain: $ 0.96 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_LI
@@ -152,6 +157,7 @@ MOS Gain: $ 1.57 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB2_CS2_QL
 MOS Gain: $ 1.57 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB2_CS2_RV
 MOS Gain: $ 1.59 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB2_CS2_PM
 MOS Gain: $ 1.62 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB2_CS2_AO
+MOS Gain: $ 1.62 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB2_CS2
 MOS Gain: $ 1.62 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB2_CS2
 MOS Gain: $ 1.62 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB2_CS2_HM
 MOS Gain: $ 1.62 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB2_CS2_IR1

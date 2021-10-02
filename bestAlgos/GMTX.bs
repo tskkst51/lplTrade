@@ -68,6 +68,7 @@ GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5
 GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_DB6
 GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_IR1
 GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_IT
+GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_IT
 GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QL_DB6
 GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_QL
@@ -121,6 +122,7 @@ GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB4_CS4
 GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB4_CS4_TR
 GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB4_CS4_TR_IR1
 GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5
+GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5
 GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_AC
 GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_AL
 GMTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_AV
@@ -151,3 +153,7 @@ GMTX Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB4_CS4
 GMTX Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB4_CS4_IT_QP_DB6
 GMTX Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_IT_QP
 GMTX Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_IT_QP_DB6
+GMTX Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_TS
+GMTX Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3_TS
+GMTX Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB4_CS4_TS
+GMTX Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_TS

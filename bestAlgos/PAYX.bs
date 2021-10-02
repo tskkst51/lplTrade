@@ -101,6 +101,7 @@ PAYX Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_LI
 PAYX Gain: $ 1.15 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB3_CS3_RV_AL
 PAYX Gain: $ 1.15 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB3_CS3_RV_AL
 PAYX Gain: $ 1.26 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_AL
+PAYX Gain: $ 1.29 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_TS
 PAYX Gain: $ 1.42 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB3_OS3_CB3_CS3_QP
 PAYX Gain: $ 1.43 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB3_CS3_QP
 PAYX Gain: $ 1.43 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB3_CS3_QP
@@ -124,6 +125,7 @@ PAYX Gain: $ 1.52 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_AC
 PAYX Gain: $ 1.52 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_AO
 PAYX Gain: $ 1.52 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_AO_AC
 PAYX Gain: $ 1.52 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_IT
+PAYX Gain: $ 1.52 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_IT
 PAYX Gain: $ 1.52 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_IT_QL
 PAYX Gain: $ 1.52 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_QL
 PAYX Gain: $ 1.52 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_RV
@@ -136,6 +138,7 @@ PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB3_CS3_IT
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB3_CS3_IT_QL
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB3_CS3_QL
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB3_CS3_SS
+PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB3_CS3_TS
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB3_CS3_AC
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB3_CS3_AO
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB3_CS3_AO_AC
@@ -143,6 +146,8 @@ PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB3_CS3_IT
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB3_CS3_IT_QL
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB3_CS3_QL
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB3_CS3_SS
+PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB3_CS3_TS
+PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB3_OS3_CB3_CS3
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB3_OS3_CB3_CS3
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB3_OS3_CB3_CS3_AC
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB3_OS3_CB3_CS3_AO
@@ -151,3 +156,4 @@ PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB3_OS3_CB3_CS3_IT
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB3_OS3_CB3_CS3_IT_QL
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB3_OS3_CB3_CS3_QL
 PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB3_OS3_CB3_CS3_SS
+PAYX Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB3_OS3_CB3_CS3_TS

@@ -91,6 +91,7 @@ IEC Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB4_OS4_CB4_CS4_SS
 IEC Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB4_OS4_CB4_CS4_TR
 IEC Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB4_OS4_CB4_CS4_TR_IR1
 IEC Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB4_OS4_CB4_CS4_TR_QP_DB6
+IEC Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB4_OS4_CB4_CS4_TS
 IEC Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB4_OS4_CB4_CS4_VI
 IEC Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB4_CS4_HM_AV_DB30
 IEC Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB4_CS4_IT_QP
@@ -134,12 +135,17 @@ IEC Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB4_CS4_RV_
 IEC Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB4_CS4_RV_TR_DB30
 IEC Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS3_HM
 IEC Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS3_IT
+IEC Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS3_IT
 IEC Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS3_IT_QL
 IEC Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS3_QL
 IEC Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS3_RV
+IEC Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS3_TS
 IEC Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB4_CS4_HM
 IEC Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB4_CS4_QL
+IEC Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB4_CS4_TS
 IEC Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB4_CS4_DB30
+IEC Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB4_CS4
 IEC Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB4_CS4_HM
 IEC Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB4_CS4_QL
 IEC Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB4_CS4_RV
+IEC Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB4_CS4_TS

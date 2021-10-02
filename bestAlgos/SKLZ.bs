@@ -61,8 +61,8 @@ SKLZ Gain: $ -0.01 Win %: 33.00 in 3 days with algo TB2_EO_EC_QM_OB4_OS4_CB5_CS5
 SKLZ Gain: $ -0.01 Win %: 33.00 in 3 days with algo TB2_HL_HI_QM_OB4_OS4_CB5_CS5_IT_QP_DB15
 SKLZ Gain: $ 0.03 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB4_OS4_CB5_CS5_IT_QP
 SKLZ Gain: $ 0.03 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB4_OS4_CB5_CS5_TR_QP_DB30
-SKLZ Gain: $ 0.05 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB4_OS4_CB5_CS5_IT_QP
 SKLZ Gain: $ 0.05 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB4_OS4_CB5_CS5_QP
+SKLZ Gain: $ 0.05 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB4_OS4_CB5_CS5_IT_QP
 SKLZ Gain: $ 0.07 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB4_OS4_CB5_CS5_HM_QP_DB30
 SKLZ Gain: $ 0.09 Win %: 33.00 in 3 days with algo TB2_HL_HI_QM_OB4_OS4_CB5_CS5_AV
 SKLZ Gain: $ 0.12 Win %: 100.00 in 3 days with algo TB1_HS_QM_OB4_OS4_CB5_CS5_IT_QP_DB30
@@ -88,9 +88,9 @@ SKLZ Gain: $ 0.9 Win %: 66.00 in 3 days with algo TB2_HS_QM_OB4_OS4_CB5_CS5_TR_Q
 SKLZ Gain: $ 0.94 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB4_OS4_CB5_CS5_HM_AV_DB30
 SKLZ Gain: $ 0.95 Win %: 66.00 in 3 days with algo TB2_HS_QM_OB4_OS4_CB5_CS5_TR_QP
 SKLZ Gain: $ 0.96 Win %: 66.00 in 3 days with algo TB2_HS_QM_OB4_OS4_CB5_CS5_QP
-SKLZ Gain: $ 0.98 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB4_OS4_CB5_CS5_AC
 SKLZ Gain: $ 0.98 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB4_OS4_CB5_CS5_HM_AV_DB15
 SKLZ Gain: $ 0.98 Win %: 66.00 in 3 days with algo TB2_HS_QM_OB4_OS4_CB5_CS5_HM_QP_DB15
+SKLZ Gain: $ 0.98 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB4_OS4_CB5_CS5_AC
 SKLZ Gain: $ 0.99 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB4_OS4_CB5_CS5_HM_QP
 SKLZ Gain: $ 1.02 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB4_OS4_CB5_CS5_RV_TR
 SKLZ Gain: $ 1.05 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB4_OS4_CB5_CS5_IT_QL_DB15
@@ -99,6 +99,8 @@ SKLZ Gain: $ 1.06 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB4_OS4_CB5_CS5_
 SKLZ Gain: $ 1.08 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB4_OS4_CB5_CS5_RV_QP_DB15
 SKLZ Gain: $ 1.19 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB4_OS4_CB5_CS5_RV_AL
 SKLZ Gain: $ 1.22 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB4_OS4_CB5_CS5_RV_QP
+SKLZ Gain: $ 1.27 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB4_OS4_CB5_CS5_TS
+SKLZ Gain: $ 1.27 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB4_OS4_CB5_CS5_TS
 SKLZ Gain: $ 1.35 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB4_OS4_CB5_CS5_DB15
 SKLZ Gain: $ 1.39 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB4_OS4_CB5_CS5_AL
 SKLZ Gain: $ 1.41 Win %: 100.00 in 3 days with algo TB1_HS_QM_OB4_OS4_CB5_CS5_TR_IR5
@@ -110,8 +112,11 @@ SKLZ Gain: $ 1.52 Win %: 66.00 in 3 days with algo TB2_HS_QM_OB4_OS4_CB5_CS5_DB1
 SKLZ Gain: $ 1.52 Win %: 66.00 in 3 days with algo TB2_HS_QM_OB4_OS4_CB5_CS5_RV_TR_DB15
 SKLZ Gain: $ 1.56 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB4_OS4_CB5_CS5_IR4
 SKLZ Gain: $ 1.59 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB4_OS4_CB5_CS5_HM_TR_DB15
+SKLZ Gain: $ 1.62 Win %: 100.00 in 3 days with algo TB1_HS_QM_OB4_OS4_CB5_CS5_TS
 SKLZ Gain: $ 1.62 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB4_OS4_CB5_CS5_IT_QL_DB15
+SKLZ Gain: $ 1.65 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB4_OS4_CB5_CS5_TS
 SKLZ Gain: $ 1.69 Win %: 100.00 in 3 days with algo TB1_HS_QM_OB4_OS4_CB5_CS5_IR5
+SKLZ Gain: $ 1.71 Win %: 100.00 in 3 days with algo TB1_HS_QM_OB4_OS4_CB5_CS5_IT
 SKLZ Gain: $ 1.71 Win %: 100.00 in 3 days with algo TB1_HS_QM_OB4_OS4_CB5_CS5_IT
 SKLZ Gain: $ 1.73 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB4_OS4_CB5_CS5_LI
 SKLZ Gain: $ 1.73 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB4_OS4_CB5_CS5_LI
@@ -138,6 +143,7 @@ SKLZ Gain: $ 2.4 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB4_OS4_CB5_CS5_
 SKLZ Gain: $ 2.4 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB4_OS4_CB5_CS5_AO_AC
 SKLZ Gain: $ 2.4 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB4_OS4_CB5_CS5_QL
 SKLZ Gain: $ 2.4 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB4_OS4_CB5_CS5_TR
+SKLZ Gain: $ 2.44 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB4_OS4_CB5_CS5
 SKLZ Gain: $ 2.44 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB4_OS4_CB5_CS5
 SKLZ Gain: $ 2.44 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB4_OS4_CB5_CS5_AC
 SKLZ Gain: $ 2.44 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB4_OS4_CB5_CS5_AO

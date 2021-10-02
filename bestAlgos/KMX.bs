@@ -7,6 +7,7 @@ KMX Gain: $ -0.08 Win %: 0 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_IT_QP
 KMX Gain: $ -0.03 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_RV_QP_DB15
 KMX Gain: $ -0.03 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_RV_QP_DB15
 KMX Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_PM
+KMX Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_PM
 KMX Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_QP_PM
 KMX Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_PM
 KMX Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_QP_PM
@@ -113,6 +114,10 @@ KMX Gain: $ 1.38 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_RV_
 KMX Gain: $ 1.38 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_AV
 KMX Gain: $ 1.38 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_HM_AV
 KMX Gain: $ 1.38 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_RV_AV
+KMX Gain: $ 1.47 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_TS
+KMX Gain: $ 1.47 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_TS
+KMX Gain: $ 1.47 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_TS
+KMX Gain: $ 1.47 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_TS
 KMX Gain: $ 1.48 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_LI
 KMX Gain: $ 1.48 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_VI
 KMX Gain: $ 1.48 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_LI
@@ -150,6 +155,7 @@ KMX Gain: $ 1.64 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_IT
 KMX Gain: $ 1.64 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_IT_QL
 KMX Gain: $ 1.64 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_QL
 KMX Gain: $ 1.64 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_SS
+KMX Gain: $ 1.64 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4
 KMX Gain: $ 1.64 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4
 KMX Gain: $ 1.64 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_AC
 KMX Gain: $ 1.64 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_AO

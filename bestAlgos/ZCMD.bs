@@ -21,6 +21,10 @@ ZCMD Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_RV
 ZCMD Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_TR_QP
 ZCMD Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_TR_QP_DB15
 ZCMD Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_IT_QP
+ZCMD Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_TS
+ZCMD Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_TS
+ZCMD Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_TS
+ZCMD Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_TS
 ZCMD Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_HM_QP
 ZCMD Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_QP
 ZCMD Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_QP_IR4
@@ -104,6 +108,7 @@ ZCMD Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_AO
 ZCMD Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_AO_AC
 ZCMD Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_IR4
 ZCMD Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_IT
+ZCMD Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_IT
 ZCMD Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_IT_QL
 ZCMD Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_QL
 ZCMD Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_RV
@@ -139,6 +144,7 @@ ZCMD Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_RV
 ZCMD Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_RV_TR
 ZCMD Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_TR
 ZCMD Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_TR_IR4
+ZCMD Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4
 ZCMD Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4
 ZCMD Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_AC
 ZCMD Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_AO

@@ -74,6 +74,11 @@ RF Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB1_OS1_CB1_CS1_RV_AV
 RF Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_IT_QL_DB30
 RF Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB3_CS3_HM_AV
 RF Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB3_CS3_HM_AV
+RF Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_TS
+RF Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB3_CS3_TS
+RF Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB3_CS3_TS
+RF Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB1_OS1_CB1_CS1_TS
+RF Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB3_CS3_IT
 RF Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB3_CS3_IT
 RF Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB3_CS3_IT_QL
 RF Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB3_CS3_IT
@@ -140,6 +145,7 @@ RF Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB1_OS1_CB1_CS1_RV
 RF Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_AL
 RF Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_RV_AL
 RF Gain: $ 0.84 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_RV_AV
+RF Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3
 RF Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3
 RF Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_QL
 RF Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_RV

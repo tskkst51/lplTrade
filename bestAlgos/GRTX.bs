@@ -45,6 +45,10 @@ GRTX Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_IT
 GRTX Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QP
 GRTX Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_IT_QP
 GRTX Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_IT_QP_DB30
+GRTX Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TS
+GRTX Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_TS
+GRTX Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_TS
+GRTX Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_TS
 GRTX Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_HM_QP
 GRTX Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_QP
 GRTX Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_QP_IR5
@@ -145,6 +149,7 @@ GRTX Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5
 GRTX Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_RV
 GRTX Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_SS
 GRTX Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5
+GRTX Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5
 GRTX Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_HM
 GRTX Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_IR5
 GRTX Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_IT
@@ -155,6 +160,7 @@ GRTX Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5
 GRTX Gain: $ 1.09 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_LI
 GRTX Gain: $ 1.1 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_LI
 GRTX Gain: $ 1.1 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_LI
+GRTX Gain: $ 1.14 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_PM
 GRTX Gain: $ 1.14 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_PM
 GRTX Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_AO
 GRTX Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_AO

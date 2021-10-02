@@ -98,6 +98,8 @@ UNH Gain: $ 14.63 Win %: 44.00 in 9 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_
 UNH Gain: $ 14.96 Win %: 77.00 in 9 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_QP
 UNH Gain: $ 14.96 Win %: 77.00 in 9 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_QP
 UNH Gain: $ 15.14 Win %: 77.00 in 9 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_QL
+UNH Gain: $ 16.11 Win %: 77.00 in 9 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_TS
+UNH Gain: $ 16.11 Win %: 77.00 in 9 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_TS
 UNH Gain: $ 16.6 Win %: 77.00 in 9 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_IT_QL
 UNH Gain: $ 16.6 Win %: 77.00 in 9 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_IT_QL
 UNH Gain: $ 16.9 Win %: 77.00 in 9 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_HM_QP
@@ -129,6 +131,7 @@ UNH Gain: $ 23.37 Win %: 77.00 in 9 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_
 UNH Gain: $ 23.86 Win %: 77.00 in 9 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_AV
 UNH Gain: $ 24.34 Win %: 66.00 in 9 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_AL
 UNH Gain: $ 24.34 Win %: 66.00 in 9 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_AL
+UNH Gain: $ 24.34 Win %: 77.00 in 9 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5
 UNH Gain: $ 24.65 Win %: 77.00 in 9 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_TR_IR2
 UNH Gain: $ 24.65 Win %: 77.00 in 9 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_TR_IR2
 UNH Gain: $ 25.3 Win %: 88.00 in 9 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_TR
@@ -138,6 +141,8 @@ UNH Gain: $ 26.34 Win %: 100.00 in 9 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_IT
 UNH Gain: $ 26.34 Win %: 100.00 in 9 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_IT_QL
 UNH Gain: $ 26.34 Win %: 100.00 in 9 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_IT
 UNH Gain: $ 26.34 Win %: 100.00 in 9 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_IT_QL
+UNH Gain: $ 26.39 Win %: 88.00 in 9 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_TS
+UNH Gain: $ 26.39 Win %: 88.00 in 9 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_TS
 UNH Gain: $ 26.5 Win %: 77.00 in 9 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_TR_IR5
 UNH Gain: $ 26.5 Win %: 77.00 in 9 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_TR_IR5
 UNH Gain: $ 26.68 Win %: 88.00 in 9 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_AC

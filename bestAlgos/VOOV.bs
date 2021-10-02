@@ -63,6 +63,7 @@ VOOV Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_TR
 VOOV Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_RV_AL_DB6
 VOOV Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_RV_AL_DB6
 VOOV Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_IT
+VOOV Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_IT
 VOOV Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_IT_QL
 VOOV Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_IT
 VOOV Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_IT_QL
@@ -128,10 +129,12 @@ VOOV Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_
 VOOV Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_IR1
 VOOV Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_QL
 VOOV Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_RV
+VOOV Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_TS
 VOOV Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_HM
 VOOV Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_IR1
 VOOV Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_QL
 VOOV Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_RV
+VOOV Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_TS
 VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_AC
 VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_AO
 VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_AO_AC
@@ -140,6 +143,8 @@ VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_IR
 VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_QL
 VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_RV
 VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_SS
+VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_TS
+VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4
 VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4
 VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_AC
 VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_AO
@@ -149,5 +154,6 @@ VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_IR
 VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_QL
 VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_RV
 VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_SS
+VOOV Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_TS
 VOOV Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_AO
 VOOV Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_AO

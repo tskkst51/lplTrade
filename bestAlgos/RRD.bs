@@ -53,9 +53,9 @@ RRD Gain: $ -0.09 Win %: 50.00 in 2 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_VI
 RRD Gain: $ -0.07 Win %: 50.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_TR_QP
 RRD Gain: $ -0.07 Win %: 50.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_TR_QP
 RRD Gain: $ -0.03 Win %: 50.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_IT_QP
+RRD Gain: $ 0.01 Win %: 50.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_VI
 RRD Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_IT_QP_DB30
 RRD Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_IT_QP_DB30
-RRD Gain: $ 0.01 Win %: 50.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_VI
 RRD Gain: $ 0.02 Win %: 50.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_SS
 RRD Gain: $ 0.02 Win %: 50.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_SS
 RRD Gain: $ 0.05 Win %: 50.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_RV_AV_DB30
@@ -73,9 +73,11 @@ RRD Gain: $ 0.34 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_IT_
 RRD Gain: $ 0.34 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_RV_AL_DB10
 RRD Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_RV_AL
 RRD Gain: $ 0.38 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_IT
+RRD Gain: $ 0.38 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_IT
 RRD Gain: $ 0.38 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_IT_QL
 RRD Gain: $ 0.38 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_IT
 RRD Gain: $ 0.38 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_IT_QL
+RRD Gain: $ 0.38 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_TS
 RRD Gain: $ 0.38 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_HM_AV
 RRD Gain: $ 0.38 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_RV
 RRD Gain: $ 0.39 Win %: 50.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_RV
@@ -93,7 +95,10 @@ RRD Gain: $ 0.41 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_DB1
 RRD Gain: $ 0.41 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_IT_QL_DB10
 RRD Gain: $ 0.41 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_LI
 RRD Gain: $ 0.42 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_DB30
+RRD Gain: $ 0.42 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_TS
 RRD Gain: $ 0.42 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_DB30
+RRD Gain: $ 0.42 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_TS
+RRD Gain: $ 0.42 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_TS
 RRD Gain: $ 0.44 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_IT_QL_DB30
 RRD Gain: $ 0.44 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_IT_QL_DB30
 RRD Gain: $ 0.44 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_DB10
@@ -124,6 +129,7 @@ RRD Gain: $ 0.58 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_HM
 RRD Gain: $ 0.58 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_IT
 RRD Gain: $ 0.61 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_RV_AL
 RRD Gain: $ 0.61 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_RV_AL
+RRD Gain: $ 0.61 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3
 RRD Gain: $ 0.61 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3
 RRD Gain: $ 0.61 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_HM
 RRD Gain: $ 0.61 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB3_CS3_QL

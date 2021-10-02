@@ -54,6 +54,7 @@ FBRX Gain: $ -0.39 Win %: 0 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_AL
 FBRX Gain: $ -0.39 Win %: 0 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_RV_AL
 FBRX Gain: $ -0.38 Win %: 0 in 1 days with algo TB4_HL_HS_QM_OB2_OS2_CB3_CS3_RV
 FBRX Gain: $ -0.37 Win %: 0 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_TS
+FBRX Gain: $ -0.37 Win %: 0 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_TS
 FBRX Gain: $ -0.37 Win %: 0 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_RV_AL
 FBRX Gain: $ -0.37 Win %: 0 in 1 days with algo TB4_HL_HS_QM_OB2_OS2_CB3_CS3_RV_AL_DB8
 FBRX Gain: $ -0.36 Win %: 0 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_RV_AV_DB30
@@ -75,6 +76,7 @@ FBRX Gain: $ -0.33 Win %: 0 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_LI
 FBRX Gain: $ -0.33 Win %: 0 in 1 days with algo TB4_HL_HS_QM_OB2_OS2_CB3_CS3_RV_TR
 FBRX Gain: $ -0.33 Win %: 0 in 1 days with algo TB4_HL_HS_QM_OB2_OS2_CB3_CS3_TR
 FBRX Gain: $ -0.33 Win %: 0 in 1 days with algo TB4_HL_HS_QM_OB2_OS2_CB3_CS3_TR_IR2
+FBRX Gain: $ -0.33 Win %: 0 in 1 days with algo TB4_HL_HS_QM_OB2_OS2_CB3_CS3_TS
 FBRX Gain: $ -0.32 Win %: 0 in 1 days with algo TB4_HL_HS_QM_OB2_OS2_CB3_CS3_HM_TR_DB8
 FBRX Gain: $ -0.31 Win %: 0 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_QP
 FBRX Gain: $ -0.31 Win %: 0 in 1 days with algo TB4_HL_HS_QM_OB2_OS2_CB3_CS3_DB8
@@ -91,11 +93,13 @@ FBRX Gain: $ -0.29 Win %: 0 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_QL
 FBRX Gain: $ -0.28 Win %: 0 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_HM_AV
 FBRX Gain: $ -0.28 Win %: 0 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_HM_QP
 FBRX Gain: $ -0.27 Win %: 0 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4
+FBRX Gain: $ -0.27 Win %: 0 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4
 FBRX Gain: $ -0.27 Win %: 0 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_AC
 FBRX Gain: $ -0.27 Win %: 0 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_AO
 FBRX Gain: $ -0.27 Win %: 0 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_AO_AC
 FBRX Gain: $ -0.27 Win %: 0 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_RV
 FBRX Gain: $ -0.27 Win %: 0 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_RV_TR
+FBRX Gain: $ -0.27 Win %: 0 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_TS
 FBRX Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_HM_AV_DB30
 FBRX Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_RV_AV_DB30
 FBRX Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_RV_TR
@@ -274,6 +278,8 @@ FBRX Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4
 FBRX Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_AV
 FBRX Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_QP
 FBRX Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_TR
+FBRX Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_TS
+FBRX Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_TS
 FBRX Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_TS
 FBRX Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_IT_QP
 FBRX Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB4_CS4_IT_QP_DB30

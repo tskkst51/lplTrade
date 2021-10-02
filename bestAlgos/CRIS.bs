@@ -1,4 +1,5 @@
 CRIS Gain: $ -0.6 Win %: 0 in 2 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_PM
+CRIS Gain: $ -0.6 Win %: 0 in 2 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_PM
 CRIS Gain: $ -0.6 Win %: 0 in 2 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_PM
 CRIS Gain: $ -0.31 Win %: 50.00 in 2 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_TR_QP_DB30
 CRIS Gain: $ -0.31 Win %: 50.00 in 2 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_TR_QP_DB30
@@ -48,6 +49,10 @@ CRIS Gain: $ 0.47 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5
 CRIS Gain: $ 0.47 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_HM_QP
 CRIS Gain: $ 0.47 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_QP
 CRIS Gain: $ 0.47 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_QP_IR5
+CRIS Gain: $ 0.53 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_TS
+CRIS Gain: $ 0.53 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_TS
+CRIS Gain: $ 0.53 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_TS
+CRIS Gain: $ 0.53 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_TS
 CRIS Gain: $ 0.6 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_RV_AV_DB30
 CRIS Gain: $ 0.6 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_RV_AV_DB30
 CRIS Gain: $ 0.63 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_HM_AV_DB30
@@ -150,6 +155,7 @@ CRIS Gain: $ 2.29 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_AO
 CRIS Gain: $ 2.29 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_IT
 CRIS Gain: $ 2.29 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_IT_QL
 CRIS Gain: $ 2.29 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_QL
+CRIS Gain: $ 2.29 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5
 CRIS Gain: $ 2.29 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5
 CRIS Gain: $ 2.29 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_AC
 CRIS Gain: $ 2.29 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_AO

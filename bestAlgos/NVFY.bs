@@ -1,3 +1,7 @@
+NVFY Gain: $ Win %: 66.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3
+NVFY Gain: $ Win %: 66.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3
+NVFY Gain: $ Win %: 66.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_IR3
+NVFY Gain: $ Win %: 66.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_RV
 NVFY Gain: $ -9.56 Win %: 0 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_HM_QP
 NVFY Gain: $ -9.42 Win %: 0 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_QP
 NVFY Gain: $ -9.19 Win %: 0 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_QP_IR3
@@ -72,11 +76,12 @@ NVFY Gain: $ -0.14 Win %: 66.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5
 NVFY Gain: $ -0.1 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_SS
 NVFY Gain: $ -0.02 Win %: 66.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_IT_QP_DB10
 NVFY Gain: $ -0.01 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_HM
-NVFY Gain: $ Win %: 66.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3
-NVFY Gain: $ Win %: 66.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_IR3
-NVFY Gain: $ Win %: 66.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_RV
+NVFY Gain: $ 0.31 Win %: 100.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_TS
 NVFY Gain: $ 0.33 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_IT_QL
 NVFY Gain: $ 0.33 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_QL
+NVFY Gain: $ 0.33 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_TS
+NVFY Gain: $ 0.33 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_TS
+NVFY Gain: $ 0.37 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_TS
 NVFY Gain: $ 0.42 Win %: 66.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_IT
 NVFY Gain: $ 0.59 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_AL
 NVFY Gain: $ 0.59 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB5_OS5_CB3_CS3_RV_AL
@@ -122,6 +127,7 @@ NVFY Gain: $ 1.65 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5
 NVFY Gain: $ 1.65 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_HM_AV
 NVFY Gain: $ 1.65 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_HM
 NVFY Gain: $ 1.65 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_HM_AV
+NVFY Gain: $ 1.69 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_IT
 NVFY Gain: $ 1.69 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_IT
 NVFY Gain: $ 1.75 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_HM
 NVFY Gain: $ 1.75 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_QL

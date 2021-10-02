@@ -43,6 +43,7 @@ GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_RV_AV
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_RV_TR
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_SS
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_TR
+GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_TS
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_AC
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_AL
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_AO
@@ -60,6 +61,7 @@ GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_RV_AV
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_RV_TR
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_SS
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_TR
+GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_TS
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_AC
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_AL
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_AO
@@ -77,6 +79,8 @@ GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_RV_AV
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_RV_TR
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_SS
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_TR
+GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_TS
+GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_AC
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_AL
@@ -95,6 +99,7 @@ GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_RV_AV
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_RV_TR
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_SS
 GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_TR
+GRU Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_TS
 GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_DB15
 GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_HM_AV_DB15
 GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_HM_QP_DB15
@@ -102,6 +107,7 @@ GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_HM_TR_
 GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_IR4
 GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_IT_QL_DB15
 GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_IT_QP_DB15
+GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_PM
 GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_PM
 GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_QP_IR4
 GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_QP_PM

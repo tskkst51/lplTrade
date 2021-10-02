@@ -16,6 +16,7 @@ BLFS Gain: $ -8.17 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_QP_IR1
 BLFS Gain: $ -6.69 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_HM
 BLFS Gain: $ -6.44 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1
 BLFS Gain: $ -6.44 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1
+BLFS Gain: $ -6.44 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1
 BLFS Gain: $ -6.44 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_AC
 BLFS Gain: $ -6.44 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_AC
 BLFS Gain: $ -6.44 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_AO
@@ -24,6 +25,7 @@ BLFS Gain: $ -6.44 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_AO_AC
 BLFS Gain: $ -6.44 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_AO_AC
 BLFS Gain: $ -6.44 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_RV
 BLFS Gain: $ -6.44 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_RV
+BLFS Gain: $ -6.44 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_TS
 BLFS Gain: $ -5.7 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_TR_QP_DB6
 BLFS Gain: $ -5.7 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_TR_QP_DB6
 BLFS Gain: $ -5.63 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_TR_QP
@@ -245,6 +247,8 @@ BLFS Gain: $ -0.36 Win %: 0 in 1 days with algo TB5_OC_QM_OB4_OS4_CB1_CS1_RV
 BLFS Gain: $ -0.36 Win %: 0 in 1 days with algo TB5_OC_QM_OB4_OS4_CB1_CS1_TS
 BLFS Gain: $ -0.36 Win %: 0 in 1 days with algo TB5_OC_QM_OB4_OS4_CB1_CS1_TS
 BLFS Gain: $ -0.36 Win %: 0 in 1 days with algo TB5_OC_QM_OB4_OS4_CB1_CS1_TS
+BLFS Gain: $ -0.36 Win %: 0 in 1 days with algo TB5_OC_QM_OB4_OS4_CB1_CS1_TS
+BLFS Gain: $ -0.36 Win %: 0 in 1 days with algo TB5_OC_QM_OB4_OS4_CB1_CS1_TS
 BLFS Gain: $ -0.35 Win %: 0 in 1 days with algo TB5_OC_QM_OB4_OS4_CB1_CS1_TR_IR1
 BLFS Gain: $ -0.34 Win %: 0 in 1 days with algo TB3_OC_QM_OB5_OS5_CB1_CS1_HM
 BLFS Gain: $ -0.34 Win %: 0 in 1 days with algo TB3_OC_QM_OB5_OS5_CB1_CS1_HM
@@ -279,6 +283,7 @@ BLFS Gain: $ -0.18 Win %: 0 in 1 days with algo TB3_OC_QM_OB5_OS5_CB1_CS1_LI
 BLFS Gain: $ -0.18 Win %: 0 in 1 days with algo TB3_OC_QM_OB5_OS5_CB1_CS1_LI
 BLFS Gain: $ -0.18 Win %: 0 in 1 days with algo TB3_OC_QM_OB5_OS5_CB1_CS1_QL
 BLFS Gain: $ -0.18 Win %: 0 in 1 days with algo TB3_OC_QM_OB5_OS5_CB1_CS1_SS
+BLFS Gain: $ -0.18 Win %: 0 in 1 days with algo TB3_OC_QM_OB5_OS5_CB1_CS1_TS
 BLFS Gain: $ -0.18 Win %: 0 in 1 days with algo TB3_OC_QM_OB5_OS5_CB1_CS1_TS
 BLFS Gain: $ -0.15 Win %: 0 in 1 days with algo TB5_OC_QM_OB4_OS4_CB1_CS1_HM_TR
 BLFS Gain: $ -0.15 Win %: 0 in 1 days with algo TB5_OC_QM_OB4_OS4_CB1_CS1_HM_TR
@@ -333,6 +338,7 @@ BLFS Gain: $ 1.17 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_AO
 BLFS Gain: $ 1.17 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_HM
 BLFS Gain: $ 1.17 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_HM
 BLFS Gain: $ 1.17 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_RV
+BLFS Gain: $ 1.19 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_TS
 BLFS Gain: $ 1.19 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_TS
 BLFS Gain: $ 1.22 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_IR5
 BLFS Gain: $ 1.22 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_IR5

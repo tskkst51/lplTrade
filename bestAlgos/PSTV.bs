@@ -47,6 +47,10 @@ PSTV Gain: $ -0.02 Win %: 0 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_RV_QP_
 PSTV Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_DB15
 PSTV Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_HM_TR_DB15
 PSTV Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_RV_TR_DB15
+PSTV Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_TS
+PSTV Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_TS
+PSTV Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_TS
+PSTV Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_TS
 PSTV Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_HM_AV_DB30
 PSTV Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_RV_AV_DB30
 PSTV Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_HM_AV_DB30
@@ -101,6 +105,7 @@ PSTV Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_AO
 PSTV Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_AO_AC
 PSTV Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_IR4
 PSTV Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_IT
+PSTV Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_IT
 PSTV Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_IT_QL
 PSTV Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_QL
 PSTV Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_RV
@@ -129,6 +134,7 @@ PSTV Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_IT
 PSTV Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_QL
 PSTV Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_RV
 PSTV Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_SS
+PSTV Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4
 PSTV Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4
 PSTV Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_AC
 PSTV Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_AO

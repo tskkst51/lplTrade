@@ -73,6 +73,7 @@ LODE Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_TR
 LODE Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_HM_QP_DB30
 LODE Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_IT_QP_DB30
 LODE Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_RV_QP_DB30
+LODE Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_TS
 LODE Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_AL
 LODE Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_AV
 LODE Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_HM_AV
@@ -133,6 +134,7 @@ LODE Gain: $ 1.35 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_HM
 LODE Gain: $ 1.35 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_QL
 LODE Gain: $ 1.35 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_RV
 LODE Gain: $ 1.39 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_PM
+LODE Gain: $ 1.39 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_PM
 LODE Gain: $ 1.39 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_VI
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_AC
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_AO
@@ -140,12 +142,15 @@ LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_AO
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_HM
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_IT
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_RV
+LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_TS
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_AC
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_AO
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_AO_AC
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_HM
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_IT
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_RV
+LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_TS
+LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_AC
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_AO
@@ -153,6 +158,7 @@ LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_AO
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_HM
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_IT
 LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_RV
+LODE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_TS
 LODE Gain: $ 1.62 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_PM
 LODE Gain: $ 1.62 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_PM
 LODE Gain: $ 1.63 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_VI

@@ -1,3 +1,4 @@
+AVXL Gain: $ Win %: 60.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_PM
 AVXL Gain: $ -21.3 Win %: 20.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_RV_AV
 AVXL Gain: $ -17.83 Win %: 20.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_AV
 AVXL Gain: $ -17.77 Win %: 20.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_AO_AC
@@ -49,8 +50,9 @@ AVXL Gain: $ -0.03 Win %: 60.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3
 AVXL Gain: $ -0.02 Win %: 40.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_AC
 AVXL Gain: $ -0.02 Win %: 80.00 in 5 days with algo TB4_HL_HI_QM_OB5_OS5_CB4_CS4_PM
 AVXL Gain: $ -0.02 Win %: 80.00 in 5 days with algo TB4_HL_HI_QM_OB5_OS5_CB4_CS4_QP_PM
-AVXL Gain: $ Win %: 60.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_PM
 AVXL Gain: $ 0.01 Win %: 80.00 in 5 days with algo TB4_HL_HI_QM_OB5_OS5_CB4_CS4_IT_QP_DB8
+AVXL Gain: $ 0.18 Win %: 60.00 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_TS
+AVXL Gain: $ 0.18 Win %: 60.00 in 5 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_TS
 AVXL Gain: $ 0.19 Win %: 60.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_TR_QP
 AVXL Gain: $ 0.32 Win %: 60.00 in 5 days with algo TB4_HL_HI_QM_OB5_OS5_CB4_CS4_TR_QP_DB8
 AVXL Gain: $ 0.35 Win %: 60.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_QP
@@ -60,8 +62,10 @@ AVXL Gain: $ 0.5 Win %: 60.00 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_DB8
 AVXL Gain: $ 0.5 Win %: 60.00 in 5 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_DB8
 AVXL Gain: $ 0.51 Win %: 60.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_TR_QP_DB15
 AVXL Gain: $ 0.7 Win %: 60.00 in 5 days with algo TB4_HL_HI_QM_OB5_OS5_CB4_CS4_VI
+AVXL Gain: $ 0.78 Win %: 80.00 in 5 days with algo TB4_HL_HI_QM_OB5_OS5_CB4_CS4_TS
 AVXL Gain: $ 0.95 Win %: 80.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_IT
 AVXL Gain: $ 1.22 Win %: 80.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_IT_QL
+AVXL Gain: $ 1.22 Win %: 80.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_TS
 AVXL Gain: $ 1.49 Win %: 60.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_HM_AV
 AVXL Gain: $ 1.82 Win %: 40.00 in 5 days with algo TB4_HL_HI_QM_OB5_OS5_CB4_CS4_AO_AC
 AVXL Gain: $ 1.83 Win %: 60.00 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_HM_TR
@@ -71,6 +75,7 @@ AVXL Gain: $ 1.89 Win %: 80.00 in 5 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_HM_
 AVXL Gain: $ 2.01 Win %: 80.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_IT_QL_DB15
 AVXL Gain: $ 2.07 Win %: 40.00 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_HM
 AVXL Gain: $ 2.07 Win %: 40.00 in 5 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_HM
+AVXL Gain: $ 2.1 Win %: 60.00 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_PM
 AVXL Gain: $ 2.1 Win %: 60.00 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_PM
 AVXL Gain: $ 2.1 Win %: 60.00 in 5 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_PM
 AVXL Gain: $ 2.43 Win %: 40.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_HM_AV_DB15
@@ -150,6 +155,7 @@ AVXL Gain: $ 9.78 Win %: 80.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_
 AVXL Gain: $ 9.95 Win %: 80.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_DB15
 AVXL Gain: $ 10.18 Win %: 60.00 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_RV_TR
 AVXL Gain: $ 10.18 Win %: 60.00 in 5 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_RV_TR
+AVXL Gain: $ 10.3 Win %: 80.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3
 AVXL Gain: $ 10.3 Win %: 80.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3
 AVXL Gain: $ 10.3 Win %: 80.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_SS
 AVXL Gain: $ 10.3 Win %: 80.00 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_RV

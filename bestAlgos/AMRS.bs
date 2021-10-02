@@ -72,6 +72,7 @@ AMRS Gain: $ -0.42 Win %: 0 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_TR_QP_
 AMRS Gain: $ -0.39 Win %: 0 in 1 days with algo TB1_PL_QM_OB2_OS2_CB3_CS3_VI
 AMRS Gain: $ -0.35 Win %: 0 in 1 days with algo TB1_PL_QM_OB1_OS1_CB3_CS3_VI
 AMRS Gain: $ -0.3 Win %: 0 in 1 days with algo TB1_PL_QM_OB1_OS1_CB3_CS3_PM
+AMRS Gain: $ -0.3 Win %: 0 in 1 days with algo TB1_PL_QM_OB1_OS1_CB3_CS3_PM
 AMRS Gain: $ -0.28 Win %: 0 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_IR5
 AMRS Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_RV_AL
 AMRS Gain: $ -0.2 Win %: 0 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_TR_IR5
@@ -101,6 +102,7 @@ AMRS Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB3_CS3_IT
 AMRS Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_QP_PM
 AMRS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB3_CS3_SS
 AMRS Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_VI
+AMRS Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_TS
 AMRS Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB3_CS3_HM_AV_DB30
 AMRS Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB3_CS3_RV_AL_DB30
 AMRS Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB3_CS3_RV_AV_DB30
@@ -150,6 +152,8 @@ AMRS Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB2_OS2_CB1_CS1_HM
 AMRS Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB2_OS2_CB1_CS1_QL
 AMRS Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB2_OS2_CB1_CS1_RV
 AMRS Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB2_OS2_CB1_CS1_SS
+AMRS Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB2_OS2_CB1_CS1_TS
+AMRS Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3
 AMRS Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3
 AMRS Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_AC
 AMRS Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_AO
@@ -157,5 +161,7 @@ AMRS Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_AO
 AMRS Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_IT
 AMRS Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_IT_QL
 AMRS Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_QL
+AMRS Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB3_CS3_TS
+AMRS Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB3_CS3_TS
 AMRS Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_HM_AV_DB30
 AMRS Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB3_CS3_RV_AV_DB30

@@ -1,3 +1,5 @@
+ACOR Gain: $ Win %: 50.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_RV_AV
+ACOR Gain: $ Win %: 50.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_RV_AV
 ACOR Gain: $ -6.84 Win %: 0 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_RV_QP
 ACOR Gain: $ -6.84 Win %: 0 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_RV_QP
 ACOR Gain: $ -5.88 Win %: 0 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_RV_QP_DB30
@@ -58,6 +60,7 @@ ACOR Gain: $ -0.55 Win %: 75.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_QP
 ACOR Gain: $ -0.36 Win %: 25.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_HM_TR_DB30
 ACOR Gain: $ -0.36 Win %: 25.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_RV_AV_DB8
 ACOR Gain: $ -0.31 Win %: 50.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_PM
+ACOR Gain: $ -0.31 Win %: 50.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_PM
 ACOR Gain: $ -0.3 Win %: 0 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_QP_IR2
 ACOR Gain: $ -0.28 Win %: 25.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_IT_QP
 ACOR Gain: $ -0.24 Win %: 25.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_HM_AV_DB30
@@ -67,8 +70,6 @@ ACOR Gain: $ -0.13 Win %: 50.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_RV
 ACOR Gain: $ -0.09 Win %: 25.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_HM_AV_DB8
 ACOR Gain: $ -0.03 Win %: 50.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_IT_QP
 ACOR Gain: $ 0 Win %: 100.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_QP_PM
-ACOR Gain: $ Win %: 50.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_RV_AV
-ACOR Gain: $ Win %: 50.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_RV_AV
 ACOR Gain: $ 0.05 Win %: 50.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_HM_AV
 ACOR Gain: $ 0.06 Win %: 50.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_RV_AL_DB30
 ACOR Gain: $ 0.07 Win %: 50.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_HM_AV
@@ -83,17 +84,21 @@ ACOR Gain: $ 0.25 Win %: 75.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_RV_
 ACOR Gain: $ 0.39 Win %: 50.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_RV_AL
 ACOR Gain: $ 0.39 Win %: 50.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_PM
 ACOR Gain: $ 0.39 Win %: 50.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_PM
+ACOR Gain: $ 0.4 Win %: 75.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_TS
 ACOR Gain: $ 0.4 Win %: 75.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_HM_TR_DB8
 ACOR Gain: $ 0.43 Win %: 50.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_AV
 ACOR Gain: $ 0.43 Win %: 50.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_AV
 ACOR Gain: $ 0.44 Win %: 50.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_AC
 ACOR Gain: $ 0.45 Win %: 75.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_RV_TR_DB8
+ACOR Gain: $ 0.54 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_TS
 ACOR Gain: $ 0.55 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_VI
 ACOR Gain: $ 0.57 Win %: 50.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_VI
 ACOR Gain: $ 0.57 Win %: 50.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_VI
 ACOR Gain: $ 0.58 Win %: 50.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_AV
 ACOR Gain: $ 0.58 Win %: 75.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_AL
 ACOR Gain: $ 0.58 Win %: 75.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_RV_AL
+ACOR Gain: $ 0.58 Win %: 100.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_TS
+ACOR Gain: $ 0.58 Win %: 100.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_TS
 ACOR Gain: $ 0.6 Win %: 75.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_AO_AC
 ACOR Gain: $ 0.64 Win %: 50.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_AL
 ACOR Gain: $ 0.67 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_HM_TR
@@ -113,10 +118,10 @@ ACOR Gain: $ 0.9 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_IT_
 ACOR Gain: $ 0.94 Win %: 75.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_LI
 ACOR Gain: $ 0.95 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_DB8
 ACOR Gain: $ 0.96 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_TR_IR2
-ACOR Gain: $ 0.98 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_RV_TR
-ACOR Gain: $ 0.98 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_TR
 ACOR Gain: $ 0.98 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_SS
 ACOR Gain: $ 0.98 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_SS
+ACOR Gain: $ 0.98 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_RV_TR
+ACOR Gain: $ 0.98 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_TR
 ACOR Gain: $ 0.99 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_PM
 ACOR Gain: $ 1 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_TR_IR5
 ACOR Gain: $ 1 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_TR_IR5
@@ -127,8 +132,8 @@ ACOR Gain: $ 1.02 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_TR
 ACOR Gain: $ 1.17 Win %: 75.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_TR_IR5
 ACOR Gain: $ 1.18 Win %: 75.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_HM
 ACOR Gain: $ 1.18 Win %: 75.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_HM_TR
-ACOR Gain: $ 1.19 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_IT
 ACOR Gain: $ 1.19 Win %: 75.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_IR5
+ACOR Gain: $ 1.19 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_IT
 ACOR Gain: $ 1.21 Win %: 75.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_TR
 ACOR Gain: $ 1.23 Win %: 75.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_IT
 ACOR Gain: $ 1.23 Win %: 75.00 in 4 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_IT_QL
@@ -149,6 +154,7 @@ ACOR Gain: $ 1.33 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_AC
 ACOR Gain: $ 1.33 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_AO
 ACOR Gain: $ 1.33 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_AO_AC
 ACOR Gain: $ 1.33 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_QL
+ACOR Gain: $ 1.33 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5
 ACOR Gain: $ 1.33 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5
 ACOR Gain: $ 1.33 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_AC
 ACOR Gain: $ 1.33 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_AO

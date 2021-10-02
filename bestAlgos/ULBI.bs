@@ -65,6 +65,7 @@ ULBI Gain: $ -0.64 Win %: 0 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_HM_QP_
 ULBI Gain: $ -0.64 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB4_OS4_CB2_CS2_HM
 ULBI Gain: $ -0.63 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB1_CS1_QP_IR1
 ULBI Gain: $ -0.59 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB4_OS4_CB2_CS2_IT
+ULBI Gain: $ -0.59 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB4_OS4_CB2_CS2_TS
 ULBI Gain: $ -0.58 Win %: 0 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_HM_QP
 ULBI Gain: $ -0.57 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB4_OS4_CB2_CS2_HM_QP_DB6
 ULBI Gain: $ -0.55 Win %: 0 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_TR_QP_DB6
@@ -79,7 +80,9 @@ ULBI Gain: $ -0.48 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB4_OS4_CB2_CS2_TR
 ULBI Gain: $ -0.47 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB4_OS4_CB2_CS2_QP
 ULBI Gain: $ -0.46 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB4_OS4_CB2_CS2_RV
 ULBI Gain: $ -0.45 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB1_CS1_IT
+ULBI Gain: $ -0.45 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB1_CS1_IT
 ULBI Gain: $ -0.45 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB1_CS1_RV
+ULBI Gain: $ -0.45 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB1_CS1_TS
 ULBI Gain: $ -0.45 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB4_OS4_CB2_CS2_RV_QP
 ULBI Gain: $ -0.43 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB3_CS3_IR1
 ULBI Gain: $ -0.42 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB1_CS1_HM
@@ -109,12 +112,12 @@ ULBI Gain: $ -0.02 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB1_CS1_HM
 ULBI Gain: $ -0.02 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB3_CS3_HM_AV
 ULBI Gain: $ -0.02 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_IT
 ULBI Gain: $ -0.01 Win %: 50.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB1_CS1_IT_QP
+ULBI Gain: $ 0 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_IR1
 ULBI Gain: $ 0 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB3_CS3_IT
 ULBI Gain: $ 0 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB3_CS3_IT_QL
 ULBI Gain: $ 0 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB3_CS3_IT_QP
 ULBI Gain: $ 0 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB4_OS4_CB2_CS2_IT_QP
 ULBI Gain: $ 0 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB4_OS4_CB2_CS2_QP_IR1
-ULBI Gain: $ 0 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_IR1
 ULBI Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_IT_QP_DB6
 ULBI Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_TR_IR1
 ULBI Gain: $ 0.02 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB1_CS1_IT_QP_DB6
@@ -132,9 +135,12 @@ ULBI Gain: $ 0.1 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB4_OS4_CB2_CS2_IR1
 ULBI Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_HM_AV_DB6
 ULBI Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB4_OS4_CB2_CS2_HM_AV
 ULBI Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_IT_QL_DB6
-ULBI Gain: $ 0.22 Win %: 100.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_DB6
 ULBI Gain: $ 0.22 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_LI
+ULBI Gain: $ 0.22 Win %: 100.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_DB6
+ULBI Gain: $ 0.22 Win %: 100.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_TS
+ULBI Gain: $ 0.25 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB3_CS3_TS
 ULBI Gain: $ 0.28 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB1_CS1_IR1
+ULBI Gain: $ 0.29 Win %: 100.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5
 ULBI Gain: $ 0.29 Win %: 100.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5
 ULBI Gain: $ 0.29 Win %: 100.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_QL
 ULBI Gain: $ 0.38 Win %: 100.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB5_CS5_HM_TR_DB6

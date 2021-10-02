@@ -92,10 +92,14 @@ SOS Gain: $ 0.11 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB4_OS4_CB5_CS5_IT_Q
 SOS Gain: $ 0.11 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB4_OS4_CB5_CS5_QL
 SOS Gain: $ 0.13 Win %: 50.00 in 2 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_RV_AL_DB30
 SOS Gain: $ 0.13 Win %: 50.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_RV_AL_DB30
-SOS Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_OO_QM_OB4_OS4_CB5_CS5_TR_QP
 SOS Gain: $ 0.15 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB4_OS4_CB5_CS5_HM_AV_DB30
 SOS Gain: $ 0.15 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB4_OS4_CB5_CS5_RV_AV_DB30
+SOS Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_TS
+SOS Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_TS
+SOS Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_OO_QM_OB4_OS4_CB5_CS5_TR_QP
+SOS Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB1_OO_QM_OB4_OS4_CB5_CS5_TS
 SOS Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_RV_TR
+SOS Gain: $ 0.25 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_TS
 SOS Gain: $ 0.26 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_TR_IR5
 SOS Gain: $ 0.36 Win %: 100.00 in 2 days with algo TB1_OO_QM_OB4_OS4_CB5_CS5_VI
 SOS Gain: $ 0.39 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_SS
@@ -126,6 +130,7 @@ SOS Gain: $ 0.73 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_SS
 SOS Gain: $ 0.73 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_AL
 SOS Gain: $ 0.75 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_LI
 SOS Gain: $ 0.76 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_IT
+SOS Gain: $ 0.76 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_IT
 SOS Gain: $ 0.76 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_IT_QL
 SOS Gain: $ 0.76 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_QL
 SOS Gain: $ 0.77 Win %: 100.00 in 2 days with algo TB1_OO_QM_OB4_OS4_CB5_CS5_IT
@@ -135,6 +140,7 @@ SOS Gain: $ 0.79 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_HM_
 SOS Gain: $ 0.89 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_IT
 SOS Gain: $ 0.89 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_IT_QL
 SOS Gain: $ 0.89 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_QL
+SOS Gain: $ 0.89 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3
 SOS Gain: $ 0.89 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3
 SOS Gain: $ 0.89 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_IT
 SOS Gain: $ 0.89 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_IT_QL

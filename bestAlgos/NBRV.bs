@@ -42,10 +42,14 @@ NBRV Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_IT
 NBRV Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_IT_QP_DB8
 NBRV Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_IT_QP
 NBRV Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_IT_QP_DB8
+NBRV Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_TS
+NBRV Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB5_CS5_TS
 NBRV Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_HM_AV_DB8
 NBRV Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_HM_TR_DB8
+NBRV Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_TS
 NBRV Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_HM_AV_DB8
 NBRV Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DB8
+NBRV Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_TS
 NBRV Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_HM
 NBRV Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_HM_AV
 NBRV Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_HM_TR
@@ -92,6 +96,7 @@ NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_AO
 NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_AO_AC
 NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_AV
 NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_IT
+NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_IT
 NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_IT_QL
 NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_QL
 NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_RV
@@ -130,6 +135,7 @@ NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_RV
 NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_SS
 NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_TR
 NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_TR_IR2
+NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5
 NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5
 NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_AC
 NBRV Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_AL

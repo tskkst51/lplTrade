@@ -36,7 +36,9 @@ OCX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_HM_
 OCX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_IT_QP_DB10
 OCX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_RV_QP_DB10
 OCX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_TR_QP_DB10
+OCX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_TS
 OCX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_HM_QP
+OCX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_TS
 OCX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB5_CS5_HM_QP
 OCX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB5_CS5_QP
 OCX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB5_CS5_QP_IR1
@@ -56,6 +58,8 @@ OCX Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB5_CS5_DB6
 OCX Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB5_CS5_TR_QP_DB6
 OCX Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_DB6
 OCX Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_TR_QP_DB6
+OCX Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB5_CS5_TS
+OCX Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_TS
 OCX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_HM_AV_DB10
 OCX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_HM_TR_DB10
 OCX Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_LI
@@ -92,6 +96,7 @@ OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_AO
 OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_AO_AC
 OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_AV
 OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_IR3
+OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_IT
 OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_IT
 OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_IT_QL
 OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB4_CS4_QL
@@ -134,6 +139,7 @@ OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB5_CS5_RV_T
 OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB5_CS5_SS
 OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB5_CS5_TR
 OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB5_CS5_TR_IR1
+OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5
 OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5
 OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_AC
 OCX Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_AL

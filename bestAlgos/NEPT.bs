@@ -68,6 +68,7 @@ NEPT Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB1_OS1_CB1_CS1
 NEPT Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB1_OS1_CB1_CS1_HM_QP
 NEPT Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB1_OS1_CB1_CS1_HM_QP_DB6
 NEPT Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB1_OS1_CB1_CS1_IT
+NEPT Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB1_OS1_CB1_CS1_IT
 NEPT Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB1_OS1_CB1_CS1_IT_QL
 NEPT Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB1_OS1_CB1_CS1_IT_QP_DB6
 NEPT Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB1_OS1_CB1_CS1_QP
@@ -126,6 +127,10 @@ NEPT Gain: $ 0.08 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB1_CS1
 NEPT Gain: $ 0.08 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB1_CS1_IT_QL_DB6
 NEPT Gain: $ 0.08 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB2_CS2_DB6
 NEPT Gain: $ 0.08 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB2_CS2_IT_QL_DB6
+NEPT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB1_OS1_CB1_CS1_TS
+NEPT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB1_OS1_CB2_CS2_TS
+NEPT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB1_CS1_TS
+NEPT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB2_CS2_TS
 NEPT Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB1_OS1_CB1_CS1_SS
 NEPT Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB1_OS1_CB2_CS2_SS
 NEPT Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB1_CS1_SS
@@ -145,6 +150,7 @@ NEPT Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB1_CS1
 NEPT Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB1_CS1_HM
 NEPT Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB1_CS1_QL
 NEPT Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB1_CS1_RV
+NEPT Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB2_CS2
 NEPT Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB2_CS2
 NEPT Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB2_CS2_AC
 NEPT Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB2_CS2_AO

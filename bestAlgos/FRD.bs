@@ -58,6 +58,7 @@ FRD Gain: $ -0.01 Win %: 0 in 1 days with algo TB3_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 FRD Gain: $ -0.01 Win %: 0 in 1 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_IT
 FRD Gain: $ -0.01 Win %: 0 in 1 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_IT_QL
 FRD Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB2_OS2_CB3_CS3_PM
+FRD Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB2_OS2_CB3_CS3_PM
 FRD Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB2_OS2_CB3_CS3_QP_PM
 FRD Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB3_OS3_CB3_CS3_PM
 FRD Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB3_OS3_CB3_CS3_QP_PM
@@ -67,8 +68,12 @@ FRD Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB2_OS2_CB3_CS3_
 FRD Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB2_OS2_CB3_CS3_IT_QL
 FRD Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB3_OS3_CB3_CS3_IT
 FRD Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB3_OS3_CB3_CS3_IT_QL
+FRD Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB1_OS1_CB5_CS5_TS
+FRD Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_TS
 FRD Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB1_OS1_CB5_CS5_HM_TR
 FRD Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_HM_TR
+FRD Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB2_OS2_CB3_CS3_TS
+FRD Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB3_OS3_CB3_CS3_TS
 FRD Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB3_OS3_CB3_CS3_LI
 FRD Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB2_EO_EC_QM_OB3_OS3_CB3_CS3_VI
 FRD Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB1_OS1_CB5_CS5_HM
@@ -148,6 +153,7 @@ FRD Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB1_OS1_CB5_CS5_RV_
 FRD Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB1_OS1_CB5_CS5_SS
 FRD Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB1_OS1_CB5_CS5_TR
 FRD Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB1_OS1_CB5_CS5_TR_IR3
+FRD Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5
 FRD Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5
 FRD Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_AC
 FRD Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_AO

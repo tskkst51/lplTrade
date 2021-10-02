@@ -109,11 +109,16 @@ NEE Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB3_CS3_TR
 NEE Gain: $ 0.81 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB4_CS4_IT
 NEE Gain: $ 0.81 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB4_CS4_IT_QL
 NEE Gain: $ 0.82 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB4_CS4_RV_AL
+NEE Gain: $ 0.82 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB4_CS4_TS
 NEE Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB2_CS2_RV_TR
 NEE Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB2_CS2_TR
+NEE Gain: $ 0.91 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB3_CS3_TS
 NEE Gain: $ 0.91 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB4_CS4_TR_QP
 NEE Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB3_CS3_IT
 NEE Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB3_CS3_IT_QL
+NEE Gain: $ 1.03 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB2_CS2_TS
+NEE Gain: $ 1.05 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB3_CS3_TS
+NEE Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB3_CS3_IT
 NEE Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB3_CS3_IT
 NEE Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB3_CS3_IT_QL
 NEE Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB3_CS3_RV_TR
@@ -148,6 +153,7 @@ NEE Gain: $ 1.87 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB4_CS4_SS
 NEE Gain: $ 1.88 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB3_CS3_HM
 NEE Gain: $ 1.88 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB3_CS3_QL
 NEE Gain: $ 1.88 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB3_CS3_RV
+NEE Gain: $ 1.91 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB2_CS2
 NEE Gain: $ 1.91 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB2_CS2
 NEE Gain: $ 1.91 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB2_CS2_HM
 NEE Gain: $ 1.91 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB4_OS4_CB2_CS2_QL

@@ -31,9 +31,13 @@ CNET Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB3_CS3
 CNET Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_PM
 CNET Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_PM
 CNET Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_IT_QP
+CNET Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_TS
 CNET Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_IT_QP
+CNET Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_TS
 CNET Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB1_OS1_CB3_CS3_IT_QP
 CNET Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB3_CS3_IT_QP
+CNET Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB1_OS1_CB3_CS3_TS
+CNET Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB3_CS3_TS
 CNET Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_HM_QP
 CNET Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_QP
 CNET Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_QP_IR4
@@ -64,6 +68,7 @@ CNET Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5
 CNET Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_RV_AL_DB15
 CNET Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_RV_AV_DB15
 CNET Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_RV_TR_DB15
+CNET Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB1_OS1_CB3_CS3_PM
 CNET Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB1_OS1_CB3_CS3_PM
 CNET Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB1_OS1_CB3_CS3_RV_AV_DB8
 CNET Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB3_CS3_PM
@@ -137,6 +142,7 @@ CNET Gain: $ 1.06 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5
 CNET Gain: $ 1.06 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_SS
 CNET Gain: $ 1.06 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_TR
 CNET Gain: $ 1.06 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_TR_IR4
+CNET Gain: $ 1.06 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5
 CNET Gain: $ 1.06 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5
 CNET Gain: $ 1.06 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_AC
 CNET Gain: $ 1.06 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_AL

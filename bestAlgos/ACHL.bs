@@ -45,9 +45,14 @@ ACHL Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB5_CS5_QP_PM
 ACHL Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_PM
 ACHL Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_QP_PM
 ACHL Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_PM
+ACHL Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_PM
 ACHL Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_QP_PM
 ACHL Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_PM
 ACHL Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_QP_PM
+ACHL Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB5_CS5_TS
+ACHL Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_TS
+ACHL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_TS
+ACHL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_TS
 ACHL Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB5_CS5_HM_AV_DB10
 ACHL Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB5_CS5_RV_AV_DB10
 ACHL Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_AV_DB10
@@ -143,6 +148,7 @@ ACHL Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB5_CS5_RV
 ACHL Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB5_CS5_RV_TR
 ACHL Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB5_CS5_TR
 ACHL Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB5_CS5_TR_IR3
+ACHL Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5
 ACHL Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5
 ACHL Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_AC
 ACHL Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_AL

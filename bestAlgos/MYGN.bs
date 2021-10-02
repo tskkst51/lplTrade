@@ -118,6 +118,10 @@ MYGN Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_RV
 MYGN Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_RV_TR_DB30
 MYGN Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_IT_QL_DB30
 MYGN Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_IT_QL_DB30
+MYGN Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_TS
+MYGN Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_TS
+MYGN Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_TS
+MYGN Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_TS
 MYGN Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_LI
 MYGN Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_LI
 MYGN Gain: $ 1.26 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_DB30
@@ -126,6 +130,7 @@ MYGN Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_IT
 MYGN Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 MYGN Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_IT
 MYGN Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_IT_QL
+MYGN Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_IT
 MYGN Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_IT
 MYGN Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_IT_QL
 MYGN Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_IT
@@ -145,6 +150,7 @@ MYGN Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_AO
 MYGN Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_HM
 MYGN Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_QL
 MYGN Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_RV
+MYGN Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5
 MYGN Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5
 MYGN Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_AC
 MYGN Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_AO

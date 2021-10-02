@@ -55,6 +55,7 @@ FITB Gain: $ 0.75 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_
 FITB Gain: $ 0.75 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_VI
 FITB Gain: $ 0.75 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_SS
 FITB Gain: $ 0.8 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_RV_QP_DB30
+FITB Gain: $ 0.86 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_TS
 FITB Gain: $ 0.87 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_HM_TR
 FITB Gain: $ 0.89 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_RV_TR_DB30
 FITB Gain: $ 0.89 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_RV_TR_DB30
@@ -87,6 +88,7 @@ FITB Gain: $ 1.22 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5
 FITB Gain: $ 1.22 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_IT
 FITB Gain: $ 1.22 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_IT_QL
 FITB Gain: $ 1.25 Win %: 100.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_IT
+FITB Gain: $ 1.25 Win %: 100.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_IT
 FITB Gain: $ 1.25 Win %: 100.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_IT_QL
 FITB Gain: $ 1.27 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_TR_QP_DB30
 FITB Gain: $ 1.27 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_TR_QP_DB30
@@ -101,11 +103,12 @@ FITB Gain: $ 1.32 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5
 FITB Gain: $ 1.32 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_TR_QP_DB30
 FITB Gain: $ 1.33 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_HM_AV_DB30
 FITB Gain: $ 1.38 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_RV_AV_DB30
+FITB Gain: $ 1.38 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_TS
 FITB Gain: $ 1.41 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_QP_DB30
 FITB Gain: $ 1.41 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_QP_DB30
-FITB Gain: $ 1.42 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_LI
 FITB Gain: $ 1.42 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_AL
 FITB Gain: $ 1.42 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_AL
+FITB Gain: $ 1.42 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_LI
 FITB Gain: $ 1.43 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_AV_DB30
 FITB Gain: $ 1.43 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_QP
 FITB Gain: $ 1.43 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_AV_DB30
@@ -117,8 +120,8 @@ FITB Gain: $ 1.47 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_
 FITB Gain: $ 1.47 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_HM_TR
 FITB Gain: $ 1.52 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_AO
 FITB Gain: $ 1.58 Win %: 100.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_AL
-FITB Gain: $ 1.59 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_HM
 FITB Gain: $ 1.59 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_RV_AL
+FITB Gain: $ 1.59 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_HM
 FITB Gain: $ 1.61 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_HM_TR_DB30
 FITB Gain: $ 1.63 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_RV_TR_DB30
 FITB Gain: $ 1.63 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_RV_TR_DB30
@@ -143,12 +146,15 @@ FITB Gain: $ 1.89 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5
 FITB Gain: $ 1.89 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
 FITB Gain: $ 1.92 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_AL_DB30
 FITB Gain: $ 1.92 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_AL_DB30
+FITB Gain: $ 1.93 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_TS
+FITB Gain: $ 1.93 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_TS
 FITB Gain: $ 1.98 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_AO
 FITB Gain: $ 2 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_HM
 FITB Gain: $ 2 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_HM
 FITB Gain: $ 2.06 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_RV_AL
 FITB Gain: $ 2.09 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_RV
 FITB Gain: $ 2.14 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_QL
+FITB Gain: $ 2.14 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5
 FITB Gain: $ 2.14 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5
 FITB Gain: $ 2.14 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_QL
 FITB Gain: $ 2.45 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_AL

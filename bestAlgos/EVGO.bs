@@ -99,6 +99,10 @@ EVGO Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_HM
 EVGO Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_RV_AV
 EVGO Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_TR_IR5
 EVGO Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_VI
+EVGO Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_TS
+EVGO Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_TS
+EVGO Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_TS
+EVGO Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_TS
 EVGO Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_IT
 EVGO Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_IT_QL
 EVGO Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_LI
@@ -120,6 +124,7 @@ EVGO Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_AO
 EVGO Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_AO_AC
 EVGO Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_HM
 EVGO Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_IR2
+EVGO Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_IT
 EVGO Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_IT
 EVGO Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_IT_QL
 EVGO Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_QL
@@ -144,6 +149,7 @@ EVGO Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_IT
 EVGO Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_IT_QL
 EVGO Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_QL
 EVGO Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_RV
+EVGO Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5
 EVGO Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5
 EVGO Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_AC
 EVGO Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_AO

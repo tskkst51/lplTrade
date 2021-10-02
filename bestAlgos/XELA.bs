@@ -1,3 +1,6 @@
+XELA Gain: $ Win %: 50.00 in 6 days with algo TB1_OC_QM_OB4_OS4_CB2_CS2_AC
+XELA Gain: $ Win %: 50.00 in 6 days with algo TB1_OC_QM_OB4_OS4_CB2_CS2_QL
+XELA Gain: $ Win %: 50.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_TR_DB8
 XELA Gain: $ -4.94 Win %: 16.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM_QP
 XELA Gain: $ -4.93 Win %: 16.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_QP
 XELA Gain: $ -4.88 Win %: 16.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_QP
@@ -26,6 +29,7 @@ XELA Gain: $ -1.16 Win %: 0 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_TR_QP_
 XELA Gain: $ -1.16 Win %: 0 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TR_QP_DB6
 XELA Gain: $ -1.15 Win %: 33.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_HM_QP
 XELA Gain: $ -1.13 Win %: 33.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3
+XELA Gain: $ -1.13 Win %: 33.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3
 XELA Gain: $ -1.13 Win %: 33.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_AO
 XELA Gain: $ -1.13 Win %: 33.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_AO_AC
 XELA Gain: $ -1.08 Win %: 16.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_TR_QP
@@ -36,6 +40,7 @@ XELA Gain: $ -0.94 Win %: 50.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_IT
 XELA Gain: $ -0.94 Win %: 50.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_IT_QP
 XELA Gain: $ -0.91 Win %: 33.00 in 6 days with algo TB1_OC_QM_OB4_OS4_CB2_CS2_RV_TR
 XELA Gain: $ -0.87 Win %: 16.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_TR
+XELA Gain: $ -0.86 Win %: 50.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_TS
 XELA Gain: $ -0.84 Win %: 50.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_SS
 XELA Gain: $ -0.84 Win %: 50.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_IT_QP
 XELA Gain: $ -0.79 Win %: 0 in 6 days with algo TB1_OC_QM_OB4_OS4_CB2_CS2_TR_IR5
@@ -90,10 +95,8 @@ XELA Gain: $ -0.14 Win %: 66.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_VI
 XELA Gain: $ -0.08 Win %: 33.00 in 6 days with algo TB1_OC_QM_OB4_OS4_CB2_CS2_RV
 XELA Gain: $ -0.07 Win %: 33.00 in 6 days with algo TB1_OC_QM_OB4_OS4_CB2_CS2_AL
 XELA Gain: $ 0 Win %: 66.00 in 6 days with algo TB1_OC_QM_OB4_OS4_CB2_CS2_VI
-XELA Gain: $ Win %: 50.00 in 6 days with algo TB1_OC_QM_OB4_OS4_CB2_CS2_AC
-XELA Gain: $ Win %: 50.00 in 6 days with algo TB1_OC_QM_OB4_OS4_CB2_CS2_QL
-XELA Gain: $ Win %: 50.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_TR_DB8
 XELA Gain: $ 0.01 Win %: 66.00 in 6 days with algo TB1_OC_QM_OB4_OS4_CB2_CS2_RV_AV
+XELA Gain: $ 0.02 Win %: 50.00 in 6 days with algo TB1_OC_QM_OB4_OS4_CB2_CS2_TS
 XELA Gain: $ 0.04 Win %: 50.00 in 6 days with algo TB1_OC_QM_OB4_OS4_CB2_CS2_TR_QP
 XELA Gain: $ 0.06 Win %: 50.00 in 6 days with algo TB1_OC_QM_OB4_OS4_CB2_CS2_RV_AL
 XELA Gain: $ 0.13 Win %: 66.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_IR2
@@ -114,6 +117,8 @@ XELA Gain: $ 0.47 Win %: 66.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_RV_
 XELA Gain: $ 0.47 Win %: 66.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_RV_AV
 XELA Gain: $ 0.49 Win %: 66.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TR
 XELA Gain: $ 0.51 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_SS
+XELA Gain: $ 0.53 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_TS
+XELA Gain: $ 0.53 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TS
 XELA Gain: $ 0.56 Win %: 66.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_IT_QL
 XELA Gain: $ 0.56 Win %: 66.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_QL
 XELA Gain: $ 0.56 Win %: 66.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_IT_QL
@@ -125,8 +130,8 @@ XELA Gain: $ 0.62 Win %: 83.00 in 6 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_
 XELA Gain: $ 0.68 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_RV_AL
 XELA Gain: $ 0.75 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_RV_AL
 XELA Gain: $ 0.81 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_DB6
-XELA Gain: $ 0.84 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_AV
 XELA Gain: $ 0.84 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_HM_TR_DB6
+XELA Gain: $ 0.84 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_AV
 XELA Gain: $ 0.89 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_HM_TR
 XELA Gain: $ 0.9 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_RV_TR_DB6
 XELA Gain: $ 0.92 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_HM_TR
@@ -138,14 +143,15 @@ XELA Gain: $ 0.96 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_RV_
 XELA Gain: $ 0.96 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_RV_TR_DB6
 XELA Gain: $ 0.96 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_RV_TR_DB6
 XELA Gain: $ 0.97 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_HM
-XELA Gain: $ 0.99 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_IR1
 XELA Gain: $ 0.99 Win %: 66.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_TR_IR1
 XELA Gain: $ 0.99 Win %: 66.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TR_IR1
+XELA Gain: $ 0.99 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_IR1
 XELA Gain: $ 1 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_RV_TR
 XELA Gain: $ 1 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_RV_TR
 XELA Gain: $ 1.03 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_AC
 XELA Gain: $ 1.03 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_AO
 XELA Gain: $ 1.03 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_AO_AC
+XELA Gain: $ 1.03 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_IT
 XELA Gain: $ 1.03 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_IT
 XELA Gain: $ 1.03 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_AC
 XELA Gain: $ 1.03 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_AO

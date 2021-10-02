@@ -40,10 +40,12 @@ VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB1_CS1_AO_AC
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB1_CS1_HM
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB1_CS1_IR4
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB1_CS1_IT
+VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB1_CS1_IT
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB1_CS1_IT_QL
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB1_CS1_LI
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB1_CS1_QL
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB1_CS1_RV
+VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB1_CS1_TS
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB1_CS1_VI
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB2_CS2_AC
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB2_CS2_AO
@@ -55,6 +57,7 @@ VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB2_CS2_IT_QL
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB2_CS2_LI
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB2_CS2_QL
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB2_CS2_RV
+VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB2_CS2_TS
 VCAR Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB2_CS2_VI
 VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB1_CS1_AV
 VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB1_CS1_DB15
@@ -105,7 +108,9 @@ VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB1_CS1_RV_AV
 VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB1_CS1_RV_QP_DB15
 VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB1_CS1_RV_TR_DB15
 VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB1_CS1_TR_QP_DB15
+VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB1_CS1_TS
 VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB1_CS1_VI
+VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2
 VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2
 VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_AC
 VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_AO
@@ -128,6 +133,7 @@ VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_RV_AV
 VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_RV_QP_DB15
 VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_RV_TR_DB15
 VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_TR_QP_DB15
+VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_TS
 VCAR Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_VI
 VCAR Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB1_CS1_HM_QP
 VCAR Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB1_CS1_IT_QP

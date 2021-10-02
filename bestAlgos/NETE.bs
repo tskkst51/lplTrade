@@ -82,6 +82,10 @@ NETE Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1
 NETE Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB2_CS2_IT_QP
 NETE Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1_IT_QP
 NETE Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_IT_QP
+NETE Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_TS
+NETE Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB2_CS2_TS
+NETE Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1_TS
+NETE Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_TS
 NETE Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_AC
 NETE Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB2_CS2_AC
 NETE Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1_AC
@@ -128,6 +132,7 @@ NETE Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1
 NETE Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_LI
 NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_HM_AV
 NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_IT
+NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_IT
 NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_RV
 NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_SS
 NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB2_CS2_HM_AV
@@ -138,6 +143,7 @@ NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1
 NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1_IT
 NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1_RV
 NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1_SS
+NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2
 NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2
 NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_HM_AV
 NETE Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_IT

@@ -42,6 +42,10 @@ SLGG Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_IT
 SLGG Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_IT_QP_DB15
 SLGG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_IT_QP
 SLGG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_IT_QP
+SLGG Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_TS
+SLGG Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_TS
+SLGG Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_TS
+SLGG Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_TS
 SLGG Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_HM_QP
 SLGG Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_IT_QP
 SLGG Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_QP
@@ -110,6 +114,7 @@ SLGG Gain: $ 0.93 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_AO
 SLGG Gain: $ 0.93 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_HM
 SLGG Gain: $ 0.93 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_IR4
 SLGG Gain: $ 0.93 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_IT
+SLGG Gain: $ 0.93 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_IT
 SLGG Gain: $ 0.93 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_IT_QL
 SLGG Gain: $ 0.93 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_QL
 SLGG Gain: $ 0.93 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_RV
@@ -137,6 +142,7 @@ SLGG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_IT
 SLGG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_IT_QL
 SLGG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_QL
 SLGG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_RV
+SLGG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4
 SLGG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4
 SLGG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_AC
 SLGG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_AO

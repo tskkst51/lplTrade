@@ -35,6 +35,7 @@ BTWN Gain: $ -2.12 Win %: 0 in 1 days with algo TB1_HI_QM_OB1_OS1_CB2_CS2_TR_QP
 BTWN Gain: $ -2.12 Win %: 0 in 1 days with algo TB1_HI_QM_OB2_OS2_CB1_CS1_TR_QP
 BTWN Gain: $ -2.12 Win %: 0 in 1 days with algo TB1_HI_QM_OB2_OS2_CB2_CS2_TR_QP
 BTWN Gain: $ -2.04 Win %: 0 in 1 days with algo TB1_HI_QM_OB1_OS1_CB1_CS1_PM
+BTWN Gain: $ -2.04 Win %: 0 in 1 days with algo TB1_HI_QM_OB1_OS1_CB1_CS1_PM
 BTWN Gain: $ -2.04 Win %: 0 in 1 days with algo TB1_HI_QM_OB1_OS1_CB2_CS2_PM
 BTWN Gain: $ -2.04 Win %: 0 in 1 days with algo TB1_HI_QM_OB2_OS2_CB1_CS1_PM
 BTWN Gain: $ -2.04 Win %: 0 in 1 days with algo TB1_HI_QM_OB2_OS2_CB2_CS2_PM
@@ -86,6 +87,10 @@ BTWN Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB1_CS1_IT
 BTWN Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB2_CS2_IT_QP
 BTWN Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB1_CS1_IT_QP
 BTWN Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB2_CS2_IT_QP
+BTWN Gain: $ 0.54 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB1_CS1_TS
+BTWN Gain: $ 0.54 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB2_CS2_TS
+BTWN Gain: $ 0.54 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB1_CS1_TS
+BTWN Gain: $ 0.54 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB2_CS2_TS
 BTWN Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB1_CS1_AV
 BTWN Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB1_CS1_HM_AV
 BTWN Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB1_CS1_RV_AV
@@ -135,6 +140,7 @@ BTWN Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB1_CS1_QL
 BTWN Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB1_CS1_RV
 BTWN Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB1_CS1_RV_TR
 BTWN Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB1_CS1_TR
+BTWN Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB2_CS2
 BTWN Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB2_CS2
 BTWN Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB2_CS2_AC
 BTWN Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB2_CS2_AO

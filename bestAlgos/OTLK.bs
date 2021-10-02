@@ -50,6 +50,10 @@ OTLK Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_IT_QP
 OTLK Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_IT_QP
 OTLK Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_IT_QP
 OTLK Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_IT_QP
+OTLK Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_TS
+OTLK Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_TS
+OTLK Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_TS
+OTLK Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_TS
 OTLK Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_HM_AV_DB30
 OTLK Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_HM_AV_DB30
 OTLK Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_HM_TR_DB30
@@ -97,6 +101,7 @@ OTLK Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_LI
 OTLK Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_AL
 OTLK Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_AV
 OTLK Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_IT
+OTLK Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_IT
 OTLK Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_IT_QL
 OTLK Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_QL
 OTLK Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_RV
@@ -129,6 +134,7 @@ OTLK Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_RV
 OTLK Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_SS
 OTLK Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_TR
 OTLK Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_TR_IR5
+OTLK Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5
 OTLK Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5
 OTLK Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_AL
 OTLK Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_AV

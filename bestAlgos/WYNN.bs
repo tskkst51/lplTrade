@@ -40,6 +40,7 @@ WYNN Gain: $ -1.29 Win %: 33.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_HM
 WYNN Gain: $ -1.26 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_QP
 WYNN Gain: $ -1 Win %: 33.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_LI
 WYNN Gain: $ -0.76 Win %: 33.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_RV_AV
+WYNN Gain: $ -0.71 Win %: 33.00 in 3 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_TS
 WYNN Gain: $ -0.43 Win %: 33.00 in 3 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_RV_AV
 WYNN Gain: $ -0.42 Win %: 33.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_VI
 WYNN Gain: $ -0.33 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_RV
@@ -60,8 +61,8 @@ WYNN Gain: $ 0.13 Win %: 33.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_HM_
 WYNN Gain: $ 0.16 Win %: 66.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_HM_AV
 WYNN Gain: $ 0.26 Win %: 33.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_VI
 WYNN Gain: $ 0.3 Win %: 33.00 in 3 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_AL
-WYNN Gain: $ 0.35 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_IT_QP
 WYNN Gain: $ 0.35 Win %: 66.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_IT_QP_DB10
+WYNN Gain: $ 0.35 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_IT_QP
 WYNN Gain: $ 0.36 Win %: 33.00 in 3 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_LI
 WYNN Gain: $ 0.39 Win %: 66.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_IT_QP_DB10
 WYNN Gain: $ 0.4 Win %: 66.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_IT_QP
@@ -80,6 +81,8 @@ WYNN Gain: $ 0.64 Win %: 33.00 in 3 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_
 WYNN Gain: $ 0.67 Win %: 33.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_RV_AL
 WYNN Gain: $ 0.7 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_HM_TR_DB6
 WYNN Gain: $ 0.71 Win %: 66.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_RV_AL_DB10
+WYNN Gain: $ 0.81 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_TS
+WYNN Gain: $ 0.86 Win %: 33.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_TS
 WYNN Gain: $ 0.87 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_TR_QP_DB6
 WYNN Gain: $ 0.9 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_LI
 WYNN Gain: $ 0.92 Win %: 66.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_HM
@@ -90,6 +93,7 @@ WYNN Gain: $ 1.02 Win %: 33.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_IT_
 WYNN Gain: $ 1.08 Win %: 66.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_RV_AV_DB10
 WYNN Gain: $ 1.1 Win %: 33.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_IR3
 WYNN Gain: $ 1.1 Win %: 33.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_TR_IR3
+WYNN Gain: $ 1.14 Win %: 66.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_TS
 WYNN Gain: $ 1.17 Win %: 33.00 in 3 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_TR
 WYNN Gain: $ 1.17 Win %: 33.00 in 3 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_TR_IR3
 WYNN Gain: $ 1.24 Win %: 66.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_HM_QP
@@ -128,6 +132,7 @@ WYNN Gain: $ 2.93 Win %: 66.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_HM_
 WYNN Gain: $ 3.09 Win %: 66.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_RV_QP
 WYNN Gain: $ 3.11 Win %: 66.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_QP
 WYNN Gain: $ 3.18 Win %: 33.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5
+WYNN Gain: $ 3.18 Win %: 33.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5
 WYNN Gain: $ 3.18 Win %: 33.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_AC
 WYNN Gain: $ 3.18 Win %: 33.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_AO
 WYNN Gain: $ 3.18 Win %: 33.00 in 3 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_AO_AC
@@ -144,6 +149,7 @@ WYNN Gain: $ 3.65 Win %: 66.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_IT_
 WYNN Gain: $ 3.67 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_AC
 WYNN Gain: $ 3.67 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_AO
 WYNN Gain: $ 3.67 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_AO_AC
+WYNN Gain: $ 3.67 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_IT
 WYNN Gain: $ 3.67 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_IT
 WYNN Gain: $ 3.67 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_IT_QL
 WYNN Gain: $ 3.67 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_QL

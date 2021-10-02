@@ -23,6 +23,7 @@ CAI Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_IT_
 CAI Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_IT_QP_DB10
 CAI Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_IT_QP_DB10
 CAI Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_PM
+CAI Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_PM
 CAI Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_PM
 CAI Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_PM
 CAI Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_PM
@@ -140,18 +141,22 @@ CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_AO_
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_QL
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_RV
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_SS
+CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_TS
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_AC
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_AO
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_AO_AC
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_QL
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_RV
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_SS
+CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_TS
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_AC
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_AO
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_AO_AC
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_QL
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_RV
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_SS
+CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_TS
+CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_AC
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_AO
@@ -159,3 +164,4 @@ CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_AO_
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_QL
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_RV
 CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_SS
+CAI Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_TS

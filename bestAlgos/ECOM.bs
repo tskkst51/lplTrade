@@ -43,6 +43,7 @@ ECOM Gain: $ -0.52 Win %: 0 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_TR_QP_
 ECOM Gain: $ -0.52 Win %: 0 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_IT_QP_DB8
 ECOM Gain: $ -0.52 Win %: 0 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_TR_QP_DB8
 ECOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_PM
+ECOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_PM
 ECOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_QP_PM
 ECOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_PM
 ECOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_QP_PM
@@ -50,6 +51,10 @@ ECOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_PM
 ECOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_QP_PM
 ECOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_PM
 ECOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_QP_PM
+ECOM Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_TS
+ECOM Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_TS
+ECOM Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_TS
+ECOM Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_TS
 ECOM Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_RV
 ECOM Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_RV
 ECOM Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_RV
@@ -127,6 +132,7 @@ ECOM Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_RV
 ECOM Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_RV_TR
 ECOM Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_TR
 ECOM Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_TR_IR2
+ECOM Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5
 ECOM Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5
 ECOM Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_AC
 ECOM Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_AL

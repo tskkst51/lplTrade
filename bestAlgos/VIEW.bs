@@ -112,10 +112,12 @@ VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4
 VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_AO_AC
 VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_HM
 VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_IT
+VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_IT
 VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_IT_QL
 VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_QL
 VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_RV
 VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_SS
+VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_TS
 VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB4_OS4_CB4_CS4_AC
 VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB4_OS4_CB4_CS4_AO
 VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB4_OS4_CB4_CS4_AO_AC
@@ -125,6 +127,9 @@ VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB4_OS4_CB4_CS4
 VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB4_OS4_CB4_CS4_QL
 VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB4_OS4_CB4_CS4_RV
 VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB4_OS4_CB4_CS4_SS
+VIEW Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB4_OS4_CB4_CS4_TS
+VIEW Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB4_CS4_TS
+VIEW Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB4_CS4_TS
 VIEW Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB4_OS4_CB4_CS4_VI
 VIEW Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB4_CS4_AC
 VIEW Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB4_CS4_AO
@@ -133,6 +138,7 @@ VIEW Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB4_CS4_
 VIEW Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB4_CS4_QL
 VIEW Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB4_CS4_RV
 VIEW Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB4_CS4_SS
+VIEW Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB4_CS4
 VIEW Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB4_CS4
 VIEW Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB4_CS4_AC
 VIEW Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB4_CS4_AO

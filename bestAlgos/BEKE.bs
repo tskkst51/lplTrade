@@ -68,6 +68,7 @@ BEKE Gain: $ -0.14 Win %: 0 in 1 days with algo TB1_HS_QM_OB2_OS2_CB3_CS3_TR
 BEKE Gain: $ -0.13 Win %: 0 in 1 days with algo TB1_HS_QM_OB2_OS2_CB3_CS3_QP_IR5
 BEKE Gain: $ -0.12 Win %: 0 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_RV_QP_DB8
 BEKE Gain: $ -0.09 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_PM
+BEKE Gain: $ -0.09 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_PM
 BEKE Gain: $ -0.07 Win %: 0 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_RV_QP
 BEKE Gain: $ -0.06 Win %: 0 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_RV_AL
 BEKE Gain: $ -0.04 Win %: 0 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_RV_AL_DB8
@@ -112,10 +113,14 @@ BEKE Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3
 BEKE Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_HM_TR
 BEKE Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_TR
 BEKE Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_TR_QP
+BEKE Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_TS
+BEKE Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3_TS
+BEKE Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_TS
 BEKE Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_AV
 BEKE Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_HM_AV
 BEKE Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_HM_TR
 BEKE Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_TR
+BEKE Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB3_CS3_TS
 BEKE Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_AV
 BEKE Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_RV_AV
 BEKE Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_RV_AV_DB30
@@ -154,6 +159,7 @@ BEKE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_AO
 BEKE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_AO_AC
 BEKE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_IT_QL
 BEKE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_QL
+BEKE Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB3_CS3
 BEKE Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB3_CS3
 BEKE Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB3_CS3_AC
 BEKE Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB3_CS3_AO

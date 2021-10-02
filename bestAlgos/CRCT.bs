@@ -115,11 +115,16 @@ CRCT Gain: $ -0.56 Win %: 0 in 1 days with algo TB4_HI_QM_OB1_OS1_CB1_CS1_SS
 CRCT Gain: $ -0.56 Win %: 0 in 1 days with algo TB4_HI_QM_OB1_OS1_CB2_CS2_SS
 CRCT Gain: $ -0.56 Win %: 0 in 1 days with algo TB4_HI_QM_OB2_OS2_CB1_CS1_SS
 CRCT Gain: $ -0.56 Win %: 0 in 1 days with algo TB4_HI_QM_OB2_OS2_CB2_CS2_SS
+CRCT Gain: $ 1.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB1_CS1_TS
+CRCT Gain: $ 1.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB2_CS2_TS
+CRCT Gain: $ 1.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB1_CS1_TS
+CRCT Gain: $ 1.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB2_CS2_TS
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB1_CS1_AC
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB1_CS1_AO
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB1_CS1_AO_AC
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB1_CS1_HM
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB1_CS1_IR2
+CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB1_CS1_IT
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB1_CS1_IT
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB1_CS1_IT_QL
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB1_CS1_QL
@@ -141,6 +146,7 @@ CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB1_CS1_IT
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB1_CS1_IT_QL
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB1_CS1_QL
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB1_CS1_RV
+CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB2_CS2
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB2_CS2
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB2_CS2_AC
 CRCT Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB2_CS2_AO

@@ -44,6 +44,7 @@ AEMD Gain: $ -0.41 Win %: 0 in 2 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_IT_QP_
 AEMD Gain: $ -0.41 Win %: 0 in 2 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_RV_QP_DB6
 AEMD Gain: $ -0.4 Win %: 0 in 2 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_RV_QP
 AEMD Gain: $ -0.38 Win %: 0 in 2 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_TR_QP_DB6
+AEMD Gain: $ -0.38 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_TS
 AEMD Gain: $ -0.36 Win %: 0 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_SS
 AEMD Gain: $ -0.34 Win %: 0 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_RV_AL_DB6
 AEMD Gain: $ -0.33 Win %: 0 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_RV_AL_DB6
@@ -66,9 +67,13 @@ AEMD Gain: $ -0.28 Win %: 0 in 2 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_SS
 AEMD Gain: $ -0.28 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_DB6
 AEMD Gain: $ -0.27 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_IR1
 AEMD Gain: $ -0.27 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_PM
+AEMD Gain: $ -0.27 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_PM
 AEMD Gain: $ -0.26 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_RV_AV_DB6
 AEMD Gain: $ -0.25 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_RV_AV_DB6
+AEMD Gain: $ -0.25 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_TS
 AEMD Gain: $ -0.25 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB3_CS3_RV_AV_DB6
+AEMD Gain: $ -0.25 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB3_CS3_TS
+AEMD Gain: $ -0.25 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_TS
 AEMD Gain: $ -0.23 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_RV_AV
 AEMD Gain: $ -0.23 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB3_CS3_RV_AV
 AEMD Gain: $ -0.23 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_RV_AV
@@ -89,6 +94,7 @@ AEMD Gain: $ -0.17 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB3_CS3_HM
 AEMD Gain: $ -0.17 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB3_CS3_IT
 AEMD Gain: $ -0.17 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB3_CS3_IT_QL_DB6
 AEMD Gain: $ -0.17 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB3_CS3_RV
+AEMD Gain: $ -0.17 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3
 AEMD Gain: $ -0.17 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3
 AEMD Gain: $ -0.17 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_AC
 AEMD Gain: $ -0.17 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_AO

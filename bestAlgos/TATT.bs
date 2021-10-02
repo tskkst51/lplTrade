@@ -35,6 +35,7 @@ TATT Gain: $ -3.13 Win %: 0 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB5_CS5_RV_
 TATT Gain: $ -3.13 Win %: 33.00 in 3 days with algo TB2_EO_EC_QM_OB1_OS1_CB5_CS5_IT_QP_DB15
 TATT Gain: $ -3.13 Win %: 33.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB5_CS5_IT_QP_DB15
 TATT Gain: $ -2.77 Win %: 33.00 in 3 days with algo TB2_EO_EC_QM_OB1_OS1_CB5_CS5_PM
+TATT Gain: $ -2.77 Win %: 33.00 in 3 days with algo TB2_EO_EC_QM_OB1_OS1_CB5_CS5_PM
 TATT Gain: $ -2.77 Win %: 33.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB5_CS5_PM
 TATT Gain: $ -2.72 Win %: 0 in 3 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_IT_QP_DB15
 TATT Gain: $ -2.72 Win %: 0 in 3 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5_IT_QP_DB15
@@ -80,6 +81,10 @@ TATT Gain: $ 0.4 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB1_OS1_CB5_CS5_R
 TATT Gain: $ 0.4 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB5_CS5_RV_AV_DB15
 TATT Gain: $ 0.4 Win %: 66.00 in 3 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_RV_AV_DB15
 TATT Gain: $ 0.4 Win %: 66.00 in 3 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5_RV_AV_DB15
+TATT Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB1_OS1_CB5_CS5_TS
+TATT Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB5_CS5_TS
+TATT Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_TS
+TATT Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5_TS
 TATT Gain: $ 0.81 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB1_OS1_CB5_CS5_RV_TR_DB15
 TATT Gain: $ 0.81 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB5_CS5_RV_TR_DB15
 TATT Gain: $ 0.81 Win %: 66.00 in 3 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_RV_TR_DB15
@@ -142,6 +147,7 @@ TATT Gain: $ 1.92 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_IT
 TATT Gain: $ 1.92 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_IT_QL
 TATT Gain: $ 1.92 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_QL
 TATT Gain: $ 1.92 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_TR
+TATT Gain: $ 1.92 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5
 TATT Gain: $ 1.92 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5
 TATT Gain: $ 1.92 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5_AC
 TATT Gain: $ 1.92 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5_AL

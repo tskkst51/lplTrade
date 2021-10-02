@@ -122,8 +122,12 @@ CSCW Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_QP
 CSCW Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_QP_PM
 CSCW Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_QP_PM
 CSCW Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_QP_PM
+CSCW Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_TS
+CSCW Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_TS
+CSCW Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_TS
 CSCW Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_VI
 CSCW Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_VI
+CSCW Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_TS
 CSCW Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_VI
 CSCW Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_VI
 CSCW Gain: $ 0.21 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_HM_QP
@@ -270,6 +274,7 @@ CSCW Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_TR
 CSCW Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_TR
 CSCW Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5
 CSCW Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5
+CSCW Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5
 CSCW Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_AC
 CSCW Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_AC
 CSCW Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_AL
@@ -304,6 +309,7 @@ CSCW Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_SS
 CSCW Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_SS
 CSCW Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_TR
 CSCW Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_TR
+CSCW Gain: $ 0.77 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_PM
 CSCW Gain: $ 0.77 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_PM
 CSCW Gain: $ 0.77 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_PM
 CSCW Gain: $ 0.77 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_PM

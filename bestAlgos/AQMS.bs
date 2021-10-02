@@ -5,6 +5,8 @@ AQMS Gain: $ -0.38 Win %: 50.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_AV
 AQMS Gain: $ -0.33 Win %: 0 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_IT_QL
 AQMS Gain: $ -0.33 Win %: 0 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_QL
 AQMS Gain: $ -0.02 Win %: 50.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_PM
+AQMS Gain: $ -0.02 Win %: 50.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_PM
+AQMS Gain: $ 0 Win %: 50.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_SS
 AQMS Gain: $ 0 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB3_OS3_CB1_CS1
 AQMS Gain: $ 0 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB3_OS3_CB1_CS1_AC
 AQMS Gain: $ 0 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB3_OS3_CB1_CS1_AL
@@ -145,8 +147,8 @@ AQMS Gain: $ 0 Win %: 100.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_RV_TR
 AQMS Gain: $ 0 Win %: 100.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_TR_IR1
 AQMS Gain: $ 0 Win %: 100.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_TR_QP
 AQMS Gain: $ 0 Win %: 100.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_TR_QP_DB6
-AQMS Gain: $ 0 Win %: 50.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_SS
 AQMS Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_QP_PM
+AQMS Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB3_OS3_CB1_CS1_TS
 AQMS Gain: $ 0.34 Win %: 100.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_TR
 AQMS Gain: $ 0.46 Win %: 50.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_AC
 AQMS Gain: $ 0.47 Win %: 50.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_HM
@@ -156,6 +158,10 @@ AQMS Gain: $ 0.53 Win %: 50.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_RV
 AQMS Gain: $ 0.57 Win %: 50.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_AL
 AQMS Gain: $ 0.62 Win %: 100.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_AO_AC
 AQMS Gain: $ 0.66 Win %: 50.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_AO
+AQMS Gain: $ 0.67 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB3_OS3_CB1_CS1
 AQMS Gain: $ 0.68 Win %: 100.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_VI
+AQMS Gain: $ 0.71 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB4_OS4_CB1_CS1_TS
 AQMS Gain: $ 0.72 Win %: 50.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_DB6
+AQMS Gain: $ 0.75 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB5_OS5_CB1_CS1_TS
+AQMS Gain: $ 0.84 Win %: 100.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_TS
 AQMS Gain: $ 0.86 Win %: 50.00 in 2 days with algo TB5_HL_QM_OB2_OS2_CB2_CS2_LI

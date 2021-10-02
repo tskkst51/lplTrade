@@ -73,6 +73,7 @@ TESS Gain: $ -0.66 Win %: 0 in 1 days with algo TB2_PL_QM_OB2_OS2_CB3_CS3_RV_AV_
 TESS Gain: $ -0.53 Win %: 0 in 1 days with algo TB2_PL_QM_OB2_OS2_CB3_CS3_PM
 TESS Gain: $ -0.49 Win %: 0 in 1 days with algo TB2_PL_QM_OB2_OS2_CB3_CS3_QP_PM
 TESS Gain: $ -0.3 Win %: 0 in 1 days with algo TB1_PL_QM_OB5_OS5_CB5_CS5_PM
+TESS Gain: $ -0.3 Win %: 0 in 1 days with algo TB1_PL_QM_OB5_OS5_CB5_CS5_PM
 TESS Gain: $ -0.3 Win %: 0 in 1 days with algo TB2_PL_QM_OB3_OS3_CB3_CS3_PM
 TESS Gain: $ -0.27 Win %: 0 in 1 days with algo TB1_HL_QM_OB2_OS2_CB5_CS5_IT_QL_DB30
 TESS Gain: $ -0.18 Win %: 0 in 1 days with algo TB2_PL_QM_OB3_OS3_CB3_CS3_QP_PM
@@ -104,6 +105,7 @@ TESS Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB2_OS2_CB3_CS3_TR
 TESS Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB3_CS3_RV_TR
 TESS Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB3_CS3_TR
 TESS Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB3_CS3_TR_IR4
+TESS Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB5_OS5_CB5_CS5_TS
 TESS Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB3_CS3_RV_AL_DB15
 TESS Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB2_OS2_CB3_CS3_IR4
 TESS Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB2_OS2_CB3_CS3_TR_IR4
@@ -118,6 +120,9 @@ TESS Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB5_CS5_AL
 TESS Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB5_CS5_RV_AL
 TESS Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB5_CS5_SS
 TESS Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB5_CS5_IR5
+TESS Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB5_CS5_TS
+TESS Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB2_OS2_CB3_CS3_TS
+TESS Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB3_CS3_TS
 TESS Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB3_CS3_IR4
 TESS Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB5_CS5_VI
 TESS Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB5_CS5_RV_TR
@@ -154,6 +159,7 @@ TESS Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB5_CS5_QL
 TESS Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB5_CS5_RV
 TESS Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB2_OS2_CB3_CS3_QL
 TESS Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB2_OS2_CB3_CS3_RV
+TESS Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB3_CS3
 TESS Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB3_CS3
 TESS Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB3_CS3_QL
 TESS Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB3_CS3_RV

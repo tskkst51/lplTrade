@@ -39,6 +39,7 @@ PLTR Gain: $ -1.69 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB3_OS3_CB5_CS5_HM
 PLTR Gain: $ -1.66 Win %: 0 in 2 days with algo TB3_HL_QM_OB3_OS3_CB5_CS5_HM_TR_DB10
 PLTR Gain: $ -1.66 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB4_OS4_CB3_CS3_IR3
 PLTR Gain: $ -1.62 Win %: 0 in 2 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_HM_AV_DB8
+PLTR Gain: $ -1.61 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB3_OS3_CB5_CS5_TS
 PLTR Gain: $ -1.6 Win %: 0 in 2 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_RV_TR_DB10
 PLTR Gain: $ -1.59 Win %: 0 in 2 days with algo TB3_HL_QM_OB3_OS3_CB5_CS5_QL
 PLTR Gain: $ -1.58 Win %: 0 in 2 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_SS
@@ -81,6 +82,7 @@ PLTR Gain: $ -0.92 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_TR
 PLTR Gain: $ -0.92 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB4_OS4_CB3_CS3_TR_QP_DB10
 PLTR Gain: $ -0.84 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB3_OS3_CB5_CS5_HM_QP_DB10
 PLTR Gain: $ -0.82 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_IT
+PLTR Gain: $ -0.82 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_IT
 PLTR Gain: $ -0.82 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB4_OS4_CB3_CS3_RV_TR
 PLTR Gain: $ -0.82 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_HM_QP_DB8
 PLTR Gain: $ -0.79 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB4_OS4_CB3_CS3_TR
@@ -94,11 +96,13 @@ PLTR Gain: $ -0.64 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB3_OS3_CB5_CS5_RV
 PLTR Gain: $ -0.63 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_QP
 PLTR Gain: $ -0.62 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB4_OS4_CB3_CS3_HM
 PLTR Gain: $ -0.6 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB4_OS4_CB3_CS3_HM_TR
+PLTR Gain: $ -0.6 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_TS
 PLTR Gain: $ -0.59 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB3_OS3_CB5_CS5_IT
 PLTR Gain: $ -0.52 Win %: 0 in 2 days with algo TB3_HL_QM_OB4_OS4_CB3_CS3_VI
 PLTR Gain: $ -0.52 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_DB8
 PLTR Gain: $ -0.52 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_RV_AV_DB8
 PLTR Gain: $ -0.42 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_HM_TR
+PLTR Gain: $ -0.38 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5
 PLTR Gain: $ -0.38 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5
 PLTR Gain: $ -0.33 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_RV_QP
 PLTR Gain: $ -0.26 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_SS
@@ -131,12 +135,14 @@ PLTR Gain: $ 0.67 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_VI
 PLTR Gain: $ 0.75 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB3_OS3_CB5_CS5_IT_QL
 PLTR Gain: $ 0.76 Win %: 100.00 in 2 days with algo TB3_HL_QM_OB4_OS4_CB3_CS3_IT_QP
 PLTR Gain: $ 0.84 Win %: 100.00 in 2 days with algo TB3_HL_QM_OB3_OS3_CB5_CS5_HM_AV
+PLTR Gain: $ 0.93 Win %: 100.00 in 2 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_TS
 PLTR Gain: $ 0.94 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_IT_QL
 PLTR Gain: $ 0.94 Win %: 50.00 in 2 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_QL
 PLTR Gain: $ 0.97 Win %: 100.00 in 2 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_HM_QP
 PLTR Gain: $ 0.97 Win %: 100.00 in 2 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_QP
 PLTR Gain: $ 0.97 Win %: 100.00 in 2 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_QP_IR3
 PLTR Gain: $ 0.97 Win %: 100.00 in 2 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_RV_QP
+PLTR Gain: $ 0.98 Win %: 100.00 in 2 days with algo TB3_HL_QM_OB4_OS4_CB3_CS3_TS
 PLTR Gain: $ 1 Win %: 100.00 in 2 days with algo TB3_HL_QM_OB4_OS4_CB3_CS3_QP_IR3
 PLTR Gain: $ 1 Win %: 100.00 in 2 days with algo TB3_HL_QM_OB4_OS4_CB3_CS3_RV_QP
 PLTR Gain: $ 1.17 Win %: 100.00 in 2 days with algo TB3_HL_QM_OB3_OS3_CB5_CS5_IT_QP_DB10

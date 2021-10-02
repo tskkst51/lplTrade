@@ -9,6 +9,7 @@ BHTG Gain: $ -0.28 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_IR5
 BHTG Gain: $ -0.28 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_QP_IR5
 BHTG Gain: $ -0.28 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_TR_IR5
 BHTG Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4_PM
+BHTG Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4_PM
 BHTG Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_RV_QP
 BHTG Gain: $ -0.26 Win %: 0 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_RV_QP
 BHTG Gain: $ -0.24 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_PM
@@ -74,6 +75,10 @@ BHTG Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4
 BHTG Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4_HM_TR_DB30
 BHTG Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_HM_AV_DB30
 BHTG Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_HM_TR_DB30
+BHTG Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4_TS
+BHTG Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_TS
+BHTG Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_TS
+BHTG Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_TS
 BHTG Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4_DB30
 BHTG Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4_IT_QL_DB30
 BHTG Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4_RV_AL_DB30
@@ -142,6 +147,7 @@ BHTG Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_RV
 BHTG Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_SS
 BHTG Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_TR
 BHTG Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_TR_IR5
+BHTG Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5
 BHTG Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5
 BHTG Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_AC
 BHTG Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_AL

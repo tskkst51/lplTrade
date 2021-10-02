@@ -28,6 +28,7 @@ NUAN Gain: $ -0.17 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB2_CS2_HM_QP_
 NUAN Gain: $ -0.17 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_HM_QP_DB6
 NUAN Gain: $ -0.17 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_HM_QP_DB6
 NUAN Gain: $ -0.14 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_IT
+NUAN Gain: $ -0.14 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_IT
 NUAN Gain: $ -0.14 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_IT_QL_DB6
 NUAN Gain: $ -0.14 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_RV_QP_DB6
 NUAN Gain: $ -0.14 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_TR_IR1
@@ -111,6 +112,10 @@ NUAN Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_AO
 NUAN Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_SS
 NUAN Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_SS
 NUAN Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_SS
+NUAN Gain: $ 0.88 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_TS
+NUAN Gain: $ 0.88 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB2_CS2_TS
+NUAN Gain: $ 0.88 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_TS
+NUAN Gain: $ 0.88 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_TS
 NUAN Gain: $ 0.98 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB2_CS2_IR1
 NUAN Gain: $ 0.98 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_IR1
 NUAN Gain: $ 1.02 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_HM_QP
@@ -142,6 +147,7 @@ NUAN Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_HM
 NUAN Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_IT
 NUAN Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_IT_QL
 NUAN Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_QL
+NUAN Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2
 NUAN Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2
 NUAN Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_AC
 NUAN Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_AO

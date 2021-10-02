@@ -104,8 +104,12 @@ IRCP Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB5_OS5_CB2_CS2_TR
 IRCP Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB5_OS5_CB2_CS2_TR_IR4
 IRCP Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB5_OS5_CB2_CS2_TR_QP
 IRCP Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB5_OS5_CB2_CS2_TR_QP_DB15
+IRCP Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB5_OS5_CB2_CS2_TS
 IRCP Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB5_OS5_CB2_CS2_VI
+IRCP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB5_OS5_CB2_CS2_TS
+IRCP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB3_OS3_CB1_CS1_TS
 IRCP Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB3_OS3_CB1_CS1_IT_QL_DB8
+IRCP Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_TS
 IRCP Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB5_OS5_CB2_CS2_DB15
 IRCP Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB5_OS5_CB2_CS2_IT_QL_DB15
 IRCP Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB5_OS5_CB2_CS2_SS
@@ -119,6 +123,7 @@ IRCP Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB3_OS3_CB1_CS1_RV_
 IRCP Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB3_OS3_CB1_CS1_SS
 IRCP Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB5_OS5_CB2_CS2_AL
 IRCP Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB5_OS5_CB2_CS2_RV_AL
+IRCP Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB3_OS3_CB1_CS1
 IRCP Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB3_OS3_CB1_CS1
 IRCP Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB3_OS3_CB1_CS1_AC
 IRCP Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB3_OS3_CB1_CS1_AO
@@ -134,6 +139,7 @@ IRCP Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_AL
 IRCP Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_RV_AL
 IRCP Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_SS
 IRCP Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB5_OS5_CB2_CS2_HM
+IRCP Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB5_OS5_CB2_CS2_IT
 IRCP Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB5_OS5_CB2_CS2_IT
 IRCP Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB5_OS5_CB2_CS2_IT_QL
 IRCP Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB5_OS5_CB2_CS2_LI

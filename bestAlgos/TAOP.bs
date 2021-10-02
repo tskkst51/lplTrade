@@ -1,3 +1,5 @@
+TAOP Gain: $ Win %: 66.00 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_IT_QP
+TAOP Gain: $ Win %: 66.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_IT_QP
 TAOP Gain: $ -1.71 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_HM_QP_DB15
 TAOP Gain: $ -1.71 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB2_OS2_CB5_CS5_HM_QP_DB15
 TAOP Gain: $ -1.64 Win %: 0 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_QP_IR4
@@ -18,8 +20,6 @@ TAOP Gain: $ -0.73 Win %: 66.00 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_VI
 TAOP Gain: $ -0.73 Win %: 66.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_VI
 TAOP Gain: $ -0.51 Win %: 33.00 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_TR_QP
 TAOP Gain: $ -0.51 Win %: 33.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_TR_QP
-TAOP Gain: $ Win %: 66.00 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_IT_QP
-TAOP Gain: $ Win %: 66.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_IT_QP
 TAOP Gain: $ 0.03 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_IT_QP_DB15
 TAOP Gain: $ 0.03 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_IT_QP_DB15
 TAOP Gain: $ 0.04 Win %: 100.00 in 3 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_IT_QP_DB15
@@ -42,6 +42,10 @@ TAOP Gain: $ 0.54 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_HM
 TAOP Gain: $ 0.54 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_QP
 TAOP Gain: $ 0.54 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_HM_QP
 TAOP Gain: $ 0.54 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_QP
+TAOP Gain: $ 0.62 Win %: 100.00 in 3 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_TS
+TAOP Gain: $ 0.62 Win %: 100.00 in 3 days with algo TB2_LO_QM_OB2_OS2_CB5_CS5_TS
+TAOP Gain: $ 0.62 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_TS
+TAOP Gain: $ 0.62 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_TS
 TAOP Gain: $ 1.24 Win %: 33.00 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_HM_AV_DB15
 TAOP Gain: $ 1.24 Win %: 33.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_HM_AV_DB15
 TAOP Gain: $ 1.26 Win %: 66.00 in 3 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_HM_AV_DB15
@@ -114,6 +118,7 @@ TAOP Gain: $ 3.85 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_AV
 TAOP Gain: $ 3.85 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_RV_AV
 TAOP Gain: $ 3.93 Win %: 100.00 in 3 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_IR4
 TAOP Gain: $ 3.93 Win %: 100.00 in 3 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_IT
+TAOP Gain: $ 3.93 Win %: 100.00 in 3 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_IT
 TAOP Gain: $ 3.93 Win %: 100.00 in 3 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 TAOP Gain: $ 3.93 Win %: 100.00 in 3 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_QL
 TAOP Gain: $ 3.93 Win %: 100.00 in 3 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_RV
@@ -138,6 +143,7 @@ TAOP Gain: $ 4.06 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_IT
 TAOP Gain: $ 4.06 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_IT_QL
 TAOP Gain: $ 4.06 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_QL
 TAOP Gain: $ 4.06 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_RV
+TAOP Gain: $ 4.06 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4
 TAOP Gain: $ 4.06 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4
 TAOP Gain: $ 4.06 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_IT
 TAOP Gain: $ 4.06 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_IT_QL

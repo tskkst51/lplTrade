@@ -72,6 +72,7 @@ JRJC Gain: $ -0.11 Win %: 0 in 1 days with algo TB3_HI_QM_OB5_OS5_CB4_CS4_LI
 JRJC Gain: $ -0.09 Win %: 0 in 1 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_QP_PM
 JRJC Gain: $ -0.05 Win %: 0 in 1 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_PM
 JRJC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB5_OS5_CB4_CS4_PM
+JRJC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB5_OS5_CB4_CS4_PM
 JRJC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB5_OS5_CB4_CS4_QP_PM
 JRJC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB5_OS5_CB4_CS4_VI
 JRJC Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_RV_AL_DB6
@@ -79,7 +80,11 @@ JRJC Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_RV
 JRJC Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_RV_AL_DB6
 JRJC Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_RV_TR_DB6
 JRJC Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_VI
+JRJC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB5_OS5_CB4_CS4_TS
+JRJC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_TS
 JRJC Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_LI
+JRJC Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_TS
+JRJC Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_TS
 JRJC Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB5_OS5_CB4_CS4_AL
 JRJC Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB5_OS5_CB4_CS4_HM_TR
 JRJC Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB5_OS5_CB4_CS4_RV_AL
@@ -148,6 +153,7 @@ JRJC Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_IT_
 JRJC Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_QL
 JRJC Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_RV
 JRJC Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_SS
+JRJC Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5
 JRJC Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5
 JRJC Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_AC
 JRJC Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_AO

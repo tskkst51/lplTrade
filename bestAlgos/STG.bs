@@ -1,6 +1,7 @@
 STG Gain: $ -1.24 Win %: 0 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB5_CS5_AO_AC
 STG Gain: $ -1.24 Win %: 0 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB5_CS5_AO_AC
 STG Gain: $ -1.01 Win %: 0 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB5_CS5_PM
+STG Gain: $ -1.01 Win %: 0 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB5_CS5_PM
 STG Gain: $ -1.01 Win %: 0 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB5_CS5_PM
 STG Gain: $ -1.01 Win %: 0 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_PM
 STG Gain: $ -1.01 Win %: 0 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_PM
@@ -58,6 +59,10 @@ STG Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB5_CS5_VI
 STG Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB5_CS5_VI
 STG Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_VI
 STG Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_VI
+STG Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB5_CS5_TS
+STG Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB5_CS5_TS
+STG Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_TS
+STG Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_TS
 STG Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB5_CS5_DB15
 STG Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB5_CS5_HM_AV_DB15
 STG Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB5_CS5_HM_TR_DB15
@@ -133,6 +138,7 @@ STG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_
 STG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_IT_QL
 STG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_QL
 STG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_TR
+STG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5
 STG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5
 STG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_AL
 STG Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_AV

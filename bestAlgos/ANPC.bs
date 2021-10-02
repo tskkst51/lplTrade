@@ -44,6 +44,7 @@ ANPC Gain: $ -0.65 Win %: 50.00 in 2 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_TR
 ANPC Gain: $ -0.64 Win %: 0 in 2 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_IT_QL_DB8
 ANPC Gain: $ -0.64 Win %: 0 in 2 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_IT_QL_DB8
 ANPC Gain: $ -0.6 Win %: 50.00 in 2 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_PM
+ANPC Gain: $ -0.6 Win %: 50.00 in 2 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_PM
 ANPC Gain: $ -0.6 Win %: 50.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_QP_PM
 ANPC Gain: $ -0.6 Win %: 50.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_QP_PM
 ANPC Gain: $ -0.53 Win %: 0 in 2 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_IT_QP_DB8
@@ -68,14 +69,18 @@ ANPC Gain: $ 0.21 Win %: 50.00 in 2 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_IT_
 ANPC Gain: $ 0.21 Win %: 50.00 in 2 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_TR_QP
 ANPC Gain: $ 0.24 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_IT_QP
 ANPC Gain: $ 0.24 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_IT_QP
+ANPC Gain: $ 0.25 Win %: 100.00 in 2 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_TS
 ANPC Gain: $ 0.3 Win %: 50.00 in 2 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV_AV
 ANPC Gain: $ 0.49 Win %: 50.00 in 2 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_VI
 ANPC Gain: $ 0.52 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_DB8
 ANPC Gain: $ 0.63 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_IT_QL_DB8
+ANPC Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_TS
 ANPC Gain: $ 0.72 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_HM_TR_DB8
 ANPC Gain: $ 0.72 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_RV_TR_DB8
 ANPC Gain: $ 0.74 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_HM_AV_DB8
 ANPC Gain: $ 0.74 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_RV_AV_DB8
+ANPC Gain: $ 0.77 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_TS
+ANPC Gain: $ 0.77 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_TS
 ANPC Gain: $ 0.77 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_RV_AL_DB8
 ANPC Gain: $ 0.92 Win %: 100.00 in 2 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_HM_TR
 ANPC Gain: $ 0.92 Win %: 100.00 in 2 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV_TR
@@ -144,6 +149,7 @@ ANPC Gain: $ 1.98 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_IT
 ANPC Gain: $ 1.98 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_IT_QL
 ANPC Gain: $ 1.98 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_QL
 ANPC Gain: $ 1.98 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_RV
+ANPC Gain: $ 1.98 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4
 ANPC Gain: $ 1.98 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4
 ANPC Gain: $ 1.98 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_AC
 ANPC Gain: $ 1.98 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_AO

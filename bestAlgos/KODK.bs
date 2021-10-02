@@ -40,9 +40,11 @@ KODK Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_IT_QP
 KODK Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_IT_QP
 KODK Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB4_CS4_VI
 KODK Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB4_CS4_IT_QP
+KODK Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB4_CS4_TS
 KODK Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_IT_QP
 KODK Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_RV_AV_DB15
 KODK Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_RV_AV_DB15
+KODK Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_TS
 KODK Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB4_CS4_QP_IR2
 KODK Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB4_CS4_TR_QP
 KODK Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_QP_PM
@@ -59,6 +61,8 @@ KODK Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB4_CS4_HM
 KODK Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB4_CS4_IT_QP_DB8
 KODK Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB4_CS4_RV_QP_DB8
 KODK Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB4_CS4_TR_QP_DB8
+KODK Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_TS
+KODK Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_TS
 KODK Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_QP_PM
 KODK Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_HM_QP
 KODK Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_QP
@@ -133,6 +137,7 @@ KODK Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB4_CS4_IT
 KODK Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB4_CS4_QL
 KODK Gain: $ 1.61 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB4_CS4_RV
 KODK Gain: $ 1.62 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_PM
+KODK Gain: $ 1.62 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_PM
 KODK Gain: $ 1.63 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_PM
 KODK Gain: $ 1.63 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_PM
 KODK Gain: $ 1.65 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_AC
@@ -144,6 +149,7 @@ KODK Gain: $ 1.65 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_IT
 KODK Gain: $ 1.65 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_IT_QL
 KODK Gain: $ 1.65 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_QL
 KODK Gain: $ 1.65 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_RV
+KODK Gain: $ 1.65 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5
 KODK Gain: $ 1.65 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5
 KODK Gain: $ 1.65 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_AC
 KODK Gain: $ 1.65 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_AO

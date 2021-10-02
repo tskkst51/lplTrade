@@ -25,6 +25,7 @@ NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_HM
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_HM_TR
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_HM_TR_DB8
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_IT
+NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_IT
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_IT_QL
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_IT_QL_DB8
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_IT_QP
@@ -44,6 +45,7 @@ NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_RV
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_TR
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_TR_QP
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_TR_QP_DB8
+NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_TS
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_VI
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_AL
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_AV
@@ -75,6 +77,7 @@ NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_RV
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_TR
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_TR_QP
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_TR_QP_DB8
+NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_TS
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_VI
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_HM_QP
 NWHM Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_HM_QP_DB6
@@ -121,6 +124,8 @@ NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_RV
 NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_RV_TR_DB6
 NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_RV_TR_DB6
 NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_TR
+NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_TS
+NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5
 NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5
 NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_AL
 NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_AV
@@ -143,3 +148,4 @@ NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV
 NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV_TR_DB6
 NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV_TR_DB6
 NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TR
+NWHM Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TS

@@ -58,10 +58,10 @@ TAP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_
 TAP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_IT_QP_DB30
 TAP Gain: $ 0.14 Win %: 50.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_IR5
 TAP Gain: $ 0.14 Win %: 50.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_IR5
-TAP Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_IT_QP_DB30
-TAP Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_IT_QP_DB30
 TAP Gain: $ 0.15 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_TR
 TAP Gain: $ 0.15 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_TR
+TAP Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_IT_QP_DB30
+TAP Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_IT_QP_DB30
 TAP Gain: $ 0.18 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_RV_TR
 TAP Gain: $ 0.18 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_RV_TR
 TAP Gain: $ 0.24 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_HM_TR_DB30
@@ -109,6 +109,7 @@ TAP Gain: $ 1.01 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_
 TAP Gain: $ 1.08 Win %: 50.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_RV_AL
 TAP Gain: $ 1.08 Win %: 50.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_RV_AL
 TAP Gain: $ 1.16 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_IT
+TAP Gain: $ 1.16 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_IT
 TAP Gain: $ 1.16 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_IT_QL
 TAP Gain: $ 1.16 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_IT
 TAP Gain: $ 1.16 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_IT_QL
@@ -124,10 +125,14 @@ TAP Gain: $ 1.44 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_
 TAP Gain: $ 1.44 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_HM
 TAP Gain: $ 1.68 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_RV
 TAP Gain: $ 1.68 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_RV
+TAP Gain: $ 1.96 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_TS
+TAP Gain: $ 1.96 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_TS
 TAP Gain: $ 1.97 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_RV_AV_DB30
 TAP Gain: $ 1.97 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_RV_AV_DB30
 TAP Gain: $ 2.06 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_IR5
 TAP Gain: $ 2.06 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_IR5
+TAP Gain: $ 2.13 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_TS
+TAP Gain: $ 2.13 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_TS
 TAP Gain: $ 2.35 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_HM_AV_DB30
 TAP Gain: $ 2.35 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_LI
 TAP Gain: $ 2.35 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_HM_AV_DB30
@@ -139,6 +144,7 @@ TAP Gain: $ 2.47 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_
 TAP Gain: $ 2.47 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_IT
 TAP Gain: $ 2.47 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_IT_QL
 TAP Gain: $ 2.47 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_QL
+TAP Gain: $ 2.47 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3
 TAP Gain: $ 2.47 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3
 TAP Gain: $ 2.47 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_IT
 TAP Gain: $ 2.47 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_IT_QL

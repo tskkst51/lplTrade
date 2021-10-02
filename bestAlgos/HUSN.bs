@@ -35,6 +35,9 @@ HUSN Gain: $ -1.86 Win %: 25.00 in 4 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1
 HUSN Gain: $ -1.67 Win %: 25.00 in 4 days with algo TB2_CC_QM_OB1_OS1_CB3_CS3_IR4
 HUSN Gain: $ -1.57 Win %: 50.00 in 4 days with algo TB2_CC_QM_OB1_OS1_CB3_CS3_LI
 HUSN Gain: $ -1.56 Win %: 25.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_HM_QP
+HUSN Gain: $ -1.54 Win %: 50.00 in 4 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_TS
+HUSN Gain: $ -1.52 Win %: 50.00 in 4 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1
+HUSN Gain: $ -1.51 Win %: 50.00 in 4 days with algo TB2_CC_QM_OB1_OS1_CB3_CS3_IT
 HUSN Gain: $ -1.51 Win %: 50.00 in 4 days with algo TB2_CC_QM_OB1_OS1_CB3_CS3_IT
 HUSN Gain: $ -1.51 Win %: 75.00 in 4 days with algo TB2_CC_QM_OB1_OS1_CB3_CS3_SS
 HUSN Gain: $ -1.47 Win %: 50.00 in 4 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_AC
@@ -110,6 +113,7 @@ HUSN Gain: $ -0.14 Win %: 50.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB1_CS1_SS
 HUSN Gain: $ -0.14 Win %: 50.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_VI
 HUSN Gain: $ -0.13 Win %: 50.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB1_CS1_TR_IR3
 HUSN Gain: $ -0.08 Win %: 25.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB1_CS1_IT_QL_DB10
+HUSN Gain: $ -0.08 Win %: 50.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB1_CS1_TS
 HUSN Gain: $ -0.05 Win %: 50.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB1_CS1_DB10
 HUSN Gain: $ -0.04 Win %: 50.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_AV
 HUSN Gain: $ -0.04 Win %: 50.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_RV_AV
@@ -121,6 +125,7 @@ HUSN Gain: $ 0.07 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB1_CS1_IT
 HUSN Gain: $ 0.1 Win %: 75.00 in 4 days with algo TB2_CC_QM_OB1_OS1_CB3_CS3_AV
 HUSN Gain: $ 0.14 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_HM_TR
 HUSN Gain: $ 0.18 Win %: 50.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_RV_AL
+HUSN Gain: $ 0.18 Win %: 75.00 in 4 days with algo TB2_CC_QM_OB1_OS1_CB3_CS3_TS
 HUSN Gain: $ 0.19 Win %: 50.00 in 4 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_DB30
 HUSN Gain: $ 0.19 Win %: 50.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB1_CS1_VI
 HUSN Gain: $ 0.19 Win %: 75.00 in 4 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_RV_AV
@@ -133,6 +138,7 @@ HUSN Gain: $ 0.33 Win %: 75.00 in 4 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_
 HUSN Gain: $ 0.36 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_IT_QL
 HUSN Gain: $ 0.36 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_QL
 HUSN Gain: $ 0.38 Win %: 75.00 in 4 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_HM_AV_DB30
+HUSN Gain: $ 0.4 Win %: 50.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_TS
 HUSN Gain: $ 0.43 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_HM_AV
 HUSN Gain: $ 0.43 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_RV_TR_DB10
 HUSN Gain: $ 0.49 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_LI

@@ -47,6 +47,7 @@ CELC Gain: $ -1.27 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_RV
 CELC Gain: $ -1.27 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_RV_AV_DB6
 CELC Gain: $ -1.14 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_IT_QL_DB6
 CELC Gain: $ -0.8 Win %: 50.00 in 2 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_PM
+CELC Gain: $ -0.8 Win %: 50.00 in 2 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_PM
 CELC Gain: $ -0.8 Win %: 50.00 in 2 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_QP_PM
 CELC Gain: $ -0.69 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_AV
 CELC Gain: $ -0.69 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_HM_AV
@@ -81,9 +82,13 @@ CELC Gain: $ 0.1 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_IT_Q
 CELC Gain: $ 0.15 Win %: 50.00 in 2 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_AL
 CELC Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_IT_QP_DB10
 CELC Gain: $ 0.47 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_PM
+CELC Gain: $ 0.61 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_TS
+CELC Gain: $ 0.61 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_TS
 CELC Gain: $ 0.65 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_LI
 CELC Gain: $ 0.66 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_IT
 CELC Gain: $ 0.66 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_IT_QL
+CELC Gain: $ 0.84 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_TS
+CELC Gain: $ 0.94 Win %: 100.00 in 2 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_TS
 CELC Gain: $ 1.01 Win %: 100.00 in 2 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_HM_TR
 CELC Gain: $ 1.01 Win %: 100.00 in 2 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_HM_TR_DB6
 CELC Gain: $ 1.01 Win %: 100.00 in 2 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_RV_TR
@@ -148,6 +153,7 @@ CELC Gain: $ 2.83 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_QL
 CELC Gain: $ 2.83 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_RV
 CELC Gain: $ 2.83 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_RV_TR
 CELC Gain: $ 2.83 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_TR
+CELC Gain: $ 2.94 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5
 CELC Gain: $ 2.94 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5
 CELC Gain: $ 2.94 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_AC
 CELC Gain: $ 2.94 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_AO

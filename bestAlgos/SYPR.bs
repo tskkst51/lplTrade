@@ -52,6 +52,8 @@ SYPR Gain: $ 0.42 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_QP
 SYPR Gain: $ 0.42 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_QP
 SYPR Gain: $ 0.49 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB5_CS5_RV_AV_DB15
 SYPR Gain: $ 0.49 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_RV_AV_DB15
+SYPR Gain: $ 0.63 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_TS
+SYPR Gain: $ 0.63 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_TS
 SYPR Gain: $ 0.78 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_VI
 SYPR Gain: $ 0.78 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_VI
 SYPR Gain: $ 0.87 Win %: 50.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB5_CS5_IT_QL_DB15
@@ -70,14 +72,16 @@ SYPR Gain: $ 1.06 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_HM
 SYPR Gain: $ 1.06 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_HM_AV_DB10
 SYPR Gain: $ 1.3 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_LI
 SYPR Gain: $ 1.3 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_LI
+SYPR Gain: $ 1.32 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB5_CS5_TS
+SYPR Gain: $ 1.32 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_TS
 SYPR Gain: $ 1.88 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_HM_TR_DB10
 SYPR Gain: $ 1.88 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_HM_TR_DB10
-SYPR Gain: $ 1.97 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_RV_AL
-SYPR Gain: $ 1.97 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_RV_AL
 SYPR Gain: $ 1.97 Win %: 50.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB5_CS5_IT_QL
 SYPR Gain: $ 1.97 Win %: 50.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB5_CS5_QL
 SYPR Gain: $ 1.97 Win %: 50.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_IT_QL
 SYPR Gain: $ 1.97 Win %: 50.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_QL
+SYPR Gain: $ 1.97 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_RV_AL
+SYPR Gain: $ 1.97 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_RV_AL
 SYPR Gain: $ 1.99 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_RV_TR_DB10
 SYPR Gain: $ 1.99 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_RV_TR_DB10
 SYPR Gain: $ 2.01 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB5_CS5_HM_AV
@@ -135,6 +139,7 @@ SYPR Gain: $ 3.23 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_IR
 SYPR Gain: $ 3.23 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_IT
 SYPR Gain: $ 3.23 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_IT_QL
 SYPR Gain: $ 3.23 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_PM
+SYPR Gain: $ 3.23 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_PM
 SYPR Gain: $ 3.23 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_QL
 SYPR Gain: $ 3.23 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_AC
 SYPR Gain: $ 3.23 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_AO
@@ -150,6 +155,7 @@ SYPR Gain: $ 3.24 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB5_CS5_AO
 SYPR Gain: $ 3.24 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB5_CS5_IT
 SYPR Gain: $ 3.24 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB5_CS5_RV_TR
 SYPR Gain: $ 3.24 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB5_CS5_TR
+SYPR Gain: $ 3.24 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5
 SYPR Gain: $ 3.24 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5
 SYPR Gain: $ 3.24 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_AC
 SYPR Gain: $ 3.24 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_AO

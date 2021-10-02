@@ -57,6 +57,7 @@ CNC Gain: $ -0.11 Win %: 0 in 1 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_IT_QP
 CNC Gain: $ -0.09 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_TR_QP_DB30
 CNC Gain: $ -0.09 Win %: 0 in 1 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_RV_AV_DB30
 CNC Gain: $ -0.08 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_IT
+CNC Gain: $ -0.08 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_IT
 CNC Gain: $ -0.08 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_IT_QL
 CNC Gain: $ -0.05 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_IT_QP
 CNC Gain: $ -0.04 Win %: 0 in 1 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_HM_QP_DB30
@@ -114,6 +115,7 @@ CNC Gain: $ 0.84 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB3_CS3_RV_
 CNC Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_LI
 CNC Gain: $ 0.96 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_DB30
 CNC Gain: $ 1.06 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_HM_QP_DB30
+CNC Gain: $ 1.06 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_TS
 CNC Gain: $ 1.07 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_SS
 CNC Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_RV_QP_DB30
 CNC Gain: $ 1.22 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB3_CS3_RV_AL_DB30
@@ -130,6 +132,7 @@ CNC Gain: $ 1.33 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB3_CS3_VI
 CNC Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_HM
 CNC Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_QL
 CNC Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_SS
+CNC Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_TS
 CNC Gain: $ 1.37 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_RV_AL
 CNC Gain: $ 1.39 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB3_CS3_SS
 CNC Gain: $ 1.41 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB3_CS3_RV_AV
@@ -144,10 +147,13 @@ CNC Gain: $ 1.46 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB4_CS4_HM
 CNC Gain: $ 1.46 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB4_CS4_IT
 CNC Gain: $ 1.46 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB4_CS4_IT_QL
 CNC Gain: $ 1.46 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB4_CS4_QL
+CNC Gain: $ 1.46 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB4_CS4_TS
 CNC Gain: $ 1.48 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB4_CS4_DB30
 CNC Gain: $ 1.48 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB4_CS4_IT_QL_DB30
 CNC Gain: $ 1.53 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB4_CS4_RV
 CNC Gain: $ 1.57 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB3_CS3
+CNC Gain: $ 1.57 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB3_CS3
 CNC Gain: $ 1.57 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB3_CS3_HM
 CNC Gain: $ 1.57 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB3_CS3_QL
 CNC Gain: $ 1.57 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB3_CS3_RV
+CNC Gain: $ 1.57 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB3_CS3_TS

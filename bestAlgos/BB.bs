@@ -81,6 +81,8 @@ BB Gain: $ 2.57 Win %: 36.00 in 11 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_Q
 BB Gain: $ 2.65 Win %: 54.00 in 11 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_RV_TR_DB8
 BB Gain: $ 2.73 Win %: 54.00 in 11 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_VI
 BB Gain: $ 2.73 Win %: 54.00 in 11 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_VI
+BB Gain: $ 2.75 Win %: 81.00 in 11 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_TS
+BB Gain: $ 2.75 Win %: 81.00 in 11 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_TS
 BB Gain: $ 2.89 Win %: 63.00 in 11 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_HM_AV_DB30
 BB Gain: $ 2.92 Win %: 63.00 in 11 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_RV_AV_DB30
 BB Gain: $ 2.97 Win %: 45.00 in 11 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DB8
@@ -110,6 +112,8 @@ BB Gain: $ 4.5 Win %: 63.00 in 11 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_LI
 BB Gain: $ 4.57 Win %: 72.00 in 11 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_HM_TR
 BB Gain: $ 4.57 Win %: 72.00 in 11 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_HM_TR
 BB Gain: $ 4.69 Win %: 72.00 in 11 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_QL
+BB Gain: $ 4.98 Win %: 90.00 in 11 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_TS
+BB Gain: $ 4.98 Win %: 90.00 in 11 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_TS
 BB Gain: $ 5.11 Win %: 72.00 in 11 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_LI
 BB Gain: $ 5.27 Win %: 81.00 in 11 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_HM
 BB Gain: $ 5.27 Win %: 81.00 in 11 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_HM
@@ -150,6 +154,7 @@ BB Gain: $ 7.28 Win %: 81.00 in 11 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_AC
 BB Gain: $ 7.28 Win %: 81.00 in 11 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_AO
 BB Gain: $ 7.28 Win %: 81.00 in 11 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_AO_AC
 BB Gain: $ 7.36 Win %: 81.00 in 11 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_RV_TR
+BB Gain: $ 7.39 Win %: 63.00 in 11 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5
 BB Gain: $ 7.39 Win %: 63.00 in 11 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5
 BB Gain: $ 8.28 Win %: 81.00 in 11 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_IT
 BB Gain: $ 8.28 Win %: 81.00 in 11 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_IT

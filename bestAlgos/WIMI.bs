@@ -56,6 +56,8 @@ WIMI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5
 WIMI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_RV_TR_DB10
 WIMI Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_HM
 WIMI Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_HM
+WIMI Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_TS
+WIMI Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_TS
 WIMI Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_IR5
 WIMI Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_QP_IR5
 WIMI Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_TR_IR5
@@ -68,6 +70,8 @@ WIMI Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5
 WIMI Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_RV_QP
 WIMI Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_QP
 WIMI Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_RV_QP
+WIMI Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_TS
+WIMI Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_TS
 WIMI Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_HM_QP
 WIMI Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_QP
 WIMI Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_QP_IR3
@@ -92,6 +96,7 @@ WIMI Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_
 WIMI Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_HM_AV
 WIMI Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_HM_TR
 WIMI Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IR3
+WIMI Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IT
 WIMI Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IT
 WIMI Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 WIMI Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_QL
@@ -132,6 +137,7 @@ WIMI Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5
 WIMI Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_RV_TR
 WIMI Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_SS
 WIMI Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_TR
+WIMI Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5
 WIMI Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5
 WIMI Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_AL
 WIMI Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_AV

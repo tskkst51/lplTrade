@@ -141,6 +141,7 @@ MQ Gain: $ -0.05 Win %: 0 in 1 days with algo TB2_PL_QM_OB4_OS4_CB4_CS4_HM_TR
 MQ Gain: $ -0.04 Win %: 0 in 1 days with algo TB2_PL_QM_OB3_OS3_CB4_CS4_HM_AV
 MQ Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_HM_AV_DB15
 MQ Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_TS
+MQ Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_TS
 MQ Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB1_OS1_CB4_CS4_TS
 MQ Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_AO_AC
 MQ Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_IT
@@ -155,6 +156,10 @@ MQ Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB4_CS4_AV
 MQ Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB4_CS4_RV_AV
 MQ Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB4_CS4_AV
 MQ Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_SS
+MQ Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_TS
+MQ Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB1_OS1_CB4_CS4_TS
+MQ Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB4_CS4_TS
+MQ Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB4_CS4_TS
 MQ Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_IT_QP_DB15
 MQ Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB1_OS1_CB4_CS4_VI
 MQ Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB1_OS1_CB4_CS4_AO
@@ -164,6 +169,7 @@ MQ Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB1_OS1_CB4_CS4_QL
 MQ Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB4_CS4_HM
 MQ Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB4_CS4_QL
 MQ Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB3_OS3_CB4_CS4_RV
+MQ Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB4_CS4
 MQ Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB4_CS4
 MQ Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB4_CS4_IT
 MQ Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB4_OS4_CB4_CS4_RV

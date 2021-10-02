@@ -95,6 +95,7 @@ FOE Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_RV_
 FOE Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_HM_QP_DB15
 FOE Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_RV_QP_DB15
 FOE Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_PM
+FOE Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_PM
 FOE Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_PM
 FOE Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_PM
 FOE Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_PM
@@ -130,6 +131,10 @@ FOE Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_DB1
 FOE Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_DB15
 FOE Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_DB15
 FOE Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_DB15
+FOE Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_TS
+FOE Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_TS
+FOE Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_TS
+FOE Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_TS
 FOE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_AC
 FOE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_AO
 FOE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB1_CS1_AO_AC
@@ -151,6 +156,7 @@ FOE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_HM
 FOE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_QL
 FOE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_RV
 FOE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_SS
+FOE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2
 FOE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2
 FOE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_AC
 FOE Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_AO

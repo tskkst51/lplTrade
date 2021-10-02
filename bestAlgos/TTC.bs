@@ -88,6 +88,10 @@ TTC Gain: $ 3.99 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_
 TTC Gain: $ 3.99 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_RV_AV
 TTC Gain: $ 3.99 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_AV
 TTC Gain: $ 3.99 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_RV_AV
+TTC Gain: $ 4 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_TS
+TTC Gain: $ 4 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_TS
+TTC Gain: $ 4.36 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_TS
+TTC Gain: $ 4.36 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_TS
 TTC Gain: $ 4.41 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_HM_AV
 TTC Gain: $ 4.41 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_HM_AV
 TTC Gain: $ 4.5 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_LI
@@ -119,6 +123,7 @@ TTC Gain: $ 4.83 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_RV_
 TTC Gain: $ 4.95 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_AO
 TTC Gain: $ 4.95 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IR3
 TTC Gain: $ 4.95 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IT
+TTC Gain: $ 4.95 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IT
 TTC Gain: $ 4.95 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 TTC Gain: $ 4.95 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_QL
 TTC Gain: $ 4.95 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_RV
@@ -143,6 +148,7 @@ TTC Gain: $ 5.27 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_IR2
 TTC Gain: $ 5.27 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_IT
 TTC Gain: $ 5.27 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_IT_QL
 TTC Gain: $ 5.27 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_QL
+TTC Gain: $ 5.27 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4
 TTC Gain: $ 5.27 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4
 TTC Gain: $ 5.27 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_AC
 TTC Gain: $ 5.27 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_AO

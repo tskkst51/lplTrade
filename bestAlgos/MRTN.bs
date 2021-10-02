@@ -1,3 +1,9 @@
+MRTN Gain: $ Win %: 33.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3
+MRTN Gain: $ Win %: 33.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3
+MRTN Gain: $ Win %: 33.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3_IT
+MRTN Gain: $ Win %: 33.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3_IT_QL
+MRTN Gain: $ Win %: 33.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3_QL
+MRTN Gain: $ Win %: 33.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3_TS
 MRTN Gain: $ -577.12 Win %: 0 in 3 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_AC
 MRTN Gain: $ -4.52 Win %: 0 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3_AO
 MRTN Gain: $ -2.11 Win %: 0 in 3 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_QP_IR4
@@ -96,10 +102,6 @@ MRTN Gain: $ -0.01 Win %: 33.00 in 3 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2
 MRTN Gain: $ -0.01 Win %: 33.00 in 3 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_VI
 MRTN Gain: $ 0 Win %: 33.00 in 3 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_AC
 MRTN Gain: $ 0 Win %: 33.00 in 3 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_AC
-MRTN Gain: $ Win %: 33.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3
-MRTN Gain: $ Win %: 33.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3_IT
-MRTN Gain: $ Win %: 33.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3_IT_QL
-MRTN Gain: $ Win %: 33.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3_QL
 MRTN Gain: $ 0.07 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_IT_QL_DB15
 MRTN Gain: $ 0.07 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_IT_QL_DB15
 MRTN Gain: $ 0.1 Win %: 66.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3_VI
@@ -119,6 +121,7 @@ MRTN Gain: $ 0.28 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_IT_
 MRTN Gain: $ 0.29 Win %: 33.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_LI
 MRTN Gain: $ 0.32 Win %: 100.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3_RV_AV_DB8
 MRTN Gain: $ 0.37 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_IT
+MRTN Gain: $ 0.37 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_IT
 MRTN Gain: $ 0.37 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_IT_QL
 MRTN Gain: $ 0.4 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_SS
 MRTN Gain: $ 0.4 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_SS
@@ -134,7 +137,10 @@ MRTN Gain: $ 0.55 Win %: 66.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3_AV
 MRTN Gain: $ 0.56 Win %: 100.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_RV_AL
 MRTN Gain: $ 0.57 Win %: 100.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3_AL
 MRTN Gain: $ 0.58 Win %: 100.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_AL
+MRTN Gain: $ 0.6 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_TS
+MRTN Gain: $ 0.6 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_TS
 MRTN Gain: $ 0.61 Win %: 100.00 in 3 days with algo TB4_HL_QM_OB5_OS5_CB3_CS3_RV_AV
+MRTN Gain: $ 0.71 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_TS
 MRTN Gain: $ 0.72 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_HM
 MRTN Gain: $ 0.72 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_HM
 MRTN Gain: $ 0.72 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_RV

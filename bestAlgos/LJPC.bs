@@ -56,6 +56,10 @@ LJPC Gain: $ 0.08 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB4_CS4_DB8
 LJPC Gain: $ 0.08 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB4_CS4_DB8
 LJPC Gain: $ 0.14 Win %: 50.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_VI
 LJPC Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB3_OS3_CB3_CS3_VI
+LJPC Gain: $ 0.25 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB4_CS4_TS
+LJPC Gain: $ 0.25 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB4_CS4_TS
+LJPC Gain: $ 0.42 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_TS
+LJPC Gain: $ 0.42 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB3_OS3_CB3_CS3_TS
 LJPC Gain: $ 0.43 Win %: 50.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_IT_QL_DB6
 LJPC Gain: $ 0.43 Win %: 50.00 in 2 days with algo TB5_OO_QM_OB3_OS3_CB3_CS3_IT_QL_DB6
 LJPC Gain: $ 0.52 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_RV_AL_DB6
@@ -74,6 +78,7 @@ LJPC Gain: $ 0.63 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_HM
 LJPC Gain: $ 0.63 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_RV_AV_DB6
 LJPC Gain: $ 0.63 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB3_OS3_CB3_CS3_HM_AV_DB6
 LJPC Gain: $ 0.63 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB3_OS3_CB3_CS3_RV_AV_DB6
+LJPC Gain: $ 0.7 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_IT
 LJPC Gain: $ 0.7 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_IT
 LJPC Gain: $ 0.7 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_IT_QL
 LJPC Gain: $ 0.7 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB3_OS3_CB3_CS3_IT
@@ -140,6 +145,7 @@ LJPC Gain: $ 0.97 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB4_CS4_IT
 LJPC Gain: $ 0.97 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB4_CS4_IT_QL
 LJPC Gain: $ 0.97 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB4_CS4_QL
 LJPC Gain: $ 0.97 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB4_CS4_RV
+LJPC Gain: $ 0.97 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB4_CS4
 LJPC Gain: $ 0.97 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB4_CS4
 LJPC Gain: $ 0.97 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB4_CS4_AC
 LJPC Gain: $ 0.97 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB4_CS4_AO

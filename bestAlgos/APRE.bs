@@ -22,6 +22,10 @@ APRE Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_IT
 APRE Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_IT_QP
 APRE Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_IT_QP
 APRE Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_IT_QP
+APRE Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_TS
+APRE Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_TS
+APRE Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_TS
+APRE Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_TS
 APRE Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_DB8
 APRE Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_HM_QP
 APRE Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_QP
@@ -91,6 +95,7 @@ APRE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_RV
 APRE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_RV_AV_DB8
 APRE Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_RV_TR_DB8
 APRE Gain: $ 1.78 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_PM
+APRE Gain: $ 1.78 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_PM
 APRE Gain: $ 1.78 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_PM
 APRE Gain: $ 1.78 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_PM
 APRE Gain: $ 1.78 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_PM
@@ -142,6 +147,7 @@ APRE Gain: $ 2.02 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_RV
 APRE Gain: $ 2.02 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_SS
 APRE Gain: $ 2.02 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_TR
 APRE Gain: $ 2.02 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_TR_IR2
+APRE Gain: $ 2.02 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5
 APRE Gain: $ 2.02 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5
 APRE Gain: $ 2.02 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_AC
 APRE Gain: $ 2.02 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_AL

@@ -40,6 +40,7 @@ WATT Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB4_OS4_CB3_CS3_QP
 WATT Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5_AV
 WATT Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5_HM_AV
 WATT Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5_RV_AV
+WATT Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5_TS
 WATT Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB2_CS2_HM_QP_DB10
 WATT Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB2_CS2_QP_IR3
 WATT Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB2_CS2_RV_QP
@@ -69,6 +70,7 @@ WATT Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB2_OS2_CB2_CS2_RV
 WATT Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5_HM_QP_DB6
 WATT Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5_RV_QP_DB6
 WATT Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB4_OS4_CB3_CS3_IR1
+WATT Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB4_OS4_CB3_CS3_TS
 WATT Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5_VI
 WATT Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB4_OS4_CB3_CS3_SS
 WATT Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB2_OS2_CB2_CS2_AC
@@ -115,12 +117,15 @@ WATT Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB2_CS2_RV
 WATT Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB2_CS2_AO
 WATT Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB2_CS2_HM
 WATT Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB2_CS2_IT
+WATT Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB2_CS2_IT
 WATT Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB2_CS2_IT_QL
 WATT Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB2_CS2_QL
+WATT Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB2_CS2_TS
 WATT Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB2_OS2_CB2_CS2_HM
 WATT Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB2_OS2_CB2_CS2_IT
 WATT Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB2_OS2_CB2_CS2_IT_QL
 WATT Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB2_OS2_CB2_CS2_QL
+WATT Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB2_OS2_CB2_CS2_TS
 WATT Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB4_OS4_CB3_CS3_AC
 WATT Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB4_OS4_CB3_CS3_AO
 WATT Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB4_OS4_CB3_CS3_AO_AC
@@ -131,6 +136,7 @@ WATT Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB4_OS4_CB3_CS3_IT
 WATT Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB4_OS4_CB3_CS3_IT_QL_DB6
 WATT Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB4_OS4_CB3_CS3_QL
 WATT Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB4_OS4_CB3_CS3_RV
+WATT Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5
 WATT Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5
 WATT Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5_HM
 WATT Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5_HM_TR

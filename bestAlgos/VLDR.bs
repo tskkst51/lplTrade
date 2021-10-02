@@ -79,6 +79,7 @@ VLDR Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_IT
 VLDR Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_LI
 VLDR Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_QP_IR5
 VLDR Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS2_IT
+VLDR Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS2_IT
 VLDR Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS2_IT_QL
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS2_HM_QP
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS2_IT_QP
@@ -89,15 +90,18 @@ VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB4_CS4_HM_
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB4_CS4_QP
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB4_CS4_RV_QP
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB4_CS4_RV_QP_DB30
+VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB4_CS4_TS
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_HM_QP
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_HM_QP_DB30
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_QP
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_RV_QP
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_RV_QP_DB30
+VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_TS
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_HM_QP
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_HM_QP_DB30
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_QP
 VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_RV_QP
+VLDR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_TS
 VLDR Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS2_HM_QP_DB30
 VLDR Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS2_RV_QP_DB30
 VLDR Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS2_RV_QP
@@ -118,6 +122,7 @@ VLDR Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS2
 VLDR Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS2_RV_TR
 VLDR Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS2_TR
 VLDR Gain: $ 0.54 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS2_DB30
+VLDR Gain: $ 0.54 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS2_TS
 VLDR Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_IR5
 VLDR Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_DB30
 VLDR Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_IT_QL_DB30
@@ -142,6 +147,7 @@ VLDR Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_IT
 VLDR Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_IT_QL
 VLDR Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_QL
 VLDR Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_RV
+VLDR Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4
 VLDR Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4
 VLDR Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_AC
 VLDR Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_AO

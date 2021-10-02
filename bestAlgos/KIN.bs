@@ -58,6 +58,7 @@ KIN Gain: $ -0.07 Win %: 0 in 2 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_RV_TR_D
 KIN Gain: $ -0.07 Win %: 0 in 2 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_TR_QP_DB30
 KIN Gain: $ -0.07 Win %: 0 in 2 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_VI
 KIN Gain: $ -0.07 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_PM
+KIN Gain: $ -0.07 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_PM
 KIN Gain: $ -0.07 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_QP_PM
 KIN Gain: $ -0.07 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_PM
 KIN Gain: $ -0.07 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_QP_PM
@@ -107,6 +108,7 @@ KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_RV_A
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_RV_TR
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_SS
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_TR
+KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_TS
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_AC
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_AL
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_AO
@@ -124,6 +126,7 @@ KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_RV_A
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_RV_TR
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_SS
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_TR
+KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_TS
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_AC
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_AL
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_AO
@@ -141,6 +144,8 @@ KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_RV_A
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_RV_TR
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_SS
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_TR
+KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_TS
+KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_AC
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_AL
@@ -159,3 +164,4 @@ KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_RV_A
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_RV_TR
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_SS
 KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_TR
+KIN Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_TS

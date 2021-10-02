@@ -39,11 +39,16 @@ GEG Gain: $ -0.85 Win %: 0 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_TR_QP_D
 GEG Gain: $ -0.55 Win %: 0 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_QP_PM
 GEG Gain: $ -0.55 Win %: 0 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_QP_PM
 GEG Gain: $ -0.17 Win %: 0 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB4_CS4_PM
+GEG Gain: $ -0.17 Win %: 0 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB4_CS4_PM
 GEG Gain: $ -0.17 Win %: 0 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB4_CS4_PM
 GEG Gain: $ -0.05 Win %: 0 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB4_CS4_QP_PM
 GEG Gain: $ -0.05 Win %: 0 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB4_CS4_QP_PM
 GEG Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_IT_QP_DB30
 GEG Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_IT_QP_DB30
+GEG Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB4_CS4_TS
+GEG Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB4_CS4_TS
+GEG Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_TS
+GEG Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_TS
 GEG Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB4_CS4_HM_AV_DB30
 GEG Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB4_CS4_RV_AV_DB30
 GEG Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB4_CS4_HM_AV_DB30
@@ -145,6 +150,7 @@ GEG Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_RV
 GEG Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_RV_AL
 GEG Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_RV_TR
 GEG Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_TR
+GEG Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4
 GEG Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4
 GEG Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_AC
 GEG Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_AL

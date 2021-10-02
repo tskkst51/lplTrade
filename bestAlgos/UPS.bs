@@ -127,6 +127,7 @@ UPS Gain: $ 7.27 Win %: 60.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_H
 UPS Gain: $ 7.27 Win %: 60.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB1_CS1_HM_TR
 UPS Gain: $ 7.27 Win %: 60.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_HM_TR
 UPS Gain: $ 8.29 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB1_CS1_IT
+UPS Gain: $ 8.29 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB1_CS1_IT
 UPS Gain: $ 8.29 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_IT
 UPS Gain: $ 8.29 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB1_CS1_IT
 UPS Gain: $ 8.29 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_IT
@@ -138,6 +139,10 @@ UPS Gain: $ 9.07 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB1_CS1_
 UPS Gain: $ 9.07 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_RV
 UPS Gain: $ 9.07 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB1_CS1_RV
 UPS Gain: $ 9.07 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_RV
+UPS Gain: $ 9.32 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB1_CS1_TS
+UPS Gain: $ 9.32 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_TS
+UPS Gain: $ 9.32 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB1_CS1_TS
+UPS Gain: $ 9.32 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_TS
 UPS Gain: $ 9.57 Win %: 80.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB1_CS1_RV_AL
 UPS Gain: $ 9.57 Win %: 80.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_RV_AL
 UPS Gain: $ 9.57 Win %: 80.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB1_CS1_RV_AL
@@ -146,6 +151,7 @@ UPS Gain: $ 9.93 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB1_CS1_
 UPS Gain: $ 9.93 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_AC
 UPS Gain: $ 9.93 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB1_CS1_AC
 UPS Gain: $ 9.93 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_AC
+UPS Gain: $ 10.05 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2
 UPS Gain: $ 10.05 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2
 UPS Gain: $ 11.68 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB1_CS1_SS
 UPS Gain: $ 11.68 Win %: 100.00 in 5 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_SS

@@ -95,6 +95,7 @@ ON Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB4_CS4_QP
 ON Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB4_CS4_HM_QP
 ON Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB4_CS4_DB15
 ON Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_IT
+ON Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_IT
 ON Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_IT_QL
 ON Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB4_CS4_IT
 ON Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB4_CS4_IT_QL
@@ -109,6 +110,10 @@ ON Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_HM_T
 ON Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_TR
 ON Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB4_CS4_HM_TR
 ON Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB4_CS4_TR
+ON Gain: $ 0.91 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_TS
+ON Gain: $ 0.91 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB4_CS4_TS
+ON Gain: $ 0.91 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB4_CS4_TS
+ON Gain: $ 0.91 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB4_OS4_CB4_CS4_TS
 ON Gain: $ 0.93 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_HM_QP_DB15
 ON Gain: $ 0.93 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_RV_QP_DB15
 ON Gain: $ 0.93 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_TR_QP_DB15
@@ -141,6 +146,7 @@ ON Gain: $ 1.83 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB4_CS4_AO
 ON Gain: $ 1.83 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB4_CS4_AO_AC
 ON Gain: $ 1.83 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB4_CS4_QL
 ON Gain: $ 1.83 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB4_CS4_SS
+ON Gain: $ 1.83 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB4_OS4_CB4_CS4
 ON Gain: $ 1.83 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB4_OS4_CB4_CS4
 ON Gain: $ 1.83 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB4_OS4_CB4_CS4_AC
 ON Gain: $ 1.83 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB4_OS4_CB4_CS4_AO

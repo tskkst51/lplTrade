@@ -66,11 +66,14 @@ LEGN Gain: $ 1.93 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_LI
 LEGN Gain: $ 1.97 Win %: 66.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_TR_IR3
 LEGN Gain: $ 2.06 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_IR2
 LEGN Gain: $ 2.1 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB3_OS3_CB5_CS5_LI
-LEGN Gain: $ 2.21 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_HM_AV
 LEGN Gain: $ 2.21 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_HM_TR_DB8
+LEGN Gain: $ 2.21 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_HM_AV
 LEGN Gain: $ 2.3 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB3_OS3_CB5_CS5_AL
+LEGN Gain: $ 2.3 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_TS
 LEGN Gain: $ 2.47 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB3_OS3_CB5_CS5_HM_AV
+LEGN Gain: $ 2.57 Win %: 100.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_TS
 LEGN Gain: $ 2.79 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_RV_AV
+LEGN Gain: $ 2.83 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_TS
 LEGN Gain: $ 2.88 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB3_OS3_CB5_CS5_TR
 LEGN Gain: $ 3 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB3_OS3_CB5_CS5_DB15
 LEGN Gain: $ 3 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB3_OS3_CB5_CS5_IT_QL_DB15
@@ -81,6 +84,7 @@ LEGN Gain: $ 3.25 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_RV_
 LEGN Gain: $ 3.3 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_HM_TR_DB8
 LEGN Gain: $ 3.3 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_RV_TR_DB8
 LEGN Gain: $ 3.3 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_RV_TR_DB8
+LEGN Gain: $ 3.37 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB3_OS3_CB5_CS5_TS
 LEGN Gain: $ 3.47 Win %: 100.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_IT_QL_DB10
 LEGN Gain: $ 3.49 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB3_OS3_CB5_CS5_RV_TR_DB15
 LEGN Gain: $ 3.49 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB3_OS3_CB5_CS5_RV_TR_DB15
@@ -102,6 +106,7 @@ LEGN Gain: $ 4.54 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_RV
 LEGN Gain: $ 4.56 Win %: 100.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_RV_AV
 LEGN Gain: $ 4.57 Win %: 100.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_RV_AL_DB10
 LEGN Gain: $ 4.62 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_VI
+LEGN Gain: $ 4.65 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_IT
 LEGN Gain: $ 4.65 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_IT
 LEGN Gain: $ 4.65 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_IT_QL
 LEGN Gain: $ 4.72 Win %: 100.00 in 3 days with algo TB2_HL_HI_QM_OB3_OS3_CB5_CS5_HM
@@ -140,6 +145,7 @@ LEGN Gain: $ 5.5 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_LI
 LEGN Gain: $ 5.51 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_AO
 LEGN Gain: $ 5.51 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_HM
 LEGN Gain: $ 5.51 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_IR2
+LEGN Gain: $ 5.61 Win %: 100.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5
 LEGN Gain: $ 5.61 Win %: 100.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5
 LEGN Gain: $ 5.61 Win %: 100.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_AC
 LEGN Gain: $ 5.61 Win %: 100.00 in 3 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_AO

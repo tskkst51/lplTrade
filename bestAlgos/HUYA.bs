@@ -71,6 +71,7 @@ HUYA Gain: $ -0.09 Win %: 66.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1
 HUYA Gain: $ -0.09 Win %: 66.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_RV_AL_DB10
 HUYA Gain: $ -0.09 Win %: 66.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_RV_TR_DB10
 HUYA Gain: $ -0.07 Win %: 33.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB1_CS1_PM
+HUYA Gain: $ -0.07 Win %: 33.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB1_CS1_PM
 HUYA Gain: $ -0.07 Win %: 33.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB2_CS2_PM
 HUYA Gain: $ -0.07 Win %: 33.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_PM
 HUYA Gain: $ -0.07 Win %: 33.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_PM
@@ -122,6 +123,10 @@ HUYA Gain: $ 0.86 Win %: 66.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB1_CS1_
 HUYA Gain: $ 0.86 Win %: 66.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB2_CS2_LI
 HUYA Gain: $ 0.86 Win %: 66.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_LI
 HUYA Gain: $ 0.86 Win %: 66.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_LI
+HUYA Gain: $ 0.86 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB1_CS1_TS
+HUYA Gain: $ 0.86 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB2_CS2_TS
+HUYA Gain: $ 0.86 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_TS
+HUYA Gain: $ 0.86 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_TS
 HUYA Gain: $ 0.88 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB1_CS1_DB10
 HUYA Gain: $ 0.88 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB2_CS2_DB10
 HUYA Gain: $ 0.88 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_DB10
@@ -156,6 +161,7 @@ HUYA Gain: $ 1.59 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB2_CS2
 HUYA Gain: $ 1.59 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB1_OS1_CB2_CS2_RV
 HUYA Gain: $ 1.59 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_QL
 HUYA Gain: $ 1.59 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_RV
+HUYA Gain: $ 1.59 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2
 HUYA Gain: $ 1.59 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2
 HUYA Gain: $ 1.59 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_QL
 HUYA Gain: $ 1.59 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_RV

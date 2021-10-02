@@ -36,6 +36,8 @@ LGHL Gain: $ -0.02 Win %: 0 in 1 days with algo TB5_OC_QM_OB2_OS2_CB2_CS2_IT_QL
 LGHL Gain: $ -0.02 Win %: 0 in 1 days with algo TB5_OC_QM_OB2_OS2_CB2_CS2_IT_QP
 LGHL Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB4_CS4_IT_QP
 LGHL Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4_IT_QP
+LGHL Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB4_CS4_TS
+LGHL Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4_TS
 LGHL Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB2_OS2_CB1_CS1_VI
 LGHL Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB2_OS2_CB2_CS2_VI
 LGHL Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB2_OS2_CB1_CS1_QP_PM
@@ -60,6 +62,9 @@ LGHL Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4
 LGHL Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4_QP
 LGHL Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4_QP_IR4
 LGHL Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4_RV_QP
+LGHL Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB2_OS2_CB1_CS1_TS
+LGHL Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB2_OS2_CB2_CS2_TS
+LGHL Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB2_OS2_CB1_CS1_PM
 LGHL Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB2_OS2_CB1_CS1_PM
 LGHL Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB2_OS2_CB2_CS2_PM
 LGHL Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB2_OS2_CB1_CS1_AL
@@ -148,6 +153,7 @@ LGHL Gain: $ 1.38 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB4_CS4
 LGHL Gain: $ 1.38 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB4_CS4_RV_TR
 LGHL Gain: $ 1.38 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB4_CS4_TR
 LGHL Gain: $ 1.38 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB4_CS4_TR_IR4
+LGHL Gain: $ 1.38 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4
 LGHL Gain: $ 1.38 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4
 LGHL Gain: $ 1.38 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4_IR4
 LGHL Gain: $ 1.38 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4_IT

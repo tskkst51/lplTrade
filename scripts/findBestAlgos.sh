@@ -13,7 +13,8 @@ function init {
    dates=$(ls $testDir | awk '{print $1}')
    
    stock=$1
-   modProfiles=$2
+   algoOveride=$2
+   modProfiles=$3
    
    host=$(hostname -s)
    if [[ $host == "ML-C02C8546LVDL" ]]; then
@@ -76,9 +77,12 @@ algoModifiersCombined=(
 "IT_QP"
 "AO_AC"
 "QP_PM"
+"TR_TS"
 )
 
-init $1 $2
+init $1 $2 $3
+
+echo algoOR $algoOveride
 
 if [[ -n $modProfiles ]]; then
    ${wp}/scripts/modProfiles.sh test
@@ -88,6 +92,11 @@ fi
 if [[ ! -s $resultsPath ]]; then
    echo Results path $resultsPath not found
    exit 1
+fi
+
+if [[ -z $algoOveride ]]; then
+   # Remove the gain file if we are doing a run across all algos
+   rm -f bestAlgos/${stock}.gn || cant remove gain file!!
 fi
 
 # Top 4 standard algos found to be the best
@@ -129,6 +138,13 @@ for algo in $algos; do
    # Run modifiers combined
    for aMod in ${algoModifiersCombined[*]}; do
       
+      if [[ -n $algoOveride ]]; then
+         if ! $(echo $aMod | grep -q $algoOveride); then
+            echo Skipping $aMod
+            continue 
+         fi
+      fi
+      
       ctbv=${aMod: -2}
 
       if [[ $ctbv == "IR" ]]; then
@@ -141,12 +157,21 @@ for algo in $algos; do
       
       echo Running algo $modAlgo against $stock
       $run "" $modAlgo $stock > bestAlgos/${stock}.all
-      tail bestAlgos/${stock}.all | grep "Gain" | sed "s/\$//" | sed "/.*e-*/d" >> bestAlgos/${stock}.gn
+      #tail bestAlgos/${stock}.all | grep "Gain" | sed "s/\$//" | sed "/.*e-*/d" >> bestAlgos/${stock}.gn
+      tail bestAlgos/${stock}.all | grep "Gain" | sed "/.*e-*/d" >> bestAlgos/${stock}.gn
       tail -1 bestAlgos/${stock}.all
    done
    
    # Run all modifiers individually
    for aMod in ${algoModifiers[*]}; do
+
+      if [[ -n $algoOveride ]]; then
+         if ! $(echo $aMod | grep -q $algoOveride); then
+            echo Skipping $aMod
+            continue 
+         fi
+      fi
+
       if [[ $aMod == "IR" ]]; then
          aMod=${aMod}${mtbv} 
       elif [[ $aMod == "DB" ]]; then
@@ -157,7 +182,8 @@ for algo in $algos; do
       
       echo Running algo $modAlgo against $stock
       $run "" $modAlgo $stock > bestAlgos/${stock}.all
-      tail bestAlgos/${stock}.all | grep "Gain" | sed "s/\$//" | sed "/.*e-*/d" >> bestAlgos/${stock}.gn
+      #tail bestAlgos/${stock}.all | grep "Gain" | sed "s/\$//" | sed "/.*e-*/d" >> bestAlgos/${stock}.gn
+      tail bestAlgos/${stock}.all | grep "Gain" | sed "/.*e-*/d" >> bestAlgos/${stock}.gn
       tail -1 bestAlgos/${stock}.all
    done
    
@@ -169,10 +195,12 @@ if [[ -f bestAlgos/${stock}.bs ]]; then
    dt=$(date "+%Y%m%d")
    mv bestAlgos/${stock}.bs historyBestAlgos/${stock}_${dt}.bo
 fi
-sort -n -k 4,4 bestAlgos/${stock}.gn  | sed "/.*e-*/d" > bestAlgos/${stock}.bs
 
-# THis uses the best percentage instead of top dollar which could have - $ amounts at EOF
-#sort -n -k 4,4 bestAlgos/${stock}.gn  | sed "/.*e-*/d" | sort -n -k 7,7 > bestAlgos/${stock}.bs
+# Ordered by days data, %, price gained
+#sort -n -k9,9 -k7,7 -k4,4 bestAlgos/${stock}.gn  | sed "/.*e-*/d" | sed -E 's/\$ ([0-9]) /\$ \1.0 /' > bestAlgos/${stock}.bs
+
+# Ordered by days data, price gained, %
+sort -n -k9,9 -k4,4 -k7,7 bestAlgos/${stock}.gn  | sed "/.*e-*/d" | sed -E 's/\$ ([0-9]) /\$ \1.0 /' > bestAlgos/${stock}.bs
 
 exit 0
 

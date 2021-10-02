@@ -38,6 +38,10 @@ WEI Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_IT_
 WEI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_DB15
 WEI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_RV_AL_DB15
 WEI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_RV_TR_DB15
+WEI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_TS
+WEI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB3_OS3_CB5_CS5_TS
+WEI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_TS
+WEI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_TS
 WEI Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_TR_QP_DB15
 WEI Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_TR_QP_DB15
 WEI Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_HM_QP_DB15
@@ -98,6 +102,7 @@ WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_HM_
 WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_HM_TR
 WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_IR4
 WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_IT
+WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_IT
 WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_IT_QL
 WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_QL
 WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB5_CS5_RV
@@ -135,6 +140,7 @@ WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_QL
 WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_RV_AL
 WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_TR
 WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_TR_IR4
+WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5
 WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5
 WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_AL
 WEI Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_AO_AC

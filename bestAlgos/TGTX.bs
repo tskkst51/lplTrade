@@ -15,6 +15,7 @@ TGTX Gain: $ -2.37 Win %: 0 in 1 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_RV_AV_
 TGTX Gain: $ -2.36 Win %: 0 in 1 days with algo TB3_CC_QM_OB3_OS3_CB4_CS4_LI
 TGTX Gain: $ -2.36 Win %: 0 in 1 days with algo TB3_CC_QM_OB3_OS3_CB4_CS4_RV_TR_DB10
 TGTX Gain: $ -2.27 Win %: 0 in 1 days with algo TB3_CC_QM_OB3_OS3_CB4_CS4_PM
+TGTX Gain: $ -2.27 Win %: 0 in 1 days with algo TB3_CC_QM_OB3_OS3_CB4_CS4_PM
 TGTX Gain: $ -2.21 Win %: 0 in 1 days with algo TB3_CC_QM_OB3_OS3_CB4_CS4_TR
 TGTX Gain: $ -2.2 Win %: 0 in 1 days with algo TB3_CC_QM_OB3_OS3_CB4_CS4_HM_QP
 TGTX Gain: $ -2.15 Win %: 0 in 1 days with algo TB3_HL_LO_QM_OB3_OS3_CB3_CS3_AV
@@ -102,10 +103,12 @@ TGTX Gain: $ -0.41 Win %: 0 in 1 days with algo TB3_HL_LO_QM_OB3_OS3_CB3_CS3_RV_
 TGTX Gain: $ -0.39 Win %: 0 in 1 days with algo TB3_CC_QM_OB3_OS3_CB4_CS4_HM_AV_DB10
 TGTX Gain: $ -0.39 Win %: 0 in 1 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_HM_AV_DB8
 TGTX Gain: $ -0.26 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1_AC
+TGTX Gain: $ -0.25 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1
 TGTX Gain: $ -0.25 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1_IR1
 TGTX Gain: $ -0.25 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1_IT
 TGTX Gain: $ -0.25 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1_QL
 TGTX Gain: $ -0.25 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1_SS
+TGTX Gain: $ -0.25 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1_TS
 TGTX Gain: $ -0.24 Win %: 0 in 1 days with algo TB3_HL_LO_QM_OB3_OS3_CB3_CS3_VI
 TGTX Gain: $ -0.23 Win %: 0 in 1 days with algo TB3_HL_LO_QM_OB3_OS3_CB3_CS3_PM
 TGTX Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HL_LO_QM_OB3_OS3_CB3_CS3_IR3
@@ -120,6 +123,7 @@ TGTX Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1_QP
 TGTX Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB3_OS3_CB4_CS4_TR_QP
 TGTX Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1_DB6
 TGTX Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1_TR_QP_DB6
+TGTX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB3_OS3_CB3_CS3_TS
 TGTX Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1_TR_QP
 TGTX Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_TR_QP
 TGTX Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB3_OS3_CB3_CS3_HM_QP
@@ -127,8 +131,10 @@ TGTX Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB3_OS3_CB3_CS3
 TGTX Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1_QP
 TGTX Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1_RV_AL
 TGTX Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_RV_TR_DB8
+TGTX Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_TS
 TGTX Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_AO_AC
 TGTX Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB3_OS3_CB4_CS4_IT_QL_DB10
+TGTX Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB3_OS3_CB4_CS4_TS
 TGTX Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB4_CS4_VI
 TGTX Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB1_CS1_AV
 TGTX Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB3_OS3_CB3_CS3_LI

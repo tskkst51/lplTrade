@@ -57,6 +57,7 @@ GRVI Gain: $ -0.02 Win %: 66.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_HM
 GRVI Gain: $ 0.14 Win %: 66.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_IT_QL_DB30
 GRVI Gain: $ 0.21 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_SS
 GRVI Gain: $ 0.21 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_SS
+GRVI Gain: $ 0.25 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_TS
 GRVI Gain: $ 0.26 Win %: 66.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_IR5
 GRVI Gain: $ 0.33 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_RV_TR
 GRVI Gain: $ 0.33 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_TR
@@ -64,8 +65,11 @@ GRVI Gain: $ 0.33 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_TR_
 GRVI Gain: $ 0.33 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_RV_TR
 GRVI Gain: $ 0.33 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_TR
 GRVI Gain: $ 0.33 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_TR_IR2
+GRVI Gain: $ 0.38 Win %: 100.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_TS
 GRVI Gain: $ 0.51 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_HM_TR
 GRVI Gain: $ 0.51 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_HM_TR
+GRVI Gain: $ 0.53 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_TS
+GRVI Gain: $ 0.53 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_TS
 GRVI Gain: $ 0.55 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_VI
 GRVI Gain: $ 0.55 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_VI
 GRVI Gain: $ 0.57 Win %: 66.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_TR_IR5
@@ -73,9 +77,9 @@ GRVI Gain: $ 0.75 Win %: 66.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_AL
 GRVI Gain: $ 0.75 Win %: 66.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_RV_AL
 GRVI Gain: $ 0.81 Win %: 100.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_VI
 GRVI Gain: $ 0.94 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_LI
-GRVI Gain: $ 0.97 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_RV_TR_DB30
-GRVI Gain: $ 0.97 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_RV_TR_DB30
 GRVI Gain: $ 0.97 Win %: 66.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_IT_QL_DB10
+GRVI Gain: $ 0.97 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_RV_TR_DB30
+GRVI Gain: $ 0.97 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_RV_TR_DB30
 GRVI Gain: $ 1.02 Win %: 66.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_RV_AL_DB10
 GRVI Gain: $ 1.05 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_RV_AL_DB30
 GRVI Gain: $ 1.07 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_AV
@@ -87,6 +91,7 @@ GRVI Gain: $ 1.13 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_RV_
 GRVI Gain: $ 1.13 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_RV_TR_DB8
 GRVI Gain: $ 1.13 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_RV_TR_DB8
 GRVI Gain: $ 1.13 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_RV_TR_DB8
+GRVI Gain: $ 1.17 Win %: 100.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_IT
 GRVI Gain: $ 1.17 Win %: 100.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_IT
 GRVI Gain: $ 1.17 Win %: 100.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_IT_QL
 GRVI Gain: $ 1.18 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_RV_AV
@@ -145,6 +150,7 @@ GRVI Gain: $ 2.15 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_TR
 GRVI Gain: $ 2.16 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_AV
 GRVI Gain: $ 2.16 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_HM_AV
 GRVI Gain: $ 2.16 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_RV_AV
+GRVI Gain: $ 2.23 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5
 GRVI Gain: $ 2.23 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5
 GRVI Gain: $ 2.23 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_AC
 GRVI Gain: $ 2.23 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_AO

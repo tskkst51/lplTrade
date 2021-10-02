@@ -76,6 +76,7 @@ GBR Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_IT_QL_D
 GBR Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2_IT_QL_DB15
 GBR Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB1_CS1_HM_AV_DB15
 GBR Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB1_CS1_PM
+GBR Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB1_CS1_PM
 GBR Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB1_CS1_RV_AV_DB15
 GBR Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB2_CS2_HM_AV_DB15
 GBR Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB2_CS2_PM
@@ -90,6 +91,10 @@ GBR Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB1_CS1_LI
 GBR Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB2_CS2_LI
 GBR Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_LI
 GBR Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2_LI
+GBR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB1_CS1_TS
+GBR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB2_CS2_TS
+GBR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_TS
+GBR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2_TS
 GBR Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB1_CS1_HM_TR
 GBR Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB1_CS1_RV_TR
 GBR Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB1_OS1_CB1_CS1_TR
@@ -148,6 +153,7 @@ GBR Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_IT_
 GBR Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_QL
 GBR Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_RV
 GBR Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_RV_AL
+GBR Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2
 GBR Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2
 GBR Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2_AC
 GBR Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2_AL

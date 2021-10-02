@@ -92,12 +92,15 @@ SLHG Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_LI
 SLHG Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_VI
 SLHG Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_LI
 SLHG Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_VI
+SLHG Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_TS
+SLHG Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_TS
 SLHG Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_AL
 SLHG Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_AV
 SLHG Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_HM
 SLHG Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_HM_AV
 SLHG Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_HM_TR
 SLHG Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_IR5
+SLHG Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_IT
 SLHG Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_IT
 SLHG Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_IT_QL
 SLHG Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_QL
@@ -132,6 +135,7 @@ SLHG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_QL
 SLHG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_RV
 SLHG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_RV_AL
 SLHG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4
+SLHG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4
 SLHG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_AL
 SLHG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_HM
 SLHG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_IT
@@ -141,5 +145,7 @@ SLHG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_RV
 SLHG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_RV_AL
 SLHG Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_LI
 SLHG Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_LI
+SLHG Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_TS
+SLHG Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_TS
 SLHG Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_IR1
 SLHG Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_IR1

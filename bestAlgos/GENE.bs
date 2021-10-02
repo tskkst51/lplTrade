@@ -101,6 +101,7 @@ GENE Gain: $ 0.06 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_
 GENE Gain: $ 0.06 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_AL
 GENE Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_RV_AV
 GENE Gain: $ 0.18 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_RV_TR
+GENE Gain: $ 0.19 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_RV_TR_DB30
 GENE Gain: $ 0.19 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_AV
 GENE Gain: $ 0.19 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_HM_AV
 GENE Gain: $ 0.19 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_RV_AV
@@ -111,7 +112,6 @@ GENE Gain: $ 0.19 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1
 GENE Gain: $ 0.19 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_RV_AV
 GENE Gain: $ 0.19 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_HM_AV
 GENE Gain: $ 0.19 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_RV_AV
-GENE Gain: $ 0.19 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_RV_TR_DB30
 GENE Gain: $ 0.21 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_HM_TR
 GENE Gain: $ 0.21 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_RV_TR
 GENE Gain: $ 0.21 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_TR
@@ -125,12 +125,17 @@ GENE Gain: $ 0.25 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2
 GENE Gain: $ 0.25 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_HM
 GENE Gain: $ 0.3 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_IT_QL
 GENE Gain: $ 0.3 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_LI
+GENE Gain: $ 0.3 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_TS
 GENE Gain: $ 0.3 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_LI
+GENE Gain: $ 0.3 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB2_CS2_TS
 GENE Gain: $ 0.3 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_LI
+GENE Gain: $ 0.3 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_TS
 GENE Gain: $ 0.3 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_LI
+GENE Gain: $ 0.3 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_TS
 GENE Gain: $ 0.31 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_QL
 GENE Gain: $ 0.35 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_SS
 GENE Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_HM
+GENE Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_IT
 GENE Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_IT
 GENE Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_QL
 GENE Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_RV
@@ -144,6 +149,7 @@ GENE Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1
 GENE Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_IT_QL
 GENE Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_QL
 GENE Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_RV
+GENE Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2
 GENE Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2
 GENE Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_IT
 GENE Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_IT_QL

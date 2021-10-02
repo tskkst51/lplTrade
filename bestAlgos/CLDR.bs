@@ -1,6 +1,7 @@
 CLDR Gain: $ -0.04 Win %: 0 in 1 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_SS
 CLDR Gain: $ -0.04 Win %: 0 in 1 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_SS
 CLDR Gain: $ -0.03 Win %: 0 in 1 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_PM
+CLDR Gain: $ -0.03 Win %: 0 in 1 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_PM
 CLDR Gain: $ -0.03 Win %: 0 in 1 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_QP_PM
 CLDR Gain: $ -0.03 Win %: 0 in 1 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_PM
 CLDR Gain: $ -0.03 Win %: 0 in 1 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_QP_PM
@@ -102,6 +103,7 @@ CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_RV
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_RV_TR
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_TR
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_TR_IR3
+CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_TS
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_AC
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_AL
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_AO
@@ -120,6 +122,7 @@ CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_RV
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_RV_TR
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_TR
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_TR_IR3
+CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_TS
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_AC
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_AL
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_AO
@@ -139,6 +142,8 @@ CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_RV
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_SS
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_TR
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_TR_IR2
+CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_TS
+CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_AC
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_AL
@@ -159,3 +164,4 @@ CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_RV
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_SS
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_TR
 CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_TR_IR2
+CLDR Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_TS

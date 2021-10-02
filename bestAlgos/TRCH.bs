@@ -38,17 +38,18 @@ TRCH Gain: $ -0.05 Win %: 0 in 2 days with algo TB1_HL_HI_QM_OB3_OS3_CB4_CS4_IT_
 TRCH Gain: $ -0.04 Win %: 0 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_IT_QP
 TRCH Gain: $ -0.04 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_RV_QP_DB30
 TRCH Gain: $ -0.01 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_IT_QP
-TRCH Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_IT_QP_DB30
 TRCH Gain: $ 0.01 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_RV_QP
-TRCH Gain: $ 0.02 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_IT_QL_DB30
-TRCH Gain: $ 0.02 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_IT_QP
+TRCH Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_IT_QP_DB30
 TRCH Gain: $ 0.02 Win %: 50.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_DB30
 TRCH Gain: $ 0.02 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_IT_QP_DB30
+TRCH Gain: $ 0.02 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_IT_QL_DB30
+TRCH Gain: $ 0.02 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_IT_QP
 TRCH Gain: $ 0.03 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB3_OS3_CB4_CS4_IT_QP_DB30
 TRCH Gain: $ 0.03 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_IT_QP_DB30
 TRCH Gain: $ 0.14 Win %: 50.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_RV_TR_DB30
 TRCH Gain: $ 0.27 Win %: 50.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_LI
 TRCH Gain: $ 0.29 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_HM_TR_DB30
+TRCH Gain: $ 0.4 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_TS
 TRCH Gain: $ 0.41 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_HM_QP_DB30
 TRCH Gain: $ 0.41 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_TR_QP_DB30
 TRCH Gain: $ 0.41 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_HM_QP_DB30
@@ -67,6 +68,8 @@ TRCH Gain: $ 0.43 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_RV
 TRCH Gain: $ 0.45 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_HM_QP
 TRCH Gain: $ 0.45 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_QP
 TRCH Gain: $ 0.45 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_RV_QP
+TRCH Gain: $ 0.45 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_TS
+TRCH Gain: $ 0.46 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_TS
 TRCH Gain: $ 0.46 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_TR_QP
 TRCH Gain: $ 0.5 Win %: 50.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_RV_TR_DB30
 TRCH Gain: $ 0.53 Win %: 50.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_VI
@@ -74,9 +77,9 @@ TRCH Gain: $ 0.56 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_
 TRCH Gain: $ 0.58 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_IT
 TRCH Gain: $ 0.58 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_IT_QL
 TRCH Gain: $ 0.59 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_RV_AV
+TRCH Gain: $ 0.61 Win %: 50.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_HM_TR_DB30
 TRCH Gain: $ 0.61 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_AV
 TRCH Gain: $ 0.61 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_HM_AV
-TRCH Gain: $ 0.61 Win %: 50.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_HM_TR_DB30
 TRCH Gain: $ 0.67 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB3_OS3_CB4_CS4_IT_QL_DB30
 TRCH Gain: $ 0.68 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_VI
 TRCH Gain: $ 0.74 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_TR_IR5
@@ -87,6 +90,7 @@ TRCH Gain: $ 0.79 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_SS
 TRCH Gain: $ 0.79 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB3_OS3_CB4_CS4_DB30
 TRCH Gain: $ 0.79 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_AO_AC
 TRCH Gain: $ 0.81 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_RV_AL
+TRCH Gain: $ 0.85 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB3_OS3_CB4_CS4_TS
 TRCH Gain: $ 0.87 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_SS
 TRCH Gain: $ 0.89 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_VI
 TRCH Gain: $ 0.9 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_RV_AL_DB30
@@ -101,8 +105,8 @@ TRCH Gain: $ 1 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB3_OS3_CB4_CS4_RV
 TRCH Gain: $ 1.02 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_IT
 TRCH Gain: $ 1.02 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_IT_QL
 TRCH Gain: $ 1.04 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB3_OS3_CB4_CS4_HM_TR_DB30
-TRCH Gain: $ 1.05 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB3_OS3_CB4_CS4_AO
 TRCH Gain: $ 1.05 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_IT_QL_DB30
+TRCH Gain: $ 1.05 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB3_OS3_CB4_CS4_AO
 TRCH Gain: $ 1.06 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_HM_TR
 TRCH Gain: $ 1.06 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_RV_TR
 TRCH Gain: $ 1.06 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_TR
@@ -127,6 +131,7 @@ TRCH Gain: $ 1.52 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_AO
 TRCH Gain: $ 1.52 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_AO_AC
 TRCH Gain: $ 1.52 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_HM
 TRCH Gain: $ 1.52 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_IT
+TRCH Gain: $ 1.52 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_IT
 TRCH Gain: $ 1.52 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_IT_QL_DB30
 TRCH Gain: $ 1.52 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_RV
 TRCH Gain: $ 1.56 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB3_OS3_CB4_CS4_HM
@@ -147,6 +152,7 @@ TRCH Gain: $ 1.73 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4
 TRCH Gain: $ 1.75 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_HM_AV_DB30
 TRCH Gain: $ 1.78 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB5_OS5_CB5_CS5_RV_AV_DB30
 TRCH Gain: $ 1.94 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_LI
+TRCH Gain: $ 1.97 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4
 TRCH Gain: $ 1.97 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4
 TRCH Gain: $ 1.97 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_HM
 TRCH Gain: $ 1.97 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB5_OS5_CB4_CS4_QL

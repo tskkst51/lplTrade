@@ -54,6 +54,7 @@ TBLA Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_QP_PM
 TBLA Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB4_CS4_PM
 TBLA Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB4_CS4_QP_PM
 TBLA Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB4_CS4_PM
+TBLA Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB4_CS4_PM
 TBLA Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB4_CS4_QP_PM
 TBLA Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB5_CS5_PM
 TBLA Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB5_CS5_QP_PM
@@ -92,6 +93,10 @@ TBLA Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_IT
 TBLA Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_IT_QL
 TBLA Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB4_CS4_IT
 TBLA Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB4_CS4_IT_QL
+TBLA Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB4_CS4_TS
+TBLA Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB5_CS5_TS
+TBLA Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_TS
+TBLA Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB4_CS4_TS
 TBLA Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_VI
 TBLA Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB4_CS4_VI
 TBLA Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB4_CS4_VI
@@ -151,6 +156,7 @@ TBLA Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_QL
 TBLA Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_RV
 TBLA Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_RV_AL
 TBLA Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_SS
+TBLA Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB4_CS4
 TBLA Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB4_CS4
 TBLA Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB4_CS4_AL
 TBLA Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB2_OS2_CB4_CS4_HM

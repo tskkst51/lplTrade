@@ -37,6 +37,7 @@ OKE Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_AV
 OKE Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_HM_AV
 OKE Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_RV_AV
 OKE Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB3_OS3_CB4_CS4_IT
+OKE Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB3_OS3_CB4_CS4_IT
 OKE Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB3_OS3_CB4_CS4_IT_QL
 OKE Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_IT
 OKE Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_IT_QL
@@ -48,6 +49,8 @@ OKE Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB3_OS3_CB4_CS4_HM_A
 OKE Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB3_OS3_CB4_CS4_RV_AV_DB15
 OKE Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_HM_AV_DB15
 OKE Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_RV_AV_DB15
+OKE Gain: $ 0.82 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB3_OS3_CB4_CS4_TS
+OKE Gain: $ 0.82 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_TS
 OKE Gain: $ 0.88 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_HM_QP
 OKE Gain: $ 0.88 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_HM_QP_DB30
 OKE Gain: $ 0.88 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_HM_QP
@@ -86,6 +89,8 @@ OKE Gain: $ 1.05 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB3_OS3_CB4_CS4_VI
 OKE Gain: $ 1.05 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_VI
 OKE Gain: $ 1.07 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_HM_TR
 OKE Gain: $ 1.07 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_HM_TR
+OKE Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_TS
+OKE Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_TS
 OKE Gain: $ 1.15 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_HM_AV
 OKE Gain: $ 1.15 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_HM_AV
 OKE Gain: $ 1.21 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_RV_TR_DB30
@@ -141,6 +146,7 @@ OKE Gain: $ 1.79 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_AO
 OKE Gain: $ 1.79 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_AO_AC
 OKE Gain: $ 1.79 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_QL
 OKE Gain: $ 1.79 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_RV
+OKE Gain: $ 1.79 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4
 OKE Gain: $ 1.79 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4
 OKE Gain: $ 1.79 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_AC
 OKE Gain: $ 1.79 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_AO

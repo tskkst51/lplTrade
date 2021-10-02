@@ -51,12 +51,14 @@ AFMD Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_IT
 AFMD Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_HM_AV
 AFMD Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_HM_AV_DB10
 AFMD Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_RV_AV_DB10
+AFMD Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_TS
 AFMD Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_VI
 AFMD Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_QP_PM
 AFMD Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_AV
 AFMD Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_RV_AV
 AFMD Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_QP_PM
 AFMD Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB3_CS3_QP_PM
+AFMD Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_PM
 AFMD Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_PM
 AFMD Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_HM_QP_DB10
 AFMD Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_RV_QP_DB10
@@ -82,6 +84,9 @@ AFMD Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_IR
 AFMD Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_RV_AL_DB10
 AFMD Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB3_CS3_RV_AL_DB10
 AFMD Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_DB30
+AFMD Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_TS
+AFMD Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB3_CS3_TS
+AFMD Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_TS
 AFMD Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_RV_AL_DB10
 AFMD Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_DB10
 AFMD Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_IT_QL_DB10
@@ -146,6 +151,7 @@ AFMD Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB3_CS3_IT
 AFMD Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB3_CS3_IT_QL
 AFMD Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB3_CS3_QL
 AFMD Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB3_CS3_RV
+AFMD Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3
 AFMD Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3
 AFMD Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_AC
 AFMD Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_AO

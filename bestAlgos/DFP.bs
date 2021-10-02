@@ -34,6 +34,7 @@ DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB2_CS2_
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB2_CS2_HM_TR_DB6
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB2_CS2_IR1
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB2_CS2_IT
+DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB2_CS2_IT
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB2_CS2_IT_QL
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB2_CS2_IT_QL_DB6
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB2_CS2_IT_QP
@@ -56,6 +57,7 @@ DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB2_CS2_
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB2_CS2_TR_IR1
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB2_CS2_TR_QP
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB2_CS2_TR_QP_DB6
+DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB2_CS2_TS
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB3_CS3_AC
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB3_CS3_AL
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB3_CS3_AV
@@ -84,6 +86,7 @@ DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB3_CS3_
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB3_CS3_TR
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB3_CS3_TR_QP
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB3_CS3_TR_QP_DB6
+DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB3_CS3_TS
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_AC
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_AL
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_AV
@@ -117,6 +120,8 @@ DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_TR
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_TR_IR1
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_TR_QP
+DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_TS
+DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_AC
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_AL
@@ -151,3 +156,4 @@ DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_TR_IR1
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_TR_QP
 DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_TR_QP_DB6
+DFP Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_TS

@@ -8,6 +8,7 @@ UWMC Gain: $ -0.69 Win %: 0 in 1 days with algo TB5_OC_QM_OB5_OS5_CB3_CS3_RV_QP_
 UWMC Gain: $ -0.61 Win %: 0 in 1 days with algo TB5_OC_QM_OB5_OS5_CB3_CS3_HM_QP
 UWMC Gain: $ -0.59 Win %: 0 in 1 days with algo TB5_OC_QM_OB5_OS5_CB3_CS3_IT_QP
 UWMC Gain: $ -0.59 Win %: 0 in 1 days with algo TB5_OC_QM_OB5_OS5_CB3_CS3_QP
+UWMC Gain: $ -0.59 Win %: 0 in 1 days with algo TB5_OC_QM_OB5_OS5_CB3_CS3_TS
 UWMC Gain: $ -0.56 Win %: 0 in 1 days with algo TB5_HL_QM_OB5_OS5_CB3_CS3_DB6
 UWMC Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_OC_QM_OB5_OS5_CB3_CS3_IT_QL
 UWMC Gain: $ -0.54 Win %: 0 in 1 days with algo TB5_OC_QM_OB5_OS5_CB3_CS3_QL
@@ -98,6 +99,7 @@ UWMC Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB5_OS5_CB3_CS3_DB
 UWMC Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB5_OS5_CB5_CS5_HM
 UWMC Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB5_OS5_CB5_CS5_RV
 UWMC Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB5_OS5_CB5_CS5_IT
+UWMC Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB5_OS5_CB5_CS5_IT
 UWMC Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB3_CS3_HM_TR
 UWMC Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB3_CS3_DB15
 UWMC Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB5_OS5_CB3_CS3_IT_QL_DB6
@@ -105,6 +107,7 @@ UWMC Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB5_OS5_CB5_CS5_HM
 UWMC Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB5_OS5_CB5_CS5_QP
 UWMC Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB5_OS5_CB3_CS3_QP
 UWMC Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB5_OS5_CB3_CS3_RV
+UWMC Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB5_OS5_CB5_CS5_TS
 UWMC Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB5_OS5_CB3_CS3_IT_QL
 UWMC Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB5_OS5_CB3_CS3_RV_AL_DB6
 UWMC Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB5_OS5_CB3_CS3_RV_QP
@@ -136,16 +139,19 @@ UWMC Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB5_OS5_CB5_CS5_RV
 UWMC Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB5_OS5_CB3_CS3_RV_TR
 UWMC Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB5_OS5_CB3_CS3_TR_QP
 UWMC Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB3_CS3_IR4
+UWMC Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB5_OS5_CB3_CS3_TS
 UWMC Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB5_OS5_CB3_CS3_TR_IR1
 UWMC Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB5_OS5_CB3_CS3_HM_AV_DB6
 UWMC Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB5_OS5_CB5_CS5_IT_QL
 UWMC Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB3_CS3_LI
+UWMC Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB3_CS3_TS
 UWMC Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB5_OS5_CB3_CS3_LI
 UWMC Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB3_CS3_AC
 UWMC Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB3_CS3_QP_IR4
 UWMC Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB5_OS5_CB3_CS3_HM
 UWMC Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB5_OS5_CB3_CS3_IR1
 UWMC Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB5_OS5_CB3_CS3_IT_QL_DB6
+UWMC Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB3_CS3
 UWMC Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB3_CS3
 UWMC Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB3_CS3_AO_AC
 UWMC Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB3_OS3_CB3_CS3_IT

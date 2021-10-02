@@ -22,6 +22,7 @@ RETO Gain: $ -1.14 Win %: 0 in 1 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_IT_QP_
 RETO Gain: $ -1.08 Win %: 0 in 1 days with algo TB1_LO_QM_OB1_OS1_CB4_CS4_TR_QP
 RETO Gain: $ -1.08 Win %: 0 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_TR_QP
 RETO Gain: $ -1.04 Win %: 0 in 1 days with algo TB2_HS_QM_OB2_OS2_CB1_CS1
+RETO Gain: $ -1.04 Win %: 0 in 1 days with algo TB2_HS_QM_OB2_OS2_CB1_CS1
 RETO Gain: $ -1.04 Win %: 0 in 1 days with algo TB2_HS_QM_OB2_OS2_CB1_CS1_AC
 RETO Gain: $ -1.04 Win %: 0 in 1 days with algo TB2_HS_QM_OB2_OS2_CB1_CS1_AO
 RETO Gain: $ -1.04 Win %: 0 in 1 days with algo TB2_HS_QM_OB2_OS2_CB1_CS1_AO_AC
@@ -74,9 +75,13 @@ RETO Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB4_CS4_IT_QP
 RETO Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_IT_QP_DB30
 RETO Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB1_CS1_IT_QP
 RETO Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_RV_AL_DB30
+RETO Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB1_CS1_TS
 RETO Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_IT_QP
 RETO Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB4_CS4_IT_QP
 RETO Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_IT_QP
+RETO Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_TS
+RETO Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB4_CS4_TS
+RETO Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_TS
 RETO Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB4_CS4_IT_QL_DB30
 RETO Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_IT_QL_DB30
 RETO Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_HM_QP
@@ -131,6 +136,7 @@ RETO Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_AC
 RETO Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_AO
 RETO Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_AO_AC
 RETO Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_HM
+RETO Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_IT
 RETO Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_IT
 RETO Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_IT_QL
 RETO Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_QL

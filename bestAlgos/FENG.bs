@@ -90,6 +90,7 @@ FENG Gain: $ -0.05 Win %: 0 in 2 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_QP_PM
 FENG Gain: $ -0.05 Win %: 0 in 2 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_QP_PM
 FENG Gain: $ -0.05 Win %: 50.00 in 2 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_PM
 FENG Gain: $ -0.05 Win %: 50.00 in 2 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_PM
+FENG Gain: $ -0.03 Win %: 0 in 2 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_TS
 FENG Gain: $ -0.03 Win %: 50.00 in 2 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_DB30
 FENG Gain: $ -0.03 Win %: 50.00 in 2 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_HM_AV_DB30
 FENG Gain: $ -0.03 Win %: 50.00 in 2 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_HM_TR_DB30
@@ -100,9 +101,14 @@ FENG Gain: $ -0.03 Win %: 50.00 in 2 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_HM
 FENG Gain: $ -0.03 Win %: 50.00 in 2 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_IT_QL_DB30
 FENG Gain: $ -0.03 Win %: 50.00 in 2 days with algo TB2_PL_QM_OB1_OS1_CB2_CS2_IT_QL_DB15
 FENG Gain: $ -0.01 Win %: 50.00 in 2 days with algo TB2_PL_QM_OB1_OS1_CB2_CS2_PM
+FENG Gain: $ 0 Win %: 50.00 in 2 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_IT_QL_DB30
 FENG Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_QP_PM
 FENG Gain: $ 0 Win %: 100.00 in 2 days with algo TB2_PL_QM_OB1_OS1_CB2_CS2_QP_PM
-FENG Gain: $ 0 Win %: 50.00 in 2 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_IT_QL_DB30
+FENG Gain: $ 0.04 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_TS
+FENG Gain: $ 0.04 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5
+FENG Gain: $ 0.04 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_TS
+FENG Gain: $ 0.05 Win %: 50.00 in 2 days with algo TB2_PL_QM_OB1_OS1_CB2_CS2_TS
+FENG Gain: $ 0.06 Win %: 100.00 in 2 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_PM
 FENG Gain: $ 0.06 Win %: 100.00 in 2 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_PM
 FENG Gain: $ 0.08 Win %: 50.00 in 2 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_RV_AL
 FENG Gain: $ 0.08 Win %: 50.00 in 2 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_TR_IR5

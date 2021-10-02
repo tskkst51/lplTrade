@@ -53,6 +53,8 @@ CAH Gain: $ 2.25 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_IT_
 CAH Gain: $ 2.32 Win %: 100.00 in 3 days with algo TB4_HL_LO_QM_OB2_OS2_CB3_CS3_HM_QP
 CAH Gain: $ 2.38 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_DB6
 CAH Gain: $ 2.38 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_DB6
+CAH Gain: $ 2.44 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_TS
+CAH Gain: $ 2.44 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_TS
 CAH Gain: $ 2.46 Win %: 100.00 in 3 days with algo TB4_HL_LO_QM_OB2_OS2_CB3_CS3_AC
 CAH Gain: $ 2.52 Win %: 100.00 in 3 days with algo TB4_HL_LO_QM_OB2_OS2_CB3_CS3_QP
 CAH Gain: $ 2.55 Win %: 100.00 in 3 days with algo TB4_HL_LO_QM_OB2_OS2_CB3_CS3_RV_QP
@@ -60,6 +62,7 @@ CAH Gain: $ 2.55 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_HM_
 CAH Gain: $ 2.55 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_HM_QP
 CAH Gain: $ 2.59 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_TR_QP
 CAH Gain: $ 2.59 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_TR_QP
+CAH Gain: $ 2.66 Win %: 100.00 in 3 days with algo TB4_HL_LO_QM_OB2_OS2_CB3_CS3_TS
 CAH Gain: $ 2.69 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_HM_TR_DB6
 CAH Gain: $ 2.69 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_HM_TR_DB6
 CAH Gain: $ 2.75 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_RV_TR_DB6
@@ -72,11 +75,12 @@ CAH Gain: $ 2.85 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_RV_
 CAH Gain: $ 2.85 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_QP
 CAH Gain: $ 2.85 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_QP_IR1
 CAH Gain: $ 2.85 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_RV_QP
+CAH Gain: $ 2.87 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_TS
 CAH Gain: $ 2.97 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_TR_IR3
+CAH Gain: $ 2.98 Win %: 66.00 in 3 days with algo TB4_HL_LO_QM_OB2_OS2_CB3_CS3_SS
 CAH Gain: $ 2.98 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_HM_QP
 CAH Gain: $ 2.98 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_QP
 CAH Gain: $ 2.98 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_RV_QP
-CAH Gain: $ 2.98 Win %: 66.00 in 3 days with algo TB4_HL_LO_QM_OB2_OS2_CB3_CS3_SS
 CAH Gain: $ 3.12 Win %: 66.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_AL
 CAH Gain: $ 3.12 Win %: 66.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_RV_AL
 CAH Gain: $ 3.12 Win %: 66.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_AL
@@ -122,6 +126,7 @@ CAH Gain: $ 4.55 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_AC
 CAH Gain: $ 4.55 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_AO
 CAH Gain: $ 4.55 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_AO_AC
 CAH Gain: $ 4.55 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_IT
+CAH Gain: $ 4.55 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_IT
 CAH Gain: $ 4.55 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_IT_QL
 CAH Gain: $ 4.55 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_QL
 CAH Gain: $ 4.55 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_RV
@@ -140,6 +145,7 @@ CAH Gain: $ 4.61 Win %: 100.00 in 3 days with algo TB4_HL_LO_QM_OB2_OS2_CB3_CS3_
 CAH Gain: $ 4.64 Win %: 100.00 in 3 days with algo TB4_HL_LO_QM_OB2_OS2_CB3_CS3_HM_AV
 CAH Gain: $ 4.68 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_TR_IR1
 CAH Gain: $ 4.68 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_TR_IR1
+CAH Gain: $ 4.7 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4
 CAH Gain: $ 4.7 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4
 CAH Gain: $ 4.7 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_AC
 CAH Gain: $ 4.7 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_AO

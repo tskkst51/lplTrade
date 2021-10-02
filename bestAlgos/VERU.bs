@@ -64,6 +64,9 @@ VERU Gain: $ -0.42 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_QP
 VERU Gain: $ -0.39 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_LI
 VERU Gain: $ -0.35 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_QP_IR2
 VERU Gain: $ -0.29 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_RV_QP
+VERU Gain: $ -0.29 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB1_OS1_CB1_CS1_TS
+VERU Gain: $ -0.29 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB2_OS2_CB1_CS1_TS
+VERU Gain: $ -0.29 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB2_OS2_CB2_CS2_TS
 VERU Gain: $ -0.24 Win %: 33.00 in 3 days with algo TB5_HI_QM_OB1_OS1_CB1_CS1_HM_AV_DB6
 VERU Gain: $ -0.24 Win %: 33.00 in 3 days with algo TB5_HI_QM_OB2_OS2_CB1_CS1_HM_AV_DB6
 VERU Gain: $ -0.24 Win %: 33.00 in 3 days with algo TB5_HI_QM_OB2_OS2_CB2_CS2_HM_AV_DB6
@@ -75,6 +78,7 @@ VERU Gain: $ -0.16 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_RV
 VERU Gain: $ -0.16 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_RV_TR_DB8
 VERU Gain: $ -0.15 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB1_OS1_CB1_CS1_RV
 VERU Gain: $ -0.15 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB2_OS2_CB1_CS1_RV
+VERU Gain: $ -0.15 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB2_OS2_CB2_CS2
 VERU Gain: $ -0.15 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB2_OS2_CB2_CS2
 VERU Gain: $ -0.15 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB2_OS2_CB2_CS2_RV
 VERU Gain: $ -0.14 Win %: 66.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_IT_QP
@@ -91,6 +95,7 @@ VERU Gain: $ -0.03 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB2_OS2_CB1_CS1_IT
 VERU Gain: $ -0.03 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB2_OS2_CB2_CS2_IT_QL_DB6
 VERU Gain: $ -0.02 Win %: 66.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_VI
 VERU Gain: $ -0.01 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_DB8
+VERU Gain: $ -0.01 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_IT
 VERU Gain: $ -0.01 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_IT
 VERU Gain: $ -0.01 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_IT_QL
 VERU Gain: $ -0.01 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_IT_QL_DB8
@@ -124,6 +129,7 @@ VERU Gain: $ 0.31 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB1_OS1_CB1_CS1_QL
 VERU Gain: $ 0.31 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB2_OS2_CB1_CS1_QL
 VERU Gain: $ 0.31 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB2_OS2_CB2_CS2_QL
 VERU Gain: $ 0.37 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_RV
+VERU Gain: $ 0.39 Win %: 66.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_TS
 VERU Gain: $ 0.52 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_HM_TR
 VERU Gain: $ 0.52 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_HM_TR_DB8
 VERU Gain: $ 0.53 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_TR

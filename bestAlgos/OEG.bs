@@ -38,8 +38,10 @@ OEG Gain: $ -0.33 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB5_CS5_RV_AL
 OEG Gain: $ -0.3 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB5_CS5_HM
 OEG Gain: $ -0.3 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB5_CS5_IR2
 OEG Gain: $ -0.3 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB5_CS5_IT
+OEG Gain: $ -0.3 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB5_CS5_IT
 OEG Gain: $ -0.3 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB5_CS5_RV
 OEG Gain: $ -0.3 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB5_CS5_SS
+OEG Gain: $ -0.3 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB5_CS5_TS
 OEG Gain: $ -0.29 Win %: 0 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_AL
 OEG Gain: $ -0.29 Win %: 0 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_RV_AL
 OEG Gain: $ -0.29 Win %: 0 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2_AL
@@ -78,6 +80,7 @@ OEG Gain: $ -0.07 Win %: 0 in 1 days with algo TB1_LO_QM_OB4_OS4_CB1_CS1_AO_AC
 OEG Gain: $ -0.07 Win %: 0 in 1 days with algo TB1_LO_QM_OB4_OS4_CB1_CS1_HM
 OEG Gain: $ -0.07 Win %: 0 in 1 days with algo TB1_LO_QM_OB4_OS4_CB1_CS1_QL
 OEG Gain: $ -0.07 Win %: 0 in 1 days with algo TB1_LO_QM_OB4_OS4_CB1_CS1_RV_AL
+OEG Gain: $ -0.07 Win %: 0 in 1 days with algo TB1_LO_QM_OB4_OS4_CB1_CS1_TS
 OEG Gain: $ -0.07 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB5_CS5_HM_AV_DB8
 OEG Gain: $ -0.06 Win %: 0 in 1 days with algo TB1_LO_QM_OB4_OS4_CB1_CS1_HM_TR
 OEG Gain: $ -0.06 Win %: 0 in 1 days with algo TB1_LO_QM_OB4_OS4_CB1_CS1_HM_TR_DB30
@@ -116,6 +119,8 @@ OEG Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB5_OS5_CB5_CS5_IT_QL_
 OEG Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB5_OS5_CB5_CS5_TR_QP_DB8
 OEG Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2_RV_TR
 OEG Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2_VI
+OEG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_TS
+OEG Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2_TS
 OEG Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB4_OS4_CB1_CS1_IR5
 OEG Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_IR4
 OEG Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_SS
@@ -143,6 +148,7 @@ OEG Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_IT
 OEG Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_IT_QL
 OEG Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_QL
 OEG Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB1_CS1_RV
+OEG Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2
 OEG Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2
 OEG Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2_AC
 OEG Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB2_OS2_CB2_CS2_AO

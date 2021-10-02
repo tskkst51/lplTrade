@@ -101,6 +101,7 @@ AMKR Gain: $ -0.05 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB3_CS3_LI
 AMKR Gain: $ -0.03 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_AC
 AMKR Gain: $ -0.03 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_AC
 AMKR Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB3_CS3_PM
+AMKR Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB3_CS3_PM
 AMKR Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB3_CS3_IT
 AMKR Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB3_CS3_IT_QL
 AMKR Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_IT_QP_DB30
@@ -124,9 +125,13 @@ AMKR Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB3_CS3
 AMKR Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_RV_AL
 AMKR Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_AL
 AMKR Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_RV_TR
+AMKR Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_TS
 AMKR Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_RV_AL_DB8
 AMKR Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_RV_AV_DB8
+AMKR Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB3_CS3_TS
 AMKR Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB3_CS3_RV
+AMKR Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_TS
+AMKR Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_TS
 AMKR Gain: $ 0.54 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_LI
 AMKR Gain: $ 0.54 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_LI
 AMKR Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_TR_IR2
@@ -154,6 +159,7 @@ AMKR Gain: $ 1.03 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3
 AMKR Gain: $ 1.03 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB3_CS3_QL
 AMKR Gain: $ 1.03 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_HM
 AMKR Gain: $ 1.03 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB3_CS3_QL
+AMKR Gain: $ 1.03 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5
 AMKR Gain: $ 1.03 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5
 AMKR Gain: $ 1.03 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_AO
 AMKR Gain: $ 1.03 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_HM

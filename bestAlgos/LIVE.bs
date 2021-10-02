@@ -67,6 +67,7 @@ LIVE Gain: $ -2.89 Win %: 33.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_TR
 LIVE Gain: $ -1.88 Win %: 66.00 in 3 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_LI
 LIVE Gain: $ -1.88 Win %: 66.00 in 3 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_LI
 LIVE Gain: $ -1.8 Win %: 66.00 in 3 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_PM
+LIVE Gain: $ -1.8 Win %: 66.00 in 3 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_PM
 LIVE Gain: $ -1.8 Win %: 66.00 in 3 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_QP_PM
 LIVE Gain: $ -1.8 Win %: 66.00 in 3 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_PM
 LIVE Gain: $ -1.8 Win %: 66.00 in 3 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_QP_PM
@@ -90,11 +91,13 @@ LIVE Gain: $ 0.46 Win %: 33.00 in 3 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_AV
 LIVE Gain: $ 0.46 Win %: 33.00 in 3 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_HM_AV
 LIVE Gain: $ 0.46 Win %: 33.00 in 3 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_RV_AV
 LIVE Gain: $ 1.16 Win %: 66.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_RV_AV
+LIVE Gain: $ 1.16 Win %: 100.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_TS
 LIVE Gain: $ 1.29 Win %: 66.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_AV
 LIVE Gain: $ 1.29 Win %: 66.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_HM_AV
 LIVE Gain: $ 1.31 Win %: 33.00 in 3 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_IR5
 LIVE Gain: $ 1.38 Win %: 66.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_HM_TR_DB15
 LIVE Gain: $ 1.38 Win %: 66.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_RV_TR_DB15
+LIVE Gain: $ 1.49 Win %: 66.00 in 3 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_TS
 LIVE Gain: $ 1.54 Win %: 66.00 in 3 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_HM_TR_DB30
 LIVE Gain: $ 1.54 Win %: 66.00 in 3 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_RV_TR_DB30
 LIVE Gain: $ 1.69 Win %: 66.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_IT_QL_DB15
@@ -106,6 +109,8 @@ LIVE Gain: $ 2.1 Win %: 66.00 in 3 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_AL
 LIVE Gain: $ 2.18 Win %: 66.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_IT
 LIVE Gain: $ 2.18 Win %: 66.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_IT_QL
 LIVE Gain: $ 2.36 Win %: 100.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_RV_TR
+LIVE Gain: $ 2.37 Win %: 100.00 in 3 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_TS
+LIVE Gain: $ 2.37 Win %: 100.00 in 3 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_TS
 LIVE Gain: $ 2.47 Win %: 100.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_SS
 LIVE Gain: $ 2.49 Win %: 100.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_HM_TR
 LIVE Gain: $ 2.49 Win %: 100.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_TR
@@ -154,6 +159,7 @@ LIVE Gain: $ 3.88 Win %: 100.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_HM
 LIVE Gain: $ 3.88 Win %: 100.00 in 3 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_QL
 LIVE Gain: $ 3.95 Win %: 66.00 in 3 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_HM_AV_DB30
 LIVE Gain: $ 3.95 Win %: 66.00 in 3 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_RV_AV_DB30
+LIVE Gain: $ 4.13 Win %: 66.00 in 3 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4
 LIVE Gain: $ 4.13 Win %: 66.00 in 3 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4
 LIVE Gain: $ 4.13 Win %: 66.00 in 3 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_AC
 LIVE Gain: $ 4.13 Win %: 66.00 in 3 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_AO

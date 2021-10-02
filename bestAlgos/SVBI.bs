@@ -27,6 +27,7 @@ SVBI Gain: $ -0.07 Win %: 0 in 1 days with algo TB2_CC_QM_OB3_OS3_CB4_CS4_VI
 SVBI Gain: $ -0.06 Win %: 0 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_QP_PM
 SVBI Gain: $ -0.06 Win %: 0 in 1 days with algo TB2_CC_QM_OB3_OS3_CB4_CS4_QP_PM
 SVBI Gain: $ -0.05 Win %: 0 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_PM
+SVBI Gain: $ -0.05 Win %: 0 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_PM
 SVBI Gain: $ -0.05 Win %: 0 in 1 days with algo TB2_CC_QM_OB3_OS3_CB4_CS4_PM
 SVBI Gain: $ -0.04 Win %: 0 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_AL
 SVBI Gain: $ -0.04 Win %: 0 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_AV
@@ -128,6 +129,7 @@ SVBI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_HM
 SVBI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_QL
 SVBI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_RV
 SVBI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_SS
+SVBI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_TS
 SVBI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB3_OS3_CB4_CS4_AC
 SVBI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB3_OS3_CB4_CS4_AO
 SVBI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB3_OS3_CB4_CS4_AO_AC
@@ -136,6 +138,7 @@ SVBI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB3_OS3_CB4_CS4_HM
 SVBI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB3_OS3_CB4_CS4_QL
 SVBI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB3_OS3_CB4_CS4_RV
 SVBI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB3_OS3_CB4_CS4_SS
+SVBI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB3_OS3_CB4_CS4_TS
 SVBI Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB3_OS3_CB4_CS4_IR4
 SVBI Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_IR4
 SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB1_CS1_DB8
@@ -148,6 +151,8 @@ SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB1_CS1
 SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB1_CS1_QL
 SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB1_CS1_RV
 SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB1_CS1_SS
+SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB1_CS1_TS
+SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB2_CS2
 SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB2_CS2
 SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB2_CS2_DB8
 SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB2_CS2_HM
@@ -159,3 +164,4 @@ SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB2_CS2
 SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB2_CS2_QL
 SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB2_CS2_RV
 SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB2_CS2_SS
+SVBI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB3_OS3_CB2_CS2_TS

@@ -28,6 +28,7 @@ IPA Gain: $ -2.08 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB4_OS4_CB1_CS1_AO
 IPA Gain: $ -2.08 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB4_OS4_CB1_CS1_AO_AC
 IPA Gain: $ -2.08 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB4_OS4_CB1_CS1_HM
 IPA Gain: $ -2.08 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB4_OS4_CB1_CS1_IT
+IPA Gain: $ -2.08 Win %: 50.00 in 2 days with algo TB5_LO_QM_OB4_OS4_CB1_CS1_TS
 IPA Gain: $ -2.06 Win %: 0 in 2 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4_AO
 IPA Gain: $ -1.97 Win %: 0 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_QP
 IPA Gain: $ -1.75 Win %: 0 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_QP_IR2
@@ -92,10 +93,13 @@ IPA Gain: $ 0.34 Win %: 100.00 in 2 days with algo TB5_LO_QM_OB4_OS4_CB1_CS1_RV_
 IPA Gain: $ 0.36 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB5_OS5_CB5_CS5_LI
 IPA Gain: $ 0.52 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB5_OS5_CB5_CS5_IT
 IPA Gain: $ 0.52 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB5_OS5_CB5_CS5_IT_QL
+IPA Gain: $ 0.56 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4_TS
 IPA Gain: $ 0.58 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_HM_TR
 IPA Gain: $ 0.58 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_HM_TR_DB8
 IPA Gain: $ 0.6 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB5_OS5_CB5_CS5_IR2
 IPA Gain: $ 0.6 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB5_OS5_CB5_CS5_RV
+IPA Gain: $ 0.63 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_TS
+IPA Gain: $ 0.64 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_IT
 IPA Gain: $ 0.64 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_IT
 IPA Gain: $ 0.64 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_IT_QL
 IPA Gain: $ 0.64 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_IT_QL_DB8
@@ -103,10 +107,11 @@ IPA Gain: $ 0.65 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_HM
 IPA Gain: $ 0.65 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_HM_AV
 IPA Gain: $ 0.65 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_HM_AV_DB8
 IPA Gain: $ 0.68 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB5_OS5_CB5_CS5_HM_AV_DB8
+IPA Gain: $ 0.68 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB5_OS5_CB5_CS5_TS
 IPA Gain: $ 0.71 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4_HM_AV_DB10
 IPA Gain: $ 0.71 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4_RV_AV_DB10
-IPA Gain: $ 0.73 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_SS
 IPA Gain: $ 0.73 Win %: 50.00 in 2 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4_SS
+IPA Gain: $ 0.73 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_SS
 IPA Gain: $ 0.79 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB5_OS5_CB5_CS5_HM_AV
 IPA Gain: $ 0.8 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4_DB10
 IPA Gain: $ 0.8 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4_HM_TR_DB10
@@ -134,6 +139,7 @@ IPA Gain: $ 1.06 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB4_OS4_CB1_CS1_RV_
 IPA Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB5_OS5_CB5_CS5_RV_AV_DB8
 IPA Gain: $ 1.11 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4_AV
 IPA Gain: $ 1.11 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4_RV_AV
+IPA Gain: $ 1.2 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4
 IPA Gain: $ 1.2 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4
 IPA Gain: $ 1.2 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4_AL
 IPA Gain: $ 1.2 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4_IR3

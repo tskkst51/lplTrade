@@ -62,6 +62,8 @@ AIT Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB4_CS4_HM
 AIT Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB4_CS4_QL
 AIT Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB4_CS4_RV
 AIT Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB4_CS4_SS
+AIT Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB4_CS4_TS
+AIT Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB4_CS4_IT
 AIT Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB4_CS4_IT
 AIT Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB4_CS4_IT_QL
 AIT Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB4_CS4_IT_QL_DB15
@@ -107,6 +109,9 @@ AIT Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_HM_
 AIT Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_RV_TR_DB30
 AIT Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_TR
 AIT Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_TR_IR5
+AIT Gain: $ 1.33 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_TS
+AIT Gain: $ 1.33 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB3_CS3_TS
+AIT Gain: $ 1.33 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_TS
 AIT Gain: $ 1.75 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_AO
 AIT Gain: $ 1.75 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_AO_AC
 AIT Gain: $ 1.75 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_DB30
@@ -116,6 +121,7 @@ AIT Gain: $ 1.75 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_IT_
 AIT Gain: $ 1.75 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_IT_QL_DB30
 AIT Gain: $ 1.75 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_QL
 AIT Gain: $ 1.75 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_RV
+AIT Gain: $ 1.75 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4
 AIT Gain: $ 1.75 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4
 AIT Gain: $ 1.75 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_AC
 AIT Gain: $ 1.75 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_AO

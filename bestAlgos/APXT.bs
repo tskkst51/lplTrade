@@ -34,6 +34,10 @@ APXT Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB1_CS1
 APXT Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB2_CS2_QP_PM
 APXT Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1_QP_PM
 APXT Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2_QP_PM
+APXT Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB1_CS1_TS
+APXT Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB2_CS2_TS
+APXT Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1_TS
+APXT Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2_TS
 APXT Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB1_CS1_RV_QP_DB10
 APXT Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB2_CS2_RV_QP_DB10
 APXT Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1_RV_QP_DB10
@@ -90,6 +94,7 @@ APXT Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1
 APXT Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2_HM_AV_DB10
 APXT Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2_HM_TR_DB10
 APXT Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2_RV_AV_DB10
+APXT Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB1_CS1_PM
 APXT Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB1_CS1_PM
 APXT Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB2_CS2_PM
 APXT Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1_PM
@@ -150,6 +155,7 @@ APXT Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1
 APXT Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1_IT_QL
 APXT Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1_QL
 APXT Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1_RV
+APXT Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2
 APXT Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2
 APXT Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2_IT
 APXT Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2_IT_QL

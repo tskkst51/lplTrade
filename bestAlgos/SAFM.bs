@@ -25,6 +25,7 @@ SAFM Gain: $ -1.5 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_RV_AL
 SAFM Gain: $ -1.5 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_RV_AL_DB6
 SAFM Gain: $ -1.5 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_RV_QP_DB6
 SAFM Gain: $ -1.42 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3
+SAFM Gain: $ -1.42 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3
 SAFM Gain: $ -1.42 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_AC
 SAFM Gain: $ -1.42 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_AO
 SAFM Gain: $ -1.42 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_DB6
@@ -33,6 +34,7 @@ SAFM Gain: $ -1.42 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_HM_QP_
 SAFM Gain: $ -1.42 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_QL
 SAFM Gain: $ -1.42 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_RV
 SAFM Gain: $ -1.42 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_SS
+SAFM Gain: $ -1.42 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_TS
 SAFM Gain: $ -1.4 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_IT_QL
 SAFM Gain: $ -1.17 Win %: 0 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_HM_AV_DB30
 SAFM Gain: $ -1.17 Win %: 0 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_RV_AV_DB30
@@ -64,6 +66,7 @@ SAFM Gain: $ -0.46 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_IT
 SAFM Gain: $ -0.26 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_LI
 SAFM Gain: $ -0.15 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_RV_AV
 SAFM Gain: $ -0.08 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS5_CB3_CS3_VI
+SAFM Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_PM
 SAFM Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_PM
 SAFM Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_QP_PM
 SAFM Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_PM
@@ -140,6 +143,7 @@ SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_RV
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_RV_AV
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_RV_TR
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_TR
+SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_TS
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_AC
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_AL
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_AO
@@ -155,6 +159,7 @@ SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_RV
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_RV_AL
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_RV_AV
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_TR_IR5
+SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_TS
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB5_CS5_AC
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB5_CS5_AO
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB5_CS5_AO_AC
@@ -163,3 +168,4 @@ SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB5_CS5_IT
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB5_CS5_IT_QL
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB5_CS5_QL
 SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB5_CS5_RV_TR
+SAFM Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB5_CS5_TS

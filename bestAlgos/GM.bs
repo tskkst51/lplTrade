@@ -73,6 +73,7 @@ GM Gain: $ 0.54 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_DB15
 GM Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_IR4
 GM Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_RV_AV_DB30
 GM Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_IT
+GM Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_IT
 GM Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_IT_QL
 GM Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_HM_TR
 GM Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_RV_TR
@@ -81,6 +82,10 @@ GM Gain: $ 0.72 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_HM_Q
 GM Gain: $ 0.75 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_QP_IR5
 GM Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_RV_AL_DB30
 GM Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_RV_AL_DB30
+GM Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_TS
+GM Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_TS
+GM Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_TS
+GM Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_TS
 GM Gain: $ 0.95 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_HM_QP
 GM Gain: $ 0.95 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_QP
 GM Gain: $ 0.97 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_AL
@@ -136,6 +141,7 @@ GM Gain: $ 1.29 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_AO
 GM Gain: $ 1.29 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_IT
 GM Gain: $ 1.29 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_IT_QL
 GM Gain: $ 1.29 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_QL
+GM Gain: $ 1.29 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3
 GM Gain: $ 1.29 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3
 GM Gain: $ 1.29 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_AC
 GM Gain: $ 1.29 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_AO

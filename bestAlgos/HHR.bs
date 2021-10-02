@@ -83,6 +83,7 @@ HHR Gain: $ -0.46 Win %: 0 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_VI
 HHR Gain: $ -0.41 Win %: 0 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB3_CS3_TR_QP
 HHR Gain: $ -0.41 Win %: 0 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB3_CS3_TR_QP_DB6
 HHR Gain: $ -0.22 Win %: 0 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_IT
+HHR Gain: $ -0.22 Win %: 0 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_IT
 HHR Gain: $ -0.22 Win %: 0 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_IT_QL
 HHR Gain: $ -0.22 Win %: 0 in 1 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_IT
 HHR Gain: $ -0.22 Win %: 0 in 1 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_IT_QL
@@ -119,6 +120,10 @@ HHR Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB3_CS3_A
 HHR Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB3_CS3_AO
 HHR Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_TR_IR2
 HHR Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB3_CS3_LI
+HHR Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_TS
+HHR Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_TS
+HHR Gain: $ 0.84 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB3_CS3_TS
+HHR Gain: $ 0.84 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB3_CS3_TS
 HHR Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB3_CS3_LI
 HHR Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB3_CS3_AC
 HHR Gain: $ 0.96 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB3_CS3_SS
@@ -145,6 +150,7 @@ HHR Gain: $ 1.26 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB3_CS3_
 HHR Gain: $ 1.26 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB3_CS3_IR1
 HHR Gain: $ 1.26 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB3_CS3_QL
 HHR Gain: $ 1.26 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB3_CS3_RV
+HHR Gain: $ 1.26 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB3_CS3
 HHR Gain: $ 1.26 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB3_CS3
 HHR Gain: $ 1.26 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB3_CS3_DB6
 HHR Gain: $ 1.26 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB3_CS3_HM

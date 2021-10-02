@@ -1,3 +1,19 @@
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_AC
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_AO
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_AO_AC
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_IT
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_IT_QL
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_QL
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_TR
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_AC
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_AO
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_AO_AC
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_IT
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_IT_QL
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_QL
+KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_TR
 KO Gain: $ -0.89 Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_TR_IR2
 KO Gain: $ -0.89 Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_TR_IR2
 KO Gain: $ -0.77 Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_HM_AV
@@ -36,27 +52,14 @@ KO Gain: $ -0.17 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB3_CS3_R
 KO Gain: $ -0.17 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_RV_AV
 KO Gain: $ -0.13 Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_QP
 KO Gain: $ -0.13 Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_TR_QP
+KO Gain: $ -0.13 Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_TS
 KO Gain: $ -0.13 Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_QP
 KO Gain: $ -0.13 Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_TR_QP
+KO Gain: $ -0.13 Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_TS
 KO Gain: $ -0.06 Win %: 80.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_QP_IR2
 KO Gain: $ -0.06 Win %: 80.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_QP_IR2
 KO Gain: $ -0.02 Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_SS
 KO Gain: $ -0.02 Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_SS
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_AC
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_AO
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_AO_AC
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_IT
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_IT_QL
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_QL
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_TR
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_AC
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_AO
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_AO_AC
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_IT
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_IT_QL
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_QL
-KO Gain: $ Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_TR
 KO Gain: $ 0.03 Win %: 20.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_RV_TR
 KO Gain: $ 0.03 Win %: 20.00 in 5 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_RV_TR
 KO Gain: $ 0.11 Win %: 40.00 in 5 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_HM_QP_DB8
@@ -112,6 +115,7 @@ KO Gain: $ 1.16 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_RV
 KO Gain: $ 1.21 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB3_CS3_RV_QP
 KO Gain: $ 1.21 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_RV_QP
 KO Gain: $ 1.23 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB3_CS3_PM
+KO Gain: $ 1.23 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB3_CS3_PM
 KO Gain: $ 1.23 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_PM
 KO Gain: $ 1.23 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB3_CS3_HM_AV
 KO Gain: $ 1.23 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_HM_AV
@@ -151,6 +155,8 @@ KO Gain: $ 2.31 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_QL
 KO Gain: $ 2.31 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_SS
 KO Gain: $ 2.31 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB3_CS3_IR4
 KO Gain: $ 2.31 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_IR4
+KO Gain: $ 2.32 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB3_CS3_TS
+KO Gain: $ 2.32 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_TS
 KO Gain: $ 2.41 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB3_CS3_AO
 KO Gain: $ 2.41 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB3_CS3_AO
 KO Gain: $ 2.52 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB3_CS3_HM

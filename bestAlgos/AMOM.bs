@@ -5,6 +5,7 @@ AMOM Gain: $ -0.38 Win %: 0 in 1 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_HM_AV_
 AMOM Gain: $ -0.38 Win %: 0 in 1 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV_AL_DB10
 AMOM Gain: $ -0.38 Win %: 0 in 1 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV_AV_DB10
 AMOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_PM
+AMOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_PM
 AMOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_QP_PM
 AMOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_PM
 AMOM Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_QP_PM
@@ -101,6 +102,7 @@ AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_RV
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_SS
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_TR
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_TR_IR3
+AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_TS
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_AC
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_AL
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_AO
@@ -120,6 +122,7 @@ AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_RV
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_SS
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_TR
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_TR_IR3
+AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_TS
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_AC
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_AL
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_AO
@@ -139,6 +142,8 @@ AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_RV
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_SS
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_TR
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_TR_IR3
+AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB4_CS4_TS
+AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_AC
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_AL
@@ -159,3 +164,4 @@ AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_RV
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_SS
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_TR
 AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_TR_IR3
+AMOM Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB4_CS4_TS

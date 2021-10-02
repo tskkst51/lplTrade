@@ -86,8 +86,10 @@ OSTK Gain: $ 3.85 Win %: 83.00 in 6 days with algo TB4_HL_HI_QM_OB4_OS4_CB4_CS4_
 OSTK Gain: $ 3.99 Win %: 83.00 in 6 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_IR4
 OSTK Gain: $ 3.99 Win %: 83.00 in 6 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_IR4
 OSTK Gain: $ 4.2 Win %: 83.00 in 6 days with algo TB4_HL_HI_QM_OB4_OS4_CB4_CS4_IT
+OSTK Gain: $ 4.2 Win %: 83.00 in 6 days with algo TB4_HL_HI_QM_OB4_OS4_CB4_CS4_IT
 OSTK Gain: $ 4.31 Win %: 66.00 in 6 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_RV_AL
 OSTK Gain: $ 4.32 Win %: 100.00 in 6 days with algo TB4_HL_HI_QM_OB4_OS4_CB4_CS4_LI
+OSTK Gain: $ 4.64 Win %: 83.00 in 6 days with algo TB4_HL_HI_QM_OB4_OS4_CB4_CS4_TS
 OSTK Gain: $ 4.85 Win %: 66.00 in 6 days with algo TB4_HL_HI_QM_OB4_OS4_CB4_CS4_TR
 OSTK Gain: $ 4.85 Win %: 66.00 in 6 days with algo TB4_HL_HI_QM_OB4_OS4_CB4_CS4_TR_IR2
 OSTK Gain: $ 5.43 Win %: 66.00 in 6 days with algo TB4_HL_HI_QM_OB4_OS4_CB4_CS4_QL
@@ -106,9 +108,12 @@ OSTK Gain: $ 6.85 Win %: 66.00 in 6 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_AC
 OSTK Gain: $ 6.85 Win %: 66.00 in 6 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_AO
 OSTK Gain: $ 6.85 Win %: 66.00 in 6 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_AO_AC
 OSTK Gain: $ 7 Win %: 66.00 in 6 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_QL
+OSTK Gain: $ 7.1 Win %: 100.00 in 6 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_TS
+OSTK Gain: $ 7.1 Win %: 100.00 in 6 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_TS
 OSTK Gain: $ 7.29 Win %: 83.00 in 6 days with algo TB4_HL_HI_QM_OB4_OS4_CB4_CS4_HM_TR_DB8
 OSTK Gain: $ 7.38 Win %: 66.00 in 6 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_TR
 OSTK Gain: $ 7.38 Win %: 66.00 in 6 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_TR
+OSTK Gain: $ 7.65 Win %: 100.00 in 6 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_TS
 OSTK Gain: $ 7.76 Win %: 66.00 in 6 days with algo TB4_HL_HI_QM_OB4_OS4_CB4_CS4_RV_AV
 OSTK Gain: $ 7.8 Win %: 66.00 in 6 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_RV_AL
 OSTK Gain: $ 7.8 Win %: 66.00 in 6 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_RV_AL
@@ -135,6 +140,7 @@ OSTK Gain: $ 10.67 Win %: 83.00 in 6 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_SS
 OSTK Gain: $ 11.24 Win %: 83.00 in 6 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_AC
 OSTK Gain: $ 11.24 Win %: 83.00 in 6 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_AO
 OSTK Gain: $ 11.24 Win %: 83.00 in 6 days with algo TB2_OC_QM_OB1_OS1_CB4_CS4_AO_AC
+OSTK Gain: $ 11.24 Win %: 83.00 in 6 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4
 OSTK Gain: $ 11.24 Win %: 83.00 in 6 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4
 OSTK Gain: $ 11.24 Win %: 83.00 in 6 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_AC
 OSTK Gain: $ 11.24 Win %: 83.00 in 6 days with algo TB2_OC_QM_OB2_OS2_CB4_CS4_AO

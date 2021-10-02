@@ -76,6 +76,10 @@ FTCH Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_QP
 FTCH Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_QP_PM
 FTCH Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_HM_TR_DB8
 FTCH Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DB8
+FTCH Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_TS
+FTCH Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_TS
+FTCH Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_TS
+FTCH Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TS
 FTCH Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_RV
 FTCH Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_RV_TR
 FTCH Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_RV
@@ -90,6 +94,7 @@ FTCH Gain: $ 1.22 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_LI
 FTCH Gain: $ 1.22 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_LI
 FTCH Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_SS
 FTCH Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_SS
+FTCH Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_PM
 FTCH Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_PM
 FTCH Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_PM
 FTCH Gain: $ 1.44 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_HM_TR
@@ -150,6 +155,7 @@ FTCH Gain: $ 1.88 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_IR
 FTCH Gain: $ 1.88 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_IT
 FTCH Gain: $ 1.88 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_IT_QL
 FTCH Gain: $ 1.88 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_QL
+FTCH Gain: $ 1.88 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4
 FTCH Gain: $ 1.88 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4
 FTCH Gain: $ 1.88 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_AC
 FTCH Gain: $ 1.88 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_AO

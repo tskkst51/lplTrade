@@ -63,6 +63,7 @@ AAL Gain: $ 1.04 Win %: 50.00 in 8 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_T
 AAL Gain: $ 1.04 Win %: 50.00 in 8 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_TR_IR5
 AAL Gain: $ 1.04 Win %: 50.00 in 8 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_TR_IR5
 AAL Gain: $ 1.08 Win %: 100.00 in 8 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_IT
+AAL Gain: $ 1.08 Win %: 100.00 in 8 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_IT
 AAL Gain: $ 1.08 Win %: 100.00 in 8 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_IT_QL
 AAL Gain: $ 1.08 Win %: 100.00 in 8 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_IT
 AAL Gain: $ 1.08 Win %: 100.00 in 8 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_IT_QL
@@ -147,6 +148,11 @@ AAL Gain: $ 2.85 Win %: 87.00 in 8 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_H
 AAL Gain: $ 2.85 Win %: 87.00 in 8 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_HM
 AAL Gain: $ 2.85 Win %: 87.00 in 8 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_HM
 AAL Gain: $ 2.97 Win %: 87.00 in 8 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2
+AAL Gain: $ 2.97 Win %: 87.00 in 8 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2
+AAL Gain: $ 3.01 Win %: 100.00 in 8 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_TS
+AAL Gain: $ 3.01 Win %: 100.00 in 8 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_TS
+AAL Gain: $ 3.01 Win %: 100.00 in 8 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_TS
+AAL Gain: $ 3.01 Win %: 100.00 in 8 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_TS
 AAL Gain: $ 3.09 Win %: 87.00 in 8 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_QL
 AAL Gain: $ 3.09 Win %: 87.00 in 8 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_QL
 AAL Gain: $ 3.09 Win %: 87.00 in 8 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_QL

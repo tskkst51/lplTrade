@@ -74,6 +74,10 @@ EDSA Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_IT_QP
 EDSA Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_IT_QP_DB8
 EDSA Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB1_CS1_IT_QL_DB10
 EDSA Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB2_CS2_IT_QL_DB10
+EDSA Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_TS
+EDSA Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_TS
+EDSA Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB1_CS1_TS
+EDSA Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB2_CS2_TS
 EDSA Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_VI
 EDSA Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_VI
 EDSA Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB1_CS1_IT
@@ -104,6 +108,7 @@ EDSA Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB1_CS1_HM
 EDSA Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB1_CS1_RV_AV_DB10
 EDSA Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB2_CS2_HM_AV_DB10
 EDSA Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB2_CS2_RV_AV_DB10
+EDSA Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB1_CS1_PM
 EDSA Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB1_CS1_PM
 EDSA Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB2_CS2_PM
 EDSA Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_HM_TR_DB8
@@ -151,6 +156,7 @@ EDSA Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_HM
 EDSA Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_QL
 EDSA Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_RV
 EDSA Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_SS
+EDSA Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4
 EDSA Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4
 EDSA Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_AC
 EDSA Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_AO

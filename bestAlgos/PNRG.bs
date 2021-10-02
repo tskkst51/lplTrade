@@ -72,6 +72,7 @@ PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_HM
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_HM_TR
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_IR1
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_IT
+PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_IT
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_IT_QL
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_QL
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_RV
@@ -80,6 +81,7 @@ PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_RV
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_RV_TR
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_TR
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_TR_IR1
+PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_TS
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_AC
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_AL
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_AO
@@ -98,6 +100,7 @@ PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV_TR
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TR
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TR_IR1
+PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TS
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_AC
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_AL
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_AO
@@ -124,6 +127,8 @@ PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_RV
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_RV_TR_DB6
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_TR
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_TR_IR1
+PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_TS
+PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_AC
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_AL
@@ -151,3 +156,4 @@ PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_RV
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_RV_TR_DB6
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_TR
 PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_TR_IR1
+PNRG Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_TS

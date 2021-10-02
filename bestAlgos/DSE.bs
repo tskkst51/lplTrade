@@ -41,6 +41,7 @@ DSE Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB4_CS4_HM_QP_
 DSE Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB4_CS4_IT_QP
 DSE Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB4_CS4_IT_QP_DB6
 DSE Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB4_CS4_PM
+DSE Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB4_CS4_PM
 DSE Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB4_CS4_QP_PM
 DSE Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB4_CS4_RV_AL_DB6
 DSE Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB4_CS4_RV_QP
@@ -100,6 +101,7 @@ DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB4_CS4_RV_
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB4_CS4_RV_AV_DB6
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB4_CS4_RV_TR
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB4_CS4_RV_TR_DB6
+DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB4_CS4_TS
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_AC
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_AO
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_AO_AC
@@ -121,6 +123,7 @@ DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_RV_
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_RV_TR
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_RV_TR_DB6
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_TR
+DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB5_CS5_TS
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_AC
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_AV
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_DB6
@@ -137,6 +140,8 @@ DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_RV_
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_RV_AV
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_RV_AV_DB6
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_RV_TR
+DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_TS
+DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_AL
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_AO
@@ -159,3 +164,4 @@ DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_RV_
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_RV_TR
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_RV_TR_DB6
 DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_TR
+DSE Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_TS

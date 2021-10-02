@@ -29,7 +29,10 @@ BGI Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_VI
 BGI Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB4_CS4_RV_TR
 BGI Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB4_CS4_TR_IR4
 BGI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB4_CS4_RV_AL
+BGI Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB4_OS4_CB4_CS4_TS
 BGI Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB4_CS4_IT_QL_DB15
+BGI Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3_TS
+BGI Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_TS
 BGI Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB4_OS4_CB4_CS4_TR_IR4
 BGI Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3_AV
 BGI Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3_HM_AV
@@ -41,6 +44,7 @@ BGI Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_RV_
 BGI Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_RV_TR
 BGI Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_SS
 BGI Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_TR
+BGI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB4_CS4_TS
 BGI Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3_TR_IR4
 BGI Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB4_CS4_LI
 BGI Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB4_OS4_CB4_CS4_RV_AV_DB15
@@ -115,6 +119,7 @@ BGI Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_AO
 BGI Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_AO_AC
 BGI Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_HM
 BGI Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_IT
+BGI Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_IT
 BGI Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_IT_QL
 BGI Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_LI
 BGI Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB4_CS4_QL
@@ -132,6 +137,7 @@ BGI Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB4_OS4_CB4_CS4_IT_
 BGI Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB4_OS4_CB4_CS4_LI
 BGI Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB4_OS4_CB4_CS4_QL
 BGI Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB4_OS4_CB4_CS4_RV
+BGI Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3
 BGI Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3
 BGI Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3_AC
 BGI Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3_AO

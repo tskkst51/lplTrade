@@ -93,6 +93,7 @@ IMV Gain: $ -0.09 Win %: 50.00 in 2 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_HM_
 IMV Gain: $ -0.09 Win %: 50.00 in 2 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_RV_AV_DB8
 IMV Gain: $ -0.09 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB2_CS2_IR1
 IMV Gain: $ -0.09 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB1_CS1_IR1
+IMV Gain: $ -0.08 Win %: 50.00 in 2 days with algo TB2_HL_QM_OB1_OS1_CB5_CS5_TS
 IMV Gain: $ -0.08 Win %: 50.00 in 2 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_IT_QL_DB8
 IMV Gain: $ -0.07 Win %: 50.00 in 2 days with algo TB2_HL_QM_OB1_OS1_CB5_CS5_TR_IR4
 IMV Gain: $ -0.05 Win %: 50.00 in 2 days with algo TB2_HL_QM_OB1_OS1_CB5_CS5_AO
@@ -111,6 +112,7 @@ IMV Gain: $ 0 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB1_CS1_AL
 IMV Gain: $ 0 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB1_CS1_RV_AL
 IMV Gain: $ 0.01 Win %: 50.00 in 2 days with algo TB2_HL_QM_OB1_OS1_CB5_CS5_QL
 IMV Gain: $ 0.03 Win %: 100.00 in 2 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_IT
+IMV Gain: $ 0.03 Win %: 100.00 in 2 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_IT
 IMV Gain: $ 0.05 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB2_CS2_RV_AL_DB6
 IMV Gain: $ 0.05 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB2_CS2_SS
 IMV Gain: $ 0.05 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB1_CS1_RV_AL_DB6
@@ -119,11 +121,14 @@ IMV Gain: $ 0.07 Win %: 50.00 in 2 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_AV
 IMV Gain: $ 0.07 Win %: 50.00 in 2 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_RV_AV
 IMV Gain: $ 0.1 Win %: 100.00 in 2 days with algo TB2_HL_QM_OB1_OS1_CB5_CS5_IT
 IMV Gain: $ 0.1 Win %: 100.00 in 2 days with algo TB2_HL_QM_OB1_OS1_CB5_CS5_IT_QL
+IMV Gain: $ 0.1 Win %: 100.00 in 2 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_TS
 IMV Gain: $ 0.14 Win %: 100.00 in 2 days with algo TB2_HL_QM_OB1_OS1_CB5_CS5_HM_TR
 IMV Gain: $ 0.14 Win %: 100.00 in 2 days with algo TB2_HL_QM_OB1_OS1_CB5_CS5_RV_TR
 IMV Gain: $ 0.14 Win %: 100.00 in 2 days with algo TB2_HL_QM_OB1_OS1_CB5_CS5_TR
 IMV Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB2_HL_QM_OB1_OS1_CB5_CS5_AL
 IMV Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB2_HL_QM_OB1_OS1_CB5_CS5_RV_AL
+IMV Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB2_CS2_TS
+IMV Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB1_CS1_TS
 IMV Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB2_CS2_HM_TR
 IMV Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB2_CS2_RV_TR
 IMV Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB2_CS2_TR
@@ -143,6 +148,7 @@ IMV Gain: $ 0.24 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB2_CS2_AO_
 IMV Gain: $ 0.24 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB2_CS2_HM
 IMV Gain: $ 0.24 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB2_CS2_QL
 IMV Gain: $ 0.24 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB2_CS2_RV
+IMV Gain: $ 0.24 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB1_CS1
 IMV Gain: $ 0.24 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB1_CS1
 IMV Gain: $ 0.24 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB1_CS1_AC
 IMV Gain: $ 0.24 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB1_CS1_AO

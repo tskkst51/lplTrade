@@ -64,6 +64,10 @@ WNW Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_IT_QP
 WNW Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_IT_QP
 WNW Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB4_CS4_IT_QP
 WNW Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_IT_QP
+WNW Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_TS
+WNW Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_TS
+WNW Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB4_CS4_TS
+WNW Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_TS
 WNW Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB4_CS4_TR_QP
 WNW Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_TR_QP
 WNW Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_TR_QP
@@ -120,6 +124,7 @@ WNW Gain: $ 1.06 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_
 WNW Gain: $ 1.06 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_RV_AL
 WNW Gain: $ 1.11 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB4_CS4_HM
 WNW Gain: $ 1.11 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB4_CS4_IT
+WNW Gain: $ 1.11 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB4_CS4_IT
 WNW Gain: $ 1.11 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB4_CS4_IT_QL
 WNW Gain: $ 1.11 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB4_CS4_QL
 WNW Gain: $ 1.11 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB4_CS4_RV
@@ -141,6 +146,7 @@ WNW Gain: $ 1.34 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_IT
 WNW Gain: $ 1.34 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_IT_QL
 WNW Gain: $ 1.34 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_QL
 WNW Gain: $ 1.34 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_RV
+WNW Gain: $ 1.34 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5
 WNW Gain: $ 1.34 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5
 WNW Gain: $ 1.34 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_AC
 WNW Gain: $ 1.34 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_AO

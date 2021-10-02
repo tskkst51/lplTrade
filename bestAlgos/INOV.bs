@@ -116,6 +116,7 @@ INOV Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_AL
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_AV
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_IT
+INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_IT
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_IT_QL
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_LI
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_QL
@@ -125,6 +126,7 @@ INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_RV_TR
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_SS
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_TR
+INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB4_CS4_TS
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_AC
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_AL
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_AV
@@ -138,6 +140,7 @@ INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_RV_TR
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_SS
 INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_TR
+INOV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_TS
 INOV Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_DB8
 INOV Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_DB8
 INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_AC
@@ -145,9 +148,12 @@ INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_AO
 INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_HM
 INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_QL
 INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_RV
+INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_TS
+INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3
 INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3
 INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_AC
 INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_AO
 INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_HM
 INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_QL
 INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_RV
+INOV Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_TS

@@ -26,6 +26,7 @@ NBEV Gain: $ -0.02 Win %: 0 in 1 days with algo TB5_CC_QM_OB3_OS3_CB2_CS2_TR_QP_
 NBEV Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB4_OS4_CB3_CS3_AL
 NBEV Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB4_OS4_CB3_CS3_HM_QP_DB10
 NBEV Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB4_OS4_CB3_CS3_IT
+NBEV Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB4_OS4_CB3_CS3_IT
 NBEV Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB4_OS4_CB3_CS3_TR_QP
 NBEV Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB2_CS2_QP_IR2
 NBEV Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB5_OS5_CB4_CS4_HM_TR
@@ -51,6 +52,7 @@ NBEV Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB2_CS2
 NBEV Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB2_CS2_TR_QP
 NBEV Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB2_CS2_TR_QP_DB8
 NBEV Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB2_CS2_HM_QP
+NBEV Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB2_CS2_TS
 NBEV Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB4_OS4_CB3_CS3_QP_IR3
 NBEV Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB4_OS4_CB3_CS3_SS
 NBEV Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB4_OS4_CB3_CS3_TR_IR3
@@ -102,10 +104,12 @@ NBEV Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB5_OS5_CB4_CS4_RV
 NBEV Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB5_OS5_CB4_CS4_RV_TR_DB10
 NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB4_OS4_CB3_CS3_HM_TR_DB10
 NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB4_OS4_CB3_CS3_RV_TR_DB10
+NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB4_OS4_CB3_CS3_TS
 NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB5_OS5_CB4_CS4_DB10
 NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB5_OS5_CB4_CS4_IT_QL_DB10
 NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB5_OS5_CB4_CS4_RV_AL_DB10
 NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB5_OS5_CB4_CS4_RV_TR
+NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB3_OS3_CB2_CS2
 NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB3_OS3_CB2_CS2
 NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB3_OS3_CB2_CS2_HM
 NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB3_OS3_CB2_CS2_IT
@@ -114,9 +118,11 @@ NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB3_OS3_CB2_CS2_LI
 NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB3_OS3_CB2_CS2_QL
 NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB3_OS3_CB2_CS2_RV
 NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB3_OS3_CB2_CS2_SS
+NBEV Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB3_OS3_CB2_CS2_TS
 NBEV Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB4_OS4_CB3_CS3_QL
 NBEV Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB5_OS5_CB4_CS4_HM_AV_DB10
 NBEV Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB5_OS5_CB4_CS4_RV_AV_DB10
+NBEV Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB5_OS5_CB4_CS4_TS
 NBEV Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB3_OS3_CB2_CS2_RV_AL_DB6
 NBEV Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB5_OS5_CB4_CS4_IT
 NBEV Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB3_OS3_CB2_CS2_AL

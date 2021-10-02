@@ -81,7 +81,12 @@ TENX Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_QP
 TENX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_LI
 TENX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_LI
 TENX Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_PM
+TENX Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_PM
 TENX Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_PM
+TENX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_TS
+TENX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_TS
+TENX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_TS
+TENX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_TS
 TENX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_AC
 TENX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_AL
 TENX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_AO
@@ -139,6 +144,7 @@ TENX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_RV
 TENX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_SS
 TENX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_TR
 TENX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_TR_IR5
+TENX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5
 TENX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5
 TENX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_AC
 TENX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_AL

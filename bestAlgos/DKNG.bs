@@ -53,16 +53,16 @@ DKNG Gain: $ 0.72 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_RV_
 DKNG Gain: $ 0.76 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_QP_PM
 DKNG Gain: $ 0.78 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_AL
 DKNG Gain: $ 0.81 Win %: 50.00 in 2 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_LI
-DKNG Gain: $ 0.89 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_IR2
 DKNG Gain: $ 0.89 Win %: 50.00 in 2 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_HM_TR_DB8
 DKNG Gain: $ 0.89 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_QP
+DKNG Gain: $ 0.89 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_IR2
 DKNG Gain: $ 0.97 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_RV_QP_DB30
 DKNG Gain: $ 1.01 Win %: 50.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_RV_QP_DB6
 DKNG Gain: $ 1.02 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_PM
 DKNG Gain: $ 1.02 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_QP_IR5
 DKNG Gain: $ 1.14 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_QP
-DKNG Gain: $ 1.19 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_IT_QP
 DKNG Gain: $ 1.19 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_TR_IR5
+DKNG Gain: $ 1.19 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_IT_QP
 DKNG Gain: $ 1.22 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_RV_TR
 DKNG Gain: $ 1.24 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_TR_QP
 DKNG Gain: $ 1.29 Win %: 50.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_VI
@@ -76,6 +76,8 @@ DKNG Gain: $ 1.72 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_HM
 DKNG Gain: $ 1.72 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_RV_AV_DB6
 DKNG Gain: $ 1.72 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_HM_AV_DB6
 DKNG Gain: $ 1.72 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_RV_AV_DB6
+DKNG Gain: $ 1.91 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_TS
+DKNG Gain: $ 1.94 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_TS
 DKNG Gain: $ 1.96 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_RV_AL_DB30
 DKNG Gain: $ 1.99 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_TR_IR1
 DKNG Gain: $ 2.02 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_TR_QP
@@ -86,6 +88,7 @@ DKNG Gain: $ 2.06 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_QP
 DKNG Gain: $ 2.06 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_QP_PM
 DKNG Gain: $ 2.08 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_TR
 DKNG Gain: $ 2.08 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_TR_QP_DB6
+DKNG Gain: $ 2.08 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_TS
 DKNG Gain: $ 2.09 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_HM_QP_DB6
 DKNG Gain: $ 2.09 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_QP_PM
 DKNG Gain: $ 2.1 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_TR_IR1
@@ -96,6 +99,7 @@ DKNG Gain: $ 2.15 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_HM
 DKNG Gain: $ 2.15 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_RV_QP_DB6
 DKNG Gain: $ 2.16 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_QP
 DKNG Gain: $ 2.16 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_TR_QP_DB6
+DKNG Gain: $ 2.16 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_TS
 DKNG Gain: $ 2.18 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_RV_TR
 DKNG Gain: $ 2.18 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_TR
 DKNG Gain: $ 2.21 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_HM_QP
@@ -152,6 +156,8 @@ DKNG Gain: $ 3.38 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4
 DKNG Gain: $ 3.45 Win %: 100.00 in 2 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_HM_TR
 DKNG Gain: $ 3.5 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_SS
 DKNG Gain: $ 3.54 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_PM
+DKNG Gain: $ 3.54 Win %: 100.00 in 2 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_PM
+DKNG Gain: $ 3.6 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3
 DKNG Gain: $ 3.6 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3
 DKNG Gain: $ 3.6 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_AC
 DKNG Gain: $ 3.6 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_AO

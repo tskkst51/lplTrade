@@ -82,10 +82,15 @@ VIH Gain: $ -0.3 Win %: 0 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_RV_TR
 VIH Gain: $ -0.3 Win %: 0 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_TR
 VIH Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_IT_QP_DB30
 VIH Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_IT_QP_DB30
+VIH Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_TS
+VIH Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_TS
+VIH Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB1_CS1_TS
+VIH Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB2_CS2_TS
 VIH Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB1_CS1_IT
 VIH Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB1_CS1_IT_QL
 VIH Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB2_CS2_IT
 VIH Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB2_CS2_IT_QL
+VIH Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_IT
 VIH Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_IT
 VIH Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_IT_QL
 VIH Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_IT
@@ -144,6 +149,7 @@ VIH Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB1_CS1_AO_
 VIH Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB1_CS1_HM
 VIH Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB1_CS1_QL
 VIH Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB1_CS1_RV
+VIH Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB2_CS2
 VIH Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB2_CS2
 VIH Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB2_CS2_AC
 VIH Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB2_CS2_AO

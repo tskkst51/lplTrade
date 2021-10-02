@@ -1,3 +1,6 @@
+GE Gain: $ Win %: 50.00 in 4 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5
+GE Gain: $ Win %: 50.00 in 4 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5
+GE Gain: $ Win %: 50.00 in 4 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_TS
 GE Gain: $ -36.13 Win %: 0 in 4 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_AO_AC
 GE Gain: $ -2.13 Win %: 0 in 4 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_AC
 GE Gain: $ -1.03 Win %: 0 in 4 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_RV_AV_DB8
@@ -46,7 +49,6 @@ GE Gain: $ -0.09 Win %: 50.00 in 4 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_TR_I
 GE Gain: $ -0.03 Win %: 50.00 in 4 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_HM_TR
 GE Gain: $ -0.02 Win %: 50.00 in 4 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_RV_AL
 GE Gain: $ -0.01 Win %: 50.00 in 4 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_HM_QP_DB8
-GE Gain: $ Win %: 50.00 in 4 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5
 GE Gain: $ 0.03 Win %: 50.00 in 4 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_AL
 GE Gain: $ 0.07 Win %: 25.00 in 4 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_RV_AL_DB15
 GE Gain: $ 0.07 Win %: 25.00 in 4 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_RV_AL_DB15
@@ -117,6 +119,7 @@ GE Gain: $ 0.49 Win %: 75.00 in 4 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_RV_AL
 GE Gain: $ 0.5 Win %: 75.00 in 4 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_DB8
 GE Gain: $ 0.58 Win %: 100.00 in 4 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_LI
 GE Gain: $ 0.8 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_IT
+GE Gain: $ 0.8 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_IT
 GE Gain: $ 0.8 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_IT_QL
 GE Gain: $ 0.8 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_IT
 GE Gain: $ 0.8 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_IT_QL
@@ -128,6 +131,9 @@ GE Gain: $ 0.81 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_RV_A
 GE Gain: $ 0.88 Win %: 75.00 in 4 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_IR4
 GE Gain: $ 0.88 Win %: 75.00 in 4 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_IR4
 GE Gain: $ 0.88 Win %: 75.00 in 4 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_IR4
+GE Gain: $ 1.2 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_TS
+GE Gain: $ 1.2 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_TS
+GE Gain: $ 1.2 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_TS
 GE Gain: $ 1.35 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_AV
 GE Gain: $ 1.35 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB1_OS1_CB2_CS2_RV_AV
 GE Gain: $ 1.35 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB2_OS2_CB1_CS1_AV

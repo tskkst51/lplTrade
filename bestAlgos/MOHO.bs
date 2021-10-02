@@ -89,14 +89,18 @@ MOHO Gain: $ -0.16 Win %: 66.00 in 3 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5
 MOHO Gain: $ -0.16 Win %: 66.00 in 3 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QL_DB30
 MOHO Gain: $ -0.16 Win %: 66.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_IT_QL_DB30
 MOHO Gain: $ -0.14 Win %: 66.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_HM_AV_DB30
+MOHO Gain: $ 0.09 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_TS
+MOHO Gain: $ 0.1 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TS
+MOHO Gain: $ 0.1 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_TS
+MOHO Gain: $ 0.14 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_TS
 MOHO Gain: $ 0.17 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_VI
 MOHO Gain: $ 0.19 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_LI
-MOHO Gain: $ 0.2 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_IR5
-MOHO Gain: $ 0.2 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_TR_IR5
 MOHO Gain: $ 0.2 Win %: 66.00 in 3 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_IR5
 MOHO Gain: $ 0.2 Win %: 66.00 in 3 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TR_IR5
 MOHO Gain: $ 0.2 Win %: 66.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_IR5
 MOHO Gain: $ 0.2 Win %: 66.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_TR_IR5
+MOHO Gain: $ 0.2 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_IR5
+MOHO Gain: $ 0.2 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_TR_IR5
 MOHO Gain: $ 0.25 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_VI
 MOHO Gain: $ 0.25 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_VI
 MOHO Gain: $ 0.27 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_HM
@@ -109,6 +113,7 @@ MOHO Gain: $ 0.3 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_
 MOHO Gain: $ 0.3 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_AL
 MOHO Gain: $ 0.3 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_AO
 MOHO Gain: $ 0.3 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_AV
+MOHO Gain: $ 0.3 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_IT
 MOHO Gain: $ 0.3 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_IT
 MOHO Gain: $ 0.3 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_IT_QL
 MOHO Gain: $ 0.3 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_QL
@@ -132,6 +137,7 @@ MOHO Gain: $ 0.32 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5
 MOHO Gain: $ 0.32 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_QL
 MOHO Gain: $ 0.32 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_SS
 MOHO Gain: $ 0.32 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TR
+MOHO Gain: $ 0.32 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5
 MOHO Gain: $ 0.32 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5
 MOHO Gain: $ 0.32 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_AC
 MOHO Gain: $ 0.32 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_AL

@@ -76,10 +76,14 @@ SCYX Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_HM
 SCYX Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_RV_AV_DB30
 SCYX Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_HM_AV_DB30
 SCYX Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_LI
+SCYX Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TS
+SCYX Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_TS
 SCYX Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_QP_IR5
 SCYX Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TR_IR5
 SCYX Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_RV_QP_DB30
+SCYX Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_TS
 SCYX Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_LI
+SCYX Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_TS
 SCYX Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_DB30
 SCYX Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QL_DB30
 SCYX Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_DB30
@@ -127,6 +131,7 @@ SCYX Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5
 SCYX Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_HM_TR
 SCYX Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_TR
 SCYX Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_IT
+SCYX Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_IT
 SCYX Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 SCYX Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_QL
 SCYX Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_RV
@@ -144,6 +149,7 @@ SCYX Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_IT
 SCYX Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_QL
 SCYX Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_RV
 SCYX Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB5_CS5_SS
+SCYX Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5
 SCYX Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_AC
 SCYX Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_AO
 SCYX Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_HM

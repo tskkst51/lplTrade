@@ -1,3 +1,5 @@
+TRIT Gain: $ Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB1_CS1_RV_TR
+TRIT Gain: $ Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB2_CS2_RV_TR
 TRIT Gain: $ -16.51 Win %: 0 in 3 days with algo TB1_HL_QM_OB2_OS2_CB1_CS1_HM_QP
 TRIT Gain: $ -16.32 Win %: 0 in 3 days with algo TB1_HL_QM_OB2_OS2_CB1_CS1_QP
 TRIT Gain: $ -16.32 Win %: 0 in 3 days with algo TB1_HL_QM_OB2_OS2_CB1_CS1_RV_QP
@@ -86,8 +88,6 @@ TRIT Gain: $ -0.34 Win %: 33.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5
 TRIT Gain: $ -0.28 Win %: 33.00 in 3 days with algo TB1_HL_QM_OB2_OS2_CB1_CS1_IT_QL_DB30
 TRIT Gain: $ -0.01 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB1_CS1_HM_TR
 TRIT Gain: $ -0.01 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB2_CS2_HM_TR
-TRIT Gain: $ Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB1_CS1_RV_TR
-TRIT Gain: $ Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB2_CS2_RV_TR
 TRIT Gain: $ 0.03 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB1_CS1_IT_QL_DB15
 TRIT Gain: $ 0.03 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB2_CS2_IT_QL_DB15
 TRIT Gain: $ 0.08 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_IT_QP_DB30
@@ -101,17 +101,22 @@ TRIT Gain: $ 0.55 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB2_CS2_
 TRIT Gain: $ 0.63 Win %: 33.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_TR_IR5
 TRIT Gain: $ 0.63 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_HM_AV_DB30
 TRIT Gain: $ 0.63 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_RV_AV_DB30
+TRIT Gain: $ 0.71 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_AO
+TRIT Gain: $ 0.71 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB1_CS1_IT
 TRIT Gain: $ 0.71 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB1_CS1_IT
 TRIT Gain: $ 0.71 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB1_CS1_IT_QL
 TRIT Gain: $ 0.71 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB2_CS2_IT
 TRIT Gain: $ 0.71 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB2_CS2_IT_QL
-TRIT Gain: $ 0.71 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_AO
 TRIT Gain: $ 0.76 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB1_CS1_SS
 TRIT Gain: $ 0.76 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB2_CS2_SS
 TRIT Gain: $ 0.84 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB1_CS1_HM_AV
 TRIT Gain: $ 0.84 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB2_CS2_HM_AV
+TRIT Gain: $ 0.96 Win %: 100.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_TS
+TRIT Gain: $ 1.1 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB1_CS1_TS
+TRIT Gain: $ 1.1 Win %: 100.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB2_CS2_TS
 TRIT Gain: $ 1.13 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_AL
 TRIT Gain: $ 1.13 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_RV_AL
+TRIT Gain: $ 1.14 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB2_OS2_CB1_CS1_TS
 TRIT Gain: $ 1.17 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_HM_TR
 TRIT Gain: $ 1.17 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_IR5
 TRIT Gain: $ 1.17 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_RV_TR
@@ -145,6 +150,7 @@ TRIT Gain: $ 1.68 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB2_OS2_CB1_CS1_IT
 TRIT Gain: $ 1.68 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB2_OS2_CB1_CS1_QL
 TRIT Gain: $ 1.68 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB2_OS2_CB1_CS1_RV
 TRIT Gain: $ 1.7 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB2_OS2_CB1_CS1_LI
+TRIT Gain: $ 1.71 Win %: 100.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5
 TRIT Gain: $ 1.71 Win %: 100.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5
 TRIT Gain: $ 1.71 Win %: 100.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_HM
 TRIT Gain: $ 1.71 Win %: 100.00 in 3 days with algo TB1_HL_HI_QM_OB3_OS3_CB5_CS5_QL

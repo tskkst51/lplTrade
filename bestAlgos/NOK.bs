@@ -18,6 +18,10 @@ NOK Gain: $ 0 Win %: 50.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_RV_QP
 NOK Gain: $ 0 Win %: 50.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_VI
 NOK Gain: $ 0 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_HM_QP
 NOK Gain: $ 0 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_HM_QP
+NOK Gain: $ 0.01 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_QP_IR2
+NOK Gain: $ 0.01 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_TR_QP_DB8
+NOK Gain: $ 0.01 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_QP_IR2
+NOK Gain: $ 0.01 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_TR_QP_DB8
 NOK Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_IT_QP
 NOK Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_IT_QP_DB8
 NOK Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_IT_QP
@@ -26,10 +30,6 @@ NOK Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_IT_
 NOK Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_IT_QP_DB8
 NOK Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_IT_QP
 NOK Gain: $ 0.01 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_IT_QP_DB8
-NOK Gain: $ 0.01 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_QP_IR2
-NOK Gain: $ 0.01 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_TR_QP_DB8
-NOK Gain: $ 0.01 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_QP_IR2
-NOK Gain: $ 0.01 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_TR_QP_DB8
 NOK Gain: $ 0.02 Win %: 50.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_LI
 NOK Gain: $ 0.02 Win %: 50.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_TR_QP_DB8
 NOK Gain: $ 0.02 Win %: 50.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_LI
@@ -42,14 +42,14 @@ NOK Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_TR_Q
 NOK Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_TR_QP
 NOK Gain: $ 0.05 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_HM_AV_DB8
 NOK Gain: $ 0.05 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_HM_AV_DB8
-NOK Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_HM_AV_DB8
-NOK Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_HM_TR_DB8
-NOK Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_HM_AV_DB8
-NOK Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_HM_TR_DB8
 NOK Gain: $ 0.07 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_QP
 NOK Gain: $ 0.07 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_RV_QP
 NOK Gain: $ 0.07 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_QP
 NOK Gain: $ 0.07 Win %: 50.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_RV_QP
+NOK Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_HM_AV_DB8
+NOK Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_HM_TR_DB8
+NOK Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_HM_AV_DB8
+NOK Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_HM_TR_DB8
 NOK Gain: $ 0.08 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_HM_TR_DB8
 NOK Gain: $ 0.08 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DB8
 NOK Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_DB8
@@ -98,6 +98,7 @@ NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_AL
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_AV
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_IR2
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_IT
+NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_IT
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_IT_QL
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_QL
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_RV
@@ -106,6 +107,7 @@ NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_RV_
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_RV_TR
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_TR
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_TR_IR2
+NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_TS
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_AL
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_AV
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_IR2
@@ -118,6 +120,7 @@ NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_RV_
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_RV_TR
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_TR
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_TR_IR2
+NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_TS
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_AL
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_AV
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_IR2
@@ -130,6 +133,8 @@ NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_RV_
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_RV_TR
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_TR
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_TR_IR2
+NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_TS
+NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_AL
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_AV
@@ -143,3 +148,4 @@ NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_RV_
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_RV_TR
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_TR
 NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_TR_IR2
+NOK Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_TS

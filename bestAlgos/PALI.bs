@@ -58,10 +58,10 @@ PALI Gain: $ 0.03 Win %: 50.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_
 PALI Gain: $ 0.03 Win %: 50.00 in 2 days with algo TB3_HL_HI_QM_OB2_OS2_CB3_CS3_HM_QP_DB10
 PALI Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_RV_QP_DB10
 PALI Gain: $ 0.04 Win %: 50.00 in 2 days with algo TB3_HL_HI_QM_OB2_OS2_CB3_CS3_RV_QP_DB10
-PALI Gain: $ 0.05 Win %: 100.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_IT_QP
-PALI Gain: $ 0.05 Win %: 100.00 in 2 days with algo TB3_HL_HI_QM_OB2_OS2_CB3_CS3_IT_QP
 PALI Gain: $ 0.05 Win %: 50.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_TR_QP
 PALI Gain: $ 0.05 Win %: 50.00 in 2 days with algo TB3_HL_HI_QM_OB2_OS2_CB3_CS3_TR_QP
+PALI Gain: $ 0.05 Win %: 100.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_IT_QP
+PALI Gain: $ 0.05 Win %: 100.00 in 2 days with algo TB3_HL_HI_QM_OB2_OS2_CB3_CS3_IT_QP
 PALI Gain: $ 0.07 Win %: 50.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_TR_QP_DB10
 PALI Gain: $ 0.07 Win %: 50.00 in 2 days with algo TB3_HL_HI_QM_OB2_OS2_CB3_CS3_TR_QP_DB10
 PALI Gain: $ 0.43 Win %: 100.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_HM_TR_DB10
@@ -125,6 +125,7 @@ PALI Gain: $ 2.25 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_TR
 PALI Gain: $ 2.28 Win %: 100.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_AL
 PALI Gain: $ 2.28 Win %: 100.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_IR3
 PALI Gain: $ 2.28 Win %: 100.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_IT
+PALI Gain: $ 2.28 Win %: 100.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_IT
 PALI Gain: $ 2.28 Win %: 100.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_IT_QL
 PALI Gain: $ 2.28 Win %: 100.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_QL
 PALI Gain: $ 2.28 Win %: 100.00 in 2 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_RV
@@ -151,3 +152,8 @@ PALI Gain: $ 2.38 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_AO
 PALI Gain: $ 2.38 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_HM
 PALI Gain: $ 2.38 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_QL
 PALI Gain: $ 2.38 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_RV
+PALI Gain: $ 0.08 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB3_CS3_TS
+PALI Gain: $ 0.08 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_TS
+PALI Gain: $ 0.4 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB1_OS1_CB3_CS3_TS
+PALI Gain: $ 0.4 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB2_OS2_CB3_CS3_TS
+PALI Gain: $ 2.15 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3

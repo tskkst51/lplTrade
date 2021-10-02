@@ -47,10 +47,12 @@ ENSC Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4
 ENSC Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_AO
 ENSC Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_AO_AC
 ENSC Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_IT
+ENSC Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_IT
 ENSC Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_IT_QL
 ENSC Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_QL
 ENSC Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_RV
 ENSC Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_SS
+ENSC Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_TS
 ENSC Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB1_OS1_CB4_CS4_DB6
 ENSC Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB1_OS1_CB4_CS4_HM_AV_DB6
 ENSC Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB1_OS1_CB4_CS4_HM_TR_DB6
@@ -78,6 +80,7 @@ ENSC Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3
 ENSC Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3_QP_IR1
 ENSC Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3_RV_QP
 ENSC Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3_TR_QP
+ENSC Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB1_OS1_CB4_CS4_TS
 ENSC Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB3_CS3_RV_AL_DB6
 ENSC Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3_RV_AL_DB6
 ENSC Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB1_OS1_CB4_CS4_AC
@@ -94,6 +97,8 @@ ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB3_CS3
 ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB3_CS3_QL
 ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB3_CS3_RV
 ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB3_CS3_SS
+ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB3_CS3_TS
+ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3
 ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3
 ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3_HM
 ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3_IR1
@@ -102,6 +107,7 @@ ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3
 ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3_QL
 ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3_RV
 ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3_SS
+ENSC Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB3_CS3_TS
 ENSC Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_HM_AV_DB10
 ENSC Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_HM_TR_DB10
 ENSC Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_RV_AV_DB10

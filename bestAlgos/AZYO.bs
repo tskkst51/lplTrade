@@ -39,6 +39,7 @@ AZYO Gain: $ -5.2 Win %: 0 in 1 days with algo TB1_HS_QM_OB2_OS2_CB1_CS1_TR_QP_D
 AZYO Gain: $ -5.2 Win %: 0 in 1 days with algo TB1_HS_QM_OB2_OS2_CB2_CS2_TR_QP
 AZYO Gain: $ -5.2 Win %: 0 in 1 days with algo TB1_HS_QM_OB2_OS2_CB2_CS2_TR_QP_DB30
 AZYO Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB1_CS1_PM
+AZYO Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB1_CS1_PM
 AZYO Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB1_CS1_QP_PM
 AZYO Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB2_CS2_PM
 AZYO Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB2_CS2_QP_PM
@@ -50,6 +51,10 @@ AZYO Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB1_CS1_LI
 AZYO Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB2_CS2_LI
 AZYO Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB1_CS1_LI
 AZYO Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB2_CS2_LI
+AZYO Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB1_CS1_TS
+AZYO Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB2_CS2_TS
+AZYO Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB1_CS1_TS
+AZYO Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB2_CS2_TS
 AZYO Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB1_CS1_SS
 AZYO Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB2_CS2_SS
 AZYO Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB1_CS1_SS
@@ -147,6 +152,7 @@ AZYO Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB1_CS1_IT
 AZYO Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB1_CS1_IT_QL_DB30
 AZYO Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB1_CS1_QL
 AZYO Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB1_CS1_RV
+AZYO Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB2_CS2
 AZYO Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB2_CS2
 AZYO Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB2_CS2_AC
 AZYO Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB2_CS2_AO

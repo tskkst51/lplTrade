@@ -45,6 +45,7 @@ DFH Gain: $ -1.07 Win %: 0 in 1 days with algo TB4_LO_QM_OB2_OS2_CB4_CS4_VI
 DFH Gain: $ -0.86 Win %: 0 in 1 days with algo TB1_LO_QM_OB1_OS1_CB3_CS3_LI
 DFH Gain: $ -0.86 Win %: 0 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3_LI
 DFH Gain: $ -0.51 Win %: 0 in 1 days with algo TB4_LO_QM_OB1_OS1_CB4_CS4_PM
+DFH Gain: $ -0.51 Win %: 0 in 1 days with algo TB4_LO_QM_OB1_OS1_CB4_CS4_PM
 DFH Gain: $ -0.51 Win %: 0 in 1 days with algo TB4_LO_QM_OB2_OS2_CB4_CS4_PM
 DFH Gain: $ -0.12 Win %: 0 in 1 days with algo TB4_LO_QM_OB1_OS1_CB4_CS4_QP_PM
 DFH Gain: $ -0.12 Win %: 0 in 1 days with algo TB4_LO_QM_OB2_OS2_CB4_CS4_QP_PM
@@ -52,6 +53,10 @@ DFH Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB3_CS3_PM
 DFH Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB3_CS3_QP_PM
 DFH Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3_PM
 DFH Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3_QP_PM
+DFH Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB3_CS3_TS
+DFH Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3_TS
+DFH Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB4_CS4_TS
+DFH Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB4_CS4_TS
 DFH Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB4_CS4_HM_AV_DB8
 DFH Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB4_CS4_HM_TR_DB8
 DFH Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB4_CS4_RV_AV_DB8
@@ -148,6 +153,7 @@ DFH Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB3_CS3_IT_
 DFH Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB3_CS3_QL
 DFH Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB3_CS3_RV
 DFH Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB3_CS3_VI
+DFH Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3
 DFH Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3
 DFH Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3_AC
 DFH Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS3_AO

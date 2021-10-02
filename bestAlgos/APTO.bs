@@ -46,6 +46,10 @@ APTO Gain: $ 0.12 Win %: 50.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_QP_
 APTO Gain: $ 0.12 Win %: 50.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_QP_PM
 APTO Gain: $ 0.12 Win %: 50.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_QP_PM
 APTO Gain: $ 0.12 Win %: 50.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_QP_PM
+APTO Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_TS
+APTO Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_TS
+APTO Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_TS
+APTO Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_TS
 APTO Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_IT_QP_DB10
 APTO Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_IT_QP_DB10
 APTO Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_IT_QP_DB10
@@ -103,6 +107,7 @@ APTO Gain: $ 0.55 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_RV
 APTO Gain: $ 0.55 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_RV_TR_DB10
 APTO Gain: $ 0.55 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_RV_TR_DB10
 APTO Gain: $ 0.61 Win %: 50.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_PM
+APTO Gain: $ 0.61 Win %: 50.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_PM
 APTO Gain: $ 0.61 Win %: 50.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_PM
 APTO Gain: $ 0.61 Win %: 50.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_PM
 APTO Gain: $ 0.61 Win %: 50.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_PM
@@ -153,6 +158,7 @@ APTO Gain: $ 1.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_AO
 APTO Gain: $ 1.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_AO_AC
 APTO Gain: $ 1.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_IT
 APTO Gain: $ 1.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_RV
+APTO Gain: $ 1.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2
 APTO Gain: $ 1.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2
 APTO Gain: $ 1.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_AC
 APTO Gain: $ 1.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_AO

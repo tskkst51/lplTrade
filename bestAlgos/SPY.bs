@@ -11,6 +11,7 @@ SPY Gain: $ -1.04 Win %: 0 in 1 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_AO
 SPY Gain: $ -1.04 Win %: 0 in 1 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_AO_AC
 SPY Gain: $ -1.04 Win %: 0 in 1 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_QL
 SPY Gain: $ -1.04 Win %: 0 in 1 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_QP
+SPY Gain: $ -1.04 Win %: 0 in 1 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_TS
 SPY Gain: $ -1 Win %: 0 in 1 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_IR4
 SPY Gain: $ -1 Win %: 0 in 1 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_QP_IR4
 SPY Gain: $ -0.94 Win %: 0 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_AC
@@ -29,6 +30,7 @@ SPY Gain: $ -0.34 Win %: 0 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_AC
 SPY Gain: $ -0.34 Win %: 0 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_AO
 SPY Gain: $ -0.34 Win %: 0 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_AO_AC
 SPY Gain: $ -0.34 Win %: 0 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_QL
+SPY Gain: $ -0.34 Win %: 0 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_TS
 SPY Gain: $ -0.34 Win %: 0 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_RV_AV
 SPY Gain: $ -0.29 Win %: 0 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_PM
 SPY Gain: $ -0.29 Win %: 0 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_QP_PM
@@ -51,6 +53,7 @@ SPY Gain: $ -0.11 Win %: 0 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_AO
 SPY Gain: $ -0.07 Win %: 0 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_VI
 SPY Gain: $ -0.06 Win %: 0 in 1 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_RV_AV
 SPY Gain: $ -0.06 Win %: 0 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_PM
+SPY Gain: $ -0.06 Win %: 0 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_PM
 SPY Gain: $ -0.06 Win %: 0 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_QP_PM
 SPY Gain: $ -0.05 Win %: 0 in 1 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_IT_QL
 SPY Gain: $ -0.05 Win %: 0 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_HM_AV_DB8
@@ -60,6 +63,7 @@ SPY Gain: $ -0.03 Win %: 0 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_LI
 SPY Gain: $ -0.03 Win %: 0 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_QL
 SPY Gain: $ -0.03 Win %: 0 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_QP
 SPY Gain: $ -0.03 Win %: 0 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_SS
+SPY Gain: $ -0.03 Win %: 0 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_TS
 SPY Gain: $ -0.02 Win %: 0 in 1 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_IT_QL_DB15
 SPY Gain: $ -0.02 Win %: 0 in 1 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_VI
 SPY Gain: $ -0.01 Win %: 0 in 1 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_IT_QP
@@ -144,12 +148,14 @@ SPY Gain: $ 1.11 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_HM_
 SPY Gain: $ 1.12 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_RV
 SPY Gain: $ 1.12 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_RV_QP
 SPY Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5
+SPY Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5
 SPY Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_AC
 SPY Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_AO
 SPY Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_AO_AC
 SPY Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_HM_TR
 SPY Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_QL
 SPY Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_QP
+SPY Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_TS
 SPY Gain: $ 1.15 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_PM
 SPY Gain: $ 1.15 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_QP_PM
 SPY Gain: $ 1.15 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_RV_TR

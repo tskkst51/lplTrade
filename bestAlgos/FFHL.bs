@@ -106,11 +106,16 @@ FFHL Gain: $ -0.12 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_IR
 FFHL Gain: $ -0.12 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_TR_IR3
 FFHL Gain: $ -0.12 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4_IR3
 FFHL Gain: $ -0.12 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4_TR_IR3
+FFHL Gain: $ 0.66 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB4_CS4_TS
+FFHL Gain: $ 0.66 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB2_OS2_CB4_CS4_TS
+FFHL Gain: $ 0.66 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_TS
+FFHL Gain: $ 0.66 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4_TS
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB4_CS4_AC
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB4_CS4_AO
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB4_CS4_AO_AC
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB4_CS4_HM
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB4_CS4_HM_TR
+FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB4_CS4_IT
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB4_CS4_IT
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB4_CS4_IT_QL
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB4_CS4_QL
@@ -142,6 +147,7 @@ FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_RV
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_RV_TR
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_SS
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_TR
+FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4_AC
 FFHL Gain: $ 0.88 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4_AO

@@ -1,3 +1,9 @@
+LYFT Gain: $ Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4
+LYFT Gain: $ Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4
+LYFT Gain: $ Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_AC
+LYFT Gain: $ Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_AO
+LYFT Gain: $ Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_DB6
+LYFT Gain: $ Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_IT
 LYFT Gain: $ -3.12 Win %: 33.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_HM_AV
 LYFT Gain: $ -3.12 Win %: 33.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_HM_AV_DB6
 LYFT Gain: $ -2.55 Win %: 33.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_HM_QP
@@ -18,6 +24,7 @@ LYFT Gain: $ -1.08 Win %: 33.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_QP
 LYFT Gain: $ -1.06 Win %: 33.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_HM_QP
 LYFT Gain: $ -1.06 Win %: 33.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_HM_QP_DB6
 LYFT Gain: $ -1.01 Win %: 33.00 in 3 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_VI
+LYFT Gain: $ -0.95 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_TS
 LYFT Gain: $ -0.93 Win %: 33.00 in 3 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_TR_QP_DB15
 LYFT Gain: $ -0.93 Win %: 33.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_RV_QP
 LYFT Gain: $ -0.93 Win %: 33.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_RV_QP_DB6
@@ -41,11 +48,6 @@ LYFT Gain: $ -0.04 Win %: 33.00 in 3 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_IR
 LYFT Gain: $ -0.01 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_QP_IR1
 LYFT Gain: $ 0 Win %: 33.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_TR_QP_DB10
 LYFT Gain: $ 0 Win %: 33.00 in 3 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_TR_QP_DB10
-LYFT Gain: $ Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4
-LYFT Gain: $ Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_AC
-LYFT Gain: $ Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_AO
-LYFT Gain: $ Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_DB6
-LYFT Gain: $ Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_IT
 LYFT Gain: $ 0.04 Win %: 66.00 in 3 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_QP
 LYFT Gain: $ 0.11 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_LI
 LYFT Gain: $ 0.16 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_VI
@@ -84,6 +86,9 @@ LYFT Gain: $ 1.82 Win %: 33.00 in 3 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_
 LYFT Gain: $ 1.96 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB5_OS5_CB4_CS4_TR_IR1
 LYFT Gain: $ 2.05 Win %: 66.00 in 3 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_RV_AL_DB15
 LYFT Gain: $ 2.12 Win %: 66.00 in 3 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_RV_AV_DB15
+LYFT Gain: $ 2.59 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_TS
+LYFT Gain: $ 2.59 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_TS
+LYFT Gain: $ 2.76 Win %: 100.00 in 3 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_TS
 LYFT Gain: $ 2.89 Win %: 66.00 in 3 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_RV
 LYFT Gain: $ 2.96 Win %: 66.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_AC
 LYFT Gain: $ 2.96 Win %: 66.00 in 3 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_AC
@@ -118,6 +123,7 @@ LYFT Gain: $ 4.11 Win %: 100.00 in 3 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_HM
 LYFT Gain: $ 4.11 Win %: 100.00 in 3 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_HM_AV
 LYFT Gain: $ 4.11 Win %: 100.00 in 3 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_HM_TR
 LYFT Gain: $ 4.15 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_IR3
+LYFT Gain: $ 4.15 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_IT
 LYFT Gain: $ 4.15 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_IT
 LYFT Gain: $ 4.15 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_IT_QL
 LYFT Gain: $ 4.15 Win %: 100.00 in 3 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_QL

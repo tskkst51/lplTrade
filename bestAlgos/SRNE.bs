@@ -18,6 +18,10 @@ SRNE Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5
 SRNE Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_QP_PM
 SRNE Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_QP_PM
 SRNE Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_QP_PM
+SRNE Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_TS
+SRNE Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_TS
+SRNE Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TS
+SRNE Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_TS
 SRNE Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_HM_QP
 SRNE Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_QP_IR5
 SRNE Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_HM_QP
@@ -95,6 +99,7 @@ SRNE Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5
 SRNE Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_VI
 SRNE Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_VI
 SRNE Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_PM
+SRNE Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_PM
 SRNE Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_PM
 SRNE Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_PM
 SRNE Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_PM
@@ -140,6 +145,7 @@ SRNE Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_
 SRNE Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_SS
 SRNE Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TR
 SRNE Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TR_IR5
+SRNE Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5
 SRNE Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5
 SRNE Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_AL
 SRNE Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_AV

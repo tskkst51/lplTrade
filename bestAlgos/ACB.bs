@@ -38,6 +38,7 @@ ACB Gain: $ -0.51 Win %: 66.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB1_CS1_SS
 ACB Gain: $ -0.45 Win %: 33.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB1_CS1_IT_QL_DB8
 ACB Gain: $ -0.44 Win %: 0 in 3 days with algo TB4_PL_QM_OB1_OS1_CB1_CS1_VI
 ACB Gain: $ -0.42 Win %: 66.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_PM
+ACB Gain: $ -0.42 Win %: 66.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_PM
 ACB Gain: $ -0.39 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_PM
 ACB Gain: $ -0.38 Win %: 33.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_AL
 ACB Gain: $ -0.38 Win %: 33.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_RV_AL
@@ -61,14 +62,14 @@ ACB Gain: $ -0.02 Win %: 33.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_HM_
 ACB Gain: $ -0.02 Win %: 33.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_VI
 ACB Gain: $ 0 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_VI
 ACB Gain: $ 0.03 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_QP_IR2
-ACB Gain: $ 0.04 Win %: 100.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_IT_QP
-ACB Gain: $ 0.04 Win %: 100.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_IT_QP_DB6
 ACB Gain: $ 0.04 Win %: 33.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_AL
 ACB Gain: $ 0.04 Win %: 33.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_RV_AL
 ACB Gain: $ 0.04 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_AO
-ACB Gain: $ 0.06 Win %: 100.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_IT_QP_DB8
+ACB Gain: $ 0.04 Win %: 100.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_IT_QP
+ACB Gain: $ 0.04 Win %: 100.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_IT_QP_DB6
 ACB Gain: $ 0.06 Win %: 33.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_HM_TR_DB8
 ACB Gain: $ 0.06 Win %: 66.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_QP_IR2
+ACB Gain: $ 0.06 Win %: 100.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_IT_QP_DB8
 ACB Gain: $ 0.08 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_IT_QP
 ACB Gain: $ 0.08 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_IT_QP_DB8
 ACB Gain: $ 0.09 Win %: 33.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_RV_TR_DB8
@@ -80,9 +81,9 @@ ACB Gain: $ 0.14 Win %: 33.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_RV_Q
 ACB Gain: $ 0.15 Win %: 33.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_QP
 ACB Gain: $ 0.16 Win %: 66.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_RV_AL_DB8
 ACB Gain: $ 0.19 Win %: 66.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_TR_QP_DB8
-ACB Gain: $ 0.24 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_QP_PM
 ACB Gain: $ 0.24 Win %: 66.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_HM_QP
 ACB Gain: $ 0.24 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_HM_AV_DB6
+ACB Gain: $ 0.24 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_QP_PM
 ACB Gain: $ 0.26 Win %: 33.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_VI
 ACB Gain: $ 0.26 Win %: 66.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_RV_QP
 ACB Gain: $ 0.27 Win %: 66.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_QP
@@ -94,9 +95,9 @@ ACB Gain: $ 0.32 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_SS
 ACB Gain: $ 0.34 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_RV_QP
 ACB Gain: $ 0.34 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_RV_QP_DB8
 ACB Gain: $ 0.35 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_QP
+ACB Gain: $ 0.37 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_HM_TR
 ACB Gain: $ 0.37 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_HM_QP
 ACB Gain: $ 0.37 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_HM_QP_DB8
-ACB Gain: $ 0.37 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_HM_TR
 ACB Gain: $ 0.38 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_RV_AV
 ACB Gain: $ 0.38 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_RV_AV_DB8
 ACB Gain: $ 0.4 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_RV_TR
@@ -113,7 +114,9 @@ ACB Gain: $ 0.48 Win %: 66.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_AV
 ACB Gain: $ 0.48 Win %: 66.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_RV_AV
 ACB Gain: $ 0.52 Win %: 66.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_HM
 ACB Gain: $ 0.54 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_TR_IR2
+ACB Gain: $ 0.54 Win %: 100.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_TS
 ACB Gain: $ 0.56 Win %: 100.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_IT_QL_DB6
+ACB Gain: $ 0.58 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_TS
 ACB Gain: $ 0.59 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_QL
 ACB Gain: $ 0.61 Win %: 100.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_IT_QL_DB8
 ACB Gain: $ 0.63 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_HM_TR
@@ -122,6 +125,7 @@ ACB Gain: $ 0.68 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_LI
 ACB Gain: $ 0.68 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_SS
 ACB Gain: $ 0.69 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_AV
 ACB Gain: $ 0.69 Win %: 66.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_RV_AV
+ACB Gain: $ 0.69 Win %: 100.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_TS
 ACB Gain: $ 0.71 Win %: 100.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_IT
 ACB Gain: $ 0.72 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_IR2
 ACB Gain: $ 0.72 Win %: 100.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_SS
@@ -132,6 +136,7 @@ ACB Gain: $ 0.85 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_PM
 ACB Gain: $ 0.85 Win %: 100.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_DB6
 ACB Gain: $ 0.86 Win %: 100.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB5_CS5_DB8
 ACB Gain: $ 0.9 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_TR
+ACB Gain: $ 0.9 Win %: 100.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB1_CS1_TS
 ACB Gain: $ 0.92 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_AL
 ACB Gain: $ 0.93 Win %: 100.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB1_CS1_IT
 ACB Gain: $ 0.93 Win %: 100.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB1_CS1_IT_QL
@@ -150,6 +155,7 @@ ACB Gain: $ 1.04 Win %: 100.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB1_CS1_QL
 ACB Gain: $ 1.04 Win %: 100.00 in 3 days with algo TB4_PL_QM_OB1_OS1_CB1_CS1_RV
 ACB Gain: $ 1.06 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_RV
 ACB Gain: $ 1.06 Win %: 100.00 in 3 days with algo TB5_PL_QM_OB1_OS1_CB4_CS4_HM_AV
+ACB Gain: $ 1.08 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4
 ACB Gain: $ 1.08 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4
 ACB Gain: $ 1.08 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_AC
 ACB Gain: $ 1.08 Win %: 100.00 in 3 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_AO

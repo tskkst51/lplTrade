@@ -42,6 +42,7 @@ CAN Gain: $ -1.44 Win %: 25.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_RV_
 CAN Gain: $ -1.43 Win %: 25.00 in 4 days with algo TB1_HL_QM_OB1_OS1_CB4_CS4_RV_AV
 CAN Gain: $ -1.43 Win %: 25.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_TR_IR2
 CAN Gain: $ -1.35 Win %: 25.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_IR2
+CAN Gain: $ -1.33 Win %: 25.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_TS
 CAN Gain: $ -1.28 Win %: 25.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_VI
 CAN Gain: $ -1.26 Win %: 25.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_HM_TR_DB8
 CAN Gain: $ -1.2 Win %: 25.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_TR_QP_DB8
@@ -62,6 +63,7 @@ CAN Gain: $ -0.84 Win %: 50.00 in 4 days with algo TB3_PL_QM_OB2_OS2_CB3_CS3_RV_
 CAN Gain: $ -0.84 Win %: 50.00 in 4 days with algo TB3_PL_QM_OB3_OS3_CB3_CS3_RV_TR_DB10
 CAN Gain: $ -0.79 Win %: 25.00 in 4 days with algo TB3_PL_QM_OB3_OS3_CB3_CS3_TR
 CAN Gain: $ -0.76 Win %: 25.00 in 4 days with algo TB3_PL_QM_OB3_OS3_CB3_CS3_RV_TR
+CAN Gain: $ -0.75 Win %: 25.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4
 CAN Gain: $ -0.75 Win %: 25.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4
 CAN Gain: $ -0.75 Win %: 25.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_AC
 CAN Gain: $ -0.75 Win %: 25.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_AO
@@ -126,10 +128,14 @@ CAN Gain: $ 0.86 Win %: 75.00 in 4 days with algo TB3_PL_QM_OB3_OS3_CB3_CS3_SS
 CAN Gain: $ 0.89 Win %: 100.00 in 4 days with algo TB3_PL_QM_OB2_OS2_CB3_CS3_IT
 CAN Gain: $ 0.89 Win %: 100.00 in 4 days with algo TB3_PL_QM_OB2_OS2_CB3_CS3_IT_QL
 CAN Gain: $ 0.89 Win %: 100.00 in 4 days with algo TB3_PL_QM_OB3_OS3_CB3_CS3_IT
+CAN Gain: $ 0.89 Win %: 100.00 in 4 days with algo TB3_PL_QM_OB3_OS3_CB3_CS3_IT
 CAN Gain: $ 0.89 Win %: 100.00 in 4 days with algo TB3_PL_QM_OB3_OS3_CB3_CS3_IT_QL
 CAN Gain: $ 0.96 Win %: 75.00 in 4 days with algo TB3_PL_QM_OB2_OS2_CB3_CS3_RV_AV
 CAN Gain: $ 0.96 Win %: 75.00 in 4 days with algo TB3_PL_QM_OB3_OS3_CB3_CS3_AL
 CAN Gain: $ 0.96 Win %: 75.00 in 4 days with algo TB3_PL_QM_OB3_OS3_CB3_CS3_RV_AL
+CAN Gain: $ 0.98 Win %: 100.00 in 4 days with algo TB1_HL_QM_OB1_OS1_CB4_CS4_TS
+CAN Gain: $ 1.08 Win %: 100.00 in 4 days with algo TB3_PL_QM_OB2_OS2_CB3_CS3_TS
+CAN Gain: $ 1.13 Win %: 100.00 in 4 days with algo TB3_PL_QM_OB3_OS3_CB3_CS3_TS
 CAN Gain: $ 1.19 Win %: 100.00 in 4 days with algo TB3_PL_QM_OB2_OS2_CB3_CS3_RV_AV_DB10
 CAN Gain: $ 1.19 Win %: 100.00 in 4 days with algo TB3_PL_QM_OB3_OS3_CB3_CS3_AV
 CAN Gain: $ 1.19 Win %: 100.00 in 4 days with algo TB3_PL_QM_OB3_OS3_CB3_CS3_RV_AV_DB10

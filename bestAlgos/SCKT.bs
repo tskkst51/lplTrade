@@ -46,14 +46,18 @@ SCKT Gain: $ 0.14 Win %: 66.00 in 3 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_QP
 SCKT Gain: $ 0.14 Win %: 66.00 in 3 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_RV_QP
 SCKT Gain: $ 0.21 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_HM_QP
 SCKT Gain: $ 0.21 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_QP
-SCKT Gain: $ 0.22 Win %: 100.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_RV_AL_DB6
 SCKT Gain: $ 0.22 Win %: 33.00 in 3 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_RV_AV_DB30
 SCKT Gain: $ 0.22 Win %: 33.00 in 3 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_RV_TR_DB30
+SCKT Gain: $ 0.22 Win %: 100.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_RV_AL_DB6
 SCKT Gain: $ 0.26 Win %: 33.00 in 3 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_HM_TR_DB30
+SCKT Gain: $ 0.26 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_TS
 SCKT Gain: $ 0.28 Win %: 66.00 in 3 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_HM_AV_DB30
 SCKT Gain: $ 0.32 Win %: 66.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_VI
 SCKT Gain: $ 0.32 Win %: 66.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_VI
 SCKT Gain: $ 0.43 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_RV_AL_DB30
+SCKT Gain: $ 0.84 Win %: 100.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_TS
+SCKT Gain: $ 0.84 Win %: 100.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_TS
+SCKT Gain: $ 0.92 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_TS
 SCKT Gain: $ 0.95 Win %: 33.00 in 3 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_DB30
 SCKT Gain: $ 1.11 Win %: 33.00 in 3 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_IT_QL_DB30
 SCKT Gain: $ 1.5 Win %: 100.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_DB30
@@ -103,6 +107,7 @@ SCKT Gain: $ 2.98 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_HM_
 SCKT Gain: $ 2.98 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_HM_TR
 SCKT Gain: $ 2.98 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_IR1
 SCKT Gain: $ 2.98 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_IT
+SCKT Gain: $ 2.98 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_IT
 SCKT Gain: $ 2.98 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_IT_QL
 SCKT Gain: $ 2.98 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_QL
 SCKT Gain: $ 2.98 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_RV
@@ -116,6 +121,7 @@ SCKT Gain: $ 3.19 Win %: 66.00 in 3 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_IT_
 SCKT Gain: $ 3.35 Win %: 33.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_IR5
 SCKT Gain: $ 3.35 Win %: 33.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_IR5
 SCKT Gain: $ 3.36 Win %: 100.00 in 3 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_IR5
+SCKT Gain: $ 3.37 Win %: 66.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5
 SCKT Gain: $ 3.38 Win %: 66.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_AC
 SCKT Gain: $ 3.38 Win %: 66.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_AO
 SCKT Gain: $ 3.38 Win %: 66.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_AO_AC

@@ -9,6 +9,7 @@ HJLI Gain: $ -2.69 Win %: 0 in 1 days with algo TB4_HI_QM_OB1_OS1_CB2_CS2_RV
 HJLI Gain: $ -2.68 Win %: 0 in 1 days with algo TB4_HI_QM_OB1_OS1_CB2_CS2_AC
 HJLI Gain: $ -2.68 Win %: 0 in 1 days with algo TB4_HI_QM_OB1_OS1_CB2_CS2_AO
 HJLI Gain: $ -2.68 Win %: 0 in 1 days with algo TB4_HI_QM_OB1_OS1_CB2_CS2_IT
+HJLI Gain: $ -2.68 Win %: 0 in 1 days with algo TB4_HI_QM_OB1_OS1_CB2_CS2_TS
 HJLI Gain: $ -2.53 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_HM_QP
 HJLI Gain: $ -2.53 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_QP
 HJLI Gain: $ -2.49 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_HM_QP_DB6
@@ -41,6 +42,7 @@ HJLI Gain: $ -0.72 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_IT_QL
 HJLI Gain: $ -0.72 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_QL
 HJLI Gain: $ -0.7 Win %: 0 in 1 days with algo TB4_HI_QM_OB1_OS1_CB2_CS2_SS
 HJLI Gain: $ -0.7 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3
+HJLI Gain: $ -0.7 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3
 HJLI Gain: $ -0.7 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_AC
 HJLI Gain: $ -0.7 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_AO
 HJLI Gain: $ -0.7 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_HM
@@ -64,6 +66,8 @@ HJLI Gain: $ -0.52 Win %: 0 in 1 days with algo TB3_HI_QM_OB5_OS5_CB1_CS1_AO
 HJLI Gain: $ -0.52 Win %: 0 in 1 days with algo TB3_HI_QM_OB5_OS5_CB1_CS1_DB10
 HJLI Gain: $ -0.52 Win %: 0 in 1 days with algo TB3_HI_QM_OB5_OS5_CB1_CS1_HM
 HJLI Gain: $ -0.52 Win %: 0 in 1 days with algo TB3_HI_QM_OB5_OS5_CB1_CS1_IT
+HJLI Gain: $ -0.52 Win %: 0 in 1 days with algo TB3_HI_QM_OB5_OS5_CB1_CS1_IT
+HJLI Gain: $ -0.52 Win %: 0 in 1 days with algo TB3_HI_QM_OB5_OS5_CB1_CS1_TS
 HJLI Gain: $ -0.51 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_RV_AV_DB6
 HJLI Gain: $ -0.49 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_RV_AV
 HJLI Gain: $ -0.46 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_HM_TR_DB6
@@ -99,6 +103,7 @@ HJLI Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB5_OS5_CB1_CS1_VI
 HJLI Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_IT_QP
 HJLI Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_IT_QP
 HJLI Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_IT_QP_DB6
+HJLI Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_TS
 HJLI Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_HM_QP
 HJLI Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_QP
 HJLI Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_QP_IR2
@@ -106,6 +111,7 @@ HJLI Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_RV
 HJLI Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_RV_QP_DB8
 HJLI Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB2_CS2_TR_IR2
 HJLI Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_TR_QP_DB8
+HJLI Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_TS
 HJLI Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB2_CS2_TR_QP_DB8
 HJLI Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_TR_QP
 HJLI Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_TR_QP

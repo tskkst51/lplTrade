@@ -17,6 +17,7 @@ DUK Gain: $ -0.33 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_IR4
 DUK Gain: $ -0.32 Win %: 0 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_QP_IR4
 DUK Gain: $ -0.25 Win %: 0 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_HM_AV
 DUK Gain: $ -0.25 Win %: 0 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_HM_AV
+DUK Gain: $ -0.13 Win %: 0 in 1 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_TS
 DUK Gain: $ -0.1 Win %: 0 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_AV
 DUK Gain: $ -0.1 Win %: 0 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_TR_IR4
 DUK Gain: $ -0.1 Win %: 0 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_AV
@@ -78,6 +79,7 @@ DUK Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_RV_
 DUK Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_HM_TR
 DUK Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_HM_TR
 DUK Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_RV_QP
+DUK Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_PM
 DUK Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_PM
 DUK Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_RV_TR
 DUK Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_TR
@@ -141,15 +143,19 @@ DUK Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_AO_
 DUK Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_QL
 DUK Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_SS
 DUK Gain: $ 1.39 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_QP_PM
+DUK Gain: $ 1.39 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB4_CS4_TS
 DUK Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_HM
 DUK Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_HM
 DUK Gain: $ 1.59 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_RV
+DUK Gain: $ 1.59 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_TS
 DUK Gain: $ 1.59 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_RV
+DUK Gain: $ 1.59 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_TS
 DUK Gain: $ 1.6 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_AC
 DUK Gain: $ 1.6 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_AO
 DUK Gain: $ 1.6 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_AO_AC
 DUK Gain: $ 1.6 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_QL
 DUK Gain: $ 1.6 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_SS
+DUK Gain: $ 1.6 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4
 DUK Gain: $ 1.6 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4
 DUK Gain: $ 1.6 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_AC
 DUK Gain: $ 1.6 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_AO

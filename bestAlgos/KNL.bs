@@ -75,6 +75,7 @@ KNL Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB2_CS2_LI
 KNL Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_LI
 KNL Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_LI
 KNL Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_PM
+KNL Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_PM
 KNL Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB2_CS2_PM
 KNL Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_PM
 KNL Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_PM
@@ -98,9 +99,13 @@ KNL Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_HM_A
 KNL Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_RV_AV_DB6
 KNL Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_HM_AV_DB6
 KNL Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_RV_AV_DB6
+KNL Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_TS
 KNL Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_VI
+KNL Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB2_CS2_TS
 KNL Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB2_CS2_VI
+KNL Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_TS
 KNL Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_VI
+KNL Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_TS
 KNL Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_VI
 KNL Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_HM_QP
 KNL Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_HM_QP_DB6
@@ -151,6 +156,7 @@ KNL Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_HM
 KNL Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_QL
 KNL Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_RV
 KNL Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_SS
+KNL Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2
 KNL Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2
 KNL Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_AC
 KNL Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_AO

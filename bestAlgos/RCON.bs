@@ -44,6 +44,10 @@ RCON Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4
 RCON Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_QP
 RCON Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_QP_IR3
 RCON Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_RV_QP
+RCON Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_TS
+RCON Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_TS
+RCON Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB1_OS1_CB4_CS4_TS
+RCON Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_TS
 RCON Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_VI
 RCON Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_VI
 RCON Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB1_OS1_CB4_CS4_HM_AV_DB10
@@ -114,6 +118,7 @@ RCON Gain: $ 0.97 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5
 RCON Gain: $ 0.97 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_HM
 RCON Gain: $ 0.97 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_HM_TR
 RCON Gain: $ 0.97 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_IT
+RCON Gain: $ 0.97 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_IT
 RCON Gain: $ 0.97 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 RCON Gain: $ 0.97 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_QL
 RCON Gain: $ 0.97 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_RV
@@ -136,6 +141,7 @@ RCON Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB1_OS1_CB4_CS4
 RCON Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB1_OS1_CB4_CS4_IT_QL
 RCON Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB1_OS1_CB4_CS4_QL
 RCON Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB1_OS1_CB4_CS4_RV
+RCON Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4
 RCON Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4
 RCON Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_HM
 RCON Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_IR3

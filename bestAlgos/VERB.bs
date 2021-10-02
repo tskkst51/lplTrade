@@ -1,3 +1,26 @@
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_AL
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_DB15
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_IT
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_IT_QL
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_IT_QL_DB15
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_QL
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_SS
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_TR
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_AC
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_AO
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_AO_AC
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_DB10
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_QL
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_IT
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_IT_QL
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_QL
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_SS
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_TR
+VERB Gain: $ Win %: 50.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_HM_AV_DB6
+VERB Gain: $ Win %: 66.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5
+VERB Gain: $ Win %: 66.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5
+VERB Gain: $ Win %: 66.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_SS
+VERB Gain: $ Win %: 66.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_TR
 VERB Gain: $ -1.13 Win %: 16.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_RV_QP
 VERB Gain: $ -1.13 Win %: 16.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_RV_QP_DB6
 VERB Gain: $ -1.03 Win %: 16.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_HM_QP
@@ -77,8 +100,10 @@ VERB Gain: $ -0.11 Win %: 66.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_RV
 VERB Gain: $ -0.11 Win %: 66.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_DB6
 VERB Gain: $ -0.1 Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV_AL
 VERB Gain: $ -0.1 Win %: 66.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_IT
+VERB Gain: $ -0.1 Win %: 66.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_IT
 VERB Gain: $ -0.09 Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_RV
 VERB Gain: $ -0.08 Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_AL
+VERB Gain: $ -0.08 Win %: 83.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_TS
 VERB Gain: $ -0.07 Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_LI
 VERB Gain: $ -0.06 Win %: 33.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_HM_TR_DB8
 VERB Gain: $ -0.06 Win %: 50.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_RV_AL
@@ -97,28 +122,7 @@ VERB Gain: $ -0.02 Win %: 66.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5
 VERB Gain: $ -0.01 Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_RV_AL
 VERB Gain: $ -0.01 Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_RV_AL_DB15
 VERB Gain: $ -0.01 Win %: 66.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_VI
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_AL
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_DB15
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_IT
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_IT_QL
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_IT_QL_DB15
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_QL
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_SS
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_TR
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_AC
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_AO
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_AO_AC
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_DB10
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_QL
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_IT
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_IT_QL
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_QL
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_SS
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_TR
-VERB Gain: $ Win %: 50.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_HM_AV_DB6
-VERB Gain: $ Win %: 66.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5
-VERB Gain: $ Win %: 66.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_SS
-VERB Gain: $ Win %: 66.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_TR
+VERB Gain: $ -0.01 Win %: 66.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_TS
 VERB Gain: $ 0.01 Win %: 66.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_HM_AV
 VERB Gain: $ 0.01 Win %: 66.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_VI
 VERB Gain: $ 0.01 Win %: 66.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_IT
@@ -126,8 +130,10 @@ VERB Gain: $ 0.03 Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_
 VERB Gain: $ 0.03 Win %: 50.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_RV_AV_DB15
 VERB Gain: $ 0.03 Win %: 50.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_RV_AV
 VERB Gain: $ 0.03 Win %: 50.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_RV_AV_DB10
+VERB Gain: $ 0.04 Win %: 66.00 in 6 days with algo TB3_OO_QM_OB5_OS5_CB4_CS4_TS
 VERB Gain: $ 0.04 Win %: 66.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_IT_QL_DB6
 VERB Gain: $ 0.05 Win %: 50.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_RV_AL
+VERB Gain: $ 0.05 Win %: 66.00 in 6 days with algo TB2_HL_HI_QM_OB5_OS5_CB5_CS5_TS
 VERB Gain: $ 0.06 Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_HM
 VERB Gain: $ 0.06 Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_HM_TR
 VERB Gain: $ 0.07 Win %: 50.00 in 6 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_RV_AV

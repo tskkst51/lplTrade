@@ -60,6 +60,7 @@ XBI Gain: $ 3.03 Win %: 50.00 in 4 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_DB6
 XBI Gain: $ 3.03 Win %: 50.00 in 4 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_HM_TR_DB6
 XBI Gain: $ 3.18 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_RV_TR_DB8
 XBI Gain: $ 3.31 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_IT
+XBI Gain: $ 3.31 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_IT
 XBI Gain: $ 3.31 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_IT_QL
 XBI Gain: $ 3.32 Win %: 75.00 in 4 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_AV
 XBI Gain: $ 3.32 Win %: 75.00 in 4 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_RV_AV
@@ -79,6 +80,7 @@ XBI Gain: $ 4.87 Win %: 50.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_RV_A
 XBI Gain: $ 4.89 Win %: 75.00 in 4 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_HM_TR
 XBI Gain: $ 4.94 Win %: 75.00 in 4 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_RV_AL
 XBI Gain: $ 4.98 Win %: 75.00 in 4 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_AL
+XBI Gain: $ 4.99 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_TS
 XBI Gain: $ 5.06 Win %: 50.00 in 4 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_IR2
 XBI Gain: $ 5.15 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_HM
 XBI Gain: $ 5.24 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_HM_TR
@@ -91,6 +93,7 @@ XBI Gain: $ 5.69 Win %: 75.00 in 4 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_RV_A
 XBI Gain: $ 5.8 Win %: 100.00 in 4 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_LI
 XBI Gain: $ 5.81 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_RV_TR
 XBI Gain: $ 5.86 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_HM_AV
+XBI Gain: $ 5.96 Win %: 100.00 in 4 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TS
 XBI Gain: $ 6.08 Win %: 75.00 in 4 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_DB8
 XBI Gain: $ 6.34 Win %: 100.00 in 4 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_TR
 XBI Gain: $ 6.34 Win %: 100.00 in 4 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_QP
@@ -110,12 +113,14 @@ XBI Gain: $ 7.25 Win %: 100.00 in 4 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_IT_
 XBI Gain: $ 7.3 Win %: 100.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_RV_AL
 XBI Gain: $ 7.37 Win %: 100.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_AL
 XBI Gain: $ 7.43 Win %: 100.00 in 4 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_IR1
+XBI Gain: $ 7.7 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_TS
+XBI Gain: $ 7.71 Win %: 100.00 in 4 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_TS
 XBI Gain: $ 7.81 Win %: 100.00 in 4 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_DB10
 XBI Gain: $ 7.86 Win %: 100.00 in 4 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_RV_TR
 XBI Gain: $ 8.02 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_TR_QP
+XBI Gain: $ 8.05 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_TR_IR3
 XBI Gain: $ 8.05 Win %: 100.00 in 4 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TR
 XBI Gain: $ 8.05 Win %: 100.00 in 4 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TR_IR1
-XBI Gain: $ 8.05 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_TR_IR3
 XBI Gain: $ 8.17 Win %: 75.00 in 4 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_RV
 XBI Gain: $ 8.22 Win %: 100.00 in 4 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_HM_AV
 XBI Gain: $ 8.84 Win %: 100.00 in 4 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_IT
@@ -144,6 +149,7 @@ XBI Gain: $ 10.33 Win %: 100.00 in 4 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_AO
 XBI Gain: $ 10.33 Win %: 100.00 in 4 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_AO_AC
 XBI Gain: $ 10.33 Win %: 100.00 in 4 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_QL
 XBI Gain: $ 10.33 Win %: 100.00 in 4 days with algo TB3_LO_QM_OB5_OS5_CB5_CS5_SS
+XBI Gain: $ 10.34 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4
 XBI Gain: $ 10.34 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4
 XBI Gain: $ 10.34 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_AC
 XBI Gain: $ 10.34 Win %: 100.00 in 4 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_AO

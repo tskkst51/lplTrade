@@ -19,6 +19,7 @@ ADMA Gain: $ -0.01 Win %: 0 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_QP_IR5
 ADMA Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_IT_QP
 ADMA Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_IT_QP_DB30
 ADMA Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_PM
+ADMA Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_PM
 ADMA Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_QP
 ADMA Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_QP_PM
 ADMA Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_RV_QP
@@ -59,6 +60,10 @@ ADMA Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_RV
 ADMA Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_VI
 ADMA Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_IT
 ADMA Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_IT_QL
+ADMA Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_TS
+ADMA Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_TS
+ADMA Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_TS
+ADMA Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB4_OS4_CB5_CS5_TS
 ADMA Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_IT
 ADMA Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_IT_QL
 ADMA Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_AO
@@ -133,6 +138,7 @@ ADMA Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_RV
 ADMA Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_RV_TR
 ADMA Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_RV_TR_DB8
 ADMA Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB4_OS4_CB4_CS4_TR
+ADMA Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB4_OS4_CB5_CS5
 ADMA Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB4_OS4_CB5_CS5
 ADMA Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB4_OS4_CB5_CS5_AC
 ADMA Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB4_OS4_CB5_CS5_AL

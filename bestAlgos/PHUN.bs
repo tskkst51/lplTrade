@@ -1,3 +1,9 @@
+PHUN Gain: $ Win %: 60.00 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_QP
+PHUN Gain: $ Win %: 60.00 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_RV_QP
+PHUN Gain: $ Win %: 60.00 in 5 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_QP
+PHUN Gain: $ Win %: 60.00 in 5 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_RV_QP
+PHUN Gain: $ Win %: 80.00 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_HM_QP
+PHUN Gain: $ Win %: 80.00 in 5 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_HM_QP
 PHUN Gain: $ -1.95 Win %: 0 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_TR_QP_DB30
 PHUN Gain: $ -1.95 Win %: 0 in 5 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_TR_QP_DB30
 PHUN Gain: $ -1.9 Win %: 0 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_HM_QP_DB30
@@ -67,17 +73,15 @@ PHUN Gain: $ -0.04 Win %: 80.00 in 5 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_IT
 PHUN Gain: $ -0.03 Win %: 60.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_QP_IR3
 PHUN Gain: $ -0.02 Win %: 60.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_IT_QP_DB10
 PHUN Gain: $ 0 Win %: 60.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_IT_QP
-PHUN Gain: $ Win %: 60.00 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_QP
-PHUN Gain: $ Win %: 60.00 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_RV_QP
-PHUN Gain: $ Win %: 60.00 in 5 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_QP
-PHUN Gain: $ Win %: 60.00 in 5 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_RV_QP
-PHUN Gain: $ Win %: 80.00 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_HM_QP
-PHUN Gain: $ Win %: 80.00 in 5 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_HM_QP
 PHUN Gain: $ 0.04 Win %: 60.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_RV_TR_DB10
 PHUN Gain: $ 0.05 Win %: 80.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_IT_QP
 PHUN Gain: $ 0.06 Win %: 80.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_TR_QP_DB10
 PHUN Gain: $ 0.18 Win %: 80.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_TR_QP
+PHUN Gain: $ 0.2 Win %: 80.00 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_TS
+PHUN Gain: $ 0.2 Win %: 80.00 in 5 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_TS
 PHUN Gain: $ 0.3 Win %: 60.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_RV_AL
+PHUN Gain: $ 0.35 Win %: 100.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_TS
+PHUN Gain: $ 0.35 Win %: 100.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_TS
 PHUN Gain: $ 0.37 Win %: 40.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_IR3
 PHUN Gain: $ 0.4 Win %: 60.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_LI
 PHUN Gain: $ 0.41 Win %: 80.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_AL
@@ -95,14 +99,15 @@ PHUN Gain: $ 0.83 Win %: 100.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_HM
 PHUN Gain: $ 0.83 Win %: 100.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_HM_TR
 PHUN Gain: $ 0.88 Win %: 80.00 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_HM_TR
 PHUN Gain: $ 0.88 Win %: 80.00 in 5 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_HM_TR
+PHUN Gain: $ 0.9 Win %: 80.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_RV
 PHUN Gain: $ 0.9 Win %: 100.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_AC
 PHUN Gain: $ 0.9 Win %: 100.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_AO
 PHUN Gain: $ 0.9 Win %: 100.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_AO_AC
 PHUN Gain: $ 0.9 Win %: 100.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_IT
+PHUN Gain: $ 0.9 Win %: 100.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_IT
 PHUN Gain: $ 0.9 Win %: 100.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_IT_QL
 PHUN Gain: $ 0.9 Win %: 100.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_QL
 PHUN Gain: $ 0.9 Win %: 100.00 in 5 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_SS
-PHUN Gain: $ 0.9 Win %: 80.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_RV
 PHUN Gain: $ 0.92 Win %: 80.00 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_AC
 PHUN Gain: $ 0.92 Win %: 80.00 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_AO
 PHUN Gain: $ 0.92 Win %: 80.00 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_AO_AC
@@ -141,6 +146,7 @@ PHUN Gain: $ 1 Win %: 80.00 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_IR5
 PHUN Gain: $ 1 Win %: 80.00 in 5 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_TR_IR5
 PHUN Gain: $ 1 Win %: 80.00 in 5 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_IR5
 PHUN Gain: $ 1 Win %: 80.00 in 5 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_TR_IR5
+PHUN Gain: $ 1.01 Win %: 100.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5
 PHUN Gain: $ 1.01 Win %: 100.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5
 PHUN Gain: $ 1.01 Win %: 100.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_AC
 PHUN Gain: $ 1.01 Win %: 100.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_AO

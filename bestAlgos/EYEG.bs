@@ -51,13 +51,18 @@ EYEG Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB5_OS5_CB5_CS5_VI
 EYEG Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3_TR_IR4
 EYEG Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3_RV
 EYEG Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3
+EYEG Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3
 EYEG Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3_AC
 EYEG Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3_AO
 EYEG Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3_AO_AC
 EYEG Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3_DB15
 EYEG Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3_HM
 EYEG Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3_IT
+EYEG Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3_TS
 EYEG Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3_LI
+EYEG Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_TS
+EYEG Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB4_OS4_CB5_CS5_TS
+EYEG Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB5_OS5_CB5_CS5_TS
 EYEG Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3_RV_AL
 EYEG Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3_RV_AL_DB15
 EYEG Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB4_OS4_CB3_CS3_RV_TR
@@ -107,6 +112,7 @@ EYEG Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_HM
 EYEG Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_HM_AV
 EYEG Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_HM_TR
 EYEG Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_IR3
+EYEG Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_IT
 EYEG Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_IT
 EYEG Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_IT_QL
 EYEG Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_QL

@@ -75,9 +75,9 @@ VLO Gain: $ 0.24 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_IT_
 VLO Gain: $ 0.36 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_HM_TR
 VLO Gain: $ 0.48 Win %: 50.00 in 2 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_VI
 VLO Gain: $ 0.48 Win %: 50.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_VI
-VLO Gain: $ 0.59 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_TR_IR4
 VLO Gain: $ 0.59 Win %: 50.00 in 2 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_IT_QL_DB15
 VLO Gain: $ 0.59 Win %: 50.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_IT_QL_DB15
+VLO Gain: $ 0.59 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_TR_IR4
 VLO Gain: $ 0.6 Win %: 50.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_IT_QL_DB15
 VLO Gain: $ 0.63 Win %: 50.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_RV_AL_DB8
 VLO Gain: $ 0.65 Win %: 50.00 in 2 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_RV_AL_DB15
@@ -115,7 +115,12 @@ VLO Gain: $ 1.94 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_AC
 VLO Gain: $ 1.94 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_AO_AC
 VLO Gain: $ 2.22 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_RV_AV_DB8
 VLO Gain: $ 2.24 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_IT
+VLO Gain: $ 2.24 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_IT
 VLO Gain: $ 2.24 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_IT_QL
+VLO Gain: $ 2.28 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_TS
+VLO Gain: $ 2.28 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_TS
+VLO Gain: $ 2.28 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_TS
+VLO Gain: $ 2.66 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_TS
 VLO Gain: $ 2.7 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_HM_AV_DB8
 VLO Gain: $ 2.8 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_AV
 VLO Gain: $ 2.8 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_RV_AV
@@ -143,6 +148,7 @@ VLO Gain: $ 3.88 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_AO
 VLO Gain: $ 3.88 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_AO_AC
 VLO Gain: $ 3.88 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_QL
 VLO Gain: $ 3.88 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_SS
+VLO Gain: $ 3.88 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4
 VLO Gain: $ 3.88 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4
 VLO Gain: $ 3.88 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_AC
 VLO Gain: $ 3.88 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_AO

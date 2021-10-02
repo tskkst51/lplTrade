@@ -62,6 +62,10 @@ MRIN Gain: $ 0.48 Win %: 60.00 in 5 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_
 MRIN Gain: $ 0.48 Win %: 60.00 in 5 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_TR_QP
 MRIN Gain: $ 0.51 Win %: 80.00 in 5 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_RV_QP_DB10
 MRIN Gain: $ 0.51 Win %: 80.00 in 5 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_RV_QP_DB10
+MRIN Gain: $ 0.53 Win %: 80.00 in 5 days with algo TB5_HL_HS_QM_OB1_OS1_CB5_CS5_TS
+MRIN Gain: $ 0.53 Win %: 80.00 in 5 days with algo TB5_HL_HS_QM_OB2_OS2_CB5_CS5_TS
+MRIN Gain: $ 0.56 Win %: 80.00 in 5 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_TS
+MRIN Gain: $ 0.56 Win %: 80.00 in 5 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_TS
 MRIN Gain: $ 0.63 Win %: 40.00 in 5 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_VI
 MRIN Gain: $ 0.63 Win %: 40.00 in 5 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_VI
 MRIN Gain: $ 1.5 Win %: 60.00 in 5 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_HM_TR
@@ -101,6 +105,7 @@ MRIN Gain: $ 4.74 Win %: 60.00 in 5 days with algo TB5_HL_HS_QM_OB1_OS1_CB5_CS5_
 MRIN Gain: $ 4.74 Win %: 60.00 in 5 days with algo TB5_HL_HS_QM_OB2_OS2_CB5_CS5_RV_AL
 MRIN Gain: $ 4.74 Win %: 60.00 in 5 days with algo TB5_HL_HS_QM_OB2_OS2_CB5_CS5_RV_AL_DB6
 MRIN Gain: $ 5.33 Win %: 40.00 in 5 days with algo TB5_HL_HS_QM_OB1_OS1_CB5_CS5_PM
+MRIN Gain: $ 5.33 Win %: 40.00 in 5 days with algo TB5_HL_HS_QM_OB1_OS1_CB5_CS5_PM
 MRIN Gain: $ 5.33 Win %: 40.00 in 5 days with algo TB5_HL_HS_QM_OB2_OS2_CB5_CS5_PM
 MRIN Gain: $ 5.74 Win %: 40.00 in 5 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_RV_AL_DB10
 MRIN Gain: $ 5.74 Win %: 40.00 in 5 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_RV_AL_DB10
@@ -136,6 +141,7 @@ MRIN Gain: $ 9.47 Win %: 60.00 in 5 days with algo TB5_HL_HS_QM_OB1_OS1_CB5_CS5_
 MRIN Gain: $ 9.47 Win %: 60.00 in 5 days with algo TB5_HL_HS_QM_OB1_OS1_CB5_CS5_IT_QL_DB6
 MRIN Gain: $ 9.47 Win %: 60.00 in 5 days with algo TB5_HL_HS_QM_OB1_OS1_CB5_CS5_QL
 MRIN Gain: $ 9.47 Win %: 60.00 in 5 days with algo TB5_HL_HS_QM_OB1_OS1_CB5_CS5_TR
+MRIN Gain: $ 9.47 Win %: 60.00 in 5 days with algo TB5_HL_HS_QM_OB2_OS2_CB5_CS5
 MRIN Gain: $ 9.47 Win %: 60.00 in 5 days with algo TB5_HL_HS_QM_OB2_OS2_CB5_CS5
 MRIN Gain: $ 9.47 Win %: 60.00 in 5 days with algo TB5_HL_HS_QM_OB2_OS2_CB5_CS5_AL
 MRIN Gain: $ 9.47 Win %: 60.00 in 5 days with algo TB5_HL_HS_QM_OB2_OS2_CB5_CS5_AV

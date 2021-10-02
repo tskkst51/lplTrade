@@ -42,8 +42,8 @@ JPM Gain: $ 4.8 Win %: 100.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_IT_
 JPM Gain: $ 4.81 Win %: 100.00 in 12 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4_IT_QP
 JPM Gain: $ 4.83 Win %: 100.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_IT_QP_DB15
 JPM Gain: $ 4.84 Win %: 75.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_TR_QP_DB15
-JPM Gain: $ 4.86 Win %: 100.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_IT_QP
 JPM Gain: $ 4.86 Win %: 66.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_RV_QP_DB15
+JPM Gain: $ 4.86 Win %: 100.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_IT_QP
 JPM Gain: $ 4.87 Win %: 75.00 in 12 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4_HM_TR_DB6
 JPM Gain: $ 4.95 Win %: 100.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_IT_QP
 JPM Gain: $ 5.08 Win %: 66.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_RV_QP
@@ -91,6 +91,7 @@ JPM Gain: $ 8.28 Win %: 58.00 in 12 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_SS
 JPM Gain: $ 8.33 Win %: 66.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_SS
 JPM Gain: $ 8.39 Win %: 66.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_AL
 JPM Gain: $ 8.42 Win %: 83.00 in 12 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4_HM
+JPM Gain: $ 8.48 Win %: 58.00 in 12 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_TS
 JPM Gain: $ 8.5 Win %: 66.00 in 12 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_TR_QP_DB6
 JPM Gain: $ 8.53 Win %: 66.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_PM
 JPM Gain: $ 8.54 Win %: 75.00 in 12 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4_RV_AL
@@ -98,6 +99,7 @@ JPM Gain: $ 8.58 Win %: 83.00 in 12 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4_
 JPM Gain: $ 8.63 Win %: 58.00 in 12 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_HM_QP
 JPM Gain: $ 8.64 Win %: 66.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_HM
 JPM Gain: $ 8.82 Win %: 66.00 in 12 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_RV
+JPM Gain: $ 8.83 Win %: 66.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_TS
 JPM Gain: $ 8.85 Win %: 75.00 in 12 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4_DB6
 JPM Gain: $ 8.9 Win %: 58.00 in 12 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_AO
 JPM Gain: $ 8.9 Win %: 58.00 in 12 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_IR1
@@ -106,6 +108,7 @@ JPM Gain: $ 8.97 Win %: 58.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_
 JPM Gain: $ 8.97 Win %: 91.00 in 12 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4_AV
 JPM Gain: $ 9.01 Win %: 75.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_IT
 JPM Gain: $ 9.01 Win %: 75.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_IT_QL
+JPM Gain: $ 9.09 Win %: 66.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_TS
 JPM Gain: $ 9.11 Win %: 66.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_DB15
 JPM Gain: $ 9.12 Win %: 66.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_QL
 JPM Gain: $ 9.15 Win %: 75.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_HM_TR_DB15
@@ -116,6 +119,7 @@ JPM Gain: $ 9.35 Win %: 75.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_IT
 JPM Gain: $ 9.35 Win %: 75.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_IT_QL
 JPM Gain: $ 9.43 Win %: 66.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_DB15
 JPM Gain: $ 9.56 Win %: 75.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_IT_QL_DB15
+JPM Gain: $ 9.6 Win %: 83.00 in 12 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4_TS
 JPM Gain: $ 9.62 Win %: 58.00 in 12 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_HM
 JPM Gain: $ 9.63 Win %: 66.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_AC
 JPM Gain: $ 9.63 Win %: 66.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_AO
@@ -124,6 +128,7 @@ JPM Gain: $ 9.63 Win %: 66.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_QL
 JPM Gain: $ 9.72 Win %: 75.00 in 12 days with algo TB2_HS_QM_OB5_OS5_CB5_CS5_HM_AV_DB15
 JPM Gain: $ 9.75 Win %: 83.00 in 12 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4_RV_QP
 JPM Gain: $ 9.76 Win %: 83.00 in 12 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4_QL
+JPM Gain: $ 9.95 Win %: 66.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5
 JPM Gain: $ 9.95 Win %: 66.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5
 JPM Gain: $ 9.95 Win %: 66.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_AC
 JPM Gain: $ 9.95 Win %: 66.00 in 12 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_AO

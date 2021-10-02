@@ -57,6 +57,7 @@ SNOA Gain: $ -0.59 Win %: 66.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_IT
 SNOA Gain: $ -0.41 Win %: 66.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_IT_QP_DB8
 SNOA Gain: $ -0.33 Win %: 33.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_QP_IR2
 SNOA Gain: $ -0.08 Win %: 66.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_PM
+SNOA Gain: $ -0.08 Win %: 66.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_PM
 SNOA Gain: $ -0.07 Win %: 66.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_QP_PM
 SNOA Gain: $ 0.19 Win %: 33.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_RV_TR_DB8
 SNOA Gain: $ 0.24 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_RV_TR_DB8
@@ -65,6 +66,10 @@ SNOA Gain: $ 0.53 Win %: 66.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_RV_
 SNOA Gain: $ 0.8 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_LI
 SNOA Gain: $ 0.8 Win %: 33.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_LI
 SNOA Gain: $ 0.86 Win %: 33.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_LI
+SNOA Gain: $ 0.93 Win %: 100.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_TS
+SNOA Gain: $ 0.93 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_TS
+SNOA Gain: $ 0.93 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_TS
+SNOA Gain: $ 0.99 Win %: 100.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_TS
 SNOA Gain: $ 1.06 Win %: 66.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_DB10
 SNOA Gain: $ 1.22 Win %: 100.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_PM
 SNOA Gain: $ 1.32 Win %: 66.00 in 3 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_VI
@@ -145,6 +150,7 @@ SNOA Gain: $ 3.5 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_IT_
 SNOA Gain: $ 3.5 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_QL
 SNOA Gain: $ 3.5 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_RV
 SNOA Gain: $ 3.6 Win %: 100.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_HM
+SNOA Gain: $ 3.77 Win %: 100.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5
 SNOA Gain: $ 3.77 Win %: 100.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5
 SNOA Gain: $ 3.77 Win %: 100.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_AC
 SNOA Gain: $ 3.77 Win %: 100.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_AO

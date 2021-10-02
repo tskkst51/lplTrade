@@ -1,3 +1,11 @@
+NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_AC
+NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_AO
+NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_AO_AC
+NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3
+NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3
+NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_AC
+NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_AO
+NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_AO_AC
 NNDM Gain: $ -51.63 Win %: 0 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_AO_AC
 NNDM Gain: $ -3.03 Win %: 0 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_RV_QP
 NNDM Gain: $ -3.03 Win %: 0 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_HM_QP
@@ -63,6 +71,8 @@ NNDM Gain: $ -0.14 Win %: 66.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_TR
 NNDM Gain: $ -0.12 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_QL
 NNDM Gain: $ -0.12 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_QL
 NNDM Gain: $ -0.06 Win %: 66.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_TR_QP
+NNDM Gain: $ -0.06 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_TS
+NNDM Gain: $ -0.06 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_TS
 NNDM Gain: $ -0.04 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_HM_AV_DB6
 NNDM Gain: $ -0.04 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_HM_AV_DB6
 NNDM Gain: $ -0.03 Win %: 66.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_TR_QP
@@ -72,18 +82,11 @@ NNDM Gain: $ -0.01 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3
 NNDM Gain: $ -0.01 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_IR1
 NNDM Gain: $ 0 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_IT_QP_DB6
 NNDM Gain: $ 0 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_IT_QP_DB6
-NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_AC
-NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_AO
-NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_AO_AC
-NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3
-NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_AC
-NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_AO
-NNDM Gain: $ Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_AO_AC
 NNDM Gain: $ 0.01 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_IT_QP_DB30
 NNDM Gain: $ 0.01 Win %: 100.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_IT_QP_DB15
 NNDM Gain: $ 0.04 Win %: 100.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_IT
-NNDM Gain: $ 0.05 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_IT_QP
 NNDM Gain: $ 0.05 Win %: 33.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_VI
+NNDM Gain: $ 0.05 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_IT_QP
 NNDM Gain: $ 0.08 Win %: 66.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_AC
 NNDM Gain: $ 0.08 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_RV
 NNDM Gain: $ 0.08 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_RV
@@ -98,6 +101,7 @@ NNDM Gain: $ 0.21 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_
 NNDM Gain: $ 0.21 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_LI
 NNDM Gain: $ 0.21 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_SS
 NNDM Gain: $ 0.23 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_IT
+NNDM Gain: $ 0.23 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_IT
 NNDM Gain: $ 0.33 Win %: 100.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_HM_TR
 NNDM Gain: $ 0.33 Win %: 100.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_HM_TR
 NNDM Gain: $ 0.39 Win %: 100.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_RV_TR
@@ -110,12 +114,14 @@ NNDM Gain: $ 0.41 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_RV
 NNDM Gain: $ 0.41 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_TR
 NNDM Gain: $ 0.44 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_DB6
 NNDM Gain: $ 0.44 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB3_CS3_DB6
-NNDM Gain: $ 0.46 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_TR_IR5
 NNDM Gain: $ 0.46 Win %: 66.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_HM_AV
+NNDM Gain: $ 0.46 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_TR_IR5
 NNDM Gain: $ 0.47 Win %: 66.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_AO
 NNDM Gain: $ 0.47 Win %: 66.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_RV_AV_DB15
-NNDM Gain: $ 0.52 Win %: 100.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_TR_QP_DB15
 NNDM Gain: $ 0.52 Win %: 66.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_HM_AV_DB15
+NNDM Gain: $ 0.52 Win %: 100.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_TR_QP_DB15
+NNDM Gain: $ 0.52 Win %: 100.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_TS
+NNDM Gain: $ 0.55 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_TS
 NNDM Gain: $ 0.56 Win %: 66.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_AV
 NNDM Gain: $ 0.56 Win %: 66.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_RV_AV
 NNDM Gain: $ 0.57 Win %: 66.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_RV_AL
@@ -134,9 +140,9 @@ NNDM Gain: $ 0.83 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_DB
 NNDM Gain: $ 0.85 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_HM_TR_DB30
 NNDM Gain: $ 0.86 Win %: 100.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_RV_TR_DB15
 NNDM Gain: $ 0.87 Win %: 100.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_TR_IR4
+NNDM Gain: $ 0.9 Win %: 66.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_QL
 NNDM Gain: $ 0.9 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_IT_QL_DB30
 NNDM Gain: $ 0.9 Win %: 100.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_DB15
-NNDM Gain: $ 0.9 Win %: 66.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_QL
 NNDM Gain: $ 0.97 Win %: 100.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_IR4
 NNDM Gain: $ 0.97 Win %: 100.00 in 3 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_IT_QL_DB15
 NNDM Gain: $ 0.99 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_LI

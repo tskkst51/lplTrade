@@ -74,6 +74,10 @@ PSTX Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_LI
 PSTX Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_LI
 PSTX Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_LI
 PSTX Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_LI
+PSTX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_TS
+PSTX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_TS
+PSTX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_TS
+PSTX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_TS
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_AC
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_AL
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_AO
@@ -83,6 +87,7 @@ PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_HM
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_HM_AV
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_HM_TR
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_IR5
+PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_IT
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_IT
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_IT_QL
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_QL
@@ -131,6 +136,7 @@ PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_RV
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_SS
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_TR
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_TR_IR5
+PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_AC
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_AL

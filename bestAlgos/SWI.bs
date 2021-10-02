@@ -74,6 +74,10 @@ SWI Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_TR_
 SWI Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_QP
 SWI Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_RV_QP
 SWI Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_TR_QP
+SWI Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_TS
+SWI Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_TS
+SWI Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB3_CS3_TS
+SWI Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB3_CS3_TS
 SWI Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB3_CS3_HM
 SWI Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB3_CS3_HM
 SWI Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_HM
@@ -107,6 +111,7 @@ SWI Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_AL
 SWI Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_AV
 SWI Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_IR5
 SWI Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_IT
+SWI Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_IT
 SWI Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_IT_QL
 SWI Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_QL
 SWI Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_RV
@@ -134,6 +139,7 @@ SWI Gain: $ 0.75 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB3_CS3_IT_
 SWI Gain: $ 0.75 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB3_CS3_QL
 SWI Gain: $ 0.75 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB3_CS3_SS
 SWI Gain: $ 0.75 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB3_CS3_TR
+SWI Gain: $ 0.75 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB3_CS3
 SWI Gain: $ 0.75 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB3_CS3
 SWI Gain: $ 0.75 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB3_CS3_AL
 SWI Gain: $ 0.75 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB3_CS3_AV

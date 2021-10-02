@@ -83,6 +83,7 @@ THCB Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB2_CS2_IT_QP
 THCB Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_IT_QP_DB6
 THCB Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_IT_QP_DB6
 THCB Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_PM
+THCB Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_PM
 THCB Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB2_CS2_PM
 THCB Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_PM
 THCB Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_PM
@@ -106,6 +107,10 @@ THCB Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_HM
 THCB Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_RV_QP_DB6
 THCB Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_HM_QP_DB6
 THCB Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_RV_QP_DB6
+THCB Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_TS
+THCB Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB2_CS2_TS
+THCB Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_TS
+THCB Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_TS
 THCB Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB1_CS1_VI
 THCB Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB2_CS2_VI
 THCB Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_VI
@@ -152,6 +157,7 @@ THCB Gain: $ 1.25 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_AO
 THCB Gain: $ 1.25 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_HM
 THCB Gain: $ 1.25 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_QL
 THCB Gain: $ 1.25 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_RV
+THCB Gain: $ 1.25 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2
 THCB Gain: $ 1.25 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2
 THCB Gain: $ 1.25 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_AC
 THCB Gain: $ 1.25 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB2_CS2_AO

@@ -49,6 +49,7 @@ AVIR Gain: $ -0.33 Win %: 0 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_QP
 AVIR Gain: $ -0.25 Win %: 0 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_LI
 AVIR Gain: $ -0.25 Win %: 0 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_LI
 AVIR Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB4_CS4_PM
+AVIR Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB4_CS4_PM
 AVIR Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB4_CS4_QP_PM
 AVIR Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_PM
 AVIR Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_QP_PM
@@ -66,6 +67,8 @@ AVIR Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_RV
 AVIR Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_RV_TR_DB10
 AVIR Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB4_CS4_AO_AC
 AVIR Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_AO_AC
+AVIR Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB4_CS4_TS
+AVIR Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_TS
 AVIR Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB4_CS4_RV
 AVIR Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB4_CS4_RV_AL
 AVIR Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB4_CS4_RV_AL_DB6
@@ -78,6 +81,8 @@ AVIR Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_RV
 AVIR Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_RV
 AVIR Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_RV_AV
 AVIR Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_RV_TR
+AVIR Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_TS
+AVIR Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_TS
 AVIR Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_HM_TR_DB10
 AVIR Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_HM_TR_DB10
 AVIR Gain: $ 1.01 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_HM_TR
@@ -149,6 +154,7 @@ AVIR Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_HM
 AVIR Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_IT
 AVIR Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_IT_QL
 AVIR Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_QL
+AVIR Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5
 AVIR Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5
 AVIR Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_AC
 AVIR Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_AO

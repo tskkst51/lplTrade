@@ -27,6 +27,7 @@ TRIL Gain: $ -0.05 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_TR_
 TRIL Gain: $ -0.03 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_PM
 TRIL Gain: $ -0.02 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_IT
 TRIL Gain: $ -0.02 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_RV
+TRIL Gain: $ -0.01 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3
 TRIL Gain: $ -0.01 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_AL
 TRIL Gain: $ -0.01 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_AV
 TRIL Gain: $ -0.01 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_HM_AV
@@ -35,6 +36,7 @@ TRIL Gain: $ -0.01 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_HM_
 TRIL Gain: $ -0.01 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_QL
 TRIL Gain: $ -0.01 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_SS
 TRIL Gain: $ -0.01 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_TR
+TRIL Gain: $ -0.01 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_TS
 TRIL Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_PM
 TRIL Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_HM_AV
 TRIL Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_AC
@@ -88,6 +90,7 @@ TRIL Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_
 TRIL Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_TR_IR1
 TRIL Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_RV_QP
 TRIL Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_RV_QP_DB6
+TRIL Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB2_CS2_PM
 TRIL Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB2_CS2_PM
 TRIL Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_PM
 TRIL Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB3_CS3_VI
@@ -144,18 +147,21 @@ TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB2_CS2
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB2_CS2_IT_QL
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB2_CS2_QL
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB2_CS2_RV
+TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB2_CS2_TS
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_HM
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_IR1
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_IT
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_IT_QL
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_QL
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_RV
+TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_TS
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_HM
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_IR1
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_IT
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_IT_QL
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_QL
 TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_RV
+TRIL Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_TS
 TRIL Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB1_OS1_CB2_CS2_AO
 TRIL Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB1_CS1_AO
 TRIL Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_AO

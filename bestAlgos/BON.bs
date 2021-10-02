@@ -66,7 +66,11 @@ BON Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB5_CS5_SS
 BON Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_HM_AV
 BON Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_TR_QP_DB10
 BON Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB5_CS5_QL
+BON Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_TS
+BON Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_TS
+BON Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_TS
 BON Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_QL
+BON Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB5_CS5_TS
 BON Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_TR
 BON Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_TR_QP_DB30
 BON Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_RV_AV
@@ -99,12 +103,14 @@ BON Gain: $ 0.76 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_
 BON Gain: $ 0.76 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_RV_TR_DB30
 BON Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB5_CS5_HM_TR
 BON Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB5_CS5_IT
+BON Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB5_CS5_IT
 BON Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_AC
 BON Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_IT_QL_DB30
 BON Gain: $ 0.91 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_HM_QP
 BON Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB5_CS5_AL
 BON Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB5_CS5_DB10
 BON Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB5_CS5_IT_QL
+BON Gain: $ 0.96 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3
 BON Gain: $ 0.96 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3
 BON Gain: $ 0.96 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_HM_TR
 BON Gain: $ 0.96 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_IR3

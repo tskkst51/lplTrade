@@ -47,6 +47,7 @@ ALAC Gain: $ -0.12 Win %: 50.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2
 ALAC Gain: $ -0.12 Win %: 50.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_RV_QP_DB30
 ALAC Gain: $ -0.12 Win %: 50.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_RV_QP_DB30
 ALAC Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_PM
+ALAC Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_PM
 ALAC Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_QP_PM
 ALAC Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_PM
 ALAC Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_QP_PM
@@ -86,6 +87,10 @@ ALAC Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1
 ALAC Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_VI
 ALAC Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_VI
 ALAC Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_VI
+ALAC Gain: $ 0.21 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_TS
+ALAC Gain: $ 0.21 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_TS
+ALAC Gain: $ 0.21 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_TS
+ALAC Gain: $ 0.21 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_TS
 ALAC Gain: $ 0.22 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_HM_TR
 ALAC Gain: $ 0.22 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_RV_TR
 ALAC Gain: $ 0.22 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB1_CS1_TR
@@ -145,6 +150,7 @@ ALAC Gain: $ 0.36 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1
 ALAC Gain: $ 0.36 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_IR5
 ALAC Gain: $ 0.36 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_LI
 ALAC Gain: $ 0.36 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_QL
+ALAC Gain: $ 0.36 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2
 ALAC Gain: $ 0.36 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2
 ALAC Gain: $ 0.36 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_AL
 ALAC Gain: $ 0.36 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB2_CS2_HM

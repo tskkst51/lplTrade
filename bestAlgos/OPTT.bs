@@ -36,6 +36,10 @@ OPTT Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_IT
 OPTT Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_IT_QP
 OPTT Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB4_CS4_IT_QP
 OPTT Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_IT_QP
+OPTT Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_TS
+OPTT Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_TS
+OPTT Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB4_CS4_TS
+OPTT Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_TS
 OPTT Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_HM_QP
 OPTT Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_QP
 OPTT Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_RV_QP
@@ -84,6 +88,7 @@ OPTT Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_AC
 OPTT Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_AO
 OPTT Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_AO_AC
 OPTT Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_IT
+OPTT Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_IT
 OPTT Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_IT_QL
 OPTT Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_QL
 OPTT Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_RV
@@ -105,6 +110,7 @@ OPTT Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB4_CS4_IT
 OPTT Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB4_CS4_IT_QL
 OPTT Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB4_CS4_QL
 OPTT Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB4_CS4_RV
+OPTT Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4
 OPTT Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4
 OPTT Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_AC
 OPTT Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_AO

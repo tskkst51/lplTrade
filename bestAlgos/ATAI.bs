@@ -83,7 +83,12 @@ ATAI Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB4_OS4_CB4_CS4_AV
 ATAI Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB4_OS4_CB4_CS4_HM_AV
 ATAI Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB4_OS4_CB4_CS4_RV_AV
 ATAI Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB4_CS4_PM
+ATAI Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB4_CS4_PM
+ATAI Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB4_CS4_TS
 ATAI Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_PM
+ATAI Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_TS
+ATAI Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_TS
+ATAI Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB4_OS4_CB4_CS4_TS
 ATAI Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB4_OS4_CB4_CS4_IR5
 ATAI Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_HM_AV_DB30
 ATAI Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_RV_AL_DB30
@@ -150,6 +155,7 @@ ATAI Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_AO
 ATAI Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_HM
 ATAI Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_QL
 ATAI Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS4_RV
+ATAI Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB4_OS4_CB4_CS4
 ATAI Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB4_OS4_CB4_CS4
 ATAI Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB4_OS4_CB4_CS4_AC
 ATAI Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB4_OS4_CB4_CS4_AO

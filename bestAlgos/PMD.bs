@@ -61,6 +61,7 @@ PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_HM_TR_DB6
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_IR1
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_IT
+PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_IT
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_IT_QL
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_IT_QL_DB6
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_LI
@@ -74,6 +75,7 @@ PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_RV_TR_DB6
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_TR
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_TR_IR1
+PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_TS
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_VI
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB3_CS3_AC
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB3_CS3_AL
@@ -99,6 +101,7 @@ PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB3_CS3_
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB3_CS3_RV_TR_DB6
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB3_CS3_TR
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB3_CS3_TR_IR1
+PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB3_CS3_TS
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB3_CS3_VI
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_AC
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_AL
@@ -124,7 +127,9 @@ PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_RV_TR_DB6
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_TR
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_TR_IR1
+PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_TS
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_VI
+PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_AC
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_AL
@@ -150,4 +155,5 @@ PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_RV_TR_DB6
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_TR
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_TR_IR1
+PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_TS
 PMD Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_VI

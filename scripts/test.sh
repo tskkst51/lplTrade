@@ -255,8 +255,8 @@ echo p $p
       fi
       
       mkdir $algoPath || exit 1
-      mv ${testPath}/logs $algoPath
-      mkdir ${testPath}/logs
+      #mv ${testPath}/logs $algoPath
+      #mkdir ${testPath}/logs
       
    done      
 done

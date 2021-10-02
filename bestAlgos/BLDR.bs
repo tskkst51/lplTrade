@@ -24,6 +24,7 @@ BLDR Gain: $ -1.94 Win %: 0 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB3_CS3_HM
 BLDR Gain: $ -1.94 Win %: 0 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB3_CS3_IR3
 BLDR Gain: $ -1.94 Win %: 0 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB3_CS3_IT
 BLDR Gain: $ -1.94 Win %: 0 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB3_CS3_SS
+BLDR Gain: $ -1.94 Win %: 0 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB3_CS3_TS
 BLDR Gain: $ -1.93 Win %: 0 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_TR_QP
 BLDR Gain: $ -1.92 Win %: 0 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_TR_QP_DB10
 BLDR Gain: $ -1.71 Win %: 0 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_RV_QP_DB15
@@ -114,6 +115,8 @@ BLDR Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_IT
 BLDR Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_RV_AV_DB15
 BLDR Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_RV_QP_DB10
 BLDR Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_HM_QP_DB10
+BLDR Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_TS
+BLDR Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_TS
 BLDR Gain: $ 0.99 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_AO_AC
 BLDR Gain: $ 0.99 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_SS
 BLDR Gain: $ 0.99 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_AO_AC
@@ -141,9 +144,11 @@ BLDR Gain: $ 1.46 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2
 BLDR Gain: $ 1.46 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_QL
 BLDR Gain: $ 1.46 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_RV_AV
 BLDR Gain: $ 1.68 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_IT
+BLDR Gain: $ 1.68 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_IT
 BLDR Gain: $ 1.68 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB2_CS2_IT_QL
 BLDR Gain: $ 1.68 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_IT
 BLDR Gain: $ 1.68 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_IT_QL
+BLDR Gain: $ 1.69 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3
 BLDR Gain: $ 1.69 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3
 BLDR Gain: $ 1.69 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_AO
 BLDR Gain: $ 1.69 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_AO_AC
@@ -151,3 +156,4 @@ BLDR Gain: $ 1.69 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_HM
 BLDR Gain: $ 1.69 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_QL
 BLDR Gain: $ 1.69 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_SS
 BLDR Gain: $ 1.7 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB3_CS3_RV_AV_DB10
+BLDR Gain: $ 1.77 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_TS

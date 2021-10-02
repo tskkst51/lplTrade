@@ -75,6 +75,7 @@ MNSO Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_QP_PM
 MNSO Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_PM
 MNSO Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_QP_PM
 MNSO Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB3_OS3_CB4_CS4_PM
+MNSO Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB3_OS3_CB4_CS4_PM
 MNSO Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB3_OS3_CB4_CS4_QP_PM
 MNSO Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_PM
 MNSO Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_QP_PM
@@ -93,6 +94,7 @@ MNSO Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_HM
 MNSO Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_RV_AV_DB15
 MNSO Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_HM_AV_DB15
 MNSO Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_RV_AV_DB15
+MNSO Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB3_OS3_CB4_CS4_TS
 MNSO Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB3_OS3_CB4_CS4_AL
 MNSO Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB3_OS3_CB4_CS4_AV
 MNSO Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB3_OS3_CB4_CS4_HM_AV
@@ -101,15 +103,19 @@ MNSO Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB3_OS3_CB4_CS4_RV
 MNSO Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_LI
 MNSO Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_DB15
 MNSO Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_DB15
+MNSO Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_TS
 MNSO Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_TR_IR2
 MNSO Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_HM_TR
 MNSO Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_RV_TR
 MNSO Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_TR
 MNSO Gain: $ 0.54 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_VI
 MNSO Gain: $ 0.54 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_VI
+MNSO Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_TS
+MNSO Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_TS
 MNSO Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_SS
 MNSO Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_SS
 MNSO Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_SS
+MNSO Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3
 MNSO Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3
 MNSO Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_AC
 MNSO Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_AO

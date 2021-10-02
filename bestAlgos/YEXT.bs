@@ -178,6 +178,7 @@ YEXT Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2
 YEXT Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2_QP_IR4
 YEXT Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB4_CS4_AO_AC
 YEXT Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2
+YEXT Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2
 YEXT Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2_AV
 YEXT Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2_AV
 YEXT Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2_IT
@@ -193,6 +194,7 @@ YEXT Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2_
 YEXT Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2_RV_AV_DB15
 YEXT Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2_SS
 YEXT Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2_SS
+YEXT Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2_TS
 YEXT Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2_TS
 YEXT Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB3_CS3_TR
 YEXT Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB5_OS5_CB2_CS2_IT_QL_DB15
@@ -210,10 +212,14 @@ YEXT Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB4_CS4
 YEXT Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB4_CS4_TR_IR4
 YEXT Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_IR5
 YEXT Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_TS
+YEXT Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_TS
+YEXT Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_TS
 YEXT Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB4_CS4_HM_TR
 YEXT Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB4_CS4_QP_IR4
 YEXT Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB4_CS4_TS
+YEXT Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB4_CS4_TS
 YEXT Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB3_CS3_IR4
+YEXT Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB3_CS3_TS
 YEXT Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB3_CS3_TS
 YEXT Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB2_OS2_CB3_CS3_TS
 YEXT Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB4_CS4_HM_QP_DB15

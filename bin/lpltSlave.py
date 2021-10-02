@@ -376,11 +376,6 @@ if offLine:
             lg.error("Trying to read an empty file: " + path)
             exit(1)
 
-#barChart = {}
-
-#for stock in stockArr:
-#   lg.debug ("stock " + str(stock))
-
 barChart = bc.init()
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -626,10 +621,7 @@ while True:
          lg.debug ("pr.isLastBarSlave(timeBar) " + str(pr.isLastBarSlave(timeBar)))
 
       lg.debug ("pr.isNextBarSlave(timeBar) " + str(pr.isNextBarSlave(timeBar)))
-      # Beginning of next bar. 2nd clause is for mode
-      #if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isLastBarSlave(timeBar):      
-      #if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isLastBar(timeBar):      
-      #if cn.getTimeHrMnSecs() >= endBarLoopTime or pr.isNextBarSlave(timeBar) or quitBar:      
+      
       if pr.isNextBarSlave(timeBar) or quitBar:      
 
          # Only do this section once
@@ -711,12 +703,7 @@ while True:
             if a.inPosition():
                a.closePosition(barCtr, barChart, bid, ask, forceClose)
             bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
-            #bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
-
-      # th = Thread(a.logIt(action, str(a.getBarsInPosition()), tm.now(), logPath))
-      # Write to log file
-      
-   #if barCtr == 20: break
    
-# end execution loop
+      # end bar loop. 390 bars for 1 min chart
+   # end execution loop
 

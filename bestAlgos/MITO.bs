@@ -86,6 +86,10 @@ MITO Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_TR
 MITO Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_TR_IR5
 MITO Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_IT_QP
 MITO Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_IT_QP
+MITO Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_TS
+MITO Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_TS
+MITO Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB4_CS4_TS
+MITO Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_TS
 MITO Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_DB30
 MITO Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_IT_QL_DB30
 MITO Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_RV_AL_DB30
@@ -119,6 +123,7 @@ MITO Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_HM
 MITO Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_IT
 MITO Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_IT_QL
 MITO Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_PM
+MITO Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_PM
 MITO Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_QL
 MITO Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_RV
 MITO Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB5_CS5_RV_AL
@@ -145,6 +150,7 @@ MITO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_IT
 MITO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_QL
 MITO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_RV
 MITO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_RV_AL
+MITO Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB4_CS4
 MITO Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB4_CS4
 MITO Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB4_CS4_AC
 MITO Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS3_CB4_CS4_AO

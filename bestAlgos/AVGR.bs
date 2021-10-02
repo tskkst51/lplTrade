@@ -95,6 +95,7 @@ AVGR Gain: $ 0 Win %: 100.00 in 7 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_TR
 AVGR Gain: $ 0 Win %: 100.00 in 7 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_TR_QP
 AVGR Gain: $ 0 Win %: 100.00 in 7 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_TR_QP_DB30
 AVGR Gain: $ 0 Win %: 100.00 in 7 days with algo TB2_HL_LO_QM_OB3_OS3_CB1_CS1_PM
+AVGR Gain: $ 0 Win %: 100.00 in 7 days with algo TB2_HL_LO_QM_OB3_OS3_CB1_CS1_PM
 AVGR Gain: $ 0 Win %: 100.00 in 7 days with algo TB2_HL_LO_QM_OB3_OS3_CB1_CS1_QP_PM
 AVGR Gain: $ 0 Win %: 100.00 in 7 days with algo TB2_HL_LO_QM_OB3_OS3_CB2_CS2_PM
 AVGR Gain: $ 0 Win %: 100.00 in 7 days with algo TB2_HL_LO_QM_OB3_OS3_CB2_CS2_QP_PM
@@ -102,6 +103,8 @@ AVGR Gain: $ 0.01 Win %: 42.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_
 AVGR Gain: $ 0.01 Win %: 85.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_PM
 AVGR Gain: $ 0.01 Win %: 85.00 in 7 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_PM
 AVGR Gain: $ 0.02 Win %: 57.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_RV_AV
+AVGR Gain: $ 0.02 Win %: 71.00 in 7 days with algo TB2_HL_LO_QM_OB3_OS3_CB1_CS1_TS
+AVGR Gain: $ 0.02 Win %: 71.00 in 7 days with algo TB2_HL_LO_QM_OB3_OS3_CB2_CS2_TS
 AVGR Gain: $ 0.03 Win %: 57.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_AL
 AVGR Gain: $ 0.03 Win %: 57.00 in 7 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_AL
 AVGR Gain: $ 0.04 Win %: 42.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_HM_TR_DB30
@@ -127,6 +130,8 @@ AVGR Gain: $ 0.11 Win %: 57.00 in 7 days with algo TB2_HL_LO_QM_OB3_OS3_CB1_CS1_
 AVGR Gain: $ 0.11 Win %: 57.00 in 7 days with algo TB2_HL_LO_QM_OB3_OS3_CB2_CS2_HM_AV
 AVGR Gain: $ 0.11 Win %: 57.00 in 7 days with algo TB2_HL_LO_QM_OB3_OS3_CB2_CS2_HM_TR
 AVGR Gain: $ 0.12 Win %: 57.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_TR_IR5
+AVGR Gain: $ 0.13 Win %: 71.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_TS
+AVGR Gain: $ 0.13 Win %: 71.00 in 7 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_TS
 AVGR Gain: $ 0.16 Win %: 57.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_IR5
 AVGR Gain: $ 0.16 Win %: 57.00 in 7 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_IR5
 AVGR Gain: $ 0.17 Win %: 71.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_AC
@@ -135,6 +140,7 @@ AVGR Gain: $ 0.17 Win %: 71.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_
 AVGR Gain: $ 0.17 Win %: 71.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_HM
 AVGR Gain: $ 0.17 Win %: 71.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_IT
 AVGR Gain: $ 0.17 Win %: 71.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_RV
+AVGR Gain: $ 0.17 Win %: 71.00 in 7 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3
 AVGR Gain: $ 0.17 Win %: 71.00 in 7 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_AC
 AVGR Gain: $ 0.17 Win %: 71.00 in 7 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_AO
 AVGR Gain: $ 0.17 Win %: 71.00 in 7 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_AO_AC

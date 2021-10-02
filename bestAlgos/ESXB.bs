@@ -94,6 +94,7 @@ ESXB Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB3_CS3_IT
 ESXB Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB3_CS3_IT_QP
 ESXB Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB5_CS5_LI
 ESXB Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB5_CS5_PM
+ESXB Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB5_CS5_PM
 ESXB Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB5_CS5_QP_PM
 ESXB Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_IT_QL_DB10
 ESXB Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_RV
@@ -122,6 +123,7 @@ ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB5_CS5_RV
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB5_CS5_RV_TR_DB15
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB5_CS5_SS
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB5_CS5_TR
+ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_LO_QM_OB4_OS4_CB5_CS5_TS
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_AC
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_AO
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_AO_AC
@@ -129,6 +131,7 @@ ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_HM
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_IT
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_IT_QL
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_QL
+ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_TS
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_AC
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_AO
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_AO_AC
@@ -136,6 +139,8 @@ ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_HM
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_IT
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_IT_QL
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_QL
+ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_TS
+ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB3_CS3
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB3_CS3
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB3_CS3_AC
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB3_CS3_AO
@@ -145,6 +150,7 @@ ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB3_CS3_IT
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB3_CS3_IT_QL
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB3_CS3_LI
 ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB3_CS3_QL
+ESXB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS3_CB3_CS3_TS
 ESXB Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_PM
 ESXB Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_QP_PM
 ESXB Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_PM

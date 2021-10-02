@@ -60,7 +60,11 @@ RRGB Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3
 RRGB Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_IT_QP
 RRGB Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_RV_QP
 RRGB Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_RV_TR
+RRGB Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_TS
+RRGB Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_TS
+RRGB Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_TS
 RRGB Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_HM_AV
+RRGB Gain: $ 0.44 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB3_OS3_CB2_CS2_TS
 RRGB Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_IT_QP_DB15
 RRGB Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_TR_QP
 RRGB Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_DB15
@@ -70,6 +74,7 @@ RRGB Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_DB
 RRGB Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_IT_QL_DB15
 RRGB Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_IT_QL
 RRGB Gain: $ 0.48 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_IT_QL_DB15
+RRGB Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB3_OS3_CB2_CS2_IT
 RRGB Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB3_OS3_CB2_CS2_IT
 RRGB Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB3_CS3_RV_AV_DB30
 RRGB Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB3_OS3_CB2_CS2_SS
@@ -141,6 +146,7 @@ RRGB Gain: $ 1.85 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_IT
 RRGB Gain: $ 1.85 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_IT_QL
 RRGB Gain: $ 1.85 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_QL
 RRGB Gain: $ 1.85 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_RV
+RRGB Gain: $ 1.85 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4
 RRGB Gain: $ 1.85 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4
 RRGB Gain: $ 1.85 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_AO
 RRGB Gain: $ 1.85 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_AO_AC

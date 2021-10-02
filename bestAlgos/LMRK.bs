@@ -1,5 +1,6 @@
 LMRK Gain: $ -0.25 Win %: 0 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_TR_QP_DB6
 LMRK Gain: $ -0.19 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_PM
+LMRK Gain: $ -0.19 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_PM
 LMRK Gain: $ -0.19 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS3_PM
 LMRK Gain: $ -0.18 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS3_QP_PM
 LMRK Gain: $ -0.13 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_SS
@@ -69,6 +70,7 @@ LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS3_DB
 LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS3_IT_QL_DB6
 LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS3_VI
 LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3
+LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3
 LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_AC
 LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_AO
 LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_AO_AC
@@ -79,6 +81,7 @@ LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_IT
 LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_IT_QL_DB6
 LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_QL
 LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_RV
+LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_TS
 LMRK Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_VI
 LMRK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB5_OS5_CB3_CS3_AC
 LMRK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB5_OS5_CB3_CS3_AL
@@ -113,6 +116,7 @@ LMRK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB5_OS5_CB3_CS3_SS
 LMRK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB5_OS5_CB3_CS3_TR
 LMRK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB5_OS5_CB3_CS3_TR_QP
 LMRK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB5_OS5_CB3_CS3_TR_QP_DB8
+LMRK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB5_OS5_CB3_CS3_TS
 LMRK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_HM_TR_DB6
 LMRK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_QP_PM
 LMRK Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_RV_TR_DB6
@@ -134,6 +138,7 @@ LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_AO
 LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_HM_AV_DB6
 LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_RV
 LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_RV_AV_DB6
+LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB1_OS1_CB3_CS3_TS
 LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS3_AC
 LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS3_AO
 LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS3_AO_AC
@@ -142,6 +147,7 @@ LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS3_HM
 LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS3_QL
 LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS3_RV
 LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS3_RV_AV_DB6
+LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS3_TS
 LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_AV
 LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_HM_AV
 LMRK Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB3_CS3_HM_AV_DB6

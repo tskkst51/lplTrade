@@ -127,59 +127,91 @@ def getStocksFromBCDir(path):
    return stocks
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def getAutoStocks(self, threshold, numStocks):
+def getAutoStocks(orderType, numStocksToTrack):
 
-   # threshold = 6
+   srcPath = "daysBest/latest"
+   if isinstance(orderType, int):
+      if orderType == magicNumber:
+         srcPath = "daysBest/latestMN"
    
-   srcPath="daysBest/latest"
+   print ("srcPath " + str(srcPath))
+   
    dstPath="profiles/autoStocks.txt"
    stock = 0
    lastStock = ""
    daysBestStocks = []
    
-   assert(threshold)
-
-   print ("numStocks " + str(numStocks))
-   print ("threshold " + str(threshold))
-   print ("numStocks " + str(numStocks))
+   assert(numDaysTestData)
 
    with open(srcPath, 'r') as pp:
       lines = pp.readlines()
    
    print ("lines " + str(lines))
-   
-   # Read from last line
+   print ("len lines " + str(len(lines)))
+
+   print ("numStocksToTrack " + str(numStocksToTrack))
+   print ("numDaysTestData " + str(numDaysTestData))
+
+   # line ['RAPT', '4.20', '3', '39.47']
+
+   # Read from first line
    for line in lines:
       line = line.split()
-      print ("line " + str(line))
-      if stock < numStocks:
+      if stock < numStocksToTrack:
          # Check for dups
          if line[0] == lastStock:
             continue
-         if int(line[2]) < threshold:
-            print ("line[2] " + str(line[2]))
+            
+         # Don't use stocks with daily gains less than the value: e.g $2.0
+         if float(line[1]) < daysBestAvgDailyGain:
+            print ("stock excluded < daysBestAvgDailyGain " + str(line))
+            continue
+            
+         # Don't use stocks with e.g: test data < 4 days
+         if int(line[2]) > numDaysTestData:
             with open(dstPath, 'a') as pp:
                pp.write(line[0] + "\n")
-               print ("line[0] " + str(line[0]))
+               print ("stock selected auto " + str(line))
             
             daysBestStocks.append(line[0])
             
             lastStock = line[0]
             stock += 1
-
-   return daysBestStocks
+         else:
+            print ("line excluded < numDaysTestData " + str(line))
+   
+   return daysBestStocks 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDailyStocks, minDaysData):
+def genProfile(algo, stock):
 
-   #f useStocksFromDailyCharts or onlyUpdateDailyStocks:
+   if not offLine:
+      print ("genProfile algo " + str(algo) + " " + str(stock))
+      
+      cmd = "python3 bin/profileGenerator.py -a " + algo + " -d \"\""
+      if os.system(cmd) > 0:
+         print("Cannot create profile from " + str(cmd) + " " + str(algo))
+         return 1
+      
+   return 0
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDailyStocks, numDaysTestData, daysBestStocks):
+
    if useStocksFromDailyCharts:
       stocks = pr.getStockStrFromDailyCharts()
       if useTestMinuteCharts:
          stocks += pr.getStockStrFromTestMinuteCharts()
          # Remove duplicates
          stocks = list(set(stocks))
-      
+
+   print ("stocks len\n" + str(len(stocks)))
+   if len(stocks) > numStocksToProcessInPremarket:
+      while len(stocks) > numStocksToProcessInPremarket:
+         print ("SKIPPING " + str(stocks[-1]))
+         del stocks[-1]
+
+   
    print ("useLiveDailyData\n" + str(useLiveDailyData))
    print ("stocks\n" + str(stocks))
    print ("stocks len\n" + str(len(stocks)))
@@ -191,14 +223,14 @@ def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDai
    # Candidates come from premarket movers internet site, daily charts, ETF movers
    candidates = pr.getStockCandidates(tg, dc, stocks, findPreMarketMovers, useLiveDailyData)
    
-   # Only use candidates that have a minimum number of days data
-   if minDaysData:
-      candidates = pr.getStocksWithDailyData(candidates, minDaysData)
+   # Only use candidates that have a minimum number of days test data
+   if numDaysTestData:
+      candidates = pr.getStocksWithDailyData(candidates, numDaysTestData)
       
    print ("candidates getStocksWithDailyData\n" + str(candidates))
    print ("candidates getStocksWithDailyData len " + str(len(candidates)))
-
-   # Only use candidates that have a minimum number of days data
+   
+   # Only use candidates within price range
    if minStockPrice or maxStockPrice:
       candidates = pr.getStocksWithinPriceRange(candidates, minStockPrice, maxStockPrice)
    
@@ -211,7 +243,7 @@ def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDai
    
    print ("candidates removeStocksFromExclusionList\n" + str(candidates))
    print ("candidates removeStocksFromExclusionList len " + str(len(candidates)))
-   
+
    # Suck in the yearly data charts for the candidates
    dailyStockData = pr.getDailyStockData(tg, dc, candidates)
 
@@ -221,14 +253,18 @@ def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDai
    dailyGapData = pr.getDailyGapData(tg, dc, candidates)
    
    # Get an ordered list of the best candidates 
-   orderedStocks = pr.getDailyOrderedStocks(tg, dailyGapData, dailyStockData, candidates)
+   orderedStocks = pr.getDailyOrderedStocks(tg, dailyGapData, dailyStockData, candidates, daysBestStocks)
 
    print ("orderedStocks\n" + str(orderedStocks))
+
+   #if useDaysBest and not onlyUpdateDailyStocks:
+   #   stocks = daysBestStocks
+
 
    # Pick the proper algorithm to use based on saved minute chart data
    algoData, stocks = pr.getAlgorithm(orderedStocks, useDefaultAlgo, useStocksWithNoTestData)
 
-   # LIVE run lpltSlave.py with the #1 stock candidate
+   # LIVE run lpltSlave.py with the #1-... stock candidate
    # If it profits out. invoke with best performing at the moment
 
    return algoData, stocks
@@ -317,11 +353,15 @@ preMarketAnalysis = int(d["profileTradeData"]["preMarketAnalysis"])
 afterMarketAnalysis = int(d["profileTradeData"]["afterMarketAnalysis"])
 afterMarketEndTime = int(d["profileTradeData"]["afterMarketEndTime"])
 onlyUpdateDailyStocks = int(d["profileTradeData"]["onlyUpdateDailyStocks"])
-daysBestThreshold = int(d["profileTradeData"]["daysBestThreshold"])
+numDaysTestData = int(d["profileTradeData"]["numDaysTestData"])
+useDaysBest = int(d["profileTradeData"]["useDaysBest"])
+daysBestAvgDailyGain = float(d["profileTradeData"]["daysBestAvgDailyGain"])
 
 useStocksFromDailyCharts = int(d["profileTradeData"]["useStocksFromDailyCharts"])
 findPreMarketMovers = int(d["profileTradeData"]["findPreMarketMovers"])
 maxStocksToTrade = int(d["profileTradeData"]["maxStocksToTrade"])
+maxNumProcesses = int(d["profileTradeData"]["maxNumProcesses"])
+
 doTrailingStop = int(d["profileTradeData"]["doTrailingStop"])
 maxProfit = float(d["profileTradeData"]["maxProfit"])
 maxLoss = float(d["profileTradeData"]["maxLoss"])
@@ -331,10 +371,11 @@ useLiveDailyData = int(d["profileTradeData"]["useLiveDailyData"])
 useDefaultAlgo = int(d["profileTradeData"]["useDefaultAlgo"])
 useStocksWithNoTestData = int(d["profileTradeData"]["useStocksWithNoTestData"])
 useTestMinuteCharts = int(d["profileTradeData"]["useTestMinuteCharts"])
-minDaysData = int(d["profileTradeData"]["minDaysData"])
 minStockPrice = float(d["profileTradeData"]["minStockPrice"])
 maxStockPrice = float(d["profileTradeData"]["maxStockPrice"])
 excludeStocks = int(d["profileTradeData"]["excludeStocks"])
+stocksFileMultiplier = int(d["profileTradeData"]["stocksFileMultiplier"])
+numStocksToProcessInPremarket = int(d["profileTradeData"]["numStocksToProcessInPremarket"])
 
 masterMode = 1
 
@@ -361,6 +402,7 @@ lastMinuteOfLiveTrading = 155958
 
 marketOpen = 0
 firstTimeThru = 0
+magicNumber = 2
 
 #new_dict = { new_list: [] for new_list in range(4)} 
 
@@ -432,7 +474,7 @@ if masterMode:
    d["profileTradeData"]["timeBar"] = "1"
    
 if stocksFile != "":
-   stocks = getAutoStocks(stocksFile, daysBestThreshold, maxNumStocksToTrade)   
+   stocks = getAutoStocks(stocksFile, maxNumStocksToTrade * stocksFileMultiplier)   
 
 elif preMarketAnalysis:
 
@@ -444,7 +486,14 @@ elif preMarketAnalysis:
    tg = lpl.Target(c, d, l)
    dc = lpl.Dailychart()
    
-   algoData, stocks = analyzeStocks(pr, tg, dc, "pre", useLiveDailyData, stocks, onlyUpdateDailyStocks, minDaysData)
+   daysBestStocks = []
+   
+   if useDaysBest:
+      daysBestStocks = getAutoStocks(useDaysBest, numStocksToProcessInPremarket)   
+      print (" stocks after getauto" + str(daysBestStocks))
+      print (" stocks len after getauto " + str(len(daysBestStocks)))
+      
+   algoData, stocks = analyzeStocks(pr, tg, dc, "pre", useLiveDailyData, stocks, onlyUpdateDailyStocks, numDaysTestData, daysBestStocks)
    
    if onlyUpdateDailyStocks:
       exit (0)
@@ -463,10 +512,13 @@ else:
    if isinstance(stocks, str):
       stocks = stocks.split(",")
       
-   if not offLine:
+   if stocksFile == "":   
       if len(stocks) > maxNumStocksToTrade:
          while len(stocks) > maxNumStocksToTrade:
             del stocks[-1]
+
+print ("stocks after" + str(stocks))
+print ("stocks len " + str(len(stocks)))
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup connection to the exchange service
@@ -550,19 +602,6 @@ lm = {}
 a = {}
 pr = {}
 pa = {}
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def genProfile(algo, stock):
-
-   if not offLine:
-      print ("genProfile algo " + str(algo) + " " + str(stock))
-      
-      cmd = "python3 bin/profileGenerator.py -a " + algo + " -d \"\""
-      if os.system(cmd) > 0:
-         print("Cannot create profile from " + str(cmd) + " " + str(algo))
-         return 1
-      
-   return 0
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize algorithm,  barcharts objects
@@ -732,24 +771,18 @@ if not offLine:
 # CALL setStockValues SKIPPING OPEN VALUE WHICH IS THE CLOSE OF THE LAST DAY   
 # observed at least 3 prices being the close of prev day
 
-print ("stocks " + str(stocks))
-print ("stocks len " + str(len(stocks)))
-
 if service == "eTrade":
    serviceValues = cn.setStockValues(stocksChart, 0, stocks)
    print ("serviceValues 1\n" + str(serviceValues))
-   sleep(0.3)
-   serviceValues = cn.setStockValues(stocksChart, 0, stocks)
-   print ("serviceValues 2\n" + str(serviceValues))
-   sleep(0.3)
-   serviceValues = cn.setStockValues(stocksChart, 0, stocks)
-   print ("serviceValues 3\n" + str(serviceValues))
 
 #if preMarketAnalysis:
 #   for stock in stocks:
 #      # Launch lpltL.py
 #      pass
 
+
+print ("stocks " + str(stocks))
+print ("stocks len " + str(len(stocks)))
 
 # Set the initial price
 for stock in stocks:
@@ -763,7 +796,8 @@ for stock in stocks:
 pid = {}
 numLaunchedPids = 0
 
-if preMarketAnalysis and not offLine:
+# Use maxStocksToTrade when live
+if preMarketAnalysis and not offLine and stocksFile == "":
    pid = th.launchAlgos(algoData, maxStocksToTrade, os.path.basename(workPath))
 if not preMarketAnalysis and not offLine:
    pid = th.launchStocks(stocks, maxStocksToTrade, os.path.basename(workPath))
@@ -775,18 +809,20 @@ if offLine:
    stockSegs = {}
    sSegCtr = 0
    
-   # Setup a dict of stock arrays the size of maxStocksToTrade
+   # Setup a dict of stock arrays the size of maxNumProcesses
    for ctr in range(len(stocks)):
-      if ctr % maxStocksToTrade == 0:
-         stockSegs[sSegCtr] = stocks[ctr:(ctr+maxStocksToTrade)]
+      if ctr % maxNumProcesses == 0:
+         stockSegs[sSegCtr] = stocks[ctr:(ctr+maxNumProcesses)]
          sSegCtr += 1
          
    lg1.debug ("stockSegs " + str(stockSegs))
+   lg1.debug ("maxNumProcesses " + str(maxNumProcesses))
+   lg1.debug ("sSegCtr " + str(sSegCtr))
    
-   # Launch the test program in parallel x maxStocksToTrade 
+   # Launch the test program in parallel x maxNumProcesses 
    # waiting to launch the next set of stocks
    for ctr in range(sSegCtr):
-      pid = th.launchStocks(stockSegs[ctr], maxStocksToTrade, os.path.basename(workPath))
+      pid = th.launchStocks(stockSegs[ctr], maxNumProcesses, os.path.basename(workPath))
       lg1.debug ("pid " + str(pid))
       lg1.debug ("stockSegs[ctr] " + str(stockSegs[ctr]))
 
@@ -803,9 +839,6 @@ if offLine:
          else:
             lg1.debug ("Gotta poll value of: " + str(pid[stk].poll()))
             break
-               
-      lg1.debug ("hereeeee ")
-   exit (0)
    
 if pid:
    numLaunchedPids = len(pid)
@@ -828,8 +861,8 @@ while True:
 
    endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * timeBar))
 
-   lg1.debug ("cn.getTimeHrMnSecs() " + str(cn.getTimeHrMnSecs()))
-   lg1.debug ("endBarLoopTime " + str(endBarLoopTime))
+   print ("cn.getTimeHrMnSecs() " + str(cn.getTimeHrMnSecs()))
+   print ("endBarLoopTime " + str(endBarLoopTime))
 
    if offLine:
       for stock in stocks:
@@ -857,6 +890,7 @@ while True:
    a1.setCurrentBar(barCtr)
    a1.setNextBar(barCtr + 1)
 
+   # Set do on open or close to 0
    for stock in stocks:
       doOnceOnOpen[stock] = 0
       doOnceOnClose[stock] = 0
@@ -870,7 +904,7 @@ while True:
    if preMarketAnalysis:
       ctr = 0
       for stock in stocks:
-         if ctr >= maxStocksToTrade:
+         if ctr >= maxNumProcesses:
             if len(pid[stock]) > 0:
                if not th.isPIDRunning(pid[stock]):
                   print ("POP PID FROM RUNNING QUEUE")
@@ -880,6 +914,8 @@ while True:
    while True:
       # Set the values from the trading service
       serviceValues = cn.setStockValues(stocksChart, barCtr, stocks)
+
+      print("serviceValues " + str(serviceValues))
 
       a[stock].unsetActionOnOpenBar()
       
@@ -914,6 +950,8 @@ while True:
 #            lg[stock].info ("\nSTOPPED OUT: " + stock)
 #            #exit(exitVal)
 
+      lg1.debug ("stocks " + str(stocks))
+
       for stock in stocks:
          lg[stock].info ("\nSYM : " + str(stock) + "\n")
          lg[stock].info ("BAR : " + str(barCtr))
@@ -927,17 +965,16 @@ while True:
       if not offLine:
          for stock in stocks:
             ba[stock].loadBar(stocksChart[stock], vol[stock], barCtr, bid[stock], ask[stock], last[stock])
-            
-      lg1.debug ("vol[stock] \n" + str(vol[stock]))
-
+                  
       # Save off the prices so they can be later used in offLine mode
       if not offLine:
          for stock in stocks:
             # Write prices and barcharts for 1-5 min charts
             pr[stock].write(pathsChart[stock]['pricesPath'], ask[stock], bid[stock], last[stock], vol[stock], barCtr)
-         
-      lg1.debug ("vol[stock] \n" + str(vol[stock]))
 
+      print("endBarLoopTime " + str(endBarLoopTime))
+      print ("cn.getTimeHrMnSecs() " + str(cn.getTimeHrMnSecs()))
+      
       # Beginning of next bar. 2nd clause is for offline mode
       if cn.getTimeHrMnSecs() >= endBarLoopTime or pr[stock].isNextBar(timeBar):      
          # Only do beginning of the bar section once
@@ -978,9 +1015,10 @@ while True:
          barCtr += 1
          break
          
-      # End of bar reached.
+         # End of bar reached.
       
       for stock in stocks:
+         print ("stockkkkkk ")
          if not masterMode:
             positionTaken[stock] = a[stock].takePosition(bid[stock], ask[stock], last[stock], vol[stock], stocksChart[stock], barCtr)
 
@@ -1006,24 +1044,24 @@ while True:
 
                exitTrading += 1
 
-      if exitTrading and afterMarketAnalysis:
-         if not offLine and afterMarketEndTime:
-            # Wait for afterMarketEndTime 8pm
-            while afterMarketEndTime > cn.getTimeHrMnSecs():
-               print ("afterMarketEndTime " + str(afterMarketEndTime))
-               print ("cn.getTimeHrMnSecs() " + str(cn.getTimeHrMnSecs()))
-               sleep(10)
-            
-            logPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
-            
-            # Instantiate the needed objects
-            l = lpl.Log(0, 0, logPath, "/tmp/oo", 0)
-            pr = lpl.Premarket(minuteChartPath, minuteChartExt, dailyChartPath, dailyChartExt, dailyGapExt, bestAlgosPath, bestAlgosExt)
-            tg = lpl.Target(c, d, l)
-            dc = lpl.Dailychart()
-            
-            algoData, stocks = analyzeStocks(pr, tg, dc, "post", useLiveDailyData, stocks, onlyUpdateDailyStocks, 0)
-            exit (0)
+#      if exitTrading and afterMarketAnalysis:
+#         if not offLine and afterMarketEndTime:
+#            # Wait for afterMarketEndTime 8pm
+#            while afterMarketEndTime > cn.getTimeHrMnSecs():
+#               print ("afterMarketEndTime " + str(afterMarketEndTime))
+#               print ("cn.getTimeHrMnSecs() " + str(cn.getTimeHrMnSecs()))
+#               sleep(10)
+#            
+#            logPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
+#            
+#            # Instantiate the needed objects
+#            l = lpl.Log(0, 0, logPath, "/tmp/oo", 0)
+#            pr = lpl.Premarket(minuteChartPath, minuteChartExt, dailyChartPath, dailyChartExt, dailyGapExt, bestAlgosPath, bestAlgosExt)
+#            tg = lpl.Target(c, d, l)
+#            dc = lpl.Dailychart()
+#            
+#            algoData, stocks = analyzeStocks(pr, tg, dc, "post", useLiveDailyData, stocks, onlyUpdateDailyStocks, 0, "")
+#            exit (0)
          
       if exitTrading:
          exit(0)

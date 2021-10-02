@@ -95,6 +95,7 @@ KYMR Gain: $ -0.43 Win %: 0 in 1 days with algo TB5_HL_QM_OB1_OS1_CB4_CS4_QP_PM
 KYMR Gain: $ -0.43 Win %: 0 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_QP_PM
 KYMR Gain: $ -0.37 Win %: 0 in 1 days with algo TB5_HL_QM_OB1_OS1_CB4_CS4_PM
 KYMR Gain: $ -0.37 Win %: 0 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_PM
+KYMR Gain: $ -0.37 Win %: 0 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_PM
 KYMR Gain: $ -0.35 Win %: 0 in 1 days with algo TB4_HL_QM_OB1_OS1_CB5_CS5_PM
 KYMR Gain: $ -0.35 Win %: 0 in 1 days with algo TB4_HL_QM_OB1_OS1_CB5_CS5_QP_PM
 KYMR Gain: $ -0.35 Win %: 0 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_PM
@@ -116,6 +117,8 @@ KYMR Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_HM
 KYMR Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_RV_AV_DB6
 KYMR Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB1_OS1_CB4_CS4_HM_AV_DB6
 KYMR Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB1_OS1_CB4_CS4_RV_AV_DB6
+KYMR Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB5_CS5_TS
+KYMR Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB1_OS1_CB4_CS4_TS
 KYMR Gain: $ 0.84 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_AV
 KYMR Gain: $ 0.84 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_HM_AV
 KYMR Gain: $ 0.84 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_RV_AV
@@ -129,6 +132,7 @@ KYMR Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_HM
 KYMR Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_IR1
 KYMR Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_QL
 KYMR Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_RV
+KYMR Gain: $ 1.16 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_TS
 KYMR Gain: $ 1.22 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB5_CS5_AO
 KYMR Gain: $ 1.22 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB5_CS5_HM
 KYMR Gain: $ 1.22 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB5_CS5_IR2
@@ -153,9 +157,11 @@ KYMR Gain: $ 1.22 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_AO
 KYMR Gain: $ 1.26 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_IT
 KYMR Gain: $ 1.26 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_IT_QL
 KYMR Gain: $ 1.33 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5
+KYMR Gain: $ 1.33 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5
 KYMR Gain: $ 1.33 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_HM
 KYMR Gain: $ 1.33 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_IR2
 KYMR Gain: $ 1.33 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_QL
 KYMR Gain: $ 1.33 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_RV
+KYMR Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_TS
 KYMR Gain: $ 1.63 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_IT
 KYMR Gain: $ 1.63 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_IT_QL

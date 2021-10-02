@@ -52,7 +52,12 @@ CMMB Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB4_CS4_QP
 CMMB Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_PM
 CMMB Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_QP_PM
 CMMB Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB5_CS5_PM
+CMMB Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB5_CS5_PM
 CMMB Gain: $ 0 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB5_CS5_QP_PM
+CMMB Gain: $ 0.46 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS3_CB5_CS5_TS
+CMMB Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB1_OS1_CB4_CS4_TS
+CMMB Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_TS
+CMMB Gain: $ 0.55 Win %: 100.00 in 2 days with algo TB1_HI_QM_OB4_OS4_CB5_CS5_TS
 CMMB Gain: $ 0.89 Win %: 100.00 in 2 days with algo TB1_HI_QM_OB4_OS4_CB5_CS5_DB30
 CMMB Gain: $ 0.89 Win %: 100.00 in 2 days with algo TB1_HI_QM_OB4_OS4_CB5_CS5_HM_AV_DB30
 CMMB Gain: $ 0.89 Win %: 100.00 in 2 days with algo TB1_HI_QM_OB4_OS4_CB5_CS5_HM_TR_DB30
@@ -138,6 +143,7 @@ CMMB Gain: $ 2.44 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4
 CMMB Gain: $ 2.44 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_RV_TR
 CMMB Gain: $ 2.44 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_SS
 CMMB Gain: $ 2.44 Win %: 100.00 in 2 days with algo TB1_HL_HS_QM_OB2_OS2_CB4_CS4_TR
+CMMB Gain: $ 2.49 Win %: 100.00 in 2 days with algo TB1_HI_QM_OB4_OS4_CB5_CS5
 CMMB Gain: $ 2.49 Win %: 100.00 in 2 days with algo TB1_HI_QM_OB4_OS4_CB5_CS5
 CMMB Gain: $ 2.49 Win %: 100.00 in 2 days with algo TB1_HI_QM_OB4_OS4_CB5_CS5_AC
 CMMB Gain: $ 2.49 Win %: 100.00 in 2 days with algo TB1_HI_QM_OB4_OS4_CB5_CS5_AL

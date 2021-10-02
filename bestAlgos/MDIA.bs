@@ -32,6 +32,8 @@ MDIA Gain: $ -2.56 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB5_CS5
 MDIA Gain: $ -2.53 Win %: 0 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB5_CS5_QP_IR3
 MDIA Gain: $ -2.53 Win %: 0 in 2 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5_QP_IR3
 MDIA Gain: $ -2.52 Win %: 50.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_HM
+MDIA Gain: $ -2.37 Win %: 50.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_TS
+MDIA Gain: $ -2.32 Win %: 50.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4
 MDIA Gain: $ -2.32 Win %: 50.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4
 MDIA Gain: $ -2.32 Win %: 50.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_IT
 MDIA Gain: $ -2.19 Win %: 50.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_AL
@@ -75,6 +77,7 @@ MDIA Gain: $ -0.61 Win %: 0 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_HM_
 MDIA Gain: $ -0.61 Win %: 0 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_HM_TR
 MDIA Gain: $ -0.61 Win %: 0 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_IR1
 MDIA Gain: $ -0.61 Win %: 0 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_IT
+MDIA Gain: $ -0.61 Win %: 0 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_IT
 MDIA Gain: $ -0.61 Win %: 0 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_IT_QL
 MDIA Gain: $ -0.61 Win %: 0 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_QL
 MDIA Gain: $ -0.61 Win %: 0 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_TR_IR1
@@ -83,6 +86,7 @@ MDIA Gain: $ -0.52 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5
 MDIA Gain: $ -0.51 Win %: 50.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_DB30
 MDIA Gain: $ -0.39 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB5_CS5_RV_AL
 MDIA Gain: $ -0.39 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5_RV_AL
+MDIA Gain: $ -0.37 Win %: 50.00 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_TS
 MDIA Gain: $ -0.34 Win %: 0 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_HM_AV_DB6
 MDIA Gain: $ -0.34 Win %: 0 in 2 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_RV_AV_DB6
 MDIA Gain: $ -0.33 Win %: 0 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB5_CS5_LI
@@ -119,6 +123,8 @@ MDIA Gain: $ 0.24 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB5_CS5_
 MDIA Gain: $ 0.24 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5_RV_TR
 MDIA Gain: $ 0.27 Win %: 50.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_RV_AV
 MDIA Gain: $ 0.28 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_VI
+MDIA Gain: $ 0.47 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB5_CS5_TS
+MDIA Gain: $ 0.47 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5_TS
 MDIA Gain: $ 0.52 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB5_CS5_AL
 MDIA Gain: $ 0.52 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB5_CS5_AV
 MDIA Gain: $ 0.52 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB1_OS1_CB5_CS5_HM

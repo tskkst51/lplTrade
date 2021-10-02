@@ -91,6 +91,7 @@ EPU Gain: $ 0.82 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB3_OS3_CB5_CS5_RV_
 EPU Gain: $ 0.82 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB3_OS3_CB5_CS5_SS
 EPU Gain: $ 0.82 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB3_OS3_CB5_CS5_TR
 EPU Gain: $ 0.82 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB3_OS3_CB5_CS5_TR_IR1
+EPU Gain: $ 0.82 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB3_OS3_CB5_CS5_TS
 EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_AC
 EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_AL
 EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_AO
@@ -101,6 +102,7 @@ EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_HM_
 EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_HM_TR
 EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_IR1
 EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_IT
+EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_IT
 EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_IT_QL
 EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_QL
 EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_RV
@@ -110,6 +112,7 @@ EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_RV_
 EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_SS
 EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_TR
 EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_TR_IR1
+EPU Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_TS
 EPU Gain: $ 0.98 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_SS
 EPU Gain: $ 0.98 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_SS
 EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_AC
@@ -130,6 +133,8 @@ EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_RV_
 EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_RV_TR
 EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_TR
 EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_TR_IR4
+EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_TS
+EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4
 EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4
 EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_AC
 EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_AL
@@ -149,5 +154,6 @@ EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_RV_
 EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_RV_TR
 EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_TR
 EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_TR_IR4
+EPU Gain: $ 1.08 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_TS
 EPU Gain: $ 1.16 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB1_OS1_CB4_CS4_LI
 EPU Gain: $ 1.16 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_LI

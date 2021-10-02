@@ -42,6 +42,10 @@ RKDA Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5
 RKDA Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_IT_QP_DB30
 RKDA Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_IT_QP_DB30
 RKDA Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_IT_QP_DB30
+RKDA Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_TS
+RKDA Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_TS
+RKDA Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_TS
+RKDA Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_TS
 RKDA Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_HM_AV_DB30
 RKDA Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_HM_TR_DB30
 RKDA Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_HM_AV_DB30
@@ -90,6 +94,7 @@ RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5
 RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_AV
 RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_IR5
 RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_IT
+RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_IT
 RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_IT_QL
 RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_LI
 RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_QL
@@ -128,6 +133,7 @@ RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_RV
 RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_SS
 RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_TR
 RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_TR_IR5
+RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5
 RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5
 RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_AL
 RKDA Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_AV

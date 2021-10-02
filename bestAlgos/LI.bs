@@ -34,6 +34,10 @@ LI Gain: $ 1.09 Win %: 50.00 in 2 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_RV_AL
 LI Gain: $ 1.09 Win %: 50.00 in 2 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_RV_AL
 LI Gain: $ 1.18 Win %: 50.00 in 2 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_RV_AV
 LI Gain: $ 1.18 Win %: 50.00 in 2 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_RV_AV
+LI Gain: $ 1.31 Win %: 100.00 in 2 days with algo TB4_EO_EC_QM_OB1_OS1_CB5_CS5_TS
+LI Gain: $ 1.31 Win %: 100.00 in 2 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_TS
+LI Gain: $ 1.31 Win %: 100.00 in 2 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_TS
+LI Gain: $ 1.31 Win %: 100.00 in 2 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_TS
 LI Gain: $ 1.41 Win %: 100.00 in 2 days with algo TB4_EO_EC_QM_OB1_OS1_CB5_CS5_QP_IR2
 LI Gain: $ 1.41 Win %: 100.00 in 2 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_QP_IR2
 LI Gain: $ 1.47 Win %: 100.00 in 2 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_HM_QP
@@ -100,6 +104,7 @@ LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_EO_EC_QM_OB1_OS1_CB5_CS5_A
 LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_EO_EC_QM_OB1_OS1_CB5_CS5_AV
 LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_EO_EC_QM_OB1_OS1_CB5_CS5_IR2
 LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_EO_EC_QM_OB1_OS1_CB5_CS5_IT
+LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_EO_EC_QM_OB1_OS1_CB5_CS5_IT
 LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_EO_EC_QM_OB1_OS1_CB5_CS5_IT_QL
 LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_EO_EC_QM_OB1_OS1_CB5_CS5_QL
 LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_EO_EC_QM_OB1_OS1_CB5_CS5_SS
@@ -127,6 +132,7 @@ LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_QL
 LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_SS
 LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_TR
 LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_TR_IR2
+LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5
 LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5
 LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_AC
 LI Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_AL

@@ -54,6 +54,10 @@ BCLI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB1_CS1_IT
 BCLI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB2_CS2_IT_QL_DB30
 BCLI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB1_CS1_IT_QL_DB30
 BCLI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB2_CS2_IT_QL_DB30
+BCLI Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB1_CS1_TS
+BCLI Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB2_CS2_TS
+BCLI Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB1_CS1_TS
+BCLI Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB2_CS2_TS
 BCLI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB1_CS1_DB30
 BCLI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB1_CS1_HM_QP_DB30
 BCLI Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB1_CS1_QP_IR5
@@ -115,6 +119,7 @@ BCLI Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB2_CS2_QP
 BCLI Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB2_CS2_RV_QP
 BCLI Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB2_CS2_TR_QP
 BCLI Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB1_CS1_PM
+BCLI Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB1_CS1_PM
 BCLI Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB2_CS2_PM
 BCLI Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB1_CS1_PM
 BCLI Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB2_CS2_PM
@@ -150,6 +155,7 @@ BCLI Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB1_CS1_IT
 BCLI Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB1_CS1_IT_QL
 BCLI Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB1_CS1_QL
 BCLI Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB1_CS1_RV
+BCLI Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB2_CS2
 BCLI Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB2_CS2
 BCLI Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB2_CS2_AC
 BCLI Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB2_CS2_AO

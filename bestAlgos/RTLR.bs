@@ -22,6 +22,7 @@ RTLR Gain: $ -2.23 Win %: 0 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_IT_
 RTLR Gain: $ -2.2 Win %: 14.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_TR_QP_DB30
 RTLR Gain: $ -2.19 Win %: 28.00 in 7 days with algo TB2_EO_EC_QM_OB1_OS1_CB3_CS3_HM
 RTLR Gain: $ -2.19 Win %: 28.00 in 7 days with algo TB2_EO_EC_QM_OB1_OS1_CB3_CS3_IT
+RTLR Gain: $ -2.19 Win %: 28.00 in 7 days with algo TB2_EO_EC_QM_OB1_OS1_CB3_CS3_IT
 RTLR Gain: $ -2.17 Win %: 28.00 in 7 days with algo TB2_EO_EC_QM_OB1_OS1_CB3_CS3_RV_TR
 RTLR Gain: $ -2.15 Win %: 14.00 in 7 days with algo TB2_EO_EC_QM_OB1_OS1_CB3_CS3_TR_IR4
 RTLR Gain: $ -2.15 Win %: 28.00 in 7 days with algo TB2_EO_EC_QM_OB1_OS1_CB3_CS3_SS
@@ -35,6 +36,7 @@ RTLR Gain: $ -1.98 Win %: 14.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2
 RTLR Gain: $ -1.94 Win %: 14.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_HM_QP
 RTLR Gain: $ -1.94 Win %: 14.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_QP
 RTLR Gain: $ -1.94 Win %: 14.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_RV_QP
+RTLR Gain: $ -1.9 Win %: 28.00 in 7 days with algo TB2_EO_EC_QM_OB1_OS1_CB3_CS3_TS
 RTLR Gain: $ -1.88 Win %: 0 in 7 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_RV_QP_DB15
 RTLR Gain: $ -1.81 Win %: 0 in 7 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_HM_QP
 RTLR Gain: $ -1.81 Win %: 0 in 7 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_QP
@@ -56,8 +58,10 @@ RTLR Gain: $ -1.54 Win %: 0 in 7 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_QP_IR4
 RTLR Gain: $ -1.54 Win %: 0 in 7 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_TR_QP_DB15
 RTLR Gain: $ -1.53 Win %: 28.00 in 7 days with algo TB2_EO_EC_QM_OB1_OS1_CB3_CS3_IT_QL
 RTLR Gain: $ -1.52 Win %: 0 in 7 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2
+RTLR Gain: $ -1.52 Win %: 0 in 7 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2
 RTLR Gain: $ -1.52 Win %: 0 in 7 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_HM
 RTLR Gain: $ -1.52 Win %: 0 in 7 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_IT
+RTLR Gain: $ -1.52 Win %: 0 in 7 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_TS
 RTLR Gain: $ -1.51 Win %: 0 in 7 days with algo TB2_LO_QM_OB4_OS4_CB2_CS2_RV_TR_DB15
 RTLR Gain: $ -1.5 Win %: 14.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_HM_QP_DB30
 RTLR Gain: $ -1.5 Win %: 14.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_IT_QP_DB30
@@ -102,6 +106,7 @@ RTLR Gain: $ -1.09 Win %: 42.00 in 7 days with algo TB2_EO_EC_QM_OB1_OS1_CB3_CS3
 RTLR Gain: $ -1.08 Win %: 28.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_HM_TR_DB30
 RTLR Gain: $ -1.02 Win %: 42.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_IT_QL
 RTLR Gain: $ -1.02 Win %: 42.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_RV
+RTLR Gain: $ -1.02 Win %: 42.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_TS
 RTLR Gain: $ -1.01 Win %: 71.00 in 7 days with algo TB2_EO_EC_QM_OB1_OS1_CB3_CS3_RV_TR_DB15
 RTLR Gain: $ -0.96 Win %: 42.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_IT_QL_DB30
 RTLR Gain: $ -0.96 Win %: 42.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_DB30
@@ -116,6 +121,7 @@ RTLR Gain: $ -0.93 Win %: 42.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2
 RTLR Gain: $ -0.92 Win %: 28.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_AV
 RTLR Gain: $ -0.89 Win %: 57.00 in 7 days with algo TB2_EO_EC_QM_OB1_OS1_CB3_CS3_IT_QL_DB15
 RTLR Gain: $ -0.85 Win %: 42.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_IT_QL_DB30
+RTLR Gain: $ -0.84 Win %: 28.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_TS
 RTLR Gain: $ -0.83 Win %: 42.00 in 7 days with algo TB2_EO_EC_QM_OB1_OS1_CB3_CS3_RV_AV
 RTLR Gain: $ -0.8 Win %: 42.00 in 7 days with algo TB1_HL_HS_QM_OB1_OS1_CB2_CS2_QL
 RTLR Gain: $ -0.78 Win %: 42.00 in 7 days with algo TB1_EO_EC_QM_OB1_OS1_CB3_CS3_AL

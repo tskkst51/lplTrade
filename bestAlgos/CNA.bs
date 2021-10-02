@@ -130,7 +130,12 @@ CNA Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB1_CS1_
 CNA Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB2_CS2_AO
 CNA Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1_AO
 CNA Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2_AO
+CNA Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB1_CS1_TS
+CNA Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB2_CS2_TS
+CNA Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1_TS
+CNA Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2_TS
 CNA Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB1_CS1_HM
+CNA Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB1_CS1_IT
 CNA Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB1_CS1_IT
 CNA Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB1_CS1_IT_QL
 CNA Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB1_CS1_QL
@@ -145,6 +150,7 @@ CNA Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1_
 CNA Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1_IT_QL
 CNA Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1_QL
 CNA Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB1_CS1_RV
+CNA Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2
 CNA Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2
 CNA Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2_HM
 CNA Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB2_CS2_IT

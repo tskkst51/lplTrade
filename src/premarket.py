@@ -31,6 +31,17 @@ class Premarket:
       self.bestAlgosPath = bestAlgosPath
       self.bestAlgosExt = bestAlgosExt
       
+#   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#   def getDaysBestFromList(self, stockList, daysBestPath):
+#   
+#      print ("getDaysBestFromList\n" + str(stockList))
+#
+#      # Search for stock from sockList in file daysBestPath
+#      
+#      for s in stockList
+#      
+#      return stocks
+
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getAlgorithm(self, stocks, useDefaultAlgo, useStocksWithNoTestData):
    
@@ -60,6 +71,9 @@ class Premarket:
                if useStocksWithNoTestData:
                   bestAlgoD[s] = defaultAlgo 
                   stocksBeingUsed.append(s)
+               continue
+            
+            if os.stat(bestAlgoFile).st_size < 10:
                continue
                
             with open(bestAlgoFile, 'r') as baFile:
@@ -94,7 +108,9 @@ class Premarket:
       return bestAlgoD, stocksBeingUsed
          
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getDailyOrderedStocks(self, tg, gapData, stockData, stocks):
+   def getDailyOrderedStocks(self, tg, gapData, stockData, stocks, daysBestStocks):
+               
+      print ("stockData " + str(stockData))
       
       gapCandidates = tg.getGapCandidates(gapData, stockData)
       
@@ -115,7 +131,7 @@ class Premarket:
 
       orderedStocks = tg.orderStocks(\
          gapCandidates, lastDaysVolGtrCandidates, lastDaysVolLessCandidates, \
-         volumeCandidates, spreadCandidates, trendCandidates, betaCandidates, avgVolData, stocks)
+         volumeCandidates, spreadCandidates, trendCandidates, betaCandidates, avgVolData, stocks, daysBestStocks)
 
       # stocksWBestAlgo = tg.getBestAlgo(orderedStocks)
        
@@ -337,15 +353,18 @@ class Premarket:
       return stocksInRange
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getStocksWithDailyData(self, stocks, minDaysData):
+   def getStocksWithDailyData(self, stocks, numDaysTestData):
    
       parsedStocks = []
       
-      # Return a list of stocks with at least "minDaysData" worth of data
+      # Return a list of stocks with at least "numDaysTestData" worth of data
       for stock in stocks:
          path = "bestAlgos/" + stock + ".bs"
          
          if not os.path.exists(path):
+            continue
+         
+         if os.stat(path).st_size < 100:
             continue
          
          # Get last line from path
@@ -361,11 +380,13 @@ class Premarket:
          numDaysData = items[len(items) - 1]
          print ("numDaysData " + str(numDaysData))
          
-         if int(numDaysData) < int(minDaysData):
-            print ("skipping stock due to lack of data; minDaysData  " + " " + stock + " " + str(minDaysData))
+         if int(numDaysData) < int(numDaysTestData):
+            print ("skipping stock due to lack of data; numDaysTestData  " + " " + stock + " " + str(numDaysTestData))
             continue
          
          parsedStocks.append(stock)
+         
+      print ("parsedStocks " + str(parsedStocks))
          
       return parsedStocks      
        

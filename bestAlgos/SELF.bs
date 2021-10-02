@@ -72,6 +72,7 @@ SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB5_CS5
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB5_CS5_HM_TR_DB6
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB5_CS5_IR1
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB5_CS5_IT
+SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB5_CS5_IT
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB5_CS5_IT_QL
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB5_CS5_IT_QL_DB6
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB5_CS5_LI
@@ -132,6 +133,7 @@ SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_SS
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_TR
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_TR_IR1
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3
+SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_AC
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_AL
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_AO
@@ -151,3 +153,7 @@ SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_RV
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_SS
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_TR
 SELF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_TR_IR1
+SELF Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB1_OS1_CB5_CS5_TS
+SELF Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_TS
+SELF Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_TS
+SELF Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_TS

@@ -7,6 +7,7 @@ PINS Gain: $ -4.79 Win %: 66.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5
 PINS Gain: $ -4.49 Win %: 33.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_HM_AV
 PINS Gain: $ -3.2 Win %: 33.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_RV_AV
 PINS Gain: $ -3.1 Win %: 33.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_HM_AV
+PINS Gain: $ -2.86 Win %: 33.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_TS
 PINS Gain: $ -2.86 Win %: 33.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_RV_AV
 PINS Gain: $ -2.8 Win %: 66.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_IT_QL
 PINS Gain: $ -2.75 Win %: 33.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_AV
@@ -54,6 +55,7 @@ PINS Gain: $ -0.2 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_RV_
 PINS Gain: $ -0.17 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_TR_QP_DB30
 PINS Gain: $ -0.03 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_IT_QL_DB6
 PINS Gain: $ -0.02 Win %: 66.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_IT_QL_DB15
+PINS Gain: $ 0 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_TS
 PINS Gain: $ 0.04 Win %: 66.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_LI
 PINS Gain: $ 0.11 Win %: 33.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_RV_AL
 PINS Gain: $ 0.12 Win %: 66.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_AL
@@ -70,6 +72,7 @@ PINS Gain: $ 0.46 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_RV_
 PINS Gain: $ 0.47 Win %: 66.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_RV_QP
 PINS Gain: $ 0.48 Win %: 33.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_HM_TR
 PINS Gain: $ 0.51 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3
+PINS Gain: $ 0.51 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3
 PINS Gain: $ 0.52 Win %: 66.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_RV_QP_DB10
 PINS Gain: $ 0.56 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_IT_QP
 PINS Gain: $ 0.58 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_IT_QP_DB10
@@ -77,8 +80,8 @@ PINS Gain: $ 0.6 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_HM
 PINS Gain: $ 0.67 Win %: 66.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_RV_QP_DB15
 PINS Gain: $ 0.68 Win %: 33.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_QP
 PINS Gain: $ 0.69 Win %: 66.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_TR_QP_DB15
-PINS Gain: $ 0.72 Win %: 100.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_IT_QP_DB6
 PINS Gain: $ 0.72 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_HM_QP_DB6
+PINS Gain: $ 0.72 Win %: 100.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_IT_QP_DB6
 PINS Gain: $ 0.73 Win %: 33.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_TR
 PINS Gain: $ 0.79 Win %: 66.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_RV_TR_DB15
 PINS Gain: $ 0.79 Win %: 66.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_RV_TR_DB15
@@ -105,10 +108,11 @@ PINS Gain: $ 1.77 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_RV
 PINS Gain: $ 1.89 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_RV_QP
 PINS Gain: $ 1.9 Win %: 66.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_IR4
 PINS Gain: $ 1.94 Win %: 66.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_TR_IR4
-PINS Gain: $ 2.05 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_RV_AL_DB15
 PINS Gain: $ 2.05 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_RV_QP
+PINS Gain: $ 2.05 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB4_OS4_CB4_CS4_RV_AL_DB15
 PINS Gain: $ 2.13 Win %: 100.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_RV_TR_DB6
 PINS Gain: $ 2.13 Win %: 100.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_RV_TR_DB6
+PINS Gain: $ 2.16 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_IT
 PINS Gain: $ 2.16 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_IT
 PINS Gain: $ 2.16 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_IT_QL
 PINS Gain: $ 2.33 Win %: 100.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_IR1
@@ -117,11 +121,12 @@ PINS Gain: $ 2.38 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5
 PINS Gain: $ 2.39 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_TR_QP_DB6
 PINS Gain: $ 2.45 Win %: 66.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_AL
 PINS Gain: $ 2.52 Win %: 66.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_TR
+PINS Gain: $ 2.53 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_TS
 PINS Gain: $ 2.62 Win %: 66.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_HM_AV
 PINS Gain: $ 2.62 Win %: 66.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_HM_AV_DB10
-PINS Gain: $ 2.64 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_IR5
 PINS Gain: $ 2.64 Win %: 66.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_HM_TR
 PINS Gain: $ 2.64 Win %: 66.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_HM_TR_DB10
+PINS Gain: $ 2.64 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_IR5
 PINS Gain: $ 2.69 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_HM
 PINS Gain: $ 2.74 Win %: 66.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_SS
 PINS Gain: $ 2.99 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_RV_TR
@@ -137,6 +142,7 @@ PINS Gain: $ 3.2 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_
 PINS Gain: $ 3.2 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_RV_AV_DB10
 PINS Gain: $ 3.25 Win %: 100.00 in 3 days with algo TB5_OO_QM_OB1_OS1_CB3_CS3_HM_TR_DB6
 PINS Gain: $ 3.45 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB3_OS3_CB5_CS5_AL
+PINS Gain: $ 3.5 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_TS
 PINS Gain: $ 3.67 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_DB10
 PINS Gain: $ 3.67 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_QL
 PINS Gain: $ 3.79 Win %: 100.00 in 3 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_HM

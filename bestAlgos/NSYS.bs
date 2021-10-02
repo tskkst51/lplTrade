@@ -73,6 +73,7 @@ NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_HM_TR
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_HM_TR_DB6
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_IR1
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_IT
+NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_IT
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_IT_QL
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_IT_QL_DB6
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_QL
@@ -86,6 +87,7 @@ NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_RV_TR_
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_SS
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_TR
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_TR_IR1
+NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB4_CS4_TS
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_AC
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_AL
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_AO
@@ -112,6 +114,7 @@ NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_RV_TR_
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_SS
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_TR
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_TR_IR1
+NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_TS
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_AC
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_AL
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_AO
@@ -131,6 +134,8 @@ NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_RV_TR
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_SS
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_TR
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_TR_IR1
+NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_TS
+NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_AC
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_AL
@@ -151,3 +156,4 @@ NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_RV_TR
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_SS
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_TR
 NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_TR_IR1
+NSYS Gain: $ -0.12 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_TS

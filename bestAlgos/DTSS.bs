@@ -72,6 +72,10 @@ DTSS Gain: $ -0.06 Win %: 0 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_RV_AV_
 DTSS Gain: $ -0.06 Win %: 0 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_HM_AV_DB30
 DTSS Gain: $ -0.06 Win %: 0 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_RV_AL_DB30
 DTSS Gain: $ -0.06 Win %: 0 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_RV_AV_DB30
+DTSS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_TS
+DTSS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_TS
+DTSS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_TS
+DTSS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_TS
 DTSS Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_HM
 DTSS Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_HM_AV
 DTSS Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_HM_TR
@@ -88,6 +92,7 @@ DTSS Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_TR
 DTSS Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_TR_IR5
 DTSS Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_VI
 DTSS Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_VI
+DTSS Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_PM
 DTSS Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB4_CS4_PM
 DTSS Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_PM
 DTSS Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_PM
@@ -144,6 +149,7 @@ DTSS Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_RV
 DTSS Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_RV_TR
 DTSS Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_SS
 DTSS Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_TR
+DTSS Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4
 DTSS Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4
 DTSS Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_AC
 DTSS Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_AL

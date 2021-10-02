@@ -70,6 +70,10 @@ BZ Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_IT_Q
 BZ Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4_IT_QP
 BZ Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_IT_QL_DB10
 BZ Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4_IT_QL_DB10
+BZ Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_TS
+BZ Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB3_CS3_TS
+BZ Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_TS
+BZ Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4_TS
 BZ Gain: $ 0.91 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_LI
 BZ Gain: $ 0.91 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB3_CS3_LI
 BZ Gain: $ 0.91 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_LI
@@ -93,6 +97,7 @@ BZ Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4_VI
 BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_HM
 BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_HM_TR
 BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_IR3
+BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_IT
 BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_IT
 BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_IT_QL
 BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB3_CS3_QL
@@ -123,6 +128,7 @@ BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_RV
 BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_RV_TR
 BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_TR
 BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_TR_IR3
+BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4
 BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4
 BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4_AC
 BZ Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB4_CS4_AO

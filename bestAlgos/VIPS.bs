@@ -18,7 +18,9 @@ VIPS Gain: $ -1.31 Win %: 0 in 1 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_AO
 VIPS Gain: $ -1.31 Win %: 0 in 1 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_DB6
 VIPS Gain: $ -1.31 Win %: 0 in 1 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_HM
 VIPS Gain: $ -1.31 Win %: 0 in 1 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_IT
+VIPS Gain: $ -1.31 Win %: 0 in 1 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_IT
 VIPS Gain: $ -1.31 Win %: 0 in 1 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_RV
+VIPS Gain: $ -1.31 Win %: 0 in 1 days with algo TB5_HL_QM_OB1_OS1_CB5_CS5_TS
 VIPS Gain: $ -1.18 Win %: 0 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_HM_QP
 VIPS Gain: $ -1.18 Win %: 0 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_HM_QP
 VIPS Gain: $ -1.17 Win %: 0 in 1 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_RV_QP
@@ -122,6 +124,9 @@ VIPS Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_IT
 VIPS Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_TR_QP
 VIPS Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_TR_QP_DB8
 VIPS Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_IT_QL_DB8
+VIPS Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_TS
+VIPS Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_TS
+VIPS Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_TS
 VIPS Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_LI
 VIPS Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_LI
 VIPS Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_DB8
@@ -143,6 +148,7 @@ VIPS Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_AO
 VIPS Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_HM
 VIPS Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_QL
 VIPS Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_SS
+VIPS Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3
 VIPS Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3
 VIPS Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_AC
 VIPS Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_AO

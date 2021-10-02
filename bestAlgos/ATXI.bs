@@ -43,6 +43,10 @@ ATXI Gain: $ -0.51 Win %: 0 in 1 days with algo TB4_LO_QM_OB3_OS3_CB5_CS5_QP_IR2
 ATXI Gain: $ -0.24 Win %: 0 in 1 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_QP_PM
 ATXI Gain: $ -0.24 Win %: 0 in 1 days with algo TB4_HS_QM_OB2_OS2_CB4_CS4_QP_PM
 ATXI Gain: $ -0.2 Win %: 0 in 1 days with algo TB4_LO_QM_OB3_OS3_CB5_CS5_QP_PM
+ATXI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_TS
+ATXI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB2_OS2_CB4_CS4_TS
+ATXI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_TS
+ATXI Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB5_CS5_TS
 ATXI Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB2_OS2_CB4_CS4_TR_IR2
 ATXI Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_VI
 ATXI Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB2_OS2_CB4_CS4_VI
@@ -97,6 +101,7 @@ ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_IR
 ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_IT
 ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_IT_QL
 ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_PM
+ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_PM
 ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_QL
 ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_RV
 ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_RV_AL
@@ -137,6 +142,7 @@ ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_RV
 ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_SS
 ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_TR
 ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_TR_IR2
+ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB5_CS5
 ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB5_CS5
 ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB5_CS5_AC
 ATXI Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB5_CS5_AL

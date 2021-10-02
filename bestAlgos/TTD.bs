@@ -93,6 +93,7 @@ TTD Gain: $ -4.48 Win %: 40.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_IT_
 TTD Gain: $ -4.37 Win %: 40.00 in 5 days with algo TB1_HL_HI_QM_OB5_OS5_CB3_CS3_IR5
 TTD Gain: $ -2.35 Win %: 40.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_LI
 TTD Gain: $ -2 Win %: 40.00 in 5 days with algo TB1_HL_HI_QM_OB5_OS5_CB3_CS3_AO
+TTD Gain: $ -1.76 Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB5_OS5_CB3_CS3_TS
 TTD Gain: $ -1.64 Win %: 20.00 in 5 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_IT_QL_DB30
 TTD Gain: $ -1.64 Win %: 20.00 in 5 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_IT_QL_DB30
 TTD Gain: $ -1.38 Win %: 40.00 in 5 days with algo TB1_HL_HI_QM_OB5_OS5_CB3_CS3_RV
@@ -104,6 +105,7 @@ TTD Gain: $ -0.13 Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB5_OS5_CB3_CS3_
 TTD Gain: $ 0.23 Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB5_OS5_CB3_CS3_IT_QP_DB30
 TTD Gain: $ 0.66 Win %: 40.00 in 5 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_LI
 TTD Gain: $ 0.66 Win %: 40.00 in 5 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_LI
+TTD Gain: $ 0.86 Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB5_OS5_CB3_CS3_IT
 TTD Gain: $ 0.86 Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB5_OS5_CB3_CS3_IT
 TTD Gain: $ 0.97 Win %: 40.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_RV_AL_DB30
 TTD Gain: $ 1 Win %: 40.00 in 5 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_IT_QP
@@ -126,6 +128,9 @@ TTD Gain: $ 4.92 Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB5_OS5_CB3_CS3_H
 TTD Gain: $ 5.56 Win %: 60.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_IT_QL
 TTD Gain: $ 5.87 Win %: 60.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_IT
 TTD Gain: $ 6 Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB5_OS5_CB3_CS3_RV_AV_DB30
+TTD Gain: $ 6.66 Win %: 100.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_TS
+TTD Gain: $ 6.75 Win %: 100.00 in 5 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_TS
+TTD Gain: $ 6.75 Win %: 100.00 in 5 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_TS
 TTD Gain: $ 8.23 Win %: 80.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_QL
 TTD Gain: $ 8.54 Win %: 80.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_AC
 TTD Gain: $ 8.54 Win %: 80.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB5_CS5_AO
@@ -139,6 +144,7 @@ TTD Gain: $ 10.1 Win %: 80.00 in 5 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_AC
 TTD Gain: $ 10.1 Win %: 80.00 in 5 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_AO
 TTD Gain: $ 10.1 Win %: 80.00 in 5 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_AO_AC
 TTD Gain: $ 10.1 Win %: 80.00 in 5 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_HM
+TTD Gain: $ 10.1 Win %: 80.00 in 5 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5
 TTD Gain: $ 10.1 Win %: 80.00 in 5 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5
 TTD Gain: $ 10.1 Win %: 80.00 in 5 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_AC
 TTD Gain: $ 10.1 Win %: 80.00 in 5 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_AO

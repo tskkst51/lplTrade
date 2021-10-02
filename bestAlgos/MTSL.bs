@@ -1,3 +1,7 @@
+MTSL Gain: $ Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3
+MTSL Gain: $ Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3
+MTSL Gain: $ Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_DB15
+MTSL Gain: $ Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_QL
 MTSL Gain: $ -4.16 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_DB30
 MTSL Gain: $ -2.8 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_IT_QP
 MTSL Gain: $ -2.77 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_SS
@@ -62,9 +66,6 @@ MTSL Gain: $ -0.04 Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3
 MTSL Gain: $ -0.04 Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_IT_QP_DB15
 MTSL Gain: $ -0.01 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_RV_AL_DB30
 MTSL Gain: $ 0 Win %: 100.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_VI
-MTSL Gain: $ Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3
-MTSL Gain: $ Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_DB15
-MTSL Gain: $ Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_QL
 MTSL Gain: $ 0.02 Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_HM_TR_DB15
 MTSL Gain: $ 0.07 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_QP
 MTSL Gain: $ 0.08 Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_QP_IR4
@@ -77,12 +78,16 @@ MTSL Gain: $ 0.2 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_Q
 MTSL Gain: $ 0.21 Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_TR
 MTSL Gain: $ 0.26 Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_AL
 MTSL Gain: $ 0.27 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_AV_DB30
-MTSL Gain: $ 0.34 Win %: 100.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_LI
 MTSL Gain: $ 0.34 Win %: 33.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_SS
+MTSL Gain: $ 0.34 Win %: 100.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_LI
+MTSL Gain: $ 0.39 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_TS
+MTSL Gain: $ 0.39 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_TS
 MTSL Gain: $ 0.42 Win %: 100.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_IT
 MTSL Gain: $ 0.42 Win %: 100.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_IT_QL
 MTSL Gain: $ 0.42 Win %: 100.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_IT_QL_DB15
+MTSL Gain: $ 0.44 Win %: 100.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_TS
 MTSL Gain: $ 0.47 Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_IR4
+MTSL Gain: $ 0.48 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_TS
 MTSL Gain: $ 0.57 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_HM_AV
 MTSL Gain: $ 0.57 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_HM_TR
 MTSL Gain: $ 0.57 Win %: 66.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_AV
@@ -97,13 +102,13 @@ MTSL Gain: $ 0.78 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB3_OS3_CB5_CS5_
 MTSL Gain: $ 0.82 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_HM_TR_DB30
 MTSL Gain: $ 0.82 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_AL_DB30
 MTSL Gain: $ 0.85 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_AL_DB30
+MTSL Gain: $ 0.95 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_TR_DB30
+MTSL Gain: $ 0.95 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_TR_DB30
+MTSL Gain: $ 0.95 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
+MTSL Gain: $ 0.95 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
 MTSL Gain: $ 0.95 Win %: 100.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_RV_TR
 MTSL Gain: $ 0.95 Win %: 100.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_RV_TR_DB15
 MTSL Gain: $ 0.95 Win %: 100.00 in 3 days with algo TB2_HL_HS_QM_OB5_OS5_CB3_CS3_RV_TR_DB15
-MTSL Gain: $ 0.95 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_TR_DB30
-MTSL Gain: $ 0.95 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_TR_DB30
-MTSL Gain: $ 0.95 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
-MTSL Gain: $ 0.95 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
 MTSL Gain: $ 1.18 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_HM_TR_DB30
 MTSL Gain: $ 1.21 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_VI
 MTSL Gain: $ 1.26 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_TR
@@ -139,6 +144,7 @@ MTSL Gain: $ 2.79 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_
 MTSL Gain: $ 2.84 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_TR
 MTSL Gain: $ 2.84 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_TR
 MTSL Gain: $ 2.84 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_TR
+MTSL Gain: $ 2.87 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_IT
 MTSL Gain: $ 2.87 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_IT
 MTSL Gain: $ 2.87 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV
 MTSL Gain: $ 2.87 Win %: 66.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_IT

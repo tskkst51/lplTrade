@@ -28,6 +28,7 @@ EVOL Gain: $ -0.04 Win %: 0 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_IT_QP
 EVOL Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_IT_QP_DB15
 EVOL Gain: $ -0.01 Win %: 0 in 1 days with algo TB2_OC_QM_OB2_OS2_CB5_CS5_IT_QP_DB15
 EVOL Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_PM
+EVOL Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_PM
 EVOL Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_QP_PM
 EVOL Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_PM
 EVOL Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_QP_PM
@@ -44,10 +45,13 @@ EVOL Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_QP
 EVOL Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_HM_QP_DB15
 EVOL Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_RV_QP_DB15
 EVOL Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_TR_QP_DB15
+EVOL Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_TS
 EVOL Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_HM_QP
 EVOL Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_QP
 EVOL Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_RV_QP
 EVOL Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_TR_QP
+EVOL Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_TS
+EVOL Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB5_CS5_TS
 EVOL Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_HM_QP
 EVOL Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_QP
 EVOL Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_RV_QP
@@ -55,6 +59,7 @@ EVOL Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_QP
 EVOL Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_TR_QP
 EVOL Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_HM_TR_DB30
 EVOL Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_RV_TR_DB30
+EVOL Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_TS
 EVOL Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_DB30
 EVOL Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_DB15
 EVOL Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_IT_QL_DB15
@@ -142,6 +147,7 @@ EVOL Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_RV
 EVOL Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_RV_AV
 EVOL Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_RV_TR
 EVOL Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_TR
+EVOL Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB5_CS5
 EVOL Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB5_CS5
 EVOL Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB5_CS5_AC
 EVOL Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB5_CS5_AL

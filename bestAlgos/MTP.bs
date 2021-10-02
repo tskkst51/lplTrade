@@ -51,6 +51,10 @@ MTP Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_IT_
 MTP Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_HM_QP
 MTP Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_QP
 MTP Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_RV_QP
+MTP Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_TS
+MTP Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB4_CS4_TS
+MTP Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_TS
+MTP Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_TS
 MTP Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_QP_IR5
 MTP Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_RV_AL_DB30
 MTP Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_RV_AV_DB30
@@ -96,6 +100,7 @@ MTP Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_TR_
 MTP Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_IR5
 MTP Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_PM
 MTP Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_TR_IR5
+MTP Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_PM
 MTP Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_PM
 MTP Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_HM
 MTP Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_HM_AV
@@ -146,6 +151,7 @@ MTP Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_RV_
 MTP Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_RV_TR
 MTP Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_SS
 MTP Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB4_CS4_TR
+MTP Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4
 MTP Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4
 MTP Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_AC
 MTP Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_AL

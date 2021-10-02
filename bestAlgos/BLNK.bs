@@ -51,6 +51,7 @@ BLNK Gain: $ -27.33 Win %: 36.00 in 11 days with algo TB1_HL_QM_OB4_OS4_CB4_CS4_
 BLNK Gain: $ -25.92 Win %: 36.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB4_CS4_AV
 BLNK Gain: $ -25.63 Win %: 45.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB2_CS2_IT
 BLNK Gain: $ -25.13 Win %: 27.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB2_CS2_RV_AL
+BLNK Gain: $ -24.42 Win %: 63.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB2_CS2_TS
 BLNK Gain: $ -24.36 Win %: 45.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB2_CS2_RV_AV
 BLNK Gain: $ -24.25 Win %: 18.00 in 11 days with algo TB1_HL_QM_OB4_OS4_CB4_CS4_RV_AL_DB30
 BLNK Gain: $ -24.05 Win %: 45.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB4_CS4_HM_AV
@@ -75,12 +76,16 @@ BLNK Gain: $ -19.37 Win %: 36.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB3_CS3_
 BLNK Gain: $ -19.32 Win %: 18.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB4_CS4_LI
 BLNK Gain: $ -18.94 Win %: 36.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB2_CS2_AL
 BLNK Gain: $ -18.92 Win %: 36.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB2_CS2_HM_AV_DB30
+BLNK Gain: $ -18.67 Win %: 54.00 in 11 days with algo TB1_HL_QM_OB4_OS4_CB4_CS4_TS
 BLNK Gain: $ -18.43 Win %: 36.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB3_CS3_RV_AV_DB30
 BLNK Gain: $ -18.1 Win %: 45.00 in 11 days with algo TB1_HL_QM_OB4_OS4_CB4_CS4_RV
+BLNK Gain: $ -17.86 Win %: 54.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB4_CS4_TS
 BLNK Gain: $ -17.61 Win %: 36.00 in 11 days with algo TB1_HL_QM_OB4_OS4_CB4_CS4_AV
+BLNK Gain: $ -17.37 Win %: 63.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB3_CS3_TS
 BLNK Gain: $ -17.1 Win %: 27.00 in 11 days with algo TB1_HL_QM_OB4_OS4_CB4_CS4_LI
 BLNK Gain: $ -17.1 Win %: 36.00 in 11 days with algo TB1_HL_QM_OB4_OS4_CB4_CS4_RV_AV_DB30
 BLNK Gain: $ -16.84 Win %: 45.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB4_CS4_HM
+BLNK Gain: $ -16.5 Win %: 45.00 in 11 days with algo TB1_HL_QM_OB4_OS4_CB4_CS4
 BLNK Gain: $ -16.5 Win %: 45.00 in 11 days with algo TB1_HL_QM_OB4_OS4_CB4_CS4
 BLNK Gain: $ -15.62 Win %: 36.00 in 11 days with algo TB1_HL_QM_OB3_OS3_CB3_CS3_SS
 BLNK Gain: $ -15.38 Win %: 45.00 in 11 days with algo TB1_HL_QM_OB4_OS4_CB4_CS4_HM_AV

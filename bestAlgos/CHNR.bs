@@ -1,3 +1,12 @@
+CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3
+CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3
+CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_AC
+CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_AO
+CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_AO_AC
+CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_HM
+CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_IT
+CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_IT_QL
+CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_QL
 CHNR Gain: $ -2.15 Win %: 0 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_HM_QP
 CHNR Gain: $ -2.12 Win %: 0 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_QP_IR5
 CHNR Gain: $ -1.96 Win %: 0 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_QP
@@ -51,6 +60,7 @@ CHNR Gain: $ -0.15 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB5_CS5
 CHNR Gain: $ -0.15 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB5_CS5_RV_QP
 CHNR Gain: $ -0.14 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_QP_IR5
 CHNR Gain: $ -0.14 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB5_CS5_QP_IR5
+CHNR Gain: $ -0.12 Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_TS
 CHNR Gain: $ -0.1 Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_IT_QP_DB15
 CHNR Gain: $ -0.07 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_HM_QP_DB30
 CHNR Gain: $ -0.07 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_IT_QP_DB30
@@ -64,21 +74,16 @@ CHNR Gain: $ -0.06 Win %: 75.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB5_CS5
 CHNR Gain: $ -0.03 Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_HM_TR
 CHNR Gain: $ -0.03 Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_SS
 CHNR Gain: $ -0.03 Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_TR
-CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3
-CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_AC
-CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_AO
-CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_AO_AC
-CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_HM
-CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_IT
-CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_IT_QL
-CHNR Gain: $ Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_QL
 CHNR Gain: $ 0.01 Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_RV
 CHNR Gain: $ 0.01 Win %: 25.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_RV_TR
+CHNR Gain: $ 0.03 Win %: 75.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_TS
 CHNR Gain: $ 0.06 Win %: 50.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_IR4
 CHNR Gain: $ 0.06 Win %: 50.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_TR_IR4
+CHNR Gain: $ 0.08 Win %: 75.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_TS
+CHNR Gain: $ 0.08 Win %: 75.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB5_CS5_TS
+CHNR Gain: $ 0.12 Win %: 25.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_AC
 CHNR Gain: $ 0.12 Win %: 100.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB5_CS5_IR5
 CHNR Gain: $ 0.12 Win %: 100.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB5_CS5_TR_IR5
-CHNR Gain: $ 0.12 Win %: 25.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_AC
 CHNR Gain: $ 0.13 Win %: 75.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_AC
 CHNR Gain: $ 0.14 Win %: 75.00 in 4 days with algo TB2_LO_QM_OB4_OS4_CB3_CS3_VI
 CHNR Gain: $ 0.18 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_AO_AC
@@ -102,14 +107,15 @@ CHNR Gain: $ 0.25 Win %: 75.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB5_CS5_
 CHNR Gain: $ 0.25 Win %: 75.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB5_CS5_RV_TR_DB30
 CHNR Gain: $ 0.27 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_AO
 CHNR Gain: $ 0.28 Win %: 75.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_IR5
-CHNR Gain: $ 0.31 Win %: 100.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_TR_IR5
 CHNR Gain: $ 0.31 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_AL
 CHNR Gain: $ 0.31 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_RV_AL
+CHNR Gain: $ 0.31 Win %: 100.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_TR_IR5
 CHNR Gain: $ 0.32 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_RV_TR
 CHNR Gain: $ 0.32 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_TR
 CHNR Gain: $ 0.34 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_SS
 CHNR Gain: $ 0.34 Win %: 75.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_LI
 CHNR Gain: $ 0.34 Win %: 75.00 in 4 days with algo TB1_HL_HI_QM_OB4_OS4_CB5_CS5_LI
+CHNR Gain: $ 0.35 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_IT
 CHNR Gain: $ 0.35 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_IT
 CHNR Gain: $ 0.35 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_RV
 CHNR Gain: $ 0.36 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_IT_QL

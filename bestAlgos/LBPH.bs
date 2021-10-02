@@ -83,6 +83,7 @@ LBPH Gain: $ -0.6 Win %: 0 in 1 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_RV_AV_D
 LBPH Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_AV
 LBPH Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_HM_AV
 LBPH Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_PM
+LBPH Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_PM
 LBPH Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_QP_PM
 LBPH Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_RV_AV
 LBPH Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_AV
@@ -98,6 +99,10 @@ LBPH Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_HM_AV
 LBPH Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_PM
 LBPH Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_QP_PM
 LBPH Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_RV_AV_DB6
+LBPH Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_TS
+LBPH Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_TS
+LBPH Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB1_OS1_CB4_CS4_TS
+LBPH Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_TS
 LBPH Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB2_OS2_CB5_CS5_AC
 LBPH Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB3_OS3_CB5_CS5_AC
 LBPH Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB1_OS1_CB4_CS4_AC
@@ -147,6 +152,7 @@ LBPH Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB1_OS1_CB4_CS4_IT_
 LBPH Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB1_OS1_CB4_CS4_QL
 LBPH Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB1_OS1_CB4_CS4_RV
 LBPH Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB1_OS1_CB4_CS4_RV_AL
+LBPH Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4
 LBPH Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4
 LBPH Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_AL
 LBPH Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB4_CS4_AO

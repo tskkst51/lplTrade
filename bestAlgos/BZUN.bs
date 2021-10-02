@@ -90,6 +90,7 @@ BZUN Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5
 BZUN Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_TR_IR5
 BZUN Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_AV
 BZUN Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_HM_AV
+BZUN Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_TS
 BZUN Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB1_OS1_CB3_CS3_HM_AV
 BZUN Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB2_OS2_CB3_CS3_AV
 BZUN Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB2_OS2_CB3_CS3_HM_AV
@@ -109,6 +110,9 @@ BZUN Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB1_OS1_CB3_CS3_SS
 BZUN Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB2_OS2_CB3_CS3_SS
 BZUN Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB1_OS1_CB3_CS3_AL
 BZUN Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB2_OS2_CB3_CS3_AL
+BZUN Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_TS
+BZUN Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB1_OS1_CB3_CS3_TS
+BZUN Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB2_OS2_CB3_CS3_TS
 BZUN Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_AL
 BZUN Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_RV_AL
 BZUN Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_DB6
@@ -116,6 +120,7 @@ BZUN Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3
 BZUN Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_SS
 BZUN Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB1_OS1_CB3_CS3_IR1
 BZUN Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB2_OS2_CB3_CS3_IR1
+BZUN Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_IT
 BZUN Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_IT
 BZUN Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_AO
 BZUN Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_HM
@@ -145,6 +150,7 @@ BZUN Gain: $ 0.99 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB2_OS2_CB3_CS3_AO
 BZUN Gain: $ 0.99 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB2_OS2_CB3_CS3_HM
 BZUN Gain: $ 0.99 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB2_OS2_CB3_CS3_QL
 BZUN Gain: $ 0.99 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB2_OS2_CB3_CS3_RV
+BZUN Gain: $ 1.12 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3
 BZUN Gain: $ 1.12 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3
 BZUN Gain: $ 1.12 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_AC
 BZUN Gain: $ 1.12 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB3_CS3_AO

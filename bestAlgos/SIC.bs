@@ -49,6 +49,7 @@ SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_TR_QP
 SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_QL
 SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_TR_QP
 SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB5_OS5_CB1_CS1
+SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB5_OS5_CB1_CS1
 SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB5_OS5_CB1_CS1_AL
 SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB5_OS5_CB1_CS1_AV
 SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB5_OS5_CB1_CS1_DB10
@@ -83,6 +84,7 @@ SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB5_OS5_CB1_CS1_TR
 SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB5_OS5_CB1_CS1_TR_IR3
 SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB5_OS5_CB1_CS1_TR_QP
 SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB5_OS5_CB1_CS1_TR_QP_DB10
+SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB5_OS5_CB1_CS1_TS
 SIC Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB5_OS5_CB1_CS1_VI
 SIC Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_HM_QP_DB30
 SIC Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_HM_TR_DB30
@@ -109,6 +111,7 @@ SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_HM
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_HM_AV
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_HM_TR
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_IT
+SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_IT
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_IT_QL
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_LI
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_QL
@@ -117,6 +120,7 @@ SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_RV_
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_RV_TR
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_SS
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_TR
+SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB4_CS4_TS
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_AL
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_AV
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_HM
@@ -131,6 +135,7 @@ SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_RV_
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_RV_TR
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_SS
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_TR
+SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB3_CS3_TS
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_AL
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_AV
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_HM
@@ -143,3 +148,4 @@ SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_RV_
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_RV_TR
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_SS
 SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_TR
+SIC Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS3_TS

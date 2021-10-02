@@ -26,7 +26,9 @@ FUV Gain: $ -1.45 Win %: 0 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_AC
 FUV Gain: $ -1.45 Win %: 0 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_AO
 FUV Gain: $ -1.45 Win %: 0 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_AO_AC
 FUV Gain: $ -1.45 Win %: 0 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_IT
+FUV Gain: $ -1.45 Win %: 0 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_IT
 FUV Gain: $ -1.45 Win %: 0 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_SS
+FUV Gain: $ -1.45 Win %: 0 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_TS
 FUV Gain: $ -1.39 Win %: 0 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_RV
 FUV Gain: $ -1.24 Win %: 0 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_TR_IR3
 FUV Gain: $ -1.16 Win %: 0 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_RV_AL_DB10
@@ -69,6 +71,9 @@ FUV Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_IT_Q
 FUV Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_TR_QP_DB6
 FUV Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_IT_QP
 FUV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_TR_IR2
+FUV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_TS
+FUV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_TS
+FUV Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_TS
 FUV Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_HM_QP
 FUV Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_TR
 FUV Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_RV_AV
@@ -145,6 +150,7 @@ FUV Gain: $ 1.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_AL
 FUV Gain: $ 1.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_RV_AL
 FUV Gain: $ 1.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_AL
 FUV Gain: $ 1.53 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_RV_AL
+FUV Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4
 FUV Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4
 FUV Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_AO
 FUV Gain: $ 1.54 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_IT

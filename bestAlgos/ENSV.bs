@@ -74,6 +74,11 @@ ENSV Gain: $ -0.11 Win %: 0 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_RV_
 ENSV Gain: $ -0.11 Win %: 0 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB2_CS2_RV_AL_DB15
 ENSV Gain: $ -0.11 Win %: 0 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1_RV_AL_DB15
 ENSV Gain: $ -0.11 Win %: 0 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_RV_AL_DB15
+ENSV Gain: $ -0.02 Win %: 0 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_TS
+ENSV Gain: $ -0.02 Win %: 0 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB2_CS2_TS
+ENSV Gain: $ -0.02 Win %: 0 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1_TS
+ENSV Gain: $ -0.02 Win %: 0 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_TS
+ENSV Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_PM
 ENSV Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_PM
 ENSV Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_QP_PM
 ENSV Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB2_CS2_PM
@@ -147,6 +152,7 @@ ENSV Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1
 ENSV Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1_QL
 ENSV Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1_RV
 ENSV Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1_SS
+ENSV Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2
 ENSV Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2
 ENSV Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_HM
 ENSV Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_IT

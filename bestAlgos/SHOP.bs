@@ -64,12 +64,16 @@ SHOP Gain: $ 13.69 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5
 SHOP Gain: $ 13.69 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_AV
 SHOP Gain: $ 16.01 Win %: 40.00 in 5 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_SS
 SHOP Gain: $ 16.01 Win %: 40.00 in 5 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_SS
+SHOP Gain: $ 17.29 Win %: 100.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_TS
+SHOP Gain: $ 17.29 Win %: 100.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_TS
 SHOP Gain: $ 18.53 Win %: 60.00 in 5 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_RV_TR
 SHOP Gain: $ 18.53 Win %: 60.00 in 5 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_RV_TR
 SHOP Gain: $ 19.75 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_HM_AV_DB15
 SHOP Gain: $ 19.75 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_HM_AV_DB15
 SHOP Gain: $ 22.73 Win %: 60.00 in 5 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_RV_AL
 SHOP Gain: $ 22.73 Win %: 60.00 in 5 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_RV_AL
+SHOP Gain: $ 22.74 Win %: 100.00 in 5 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_TS
+SHOP Gain: $ 22.74 Win %: 100.00 in 5 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_TS
 SHOP Gain: $ 25.35 Win %: 100.00 in 5 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_QP_IR1
 SHOP Gain: $ 25.35 Win %: 100.00 in 5 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_QP_IR1
 SHOP Gain: $ 26.49 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_RV_AV_DB15
@@ -88,6 +92,7 @@ SHOP Gain: $ 40.14 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5
 SHOP Gain: $ 40.14 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_LI
 SHOP Gain: $ 44.12 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_TR_IR4
 SHOP Gain: $ 44.12 Win %: 60.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_TR_IR4
+SHOP Gain: $ 49.31 Win %: 100.00 in 5 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_IT
 SHOP Gain: $ 49.31 Win %: 100.00 in 5 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_IT
 SHOP Gain: $ 49.31 Win %: 100.00 in 5 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 SHOP Gain: $ 49.31 Win %: 100.00 in 5 days with algo TB5_LO_QM_OB2_OS2_CB5_CS5_IT
@@ -141,6 +146,7 @@ SHOP Gain: $ 72.98 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5
 SHOP Gain: $ 74.1 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_RV_AL_DB15
 SHOP Gain: $ 74.1 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_RV_AL_DB15
 SHOP Gain: $ 74.97 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_IT
+SHOP Gain: $ 74.97 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5
 SHOP Gain: $ 74.97 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5
 SHOP Gain: $ 74.97 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_IT
 SHOP Gain: $ 77.41 Win %: 80.00 in 5 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_AO

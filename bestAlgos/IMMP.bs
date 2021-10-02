@@ -42,6 +42,7 @@ IMMP Gain: $ -0.05 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_IT
 IMMP Gain: $ -0.04 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_TR_QP_DB30
 IMMP Gain: $ -0.01 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_TR_QP
 IMMP Gain: $ 0 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_TR_QP_DB30
+IMMP Gain: $ 0.01 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_TS
 IMMP Gain: $ 0.01 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_IT
 IMMP Gain: $ 0.01 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_IT_QL
 IMMP Gain: $ 0.01 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_IT_QP
@@ -49,8 +50,9 @@ IMMP Gain: $ 0.01 Win %: 100.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_IT
 IMMP Gain: $ 0.01 Win %: 100.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_IT_QL
 IMMP Gain: $ 0.02 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_HM_QP_DB30
 IMMP Gain: $ 0.02 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_RV_QP_DB30
-IMMP Gain: $ 0.03 Win %: 100.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_IT_QP
+IMMP Gain: $ 0.02 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_TS
 IMMP Gain: $ 0.03 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_TR_QP
+IMMP Gain: $ 0.03 Win %: 100.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_IT_QP
 IMMP Gain: $ 0.04 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_TR
 IMMP Gain: $ 0.05 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_HM_QP
 IMMP Gain: $ 0.05 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_HM_TR
@@ -67,9 +69,9 @@ IMMP Gain: $ 0.08 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_DB3
 IMMP Gain: $ 0.08 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_HM_QP
 IMMP Gain: $ 0.08 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_QP
 IMMP Gain: $ 0.09 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_RV_QP
-IMMP Gain: $ 0.12 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_IT_QP_DB30
 IMMP Gain: $ 0.12 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_IT_QL_DB30
 IMMP Gain: $ 0.12 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_HM_TR
+IMMP Gain: $ 0.12 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_IT_QP_DB30
 IMMP Gain: $ 0.13 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_TR
 IMMP Gain: $ 0.14 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_HM_QP
 IMMP Gain: $ 0.14 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_QP
@@ -80,7 +82,9 @@ IMMP Gain: $ 0.14 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_RV_
 IMMP Gain: $ 0.15 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_IT_QL_DB30
 IMMP Gain: $ 0.16 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_RV_TR
 IMMP Gain: $ 0.17 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_TR_IR5
+IMMP Gain: $ 0.17 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_TS
 IMMP Gain: $ 0.17 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_TR_IR5
+IMMP Gain: $ 0.17 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_TS
 IMMP Gain: $ 0.26 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_TR_QP
 IMMP Gain: $ 0.26 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_VI
 IMMP Gain: $ 0.26 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_TR_QP
@@ -116,6 +120,7 @@ IMMP Gain: $ 0.71 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_AC
 IMMP Gain: $ 0.71 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_AO
 IMMP Gain: $ 0.71 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_AO_AC
 IMMP Gain: $ 0.71 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_IT
+IMMP Gain: $ 0.71 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_IT
 IMMP Gain: $ 0.71 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_IT_QL
 IMMP Gain: $ 0.71 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_QL
 IMMP Gain: $ 0.71 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_RV
@@ -138,6 +143,7 @@ IMMP Gain: $ 0.79 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_AO
 IMMP Gain: $ 0.79 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_AO_AC
 IMMP Gain: $ 0.79 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_QL
 IMMP Gain: $ 0.82 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB3_OS3_CB3_CS3_RV
+IMMP Gain: $ 0.83 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3
 IMMP Gain: $ 0.83 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3
 IMMP Gain: $ 0.83 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_AC
 IMMP Gain: $ 0.83 Win %: 66.00 in 3 days with algo TB1_EO_EC_QM_OB3_OS3_CB3_CS3_AO

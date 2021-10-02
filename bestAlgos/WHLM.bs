@@ -58,6 +58,10 @@ WHLM Gain: $ -0.15 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5
 WHLM Gain: $ -0.15 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_HM_AV_DB30
 WHLM Gain: $ -0.03 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_RV_TR_DB30
 WHLM Gain: $ -0.03 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
+WHLM Gain: $ 0.55 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_TS
+WHLM Gain: $ 0.55 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_TS
+WHLM Gain: $ 0.69 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_TS
+WHLM Gain: $ 0.69 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_TS
 WHLM Gain: $ 0.73 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_IT_QL_DB30
 WHLM Gain: $ 0.73 Win %: 66.00 in 3 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_IT_QL_DB30
 WHLM Gain: $ 1.76 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_AC
@@ -104,6 +108,7 @@ WHLM Gain: $ 3.76 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_
 WHLM Gain: $ 3.76 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_LI
 WHLM Gain: $ 3.92 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_AL
 WHLM Gain: $ 3.92 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_IT
+WHLM Gain: $ 3.92 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_IT
 WHLM Gain: $ 3.92 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_RV_AL
 WHLM Gain: $ 3.92 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_AL
 WHLM Gain: $ 3.92 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_IT
@@ -142,6 +147,7 @@ WHLM Gain: $ 4.63 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_AC
 WHLM Gain: $ 4.63 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_AO
 WHLM Gain: $ 4.63 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_AO_AC
 WHLM Gain: $ 4.63 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_IT
+WHLM Gain: $ 4.63 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5
 WHLM Gain: $ 4.63 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5
 WHLM Gain: $ 4.63 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_AC
 WHLM Gain: $ 4.63 Win %: 100.00 in 3 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_AO

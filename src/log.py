@@ -84,6 +84,12 @@ class Log:
       
    def logIt(self, action, price, barLength, time, numTrades):
       totGain = grandTotal = ""
+      
+      time = time.split()
+      time = time[1]
+      
+      print("Time with no year " + str(time))
+
       if action == 1:
          self.strAction = "buy"
          self.priceSet = float(price)

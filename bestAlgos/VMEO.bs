@@ -13,6 +13,7 @@ VMEO Gain: $ -5.38 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_HM
 VMEO Gain: $ -5.37 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_RV
 VMEO Gain: $ -5.32 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_IT
 VMEO Gain: $ -5.32 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_SS
+VMEO Gain: $ -5.32 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_TS
 VMEO Gain: $ -4.92 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_DB8
 VMEO Gain: $ -2.84 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_TR_QP
 VMEO Gain: $ -2.78 Win %: 0 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_AO_AC
@@ -108,13 +109,16 @@ VMEO Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB5_OS5_CB5_CS5
 VMEO Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB5_OS5_CB5_CS5_RV_QP
 VMEO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB2_CS2_QL
 VMEO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB2_CS2_SS
+VMEO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB2_CS2_TS
 VMEO Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_HM_AV
 VMEO Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB2_CS2_DB8
 VMEO Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB2_CS2_RV
 VMEO Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_AV
 VMEO Gain: $ 0.42 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_PM
 VMEO Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_LI
+VMEO Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB5_OS5_CB5_CS5_TS
 VMEO Gain: $ 0.57 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB2_CS2_PM
+VMEO Gain: $ 0.67 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_TS
 VMEO Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_HM_AV_DB6
 VMEO Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_HM_TR
 VMEO Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_HM_TR_DB6
@@ -122,6 +126,7 @@ VMEO Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_HM
 VMEO Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_HM_AV
 VMEO Gain: $ 0.75 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB5_OS5_CB5_CS5_HM
 VMEO Gain: $ 0.76 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_RV
+VMEO Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1
 VMEO Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_DB6
 VMEO Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_QL
 VMEO Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB2_CS2_AO
@@ -136,6 +141,7 @@ VMEO Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB5_OS5_CB5_CS5
 VMEO Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_RV_TR
 VMEO Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_RV_TR_DB6
 VMEO Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_TR
+VMEO Gain: $ 0.93 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB5_OS5_CB5_CS5_PM
 VMEO Gain: $ 0.93 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB5_OS5_CB5_CS5_PM
 VMEO Gain: $ 0.96 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_RV_AV_DB8
 VMEO Gain: $ 0.97 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB4_OS4_CB1_CS1_AV

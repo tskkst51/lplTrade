@@ -72,6 +72,7 @@ AEI Gain: $ 0.02 Win %: 50.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_TR_Q
 AEI Gain: $ 0.02 Win %: 50.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_TR_QP_DB6
 AEI Gain: $ 0.06 Win %: 100.00 in 2 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_HM_TR_DB8
 AEI Gain: $ 0.06 Win %: 100.00 in 2 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_PM
+AEI Gain: $ 0.06 Win %: 100.00 in 2 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_PM
 AEI Gain: $ 0.06 Win %: 100.00 in 2 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_HM_TR_DB8
 AEI Gain: $ 0.06 Win %: 100.00 in 2 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_PM
 AEI Gain: $ 0.07 Win %: 100.00 in 2 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_DB8
@@ -131,6 +132,7 @@ AEI Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_SS
 AEI Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_TR
 AEI Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_TR_IR1
 AEI Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5
+AEI Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5
 AEI Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_AC
 AEI Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_AL
 AEI Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_AO
@@ -157,5 +159,9 @@ AEI Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_RV_
 AEI Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_SS
 AEI Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_TR
 AEI Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_TR_IR1
+AEI Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_TS
+AEI Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_TS
 AEI Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_PM
+AEI Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_TS
 AEI Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_PM
+AEI Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_TS

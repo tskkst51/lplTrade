@@ -116,6 +116,7 @@ FAST Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB1_CS1_QP
 FAST Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB1_CS1_RV_QP
 FAST Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_QP_IR3
 FAST Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB1_CS1_IT
+FAST Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB1_CS1_IT
 FAST Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB1_CS1_IT_QL
 FAST Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB1_CS1_HM_AV_DB8
 FAST Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB1_CS1_RV_AV_DB8
@@ -129,6 +130,10 @@ FAST Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB1_CS1_HM
 FAST Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB1_CS1_QL
 FAST Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB1_CS1_RV
 FAST Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB1_CS1_SS
+FAST Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB1_OS1_CB1_CS1_TS
+FAST Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_TS
+FAST Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB3_CS3_TS
+FAST Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_TS
 FAST Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_AC
 FAST Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_AO
 FAST Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB3_CS3_AO_AC
@@ -148,6 +153,7 @@ FAST Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB3_CS3_QL
 FAST Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB3_CS3_RV
 FAST Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB3_CS3_SS
 FAST Gain: $ 0.94 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_SS
+FAST Gain: $ 1.02 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3
 FAST Gain: $ 1.02 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3
 FAST Gain: $ 1.02 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_AC
 FAST Gain: $ 1.02 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB3_CS3_AO

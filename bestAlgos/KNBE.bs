@@ -59,9 +59,12 @@ KNBE Gain: $ 0.33 Win %: 75.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_
 KNBE Gain: $ 0.54 Win %: 50.00 in 4 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_RV_AL_DB30
 KNBE Gain: $ 0.54 Win %: 50.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_RV_AL_DB30
 KNBE Gain: $ 0.81 Win %: 50.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_PM
+KNBE Gain: $ 0.81 Win %: 50.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_PM
 KNBE Gain: $ 0.81 Win %: 50.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_PM
 KNBE Gain: $ 0.92 Win %: 50.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_RV_AV_DB15
 KNBE Gain: $ 0.92 Win %: 50.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_RV_AV_DB15
+KNBE Gain: $ 1.24 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_TS
+KNBE Gain: $ 1.24 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_TS
 KNBE Gain: $ 1.28 Win %: 50.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_RV_AL_DB15
 KNBE Gain: $ 1.28 Win %: 50.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_RV_AL_DB15
 KNBE Gain: $ 1.32 Win %: 50.00 in 4 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_HM_TR_DB30
@@ -88,6 +91,8 @@ KNBE Gain: $ 2.77 Win %: 75.00 in 4 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_
 KNBE Gain: $ 2.77 Win %: 75.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_AV
 KNBE Gain: $ 3.21 Win %: 75.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_AO_AC
 KNBE Gain: $ 3.21 Win %: 75.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_AO_AC
+KNBE Gain: $ 3.43 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_TS
+KNBE Gain: $ 3.43 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_TS
 KNBE Gain: $ 3.44 Win %: 75.00 in 4 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_AL
 KNBE Gain: $ 3.44 Win %: 75.00 in 4 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_RV_AL
 KNBE Gain: $ 3.44 Win %: 75.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_AL
@@ -142,6 +147,7 @@ KNBE Gain: $ 8.82 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5
 KNBE Gain: $ 8.82 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_IT
 KNBE Gain: $ 8.82 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_IT_QL
 KNBE Gain: $ 8.82 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_QL
+KNBE Gain: $ 8.82 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5
 KNBE Gain: $ 8.82 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5
 KNBE Gain: $ 8.82 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_AC
 KNBE Gain: $ 8.82 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_AO

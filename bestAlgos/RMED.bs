@@ -63,6 +63,10 @@ RMED Gain: $ 0.37 Win %: 66.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_
 RMED Gain: $ 0.37 Win %: 66.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_IT_QL_DB8
 RMED Gain: $ 0.42 Win %: 66.00 in 3 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1_RV_AL_DB30
 RMED Gain: $ 0.43 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1_IT_QL_DB30
+RMED Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB4_EO_EC_QM_OB1_OS1_CB5_CS5_TS
+RMED Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_TS
+RMED Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_TS
+RMED Gain: $ 0.5 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1_TS
 RMED Gain: $ 0.54 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1_HM_QP
 RMED Gain: $ 0.54 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1_QP
 RMED Gain: $ 0.54 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1_RV_QP
@@ -117,6 +121,7 @@ RMED Gain: $ 4.12 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_AO
 RMED Gain: $ 4.12 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_AO_AC
 RMED Gain: $ 4.12 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_HM
 RMED Gain: $ 4.12 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_IT
+RMED Gain: $ 4.12 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_IT
 RMED Gain: $ 4.12 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_IT_QL
 RMED Gain: $ 4.12 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_QL
 RMED Gain: $ 4.12 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_RV
@@ -140,6 +145,7 @@ RMED Gain: $ 4.32 Win %: 100.00 in 3 days with algo TB4_EO_EC_QM_OB1_OS1_CB5_CS5
 RMED Gain: $ 4.32 Win %: 100.00 in 3 days with algo TB4_EO_EC_QM_OB1_OS1_CB5_CS5_RV_AL
 RMED Gain: $ 4.32 Win %: 100.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_AL
 RMED Gain: $ 4.32 Win %: 100.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB5_CS5_RV_AL
+RMED Gain: $ 4.49 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1
 RMED Gain: $ 4.49 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1
 RMED Gain: $ 4.49 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1_AC
 RMED Gain: $ 4.49 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1_AO

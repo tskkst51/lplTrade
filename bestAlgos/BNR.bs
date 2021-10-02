@@ -68,6 +68,10 @@ BNR Gain: $ 0.42 Win %: 50.00 in 2 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_R
 BNR Gain: $ 0.42 Win %: 50.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_RV_AV
 BNR Gain: $ 0.59 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_VI
 BNR Gain: $ 0.59 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_VI
+BNR Gain: $ 0.78 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_TS
+BNR Gain: $ 0.78 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_TS
+BNR Gain: $ 0.79 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_TS
+BNR Gain: $ 0.79 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_TS
 BNR Gain: $ 0.88 Win %: 50.00 in 2 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_VI
 BNR Gain: $ 0.88 Win %: 50.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_VI
 BNR Gain: $ 0.98 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_HM_TR_DB10
@@ -98,10 +102,10 @@ BNR Gain: $ 1.82 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_DB10
 BNR Gain: $ 1.82 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_DB10
 BNR Gain: $ 1.89 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_LI
 BNR Gain: $ 1.89 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_LI
-BNR Gain: $ 2.16 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_LI
-BNR Gain: $ 2.16 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_LI
 BNR Gain: $ 2.16 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_IR3
 BNR Gain: $ 2.16 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_IR3
+BNR Gain: $ 2.16 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_LI
+BNR Gain: $ 2.16 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_LI
 BNR Gain: $ 2.2 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_IT_QL_DB10
 BNR Gain: $ 2.2 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_IT_QL_DB10
 BNR Gain: $ 2.37 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_AL
@@ -123,6 +127,7 @@ BNR Gain: $ 3.4 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_S
 BNR Gain: $ 3.41 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_AC
 BNR Gain: $ 3.41 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_AC
 BNR Gain: $ 3.44 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_IT
+BNR Gain: $ 3.44 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_IT
 BNR Gain: $ 3.44 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 BNR Gain: $ 3.44 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_QL
 BNR Gain: $ 3.44 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_IT
@@ -138,6 +143,7 @@ BNR Gain: $ 3.67 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_IT
 BNR Gain: $ 3.67 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_IT_QL
 BNR Gain: $ 3.67 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_QL
 BNR Gain: $ 3.67 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB1_OS1_CB4_CS4_SS
+BNR Gain: $ 3.67 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4
 BNR Gain: $ 3.67 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4
 BNR Gain: $ 3.67 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_AC
 BNR Gain: $ 3.67 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB2_OS2_CB4_CS4_AO

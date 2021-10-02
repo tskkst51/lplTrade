@@ -1,0 +1,8 @@
+## Tracking live conditions
+## Ran with s/keepAliveM.sh
+
+9/15/21
+
+5 stocks
+6 days of data
+

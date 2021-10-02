@@ -44,6 +44,7 @@ INM Gain: $ -0.39 Win %: 0 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_IT
 INM Gain: $ -0.39 Win %: 0 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_RV
 INM Gain: $ -0.39 Win %: 0 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TR
 INM Gain: $ -0.39 Win %: 0 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TR_IR1
+INM Gain: $ -0.39 Win %: 0 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TS
 INM Gain: $ -0.37 Win %: 0 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_DB6
 INM Gain: $ -0.37 Win %: 0 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_HM_TR_DB6
 INM Gain: $ -0.37 Win %: 0 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_IT_QP_DB6
@@ -105,6 +106,7 @@ INM Gain: $ -0.11 Win %: 0 in 1 days with algo TB1_HI_QM_OB2_OS2_CB3_CS3_TR
 INM Gain: $ -0.11 Win %: 0 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1_HM_TR
 INM Gain: $ -0.11 Win %: 0 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_LI
 INM Gain: $ -0.08 Win %: 0 in 1 days with algo TB1_HI_QM_OB2_OS2_CB3_CS3_PM
+INM Gain: $ -0.08 Win %: 0 in 1 days with algo TB1_HI_QM_OB2_OS2_CB3_CS3_PM
 INM Gain: $ -0.07 Win %: 0 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_RV_AL
 INM Gain: $ -0.07 Win %: 0 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TR_QP
 INM Gain: $ -0.03 Win %: 0 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_HM_QP_DB6
@@ -137,6 +139,9 @@ INM Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_RV_
 INM Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_RV_TR
 INM Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_SS
 INM Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_TR
+INM Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB3_CS3_TS
+INM Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1_TS
+INM Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_TS
 INM Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB3_CS3_IT
 INM Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB3_CS3_IT_QL
 INM Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB3_CS3_AC
@@ -146,6 +151,7 @@ INM Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB3_CS3_HM
 INM Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB3_CS3_QL
 INM Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB3_CS3_RV
 INM Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB3_CS3_SS
+INM Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1
 INM Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1
 INM Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1_HM_AV
 INM Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1_IT_QL

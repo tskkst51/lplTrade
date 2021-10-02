@@ -10,7 +10,9 @@ COUR Gain: $ -2.2 Win %: 0 in 1 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_AO
 COUR Gain: $ -2.2 Win %: 0 in 1 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_AO_AC
 COUR Gain: $ -2.2 Win %: 0 in 1 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_DB15
 COUR Gain: $ -2.2 Win %: 0 in 1 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_IT
+COUR Gain: $ -2.2 Win %: 0 in 1 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_IT
 COUR Gain: $ -2.2 Win %: 0 in 1 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_SS
+COUR Gain: $ -2.2 Win %: 0 in 1 days with algo TB2_EO_EC_QM_OB5_OS5_CB5_CS5_TS
 COUR Gain: $ -2.18 Win %: 0 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_RV_QP
 COUR Gain: $ -2.14 Win %: 0 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_IT_QP
 COUR Gain: $ -2.14 Win %: 0 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_QP
@@ -60,6 +62,7 @@ COUR Gain: $ -0.78 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB2_CS2_HM
 COUR Gain: $ -0.78 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB2_CS2_IT
 COUR Gain: $ -0.78 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB2_CS2_IT_QL
 COUR Gain: $ -0.78 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB2_CS2_QL
+COUR Gain: $ -0.78 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB2_CS2_TS
 COUR Gain: $ -0.78 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB5_CS5_RV_TR_DB8
 COUR Gain: $ -0.72 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB2_CS2_DB8
 COUR Gain: $ -0.72 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB2_CS2_IT_QL_DB8
@@ -86,6 +89,7 @@ COUR Gain: $ -0.27 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB2_CS2_SS
 COUR Gain: $ -0.22 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB5_CS5_RV_QP_DB8
 COUR Gain: $ -0.22 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB5_CS5_SS
 COUR Gain: $ -0.19 Win %: 0 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_HM_TR_DB10
+COUR Gain: $ -0.18 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB5_CS5
 COUR Gain: $ -0.18 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB5_CS5
 COUR Gain: $ -0.18 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB5_CS5_AC
 COUR Gain: $ -0.18 Win %: 0 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB5_CS5_AO
@@ -134,6 +138,7 @@ COUR Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB5_CS5
 COUR Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB2_CS2_RV_AV
 COUR Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB5_CS5_RV_AL
 COUR Gain: $ 0.68 Win %: 100.00 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB5_CS5_RV_AV
+COUR Gain: $ 0.71 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_TS
 COUR Gain: $ 0.72 Win %: 100.00 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB2_CS2_RV_AL
 COUR Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_IT
 COUR Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_IT_QL
@@ -148,6 +153,7 @@ COUR Gain: $ 1.07 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1
 COUR Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_AV
 COUR Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_HM_AV
 COUR Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_RV_AV
+COUR Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB5_CS5_TS
 COUR Gain: $ 1.32 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_QL
 COUR Gain: $ 1.32 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_SS
 COUR Gain: $ 1.39 Win %: 100.00 in 1 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_RV

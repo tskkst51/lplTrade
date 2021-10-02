@@ -259,6 +259,8 @@ class Algorithm():
 
       self.setNextBar(bar + 1)
 
+      print ("HHEERREE")
+
       bar -= 1
                      
       self.bc.setAvgBarLen(bc, bar)
@@ -383,7 +385,7 @@ class Algorithm():
       exitAlgo = 3
       
       if self.doInPosTracking:
-         if self.algorithmPriceTracking(action):
+         if self.algorithmPriceTracking(last, action):
             # We exited do to positive position turning negative
             self.closePosition(bar, barChart, bid, ask, 1)
             return 4
@@ -1592,28 +1594,54 @@ class Algorithm():
       return action
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def algorithmPriceTracking(self, action=0):
+   def algorithmPriceTracking(self, last, action=0):
       
       self.lg.debug("In algorithmPriceTracking: " + str(action))
 
       # If in a position and in a profit, monitor it
       # Don't let a profit turn into a loss.
+      # Don't let a loss get over it's limit.
       
       if not self.inPosition():
          return 0
       
       tGain = self.getTotalGain()
       
-      # doTrailingStop handles the first position
-      if tGain == 0.0 and self.numTrades < 1:
+      if tGain == 0:
+         if self.buy:
+            tGain = self.openPositionPrice + last
+         else:
+            tGain = self.openPositionPrice - last
+
+      print ("tGain " + str(tGain))
+      
+#      if tGain == 0.0 and self.numTrades < 1:
+#         return 0
+      
+      if tGain == 0.0:
          return 0
       
       if self.positionType == self.buy:
          last = self.getCurrentAsk()
          self.lg.debug("Last ask price: " + str(last))
+
+         if last < self.openPositionPrice:
+            if tGain > 0:
+               self.lg.debug("Position is losing money: ")
+               self.lg.debug("-" + str(self.openPositionPrice - last))
+               if self.exitWProfit(tGain, self.openPositionPrice - last):
+                  self.lg.debug("Exiting with inPos profit: ")
+                  self.setInPosGain()
+                  return 1
+               
+            elif tGain < 0:
+               self.lg.debug("Position is adding to the current loss: ")
+               self.lg.debug(str(tGain) + " -" + str(self.openPositionPrice - last))
+               
+
       else:
-         self.lg.debug("Last bid price: " + str(last))
          last = self.getCurrentBid()
+         self.lg.debug("Last bid price: " + str(last))
 
       if last == 0.0 or last == 0:
          return 0
@@ -1650,6 +1678,13 @@ class Algorithm():
       
       self.lg.debug("In algorithmDynamic: " + str(action))
 
+      # Too many times trends are a + gain. Don't let them turn negative
+      if doTrends:
+         doInPosTracking += 1
+
+      # Turn on quick loss 
+      
+      
       # Detect range bound condition and get out or turn on IR
       
       # Turn QP on during first ~30 min of trading
@@ -2404,18 +2439,18 @@ class Algorithm():
       # Increase profit target % for lower priced stocks
 
       priceLimits = self.priceLimits.split(',')
-      numPriceLimits = len(priceLimits)
+      lenPriceLimits = len(priceLimits)
       
       # "priceLimits": "5,10,20,50,100,200,500,1000,4000",
 
-      for l in range(numPriceLimits):
+      for l in range(lenPriceLimits):
          if price <= int(priceLimits[l]):
-            self.lg.info("Initial Min Profit pct set to " +  str(pct) + " number of prices " + str(numPriceLimits))
+            self.lg.info("Initial Min Profit pct set to " +  str(pct) + " number of prices " + str(lenPriceLimits))
             self.lg.info("priceLimits "  + str(priceLimits))
-            pct *= (numPriceLimits - l) / self.priceLimitDivider
-            self.lg.info("numPriceLimits " + str(numPriceLimits) + " ctr " + str(l))
+            pct *= (lenPriceLimits - l) / self.priceLimitDivider
+            self.lg.info("lenPriceLimits " + str(lenPriceLimits) + " ctr " + str(l))
             self.lg.info("self.priceLimitDivider " + str(self.priceLimitDivider))
-            self.lg.info("Min Profit = price * (pct * (numPriceLimits - ctr / priceLimitDivider)) " + str(pct))
+            self.lg.info("Min Profit = price * (pct * (lenPriceLimits - ctr / priceLimitDivider)) " + str(pct))
             break
 
       self.targetProfit = round(price * pct, 2)
@@ -2428,18 +2463,18 @@ class Algorithm():
       # Increase profit target % for lower priced stocks
 
       priceLimits = self.priceLimits.split(',')
-      numPriceLimits = len(priceLimits)
+      lenPriceLimits = len(priceLimits)
       
       # "priceLimits": "5,10,20,50,100,200,500,1000,4000",
 
-      for l in range(numPriceLimits):
+      for l in range(lenPriceLimits):
          if price <= int(priceLimits[l]):
-            self.lg.info("Initial max loss pct set to " +  str(pct) + " number of prices " + str(numPriceLimits))
+            self.lg.info("Initial max loss pct set to " +  str(pct) + " number of prices " + str(lenPriceLimits))
             self.lg.info("priceLimits "  + str(priceLimits))
-            pct *= (numPriceLimits - l) / self.priceLimitDivider
-            self.lg.info("numPriceLimits " + str(numPriceLimits) + " ctr " + str(l))
+            pct *= (lenPriceLimits - l) / self.priceLimitDivider
+            self.lg.info("lenPriceLimits " + str(lenPriceLimits) + " ctr " + str(l))
             self.lg.info("self.priceLimitDivider " + str(self.priceLimitDivider))
-            self.lg.info("Max loss = price * (pct * (numPriceLimits - ctr / priceLimitDivider)) " + str(pct))
+            self.lg.info("Max loss = price * (pct * (lenPriceLimits - ctr / priceLimitDivider)) " + str(pct))
             break
 
       self.targetLoss = round(price * pct, 2)*-1

@@ -72,6 +72,8 @@ CRTD Gain: $ -0.41 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_VI
 CRTD Gain: $ -0.4 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_AV
 CRTD Gain: $ -0.4 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_RV_AV_DB15
 CRTD Gain: $ -0.38 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_LI
+CRTD Gain: $ -0.37 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_TS
+CRTD Gain: $ -0.37 Win %: 66.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_TS
 CRTD Gain: $ -0.35 Win %: 0 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_IT_QL_DB15
 CRTD Gain: $ -0.33 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_RV
 CRTD Gain: $ -0.32 Win %: 0 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_IT_QL
@@ -84,6 +86,7 @@ CRTD Gain: $ -0.2 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_AC
 CRTD Gain: $ -0.2 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_AO
 CRTD Gain: $ -0.2 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_AO_AC
 CRTD Gain: $ -0.2 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_IT
+CRTD Gain: $ -0.2 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_IT
 CRTD Gain: $ -0.1 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_SS
 CRTD Gain: $ -0.06 Win %: 33.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_HM_AV
 CRTD Gain: $ -0.02 Win %: 33.00 in 3 days with algo TB2_HL_QM_OB1_OS1_CB3_CS3_IR4
@@ -94,6 +97,8 @@ CRTD Gain: $ 0.3 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_L
 CRTD Gain: $ 0.3 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_LI
 CRTD Gain: $ 0.35 Win %: 66.00 in 3 days with algo TB2_HL_QM_OB1_OS1_CB3_CS3_RV_TR
 CRTD Gain: $ 0.35 Win %: 66.00 in 3 days with algo TB2_HL_QM_OB1_OS1_CB3_CS3_TR
+CRTD Gain: $ 0.36 Win %: 100.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_TS
+CRTD Gain: $ 0.37 Win %: 100.00 in 3 days with algo TB2_HL_QM_OB1_OS1_CB3_CS3_TS
 CRTD Gain: $ 0.42 Win %: 66.00 in 3 days with algo TB2_HL_QM_OB1_OS1_CB3_CS3_HM_TR
 CRTD Gain: $ 0.44 Win %: 66.00 in 3 days with algo TB2_HL_QM_OB1_OS1_CB3_CS3_TR_IR4
 CRTD Gain: $ 0.49 Win %: 100.00 in 3 days with algo TB2_LO_QM_OB5_OS5_CB2_CS2_RV_AL_DB15
@@ -126,6 +131,7 @@ CRTD Gain: $ 1.32 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_
 CRTD Gain: $ 1.32 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_RV_TR
 CRTD Gain: $ 1.32 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_SS
 CRTD Gain: $ 1.32 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_TR
+CRTD Gain: $ 1.32 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5
 CRTD Gain: $ 1.32 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5
 CRTD Gain: $ 1.32 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_AC
 CRTD Gain: $ 1.32 Win %: 33.00 in 3 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_AO

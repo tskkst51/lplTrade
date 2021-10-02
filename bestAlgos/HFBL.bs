@@ -91,6 +91,7 @@ HFBL Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_RV_TR
 HFBL Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_SS
 HFBL Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_TR
 HFBL Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_TR_IR3
+HFBL Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_TS
 HFBL Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_AC
 HFBL Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_AL
 HFBL Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_AO
@@ -110,6 +111,8 @@ HFBL Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_RV_TR
 HFBL Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_SS
 HFBL Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_TR
 HFBL Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_TR_IR3
+HFBL Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_TS
+HFBL Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_PM
 HFBL Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_PM
 HFBL Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_QP_PM
 HFBL Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS3_PM
@@ -139,6 +142,8 @@ HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB3_CS3_RV
 HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB3_CS3_SS
 HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB3_CS3_TR
 HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB3_CS3_TR_IR2
+HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB1_OS1_CB3_CS3_TS
+HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3
 HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3
 HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_AC
 HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_AL
@@ -159,3 +164,4 @@ HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_RV
 HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_SS
 HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_TR
 HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_TR_IR2
+HFBL Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_TS

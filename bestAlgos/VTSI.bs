@@ -41,6 +41,7 @@ VTSI Gain: $ -1.79 Win %: 0 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB2_CS2_DB6
 VTSI Gain: $ -1.79 Win %: 0 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB2_CS2_HM
 VTSI Gain: $ -1.79 Win %: 0 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB2_CS2_IT
 VTSI Gain: $ -1.79 Win %: 0 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB2_CS2_SS
+VTSI Gain: $ -1.79 Win %: 0 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB2_CS2_TS
 VTSI Gain: $ -1.72 Win %: 0 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB2_CS2_TR_QP
 VTSI Gain: $ -1.72 Win %: 0 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB2_CS2_TR_QP_DB6
 VTSI Gain: $ -1.7 Win %: 0 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB2_CS2_HM_QP
@@ -85,6 +86,8 @@ VTSI Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB2_CS2
 VTSI Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB4_OS4_CB2_CS2_IT_QP_DB6
 VTSI Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_IT_QP_DB10
 VTSI Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_IT_QP_DB10
+VTSI Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_TS
+VTSI Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_TS
 VTSI Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_RV_AL_DB10
 VTSI Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_RV_AL_DB10
 VTSI Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_HM_QP
@@ -136,6 +139,7 @@ VTSI Gain: $ 1.66 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_AO
 VTSI Gain: $ 1.66 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_AO_AC
 VTSI Gain: $ 1.66 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_HM
 VTSI Gain: $ 1.66 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_IT
+VTSI Gain: $ 1.66 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_IT
 VTSI Gain: $ 1.66 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_SS
 VTSI Gain: $ 1.66 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_AC
 VTSI Gain: $ 1.66 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_AO
@@ -144,10 +148,12 @@ VTSI Gain: $ 1.66 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_HM
 VTSI Gain: $ 1.66 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_IT
 VTSI Gain: $ 1.66 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_SS
 VTSI Gain: $ 1.86 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1
+VTSI Gain: $ 1.86 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1
 VTSI Gain: $ 1.86 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1_HM
 VTSI Gain: $ 1.86 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1_IT
 VTSI Gain: $ 1.86 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1_IT_QL
 VTSI Gain: $ 1.86 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1_QL
 VTSI Gain: $ 1.86 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1_RV
 VTSI Gain: $ 1.86 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1_SS
+VTSI Gain: $ 1.86 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1_TS
 VTSI Gain: $ 1.97 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1_IR1

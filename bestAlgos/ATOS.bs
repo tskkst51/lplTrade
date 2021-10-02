@@ -1,3 +1,6 @@
+ATOS Gain: $ Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_AV
+ATOS Gain: $ Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_AV
+ATOS Gain: $ Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_AV
 ATOS Gain: $ -1.69 Win %: 25.00 in 4 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_TR_QP
 ATOS Gain: $ -1.54 Win %: 0 in 4 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_RV_AL_DB30
 ATOS Gain: $ -1.48 Win %: 25.00 in 4 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_HM_TR_DB30
@@ -58,9 +61,6 @@ ATOS Gain: $ -0.03 Win %: 50.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2
 ATOS Gain: $ -0.03 Win %: 50.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_AL
 ATOS Gain: $ -0.03 Win %: 50.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_AL
 ATOS Gain: $ 0 Win %: 75.00 in 4 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_IT_QP
-ATOS Gain: $ Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_AV
-ATOS Gain: $ Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_AV
-ATOS Gain: $ Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_AV
 ATOS Gain: $ 0.02 Win %: 50.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_RV_AL
 ATOS Gain: $ 0.02 Win %: 50.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_RV_AL
 ATOS Gain: $ 0.02 Win %: 50.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_RV_AL
@@ -99,6 +99,7 @@ ATOS Gain: $ 0.42 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_
 ATOS Gain: $ 0.42 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_VI
 ATOS Gain: $ 0.42 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_VI
 ATOS Gain: $ 0.43 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_PM
+ATOS Gain: $ 0.43 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_PM
 ATOS Gain: $ 0.43 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_RV_TR
 ATOS Gain: $ 0.43 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_PM
 ATOS Gain: $ 0.43 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_RV_TR
@@ -123,6 +124,7 @@ ATOS Gain: $ 0.64 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2
 ATOS Gain: $ 0.66 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_AC
 ATOS Gain: $ 0.66 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_AC
 ATOS Gain: $ 0.66 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_AC
+ATOS Gain: $ 0.69 Win %: 100.00 in 4 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_TS
 ATOS Gain: $ 0.73 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_SS
 ATOS Gain: $ 0.73 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_SS
 ATOS Gain: $ 0.73 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_SS
@@ -137,6 +139,9 @@ ATOS Gain: $ 0.8 Win %: 100.00 in 4 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_IT_
 ATOS Gain: $ 0.81 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_AO
 ATOS Gain: $ 0.81 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_AO
 ATOS Gain: $ 0.81 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_AO
+ATOS Gain: $ 0.84 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_TS
+ATOS Gain: $ 0.84 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_TS
+ATOS Gain: $ 0.84 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_TS
 ATOS Gain: $ 0.86 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_IT_QL_DB8
 ATOS Gain: $ 0.86 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_IT_QL_DB8
 ATOS Gain: $ 0.86 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_IT_QL_DB8
@@ -151,11 +156,12 @@ ATOS Gain: $ 1.03 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1
 ATOS Gain: $ 1.03 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_RV
 ATOS Gain: $ 1.03 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_HM
 ATOS Gain: $ 1.03 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_RV
+ATOS Gain: $ 1.05 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_HM_TR
+ATOS Gain: $ 1.05 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_HM_TR
+ATOS Gain: $ 1.05 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_HM_TR
+ATOS Gain: $ 1.05 Win %: 100.00 in 4 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3
 ATOS Gain: $ 1.05 Win %: 100.00 in 4 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3
 ATOS Gain: $ 1.05 Win %: 100.00 in 4 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_AC
 ATOS Gain: $ 1.05 Win %: 100.00 in 4 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_AO
 ATOS Gain: $ 1.05 Win %: 100.00 in 4 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_AO_AC
 ATOS Gain: $ 1.05 Win %: 100.00 in 4 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_QL
-ATOS Gain: $ 1.05 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB1_OS1_CB2_CS2_HM_TR
-ATOS Gain: $ 1.05 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB1_CS1_HM_TR
-ATOS Gain: $ 1.05 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB2_CS2_HM_TR

@@ -348,6 +348,7 @@ class Target:
                   gapCandidates[gKey] = gCurr / gAvg
                      
       print ("\ngap Candidates by amount > \n" + str(gapCandidates))
+      print ("\ngap Candidates len > \n" + str(len(gapCandidates)))
 
       return gapCandidates
       
@@ -539,6 +540,7 @@ class Target:
    def writeAnalysisData(self, path, oGaps, ldvGtr, ldvLess, vl, sp, tr, av):
 
       with open(path, "a+") as analyzeData:
+         analyzeData.write ("previous days volume > average volume")
          for v in av:
             analyzeData.write("avr daily vol\n")
             analyzeData.write(str(v))
@@ -589,12 +591,15 @@ class Target:
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def orderStocks(self, gapCandidates, lastDaysVolGtrCandidates, lastDaysVolLessCandidates, \
-         volumeCandidates, spreadCandidates, trendCandidates, betaCandidates, avgVolData, stocks):
+         volumeCandidates, spreadCandidates, trendCandidates, betaCandidates, avgVolData, stocks, daysBestStocks):
    
-      # Added doAvgVol 8/26/2021
-      doSpread = doGap = doAvgVol = 1
-      doVolLess = doVolGtr = doTrend = doBeta = doTestData = doVolume = 0
-            
+      doGap = 1
+      doVolLess = doVolGtr = doTrend = doBeta = doSpread = 0
+      doTestData = doVolume = doAvgVol = doBest = 0
+      
+      if len(daysBestStocks) > 0:
+         doBest += 1
+         
       ts = time()
       dt = str(datetime.fromtimestamp(ts).strftime('%Y%m%d'))
       path = "analyzeResults/" + dt + ".ay"
@@ -778,10 +783,27 @@ class Target:
          stocks = gtrStocks
          
          print ("stocks after lastDaysVolGtrCandidates > greaterVolumeThreshold\n" + str(self.greaterVolumeThreshold) + " "  + str(stocks))
-         
-      print ("stocks\n" + str(stocks))
-      print ("stocks len\n" + str(len(stocks)))
+
+      if doBest:
       
+         #daysBest = Ref = [3, 2, 1, 12, 11, 10, 9, 8, 7, 6, 5, 4]
+         #stocks =  Input = [9, 5, 2, 3, 10, 4, 11, 8]
+
+         print ("daysBestStocks " + str(daysBestStocks))
+         print ("stocks " + str(stocks))
+         
+         daysBestStocksS = set(daysBestStocks)
+         stocksS = set(stocks)
+         
+         #stocks = sorted(daysBestStocksS.intersection(stocksS), \
+         #                  key = daysBestStocks.index)
+                           
+         stocks = sorted(stocksS.intersection(daysBestStocksS), \
+                           key = stocks.index)
+
+         print ("days best ordered with preMarket stocks\n" + str(stocks))
+         exit (1)
+         
       return stocks
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

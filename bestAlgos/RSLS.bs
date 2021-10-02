@@ -76,6 +76,7 @@ RSLS Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_IT_QP
 RSLS Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_IT_QP
 RSLS Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_IT_QP
 RSLS Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_IT
+RSLS Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_IT
 RSLS Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_IT_QL
 RSLS Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_IT_QL_DB10
 RSLS Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_IT
@@ -88,9 +89,13 @@ RSLS Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_RV
 RSLS Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_RV_TR_DB10
 RSLS Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_RV_TR_DB10
 RSLS Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_TR
+RSLS Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_TS
 RSLS Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_HM_TR_DB15
+RSLS Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_TS
 RSLS Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_HM_TR_DB15
+RSLS Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_TS
 RSLS Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_HM_TR_DB15
+RSLS Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_TS
 RSLS Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_LI
 RSLS Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_LI
 RSLS Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_AL
@@ -137,6 +142,7 @@ RSLS Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_QL
 RSLS Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_SS
 RSLS Gain: $ 0.84 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_SS
 RSLS Gain: $ 0.84 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB4_CS4_SS
+RSLS Gain: $ 0.84 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4
 RSLS Gain: $ 0.84 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4
 RSLS Gain: $ 0.84 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB3_OS3_CB4_CS4_SS
 RSLS Gain: $ 1.07 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB1_OS1_CB4_CS4_HM

@@ -30,6 +30,7 @@ GMBL Gain: $ -1 Win %: 0 in 1 days with algo TB2_OO_QM_OB3_OS3_CB5_CS5_TR_QP
 GMBL Gain: $ -0.98 Win %: 0 in 1 days with algo TB2_OO_QM_OB3_OS3_CB5_CS5_TR_QP_DB15
 GMBL Gain: $ -0.9 Win %: 0 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_TR_QP_DB15
 GMBL Gain: $ -0.8 Win %: 0 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_PM
+GMBL Gain: $ -0.8 Win %: 0 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_PM
 GMBL Gain: $ -0.73 Win %: 0 in 1 days with algo TB2_OO_QM_OB3_OS3_CB5_CS5_LI
 GMBL Gain: $ -0.71 Win %: 0 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_LI
 GMBL Gain: $ -0.71 Win %: 0 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_RV_QP_DB15
@@ -72,8 +73,12 @@ GMBL Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB3_OS3_CB5_CS5_PM
 GMBL Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_IT_QP
 GMBL Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_IT_QP
 GMBL Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_DB15
+GMBL Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_TS
+GMBL Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB3_OS3_CB5_CS5_TS
 GMBL Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB3_OS3_CB5_CS5_HM_TR_DB15
 GMBL Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB3_OS3_CB5_CS5_RV_TR_DB15
+GMBL Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_TS
+GMBL Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_TS
 GMBL Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_HM
 GMBL Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_HM_AV
 GMBL Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_HM_TR
@@ -149,6 +154,7 @@ GMBL Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_IT
 GMBL Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_IT_QL
 GMBL Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_QL
 GMBL Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB3_CS3_RV
+GMBL Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3
 GMBL Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3
 GMBL Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_AC
 GMBL Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_AO

@@ -86,8 +86,12 @@ UAVS Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4
 UAVS Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4_AO
 UAVS Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_RV_TR
 UAVS Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_RV_TR_DB6
+UAVS Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4_TS
+UAVS Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_TS
 UAVS Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_AO
+UAVS Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_TS
 UAVS Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_IT
+UAVS Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB2_CS2_TS
 UAVS Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_LI
 UAVS Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB2_CS2_LI
 UAVS Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4_VI
@@ -125,6 +129,7 @@ UAVS Gain: $ 0.72 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4
 UAVS Gain: $ 0.72 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_TR_DB6
 UAVS Gain: $ 0.72 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4_IR1
 UAVS Gain: $ 0.72 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4_IT
+UAVS Gain: $ 0.72 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4_IT
 UAVS Gain: $ 0.72 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4_IT_QL
 UAVS Gain: $ 0.72 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4_IT_QL_DB6
 UAVS Gain: $ 0.72 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4_QL
@@ -147,6 +152,7 @@ UAVS Gain: $ 0.74 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5
 UAVS Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_AO
 UAVS Gain: $ 0.77 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_RV
 UAVS Gain: $ 0.78 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB2_CS2_HM
+UAVS Gain: $ 0.81 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB2_CS2
 UAVS Gain: $ 0.81 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB2_CS2
 UAVS Gain: $ 0.81 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS2_CB2_CS2_RV
 UAVS Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_SS

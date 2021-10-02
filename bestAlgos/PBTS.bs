@@ -49,6 +49,10 @@ PBTS Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_IT
 PBTS Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_IT_QP
 PBTS Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_TR_QP
 PBTS Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_TR_QP
+PBTS Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_TS
+PBTS Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_TS
+PBTS Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_TS
+PBTS Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_TS
 PBTS Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_HM_TR_DB30
 PBTS Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB1_OS1_CB4_CS4_TR_QP
 PBTS Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_TR_QP
@@ -104,6 +108,7 @@ PBTS Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_AO
 PBTS Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_AO_AC
 PBTS Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_AV
 PBTS Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_IT
+PBTS Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_IT
 PBTS Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_IT_QL
 PBTS Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_QL
 PBTS Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB3_CS3_RV
@@ -136,6 +141,7 @@ PBTS Gain: $ 1.2 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_RV
 PBTS Gain: $ 1.2 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_RV_AL
 PBTS Gain: $ 1.2 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_RV_TR
 PBTS Gain: $ 1.2 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB4_CS4_TR
+PBTS Gain: $ 1.2 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4
 PBTS Gain: $ 1.2 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4
 PBTS Gain: $ 1.2 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_AC
 PBTS Gain: $ 1.2 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_AL

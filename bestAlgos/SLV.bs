@@ -51,7 +51,9 @@ SLV Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB4_CS4_DB8
 SLV Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB4_CS4_IT_QL_DB8
 SLV Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB4_CS4_TR_QP_DB8
 SLV Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB3_CS3_RV_QP
+SLV Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB3_CS3_TS
 SLV Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_RV_QP
+SLV Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_TS
 SLV Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB3_CS3_RV_AL_DB8
 SLV Gain: $ 0.6 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_RV_AL_DB8
 SLV Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_RV_AL_DB8
@@ -60,6 +62,8 @@ SLV Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_TR_
 SLV Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB4_CS4_TR_QP
 SLV Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB3_CS3_TR_QP
 SLV Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_TR_QP
+SLV Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_TS
+SLV Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB4_CS4_TS
 SLV Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB3_CS3_AV
 SLV Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB3_CS3_RV_AV
 SLV Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_AV
@@ -115,6 +119,7 @@ SLV Gain: $ 1.14 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_AO
 SLV Gain: $ 1.14 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_AO_AC
 SLV Gain: $ 1.14 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_IR2
 SLV Gain: $ 1.14 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_IT
+SLV Gain: $ 1.14 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_IT
 SLV Gain: $ 1.14 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_IT_QL
 SLV Gain: $ 1.14 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_QL
 SLV Gain: $ 1.14 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_RV
@@ -136,6 +141,7 @@ SLV Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB3_CS3_IT
 SLV Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB3_CS3_IT_QL
 SLV Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB3_CS3_QL
 SLV Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB3_CS3_RV
+SLV Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3
 SLV Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3
 SLV Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_AC
 SLV Gain: $ 1.18 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB3_CS3_AO

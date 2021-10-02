@@ -2,6 +2,7 @@ MU Gain: $ -2.85 Win %: 50.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_A
 MU Gain: $ -2.49 Win %: 25.00 in 4 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_SS
 MU Gain: $ -2.48 Win %: 25.00 in 4 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_TR_QP
 MU Gain: $ -2.43 Win %: 25.00 in 4 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5
+MU Gain: $ -2.43 Win %: 25.00 in 4 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5
 MU Gain: $ -2.43 Win %: 25.00 in 4 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_AC
 MU Gain: $ -2.43 Win %: 25.00 in 4 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_AO
 MU Gain: $ -2.43 Win %: 25.00 in 4 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_AO_AC
@@ -15,6 +16,7 @@ MU Gain: $ -2.18 Win %: 25.00 in 4 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_RV_A
 MU Gain: $ -1.98 Win %: 25.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_HM_AV
 MU Gain: $ -1.9 Win %: 0 in 4 days with algo TB4_HI_QM_OB5_OS5_CB4_CS4_RV_TR_DB8
 MU Gain: $ -1.88 Win %: 25.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_VI
+MU Gain: $ -1.83 Win %: 25.00 in 4 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_TS
 MU Gain: $ -1.82 Win %: 25.00 in 4 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_QP_IR2
 MU Gain: $ -1.8 Win %: 25.00 in 4 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_LI
 MU Gain: $ -1.77 Win %: 50.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_AC
@@ -64,6 +66,7 @@ MU Gain: $ -0.23 Win %: 50.00 in 4 days with algo TB4_HI_QM_OB5_OS5_CB4_CS4_AC
 MU Gain: $ -0.23 Win %: 50.00 in 4 days with algo TB4_HI_QM_OB5_OS5_CB4_CS4_AO
 MU Gain: $ -0.23 Win %: 50.00 in 4 days with algo TB4_HI_QM_OB5_OS5_CB4_CS4_AO_AC
 MU Gain: $ -0.23 Win %: 50.00 in 4 days with algo TB4_HI_QM_OB5_OS5_CB4_CS4_QL
+MU Gain: $ -0.23 Win %: 50.00 in 4 days with algo TB4_HI_QM_OB5_OS5_CB4_CS4_TS
 MU Gain: $ -0.2 Win %: 75.00 in 4 days with algo TB4_HI_QM_OB5_OS5_CB4_CS4_IT_QP_DB8
 MU Gain: $ -0.19 Win %: 50.00 in 4 days with algo TB4_HI_QM_OB5_OS5_CB4_CS4_HM_QP_DB8
 MU Gain: $ -0.17 Win %: 50.00 in 4 days with algo TB4_HI_QM_OB5_OS5_CB4_CS4_TR_QP
@@ -91,6 +94,7 @@ MU Gain: $ 0.31 Win %: 50.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_AC
 MU Gain: $ 0.33 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_QP
 MU Gain: $ 0.4 Win %: 50.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_VI
 MU Gain: $ 0.41 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IT
+MU Gain: $ 0.41 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IT
 MU Gain: $ 0.41 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 MU Gain: $ 0.44 Win %: 50.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_HM_TR
 MU Gain: $ 0.44 Win %: 50.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_RV_TR_DB8
@@ -104,6 +108,7 @@ MU Gain: $ 0.55 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_IR
 MU Gain: $ 0.59 Win %: 75.00 in 4 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_IT_QL_DB8
 MU Gain: $ 0.65 Win %: 25.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_LI
 MU Gain: $ 0.66 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_QL
+MU Gain: $ 0.66 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_TS
 MU Gain: $ 0.67 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_IT_QL_DB8
 MU Gain: $ 0.73 Win %: 50.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_HM
 MU Gain: $ 0.77 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_RV_TR
@@ -117,14 +122,14 @@ MU Gain: $ 0.9 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_TR
 MU Gain: $ 0.9 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_TR_IR2
 MU Gain: $ 0.93 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_IT
 MU Gain: $ 0.93 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_IT_QL
-MU Gain: $ 0.95 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_SS
 MU Gain: $ 0.95 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_TR_QP_DB10
+MU Gain: $ 0.95 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_SS
 MU Gain: $ 0.98 Win %: 100.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QP
 MU Gain: $ 0.98 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_IT_QP
 MU Gain: $ 1.01 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_QP
 MU Gain: $ 1.1 Win %: 50.00 in 4 days with algo TB4_HI_QM_OB5_OS5_CB4_CS4_QP_IR2
-MU Gain: $ 1.13 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_AO
 MU Gain: $ 1.13 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_TR_IR3
+MU Gain: $ 1.13 Win %: 100.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_AO
 MU Gain: $ 1.14 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_TR
 MU Gain: $ 1.18 Win %: 50.00 in 4 days with algo TB4_HI_QM_OB5_OS5_CB4_CS4_HM_QP
 MU Gain: $ 1.24 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IR3
@@ -132,6 +137,7 @@ MU Gain: $ 1.24 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_IT
 MU Gain: $ 1.25 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_DB10
 MU Gain: $ 1.25 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_QL
 MU Gain: $ 1.25 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_SS
+MU Gain: $ 1.25 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_TS
 MU Gain: $ 1.27 Win %: 50.00 in 4 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_RV_TR_DB8
 MU Gain: $ 1.38 Win %: 50.00 in 4 days with algo TB4_HI_QM_OB5_OS5_CB4_CS4_HM_AV_DB8
 MU Gain: $ 1.39 Win %: 50.00 in 4 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_HM_TR_DB8

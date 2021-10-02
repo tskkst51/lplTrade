@@ -245,7 +245,6 @@ class Limits:
             self.lg.debug("aggressiveOpen: openBuyLimit lowest close ")
             
          else:
-            #self.openBuyLimit = self.getHighestCloseOpenPrice(numBars)
             self.openBuyLimit = self.getHighestClosePrice(numBars)
             self.lg.debug("default: openBuyLimit highest close")
           

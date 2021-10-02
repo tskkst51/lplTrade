@@ -26,6 +26,10 @@ CANF Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB5_CS5_IT
 CANF Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB5_CS5_QP_PM
 CANF Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_IT_QP_DB30
 CANF Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_IT_QP_DB30
+CANF Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_TS
+CANF Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_TS
+CANF Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB5_CS5_TS
+CANF Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB4_OS4_CB5_CS5_TS
 CANF Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB5_CS5_HM_QP
 CANF Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB5_CS5_QP
 CANF Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB5_CS5_QP_IR5
@@ -88,6 +92,7 @@ CANF Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_RV
 CANF Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
 CANF Gain: $ 0.95 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_LI
 CANF Gain: $ 0.95 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_PM
+CANF Gain: $ 0.95 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_PM
 CANF Gain: $ 0.95 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_LI
 CANF Gain: $ 0.95 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_PM
 CANF Gain: $ 0.95 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB5_CS5_LI
@@ -142,6 +147,7 @@ CANF Gain: $ 1.04 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB5_CS5_RV
 CANF Gain: $ 1.04 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB5_CS5_SS
 CANF Gain: $ 1.04 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB5_CS5_TR
 CANF Gain: $ 1.04 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB5_CS5_TR_IR5
+CANF Gain: $ 1.04 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB4_OS4_CB5_CS5
 CANF Gain: $ 1.04 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB4_OS4_CB5_CS5
 CANF Gain: $ 1.04 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB4_OS4_CB5_CS5_AC
 CANF Gain: $ 1.04 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB4_OS4_CB5_CS5_AL

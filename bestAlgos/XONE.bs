@@ -62,8 +62,8 @@ XONE Gain: $ 0.1 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_IT_Q
 XONE Gain: $ 0.1 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_IT_QP_DB10
 XONE Gain: $ 0.13 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_IT_QP
 XONE Gain: $ 0.13 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_IT_QP_DB10
-XONE Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB3_OS3_CB3_CS3_IT_QP_DB10
 XONE Gain: $ 0.15 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_RV_AL_DB10
+XONE Gain: $ 0.15 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB3_OS3_CB3_CS3_IT_QP_DB10
 XONE Gain: $ 0.2 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_QP
 XONE Gain: $ 0.21 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_HM_TR
 XONE Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_HM_TR_DB10
@@ -83,9 +83,9 @@ XONE Gain: $ 0.35 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_TR_
 XONE Gain: $ 0.35 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB3_OS3_CB3_CS3_TR_QP_DB10
 XONE Gain: $ 0.38 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_RV_TR
 XONE Gain: $ 0.4 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB3_OS3_CB3_CS3_RV_TR
+XONE Gain: $ 0.41 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_IR3
 XONE Gain: $ 0.41 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_RV_AL_DB10
 XONE Gain: $ 0.41 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_RV_AL_DB10
-XONE Gain: $ 0.41 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_IR3
 XONE Gain: $ 0.42 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_IT_QL_DB10
 XONE Gain: $ 0.42 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB3_OS3_CB3_CS3_HM_TR_DB10
 XONE Gain: $ 0.44 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB3_OS3_CB3_CS3_RV_AL_DB10
@@ -93,6 +93,7 @@ XONE Gain: $ 0.46 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_
 XONE Gain: $ 0.48 Win %: 50.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_HM
 XONE Gain: $ 0.49 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_HM
 XONE Gain: $ 0.49 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_HM
+XONE Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_IT
 XONE Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_IT
 XONE Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_IT_QL
 XONE Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_RV
@@ -112,6 +113,10 @@ XONE Gain: $ 0.69 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3
 XONE Gain: $ 0.72 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_DB10
 XONE Gain: $ 0.72 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_DB10
 XONE Gain: $ 0.78 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_RV_AL
+XONE Gain: $ 0.81 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_TS
+XONE Gain: $ 0.82 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB3_OS3_CB3_CS3_TS
+XONE Gain: $ 0.83 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_TS
+XONE Gain: $ 0.83 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_TS
 XONE Gain: $ 0.94 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_LI
 XONE Gain: $ 0.94 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_LI
 XONE Gain: $ 0.96 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB3_OS3_CB3_CS3_TR
@@ -141,6 +146,7 @@ XONE Gain: $ 1.16 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB3_OS3_CB3_CS3_AC
 XONE Gain: $ 1.16 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB3_OS3_CB3_CS3_AO
 XONE Gain: $ 1.16 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB3_OS3_CB3_CS3_AO_AC
 XONE Gain: $ 1.16 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB3_OS3_CB3_CS3_QL
+XONE Gain: $ 1.18 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3
 XONE Gain: $ 1.18 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3
 XONE Gain: $ 1.18 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_AC
 XONE Gain: $ 1.18 Win %: 100.00 in 2 days with algo TB3_EO_EC_QM_OB3_OS3_CB3_CS3_AO

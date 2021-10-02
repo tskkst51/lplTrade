@@ -12,6 +12,7 @@ function endIt {
 }
 
 function pushData {
+   
    tarFile=$1
 
    cd ${wp}/../lpltArchives || echo cant cd to ../lpltArchives
@@ -29,6 +30,21 @@ function pullSlaveData {
    cd ${wp}/../lpltArchives || echo cant cd to ../lpltArchives
    git pull || echo cant pull data for $dt
    cd $wp || echo cant cd to $wp
+   
+}
+
+function tallyLiveResults {
+
+   dtt=$1
+   out="docs/stats"
+   
+   echo >> $out
+   echo Live results on ${dtt} >> $out
+   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> $out
+   tail -1 logs/*ls >> $out
+   echo Total Gain/Loss: >> $out   
+   tail -1 logs/*ls|awk '{s+=$4} END {print s}' >> $out
+   
 }
 
 function moveDataToArchive {
@@ -51,21 +67,21 @@ function createSlaveTestData {
    
    if [[ ! -d $testDir ]]; then
       mkdir $testDir || echo Unable to make directory $testDir
-      mv "prices" $testDir || echo Unable to move prices directory to $testDir
-      mv "bc" $testDir || echo Unable to move bc directory to $testDir
-      mv "logs" $testDir || echo Unable to move logs directory to $testDir
-      mv "debug" $testDir || echo Unable to move debug directory to $testDir
-      rm -f ${testDir}/debug/* || echo Unable to remove ${testDir}/debug directory contents
-      rm -f ${testDir}/logs/*log || echo Unable to remove ${testDir}/logs/ directory contents
-      #rm ${testDir}/logs/output_${dt} || echo Unable to remove output file output_${dt}
-      mkdir ${testDir}/results || echo Unable to mkdir ${testDir}/results
-      mkdir ${testDir}/profiles || echo Unable to mkdir ${testDir}/profiles
-      cp profiles/*  ${testDir}/profiles || echo Unable to copy profiles
-      mkdir "prices" "bc" "logs" "debug"  || echo Unable to mkdir "prices" "bc" "logs"
    fi
+   mv "prices" $testDir || echo Unable to move prices directory to $testDir
+   mv "bc" $testDir || echo Unable to move bc directory to $testDir
+   mv "logs" $testDir || echo Unable to move logs directory to $testDir
+   mv "debug" $testDir || echo Unable to move debug directory to $testDir
+   rm -f ${testDir}/debug/* || echo Unable to remove ${testDir}/debug directory contents
+   rm -f ${testDir}/logs/*log || echo Unable to remove ${testDir}/logs/ directory contents
+   #rm ${testDir}/logs/output_${dt} || echo Unable to remove output file output_${dt}
+   mkdir ${testDir}/results || echo Unable to mkdir ${testDir}/results
+   mkdir ${testDir}/profiles || echo Unable to mkdir ${testDir}/profiles
+   cp profiles/*  ${testDir}/profiles || echo Unable to copy profiles
+   mkdir "prices" "bc" "logs" "debug"  || echo Unable to mkdir "prices" "bc" "logs"
 }
 
-function mergeMasterSlaveDate {
+function mergeMasterSlaveData {
    
    if [[ -d $testDir ]]; then
 
@@ -141,9 +157,6 @@ if [[ ! -e $lpltMaster ]]; then
    exit 1
 fi
 
-#exitTime="160001"
-exitTime="155951"
-
 host=$(hostname -s)
 
 testHost=""
@@ -188,8 +201,6 @@ fi
 
 testDir="${wp}/test/${dt}"
 
-retCode=0
-
 log="${wp}/logs/output_${dt}"
 
 cmd="$py3 $lpltMaster -d -c $HOME/profiles/et.json -p $wp/profiles/active.json"
@@ -210,37 +221,40 @@ fi
 
 echo Starting $cmd $(date) ...
 
-#$HOME/bin/lplt.sh
 $cmd
+#echo log: $log
 #$cmd > $log
-retCode=$?
-   
-waiting=120
 
-# Exit when time is after 4pm
-timeNow=$(date "+%H%M%S")
+if [[ $? != 0 ]]; then
+   echo lpltMaster exited with non 0. Quitting... 
+   exit 1
+fi
 
-echo Exiting... Time is after Market exit time: $timeNow
+waiting=180
 
 if [[ -z $offLine ]]; then
    if [[ -n $testHost ]]; then
 
       # Archive data
-      echo Waiting $waiting to archive results...
+      echo Waiting $waiting seconds to archive results...
       sleep $waiting
          
       tarNm="${dt}all.tar"
 
+      tallyLiveResults $dt
       pullSlaveData
       initSlaveTestData
-      mergeMasterSlaveDate
+      mergeMasterSlaveData
       moveDataToArchive $tarNm
       pushData $tarNm
       
       # Run tests...
       cd $wp || echo cant cd to $wp
+      
+      # Gather live results. modify test profiles. Run tests. collate results
+      scripts/liveResults.sh $dt
       scripts/modProfiles.sh "test"
-      scripts/keepAliveM.sh off $dt
+      scripts/keepAliveM.sh off $dt # Run tests.
       scripts/daysBest.sh
 
    else # Archive slave

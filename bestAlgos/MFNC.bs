@@ -89,12 +89,14 @@ MFNC Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB1_CS1_IT
 MFNC Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB2_CS2_IT_QP
 MFNC Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_IT
 MFNC Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_IT_QL
+MFNC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB2_CS2_TS
 MFNC Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB2_CS2_HM_QP
 MFNC Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_SS
 MFNC Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_LI
 MFNC Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB5_OS5_CB2_CS2_HM
 MFNC Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB5_OS5_CB2_CS2_SS
 MFNC Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB2_CS2_LI
+MFNC Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB5_OS5_CB2_CS2_TS
 MFNC Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB2_CS2_QP
 MFNC Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB2_CS2_RV_QP
 MFNC Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB5_OS5_CB2_CS2_PM
@@ -113,6 +115,7 @@ MFNC Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB2_CS2_HM
 MFNC Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB2_CS2_RV_AV_DB15
 MFNC Gain: $ 0.85 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB5_OS5_CB2_CS2_LI
 MFNC Gain: $ 0.87 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_VI
+MFNC Gain: $ 0.9 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB1_CS1_TS
 MFNC Gain: $ 0.91 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB5_OS5_CB2_CS2_IR5
 MFNC Gain: $ 0.91 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB5_OS5_CB2_CS2_TR_IR5
 MFNC Gain: $ 1.02 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB1_CS1_AV
@@ -131,6 +134,7 @@ MFNC Gain: $ 1.2 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB2_CS2_SS
 MFNC Gain: $ 1.36 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB2_CS2_HM_AV
 MFNC Gain: $ 1.49 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB1_CS1_SS
 MFNC Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_PM
+MFNC Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB2_CS2_PM
 MFNC Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB2_OS2_CB2_CS2_PM
 MFNC Gain: $ 1.77 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB1_CS1_AL
 MFNC Gain: $ 1.77 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB3_OS3_CB1_CS1_RV_AL
@@ -156,6 +160,8 @@ MFNC Gain: $ 1.98 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_AO
 MFNC Gain: $ 1.98 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_AO_AC
 MFNC Gain: $ 2.02 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_HM
 MFNC Gain: $ 2.04 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1
+MFNC Gain: $ 2.04 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1
 MFNC Gain: $ 2.04 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_AC
 MFNC Gain: $ 2.04 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_QL
 MFNC Gain: $ 2.04 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_RV
+MFNC Gain: $ 2.04 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_TS

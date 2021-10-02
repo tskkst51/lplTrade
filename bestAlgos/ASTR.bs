@@ -76,13 +76,14 @@ ASTR Gain: $ 0.26 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_HM_
 ASTR Gain: $ 0.26 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_RV_AV_DB10
 ASTR Gain: $ 0.41 Win %: 33.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_RV_AL_DB10
 ASTR Gain: $ 0.49 Win %: 66.00 in 3 days with algo TB4_EO_EC_QM_OB1_OS1_CB4_CS4_PM
+ASTR Gain: $ 0.49 Win %: 66.00 in 3 days with algo TB4_EO_EC_QM_OB1_OS1_CB4_CS4_PM
 ASTR Gain: $ 0.49 Win %: 66.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB4_CS4_PM
 ASTR Gain: $ 0.57 Win %: 33.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_HM_TR_DB10
 ASTR Gain: $ 0.57 Win %: 33.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_RV_TR_DB10
+ASTR Gain: $ 0.6 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_LI
 ASTR Gain: $ 0.6 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_AV
 ASTR Gain: $ 0.6 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_HM_AV
 ASTR Gain: $ 0.6 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_RV_AV
-ASTR Gain: $ 0.6 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_LI
 ASTR Gain: $ 0.62 Win %: 33.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_DB10
 ASTR Gain: $ 0.69 Win %: 100.00 in 3 days with algo TB4_EO_EC_QM_OB1_OS1_CB4_CS4_HM_TR
 ASTR Gain: $ 0.69 Win %: 100.00 in 3 days with algo TB4_EO_EC_QM_OB1_OS1_CB4_CS4_RV_TR
@@ -121,6 +122,10 @@ ASTR Gain: $ 0.82 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_IT_
 ASTR Gain: $ 0.84 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_AL
 ASTR Gain: $ 0.84 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_RV_AL
 ASTR Gain: $ 0.87 Win %: 66.00 in 3 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_PM
+ASTR Gain: $ 0.9 Win %: 100.00 in 3 days with algo TB4_EO_EC_QM_OB1_OS1_CB4_CS4_TS
+ASTR Gain: $ 0.9 Win %: 100.00 in 3 days with algo TB4_EO_EC_QM_OB2_OS2_CB4_CS4_TS
+ASTR Gain: $ 0.9 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_TS
+ASTR Gain: $ 0.94 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_TS
 ASTR Gain: $ 1.01 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_RV_TR
 ASTR Gain: $ 1.02 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_RV
 ASTR Gain: $ 1.18 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_HM_TR
@@ -153,6 +158,7 @@ ASTR Gain: $ 1.21 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_IT
 ASTR Gain: $ 1.21 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_IT_QL
 ASTR Gain: $ 1.21 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_QL
 ASTR Gain: $ 1.21 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_RV
+ASTR Gain: $ 1.23 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5
 ASTR Gain: $ 1.23 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5
 ASTR Gain: $ 1.23 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_AC
 ASTR Gain: $ 1.23 Win %: 100.00 in 3 days with algo TB3_CC_QM_OB3_OS3_CB5_CS5_AO

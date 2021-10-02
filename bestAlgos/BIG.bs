@@ -112,7 +112,9 @@ BIG Gain: $ -0.15 Win %: 0 in 2 days with algo TB3_HS_QM_OB4_OS4_CB1_CS1_IT_QP_D
 BIG Gain: $ -0.15 Win %: 0 in 2 days with algo TB3_HS_QM_OB4_OS4_CB2_CS2_IT_QP_DB10
 BIG Gain: $ -0.14 Win %: 0 in 2 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_IT_QP
 BIG Gain: $ -0.13 Win %: 0 in 2 days with algo TB3_HS_QM_OB4_OS4_CB1_CS1_PM
+BIG Gain: $ -0.13 Win %: 0 in 2 days with algo TB3_HS_QM_OB4_OS4_CB1_CS1_PM
 BIG Gain: $ -0.13 Win %: 0 in 2 days with algo TB3_HS_QM_OB4_OS4_CB2_CS2_PM
+BIG Gain: $ -0.12 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB3_OS3_CB3_CS3_TS
 BIG Gain: $ -0.11 Win %: 0 in 2 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_HM_TR
 BIG Gain: $ -0.11 Win %: 0 in 2 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_TR
 BIG Gain: $ -0.06 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB4_OS4_CB1_CS1_LI
@@ -125,9 +127,9 @@ BIG Gain: $ 0.11 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB3_OS3_CB3_CS3_IT_
 BIG Gain: $ 0.12 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB4_OS4_CB1_CS1_SS
 BIG Gain: $ 0.12 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB4_OS4_CB2_CS2_SS
 BIG Gain: $ 0.19 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_IT_QL_DB30
+BIG Gain: $ 0.2 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB3_OS3_CB3_CS3_QL
 BIG Gain: $ 0.2 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_IT
 BIG Gain: $ 0.2 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_IT_QL
-BIG Gain: $ 0.2 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB3_OS3_CB3_CS3_QL
 BIG Gain: $ 0.29 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB4_OS4_CB1_CS1_IT_QL_DB10
 BIG Gain: $ 0.29 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB4_OS4_CB2_CS2_IT_QL_DB10
 BIG Gain: $ 0.3 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB4_OS4_CB1_CS1_AC
@@ -151,7 +153,11 @@ BIG Gain: $ 0.43 Win %: 100.00 in 2 days with algo TB3_LO_QM_OB3_OS3_CB3_CS3_IT_
 BIG Gain: $ 0.48 Win %: 50.00 in 2 days with algo TB3_LO_QM_OB3_OS3_CB3_CS3_RV
 BIG Gain: $ 0.6 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB4_OS4_CB1_CS1_DB10
 BIG Gain: $ 0.6 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB4_OS4_CB2_CS2_DB10
+BIG Gain: $ 0.61 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB4_OS4_CB1_CS1_TS
+BIG Gain: $ 0.61 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB4_OS4_CB2_CS2_TS
 BIG Gain: $ 1.14 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_AL
+BIG Gain: $ 1.14 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_TS
+BIG Gain: $ 1.18 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4
 BIG Gain: $ 1.18 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4
 BIG Gain: $ 1.18 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_AC
 BIG Gain: $ 1.18 Win %: 100.00 in 2 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_AO

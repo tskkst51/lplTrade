@@ -116,6 +116,7 @@ SCHW Gain: $ 1.36 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_HM
 SCHW Gain: $ 1.36 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_HM_AV
 SCHW Gain: $ 1.36 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_HM_AV
 SCHW Gain: $ 1.44 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_IT
+SCHW Gain: $ 1.44 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_IT
 SCHW Gain: $ 1.44 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_IT_QL
 SCHW Gain: $ 1.44 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_IT
 SCHW Gain: $ 1.44 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_IT_QL
@@ -135,7 +136,12 @@ SCHW Gain: $ 2.12 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_QL
 SCHW Gain: $ 2.12 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_QL
 SCHW Gain: $ 2.12 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_QL
 SCHW Gain: $ 2.12 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4
+SCHW Gain: $ 2.12 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4
 SCHW Gain: $ 2.12 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_QL
+SCHW Gain: $ 2.18 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_TS
+SCHW Gain: $ 2.18 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_TS
+SCHW Gain: $ 2.18 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_TS
+SCHW Gain: $ 2.18 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_TS
 SCHW Gain: $ 2.19 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB3_OS3_CB4_CS4_HM
 SCHW Gain: $ 2.24 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB1_OS1_CB4_CS4_IR5
 SCHW Gain: $ 2.24 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB4_CS4_IR5

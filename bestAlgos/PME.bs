@@ -52,12 +52,16 @@ PME Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_HM_
 PME Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_RV_AV_DB8
 PME Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_HM_AV_DB8
 PME Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_RV_AV_DB8
+PME Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_TS
 PME Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_RV_AL_DB8
 PME Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_RV_AL_DB8
+PME Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB4_OS4_CB3_CS3_TS
 PME Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_DB8
 PME Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_IT_QL_DB8
+PME Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_TS
 PME Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_DB8
 PME Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_IT_QL_DB8
+PME Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB3_OS3_CB3_CS3_TS
 PME Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB4_OS4_CB3_CS3_LI
 PME Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_LI
 PME Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB4_OS4_CB3_CS3_HM_AV_DB10
@@ -115,6 +119,7 @@ PME Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_AO_
 PME Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_HM
 PME Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_IR2
 PME Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_IT
+PME Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_IT
 PME Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_IT_QL
 PME Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_QL
 PME Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_HI_QM_OB2_OS2_CB3_CS3_RV
@@ -136,6 +141,7 @@ PME Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB4_OS4_CB3_CS3_IT
 PME Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB4_OS4_CB3_CS3_IT_QL
 PME Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB4_OS4_CB3_CS3_QL
 PME Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB4_OS4_CB3_CS3_RV
+PME Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3
 PME Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3
 PME Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_AC
 PME Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB3_OS3_CB3_CS3_AL

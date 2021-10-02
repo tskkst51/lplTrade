@@ -40,7 +40,7 @@ class ConnectEtrade:
       self.dateTime = self.getTimeHrMnSecs()
       self.quoteStatus = "CLOSING"
       self.marketEndTime = 163000
-      self.tradeServiceMaxNumStocks = 21
+      self.maxEtradeStocks = 21
       
       if setoffLine:
          self.offLine = True
@@ -110,11 +110,6 @@ class ConnectEtrade:
       self.sym = {}
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getTradeServiceMaxNumStocks(self):
-   
-      return self.tradeServiceMaxNumStocks
-      
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setStockValues(self, stocksChart, bar, stocks):
    
       self.isStockValues += 1
@@ -134,73 +129,99 @@ class ConnectEtrade:
             self.loBarValueArr[stock] = stocksChart[stock][bar][self.sLIdx] 
             
       else: # Live
-         quoteData = []
+      
+         stockSegs = {}
+         sSegCtr = ctr = sCtr = 0
+         stocks = []
          
-         symbolDetails = [0.0,0.0,0.0,0,""]
-         #sleep(1)
-         for attempt in range(1500):
-            try:
-               mktData = pyetrade.market.ETradeMarket(self.consumerKey, 
-               self.consumerSecret, self.oauthToken, self.oauthSecret, self.sandBox)
-               
-               
-               sym = mktData.get_quote(self.stocks, self.marketDataType)
-               
-               #print (str(len(self.stocks)))
-               #print (str(sym))
-               
-               symbol = ""
-               if len(self.stocks) > 1:
-                  quoteData = sym['QuoteResponse']['QuoteData']
-               else:
-                  quoteData.append(sym['QuoteResponse']['QuoteData'])
+         if len(self.stocks) > self.maxEtradeStocks:
+            # Setup a dict of stock arrays the size of self.maxEtradeStocks
+            
+            print ("len(self.stocks) " + str(len(self.stocks)))
 
-               for n in quoteData:
-                  for k, v in n.items():
-                     if k == "dateTime":
-                        dateT = v
-                        
-                     if k == "Product":
-                        for key, value in v.items():
-                           if key == 'symbol':
-                              symbol = value
-                              self.serviceValues[symbol] = (symbolDetails)
-                              #print ("symbol \n" + str(symbol))
-                              #print ("serviceValues[symbol] \n" + str(self.serviceValues[symbol]))
-                              symbolDetails = [0.0,0.0,0.0,0,""]
-
-                     if k == "Intraday":
-                        for key, val in v.items():
-                           #print ("key " + str(key))
-                           #print ("val " + str(val))
-                           if key == 'bid':
-                              symbolDetails[self.bidIdx] = round(float(val), 2)
-                              #print ("bid " + str(val))
-                           elif key == 'ask':
-                              symbolDetails[self.askIdx] = round(float(val), 2)
-                              #print ("ask " + str(val))
-                           elif key == 'lastTrade':
-                              symbolDetails[self.lastIdx] = round(float(val), 2)
-                              #print ("lastTrade " + str(val))
-                           elif key == 'totalVolume':
-                              symbolDetails[self.totVolIdx] = int(val)
-                              #print ("totalVolume " + str(val))
-                           
-                        symbolDetails[self.dateIdx] = dateT
-                        
-               #print ("serviceValues \n" + str(self.serviceValues))
-               
-            except Exception as e: 
-               print(e)
-
-               print ("Etrade is crap " + str(attempt))
-               sleep(1)
-               
-            else:
-               break
+            for ctr in range(len(self.stocks)):
+               if ctr % self.maxEtradeStocks == 0:
+                  stockSegs[sSegCtr] = self.stocks[ctr:(ctr+self.maxEtradeStocks)]
+                  sSegCtr += 1
+                  print ("stockSegs " + str(stockSegs))
+               ctr += 1
          else:
-            print ("Etrade is really crap " + str(attempt))
+            stockSegs[0] = self.stocks
+
+         print ("stockSegs 0 " + str(stockSegs[0]))
+         print ("len(stockSegs) " + str(len(stockSegs)))
+         
+         while sCtr < len(stockSegs):
+            quoteData = []
+            symbols = stockSegs[sCtr]
+            
+            print ("stocks local " + str(symbols))
+            #exit (1)
+            
+            symbolDetails = [0.0,0.0,0.0,0,""]
+
+            for attempt in range(1500):
+               try:
+                  mktData = pyetrade.market.ETradeMarket(self.consumerKey, 
+                  self.consumerSecret, self.oauthToken, self.oauthSecret, self.sandBox)
+                  
+                  
+                  sym = mktData.get_quote(symbols, self.marketDataType)
+
+                  symbol = ""
+                  if len(symbols) > 1:
+                     quoteData = sym['QuoteResponse']['QuoteData']
+                  else:
+                     quoteData.append(sym['QuoteResponse']['QuoteData'])
+   
+                  for n in quoteData:
+                     for k, v in n.items():
+                        if k == "dateTime":
+                           dateT = v
+                           
+                        if k == "Product":
+                           for key, value in v.items():
+                              if key == 'symbol':
+                                 symbol = value
+                                 self.serviceValues[symbol] = (symbolDetails)
+                                 #print ("symbol \n" + str(symbol))
+                                 #print ("serviceValues[symbol] \n" + str(self.serviceValues[symbol]))
+                                 symbolDetails = [0.0,0.0,0.0,0,""]
+   
+                        if k == "Intraday":
+                           for key, val in v.items():
+                              #print ("key " + str(key))
+                              #print ("val " + str(val))
+                              if key == 'bid':
+                                 symbolDetails[self.bidIdx] = round(float(val), 2)
+                                 #print ("bid " + str(val))
+                              elif key == 'ask':
+                                 symbolDetails[self.askIdx] = round(float(val), 2)
+                                 #print ("ask " + str(val))
+                              elif key == 'lastTrade':
+                                 symbolDetails[self.lastIdx] = round(float(val), 2)
+                                 #print ("lastTrade " + str(val))
+                              elif key == 'totalVolume':
+                                 symbolDetails[self.totVolIdx] = int(val)
+                                 #print ("totalVolume " + str(val))
+                              
+                           symbolDetails[self.dateIdx] = dateT
+                           
+                  #print ("serviceValues \n" + str(self.serviceValues))
+                  
+               except Exception as e: 
+                  print(e)
+   
+                  print ("Etrade is crap " + str(attempt))
+                  sleep(1)
+                  
+               else:
+                  break
+            else:
+               print ("Etrade is really crap " + str(attempt))
                
+            sCtr += 1
+                  
       return self.serviceValues
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

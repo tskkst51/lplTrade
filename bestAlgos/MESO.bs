@@ -75,6 +75,8 @@ MESO Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_IT
 MESO Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_IT_QP
 MESO Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_IT_QP
 MESO Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_RV_TR
+MESO Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_TS
+MESO Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_TS
 MESO Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_TR_IR5
 MESO Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_HM_QP
 MESO Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_QP
@@ -84,6 +86,8 @@ MESO Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_
 MESO Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_QP
 MESO Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_DB30
 MESO Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_HM_TR_DB30
+MESO Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_TS
+MESO Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_TS
 MESO Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_TR_DB30
 MESO Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
 MESO Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_RV_AL_DB30
@@ -102,6 +106,7 @@ MESO Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_
 MESO Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_VI
 MESO Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_DB30
 MESO Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_HM_TR_DB30
+MESO Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_PM
 MESO Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_PM
 MESO Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_RV_AL_DB30
 MESO Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_RV_TR_DB30
@@ -143,6 +148,7 @@ MESO Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5
 MESO Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_AV
 MESO Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_TR
 MESO Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_TR
+MESO Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5
 MESO Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5
 MESO Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_AL
 MESO Gain: $ 1.24 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_AV

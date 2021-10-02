@@ -49,6 +49,7 @@ AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_IT
 AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_RV_AL_DB30
 AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_RV_AV_DB30
 AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_RV_TR_DB30
+AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_TS
 AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_DB30
 AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_HM_AV_DB30
 AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DB30
@@ -56,6 +57,9 @@ AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_IT
 AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_RV_AL_DB30
 AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_RV_AV_DB30
 AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
+AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_TS
+AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_TS
+AKTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_TS
 AKTX Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_DB30
 AKTX Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_HM_AV_DB30
 AKTX Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_HM_TR_DB30
@@ -128,6 +132,7 @@ AKTX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_SS
 AKTX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_TR
 AKTX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_TR_IR5
 AKTX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5
+AKTX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5
 AKTX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_AC
 AKTX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_AL
 AKTX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_AO
@@ -147,6 +152,7 @@ AKTX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_RV
 AKTX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_SS
 AKTX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_TR
 AKTX Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB5_CS5_TR_IR5
+AKTX Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_PM
 AKTX Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_PM
 AKTX Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_PM
 AKTX Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB1_OS1_CB5_CS5_PM

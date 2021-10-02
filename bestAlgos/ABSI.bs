@@ -53,6 +53,7 @@ ABSI Gain: $ -3.72 Win %: 0 in 1 days with algo TB4_HL_HI_QM_OB1_OS1_CB3_CS3_IT_
 ABSI Gain: $ -3.65 Win %: 0 in 1 days with algo TB1_HL_HS_QM_OB5_OS5_CB1_CS1_RV_AV
 ABSI Gain: $ -3.65 Win %: 0 in 1 days with algo TB1_HL_HS_QM_OB5_OS5_CB1_CS1_RV_TR
 ABSI Gain: $ -3.61 Win %: 0 in 1 days with algo TB1_HL_HS_QM_OB5_OS5_CB1_CS1_PM
+ABSI Gain: $ -3.61 Win %: 0 in 1 days with algo TB1_HL_HS_QM_OB5_OS5_CB1_CS1_PM
 ABSI Gain: $ -3.61 Win %: 0 in 1 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5_AO
 ABSI Gain: $ -3.53 Win %: 0 in 1 days with algo TB1_HL_HS_QM_OB5_OS5_CB1_CS1_TR
 ABSI Gain: $ -3.44 Win %: 0 in 1 days with algo TB1_HL_HS_QM_OB5_OS5_CB1_CS1_IT_QL_DB30
@@ -106,6 +107,7 @@ ABSI Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB5_OS5_CB1_CS1_SS
 ABSI Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB5_OS5_CB1_CS1_TR_IR5
 ABSI Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB5_OS5_CB1_CS1_TR_QP
 ABSI Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB5_OS5_CB1_CS1_TR_QP_DB30
+ABSI Gain: $ 0 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB5_OS5_CB1_CS1_TS
 ABSI Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB1_OS1_CB3_CS3_QP_PM
 ABSI Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3_PM
 ABSI Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5_HM
@@ -113,6 +115,7 @@ ABSI Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5
 ABSI Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5_HM_TR
 ABSI Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5_PM
 ABSI Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5_TR_IR3
+ABSI Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5_TS
 ABSI Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5_HM_AV_DB10
 ABSI Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB1_OS1_CB3_CS3_HM_TR
 ABSI Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB1_OS1_CB3_CS3_RV_TR
@@ -123,6 +126,8 @@ ABSI Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3_
 ABSI Gain: $ 0.3 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3_TR_IR2
 ABSI Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS5_IT_QP_DB10
 ABSI Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB1_HL_HS_QM_OB5_OS5_CB1_CS1_AO_AC
+ABSI Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB1_OS1_CB3_CS3_TS
+ABSI Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3_TS
 ABSI Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3_IT_QL_DB8
 ABSI Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB1_OS1_CB3_CS3_HM_TR_DB8
 ABSI Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB1_OS1_CB3_CS3_RV_TR_DB8
@@ -152,6 +157,7 @@ ABSI Gain: $ 1.1 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3_
 ABSI Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB1_OS1_CB3_CS3_IR2
 ABSI Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB1_OS1_CB3_CS3_LI
 ABSI Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB1_OS1_CB3_CS3_VI
+ABSI Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3
 ABSI Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3
 ABSI Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3_HM
 ABSI Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3_IR2

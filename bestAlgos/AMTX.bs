@@ -47,6 +47,10 @@ AMTX Gain: $ -0.05 Win %: 33.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_IT
 AMTX Gain: $ 0 Win %: 66.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_IT_QP
 AMTX Gain: $ 0.03 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_IT_QP_DB8
 AMTX Gain: $ 0.31 Win %: 66.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TR_QP
+AMTX Gain: $ 0.44 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TS
+AMTX Gain: $ 0.56 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_TS
+AMTX Gain: $ 0.57 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_TS
+AMTX Gain: $ 0.57 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_TS
 AMTX Gain: $ 0.69 Win %: 33.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_LI
 AMTX Gain: $ 0.79 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_RV_AV_DB8
 AMTX Gain: $ 0.79 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_RV_AV_DB8
@@ -76,12 +80,13 @@ AMTX Gain: $ 2.12 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV
 AMTX Gain: $ 2.13 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_RV
 AMTX Gain: $ 2.13 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_RV
 AMTX Gain: $ 2.13 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_RV_AL_DB8
-AMTX Gain: $ 2.14 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_HM_AV
 AMTX Gain: $ 2.14 Win %: 66.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_HM_AV
+AMTX Gain: $ 2.14 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_HM_AV
 AMTX Gain: $ 2.15 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_AL
 AMTX Gain: $ 2.15 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_AL
 AMTX Gain: $ 2.15 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_AV
 AMTX Gain: $ 2.15 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV_AV
+AMTX Gain: $ 2.21 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_PM
 AMTX Gain: $ 2.21 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_PM
 AMTX Gain: $ 2.27 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_DB6
 AMTX Gain: $ 2.27 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_IT_QL_DB6
@@ -90,10 +95,10 @@ AMTX Gain: $ 2.32 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_HM
 AMTX Gain: $ 2.32 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_HM_AV
 AMTX Gain: $ 2.39 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_AV
 AMTX Gain: $ 2.47 Win %: 66.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_HM
-AMTX Gain: $ 2.5 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_HM_TR_DB8
-AMTX Gain: $ 2.5 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_HM_TR_DB8
 AMTX Gain: $ 2.5 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_DB8
 AMTX Gain: $ 2.5 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_DB8
+AMTX Gain: $ 2.5 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_HM_TR_DB8
+AMTX Gain: $ 2.5 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_HM_TR_DB8
 AMTX Gain: $ 2.54 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_LI
 AMTX Gain: $ 2.56 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_RV_AL
 AMTX Gain: $ 2.57 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_AV
@@ -112,8 +117,8 @@ AMTX Gain: $ 2.66 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_SS
 AMTX Gain: $ 2.66 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TR
 AMTX Gain: $ 2.66 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TR_IR1
 AMTX Gain: $ 2.67 Win %: 100.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DB6
-AMTX Gain: $ 2.68 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_HM_TR_DB8
 AMTX Gain: $ 2.68 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_TR_IR2
+AMTX Gain: $ 2.68 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_HM_TR_DB8
 AMTX Gain: $ 2.69 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_DB8
 AMTX Gain: $ 2.69 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_IT_QL_DB8
 AMTX Gain: $ 2.74 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_RV_AL
@@ -150,6 +155,7 @@ AMTX Gain: $ 3.3 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_IR2
 AMTX Gain: $ 3.3 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_IT
 AMTX Gain: $ 3.3 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_IT_QL
 AMTX Gain: $ 3.3 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_QL
+AMTX Gain: $ 3.3 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5
 AMTX Gain: $ 3.3 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5
 AMTX Gain: $ 3.3 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_AC
 AMTX Gain: $ 3.3 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_AO

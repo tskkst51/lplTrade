@@ -63,6 +63,7 @@ THTX Gain: $ -0.15 Win %: 0 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_HM_TR_
 THTX Gain: $ -0.12 Win %: 0 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_TR_QP
 THTX Gain: $ -0.11 Win %: 0 in 1 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_DB10
 THTX Gain: $ -0.11 Win %: 0 in 1 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_PM
+THTX Gain: $ -0.11 Win %: 0 in 1 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_PM
 THTX Gain: $ -0.11 Win %: 0 in 1 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_DB10
 THTX Gain: $ -0.11 Win %: 0 in 1 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_PM
 THTX Gain: $ -0.11 Win %: 0 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_DB10
@@ -84,8 +85,12 @@ THTX Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_IT_QP
 THTX Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_VI
 THTX Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_IT
 THTX Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_IT_QL
+THTX Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_TS
 THTX Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_HM_TR
 THTX Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_VI
+THTX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB5_CS5_TS
+THTX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_TS
+THTX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_TS
 THTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_LI
 THTX Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_DB10
 THTX Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_IT_QL_DB10
@@ -155,6 +160,7 @@ THTX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_SS
 THTX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_TR
 THTX Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_TR_IR3
 THTX Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_PM
+THTX Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3
 THTX Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3
 THTX Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_AO
 THTX Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB3_CS3_QL

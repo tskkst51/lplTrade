@@ -56,6 +56,10 @@ WINT Gain: $ -0.15 Win %: 0 in 3 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3_QP_
 WINT Gain: $ -0.15 Win %: 0 in 3 days with algo TB3_EO_EC_QM_OB2_OS2_CB3_CS3_QP_IR3
 WINT Gain: $ 0.12 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3_RV_TR
 WINT Gain: $ 0.12 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB2_OS2_CB3_CS3_RV_TR
+WINT Gain: $ 0.18 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3_TS
+WINT Gain: $ 0.18 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB2_OS2_CB3_CS3_TS
+WINT Gain: $ 0.18 Win %: 100.00 in 3 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_TS
+WINT Gain: $ 0.18 Win %: 100.00 in 3 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_TS
 WINT Gain: $ 0.22 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3_TR
 WINT Gain: $ 0.22 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB2_OS2_CB3_CS3_TR
 WINT Gain: $ 0.26 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3_HM_TR
@@ -130,6 +134,7 @@ WINT Gain: $ 0.91 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3
 WINT Gain: $ 0.91 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3_AO
 WINT Gain: $ 0.91 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3_AO_AC
 WINT Gain: $ 0.91 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3_IT
+WINT Gain: $ 0.91 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3_IT
 WINT Gain: $ 0.91 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3_IT_QL
 WINT Gain: $ 0.91 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3_QL
 WINT Gain: $ 0.91 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB2_OS2_CB3_CS3_AC
@@ -144,6 +149,7 @@ WINT Gain: $ 0.95 Win %: 100.00 in 3 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_AO
 WINT Gain: $ 0.95 Win %: 100.00 in 3 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_IT
 WINT Gain: $ 0.95 Win %: 100.00 in 3 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_IT_QL
 WINT Gain: $ 0.95 Win %: 100.00 in 3 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_QL
+WINT Gain: $ 0.95 Win %: 100.00 in 3 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3
 WINT Gain: $ 0.95 Win %: 100.00 in 3 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3
 WINT Gain: $ 0.95 Win %: 100.00 in 3 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_AC
 WINT Gain: $ 0.95 Win %: 100.00 in 3 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_AO

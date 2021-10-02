@@ -126,6 +126,11 @@ EKSO Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_VI
 EKSO Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_DB6
 EKSO Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_DB6
 EKSO Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_PM
+EKSO Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_PM
+EKSO Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB4_CS4_TS
+EKSO Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_TS
+EKSO Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_TS
+EKSO Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_TS
 EKSO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB4_CS4_SS
 EKSO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_AC
 EKSO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_AO
@@ -145,6 +150,7 @@ EKSO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_IT
 EKSO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_IT_QL
 EKSO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_QL
 EKSO Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_RV
+EKSO Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB4_CS4
 EKSO Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB4_CS4
 EKSO Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB4_CS4_AC
 EKSO Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB4_CS4_AL

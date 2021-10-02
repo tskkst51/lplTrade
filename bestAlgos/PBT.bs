@@ -95,6 +95,7 @@ PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_HM_AV
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_HM_TR
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_IT
+PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_IT
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_IT_QL
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_QL
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_RV
@@ -103,6 +104,7 @@ PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_RV_TR
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_SS
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_TR
+PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_TS
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB3_CS3_AC
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB3_CS3_AL
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB3_CS3_AV
@@ -118,6 +120,7 @@ PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB3_CS3_
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB3_CS3_RV_TR
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB3_CS3_SS
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB3_CS3_TR
+PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB3_CS3_TS
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB4_CS4_AC
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB4_CS4_AL
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB4_CS4_AV
@@ -133,6 +136,8 @@ PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB4_CS4_
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB4_CS4_RV_TR
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB4_CS4_SS
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB4_CS4_TR
+PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB4_CS4_TS
+PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_AC
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_AL
@@ -151,3 +156,4 @@ PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_SS
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_TR
 PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_TR_IR3
+PBT Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_TS

@@ -85,6 +85,7 @@ HWCC Gain: $ -0.15 Win %: 0 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1_IT_QL
 HWCC Gain: $ -0.15 Win %: 0 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1_QL
 HWCC Gain: $ -0.15 Win %: 0 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_IT_QL_DB8
 HWCC Gain: $ -0.09 Win %: 0 in 1 days with algo TB4_PL_QM_OB3_OS3_CB1_CS1_PM
+HWCC Gain: $ -0.09 Win %: 0 in 1 days with algo TB4_PL_QM_OB3_OS3_CB1_CS1_PM
 HWCC Gain: $ -0.09 Win %: 0 in 1 days with algo TB4_PL_QM_OB3_OS3_CB1_CS1_QP_PM
 HWCC Gain: $ -0.09 Win %: 0 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_PM
 HWCC Gain: $ -0.09 Win %: 0 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_QP_PM
@@ -103,7 +104,9 @@ HWCC Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_RV
 HWCC Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_HM_AV_DB8
 HWCC Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_RV_AV_DB8
 HWCC Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1_IT
+HWCC Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1_TS
 HWCC Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB3_OS3_CB1_CS1_AO_AC
+HWCC Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_TS
 HWCC Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB3_OS3_CB1_CS1_AV
 HWCC Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB3_OS3_CB1_CS1_HM_AV
 HWCC Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB3_OS3_CB1_CS1_RV_AV
@@ -133,6 +136,7 @@ HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB3_OS3_CB1_CS1_IT
 HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB3_OS3_CB1_CS1_QL
 HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB3_OS3_CB1_CS1_RV
 HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB3_OS3_CB1_CS1_SS
+HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB3_OS3_CB1_CS1_TS
 HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_HM
 HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_IR2
 HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_IT
@@ -140,6 +144,7 @@ HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_IT
 HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_QL
 HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_RV
 HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_SS
+HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_TS
 HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_AC
 HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_AO
 HWCC Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB5_OS5_CB1_CS1_AO_AC
@@ -154,6 +159,7 @@ HWCC Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1_VI
 HWCC Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_AO
 HWCC Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB3_OS3_CB1_CS1_VI
 HWCC Gain: $ 0.33 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_VI
+HWCC Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1
 HWCC Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1
 HWCC Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1_AO
 HWCC Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB1_OS1_CB1_CS1_HM

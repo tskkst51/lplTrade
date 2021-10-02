@@ -91,6 +91,7 @@ SBBP Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_IR
 SBBP Gain: $ 0.09 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_IR3
 SBBP Gain: $ 0.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB3_CS3_HM_TR
 SBBP Gain: $ 0.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB3_CS3_IT
+SBBP Gain: $ 0.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB3_CS3_IT
 SBBP Gain: $ 0.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB3_CS3_IT_QL
 SBBP Gain: $ 0.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB3_CS3_RV_TR
 SBBP Gain: $ 0.1 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB3_CS3_TR
@@ -125,6 +126,8 @@ SBBP Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB3_CS3_HM
 SBBP Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB3_CS3_QL
 SBBP Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB3_CS3_RV
 SBBP Gain: $ 0.16 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB3_CS3_SS
+SBBP Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB3_CS3_TS
+SBBP Gain: $ 0.17 Win %: 100.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB3_CS3_TS
 SBBP Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_TR_IR3
 SBBP Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_TR_IR3
 SBBP Gain: $ 0.2 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_HM_TR
@@ -132,6 +135,8 @@ SBBP Gain: $ 0.2 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_TR
 SBBP Gain: $ 0.2 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_HM_TR
 SBBP Gain: $ 0.2 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_RV_TR
 SBBP Gain: $ 0.2 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_TR
+SBBP Gain: $ 0.21 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_TS
+SBBP Gain: $ 0.21 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_TS
 SBBP Gain: $ 0.22 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_SS
 SBBP Gain: $ 0.22 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_SS
 SBBP Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_AC
@@ -140,6 +145,7 @@ SBBP Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_AO
 SBBP Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_HM
 SBBP Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_QL
 SBBP Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB1_OS1_CB4_CS4_RV
+SBBP Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4
 SBBP Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4
 SBBP Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_AC
 SBBP Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB3_CC_QM_OB2_OS2_CB4_CS4_AO

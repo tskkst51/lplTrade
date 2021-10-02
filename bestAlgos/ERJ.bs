@@ -20,6 +20,7 @@ ERJ Gain: $ -0.34 Win %: 0 in 1 days with algo TB4_LO_QM_OB2_OS2_CB1_CS1_HM_TR_D
 ERJ Gain: $ -0.34 Win %: 0 in 1 days with algo TB5_HI_QM_OB1_OS1_CB2_CS2_HM
 ERJ Gain: $ -0.34 Win %: 0 in 1 days with algo TB5_HI_QM_OB1_OS1_CB2_CS2_IT
 ERJ Gain: $ -0.34 Win %: 0 in 1 days with algo TB5_HI_QM_OB1_OS1_CB2_CS2_SS
+ERJ Gain: $ -0.34 Win %: 0 in 1 days with algo TB5_HI_QM_OB1_OS1_CB2_CS2_TS
 ERJ Gain: $ -0.33 Win %: 0 in 1 days with algo TB5_HI_QM_OB1_OS1_CB2_CS2_RV
 ERJ Gain: $ -0.29 Win %: 0 in 1 days with algo TB5_HI_QM_OB1_OS1_CB2_CS2_IT_QP
 ERJ Gain: $ -0.28 Win %: 0 in 1 days with algo TB5_HI_QM_OB1_OS1_CB2_CS2_HM_QP
@@ -40,8 +41,10 @@ ERJ Gain: $ -0.13 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB5_CS5_HM_A
 ERJ Gain: $ -0.13 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB5_CS5_HM_AV_DB6
 ERJ Gain: $ -0.13 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB5_CS5_RV_AL_DB6
 ERJ Gain: $ -0.12 Win %: 0 in 1 days with algo TB4_LO_QM_OB2_OS2_CB1_CS1
+ERJ Gain: $ -0.12 Win %: 0 in 1 days with algo TB4_LO_QM_OB2_OS2_CB1_CS1
 ERJ Gain: $ -0.12 Win %: 0 in 1 days with algo TB4_LO_QM_OB2_OS2_CB1_CS1_QL
 ERJ Gain: $ -0.12 Win %: 0 in 1 days with algo TB4_LO_QM_OB2_OS2_CB1_CS1_SS
+ERJ Gain: $ -0.12 Win %: 0 in 1 days with algo TB4_LO_QM_OB2_OS2_CB1_CS1_TS
 ERJ Gain: $ -0.11 Win %: 0 in 1 days with algo TB5_HI_QM_OB1_OS1_CB2_CS2_HM_AV
 ERJ Gain: $ -0.11 Win %: 0 in 1 days with algo TB5_HI_QM_OB1_OS1_CB2_CS2_QP_IR1
 ERJ Gain: $ -0.11 Win %: 0 in 1 days with algo TB5_HI_QM_OB1_OS1_CB2_CS2_RV_AV
@@ -102,6 +105,7 @@ ERJ Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB5_CS5_
 ERJ Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB5_CS5_IT_QL_DB6
 ERJ Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB5_CS5_TR
 ERJ Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB5_CS5_TR_IR1
+ERJ Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB5_CS5_TS
 ERJ Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_RV_TR_DB15
 ERJ Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_RV_TR_DB15
 ERJ Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB2_CS2_LI
@@ -110,6 +114,7 @@ ERJ Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_
 ERJ Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB1_OS1_CB2_CS2_VI
 ERJ Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB5_CS5_LI
 ERJ Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_AL
+ERJ Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_IT
 ERJ Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_IT
 ERJ Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB5_HL_LO_QM_OB5_OS5_CB5_CS5_QP_IR1
 ERJ Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_HM_AV_DB15
@@ -126,6 +131,7 @@ ERJ Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_
 ERJ Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_HM_TR
 ERJ Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_TR
 ERJ Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_RV_AL_DB15
+ERJ Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_TS
 ERJ Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_VI
 ERJ Gain: $ 0.38 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_RV_QP
 ERJ Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_TR_QP

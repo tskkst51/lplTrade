@@ -35,8 +35,10 @@ CTKB Gain: $ -2.36 Win %: 0 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_RV_QP_
 CTKB Gain: $ -2.2 Win %: 0 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_TR_QP
 CTKB Gain: $ -2.18 Win %: 0 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1
 CTKB Gain: $ -2.18 Win %: 0 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1
+CTKB Gain: $ -2.18 Win %: 0 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1
 CTKB Gain: $ -2.18 Win %: 0 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_AC
 CTKB Gain: $ -2.18 Win %: 0 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_AO
+CTKB Gain: $ -2.18 Win %: 0 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_TS
 CTKB Gain: $ -2.14 Win %: 0 in 1 days with algo TB4_PL_QM_OB2_OS2_CB4_CS4_HM_QP_DB8
 CTKB Gain: $ -2.14 Win %: 0 in 1 days with algo TB4_PL_QM_OB2_OS2_CB4_CS4_RV_QP_DB8
 CTKB Gain: $ -2.04 Win %: 0 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_TR
@@ -127,6 +129,7 @@ CTKB Gain: $ -0.79 Win %: 0 in 1 days with algo TB4_PL_QM_OB2_OS2_CB4_CS4_RV_AL
 CTKB Gain: $ -0.77 Win %: 0 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_AC
 CTKB Gain: $ -0.77 Win %: 0 in 1 days with algo TB4_HS_QM_OB2_OS2_CB2_CS2_HM
 CTKB Gain: $ -0.77 Win %: 0 in 1 days with algo TB4_HS_QM_OB2_OS2_CB2_CS2_TS
+CTKB Gain: $ -0.77 Win %: 0 in 1 days with algo TB4_HS_QM_OB2_OS2_CB2_CS2_TS
 CTKB Gain: $ -0.76 Win %: 0 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_HM_AL
 CTKB Gain: $ -0.75 Win %: 0 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_AO
 CTKB Gain: $ -0.75 Win %: 0 in 1 days with algo TB4_HS_QM_OB2_OS2_CB2_CS2_RV_AV_DB8
@@ -148,6 +151,7 @@ CTKB Gain: $ -0.68 Win %: 0 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_HM_QP
 CTKB Gain: $ -0.68 Win %: 0 in 1 days with algo TB4_PL_QM_OB2_OS2_CB4_CS4_HM
 CTKB Gain: $ -0.68 Win %: 0 in 1 days with algo TB4_PL_QM_OB2_OS2_CB4_CS4_IR2
 CTKB Gain: $ -0.68 Win %: 0 in 1 days with algo TB4_PL_QM_OB2_OS2_CB4_CS4_TR_QP
+CTKB Gain: $ -0.68 Win %: 0 in 1 days with algo TB4_PL_QM_OB2_OS2_CB4_CS4_TS
 CTKB Gain: $ -0.68 Win %: 0 in 1 days with algo TB4_PL_QM_OB2_OS2_CB4_CS4_TS
 CTKB Gain: $ -0.67 Win %: 0 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_IT_QP
 CTKB Gain: $ -0.65 Win %: 0 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_RV
@@ -317,6 +321,7 @@ CTKB Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_IT
 CTKB Gain: $ 0.32 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_IT_QL_DB8
 CTKB Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_AC
 CTKB Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_TS
+CTKB Gain: $ 0.46 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB2_OS2_CB2_CS2_TS
 CTKB Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_RV_AL_DB8
 CTKB Gain: $ 0.5 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_RV_AL_DB8
 CTKB Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_HM_AL
@@ -324,6 +329,7 @@ CTKB Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_HM
 CTKB Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB3_HL_QM_OB1_OS1_CB1_CS1_HM_AV_DB10
 CTKB Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_LI
 CTKB Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_LI
+CTKB Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_TS
 CTKB Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB2_OS2_CB3_CS3_TS
 CTKB Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB2_OS2_CB2_CS2_AC
 CTKB Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB2_OS2_CB2_CS2_AO

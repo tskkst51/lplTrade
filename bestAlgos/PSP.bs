@@ -85,6 +85,7 @@ PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_HM_
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_HM_TR
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_IR4
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_IT
+PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_IT
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_IT_QL
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_QL
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_RV
@@ -94,6 +95,7 @@ PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_RV_
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_SS
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_TR
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_TR_IR4
+PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB4_CS4_TS
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_AC
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_AL
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_AO
@@ -113,6 +115,7 @@ PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_RV_
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_SS
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_TR
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_TR_IR4
+PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_TS
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB4_CS4_AC
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB4_CS4_AL
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB4_CS4_AO
@@ -132,6 +135,8 @@ PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB4_CS4_RV_
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB4_CS4_SS
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB4_CS4_TR
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB4_CS4_TR_IR4
+PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB4_CS4_TS
+PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB5_CS5
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB5_CS5
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB5_CS5_AC
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB5_CS5_AL
@@ -151,3 +156,4 @@ PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB5_CS5_RV_
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB5_CS5_SS
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB5_CS5_TR
 PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB5_CS5_TR_IR4
+PSP Gain: $ 0.12 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB2_OS2_CB5_CS5_TS

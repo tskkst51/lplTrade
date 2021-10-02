@@ -55,6 +55,7 @@ ARMP Gain: $ -0.31 Win %: 0 in 1 days with algo TB3_OO_QM_OB2_OS2_CB4_CS4_IT_QL_
 ARMP Gain: $ -0.05 Win %: 0 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_IT_QP
 ARMP Gain: $ -0.05 Win %: 0 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_IT_QP
 ARMP Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB4_CS4_PM
+ARMP Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB4_CS4_PM
 ARMP Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB4_CS4_QP_PM
 ARMP Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB4_CS4_PM
 ARMP Gain: $ 0 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB4_CS4_QP_PM
@@ -62,6 +63,10 @@ ARMP Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_PM
 ARMP Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_QP_PM
 ARMP Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_PM
 ARMP Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_QP_PM
+ARMP Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB1_OS1_CB4_CS4_TS
+ARMP Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB4_CS4_TS
+ARMP Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_TS
+ARMP Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_TS
 ARMP Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_VI
 ARMP Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_VI
 ARMP Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_DB8
@@ -137,6 +142,7 @@ ARMP Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_RV
 ARMP Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_SS
 ARMP Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_TR
 ARMP Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB1_OS1_CB4_CS4_TR_IR2
+ARMP Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4
 ARMP Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4
 ARMP Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_AC
 ARMP Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB4_CS4_AL

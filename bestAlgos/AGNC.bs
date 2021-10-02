@@ -64,6 +64,7 @@ AGNC Gain: $ 0.21 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_QP_
 AGNC Gain: $ 0.25 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_TR_QP_DB6
 AGNC Gain: $ 0.25 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TR_QP_DB6
 AGNC Gain: $ 0.27 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_PM
+AGNC Gain: $ 0.27 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_PM
 AGNC Gain: $ 0.3 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_DB6
 AGNC Gain: $ 0.3 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_HM_TR_DB6
 AGNC Gain: $ 0.3 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_IT_QL_DB6
@@ -77,6 +78,8 @@ AGNC Gain: $ 0.33 Win %: 50.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_AL
 AGNC Gain: $ 0.33 Win %: 50.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_RV_AL
 AGNC Gain: $ 0.33 Win %: 50.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB3_CS3_AL
 AGNC Gain: $ 0.33 Win %: 50.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB3_CS3_RV_AL
+AGNC Gain: $ 0.33 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_TS
+AGNC Gain: $ 0.33 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_TS
 AGNC Gain: $ 0.34 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_LI
 AGNC Gain: $ 0.37 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_HM_QP
 AGNC Gain: $ 0.37 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_QP
@@ -84,6 +87,8 @@ AGNC Gain: $ 0.37 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_RV_
 AGNC Gain: $ 0.37 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_HM_QP
 AGNC Gain: $ 0.37 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_QP
 AGNC Gain: $ 0.37 Win %: 50.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_RV_QP
+AGNC Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_TS
+AGNC Gain: $ 0.37 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB3_CS3_TS
 AGNC Gain: $ 0.38 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB3_CS3_RV_AL_DB15
 AGNC Gain: $ 0.39 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB3_CS3_HM_AV_DB15
 AGNC Gain: $ 0.39 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB3_OS3_CB3_CS3_RV_AV_DB15
@@ -135,6 +140,7 @@ AGNC Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_RV_
 AGNC Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_RV_TR
 AGNC Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_TR
 AGNC Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_TR_IR1
+AGNC Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4
 AGNC Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4
 AGNC Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_AC
 AGNC Gain: $ 0.5 Win %: 100.00 in 2 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_AL

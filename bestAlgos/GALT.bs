@@ -1,3 +1,11 @@
+GALT Gain: $ Win %: 33.00 in 3 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_RV_AL_DB30
+GALT Gain: $ Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5
+GALT Gain: $ Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5
+GALT Gain: $ Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_AC
+GALT Gain: $ Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_AO
+GALT Gain: $ Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_AO_AC
+GALT Gain: $ Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_DB10
+GALT Gain: $ Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_IT
 GALT Gain: $ -1.44 Win %: 0 in 3 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_TR_QP
 GALT Gain: $ -1.41 Win %: 0 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_TR_QP
 GALT Gain: $ -1.41 Win %: 0 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_TR_QP
@@ -68,6 +76,7 @@ GALT Gain: $ -0.17 Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_RV
 GALT Gain: $ -0.16 Win %: 0 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_IT_QP_DB10
 GALT Gain: $ -0.15 Win %: 33.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_QP_IR5
 GALT Gain: $ -0.15 Win %: 33.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_QP_IR5
+GALT Gain: $ -0.14 Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_TS
 GALT Gain: $ -0.14 Win %: 66.00 in 3 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_IR5
 GALT Gain: $ -0.1 Win %: 33.00 in 3 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_DB30
 GALT Gain: $ -0.1 Win %: 33.00 in 3 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_HM_TR_DB30
@@ -79,13 +88,6 @@ GALT Gain: $ -0.05 Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_TR
 GALT Gain: $ -0.03 Win %: 66.00 in 3 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_QP_IR5
 GALT Gain: $ -0.02 Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_HM
 GALT Gain: $ -0.02 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_QP_IR3
-GALT Gain: $ Win %: 33.00 in 3 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_RV_AL_DB30
-GALT Gain: $ Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5
-GALT Gain: $ Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_AC
-GALT Gain: $ Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_AO
-GALT Gain: $ Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_AO_AC
-GALT Gain: $ Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_DB10
-GALT Gain: $ Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_IT
 GALT Gain: $ 0.03 Win %: 33.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_VI
 GALT Gain: $ 0.03 Win %: 33.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_VI
 GALT Gain: $ 0.1 Win %: 33.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_TR_IR5
@@ -102,8 +104,11 @@ GALT Gain: $ 0.2 Win %: 33.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_RV_T
 GALT Gain: $ 0.2 Win %: 33.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_HM_TR_DB30
 GALT Gain: $ 0.2 Win %: 33.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
 GALT Gain: $ 0.2 Win %: 33.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
+GALT Gain: $ 0.21 Win %: 100.00 in 3 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_TS
 GALT Gain: $ 0.25 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_HM_TR
 GALT Gain: $ 0.25 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_HM_TR_DB10
+GALT Gain: $ 0.27 Win %: 100.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_TS
+GALT Gain: $ 0.27 Win %: 100.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_TS
 GALT Gain: $ 0.28 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_RV
 GALT Gain: $ 0.28 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_RV_TR
 GALT Gain: $ 0.31 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_RV_AL_DB10
@@ -111,15 +116,16 @@ GALT Gain: $ 0.35 Win %: 33.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_DB3
 GALT Gain: $ 0.35 Win %: 33.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_DB30
 GALT Gain: $ 0.36 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_SS
 GALT Gain: $ 0.44 Win %: 33.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_TR_IR3
+GALT Gain: $ 0.45 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_RV_AL
 GALT Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_IT
 GALT Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_IT_QL
 GALT Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_IT
 GALT Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_IT_QL
-GALT Gain: $ 0.45 Win %: 66.00 in 3 days with algo TB3_CC_QM_OB4_OS4_CB5_CS5_RV_AL
 GALT Gain: $ 0.54 Win %: 66.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_LI
 GALT Gain: $ 0.54 Win %: 66.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_LI
 GALT Gain: $ 0.55 Win %: 100.00 in 3 days with algo TB1_OC_QM_OB1_OS1_CB5_CS5_HM
 GALT Gain: $ 0.55 Win %: 100.00 in 3 days with algo TB1_OC_QM_OB2_OS2_CB5_CS5_HM
+GALT Gain: $ 0.56 Win %: 100.00 in 3 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_IT
 GALT Gain: $ 0.56 Win %: 100.00 in 3 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_IT
 GALT Gain: $ 0.56 Win %: 100.00 in 3 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_IT_QL
 GALT Gain: $ 0.59 Win %: 100.00 in 3 days with algo TB1_OO_QM_OB2_OS2_CB5_CS5_HM_AV

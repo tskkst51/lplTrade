@@ -69,6 +69,7 @@ DWSN Gain: $ -0.15 Win %: 0 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_RV_AV_
 DWSN Gain: $ -0.15 Win %: 0 in 1 days with algo TB2_PL_QM_OB2_OS2_CB4_CS4_HM_AV_DB15
 DWSN Gain: $ -0.15 Win %: 0 in 1 days with algo TB2_PL_QM_OB2_OS2_CB4_CS4_RV_AV_DB15
 DWSN Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB2_OS2_CB4_CS4_PM
+DWSN Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB2_OS2_CB4_CS4_PM
 DWSN Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB2_OS2_CB4_CS4_QP_PM
 DWSN Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_PM
 DWSN Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_QP_PM
@@ -78,6 +79,10 @@ DWSN Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB2_OS2_CB4_CS4_IT
 DWSN Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_IT_QP
 DWSN Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_HM_AV_DB8
 DWSN Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_RV_AV_DB8
+DWSN Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_TS
+DWSN Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_TS
+DWSN Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB2_OS2_CB4_CS4_TS
+DWSN Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_TS
 DWSN Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB2_OS2_CB4_CS4_AC
 DWSN Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB2_PL_QM_OB2_OS2_CB4_CS4_AO_AC
 DWSN Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_AC
@@ -126,6 +131,7 @@ DWSN Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_RV
 DWSN Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_RV_TR
 DWSN Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_TR
 DWSN Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB1_OS1_CB4_CS4_TR_IR4
+DWSN Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4
 DWSN Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4
 DWSN Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_AC
 DWSN Gain: $ 0.89 Win %: 100.00 in 1 days with algo TB2_CC_QM_OB2_OS2_CB4_CS4_AO

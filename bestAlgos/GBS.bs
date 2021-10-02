@@ -76,6 +76,7 @@ GBS Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB4_CS4_LI
 GBS Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_LI
 GBS Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB4_CS4_HM_TR
 GBS Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB4_CS4_PM
+GBS Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB4_CS4_PM
 GBS Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB4_CS4_VI
 GBS Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_HM_TR
 GBS Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_PM
@@ -104,6 +105,7 @@ GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB4_CS4_RV_
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB4_CS4_SS
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB4_CS4_TR
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB4_CS4_TR_IR3
+GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB4_CS4_TS
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_AC
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_AL
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_AO
@@ -122,6 +124,7 @@ GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_RV_
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_SS
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_TR
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_TR_IR3
+GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB1_OS1_CB5_CS5_TS
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB4_CS4_AC
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB4_CS4_AL
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB4_CS4_AO
@@ -140,6 +143,8 @@ GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB4_CS4_RV_
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB4_CS4_SS
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB4_CS4_TR
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB4_CS4_TR_IR3
+GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB4_CS4_TS
+GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_AC
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_AL
@@ -159,3 +164,4 @@ GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_RV_
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_SS
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_TR
 GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_TR_IR3
+GBS Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_TS

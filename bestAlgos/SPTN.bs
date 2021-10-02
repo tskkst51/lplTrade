@@ -71,6 +71,7 @@ SPTN Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB5_OS5_CB4_CS4_TR_QP
 SPTN Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB2_CS2_RV_AV
 SPTN Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3_HM_QP
 SPTN Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3_IT
+SPTN Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3_IT
 SPTN Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3_IT_QL
 SPTN Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB5_OS5_CB4_CS4_HM_QP
 SPTN Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB5_OS5_CB4_CS4_TR
@@ -151,3 +152,8 @@ SPTN Gain: $ 1.2 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_SS
 SPTN Gain: $ 1.27 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_AV
 SPTN Gain: $ 1.27 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_RV_AV
 SPTN Gain: $ 1.56 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3_HM
+SPTN Gain: $ -4.47 Win %: 50.00 in 2 days with algo TB1_LO_QM_OB1_OS1_CB2_CS2_TS
+SPTN Gain: $ -0.78 Win %: 50.00 in 2 days with algo TB2_OC_QM_OB5_OS5_CB4_CS4_TS
+SPTN Gain: $ 0.76 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4_TS
+SPTN Gain: $ 1.01 Win %: 100.00 in 2 days with algo TB2_OC_QM_OB3_OS3_CB3_CS3_TS
+SPTN Gain: $ 1.2 Win %: 100.00 in 2 days with algo TB2_HI_QM_OB2_OS2_CB4_CS4

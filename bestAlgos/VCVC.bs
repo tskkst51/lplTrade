@@ -53,6 +53,10 @@ VCVC Gain: $ -0.03 Win %: 0 in 1 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_IT_QP_
 VCVC Gain: $ 0.04 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_IT_QL_DB15
 VCVC Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB1_OS1_CB2_CS2_HM_TR_DB15
 VCVC Gain: $ 0.15 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB1_OS1_CB2_CS2_RV_TR_DB15
+VCVC Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_TS
+VCVC Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB1_OS1_CB2_CS2_TS
+VCVC Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_TS
+VCVC Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB4_CS4_TS
 VCVC Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_HM_QP
 VCVC Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_IT_QP
 VCVC Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_QP
@@ -130,6 +134,7 @@ VCVC Gain: $ 1.42 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_RV
 VCVC Gain: $ 1.42 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_RV_AV
 VCVC Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_HM
 VCVC Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_IT
+VCVC Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_IT
 VCVC Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_IT_QL
 VCVC Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_QL
 VCVC Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB5_OS5_CB4_CS4_RV
@@ -145,6 +150,7 @@ VCVC Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_IT
 VCVC Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_IT_QL
 VCVC Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_QL
 VCVC Gain: $ 1.45 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB2_OS2_CB2_CS2_RV
+VCVC Gain: $ 1.46 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB4_CS4
 VCVC Gain: $ 1.46 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB4_CS4
 VCVC Gain: $ 1.46 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB4_CS4_HM
 VCVC Gain: $ 1.46 Win %: 100.00 in 1 days with algo TB1_HL_QM_OB2_OS2_CB4_CS4_IT

@@ -67,6 +67,7 @@ BNGO Gain: $ 0.8 Win %: 45.00 in 11 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4_
 BNGO Gain: $ 0.83 Win %: 45.00 in 11 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4_DB15
 BNGO Gain: $ 0.84 Win %: 72.00 in 11 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4_AO_AC
 BNGO Gain: $ 0.91 Win %: 63.00 in 11 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_HM_AV
+BNGO Gain: $ 0.94 Win %: 81.00 in 11 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_TS
 BNGO Gain: $ 0.96 Win %: 45.00 in 11 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_RV_TR_DB15
 BNGO Gain: $ 0.96 Win %: 45.00 in 11 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_RV_TR_DB15
 BNGO Gain: $ 1 Win %: 63.00 in 11 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_HM_TR_DB15
@@ -75,7 +76,10 @@ BNGO Gain: $ 1.04 Win %: 54.00 in 11 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4
 BNGO Gain: $ 1.09 Win %: 54.00 in 11 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4_AV
 BNGO Gain: $ 1.18 Win %: 63.00 in 11 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_RV_AL_DB15
 BNGO Gain: $ 1.29 Win %: 63.00 in 11 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_TR
+BNGO Gain: $ 1.32 Win %: 90.00 in 11 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_TS
+BNGO Gain: $ 1.32 Win %: 90.00 in 11 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_TS
 BNGO Gain: $ 1.4 Win %: 54.00 in 11 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_IT_QL_DB15
+BNGO Gain: $ 1.56 Win %: 81.00 in 11 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4_TS
 BNGO Gain: $ 1.57 Win %: 54.00 in 11 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4_RV_AL
 BNGO Gain: $ 1.58 Win %: 63.00 in 11 days with algo TB2_OO_QM_OB5_OS5_CB5_CS5_RV_TR
 BNGO Gain: $ 1.59 Win %: 72.00 in 11 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_RV
@@ -139,6 +143,7 @@ BNGO Gain: $ 3.26 Win %: 63.00 in 11 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4
 BNGO Gain: $ 3.26 Win %: 72.00 in 11 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_AC
 BNGO Gain: $ 3.26 Win %: 72.00 in 11 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_AO
 BNGO Gain: $ 3.26 Win %: 72.00 in 11 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_AO_AC
+BNGO Gain: $ 3.26 Win %: 72.00 in 11 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5
 BNGO Gain: $ 3.26 Win %: 72.00 in 11 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5
 BNGO Gain: $ 3.26 Win %: 72.00 in 11 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_AC
 BNGO Gain: $ 3.26 Win %: 72.00 in 11 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_AO

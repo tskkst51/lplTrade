@@ -99,6 +99,8 @@ PRPL Gain: $ 0.76 Win %: 33.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_TR
 PRPL Gain: $ 0.79 Win %: 33.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_IR2
 PRPL Gain: $ 0.82 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB5_OS5_CB5_CS5_SS
 PRPL Gain: $ 0.84 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB5_OS5_CB5_CS5_VI
+PRPL Gain: $ 0.95 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_TS
+PRPL Gain: $ 0.95 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB5_OS5_CB5_CS5_TS
 PRPL Gain: $ 0.96 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB5_OS5_CB5_CS5_RV
 PRPL Gain: $ 0.96 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB5_OS5_CB5_CS5_TR_IR2
 PRPL Gain: $ 1 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB5_OS5_CB5_CS5_HM_TR
@@ -116,6 +118,8 @@ PRPL Gain: $ 1.24 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_TR
 PRPL Gain: $ 1.24 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB2_OS2_CB5_CS5_TR_IR2
 PRPL Gain: $ 1.27 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_LI
 PRPL Gain: $ 1.27 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB2_OS2_CB5_CS5_LI
+PRPL Gain: $ 1.28 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_TS
+PRPL Gain: $ 1.28 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB2_OS2_CB5_CS5_TS
 PRPL Gain: $ 1.33 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_AL
 PRPL Gain: $ 1.33 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_AV
 PRPL Gain: $ 1.33 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_HM_AV
@@ -123,6 +127,7 @@ PRPL Gain: $ 1.33 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB2_OS2_CB5_CS5_AL
 PRPL Gain: $ 1.33 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB2_OS2_CB5_CS5_AV
 PRPL Gain: $ 1.33 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB2_OS2_CB5_CS5_HM_AV
 PRPL Gain: $ 1.4 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_HM
+PRPL Gain: $ 1.4 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_IT
 PRPL Gain: $ 1.4 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_IT
 PRPL Gain: $ 1.4 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_IT_QL
 PRPL Gain: $ 1.4 Win %: 66.00 in 3 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_QL
@@ -136,6 +141,7 @@ PRPL Gain: $ 1.73 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_HM
 PRPL Gain: $ 1.73 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_IT
 PRPL Gain: $ 1.73 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 PRPL Gain: $ 1.73 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB1_OS1_CB5_CS5_QL
+PRPL Gain: $ 1.73 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB2_OS2_CB5_CS5
 PRPL Gain: $ 1.73 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB2_OS2_CB5_CS5
 PRPL Gain: $ 1.73 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB2_OS2_CB5_CS5_HM
 PRPL Gain: $ 1.73 Win %: 100.00 in 3 days with algo TB4_LO_QM_OB2_OS2_CB5_CS5_IT

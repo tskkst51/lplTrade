@@ -13,6 +13,7 @@ JG Gain: $ -0.55 Win %: 50.00 in 2 days with algo TB5_OC_QM_OB1_OS1_CB3_CS3_TR_Q
 JG Gain: $ -0.55 Win %: 50.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB3_CS3_TR_QP
 JG Gain: $ -0.2 Win %: 50.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_TR_QP_DB15
 JG Gain: $ -0.16 Win %: 50.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_PM
+JG Gain: $ -0.16 Win %: 50.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_PM
 JG Gain: $ -0.05 Win %: 50.00 in 2 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_TR_QP_DB6
 JG Gain: $ 0.06 Win %: 50.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_IR4
 JG Gain: $ 0.06 Win %: 50.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_TR_IR4
@@ -31,7 +32,10 @@ JG Gain: $ 0.31 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_HM_Q
 JG Gain: $ 0.35 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_RV_QP_DB6
 JG Gain: $ 0.41 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB1_OS1_CB3_CS3_IT_QP
 JG Gain: $ 0.41 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB3_CS3_IT_QP
+JG Gain: $ 0.42 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB1_OS1_CB3_CS3_TS
+JG Gain: $ 0.42 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB3_CS3_TS
 JG Gain: $ 0.42 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_QP_IR1
+JG Gain: $ 0.42 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_TS
 JG Gain: $ 0.43 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_QP
 JG Gain: $ 0.43 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_RV_QP
 JG Gain: $ 0.44 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_HM_QP
@@ -45,6 +49,7 @@ JG Gain: $ 0.47 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB3_CS3_QP
 JG Gain: $ 0.47 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB3_CS3_QP_IR1
 JG Gain: $ 0.47 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB3_CS3_RV_QP
 JG Gain: $ 0.54 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_HM_QP
+JG Gain: $ 0.64 Win %: 100.00 in 2 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_TS
 JG Gain: $ 0.64 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB1_OS1_CB3_CS3_HM_AV_DB6
 JG Gain: $ 0.64 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB1_OS1_CB3_CS3_HM_TR_DB6
 JG Gain: $ 0.64 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB3_CS3_HM_AV_DB6
@@ -137,6 +142,7 @@ JG Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB3_CS3_IT_Q
 JG Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB3_CS3_QL
 JG Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB3_CS3_RV
 JG Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB2_OS2_CB3_CS3_SS
+JG Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3
 JG Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3
 JG Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_AC
 JG Gain: $ 3.65 Win %: 100.00 in 2 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_AO

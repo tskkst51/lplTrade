@@ -1,3 +1,12 @@
+INTC Gain: $ Win %: 40.00 in 5 days with algo TB5_HL_QM_OB2_OS2_CB5_CS5_HM_TR_DB6
+INTC Gain: $ Win %: 40.00 in 5 days with algo TB5_HL_QM_OB2_OS2_CB5_CS5_TR
+INTC Gain: $ Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB1_CS1_QL
+INTC Gain: $ Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB1_CS1_TS
+INTC Gain: $ Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB2_CS2
+INTC Gain: $ Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB2_CS2
+INTC Gain: $ Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB2_CS2_QL
+INTC Gain: $ Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB2_CS2_TS
+INTC Gain: $ Win %: 60.00 in 5 days with algo TB5_HL_QM_OB2_OS2_CB5_CS5_TS
 INTC Gain: $ -11.1 Win %: 20.00 in 5 days with algo TB5_HL_QM_OB2_OS2_CB5_CS5_AC
 INTC Gain: $ -3.18 Win %: 20.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_QP_IR4
 INTC Gain: $ -2.5 Win %: 20.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB2_CS2_RV_AL
@@ -60,11 +69,6 @@ INTC Gain: $ -0.01 Win %: 40.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB1_CS1
 INTC Gain: $ -0.01 Win %: 40.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB2_CS2_RV_AV_DB30
 INTC Gain: $ -0.01 Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB1_CS1_IT_QP_DB30
 INTC Gain: $ -0.01 Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB2_CS2_IT_QP_DB30
-INTC Gain: $ Win %: 40.00 in 5 days with algo TB5_HL_QM_OB2_OS2_CB5_CS5_HM_TR_DB6
-INTC Gain: $ Win %: 40.00 in 5 days with algo TB5_HL_QM_OB2_OS2_CB5_CS5_TR
-INTC Gain: $ Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB1_CS1_QL
-INTC Gain: $ Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB2_CS2
-INTC Gain: $ Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB2_CS2_QL
 INTC Gain: $ 0.04 Win %: 40.00 in 5 days with algo TB5_HL_QM_OB2_OS2_CB5_CS5_RV_TR_DB6
 INTC Gain: $ 0.04 Win %: 40.00 in 5 days with algo TB5_HL_QM_OB2_OS2_CB5_CS5_RV_TR_DB6
 INTC Gain: $ 0.04 Win %: 60.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_RV_AL
@@ -114,8 +118,8 @@ INTC Gain: $ 0.54 Win %: 60.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_TR_
 INTC Gain: $ 0.55 Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB1_CS1_TR_QP_DB30
 INTC Gain: $ 0.55 Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB2_CS2_TR_QP_DB30
 INTC Gain: $ 0.67 Win %: 100.00 in 5 days with algo TB5_HL_QM_OB2_OS2_CB5_CS5_IT_QP_DB6
-INTC Gain: $ 0.71 Win %: 100.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_IT_QP
 INTC Gain: $ 0.71 Win %: 60.00 in 5 days with algo TB5_HL_QM_OB2_OS2_CB5_CS5_TR_QP_DB6
+INTC Gain: $ 0.71 Win %: 100.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_IT_QP
 INTC Gain: $ 0.73 Win %: 60.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_TR_IR4
 INTC Gain: $ 0.73 Win %: 60.00 in 5 days with algo TB5_HL_QM_OB2_OS2_CB5_CS5_HM_QP_DB6
 INTC Gain: $ 0.82 Win %: 80.00 in 5 days with algo TB5_HL_QM_OB2_OS2_CB5_CS5_QP
@@ -140,6 +144,7 @@ INTC Gain: $ 1.65 Win %: 80.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB1_CS1_
 INTC Gain: $ 1.69 Win %: 80.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_AO
 INTC Gain: $ 1.69 Win %: 80.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_IT_QL_DB15
 INTC Gain: $ 1.71 Win %: 80.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_IT
+INTC Gain: $ 1.71 Win %: 80.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_IT
 INTC Gain: $ 1.71 Win %: 80.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_IT_QL
 INTC Gain: $ 1.8 Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB1_CS1_AV
 INTC Gain: $ 1.8 Win %: 60.00 in 5 days with algo TB1_HL_HI_QM_OB4_OS4_CB2_CS2_AV
@@ -151,3 +156,4 @@ INTC Gain: $ 2.56 Win %: 80.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_QL
 INTC Gain: $ 2.56 Win %: 80.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_SS
 INTC Gain: $ 2.81 Win %: 80.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_HM_AV
 INTC Gain: $ 2.83 Win %: 80.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_HM
+INTC Gain: $ 3.4 Win %: 80.00 in 5 days with algo TB2_CC_QM_OB2_OS2_CB5_CS5_TS
