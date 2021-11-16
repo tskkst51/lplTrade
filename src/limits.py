@@ -4,7 +4,7 @@ trends module
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Limits:
-   def __init__(self, data, lg, cn, ba, offLine, stock=""):
+   def __init__(self, data, lg, cn, ba, stock=""):
       
       self.data = data
       self.lg = lg
@@ -20,9 +20,7 @@ class Limits:
       self.sH = 6
       self.sL = 7
       self.dt = 8
-      
-      self.offLine = offLine
-      
+            
       self.openBuyBars = int(data['profileTradeData']['openBuyBars'])
       self.closeBuyBars = int(data['profileTradeData']['closeBuyBars'])
       self.openSellBars = int(data['profileTradeData']['openSellBars'])

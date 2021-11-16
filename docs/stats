@@ -226,3 +226,841 @@ close   214.02 -0.68 -3.26 0.0%   1 1     15:58:01
 close   102.75 0.60 -2.88 20%   2 4     15:58:01
 Total Gain/Loss:
 -11.36
+
+Live results on 20211004
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeARVN.ls <==
+close   84.99 0.29 -0.49 33%   23 2     15:59:01
+
+==> logs/activeAZO.ls <==
+close   1641.19 -16.92 -16.92 0.0%   170 0     15:58:01
+
+==> logs/activeBURL.ls <==
+close   280.57 -4.06 -4.06 0.0%   103 0     11:36:01
+
+==> logs/activeDDS.ls <==
+close   185.23 1.27 0.23 66%   21 2     15:59:01
+
+==> logs/activePRTA.ls <==
+close   71.83 -1.33 -2.53 0.0%   144 1     15:58:01
+
+==> logs/activeRGEN.ls <==
+close   272.27 4.76 4.76 100%   85 0     12:28:02
+
+==> logs/activeSILK.ls <==
+close   53.82 -0.36 -0.84 25%   13 3     15:57:00
+Total Gain/Loss:
+-19.85
+
+Live results on 20211005
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAMEH.ls <==
+close   90.65 -0.39 -0.53 37%   2 7     15:58:01
+
+==> logs/activeAZO.ls <==
+close   1649.97 -4.58 -4.58 0.0%   117 0     15:57:01
+
+==> logs/activeCHKP.ls <==
+close   113.65 0.04 -0.18 33%   33 5     15:59:01
+
+==> logs/activeLH.ls <==
+close   276.02 -0.35 -1.95 40%   18 4     15:59:01
+
+==> logs/activePRTA.ls <==
+close   71.71 0.28 0.12 66%   56 2     15:58:01
+
+==> logs/activeRAPT.ls <==
+close   31.02 -1.20 -1.20 0.0%   188 0     15:58:01
+
+==> logs/activeRTLR.ls <==
+close   12.06 -0.05 -0.28 0.0%   16 2     15:58:01
+Total Gain/Loss:
+-8.6
+
+Live results on 20211006
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeACY.ls <==
+close   58.0 -9.46 -9.57 0.0%   170 1     15:59:01
+
+==> logs/activeAN.ls <==
+close   115.15 -0.04 -0.99 20%   1 4     15:58:00
+
+==> logs/activeBTBT.ls <==
+close   11.21 -1.02 -1.73 0.0%   87 1     15:57:01
+
+==> logs/activeERJ.ls <==
+close   17.1 -0.14 -0.04 25%   13 7     15:59:01
+
+==> logs/activeMDIA.ls <==
+close   7.65 0.75 0.75 100%   59 0     10:36:01
+
+==> logs/activeSI.ls <==
+close   162.7 0.87 -1.44 50%   60 9     15:59:01
+
+==> logs/activeVYGR.ls <==
+close   3.64 -0.01 -0.07 0.0%   1 1     10:06:01
+Total Gain/Loss:
+-13.09
+
+Live results on 20211007
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAEHR.ls <==
+close   16.59 0.87 0.58 50%   117 1     15:59:01
+
+==> logs/activeAZPN.ls <==
+close   135.19 -0.21 -0.14 50%   1 1     10:51:03
+
+==> logs/activeCTSO.ls <==
+close   7.01 0.28 0.26 50%   33 1     11:35:01
+
+==> logs/activeLC.ls <==
+close   29.59 -0.09 -0.09 0.0%   4 0     15:57:02
+
+==> logs/activeMRUS.ls <==
+close   27.4 -0.09 -0.18 0.0%   1 1     10:36:02
+
+==> logs/activeNFE.ls <==
+close   33.23 -0.07 -0.75 0.0%   1 1     10:35:01
+
+==> logs/activeOSMT.ls <==
+close   1.91 -0.01 -0.16 0.0%   6 3     15:59:01
+Total Gain/Loss:
+-0.48
+
+Live results on 20211008
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAEHR.ls <==
+close   19.21 1.11 1.11 100%   157 0     15:03:01
+
+==> logs/activeALLO.ls <==
+close   13.88 1.01 1.01 100%   14 0     10:27:03
+
+==> logs/activeCCXI.ls <==
+close   32.74 0.84 0.84 100%   6 0     10:02:02
+
+==> logs/activeDBVT.ls <==
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+==> logs/activeFAST.ls <==
+close   52.71 0.04 -0.31 37%   2 28     15:59:04
+
+==> logs/activeHRL.ls <==
+close   41.65 -0.05 0.11 50%   1 1     10:52:03
+
+==> logs/activeZIM.ls <==
+close   43.57 1.38 1.38 100%   31 0     12:17:03
+Total Gain/Loss:
+4.14
+
+Live results on 20211011
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAA.ls <==
+close   47.28 0.21 -0.35 33%   39 17     15:59:01
+
+==> logs/activeADMS.ls <==
+close   8.02 -0.01 -0.04 0.0%   1 1     10:21:03
+
+==> logs/activeAEHR.ls <==
+close   19.83 0.23 -1.60 16%   53 5     15:57:01
+
+==> logs/activeEZFL.ls <==
+close   4.1 0.10 0.10 100%   1 0     10:00:02
+
+==> logs/activeFLXN.ls <==
+close   9.27 -0.01 -0.09 0.0%   1 1     10:03:02
+
+==> logs/activeLUV.ls <==
+close   52.13 0.77 1.04 66%   68 2     15:30:01
+
+==> logs/activePTGX.ls <==
+close   35.4 -0.05 -1.10 0.0%   1 1     10:13:01
+
+==> logs/activeTTM.ls <==
+close   28.07 0.03 0.23 78%   156 13     15:59:01
+Total Gain/Loss:
+-1.81
+
+Live results on 20211012
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeABNB.ls <==
+close   172.64 -0.18 -1.79 27%   1 21     15:57:01
+
+==> logs/activeANY.ls <==
+close   7.25 0.27 0.27 100%   18 0     11:18:01
+
+==> logs/activeBGI.ls <==
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+==> logs/activeMTTR.ls <==
+close   19.75 -0.03 -0.67 27%   4 10     15:58:02
+
+==> logs/activeNTRB.ls <==
+close   11.06 0.15 0.15 100%   1 0     10:06:01
+
+==> logs/activeOCGN.ls <==
+close   8.41 -0.01 -0.39 0.0%   1 1     09:46:02
+
+==> logs/activeRAVN.ls <==
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+==> logs/activeRRD.ls <==
+close   6.71 0.33 0.33 100%   39 0     10:12:02
+
+==> logs/activeTTM.ls <==
+close   31.71 0.02 -0.53 46%   13 14     15:59:02
+Total Gain/Loss:
+-2.63
+
+Live results on 20211013
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total Gain/Loss:
+
+
+Live results on 20211014
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total Gain/Loss:
+
+
+Live results on 20211015
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAA.ls <==
+close   55.9 0.01 -2.74 35%   7 16     15:55:04
+
+==> logs/activeAMD.ls <==
+close   112.13 -0.25 -1.46 0.0%   178 2     15:59:03
+
+==> logs/activeANY.ls <==
+close   8.0 -0.44 -0.44 0.0%   385 0     15:59:03
+
+==> logs/activeASAN.ls <==
+close   115.97 0.30 -2.97 20%   7 4     15:57:04
+
+==> logs/activeBBIG.ls <==
+close   8.24 0.02 -0.88 30%   2 9     15:58:03
+
+==> logs/activeDLO.ls <==
+close   61.32 0.26 -1.11 33%   4 2     15:55:04
+
+==> logs/activeDRN.ls <==
+close   24.37 0.15 -1.23 21%   17 13     15:58:03
+
+==> logs/activeUNH.ls <==
+close   428.17 0.28 -0.73 50%   41 9     15:59:03
+
+==> logs/activeUPST.ls <==
+close   389.91 -0.22 -8.45 42%   8 6     15:55:04
+Total Gain/Loss:
+-20.01
+
+Live results on 20211019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeDBGI.ls <==
+close   3.24 0.26 0.26 100%   82 0     15:59:46
+
+==> logs/activeEVOL.ls <==
+close   2.78 -0.12 -0.12 0.0%   189 0     15:59:46
+
+==> logs/activeGRTX.ls <==
+close   2.24 0.19 0.19 100%   373 0     15:59:46
+
+==> logs/activeIMMP.ls <==
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+==> logs/activeRCAT.ls <==
+close   2.92 -0.04 -0.03 50%   7 1     10:36:54
+
+==> logs/activeSWN.ls <==
+close   4.95 0.06 0.17 100%   28 1     14:18:49
+
+==> logs/activeVSTM.ls <==
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+==> logs/activeVTGN.ls <==
+close   2.36 -0.02 -0.02 0.0%   64 0     15:59:46
+
+==> logs/activeVVOS.ls <==
+close   3.98 0.03 -1.93 7%   5 37     15:59:46
+Total Gain/Loss:
+-1.48
+
+Live results on 20211020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAPTO.ls <==
+close   2.13 0.02 -0.10 33%   17 2     15:59:46
+
+==> logs/activeCPG.ls <==
+close   5.09 0.18 0.18 100%   374 0     15:59:46
+
+==> logs/activeFTEK.ls <==
+close   2.19 -0.06 -0.06 0.0%   37 0     15:59:46
+
+==> logs/activeIRCP.ls <==
+close   2.75 -0.02 -0.54 5%   2 18     15:59:46
+
+==> logs/activeMTL.ls <==
+close   4.63 0.07 0.07 100%   59 0     15:59:46
+
+==> logs/activeNEXT.ls <==
+close   3.25 -0.05 -0.05 0.0%   14 0     10:23:01
+
+==> logs/activeRIG.ls <==
+close   3.98 0.01 0.04 100%   13 1     11:45:02
+
+==> logs/activeSYPR.ls <==
+close   3.99 0.08 0.08 100%   94 0     15:59:46
+
+==> logs/activeWATT.ls <==
+close   2.04 -0.01 -0.01 0.0%   3 0     10:09:01
+Total Gain/Loss:
+-0.39
+
+Live results on 20211021
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAN.ls <==
+close   126.0 3.87 3.87 100%   72 0     15:59:46
+
+==> logs/activeCROX.ls <==
+close   147.92 0.57 2.52 60%   8 4     14:51:38
+
+==> logs/activeDWAC.ls <==
+close   14.65 0.02 -0.22 50%   1 1     10:14:05
+
+==> logs/activeHRC.ls <==
+close   154.51 0.33 0.33 100%   72 0     15:59:46
+
+==> logs/activeIBM.ls <==
+close   130.16 2.26 2.26 100%   91 0     12:44:05
+
+==> logs/activeKDMN.ls <==
+close   9.42 -0.05 -0.05 0.0%   158 0     15:59:46
+
+==> logs/activeTAAG.ls <==
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+==> logs/activeTSC.ls <==
+close   29.81 -0.01 -0.05 0.0%   2 2     10:28:21
+
+==> logs/activeTSCO.ls <==
+close   210.38 0.64 1.23 100%   54 1     15:59:46
+Total Gain/Loss:
+9.89
+
+Live results on 20211022
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAGEN.ls <==
+close   4.0 0.10 -0.08 50%   18 5     15:59:46
+
+==> logs/activeBYND.ls <==
+close   95.82 1.75 1.75 100%   89 0     15:59:46
+
+==> logs/activeCRTD.ls <==
+close   6.34 1.40 1.00 50%   15 3     10:35:57
+
+==> logs/activeDWAC.ls <==
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+==> logs/activeGROM.ls <==
+close   5.46 -0.02 -0.42 0.0%   1 1     10:12:05
+
+==> logs/activeINTC.ls <==
+close   49.51 0.24 0.26 100%   126 1     15:59:46
+
+==> logs/activeJRJC.ls <==
+close   6.8 -0.50 -0.58 0.0%   20 1     12:29:03
+
+==> logs/activeMAT.ls <==
+close   20.44 0.05 -0.27 50%   5 1     15:59:46
+
+==> logs/activeSNAP.ls <==
+close   55.12 3.81 3.81 100%   126 0     15:59:46
+Total Gain/Loss:
+5.47
+
+Live results on 20211025
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAUPH.ls <==
+close   30.36 -0.07 -0.28 0.0%   1 1     10:14:07
+
+==> logs/activeCRTD.ls <==
+close   4.38 0.87 0.87 100%   80 0     15:59:46
+
+==> logs/activeERYP.ls <==
+close   3.27 0.29 0.29 100%   191 0     15:59:46
+
+==> logs/activeKMB.ls <==
+close   130.31 1.15 0.36 37%   35 7     15:59:46
+
+==> logs/activeMARK.ls <==
+close   3.03 0.19 -1.84 19%   3 20     15:59:46
+
+==> logs/activePAE.ls <==
+close   9.89 -0.04 -0.04 0.0%   360 0     15:59:46
+
+==> logs/activePHUN.ls <==
+close   7.17 2.21 2.21 100%   122 0     15:59:46
+
+==> logs/activePINS.ls <==
+close   50.69 0.11 -1.27 33%   51 2     15:59:46
+
+==> logs/activeSGBX.ls <==
+close   3.92 -0.05 -0.08 0.0%   4 1     10:18:42
+Total Gain/Loss:
+0.22
+
+Live results on 20211026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeHAS.ls <==
+close   91.59 -0.28 -2.44 0.0%   2 1     09:48:53
+
+==> logs/activeLMT.ls <==
+close   332.06 2.05 2.73 60%   8 4     15:59:46
+
+==> logs/activeMARK.ls <==
+close   2.17 0.43 0.43 100%   189 0     15:59:46
+
+==> logs/activeOCGN.ls <==
+close   12.31 0.84 0.84 100%   4 0     09:41:04
+
+==> logs/activeSTX.ls <==
+close   88.11 -0.06 -1.23 28%   2 6     15:59:46
+
+==> logs/activeUPS.ls <==
+close   218.42 3.15 3.15 100%   8 0     09:39:10
+
+==> logs/activeVTNR.ls <==
+close   4.26 -0.11 -0.04 42%   10 6     15:59:13
+
+==> logs/activeWBX.ls <==
+close   20.26 -0.04 -1.30 0.0%   1 1     10:02:26
+
+==> logs/activeWM.ls <==
+close   159.27 0.64 -3.44 50%   11 1     15:59:46
+Total Gain/Loss:
+-1.3
+
+Live results on 20211027
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAUPH.ls <==
+close   29.94 -0.47 -1.64 0.0%   128 2     15:59:46
+
+==> logs/activeDBVT.ls <==
+close   3.59 -0.25 -0.25 0.0%   73 0     15:59:46
+
+==> logs/activeENPH.ls <==
+close   220.17 3.67 3.67 100%   82 0     15:14:06
+
+==> logs/activeKO.ls <==
+close   55.56 0.03 0.30 54%   10 10     15:59:46
+
+==> logs/activeMCD.ls <==
+close   242.83 -0.27 -6.12 30%   3 32     15:59:04
+
+==> logs/activeMQ.ls <==
+close   32.34 0.03 -0.68 42%   1 34     15:59:46
+
+==> logs/activeMTL.ls <==
+close   4.11 -0.01 -0.14 0.0%   120 1     15:59:46
+
+==> logs/activeV.ls <==
+close   218.8 3.61 3.61 100%   37 0     11:47:02
+
+==> logs/activeXPDI.ls <==
+close   11.88 -0.12 0.01 33%   8 2     14:06:02
+Total Gain/Loss:
+-1.24
+
+Live results on 20211028
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAGRI.ls <==
+close   3.03 0.18 0.03 50%   101 1     15:59:46
+
+==> logs/activeBJ.ls <==
+close   57.91 -0.07 -0.66 28%   4 20     15:59:46
+
+==> logs/activeDBGI.ls <==
+close   4.07 -0.27 -0.88 0.0%   8 1     14:33:02
+
+==> logs/activeHCWB.ls <==
+close   5.32 0.19 0.19 100%   12 0     10:10:18
+
+==> logs/activeIFRX.ls <==
+close   3.89 0.14 0.14 100%   9 0     10:08:23
+
+==> logs/activeLC.ls <==
+close   42.78 -1.37 -1.37 0.0%   36 0     13:47:42
+
+==> logs/activeOSTK.ls <==
+close   90.55 -0.40 -0.71 0.0%   1 1     09:55:14
+
+==> logs/activeRFL.ls <==
+close   8.09 -1.78 -1.78 0.0%   191 0     15:59:46
+
+==> logs/activeTRIT.ls <==
+close   8.08 0.50 -0.06 32%   25 24     15:59:46
+Total Gain/Loss:
+-5.1
+
+Live results on 20211028
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total Gain/Loss:
+
+
+Live results on 20211029
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAAPL.ls <==
+close   149.81 1.68 -1.69 16%   268 5     15:59:46
+
+==> logs/activeAEHR.ls <==
+close   22.61 -0.55 -1.05 0.0%   375 1     15:59:46
+
+==> logs/activeEIC.ls <==
+close   18.25 0.01 0.01 100%   70 0     15:59:46
+
+==> logs/activeGFAI.ls <==
+close   3.98 0.10 0.10 100%   1 0     09:59:36
+
+==> logs/activeHCWB.ls <==
+close   4.46 0.71 0.71 100%   189 0     15:59:46
+
+==> logs/activeLCID.ls <==
+close   37.51 0.50 -0.95 66%   12 2     10:22:15
+
+==> logs/activeRVI.ls <==
+close   6.51 0.07 0.07 100%   2 0     10:00:12
+
+==> logs/activeSKX.ls <==
+close   47.4 -1.08 -1.73 33%   2 2     09:53:03
+
+==> logs/activeWIMI.ls <==
+close   4.92 0.30 0.30 100%   385 0     15:59:46
+Total Gain/Loss:
+-4.23
+
+Live results on 20211101
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAEHR.ls <==
+close   22.49 -0.02 -1.64 0.0%   23 4     15:59:46
+
+==> logs/activeAUPH.ls <==
+close   32.63 -0.10 -1.16 0.0%   3 2     15:59:46
+
+==> logs/activeBTBT.ls <==
+close   11.8 -0.50 -0.96 0.0%   128 1     15:59:46
+
+==> logs/activeCMTL.ls <==
+close   27.22 -0.18 -2.45 28%   12 24     15:59:46
+
+==> logs/activeHOG.ls <==
+close   39.8 -0.18 -1.81 0.0%   4 3     15:59:46
+
+==> logs/activeLCID.ls <==
+close   36.53 -0.04 -4.50 12%   1 241     15:59:46
+
+==> logs/activeMTTR.ls <==
+close   24.7 0.12 -2.80 14%   18 6     15:59:46
+
+==> logs/activeON.ls <==
+close   55.0 0.02 -3.86 18%   1 10     15:59:46
+
+==> logs/activeSALM.ls <==
+close   3.84 -0.21 -0.21 0.0%   73 0     15:59:46
+Total Gain/Loss:
+-19.39
+
+Live results on 20211102
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeBBLG.ls <==
+close   5.3 0.22 -1.43 40%   239 14     15:59:46
+
+==> logs/activeCHGG.ls <==
+close   33.09 3.82 3.82 100%   72 0     13:20:02
+
+==> logs/activeDELL.ls <==
+close   54.68 -2.27 -2.27 0.0%   39 0     10:11:08
+
+==> logs/activeLEGN.ls <==
+close   52.42 -0.11 -0.83 16%   2 5     15:59:46
+
+==> logs/activeOLB.ls <==
+close   8.22 0.63 0.63 100%   40 0     10:23:03
+
+==> logs/activeROG.ls <==
+close   270.49 0.35 -3.66 18%   15 15     15:59:46
+
+==> logs/activeSBEA.ls <==
+close   12.69 0.24 0.39 66%   3 2     10:04:08
+
+==> logs/activeUAA.ls <==
+close   25.53 -0.02 -0.43 0.0%   69 1     15:59:46
+
+==> logs/activeVMW.ls <==
+close   129.52 1.79 1.79 100%   23 0     09:55:04
+Total Gain/Loss:
+-1.99
+
+Live results on 20211103
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeATVI.ls <==
+close   66.79 0.25 -1.84 33%   8 11     15:59:46
+
+==> logs/activeBBBY.ls <==
+close   19.99 2.84 2.84 100%   43 0     12:25:50
+
+==> logs/activeBCRX.ls <==
+close   12.39 -0.09 -0.11 33%   51 2     15:59:46
+
+==> logs/activeCAR.ls <==
+close   296.82 5.55 5.55 100%   7 0     10:05:15
+
+==> logs/activeGKOS.ls <==
+close   52.1 3.11 1.94 40%   42 4     12:22:03
+
+==> logs/activeLYFT.ls <==
+close   48.99 1.01 1.01 100%   126 0     15:59:46
+
+==> logs/activeOLB.ls <==
+close   7.12 -0.00 -0.98 0.0%   19 5     15:59:46
+
+==> logs/activeRRD.ls <==
+close   9.12 -0.01 -0.17 0.0%   1 5     15:59:46
+
+==> logs/activeSPT.ls <==
+close   125.52 -0.07 -3.22 33%   39 2     15:59:46
+Total Gain/Loss:
+5.02
+
+Live results on 20211104
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeIBM.ls <==
+close   120.86 0.17 0.14 33%   1 17     15:59:47
+
+==> logs/activeIMMR.ls <==
+close   7.27 0.64 0.64 100%   356 0     15:59:47
+
+==> logs/activeMRNA.ls <==
+close   284.0 1.00 -19.64 33%   137 2     15:59:47
+
+==> logs/activeMTTR.ls <==
+close   20.91 0.75 0.61 50%   38 1     12:57:02
+
+==> logs/activeNPTN.ls <==
+close   15.84 0.15 0.35 66%   6 2     11:40:21
+
+==> logs/activePETZ.ls <==
+close   3.42 0.17 0.17 100%   6 0     10:04:34
+
+==> logs/activeQCOM.ls <==
+close   156.03 -0.01 -9.32 12%   2 7     15:59:47
+Total Gain/Loss:
+-27.05
+
+Live results on 20211105
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeGDYN.ls <==
+close   36.92 -0.11 -4.31 20%   9 19     15:59:47
+
+==> logs/activeGT.ls <==
+close   24.15 -0.33 -1.04 0.0%   121 1     15:59:47
+
+==> logs/activeMRK.ls <==
+close   81.59 0.57 -4.28 14%   14 6     15:59:47
+
+==> logs/activeMRNA.ls <==
+close   224.87 6.87 10.21 50%   29 3     14:31:07
+
+==> logs/activePETZ.ls <==
+close   3.86 0.12 -0.69 22%   31 8     15:59:47
+
+==> logs/activePFE.ls <==
+close   47.42 0.84 1.51 100%   22 1     10:39:07
+
+==> logs/activePTON.ls <==
+close   55.69 -1.04 -2.57 33%   46 2     15:59:47
+Total Gain/Loss:
+-1.17
+
+Live results on 20211108
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeALYA.ls <==
+close   2.87 -0.12 -0.12 0.0%   95 0     15:59:46
+
+==> logs/activeAUTL.ls <==
+close   7.21 0.30 0.24 50%   11 1     10:30:29
+
+==> logs/activeCPLG.ls <==
+close   15.56 0.01 0.01 100%   339 0     15:59:46
+
+==> logs/activeHWBK.ls <==
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+==> logs/activePPSI.ls <==
+close   6.74 0.09 0.09 100%   2 0     10:02:35
+
+==> logs/activePSP.ls <==
+close   16.66 -0.02 -0.02 0.0%   189 0     15:59:46
+
+==> logs/activeQQC.ls <==
+close   33.81 -0.16 -0.16 0.0%   312 0     15:59:46
+
+==> logs/activeSPTN.ls <==
+close   24.53 -0.01 -0.67 14%   12 6     15:59:46
+
+==> logs/activeTTD.ls <==
+close   88.71 -0.12 -5.03 28%   9 6     15:59:46
+Total Gain/Loss:
+-5.66
+
+Live results on 20211109
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeDVD.ls <==
+close   3.59 -0.01 -0.01 0.0%   46 0     15:59:46
+
+==> logs/activeEVGO.ls <==
+close   17.07 0.35 0.35 100%   4 0     09:37:19
+
+==> logs/activeGE.ls <==
+close   113.1 1.05 1.81 58%   11 11     11:31:05
+
+==> logs/activeLAZR.ls <==
+close   20.09 0.20 -0.16 40%   5 4     15:59:46
+
+==> logs/activeNEWR.ls <==
+close   125.9 4.92 3.19 50%   61 1     15:59:46
+
+==> logs/activeNVDA.ls <==
+close   306.53 4.33 4.33 100%   81 0     15:59:46
+
+==> logs/activePPSI.ls <==
+close   7.54 -0.35 -0.35 0.0%   5 0     10:17:03
+
+==> logs/activeRBLX.ls <==
+close   109.63 1.68 -5.85 55%   62 8     15:59:46
+
+==> logs/activeZNGA.ls <==
+close   7.53 0.04 0.23 100%   11 2     11:17:58
+Total Gain/Loss:
+3.54
+
+Live results on 20211110
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeDASH.ls <==
+close   214.52 -3.11 -7.16 0.0%   10 1     15:59:47
+
+==> logs/activeDOCS.ls <==
+close   72.05 1.70 -4.47 40%   7 4     15:59:47
+
+==> logs/activeNVDA.ls <==
+close   294.87 4.88 4.88 100%   59 0     15:59:47
+
+==> logs/activePRPL.ls <==
+close   15.07 0.35 0.42 100%   6 1     10:33:03
+
+==> logs/activePUBM.ls <==
+close   35.1 -0.33 -6.80 27%   4 46     15:59:47
+
+==> logs/activeRNG.ls <==
+close   292.6 3.40 3.40 100%   1 0     09:59:43
+
+==> logs/activeRNXT.ls <==
+close   8.32 1.10 0.44 50%   33 1     15:59:47
+
+==> logs/activeSITM.ls <==
+close   238.49 3.89 3.89 100%   17 0     10:56:07
+
+==> logs/activeUPST.ls <==
+close   256.08 2.08 -17.26 50%   44 9     15:59:47
+Total Gain/Loss:
+-22.66
+
+Live results on 20211111
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAFRM.ls <==
+TB4_HL_LO_QM_OB3_OS3_CB5_CS5_DB8
+
+==> logs/activeAPP.ls <==
+TB5_HL_LO_QM_OB5_OS5_CB3_CS3_HM_AV_DB6
+
+==> logs/activeCELH.ls <==
+TB1_OO_QM_OB3_OS3_CB5_CS5_HM_AV
+
+==> logs/activeCRCT.ls <==
+TB1_OO_QM_OB1_OS1_CB3_CS3_HM_AV
+
+==> logs/activeFOSL.ls <==
+TB1_HS_QM_OB2_OS2_CB3_CS3_DB30_IT_TS
+
+==> logs/activeMQ.ls <==
+TB2_CC_QM_OB3_OS3_CB5_CS5_IT_QL_DB15
+
+==> logs/activePPSI.ls <==
+TB3_CC_QM_OB1_OS1_CB5_CS5_HM_AV
+
+==> logs/activeSBH.ls <==
+TB3_OO_QM_OB4_OS4_CB5_CS5_AL
+
+==> logs/activeSOFI.ls <==
+TB4_HL_HI_QM_OB3_OS3_CB5_CS5_AO
+Total Gain/Loss:
+0
+
+Live results on 20211112
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeACIU.ls <==
+close   5.91 -0.08 -0.44 7%   109 12     15:59:46
+
+==> logs/activeAZN.ls <==
+close   58.79 -0.04 -1.06 20%   8 4     15:59:46
+
+==> logs/activeBLNK.ls <==
+close   41.32 1.88 2.08 60%   21 4     10:14:51
+
+==> logs/activeBRLT.ls <==
+close   18.5 -0.04 -4.45 31%   3 21     15:59:46
+
+==> logs/activeDOCN.ls <==
+close   123.99 -0.14 -0.63 25%   80 3     15:59:46
+
+==> logs/activeFTCH.ls <==
+close   46.37 -0.04 0.54 40%   17 4     15:59:46
+
+==> logs/activeJNJ.ls <==
+close   165.01 0.16 0.40 75%   40 3     15:59:46
+
+==> logs/activeMITQ.ls <==
+close   3.3 0.05 -0.09 52%   19 16     15:59:37
+
+==> logs/activeMRAM.ls <==
+close   9.3 0.14 0.14 100%   5 0     10:03:09
+Total Gain/Loss:
+-3.51
+
+Live results on 20211115
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeBRLT.ls <==
+close   18.79 -0.04 -3.84 12%   3 31     15:59:46
+
+==> logs/activeCELH.ls <==
+close   77.96 1.47 -3.17 20%   41 9     15:59:46
+
+==> logs/activeCSPR.ls <==
+close   6.69 -0.05 -0.13 25%   59 3     15:59:46
+
+==> logs/activeCUE.ls <==
+close   17.87 -0.03 -2.33 17%   2 16     15:59:46
+
+==> logs/activeDLTR.ls <==
+close   128.84 4.13 4.13 100%   52 0     10:35:04
+
+==> logs/activeEYPT.ls <==
+close   16.58 1.27 0.84 50%   29 7     11:34:04
+
+==> logs/activeMRAM.ls <==
+close   12.22 1.87 1.87 100%   187 0     15:59:46
+
+==> logs/activeSPB.ls <==
+close   104.83 -0.12 -2.31 18%   6 15     15:59:46
+
+==> logs/activeXAIR.ls <==
+close   14.93 0.08 0.25 80%   7 4     11:39:32
+Total Gain/Loss:
+-4.69

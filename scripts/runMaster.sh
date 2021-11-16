@@ -29,7 +29,7 @@ else
    lpltPath="${HOME}/w/git/lplTrade"
 fi
 
-py3="${activateDir}//bin/python3"
+py3="${activateDir}/bin/python3"
 
 if [[ -n $testDate ]]; then
    workPath="test/${testDate}"

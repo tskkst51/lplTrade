@@ -38,3 +38,8 @@ Track changes that are temporary until they are tested.
       # chart after the fact. Verify THIS!!!
       if self.inPosition():
          return action
+
+10/14/21
+   1247 stocks in dc/*dc
+   948 daysBest/latest
+   write code to run the stocks with no test data

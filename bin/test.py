@@ -276,9 +276,9 @@ else:
 # Execute shell sript to populate site path with latest code
 home = str(Path.home())
 
-shellCmd = home + "/bin/lplt.sh"
+#shellCmd = home + "/bin/lplt.sh"
 
-os.system(shellCmd)
+#os.system(shellCmd)
 
 removeFiles(fresh)
 

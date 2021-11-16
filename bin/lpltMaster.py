@@ -137,7 +137,7 @@ def getAutoStocks(orderType, numStocksToTrack):
    print ("srcPath " + str(srcPath))
    
    dstPath="profiles/autoStocks.txt"
-   stock = 0
+   numStocks = 0
    lastStock = ""
    daysBestStocks = []
    
@@ -157,9 +157,10 @@ def getAutoStocks(orderType, numStocksToTrack):
    # Read from first line
    for line in lines:
       line = line.split()
-      if stock < numStocksToTrack:
+      if numStocks < numStocksToTrack:
          # Check for dups
          if line[0] == lastStock:
+            print ("found duplicate " + str(line[0]))
             continue
             
          # Don't use stocks with daily gains less than the value: e.g $2.0
@@ -167,8 +168,9 @@ def getAutoStocks(orderType, numStocksToTrack):
             print ("stock excluded < daysBestAvgDailyGain " + str(line))
             continue
             
-         # Don't use stocks with e.g: test data < 4 days
-         if int(line[2]) > numDaysTestData:
+         # Don't use stocks with e.g: test data > 4 days
+         # This is set to get stocks with not much test data 
+         if int(line[2]) < numDaysTestData:
             with open(dstPath, 'a') as pp:
                pp.write(line[0] + "\n")
                print ("stock selected auto " + str(line))
@@ -176,7 +178,7 @@ def getAutoStocks(orderType, numStocksToTrack):
             daysBestStocks.append(line[0])
             
             lastStock = line[0]
-            stock += 1
+            numStocks += 1
          else:
             print ("line excluded < numDaysTestData " + str(line))
    
@@ -285,6 +287,8 @@ d = loadProfileData(clOptions.profileTradeDataPath)
 # Get connection elements
 c = loadProfileData(clOptions.profileConnectPath)
 
+dInitial = d
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set data variables
 
@@ -374,6 +378,9 @@ useTestMinuteCharts = int(d["profileTradeData"]["useTestMinuteCharts"])
 minStockPrice = float(d["profileTradeData"]["minStockPrice"])
 maxStockPrice = float(d["profileTradeData"]["maxStockPrice"])
 excludeStocks = int(d["profileTradeData"]["excludeStocks"])
+stockOrderFile = str(d["profileTradeData"]["stockOrderFile"])
+
+# Make sure stocksFileMultiplier is "1" or more...
 stocksFileMultiplier = int(d["profileTradeData"]["stocksFileMultiplier"])
 numStocksToProcessInPremarket = int(d["profileTradeData"]["numStocksToProcessInPremarket"])
 
@@ -473,7 +480,7 @@ if masterMode:
    timeBar = 1
    d["profileTradeData"]["timeBar"] = "1"
    
-if stocksFile != "":
+if stocksFile != "" and not onlyUpdateDailyStocks:
    stocks = getAutoStocks(stocksFile, maxNumStocksToTrade * stocksFileMultiplier)   
 
 elif preMarketAnalysis:
@@ -513,8 +520,9 @@ else:
       stocks = stocks.split(",")
       
    if stocksFile == "":   
-      if len(stocks) > maxNumStocksToTrade:
-         while len(stocks) > maxNumStocksToTrade:
+      totalStocks = maxNumStocksToTrade * stocksFileMultiplier
+      if len(stocks) > totalStocks:
+         while len(stocks) > totalStocks:
             del stocks[-1]
 
 print ("stocks after" + str(stocks))
@@ -530,7 +538,7 @@ elif service == "bitfinex":
    cn = lpl.ConnectBitFinex()
 elif service == "eTrade":
    symbol = stock
-   cn = lpl.ConnectEtrade(c, stocks, debug, verbose, marketDataType, sandBox, 0, offLine)
+   cn = lpl.ConnectEtrade(c, stocks, debug, verbose, marketDataType, sandBox, offLine)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set up stock arrays
@@ -544,6 +552,14 @@ for stock in stocks:
    doOnceOnClose[stock] = 0
    dirty[stock] = 0
 
+# Save the order for later inspection
+if not offLine:
+   oCtr = 0
+   for stock in stocks:
+      oCtr += 1
+      with open(stockOrderFile, "a+") as orderFile:
+         orderFile.write('%s' % str(stock) + " " + str(oCtr) + "\n")
+            
 print ("stocks after" + str(stocks))
 print ("stocks len " + str(len(stocks)))
 
@@ -551,6 +567,9 @@ print ("stocks len " + str(len(stocks)))
 
 cwd = os.getcwd()
 wcwd = ""
+
+# dcPath isn't used in the master
+dcPath = cwd + "/dc/" + "AAPL" + ".dc"
 
 if workPath:
    os.chdir(workPath)
@@ -621,10 +640,12 @@ for stock in stocks:
    profileData[stock] = loadProfileData(clOptions.profileTradeDataPath)
    ba[stock] = lpl.Barchart()
    tr[stock] = lpl.Trends(profileData[stock], lg[stock], cn, ba[stock], offLine, stock)
-   lm[stock] = lpl.Limits(profileData[stock], lg[stock], cn, ba[stock], offLine, stock)
+   lm[stock] = lpl.Limits(profileData[stock], lg[stock], cn, ba[stock], stock)
    pr[stock] = lpl.Price(cn, offLine)
    pa[stock] = lpl.Pattern(profileData[stock], ba[stock], lg[stock])
-   a[stock] = lpl.Algorithm(profileData[stock], lg[stock], cn, ba[stock], tr[stock], lm[stock], pa[stock], pr[stock], offLine, stock)
+   dc = lpl.Dailychart()
+   dy = lpl.Dynamic(timeBar, dcPath, dc)
+   a[stock] = lpl.Algorithm(profileData[stock], lg[stock], cn, ba[stock], tr[stock], lm[stock], pa[stock], pr[stock], dy, offLine, stock)
    ut = lpl.Util()
    th = lpl.Thred(ut, offLine, cwd, wcwd)
 
@@ -755,7 +776,7 @@ if resume:
       # We're live, program halted and now resumed. Initilize a new bar and trade on
       else:
          ba[stock].appendBar(stocksChart[stock])
-         a[stock].setAllLimits(stocksChart[stock], barCtr)
+         a[stock].setAllLimits(stocksChart[stock], barCtr, last[stock])
          
 lg1.debug ("Start bar: " + str(barCtr))
 
@@ -801,8 +822,6 @@ if preMarketAnalysis and not offLine and stocksFile == "":
    pid = th.launchAlgos(algoData, maxStocksToTrade, os.path.basename(workPath))
 if not preMarketAnalysis and not offLine:
    pid = th.launchStocks(stocks, maxStocksToTrade, os.path.basename(workPath))
-
-print ("offLine " + str(offLine))
 
 if offLine:
    
@@ -898,7 +917,7 @@ while True:
       
    # Set all decision points at the end of the previous bar            
    for stock in stocks:
-      a[stock].setAllLimits(stocksChart[stock], barCtr)
+      a[stock].setAllLimits(stocksChart[stock], barCtr, last[stock])
 
    # Manage PID's
    if preMarketAnalysis:
@@ -1018,7 +1037,6 @@ while True:
          # End of bar reached.
       
       for stock in stocks:
-         print ("stockkkkkk ")
          if not masterMode:
             positionTaken[stock] = a[stock].takePosition(bid[stock], ask[stock], last[stock], vol[stock], stocksChart[stock], barCtr)
 

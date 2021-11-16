@@ -48,7 +48,7 @@ algoModifiers=(
 "AC"
 "IT" # In position tracking
 "PM" # Price movement
-"TS" # Trainling stop
+"TS" # Trailing stop
 )
 
 algoModifiersCombined=(
@@ -63,6 +63,7 @@ algoModifiersCombined=(
 "IT_QL_DB"
 "IT_QP_DB"
 "TR_IR"
+"TR_TS"
 "TR_QP"
 "QP_IR"
 "RV_TR"
@@ -75,14 +76,18 @@ algoModifiersCombined=(
 "HM_QP"
 "IT_QL"
 "IT_QP"
+"IT_TS"
 "AO_AC"
 "QP_PM"
-"TR_TS"
+"AV_TS"
+"AL_TS"
 )
 
 init $1 $2 $3
 
-echo algoOR $algoOveride
+if [[ -n $algoOveride ]]; then
+   echo algoOR $algoOveride
+fi
 
 if [[ -n $modProfiles ]]; then
    ${wp}/scripts/modProfiles.sh test
@@ -103,9 +108,16 @@ fi
 #algos=$(head -5 $resultsPath | grep BP | awk '{print $2}' | sed "s/${stock}_//")
 algos=$(head -5 $resultsPath | grep BP | awk '{print $2}')
 
+# and the best 
+algoBest=$(head -1 $resultsPath | grep BA | awk '{print $3}')
+
+algos="$algos $algoBest"
+
+echo algos remove me $algos
+
 # Run the original once for a baseline
 for algo in $algos; do
-   echo Running algo $algo against $stock
+   #echo Running algo $algo against $stock
    $run "" $algo $stock >> bestAlgos/${stock}.all
    tail bestAlgos/${stock}.all | grep "Gain" | sed "s/\$//" | sed "/.*e-*/d" >> bestAlgos/${stock}.gn
    tail -1 bestAlgos/${stock}.all
@@ -155,7 +167,7 @@ for algo in $algos; do
 
       modAlgo="${algo}_${aMod}"
       
-      echo Running algo $modAlgo against $stock
+      #echo Running algo $modAlgo against $stock
       $run "" $modAlgo $stock > bestAlgos/${stock}.all
       #tail bestAlgos/${stock}.all | grep "Gain" | sed "s/\$//" | sed "/.*e-*/d" >> bestAlgos/${stock}.gn
       tail bestAlgos/${stock}.all | grep "Gain" | sed "/.*e-*/d" >> bestAlgos/${stock}.gn
@@ -180,7 +192,7 @@ for algo in $algos; do
 
       modAlgo="${algo}_${aMod}"
       
-      echo Running algo $modAlgo against $stock
+      #echo Running algo $modAlgo against $stock
       $run "" $modAlgo $stock > bestAlgos/${stock}.all
       #tail bestAlgos/${stock}.all | grep "Gain" | sed "s/\$//" | sed "/.*e-*/d" >> bestAlgos/${stock}.gn
       tail bestAlgos/${stock}.all | grep "Gain" | sed "/.*e-*/d" >> bestAlgos/${stock}.gn

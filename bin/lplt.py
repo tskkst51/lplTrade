@@ -292,14 +292,14 @@ elif service == "bitfinex":
 elif service == "eTrade":
    symbol = stock
    stockArr.append(stock)
-   cn = lpl.ConnectEtrade(c, stockArr, debug, verbose, marketDataType, sandBox, slave, offLine)
+   cn = lpl.ConnectEtrade(c, stockArr, debug, verbose, marketDataType, sandBox, offLine)
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize algorithm,  barcharts objects
 
 bc = lpl.Barchart()
 tr = lpl.Trends(d, lg, cn, bc, offLine)
-lm = lpl.Limits(d, lg, cn, bc, offLine, symbol)
+lm = lpl.Limits(d, lg, cn, bc, symbol)
 pa = lpl.Pattern(d, bc, lg)
 pr = lpl.Price(cn, offLine)
 a = lpl.Algorithm(d, lg, cn, bc, tr, lm, pa, pr, offLine, stock)
@@ -470,7 +470,7 @@ while True:
          pr.findStartPriceIdx(numPrices, timeBar)
          barCtr = 1
 
-   a.setAllLimits(barChart, barCtr)
+   a.setAllLimits(barChart, barCtr, last)
 
    while True:
                
@@ -479,9 +479,9 @@ while True:
 
       bid, ask, last, vol = pr.getNextPrice(barChart, numBars, barCtr, stock)
       
-      a.setCurrentBid(bid)
-      a.setCurrentAsk(ask)
-      a.setCurrentLast(last)
+#      a.setCurrentBid(bid)
+#      a.setCurrentAsk(ask)
+#      a.setCurrentLast(last)
       #a.setCurrentVol(vol)
       
       # Set the profit to gain

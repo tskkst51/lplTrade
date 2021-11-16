@@ -64,7 +64,7 @@ class Thred():
          
          if testDate:
             algo = "none"
-            print ("SLAVESSSSSSSSSSL[stock]\n" + self.launchScript + " " + testDate + " " + algo + " " + stock)
+            print ("TESTTTTTTTTTTTT[stock]\n" + self.launchScript + " " + testDate + " " + algo + " " + stock)
             p[stock] = Popen([self.launchScript, testDate, algo, stock])
          else:
             print ("SLAVESSSSSSSSSS[stock]\n" + self.launchScript + " " + stock + " " + algo)
@@ -91,7 +91,7 @@ class Thred():
          print ("stock " + str(stock))
          print ("algo " + str(algo))
          
-         # Log path needs to be created before the slave is invoked so stdout is cosher
+         # Log path needs to be created before the slave is invoked so stdout is kosher
          self.ut.writePath(self.logPath + "active" + stock + ".ls", algo)
          self.ut.writePath(self.debugPath + "active" + stock + ".ds", algo)
          

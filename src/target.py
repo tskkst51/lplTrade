@@ -194,7 +194,7 @@ class Target:
       allStocks = self.getAllStocksArr()
 
       for stocks in allStocks:
-         cn = lpl.ConnectEtrade(self.c, stocks, 1, 1, "intraday", False, 0, 1)         
+         cn = lpl.ConnectEtrade(self.c, stocks, 1, 1, "intraday", False, 1)         
                
          for stock in stocks:
             tr[stock] = lpl.Trends(self.d, self.l, cn, 0, 0, stock)
@@ -338,8 +338,10 @@ class Target:
          lastLine[key] = stockData[key][len(value) - 1]
 
       for gKey, gValue in gapData.items():
-         for aKey, aValue in asks.items():
+         #for aKey, aValue in asks.items():
+         for aKey, aValue in bids.items():
             if aValue[0] == 0.0:
+               #print ("skipping bid == 0: " + str(aKey) + " " + str(gKey))
                continue
             for lKey, lValue in lastLine.items():
                if gKey == aKey and gKey == lKey:
@@ -347,7 +349,7 @@ class Target:
                   gCurr = self.getCurrentGap(lValue, aValue)
                   gapCandidates[gKey] = gCurr / gAvg
                      
-      print ("\ngap Candidates by amount > \n" + str(gapCandidates))
+      print ("\ngap Candidates by amount > avg \n" + str(gapCandidates))
       print ("\ngap Candidates len > \n" + str(len(gapCandidates)))
 
       return gapCandidates
@@ -423,7 +425,7 @@ class Target:
 
       # Load all the bids and asks values from the service (Etrade) into the dicts
       for stocks in allStocks:
-         cn = lpl.ConnectEtrade(self.c, stocks, 1, 1, "intraday", False, 0, 0)         
+         cn = lpl.ConnectEtrade(self.c, stocks, 1, 1, "intraday", False, 0)         
          
          stockVals = []
          
@@ -447,6 +449,10 @@ class Target:
             for ctr in range(len(stockVals)):
                for k, v in stockVals[ctr].items():
                   if k == stock:
+#                     if v[0] == 0.0 or v[1] == 0.0:
+#                        print ("skipping stock bid: " + stock + " " + str(v[0]))
+#                        print ("skipping stock ask: " + stock + " " + str(v[1]))
+#                        continue
                      bidList.append(v[0])
                      askList.append(v[1])
                bids[stock] = bidList
@@ -506,23 +512,38 @@ class Target:
 
       spreadCandidates = {}
       losers = []
+      numSpreadLimits = len(spreadLimits)
       
       for k, v in priceDiffs.items():
-         for limit in range(len(spreadLimits)):
-            if v[0] < int(priceLimits[limit]):
-               if v[1] <= float(spreadLimits[limit]):
+         # Ignore price values of 0
+         if v[0] == 0.0 or v[1] == 0.0 or v[1] < 0:
+            spreadCandidates[k] = 0
+            losers.append([k, v[1]]) 
+            print ("loser spread, 0's found " + str(k) + " " + str(v))
+            continue
+            
+         for ctr in range(numSpreadLimits):
+            #print ("priceLimits[ctr] " + str(priceLimits[ctr]))
+            #print ("spreadLimits[ctr] " + str(spreadLimits[ctr]))
+            
+            if v[0] <= float(priceLimits[ctr]):
+               print ("stock " + str(k))
+               if v[1] <= float(spreadLimits[ctr]):
+                  print ("  winner spread " + str(v[1]) + " < " + str(spreadLimits[ctr]))
                   spreadCandidates[k] = 1
-                  break
                else:
+                  print ("  loser spread " + str(v[1]) + " > " + str(spreadLimits[ctr]))
                   spreadCandidates[k] = 0
                   losers.append([k, v[1]]) 
-                  break
-                  
+               break
+               
       print ("spreadCandidates\n" + str(spreadCandidates))
       print ("losers\n" + str(losers))
       
       print ("stockData count\n" + str(len(stockData)))
       print ("spreadCandidates count\n" + str(len(spreadCandidates)))
+      
+      #exit (1)
       
       return spreadCandidates
    
@@ -593,9 +614,9 @@ class Target:
    def orderStocks(self, gapCandidates, lastDaysVolGtrCandidates, lastDaysVolLessCandidates, \
          volumeCandidates, spreadCandidates, trendCandidates, betaCandidates, avgVolData, stocks, daysBestStocks):
    
-      doGap = 1
-      doVolLess = doVolGtr = doTrend = doBeta = doSpread = 0
-      doTestData = doVolume = doAvgVol = doBest = 0
+      doGap = doSpread = 1
+      doVolLess = doVolGtr = doTrend = doBeta = doVolume = 0
+      doTestData = doAvgVol = doBest = 0
       
       if len(daysBestStocks) > 0:
          doBest += 1
@@ -802,7 +823,7 @@ class Target:
                            key = stocks.index)
 
          print ("days best ordered with preMarket stocks\n" + str(stocks))
-         exit (1)
+         #exit (1)
          
       return stocks
 

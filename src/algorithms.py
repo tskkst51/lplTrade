@@ -5,12 +5,11 @@ import io
 import sys
 import os
 from bitarray import bitarray 
-import lplTrade as lpl
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Algorithm():
 
-   def __init__(self, data, lg, cn, bc, tr, lm, pa, pr, offLine=0, stock=""):
+   def __init__(self, data, lg, cn, bc, tr, lm, pa, pr, dy, offLine=0, stock=""):
    
       self.data = data
       self.lg = lg
@@ -20,6 +19,7 @@ class Algorithm():
       self.lm = lm
       self.pa = pa
       self.pr = pr
+      self.dy = dy
       self.offLine = offLine
       self.stock = stock
 
@@ -54,10 +54,8 @@ class Algorithm():
       self.doTrailingStop = int(data['profileTradeData']['doTrailingStop'])
       self.doVolatility = int(data['profileTradeData']['doVolatility'])
       self.doInPosTracking = int(data['profileTradeData']['doInPosTracking'])
-      
       self.averageVolumeOpen = int(data['profileTradeData']['averageVolumeOpen'])
       self.averageVolumeClose = int(data['profileTradeData']['averageVolumeClose'])
-
       self.volumeLastBarOpen = int(data['profileTradeData']['volumeLastBarOpen'])
       self.volumeLastBarClose = int(data['profileTradeData']['volumeLastBarClose'])
       
@@ -67,6 +65,7 @@ class Algorithm():
       self.doReversals = int(data['profileTradeData']['doReversals'])
       self.profitGainedPct = float(data['profileTradeData']['profitGainedPct'])
       self.inPosProfitPct = float(data['profileTradeData']['inPosProfitPct'])
+      self.inPosLossPct = float(data['profileTradeData']['inPosLossPct'])
       
       self.quitMaxProfit = float(data['profileTradeData']['quitMaxProfit'])
       self.quitMaxLoss = float(data['profileTradeData']['quitMaxLoss'])
@@ -229,7 +228,12 @@ class Algorithm():
       pass
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setAllLimits(self, bc, bar):
+   def setAlgoLimits(self):
+      
+      pass
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setAllLimits(self, bc, bar, last):
       
       self.lg.debug("actual bar number passed in to setAllLimits..." + str(bar))
       self.lg.debug("lm.getMaxNumTradeBars() " + str(self.lm.getMaxNumTradeBars()))
@@ -306,7 +310,11 @@ class Algorithm():
       
       #self.setDynamic(bar)
             
-      #if self.doDynamic:
+      # Change algo's based on conditions, time slope
+      if self.doDynamic:
+         algo = self.dy.setOpenCloseBars(last, self.timeBar)
+         
+         
       #   self.algorithmDynamic(bar)
                
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -366,13 +374,13 @@ class Algorithm():
       elif self.inPosition():
          if action == self.buy:
             self.closePosition(bar, barChart, bid, ask, 0)
-            if self.doQuickReversal and not self.isPriceInRange():
+            if self.doQuickReversal and not self.isPriceInRange(bid, ask):
                self.lg.debug("Quick reversal being used: " + str(action))
                self.openPosition(self.sell, bar, barChart, bid, ask)
             
          elif action == self.sell:
             self.closePosition(bar, barChart, bid, ask, 0)
-            if self.doQuickReversal and not self.isPriceInRange():
+            if self.doQuickReversal and not self.isPriceInRange(bid, ask):
                self.lg.debug("Quick reversal being used: " + str(action))
                self.openPosition(self.buy, bar, barChart, bid, ask)
 
@@ -385,13 +393,14 @@ class Algorithm():
       exitAlgo = 3
       
       if self.doInPosTracking:
-         if self.algorithmPriceTracking(last, action):
-            # We exited do to positive position turning negative
+         if self.algorithmPriceTracking(bid, ask, last, action):
+            # We close position do to positive position turning negative
             self.closePosition(bar, barChart, bid, ask, 1)
-            return 4
+            #return 4
+            return 0
      
       if self.doDynamic:
-         self.algorithmDynamic(action)
+         self.algorithmDynamic(bid, ask, last, action)
      
       if self.doVolatility:
          self.algorithmVolatility(action)
@@ -443,7 +452,7 @@ class Algorithm():
          action = self.algorithmDoOnlyTrends(barChart, bar, bid, ask, action)
          
       if self.lm.doRangeTradeBars:
-         action = self.algorithmDoInRange(barChart, bar, action)
+         action = self.algorithmDoInRange(barChart, bar, bid, ask, action)
          
       if self.doDefault:
          action = self.algorithmDefault(barChart, bar, bid, ask, action)
@@ -511,6 +520,7 @@ class Algorithm():
       self.lg.debug ("prevLast: " + str(prevLast))
       self.lg.debug ("lastChange: " + str(lastChange))
       self.lg.debug ("avgChange: " + str(avgChange))
+      self.lg.debug ("curIdx: " + str(curIdx))
 
       if lastChange > avgChange:
          self.lg.debug ("lastChange > avgChange set price target")
@@ -765,7 +775,7 @@ class Algorithm():
       return action
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def algorithmDoInRange(self, barChart, bar, action=0):
+   def algorithmDoInRange(self, barChart, bar, bid, ask, action=0):
    
       self.lg.debug("In algorithmDoInRange. Action: " + str(action))
       self.reversAction = 0
@@ -783,7 +793,7 @@ class Algorithm():
          
       # Return 0 if price is within a range 
 
-      if self.isPriceInRange():
+      if self.isPriceInRange(bid, ask):
          self.priceInRange += 1
          self.useAvgBarLen = 0
          self.lg.debug("NOT TRADING IN PRICE RANGE AND NOT IN A POSITION " + str(self.lm.doRangeTradeBars))         
@@ -826,6 +836,9 @@ class Algorithm():
       self.tr.isBullTrend()
 
       loPrice, loBar, hiPrice, hiBar = self.setSessionData(bc, bar)
+      
+      sessionTrendValue = self.tr.getSessionTrendValue(hiPrice, hiBar, loPrice, loBar, ask)
+      self.tr.setSessionTrend(sessionTrendValue)
 
       if not self.inPosition():
          if self.tr.isBullSessionTrend() and (self.tr.isBullTrend() and not self.tr.isBearTrend()):
@@ -962,7 +975,7 @@ class Algorithm():
             if last > self.lm.closeSellLimit:
                self.lg.debug ("Closing algorithmHiLo SELL. closeSellLimit breached " + str(last))
                retCode = 1
-      elif not self.inPosition():
+      else:
          if last > self.lm.openBuyLimit:
             self.lg.debug ("Opening algorithmHiLo BUY. limit: " + str(self.lm.openBuyLimit) + " last "  + str(last))
             retCode = 1
@@ -1594,98 +1607,106 @@ class Algorithm():
       return action
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def algorithmPriceTracking(self, last, action=0):
+   def algorithmPriceTracking(self, bid, ask, last, action=0):
       
       self.lg.debug("In algorithmPriceTracking: " + str(action))
 
-      # If in a position and in a profit, monitor it
-      # Don't let a profit turn into a loss.
-      # Don't let a loss get over it's limit.
+      # If in a position monitor it
+      # close out position if near loss/profit target.
       
       if not self.inPosition():
          return 0
       
-      tGain = self.getTotalGain()
-      
-      if tGain == 0:
-         if self.buy:
-            tGain = self.openPositionPrice + last
-         else:
-            tGain = self.openPositionPrice - last
+      tGain = last - self.openPositionPrice
 
-      print ("tGain " + str(tGain))
-      
-#      if tGain == 0.0 and self.numTrades < 1:
-#         return 0
-      
+      if self.ask:
+         if tGain < 0:
+            tGain = tGain*-1
+
+      print ("tGain last - self.openPositionPrice " + str(tGain))
+            
       if tGain == 0.0:
          return 0
       
       if self.positionType == self.buy:
-         last = self.getCurrentAsk()
+         last = ask
          self.lg.debug("Last ask price: " + str(last))
+         self.lg.debug("self.openPositionPrice: " + str(self.openPositionPrice))
+         self.lg.debug("diff: " + str(last - self.openPositionPrice))
 
-         if last < self.openPositionPrice:
-            if tGain > 0:
-               self.lg.debug("Position is losing money: ")
-               self.lg.debug("-" + str(self.openPositionPrice - last))
-               if self.exitWProfit(tGain, self.openPositionPrice - last):
-                  self.lg.debug("Exiting with inPos profit: ")
-                  self.setInPosGain()
-                  return 1
-               
-            elif tGain < 0:
-               self.lg.debug("Position is adding to the current loss: ")
-               self.lg.debug(str(tGain) + " -" + str(self.openPositionPrice - last))
-               
-
-      else:
-         last = self.getCurrentBid()
-         self.lg.debug("Last bid price: " + str(last))
-
-      if last == 0.0 or last == 0:
-         return 0
- 
-      self.lg.debug("self.openPositionPrice: " + str(self.openPositionPrice))
-      
-      if last < self.openPositionPrice:
-         if tGain > 0:
-            self.lg.debug("Position is losing money: ")
-            self.lg.debug("-" + str(self.openPositionPrice - last))
-            if self.exitWProfit(tGain, self.openPositionPrice - last):
-               self.lg.debug("Exiting with inPos profit: ")
-               self.setInPosGain()
+         if last > self.openPositionPrice:
+            self.lg.debug("Position is gaining profit: ")
+            self.lg.debug("+" + str(last - self.openPositionPrice))
+#            if self.exitWProfit(tGain):
+#               self.lg.debug("Exiting with inPos profit: ")
+#               self.setInPosGain()
+#               return 1
+            
+            if self.priceNearProfitTarget(tGain):
                return 1
                
-         if tGain < 0:
+         else:
             self.lg.debug("Position is adding to the current loss: ")
             self.lg.debug(str(tGain) + " -" + str(self.openPositionPrice - last))
+            #if self.exitWLoss(tGain):
+#            if self.exitWLoss(tGain):
+#               self.lg.debug("Exiting with inPos loss: ")
+#               #self.setInPosGain()
+#               return 1
+            
+            if self.priceNearLossTarget(tGain):
+               return 1
+
+      elif self.positionType == self.sell:
+         last = bid
+         self.lg.debug("Last bid price: " + str(last))
+         self.lg.debug("self.openPositionPrice: " + str(self.openPositionPrice))
+         self.lg.debug("diff: " + str(self.openPositionPrice - last))
+
+         if last < self.openPositionPrice:
+            self.lg.debug("Position is gaining profit: ")
+            self.lg.debug("+" + str(self.openPositionPrice - last))
+#            if self.exitWProfit(tGain):
+#               self.lg.debug("Exiting with inPos profit: ")
+#               self.setInPosGain()
+#               return 1
+            if self.priceNearProfitTarget(tGain):
+               return 1
                
-      else:
-         # In positive position let it ride
-         self.lg.debug("Position is gaining profit. Let it ride... ")
-         self.lg.debug(str(last - self.openPositionPrice))
-         
-         if self.exitWProfit(tGain, self.openPositionPrice - last):
-            self.lg.debug("Exiting with inPos profit: ")
-            self.setInPosGain()
-            return 1
-    
+         else:
+            self.lg.debug("Position is adding to the current loss: ")
+            self.lg.debug(str(tGain) + " -" + str(self.openPositionPrice - last))
+#            if self.exitWLoss(tGain):
+#               self.lg.debug("Exiting with inPos loss: ")
+#               #self.setInPosGain()
+#               return 1
+
+            if self.priceNearLossTarget(tGain):
+               return 1
+               
       return 0
       
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def algorithmDynamic(self, action=0):
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def algorithmDynamic(self, bid, ask, last, action=0):
       
       self.lg.debug("In algorithmDynamic: " + str(action))
 
+      # determine OB and CB's based on daily chart data. 
+      # get % gain at open compare with simlar day % gain and use that 
+      # days results. e.g:
+      # open 20% lower; find day(s) ~20% lower open; if day gain +
+      # set OB buy bars at 1 CS bars at 3 
+      
       # Too many times trends are a + gain. Don't let them turn negative
-      if doTrends:
+      if self.doTrends:
          doInPosTracking += 1
 
       # Turn on quick loss 
       
       
       # Detect range bound condition and get out or turn on IR
+      
+      inRangeBars = self.dy.getRangeBars()
       
       # Turn QP on during first ~30 min of trading
       
@@ -1731,20 +1752,19 @@ class Algorithm():
       
       # After min profit hit use it as a stop and continue to bank profit
             
-      
       # Once price goes out of range reverse buys and sells
-      if self.isPriceInRange():
+      if self.isPriceInRange(bid, ask):
          self.dynPriceInRange += 1
 
-      if not self.isPriceInRange() and self.dynPriceInRange:
+      if not self.isPriceInRange(bid, ask) and self.dynPriceInRange:
          self.doReverseBuySell += 1
          self.setRevBuySell()
          self.dynPriceInRange = 0
 
-      if self.getBarsInPosition() > self.lm.openBuyBars:
+      if self.bc.getBarsInPosition() > self.lm.openBuyBars:
          self.lm.openBuyBars -= 1
          
-      if self.getBarsInPosition() > self.lm.closeBuyBars and self.lm.closeBuyBars > 0:
+      if self.bc.getBarsInPosition() > self.lm.closeBuyBars and self.lm.closeBuyBars > 0:
          self.lm.closeBuyBars -= 1
          
       # If in a position and within a range sell out for profit as exiting range
@@ -1755,28 +1775,69 @@ class Algorithm():
       # if in a gain position set stop just above average bar length?
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def exitWProfit(self, lastGain, posDiff):
+   def exitWProfit(self, lastGain):
       
       # Calculate if we should exit with profit
       # How close is the price to the min profit amount?
       
       #profitAmt = lastGain * self.quickProfitPctTrigger
 
+      if lastGain < 0:
+         return 0
+                  
       pctNearTrgt = lastGain / self.getTargetProfit()
 
-      if pctNearTrgt > self.inPosProfitPct: # 60%
-         profitAmt = lastGain - (self.exitWProfitVal * 0.6)
-      else:
-         profitAmt = lastGain - self.exitWProfitVal
-      
-      self.lg.debug("exitWProfit: profitAmt " + str(profitAmt))
-      self.lg.debug("exitWProfit: posDiff " + str(posDiff))
-      self.lg.debug("exitWProfit: self.exitWProfitVal " + str(self.exitWProfitVal))
-      self.lg.debug("exitWProfit: lastGain " + str(lastGain))
       self.lg.debug("exitWProfit: pctNearTrgt " + str(pctNearTrgt))
       self.lg.debug("exitWProfit: inPosProfitPct " + str(self.inPosProfitPct))
-        
-      if posDiff >= profitAmt:
+
+      if pctNearTrgt > self.inPosProfitPct: # 60%
+         return 1
+         
+      return 0
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def exitWLoss(self, lastLoss):
+      
+      # Calculate if we should exit with profit
+      # How close is the price to the min profit amount?
+      
+      #profitAmt = lastLoss * self.quickProfitPctTrigger
+
+      if lastLoss > 0:
+         return 0
+                  
+      pctNearTrgt = lastLoss / self.getTargetProfit()
+
+      self.lg.debug("exitWProfit: pctNearTrgt " + str(pctNearTrgt))
+      self.lg.debug("exitWProfit: inPosProfitPct " + str(self.inPosProfitPct))
+
+      if pctNearTrgt > self.inPosLossPct: # 50%
+         return 1
+         
+      return 0
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def priceNearLossTarget(self, loss):
+   
+      pctNearTrgt = loss / self.getTargetProfit()
+
+      self.lg.debug("priceNearLossTarget: pctNearTrgt " + str(pctNearTrgt))
+      self.lg.debug("priceNearLossTarget: inPosProfitPct " + str(self.inPosProfitPct))
+
+      if pctNearTrgt > self.inPosLossPct: # 60%
+         return 
+         
+      return 0
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def priceNearProfitTarget(self, gain):
+   
+      pctNearTrgt = gain / self.getTargetProfit()
+
+      self.lg.debug("priceNearProfitTarget: pctNearTrgt " + str(pctNearTrgt))
+      self.lg.debug("priceNearProfitTarget: inPosProfitPct " + str(self.inPosProfitPct))
+
+      if pctNearTrgt > self.inPosProfitPct: # 50%
          return 1
          
       return 0
@@ -1792,7 +1853,7 @@ class Algorithm():
          return 0
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isPriceInRange(self):
+   def isPriceInRange(self, bid, ask):
    
       if not self.lm.doRangeTradeBars:
          return 0
@@ -1801,7 +1862,8 @@ class Algorithm():
       self.lg.debug("self.lm.rangeHi " + str(self.lm.rangeHi))
       self.lg.debug("self.lm.rangeLo " + str(self.lm.rangeLo))
 
-      if self.cn.getCurrentBid(self.stock) >= self.lm.rangeLo and self.cn.getCurrentAsk(self.stock) <= self.lm.rangeHi:
+      #if self.cn.getCurrentBid(self.stock) >= self.lm.rangeLo and self.cn.getCurrentAsk(self.stock) <= self.lm.rangeHi:
+      if bid >= self.lm.rangeLo and ask <= self.lm.rangeHi:
          if not self.inPosition():
             self.lg.debug ("IN RANGE BETWEEN " + str(self.lm.rangeLo) +  " >" + str(self.cn.getLastTrade(self.stock)) + "< " +  str(self.lm.rangeHi))
 
@@ -1853,14 +1915,17 @@ class Algorithm():
       return 0
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def doSessionRestrictOpen(self, action, bar, bc, bid, ask):
+   def doSessionsRestrictOpen(self, action, bar, bc, bid, ask):
    
       # Don't take position the opposite way of the lo
       
       loPrice, loBar, hiPrice, hiBar = self.setSessionData(bc, bar)
-
+      
       self.lg.debug("session loPrice, loBar " + str(loPrice) + " " + str(loBar))
       self.lg.debug("session hiPrice, hiBar " + str(hiPrice) + " " + str(hiBar))
+
+      sessionTrendValue = self.tr.getSessionTrendValue(hiPrice, hiBar, loPrice, loBar, ask)
+      self.tr.setSessionTrend(sessionTrendValue)
 
       if self.lm.doRangeTradeBars:
          # Block if we are in a bull trend and trade is reversed
@@ -1872,7 +1937,7 @@ class Algorithm():
             if action == self.sell and self.tr.isBullSessionTrend():
                self.lg.debug("blocking  isBullSessionTrend and sell " )
                return 1
-      else:     
+#      else:     
          # NOT SURE WHAT THIS ACCOMPLISHES TEST
 #            if action == self.buy and bid > hiPrice and hiBar == 1:
 #               self.lg.debug("blocking buy bid > hiPrice and hiBar == 1" )
@@ -1881,12 +1946,12 @@ class Algorithm():
 #               self.lg.debug("blocking sell ask < loPrice and loBar == 1" )
 #               return 1
          
-         if action == self.buy and self.tr.isBearSessionTrend():
-            self.lg.debug("session buy isBearSessionTrend not opening position... ")
-            return 1
-         elif action == self.sell and self.tr.isBullSessionTrend():
-            self.lg.debug("session sell isBullSessionTrend not opening position... ")
-            return 1
+      if action == self.buy and self.tr.isBearSessionTrend():
+         self.lg.debug("session buy isBearSessionTrend not opening position... ")
+         return 1
+      elif action == self.sell and self.tr.isBullSessionTrend():
+         self.lg.debug("session sell isBullSessionTrend not opening position... ")
+         return 1
 
       return 0
       
@@ -1895,7 +1960,7 @@ class Algorithm():
       
       self.lg.debug("In restrictOpen")
       
-      # Bastards halt trading and bid and ask are 0 sometimes
+      # Bastards halt trading, bid and ask are 0 sometimes
       if bid == 0.0 or ask == 0.0:
          self.lg.debug("bid or ask are 0: bid: " + str(bid) + " ask: " + str(ask))
          return 1
@@ -1913,14 +1978,14 @@ class Algorithm():
             str(self.lm.getTradingDelayBars()))         
          return 1
 
-      if self.isPriceInRange():
+      if self.isPriceInRange(bid, ask):
          self.priceInRange += 1
          self.lg.debug("NOT TRADING IN PRICE RANGE AND NOT IN A POSITION " + \
             str(self.lm.doRangeTradeBars))         
          return 1
 
       if self.doSessions:
-         if self.doSessionRestrictOpen(action, bar, bc, bid, ask):
+         if self.doSessionsRestrictOpen(action, bar, bc, bid, ask):
             return 1
             
       # Use the trend to only buy or sell if a trend exists.
@@ -1984,7 +2049,11 @@ class Algorithm():
       self.lg.info("Open buy limit: " + str(self.lm.openBuyLimit))
       self.lg.info("Open sell limit: " + str(self.lm.openSellLimit))
       self.lg.info("Open position Price: " + str(price))
-            
+      
+      
+      #self.lg.info("self.offLine: " + str(self.offLine))
+      #self.lg.info("bc[bar][self.dt] " + str(bc[bar][self.dt]))
+      
       if self.offLine:
          self.lg.info("Position Time: " + bc[bar][self.dt] + "\n")
       else:
@@ -2092,6 +2161,11 @@ class Algorithm():
 
       # Don't close position the opposite way of the lo
       sessionLo, loBar, sessionHi, hiBar = self.setSessionData(bc, bar)
+
+      loPrice, loBar, hiPrice, hiBar = self.setSessionData(bc, bar)
+      
+      sessionTrendValue = self.tr.getSessionTrendValue(hiPrice, hiBar, loPrice, loBar, ask)
+      self.tr.setSessionTrend(sessionTrendValue)
 
       self.lg.debug("session loPrice, loBar " + str(sessionLo) + " " + str(loBar))
       self.lg.debug("session hiPrice, hiBar " + str(sessionHi) + " " + str(hiBar))
@@ -2293,13 +2367,10 @@ class Algorithm():
    
       loPrice, loBar = self.bc.getSessionLoAndBar(bc, bar)
       hiPrice, hiBar = self.bc.getSessionHiAndBar(bc, bar)
-
-      sessionTrendValue = self.tr.getSessionTrendValue(hiPrice, hiBar, loPrice, loBar)
-      self.tr.setSessionTrend(sessionTrendValue)
       
       return loPrice, loBar, hiPrice, hiBar
-      
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setActionOnOpenBar(self):
    
       self.doOnOpenBar += 1
@@ -2507,46 +2578,6 @@ class Algorithm():
       return self.currentVol
          
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setCurrentBid(self, bid):
-      
-      self.bid = bid
-   
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getCurrentBid(self):
-      
-      return self.bid
-   
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setCurrentAsk(self, ask):
-      
-      self.ask = ask
-   
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getCurrentAsk(self):
-      
-      return self.ask
-   
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setCurrentLast(self, last):
-      
-      self.last = last
-   
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getCurrentLast(self):
-      
-      return self.last
-   
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setCloseBuyStop(self):
-   
-      self.closeBuyLimit = self.cn.getCurrentAsk(self.stock)
-   
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setCloseSellStop(self):
-   
-      self.closeSellLimit = self.cn.getCurrentBid(self.stock)
-   
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setDynamic(self, bar):
    
       #if not self.doDynamic:
@@ -2709,12 +2740,12 @@ class Algorithm():
       return self.executeOnClosePosition
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getGain(self):
-
-      if self.cn.getCurrentBid(self.stock) > self.openPositionPrice:
-         return 1
-
-      return 0
+#   def getGain(self):
+#
+#      if self.cn.getCurrentBid(self.stock) > self.openPositionPrice:
+#         return 1
+#
+#      return 0
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getInitialStopLoss(self):

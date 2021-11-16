@@ -118,12 +118,20 @@ function mergeMasterSlaveData {
          fi
          
          logFile=$(echo $mChart | sed "s/bc/ls/")
+         origFile=$(echo $mChart | sed "s/ls/or_ls")
          
          echo Copying $logFile
-         if [[ -f "${wp}/debug/${logFile}" ]]; then
-            cp "${wp}/logs/${logFile}" "${testDir}/debug" || echo cant copy $logFile to "${testDir}/logs"
+         if [[ -f "${wp}/logs/${logFile}" ]]; then
+            cp "${wp}/logs/${logFile}" "${testDir}/logs/${origFile}" || echo cant copy $logFile to "${testDir}/logs/${origFile}"
+            cp "${wp}/logs/orderFile.ll" "${testDir}/logs" || echo cant copy orderFile.ll to "${testDir}/logs"
          fi
       done
+   else
+      mkdir $testDir || echo cant make $testDir
+      mkdir ${testDir}/profiles || echo cant make ${testDir}/profiles
+      mv prices bc logs debug $testDir || echo cant move live data to $testDir
+      mkdir prices bc logs debug || echo cant mkdir prices bc logs debug
+      cp profiles/* ${testDir}/profiles || echo cant copy profiles to $testDir
    fi
    
    #rm -fr "debug/*" "logs/*" "bc/*" "prices/*"
@@ -201,7 +209,7 @@ fi
 
 testDir="${wp}/test/${dt}"
 
-log="${wp}/logs/output_${dt}"
+log="${wp}/logs/liveDebugLog_${dt}.oo"
 
 cmd="$py3 $lpltMaster -d -c $HOME/profiles/et.json -p $wp/profiles/active.json"
 
@@ -230,7 +238,7 @@ if [[ $? != 0 ]]; then
    exit 1
 fi
 
-waiting=180
+waiting=1
 
 if [[ -z $offLine ]]; then
    if [[ -n $testHost ]]; then

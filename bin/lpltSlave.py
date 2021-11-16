@@ -1,6 +1,7 @@
 ## lpltSlave.py is invoked by lpltMaster.py
 ## lpltMaster.py writes to the prices and bc files and slave reads from them
 ## multiple slaves are running at the same time
+## Also run in offLine mode. invoked as standalone running against test data
 
 import pyetrade
 import sys
@@ -10,32 +11,34 @@ import time
 import json
 import os.path
 import lplTrade as lpl
-from array import array
-from optparse import OptionParser
-from time import time, sleep
 import pathlib
 import pickle
 import simplejson
-from shutil import copyfile
+from   shutil import copyfile
+from   array import array
+from   optparse import OptionParser
+from   time import time, sleep
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def waitForPopulatedPrices(pricesPath, barChartPath):   
    
-   while True:
-      if not os.path.exists(pricesPath):
-         sleep(0.001)
-         continue
-      if pathlib.Path(pricesPath).stat().st_size < 5:
-         sleep(0.001)
-         continue
-      break
-
+   if not offLine:
+      while True:
+         if not os.path.exists(pricesPath):
+            sleep(0.001)
+            continue
+         if pathlib.Path(pricesPath).stat().st_size < 5:
+            sleep(0.001)
+            continue
+         break
+   
    barChartFD = open(barChartPath, 'r', os.O_NONBLOCK)
    lg.info("Using " + barChartPath + " as bar chart file")
 
    pricesFD = open(pricesPath, 'r', os.O_NONBLOCK)
    lg.info("Using " + pricesPath + " as process file")
       
+   
    return pricesFD, barChartFD
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -44,39 +47,39 @@ def isStoppedOut():
    if doInPosTracking:
       if a.getInPosGain():
          lg.info ("IN POS PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
-         lg.info ("MAX PROFIT FACTOR: " + str(maxProfit))
-         lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
-         lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
+         lg.info ("PROFIT FACTOR: " + str(maxProfit))
+         lg.info ("PROFIT CLOSE PRICE: " + str(last))
+         lg.info ("PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
          
          return 2
 
-   # We are out with our PROFIT
-   if doTrailingStop and positionTaken == stoppedOut:
-      lg.info ("TRAILING STOP REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
-      lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
-      lg.info ("MAX PROFIT FACTOR: " + str(maxProfit))
-      lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
-      lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
-      
-      return 4
-         
-   if a.getTotalGain() >= a.getTargetProfit() and a.getTotalGain() != 0.0:
-      if quitMaxProfit:            
-         lg.info ("MAX PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
-         lg.info ("MAX PROFIT TARGET: " + str(a.getTargetProfit()))
-         lg.info ("MAX PROFIT FACTOR: " + str(maxProfit))
-         lg.info ("MAX PROFIT CLOSE PRICE: " + str(last))
-         lg.info ("MAX PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
+   if quitMaxProfit:            
+      if a.getTotalGain() >= a.getTargetProfit() and a.getTotalGain() != 0.0:
+         lg.info (" PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
+         lg.info ("PROFIT TARGET: " + str(a.getTargetProfit()))
+         lg.info ("PROFIT FACTOR: " + str(maxProfit))
+         lg.info ("PROFIT CLOSE PRICE: " + str(last))
+         lg.info ("PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
          
          return 2
          
-   if a.getTotalLoss() <= a.getTargetLoss() and a.getTotalLoss() != 0.0:
-      if quitMaxLoss:            
-         lg.info ("MAX LOSS REACHED, Gain: Bar: " + str(a.getTotalLoss()) + " " + str(barCtr))
-         lg.info ("MAX LOSS TARGET: " + str(a.getTargetLoss()))
-         lg.info ("MAX LOSS FACTOR: " + str(maxLoss))
-         lg.info ("MAX LOSS CLOSE PRICE: " + str(last))
-         lg.info ("MAX LOSS TIME: " + str(barCtr * timeBar) + " minutes")
+   # We are out with our PROFIT
+   if doTrailingStop and positionTaken == stoppedOut:
+      lg.info ("TRAILING STOP REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
+      lg.info ("PROFIT TARGET: " + str(a.getTargetProfit()))
+      lg.info ("PROFIT FACTOR: " + str(maxProfit))
+      lg.info ("PROFIT CLOSE PRICE: " + str(last))
+      lg.info ("PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
+      
+      return 4
+         
+   if quitMaxLoss:            
+      if a.getTotalLoss() <= a.getTargetLoss() and a.getTotalLoss() != 0.0:
+         lg.info ("LOSS REACHED, Gain: Bar: " + str(a.getTotalLoss()) + " " + str(barCtr))
+         lg.info ("LOSS TARGET: " + str(a.getTargetLoss()))
+         lg.info ("LOSS FACTOR: " + str(maxLoss))
+         lg.info ("LOSS CLOSE PRICE: " + str(last))
+         lg.info ("LOSS TIME: " + str(barCtr * timeBar) + " minutes")
          
          return 2
          
@@ -85,7 +88,7 @@ def isStoppedOut():
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Parse Command Line Options
 
-verbose = debug = quiet = False
+verbose = debug = quiet = offLine = slave = False
 
 parser = OptionParser()
 
@@ -106,11 +109,9 @@ parser.add_option("-m", "--marketDataType", type="string",
    action="store", dest="marketDataType", default=False,
    help="currency to buy: btc... eth... bch...")
 
-offLine = 0
 parser.add_option("-o", "--offLine",
    action="store_true", dest="offLine", help="offLine")
 
-slave = 0
 parser.add_option("-l", "--slave",
    action="store_true", dest="slave", help="slave")
 
@@ -158,6 +159,8 @@ with open(clOptions.profileTradeDataPath) as jsonData:
 # Get connection elements
 with open(clOptions.profileConnectPath) as jsonData:
    c = json.load(jsonData)
+
+dInitial = d
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set data variables
@@ -256,6 +259,9 @@ if clOptions.stock:
 if clOptions.debug:
    debug = int(clOptions.debug)
 
+if clOptions.offLine:
+   offLine = int(clOptions.offLine)
+
 if clOptions.verbose:
    verbose = int(clOptions.verbose)
    
@@ -277,9 +283,12 @@ if clOptions.timeBar:
    
 if clOptions.workPath:
    workPath = clOptions.workPath
-   d["profileTradeData"]["workPath"] = str(workPath)
+   #d["profileTradeData"]["workPath"] = str(workPath)
 
 exitMaxProfit = clOptions.exitMaxProfit
+
+print ("debug " + str(debug))
+print ("workPath " + str(workPath))
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Setup log and debug file based on profileTradeData name and path
@@ -289,10 +298,17 @@ tm = lpl.Time()
 
 # Setup paths
 
-print ("os.getcwd() " + os.getcwd())
+dcPath = os.getcwd() + "/dc/" + stock + ".dc"
 
-#if workPath:
-#   os.chdir(workPath)
+if offLine:
+   slave = False
+
+if workPath:
+   if os.chdir(workPath):
+      print ("changed workPath " + str(workPath))
+      exit (1)
+
+print ("os.getcwd() " + os.getcwd())
 
 logPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
 debugPath = clOptions.profileTradeDataPath.replace("profiles", "debug")
@@ -300,23 +316,36 @@ barChartPath = clOptions.profileTradeDataPath.replace("profiles", "bc")
 pricesPath = clOptions.profileTradeDataPath.replace("profiles", "prices")
 testPath = clOptions.profileTradeDataPath.replace("profiles", "test")
 
-if stock in clOptions.profileTradeDataPath:
+print ("logPath " + logPath)
+print ("dcPath " + dcPath)
+print ("barChartPath " + barChartPath)
+print ("clOptions.profileTradeDataPath " + clOptions.profileTradeDataPath)
+
+if "_" + stock in clOptions.profileTradeDataPath:
    logPath = logPath.replace(".json_" + stock, stock + ".ls")
    debugPath = debugPath.replace(".json_" + stock, stock + ".ds")
    barChartPath = barChartPath.replace(".json_" + stock, stock + ".bc")
+   
+   print ("barChartPath1 " + barChartPath)
+   
    pricesPath = pricesPath.replace(".json_" + stock, stock + ".pr")
    testPath = testPath.replace(".json_" + stock, stock + ".tt")
 else:
    logPath = logPath.replace(".json", stock + ".ls")
    debugPath = debugPath.replace(".json", stock + ".ds")
    barChartPath = barChartPath.replace(".json", stock + ".bc")
+   
+   print ("barChartPath " + barChartPath)
+
    pricesPath = pricesPath.replace(".json", stock + ".pr")
    testPath = testPath.replace(".json", stock + ".tt")
+
+print ("barChartPath " + barChartPath)
 
 if service == "eTrade":
    symbol = stock
 
-lg = lpl.Log(debug, verbose, logPath, debugPath, 0)
+lg = lpl.Log(debug, verbose, logPath, debugPath, offLine)
 
 #import trade_interface as ti
 #ti = lpl.TradeInterface({'consumer_key': self.consumer_key, 'consumer_secret' = self.consumerSecret}) 
@@ -333,18 +362,22 @@ elif service == "bitfinex":
 elif service == "eTrade":
    symbol = stock
    stockArr.append(stock)
-   cn = lpl.ConnectEtrade(c, stockArr, debug, verbose, marketDataType, sandBox, slave, offLine)
+   cn = lpl.ConnectEtrade(c, stockArr, debug, verbose, marketDataType, sandBox, offLine)
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize algorithm,  barcharts objects
 
 bc = lpl.Barchart()
 tr = lpl.Trends(d, lg, cn, bc, slave)
-lm = lpl.Limits(d, lg, cn, bc, slave, symbol)
+lm = lpl.Limits(d, lg, cn, bc, symbol)
 pa = lpl.Pattern(d, bc, lg)
-pr = lpl.Price(cn, slave)
+#pr = lpl.Price(cn, slave)
+pr = lpl.Price(cn, offLine)
 #ac = lpl.Account(c)
-a = lpl.Algorithm(d, lg, cn, bc, tr, lm, pa, pr, slave, stock)
+dc = lpl.Dailychart()
+dy = lpl.Dynamic(timeBar, dcPath, dc)
+
+a = lpl.Algorithm(d, lg, cn, bc, tr, lm, pa, pr, dy, offLine, stock)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize files
@@ -393,12 +426,17 @@ lg.info ("doRangeTradeBars: " + str(doRangeTradeBars))
 lg.info ("tradingDelayBars: " + str(tradingDelayBars))
 lg.info ("sand: " + str(sandBox))
 lg.info ("slave: " + str(slave))
+lg.info ("offLine: " + str(offLine))
 lg.info ("marketDataType: " + cn.getMarketDataType())
 lg.info ("dateTimeUTC: " + cn.getDateTimeUTC())
 lg.info ("dateTime: " + cn.getDateTime())
 lg.info ("getQuoteStatus: " + cn.getQuoteStatus())
 lg.info ("workPath: " + workPath)
 lg.info (a.getAlgorithmMsg())
+
+for dItems in d['profileTradeData'].items():
+   print ("ditems: " + str(dItems))
+
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize based on live or state 
@@ -442,6 +480,12 @@ numPrices = 0
 #   bc.appendBar(barChart)
 
 if offLine:
+   numPrices = pr.initPriceBuffer(pricesPath)
+   if not numPrices:
+      lg.error("Trying to read an empty prices chart: " + pricesPath)
+      exit(1)
+   lg.debug ("number of prices from file: " + str(numPrices))
+
    pricesFD.seek(0, io.SEEK_SET)
 else:
    pricesFD.seek(0, io.SEEK_END)
@@ -460,14 +504,15 @@ bc.setTimeBarValue(timeBar)
 dirtyProfit = 0
 
 if (quitMaxProfit or doTrailingStop) and maxProfit == 0.0:
-   lg.info ("Max profit not set! ")
+   lg.info ("Min profit not set! ")
    exit (2)
 
-bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
+if offLine:
+   bid, ask, last, vol = pr.getNextPrice(barChart, numBars, barCtr, stock)
+else:
+   bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
 
-barCtr = 0
-
-pr.initSlaveBar()
+pr.initNextBar()
 
 bcSize = pathlib.Path(barChartPath).stat().st_size
 lg.debug ("Size of barchart file : " + str(bcSize))
@@ -479,7 +524,6 @@ if bcSize:
       lg.debug("Trying to read an empty bar chart: " + barChartPath)
    
    lg.debug ("Number of bars in file on disk : " + str(numBars))
-   barCtr = numBars
 
 # Init new bar
 
@@ -488,20 +532,19 @@ lg.debug ("ask "+ str(ask))
 lg.debug ("last " + str(last))
 lg.debug ("vol " + str(vol))
 
-bc.appendBar(barChart)
-#bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, vol)
-
-lg.debug ("Adjusted start bar: " + str(barCtr))
+if not offLine:
+   bc.appendBar(barChart)
 
 # Start trading at beginning of day
-if not a.doPreMarket():
-   if not marketOpen:
-      if a.getMarketBeginTime():
-         lg.info("Waiting till the market opens...")
-         cn.waitTillMarketOpens(a.getMarketOpenTime())
-         marketOpen += 1
+if not offLine:
+   if not a.doPreMarket():
+      if not marketOpen:
+         if a.getMarketBeginTime():
+            lg.info("Waiting till the market opens...")
+            cn.waitTillMarketOpens(a.getMarketOpenTime())
+            marketOpen += 1
 
-endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * int(timeBar)))
+#endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * int(timeBar)))
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Main loop. Loop forever until EOD trading or end of after market 
@@ -512,7 +555,8 @@ while True:
    #initialVol = cn.getVolume()
    #initialVol = 0
    
-   bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, vol)
+   if not offLine:
+      bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, vol)
 
    lg.debug ("barCtr  " + str(barCtr))
          
@@ -520,25 +564,31 @@ while True:
       
    dirty = doOnceOnOpen = doOnceOnClose = 0
             
-   a.setAllLimits(barChart, barCtr)
+   a.setAllLimits(barChart, barCtr, last)
 
    tradeVol = 0 
    
    while True:
-      bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
+      if offLine:
+         bid, ask, last, vol = pr.getNextPrice(barChart, numBars, barCtr, stock)
+      else:
+         bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
+
+      #bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
       
+      # IF SLAVE IS RUNNING LIVE setValues MUST BE SET
       #cn.setValues(barChart, barCtr, bid, ask, last, vol)
       
-      a.setCurrentBid(bid)
-      a.setCurrentAsk(ask)
-      a.setCurrentLast(last)
+#      a.setCurrentBid(bid)
+#      a.setCurrentAsk(ask)
+#      a.setCurrentLast(last)
       
       # Set the values from the trading service
-      lg.debug ("bid " + str(bid))
-      lg.debug ("ask "+ str(ask))
-      lg.debug ("last " + str(last))
-      lg.debug ("vol " + str(vol))
-      lg.debug ("barCtr " + str(barCtr))
+#      lg.debug ("bid " + str(bid))
+#      lg.debug ("ask "+ str(ask))
+#      lg.debug ("last " + str(last))
+#      lg.debug ("vol " + str(vol))
+#      lg.debug ("barCtr " + str(barCtr))
       
       # Count the number of 0.0 bids/asks. If more than 5 quit. Stock is crap.
       if bid == 0.0 and ask == 0.0 and last == 0.0 and vol == 0:
@@ -595,34 +645,37 @@ while True:
       lg.debug ("barCtr " + str(barCtr))
       lg.debug ("last " + str(last))
       lg.debug ("stock " + str(stock))
-
-      bc.loadBar(barChart, tradeVol, barCtr, bid, ask, last)   
       
       # Halt program at end of trading day
-      if a.isMarketExitTime():
-         lg.debug ("It's beer thirty!! ")
-         if not a.getAfterMarket():
-            if a.inPosition():
-               a.closePosition(barCtr, barChart, bid, ask, forceClose)
-               bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
-            lg.info("Program exiting due to end of day trading")
-            exit(0)
+      if not offLine:
+         bc.loadBar(barChart, tradeVol, barCtr, bid, ask, last)   
+         if a.isMarketExitTime():
+            lg.debug ("It's beer thirty!! ")
+            if not a.getAfterMarket():
+               if a.inPosition():
+                  a.closePosition(barCtr, barChart, bid, ask, forceClose)
+                  bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
+               lg.info("Program exiting due to end of day trading")
+               exit(0)
       
       quitBar = 0
       
-      lg.debug ("cn.getTimeHrMnSecs() " + str(cn.getTimeHrMnSecs()))
-      lg.debug ("endBarLoopTime " + str(endBarLoopTime))
+      #lg.debug ("cn.getTimeHrMnSecs() " + str(cn.getTimeHrMnSecs()))
+      #lg.debug ("endBarLoopTime " + str(endBarLoopTime))
       
-      if offLine:
-         lg.debug ("pr.isLastBar(timeBar) " + str(pr.isLastBar(timeBar)))
-         quitBar = pr.isLastBar(timeBar)
-      else:
-         quitBar = pr.isLastBarSlave(timeBar)
-         lg.debug ("pr.isLastBarSlave(timeBar) " + str(pr.isLastBarSlave(timeBar)))
+#      if slave:
+#         quitBar = pr.isLastBarSlave(timeBar)
+#         lg.debug ("pr.isLastBarSlave(timeBar) " + str(pr.isLastBarSlave(timeBar)))
+#      elif offLine:
+#         quitBar = pr.isLastBar(timeBar)
+#         lg.debug ("pr.isLastBar(timeBar) " + str(pr.isLastBar(timeBar)))
 
-      lg.debug ("pr.isNextBarSlave(timeBar) " + str(pr.isNextBarSlave(timeBar)))
+      #elif live; not implemented...
       
-      if pr.isNextBarSlave(timeBar) or quitBar:      
+      lg.debug ("pr.isNextBar(timeBar) " + str(pr.isNextBar(timeBar)))
+      
+      #if pr.isNextBarSlave(timeBar) or quitBar:      
+      if pr.isNextBar(timeBar) or pr.isLastBar(timeBar):      
 
          # Only do this section once
          if dirty:
@@ -632,14 +685,17 @@ while True:
                
          #lg.debug ("barChart before end bar" + str(barChart))
 
-         bc.displayLastNBars(barChart, 20)
+         if not offLine:
+            bc.displayLastNBars(barChart, 20)
 
-         bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, lastVol)
+         if not offLine:
+            bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, lastVol)
          
          #lg.debug ("barChart after end bar" + str(barChart))
          
          # Print out the bar chart. Only print the last 20 bars
-         bc.displayLastNBars(barChart, 20)
+         if not offLine:
+            bc.displayLastNBars(barChart, 20)
          
          # Do on close processing
          a.setActionOnCloseBar()
@@ -650,7 +706,8 @@ while True:
          if exitVal > 0:
             exit(exitVal)
             
-         bc.appendBar(barChart)
+         if not offLine:
+            bc.appendBar(barChart)
          
          # Keep track of the bars in a position
          if a.inPosition():
@@ -672,6 +729,7 @@ while True:
          lg.info ("LAST: " + str(last))
          lg.info ("BID: " + str(bid))
          lg.info ("ASK:  " + str(ask))
+         
          if offLine:
             lg.info ("END TIME: " + str(barChart[barCtr][dt]))
          else:
@@ -698,7 +756,7 @@ while True:
          exit(exitVal)
          
       # Stop trading at the end of he day
-      if not a.getAfterMarket():
+      if not offLine and not a.getAfterMarket():
          if a.isMarketExitTime():
             if a.inPosition():
                a.closePosition(barCtr, barChart, bid, ask, forceClose)

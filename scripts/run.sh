@@ -5,12 +5,12 @@
 dt=""
 algo=""
 stock=""
-live=""
+lplt=""
 
 dt=$1
 algo=$2
 stock=$3
-live=$4
+lplt=$4
 
 numOfAlgosToVerify=7
 
@@ -69,6 +69,10 @@ dirty=""
 
 volDate=20201118
 
+if [[ -n $lplt ]]; then
+   echo using lplt.py
+fi
+
 for algo in $algos; do
    a=$algo
    
@@ -98,15 +102,13 @@ for algo in $algos; do
       
       ${py3} ${wp}/bin/profileGenerator.py -d $day -a $algo
       
-      if [[ -n $live ]]; then
-         cmd="${py3} ${wp}/bin/lplt.py -c $HOME/profiles/et.json -p ${wp}/profiles/active.json -d -s $stock > $outFile"
-         echo $cmd
-         exit 0
-      else
+      if [[ -n $lplt ]]; then
          cmd="${py3} ${wp}/bin/lplt.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -w test/${day} -o -d -s $stock > $outFile"
+      else
+         cmd="${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -w test/${day} -o -d -s $stock"
       fi
       
-      # echo $cmd
+      #$cmdOld > $outFile
       $cmd > $outFile
 
       value=$(cat $outFile | grep "Total Gain" | tail -1 | awk '{print $4}')
@@ -134,6 +136,10 @@ for algo in $algos; do
    
    amt=$(awk '{s+=$1} END {print s}' $gainFile)
    amt=$(echo $amt | sed "/.*e-*/d")
+   dotFound=$(echo $amt | grep \\.)
+   if [[ -z $dotFound ]]; then
+      amt=${amt}.0
+   fi
    numDays=$(cat $gainFile | wc -l | awk '{print $1}')
    echo "Gain: \$ ${amt}" "in ${numDays} days with algo $a" >> $gainFile
    echo $stock Gain: \$ ${amt} Win %: $winPct in $numDays days with algo $a

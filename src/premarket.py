@@ -203,7 +203,7 @@ class Premarket:
                   stockName = path.replace("active","") 
                   stockName = stockName.replace(self.minuteChartExt,"")
                   if stockName not in stocks:
-                     print ("stockName: " + str(stockName))
+                     print ("testMinute stocks: " + str(stockName))
                      stocks.append(stockName)      
       
       return stocks
@@ -271,6 +271,8 @@ class Premarket:
          if not self.todaysDateInDcPath(dcPath):
             validStocks.append(stock)
             continue
+         else:
+            print ("stock being excluded, dc not updated " + str(stock))
       
       stocks = validStocks
       

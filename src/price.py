@@ -458,73 +458,85 @@ class Price:
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isLastBar(self, timeBar):
-      
-      if not self.offLine:
-         return 0
-      
-      if self.priceIdx >= self.numLines:
-         return self.getLastToken()
 
-      print ("self.getNextBar() " + str(self.getNextBar()))
-      print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
-      
-      if self.getNextBar() == self.idxArr[self.priceIdx + 1]:
-      #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
-         #self.setNextBar(timeBar)
-         return 1
+      print ("isLastBar offline: " + str(self.offLine))
+
+      if self.offLine:
+         if self.priceIdx >= self.numLines:
+            return self.getLastToken()
+   
+         print ("self.getNextBar() " + str(self.getNextBar()))
+         print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
          
+         if self.getNextBar() == self.idxArr[self.priceIdx]:
+            return 1
+      
+      else: # Live
+         print ("self.getNextBar() " + str(self.getNextBar()))
+         print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
+         
+         if self.getNextBar() == self.idxArr[self.priceIdx]:
+            return 1
+
       return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isLastBarSlave(self, timeBar):
-      
-      if not self.offLine:
-         return 0
-      
-      print ("self.getNextBar() " + str(self.getNextBar()))
-      print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
-      
-      if self.getNextBar() == self.idxArr[self.priceIdx]:
-      #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
-         #self.setNextBar(timeBar)
-         return 1
-         
-      return 0
+#   def isLastBarSlave(self, timeBar):
+#      
+#      if not self.offLine:
+#         return 0
+#      
+#      print ("self.getNextBar() " + str(self.getNextBar()))
+#      print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
+#      
+#      if self.getNextBar() == self.idxArr[self.priceIdx]:
+#         return 1
+#         
+#      return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isNextBar(self, timeBar):
       
-      if not self.offLine:
-         return 0
+      print ("offline: " + str(self.offLine))
       
-      if self.priceIdx >= self.numLines:
-         return self.getLastToken()
-
-      print ("self.getNextBar() " + str(self.getNextBar()))
-      print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
-      
-      if self.getNextBar() == self.idxArr[self.priceIdx]:
-      #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
-         #self.setNextBar(timeBar)
-         return 1
+      if self.offLine:
+         if self.priceIdx >= self.numLines:
+            return self.getLastToken()
+   
+         print ("self.getNextBar() " + str(self.getNextBar()))
+         print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
          
+         if self.getNextBar() == self.idxArr[self.priceIdx]:
+         #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
+            #self.setNextBar(timeBar)
+            return 1
+            
+      else:
+         print ("self.getNextBar() " + str(self.getNextBar()))
+         print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
+         
+         if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
+         #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
+            #self.setNextBar(timeBar)
+            return 1
+            
       return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isNextBarSlave(self, timeBar):
-      
-      if not self.offLine:
-         return 0
-      
-      print ("self.getNextBar() " + str(self.getNextBar()))
-      print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
-      
-      if self.getNextBar() == self.idxArr[self.priceIdx]:
-      #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
-         #self.setNextBar(timeBar)
-         return 1
-         
-      return 0
+#   def isNextBarSlave(self, timeBar):
+#      
+#      if not self.offLine:
+#         return 0
+#      
+#      print ("self.getNextBar() " + str(self.getNextBar()))
+#      print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
+#      
+#      if self.getNextBar() == self.idxArr[self.priceIdx]:
+#      #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
+#         #self.setNextBar(timeBar)
+#         return 1
+#         
+#      return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setNextBar(self, timeBar):
@@ -532,7 +544,7 @@ class Price:
       self.nextBar += timeBar
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def initSlaveBar(self):
+   def initNextBar(self):
    
       self.nextBar = self.idxArr[self.priceIdx]
       

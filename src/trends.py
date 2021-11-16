@@ -42,14 +42,14 @@ class Trends:
       if self.timeBar > 1:
          self.setTrendBars(self.timeBar)
          
-      self.sessionBullTrend = 0.0
-      self.sessionBearTrend = 0.0
+      self.sessionBullTrend = 0
+      self.sessionBearTrend = 0
 
       self.sessionHiPrice = 0.0
       self.sessionLiPrice = 0.0
 
-      self.setBullSessionValue(self.bullTrendValue)
-      self.setBearSessionValue(self.bearTrendValue)
+      self.setBullSessionValue(self.bullSessionValue)
+      self.setBearSessionValue(self.bearSessionValue)
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setTrendBars(self, timeBar):
@@ -332,11 +332,10 @@ class Trends:
       self.setLongTrend("long", bc, bar, bid, ask)
       self.setMegaTrend("mega", bc, bar, bid, ask)
       self.setSuperTrend("super", bc, bar, bid, ask)
-      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isBullSessionTrend(self):
    
-      if self.sessionBullTrend:
+      if self.sessionBullTrend == 1:
          return 1
       
       return 0
@@ -344,7 +343,7 @@ class Trends:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isBearSessionTrend(self):
    
-      if self.sessionBearTrend:
+      if self.sessionBearTrend == 1:
          return 1
       
       return 0
@@ -378,17 +377,22 @@ class Trends:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setSessionTrend(self, trendValue):
 
-      self.sessionBullTrend = self.sessionBearTrend = 0.0
-         
+      self.sessionBullTrend = self.sessionBearTrend = 0
+
+      self.lg.debug("bullSessionValue: " + str(self.bullSessionValue))
+      self.lg.debug("bearSessionValue: " + str(self.bearSessionValue))
+
       if trendValue > self.bullSessionValue and trendValue <= 2.0:
          self.lg.debug("IN BULL SESSION TREND " + str(trendValue))
-         self.sessionBullTrend = trendValue
+         #self.sessionBullTrend = trendValue
+         self.sessionBullTrend = 1
       elif trendValue < self.bearSessionValue and trendValue >= 3.0:
          self.lg.debug("IN BEAR SESSION TREND " + str(trendValue))
-         self.sessionBearTrend = trendValue
+         #self.sessionBearTrend = trendValue
+         self.sessionBearTrend = 1
                
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getSessionTrendValue(self, sH, sHbar, sL, sLbar):
+   def getSessionTrendValue(self, sH, sHbar, sL, sLbar, price):
 
       priceRange = pctInTrend = pctInTrendRnd = trend = 0.0
       
@@ -401,7 +405,7 @@ class Trends:
          # Bear trend
          trend = 3.00
 
-      price = self.cn.getCurrentAsk(self.stock)
+      #price = self.cn.getCurrentAsk(self.stock)
       
       pctInTrend = pctInTrendRnd = 0.0
       penetration = 0.0

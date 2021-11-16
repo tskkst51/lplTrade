@@ -16,7 +16,7 @@ import collections
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class ConnectEtrade:
 
-   def __init__(self, d, stocks="DEFAULT", debug=False, verbose=False, clMarketDataType="intraday", sandBox=False, slave=False, setoffLine=False):
+   def __init__(self, d, stocks="DEFAULT", debug=False, verbose=False, clMarketDataType="intraday", sandBox=False, setoffLine=False):
    
       # Set class variables
       self.sandConsumerKey = str(d["profileConnectET"]["sandConsumerKey"])
@@ -60,14 +60,14 @@ class ConnectEtrade:
          self.oauthToken = lines[0].strip()
          self.oauthSecret = lines[1].strip()
  
-      if self.debug and not self.offLine:     
-         print ("\nSandbox account: " + str(self.sandBox))
-         print ("\nconsumerKey, consumer secret, auth token, auth secret\n")
-         print (self.consumerKey)
-         print (self.consumerSecret)
-         print (self.oauthToken)
-         print (self.oauthSecret)
-         print ("")
+#      if self.debug and not self.offLine:     
+#         print ("\nSandbox account: " + str(self.sandBox))
+#         print ("\nconsumerKey, consumer secret, auth token, auth secret\n")
+#         print (self.consumerKey)
+#         print (self.consumerSecret)
+#         print (self.oauthToken)
+#         print (self.oauthSecret)
+#         print ("")
          
       self.stocks = stocks
       
@@ -155,7 +155,7 @@ class ConnectEtrade:
             quoteData = []
             symbols = stockSegs[sCtr]
             
-            print ("stocks local " + str(symbols))
+            #print ("stocks local " + str(symbols))
             #exit (1)
             
             symbolDetails = [0.0,0.0,0.0,0,""]

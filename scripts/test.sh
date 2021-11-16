@@ -156,7 +156,8 @@ fi
 set -m
 
 # Copy all the new code into place
-$HOME/bin/lplt.sh
+# Do this in keepAliveM.sh
+#$HOME/bin/lplt.sh
 
 for datePath in $testPaths; do
    
@@ -226,7 +227,7 @@ echo numStocks $numStocks
          firstStock=$(echo $stocks | awk -F, '{print $1}')
    
          p="exitResults/${lastStock}_TB3_${a}_OB3_OS3_CB2_CS2.ex"
-echo p $p
+#echo p $p
          # Already ran, skip
          grep -q $date $p > /dev/null 2>&1
          if (( $? == 0 )); then

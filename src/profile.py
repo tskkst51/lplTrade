@@ -63,6 +63,7 @@ class Profile:
       d["profileTradeData"]["volumeLastBarClose"] = str(0)
       d["profileTradeData"]["doOnlyTrends"] = str(0)
       d["profileTradeData"]["doInPosTracking"] = str(0)
+      d["profileTradeData"]["doDynamic"] = str(0)
       
       return d
       
@@ -155,7 +156,7 @@ class Profile:
    def setAlgoValues(self, d, algo, value, info):
    
       # algo from the CL can be any combination of algorithms
-      # HS AO AC AV AL AB TR QP HL TR PT RV HM RP IT BO SO "
+      # HS AO AC AV AL AB TR QP HL TR PT RV HM RP IT BO SO DY"
    
       info = ""
       
@@ -297,6 +298,10 @@ class Profile:
       if "IT" in algo:
          d["profileTradeData"]["doInPosTracking"] = str(1)
          info += "IT_"
+         
+      if "DY" in algo:
+         d["profileTradeData"]["doDynamic"] = str(1)
+         info += "DY_"
          
       if "DB" in algo:
          b, m, bar = algo.rpartition("DB")
