@@ -55,6 +55,11 @@ class Dynamic:
       self.algoStr += "DY"
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getAlgoStr(self):
+
+      return self.algoStr
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isInitialAlgoStr(self):
 
       if self.algoStr == "":
@@ -77,7 +82,7 @@ class Dynamic:
          self.appendAlgoStr(self.getOpenCloseBarAlgo(currentPrice))
          self.endAlgoStr()
 
-      print ("self.algoStr " + self.algoStr)
+      return self.getAlgoStr()
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getOpenCloseBarAlgo(self, currentPrice):
@@ -104,7 +109,6 @@ class Dynamic:
          directionGain = 1
 
       for day in self.bc:
-         print ("dateLargestPriceMove " + str(dateLargestPriceMove))
          print ("day " + str(day))
          print ("date " + str(day[8]))
          if int(day[8]) == int(dateLargestPriceMove):
@@ -126,11 +130,11 @@ class Dynamic:
             if op > cl:
                pctIntraMove = round(lo / hi, 2)
                pctDayaMove = round(cl / currentPrice, 2)
-               self.appendAlgoStr("OB3_CB1_OS1_CS3_")
+               initialOpenCloseBars = "OB3_CB1_OS1_CS3_"
             else:
                pctIntraMove = round(hi / lo, 2)
                pctDayaMove = round(currentPrice / cl, 2)
-               self.appendAlgoStr("OB1_CB3_OS3_CS1_")
+               initialOpenCloseBars = "OB1_CB3_OS3_CS1_"
                
             print ("algoStr " + str(self.algoStr))
             print ("pctDayaMove " + str(pctDayaMove))
@@ -149,6 +153,5 @@ class Dynamic:
 
       #avgPriceMove = self.getDAvgPriceMoveEquivToCurrent(self.gd)
       
-      return self.algoStr
- 
+      return initialOpenCloseBars 
 

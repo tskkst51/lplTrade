@@ -72,15 +72,15 @@ class Target:
       
       self.preMarketURL = "https://thestockmarketwatch.com/markets/pre-market/today.aspx"
    
-      self.priceLimits = str(self.d["profileTradeData"]["priceLimits"])
-      self.spreadLimits = str(self.d["profileTradeData"]["spreadLimits"])
-      self.numSpreadSamples = int(self.d["profileTradeData"]["numSpreadSamples"])
-      self.gapThreshold = float(self.d["profileTradeData"]["gapThreshold"])
-      self.volThreshold = float(self.d["profileTradeData"]["volThreshold"])
-      self.betaThreshold = float(self.d["profileTradeData"]["betaThreshold"])
-      self.greaterVolumeThreshold = float(self.d["profileTradeData"]["greaterVolumeThreshold"])
-      self.lessVolumeThreshold = float(self.d["profileTradeData"]["lessVolumeThreshold"])
-      self.minDailyVol = int(self.d["profileTradeData"]["minDailyVol"])
+      self.priceLimits = str(self.d["priceLimits"])
+      self.spreadLimits = str(self.d["spreadLimits"])
+      self.numSpreadSamples = int(self.d["numSpreadSamples"])
+      self.gapThreshold = float(self.d["gapThreshold"])
+      self.volThreshold = float(self.d["volThreshold"])
+      self.betaThreshold = float(self.d["betaThreshold"])
+      self.greaterVolumeThreshold = float(self.d["greaterVolumeThreshold"])
+      self.lessVolumeThreshold = float(self.d["lessVolumeThreshold"])
+      self.minDailyVol = int(self.d["minDailyVol"])
       
       self.allStocks = []
 

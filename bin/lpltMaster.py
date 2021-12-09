@@ -198,7 +198,7 @@ def genProfile(algo, stock):
    return 0
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDailyStocks, numDaysTestData, daysBestStocks):
+def analyzeStocks(pf, pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDailyStocks, numDaysTestData, daysBestStocks):
 
    if useStocksFromDailyCharts:
       stocks = pr.getStockStrFromDailyCharts()
@@ -261,10 +261,9 @@ def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDai
 
    #if useDaysBest and not onlyUpdateDailyStocks:
    #   stocks = daysBestStocks
-
-
+ 
    # Pick the proper algorithm to use based on saved minute chart data
-   algoData, stocks = pr.getAlgorithm(orderedStocks, useDefaultAlgo, useStocksWithNoTestData)
+   algoData, stocks = pr.getAlgorithm(orderedStocks, useDefaultAlgo, useStocksWithNoTestData, pf.gv("defaultAlgoStr"))
 
    # LIVE run lpltSlave.py with the #1-... stock candidate
    # If it profits out. invoke with best performing at the moment
@@ -272,20 +271,19 @@ def analyzeStocks(pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdateDai
    return algoData, stocks
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def loadProfileData(path):
-
-   with open(path) as jsonData:
-      d = json.load(jsonData)
-
-   return d
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Load profileTradeData data
 
+pf = lpl.Profile(clOptions.profileTradeDataPath)
+cf = lpl.Profile(clOptions.profileConnectPath)
+
+d = pf.getPFValues()
+c = cf.getPFValues()
+
 # Get trading elements
-d = loadProfileData(clOptions.profileTradeDataPath)
+#d = loadProfileData(clOptions.profileTradeDataPath)
+
 # Get connection elements
-c = loadProfileData(clOptions.profileConnectPath)
+#c = loadProfileData(clOptions.profileConnectPath)
 
 dInitial = d
 
@@ -329,60 +327,60 @@ forceClose = 1
 
 stocks = []
 
-stock = str(d["profileTradeData"]["stock"])
-stocksStr = str(d["profileTradeData"]["stocks"])
-stocksFile = str(d["profileTradeData"]["stocksFile"])
+stock = str(d["stock"])
+stocksStr = str(d["stocks"])
+stocksFile = str(d["stocksFile"])
 stocks = stocksStr.split(',')
-etfs = str(d["profileTradeData"]["etfs"])
-profileName = str(d["profileTradeData"]["profileName"])
-currency = str(d["profileTradeData"]["currency"])
-alt = str(d["profileTradeData"]["alt"])
-timeBar = int(d["profileTradeData"]["timeBar"])
-service = str(d["profileTradeData"]["service"])
-algorithms = str(d["profileTradeData"]["algorithms"])
-tradingDelayBars = int(d["profileTradeData"]["tradingDelayBars"])
-openBuyBars = int(d["profileTradeData"]["openBuyBars"])
-closeBuyBars = int(d["profileTradeData"]["closeBuyBars"])
-openSellBars = int(d["profileTradeData"]["openSellBars"])
-closeSellBars = int(d["profileTradeData"]["closeSellBars"])
-profileTradeData = str(d["profileTradeData"])
-resume = int(d["profileTradeData"]["resume"])
-workPath = str(d["profileTradeData"]["workPath"])
-waitForTopMinute = int(d["profileTradeData"]["waitForTopMinute"])
-halfDayEndTime = str(d["profileTradeData"]["halfDayEndTime"])
-halfDays = str(d["profileTradeData"]["halfDays"])
-preMarket = str(d["profileTradeData"]["preMarket"])
-afterMarket = str(d["profileTradeData"]["afterMarket"])
-preMarketAnalysis = int(d["profileTradeData"]["preMarketAnalysis"])
-afterMarketAnalysis = int(d["profileTradeData"]["afterMarketAnalysis"])
-afterMarketEndTime = int(d["profileTradeData"]["afterMarketEndTime"])
-onlyUpdateDailyStocks = int(d["profileTradeData"]["onlyUpdateDailyStocks"])
-numDaysTestData = int(d["profileTradeData"]["numDaysTestData"])
-useDaysBest = int(d["profileTradeData"]["useDaysBest"])
-daysBestAvgDailyGain = float(d["profileTradeData"]["daysBestAvgDailyGain"])
+etfs = str(d["etfs"])
+profileName = str(d["profileName"])
+currency = str(d["currency"])
+alt = str(d["alt"])
+timeBar = int(d["timeBar"])
+service = str(d["service"])
+algorithms = str(d["algorithms"])
+tradingDelayBars = int(d["tradingDelayBars"])
+openBuyBars = int(d["openBuyBars"])
+closeBuyBars = int(d["closeBuyBars"])
+openSellBars = int(d["openSellBars"])
+closeSellBars = int(d["closeSellBars"])
+profileTradeData = str(d)
+resume = int(d["resume"])
+workPath = str(d["workPath"])
+waitForTopMinute = int(d["waitForTopMinute"])
+halfDayEndTime = str(d["halfDayEndTime"])
+halfDays = str(d["halfDays"])
+preMarket = str(d["preMarket"])
+afterMarket = str(d["afterMarket"])
+preMarketAnalysis = int(d["preMarketAnalysis"])
+afterMarketAnalysis = int(d["afterMarketAnalysis"])
+afterMarketEndTime = int(d["afterMarketEndTime"])
+onlyUpdateDailyStocks = int(d["onlyUpdateDailyStocks"])
+numDaysTestData = int(d["numDaysTestData"])
+useDaysBest = int(d["useDaysBest"])
+daysBestAvgDailyGain = float(d["daysBestAvgDailyGain"])
 
-useStocksFromDailyCharts = int(d["profileTradeData"]["useStocksFromDailyCharts"])
-findPreMarketMovers = int(d["profileTradeData"]["findPreMarketMovers"])
-maxStocksToTrade = int(d["profileTradeData"]["maxStocksToTrade"])
-maxNumProcesses = int(d["profileTradeData"]["maxNumProcesses"])
+useStocksFromDailyCharts = int(d["useStocksFromDailyCharts"])
+findPreMarketMovers = int(d["findPreMarketMovers"])
+maxStocksToTrade = int(d["maxStocksToTrade"])
+maxNumProcesses = int(d["maxNumProcesses"])
 
-doTrailingStop = int(d["profileTradeData"]["doTrailingStop"])
-maxProfit = float(d["profileTradeData"]["maxProfit"])
-maxLoss = float(d["profileTradeData"]["maxLoss"])
-quitMaxProfit = int(d["profileTradeData"]["quitMaxProfit"])
-quitMaxLoss = int(d["profileTradeData"]["quitMaxLoss"])
-useLiveDailyData = int(d["profileTradeData"]["useLiveDailyData"])
-useDefaultAlgo = int(d["profileTradeData"]["useDefaultAlgo"])
-useStocksWithNoTestData = int(d["profileTradeData"]["useStocksWithNoTestData"])
-useTestMinuteCharts = int(d["profileTradeData"]["useTestMinuteCharts"])
-minStockPrice = float(d["profileTradeData"]["minStockPrice"])
-maxStockPrice = float(d["profileTradeData"]["maxStockPrice"])
-excludeStocks = int(d["profileTradeData"]["excludeStocks"])
-stockOrderFile = str(d["profileTradeData"]["stockOrderFile"])
+doTrailingStop = int(d["doTrailingStop"])
+maxProfit = float(d["maxProfit"])
+maxLoss = float(d["maxLoss"])
+quitMaxProfit = int(d["quitMaxProfit"])
+quitMaxLoss = int(d["quitMaxLoss"])
+useLiveDailyData = int(d["useLiveDailyData"])
+useDefaultAlgo = int(d["useDefaultAlgo"])
+useStocksWithNoTestData = int(d["useStocksWithNoTestData"])
+useTestMinuteCharts = int(d["useTestMinuteCharts"])
+minStockPrice = float(d["minStockPrice"])
+maxStockPrice = float(d["maxStockPrice"])
+excludeStocks = int(d["excludeStocks"])
+stockOrderFile = str(d["stockOrderFile"])
 
 # Make sure stocksFileMultiplier is "1" or more...
-stocksFileMultiplier = int(d["profileTradeData"]["stocksFileMultiplier"])
-numStocksToProcessInPremarket = int(d["profileTradeData"]["numStocksToProcessInPremarket"])
+stocksFileMultiplier = int(d["stocksFileMultiplier"])
+numStocksToProcessInPremarket = int(d["numStocksToProcessInPremarket"])
 
 masterMode = 1
 
@@ -437,7 +435,7 @@ if clOptions.alt:
    
 if clOptions.stocks:
    stocks.append(clOptions.stocks)
-   d["profileTradeData"]["stocks"] = str(stocks)
+   d["stocks"] = str(stocks)
    
 if clOptions.debug:
    debug = int(clOptions.debug)
@@ -459,11 +457,11 @@ if clOptions.offLine:
 
 if clOptions.timeBar:
    timeBar = clOptions.timeBar
-   d["profileTradeData"]["timeBar"] = str(timeBar)
+   d["timeBar"] = str(timeBar)
    
 if clOptions.workPath:
    workPath = clOptions.workPath
-   d["profileTradeData"]["workPath"] = str(workPath)
+   d["workPath"] = str(workPath)
 
 if clOptions.onlyUpdateDailyStocks:
    onlyUpdateDailyStocks = 1
@@ -478,7 +476,7 @@ if offLine:
 
 if masterMode:
    timeBar = 1
-   d["profileTradeData"]["timeBar"] = "1"
+   d["timeBar"] = "1"
    
 if stocksFile != "" and not onlyUpdateDailyStocks:
    stocks = getAutoStocks(stocksFile, maxNumStocksToTrade * stocksFileMultiplier)   
@@ -500,7 +498,7 @@ elif preMarketAnalysis:
       print (" stocks after getauto" + str(daysBestStocks))
       print (" stocks len after getauto " + str(len(daysBestStocks)))
       
-   algoData, stocks = analyzeStocks(pr, tg, dc, "pre", useLiveDailyData, stocks, onlyUpdateDailyStocks, numDaysTestData, daysBestStocks)
+   algoData, stocks = analyzeStocks(pf, pr, tg, dc, "pre", useLiveDailyData, stocks, onlyUpdateDailyStocks, numDaysTestData, daysBestStocks)
    
    if onlyUpdateDailyStocks:
       exit (0)
@@ -636,11 +634,12 @@ for stock in stocks:
 #   else:
 #      # Use default list
 #      profileData[stock] = d
-   
-   profileData[stock] = loadProfileData(clOptions.profileTradeDataPath)
+
+   profileData[stock] = pf.readProfile(clOptions.profileTradeDataPath)
+   #profileData[stock] = loadProfileData(clOptions.profileTradeDataPath)
    ba[stock] = lpl.Barchart()
    tr[stock] = lpl.Trends(profileData[stock], lg[stock], cn, ba[stock], offLine, stock)
-   lm[stock] = lpl.Limits(profileData[stock], lg[stock], cn, ba[stock], stock)
+   lm[stock] = lpl.Limits(profileData[stock], lg[stock], cn, ba[stock], pf, stock)
    pr[stock] = lpl.Price(cn, offLine)
    pa[stock] = lpl.Pattern(profileData[stock], ba[stock], lg[stock])
    dc = lpl.Dailychart()

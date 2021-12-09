@@ -168,31 +168,31 @@ forceClose = 1
 timeBar = 0
 exitMaxProfit = 0
 
-stock = str(d["profileTradeData"]["stock"])
-profileName = str(d["profileTradeData"]["profileName"])
-currency = str(d["profileTradeData"]["currency"])
-alt = str(d["profileTradeData"]["alt"])
-timeBar = int(d["profileTradeData"]["timeBar"])
-service = str(d["profileTradeData"]["service"])
-algorithms = str(d["profileTradeData"]["algorithms"])
-tradingDelayBars = int(d["profileTradeData"]["tradingDelayBars"])
-openBuyBars = int(d["profileTradeData"]["openBuyBars"])
-closeBuyBars = int(d["profileTradeData"]["closeBuyBars"])
-openSellBars = int(d["profileTradeData"]["openSellBars"])
-closeSellBars = int(d["profileTradeData"]["closeSellBars"])
-profileTradeData = str(d["profileTradeData"])
-resume = str(d["profileTradeData"]["resume"])
-workPath = str(d["profileTradeData"]["workPath"])
-doRangeTradeBars = str(d["profileTradeData"]["doRangeTradeBars"])
-gainTrailStop = str(d["profileTradeData"]["gainTrailStop"])
-quickProfitPctTrigger = float(d["profileTradeData"]["quickProfitPctTrigger"])
-doTrailingStop = int(d["profileTradeData"]["doTrailingStop"])
-maxProfit = float(d["profileTradeData"]["maxProfit"])
-maxLoss = float(d["profileTradeData"]["maxLoss"])
-quitMaxProfit = int(d["profileTradeData"]["quitMaxProfit"])
-quitMaxLoss = int(d["profileTradeData"]["quitMaxLoss"])
-slave = int(d["profileTradeData"]["slave"])
-doInPosTracking = int(d["profileTradeData"]["doInPosTracking"])
+stock = str(d["stock"])
+profileName = str(d["profileName"])
+currency = str(d["currency"])
+alt = str(d["alt"])
+timeBar = int(d["timeBar"])
+service = str(d["service"])
+algorithms = str(d["algorithms"])
+tradingDelayBars = int(d["tradingDelayBars"])
+openBuyBars = int(d["openBuyBars"])
+closeBuyBars = int(d["closeBuyBars"])
+openSellBars = int(d["openSellBars"])
+closeSellBars = int(d["closeSellBars"])
+profileTradeData = str(d)
+resume = str(d["resume"])
+workPath = str(d["workPath"])
+doRangeTradeBars = str(d["doRangeTradeBars"])
+gainTrailStop = str(d["gainTrailStop"])
+quickProfitPctTrigger = float(d["quickProfitPctTrigger"])
+doTrailingStop = int(d["doTrailingStop"])
+maxProfit = float(d["maxProfit"])
+maxLoss = float(d["maxLoss"])
+quitMaxProfit = int(d["quitMaxProfit"])
+quitMaxLoss = int(d["quitMaxLoss"])
+slave = int(d["slave"])
+doInPosTracking = int(d["doInPosTracking"])
 
 offLine = int(c["profileConnectET"]["offLine"])
 sandBox = int(c["profileConnectET"]["sandBox"])
@@ -222,7 +222,7 @@ if clOptions.alt:
    
 if clOptions.stock:
    stock = clOptions.stock
-   d["profileTradeData"]["stock"] = str(stock)
+   d["stock"] = str(stock)
       
 if clOptions.debug:
    debug = int(clOptions.debug)
@@ -244,11 +244,11 @@ if clOptions.offLine:
 
 if clOptions.timeBar:
    timeBar = int(clOptions.timeBar)
-   d["profileTradeData"]["timeBar"] = str(timeBar)
+   d["timeBar"] = str(timeBar)
    
 if clOptions.workPath:
    workPath = clOptions.workPath
-   d["profileTradeData"]["workPath"] = str(workPath)
+   d["workPath"] = str(workPath)
 
 exitMaxProfit = clOptions.exitMaxProfit
 

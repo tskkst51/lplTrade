@@ -113,7 +113,8 @@ algoBest=$(head -1 $resultsPath | grep BA | awk '{print $3}')
 
 algos="$algos $algoBest"
 
-echo algos remove me $algos
+echo Top algos:
+echo $algos
 
 # Run the original once for a baseline
 for algo in $algos; do

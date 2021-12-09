@@ -43,20 +43,23 @@ class Premarket:
 #      return stocks
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getAlgorithm(self, stocks, useDefaultAlgo, useStocksWithNoTestData):
+   def getAlgorithm(self, stocks, useDefaultAlgo, useStocksWithNoTestData, algo):
    
       print ("getAlgorithm\n" + str(stocks))
 
       bestAlgoD = {}
       defaultStocks = ["BABA","BIDU","TSLA","SNAP"]
       
-      defaultAlgo = "TB1_HS_QM_OB2_OS2_CB3_CS3_DB30_IT_TS"
+      defaultAlgo = algo
+      
+      #defaultAlgo = "TB1_HS_QM_OB2_OS2_CB3_CS3_DB30_IT_TS"
       #defaultAlgo = "TB1_HL_QM_OB3_OS3_CB3_CS3_DB30_QL"
       #defaultAlgo = "TB1_HL_QM_OB3_OS3_CB2_CS2"
       #defaultAlgo = "TB1_OC_QM_OB5_OS5_CB2_CS2_TR_IR5"
       #defaultAlgo = "TB3_OC_QM_OB2_OS2_CB3_CS3_TR"
       #defaultAlgo = "TB3_HI_QM_OB2_OS2_CB4_CS4_TR"
       #defaultAlgo = "TB2_HL_HS_AL_QM_OB2_OS2_CB3_CS3_QP"
+      
       stocksBeingUsed = []
       
       if useDefaultAlgo:

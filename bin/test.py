@@ -290,7 +290,7 @@ highestGain = 0.0
 
 #timeBar = [5]
 
-pf = lpl.Profile()
+pf = lpl.Profile(tdp)
 
 for minBar in timeBar:
 

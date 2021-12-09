@@ -4,12 +4,13 @@ trends module
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Limits:
-   def __init__(self, data, lg, cn, ba, stock=""):
+   def __init__(self, d, lg, cn, ba, pf, stock=""):
       
-      self.data = data
+      self.d = d
       self.lg = lg
       self.cn = cn
       self.ba = ba
+      self.pf = pf
 
       self.hi = 0
       self.lo = 1
@@ -21,32 +22,32 @@ class Limits:
       self.sL = 7
       self.dt = 8
             
-      self.openBuyBars = int(data['profileTradeData']['openBuyBars'])
-      self.closeBuyBars = int(data['profileTradeData']['closeBuyBars'])
-      self.openSellBars = int(data['profileTradeData']['openSellBars'])
-      self.closeSellBars = int(data['profileTradeData']['closeSellBars'])
-      self.tradingDelayBars = int(data['profileTradeData']['tradingDelayBars'])
-      self.doRangeTradeBars = int(data['profileTradeData']['doRangeTradeBars'])
-      self.doHiLoSeq = int(data['profileTradeData']['doHiLoSeq'])
-      self.doHiSeq = int(data['profileTradeData']['doHiSeq'])
-      self.doLoSeq = int(data['profileTradeData']['doLoSeq'])
-      self.doOpenCloseSeq = int(data['profileTradeData']['doOpenCloseSeq'])      
-      self.doOpensSeq = int(data['profileTradeData']['doOpensSeq'])      
-      self.doClosesSeq = int(data['profileTradeData']['doClosesSeq'])      
-      self.doOpensCloses = int(data['profileTradeData']['doOpensCloses'])      
-      self.doHiLo = int(data['profileTradeData']['doHiLo'])
-      self.doExecuteOnOpen = int(data['profileTradeData']['doExecuteOnOpen'])
-      self.doExecuteOnClose = int(data['profileTradeData']['doExecuteOnClose'])
-      self.aggressiveOpenPct = float(data['profileTradeData']['aggressiveOpenPct'])
-      self.aggressiveClosePct = float(data['profileTradeData']['aggressiveClosePct'])
-      self.useAvgBarLimits = int(data['profileTradeData']['useAvgBarLimits'])
+      self.openBuyBars = int(d['openBuyBars'])
+      self.closeBuyBars = int(d['closeBuyBars'])
+      self.openSellBars = int(d['openSellBars'])
+      self.closeSellBars = int(d['closeSellBars'])
+      self.tradingDelayBars = int(d['tradingDelayBars'])
+      self.doRangeTradeBars = int(d['doRangeTradeBars'])
+      self.doHiLoSeq = int(d['doHiLoSeq'])
+      self.doHiSeq = int(d['doHiSeq'])
+      self.doLoSeq = int(d['doLoSeq'])
+      self.doOpenCloseSeq = int(d['doOpenCloseSeq'])      
+      self.doOpensSeq = int(d['doOpensSeq'])      
+      self.doClosesSeq = int(d['doClosesSeq'])      
+      self.doOpensCloses = int(d['doOpensCloses'])      
+      self.doHiLo = int(d['doHiLo'])
+      self.doExecuteOnOpen = int(d['doExecuteOnOpen'])
+      self.doExecuteOnClose = int(d['doExecuteOnClose'])
+      self.aggressiveOpenPct = float(d['aggressiveOpenPct'])
+      self.aggressiveClosePct = float(d['aggressiveClosePct'])
+      self.useAvgBarLimits = int(d['useAvgBarLimits'])
       
-      self.aggressiveOpen = int(data['profileTradeData']['aggressiveOpen'])
-      self.aggressiveClose = int(data['profileTradeData']['aggressiveClose'])
-      self.agrBuyHiOpen = int(data['profileTradeData']['agrBuyHiOpen'])
-      self.agrSellLoOpen = int(data['profileTradeData']['agrSellLoOpen'])
-      self.agrBuyHiClose = int(data['profileTradeData']['agrBuyHiClose'])
-      self.agrSellLoClose = int(data['profileTradeData']['agrSellLoClose'])
+      self.aggressiveOpen = int(d['aggressiveOpen'])
+      self.aggressiveClose = int(d['aggressiveClose'])
+      self.agrBuyHiOpen = int(d['agrBuyHiOpen'])
+      self.agrSellLoOpen = int(d['agrSellLoOpen'])
+      self.agrBuyHiClose = int(d['agrBuyHiClose'])
+      self.agrSellLoClose = int(d['agrSellLoClose'])
 
       self.higherHighs = self.higherCloses = 0
       self.lowerHighs = self.lowerCloses = 0
@@ -733,22 +734,24 @@ class Limits:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def resetLimits(self):
    
-      self.doHiLoSeq = int(self.data['profileTradeData']['doHiLoSeq'])
-      self.doHiSeq = int(self.data['profileTradeData']['doHiSeq'])
-      self.doLoSeq = int(self.data['profileTradeData']['doLoSeq'])
-      self.doOpenCloseSeq = int(self.data['profileTradeData']['doOpenCloseSeq'])      
-      self.doOpensCloses = int(self.data['profileTradeData']['doOpensCloses'])      
-      self.openBuyBars = int(self.data['profileTradeData']['openBuyBars'])
-      self.closeBuyBars = int(self.data['profileTradeData']['closeBuyBars'])
-      self.openSellBars = int(self.data['profileTradeData']['openSellBars'])
-      self.closeSellBars = int(self.data['profileTradeData']['closeSellBars'])
-      self.tradingDelayBars = int(self.data['profileTradeData']['tradingDelayBars'])
-      self.aggressiveOpen = int(self.data['profileTradeData']['aggressiveOpen'])
-      self.aggressiveClose = int(self.data['profileTradeData']['aggressiveClose'])
-      self.increaseCloseBars = int(self.data['profileTradeData']['increaseCloseBars'])
-      self.increaseCloseBarsMax = int(self.data['profileTradeData']['increaseCloseBarsMax'])
-      self.gainTrailStop = int(self.data['profileTradeData']['gainTrailStop'])
-      self.closePositionFudge = float(self.data['profileTradeData']['closePositionFudge'])
+      self.d = self.pf.getOrigValues()
+      
+      self.doHiLoSeq = int(self.d['doHiLoSeq'])
+      self.doHiSeq = int(self.d['doHiSeq'])
+      self.doLoSeq = int(self.d['doLoSeq'])
+      self.doOpenCloseSeq = int(self.d['doOpenCloseSeq'])      
+      self.doOpensCloses = int(self.d['doOpensCloses'])      
+      self.openBuyBars = int(self.d['openBuyBars'])
+      self.closeBuyBars = int(self.d['closeBuyBars'])
+      self.openSellBars = int(self.d['openSellBars'])
+      self.closeSellBars = int(self.d['closeSellBars'])
+      self.tradingDelayBars = int(self.d['tradingDelayBars'])
+      self.aggressiveOpen = int(self.d['aggressiveOpen'])
+      self.aggressiveClose = int(self.d['aggressiveClose'])
+      self.increaseCloseBars = int(self.d['increaseCloseBars'])
+      self.increaseCloseBarsMax = int(self.d['increaseCloseBarsMax'])
+      self.gainTrailStop = int(self.d['gainTrailStop'])
+      self.closePositionFudge = float(self.d['closePositionFudge'])
 
       print ("doHiLoSeq " + str(self.doHiLoSeq))
       print ("openBuyBars " + str(self.openBuyBars))

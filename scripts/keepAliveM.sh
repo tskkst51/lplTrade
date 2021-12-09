@@ -155,8 +155,7 @@ ulimit -n 10000
 
 wp=$(pwd)
 
-offLine=$1
-day=$2
+day=$1
 
 lpltMaster="${wp}/bin/lpltMaster.py"
 
@@ -213,10 +212,9 @@ log="${wp}/logs/liveDebugLog_${dt}.oo"
 
 cmd="$py3 $lpltMaster -d -c $HOME/profiles/et.json -p $wp/profiles/active.json"
 
-if [[ -n $offLine ]]; then
-   if [[ -n $day ]]; then
-      testDay=$day
-   fi
+if [[ -n $day ]]; then
+   testDay=$day
+   offLine="yes"
    cmd="$py3 $lpltMaster -w "${wp}/test/${testDay}" -o -d -c $HOME/profiles/et.json -p ${wp}/test/${testDay}/profiles/active.json"
 fi
 
@@ -240,40 +238,38 @@ fi
 
 waiting=1
 
-if [[ -z $offLine ]]; then
-   if [[ -n $testHost ]]; then
+if [[ -n $testHost ]]; then
 
-      # Archive data
-      echo Waiting $waiting seconds to archive results...
-      sleep $waiting
-         
-      tarNm="${dt}all.tar"
-
-      tallyLiveResults $dt
-      pullSlaveData
-      initSlaveTestData
-      mergeMasterSlaveData
-      moveDataToArchive $tarNm
-      pushData $tarNm
+   # Archive data
+   echo Waiting $waiting seconds to archive results...
+   sleep $waiting
       
-      # Run tests...
-      cd $wp || echo cant cd to $wp
-      
-      # Gather live results. modify test profiles. Run tests. collate results
-      scripts/liveResults.sh $dt
-      scripts/modProfiles.sh "test"
-      scripts/keepAliveM.sh off $dt # Run tests.
-      scripts/daysBest.sh
+   tarNm="${dt}all.tar"
 
-   else # Archive slave
-      
-      tarNm="${dt}.tar"
+   tallyLiveResults $dt
+   pullSlaveData
+   initSlaveTestData
+   mergeMasterSlaveData
+   moveDataToArchive $tarNm
+   pushData $tarNm
+   
+   # Run tests...
+   cd $wp || echo cant cd to $wp
+   
+   # Gather live results. modify test profiles. Run tests. collate results
+   scripts/liveResults.sh $dt
+   scripts/modProfiles.sh "test"
+   scripts/keepAliveM.sh $dt # Run tests.
+   scripts/daysBest.sh
 
-      createSlaveTestData
-      moveDataToArchive $tarNm
-      pushData $tarNm
+else # Archive slave
+   
+   tarNm="${dt}.tar"
 
-   fi
+   createSlaveTestData
+   moveDataToArchive $tarNm
+   pushData $tarNm
+
 fi
 
 exit 0

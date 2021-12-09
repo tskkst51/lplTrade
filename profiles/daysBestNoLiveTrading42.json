@@ -1,5 +1,4 @@
 {
-  "profileTradeData": {
     "profileName": "daysBestNoLiveTrading",
     "algorithms": "do\\*",
     "service": "eTrade",
@@ -138,6 +137,7 @@
     "quickProfitPctTriggerBar": "1.5",
     "quickProfitPctTriggerAmt": "20.0",
     "inPosProfitPct": "0.6",
+    "inPosLossPct": "0.5",
     "buyNearLow": "0",
     "sellNearHi": "0",
     "exitThreshHold": "2",
@@ -148,5 +148,4 @@
     "averageVolumeClose": "0",
     "volumeLastBarOpen": "0",
     "volumeLastBarClose": "0"
-  }
 }

@@ -1,5 +1,4 @@
 {
-  "profileTradeData": {
     "profileName": "daysBestLiveTrading42",
     "algorithms": "do\\*",
     "service": "eTrade",
@@ -7,6 +6,7 @@
     "stocks": "TQQQ,AAPL,QADB,NVDA,TSLA,AMZN,NFLX,FB,BABA,FCEL,BIDU,SNAP,AUUD,NTLA,VERV,GME,SPCE,JKS,BSQR,CERE,AMC",
     "stocksStr2": "XPEV,PSP,AMBO,OXY,ADBE,GH",
     "stocksFile": "daysBest/latest",
+    "stockOrderFile": "logs/stockOrder.ll",
     "stocksFileMultiplier": "2",
     "daysBestAvgDailyGain": "1.5",
     "numDaysTestData": "3",
@@ -138,6 +138,7 @@
     "quickProfitPctTriggerBar": "1.5",
     "quickProfitPctTriggerAmt": "20.0",
     "inPosProfitPct": "0.6",
+    "inPosLossPct": "0.5",
     "buyNearLow": "0",
     "sellNearHi": "0",
     "exitThreshHold": "2",
@@ -148,5 +149,4 @@
     "averageVolumeClose": "0",
     "volumeLastBarOpen": "0",
     "volumeLastBarClose": "0"
-  }
 }

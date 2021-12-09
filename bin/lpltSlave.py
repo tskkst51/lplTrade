@@ -153,14 +153,19 @@ parser.add_option("-w", "--workPath", type="string",
 # Load profileTradeData data
 
 # Get trading elements
-with open(clOptions.profileTradeDataPath) as jsonData:
-   d = json.load(jsonData)
+
+pf = lpl.Profile(clOptions.profileTradeDataPath)
+d = pf.getPFValues()
+
+#with open(clOptions.profileTradeDataPath) as jsonData:
+#   d = json.load(jsonData)
+
+cf = lpl.Profile(clOptions.profileConnectPath)
+c = cf.getPFValues()
 
 # Get connection elements
-with open(clOptions.profileConnectPath) as jsonData:
-   c = json.load(jsonData)
-
-dInitial = d
+#with open(clOptions.profileConnectPath) as jsonData:
+#   c = json.load(jsonData)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set data variables
@@ -197,31 +202,31 @@ forceClose = 1
 timeBar = 0
 exitMaxProfit = 0
 
-stock = str(d["profileTradeData"]["stock"])
-profileName = str(d["profileTradeData"]["profileName"])
-currency = str(d["profileTradeData"]["currency"])
-alt = str(d["profileTradeData"]["alt"])
-timeBar = int(d["profileTradeData"]["timeBar"])
-service = str(d["profileTradeData"]["service"])
-algorithms = str(d["profileTradeData"]["algorithms"])
-tradingDelayBars = int(d["profileTradeData"]["tradingDelayBars"])
-openBuyBars = int(d["profileTradeData"]["openBuyBars"])
-closeBuyBars = int(d["profileTradeData"]["closeBuyBars"])
-openSellBars = int(d["profileTradeData"]["openSellBars"])
-closeSellBars = int(d["profileTradeData"]["closeSellBars"])
-profileTradeData = str(d["profileTradeData"])
-resume = str(d["profileTradeData"]["resume"])
-workPath = str(d["profileTradeData"]["workPath"])
-doRangeTradeBars = str(d["profileTradeData"]["doRangeTradeBars"])
-gainTrailStop = str(d["profileTradeData"]["gainTrailStop"])
-quickProfitPctTrigger = float(d["profileTradeData"]["quickProfitPctTrigger"])
-doTrailingStop = int(d["profileTradeData"]["doTrailingStop"])
-maxProfit = float(d["profileTradeData"]["maxProfit"])
-maxLoss = float(d["profileTradeData"]["maxLoss"])
-quitMaxProfit = int(d["profileTradeData"]["quitMaxProfit"])
-quitMaxLoss = int(d["profileTradeData"]["quitMaxLoss"])
-marketEndTime = int(d["profileTradeData"]["marketEndTime"])
-doInPosTracking = int(d["profileTradeData"]["doInPosTracking"])
+stock = str(pf.gv("stock"))
+profileName = str(pf.gv("profileName"))
+currency = str(pf.gv("currency"))
+alt = str(pf.gv("alt"))
+timeBar = int(pf.gv("timeBar"))
+service = str(pf.gv("service"))
+algorithms = str(pf.gv("algorithms"))
+tradingDelayBars = int(pf.gv("tradingDelayBars"))
+openBuyBars = int(pf.gv("openBuyBars"))
+closeBuyBars = int(pf.gv("closeBuyBars"))
+openSellBars = int(pf.gv("openSellBars"))
+closeSellBars = int(pf.gv("closeSellBars"))
+profileTradeData = str(d)
+resume = str(pf.gv("resume"))
+workPath = str(pf.gv("workPath"))
+doRangeTradeBars = str(pf.gv("doRangeTradeBars"))
+gainTrailStop = str(pf.gv("gainTrailStop"))
+quickProfitPctTrigger = float(pf.gv("quickProfitPctTrigger"))
+doTrailingStop = int(pf.gv("doTrailingStop"))
+maxProfit = float(pf.gv("maxProfit"))
+maxLoss = float(pf.gv("maxLoss"))
+quitMaxProfit = int(pf.gv("quitMaxProfit"))
+quitMaxLoss = int(pf.gv("quitMaxLoss"))
+marketEndTime = int(pf.gv("marketEndTime"))
+doInPosTracking = int(pf.gv("doInPosTracking"))
 
 sandBox = int(c["profileConnectET"]["sandBox"])
 #offLine = int(c["profileConnectET"]["offLine"])
@@ -254,7 +259,7 @@ if clOptions.alt:
    
 if clOptions.stock:
    stock = clOptions.stock
-   d["profileTradeData"]["stock"] = str(stock)
+   d["stock"] = str(stock)
    
 if clOptions.debug:
    debug = int(clOptions.debug)
@@ -279,11 +284,11 @@ if clOptions.slave:
 
 if clOptions.timeBar:
    timeBar = int(clOptions.timeBar)
-   d["profileTradeData"]["timeBar"] = str(timeBar)
+   d["timeBar"] = str(timeBar)
    
 if clOptions.workPath:
    workPath = clOptions.workPath
-   #d["profileTradeData"]["workPath"] = str(workPath)
+   #d["workPath"] = str(workPath)
 
 exitMaxProfit = clOptions.exitMaxProfit
 
@@ -369,12 +374,13 @@ elif service == "eTrade":
 
 bc = lpl.Barchart()
 tr = lpl.Trends(d, lg, cn, bc, slave)
-lm = lpl.Limits(d, lg, cn, bc, symbol)
+lm = lpl.Limits(d, lg, cn, bc, pf, symbol)
 pa = lpl.Pattern(d, bc, lg)
 #pr = lpl.Price(cn, slave)
 pr = lpl.Price(cn, offLine)
 #ac = lpl.Account(c)
 dc = lpl.Dailychart()
+
 dy = lpl.Dynamic(timeBar, dcPath, dc)
 
 a = lpl.Algorithm(d, lg, cn, bc, tr, lm, pa, pr, dy, offLine, stock)
@@ -434,7 +440,7 @@ lg.info ("getQuoteStatus: " + cn.getQuoteStatus())
 lg.info ("workPath: " + workPath)
 lg.info (a.getAlgorithmMsg())
 
-for dItems in d['profileTradeData'].items():
+for dItems in d.items():
    print ("ditems: " + str(dItems))
 
 

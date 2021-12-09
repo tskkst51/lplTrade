@@ -1,5 +1,4 @@
 {
-  "profileTradeData": {
     "profileName": "preMarketAnalysisLiveNoTestData",
     "algorithms": "do\\*",
     "service": "eTrade",
@@ -15,7 +14,7 @@
     "numStocksToProcessInPremarket": "1500",
     "numSpreadSamples": "2",
     "defaultStocks": "SNAP",
-    "defaultAlgos": "SNAP TB3_HI_QM_OB2_OS2_CB4_CS4_TR",
+    "defaultAlgoStr": "TB1_HS_QM_OB2_OS2_CB3_CS3_DB30_IT_TS",
     "etfs": "XSD,XLF,XLK,XBI,XLE,XLV,XLY,XLP,SMH",
     "timeBar": "1",
     "slave": "1",
@@ -71,7 +70,7 @@
     "agrSellLoClose": "0",
     "profitGainedPct": "0.12",
     "halfDayEndTime": "125959",
-    "halfDays": "11112020,11282020,11242020,12242020",
+    "halfDays": "11112020,11282020,11242020,12242020,11262021",
     "priceLimits": "5,10,20,50,100,250,500,1000,4000",
     "spreadLimits": "0.04,0.07,0.13,0.25,0.52,1.14,1.78,2.40,4.50",
     "priceLimitDivider": "3.3",
@@ -84,7 +83,7 @@
     "maxProfit": "0.0115",
     "maxLoss": "0.0107",
     "maxStocksToTrade": "9",
-    "maxNumProcesses": "9",
+    "maxNumProcesses": "7",
     "maxYahooStocks": "8",
     "maxStockPrice": "5000",
     "minStockPrice": "2.15",
@@ -150,5 +149,4 @@
     "averageVolumeClose": "0",
     "volumeLastBarOpen": "0",
     "volumeLastBarClose": "0"
-  }
 }

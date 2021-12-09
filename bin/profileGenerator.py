@@ -44,7 +44,7 @@ else:
    profilePath = "test/" + day + "/" + "profiles/active.json"
    #profilePath = os.getcwd() + "/test/" + day + "/" + "profiles/active.json"
 
-pf = lpl.Profile()
+pf = lpl.Profile(profilePath)
 
 d = pf.readProfile(profilePath)
 

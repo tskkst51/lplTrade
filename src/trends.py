@@ -22,16 +22,16 @@ class Trends:
       self.dt = 8
 
       # Use trend indicators to increase amount to trade
-      self.timeBar = int(data['profileTradeData']['timeBar'])
-      self.shortTrendBars = int(data['profileTradeData']['shortTrendBars'])
-      self.midTrendBars = int(data['profileTradeData']['midTrendBars'])
-      self.longTrendBars = int(data['profileTradeData']['longTrendBars'])
-      self.megaTrendBars = int(data['profileTradeData']['megaTrendBars'])
-      self.superTrendBars = int(data['profileTradeData']['superTrendBars'])
-      self.bullTrendValue = float(data['profileTradeData']['bullTrendValue'])
-      self.bearTrendValue = float(data['profileTradeData']['bearTrendValue'])
-      self.bullSessionValue = float(data['profileTradeData']['bullSessionValue'])
-      self.bearSessionValue = float(data['profileTradeData']['bearSessionValue'])
+      self.timeBar = int(data['timeBar'])
+      self.shortTrendBars = int(data['shortTrendBars'])
+      self.midTrendBars = int(data['midTrendBars'])
+      self.longTrendBars = int(data['longTrendBars'])
+      self.megaTrendBars = int(data['megaTrendBars'])
+      self.superTrendBars = int(data['superTrendBars'])
+      self.bullTrendValue = float(data['bullTrendValue'])
+      self.bearTrendValue = float(data['bearTrendValue'])
+      self.bullSessionValue = float(data['bullSessionValue'])
+      self.bearSessionValue = float(data['bearSessionValue'])
       
       self.offLine = offLine
 

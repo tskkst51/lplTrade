@@ -9,9 +9,9 @@ from bitarray import bitarray
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Algorithm():
 
-   def __init__(self, data, lg, cn, bc, tr, lm, pa, pr, dy, offLine=0, stock=""):
+   def __init__(self, d, lg, cn, bc, tr, lm, pa, pr, dy, offLine=0, stock=""):
    
-      self.data = data
+      self.d = d
       self.lg = lg
       self.cn = cn
       self.bc = bc
@@ -20,112 +20,113 @@ class Algorithm():
       self.pa = pa
       self.pr = pr
       self.dy = dy
+      
       self.offLine = offLine
       self.stock = stock
 
       # Required standard settings
-      self.algorithms = str(data['profileTradeData']['algorithms'])
+      self.algorithms = str(d['algorithms'])
             
       # Algorithms
-      self.timeBar = int(data['profileTradeData']['timeBar'])
-      self.doDefault = int(data['profileTradeData']['doDefault'])
-      self.doHiLo = int(data['profileTradeData']['doHiLo'])
-      self.doHiLoSeq = int(data['profileTradeData']['doHiLoSeq'])
-      self.doHiSeq = int(data['profileTradeData']['doHiSeq'])
-      self.doLoSeq = int(data['profileTradeData']['doLoSeq'])
-      self.doOpenCloseSeq = int(data['profileTradeData']['doOpenCloseSeq'])
-      self.doOpensSeq = int(data['profileTradeData']['doOpensSeq'])
-      self.doClosesSeq = int(data['profileTradeData']['doClosesSeq'])
-      self.doOpensCloses = int(data['profileTradeData']['doOpensCloses'])
-      self.doExecuteOnClose = int(data['profileTradeData']['doExecuteOnClose'])
-      self.doExecuteOnOpen = int(data['profileTradeData']['doExecuteOnOpen'])
-      self.doHiLoOnClose = int(data['profileTradeData']['doHiLoOnClose'])
-      self.doHiLoOnOpen = int(data['profileTradeData']['doHiLoOnOpen'])
-      self.doQuickReversal = int(data['profileTradeData']['doQuickReversal'])
-      self.doReversalPattern = int(data['profileTradeData']['doReversalPattern'])
-      self.doReverseBuySell = int(data['profileTradeData']['doReverseBuySell'])
-      self.doQuickProfit = int(data['profileTradeData']['doQuickProfit'])
-      self.doTrends = int(data['profileTradeData']['doTrends'])
-      self.doDynamic = int(data['profileTradeData']['doDynamic'])
-      self.doOnlyBuys = int(data['profileTradeData']['doOnlyBuys'])
-      self.doOnlySells = int(data['profileTradeData']['doOnlySells'])
-      self.doOnlyTrends = int(data['profileTradeData']['doOnlyTrends'])
-      self.doSessions = int(data['profileTradeData']['doSessions'])
-      self.doTrailingStop = int(data['profileTradeData']['doTrailingStop'])
-      self.doVolatility = int(data['profileTradeData']['doVolatility'])
-      self.doInPosTracking = int(data['profileTradeData']['doInPosTracking'])
-      self.averageVolumeOpen = int(data['profileTradeData']['averageVolumeOpen'])
-      self.averageVolumeClose = int(data['profileTradeData']['averageVolumeClose'])
-      self.volumeLastBarOpen = int(data['profileTradeData']['volumeLastBarOpen'])
-      self.volumeLastBarClose = int(data['profileTradeData']['volumeLastBarClose'])
+      self.timeBar = int(d['timeBar'])
+      self.doDefault = int(d['doDefault'])
+      self.doHiLo = int(d['doHiLo'])
+      self.doHiLoSeq = int(d['doHiLoSeq'])
+      self.doHiSeq = int(d['doHiSeq'])
+      self.doLoSeq = int(d['doLoSeq'])
+      self.doOpenCloseSeq = int(d['doOpenCloseSeq'])
+      self.doOpensSeq = int(d['doOpensSeq'])
+      self.doClosesSeq = int(d['doClosesSeq'])
+      self.doOpensCloses = int(d['doOpensCloses'])
+      self.doExecuteOnClose = int(d['doExecuteOnClose'])
+      self.doExecuteOnOpen = int(d['doExecuteOnOpen'])
+      self.doHiLoOnClose = int(d['doHiLoOnClose'])
+      self.doHiLoOnOpen = int(d['doHiLoOnOpen'])
+      self.doQuickReversal = int(d['doQuickReversal'])
+      self.doReversalPattern = int(d['doReversalPattern'])
+      self.doReverseBuySell = int(d['doReverseBuySell'])
+      self.doQuickProfit = int(d['doQuickProfit'])
+      self.doTrends = int(d['doTrends'])
+      self.doDynamic = int(d['doDynamic'])
+      self.doOnlyBuys = int(d['doOnlyBuys'])
+      self.doOnlySells = int(d['doOnlySells'])
+      self.doOnlyTrends = int(d['doOnlyTrends'])
+      self.doSessions = int(d['doSessions'])
+      self.doTrailingStop = int(d['doTrailingStop'])
+      self.doVolatility = int(d['doVolatility'])
+      self.doInPosTracking = int(d['doInPosTracking'])
+      self.averageVolumeOpen = int(d['averageVolumeOpen'])
+      self.averageVolumeClose = int(d['averageVolumeClose'])
+      self.volumeLastBarOpen = int(d['volumeLastBarOpen'])
+      self.volumeLastBarClose = int(d['volumeLastBarClose'])
       
-      self.doPriceMovement = int(data['profileTradeData']['doPriceMovement'])
-      self.doAllPatterns = int(data['profileTradeData']['doAllPatterns'])
-      self.doHammers = int(data['profileTradeData']['doHammers'])
-      self.doReversals = int(data['profileTradeData']['doReversals'])
-      self.profitGainedPct = float(data['profileTradeData']['profitGainedPct'])
-      self.inPosProfitPct = float(data['profileTradeData']['inPosProfitPct'])
-      self.inPosLossPct = float(data['profileTradeData']['inPosLossPct'])
+      self.doPriceMovement = int(d['doPriceMovement'])
+      self.doAllPatterns = int(d['doAllPatterns'])
+      self.doHammers = int(d['doHammers'])
+      self.doReversals = int(d['doReversals'])
+      self.profitGainedPct = float(d['profitGainedPct'])
+      self.inPosProfitPct = float(d['inPosProfitPct'])
+      self.inPosLossPct = float(d['inPosLossPct'])
       
-      self.quitMaxProfit = float(data['profileTradeData']['quitMaxProfit'])
-      self.quitMaxLoss = float(data['profileTradeData']['quitMaxLoss'])
+      self.quitMaxProfit = float(d['quitMaxProfit'])
+      self.quitMaxLoss = float(d['quitMaxLoss'])
       
-      self.aggressiveOpen = int(data['profileTradeData']['aggressiveOpen'])
-      self.aggressiveClose = int(data['profileTradeData']['aggressiveClose'])
-      self.agrBuyHiOpen = int(data['profileTradeData']['agrBuyHiOpen'])
-      self.agrSellLoOpen = int(data['profileTradeData']['agrSellLoOpen'])
-      self.agrBuyHiClose = int(data['profileTradeData']['agrBuyHiClose'])
-      self.agrSellLoClose = int(data['profileTradeData']['agrSellLoClose'])
+      self.aggressiveOpen = int(d['aggressiveOpen'])
+      self.aggressiveClose = int(d['aggressiveClose'])
+      self.agrBuyHiOpen = int(d['agrBuyHiOpen'])
+      self.agrSellLoOpen = int(d['agrSellLoOpen'])
+      self.agrBuyHiClose = int(d['agrBuyHiClose'])
+      self.agrSellLoClose = int(d['agrSellLoClose'])
 
-      self.currency = str(data['profileTradeData']['currency'])
-      self.alt = str(data['profileTradeData']['alt'])
-      self.marketBeginTime = int(data['profileTradeData']['marketBeginTime'])
-      self.marketEndTime = int(data['profileTradeData']['marketEndTime'])
-      self.preMarket = int(data['profileTradeData']['preMarket'])
-      self.afterMarket = int(data['profileTradeData']['afterMarket'])
-      self.priceChangeMultiplier = int(data['profileTradeData']['priceChangeMultiplier'])
-      self.afterMarketAnalysis = int(data['profileTradeData']['afterMarketAnalysis'])
-      self.afterMarketEndTime = int(data['profileTradeData']['afterMarketEndTime'])
+      self.currency = str(d['currency'])
+      self.alt = str(d['alt'])
+      self.marketBeginTime = int(d['marketBeginTime'])
+      self.marketEndTime = int(d['marketEndTime'])
+      self.preMarket = int(d['preMarket'])
+      self.afterMarket = int(d['afterMarket'])
+      self.priceChangeMultiplier = int(d['priceChangeMultiplier'])
+      self.afterMarketAnalysis = int(d['afterMarketAnalysis'])
+      self.afterMarketEndTime = int(d['afterMarketEndTime'])
 
       # Increase the number of bars used determining close price
-      self.increaseCloseBars = int(data['profileTradeData']['increaseCloseBars'])
-      self.increaseCloseBarsMax = int(data['profileTradeData']['increaseCloseBarsMax'])
-      self.gainTrailStop = int(data['profileTradeData']['gainTrailStop'])
-      self.useAvgBarLimits = int(data['profileTradeData']['useAvgBarLimits'])
+      self.increaseCloseBars = int(d['increaseCloseBars'])
+      self.increaseCloseBarsMax = int(d['increaseCloseBarsMax'])
+      self.gainTrailStop = int(d['gainTrailStop'])
+      self.useAvgBarLimits = int(d['useAvgBarLimits'])
 
       # Additional value to add to close triggers
-      self.closePositionFudge = float(data['profileTradeData']['closePositionFudge'])
+      self.closePositionFudge = float(d['closePositionFudge'])
             
       #self.algoBitArray = bitarray(6)
       #self.algoBitArray = bitarray.setall[0]
       
       # Wait for next bar before opening a position
-      self.waitForNextBar = int(data['profileTradeData']['waitForNextBar'])
+      self.waitForNextBar = int(d['waitForNextBar'])
 
       # Yet to implement.  BELOW HERE HASN"T BEEN IMPLEMENTED yet
       
-      self.endTradingTime = float(data['profileTradeData']['endTradingTime'])
-      self.quickProfitPctTriggerAmt = float(data['profileTradeData']['quickProfitPctTriggerAmt'])
+      self.endTradingTime = float(d['endTradingTime'])
+      self.quickProfitPctTriggerAmt = float(d['quickProfitPctTriggerAmt'])
       
       # reverseLogic appears to be best for short term charts and
       # low liquidity
       
-      self.buyNearLow = int(data['profileTradeData']['buyNearLow'])
-      self.sellNearHi = int(data['profileTradeData']['sellNearHi'])
+      self.buyNearLow = int(d['buyNearLow'])
+      self.sellNearHi = int(d['sellNearHi'])
       
-      self.quickProfitPctTrigger = float(data['profileTradeData']['quickProfitPctTrigger'])
-      self.quickProfitPctTriggerBar = float(data['profileTradeData']['quickProfitPctTriggerBar'])
-      self.reversalPctTrigger = float(data['profileTradeData']['reversalPctTrigger'])
-      self.volumeRangeBars = int(data['profileTradeData']['volumeRangeBars'])
-      self.inPosProfitPct = float(data['profileTradeData']['inPosProfitPct'])
+      self.quickProfitPctTrigger = float(d['quickProfitPctTrigger'])
+      self.quickProfitPctTriggerBar = float(d['quickProfitPctTriggerBar'])
+      self.reversalPctTrigger = float(d['reversalPctTrigger'])
+      self.volumeRangeBars = int(d['volumeRangeBars'])
+      self.inPosProfitPct = float(d['inPosProfitPct'])
       
       self.executeOnOpenPosition = 0
       self.executeOnClosePosition = 0
 
-      self.hiLowBarMaxCounter = int(data['profileTradeData']['hiLowBarMaxCounter'])
-      self.useSignals = int(data['profileTradeData']['useSignals'])
-      self.priceLimits = str(data['profileTradeData']['priceLimits'])
-      self.priceLimitDivider = float(data['profileTradeData']['priceLimitDivider'])
+      self.hiLowBarMaxCounter = int(d['hiLowBarMaxCounter'])
+      self.useSignals = int(d['useSignals'])
+      self.priceLimits = str(d['priceLimits'])
+      self.priceLimitDivider = float(d['priceLimitDivider'])
 
       # Class variables
       self.position = "close"
@@ -313,23 +314,24 @@ class Algorithm():
       # Change algo's based on conditions, time slope
       if self.doDynamic:
          algo = self.dy.setOpenCloseBars(last, self.timeBar)
-         
-         
+         print ("algoooooo " + str(algo))
+         exit (1)
+
       #   self.algorithmDynamic(bar)
                
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getLiveProfileValues(self, data, profilePath):
+   def getLiveProfileValues(self, d, profilePath):
    
       displayHeader = profilePath
       displayHeader += "\nProfile items: "
          
-      for key, value in data.items():
-         for k, v in value.items():
-            if k == "currency" or k == "alt":
-               continue
-            if v >= '1':
-               displayHeader += v + " " + k + "\n"
-      
+      #for key, value in d.items():
+      for k, v in d.items():
+         if k == "currency" or k == "alt":
+            continue
+         if v >= '1':
+            displayHeader += v + " " + k + "\n"
+   
       return displayHeader
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -338,8 +340,12 @@ class Algorithm():
       self.algorithmCalculateRunningVolume(vol)
 
       if bar < self.lm.getTradingDelayBars():
-         return
+         return 0
          
+      # Trading has been halted. Ignore any trading
+      if bid == 0.0 or ask == 0.0 or last == 0.0:
+         return 0
+      
       # Determine if position should be opened
       action = self.takeAction(barChart, bar, bid, ask, last, vol)
       
@@ -1697,9 +1703,11 @@ class Algorithm():
       # open 20% lower; find day(s) ~20% lower open; if day gain +
       # set OB buy bars at 1 CS bars at 3 
       
+      #algo = self.dy.getInitialOpenCloseBarAlgo(last)
+            
       # Too many times trends are a + gain. Don't let them turn negative
-      if self.doTrends:
-         doInPosTracking += 1
+      #if self.doTrends:
+      #   doInPosTracking += 1
 
       # Turn on quick loss 
       

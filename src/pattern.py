@@ -21,7 +21,7 @@ class Pattern:
     self.sL = 7
     self.dt = 8
 
-    self.reversalPctTrigger = float(data['profileTradeData']['reversalPctTrigger'])
+    self.reversalPctTrigger = float(data['reversalPctTrigger'])
     
     if self.reversalPctTrigger == 0.0:
       self.reversalPctTrigger = 60.0
