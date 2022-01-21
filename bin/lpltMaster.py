@@ -379,7 +379,7 @@ excludeStocks = int(d["excludeStocks"])
 stockOrderFile = str(d["stockOrderFile"])
 
 # Make sure stocksFileMultiplier is "1" or more...
-stocksFileMultiplier = int(d["stocksFileMultiplier"])
+stocksFileMultiplier = float(d["stocksFileMultiplier"])
 numStocksToProcessInPremarket = int(d["numStocksToProcessInPremarket"])
 
 masterMode = 1
@@ -479,7 +479,7 @@ if masterMode:
    d["timeBar"] = "1"
    
 if stocksFile != "" and not onlyUpdateDailyStocks:
-   stocks = getAutoStocks(stocksFile, maxNumStocksToTrade * stocksFileMultiplier)   
+   stocks = getAutoStocks(stocksFile, round(maxNumStocksToTrade * stocksFileMultiplier, 2))   
 
 elif preMarketAnalysis:
 
@@ -518,7 +518,7 @@ else:
       stocks = stocks.split(",")
       
    if stocksFile == "":   
-      totalStocks = maxNumStocksToTrade * stocksFileMultiplier
+      totalStocks = round(maxNumStocksToTrade * stocksFileMultiplier, 2)
       if len(stocks) > totalStocks:
          while len(stocks) > totalStocks:
             del stocks[-1]

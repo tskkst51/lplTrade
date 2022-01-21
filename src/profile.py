@@ -84,7 +84,7 @@ class Profile:
    
       d["openBuyBars"] = str(value)
       
-      info += "OB" + str(value) + " "
+      info += "OB" + str(value) + "_"
       
       return info 
    
@@ -93,7 +93,7 @@ class Profile:
    
       d["openSellBars"] = str(value)
       
-      info += "OS" + str(value) + " "
+      info += "OS" + str(value) + "_"
       
       return info 
    
@@ -102,7 +102,7 @@ class Profile:
    
       d["closeBuyBars"] = str(value)
       
-      info += "CB" + str(value) + " "
+      info += "CB" + str(value) + "_"
       
       return info 
    
@@ -111,7 +111,7 @@ class Profile:
    
       d["closeSellBars"] = str(value)
       
-      info += "CS" + str(value) + " "
+      info += "CS" + str(value)
       
       return info 
    

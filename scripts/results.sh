@@ -108,7 +108,13 @@ for day in $dates; do
       continue
    fi
    
+   #echo day $day
+   #echo files $files
+   
    # Find best result given the algo on specific date
+   
+   #find . -type f -exec grep -l 'pattern' {} +
+
    algoPctAmt=$(grep $day $files | sort -n -k 4 | tail -1 | awk '{print $6, $5, $4}')
    days="1"
    resultType="BD"
