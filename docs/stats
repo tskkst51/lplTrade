@@ -2396,3 +2396,34 @@ close   301.75 8.31 4.83 33%   256 2     15:59:46
 close   37.59 0.27 -0.17 40%   12 4     15:32:13
 Total Gain/Loss:
 7.71
+
+Live results on 20220121
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeCL.ls <==
+close   83.73 0.13 0.77 60%   120 4     15:59:46
+
+==> logs/activeCOIN.ls <==
+close   192.0 5.01 5.01 100%   72 0     15:59:46
+
+==> logs/activeCSCO.ls <==
+close   56.77 0.97 0.97 100%   65 0     15:17:00
+
+==> logs/activeDIS.ls <==
+close   137.45 -0.14 1.57 50%   7 3     15:59:46
+
+==> logs/activeLPTX.ls <==
+close   2.11 -0.22 -0.22 0.0%   385 0     15:59:46
+
+==> logs/activeLPX.ls <==
+close   64.16 0.24 0.81 75%   26 3     15:59:46
+
+==> logs/activeNFLX.ls <==
+close   389.49 2.49 4.99 100%   2 1     11:09:38
+
+==> logs/activeSVFD.ls <==
+close   5.0 0.20 0.20 100%   1 0     10:00:47
+
+==> logs/activeWM.ls <==
+close   151.45 1.65 1.65 100%   90 0     15:59:46
+Total Gain/Loss:
+15.75
