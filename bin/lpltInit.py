@@ -40,8 +40,8 @@ consumerKey = str(c["profileConnectET"]["consumerKey"])
 consumerSecret = str(c["profileConnectET"]["consumerSecret"])
 oauthKeysPath = str(c["profileConnectET"]["oauthKeysPath"])
 sandBox = int(c["profileConnectET"]["sandBox"])
-#browserPath = str(c["profileConnectET"]["browser_path_Darwin"])
-browserPath = str(c["profileConnectET"]["browser_path_Opera"])
+browserPath = str(c["profileConnectET"]["browser_path_Darwin"])
+#browserPath = str(c["profileConnectET"]["browser_path_Opera"])
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Overide profileTradeData data with command line data

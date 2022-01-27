@@ -303,7 +303,14 @@ tm = lpl.Time()
 
 # Setup paths
 
-dcPath = os.getcwd() + "/dc/" + stock + ".dc"
+# lpltSlave runs tests and could already be in .../test/DATE
+# 
+cwd = os.getcwd()
+lplPath = os.getenv("LPLT")
+dcPath = cwd + "/dc/" + stock + ".dc"
+
+if cwd != lplPath:
+   dcPath = lplPath + "/dc/" + stock + ".dc"
 
 if offLine:
    slave = False

@@ -10,6 +10,7 @@ import pyetrade
 import traceback
 import random
 import collections
+import subprocess
 
 #from bitfinex.client import Client
 
@@ -40,7 +41,7 @@ class ConnectEtrade:
       self.dateTime = self.getTimeHrMnSecs()
       self.quoteStatus = "CLOSING"
       self.marketEndTime = 163000
-      self.maxEtradeStocks = 21
+      self.d = d
       
       if setoffLine:
          self.offLine = True
@@ -134,7 +135,7 @@ class ConnectEtrade:
          sSegCtr = ctr = sCtr = 0
          stocks = []
          
-         if len(self.stocks) > self.maxEtradeStocks:
+         if len(self.stocks) > self.d.maxNumStocksToTrade:
             # Setup a dict of stock arrays the size of self.maxEtradeStocks
             
             print ("len(self.stocks) " + str(len(self.stocks)))
@@ -211,7 +212,10 @@ class ConnectEtrade:
                   
                except Exception as e: 
                   print(e)
-   
+                  
+                  if self.switchNetwork():
+                     print ("Unable to switch to alternative network")
+                  
                   print ("Etrade is crap " + str(attempt))
                   sleep(1)
                   
@@ -220,10 +224,28 @@ class ConnectEtrade:
             else:
                print ("Etrade is really crap " + str(attempt))
                
+               if self.switchNetwork():
+                  print ("Unable to switch to alternative network")
+               
             sCtr += 1
                   
       return self.serviceValues
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def switchNetwork(self):
+      
+      primaryNetworkName = self.d.primaryNetworkName
+      
+      connectionName = subprocess.check_output(self.d.getNetworkName | "awk '{print $4}'", shell=True)
+
+      if connectionName == primaryNetworkName:
+         primaryNetworkName = self.d.secondaryNetworkName
+      
+      if os.system(self.d.setNetworkName + primaryNetworkName) > 0:
+         return 1
+      
+      return 0
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setValues(self, barChart, i, bid, ask, last, vol):
       

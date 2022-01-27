@@ -66,7 +66,6 @@ set -m
 outFile="/tmp/out${stock}.ot"
 dirty=""
 if [[ -n $testDate ]]; then
-
    if [[ -z $algo ]]; then
       algos=(
       # DON"T CHANGE ORDER!!!!
@@ -99,14 +98,19 @@ fi
 for algo in $algos; do
    a=$algo
       
+   # Write algo string to log (.ls) file
+   log="logs/active${stock}.ls"
    if [[ -n $testDate ]]; then
+      log="test/testDate/${log}"
       ${py3} ${lpltPath}/bin/profileGenerator.py -d $testDate -a $algo || echo Fainle profile generator
       cmd="${py3} ${lpltPath}/bin/lpltSlave.py -w $workPath -c $HOME/profiles/et.json -p $profilePath -o -d -s $stock"
-   else
+   else # LIVE
       ${py3} ${lpltPath}/bin/profileGenerator.py -d "" -a $algo -s $stock || echo Fainle profile generator
       cmd="${py3} ${lpltPath}/bin/lpltSlave.py -c $HOME/profiles/et.json -p $profilePath -d -l -s $stock"
    fi
-      
+   
+   echo $algo >> $log
+   
    echo $cmd
    $cmd
 done

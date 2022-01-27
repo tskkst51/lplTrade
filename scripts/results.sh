@@ -39,7 +39,13 @@ function init {
    tmpFile4="/tmp/${stock}4.rs"
    tmpFile5="/tmp/${stock}5.rs"
    resultsPath="${resultsDir}/${stock}.tr"
-   
+
+   files="${stock}_TB1_*ex"
+   files2="${stock}_TB2_*ex"
+   files3="${stock}_TB3_*ex"
+   files4="${stock}_TB4_*ex"
+   files5="${stock}_TB5_*ex"
+
    if [[ -z $stock ]]; then
       echo Must have a stock to iterate over!
       exit 1
@@ -69,17 +75,7 @@ function init {
       rm -f $resultsPath
    fi
 
-   if [[ $host == "ML-C02C8546LVDL" ]]; then
-      activateDir="/lplW"
-   fi
-   if [[ $host == "tmm" ]]; then
-      activateDir="/lplW"
-   fi
-   if [[ $host == "mm" ]]; then
-      activateDir="/lplW"
-   else
-      activateDir="/venv" 
-   fi
+   activateDir="/lplW2"
 
 }
 
@@ -100,28 +96,37 @@ algos=(
 
 init $1
 
-files="${stock}_TB*"
 for day in $dates; do
-   $(grep -q $day $files)
-   if (( $? == 1 )); then
-      #echo Skipping ${day}. No results found
-      continue
-   fi
+   for ff in $files $files2 $files3 $files4 $files5; do
+      echo $ff
+      #$(grep -q $day $files)
+      $(grep -q $day $ff)
+      if (( $? == 1 )); then
+         #echo Skipping ${day}. No results found
+         continue
+      fi
+      
+      if [[ ! -f $ff ]]; then
+         #echo Skipping ${day}. No results found
+         continue
+      fi
    
-   #echo day $day
-   #echo files $files
+      #echo day $day
+      #echo files $files
+      
+      # Find best result given the algo on specific date
+      
+      #find . -type f -exec grep -l 'pattern' {} +
    
-   # Find best result given the algo on specific date
-   
-   #find . -type f -exec grep -l 'pattern' {} +
-
-   algoPctAmt=$(grep $day $files | sort -n -k 4 | tail -1 | awk '{print $6, $5, $4}')
-   days="1"
-   resultType="BD"
-   resultStrBD="${resultType} ${day} ${algoPctAmt} ${days}"
-   
-   echo $resultStrBD | sort -n -k 5 >> $tmpFile
+      algoPctAmt=$(grep $day $ff | sort -n -k 4 | tail -1 | awk '{print $6, $5, $4}')
+      days="1"
+      resultType="BD"
+      resultStrBD="${resultType} ${day} ${algoPctAmt} ${days}"
+      
+      echo $resultStrBD | sort -n -k 5 >> $tmpFile
+   done
 done
+exit 1
 
 # Find the algo that appears the most in the results file
 for a in ${algos[*]}; do

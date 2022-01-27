@@ -46,15 +46,9 @@ if [[ -z $testPath ]]; then
    testPath="test"
 fi
 
-host=$(hostname -s)
+#host=$(hostname -s)
 
-if [[ $host == "ML-C02C8546LVDL" ]]; then
-   activateDir="/lplW"
-elif [[ $host == "mm" ]]; then
-   activateDir="/lplW"
-else
-   activateDir="/venv" 
-fi
+activateDir="/lplW2"
 
 activateCmd=$(dirname $wp)
 activateCmd+="${activateDir}/bin/activate"

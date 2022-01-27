@@ -22,15 +22,9 @@ wp=$(pwd)
 
 $HOME/bin/lplt.sh
 
-host=$(hostname -s)
+#host=$(hostname -s)
 
-if [[ $host == "ML-C02C8546LVDL" ]]; then
-   activateDir="/lplW"
-elif [[ $host == "mm" ]]; then
-   activateDir="/lplW"
-else
-   activateDir="/venv" 
-fi
+activateDir="/lplW2"
 
 py3=$(dirname $wp)
 py3+="${activateDir}/bin/python3"

@@ -96,7 +96,7 @@ def writeParsedLine(path, line):
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def writeParsedLineRemoveDups(path, stock, date, newLine):
    
-   tmpPath = "tmp/fileBuffer_" + stock
+   tmpPath = cwd + "/tmp/fileBuffer_" + stock
    extTmp = "/Volumes/2T2/lplTrade/tmp"
 
    if os.path.exists(extTmp):
@@ -189,13 +189,14 @@ fresh = False
 system = os.uname()
 
 binPath = "/Users/tsk/w/lplTrade/bin/"
-pyPath = "/Users/tsk/w/lplW/bin/"
+pyPath = "/Users/tsk/w/lplW2/bin/"
 
 if system.nodename == "ML-C02C8546LVDL":
    binPath = "/Users/tknitter/w/gitWS/lplTrade/bin/"
    pyPath = "/Users/tknitter/w/gitWS/lplW/bin/"
    
-lplt = binPath + "lplt.py"
+#lplt = binPath + "lplt.py"
+lplt = binPath + "lpltSlave.py"
 prog = pyPath + "python3 " + lplt + " "
 
 cwd = os.getcwd()
@@ -297,90 +298,92 @@ for minBar in timeBar:
    d = pf.readProfile(tdp)
    info = initParseInfo()
       
-   for openBars in openCloseBuySellBars:
-      for closeBars in closeBuySellBars:
-#         for obb in openBuyBars:
-#            for osb in openSellBars:
-#               for cbb in closeBuyBars:
-#                  for csb in closeSellBars: 
+   #for openBars in openCloseBuySellBars:
+   #   for closeBars in closeBuySellBars:
+   for obb in openBuyBars:
+      for osb in openSellBars:
+         for cbb in closeBuyBars:
+            for csb in closeSellBars: 
               
-         pf.initProfile(d)
-         
-         info = pf.setAlgoValues(d, algo, minBar, info)
+               pf.initProfile(d)
+               
+               info = pf.setAlgoValues(d, algo, minBar, info)
          
          # Both decision bars change
          
          #                     info = setOpenCloseBuySellValues(openBars, info)
          
-         info = pf.setOpenBuySellValues(d, openBars, info)
-         info = pf.setCloseBuySellValues(d, closeBars, info)
+         #info = pf.setOpenBuySellValues(d, openBars, info)
+         #info = pf.setCloseBuySellValues(d, closeBars, info)
          
-         #                     # Each decision bar changes 
-         #                     info = pf.setOpenBuyValue(obb, info)
-         #                     info = pf.setOpenSellValue(osb, info)
-         #                     info = pf.setCloseBuyValue(cbb, info)
-         #                     info = pf.setCloseSellValue(csb, info)
+               # Each decision bar changes 
+               info = pf.setOpenBuyValue(d, obb, info)
+               info = pf.setOpenSellValue(d, osb, info)
+               info = pf.setCloseBuyValue(d, cbb, info)
+               info = pf.setCloseSellValue(d, csb, info)
          
-         # Dump new settings
-         with open(tdp, 'w') as fp:
-             json.dump(d, fp, indent=2)
-         
-         for stock in symbols:
-            bcPath = "bc/active" + stock + ".bc"
-            resultsPath = "logs/active" + stock + ".log"
-            parsePath = "logs/parse" + stock + ".pr"
-            #lgFile = "logs/output" + stock + ".tt"
-            outFile = "/tmp/output.tt"
-                           
-            if not os.path.exists(bcPath):
-               print ("Can't find file: " + str(bcPath) + " skipping it...\n")
-               continue
-            
-            args = " -o "
-            if exitMaxProfit:
-               args += " -x " 
-         
-            # Create files based off of the stock, algo and date
-            cmd = prog + args + " -c " + cdp + " -s " + stock + " -p " + tdp + " > " + outFile
-                        
-            #print ("cmd: " + cmd)
-            
-            date = os.path.basename(wp)
-            
-            algoPath = cwd + "/exitResults/" + stock + "_" + info + ".ex"
-            
-            exitVal = os.system(cmd)
-                     
-            lastLine = getLastLine(resultsPath) 
-            parsedLine = parseLastLine(lastLine, info)
-            
-            if parsedLine == "":
-               print (str(stock) + " produced no results" + str(parsedLine))
-               continue
+               # Dump new settings
+               with open(tdp, 'w') as fp:
+                   json.dump(d, fp, indent=2)
                
-            gain = getGain(lastLine)
-            if gain > highestGain:
-               lastGain = highestGain
-               highestGain = gain
-               parsedLine += " " + str(highestGain)
-            
-            if exitVal == 512 or exitVal == 768:
-               if exitVal == 512:
-                  parsedLine += " MP"
-         #     if exitVal == 768:
-         #        parsedLine += " ML"
+               for stock in symbols:
+                  bcPath = "bc/active" + stock + ".bc"
+                  #resultsPath = "logs/active" + stock + ".log"
+                  resultsPath = "logs/active" + stock + ".ls"
+                  parsePath = "logs/parse" + stock + ".pr"
+                  #lgFile = "logs/output" + stock + ".tt"
+                  outFile = "/tmp/output.tt"
+                                 
+                  if not os.path.exists(bcPath):
+                     print ("Can't find file: " + str(bcPath) + " skipping it...\n")
+                     continue
+                  
+                  args = " -o "
+                  if exitMaxProfit:
+                     args += " -x " 
                
-#               rsPath = "profiles/saved/results" + stock + "_hiGain_" + str(highestGain) + ".rs"
-#               pfPath = "profiles/saved/profiles" + stock + "_hiGain_" + str(highestGain) + ".pr"
-#               writeLog(resultsPath, rsPath)
-#               writeLog(tdp, pfPath)
+                  # Create files based off of the stock, algo and date
+                  cmd = prog + args + " -c " + cdp + " -s " + stock + " -p " + tdp + " > " + outFile
                               
-            print (str(stock) + " " + str(parsedLine))
-         
-            # ... and save it's peices to be later examined
-            writeParsedLine(parsePath, stock + " " + parsedLine)
-            #writeParsedLine(algoPath, date + " " + stock + " " + parsedLine)
-            writeParsedLineRemoveDups(algoPath, stock, date, date + " " + stock + " " + parsedLine)
+                  #print ("cmd: " + cmd)
+                  
+                  date = os.path.basename(wp)
+                  
+                  algoPath = cwd + "/exitResults/" + stock + "_" + info + ".ex"
+                  
+                  exitVal = os.system(cmd)
+                  #exit (1)
+                  
+                  lastLine = getLastLine(resultsPath) 
+                  parsedLine = parseLastLine(lastLine, info)
+                  
+                  if parsedLine == "":
+                     print (str(stock) + " produced no results" + str(parsedLine))
+                     continue
+                     
+                  gain = getGain(lastLine)
+                  if gain > highestGain:
+                     lastGain = highestGain
+                     highestGain = gain
+                     parsedLine += " " + str(highestGain)
+                  
+                  if exitVal == 512 or exitVal == 768:
+                     if exitVal == 512:
+                        parsedLine += " MP"
+               #     if exitVal == 768:
+               #        parsedLine += " ML"
+                     
+      #               rsPath = "profiles/saved/results" + stock + "_hiGain_" + str(highestGain) + ".rs"
+      #               pfPath = "profiles/saved/profiles" + stock + "_hiGain_" + str(highestGain) + ".pr"
+      #               writeLog(resultsPath, rsPath)
+      #               writeLog(tdp, pfPath)
+                                    
+                  print (str(stock) + " " + str(parsedLine))
+               
+                  # ... and save it's peices to be later examined
+                  writeParsedLine(parsePath, stock + " " + parsedLine)
+                  #writeParsedLine(algoPath, date + " " + stock + " " + parsedLine)
+                  writeParsedLineRemoveDups(algoPath, stock, date, date + " " + stock + " " + parsedLine)
                         
    pf.writeProfile(tdp, originalProfile, "") 
 

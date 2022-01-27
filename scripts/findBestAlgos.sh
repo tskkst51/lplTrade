@@ -17,11 +17,8 @@ function init {
    modProfiles=$3
    
    host=$(hostname -s)
-   if [[ $host == "ML-C02C8546LVDL" ]]; then
-      activateDir="/lplW"
-   else
-      activateDir="/venv" 
-   fi
+   
+   activateDir="/lplW2"
 
    resultsPath="${resultsDir}/${stock}.tr"
    

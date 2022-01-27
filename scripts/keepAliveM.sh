@@ -168,13 +168,10 @@ host=$(hostname -s)
 
 testHost=""
 
-if [[ $host == "ML-C02C8546LVDL" ]]; then
-   activateDir="/lplW"
-elif [[ $host == "mm" ]]; then
-   activateDir="/lplW2"
+activateDir="/lplW2"
+
+if [[ $host == "mmT" ]]; then
    testHost="yes"
-else
-   activateDir="/venv"
 fi
 
 activateCmd=$(dirname $wp)

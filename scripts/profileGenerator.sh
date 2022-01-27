@@ -12,13 +12,9 @@ stock=$3
 
 wp=$(pwd)
 
-host=$(hostname -s | awk '{print $1}')
+#host=$(hostname -s | awk '{print $1}')
 
-if [[ $host == "ML-C02C8546LVDL" ]]; then
-   activateDir="/lplW"
-else
-   activateDir="/venv" 
-fi
+activateDir="/lplW2"
 
 # Execute script to populate source library path
 
