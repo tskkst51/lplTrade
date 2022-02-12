@@ -24,7 +24,7 @@ class Thred():
 
       self.launchScript = cwd + "/scripts/runMaster.sh"
       if offLine:
-         self.launchScript = cwd + "/scripts/test.sh"
+         self.launchScript = cwd + "/scripts/testDB.sh"
          self.logPath = wcwd + "/logs/"
          self.debugPath = wcwd + "/debug/"
    
@@ -53,12 +53,6 @@ class Thred():
          if ctr >= maxStocksToTrade:
             return p
             
-         print ("self.logPath " + str(self.logPath))
-         print ("self.debugPath " + str(self.debugPath))
-         print ("stock " + str(stock))
-         print ("algo " + str(algo))
-         print ("testDate " + str(testDate))
-         
          self.ut.writePath(self.logPath + "active" + stock + ".ls", algo)
          self.ut.writePath(self.debugPath + "active" + stock + ".ds", algo)
          
@@ -85,11 +79,6 @@ class Thred():
       for stock, algo in algoData.items():
          if ctr >= maxStocksToTrade:
             return p
-         
-         print ("self.logPath " + str(self.logPath))
-         print ("self.debugPath " + str(self.debugPath))
-         print ("stock " + str(stock))
-         print ("algo " + str(algo))
          
          # Log path needs to be created before the slave is invoked so stdout is kosher
          self.ut.writePath(self.logPath + "active" + stock + ".ls", algo)

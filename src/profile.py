@@ -20,8 +20,21 @@ class Profile:
    def __init__(self, path):
 
       with open(path) as jsonData:
-         d = json.load(jsonData)
-      
+         try:
+            d = json.load(jsonData)
+         except: 
+            print ("json load error 1") 
+            try:
+               sleep(1)
+               d = json.load(jsonData)
+            except: 
+               print ("json load error 2") 
+               try:
+                  sleep(1)
+                  d = json.load(jsonData)
+               except: 
+                  print ("json load error 3") 
+               
       self.pfValues = d
       self.origPfValues = d
       
@@ -177,10 +190,6 @@ class Profile:
       d["timeBar"] = str(value)
       info += "TB" + str(value) + "_"
 
-      if "HL" in algo:
-         d["doHiLo"] = str(1)
-         info += "HL_"
-         
       if "HS" in algo:
          d["doHiLoSeq"] = str(1)
          info += "HS_"
@@ -216,7 +225,11 @@ class Profile:
       if "EC" in algo:
          d["doExecuteOnClose"] = str(1)
          info += "EC_"
-      
+
+      if "HL" in algo:
+         d["doHiLo"] = str(1)
+         info += "HL_"
+         
       if "TR" in algo:
          d["doTrends"] = str(1)
          info += "TR_"

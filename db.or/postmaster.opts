@@ -1,0 +1,1 @@
+/usr/local/Cellar/postgresql/14.1_1/bin/postgres "-D" "/Users/tsk/w/lplTrade/db"

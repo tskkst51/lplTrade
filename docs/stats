@@ -2427,3 +2427,287 @@ close   5.0 0.20 0.20 100%   1 0     10:00:47
 close   151.45 1.65 1.65 100%   90 0     15:59:46
 Total Gain/Loss:
 15.75
+
+Live results on 20220124
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeBLDR.ls <==
+sell 69.56                             15:41:03
+
+==> logs/activeBTBD.ls <==
+close   3.3 0.07 0.13 100%   4 1     10:12:47
+
+==> logs/activeEXTN.ls <==
+close   4.52 0.10 0.16 66%   10 2     10:20:38
+
+==> logs/activeF.ls <==
+close   20.13 0.17 0.45 43%   23 29     15:33:07
+
+==> logs/activeINVO.ls <==
+close   3.16 0.21 0.21 100%   258 0     14:56:22
+
+==> logs/activeKSS.ls <==
+close   61.88 0.85 1.26 80%   50 4     12:55:03
+
+==> logs/activeM.ls <==
+close   26.37 1.61 1.17 25%   25 3     14:13:02
+
+==> logs/activePFE.ls <==
+close   50.38 0.93 0.93 100%   64 0     15:10:25
+
+==> logs/activeXLV.ls <==
+close   129.01 2.61 1.37 33%   11 2     15:59:46
+Total Gain/Loss:
+5.68
+
+Live results on 20220125
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeBALY.ls <==
+close   35.82 0.42 -5.01 14%   16 33     15:59:47
+
+==> logs/activeDUK.ls <==
+close   102.31 0.01 -0.79 50%   13 11     15:59:47
+
+==> logs/activeFISV.ls <==
+close   100.3 0.26 1.59 100%   40 1     11:35:04
+
+==> logs/activeGE.ls <==
+close   91.02 0.87 -2.10 33%   109 2     15:59:47
+
+==> logs/activeKR.ls <==
+close   45.11 -0.02 -0.92 33%   3 11     15:59:47
+
+==> logs/activeRTX.ls <==
+close   90.36 -0.04 -1.26 41%   3 89     15:59:47
+
+==> logs/activeRY.ls <==
+close   111.23 0.18 1.56 87%   12 7     11:57:17
+
+==> logs/activeSRRA.ls <==
+close   22.9 0.46 0.59 50%   2 3     10:17:31
+
+==> logs/activeVMW.ls <==
+close   122.9 -0.50 -1.88 35%   14 30     13:51:15
+Total Gain/Loss:
+-8.22
+
+Live results on 20220126
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeABT.ls <==
+close   120.06 0.16 -4.75 25%   18 11     15:59:46
+
+==> logs/activeCLX.ls <==
+close   164.83 0.47 -1.10 33%   12 5     15:59:46
+
+==> logs/activeET.ls <==
+close   9.7 0.00 -0.06 0.0%   42 1     14:52:02
+
+==> logs/activeF.ls <==
+close   19.94 0.18 -0.17 50%   61 1     15:59:46
+
+==> logs/activeKMB.ls <==
+close   134.86 -0.34 -6.84 0.0%   5 5     15:59:46
+
+==> logs/activeMAT.ls <==
+close   20.47 1.11 1.15 100%   64 1     15:59:46
+
+==> logs/activeMSFT.ls <==
+close   296.85 1.18 -3.26 60%   75 4     15:59:46
+
+==> logs/activeMYNZ.ls <==
+close   14.87 0.03 -0.85 31%   2 15     15:59:46
+
+==> logs/activeXLK.ls <==
+close   155.44 0.48 2.32 83%   1 11     14:14:33
+Total Gain/Loss:
+-13.56
+
+Live results on 20220127
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeCNC.ls <==
+close   76.27 -0.53 -0.53 0.0%   71 0     15:59:46
+
+==> logs/activeLC.ls <==
+close   15.91 -0.38 -0.38 0.0%   25 0     15:59:46
+
+==> logs/activeMCD.ls <==
+close   248.53 -0.32 -2.82 25%   14 3     15:59:46
+
+==> logs/activeNFLX.ls <==
+close   387.78 3.55 3.55 100%   3 0     10:07:18
+
+==> logs/activeNSEC.ls <==
+close   15.47 -0.28 -0.55 40%   141 4     15:59:46
+
+==> logs/activeSTX.ls <==
+close   103.64 8.96 6.45 50%   170 1     15:59:46
+
+==> logs/activeTSCO.ls <==
+close   209.98 3.53 3.53 100%   73 0     15:59:46
+
+==> logs/activeUHS.ls <==
+close   126.58 0.15 -4.37 23%   3 16     15:59:46
+
+==> logs/activeXLNX.ls <==
+close   176.0 7.86 5.00 50%   217 1     13:59:52
+Total Gain/Loss:
+9.88
+
+Live results on 20220128
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAAPL.ls <==
+close   170.21 2.48 3.35 66%   13 2     15:59:46
+
+==> logs/activeCALT.ls <==
+close   19.73 -0.58 -0.58 0.0%   189 0     15:59:46
+
+==> logs/activeCAT.ls <==
+close   198.57 2.99 2.99 100%   68 0     11:53:02
+
+==> logs/activeKR.ls <==
+close   43.49 -0.39 -1.23 28%   37 6     15:59:46
+
+==> logs/activeMMM.ls <==
+close   162.5 0.82 2.42 100%   31 1     13:27:45
+
+==> logs/activeOKE.ls <==
+close   58.85 0.76 1.60 100%   28 1     12:23:02
+
+==> logs/activeSJM.ls <==
+close   139.66 1.71 1.71 100%   63 0     13:57:08
+
+==> logs/activeV.ls <==
+close   227.98 3.26 2.38 75%   45 3     15:59:46
+
+==> logs/activeXLP.ls <==
+close   75.67 0.86 0.45 50%   219 3     15:59:46
+Total Gain/Loss:
+13.09
+
+Live results on 20220203
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeBIIB.ls <==
+close   220.31 -0.43 -2.90 25%   55 3     15:59:46
+
+==> logs/activeCNC.ls <==
+close   81.47 0.17 -0.18 50%   10 3     15:59:46
+
+==> logs/activeFB.ls <==
+close   246.5 2.99 2.99 100%   4 0     10:10:37
+
+==> logs/activeLITE.ls <==
+close   86.4 -0.14 -0.78 25%   3 3     15:59:46
+
+==> logs/activeQQQ.ls <==
+close   353.12 1.55 1.28 66%   9 5     15:59:46
+
+==> logs/activeRL.ls <==
+close   117.66 0.84 0.84 100%   121 0     15:59:46
+
+==> logs/activeSNAP.ls <==
+close   24.55 1.24 1.24 100%   126 0     15:59:46
+
+==> logs/activeTMUS.ls <==
+close   120.74 0.15 -1.34 40%   25 4     15:59:46
+
+==> logs/activeTQQQ.ls <==
+close   56.45 3.10 3.10 100%   74 0     15:59:46
+Total Gain/Loss:
+4.25
+
+Live results on 20220204
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeAMZN.ls <==
+close   3155.68 55.68 55.68 100%   72 0     15:56:10
+
+==> logs/activeBILL.ls <==
+close   232.02 3.64 -5.97 43%   15 40     15:59:46
+
+==> logs/activeCLX.ls <==
+close   141.44 0.75 0.75 100%   71 0     15:59:46
+
+==> logs/activeCSCO.ls <==
+close   55.19 0.07 0.33 66%   3 2     15:59:46
+
+==> logs/activeF.ls <==
+close   17.89 0.54 0.54 100%   14 0     09:45:39
+
+==> logs/activeLIN.ls <==
+close   298.06 0.73 -2.09 50%   1 9     15:59:46
+
+==> logs/activePEP.ls <==
+close   172.56 0.15 -0.90 50%   4 3     15:59:46
+
+==> logs/activeSNAP.ls <==
+close   36.62 1.03 1.03 100%   13 0     10:20:21
+
+==> logs/activeXLP.ls <==
+close   75.91 0.07 0.37 75%   2 3     15:59:46
+Total Gain/Loss:
+49.74
+
+Live results on 20220207
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeCPLG.ls <==
+close   15.72 -0.01 -0.01 0.0%   188 0     15:59:47
+
+==> logs/activeFIGS.ls <==
+close   19.71 -0.36 -2.23 0.0%   146 3     15:59:47
+
+==> logs/activeON.ls <==
+close   63.44 1.03 1.30 66%   20 5     15:24:04
+
+==> logs/activePHUN.ls <==
+close   2.93 -0.34 -0.76 0.0%   45 1     15:59:47
+
+==> logs/activePTON.ls <==
+close   30.27 0.48 0.19 33%   16 2     15:38:21
+
+==> logs/activeSEED.ls <==
+close   6.38 0.42 -0.55 47%   40 35     15:59:47
+
+==> logs/activeSNOW.ls <==
+close   297.09 3.69 3.69 100%   60 0     12:59:40
+
+==> logs/activeWFC.ls <==
+close   57.33 0.03 -0.81 25%   8 23     15:59:47
+
+==> logs/activeZTO.ls <==
+close   29.87 -0.05 -0.47 0.0%   6 8     15:59:47
+Total Gain/Loss:
+0.35
+
+Live results on 20220210
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeBTU.ls <==
+close   16.26 0.15 0.35 100%   2 1     10:07:02
+
+==> logs/activeDIS.ls <==
+close   152.18 -3.73 -3.73 0.0%   69 0     15:33:43
+
+==> logs/activeLESL.ls <==
+close   20.88 0.65 0.33 50%   67 1     15:59:46
+
+==> logs/activeLIN.ls <==
+close   308.85 -1.52 -1.73 75%   3 7     15:59:46
+
+==> logs/activeMAT.ls <==
+close   24.51 0.02 0.41 50%   15 3     15:59:46
+
+==> logs/activeSONO.ls <==
+close   27.85 0.27 -0.17 37%   26 7     15:59:46
+
+==> logs/activeTWTR.ls <==
+close   37.92 1.23 1.23 100%   70 0     10:40:42
+
+==> logs/activeUBER.ls <==
+close   37.81 0.33 -1.67 36%   9 85     15:59:46
+
+==> logs/activeVMEO.ls <==
+close   11.25 -1.07 -1.07 0.0%   121 0     15:59:46
+Total Gain/Loss:
+-6.05
+
+Live results on 20220210
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total Gain/Loss:
+

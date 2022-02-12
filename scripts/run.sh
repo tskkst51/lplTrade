@@ -5,12 +5,10 @@
 dt=""
 algo=""
 stock=""
-lplt=""
 
 dt=$1
 algo=$2
 stock=$3
-lplt=$4
 
 numOfAlgosToVerify=7
 
@@ -63,10 +61,6 @@ dirty=""
 
 volDate=20201118
 
-if [[ -n $lplt ]]; then
-   echo using lplt.py
-fi
-
 for algo in $algos; do
    a=$algo
    
@@ -94,16 +88,9 @@ for algo in $algos; do
          continue
       fi
       
-      ${py3} ${wp}/bin/profileGenerator.py -d $day -a $algo
+      ${py3} ${wp}/bin/profileGenerator.py -d $day -a $algo > /dev/null 2>&1
       
-      if [[ -n $lplt ]]; then
-         cmd="${py3} ${wp}/bin/lplt.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -w test/${day} -o -d -s $stock > $outFile"
-      else
-         cmd="${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -w test/${day} -o -d -s $stock"
-      fi
-      
-      #$cmdOld > $outFile
-      $cmd > $outFile
+      ${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -w test/${day} -o -d -s $stock > $outFile 2>/dev/null
 
       value=$(cat $outFile | grep "Total Gain" | tail -1 | awk '{print $4}')
       echo $value on $day >> $gainFile

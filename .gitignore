@@ -1,5 +1,7 @@
 .gitignore
 bestAlgos
+dev
+db
 dc
 totalResults
 exitResults

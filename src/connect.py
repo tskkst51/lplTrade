@@ -28,6 +28,10 @@ class ConnectEtrade:
       self.marketDataType = str(d["profileConnectET"]["marketDataType"])
       self.offLine = int(d["profileConnectET"]["offLine"])
       self.usePricesFromFile = int(d["profileConnectET"]["usePricesFromFile"])
+      self.maxNumStocksToTrade = int(d["profileConnectET"]["maxNumStocksToTrade"])
+#      self.setNetworkName = str(d["profileConnectET"]["setNetworkName"])
+#      self.primaryNetworkName = str(d["profileConnectET"]["primaryNetworkName"])
+#      self.getNetworkName = str(d["profileConnectET"]["getNetworkName"])
       self.sandBox = False
       self.debug = debug
       self.ask = 0.0
@@ -135,14 +139,14 @@ class ConnectEtrade:
          sSegCtr = ctr = sCtr = 0
          stocks = []
          
-         if len(self.stocks) > self.d.maxNumStocksToTrade:
+         if len(self.stocks) > self.maxNumStocksToTrade:
             # Setup a dict of stock arrays the size of self.maxEtradeStocks
             
             print ("len(self.stocks) " + str(len(self.stocks)))
 
             for ctr in range(len(self.stocks)):
-               if ctr % self.maxEtradeStocks == 0:
-                  stockSegs[sSegCtr] = self.stocks[ctr:(ctr+self.maxEtradeStocks)]
+               if ctr % self.maxNumStocksToTrade == 0:
+                  stockSegs[sSegCtr] = self.stocks[ctr:(ctr+self.maxNumStocksToTrade)]
                   sSegCtr += 1
                   print ("stockSegs " + str(stockSegs))
                ctr += 1
@@ -213,8 +217,8 @@ class ConnectEtrade:
                except Exception as e: 
                   print(e)
                   
-                  if self.switchNetwork():
-                     print ("Unable to switch to alternative network")
+#                  if self.switchNetwork():
+#                     print ("Unable to switch to alternative network")
                   
                   print ("Etrade is crap " + str(attempt))
                   sleep(1)
@@ -224,8 +228,8 @@ class ConnectEtrade:
             else:
                print ("Etrade is really crap " + str(attempt))
                
-               if self.switchNetwork():
-                  print ("Unable to switch to alternative network")
+#               if self.switchNetwork():
+#                  print ("Unable to switch to alternative network")
                
             sCtr += 1
                   
@@ -234,14 +238,14 @@ class ConnectEtrade:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def switchNetwork(self):
       
-      primaryNetworkName = self.d.primaryNetworkName
+      primaryNetworkName = self.primaryNetworkName
       
-      connectionName = subprocess.check_output(self.d.getNetworkName | "awk '{print $4}'", shell=True)
+      connectionName = subprocess.check_output(self.getNetworkName | "awk '{print $4}'", shell=True)
 
       if connectionName == primaryNetworkName:
-         primaryNetworkName = self.d.secondaryNetworkName
+         primaryNetworkName = self.secondaryNetworkName
       
-      if os.system(self.d.setNetworkName + primaryNetworkName) > 0:
+      if os.system(self.setNetworkName + primaryNetworkName) > 0:
          return 1
       
       return 0

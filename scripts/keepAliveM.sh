@@ -156,6 +156,7 @@ ulimit -n 10000
 wp=$(pwd)
 
 day=$1
+stock=$2
 
 lpltMaster="${wp}/bin/lpltMaster.py"
 
@@ -213,6 +214,11 @@ if [[ -n $day ]]; then
    testDay=$day
    offLine="yes"
    cmd="$py3 $lpltMaster -w "${wp}/test/${testDay}" -o -d -c $HOME/profiles/et.json -p ${wp}/test/${testDay}/profiles/active.json"
+
+   if [[ -n $stock ]]; then
+      cmd="$py3 $lpltMaster -w "${wp}/test/${testDay}" -o -d -c $HOME/profiles/et.json -p ${wp}/test/${testDay}/profiles/active.json -s $stock"
+       
+   fi
 fi
 
 ps | grep $program | grep -qv grep
@@ -258,6 +264,7 @@ if [[ -n $testHost ]]; then
    scripts/modProfiles.sh "test"
    scripts/keepAliveM.sh $dt # Run tests.
    scripts/daysBest.sh
+   scripts/runModAlgosDB.sh $dt
 
 else # Archive slave
    

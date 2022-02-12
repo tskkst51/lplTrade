@@ -9,11 +9,10 @@ import os
 import time
 from optparse import OptionParser
 from pathlib import Path
-import subprocess
 import sys
 import lplTrade as lpl
 
-# Definitions
+# Test Definitions
 
 openCloseBuySellBars = [1,2,3,4,5]     # OB OS CB CS
 
@@ -25,7 +24,6 @@ openBuyBars = [1,2,3,4,5]     # OB
 openSellBars = [1,2,3,4,5]    # OS
 closeBuyBars = [1,2,3,4,5]    # CB
 closeSellBars = [1,2,3,4,5]   # CS
-timeBar = [1,2,3,4,5]       # TB
 
 usePricesFromFile = 1
 resume = 1
@@ -68,19 +66,24 @@ def getGain(line):
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def parseLastLine(line, info):
 
+   if line == None or line == "":
+      return
+
    parsedLine = ""
    lineTokens = line.split()
-
-   if len(lineTokens) < 2:
-      print ("Last line " + str(line))
+   
+   if lineTokens[0] != "close":
+      print ("Invalid test results:" + str(line))
       return ""
+   
+   #print ("lineTokens: " + str(lineTokens))
    
    lastClose = lineTokens[1]
    gain = lineTokens[3]
    pct = lineTokens[4]
    
    parsedLine = lastClose + " " + gain + " " + pct + " " + info
-
+   
    return parsedLine
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -94,7 +97,7 @@ def writeParsedLine(path, line):
       f.write(line + "\n")
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def writeParsedLineRemoveDups(path, stock, date, newLine):
+def writeParsedLineRemoveDups(path, stock, day, newLine):
    
    tmpPath = cwd + "/tmp/fileBuffer_" + stock
    extTmp = "/Volumes/2T2/lplTrade/tmp"
@@ -116,7 +119,7 @@ def writeParsedLineRemoveDups(path, stock, date, newLine):
    with open(tmpPath, "w") as o:
       for line in lines:
          # Skip the line if already found.
-         if date in line:
+         if day in line:
             continue
          else:
             o.write(line + "\n")
@@ -226,7 +229,7 @@ parser.add_option("-f", "--fresh",
 
 parser.add_option("-x", "--exitMaxProfit",
    action="store_true", dest="exitMaxProfit", help="exitMaxProfit")
-
+   
 (clOptions, args) = parser.parse_args()
 
 algo = ""
@@ -245,7 +248,9 @@ if not wp:
 if not wp == os.getenv("LPLT"):
    if os.chdir(wp):
       exit(1)
-   
+                  
+day = os.path.basename(wp)
+
 if not os.path.exists(lplt):
    print ("Trading program doesn't exist!! " + lplt)
    exit(1)
@@ -261,6 +266,9 @@ with open(tdp) as jsonData:
 with open(tdp) as jsonData:
    d = json.load(jsonData)
 
+with open(cdp) as jsonData:
+   c = json.load(jsonData)
+
 symbols = []
 if not stocks:
    #stocks = str(d["profileTradeData"]["stocks"])
@@ -274,13 +282,6 @@ if not stocks:
 else:
    symbols = stocks.split(",")
 
-# Execute shell sript to populate site path with latest code
-home = str(Path.home())
-
-#shellCmd = home + "/bin/lplt.sh"
-
-#os.system(shellCmd)
-
 removeFiles(fresh)
 
 for stock in symbols:
@@ -292,23 +293,41 @@ highestGain = 0.0
 #timeBar = [5]
 
 pf = lpl.Profile(tdp)
+cf = lpl.Profile(cdp)
 
-for minBar in timeBar:
+db = lpl.DB(c, day)
+
+alreadyRan = 0
+
+for minBar in db.getTestTimebars():
 
    d = pf.readProfile(tdp)
    info = initParseInfo()
+
+   info = pf.setAlgoValues(d, algo, minBar, info)
       
+   algoCode = info.split("_")
+   algoCode = algoCode[1]
+   
+   if db.algoTestPurposeAlreadyRan(stock, info, algoCode):
+      print ("ALREADY RAN " + stock + " " + info)
+      break
+   
    #for openBars in openCloseBuySellBars:
    #   for closeBars in closeBuySellBars:
    for obb in openBuyBars:
       for osb in openSellBars:
          for cbb in closeBuyBars:
             for csb in closeSellBars: 
+               if obb == 1 or osb == 1 or cbb == 1 or csb == 1:
+                  if db.skip1MinSeqTest(algoCode):
+                     continue
               
                pf.initProfile(d)
                
                info = pf.setAlgoValues(d, algo, minBar, info)
-         
+                              
+                              
          # Both decision bars change
          
          #                     info = setOpenCloseBuySellValues(openBars, info)
@@ -341,24 +360,25 @@ for minBar in timeBar:
                   args = " -o "
                   if exitMaxProfit:
                      args += " -x " 
-               
+
+                  if db.algoTestCaseAlreadyRan(stock, info):
+                     print (stock + " " + info + " ALREADY RAN")
+                     continue
+                  
                   # Create files based off of the stock, algo and date
                   cmd = prog + args + " -c " + cdp + " -s " + stock + " -p " + tdp + " > " + outFile
                               
                   #print ("cmd: " + cmd)
                   
-                  date = os.path.basename(wp)
-                  
                   algoPath = cwd + "/exitResults/" + stock + "_" + info + ".ex"
                   
                   exitVal = os.system(cmd)
-                  #exit (1)
                   
                   lastLine = getLastLine(resultsPath) 
                   parsedLine = parseLastLine(lastLine, info)
                   
                   if parsedLine == "":
-                     print (str(stock) + " produced no results" + str(parsedLine))
+                     db.insertNoPriceAlgoData(stock, info)
                      continue
                      
                   gain = getGain(lastLine)
@@ -381,9 +401,12 @@ for minBar in timeBar:
                   print (str(stock) + " " + str(parsedLine))
                
                   # ... and save it's peices to be later examined
-                  writeParsedLine(parsePath, stock + " " + parsedLine)
-                  #writeParsedLine(algoPath, date + " " + stock + " " + parsedLine)
-                  writeParsedLineRemoveDups(algoPath, stock, date, date + " " + stock + " " + parsedLine)
+                  #writeParsedLine(parsePath, stock + " " + parsedLine)
+                     
+                  db.insertAlgoData(stock, parsedLine)
+
+                  #writeParsedLine(algoPath, day + " " + stock + " " + parsedLine)
+                  #writeParsedLineRemoveDups(algoPath, stock, day, day + " " + stock + " " + parsedLine)
                         
    pf.writeProfile(tdp, originalProfile, "") 
 

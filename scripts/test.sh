@@ -125,6 +125,58 @@ else
    fi  
 fi
 
+algoModifiers=(
+"RV"
+"IR"
+"TR"
+"AV" # avg vol close
+"AL" # vol > last bar close
+"VI" # avg vol open
+"LI" # vol > last bar open
+"QP"
+"HM"
+"SS"
+"QL"
+"DB"
+"AO"
+"AC"
+"IT" # In position tracking
+"PM" # Price movement
+"TS" # Trailing stop
+)
+
+algoModifiersCombined=(
+"TR_QP_DB"
+"RV_TR_DB"
+"RV_AV_DB"
+"RV_AL_DB"
+"RV_QP_DB"
+"HM_TR_DB"
+"HM_AV_DB"
+"HM_QP_DB"
+"IT_QL_DB"
+"IT_QP_DB"
+"TR_IR"
+"TR_TS"
+"TR_QP"
+"QP_IR"
+"RV_TR"
+"RV_AV"
+"RV_AL"
+"RV_QP"
+"HM_TR"
+"HM_AV"
+"HM_AL"
+"HM_QP"
+"IT_QL"
+"IT_QP"
+"IT_TS"
+"AO_AC"
+"QP_PM"
+"AV_TS"
+"AL_TS"
+)
+
 #volDate=20201117
 
 if [[ -n $loc ]]; then
@@ -256,13 +308,19 @@ echo numStocks $numStocks
    done      
 done
 
-if [[ $algo == "none" ]]; then
-   if [[ -n $stock ]]; then
-      cd $wp
-      scripts/results.sh $stock
-      scripts/findBestAlgos.sh $stock
-   fi
-fi
+#scripts/runModAlgosDB.sh $day $stock
+
+#for aMod in ${algoModifiersCombined[*]}; do
+
+#done
+
+#if [[ $algo == "none" ]]; then
+#   if [[ -n $stock ]]; then
+#      cd $wp
+#      scripts/results.sh $stock
+#      scripts/findBestAlgos.sh $stock
+#   fi
+#fi
 
 #if (( doResults == 1 )); then
 #   stocks=($(grep stocks "test/${loc}/profiles/active.json"))

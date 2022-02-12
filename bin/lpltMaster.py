@@ -470,6 +470,9 @@ if clOptions.onlyUpdateDailyStocks:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set stocks to trade based on pre market analysis
 
+if workPath:
+   sqlDB = os.path.basename(workPath)
+   
 if offLine:
    resume = 1
    preMarketAnalysis = 0
@@ -823,7 +826,7 @@ if not preMarketAnalysis and not offLine:
    pid = th.launchStocks(stocks, maxStocksToTrade, os.path.basename(workPath))
 
 if offLine:
-   
+   db = lpl.DB(c, sqlDB)
    stockSegs = {}
    sSegCtr = 0
    
@@ -851,12 +854,15 @@ if offLine:
 
       # Wait till the last stock completes testing 
       while True:
+         db.checkDB()
          if pid[stk].poll() == None:
             #lg1.debug ("waiting 5 for a poll != None")
-            sleep(5)
+            sleep(1)
          else:
             lg1.debug ("Gotta poll value of: " + str(pid[stk].poll()))
             break
+   lg1.info ("Tests completed successfully for " + str(stocks))
+   exit(0)
    
 if pid:
    numLaunchedPids = len(pid)
