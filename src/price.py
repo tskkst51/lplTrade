@@ -360,7 +360,7 @@ class Price:
       print ("self.priceChangeArr[priceIdx] " + str(self.priceChangeArr[priceIdx]))
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getNextPriceArr(self, serviceValues):
+   def getNextPriceArr(self, serviceValues, bar):
    
       if self.offLine:
 #         print ("self.priceIdx " + str(self.priceIdx))
@@ -377,49 +377,53 @@ class Price:
             last = self.getLastToken()
       else:
       
+         # Due to the first few close prices listed as the close from
+         # the previous day we use the avg of the ask and bid to set the
+         # last vlue for the first minute of trading.
+         
          bid = serviceValues[self.bid]
          ask = serviceValues[self.ask]
-         last = serviceValues[self.last]
+
+         if bar == 0:
+            last = round((bid + ask) / 2, 2)
+            print ("last during 1st min " + str(last))
+         else:
+            last = serviceValues[self.last]
+            
          vl = serviceValues[self.vl]
          
       return float(bid), float(ask), float(last), int(vl) 
           
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getNextPrice(self, bc, numBars, bar, stock):
+   def getNextPrice(self):
             
       last = bid = ask = 0.0
       vl = 0 
       
-      # Get price from file, randomly or live
-      if self.offLine:      
+      # Get price from file when offLine
          
-         print ("self.priceIdx " + str(self.priceIdx)	)
-         print ("self.priceArr[self.priceIdx] " + str(self.priceArr[self.priceIdx]))
-                           
-         ask = self.priceArr[self.priceIdx][self.ask]
-         bid = self.priceArr[self.priceIdx][self.bid]
-         last = self.priceArr[self.priceIdx][self.last]
-         vl = self.priceArr[self.priceIdx][self.vl]
-         self.priceIdx += 1
+      print ("self.priceIdx " + str(self.priceIdx)	)
+      print ("self.priceArr[self.priceIdx] " + str(self.priceArr[self.priceIdx]))
+                        
+      ask = float(self.priceArr[self.priceIdx][self.ask])
+      bid = float(self.priceArr[self.priceIdx][self.bid])
+      last = float(self.priceArr[self.priceIdx][self.last])
+      vl = int(self.priceArr[self.priceIdx][self.vl])
+      self.priceIdx += 1
+      
+      if self.priceIdx >= self.numLines - 10:
+         last = self.getLastToken()
          
-         if self.priceIdx >= self.numLines - 10:
-            last = self.getLastToken()
-      # Live      
-      else:
-         last = self.cn.getLastTrade(stock)
-         bid = self.cn.getCurrentBid(stock)
-         ask = self.cn.getCurrentAsk(stock)
-         vl = self.cn.getCurrentVolume(stock)
-         
-      return float(bid), float(ask), float(last), int(vl)
+      return bid, ask, last, vl
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def readNextPriceLine(self, fd, path):
 
       line = ""
-      
       priceInfo = 0
-      
+
+      # Get price from file when LIVE
+
       priceInfo = os.stat(path)
       #print ("size " + str(priceInfo.st_size))
       #print ("self.lastPriceInfo " + str(self.lastPriceInfo))
@@ -461,82 +465,46 @@ class Price:
 
       print ("isLastBar offline: " + str(self.offLine))
 
+      print ("self.getNextBar() " + str(self.getNextBar()))
+      print ("self.getCurrentBarNum()" +  str(self.getCurrentBarNum()))
+
       if self.offLine:
          if self.priceIdx >= self.numLines:
             return self.getLastToken()
    
-         print ("self.getNextBar() " + str(self.getNextBar()))
-         print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
-         
-         if self.getNextBar() == self.idxArr[self.priceIdx]:
+         if self.getNextBar() == self.getCurrentBarNum():
             return 1
       
-      else: # Live
-         print ("self.getNextBar() " + str(self.getNextBar()))
-         print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
-         
-         if self.getNextBar() == self.idxArr[self.priceIdx]:
-            return 1
+#      else: # Live         
+#         if self.getNextBar() == self.getCurrentBarNum():
+#            return 1
 
       return 0
-
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#   def isLastBarSlave(self, timeBar):
-#      
-#      if not self.offLine:
-#         return 0
-#      
-#      print ("self.getNextBar() " + str(self.getNextBar()))
-#      print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
-#      
-#      if self.getNextBar() == self.idxArr[self.priceIdx]:
-#         return 1
-#         
-#      return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isNextBar(self, timeBar):
       
       print ("offline: " + str(self.offLine))
       
+      print ("self.getNextBar() " + str(self.getNextBar()))
+      print ("self.getCurrentBarNum() " +  str(self.getCurrentBarNum()))
+         
       if self.offLine:
          if self.priceIdx >= self.numLines:
             return self.getLastToken()
    
-         print ("self.getNextBar() " + str(self.getNextBar()))
-         print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
-         
-         if self.getNextBar() == self.idxArr[self.priceIdx]:
+         if self.getNextBar() == self.getCurrentBarNum():
          #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
             #self.setNextBar(timeBar)
             return 1
             
       else:
-         print ("self.getNextBar() " + str(self.getNextBar()))
-         print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
-         
-         if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
+         if self.getNextBar() == self.getCurrentBarNum() + 1:
          #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
             #self.setNextBar(timeBar)
             return 1
             
       return 0
-
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#   def isNextBarSlave(self, timeBar):
-#      
-#      if not self.offLine:
-#         return 0
-#      
-#      print ("self.getNextBar() " + str(self.getNextBar()))
-#      print ("self.idxArr[self.priceIdx] " +  str(self.idxArr[self.priceIdx]))
-#      
-#      if self.getNextBar() == self.idxArr[self.priceIdx]:
-#      #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
-#         #self.setNextBar(timeBar)
-#         return 1
-#         
-#      return 0
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setNextBar(self, timeBar):
@@ -546,7 +514,7 @@ class Price:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def initNextBar(self):
    
-      self.nextBar = self.idxArr[self.priceIdx]
+      self.nextBar = 1
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getNextBar(self):
@@ -631,6 +599,9 @@ class Price:
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def write(self, path, ask, bid, last, vl, bar):
+
+      if bar == 0:
+         last = round((bid + ask) / 2, 2)
 
       with open(path, "a+", encoding="utf-8") as priceFile:
          priceFile.write ('%s' % str(ask) + "," + str(bid) + ","  + str(last) + "," + str(vl) + "," + str(bar) + "\n")

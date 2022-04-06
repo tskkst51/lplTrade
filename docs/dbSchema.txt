@@ -1,0 +1,105 @@
+DB Schema
+
+
+db algos
+stock       algo                                     gain/loss  win %
+AAPL   TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_TR_DB6   1.33       60
+AAPL   TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_TR       -1.0       20
+AAPL   TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM          .33        40
+...
+TQQQ   TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_TR_DB6   .55        60
+TQQQ   TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_TR.      .90        20
+TQQQ   TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM          -.25       40
+
+*.pr file:
+YPF 4.18 -0.24 16% TB1_HL_QM_OB1_OS1_CB3_CS4
+
+
+stock dates                          algo                                     total gain/loss  total win % days
+AAPL  20220128,20220121,20220118...  TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_TR_DB6   .66              40          3
+AAPL  20220128,20220121,20220118...  TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_TR       .86              40          3
+AAPL  20220128,20220121,20220118...  TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_        1.66              60          3 
+...
+TQQQ  20220128,20220121,20220118...  TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_TR_DB6   1.25             80          5
+TQQQ  20220128,20220121,20220118...  TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_TR       .80              40          5
+TQQQ  20220128,20220121,20220118...  TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_         -.20             60          5
+
+postgres notes
+
+
+initdb -D db/live
+createdb live
+
+initdb -D db/20220121
+pg_ctl -D db/20220121 stop
+pg_ctl -D db/20220121 -l db/20220121/log start
+pg_ctl -D db/20220121 -l db/20220121/log start
+
+createdb algos
+psql algos
+
+CREATE TABLE algoData (
+    sym         varchar(10),
+    algo        varchar(64),
+    gain        numeric NOT NULL,
+    winPct      numeric NOT NULL,
+    CONSTRAINT symAlgo PRIMARY KEY(sym,algo)
+);
+
+CREATE TABLE algoModData (
+    sym         varchar(10),
+    algo        varchar(64),
+    gain        numeric NOT NULL,
+    winPct      numeric NOT NULL,
+    CONSTRAINT symModAlgo PRIMARY KEY(sym,algo)
+);
+
+initdb -D db/master
+pg_ctl -D db/master -l db/master/log start
+createdb master
+psql master
+
+CREATE TABLE master (
+    sym         varchar(10),
+    day         text,
+    status      varchar(20),
+    bestAlgo    varchar(64),
+    liveAlgo    varchar(64),
+    liveGain    numeric NOT NULL
+    CHECK(status='live' OR status='liveComplete' OR status='test' OR status='testComplete' OR status='modTest' OR status='modTestComplete' OR status='bestTest' OR status='bestTestComplete'),
+    CONSTRAINT symDayStatus PRIMARY KEY(sym,day,status)
+);
+
+CREATE TABLE algoBestData (
+    sym         varchar(10),
+    day         text,
+    algo        varchar(64),
+    gain        numeric NOT NULL,
+    totalGain   numeric NOT NULL,
+    totalWinPct numeric NOT NULL,
+    totalDays   integer NOT NULL
+);
+
+ALTER TABLE algoData RENAME COLUMN liveDate TO day;
+ALTER TABLE algoModData RENAME COLUMN liveDate TO day;
+ALTER TABLE algoBestData RENAME COLUMN liveDate TO day;
+
+master: keep track of live results using the "db/live" directory
+        save aggregate data, best algos across all dates
+status: live, liveComplete, test, testComplete, modTest, modTestComplete, bestTest, bestTestComplete
+day: 1 day or a range of dates showing comletion
+
+
+examples:
+
+INSERT INTO master (sym, day, status, bestAlgo, liveAlgo, liveGain)
+    VALUES ('AAPL', '20220204', 'testComplete', 'TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_TR_DB6', 0, 0);
+
+INSERT INTO algoData (sym, day, algo, gain, winPct)
+    VALUES ('AAPL', '20220128', 'TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_TR_DB6', 1.33, 60);
+    
+DELETE FROM algoData WHERE sym = 'AAPL';
+
+sqlCmd: psql algos '-c INSERT INTO algoData (sym, liveDate, algo, gain, winPct) VALUES ('PFE','20211208','TB1_LO_QM_OB1_OS1_CB1_CS1','-3.64','23');'
+
+

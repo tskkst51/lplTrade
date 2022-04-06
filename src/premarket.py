@@ -396,7 +396,7 @@ class Premarket:
       return parsedStocks      
        
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getStockCandidates(self, tg, dc, stocks, findPreMarketMovers, useLiveDailyData):
+   def getStockCandidates(self, tg, dc, stocks, findPreMarketMovers, useLiveDailyData, ignoreBuyOutStocks):
    
       # Take static stocks and movers and get their daily charts if not already up to date
       validLDStocks = []
@@ -409,9 +409,15 @@ class Premarket:
          
          for stock in yahooMovers:
             movers.append(stock)
-            
+
          print ("movers " + str(movers))
          print ("yahooMovers " + str(yahooMovers))
+         
+         if ignoreBuyOutStocks:
+            movers = tg.ignoreBuyOutStocks(movers)
+         
+         print ("movers after buyout  " + str(validStocks))
+         print ("movers after len " + str(len(validStocks)))
          
          for mover in movers:
             dcPath = "dc/" + mover + ".dc"
@@ -462,9 +468,9 @@ class Premarket:
       
       validStocks = stocks
       
-      print ("validStocks " + str(validStocks))
-      print ("validStocks len" + str(len(validStocks)))
-
+      print ("valid movers " + str(validStocks))
+      print ("valid movers len" + str(len(validStocks)))
+      
       if useLiveDailyData:
          gapData = {}
          for stock in validStocks:

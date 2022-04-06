@@ -18,16 +18,19 @@ lpltPath=""
 
 host=$(hostname -s)
 
-if [[ $host == "ML-C02C8546LVDL" ]]; then
-   activateDir="${HOME}/w/gitWS/lplW"
-   lpltPath="/${HOME}/w/gitWS/lplTrade"
-elif [[ $host == "mm" ]]; then
-   activateDir="${HOME}/w/lplW"
-   lpltPath="${HOME}/w/lplTrade"
-else
-   activateDir="/Users/tknitter/w/git/venv"
-   lpltPath="${HOME}/w/git/lplTrade"
-fi
+#if [[ $host == "ML-C02C8546LVDL" ]]; then
+#   activateDir="${HOME}/w/gitWS/lplW"
+#   lpltPath="/${HOME}/w/gitWS/lplTrade"
+#elif [[ $host == "mm" ]]; then
+#   activateDir="${HOME}/w/lplW"
+#   lpltPath="${HOME}/w/lplTrade"
+#else
+#   activateDir="/Users/tknitter/w/git/venv"
+#   lpltPath="${HOME}/w/git/lplTrade"
+#fi
+
+activateDir="${HOME}/w/lplW"
+lpltPath="${HOME}/w/lplTrade"
 
 py3="${activateDir}/bin/python3"
 

@@ -22,9 +22,7 @@ function init {
       echo ERROR: Must have a day to test on
       exit 1
    fi
-   
-   #echo $1 $2 $3
-   
+      
    testCmd="${wp}/bin/test.py"
    
    if [[ ! -e $testCmd ]]; then
@@ -57,8 +55,6 @@ function init {
    dbName="algos"
    dbToken="Applications/Postgres.app"
    dbKey="20"
-   
-   #${wp}/scripts/modProfiles.sh $testPath > /dev/null 2>&1
 }
 
 function populateTestDir {
@@ -71,7 +67,6 @@ function populateTestDir {
       rm -fr Users
       cd ../lplTrade
       doResults=1
-      #${wp}/scripts/modProfiles.sh $testPath
    fi
 }
 
@@ -97,16 +92,12 @@ function initStocks {
 
    else
       stocks=$(ls "${testPath}/${day}/bc" | awk -F\. '{print $1}'|sed "s/active//")
-      #stocks=$(grep stocks ${wp}/${testPath}/${datePath}/profiles/active.json | \
-      #   awk -F\" '{print $4}')
       for s in ${stocks[*]}; do
          stock=$s
          echo stock $stock
          break
       done
       numStocks=$(echo $stocks | awk -F" " '{print NF}')
-      #echo stocks $stocks
-      #echo numStocks $numStocks
    fi
 }
 
@@ -118,8 +109,8 @@ initAlgos
 
 i=0
 for a in ${algos}; do i=$((i+1)); done
-echo Running $i $dbAlgoTestName for ${day}...
-for a in ${algos}; do echo $a; done
+for a in ${algos}; do algoList="$algoList $a"; done
+echo Running $i algos $algoList for ${day}...
 
 isDBRunning $day
 if [[ $? == 0 ]]; then
@@ -172,11 +163,8 @@ for datePath in $testPaths; do
 
       echo Testing $day $stock $a ...
 
-      cmd="$py3 $testCmd $algoOpt $stockCL -c $HOME/profiles/et.json -w ${wp}/${datePath} -p ${wp}/${datePath}/profiles/active.json"
-      
-      #echo "command: ${cmd}"
+      $py3 $testCmd $algoOpt $stockCL -c $HOME/profiles/et.json -w ${wp}/${datePath} -p ${wp}/${datePath}/profiles/active.json
 
-      $cmd 
    done      
 done
 
@@ -184,12 +172,10 @@ done
 
 if (( stockProvided )); then
    scripts/testModsDB.sh $day $stock
-   scripts/bestDB.sh $day $stock
+   #scripts/bestDB.sh $day $stock
 else
    scripts/testModsDB.sh $day
 fi
-
-#pg_ctl -D ${dbDir}/${day} stop
 
 exit 0
 

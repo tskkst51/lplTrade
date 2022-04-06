@@ -1,0 +1,857 @@
+<!doctype html><html class="no-js" lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>NYSE: Holidays and Trading Hours</title><link rel="stylesheet" href="https://www.nyse.com/api/static/icegroupweb-styles/5.6.0/css/nyse.css"/><link rel="shortcut icon" href="https://static.nyse.com/favicons/1.0.0/nyse.ico" type="image/x-icon"/><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N6K229P');</script><script src="https://static.nyse.com/cms/29.3.6/hydrate.js" defer=""></script><script src="https://static.nyse.com/jquery/1.11.0/jquery.min.js"></script><script src="https://static.nyse.com/jquery-tablesorter/2.16.4/jquery.tablesorter.min.js"></script><script src="https://static.nyse.com/chosen/1.1.0/chosen.jquery.min.js"></script><script src="https://static.nyse.com/bootstrap/3.1.1/bootstrap.min.js"></script></head><body><div data-page="30621" data-slot="body"><div></div><div><!--googleoff: all--></div><header class="header-bar"><div class="split"><div class="split-left"><h1 class="page-logo hidden-xs"><a class="logo-intercontinental-exchange" href="https://intercontinentalexchange.com">The Intercontinental Exchange</a></h1></div><div class="split-right split-vmiddle text-right"><ul class="header-bar-list"><li><a href="https://www.ice.com">ICE</a></li><li class="is-active"><a href="https://www.nyse.com">NYSE</a></li><li><a href="/contact">Contact</a></li><li><div><a href="#launch" class="btn btn-info hidden-xs">NYSE Connect</a>
+<a href="#login" class="btn btn-inverse">Login</a></div></li></ul></div></div></header><div data-partial="/header/markets-general"><nav class="navbar"><h1 class="page-logo"><a href="/" class="logo-nyse">NYSE</a></h1><ul class="topnav"><li class="visible-xs"><form action="/site-search" method="get" class="mobile-search"><label for="mobile-search" class="sr-only">Search</label><input type="search" id="mobile-search" name="q" placeholder="Search"/><button type="submit" class="site-search-icon">Submit</button></form></li><li class=""><button type="button">Listings</button><div class="topnav__menu"><div class="topnav-section"><ul class="topnav-list is-out"><li class=""><a href="/why-nyse"><div class="topnav-list__title">Why Companies List on Our Markets</div><div class="topnav-list__description">Leadership defined by our market model, network, global visibility and services</div></a></li><li class=""><a href="/bell"><div class="topnav-list__title">The NYSE Bell</div><div class="topnav-list__description">Critical to floor operations and offering global visibility</div></a></li><li class=""><a href="/nyse-events"><div class="topnav-list__title">What Happens at the NYSE</div><div class="topnav-list__description">Companies host thousands of events at the Exchange</div></a></li><li class=""><a href="/network"><div class="topnav-list__title">Explore the NYSE Network</div><div class="topnav-list__description">Learn about our listed community</div></a></li><li class="hidden-xs"><a href="/ipos/gallery"><div class="topnav-list__title">Public Debuts</div><div class="topnav-list__description">The makings of a memorable Listing Day</div></a></li></ul><div class="topnav-section__cta"><a class="btn" href="/direct-listing">Explore Direct Listing</a></div></div><div class="topnav-section"><h4 class="topnav-section__heading">Listings Tools &amp; Services</h4><ul class="topnav-list is-out"><li class=""><a href="/connect"><div class="topnav-list__title">NYSE Connect</div><div class="topnav-list__description">Data and analytics to support your IR program</div></a></li><li class=""><a href="https://listingmanager.nyse.com"><div class="topnav-list__title">Listing Manager</div><div class="topnav-list__description">Tools to manage your listings workflow</div></a></li><li class=""><a href="/ipo-center/filings"><div class="topnav-list__title">IPO Center</div><div class="topnav-list__description">View stats and analysis of recent IPOs</div></a></li><li class=""><a href="/listings/resources"><div class="topnav-list__title">Listings Materials</div><div class="topnav-list__description">Forms, fees, manuals, applications and standards for our markets</div></a></li><li class=""><a href="/esg/resource-center"><div class="topnav-list__title">ESG Resource Center</div><div class="topnav-list__description">Navigating the evolving ESG landscape</div></a></li><li class=""><a href="/research"><div class="topnav-list__title">Equity Markets</div><div class="topnav-list__description">Market Insights &amp; Research</div></a></li></ul></div></div></li><li class="is-highlighted"><button type="button">Markets</button><div class="topnav__menu"><div class="topnav-section"><h4 class="topnav-section__heading">Trade Our Equity markets</h4><ul class="topnav-list is-out"><li class=""><a href="/markets/nyse"><div class="topnav-list__title">NYSE</div><div class="topnav-list__description">The world&#x27;s most trusted equities exchange</div></a></li><li class=""><a href="/markets/nyse-american"><div class="topnav-list__title">NYSE American</div><div class="topnav-list__description">An exchange designed for growing companies</div></a></li><li class=""><a href="/markets/nyse-arca"><div class="topnav-list__title">NYSE Arca Equities</div><div class="topnav-list__description">The leading exchange for ETFs</div></a></li><li class=""><a href="/markets/nyse-chicago"><div class="topnav-list__title">NYSE Chicago</div><div class="topnav-list__description">Supporting the institutional brokerage community</div></a></li><li class=""><a href="/markets/nyse-national"><div class="topnav-list__title">NYSE National</div><div class="topnav-list__description">Combining the high performance of NYSE Pillar technology with a taker/maker fee schedule</div></a></li></ul><div class="topnav-section__cta"><a class="btn" href="/publicdocs/nyse/NYSE_Securities_Remote_DMM.xlsx">NYSE Securities with Remote DMM</a></div></div><div class="topnav-section"><h4 class="topnav-section__heading">Trade Our Options &amp; Bonds Markets</h4><ul class="topnav-list is-out"><li class=""><a href="/markets/american-options"><div class="topnav-list__title">NYSE American Options</div><div class="topnav-list__description">Offering traders deep liquidity across listed option contracts</div></a></li><li class=""><a href="/markets/arca-options"><div class="topnav-list__title">NYSE Arca Options</div><div class="topnav-list__description">Offering an anonymous, flat, open market structure</div></a></li><li class=""><a href="/markets/bonds"><div class="topnav-list__title">NYSE Bonds</div><div class="topnav-list__description">Access to live, executable, transparent prices</div></a></li></ul></div><div class="topnav-section"><h4 class="topnav-section__heading">Resources for our Markets</h4><ul class="topnav-list is-out"><li class=""><a href="/trade"><div class="topnav-list__title">Market Resource Center</div><div class="topnav-list__description">Notices, fees, rules, calendars, forms and order types for our markets</div></a></li><li class=""><a href="/trader-update/history"><div class="topnav-list__title">Trader Updates</div><div class="topnav-list__description">Announcements and market updates for our trading community</div></a></li><li class=""><a href="/market-status/history"><div class="topnav-list__title">Market Status</div><div class="topnav-list__description">System status alerts for our market community</div></a></li><li class=""><a href="/trade-halt-current"><div class="topnav-list__title">Trading Halts</div><div class="topnav-list__description">Current and historical regulatory halts (news pending/news dissemination and LULD</div></a></li><li class=""><a href="/markets/reports"><div class="topnav-list__title">Market Reports</div><div class="topnav-list__description">View market quality, program trading, rule 605 and other reports</div></a></li><li class=""><a href="/pillar"><div class="topnav-list__title">NYSE Pillar Trading Platform</div><div class="topnav-list__description">Our integrated trading technology platform that connects to all of our equities and options markets</div></a></li><li class=""><a href="/markets/liquidity-programs"><div class="topnav-list__title">Market Liquidity Programs</div><div class="topnav-list__description">Promoting price improvement for individual investors on retail order flow for NYSE listed securities</div></a></li><li class=""><a href="/products"><div class="topnav-list__title">Traded Products</div><div class="topnav-list__description">NYSE Equities, Options, ETFs &amp; Bonds</div></a></li></ul><div class="topnav-section__cta"><a class="btn" href="/data-insights">VIew our Data Insights Blog</a></div></div></div></li><li class=""><button type="button">Data</button><div class="topnav__menu"><div class="topnav-section"><h4 class="topnav-section__heading">Proprietary Market Data Solutions</h4><ul class="topnav-list is-out"><li class=""><a href="/market-data/real-time"><div class="topnav-list__title">Real-Time Data</div><div class="topnav-list__description">Low-latency, real-time market data feeds cover the various asset classes and markets in the NYSE Group</div></a></li><li class=""><a href="/market-data/historical"><div class="topnav-list__title">Historical Market Data</div><div class="topnav-list__description">Cross asset class data across markets in the NYSE Group and on the CTA and UTP nationally consolidated data feeds</div></a></li><li class=""><a href="/market-data/reference"><div class="topnav-list__title">Reference Data</div><div class="topnav-list__description"> Designed to improve risk management and provide insights into key company transaction activity</div></a></li></ul></div><div class="topnav-section"><h4 class="topnav-section__heading">Tools &amp; Resources</h4><ul class="topnav-list is-out"><li class=""><a href="/data/transactions-statistics-data-library"><div class="topnav-list__title">Statistics &amp; Data Library</div><div class="topnav-list__description">Volumes, transactions and other market reporting</div></a></li><li class=""><a href="/market-data/pricing-policies-contracts-guidelines"><div class="topnav-list__title">Data Pricing, Policies, Contracts &amp; Guidelines</div><div class="topnav-list__description">Key contractual documents for NYSE data</div></a></li><li class=""><a href="/connectivity/documents"><div class="topnav-list__title">Connectivity Documentation</div><div class="topnav-list__description">Required contracts, documentation, and policies which govern vendor use and distribution of NYSE market data </div></a></li><li class=""><a href="/connectivity/specs"><div class="topnav-list__title">Order Entry &amp; Reports</div><div class="topnav-list__description">Specifications, post trade user guides for connectivity</div></a></li><li class=""><a href="https://www.theice.com/data-services/global-network"><div class="topnav-list__title">ICE Global Network</div><div class="topnav-list__description">Connecting the global market community to the broadest ranges of data sources</div></a></li><li class=""><a href="https://www.nyse.com/market-data/academics"><div class="topnav-list__title">Academic Customers</div><div class="topnav-list__description">Eligible products and policies for academic use</div></a></li><li class=""><a href="https://www.theice.com/widget-library" target="_blank" rel="noopener noreferrer"><div class="topnav-list__title">Widget Library</div><div class="topnav-list__description">Integrate financial data into your platform</div></a></li></ul></div></div></li><li class=""><button type="button">Regulation</button><div class="topnav__menu"><div class="topnav-section"><h4 class="topnav-section__heading">Regulatory Guidance for our Markets</h4><ul class="topnav-list is-out"><li class=""><a href="/regulation/nyse"><div class="topnav-list__title">NYSE</div><div class="topnav-list__description"></div></a></li><li class=""><a href="/regulation/nyse-american"><div class="topnav-list__title">NYSE American</div><div class="topnav-list__description"></div></a></li><li class=""><a href="/regulation/nyse-arca"><div class="topnav-list__title">NYSE Arca Equities</div><div class="topnav-list__description"></div></a></li><li class=""><a href="/regulation/arca-options"><div class="topnav-list__title">NYSE Arca Options</div><div class="topnav-list__description"></div></a></li><li class=""><a href="/regulation/american-options"><div class="topnav-list__title">NYSE American Options</div><div class="topnav-list__description"></div></a></li><li class=""><a href="/regulation/nyse-national/rules"><div class="topnav-list__title">NYSE National</div><div class="topnav-list__description"></div></a></li><li class=""><a href="/regulation/nyse-chicago/rules"><div class="topnav-list__title">NYSE Chicago</div><div class="topnav-list__description"></div></a></li></ul></div><div class="topnav-section"><h4 class="topnav-section__heading">Regulation Resources</h4><ul class="topnav-list is-out"><li class=""><a href="/regulation/rule-filings"><div class="topnav-list__title">Rule Filings</div><div class="topnav-list__description">Filings, amendments, SEC releases, extensions, and withdrawals</div></a></li><li class=""><a href="/regulation/rules"><div class="topnav-list__title">Rules</div><div class="topnav-list__description">Rules for all NYSE Group exchanges</div></a></li><li class=""><a href="/regulation/rule-interpretations"><div class="topnav-list__title">Rule Interpretations</div><div class="topnav-list__description">Interpretations, info memos, weekly and education bulletins, and rule changes</div></a></li><li class=""><a href="/regulation/threshold-securities"><div class="topnav-list__title">Regulation SHO</div><div class="topnav-list__description">Threshold securities listed for every settlement day.</div></a></li><li class=""><a href="/regulation/noncompliant-issuers"><div class="topnav-list__title">Noncompliant Issuers</div><div class="topnav-list__description">Issuers noncompliant with standards of delaying filing annual or interim reports</div></a></li><li class=""><a href="/regulation/delistings"><div class="topnav-list__title">Delistings</div><div class="topnav-list__description">Issuers pending delisting form the Exchange</div></a></li><li class=""><a href="/regulation/disciplinary-actions"><div class="topnav-list__title">Disciplinary Actions</div><div class="topnav-list__description">List of NYSE Group exchange disciplinary actions</div></a></li><li class=""><a href="/proxy-rulings"><div class="topnav-list__title">Proxy Rulings</div><div class="topnav-list__description">List of discretionary/nondiscretionary vote determinations</div></a></li></ul></div></div></li><li class=""><button type="button">Insights</button><div class="topnav__menu"><div class="topnav-section"><h4 class="topnav-section__heading">Market Pulse</h4><ul class="topnav-list is-out"><li class=""><a href="https://www.theice.com/insights/market-pulse/energy"><div class="topnav-list__title">Energy</div><div class="topnav-list__description">Thought leadership across energy markets</div></a></li><li class=""><a href="https://www.theice.com/insights/market-pulse/fixed-income"><div class="topnav-list__title">Fixed Income</div><div class="topnav-list__description">Analysis on bond markets</div></a></li><li class=""><a href="https://www.nyse.com/research"><div class="topnav-list__title">Equities</div><div class="topnav-list__description">U.S. equity market insights</div></a></li></ul><div class="topnav-section__cta"><a class="btn" href="https://www.theice.com/insights/market-pulse">View More</a></div></div><div class="topnav-section"><h4 class="topnav-section__heading">Conversations</h4><ul class="topnav-list is-out"><li class=""><a href="https://www.ice.com/insights/conversations/future-in-five"><div class="topnav-list__title">Future in Five</div><div class="topnav-list__description">Future perspectives in five questions</div></a></li><li class=""><a href="https://www.ice.com/insights/conversations/digital-leaders"><div class="topnav-list__title">Digital Leaders</div><div class="topnav-list__description">Interactive discussions on navigating digitalization</div></a></li><li class=""><a href="https://www.theice.com/insights/conversations/inside-the-ice-house?utm_source=NYSE&amp;utm_medium=Navigation&amp;utm_campaign=Insights"><div class="topnav-list__title">Inside the ICE House</div><div class="topnav-list__description">Conversations with leaders, entrepreneurs and visionaries</div></a></li><li class=""><a href="https://www.theice.com/insights/conversations/nyse-briefs"><div class="topnav-list__title">NYSE Briefs</div><div class="topnav-list__description">Servicing our investor communities</div></a></li><li class="hidden-xs"><a href="/taking-stock/all"><div class="topnav-list__title">Taking Stock</div><div class="topnav-list__description">Behind-the-scenes original reporting</div></a></li><li class=""><a href="https://www.theice.com/insights/conversations/work-this-way"><div class="topnav-list__title">Work This Way</div><div class="topnav-list__description">Interviews from business leaders&#x27; home offices</div></a></li></ul><div class="topnav-section__cta"><a class="btn" href="https://www.theice.com/insights/conversations">View More</a></div></div></div></li></ul><div class="navbar__right hidden sm:block"><div></div><form method="GET" action="/site-search" class="dropdown dropdown-search"><div class="dropdown-toggle"><div class="site-search"><i class="site-search-icon">Search</i><input type="search" id="page-search" placeholder=" " name="q" value=""/></div></div></form></div><div class="navbar__right sm:hidden"><button type="button" class="topnav-toggle  ">Menu<!-- --> </button></div></nav></div><nav class="navbar navbar--secondary" style="background-color:#FAF8FCFF"><div class="topnav__title"><a href="/trade">Markets</a></div><ul class="topnav topnav--secondary"><li class=""><a href="/market-status/history">Market Status</a></li><li class=""><a href="/trader-update/history">Trader Updates</a></li><li class=""><a href="/markets/notices">Notices</a></li><li class=""><a href="/markets/hours-calendars">Hours &amp; Holidays</a></li><li class=""><a href="/markets/fees">Fees</a></li><li class=""><a href="/markets/order-types">Order Types</a></li><li class=""><a href="/markets/reports">Market Reports</a></li><li class=""><a href="/subscriptions">Subscription Center</a></li></ul><div class="navbar__right sm:hidden"><button type="button" class="topnav-toggle topnav-toggle--centered ">Markets<!-- --> <!-- -->▼</button></div></nav><div></div><div></div><div><!--googleon: all--></div><div style="position:relative"><img class="img-banner img-fill" style="height:250px" src="/publicdocs/images/NYSE_Trade_HeaderImage_Web_1200x250_20160730.jpg" alt="Markets | NYSE"/><div class="inverse" style="position:absolute;width:100%;top:0;left:0;display:flex;flex-direction:column;justify-content:center;height:250px;padding-left:4.1%;padding-right:4.1%;text-align:left"><h4 style="margin-bottom:0;line-height:normal"><a href="/markets" class="" style="font-weight:bold">MARKETS</a></h4><h1 style="margin-bottom:0;line-height:normal">Holidays &amp;<br/>Trading Hours<br/></h1></div></div><nav class="navbar navbar--secondary" style="background-color:#FAF8FCFF"><ul class="topnav topnav--secondary"><li class=""><a href="#nyse">NYSE Equities</a></li><li class=""><a href="#american">NYSE American Equities</a></li><li class=""><a href="#arca">NYSE Arca Equities</a></li><li class=""><a href="#chicago">NYSE Chicago Equities</a></li><li class=""><a href="#national">NYSE National Equities</a></li><li class=""><a href="#american-options">NYSE American Options</a></li><li class=""><a href="#arca-options">NYSE Arca Options</a></li><li class=""><a href="#bonds">NYSE Bonds</a></li></ul><div class="navbar__right sm:hidden"><button type="button" class="topnav-toggle topnav-toggle--centered ">Menu<!-- --> <!-- -->▼</button></div></nav><div class="container-fluid"><div class="row"><div class="l-main true-grid-10"><div id="holidays"></div><div class="stacked-section "><h2>Holidays: All Markets</h2><div><div class="row"><div class="true-grid-three-quarter" style="overflow-x:auto"><div class=""><p class="">All NYSE markets observe U.S. holidays as listed below for 2022, 2023, and 2024.</p></div></div><div class="true-grid-quarter" style="overflow-x:auto"><div class=""><p class=""><a href="/publicdocs/Trading_Days.pdf" data-is-button="true" class="btn no-extension">Trading Days</a></p></div></div></div><table class="table table-layout-fixed"><thead><tr><th>Holiday</th><th>2022</th><th>2023</th><th>2024</th></tr></thead><tbody><tr><td>New Years Day</td><td>—*</td><td>Monday, January 2 (New Year&#x27;s holiday observed)</td><td>Monday, January 1</td></tr><tr><td>Martin Luther King, Jr. Day</td><td>Monday, January 17</td><td>Monday, January 16</td><td>Monday, January 15</td></tr><tr><td>Washington&#x27;s Birthday</td><td>Monday, February 21</td><td>Monday, February 20</td><td>Monday, February 19</td></tr><tr><td>Good Friday</td><td>Friday, April 15</td><td>Friday, April 7</td><td>Friday, March 29</td></tr><tr><td>Memorial Day</td><td>Monday, May 30</td><td>Monday, May 29</td><td>Monday, May 27</td></tr><tr><td>Juneteenth National Independence Day</td><td>Monday, June 20 (Juneteenth holiday observed)</td><td>Monday, June 19</td><td>Wednesday, June 19</td></tr><tr><td>Independence Day</td><td>Monday, July 4</td><td>Tuesday, July 4**</td><td>Thursday, July 4**</td></tr><tr><td>Labor Day</td><td>Monday,   September 5</td><td>Monday,   September 4</td><td>Monday,   September 2</td></tr><tr><td>Thanksgiving Day</td><td>Thursday, November 24***</td><td>Thursday, November 23***</td><td>Thursday, November 28***</td></tr><tr><td>Christmas Day</td><td>Monday, December 26 (Christmas holiday observed)</td><td>Monday, December 25</td><td>Wednesday, December 25****</td></tr></tbody></table><div class=""><p class="disclaimer">* No holiday observed, pursuant to NYSE Rule 7.2, NYSE American Rule 7.2E, NYSE Arca Rules 7.2-O and 7.2-E, NYSE Chicago Rule 7.2, and NYSE National Rule 7.2.</p><p class="disclaimer"></p><p class="disclaimer">** Each market will close early at 1:00 p.m. (1:15 p.m. for eligible options) on Monday, July 3, 2023, and Wednesday, July 3, 2024. Crossing Session orders will be accepted beginning at 1:00 p.m. for continuous executions until 1:30 p.m. on these dates, and NYSE American Equities, NYSE Arca Equities, NYSE Chicago, and NYSE National late trading sessions will close at 5:00 pm. All times are Eastern Time.</p><p class="disclaimer"></p><p class="disclaimer">*** Each market will close early at 1:00 p.m. (1:15 p.m. for eligible options) on Friday, November 25, 2022, Friday, November 24, 2023, and Friday, November 29, 2024 (the day after Thanksgiving). Crossing Session orders will be accepted beginning at 1:00 p.m. for continuous executions until 1:30 p.m. on these dates, and NYSE American Equities, NYSE Arca Equities, NYSE Chicago, and NYSE National late trading sessions will close at 5:00 pm. All times are Eastern Time.</p><p class="disclaimer"></p><p class="disclaimer">**** Each market will close early at 1:00 p.m. (1:15 p.m. for eligible options) on Tuesday, December 24, 2024. Crossing Session orders will be accepted beginning at 1:00 p.m. for continuous executions until 1:30 p.m. on this date, and NYSE American Equities, NYSE Arca Equities, NYSE Chicago, and NYSE National late trading sessions will close at 5:00 pm. All times are Eastern Time.</p><div></div><div class="spacer-lg"></div></div></div></div><div id="nyse"></div><div id="american"></div><div class="row"><div class="true-grid-half" style="overflow-x:auto"><div class="stacked-section "><h2>NYSE</h2><div><div><h3>Tape A</h3>
+<table class="table table-layout-fixed">
+  <tbody>
+    <tr>
+      <td>
+        <p><strong>Pre-Opening Session: 6:30 a.m. ET</strong></p>
+        <ul class="list spacer-xs">
+          <li style="padding-right: 25px;">
+            Orders can be entered and will be queued until the Opening Auction
+            at 9:30 a.m. ET
+          </li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>
+          <strong>Core Trading Session: 9:30 a.m. to 4:00 p.m. ET</strong>
+        </p>
+        <ul class="list spacer-xs">
+          <li>9:30 a.m. ET - Core Open Auction</li>
+          <li>3:50 p.m. to 4:00 ET - 123(c) Closing Imbalance Period</li>
+          <li>4:00 p.m. ET - Closing Auction</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Tapes B &amp; C</h3>
+<table class="table table-layout-fixed">
+  <tbody>
+    <tr>
+      <td>
+        <p><strong>Pre-Opening Session: 6:30 a.m. ET</strong></p>
+        <ul class="list spacer-xs">
+          <li>
+            Orders can be entered and will be queued until the Opening Auction
+            at 7:00 a.m. ET
+          </li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>
+          <strong>Early Trading Session: 7:00 a.m. to 9:30 a.m. ET</strong>
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>
+          <strong>Core Trading Session: 9:30 a.m. to 4:00 p.m. ET</strong>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table></div></div></div></div><div class="true-grid-half" style="overflow-x:auto"><div class="stacked-section "><h2>NYSE American</h2><div><div> <h3>&nbsp;</h3>
+      <table class="table table-layout-fixed">
+        <tbody>
+          <tr>
+            <td>
+              <p><strong>Pre-Opening Session: 6:30 a.m.</strong></p>
+              <ul class="list spacer-xs">
+                <li style="padding-right: 25px;">
+                  Orders can be entered and will be queued until the Early Open
+                  Auction at 7:00 a.m. ET*
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <strong
+                  >Early Trading Session: 7:00 a.m. to 9:30 a.m. ET</strong
+                >
+              </p>
+              <ul class="list spacer-xs">
+                <li>
+                  6:59 a.m. to 7:00 a.m. ET - Early Open Auction Imbalance
+                  Freeze Period
+                </li>
+                <li>7:00 a.m. ET - Early Open Auction</li>
+                <li>
+                  9:29:55 a.m. to 9:30 a.m. ET - Core Open Auction Imbalance
+                  Freeze Period
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-layout-fixed">
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                <strong>Core Trading Session: 9:30 a.m. to 4:00 p.m. ET</strong>
+              </p>
+              <ul class="list spacer-xs">
+                <li>9:30 a.m. ET - Core Open Auction</li>
+                <li>
+                  3:50 p.m. to 4:00 p.m. ET - Closing Auction Imbalance Freeze
+                  Period
+                </li>
+                <li>4:00 p.m. ET - Closing Auction</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <strong>Late Trading Session: 4:00 p.m. to 8:00 p.m. ET</strong>
+              </p>
+              <p class="disclaimer">
+                * Auctions are conducted only in auction-eligible symbols.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table></div></div></div></div></div><div id="arca"></div><div id="chicago"></div><div class="row"><div class="true-grid-half" style="overflow-x:auto"><div class="stacked-section "><h2>NYSE Arca Equities</h2><div><div><table class="table table-layout-fixed">
+  <tbody>
+    <tr>
+      <td>
+        <p><strong>Pre-Opening Session: 2:30 a.m.</strong></p>
+        <ul class="list spacer-xs">
+          <li style="padding-right: 25px;">
+            Orders can be entered and will be queued until the Early Open
+            Auction at 4:00 a.m. ET*
+          </li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>
+          <strong>Early Trading Session: 4:00 a.m. to 9:30 a.m. ET</strong>
+        </p>
+        <ul class="list spacer-xs">
+          <li>
+            3:59 a.m. to 4:00 a.m. ET - Early Open Auction Imbalance Freeze
+            Period
+          </li>
+          <li>4:00 a.m. ET - Early Open Auction</li>
+          <li>
+            9:29:55 a.m. to 9:30 a.m. ET - Core Open Auction Imbalance Freeze
+            Period
+          </li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>
+          <strong>Core Trading Session: 9:30 a.m. to 4:00 p.m. ET</strong>
+        </p>
+        <ul class="list spacer-xs">
+          <li>9:30 a.m. ET - Core Open Auction</li>
+          <li>
+            3:59 p.m. to 4:00 p.m. ET - Closing Auction Imbalance Freeze Period
+          </li>
+          <li>4:00 p.m. ET - Closing Auction</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>
+          <strong>Late Trading Session: 4:00 p.m. to 8:00 p.m. ET</strong>
+        </p>
+        <p class="disclaimer">
+          * Auctions are conducted only in auction-eligible symbols.
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table></div></div></div></div><div class="true-grid-half" style="overflow-x:auto"><div class="stacked-section "><h2>NYSE Chicago</h2><div><div> <table class="table table-layout-fixed">
+        <tbody>
+          <tr>
+            <td>
+              <p><strong>Pre-Opening Session: 6:30 a.m. ET</strong></p>
+              <ul class="list spacer-xs">
+                <li style="padding-right: 25px;">
+                  Orders can be entered and will be queued until 7 a.m. ET
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <strong
+                  >Early Trading Session: 7:00 a.m. to 9:30 a.m. ET</strong
+                >
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <strong>Core Trading Session: 9:30 a.m. to 4:00 p.m. ET</strong>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <strong>Late Trading Session: 4:00 p.m. to 8:00 p.m. ET</strong>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table></div></div></div></div></div><div id="national"></div><div class="row"><div class="true-grid-half" style="overflow-x:auto"><div class="stacked-section "><h2>NYSE National</h2><div><div> <table class="table table-layout-fixed">
+        <tbody>
+          <tr>
+            <td>
+              <p><strong>Pre-Opening Session: 6:30 a.m. ET</strong></p>
+              <ul class="list spacer-xs">
+                <li style="padding-right: 25px;">
+                  Orders can be entered and will be queued until 7 a.m. ET
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <strong
+                  >Early Trading Session: 7:00 a.m. to 9:30 a.m. ET</strong
+                >
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <strong>Core Trading Session: 9:30 a.m. to 4:00 p.m. ET</strong>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <strong>Late Trading Session: 4:00 p.m. to 8:00 p.m. ET</strong>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table></div></div></div></div><div class="true-grid-half" style="overflow-x:auto"></div></div><div id="american-options"></div><div id="arca-options"></div><div class="row"><div class="true-grid-half" style="overflow-x:auto"><div class="stacked-section "><h2>NYSE American Options</h2><div><div><p class="standalone-link">
+  <a href="http://www.theocc.com/about/publications/expiration-calendar.jsp"
+    >Options Clearing Corporation Expiration Calendar</a
+  >
+</p>
+
+<table class="table table-layout-fixed">
+  <tbody>
+    <tr>
+      <th class="true-grid-two-third">Equity Options</th>
+      <td class="true-grid-third">9:30 a.m. ET - 4:00 p.m. ET</td>
+    </tr>
+
+    <tr>
+      <th>ETF Options</th>
+      <td>9:30 a.m. ET - 4:00 p.m. ET</td>
+    </tr>
+
+    <tr>
+      <th style="padding-right: 50px;">
+        ETF Exceptions:<br />
+        <a href="/publicdocs/nyse/Options_Late_Closing_List.xls">View list</a>
+      </th>
+      <td>9:30 a.m. ET - 4:15 p.m. ET</td>
+    </tr>
+
+    <tr>
+      <th>Index Options</th>
+      <td>9:30 a.m. ET - 4:00 p.m. ET</td>
+    </tr>
+
+    <tr>
+      <th>
+        Index Exceptions:<br />
+        MNX, NDX
+      </th>
+      <td>9:30 a.m. ET - 4:15 p.m. ET</td>
+    </tr>
+
+    <tr>
+      <th>
+        ETN Options:<br />
+        GAZ, OIL, VXX, VXZ
+      </th>
+      <td>9:30 a.m. ET - 4:15 p.m. ET</td>
+    </tr>
+  </tbody>
+</table></div></div></div></div><div class="true-grid-half" style="overflow-x:auto"><div class="stacked-section "><h2>NYSE Arca Options</h2><div><div><p class="standalone-link">
+  <a href="http://www.theocc.com/about/publications/expiration-calendar.jsp"
+    >Options Clearing Corporation Expiration Calendar</a
+  >
+</p>
+
+<table class="table table-layout-fixed">
+  <tbody>
+    <tr>
+      <th class="true-grid-two-third">Equity Options</th>
+      <td class="true-grid-third">9:30 a.m. ET - 4:00 p.m. ET</td>
+    </tr>
+
+    <tr>
+      <th>ETF Options</th>
+      <td>9:30 a.m. ET - 4:00 p.m. ET</td>
+    </tr>
+
+    <tr>
+      <th style="padding-right: 50px;">
+        ETF Exceptions:<br />
+        <a href="/publicdocs/nyse/Options_Late_Closing_List.xls">View list</a>
+      </th>
+      <td>9:30 a.m. ET - 4:15 p.m. ET</td>
+    </tr>
+
+    <tr>
+      <th>Index Options</th>
+      <td>9:30 a.m. ET - 4:00 p.m. ET</td>
+    </tr>
+
+    <tr>
+      <th>
+        Index Exceptions:<br />
+        MNX, NDX
+      </th>
+      <td>9:30 a.m. ET - 4:15 p.m. ET</td>
+    </tr>
+
+    <tr>
+      <th>
+        ETN Options:<br />
+        AMJ, GAZ, INP, JJC, MLPN, OIL, VXX, VXZ
+      </th>
+      <td>9:30 a.m. ET - 4:15 p.m. ET</td>
+    </tr>
+  </tbody>
+</table></div></div></div></div></div><div id="bonds"></div><div class="row"><div class="true-grid-half" style="overflow-x:auto"><div class="stacked-section "><h2>NYSE Bonds</h2><div><div><table class="table table-layout-fixed">
+  <tbody>
+    <tr>
+      <th class="true-grid-quarter">Early Trading</th>
+      <td class="true-grid-three-quarter">4:00 a.m. ET - 8:00 a.m. ET</td>
+    </tr>
+
+    <tr>
+      <th>Core Trading</th>
+      <td>8:00 a.m. ET - 5:00 p.m. ET</td>
+    </tr>
+
+    <tr>
+      <th>Late Trading</th>
+      <td>5:00 p.m. ET - 8:00 p.m. ET</td>
+    </tr>
+
+    <tr>
+      <th>Bond Auctions</th>
+      <td>
+        The NYSE conducts two daily bond auctions – an Opening Bond Auction at
+        4:00 a.m. ET and a Core Bond Auction at 8:00 a.m. ET. Orders not
+        executed in either auction become eligible for continuous trading
+        immediately after the auction.
+      </td>
+    </tr>
+  </tbody>
+</table></div></div></div></div><div class="true-grid-half" style="overflow-x:auto"></div></div></div></div></div><div><!--googleoff: all--></div><footer class="page-subfooter"><div><div class="row hidden-xs">
+  <br />
+  <div class="true-grid-quarter">
+    <p class="lead spacer-sm">
+      <a
+        title="About Us"
+        href="https://www.intercontinentalexchange.com"
+        class="txt"
+        >About Us</a
+      >
+    </p>
+    <ul class="list-featured txt spacer-sm">
+      <li>
+        <a
+          title="Our Business"
+          href="https://www.intercontinentalexchange.com/about"
+          class="txt"
+          >Our Business</a
+        >
+      </li>
+      <li>
+        <a title="Investors" href="http://ir.theice.com" class="txt"
+          >Investors</a
+        >
+      </li>
+      <li>
+        <a
+          title="Media"
+          href="http://ir.theice.com/press/press-releases/all-categories/all-stories"
+          class="txt"
+          >Media</a
+        >
+      </li>
+      <li>
+        <a
+          rel="noopener noreferrer"
+          title="Careers"
+          href="https://www.ice.com/careers"
+          target="_blank"
+          class="txt"
+          >Careers</a
+        >
+      </li>
+      <li>
+        <a
+          title="Corporate Citizenship"
+          href="https://www.intercontinentalexchange.com/about/corporate-responsibility"
+          class="txt"
+          >Corporate Citizenship</a
+        >
+      </li>
+    </ul>
+
+    <div class="hidden-xs">
+      <a title="ICE Listed NYSE" href="https://www.nyse.com/quote/XNYS:ICE"
+        ><span class="iconListed icon-listed"> </span
+      ></a>
+    </div>
+  </div>
+
+  <div class="true-grid-quarter">
+    <p class="lead spacer-sm">
+      <a title="ICE" href="https://www.theice.com" class="txt">ICE</a>
+    </p>
+    <ul class="list-featured">
+      <li>
+        <a
+          title="Exchanges"
+          href="https://www.theice.com/about/exchanges-clearing"
+          class="txt"
+          >Exchanges</a
+        >
+      </li>
+      <li>
+        <a
+          title="Fixed Income &amp; Data Services"
+          href="https://www.theice.com/about/fixed-income-data"
+          class="txt"
+          >Fixed Income &amp; Data Services</a
+        >
+      </li>
+      <li>
+        <a
+          title="Mortgage Technology"
+          href="https://www.theice.com/about/mortgage-technology"
+          class="txt"
+          >Mortgage Technology</a
+        >
+      </li>
+      <li>
+        <a
+          title="Futures &amp; Options"
+          href="https://www.theice.com/products"
+          class="txt"
+          >Futures &amp; Options</a
+        >
+      </li>
+      <li>
+        <a title="Trade" href="https://www.theice.com/trade" class="txt"
+          >Trade</a
+        >
+      </li>
+      <li>
+        <a title="Clearing" href="https://www.theice.com/clearing" class="txt"
+          >Clearing</a
+        >
+      </li>
+      <li>
+        <a title="Data" href="https://www.theice.com/market-data" class="txt"
+          >Data</a
+        >
+      </li>
+      <li>
+        <a title="Benchmarks" href="https://www.theice.com/iba" class="txt"
+          >Benchmarks</a
+        >
+      </li>
+      <li>
+        <a
+          title="Reports"
+          href="https://www.theice.com/marketdata/reports"
+          class="txt"
+          >Reports</a
+        >
+      </li>
+      <li>
+        <a title="Contact" href="https://www.theice.com/contact" class="txt"
+          >Contact</a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <div class="true-grid-quarter">
+    <p class="lead spacer-sm">
+      <a title="NYSE" href="https://www.nyse.com" class="txt">NYSE</a>
+    </p>
+    <ul class="list-featured">
+      <li>
+        <a title="List" href="https://www.nyse.com/list" class="txt">List</a>
+      </li>
+      <li>
+        <a title="Trade" href="https://www.nyse.com/trade" class="txt">Trade</a>
+      </li>
+      <li>
+        <a title="Data" href="https://www.nyse.com/data-and-tech" class="txt"
+          >Data</a
+        >
+      </li>
+      <li>
+        <a title="Insights" href="https://www.nyse.com/research" class="txt"
+          >Insights</a
+        >
+      </li>
+      <li>
+        <a title="Regulation" href="https://www.nyse.com/regulation" class="txt"
+          >Regulation</a
+        >
+      </li>
+      <li>
+        <a title="NYSE Connect" href="https://www.nyse.com/connect" class="txt"
+          >NYSE Connect</a
+        >
+      </li>
+      <li>
+        <a
+          title="Subscriptions"
+          href="https://www.nyse.com/subscriptions"
+          class="txt"
+          >Subscriptions</a
+        >
+      </li>
+      <li>
+        <a title="Media Center" href="https://www.nyse.com/media" class="txt"
+          >Media Center</a
+        >
+      </li>
+      <li>
+        <a title="Contact" href="https://www.nyse.com/contact" class="txt"
+          >Contact</a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <div class="true-grid-quarter text-right">
+    <p class="lead spacer-sm">Follow Us</p>
+
+    <p class="spacer-xs">NYSE</p>
+    <div class="spacer-md">
+      <a title="NYSE Twitter" href="https://www.twitter.com/nyse"
+        ><span title="Twitter Logo" class="iconSocial icon-twitter"> </span
+      ></a>
+      <a title="NYSE Facebook" href="https://www.facebook.com/nyse"
+        ><span title="Facebook Logo" class="iconSocial icon-facebook"> </span
+      ></a>
+      <a title="NYSE LinkedIn" href="https://www.linkedin.com/company/nyse"
+        ><span title="LinkedIn Logo" class="iconSocial icon-linkedin"> </span
+      ></a>
+      <a title="NYSE Instagram" href="https://www.instagram.com/nyse"
+        ><span title="Instagram Logo" class="iconSocial icon-instagram"> </span
+      ></a>
+      <a title="NYSE Pinterest" href="https://www.pinterest.com/nyse"
+        ><span title="Pinterest Logo" class="iconSocial icon-pinterest"> </span
+      ></a>
+    </div>
+
+    <p class="spacer-xs">ICE</p>
+    <div class="spacer-md">
+      <a title="ICE Twitter" href="https://www.twitter.com/ICE_Markets"
+        ><span title="Twitter Logo" class="iconSocial icon-twitter"> </span
+      ></a>
+
+      <a
+        title="ICE LinkedIn"
+        href="https://www.linkedin.com/company/intercontinentalexchange-inc-"
+        ><span title="LinkedIn Logo" class="iconSocial icon-linkedin"> </span
+      ></a>
+    </div>
+
+    <p class="spacer-xs">ICE Data Services</p>
+    <div class="spacer-md">
+      <a
+        title="ICE Data Services LinkedIn"
+        href="https://www.linkedin.com/company/ice-data-services"
+        ><span title="LinkedIn Logo" class="iconSocial icon-linkedin"> </span
+      ></a>
+    </div>
+  </div>
+</div>
+
+<ul class="page-subfooter-links visible-xs">
+  <li>
+    <a
+      title="Intercontinental Exchange"
+      href="https://www.intercontinentalexchange.com"
+      >Intercontinental Exchange</a
+    >
+  </li>
+  <li><a title="ICE" href="https://www.theice.com">ICE</a></li>
+  <li><a title="NYSE" href="https://www.nyse.com">NYSE</a></li>
+  <li><a title="Investors" href="http://ir.theice.com">Investors</a></li>
+</ul>
+
+<ul class="page-subfooter-links visible-xs">
+  <li>
+    <a title="NYSE Twitter" href="https://www.twitter.com/nyse"
+      ><span title="Twitter Logo" class="iconSocial icon-twitter"> </span
+    ></a>
+  </li>
+  <li>
+    <a title="NYSE Facebook" href="https://www.facebook.com/nyse"
+      ><span title="Facebook Logo" class="iconSocial icon-facebook"> </span
+    ></a>
+  </li>
+  <li>
+    <a title="NYSE LinkedIn" href="https://www.linkedin.com/company/nyse"
+      ><span title="LinkedIn Logo" class="iconSocial icon-linkedin"> </span
+    ></a>
+  </li>
+  <li>
+    <a title="NYSE Instagram" href="https://www.instagram.com/nyse"
+      ><span title="Instagram Logo" class="iconSocial icon-instagram"> </span
+    ></a>
+  </li>
+  <li>
+    <a title="NYSE Pinterest" href="https://www.pinterest.com/nyse"
+      ><span title="Pinterest Logo" class="iconSocial icon-pinterest"> </span
+    ></a>
+  </li>
+</ul></div></footer><footer class="page-footer"><div><hr class="hr-dotted hidden-xs" />
+
+<div class="split spacer-lg hidden-xs">
+  <div class="split-left">© Copyright 2022 Intercontinental Exchange, Inc.</div>
+  <div class="split-right">
+    <ul class="list-featured-inline text-right spacer-xs">
+      <li>
+        <a
+          class="txt"
+          href="https://www.intercontinentalexchange.com/terms-of-use"
+          title="Terms of Use"
+          >Terms of Use</a
+        >
+      </li>
+      <li>
+        <a
+          class="txt"
+          href="https://www.intercontinentalexchange.com/privacy-policy"
+          title="Privacy Policy"
+          >Privacy Policy</a
+        >
+      </li>
+      <li class="hidden-xs">
+        <a class="txt" href="https://www.theice.com/security" title="Security"
+          >Security</a
+        >
+      </li>
+      <li>
+        <a
+          class="txt"
+          href="https://www.intercontinentalexchange.com/cookies"
+          title="Cookies"
+          >Cookies</a
+        >
+      </li>
+      <li>
+        <a class="txt do-not-sell">Do Not Sell My Personal Information</a>
+      </li>
+
+      <li class="hidden-xs">
+        <a
+          class="txt"
+          href="https://www.intercontinentalexchange.com/supported-browsers"
+          title="Supported Browsers"
+          >Supported Browsers</a
+        >
+      </li>
+      <li>
+        <a
+          class="txt"
+          href="https://www.theice.com/data-protection"
+          title="Data Protection"
+          >Data Protection</a
+        >
+      </li>
+      <li>
+        <a
+          class="txt"
+          href="https://www.theice.com/registered-investment-adviser-notice"
+          title="Registered Investment Adviser Notice"
+          >Registered Investment Adviser Notice</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="text-center visible-xs">
+  <p>© Copyright 2022 Intercontinental Exchange, Inc.</p>
+  <ul class="list-featured-inline spacer-xs">
+    <li>
+      <a
+        href="https://www.intercontinentalexchange.com/terms-of-use"
+        title="Terms of Use"
+        >Terms of Use</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://www.intercontinentalexchange.com/privacy-policy"
+        title="Privacy Policy"
+        >Privacy Policy</a
+      >
+    </li>
+    <li class="hidden-xs">
+      <a href="https://www.theice.com/security" title="Security">Security</a>
+    </li>
+    <li>
+      <a href="https://www.intercontinentalexchange.com/cookies" title="Cookies"
+        >Cookies</a
+      >
+    </li>
+    <li><a class="txt do-not-sell">Do Not Sell My Personal Information</a></li>
+
+    <li class="hidden-xs">
+      <a
+        href="https://www.intercontinentalexchange.com/supported-browsers"
+        title="Supported Browsers"
+        >Supported Browsers</a
+      >
+    </li>
+    <li>
+      <a href="https://www.theice.com/data-protection" title="Data Protection"
+        >Data Protection</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://www.theice.com/registered-investment-adviser-notice"
+        title="Registered Investment Adviser Notice"
+        >Registered Investment Adviser Notice</a
+      >
+    </li>
+  </ul>
+</div>
+
+<style>
+  .iconSocial {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin-left: 5px;
+  }
+  .iconListed {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin-left: -5px;
+  }
+  .icon-listed {
+  background-image: url(/publicdocs/images/ICE_Listed_NYSE.svg);
+  }
+  .icon-listed:hover,
+  .icon-listed:focus {
+  filter: invert(49%) sepia(96%) saturate(1546%) hue-rotate(154deg) brightness(99%) contrast(102%);
+  }
+  .icon-facebook {
+  background-image: url(/publicdocs/images/Social_Icon_Facebook.svg);
+  }
+  .icon-facebook:hover,
+  .icon-facebook:focus {
+  filter: invert(49%) sepia(96%) saturate(1546%) hue-rotate(154deg) brightness(99%) contrast(102%);
+  }
+  .icon-instagram {
+  background-image: url(/publicdocs/images/Social_Icon_Instagram.svg);
+  }
+  .icon-instagram:hover,
+  .icon-instagram:focus {
+  filter: invert(49%) sepia(96%) saturate(1546%) hue-rotate(154deg) brightness(99%) contrast(102%);
+  }
+  .icon-linkedin {
+  background-image: url(/publicdocs/images/Social_Icon_LinkedIn.svg);
+  }
+  .icon-linkedin:hover,
+  .icon-linkedin:focus {
+  filter: invert(49%) sepia(96%) saturate(1546%) hue-rotate(154deg) brightness(99%) contrast(102%);
+  }
+  .icon-pinterest {
+  background-image: url(/publicdocs/images/Social_Icon_Pinterest.svg);
+  }
+  .icon-pinterest:hover,
+  .icon-pinterest:focus {
+  filter: invert(49%) sepia(96%) saturate(1546%) hue-rotate(154deg) brightness(99%) contrast(102%);
+  }
+  .icon-twitter {
+  background-image: url(/publicdocs/images/Social_Icon_Twitter.svg);
+  }
+  .icon-twitter:hover,
+  .icon-twitter:focus {
+  filter: invert(49%) sepia(96%) saturate(1546%) hue-rotate(154deg) brightness(99%) contrast(102%);
+  }
+  .txt, a.txt, .txt:hover, a.txt:hover { color: black }
+</style></div><div><script>
+  [].slice
+    .call(document.querySelectorAll(".do-not-sell"))
+    .forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        OneTrust.ToggleInfoDisplay();
+      });
+    });
+</script></div></footer><div><!--googleon: all--></div></div><script>(function (doc) {
+    if (doc === void 0) { doc = document; }
+    doc.documentElement.classList.remove('no-js');
+    var setScrollbarWidth = function () {
+        doc.body.style.setProperty('--scrollbar-width', doc.defaultView.innerWidth - doc.body.clientWidth + "px");
+    };
+    setScrollbarWidth();
+    doc.addEventListener('DOMContentLoaded', setScrollbarWidth);
+})();</script><script data-hydration="true" type="application/json">{"pageId":"30621","slots":{"body":[{"name":"cms-component-layout-nyse-page","id":"882d160a-e7c8-4e6c-9326-4713901a5351","props":{"slots":{"banner":[{"id":"2f02f32b-9dbf-4e60-b01f-13d950580adc","name":"cms-component-image-banner","props":{"slots":{},"responsiveType":"crop","height":250,"richContent":[{"type":"h4","children":[{"text":""},{"type":"link","href":"/markets","children":[{"text":"MARKETS"}]},{"text":""}]},{"type":"h1","children":[{"text":"Holidays &"},{"type":"line-break","children":[{"text":""}]},{"text":"Trading Hours"},{"type":"line-break","children":[{"text":""}]},{"text":""}]}],"showHeader":true,"imageUrl":"/publicdocs/images/NYSE_Trade_HeaderImage_Web_1200x250_20160730.jpg","altText":"Markets | NYSE","header":"","parentHeader":"","parentHeaderLink":"","inverse":true}},{"id":"f7ec4705-9eb1-420a-a821-86359915082c","name":"cms-component-top-nav","props":{"slots":{},"logo":{"classname":"logo-ice","alt":"ICE"},"menus":[{"id":"1b234b63-3555-47ee-a7fd-0310251699e8","sections":[{"id":"b5f1de2a-02bd-4f65-a8eb-d2123abfd1bb","heading":"","links":[]}],"title":"NYSE Equities","href":"#nyse","isHighlighted":false},{"id":"a5208e88-c3da-44b4-bde2-70deb4292cc1","sections":[{"id":"55d71f9b-d04e-4eb4-8683-5c10f9d42c90","heading":"","links":[]}],"title":"NYSE American Equities","href":"#american","isHighlighted":false},{"id":"1a62f421-fc83-4c89-923c-37915d57f05d","sections":[{"id":"2a9ee952-0abe-4885-b5ca-2311c484d6a3","heading":"","links":[]}],"title":"NYSE Arca Equities","href":"#arca","isHighlighted":false},{"id":"1a17497e-6b0b-46f9-b0fd-d0a51a0a2c1b","sections":[{"id":"4c2a03b1-7677-4c2a-963c-251d7145f06a","heading":"","links":[]}],"title":"NYSE Chicago Equities","href":"#chicago","isHighlighted":false},{"id":"bd7879b8-630e-48eb-b0bb-26c8cb41f656","sections":[{"id":"a37ad981-c13b-44d4-9249-5a935f178119","heading":"","links":[]}],"title":"NYSE National Equities","href":"#national","isHighlighted":false},{"id":"cb3fa848-ecc8-4e13-b2c1-574a62d1e4b1","sections":[{"id":"92b295d7-2beb-4db8-9fdb-767d462fe683","heading":"","links":[]}],"title":"NYSE American Options","href":"#american-options","isHighlighted":false},{"id":"42367210-1132-4a7c-97b9-33bb7c46b8a1","sections":[{"id":"1eac788c-9308-4a07-9031-7247577d9239","heading":"","links":[]}],"title":"NYSE Arca Options","href":"#arca-options","isHighlighted":false},{"id":"dec8db13-7f9b-4401-96b0-6f5607fe28bc","sections":[{"id":"2f7e2dbb-100f-487b-8dd1-5840462cb07c","heading":"","links":[]}],"title":"NYSE Bonds","href":"#bonds","isHighlighted":false}],"searchCollections":[],"searchPageUrl":"/search","isSecondaryNav":true,"showSearchBar":true,"titleHref":"","overrideBgColor":false,"ctaButtons":[],"linkUnderbarColor":"ice-blue","inverseLinkColor":false,"navTitle":"","bgColor":"#eceded","elementId":"content-5161f1e2-fe0f-4ff3-8f47-7aab2c04fba0"}}],"heading":[],"main":[{"id":"aed0bcbd-7dd9-4c29-8b82-e6d070994082","name":"cms-component-anchor","props":{"slots":{},"name":"holidays"}},{"id":"4afba2a5-09a9-420e-ab73-bb824435f791","name":"cms-component-stacked-section","props":{"slots":{"content":[{"id":"5aa59f64-6f63-4f1c-ac65-4f0555e85420","name":"cms-component-row","props":{"slots":{"cf983870-8be5-43d5-acee-733aee8e528c":[{"id":"8ea40910-41bd-419b-9232-da805fa57fff","name":"cms-component-rich-text","props":{"slots":{},"richTextNodes":[{"type":"paragraph","children":[{"text":"All NYSE markets observe U.S. holidays as listed below for 2022, 2023, and 2024."}]}]}}],"e45d5796-336f-433d-8150-100b7f90fa1b":[{"id":"e7136bd8-6c0d-47d6-a14e-87f74140593d","name":"cms-component-rich-text","props":{"slots":{},"richTextNodes":[{"type":"paragraph","children":[{"text":""},{"type":"link","href":"/publicdocs/Trading_Days.pdf","children":[{"text":"Trading Days"}],"noExtension":true,"isButton":true},{"text":""}]}]}}]},"columns":[{"id":"cf983870-8be5-43d5-acee-733aee8e528c","size":"three-quarter"},{"id":"e45d5796-336f-433d-8150-100b7f90fa1b","size":"quarter"}]}},{"id":"7445f2a0-c71b-4a2e-995d-4393c6d291d8","name":"cms-component-table","props":{"slots":{},"sections":[{"id":"88132458-8af6-4bde-8ecd-2c7f12885c18","sectionType":"header","rows":[{"id":"d563dbc4-f595-41fb-b23d-00667a5a1dd7","cells":[{"id":"1a621256-2719-4c27-b241-9752256ca6ec","cellType":"header","text":"Holiday"},{"id":"a7787811-c7c0-4065-adae-3c5f84edea2d","cellType":"header","text":"2022"},{"id":"ade609ed-d182-4051-bbf0-4652d2f03674","cellType":"header","text":"2023"},{"id":"726a808d-ba6e-4fc7-a53a-fded5721672f","cellType":"header","text":"2024"}]}]},{"id":"1da081f1-17af-4491-992e-a4a57e7e52b0","sectionType":"body","rows":[{"id":"f3cef76e-e865-4f83-a0ba-4f266a9c6697","cells":[{"id":"23224737-174b-4fc1-8ae3-6f75fca08303","text":"New Years Day"},{"id":"7875c8a0-5c3e-45b5-9022-811534ad1212","text":"—*"},{"id":"de16726e-e32c-4586-ac6f-09dfebb95035","text":"Monday, January 2 (New Year's holiday observed)"},{"id":"64c8e894-ebae-4541-a606-e46c7762988a","text":"Monday, January 1"}]},{"id":"4f793de2-aa76-4697-bb8e-666ab010564b","cells":[{"id":"423fd767-1c39-41f9-80e9-3428f139b6e7","text":"Martin Luther King, Jr. Day"},{"id":"333742f6-e5e7-4005-9dd7-501defb336a8","text":"Monday, January 17"},{"id":"fab3952f-7057-4f68-8d56-002dd0cd3196","text":"Monday, January 16"},{"id":"42e2b5a9-7bea-4824-a7e6-4e15ca7ad72c","text":"Monday, January 15"}]},{"id":"ce409dbd-6042-4057-934c-92b088d90ed6","cells":[{"id":"2f4dd27e-9369-404d-91a6-7f01ec409e98","text":"Washington's Birthday"},{"id":"d8a6986d-6ecf-4aa5-a587-73cb73028ed3","text":"Monday, February 21"},{"id":"6a308f3e-832c-4d14-8837-e8942ee18f96","text":"Monday, February 20"},{"id":"bcb8c0c5-364b-4e9a-967d-88eb4a438265","text":"Monday, February 19"}]},{"id":"d0e182f1-fb9d-4823-befe-5811f7a917cc","cells":[{"id":"67cfa6fe-bb7e-407f-9ab6-4d326867ad73","text":"Good Friday"},{"id":"d4e9bec6-657c-449e-881a-96de39a5f3e9","text":"Friday, April 15"},{"id":"47548965-eba6-4ce7-b82a-963832064748","text":"Friday, April 7"},{"id":"b199df48-4587-45d2-af8a-00f590e4fe9b","text":"Friday, March 29"}]},{"id":"d525c06d-33db-44ca-8231-2390d209f449","cells":[{"id":"d05d2a66-9c12-4b4c-8b5a-35b8e8e9c540","text":"Memorial Day"},{"id":"bddd2531-3c15-4fd7-902c-bea3b32d6970","text":"Monday, May 30"},{"id":"fe079424-f642-4c28-bc52-681f91d90bbe","text":"Monday, May 29"},{"id":"aa974c6d-8e65-4973-8e33-fdc0eeb7067d","text":"Monday, May 27"}]},{"id":"5245ccbc-d38c-4b62-bb78-d278c4c3964b","cells":[{"id":"3fd3dd51-7d92-49a0-8b96-9b89e0671681","text":"Juneteenth National Independence Day"},{"id":"53e14a23-7251-4ec3-9849-5469f6615905","text":"Monday, June 20 (Juneteenth holiday observed)"},{"id":"37886e14-2cd8-4d05-ab37-9018f660d80b","text":"Monday, June 19"},{"id":"c4966ef6-36f7-494f-bcbc-8a1c47e2c2e1","text":"Wednesday, June 19"}]},{"id":"4c19f6ad-ff31-4b28-a86b-1af9ecfe82e5","cells":[{"id":"2e395f3a-896e-4ca7-acad-97b057a8ade3","text":"Independence Day"},{"id":"0dc1a7c4-162f-40d3-b028-486a71eb8f47","text":"Monday, July 4"},{"id":"82b17f9d-518b-477c-a477-651f924670b6","text":"Tuesday, July 4**"},{"id":"56c179da-0f29-44dd-a424-c345f0c703d7","text":"Thursday, July 4**"}]},{"id":"5e35024b-5eeb-4121-b017-c1183e5cef51","cells":[{"id":"e77e3714-79bb-44c4-96c1-4aa69a2d6aa7","text":"Labor Day"},{"id":"0d943226-5928-4612-9171-35fb6e7bc5ff","text":"Monday,   September 5"},{"id":"c046ec94-01aa-4c2d-99ef-1833d932297e","text":"Monday,   September 4"},{"id":"f21d1538-d5eb-40a8-9827-59f3ce343b7b","text":"Monday,   September 2"}]},{"id":"5050a232-d58c-4d89-bcd2-7c3044879f8d","cells":[{"id":"942a12ac-643f-4428-af7d-6953d569fe6b","text":"Thanksgiving Day"},{"id":"4d559f03-cb1d-4aed-b7ae-4528efdbb89f","text":"Thursday, November 24***"},{"id":"f0c3d655-491d-41c8-869b-cdd95d6eb162","text":"Thursday, November 23***"},{"id":"6ee1b2ce-5488-410e-9d7a-c63a534b506c","text":"Thursday, November 28***"}]},{"id":"4c661887-7515-4d71-ba68-ce8442fc82b0","cells":[{"id":"e2179036-1c86-4f76-9309-65bf41860751","text":"Christmas Day"},{"id":"0083358e-91d0-42a8-8585-26ec7a888c93","text":"Monday, December 26 (Christmas holiday observed)"},{"id":"ca06ee9d-b8f7-4f54-a676-ae31bc74abbf","text":"Monday, December 25"},{"id":"cc60ee99-fc2e-4e9a-a3f8-d562aac85795","text":"Wednesday, December 25****"}]}]}],"columns":[{"id":"a627b372-5f0f-4af5-8a82-c3a530f76c7c"},{"id":"b21c443e-6530-449b-86d2-0c1122dceec7"},{"id":"80bef844-8ffe-456c-95d5-8a18ed3c4620"},{"id":"ae9346d1-4df7-41e8-9302-6717e41d9f7c"}],"isFixedLayout":true}},{"id":"4036d66c-d2cc-49b9-8f2b-dc22c9da7a89","name":"cms-component-rich-text","props":{"slots":{},"richTextNodes":[{"type":"paragraph","children":[{"text":"* No holiday observed, pursuant to NYSE Rule 7.2, NYSE American Rule 7.2E, NYSE Arca Rules 7.2-O and 7.2-E, NYSE Chicago Rule 7.2, and NYSE National Rule 7.2."}],"paragraphType":"disclaimer"},{"type":"paragraph","paragraphType":"disclaimer","children":[{"text":""}]},{"type":"paragraph","paragraphType":"disclaimer","children":[{"text":"** Each market will close early at 1:00 p.m. (1:15 p.m. for eligible options) on Monday, July 3, 2023, and Wednesday, July 3, 2024. Crossing Session orders will be accepted beginning at 1:00 p.m. for continuous executions until 1:30 p.m. on these dates, and NYSE American Equities, NYSE Arca Equities, NYSE Chicago, and NYSE National late trading sessions will close at 5:00 pm. All times are Eastern Time."}]},{"type":"paragraph","paragraphType":"disclaimer","children":[{"text":""}]},{"type":"paragraph","paragraphType":"disclaimer","children":[{"text":"*** Each market will close early at 1:00 p.m. (1:15 p.m. for eligible options) on Friday, November 25, 2022, Friday, November 24, 2023, and Friday, November 29, 2024 (the day after Thanksgiving). Crossing Session orders will be accepted beginning at 1:00 p.m. for continuous executions until 1:30 p.m. on these dates, and NYSE American Equities, NYSE Arca Equities, NYSE Chicago, and NYSE National late trading sessions will close at 5:00 pm. All times are Eastern Time."}]},{"type":"paragraph","paragraphType":"disclaimer","children":[{"text":""}]},{"type":"paragraph","paragraphType":"disclaimer","children":[{"text":"**** Each market will close early at 1:00 p.m. (1:15 p.m. for eligible options) on Tuesday, December 24, 2024. Crossing Session orders will be accepted beginning at 1:00 p.m. for continuous executions until 1:30 p.m. on this date, and NYSE American Equities, NYSE Arca Equities, NYSE Chicago, and NYSE National late trading sessions will close at 5:00 pm. All times are Eastern Time."}]},{"type":"div","paragraphType":"disclaimer","children":[{"text":""}]},{"type":"spacer","children":[{"text":""}],"size":"lg"}]}}]},"title":"Holidays: All Markets","headerLevel":2,"highlight":false}},{"id":"c655b020-73a6-49ec-9b7d-ddf78a8f58b6","name":"cms-component-anchor","props":{"slots":{},"name":"nyse"}},{"id":"5a8240ba-6dbf-4388-88ba-01d9d0f1b16b","name":"cms-component-anchor","props":{"slots":{},"name":"american"}},{"id":"a654d21f-282e-46cc-a42f-b8075619fa9d","name":"cms-component-row","props":{"slots":{"7bf78cf9-80c4-4572-8916-93451951ec9f":[{"id":"32e2fb5d-2c20-45b5-b187-d0831e8c0a5f","name":"cms-component-stacked-section","props":{"slots":{"content":[{"id":"2bb037c3-88c5-4034-88fb-992ed534744b","name":"cms-component-raw-html","props":{"slots":{},"html":"<h3>Tape A<\/h3>\n<table class=\"table table-layout-fixed\">\n  <tbody>\n    <tr>\n      <td>\n        <p><strong>Pre-Opening Session: 6:30 a.m. ET<\/strong><\/p>\n        <ul class=\"list spacer-xs\">\n          <li style=\"padding-right: 25px;\">\n            Orders can be entered and will be queued until the Opening Auction\n            at 9:30 a.m. ET\n          <\/li>\n        <\/ul>\n      <\/td>\n    <\/tr>\n\n    <tr>\n      <td>\n        <p>\n          <strong>Core Trading Session: 9:30 a.m. to 4:00 p.m. ET<\/strong>\n        <\/p>\n        <ul class=\"list spacer-xs\">\n          <li>9:30 a.m. ET - Core Open Auction<\/li>\n          <li>3:50 p.m. to 4:00 ET - 123(c) Closing Imbalance Period<\/li>\n          <li>4:00 p.m. ET - Closing Auction<\/li>\n        <\/ul>\n      <\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>\n\n<h3>Tapes B &amp; C<\/h3>\n<table class=\"table table-layout-fixed\">\n  <tbody>\n    <tr>\n      <td>\n        <p><strong>Pre-Opening Session: 6:30 a.m. ET<\/strong><\/p>\n        <ul class=\"list spacer-xs\">\n          <li>\n            Orders can be entered and will be queued until the Opening Auction\n            at 7:00 a.m. ET\n          <\/li>\n        <\/ul>\n      <\/td>\n    <\/tr>\n\n    <tr>\n      <td>\n        <p>\n          <strong>Early Trading Session: 7:00 a.m. to 9:30 a.m. ET<\/strong>\n        <\/p>\n      <\/td>\n    <\/tr>\n\n    <tr>\n      <td>\n        <p>\n          <strong>Core Trading Session: 9:30 a.m. to 4:00 p.m. ET<\/strong>\n        <\/p>\n      <\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"}}]},"title":"NYSE","headerLevel":2,"highlight":false}}],"086095ad-1405-4213-9a7f-aa0da96c1f67":[{"id":"cf23af6d-2797-425e-b9c6-c4a8a34b6d61","name":"cms-component-stacked-section","props":{"slots":{"content":[{"id":"8d27a3a2-b13f-4e5b-bbbd-60f16d56b24a","name":"cms-component-raw-html","props":{"slots":{},"html":" <h3>&nbsp;<\/h3>\n      <table class=\"table table-layout-fixed\">\n        <tbody>\n          <tr>\n            <td>\n              <p><strong>Pre-Opening Session: 6:30 a.m.<\/strong><\/p>\n              <ul class=\"list spacer-xs\">\n                <li style=\"padding-right: 25px;\">\n                  Orders can be entered and will be queued until the Early Open\n                  Auction at 7:00 a.m. ET*\n                <\/li>\n              <\/ul>\n            <\/td>\n          <\/tr>\n\n          <tr>\n            <td>\n              <p>\n                <strong\n                  >Early Trading Session: 7:00 a.m. to 9:30 a.m. ET<\/strong\n                >\n              <\/p>\n              <ul class=\"list spacer-xs\">\n                <li>\n                  6:59 a.m. to 7:00 a.m. ET - Early Open Auction Imbalance\n                  Freeze Period\n                <\/li>\n                <li>7:00 a.m. ET - Early Open Auction<\/li>\n                <li>\n                  9:29:55 a.m. to 9:30 a.m. ET - Core Open Auction Imbalance\n                  Freeze Period\n                <\/li>\n              <\/ul>\n            <\/td>\n          <\/tr>\n        <\/tbody>\n      <\/table>\n\n      <table class=\"table table-layout-fixed\">\n        <tbody>\n          <tr>\n            <td>\n              <p>\n                <strong>Core Trading Session: 9:30 a.m. to 4:00 p.m. ET<\/strong>\n              <\/p>\n              <ul class=\"list spacer-xs\">\n                <li>9:30 a.m. ET - Core Open Auction<\/li>\n                <li>\n                  3:50 p.m. to 4:00 p.m. ET - Closing Auction Imbalance Freeze\n                  Period\n                <\/li>\n                <li>4:00 p.m. ET - Closing Auction<\/li>\n              <\/ul>\n            <\/td>\n          <\/tr>\n\n          <tr>\n            <td>\n              <p>\n                <strong>Late Trading Session: 4:00 p.m. to 8:00 p.m. ET<\/strong>\n              <\/p>\n              <p class=\"disclaimer\">\n                * Auctions are conducted only in auction-eligible symbols.\n              <\/p>\n            <\/td>\n          <\/tr>\n        <\/tbody>\n      <\/table>"}}]},"title":"NYSE American","headerLevel":2,"highlight":false}}]},"columns":[{"id":"7bf78cf9-80c4-4572-8916-93451951ec9f","size":"half"},{"id":"086095ad-1405-4213-9a7f-aa0da96c1f67","size":"half"}]}},{"id":"f9c6809d-0a0a-4f7a-a67f-e8f8be1e2f7f","name":"cms-component-anchor","props":{"slots":{},"name":"arca"}},{"id":"76f34e68-bc91-46a6-b043-73ce370e2d7b","name":"cms-component-anchor","props":{"slots":{},"name":"chicago"}},{"id":"71bdc965-8919-4c24-9cb4-16152b0cc54a","name":"cms-component-row","props":{"slots":{"7bf78cf9-80c4-4572-8916-93451951ec9f":[{"id":"dd4d3fbd-0acd-4bad-9413-3dc9f31a7b55","name":"cms-component-stacked-section","props":{"slots":{"content":[{"id":"fc4487d1-f629-4a72-9a3e-35bc7a322d31","name":"cms-component-raw-html","props":{"slots":{},"html":"<table class=\"table table-layout-fixed\">\n  <tbody>\n    <tr>\n      <td>\n        <p><strong>Pre-Opening Session: 2:30 a.m.<\/strong><\/p>\n        <ul class=\"list spacer-xs\">\n          <li style=\"padding-right: 25px;\">\n            Orders can be entered and will be queued until the Early Open\n            Auction at 4:00 a.m. ET*\n          <\/li>\n        <\/ul>\n      <\/td>\n    <\/tr>\n\n    <tr>\n      <td>\n        <p>\n          <strong>Early Trading Session: 4:00 a.m. to 9:30 a.m. ET<\/strong>\n        <\/p>\n        <ul class=\"list spacer-xs\">\n          <li>\n            3:59 a.m. to 4:00 a.m. ET - Early Open Auction Imbalance Freeze\n            Period\n          <\/li>\n          <li>4:00 a.m. ET - Early Open Auction<\/li>\n          <li>\n            9:29:55 a.m. to 9:30 a.m. ET - Core Open Auction Imbalance Freeze\n            Period\n          <\/li>\n        <\/ul>\n      <\/td>\n    <\/tr>\n\n    <tr>\n      <td>\n        <p>\n          <strong>Core Trading Session: 9:30 a.m. to 4:00 p.m. ET<\/strong>\n        <\/p>\n        <ul class=\"list spacer-xs\">\n          <li>9:30 a.m. ET - Core Open Auction<\/li>\n          <li>\n            3:59 p.m. to 4:00 p.m. ET - Closing Auction Imbalance Freeze Period\n          <\/li>\n          <li>4:00 p.m. ET - Closing Auction<\/li>\n        <\/ul>\n      <\/td>\n    <\/tr>\n\n    <tr>\n      <td>\n        <p>\n          <strong>Late Trading Session: 4:00 p.m. to 8:00 p.m. ET<\/strong>\n        <\/p>\n        <p class=\"disclaimer\">\n          * Auctions are conducted only in auction-eligible symbols.\n        <\/p>\n      <\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"}}]},"title":"NYSE Arca Equities","headerLevel":2,"highlight":false}}],"086095ad-1405-4213-9a7f-aa0da96c1f67":[{"id":"94e4bcd5-9b9f-402b-a75c-35c7ba48c9c5","name":"cms-component-stacked-section","props":{"slots":{"content":[{"id":"a6ad2393-497b-4fdd-bcc0-60ee9afa4195","name":"cms-component-raw-html","props":{"slots":{},"html":" <table class=\"table table-layout-fixed\">\n        <tbody>\n          <tr>\n            <td>\n              <p><strong>Pre-Opening Session: 6:30 a.m. ET<\/strong><\/p>\n              <ul class=\"list spacer-xs\">\n                <li style=\"padding-right: 25px;\">\n                  Orders can be entered and will be queued until 7 a.m. ET\n                <\/li>\n              <\/ul>\n            <\/td>\n          <\/tr>\n\n          <tr>\n            <td>\n              <p>\n                <strong\n                  >Early Trading Session: 7:00 a.m. to 9:30 a.m. ET<\/strong\n                >\n              <\/p>\n            <\/td>\n          <\/tr>\n\n          <tr>\n            <td>\n              <p>\n                <strong>Core Trading Session: 9:30 a.m. to 4:00 p.m. ET<\/strong>\n              <\/p>\n            <\/td>\n          <\/tr>\n\n          <tr>\n            <td>\n              <p>\n                <strong>Late Trading Session: 4:00 p.m. to 8:00 p.m. ET<\/strong>\n              <\/p>\n            <\/td>\n          <\/tr>\n        <\/tbody>\n      <\/table>"}}]},"title":"NYSE Chicago","headerLevel":2,"highlight":false}}]},"columns":[{"id":"7bf78cf9-80c4-4572-8916-93451951ec9f","size":"half"},{"id":"086095ad-1405-4213-9a7f-aa0da96c1f67","size":"half"}]}},{"id":"ece736c9-083f-4f19-8bf2-352314704d65","name":"cms-component-anchor","props":{"slots":{},"name":"national"}},{"id":"f77fd043-56ef-43ee-b664-847ed36c33e2","name":"cms-component-row","props":{"slots":{"7bf78cf9-80c4-4572-8916-93451951ec9f":[{"id":"2eed593e-e3a4-45b4-acc2-7f08f7ada144","name":"cms-component-stacked-section","props":{"slots":{"content":[{"id":"351934ac-8c0f-423d-a760-6fb48aa814c9","name":"cms-component-raw-html","props":{"slots":{},"html":" <table class=\"table table-layout-fixed\">\n        <tbody>\n          <tr>\n            <td>\n              <p><strong>Pre-Opening Session: 6:30 a.m. ET<\/strong><\/p>\n              <ul class=\"list spacer-xs\">\n                <li style=\"padding-right: 25px;\">\n                  Orders can be entered and will be queued until 7 a.m. ET\n                <\/li>\n              <\/ul>\n            <\/td>\n          <\/tr>\n\n          <tr>\n            <td>\n              <p>\n                <strong\n                  >Early Trading Session: 7:00 a.m. to 9:30 a.m. ET<\/strong\n                >\n              <\/p>\n            <\/td>\n          <\/tr>\n\n          <tr>\n            <td>\n              <p>\n                <strong>Core Trading Session: 9:30 a.m. to 4:00 p.m. ET<\/strong>\n              <\/p>\n            <\/td>\n          <\/tr>\n\n          <tr>\n            <td>\n              <p>\n                <strong>Late Trading Session: 4:00 p.m. to 8:00 p.m. ET<\/strong>\n              <\/p>\n            <\/td>\n          <\/tr>\n        <\/tbody>\n      <\/table>"}}]},"title":"NYSE National","headerLevel":2,"highlight":false}}],"086095ad-1405-4213-9a7f-aa0da96c1f67":[]},"columns":[{"id":"7bf78cf9-80c4-4572-8916-93451951ec9f","size":"half"},{"id":"086095ad-1405-4213-9a7f-aa0da96c1f67","size":"half"}]}},{"id":"2ef8cd8e-eca9-49d1-92b7-0affa6be292c","name":"cms-component-anchor","props":{"slots":{},"name":"american-options"}},{"id":"063e1d74-cc15-4a4f-ade4-604688cf8826","name":"cms-component-anchor","props":{"slots":{},"name":"arca-options"}},{"id":"aa4cae51-d5c5-4b4c-b33d-eb508055a5d8","name":"cms-component-row","props":{"slots":{"7bf78cf9-80c4-4572-8916-93451951ec9f":[{"id":"8ec8af00-2acd-4ee6-a43c-630cc6b80767","name":"cms-component-stacked-section","props":{"slots":{"content":[{"id":"4ac78e6b-7ee0-49bc-bed4-16c04bf8b714","name":"cms-component-raw-html","props":{"slots":{},"html":"<p class=\"standalone-link\">\n  <a href=\"http://www.theocc.com/about/publications/expiration-calendar.jsp\"\n    >Options Clearing Corporation Expiration Calendar<\/a\n  >\n<\/p>\n\n<table class=\"table table-layout-fixed\">\n  <tbody>\n    <tr>\n      <th class=\"true-grid-two-third\">Equity Options<\/th>\n      <td class=\"true-grid-third\">9:30 a.m. ET - 4:00 p.m. ET<\/td>\n    <\/tr>\n\n    <tr>\n      <th>ETF Options<\/th>\n      <td>9:30 a.m. ET - 4:00 p.m. ET<\/td>\n    <\/tr>\n\n    <tr>\n      <th style=\"padding-right: 50px;\">\n        ETF Exceptions:<br />\n        <a href=\"/publicdocs/nyse/Options_Late_Closing_List.xls\">View list<\/a>\n      <\/th>\n      <td>9:30 a.m. ET - 4:15 p.m. ET<\/td>\n    <\/tr>\n\n    <tr>\n      <th>Index Options<\/th>\n      <td>9:30 a.m. ET - 4:00 p.m. ET<\/td>\n    <\/tr>\n\n    <tr>\n      <th>\n        Index Exceptions:<br />\n        MNX, NDX\n      <\/th>\n      <td>9:30 a.m. ET - 4:15 p.m. ET<\/td>\n    <\/tr>\n\n    <tr>\n      <th>\n        ETN Options:<br />\n        GAZ, OIL, VXX, VXZ\n      <\/th>\n      <td>9:30 a.m. ET - 4:15 p.m. ET<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"}}]},"title":"NYSE American Options","headerLevel":2,"highlight":false}}],"086095ad-1405-4213-9a7f-aa0da96c1f67":[{"id":"c822d6d8-cfaa-45fb-9389-58f39ad0c2a1","name":"cms-component-stacked-section","props":{"slots":{"content":[{"id":"53940bd1-c73f-49c2-90d7-12926a945497","name":"cms-component-raw-html","props":{"slots":{},"html":"<p class=\"standalone-link\">\n  <a href=\"http://www.theocc.com/about/publications/expiration-calendar.jsp\"\n    >Options Clearing Corporation Expiration Calendar<\/a\n  >\n<\/p>\n\n<table class=\"table table-layout-fixed\">\n  <tbody>\n    <tr>\n      <th class=\"true-grid-two-third\">Equity Options<\/th>\n      <td class=\"true-grid-third\">9:30 a.m. ET - 4:00 p.m. ET<\/td>\n    <\/tr>\n\n    <tr>\n      <th>ETF Options<\/th>\n      <td>9:30 a.m. ET - 4:00 p.m. ET<\/td>\n    <\/tr>\n\n    <tr>\n      <th style=\"padding-right: 50px;\">\n        ETF Exceptions:<br />\n        <a href=\"/publicdocs/nyse/Options_Late_Closing_List.xls\">View list<\/a>\n      <\/th>\n      <td>9:30 a.m. ET - 4:15 p.m. ET<\/td>\n    <\/tr>\n\n    <tr>\n      <th>Index Options<\/th>\n      <td>9:30 a.m. ET - 4:00 p.m. ET<\/td>\n    <\/tr>\n\n    <tr>\n      <th>\n        Index Exceptions:<br />\n        MNX, NDX\n      <\/th>\n      <td>9:30 a.m. ET - 4:15 p.m. ET<\/td>\n    <\/tr>\n\n    <tr>\n      <th>\n        ETN Options:<br />\n        AMJ, GAZ, INP, JJC, MLPN, OIL, VXX, VXZ\n      <\/th>\n      <td>9:30 a.m. ET - 4:15 p.m. ET<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"}}]},"title":"NYSE Arca Options","headerLevel":2,"highlight":false}}]},"columns":[{"id":"7bf78cf9-80c4-4572-8916-93451951ec9f","size":"half"},{"id":"086095ad-1405-4213-9a7f-aa0da96c1f67","size":"half"}]}},{"id":"8dcd8e9e-f5fc-4dd2-a7a6-2ea9be38d894","name":"cms-component-anchor","props":{"slots":{},"name":"bonds"}},{"id":"9d0a2877-7ce7-4742-bdc3-c057d6a13711","name":"cms-component-row","props":{"slots":{"7bf78cf9-80c4-4572-8916-93451951ec9f":[{"id":"5fd704e3-c586-4b68-8c51-90a3b2e44cd2","name":"cms-component-stacked-section","props":{"slots":{"content":[{"id":"6498617d-9d09-4f86-856a-86d941eef361","name":"cms-component-raw-html","props":{"slots":{},"html":"<table class=\"table table-layout-fixed\">\n  <tbody>\n    <tr>\n      <th class=\"true-grid-quarter\">Early Trading<\/th>\n      <td class=\"true-grid-three-quarter\">4:00 a.m. ET - 8:00 a.m. ET<\/td>\n    <\/tr>\n\n    <tr>\n      <th>Core Trading<\/th>\n      <td>8:00 a.m. ET - 5:00 p.m. ET<\/td>\n    <\/tr>\n\n    <tr>\n      <th>Late Trading<\/th>\n      <td>5:00 p.m. ET - 8:00 p.m. ET<\/td>\n    <\/tr>\n\n    <tr>\n      <th>Bond Auctions<\/th>\n      <td>\n        The NYSE conducts two daily bond auctions – an Opening Bond Auction at\n        4:00 a.m. ET and a Core Bond Auction at 8:00 a.m. ET. Orders not\n        executed in either auction become eligible for continuous trading\n        immediately after the auction.\n      <\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"}}]},"title":"NYSE Bonds","headerLevel":2,"highlight":false}}],"086095ad-1405-4213-9a7f-aa0da96c1f67":[]},"columns":[{"id":"7bf78cf9-80c4-4572-8916-93451951ec9f","size":"half"},{"id":"086095ad-1405-4213-9a7f-aa0da96c1f67","size":"half"}]}}],"accessCodeHeader":[],"accessCodeFooter":[],"headerContent":[{"name":"cms-template-partial","id":"75e5f470-1dae-40f1-b3ed-93da18c10055","props":{"slots":{"body":[{"name":"cms-component-layout-nyse-header","id":"691039bc-4b5f-481c-94f4-b0e89cc43c14","props":{"slots":{"buttonArea":[{"id":"de9b614d-e4ba-4e68-bf9f-2bcb2961f5a8","name":"cms-component-raw-html","props":{"slots":{},"html":"<a href=\"#launch\" class=\"btn btn-info hidden-xs\">NYSE Connect<\/a>\n<a href=\"#login\" class=\"btn btn-inverse\">Login<\/a>"}}],"main":[{"id":"fdaffa4c-7a93-4877-ac49-71ebbb8f08d5","name":"cms-component-partial","props":{"slots":{"content":[{"name":"cms-template-partial","id":"760ffc64-c99a-4b25-9107-f15168dccc16","props":{"slots":{"body":[{"id":"a9e97f53-eb22-4f3a-930e-c1f0cbb15352","name":"cms-component-top-nav","props":{"slots":{},"logo":{"classname":"logo-nyse","alt":"NYSE"},"menus":[{"id":"82969329-45c8-4c8a-b0e8-6ef9009e4ea7","sections":[{"cta":{"label":"Explore Direct Listing","href":"/direct-listing"},"id":"f6631322-b2ab-4309-be07-248a72e9119d","heading":"","links":[{"id":"8405cc0d-f466-472c-8a0b-a02dfdc50c21","title":"Why Companies List on Our Markets","description":"Leadership defined by our market model, network, global visibility and services","href":"/why-nyse","isOnMobile":true,"openInNewTab":false},{"id":"c287f6ab-3b6e-4072-993b-9c35d3f94a8b","title":"The NYSE Bell","description":"Critical to floor operations and offering global visibility","href":"/bell","isOnMobile":true,"openInNewTab":false},{"id":"fa18d7a5-862f-418f-9e78-e6f116b84419","title":"What Happens at the NYSE","description":"Companies host thousands of events at the Exchange","href":"/nyse-events","isOnMobile":true,"openInNewTab":false},{"id":"647a50f5-9f61-4fbd-a0a0-d70f06f1cd87","title":"Explore the NYSE Network","description":"Learn about our listed community","href":"/network","isOnMobile":true,"openInNewTab":false},{"id":"06333e43-ecb7-4654-b435-09f31d0b8d8f","title":"Public Debuts","description":"The makings of a memorable Listing Day","href":"/ipos/gallery"}]},{"id":"58a567a3-4de6-4ae8-9083-cfbf9c3e5e31","heading":"Listings Tools & Services","links":[{"id":"8229245f-bac2-4423-be37-fd1a6d2cea07","title":"NYSE Connect","description":"Data and analytics to support your IR program","href":"/connect","isOnMobile":true,"openInNewTab":false},{"id":"09aac15d-ff69-47ae-ae98-c2017c031dc3","title":"Listing Manager","description":"Tools to manage your listings workflow","href":"https://listingmanager.nyse.com","isOnMobile":true,"openInNewTab":false},{"id":"677255de-bee3-4819-9382-d7f811992ddd","title":"IPO Center","description":"View stats and analysis of recent IPOs","href":"/ipo-center/filings","isOnMobile":true,"openInNewTab":false},{"id":"ed80ff21-1123-4888-89e3-a247adad3bf8","title":"Listings Materials","description":"Forms, fees, manuals, applications and standards for our markets","href":"/listings/resources","isOnMobile":true,"openInNewTab":false},{"id":"7b8272b6-fa70-4f11-ad71-420f3d8ac94f","title":"ESG Resource Center","description":"Navigating the evolving ESG landscape","href":"/esg/resource-center","isOnMobile":true,"openInNewTab":false},{"id":"7468767f-5aa9-4d0f-afee-c2c4ee516822","title":"Equity Markets","description":"Market Insights & Research","href":"/research","isOnMobile":true,"openInNewTab":false}]}],"title":"Listings","href":"","isHighlighted":false},{"id":"9880bf20-2de8-4931-92a6-851a08753bb9","sections":[{"cta":{"label":"NYSE Securities with Remote DMM","href":"/publicdocs/nyse/NYSE_Securities_Remote_DMM.xlsx"},"id":"4d665b9e-4074-4357-b688-5a73ab9f5a09","heading":"Trade Our Equity markets","links":[{"id":"2cea99b3-1e12-49c7-b174-2ef09c7c1aa4","title":"NYSE","description":"The world's most trusted equities exchange","href":"/markets/nyse","isOnMobile":true,"openInNewTab":false},{"id":"56e0e783-7cb6-460f-a542-0c474f99c09e","title":"NYSE American","description":"An exchange designed for growing companies","href":"/markets/nyse-american","isOnMobile":true,"openInNewTab":false},{"id":"d226801b-37ae-4fa0-a4f4-baffdf317460","title":"NYSE Arca Equities","description":"The leading exchange for ETFs","href":"/markets/nyse-arca","isOnMobile":true,"openInNewTab":false},{"id":"a1a3609e-f077-48dc-bcf2-9da196ec2f7d","title":"NYSE Chicago","description":"Supporting the institutional brokerage community","href":"/markets/nyse-chicago","isOnMobile":true,"openInNewTab":false},{"id":"e9ced384-adbc-4005-be89-46ce9b5862b4","title":"NYSE National","description":"Combining the high performance of NYSE Pillar technology with a taker/maker fee schedule","href":"/markets/nyse-national","isOnMobile":true,"openInNewTab":false}]},{"id":"d33b84c3-568b-4c40-b3ab-2afdafd51c66","heading":"Trade Our Options & Bonds Markets","links":[{"id":"f9d7712b-c2a4-4fe5-a4bc-4b47acc69844","title":"NYSE American Options","description":"Offering traders deep liquidity across listed option contracts","href":"/markets/american-options","isOnMobile":true,"openInNewTab":false},{"id":"a9442871-5b4d-4a9f-9d2a-de77d4087cbf","title":"NYSE Arca Options","description":"Offering an anonymous, flat, open market structure","href":"/markets/arca-options","isOnMobile":true,"openInNewTab":false},{"id":"81c88456-9c9b-4e8e-a92f-a75dcf0e4a25","title":"NYSE Bonds","description":"Access to live, executable, transparent prices","href":"/markets/bonds","isOnMobile":true,"openInNewTab":false}]},{"cta":{"label":"VIew our Data Insights Blog","href":"/data-insights"},"id":"d4770992-2988-4179-9d9b-7660108865df","heading":"Resources for our Markets","links":[{"id":"7be7aca9-062a-4ef4-b9e6-45553f3f94a2","title":"Market Resource Center","description":"Notices, fees, rules, calendars, forms and order types for our markets","href":"/trade","isOnMobile":true,"openInNewTab":false},{"id":"2fcaffef-02ec-4117-b704-13c10378c1bc","title":"Trader Updates","description":"Announcements and market updates for our trading community","href":"/trader-update/history","isOnMobile":true,"openInNewTab":false},{"id":"df390cc1-533e-4add-81ac-6f5f06754129","title":"Market Status","description":"System status alerts for our market community","href":"/market-status/history","isOnMobile":true,"openInNewTab":false},{"id":"1bd5b3e5-a3ad-4d81-82ac-a0c0127ea4b1","title":"Trading Halts","description":"Current and historical regulatory halts (news pending/news dissemination and LULD","href":"/trade-halt-current","isOnMobile":true,"openInNewTab":false},{"id":"5dfb1da5-6c06-41c4-923b-30797e05d195","title":"Market Reports","description":"View market quality, program trading, rule 605 and other reports","href":"/markets/reports","isOnMobile":true,"openInNewTab":false},{"id":"20bfbc65-71a8-4ddb-8fbe-f6629ca50a2b","title":"NYSE Pillar Trading Platform","description":"Our integrated trading technology platform that connects to all of our equities and options markets","href":"/pillar","isOnMobile":true,"openInNewTab":false},{"id":"42fbc2a7-b359-4fd2-b8ab-66e2df54f411","title":"Market Liquidity Programs","description":"Promoting price improvement for individual investors on retail order flow for NYSE listed securities","href":"/markets/liquidity-programs","isOnMobile":true,"openInNewTab":false},{"id":"feb3f581-fc15-493c-b82e-14eb6923b00b","title":"Traded Products","description":"NYSE Equities, Options, ETFs & Bonds","href":"/products","isOnMobile":true,"openInNewTab":false}]}],"title":"Markets","href":"","isHighlighted":true},{"id":"1de2ef24-96ce-4b26-852b-d48dd3f5d538","sections":[{"id":"03166d54-6c4a-4c9d-86a9-fcc087f1c448","heading":"Proprietary Market Data Solutions","links":[{"id":"91b9ffc7-702e-4a1c-af8a-324c65b2e01d","title":"Real-Time Data","description":"Low-latency, real-time market data feeds cover the various asset classes and markets in the NYSE Group","href":"/market-data/real-time","isOnMobile":true,"openInNewTab":false},{"id":"a60eed72-fbc8-4f15-94d9-462dc874e546","title":"Historical Market Data","description":"Cross asset class data across markets in the NYSE Group and on the CTA and UTP nationally consolidated data feeds","href":"/market-data/historical","isOnMobile":true,"openInNewTab":false},{"id":"acf9fe46-540e-44fe-b030-dca27f8b984d","title":"Reference Data","description":" Designed to improve risk management and provide insights into key company transaction activity","href":"/market-data/reference","isOnMobile":true,"openInNewTab":false}]},{"id":"27a56b7e-cde6-4bd6-92bd-f81167b9beaf","heading":"Tools & Resources","links":[{"id":"7c41104a-c0e0-4c69-83dd-d981d0f9a391","title":"Statistics & Data Library","description":"Volumes, transactions and other market reporting","href":"/data/transactions-statistics-data-library","isOnMobile":true,"openInNewTab":false},{"id":"98f5c765-d9b7-48fb-93aa-6656ed3b25b9","title":"Data Pricing, Policies, Contracts & Guidelines","description":"Key contractual documents for NYSE data","href":"/market-data/pricing-policies-contracts-guidelines","isOnMobile":true,"openInNewTab":false},{"id":"7c31e240-0dbd-4358-bcb6-db132cb84e9f","title":"Connectivity Documentation","description":"Required contracts, documentation, and policies which govern vendor use and distribution of NYSE market data ","href":"/connectivity/documents","isOnMobile":true,"openInNewTab":false},{"id":"37c29035-cdc5-4680-b0b6-a338320d20c9","title":"Order Entry & Reports","description":"Specifications, post trade user guides for connectivity","href":"/connectivity/specs","isOnMobile":true,"openInNewTab":false},{"id":"fae3ce57-56be-448c-84cf-ad3d07de32f3","title":"ICE Global Network","description":"Connecting the global market community to the broadest ranges of data sources","href":"https://www.theice.com/data-services/global-network","isOnMobile":true,"openInNewTab":false},{"id":"2d296510-7098-40e8-989a-41302baf3342","title":"Academic Customers","description":"Eligible products and policies for academic use","href":"https://www.nyse.com/market-data/academics","isOnMobile":true,"openInNewTab":false},{"id":"8d320bc6-5d49-4ce6-8091-1f33932e93d3","href":"https://www.theice.com/widget-library","isOnMobile":true,"openInNewTab":true,"title":"Widget Library","description":"Integrate financial data into your platform"}]}],"title":"Data","href":"","isHighlighted":false},{"id":"565166ae-f463-4ecb-ab6b-147be01dd130","sections":[{"id":"1a5ce280-673f-4124-ba05-4c4fd2d362a4","heading":"Regulatory Guidance for our Markets","links":[{"id":"03da427a-28bd-435e-9daa-c72ed3bc9845","title":"NYSE","description":"","href":"/regulation/nyse","isOnMobile":true,"openInNewTab":false},{"id":"9b108052-6ec1-4b62-8d3d-15e8f4deabcd","title":"NYSE American","description":"","href":"/regulation/nyse-american","isOnMobile":true,"openInNewTab":false},{"id":"85d2498a-230e-451d-a1eb-b76b508b507b","title":"NYSE Arca Equities","description":"","href":"/regulation/nyse-arca","isOnMobile":true,"openInNewTab":false},{"id":"81578615-ce43-4b2c-a09d-6c1d623286a9","title":"NYSE Arca Options","description":"","href":"/regulation/arca-options","isOnMobile":true,"openInNewTab":false},{"id":"27b49702-efae-47ad-8adb-72d657ae3066","title":"NYSE American Options","description":"","href":"/regulation/american-options","isOnMobile":true,"openInNewTab":false},{"id":"87cab07e-1759-468b-834d-71481eb164c7","title":"NYSE National","description":"","href":"/regulation/nyse-national/rules","isOnMobile":true,"openInNewTab":false},{"id":"dd85a759-1b6a-4282-870d-cc7d1ef08f23","title":"NYSE Chicago","description":"","href":"/regulation/nyse-chicago/rules","isOnMobile":true,"openInNewTab":false}]},{"id":"110626f5-00dd-46c2-95a7-ba3ef8603cfe","heading":"Regulation Resources","links":[{"id":"5697d06c-2246-483d-9a02-a37094532056","title":"Rule Filings","description":"Filings, amendments, SEC releases, extensions, and withdrawals","href":"/regulation/rule-filings","isOnMobile":true,"openInNewTab":false},{"id":"ec851b7a-9550-4ac3-bc59-6de53942c3b0","title":"Rules","description":"Rules for all NYSE Group exchanges","href":"/regulation/rules","isOnMobile":true,"openInNewTab":false},{"id":"64807e50-51d3-4475-9554-ddae8a5c294a","title":"Rule Interpretations","description":"Interpretations, info memos, weekly and education bulletins, and rule changes","href":"/regulation/rule-interpretations","isOnMobile":true,"openInNewTab":false},{"id":"ce85ee6c-bb0f-4311-a16e-6a06f1345a17","title":"Regulation SHO","description":"Threshold securities listed for every settlement day.","href":"/regulation/threshold-securities","isOnMobile":true,"openInNewTab":false},{"id":"5f978b2a-aa55-4f31-8832-180b70cd6c91","title":"Noncompliant Issuers","description":"Issuers noncompliant with standards of delaying filing annual or interim reports","href":"/regulation/noncompliant-issuers","isOnMobile":true,"openInNewTab":false},{"id":"10dcbbac-c8c9-46a0-8d33-9d66c7f80fff","title":"Delistings","description":"Issuers pending delisting form the Exchange","href":"/regulation/delistings","isOnMobile":true,"openInNewTab":false},{"id":"e1c459d2-17c8-4ca2-8d64-1f9a9674e070","title":"Disciplinary Actions","description":"List of NYSE Group exchange disciplinary actions","href":"/regulation/disciplinary-actions","isOnMobile":true,"openInNewTab":false},{"id":"650314d4-da4e-4770-a4e1-cbd359d9ee8e","title":"Proxy Rulings","description":"List of discretionary/nondiscretionary vote determinations","href":"/proxy-rulings","isOnMobile":true,"openInNewTab":false}]}],"title":"Regulation","href":"","isHighlighted":false},{"id":"dfdc4e95-c439-4f8e-b922-bc3e03bac77f","sections":[{"cta":{"label":"View More","href":"https://www.theice.com/insights/market-pulse"},"id":"a9bfc2f2-1485-4b09-8d0b-c3f6eed2eac7","heading":"Market Pulse","links":[{"id":"b1da6311-2821-4cf2-899a-acf82e18fe3d","title":"Energy","description":"Thought leadership across energy markets","href":"https://www.theice.com/insights/market-pulse/energy","isOnMobile":true,"openInNewTab":false},{"id":"e9f37a90-cd8f-449b-8975-e72a9b1afb5c","title":"Fixed Income","description":"Analysis on bond markets","href":"https://www.theice.com/insights/market-pulse/fixed-income","isOnMobile":true,"openInNewTab":false},{"id":"53578e56-7f88-4e0f-ab13-7e3916b75322","title":"Equities","description":"U.S. equity market insights","href":"https://www.nyse.com/research","isOnMobile":true,"openInNewTab":false}]},{"cta":{"label":"View More","href":"https://www.theice.com/insights/conversations"},"id":"40595d0f-8c98-42d7-8562-626324d6246e","heading":"Conversations","links":[{"id":"97c0afa0-344e-456e-a6cc-a0a9b6259f7e","title":"Future in Five","description":"Future perspectives in five questions","href":"https://www.ice.com/insights/conversations/future-in-five","isOnMobile":true},{"id":"7ae9bd15-6b55-461c-ac2d-b6ee2162ed4f","title":"Digital Leaders","description":"Interactive discussions on navigating digitalization","href":"https://www.ice.com/insights/conversations/digital-leaders","isOnMobile":true},{"id":"237606e8-8d5b-4b74-8ae2-559d20be741f","title":"Inside the ICE House","description":"Conversations with leaders, entrepreneurs and visionaries","href":"https://www.theice.com/insights/conversations/inside-the-ice-house?utm_source=NYSE&utm_medium=Navigation&utm_campaign=Insights","isOnMobile":true,"openInNewTab":false},{"id":"7e7d907f-d167-4bf9-8d88-4fed274922f0","href":"https://www.theice.com/insights/conversations/nyse-briefs","description":"Servicing our investor communities","title":"NYSE Briefs","isOnMobile":true},{"id":"8d3e64ae-bc89-4432-b518-4897c4ebcef2","title":"Taking Stock","href":"/taking-stock/all","description":"Behind-the-scenes original reporting"},{"id":"ed8fb900-ec87-4a5f-9c2c-12dc0899d9e0","title":"Work This Way","description":"Interviews from business leaders' home offices","href":"https://www.theice.com/insights/conversations/work-this-way","isOnMobile":true,"openInNewTab":false}]}],"title":"Insights","href":"","isHighlighted":false}],"searchCollections":"nyse_pages_cms2,nyse_marketstatus,nyse_traderupdates,nyse_uploadedfiles,nyse_quotes,nyse_appurls","searchPageUrl":"/site-search","isSecondaryNav":false,"showSearchBar":true,"titleHref":"","overrideBgColor":false,"ctaButtons":[],"linkUnderbarColor":"ice-blue","inverseLinkColor":false}}]},"initializeComponents":false}}]},"url":"/header/markets-general"}},{"id":"741aa33e-3f3d-4524-89f7-f5c437da9261","name":"cms-component-top-nav","props":{"slots":{},"logo":{"classname":"logo-ice","alt":"ICE"},"menus":[{"id":"d6110e6d-fdfe-4d4d-886e-37b44be65020","sections":[{"id":"8db85d0c-cd37-4ab7-8982-af8ffb3fc683","heading":"","links":[]}],"title":"Market Status","href":"/market-status/history","isHighlighted":false},{"id":"f7fbbde8-25b6-47a5-a3d5-7391bd8a70bf","sections":[{"id":"40a859eb-2dc0-438f-a041-05a28c4bfdb3","heading":"","links":[]}],"title":"Trader Updates","href":"/trader-update/history","isHighlighted":false},{"id":"255c4520-8230-4c7a-9028-5faaad5523d8","sections":[{"id":"8ac00fe2-103c-4965-ada3-491ff7491e6c","heading":"","links":[]}],"title":"Notices","href":"/markets/notices","isHighlighted":false},{"id":"2831c582-b401-472f-8c85-623ca5a29c2a","sections":[{"id":"2f679c1d-e071-4496-bf79-09fd88c0f4d2","heading":"","links":[]}],"title":"Hours & Holidays","href":"/markets/hours-calendars","isHighlighted":false},{"id":"8a1b5e11-5080-49d4-b472-974b93e962a8","sections":[{"id":"c99195f9-3e77-4bbe-a701-fbe0af4735cc","heading":"","links":[]}],"title":"Fees","href":"/markets/fees","isHighlighted":false},{"id":"5a188b49-21b6-4c1d-9bb4-282bffc0813b","sections":[{"id":"ad361af9-d624-40d6-a476-ea27a97fd081","heading":"","links":[]}],"title":"Order Types","href":"/markets/order-types","isHighlighted":false},{"id":"2e6d4cae-6bcc-4eb0-ace4-ede63bf5917a","sections":[{"id":"a45c78d6-65d2-4a90-87b5-cc6b9d45172d","heading":"","links":[]}],"title":"Market Reports","href":"/markets/reports","isHighlighted":false},{"id":"aa96be72-7146-40c6-8167-d6a62d3c8b2c","sections":[{"id":"6c99546b-8e34-4d63-b01b-d5af1edeefeb","heading":"","links":[]}],"title":"Subscription Center","href":"/subscriptions","isHighlighted":false}],"searchCollections":[],"searchPageUrl":"/site-search","isSecondaryNav":true,"showSearchBar":true,"titleHref":"/trade","overrideBgColor":false,"ctaButtons":[],"linkUnderbarColor":"ice-blue","inverseLinkColor":false,"navTitle":"Markets","bgColor":"#eceded","elementId":"content-c90a2878-1e34-450d-88bb-b8be75560564"}},{"id":"cc378222-c2be-4109-8957-8e1bc53c492d","name":"cms-component-nyse-login","props":{"slots":{"footer":[{"id":"667b57c6-6fe4-4878-a38d-a58c794f7ad8","name":"cms-component-partial","props":{"slots":{"content":[{"name":"cms-template-partial","id":"3d119b2d-2191-4408-bc53-d142e68f6d38","props":{"slots":{"body":[{"id":"9b4983fc-4a14-4935-9bda-e28fce5e9fdf","name":"cms-component-raw-html","props":{"slots":{},"html":"<p class=\"landing-page-subheader\">Featured Product<\/p>\n<div class=\"tile-row\">\n<a href=\"/connect\" class=\"tile tile-bordered\"><div class=\"tile-content\"><div class=\"tile-title\">NYSE Connect<\/div> <p>We consulted our listed community about what they need in a market data platform to support their IR programs. Based on their feedback, we created the new NYSE Connect – a comprehensive, intuitive market data solution that puts all the information you need in one place.<\/p><p class=\"standalone-link\">Learn More About NYSE Connect<\/p><\/div><\/a><\/div>"}}]},"initializeComponents":false}}]},"url":"/login/promo"}}],"0fb14fdd-5e2e-4e83-9bc3-ecbbf279bead":[{"id":"3cb328a1-2d3b-4df9-bbd5-9ada944ed2ae","name":"cms-component-partial","props":{"slots":{"content":[{"name":"cms-template-partial","id":"7f8998b3-4c54-4ffb-9c75-18a8ebd6ea18","props":{"slots":{"body":[{"id":"bb279bf9-08aa-422d-a2a0-2ad431c8e04f","name":"cms-component-raw-html","props":{"slots":{},"html":"<div class=\"text-center\">\n  <p>\n    <strong>Registered NYSE-Listed Companies<\/strong> can access information on today’s financial markets\n    with the newly redesigned NYSE Connect.<\/p>\n  <p class=\"hidden-xs hidden-sm\">\n    <a href=\"#launch\" class=\"btn btn-info btn-more\">Launch NYSE Connect<\/a>\n  <\/p>\n  <p class=\"hidden-xs\">\n    <a rel=\"noopener noreferrer\" class=\"btn btn-more\" href=\"https://connect.nyse.com/Registration/Signup.aspx\" target=\"_blank\">Register for NYSE Connect<\/a>\n  <\/p>\n  <p class=\"visible-xs\">\n    <a rel=\"noopener noreferrer\" class=\"btn btn-more\" href=\"https://connect.nyse.com/Registration/Signup.aspx\" target=\"_blank\">Register<\/a>\n  <\/p>\n<\/div>\n<div class=\"row\">\n  <div class=\"col-md-12 hidden-sm hidden-xs\">\n    <div class=\"text-center\">\n      <img src=\"/publicdocs/images/NYSEConnect_Login_450x230_20160426.png\" width=\"100%\" alt=\"NYSE Connect Desktop\">\n    <\/div>\n  <\/div>\n  <div class=\"visible-xs visible-sm\">\n    <div class=\"col-xs-7\">\n      <p>\n        <img src=\"/publicdocs/images/NYSEConnect_Login_450x230_20160426.png\" width=\"100%\" alt=\"NYSe Connect Login Screen mobile\">\n      <\/p>\n    <\/div>\n    <div class=\"col-xs-5\">\n      <p class=\"visible-xs visible-sm secondary-header\">Access NYSE Connect on Mobile<\/p>\n      <ul class=\"list-featured visible-xs visible-sm\">\n        <li>\n          <a rel=\"noopener noreferrer\" href=\"https://itunes.apple.com/us/app/nyse-connect-mobile/id1099180945?mt=8\" target=\"_blank\">iPhone &amp; iPad<\/a>\n        <\/li>\n        <li>\n          <a rel=\"noopener noreferrer\" href=\"https://play.google.com/store/apps/details?id=idc.mobile.nyse&amp;hl=en\" target=\"_blank\">Android<\/a>\n        <\/li>\n      <\/ul>\n    <\/div>\n  <\/div>\n<\/div>"}}]},"initializeComponents":false}}]},"url":"/flyout/login"}}],"9846bc1a-e1a8-493e-b8a5-d1e68d11104d":[{"id":"52a1d69d-83df-4fcc-a0b5-7c7d2e29bea8","name":"cms-component-partial","props":{"slots":{"content":[{"name":"cms-template-partial","id":"3482183b-c392-4032-aee9-71529c9cc79d","props":{"slots":{"body":[{"id":"94a2607f-5842-4a60-9362-cb2299a0dea3","name":"cms-component-raw-html","props":{"slots":{},"html":"<div class=\"text-center\">  <p>The digital Listing Manager provides registered NYSE-listed companies with all the functionality related to the submission of cash dividends and any form of stock distributions.<\/p>\n  <p class=\"hidden-xs hidden-sm\">\n    <a rel=\"noopener noreferrer\" href=\"https://listingmanager.nyse.com\" class=\"btn btn-info btn-more\" target=\"_blank\">Launch Listing Manager<\/a><\/p>\n<p class=\"hidden-xs hidden-sm\"><a class=\"btn btn-more\" href=\"mailto:ListingManager@nyse.com?subject=Request%20for%20Listing%20Manager%20Access&amp;body=I%20would%20like%20to%20request%20access%20to%20the%20NYSE%20Listing%20Manager%2E%20%20Below%20is%20my%20information%3A%0D%0A%0D%0AName%3A%20%0D%0AEmail%3A%20%0D%0APhone%3A%20%0D%0ATitle%3A%20%0D%0ARole%3A%20%0D%0ACompany%3A%20%0D%0ASymbol%3A%20%0D%0A\">Register for Listing Manager<\/a>\n  <\/p>\n<\/div>\n<div class=\"visible-xs visible-sm text-center\">\n <a rel=\"noopener noreferrer\" href=\"https://listingmanager.nyse.com\" class=\"btn btn-info btn-more\" target=\"_blank\">Launch <\/a><br><br>\n<a class=\"btn btn-more\" href=\"mailto:ListingManager@nyse.com?subject=Request%20for%20Listing%20Manager%20Access&amp;body=I%20would%20like%20to%20request%20access%20to%20the%20NYSE%20Listing%20Manager%2E%20%20Below%20is%20my%20information%3A%0D%0A%0D%0AName%3A%20%0D%0AEmail%3A%20%0D%0APhone%3A%20%0D%0ATitle%3A%20%0D%0ARole%3A%20%0D%0ACompany%3A%20%0D%0ASymbol%3A%20%0D%0A\">Register<\/a>\n<\/div>"}}]},"initializeComponents":false}}]},"url":"/login/listing-manager"}}],"69beb34b-4493-47b2-a01e-a396c4ed955a":[],"bbf65d1d-e5fc-4f13-92b8-152ab2868d83":[{"id":"bfc3cb59-1a6e-4c7d-be5b-0e3ba174bdc0","name":"cms-component-partial","props":{"slots":{"content":[{"name":"cms-template-partial","id":"cc07e3a1-520f-440b-b1d4-02b2f1da23b2","props":{"slots":{"body":[{"id":"a49a20a4-ff9a-4951-b962-f7af6e88a2fc","name":"cms-component-raw-html","props":{"slots":{},"html":"<div class=\"text-center\">  <p>Data Services Dashboard provides market data and connectivity services customers with access to their account information, approval requests and reporting tools. <\/p>\n  <p class=\"\">\n    <a rel=\"noopener noreferrer\" href=\"https://dashboard.theice.com\" class=\"btn btn-more\" target=\"_blank\">Launch Data Services Dashboard<\/a><\/p>\n<p class=\"\"><a rel=\"noopener noreferrer\" class=\"btn btn-more\" href=\"https://sso.theice.com/requestGlobalId?loginApp=DSD&amp;redirectUrl=https://dashboard.theice.com#pageRequestGlobalId\" target=\"_blank\">Register for Data Services Dashboard<\/a>\n  <\/p>\n<\/div>\n"}}]},"initializeComponents":false}}]},"url":"/login/data-services-dashboard"}}]},"options":[{"id":"0fb14fdd-5e2e-4e83-9bc3-ecbbf279bead","url":"#launch","displayName":"NYSE Connect"},{"id":"9846bc1a-e1a8-493e-b8a5-d1e68d11104d","url":"https://listingmanager.nyse.com","displayName":"Listing Manager"},{"id":"69beb34b-4493-47b2-a01e-a396c4ed955a","url":"http://jar.theice.com/current/ice_connect.jnlp?link=ICECONNECT&useIDP=true","displayName":"Instant Messaging"},{"id":"bbf65d1d-e5fc-4f13-92b8-152ab2868d83","url":"https://dashboard.theice.com","displayName":"Data Services Dashboard"}],"submitButtonText":"Go"}},{"id":"fb475722-d453-4bd7-98b4-5019e858d548","name":"cms-component-nyse-launcher","props":{"slots":{"loginModalFooter":[{"id":"13311ec6-a876-4a66-9ae4-c04ff6af42d9","name":"cms-component-raw-html","props":{"slots":{},"html":"<strong>Help Desk<\/strong> 24-hour support<br>\n<br>\nAMERS: 1-800-281-3659<br>\nEMEA: +44 203 948 6501 Option 4, Sub-option 1<br>\nAPAC: +852 3018 8279 Option 4, Sub-option 1<br>"}}]},"messageTimeout":5000,"heartbeatInterval":3600000,"launcherModalTitle":"Connect","isLogoutDisabled":true,"method":"GET","elementId":"content-af233220-53c3-4597-9ac4-69b3417c5406"}}]}}}]},"initializeComponents":false}}],"footerContent":[{"name":"cms-template-partial","id":"3cbb2a86-8328-42a9-8b7c-4f7b1c67678f","props":{"slots":{"body":[{"name":"cms-component-layout-nyse-footer","id":"ef16e844-3b33-40b9-bc7d-89504cac0cf5","props":{"slots":{"footer":[{"id":"c38fe25a-c25a-4cd2-abd1-823cf5b708c6","name":"cms-component-raw-html","props":{"slots":{},"html":"<hr class=\"hr-dotted hidden-xs\" />\n\n<div class=\"split spacer-lg hidden-xs\">\n  <div class=\"split-left\">© Copyright 2022 Intercontinental Exchange, Inc.<\/div>\n  <div class=\"split-right\">\n    <ul class=\"list-featured-inline text-right spacer-xs\">\n      <li>\n        <a\n          class=\"txt\"\n          href=\"https://www.intercontinentalexchange.com/terms-of-use\"\n          title=\"Terms of Use\"\n          >Terms of Use<\/a\n        >\n      <\/li>\n      <li>\n        <a\n          class=\"txt\"\n          href=\"https://www.intercontinentalexchange.com/privacy-policy\"\n          title=\"Privacy Policy\"\n          >Privacy Policy<\/a\n        >\n      <\/li>\n      <li class=\"hidden-xs\">\n        <a class=\"txt\" href=\"https://www.theice.com/security\" title=\"Security\"\n          >Security<\/a\n        >\n      <\/li>\n      <li>\n        <a\n          class=\"txt\"\n          href=\"https://www.intercontinentalexchange.com/cookies\"\n          title=\"Cookies\"\n          >Cookies<\/a\n        >\n      <\/li>\n      <li>\n        <a class=\"txt do-not-sell\">Do Not Sell My Personal Information<\/a>\n      <\/li>\n\n      <li class=\"hidden-xs\">\n        <a\n          class=\"txt\"\n          href=\"https://www.intercontinentalexchange.com/supported-browsers\"\n          title=\"Supported Browsers\"\n          >Supported Browsers<\/a\n        >\n      <\/li>\n      <li>\n        <a\n          class=\"txt\"\n          href=\"https://www.theice.com/data-protection\"\n          title=\"Data Protection\"\n          >Data Protection<\/a\n        >\n      <\/li>\n      <li>\n        <a\n          class=\"txt\"\n          href=\"https://www.theice.com/registered-investment-adviser-notice\"\n          title=\"Registered Investment Adviser Notice\"\n          >Registered Investment Adviser Notice<\/a\n        >\n      <\/li>\n    <\/ul>\n  <\/div>\n<\/div>\n\n<div class=\"text-center visible-xs\">\n  <p>© Copyright 2022 Intercontinental Exchange, Inc.<\/p>\n  <ul class=\"list-featured-inline spacer-xs\">\n    <li>\n      <a\n        href=\"https://www.intercontinentalexchange.com/terms-of-use\"\n        title=\"Terms of Use\"\n        >Terms of Use<\/a\n      >\n    <\/li>\n    <li>\n      <a\n        href=\"https://www.intercontinentalexchange.com/privacy-policy\"\n        title=\"Privacy Policy\"\n        >Privacy Policy<\/a\n      >\n    <\/li>\n    <li class=\"hidden-xs\">\n      <a href=\"https://www.theice.com/security\" title=\"Security\">Security<\/a>\n    <\/li>\n    <li>\n      <a href=\"https://www.intercontinentalexchange.com/cookies\" title=\"Cookies\"\n        >Cookies<\/a\n      >\n    <\/li>\n    <li><a class=\"txt do-not-sell\">Do Not Sell My Personal Information<\/a><\/li>\n\n    <li class=\"hidden-xs\">\n      <a\n        href=\"https://www.intercontinentalexchange.com/supported-browsers\"\n        title=\"Supported Browsers\"\n        >Supported Browsers<\/a\n      >\n    <\/li>\n    <li>\n      <a href=\"https://www.theice.com/data-protection\" title=\"Data Protection\"\n        >Data Protection<\/a\n      >\n    <\/li>\n    <li>\n      <a\n        href=\"https://www.theice.com/registered-investment-adviser-notice\"\n        title=\"Registered Investment Adviser Notice\"\n        >Registered Investment Adviser Notice<\/a\n      >\n    <\/li>\n  <\/ul>\n<\/div>\n\n<style>\n  .iconSocial {\n  display: inline-block;\n  width: 20px;\n  height: 20px;\n  background-size: cover;\n  margin-left: 5px;\n  }\n  .iconListed {\n  display: inline-block;\n  width: 50px;\n  height: 50px;\n  background-size: cover;\n  margin-left: -5px;\n  }\n  .icon-listed {\n  background-image: url(/publicdocs/images/ICE_Listed_NYSE.svg);\n  }\n  .icon-listed:hover,\n  .icon-listed:focus {\n  filter: invert(49%) sepia(96%) saturate(1546%) hue-rotate(154deg) brightness(99%) contrast(102%);\n  }\n  .icon-facebook {\n  background-image: url(/publicdocs/images/Social_Icon_Facebook.svg);\n  }\n  .icon-facebook:hover,\n  .icon-facebook:focus {\n  filter: invert(49%) sepia(96%) saturate(1546%) hue-rotate(154deg) brightness(99%) contrast(102%);\n  }\n  .icon-instagram {\n  background-image: url(/publicdocs/images/Social_Icon_Instagram.svg);\n  }\n  .icon-instagram:hover,\n  .icon-instagram:focus {\n  filter: invert(49%) sepia(96%) saturate(1546%) hue-rotate(154deg) brightness(99%) contrast(102%);\n  }\n  .icon-linkedin {\n  background-image: url(/publicdocs/images/Social_Icon_LinkedIn.svg);\n  }\n  .icon-linkedin:hover,\n  .icon-linkedin:focus {\n  filter: invert(49%) sepia(96%) saturate(1546%) hue-rotate(154deg) brightness(99%) contrast(102%);\n  }\n  .icon-pinterest {\n  background-image: url(/publicdocs/images/Social_Icon_Pinterest.svg);\n  }\n  .icon-pinterest:hover,\n  .icon-pinterest:focus {\n  filter: invert(49%) sepia(96%) saturate(1546%) hue-rotate(154deg) brightness(99%) contrast(102%);\n  }\n  .icon-twitter {\n  background-image: url(/publicdocs/images/Social_Icon_Twitter.svg);\n  }\n  .icon-twitter:hover,\n  .icon-twitter:focus {\n  filter: invert(49%) sepia(96%) saturate(1546%) hue-rotate(154deg) brightness(99%) contrast(102%);\n  }\n  .txt, a.txt, .txt:hover, a.txt:hover { color: black }\n<\/style>"}},{"id":"8f39229a-b0b4-4703-b40a-9003744a9f35","name":"cms-component-raw-html","props":{"slots":{},"html":"<script>\n  [].slice\n    .call(document.querySelectorAll(\".do-not-sell\"))\n    .forEach(function (el) {\n      el.addEventListener(\"click\", function (e) {\n        OneTrust.ToggleInfoDisplay();\n      });\n    });\n<\/script>"}}],"subFooter":[],"subfooter":[{"id":"b2429a45-3b12-4d09-b0b9-dc80b084ef9a","name":"cms-component-raw-html","props":{"slots":{},"html":"<div class=\"row hidden-xs\">\n  <br />\n  <div class=\"true-grid-quarter\">\n    <p class=\"lead spacer-sm\">\n      <a\n        title=\"About Us\"\n        href=\"https://www.intercontinentalexchange.com\"\n        class=\"txt\"\n        >About Us<\/a\n      >\n    <\/p>\n    <ul class=\"list-featured txt spacer-sm\">\n      <li>\n        <a\n          title=\"Our Business\"\n          href=\"https://www.intercontinentalexchange.com/about\"\n          class=\"txt\"\n          >Our Business<\/a\n        >\n      <\/li>\n      <li>\n        <a title=\"Investors\" href=\"http://ir.theice.com\" class=\"txt\"\n          >Investors<\/a\n        >\n      <\/li>\n      <li>\n        <a\n          title=\"Media\"\n          href=\"http://ir.theice.com/press/press-releases/all-categories/all-stories\"\n          class=\"txt\"\n          >Media<\/a\n        >\n      <\/li>\n      <li>\n        <a\n          rel=\"noopener noreferrer\"\n          title=\"Careers\"\n          href=\"https://www.ice.com/careers\"\n          target=\"_blank\"\n          class=\"txt\"\n          >Careers<\/a\n        >\n      <\/li>\n      <li>\n        <a\n          title=\"Corporate Citizenship\"\n          href=\"https://www.intercontinentalexchange.com/about/corporate-responsibility\"\n          class=\"txt\"\n          >Corporate Citizenship<\/a\n        >\n      <\/li>\n    <\/ul>\n\n    <div class=\"hidden-xs\">\n      <a title=\"ICE Listed NYSE\" href=\"https://www.nyse.com/quote/XNYS:ICE\"\n        ><span class=\"iconListed icon-listed\"> <\/span\n      ><\/a>\n    <\/div>\n  <\/div>\n\n  <div class=\"true-grid-quarter\">\n    <p class=\"lead spacer-sm\">\n      <a title=\"ICE\" href=\"https://www.theice.com\" class=\"txt\">ICE<\/a>\n    <\/p>\n    <ul class=\"list-featured\">\n      <li>\n        <a\n          title=\"Exchanges\"\n          href=\"https://www.theice.com/about/exchanges-clearing\"\n          class=\"txt\"\n          >Exchanges<\/a\n        >\n      <\/li>\n      <li>\n        <a\n          title=\"Fixed Income &amp; Data Services\"\n          href=\"https://www.theice.com/about/fixed-income-data\"\n          class=\"txt\"\n          >Fixed Income &amp; Data Services<\/a\n        >\n      <\/li>\n      <li>\n        <a\n          title=\"Mortgage Technology\"\n          href=\"https://www.theice.com/about/mortgage-technology\"\n          class=\"txt\"\n          >Mortgage Technology<\/a\n        >\n      <\/li>\n      <li>\n        <a\n          title=\"Futures &amp; Options\"\n          href=\"https://www.theice.com/products\"\n          class=\"txt\"\n          >Futures &amp; Options<\/a\n        >\n      <\/li>\n      <li>\n        <a title=\"Trade\" href=\"https://www.theice.com/trade\" class=\"txt\"\n          >Trade<\/a\n        >\n      <\/li>\n      <li>\n        <a title=\"Clearing\" href=\"https://www.theice.com/clearing\" class=\"txt\"\n          >Clearing<\/a\n        >\n      <\/li>\n      <li>\n        <a title=\"Data\" href=\"https://www.theice.com/market-data\" class=\"txt\"\n          >Data<\/a\n        >\n      <\/li>\n      <li>\n        <a title=\"Benchmarks\" href=\"https://www.theice.com/iba\" class=\"txt\"\n          >Benchmarks<\/a\n        >\n      <\/li>\n      <li>\n        <a\n          title=\"Reports\"\n          href=\"https://www.theice.com/marketdata/reports\"\n          class=\"txt\"\n          >Reports<\/a\n        >\n      <\/li>\n      <li>\n        <a title=\"Contact\" href=\"https://www.theice.com/contact\" class=\"txt\"\n          >Contact<\/a\n        >\n      <\/li>\n    <\/ul>\n  <\/div>\n\n  <div class=\"true-grid-quarter\">\n    <p class=\"lead spacer-sm\">\n      <a title=\"NYSE\" href=\"https://www.nyse.com\" class=\"txt\">NYSE<\/a>\n    <\/p>\n    <ul class=\"list-featured\">\n      <li>\n        <a title=\"List\" href=\"https://www.nyse.com/list\" class=\"txt\">List<\/a>\n      <\/li>\n      <li>\n        <a title=\"Trade\" href=\"https://www.nyse.com/trade\" class=\"txt\">Trade<\/a>\n      <\/li>\n      <li>\n        <a title=\"Data\" href=\"https://www.nyse.com/data-and-tech\" class=\"txt\"\n          >Data<\/a\n        >\n      <\/li>\n      <li>\n        <a title=\"Insights\" href=\"https://www.nyse.com/research\" class=\"txt\"\n          >Insights<\/a\n        >\n      <\/li>\n      <li>\n        <a title=\"Regulation\" href=\"https://www.nyse.com/regulation\" class=\"txt\"\n          >Regulation<\/a\n        >\n      <\/li>\n      <li>\n        <a title=\"NYSE Connect\" href=\"https://www.nyse.com/connect\" class=\"txt\"\n          >NYSE Connect<\/a\n        >\n      <\/li>\n      <li>\n        <a\n          title=\"Subscriptions\"\n          href=\"https://www.nyse.com/subscriptions\"\n          class=\"txt\"\n          >Subscriptions<\/a\n        >\n      <\/li>\n      <li>\n        <a title=\"Media Center\" href=\"https://www.nyse.com/media\" class=\"txt\"\n          >Media Center<\/a\n        >\n      <\/li>\n      <li>\n        <a title=\"Contact\" href=\"https://www.nyse.com/contact\" class=\"txt\"\n          >Contact<\/a\n        >\n      <\/li>\n    <\/ul>\n  <\/div>\n\n  <div class=\"true-grid-quarter text-right\">\n    <p class=\"lead spacer-sm\">Follow Us<\/p>\n\n    <p class=\"spacer-xs\">NYSE<\/p>\n    <div class=\"spacer-md\">\n      <a title=\"NYSE Twitter\" href=\"https://www.twitter.com/nyse\"\n        ><span title=\"Twitter Logo\" class=\"iconSocial icon-twitter\"> <\/span\n      ><\/a>\n      <a title=\"NYSE Facebook\" href=\"https://www.facebook.com/nyse\"\n        ><span title=\"Facebook Logo\" class=\"iconSocial icon-facebook\"> <\/span\n      ><\/a>\n      <a title=\"NYSE LinkedIn\" href=\"https://www.linkedin.com/company/nyse\"\n        ><span title=\"LinkedIn Logo\" class=\"iconSocial icon-linkedin\"> <\/span\n      ><\/a>\n      <a title=\"NYSE Instagram\" href=\"https://www.instagram.com/nyse\"\n        ><span title=\"Instagram Logo\" class=\"iconSocial icon-instagram\"> <\/span\n      ><\/a>\n      <a title=\"NYSE Pinterest\" href=\"https://www.pinterest.com/nyse\"\n        ><span title=\"Pinterest Logo\" class=\"iconSocial icon-pinterest\"> <\/span\n      ><\/a>\n    <\/div>\n\n    <p class=\"spacer-xs\">ICE<\/p>\n    <div class=\"spacer-md\">\n      <a title=\"ICE Twitter\" href=\"https://www.twitter.com/ICE_Markets\"\n        ><span title=\"Twitter Logo\" class=\"iconSocial icon-twitter\"> <\/span\n      ><\/a>\n\n      <a\n        title=\"ICE LinkedIn\"\n        href=\"https://www.linkedin.com/company/intercontinentalexchange-inc-\"\n        ><span title=\"LinkedIn Logo\" class=\"iconSocial icon-linkedin\"> <\/span\n      ><\/a>\n    <\/div>\n\n    <p class=\"spacer-xs\">ICE Data Services<\/p>\n    <div class=\"spacer-md\">\n      <a\n        title=\"ICE Data Services LinkedIn\"\n        href=\"https://www.linkedin.com/company/ice-data-services\"\n        ><span title=\"LinkedIn Logo\" class=\"iconSocial icon-linkedin\"> <\/span\n      ><\/a>\n    <\/div>\n  <\/div>\n<\/div>\n\n<ul class=\"page-subfooter-links visible-xs\">\n  <li>\n    <a\n      title=\"Intercontinental Exchange\"\n      href=\"https://www.intercontinentalexchange.com\"\n      >Intercontinental Exchange<\/a\n    >\n  <\/li>\n  <li><a title=\"ICE\" href=\"https://www.theice.com\">ICE<\/a><\/li>\n  <li><a title=\"NYSE\" href=\"https://www.nyse.com\">NYSE<\/a><\/li>\n  <li><a title=\"Investors\" href=\"http://ir.theice.com\">Investors<\/a><\/li>\n<\/ul>\n\n<ul class=\"page-subfooter-links visible-xs\">\n  <li>\n    <a title=\"NYSE Twitter\" href=\"https://www.twitter.com/nyse\"\n      ><span title=\"Twitter Logo\" class=\"iconSocial icon-twitter\"> <\/span\n    ><\/a>\n  <\/li>\n  <li>\n    <a title=\"NYSE Facebook\" href=\"https://www.facebook.com/nyse\"\n      ><span title=\"Facebook Logo\" class=\"iconSocial icon-facebook\"> <\/span\n    ><\/a>\n  <\/li>\n  <li>\n    <a title=\"NYSE LinkedIn\" href=\"https://www.linkedin.com/company/nyse\"\n      ><span title=\"LinkedIn Logo\" class=\"iconSocial icon-linkedin\"> <\/span\n    ><\/a>\n  <\/li>\n  <li>\n    <a title=\"NYSE Instagram\" href=\"https://www.instagram.com/nyse\"\n      ><span title=\"Instagram Logo\" class=\"iconSocial icon-instagram\"> <\/span\n    ><\/a>\n  <\/li>\n  <li>\n    <a title=\"NYSE Pinterest\" href=\"https://www.pinterest.com/nyse\"\n      ><span title=\"Pinterest Logo\" class=\"iconSocial icon-pinterest\"> <\/span\n    ><\/a>\n  <\/li>\n<\/ul>"}}]}}}]},"initializeComponents":false}}],"alertContent":[{"name":"cms-template-partial","id":"da2987e7-e649-495a-9013-254d6daef5ca","props":{"slots":{"body":[{"id":"67d643be-f700-4a7d-b69b-6fe2ea3bdadf","name":"cms-component-notification-alert","props":{"slots":{},"alertText":"Market Status Alert","alerts":[{"id":"key1","systemID":"2","severityFieldValue":"15","pageURL":"/market-status/history","displayName":"Market Status Alert"}],"systemID":"2","severityFieldValue":"15","pageURL":"/market-status/history","elementId":"content-1500135100"}}]},"initializeComponents":false}}]},"widePageContent":false,"headerUrl":"/header/markets/resources","footerUrl":"/footer","stickyHeader":false}}],"adhoc-styles":[{"id":"9e51ee97-bacb-469d-acb0-e7eb7f2aefc1","name":"cms-template-partial","props":{"slots":{"body":[{"id":"56313dff-7bd9-4460-bcb7-5c7e4c53398e","name":"cms-component-adhoc-styles","props":{"slots":{},"styles":[{"id":"6e811588-c088-4a91-aaa0-261f3853af04","name":"fixes top-nav mobile menu button padding","ticket":"WEB-7351","content":"@media (max-width: 767px) {\n  .topnav > li > a,\n  .topnav > li > button {\n    padding: 0.6rem 1rem;\n  }\n}"},{"id":"826be9b7-3633-4601-b899-f48b3f60955e","name":"fix link color in mobile footer","ticket":"WEB-7471","content":"@media screen and (max-width: 767px) {\n  .page-subfooter-links>li>a {\n    color: black;\n  }\n}"}]}}]},"initializeComponents":false}}]}}</script><noscript><iframe title="GTM" src="https://www.googletagmanager.com/ns.html?id=GTM-N6K229P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div data-page="30621" data-slot="adhoc-styles"><style>@media (max-width: 767px) {
+  .topnav > li > a,
+  .topnav > li > button {
+    padding: 0.6rem 1rem;
+  }
+}</style><style>@media screen and (max-width: 767px) {
+  .page-subfooter-links>li>a {
+    color: black;
+  }
+}</style></div></body></html>

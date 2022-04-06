@@ -37,10 +37,33 @@ class Thred():
       return 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def launchStocks(self, stocks, maxStocksToTrade, testDate):
+   def launchStock(self, stock, testDate):
       
       # Change default algo in premarket.py as well
       algo = "TB1_OC_QM_OB5_OS5_CB2_CS2_TR_IR5"
+      #algo = "TB3_OC_QM_OB2_OS2_CB3_CS3_TR"
+      #algo = "TB3_HI_QM_OB2_OS2_CB4_CS4_TR"
+      #algo = "TB2_HL_HS_AL_QM_OB2_OS2_CB3_CS3_QP"
+      p = {}
+
+      print ("testDate " + testDate)
+      
+      #self.ut.writePath(self.logPath + "active" + stock + ".ls", algo)
+      #self.ut.writePath(self.debugPath + "active" + stock + ".ds", algo)
+      
+      if testDate:
+         algo = "none"
+         p = Popen([self.launchScript, testDate, algo, stock])
+      else:
+         p = Popen([self.launchScript, stock, algo, ""])
+
+      return p
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def launchStocks(self, stocks, maxStocksToTrade, testDate):
+      
+      # Change default algo in premarket.py as well
+      algo = "TB3_OC_QM_OB5_OS5_CB2_CS2_TR_IR5"
       #algo = "TB3_OC_QM_OB2_OS2_CB3_CS3_TR"
       #algo = "TB3_HI_QM_OB2_OS2_CB4_CS4_TR"
       #algo = "TB2_HL_HS_AL_QM_OB2_OS2_CB3_CS3_QP"
@@ -58,10 +81,8 @@ class Thred():
          
          if testDate:
             algo = "none"
-            print ("TESTTTTTTTTTTTT[stock]\n" + self.launchScript + " " + testDate + " " + algo + " " + stock)
             p[stock] = Popen([self.launchScript, testDate, algo, stock])
          else:
-            print ("SLAVESSSSSSSSSS[stock]\n" + self.launchScript + " " + stock + " " + algo)
             p[stock] = Popen([self.launchScript, stock, algo, ""])
          ctr += 1
          sleep(1)

@@ -148,7 +148,7 @@ for day in $days; do
    for sym in $syms; do
       
       # check if mod tests are complete and skip
-      count=$($cl "SELECT count(algo) FROM algoModData where sym = '${sym}'")
+      #count=$($cl "SELECT count(algo) FROM algoModData where sym = '${sym}'")
             
       modTestsRan=$($cl "select count(algo) from algoModData where sym = '${sym}'")            
       

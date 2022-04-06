@@ -822,41 +822,94 @@ if preMarketAnalysis and not offLine and stocksFile == "":
 if not preMarketAnalysis and not offLine:
    pid = th.launchStocks(stocks, maxStocksToTrade, os.path.basename(workPath))
 
+
 if offLine:
+   symsRunning = []
+   pids = {}
+   ctr = 1
+   for sym in stocks:
+      if ctr % maxNumProcesses == 0 and not doOneTime:
+         pids[sym] = th.launchStock(sym, os.path.basename(workPath))
+         symsRunning.append(sym)
+         ctr += 1
+         continue
+      else
+         loop = True
+         while loop:
+            for s in symsRunning:
+               if pids[s].poll() == None:
+                  #print ("pid: " + str(pids[s]))
+                  sleep(2)
+               else:
+                  lg1.debug ("Gotta poll value of: " + str(pid.poll()))
+                  lg1.debug ("for : " + str(s))
+                  symsRunning.pop(s)
+                  print ("symsRunning after pop" + str(symsRunning))
+                  symsRunning.append(sym)
+                  print ("symsRunning after append" + str(symsRunning))
+                  pids[sym] += th.launchStock(sym, os.path.basename(workPath))
+                  loop = False
+   exit (0)
    
-   stockSegs = {}
-   sSegCtr = 0
-   
-   # Setup a dict of stock arrays the size of maxNumProcesses
-   for ctr in range(len(stocks)):
-      if ctr % maxNumProcesses == 0:
-         stockSegs[sSegCtr] = stocks[ctr:(ctr+maxNumProcesses)]
-         sSegCtr += 1
-         
-   lg1.debug ("stockSegs " + str(stockSegs))
-   lg1.debug ("maxNumProcesses " + str(maxNumProcesses))
-   lg1.debug ("sSegCtr " + str(sSegCtr))
-   
-   # Launch the test program in parallel x maxNumProcesses 
-   # waiting to launch the next set of stocks
-   for ctr in range(sSegCtr):
-      pid = th.launchStocks(stockSegs[ctr], maxNumProcesses, os.path.basename(workPath))
-      lg1.debug ("pid " + str(pid))
-      lg1.debug ("stockSegs[ctr] " + str(stockSegs[ctr]))
+#   # Setup a dict of stock arrays the size of maxNumProcesses
+#   for ctr in range(len(stocks)):
+#      if ctr % maxNumProcesses == 0:
+#         stockSegs[sSegCtr] = stocks[ctr:(ctr+maxNumProcesses)]
+#         sSegCtr += 1
+#         
+#   lg1.debug ("stockSegs " + str(stockSegs))
+#   lg1.debug ("maxNumProcesses " + str(maxNumProcesses))
+#   lg1.debug ("sSegCtr " + str(sSegCtr))
+#
+#   i = 0
+#   for ctr in range(sSegCtr):
+#      print ("CTR "+ str(ctr))
+#      if ctr == 0:
+#         print ("stockSegs[ctr] " + str(stockSegs[ctr]))
+#         pid = th.launchStocks(stockSegs[ctr], maxNumProcesses, os.path.basename(workPath))
+#         
+#      print ("CTR "+ str(ctr))
+#      while True:
+#         for s in stockSegs[ctr]:
+#            print ("SSSSSSS "+ str(s))
+#            for p in pid:
+#               if p[s].poll() == None:
+#                  print ("pid: " + str(pid[p]))
+#                  sleep(2)
+#               else:
+#                  lg1.debug ("Gotta poll value of: " + str(p.poll()))
+#                  nextStock = stocks[maxNumProcesses + i]
+#                  print ("nextStock: " + nextStock)
+#                  pid[s].pop(p)
+#                  pid += th.launchStocks(nextStock, maxNumProcesses, os.path.basename(workPath))
+#                  print ("pid len: " + str(len(pid)))
+#                  #print ("p[s] stock: " + str(p.[i]))
+#                  i += 1
+#                  break
+#               break
+#            break    
 
-      #stk = stockSegs[ctr][len(stockSegs[ctr]) - 1] last
-      stk = stockSegs[ctr][0] # first
-      
-      lg1.debug ("stk " + str(stk))
 
-      # Wait till the last stock completes testing 
-      while True:
-         if pid[stk].poll() == None:
-            #lg1.debug ("waiting 5 for a poll != None")
-            sleep(5)
-         else:
-            lg1.debug ("Gotta poll value of: " + str(pid[stk].poll()))
-            break
+#   # Launch the test program in parallel x maxNumProcesses 
+#   # waiting to launch the next set of stocks
+#   for ctr in range(sSegCtr):
+#      pid = th.launchStocks(stockSegs[ctr], maxNumProcesses, os.path.basename(workPath))
+#      lg1.debug ("pid " + str(pid))
+#      lg1.debug ("stockSegs[ctr] " + str(stockSegs[ctr]))
+#
+#      #stk = stockSegs[ctr][len(stockSegs[ctr]) - 1] last
+#      stk = stockSegs[ctr][0] # first
+#      
+#      lg1.debug ("stk " + str(stk))
+#
+#      # Wait till the last stock completes testing 
+#      while True:
+#         if pid[stk].poll() == None:
+#            #lg1.debug ("waiting 5 for a poll != None")
+#            sleep(5)
+#         else:
+#            lg1.debug ("Gotta poll value of: " + str(pid[stk].poll()))
+#            break
    
 if pid:
    numLaunchedPids = len(pid)

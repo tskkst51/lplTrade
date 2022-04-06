@@ -4,7 +4,7 @@ dynamic module
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Dynamic:
-   def __init__(self, timeBar, path, dc):
+   def __init__(self, timeBar, path, dc, offLine):
    
       self.inRangeBars = 1
       
@@ -30,8 +30,10 @@ class Dynamic:
       elif timeBar == 5:
          self.inRangeBars = 1
 
-      self.bc = dc.readDailyBarChart(self.dcPath)
-      self.gd = dc.readDailyGapData(self.gpPath)
+      if not offLine:
+         self.bc = dc.readDailyBarChart(self.dcPath)
+         self.gd = dc.readDailyGapData(self.gpPath)
+      
       self.dc = dc
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

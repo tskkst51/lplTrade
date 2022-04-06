@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. $HOME/profiles/db.sh
+. $LPLT/scripts/db.sh
 
 day=$1
 
@@ -12,5 +12,7 @@ if [[ $? == 0 ]]; then
 else
    port=$(getRunningPort $day)
 fi
+
+echo port $port
 
 exit 0

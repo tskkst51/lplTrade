@@ -9,6 +9,7 @@ import os
 import time
 from optparse import OptionParser
 from pathlib import Path
+import subprocess as sub
 import sys
 import lplTrade as lpl
 
@@ -24,6 +25,8 @@ openBuyBars = [1,2,3,4,5]     # OB
 openSellBars = [1,2,3,4,5]    # OS
 closeBuyBars = [1,2,3,4,5]    # CB
 closeSellBars = [1,2,3,4,5]   # CS
+#timeBar = [1,2,3,4,5]       # TB
+#timeBar = [1,2,5]       # TB
 
 usePricesFromFile = 1
 resume = 1
@@ -43,6 +46,8 @@ megaTrendBars = [24,32,40,48]
 originalProfile = {}
 
 parseInfo = ""
+
+tmpFile = "/tmp/pqslOut"
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def getLastLine(path):
@@ -71,6 +76,7 @@ def parseLastLine(line, info):
 
    parsedLine = ""
    lineTokens = line.split()
+   numLineTokens = len(lineTokens)
    
    if lineTokens[0] != "close":
       print ("Invalid test results:" + str(line))
@@ -230,6 +236,9 @@ parser.add_option("-f", "--fresh",
 parser.add_option("-x", "--exitMaxProfit",
    action="store_true", dest="exitMaxProfit", help="exitMaxProfit")
    
+parser.add_option("-o", "--reloadData",
+   action="store_true", dest="reloadData", help="reloadData")
+
 (clOptions, args) = parser.parse_args()
 
 algo = ""
@@ -240,6 +249,7 @@ stocks = clOptions.stocks
 fresh = clOptions.fresh
 algo = clOptions.algo
 exitMaxProfit = clOptions.exitMaxProfit
+reloadData = clOptions.reloadData
 
 if not wp:
    print ("options are invalid. Need -w workPath -p profilePath ")
@@ -305,10 +315,14 @@ for minBar in db.getTestTimebars():
    info = initParseInfo()
 
    info = pf.setAlgoValues(d, algo, minBar, info)
-      
+   
+   #print ("info " + info)
+   
    algoCode = info.split("_")
    algoCode = algoCode[1]
    
+   #print ("algoCode " + algoCode)
+
    if db.algoTestPurposeAlreadyRan(stock, info, algoCode):
       print ("ALREADY RAN " + stock + " " + info)
       break
@@ -378,7 +392,9 @@ for minBar in db.getTestTimebars():
                   parsedLine = parseLastLine(lastLine, info)
                   
                   if parsedLine == "":
+                     #print ("LINE: " + info + " " + day + " " + stock)
                      db.insertNoPriceAlgoData(stock, info)
+                     #print (str(stock) + " produced no results" + str(parsedLine))
                      continue
                      
                   gain = getGain(lastLine)

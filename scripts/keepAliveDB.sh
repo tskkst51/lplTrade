@@ -5,6 +5,84 @@
 # Command to kill all processes:
 # kill $(ps | grep lplt.py|awk '{printf $1 " " }')
 
+function init {
+
+   . $LPLT/scripts/db.sh
+
+   ulimit -n 10000
+   
+   wp=$(pwd)
+   
+   day=$1
+   stock=$2
+
+   if [[ -z $1 ]]; then
+      day=""
+   fi
+   
+   lpltMaster="${wp}/bin/lpltMaster.py"
+   
+   if [[ ! -e $lpltMaster ]]; then
+      echo $lpltMaster not found!
+      exit 1
+   fi
+   
+   host=$(hostname -s)
+   
+   liveHost=""
+   
+   activateDir="/lplW2"
+ 
+   if [[ $host == "mm" ]]; then
+      liveHost="yes"
+   fi
+   
+   activateCmd=$(dirname $wp)
+   activateCmd+=$activateDir
+   activateCmd+="/bin/activate"
+   
+   py3=$(dirname $wp)
+   py3+="${activateDir}/bin/python3"
+   
+#   echo "Paths:"
+#   echo $activateCmd
+#   echo $lpltMaster
+#   echo $py3
+#   echo
+   
+   . $activateCmd || echo activation failed 
+   
+   # Execute script to populate source library path
+   $HOME/bin/lplt.sh
+   
+   dt=$(date "+%Y%m%d")
+   
+   program="lpltMaster.py"
+   testDir="${wp}/test/${dt}"
+   log="${wp}/logs/liveDebugLog_${dt}.oo"
+   cmd="$py3 $lpltMaster -d -c $HOME/profiles/et.json -p $wp/profiles/active.json"
+
+}   
+
+function cleanup {
+   
+   # Remove debug data 
+   rm -f "test/${dt}/logs/*" || echo cant remove log files
+   rm -f "test/${dt}/debug/*" || echo cant remove debug files
+}
+
+function moveDBtoTestSystem {
+   
+   gzNm="${1}.gz"
+   
+   cd "${wp}/db" || echo cant cd to db
+   
+   tar -zcf $gzNm $dt || echo cant tar $gzNm || echo cant tar $dt
+   scp $gzNm  "mmT.local:${LPLT}/dbArchive" || echo cant scp $gzNm
+   
+   cd $wp || echo cant cd to $wp
+}
+
 function endIt {
    if [[ $1 == 0 ]]; then  
       echo
@@ -38,7 +116,9 @@ function pullSlaveData {
 function tallyLiveResults {
 
    dtt=$1
-   out="docs/stats"
+   out="${wp}/docs/stats"
+   
+   cd "test/${dtt}" || echo cant cd to test $dtt
    
    echo >> $out
    echo Live results on ${dtt} >> $out
@@ -46,6 +126,8 @@ function tallyLiveResults {
    tail -1 logs/*ls >> $out
    echo Total Gain/Loss: >> $out   
    tail -1 logs/*ls|awk '{s+=$4} END {print s}' >> $out
+   
+   cd $wp || echo cant cd to $wp
 }
 
 function moveDataToTest {
@@ -86,8 +168,8 @@ function createSlaveTestData {
    mv "bc" $testDir || echo Unable to move bc directory to $testDir
    mv "logs" $testDir || echo Unable to move logs directory to $testDir
    mv "debug" $testDir || echo Unable to move debug directory to $testDir
-   rm -f ${testDir}/debug/* || echo Unable to remove ${testDir}/debug directory contents
-   rm -f ${testDir}/logs/*log || echo Unable to remove ${testDir}/logs/ directory contents
+   rm -f "${testDir}/debug/*dm" || echo Unable to remove ${testDir}/debug directory contents
+   rm -f "${testDir}/logs/*log" || echo Unable to remove ${testDir}/logs/ directory contents
    #rm ${testDir}/logs/output_${dt} || echo Unable to remove output file output_${dt}
    mkdir ${testDir}/results || echo Unable to mkdir ${testDir}/results
    mkdir ${testDir}/profiles || echo Unable to mkdir ${testDir}/profiles
@@ -168,79 +250,36 @@ function initSlaveTestData {
    cd $wp || echo cant cd to $wp
 }
 
-function init {
+function initDB {
 
-   . $LPLT/scripts/db.sh
-
-   ulimit -n 10000
+   db=$1
    
-   wp=$(pwd)
-   
-   day=$1
-   stock=$2
-   
-   lpltMaster="${wp}/bin/lpltMaster.py"
-   
-   if [[ ! -e $lpltMaster ]]; then
-      echo $lpltMaster not found!
-      exit 1
+   isDBCreated $db
+   if [[ $? == 0 ]]; then # No
+      port=$(getNextPort)
+      scripts/createDB.sh $db
+      if [[ $? != 0 ]]; then
+         echo Unable to create DB $db
+      fi
+   else # Yes
+      isDBRunning $db
+      if [[ $? == 0 ]]; then
+         port=$(getNextPort)
+         echo Starting DB ${db}...
+         startDB $db $port
+      fi
    fi
-   
-   host=$(hostname -s)
-   
-   liveHost=""
-   
-   activateDir="/lplW2"
-   
-   if [[ $host == "mm" ]]; then
-      liveHost="yes"
-   fi
-   
-   activateCmd=$(dirname $wp)
-   activateCmd+=$activateDir
-   activateCmd+="/bin/activate"
-   
-   py3=$(dirname $wp)
-   py3+="${activateDir}/bin/python3"
-   
-#   echo "Paths:"
-#   echo $activateCmd
-#   echo $lpltMaster
-#   echo $py3
-#   echo
-   
-   . $activateCmd || echo activation failed 
-   
-   # Execute script to populate source library path
-   $HOME/bin/lplt.sh
-   
-   dt=$(date "+%Y%m%d")
-   
-   program="lpltMaster.py"
-   testDir="${wp}/test/${dt}"
-   log="${wp}/logs/liveDebugLog_${dt}.oo"
-   cmd="$py3 $lpltMaster -d -c $HOME/profiles/et.json -p $wp/profiles/active.json"
-
+  
 }
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 init $1 $2
 
-isDBCreated $day
-if [[ $? == 0 ]]; then # No
-   port=$(getNextPort)
-   scripts/createDB.sh $day
-   if [[ $? != 0 ]]; then
-      echo Unable to create DB $day
-   fi
-else # Yes
-   isDBRunning $day
-   if [[ $? == 0 ]]; then
-      port=$(getNextPort)
-      echo Starting DB ${day}...
-      startDB $day $port
-   fi
+if [[ -n $liveHost ]] && [[ -z $day ]]; then
+   initDB $dt
+else
+   initDB $day
 fi
 
 # Check if a rogue program is running. kill it if it is
@@ -263,13 +302,6 @@ if [[ -n $day ]]; then
    fi
 fi
 
-ps | grep $program | grep -qv grep
-
-if [ $? == 0 ]; then
-  sleep 2
-  continue
-fi
-
 echo Starting $cmd $(date) ...
 
 $cmd
@@ -281,13 +313,9 @@ if [[ $? != 0 ]]; then
    exit 1
 fi
 
-if [[ -n $day ]]; then
-   scripts/dbBest.sh $sym
-fi
-
 waiting=0
 
-if [[ -n $liveHost ]]; then
+if [[ -n $liveHost ]] && [[ -z $day ]]; then
 
    # Archive data
    echo Waiting $waiting seconds to archive results...
@@ -295,13 +323,23 @@ if [[ -n $liveHost ]]; then
       
    tarNm="${dt}.tar"
 
-   #scripts/liveResults.sh $dt
-   #tallyLiveResults $dt
-   #createSlaveTestData
+   createSlaveTestData   
    moveDataToArchive $tarNm
    pushData $tarNm
+   scripts/liveResults.sh $dt
+   tallyLiveResults $dt
+
+   # Run tests twice...
+   scripts/keepAliveDB.sh $dt
+   scripts/keepAliveDB.sh $dt
+
+   moveDBtoTestSystem $tarNm
    
-   # Run tests...
+   cleanup
+   
+   # Copy DB to test system
+   #scp -r "db/${dt}" ${testSystem}/${dbPath} || echo cannot copy DB $dt to $testSystem
+
    #cd $wp || echo cant cd to $wp
    
    # Gather live results. modify test profiles. Run tests. collate results
@@ -309,20 +347,20 @@ if [[ -n $liveHost ]]; then
    #scripts/runModAlgosDB.sh $dt
 
 else # Run tests on test system
-
+   echo Do nothing now
    #pullSlaveData
    #initSlaveTestData
 
-   scripts/modProfiles.sh "test" > /dev/null 2>&1
-#   if [[ -n $sym ]]; then
-#      scripts/bestDB.sh $sym
-#   fi
-#   mergeMasterSlaveData
-
-#   tarNm="${dt}.tar"
-#
-#   moveDataToArchive $tarNm
-#   pushData $tarNm
+   #scripts/modProfiles.sh "test" > /dev/null 2>&1
+   #   if [[ -n $sym ]]; then
+   #      scripts/bestDB.sh $sym
+   #   fi
+   #   mergeMasterSlaveData
+   
+   #   tarNm="${dt}.tar"
+   #
+   #   moveDataToArchive $tarNm
+   #   pushData $tarNm
 fi
 
 exit 0

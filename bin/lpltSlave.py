@@ -238,8 +238,6 @@ numBars = 0
 
 lastMinuteOfLiveTrading = 155930
 
-marketOpen = 0
-
 stoppedOut = 4
 exitMaxProfit = 2
 
@@ -388,7 +386,7 @@ pr = lpl.Price(cn, offLine)
 #ac = lpl.Account(c)
 dc = lpl.Dailychart()
 
-dy = lpl.Dynamic(timeBar, dcPath, dc)
+dy = lpl.Dynamic(timeBar, dcPath, dc, offLine)
 
 a = lpl.Algorithm(d, lg, cn, bc, tr, lm, pa, pr, dy, offLine, stock)
 
@@ -520,11 +518,6 @@ if (quitMaxProfit or doTrailingStop) and maxProfit == 0.0:
    lg.info ("Min profit not set! ")
    exit (2)
 
-if offLine:
-   bid, ask, last, vol = pr.getNextPrice(barChart, numBars, barCtr, stock)
-else:
-   bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
-
 pr.initNextBar()
 
 bcSize = pathlib.Path(barChartPath).stat().st_size
@@ -551,23 +544,19 @@ if not offLine:
 # Start trading at beginning of day
 if not offLine:
    if not a.doPreMarket():
-      if not marketOpen:
-         if a.getMarketBeginTime():
-            lg.info("Waiting till the market opens...")
-            cn.waitTillMarketOpens(a.getMarketOpenTime())
-            marketOpen += 1
+      lg.info("Waiting till the market opens...")
+      cn.waitTillMarketOpens(a.getMarketBeginTime())
 
-#endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * int(timeBar)))
+if offLine:
+   bid, ask, last, vol = pr.getNextPrice()
+else:
+   bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Main loop. Loop forever until EOD trading or end of after market 
 
 while True:
          
-   #initialVol = cn.getTotalVolume(stock)
-   #initialVol = cn.getVolume()
-   #initialVol = 0
-   
    if not offLine:
       bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, vol)
 
@@ -583,25 +572,9 @@ while True:
    
    while True:
       if offLine:
-         bid, ask, last, vol = pr.getNextPrice(barChart, numBars, barCtr, stock)
+         bid, ask, last, vol = pr.getNextPrice()
       else:
          bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
-
-      #bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
-      
-      # IF SLAVE IS RUNNING LIVE setValues MUST BE SET
-      #cn.setValues(barChart, barCtr, bid, ask, last, vol)
-      
-#      a.setCurrentBid(bid)
-#      a.setCurrentAsk(ask)
-#      a.setCurrentLast(last)
-      
-      # Set the values from the trading service
-#      lg.debug ("bid " + str(bid))
-#      lg.debug ("ask "+ str(ask))
-#      lg.debug ("last " + str(last))
-#      lg.debug ("vol " + str(vol))
-#      lg.debug ("barCtr " + str(barCtr))
       
       # Count the number of 0.0 bids/asks. If more than 5 quit. Stock is crap.
       if bid == 0.0 and ask == 0.0 and last == 0.0 and vol == 0:
@@ -641,24 +614,15 @@ while True:
             else:
                exit(0)
          
-      #tradeVol = vol - initialVol
-      #tradeVol = cn.getVolume() - initialVol
-      #tradeVol = cn.getCurrentVolume(stock) - initialVol
-      
       tradeVol = a.getCurrentRunningVol()
       if tradeVol != 0:
          lastVol = tradeVol
          
       lg.debug ("tradeVol " + str(tradeVol))
-      
-      #tradeVol = cn.getTotalVolume(stock) - initialVol
-      
-      #lg.debug ("barChart " + str(barChart))
-      #lg.debug ("barChart[barCtr " + str(barChart[barCtr]))
       lg.debug ("barCtr " + str(barCtr))
       lg.debug ("last " + str(last))
       lg.debug ("stock " + str(stock))
-      
+
       # Halt program at end of trading day
       if not offLine:
          bc.loadBar(barChart, tradeVol, barCtr, bid, ask, last)   
@@ -675,19 +639,10 @@ while True:
       
       #lg.debug ("cn.getTimeHrMnSecs() " + str(cn.getTimeHrMnSecs()))
       #lg.debug ("endBarLoopTime " + str(endBarLoopTime))
-      
-#      if slave:
-#         quitBar = pr.isLastBarSlave(timeBar)
-#         lg.debug ("pr.isLastBarSlave(timeBar) " + str(pr.isLastBarSlave(timeBar)))
-#      elif offLine:
-#         quitBar = pr.isLastBar(timeBar)
-#         lg.debug ("pr.isLastBar(timeBar) " + str(pr.isLastBar(timeBar)))
 
-      #elif live; not implemented...
-      
       lg.debug ("pr.isNextBar(timeBar) " + str(pr.isNextBar(timeBar)))
       
-      #if pr.isNextBarSlave(timeBar) or quitBar:      
+      #if pr.isNextBarSlave(timeBar) or quitBar:
       if pr.isNextBar(timeBar) or pr.isLastBar(timeBar):      
 
          # Only do this section once
@@ -768,7 +723,7 @@ while True:
       if exitVal > 0:
          exit(exitVal)
          
-      # Stop trading at the end of he day
+      # Stop trading at the end of the day
       if not offLine and not a.getAfterMarket():
          if a.isMarketExitTime():
             if a.inPosition():

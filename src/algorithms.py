@@ -240,6 +240,7 @@ class Algorithm():
       self.lg.debug("lm.getMaxNumTradeBars() " + str(self.lm.getMaxNumTradeBars()))
       self.lg.debug("setAllLimits self.runningVolume " + str(self.runningVolume))
       self.lg.debug("pr.getCurrentPriceIdx() " + str(self.pr.getCurrentPriceIdx()))
+      self.lg.debug("self.pr.getCurrentBarNum() " + str(self.pr.getCurrentBarNum()))
       
       if bar == 0:
          return
@@ -249,9 +250,10 @@ class Algorithm():
       if self.doPriceMovement:
          self.pr.setPriceChangeArr(bar)
       
-      if self.pr.getCurrentPriceIdx() % self.timeBar == 0:
-         print ("self.pr.getCurrentPriceIdx() % self.timeBar " + str(self.pr.getCurrentPriceIdx() % self.timeBar))
-         self.runningVolume = self.currentVol = self.onCloseBarVolume = 0
+      #if self.pr.getCurrentPriceIdx() % self.timeBar == 0:
+      #if (self.pr.getCurrentBarNum() + 1) % self.timeBar == 0:
+         #print ("self.pr.getCurrentPriceIdx() % self.timeBar " + str(self.pr.getCurrentPriceIdx() % self.timeBar))
+      self.runningVolume = self.currentVol = self.onCloseBarVolume = 0
          
       print ("self.lm.getTradingDelayBars() " + str(self.lm.getTradingDelayBars()))
       
@@ -306,7 +308,7 @@ class Algorithm():
       self.revDirty = 0
       self.priceMovement = 0
       
-      self.nextBarSegment = 1
+      self.nextBarSegment = 0
       self.reversAction = 0
       
       #self.setDynamic(bar)
@@ -562,20 +564,23 @@ class Algorithm():
    def algorithmCalculateRunningVolume(self, vol):
          
       self.lg.debug ("In algorithmCalculateRunningVloume: ")
-      
+            
       barSegment = self.pr.getCurrentBarNum() % self.timeBar
       
+      self.lg.debug ("self.pr.getCurrentBarNum(): " + str(self.pr.getCurrentBarNum()))
+      self.lg.debug ("self.timeBar: " + str(self.timeBar))
       self.lg.debug ("barSegment: " + str(barSegment))
       self.lg.debug ("self.nextBarSegment: " + str(self.nextBarSegment))
       
       if self.timeBar > 1:
          if barSegment == 0:               
-            self.onCloseBarVolume = self.currentVol
+            #self.onCloseBarVolume = self.currentVol
             self.runningVolume = self.currentVol = vol
+            self.nextBarSegment = 1
          else:
             if barSegment == self.nextBarSegment:
                self.runningVolume = self.currentVol
-               self.currentVol = 0
+               #self.currentVol = 0
                self.nextBarSegment += 1
             else:   
                self.currentVol = vol + self.runningVolume
@@ -583,8 +588,8 @@ class Algorithm():
          self.currentVol = vol
                
       self.lg.debug ("self.runningVolume: " + str(self.runningVolume))
-      self.lg.debug ("self.currentVol: " + str(self.currentVol))
-      self.lg.debug ("vol: " + str(vol))
+      self.lg.debug ("vol:                " + str(vol))
+      self.lg.debug ("self.currentVol:    " + str(self.currentVol))
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmVolumeLastBar(self, barChart, bar, action=0):
@@ -1536,6 +1541,10 @@ class Algorithm():
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmTrailingStop(self, last, action=0):
    
+      # This algo takes affect when minimum profit is attained.
+      # It doesn't help when in a loss
+      
+      # OLD COMMENTS LEFT FOR reference...
       # Monitor gainTrailStop 
       # Move decision bars depending how long in pos
       # Take profit depending on how long in pos
@@ -1775,7 +1784,7 @@ class Algorithm():
       if self.bc.getBarsInPosition() > self.lm.closeBuyBars and self.lm.closeBuyBars > 0:
          self.lm.closeBuyBars -= 1
          
-      # If in a position and within a range sell out for profit as exiting range
+      # If in a position and within a range sell out for profit when exiting range
       #if self.inPosition() and self.getBarsInPosition() > self.lm.doRangeTradeBars:
       #   self.closeSellBar = 0
       #   self.closeBuyBar = 0.0

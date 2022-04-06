@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. $HOME/profiles/db.sh
+. $LPLT/scripts/db.sh
 
 runningDBs="db/${1}"
 

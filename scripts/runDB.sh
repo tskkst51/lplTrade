@@ -15,7 +15,9 @@ function init {
    dt=$1
    algo=$2
    stock=$3
-      
+
+   testsRan=""
+   
    wp=$(pwd)
    
    activateDir="/lplW2"
@@ -25,7 +27,7 @@ function init {
    
    dayProvided=0
    
-   if [[ -z $dt ]]; then
+   if [[ -z $dt ]] || [[ $dt == "none" ]]; then
       days=$(ls "test" | awk '{print $1'} | grep -v "mm")
    else
       dayProvided=1
@@ -42,7 +44,7 @@ function init {
    else
       algos=$algo   
    fi
-fi
+}
 
 init $1 $2 $3
 
@@ -56,10 +58,13 @@ volDate=20201118
 for algo in $algos; do
    a=$algo
    
-   gainFile="${wp}/totalResults/${stock}_${algo}.gn"
+   gainFile="${wp}/totalResults/${stock}_${algo}.gnDB"
 
+#   if [[ ! -f $gainFile ]]; then
+#      touch $gainFile
+#   fi
    if [[ -f $gainFile ]]; then
-      rm -f $gainFile
+      rm $gainFile
    fi
    
    for day in $days; do
@@ -87,8 +92,14 @@ for algo in $algos; do
       value=$(cat $outFile | grep "Total Gain" | tail -1 | awk '{print $4}')
       echo $value on $day >> $gainFile
       echo $value on $day
+      testsRan="yes"
    done
 
+   if [[ -z $testsRan ]]; then
+      echo no tests were ran for ${days}. Check test date test/${days}
+      exit 0
+   fi
+   
    if (( dayProvided == 1 )); then
       if [[ $dirty -ne "yesIam" ]]; then
          echo Cant run algo: $a before $volDate

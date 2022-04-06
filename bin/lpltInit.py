@@ -88,6 +88,7 @@ if clOptions.autoConnect:
    tokens = {}   
    if not ti.reconnect(staticTokens):   
       tokens = ti.connect() 
+      print("tokens:" + str(tokens))
       with open(oauthKeysPath, 'w') as writer:
          writer.write(tokens['oauth_token'] + "\n")
          writer.write(tokens['oauth_token_secret'] + "\n")
