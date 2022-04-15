@@ -422,6 +422,9 @@ class Price:
       line = ""
       priceInfo = 0
 
+      if self.offLine:
+         return self.getNextPrice()
+         
       # Get price from file when LIVE
 
       priceInfo = os.stat(path)
@@ -483,26 +486,24 @@ class Price:
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isNextBar(self, timeBar):
-      
-      print ("offline: " + str(self.offLine))
-      
+            
       print ("self.getNextBar() " + str(self.getNextBar()))
       print ("self.getCurrentBarNum() " +  str(self.getCurrentBarNum()))
+      print ("self.getCurrentBarNum() + 1 " +  str(self.getCurrentBarNum() + 1))
          
-      if self.offLine:
-         if self.priceIdx >= self.numLines:
-            return self.getLastToken()
-   
-         if self.getNextBar() == self.getCurrentBarNum():
-         #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
-            #self.setNextBar(timeBar)
-            return 1
-            
-      else:
-         if self.getNextBar() == self.getCurrentBarNum() + 1:
-         #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
-            #self.setNextBar(timeBar)
-            return 1
+#      if self.offLine:
+#         if self.priceIdx >= self.numLines:
+#            return self.getLastToken()
+#   
+#         if self.getNextBar() == self.getCurrentBarNum():
+#         #if self.getNextBar() == self.idxArr[self.priceIdx] + 1:
+#            #self.setNextBar(timeBar)
+#            return 1
+#            
+#      else:
+
+      if self.getNextBar() == self.getCurrentBarNum() + 1:
+         return 1
             
       return 0
 

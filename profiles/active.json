@@ -84,7 +84,7 @@
     "maxProfit": "0.0115",
     "maxLoss": "0.0107",
     "maxStocksToTrade": "9",
-    "maxNumProcesses": "3",
+    "maxNumProcesses": "9",
     "maxYahooStocks": "8",
     "maxStockPrice": "5000",
     "minStockPrice": "2.15",

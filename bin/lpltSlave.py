@@ -520,16 +520,16 @@ if (quitMaxProfit or doTrailingStop) and maxProfit == 0.0:
 
 pr.initNextBar()
 
-bcSize = pathlib.Path(barChartPath).stat().st_size
-lg.debug ("Size of barchart file : " + str(bcSize))
-
-# Ignore reading from barChart if it is empty
-if bcSize:
-   numBars = bc.read(barChartPath, barChart, timeBar)
-   if not numBars:
-      lg.debug("Trying to read an empty bar chart: " + barChartPath)
-   
-   lg.debug ("Number of bars in file on disk : " + str(numBars))
+#bcSize = pathlib.Path(barChartPath).stat().st_size
+#lg.debug ("Size of barchart file : " + str(bcSize))
+#
+## Ignore reading from barChart if it is empty
+#if bcSize:
+#   numBars = bc.read(barChartPath, barChart, timeBar)
+#   if not numBars:
+#      lg.debug("Trying to read an empty bar chart: " + barChartPath)
+#   
+#   lg.debug ("Number of bars in file on disk : " + str(numBars))
 
 # Init new bar
 
@@ -538,8 +538,8 @@ lg.debug ("ask "+ str(ask))
 lg.debug ("last " + str(last))
 lg.debug ("vol " + str(vol))
 
-if not offLine:
-   bc.appendBar(barChart)
+#if not offLine:
+bc.appendBar(barChart)
 
 # Start trading at beginning of day
 if not offLine:
@@ -547,18 +547,18 @@ if not offLine:
       lg.info("Waiting till the market opens...")
       cn.waitTillMarketOpens(a.getMarketBeginTime())
 
-if offLine:
-   bid, ask, last, vol = pr.getNextPrice()
-else:
-   bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
+#if offLine:
+#   bid, ask, last, vol = pr.getNextPrice()
+#else:
+bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Main loop. Loop forever until EOD trading or end of after market 
 
 while True:
          
-   if not offLine:
-      bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, vol)
+   #if not offLine:
+   bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, vol)
 
    lg.debug ("barCtr  " + str(barCtr))
          
@@ -571,10 +571,7 @@ while True:
    tradeVol = 0 
    
    while True:
-      if offLine:
-         bid, ask, last, vol = pr.getNextPrice()
-      else:
-         bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
+      bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
       
       # Count the number of 0.0 bids/asks. If more than 5 quit. Stock is crap.
       if bid == 0.0 and ask == 0.0 and last == 0.0 and vol == 0:
@@ -602,18 +599,29 @@ while True:
          a.unsetActionOnOpenBar()
 
       exitVal = isStoppedOut()
+      
       if exitVal > 0:
          exit(exitVal)
-      
+
+      # Halt program at end of trading day or end of price file
       if offLine:
-         if barCtr > numBars or last == pr.getLastToken():
+         if last == pr.getLastToken():
             if a.inPosition():
                a.closePosition(barCtr, barChart, bid, ask, forceClose)
             if a.getTotalGain() >= a.getTargetProfit():
                exit(2)
             else:
                exit(0)
-         
+      else:
+         if a.isMarketExitTime():
+            lg.debug ("It's beer thirty!! ")
+            if not a.getAfterMarket():
+               if a.inPosition():
+                  a.closePosition(barCtr, barChart, bid, ask, forceClose)
+                  bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
+               lg.info("Program exiting due to end of day trading")
+               exit(0)
+
       tradeVol = a.getCurrentRunningVol()
       if tradeVol != 0:
          lastVol = tradeVol
@@ -623,47 +631,29 @@ while True:
       lg.debug ("last " + str(last))
       lg.debug ("stock " + str(stock))
 
-      # Halt program at end of trading day
-      if not offLine:
-         bc.loadBar(barChart, tradeVol, barCtr, bid, ask, last)   
-         if a.isMarketExitTime():
-            lg.debug ("It's beer thirty!! ")
-            if not a.getAfterMarket():
-               if a.inPosition():
-                  a.closePosition(barCtr, barChart, bid, ask, forceClose)
-                  bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
-               lg.info("Program exiting due to end of day trading")
-               exit(0)
-      
-      quitBar = 0
-      
-      #lg.debug ("cn.getTimeHrMnSecs() " + str(cn.getTimeHrMnSecs()))
-      #lg.debug ("endBarLoopTime " + str(endBarLoopTime))
-
+      bc.loadBar(barChart, tradeVol, barCtr, bid, ask, last) 
+        
       lg.debug ("pr.isNextBar(timeBar) " + str(pr.isNextBar(timeBar)))
       
-      #if pr.isNextBarSlave(timeBar) or quitBar:
-      if pr.isNextBar(timeBar) or pr.isLastBar(timeBar):      
+      if pr.isNextBar(timeBar):      
 
          # Only do this section once
          if dirty:
             continue
             
          dirty += 1
-               
-         #lg.debug ("barChart before end bar" + str(barChart))
 
-         if not offLine:
-            bc.displayLastNBars(barChart, 20)
+#         if not offLine:
+#            bc.displayLastNBars(barChart, 20)
 
-         if not offLine:
-            bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, lastVol)
+         #if not offLine:
+         bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, lastVol)
          
          #lg.debug ("barChart after end bar" + str(barChart))
          
          # Print out the bar chart. Only print the last 20 bars
-         if not offLine:
-            bc.displayLastNBars(barChart, 20)
+#         if not offLine:
+#            bc.displayLastNBars(barChart, 20)
          
          # Do on close processing
          a.setActionOnCloseBar()
@@ -674,8 +664,8 @@ while True:
          if exitVal > 0:
             exit(exitVal)
             
-         if not offLine:
-            bc.appendBar(barChart)
+         #if not offLine:
+         bc.appendBar(barChart)
          
          # Keep track of the bars in a position
          if a.inPosition():
@@ -711,7 +701,9 @@ while True:
 
          vol = 0
          break
-
+         
+         # End of bar Start next bar
+         
       lg.debug ("positionTaken before " + str(positionTaken))
 
       # Take a position if conditions exist

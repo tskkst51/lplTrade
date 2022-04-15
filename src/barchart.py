@@ -144,6 +144,9 @@ class Barchart:
          print("setAvgVol bar: " + str(self.avgVol))
          return
 
+      # Ignore first bar  since we never act on the first bar
+      # and it is always the highest in vol? set n = 1
+      
       n = 0
       totalVol = 0
             
