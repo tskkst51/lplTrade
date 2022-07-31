@@ -5,6 +5,7 @@
 
 import pyetrade
 import sys
+from sys import exit
 import os
 import io
 import time
@@ -157,15 +158,8 @@ parser.add_option("-w", "--workPath", type="string",
 pf = lpl.Profile(clOptions.profileTradeDataPath)
 d = pf.getPFValues()
 
-#with open(clOptions.profileTradeDataPath) as jsonData:
-#   d = json.load(jsonData)
-
 cf = lpl.Profile(clOptions.profileConnectPath)
 c = cf.getPFValues()
-
-# Get connection elements
-#with open(clOptions.profileConnectPath) as jsonData:
-#   c = json.load(jsonData)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set data variables
@@ -238,8 +232,6 @@ numBars = 0
 
 lastMinuteOfLiveTrading = 155930
 
-marketOpen = 0
-
 stoppedOut = 4
 exitMaxProfit = 2
 
@@ -310,7 +302,8 @@ lplPath = os.getenv("LPLT")
 dcPath = cwd + "/dc/" + stock + ".dc"
 
 if cwd != lplPath:
-   dcPath = lplPath + "/dc/" + stock + ".dc"
+   #dcPath = lplPath + "/dc/" + stock + ".dc"
+   dcPath = cwd + "/dc/" + stock + ".dc"
 
 if offLine:
    slave = False
@@ -379,7 +372,7 @@ elif service == "eTrade":
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize algorithm,  barcharts objects
 
-bc = lpl.Barchart()
+bc = lpl.Barchart(barChartPath, offLine, timeBar)
 tr = lpl.Trends(d, lg, cn, bc, slave)
 lm = lpl.Limits(d, lg, cn, bc, pf, symbol)
 pa = lpl.Pattern(d, bc, lg)
@@ -388,7 +381,7 @@ pr = lpl.Price(cn, offLine)
 #ac = lpl.Account(c)
 dc = lpl.Dailychart()
 
-dy = lpl.Dynamic(timeBar, dcPath, dc)
+dy = lpl.Dynamic(timeBar, dcPath, dc, offLine)
 
 a = lpl.Algorithm(d, lg, cn, bc, tr, lm, pa, pr, dy, offLine, stock)
 
@@ -454,9 +447,6 @@ for dItems in d.items():
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize based on live or state 
 
-#lg.debug ("profileValues\n" + str(d))
-#lg.debug ("serviceValues\n" + str(serviceValues))
-
 numPrices = 0
 
 # Fill buffers with prices
@@ -520,23 +510,18 @@ if (quitMaxProfit or doTrailingStop) and maxProfit == 0.0:
    lg.info ("Min profit not set! ")
    exit (2)
 
-if offLine:
-   bid, ask, last, vol = pr.getNextPrice(barChart, numBars, barCtr, stock)
-else:
-   bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
-
 pr.initNextBar()
 
-bcSize = pathlib.Path(barChartPath).stat().st_size
-lg.debug ("Size of barchart file : " + str(bcSize))
-
-# Ignore reading from barChart if it is empty
-if bcSize:
-   numBars = bc.read(barChartPath, barChart, timeBar)
-   if not numBars:
-      lg.debug("Trying to read an empty bar chart: " + barChartPath)
-   
-   lg.debug ("Number of bars in file on disk : " + str(numBars))
+#bcSize = pathlib.Path(barChartPath).stat().st_size
+#lg.debug ("Size of barchart file : " + str(bcSize))
+#
+## Ignore reading from barChart if it is empty
+#if bcSize:
+#   numBars = bc.read(barChartPath, barChart, timeBar)
+#   if not numBars:
+#      lg.debug("Trying to read an empty bar chart: " + barChartPath)
+#   
+#   lg.debug ("Number of bars in file on disk : " + str(numBars))
 
 # Init new bar
 
@@ -545,66 +530,39 @@ lg.debug ("ask "+ str(ask))
 lg.debug ("last " + str(last))
 lg.debug ("vol " + str(vol))
 
-if not offLine:
-   bc.appendBar(barChart)
+bc.appendBar(barChart)
 
 # Start trading at beginning of day
 if not offLine:
    if not a.doPreMarket():
-      if not marketOpen:
-         if a.getMarketBeginTime():
-            lg.info("Waiting till the market opens...")
-            cn.waitTillMarketOpens(a.getMarketOpenTime())
-            marketOpen += 1
+      lg.info("Waiting till the market opens...")
+      cn.waitTillMarketOpens(a.getMarketBeginTime())
 
-#endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * int(timeBar)))
+bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Main loop. Loop forever until EOD trading or end of after market 
 
 while True:
          
-   #initialVol = cn.getTotalVolume(stock)
-   #initialVol = cn.getVolume()
-   #initialVol = 0
-   
-   if not offLine:
-      bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, vol)
+   bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, vol)
 
    lg.debug ("barCtr  " + str(barCtr))
          
    pr.setNextBar(timeBar)
       
-   dirty = doOnceOnOpen = doOnceOnClose = 0
+   dirty = doOnceOnOpen = 0
             
    a.setAllLimits(barChart, barCtr, last)
 
    tradeVol = 0 
    
    while True:
-      if offLine:
-         bid, ask, last, vol = pr.getNextPrice(barChart, numBars, barCtr, stock)
-      else:
-         bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
-
-      #bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
-      
-      # IF SLAVE IS RUNNING LIVE setValues MUST BE SET
-      #cn.setValues(barChart, barCtr, bid, ask, last, vol)
-      
-#      a.setCurrentBid(bid)
-#      a.setCurrentAsk(ask)
-#      a.setCurrentLast(last)
-      
-      # Set the values from the trading service
-#      lg.debug ("bid " + str(bid))
-#      lg.debug ("ask "+ str(ask))
-#      lg.debug ("last " + str(last))
-#      lg.debug ("vol " + str(vol))
-#      lg.debug ("barCtr " + str(barCtr))
+      bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
       
       # Count the number of 0.0 bids/asks. If more than 5 quit. Stock is crap.
-      if bid == 0.0 and ask == 0.0 and last == 0.0 and vol == 0:
+      #if bid == 0.0 and ask == 0.0 and last == 0.0 and vol == 0:
+      if bid == 0.0 and ask == 0.0 and last == 0.0:
          lg.debug ("numZeroPrices " + str(numZeroPrices))
          numZeroPrices += 1
          
@@ -629,39 +587,20 @@ while True:
          a.unsetActionOnOpenBar()
 
       exitVal = isStoppedOut()
+      
       if exitVal > 0:
          exit(exitVal)
-      
+
+      # Halt program at end of trading day or end of price file
       if offLine:
-         if barCtr > numBars or last == pr.getLastToken():
+         if last == pr.getLastToken():
             if a.inPosition():
                a.closePosition(barCtr, barChart, bid, ask, forceClose)
             if a.getTotalGain() >= a.getTargetProfit():
                exit(2)
             else:
                exit(0)
-         
-      #tradeVol = vol - initialVol
-      #tradeVol = cn.getVolume() - initialVol
-      #tradeVol = cn.getCurrentVolume(stock) - initialVol
-      
-      tradeVol = a.getCurrentRunningVol()
-      if tradeVol != 0:
-         lastVol = tradeVol
-         
-      lg.debug ("tradeVol " + str(tradeVol))
-      
-      #tradeVol = cn.getTotalVolume(stock) - initialVol
-      
-      #lg.debug ("barChart " + str(barChart))
-      #lg.debug ("barChart[barCtr " + str(barChart[barCtr]))
-      lg.debug ("barCtr " + str(barCtr))
-      lg.debug ("last " + str(last))
-      lg.debug ("stock " + str(stock))
-      
-      # Halt program at end of trading day
-      if not offLine:
-         bc.loadBar(barChart, tradeVol, barCtr, bid, ask, last)   
+      else:
          if a.isMarketExitTime():
             lg.debug ("It's beer thirty!! ")
             if not a.getAfterMarket():
@@ -670,45 +609,39 @@ while True:
                   bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
                lg.info("Program exiting due to end of day trading")
                exit(0)
-      
-      quitBar = 0
-      
-      #lg.debug ("cn.getTimeHrMnSecs() " + str(cn.getTimeHrMnSecs()))
-      #lg.debug ("endBarLoopTime " + str(endBarLoopTime))
-      
-#      if slave:
-#         quitBar = pr.isLastBarSlave(timeBar)
-#         lg.debug ("pr.isLastBarSlave(timeBar) " + str(pr.isLastBarSlave(timeBar)))
-#      elif offLine:
-#         quitBar = pr.isLastBar(timeBar)
-#         lg.debug ("pr.isLastBar(timeBar) " + str(pr.isLastBar(timeBar)))
 
-      #elif live; not implemented...
-      
+      tradeVol = a.getCurrentRunningVol()
+      if tradeVol != 0:
+         lastVol = tradeVol
+         
+      lg.debug ("tradeVol " + str(tradeVol))
+      lg.debug ("barCtr " + str(barCtr))
+      lg.debug ("last " + str(last))
+      lg.debug ("stock " + str(stock))
+
+      bc.loadBar(barChart, tradeVol, barCtr, bid, ask, last) 
+        
       lg.debug ("pr.isNextBar(timeBar) " + str(pr.isNextBar(timeBar)))
       
-      #if pr.isNextBarSlave(timeBar) or quitBar:      
-      if pr.isNextBar(timeBar) or pr.isLastBar(timeBar):      
+      if pr.isNextBar(timeBar):      
 
          # Only do this section once
          if dirty:
             continue
             
          dirty += 1
-               
-         #lg.debug ("barChart before end bar" + str(barChart))
 
-         if not offLine:
-            bc.displayLastNBars(barChart, 20)
+#         if not offLine:
+#            bc.displayLastNBars(barChart, 20)
 
-         if not offLine:
-            bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, lastVol)
+         #if not offLine:
+         bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, lastVol)
          
          #lg.debug ("barChart after end bar" + str(barChart))
          
          # Print out the bar chart. Only print the last 20 bars
-         if not offLine:
-            bc.displayLastNBars(barChart, 20)
+#         if not offLine:
+#            bc.displayLastNBars(barChart, 20)
          
          # Do on close processing
          a.setActionOnCloseBar()
@@ -719,8 +652,8 @@ while True:
          if exitVal > 0:
             exit(exitVal)
             
-         if not offLine:
-            bc.appendBar(barChart)
+         #if not offLine:
+         bc.appendBar(barChart)
          
          # Keep track of the bars in a position
          if a.inPosition():
@@ -744,7 +677,8 @@ while True:
          lg.info ("ASK:  " + str(ask))
          
          if offLine:
-            lg.info ("END TIME: " + str(barChart[barCtr][dt]))
+            lg.info("END TIME: " + bc.getTimeStampFromBarchartFile(barCtr))
+            #lg.info ("END TIME: " + str(barChart[barCtr][dt]))
          else:
             lg.info ("END TIME: " + str(cn.getTimeStamp()))
             
@@ -756,7 +690,9 @@ while True:
 
          vol = 0
          break
-
+         
+         # End of bar Start next bar
+         
       lg.debug ("positionTaken before " + str(positionTaken))
 
       # Take a position if conditions exist
@@ -768,7 +704,7 @@ while True:
       if exitVal > 0:
          exit(exitVal)
          
-      # Stop trading at the end of he day
+      # Stop trading at the end of the day
       if not offLine and not a.getAfterMarket():
          if a.isMarketExitTime():
             if a.inPosition():

@@ -40,13 +40,14 @@ consumerKey = str(c["profileConnectET"]["consumerKey"])
 consumerSecret = str(c["profileConnectET"]["consumerSecret"])
 oauthKeysPath = str(c["profileConnectET"]["oauthKeysPath"])
 sandBox = int(c["profileConnectET"]["sandBox"])
-browserPath = str(c["profileConnectET"]["browser_path_Darwin"])
+#browserPath = str(c["profileConnectET"]["browser_path_Darwin"])
 #browserPath = str(c["profileConnectET"]["browser_path_Opera"])
+browserPath = str(c["profileConnectET"]["browser_path_Brave"])
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Overide profileTradeData data with command line data
 
-# Create proper dict to send to the TradeINterface API
+# Create proper dict to send to the TradeInterface API
 accountDict = {}
 accountDict['consumer_key'] = consumerKey
 accountDict['consumer_secret'] = consumerSecret
@@ -71,32 +72,41 @@ if clOptions.autoConnect:
 
    ti = TradeInterface(accountKeys, False, browserPath) 
 
-   # Try to reconnect using saved tokens
-
-   with open(oauthKeysPath, 'r') as reader:
-      oaLines = reader.readlines()
-
-   oauth_token = oaLines[0].replace("\n", "")
-   oauth_token_secret = oaLines[1].replace("\n", "")
-   
-   staticTokens = {}
-   staticTokens['oauth_token'] = oauth_token
-   staticTokens['oauth_token_secret'] = oauth_token_secret
-   
-   print("staticTokens: " + str(staticTokens))
-
    tokens = {}   
-   if not ti.reconnect(staticTokens):   
+
+   connType="connect"
+   # Try to reconnect using saved tokens
+   if os.stat(oauthKeysPath).st_size > 5:
+      with open(oauthKeysPath, 'r') as reader:
+         oaLines = reader.readlines()
+   
+      oauth_token = oaLines[0].replace("\n", "")
+      oauth_token_secret = oaLines[1].replace("\n", "")
+      
+      staticTokens = {}
+      staticTokens['oauth_token'] = oauth_token
+      staticTokens['oauth_token_secret'] = oauth_token_secret
+   
+      if ti.reconnect(staticTokens):
+         connType="reconnect"
+      else:
+         tokens = ti.connect() 
+         with open(oauthKeysPath, 'w') as writer:
+            writer.write(tokens['oauth_token'] + "\n")
+            writer.write(tokens['oauth_token_secret'] + "\n")
+   else:
       tokens = ti.connect() 
       with open(oauthKeysPath, 'w') as writer:
          writer.write(tokens['oauth_token'] + "\n")
          writer.write(tokens['oauth_token_secret'] + "\n")
    
-      print("Generated token/secret:")
+
+   if connType == "connect":
+      print("Using generated token/secret:")
       print(tokens['oauth_token'])
       print(tokens['oauth_token_secret'])
-   else:
-      print("Static token/secret:")
+   elif connType == "reconnect":
+      print("Using static token/secret:")
       print(staticTokens['oauth_token'])
       print(staticTokens['oauth_token_secret'])
 

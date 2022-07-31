@@ -59,6 +59,7 @@ class Target:
       self.url = "https://api.polygon.io/v2/aggs/ticker/"
       
       self.yahooUrl = "https://finance.yahoo.com/gainers/"
+      self.yahooBuyUrl = "https://finance.yahoo.com/quote/"
       self.yahooSearchToken = "pageCategory\":\"YFINANCE:"
       self.yahooEndToken = "\",\""
       self.numYahooStocks = 9
@@ -614,6 +615,7 @@ class Target:
    def orderStocks(self, gapCandidates, lastDaysVolGtrCandidates, lastDaysVolLessCandidates, \
          volumeCandidates, spreadCandidates, trendCandidates, betaCandidates, avgVolData, stocks, daysBestStocks):
    
+      # Ignoring spread 5/18/22
       doGap = doSpread = 1
       doVolLess = doVolGtr = doTrend = doBeta = doVolume = 0
       doTestData = doAvgVol = doBest = 0
@@ -893,6 +895,25 @@ class Target:
             
       return avg, highest, lowest, hiDate, hiVol
                   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def ignoreBuyOutStocks(self, stocks):
+
+      sanitizedStocks = []
+      
+      for stock in stocks:
+         url = "curl " + self.yahooBuyUrl + stock + "/?p=" + stock
+         print ("url: " + str(url))
+         try:
+            status = os.system(url + " | grep -i buy")
+            print ("status: " + str(status))
+            if status:
+               sanitizedStocks.append(stock)
+               
+         except (TimeoutError, URLError) as e:
+            return 0
+      
+      return sanitizedStocks
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getYahooPreMarketMovers(self):
       

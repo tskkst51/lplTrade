@@ -2,7 +2,10 @@
 
 function init {
 
-   . $LPLT/scripts/db.sh
+   # When run from cron ENV variables don't exist set LPLT the old way...
+   wp="/Users/tsk/w/lplTrade"
+   
+   . $wp/scripts/db.sh
 
    day=""
    algo=""
@@ -16,15 +19,11 @@ function init {
    algoProvided=0
    stockProvided=0
    
-   wp=$LPLT
-
    if [[ -z $day ]]; then
       echo ERROR: Must have a day to test on
       exit 1
    fi
-   
-   #echo $1 $2 $3
-   
+      
    testCmd="${wp}/bin/test.py"
    
    if [[ ! -e $testCmd ]]; then
@@ -57,8 +56,6 @@ function init {
    dbName="algos"
    dbToken="Applications/Postgres.app"
    dbKey="20"
-   
-   #${wp}/scripts/modProfiles.sh $testPath > /dev/null 2>&1
 }
 
 function populateTestDir {
@@ -71,7 +68,6 @@ function populateTestDir {
       rm -fr Users
       cd ../lplTrade
       doResults=1
-      #${wp}/scripts/modProfiles.sh $testPath
    fi
 }
 
@@ -85,7 +81,7 @@ if [[ -n $algo ]] && [[ $algo != "none" ]]; then
    algos=$algo
    algoProvided=1
 else
-   algos="HL_QM HS_QM HI_QM LO_QM OC_QM OO_QM CC_QM PL_QM EO_EC_QM HS_HL_QM HI_HL_QM LO_HL_QM"
+   algos=$testDBAlgos
 fi
 }
 
@@ -97,16 +93,12 @@ function initStocks {
 
    else
       stocks=$(ls "${testPath}/${day}/bc" | awk -F\. '{print $1}'|sed "s/active//")
-      #stocks=$(grep stocks ${wp}/${testPath}/${datePath}/profiles/active.json | \
-      #   awk -F\" '{print $4}')
       for s in ${stocks[*]}; do
          stock=$s
          echo stock $stock
          break
       done
       numStocks=$(echo $stocks | awk -F" " '{print NF}')
-      #echo stocks $stocks
-      #echo numStocks $numStocks
    fi
 }
 
@@ -118,19 +110,19 @@ initAlgos
 
 i=0
 for a in ${algos}; do i=$((i+1)); done
-echo Running $i $dbAlgoTestName for ${day}...
-for a in ${algos}; do echo $a; done
+for a in ${algos}; do algoList="$algoList $a"; done
+echo Running $i algos $algoList for ${day}...
 
-isDBRunning $day
-if [[ $? == 0 ]]; then
-   port=$(getNextPort)
-   echo Starting DB $day
-   startDB $day $port
-else
-   port=$(getRunningPort $day)
-fi
+#isDBRunning $day
+#if [[ $? == 0 ]]; then
+#   port=$(getNextPort)
+#   echo Starting DB $day
+#   startDB $day $port
+#else
+#   port=$(getRunningPort $day)
+#fi
 
-cd $LPLT || exit 1
+cd $wp || exit 1
 
 #volDate=20201117
 
@@ -172,11 +164,8 @@ for datePath in $testPaths; do
 
       echo Testing $day $stock $a ...
 
-      cmd="$py3 $testCmd $algoOpt $stockCL -c $HOME/profiles/et.json -w ${wp}/${datePath} -p ${wp}/${datePath}/profiles/active.json"
-      
-      #echo "command: ${cmd}"
+      $py3 $testCmd $algoOpt $stockCL -c $HOME/profiles/et.json -w ${wp}/${datePath} -p ${wp}/${datePath}/profiles/active.json
 
-      $cmd 
    done      
 done
 
@@ -184,12 +173,11 @@ done
 
 if (( stockProvided )); then
    scripts/testModsDB.sh $day $stock
-   scripts/bestDB.sh $day $stock
+   #scripts/bestAlgoDB.sh $stock "3"
+   ${wp}/scripts/initIncBestAlgos.sh $stock "3"
 else
    scripts/testModsDB.sh $day
 fi
-
-#pg_ctl -D ${dbDir}/${day} stop
 
 exit 0
 

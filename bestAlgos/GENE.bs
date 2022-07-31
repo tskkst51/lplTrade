@@ -172,3 +172,6 @@ GENE Gain: $ 0.37 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1
 GENE Gain: $ 0.39 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_AV
 GENE Gain: $ 0.39 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_HM_AV
 GENE Gain: $ 0.39 Win %: 100.00 in 3 days with algo TB1_HL_HS_QM_OB2_OS2_CB1_CS1_RV_AV
+GENE Gain: $ -0.16 Win %: 50.00 in 4 days with algo TB5_PL_QM_OB4_OS1_CB3_CS5_IT_QL
+GENE Gain: $ 0.72 Win %: 100.00 in 4 days with algo TB1_HL_QM_OB2_OS1_CB1_CS3_SS
+GENE Gain: $ 1.04 Win %: 75.00 in 4 days with algo TB5_CC_QM_OB4_OS2_CB3_CS4_HM

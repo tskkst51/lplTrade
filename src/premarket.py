@@ -18,7 +18,7 @@ import traceback
 class Premarket:
    def __init__(self, minuteChartPath, minuteChartExt, dailyChartPath, dailyChartExt, dailyGapExt, bestAlgosPath, bestAlgosExt):
    
-      self.bc = lpl.Barchart()
+      self.bc = lpl.Barchart("", 0, 1)
       
       self.dailyChartPath = dailyChartPath
       self.dailyChartExt = dailyChartExt
@@ -52,13 +52,7 @@ class Premarket:
       
       defaultAlgo = algo
       
-      #defaultAlgo = "TB1_HS_QM_OB2_OS2_CB3_CS3_DB30_IT_TS"
-      #defaultAlgo = "TB1_HL_QM_OB3_OS3_CB3_CS3_DB30_QL"
-      #defaultAlgo = "TB1_HL_QM_OB3_OS3_CB2_CS2"
-      #defaultAlgo = "TB1_OC_QM_OB5_OS5_CB2_CS2_TR_IR5"
-      #defaultAlgo = "TB3_OC_QM_OB2_OS2_CB3_CS3_TR"
-      #defaultAlgo = "TB3_HI_QM_OB2_OS2_CB4_CS4_TR"
-      #defaultAlgo = "TB2_HL_HS_AL_QM_OB2_OS2_CB3_CS3_QP"
+      # The default algo is kept in the profile: $defaultAlgoStr
       
       stocksBeingUsed = []
       
@@ -155,6 +149,7 @@ class Premarket:
          gpPath = self.dailyChartPath + stock + self.dailyGapExt
          if not os.path.exists(gpPath):
             continue
+         print ("gpPath" + str(gpPath))
          gapData[stock] = dc.readDailyGapData(gpPath)
          
       print ("gapData\n" + str(gapData))
@@ -249,6 +244,7 @@ class Premarket:
       print ("path " + str(path))
       
       if int(st) == int(mTime):
+         print ("todays date and timestamp on file are equal")
          return 1
          
       return 0
@@ -396,7 +392,7 @@ class Premarket:
       return parsedStocks      
        
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getStockCandidates(self, tg, dc, stocks, findPreMarketMovers, useLiveDailyData):
+   def getStockCandidates(self, tg, dc, stocks, findPreMarketMovers, useLiveDailyData, ignoreBuyOutStocks):
    
       # Take static stocks and movers and get their daily charts if not already up to date
       validLDStocks = []
@@ -409,9 +405,15 @@ class Premarket:
          
          for stock in yahooMovers:
             movers.append(stock)
-            
+
          print ("movers " + str(movers))
          print ("yahooMovers " + str(yahooMovers))
+         
+         if ignoreBuyOutStocks:
+            movers = tg.ignoreBuyOutStocks(movers)
+         
+         print ("movers after buyout  " + str(validStocks))
+         print ("movers after len " + str(len(validStocks)))
          
          for mover in movers:
             dcPath = "dc/" + mover + ".dc"
@@ -462,9 +464,9 @@ class Premarket:
       
       validStocks = stocks
       
-      print ("validStocks " + str(validStocks))
-      print ("validStocks len" + str(len(validStocks)))
-
+      print ("valid movers " + str(validStocks))
+      print ("valid movers len" + str(len(validStocks)))
+      
       if useLiveDailyData:
          gapData = {}
          for stock in validStocks:

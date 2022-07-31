@@ -230,3 +230,4 @@ DWAC Gain: $ 83.54 Win %: 80.00 in 5 days with algo TB4_HL_LO_QM_OB1_OS1_CB5_CS5
 DWAC Gain: $ 87.02 Win %: 100.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_AV
 DWAC Gain: $ 87.02 Win %: 100.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_RV_AV
 DWAC Gain: $ 98.72 Win %: 80.00 in 5 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_IR2
+DWAC Gain: $ 118.4 Win %: 71.00 in 7 days with algo TB3_HI_QM_OB4_OS2_CB4_CS5_AV

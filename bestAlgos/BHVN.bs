@@ -230,3 +230,6 @@ BHVN Gain: $ 9.91 Win %: 83.00 in 6 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_
 BHVN Gain: $ 10.18 Win %: 83.00 in 6 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_IR4
 BHVN Gain: $ 11.78 Win %: 83.00 in 6 days with algo TB1_HL_LO_QM_OB4_OS4_CB4_CS4_VI
 BHVN Gain: $ 13.53 Win %: 83.00 in 6 days with algo TB1_HL_LO_QM_OB4_OS4_CB4_CS4_IR5
+BHVN Gain: $ 5.13 Win %: 50.00 in 10 days with algo TB1_HS_HL_QM_OB3_OS3_CB2_CS3_RV_AL_DB30
+BHVN Gain: $ 5.97 Win %: 80.00 in 10 days with algo TB3_OO_QM_OB4_OS3_CB5_CS5_HM_TR
+BHVN Gain: $ 8.19 Win %: 60.00 in 10 days with algo TB1_HS_HL_QM_OB3_OS3_CB5_CS3_IR5

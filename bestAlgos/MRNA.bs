@@ -229,3 +229,6 @@ MRNA Gain: $ 102.38 Win %: 65.00 in 41 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_C
 MRNA Gain: $ 104.68 Win %: 68.00 in 41 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_RV
 MRNA Gain: $ 123.59 Win %: 63.00 in 41 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_RV_TR
 MRNA Gain: $ 125.41 Win %: 60.00 in 41 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_PM
+MRNA Gain: $ 100.21 Win %: 59.00 in 42 days with algo TB3_OO_QM_OB4_OS3_CB2_CS5_HM_AV_DB10
+MRNA Gain: $ 101.85 Win %: 66.00 in 42 days with algo TB3_OO_QM_OB2_OS3_CB2_CS5_HM_AV_DB10
+MRNA Gain: $ 118.75 Win %: 59.00 in 42 days with algo TB3_OO_QM_OB2_OS3_CB4_CS5_RV_TR

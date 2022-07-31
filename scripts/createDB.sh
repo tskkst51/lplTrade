@@ -32,8 +32,8 @@ function init {
    fi
    
    dbInitFile="/tmp/dbInit"
-      
-   . $LPLT/scripts/db.sh
+   
+   . ${wp}/scripts/db.sh
 }
 
 function createDBSeedFile {
@@ -95,14 +95,14 @@ for day in $days; do
    
    log="db/${day}/log"
          
-   initdb -D "db/${day}"
+   ${postGresPath}/initdb -D "db/${day}"
    createDBSeedFile
    startDB $day $port
    if [[ $? != 0 ]]; then
       echo ERROR starting DB $day
    fi
-   createdb -p $port algos 
-   psql -f $dbInitFile -p $port algos
+   ${postGresPath}/createdb -p $port algos 
+   ${postGresPath}/psql -f $dbInitFile -p $port algos
    
 done
 

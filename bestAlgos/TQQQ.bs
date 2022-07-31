@@ -229,3 +229,6 @@ TQQQ Gain: $ 76.23 Win %: 56.00 in 145 days with algo TB5_HL_HS_QM_OB1_OS1_CB4_C
 TQQQ Gain: $ 80.53 Win %: 68.00 in 145 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_AL_TS
 TQQQ Gain: $ 80.61 Win %: 55.00 in 145 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_RV_AL
 TQQQ Gain: $ 90.64 Win %: 66.00 in 145 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_SS
+TQQQ Gain: $ 63.86 Win %: 52.00 in 173 days with algo TB3_HS_HL_QM_OB5_OS2_CB4_CS5_RV
+TQQQ Gain: $ 86.08 Win %: 56.00 in 173 days with algo TB3_HS_HL_QM_OB5_OS2_CB4_CS5_SS
+TQQQ Gain: $ 87.63 Win %: 54.00 in 173 days with algo TB3_HS_HL_QM_OB5_OS2_CB4_CS5_AO

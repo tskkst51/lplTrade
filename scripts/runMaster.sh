@@ -18,16 +18,8 @@ lpltPath=""
 
 host=$(hostname -s)
 
-if [[ $host == "ML-C02C8546LVDL" ]]; then
-   activateDir="${HOME}/w/gitWS/lplW"
-   lpltPath="/${HOME}/w/gitWS/lplTrade"
-elif [[ $host == "mm" ]]; then
-   activateDir="${HOME}/w/lplW"
-   lpltPath="${HOME}/w/lplTrade"
-else
-   activateDir="/Users/tknitter/w/git/venv"
-   lpltPath="${HOME}/w/git/lplTrade"
-fi
+activateDir="${HOME}/w/lplW"
+lpltPath="${HOME}/w/lplTrade"
 
 py3="${activateDir}/bin/python3"
 
@@ -102,7 +94,7 @@ for algo in $algos; do
    log="logs/active${stock}.ls"
    if [[ -n $testDate ]]; then
       log="test/testDate/${log}"
-      ${py3} ${lpltPath}/bin/profileGenerator.py -d $testDate -a $algo || echo Fainle profile generator
+      ${py3} ${lpltPath}/bin/profileGenerator.py -d $testDate -a $algo -s $stock || echo Fainle profile generator
       cmd="${py3} ${lpltPath}/bin/lpltSlave.py -w $workPath -c $HOME/profiles/et.json -p $profilePath -o -d -s $stock"
    else # LIVE
       ${py3} ${lpltPath}/bin/profileGenerator.py -d "" -a $algo -s $stock || echo Fainle profile generator

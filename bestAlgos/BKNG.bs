@@ -168,3 +168,4 @@ BKNG Gain: $ 67.14 Win %: 62.00 in 8 days with algo TB1_HL_HS_QM_OB2_OS2_CB3_CS3
 BKNG Gain: $ 75.86 Win %: 62.00 in 8 days with algo TB1_HL_HS_QM_OB2_OS2_CB3_CS3_HM_TR
 BKNG Gain: $ 77.35 Win %: 62.00 in 8 days with algo TB1_HL_HS_QM_OB2_OS2_CB3_CS3_RV_TR
 BKNG Gain: $ 81.4 Win %: 62.00 in 8 days with algo TB1_HL_HS_QM_OB2_OS2_CB3_CS3_AL
+BKNG Gain: $ 138.33 Win %: 87.00 in 8 days with algo TB3_HI_QM_OB2_OS2_CB4_CS5_AL_UA

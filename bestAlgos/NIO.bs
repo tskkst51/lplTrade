@@ -229,3 +229,6 @@ NIO Gain: $ 36.3 Win %: 64.00 in 77 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_RV_
 NIO Gain: $ 37.11 Win %: 67.00 in 77 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5_RV_AL
 NIO Gain: $ 38.04 Win %: 70.00 in 77 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5_AL
 NIO Gain: $ 40.86 Win %: 59.00 in 77 days with algo TB5_HS_QM_OB4_OS4_CB5_CS5_TR
+NIO Gain: $ 15.18 Win %: 53.00 in 100 days with algo TB3_EO_EC_QM_OB3_OS2_CB2_CS4_HM_AV_DB10
+NIO Gain: $ 29.35 Win %: 59.00 in 100 days with algo TB3_EO_EC_QM_OB3_OS2_CB2_CS4_HM_TR_DB10
+NIO Gain: $ 44.38 Win %: 60.00 in 100 days with algo TB3_EO_EC_QM_OB3_OS2_CB2_CS4_RV_AV_DB10

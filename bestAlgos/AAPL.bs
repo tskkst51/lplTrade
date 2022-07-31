@@ -229,3 +229,6 @@ AAPL Gain: $ 38.15 Win %: 58.00 in 118 days with algo TB5_HL_HI_QM_OB1_OS1_CB4_C
 AAPL Gain: $ 40.44 Win %: 56.00 in 118 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4_DB6
 AAPL Gain: $ 41.48 Win %: 58.00 in 118 days with algo TB5_HL_HI_QM_OB3_OS3_CB4_CS4_HM_TR_DB6
 AAPL Gain: $ 42.05 Win %: 56.00 in 118 days with algo TB5_HL_HI_QM_OB1_OS1_CB4_CS4_HM_TR_DB6
+AAPL Gain: $ 8.95 Win %: 48.00 in 153 days with algo TB5_HI_QM_OB2_OS4_CB5_CS5_DB6
+AAPL Gain: $ 23.12 Win %: 56.00 in 153 days with algo TB3_EO_EC_QM_OB2_OS2_CB2_CS5_IR3
+AAPL Gain: $ 40.93 Win %: 62.00 in 153 days with algo TB5_HI_HL_QM_OB3_OS3_CB4_CS3_RV_QP

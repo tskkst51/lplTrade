@@ -229,3 +229,9 @@ FB Gain: $ 69.65 Win %: 61.00 in 108 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_TR
 FB Gain: $ 69.65 Win %: 61.00 in 108 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TR_IR1
 FB Gain: $ 70.66 Win %: 70.00 in 108 days with algo TB5_CC_QM_OB1_OS1_CB5_CS5_AV_TS
 FB Gain: $ 70.66 Win %: 70.00 in 108 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_AV_TS
+FB Gain: $ 13.86 Win %: 56.00 in 130 days with algo TB5_CC_QM_OB2_OS2_CB2_CS4_HM_AV_DB6
+FB Gain: $ 24.95 Win %: 52.00 in 130 days with algo TB5_OO_QM_OB5_OS2_CB2_CS5_AL_LI
+FB Gain: $ 42.7 Win %: 54.00 in 130 days with algo TB3_EO_EC_QM_OB4_OS3_CB4_CS5_AL_UA
+FB Gain: $ -103.15 Win %: 41.00 in 130 days with algo TB5_CC_QM_OB2_OS2_CB2_CS4_HM_AV_DB6
+FB Gain: $ -64.52 Win %: 43.00 in 130 days with algo TB3_EO_EC_QM_OB4_OS3_CB4_CS5_AL_UA
+FB Gain: $ 45.93 Win %: 53.00 in 130 days with algo TB5_OO_QM_OB5_OS2_CB2_CS5_AL_LI

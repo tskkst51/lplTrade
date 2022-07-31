@@ -110,6 +110,67 @@ def isStoppedOut(stock):
    return 0
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+def runTests(stocks):
+
+   # Lauch tests in parallel mode. Wait for all pid's to finish then exit
+
+   symsRunning = []
+   pids = {}
+   ctr = 1
+   for sym in stocks:
+      if ctr % maxNumProcesses != 0 and ctr <= maxNumProcesses:
+         pids[sym] = th.launchStock(sym, os.path.basename(workPath))
+         symsRunning.append(sym)
+         print ("symsRunning after adding" + str(symsRunning))
+         ctr += 1
+      else:
+         print ("sym in the Q " + str(sym))
+         
+#         if not sym in symsRunning:
+#            symsRunning.append(sym)
+            
+         loop = True
+         while loop:
+            for s in symsRunning:
+               if pids[s].poll() == None:
+                  #print ("pid: " + str(pids[s]))
+                  sleep(2)
+               else:
+                  lg1.debug ("Gotta poll value of: " + str(pids[s].poll()))
+                  lg1.debug ("for : " + str(s))
+                  pids.pop(s)
+                  #print ("pids after remove " + str(pids))
+                  #print ("symsRunning before remove " + str(symsRunning))
+                  symsRunning.remove(s)
+                  #print ("symsRunning after remove " + str(symsRunning))
+                  if not sym in symsRunning:
+                     symsRunning.append(sym)
+                  #print ("symsRunning after append" + str(symsRunning))
+                  pids[sym] = th.launchStock(sym, os.path.basename(workPath))
+                  #print ("pids running after append" + str(pids))
+                  loop = False   
+                  break
+   loop = True
+   while loop:
+      #print ("pids last loop " + str(pids))
+      for s, p in pids.items():
+         #print ("pids last loop stock " + str(s))
+         if pids[s].poll() == None:
+            sleep(2)
+         else:
+            pids.pop(s)
+            #print ("len pids " + str(len(pids)))
+            if len(pids) == 0:
+               loop = False
+            break
+
+   # Print any remaining test processes. Shouldn't be any
+   
+   os.system("ps -ef | grep 'testDB.sh' | grep -v grep") 
+
+   return
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def getStocksFromBCDir(path):
 
    stocks = []
@@ -117,11 +178,11 @@ def getStocksFromBCDir(path):
    for rootPath, directories, paths in os.walk(path):
       for path in paths:
          if path.endswith(".bc"):
-            if os.stat(rootPath + "/" + path).st_size > 10000:
+            if os.stat(rootPath + "/" + path).st_size > 1000:
                stockName = path.replace("active","") 
                stockName = stockName.replace(".bc","")
                if stockName not in stocks:
-                  #print ("stockName: " + str(stockName))
+                  print ("stockName: " + str(stockName))
                   stocks.append(stockName)      
    
    return stocks
@@ -170,7 +231,8 @@ def getAutoStocks(orderType, numStocksToTrack):
             
          # Don't use stocks with e.g: test data > 4 days
          # This is set to get stocks with not much test data 
-         if int(line[2]) < numDaysTestData:
+         # Reversing this 6/22/22 so we get only stocks with test data >
+         if int(line[2]) > numDaysTestData:
             with open(dstPath, 'a') as pp:
                pp.write(line[0] + "\n")
                print ("stock selected auto " + str(line))
@@ -207,11 +269,12 @@ def analyzeStocks(pf, pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdat
          # Remove duplicates
          stocks = list(set(stocks))
 
-   print ("stocks len\n" + str(len(stocks)))
-   if len(stocks) > numStocksToProcessInPremarket:
-      while len(stocks) > numStocksToProcessInPremarket:
-         print ("SKIPPING " + str(stocks[-1]))
-         del stocks[-1]
+   if not onlyUpdateDailyStocks:
+      print ("stocks len\n" + str(len(stocks)))
+      if len(stocks) > numStocksToProcessInPremarket:
+         while len(stocks) > numStocksToProcessInPremarket:
+            print ("SKIPPING " + str(stocks[-1]))
+            del stocks[-1]
 
    
    print ("useLiveDailyData\n" + str(useLiveDailyData))
@@ -223,7 +286,7 @@ def analyzeStocks(pf, pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdat
       exit (1)
 
    # Candidates come from premarket movers internet site, daily charts, ETF movers
-   candidates = pr.getStockCandidates(tg, dc, stocks, findPreMarketMovers, useLiveDailyData)
+   candidates = pr.getStockCandidates(tg, dc, stocks, findPreMarketMovers, useLiveDailyData, 1)
    
    # Only use candidates that have a minimum number of days test data
    if numDaysTestData:
@@ -262,7 +325,7 @@ def analyzeStocks(pf, pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdat
    #if useDaysBest and not onlyUpdateDailyStocks:
    #   stocks = daysBestStocks
  
-   # Pick the proper algorithm to use based on saved minute chart data
+   # Pick the proper algorithm to use based on saved algo data
    algoData, stocks = pr.getAlgorithm(orderedStocks, useDefaultAlgo, useStocksWithNoTestData, pf.gv("defaultAlgoStr"))
 
    # LIVE run lpltSlave.py with the #1-... stock candidate
@@ -377,6 +440,7 @@ minStockPrice = float(d["minStockPrice"])
 maxStockPrice = float(d["maxStockPrice"])
 excludeStocks = int(d["excludeStocks"])
 stockOrderFile = str(d["stockOrderFile"])
+defaultStocks = str(d["defaultStocks"])
 
 # Make sure stocksFileMultiplier is "1" or more...
 stocksFileMultiplier = float(d["stocksFileMultiplier"])
@@ -470,9 +534,6 @@ if clOptions.onlyUpdateDailyStocks:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set stocks to trade based on pre market analysis
 
-if workPath:
-   sqlDB = os.path.basename(workPath)
-   
 if offLine:
    resume = 1
    preMarketAnalysis = 0
@@ -519,6 +580,16 @@ if offLine:
 else:
    if isinstance(stocks, str):
       stocks = stocks.split(",")
+      
+
+   # Insert the default stocks into the first array positions
+   if defaultStocks:   
+      print ("stocks before defaultStocks " + str(stocks))
+      print ("defaultStocks " + str(defaultStocks))
+      defaultStocksArr = defaultStocks.split(",")
+      for s in defaultStocksArr:
+         stocks.insert(0, s)
+      print ("stocks after defaultStock insert " + str(stocks))
       
    if stocksFile == "":   
       totalStocks = round(maxNumStocksToTrade * stocksFileMultiplier, 2)
@@ -640,13 +711,13 @@ for stock in stocks:
 
    profileData[stock] = pf.readProfile(clOptions.profileTradeDataPath)
    #profileData[stock] = loadProfileData(clOptions.profileTradeDataPath)
-   ba[stock] = lpl.Barchart()
+   ba[stock] = lpl.Barchart(pathsChart[stock]['barChartPath'], offLine, timeBar)
    tr[stock] = lpl.Trends(profileData[stock], lg[stock], cn, ba[stock], offLine, stock)
    lm[stock] = lpl.Limits(profileData[stock], lg[stock], cn, ba[stock], pf, stock)
    pr[stock] = lpl.Price(cn, offLine)
    pa[stock] = lpl.Pattern(profileData[stock], ba[stock], lg[stock])
    dc = lpl.Dailychart()
-   dy = lpl.Dynamic(timeBar, dcPath, dc)
+   dy = lpl.Dynamic(timeBar, dcPath, dc, offLine)
    a[stock] = lpl.Algorithm(profileData[stock], lg[stock], cn, ba[stock], tr[stock], lm[stock], pa[stock], pr[stock], dy, offLine, stock)
    ut = lpl.Util()
    th = lpl.Thred(ut, offLine, cwd, wcwd)
@@ -785,18 +856,14 @@ lg1.debug ("Start bar: " + str(barCtr))
 setProfit = 0
 
 # Start trading at beginning of day
-if not offLine:
-   if not preMarket:
-      if a1.getMarketBeginTime():
-         lg1.info("Waiting till the market opens...")
-         cn.waitTillMarketOpens(a1.getMarketOpenTime())
+#if not offLine:
+#   if not preMarket:
+#      if a1.getMarketBeginTime():
+#         lg1.info("Waiting till the market opens...")
+#         cn.waitTillMarketOpens(a1.getMarketOpenTime())
 
 # CALL setStockValues SKIPPING OPEN VALUE WHICH IS THE CLOSE OF THE LAST DAY   
 # observed at least 3 prices being the close of prev day
-
-if service == "eTrade":
-   serviceValues = cn.setStockValues(stocksChart, 0, stocks)
-   print ("serviceValues 1\n" + str(serviceValues))
 
 #if preMarketAnalysis:
 #   for stock in stocks:
@@ -807,14 +874,8 @@ if service == "eTrade":
 print ("stocks " + str(stocks))
 print ("stocks len " + str(len(stocks)))
 
-# Set the initial price
-for stock in stocks:
-   print ("serviceValues[stock] " + str(serviceValues[stock]))
-   bid[stock], ask[stock], last[stock], vol[stock]  = \
-      pr[stock].getNextPriceArr(serviceValues[stock])
-
-   if offLine:
-      pr[stock].setNextBar(timeBar)
+if offLine:
+   pr[stock].setNextBar(timeBar)
 
 pid = {}
 numLaunchedPids = 0
@@ -826,44 +887,9 @@ if not preMarketAnalysis and not offLine:
    pid = th.launchStocks(stocks, maxStocksToTrade, os.path.basename(workPath))
 
 if offLine:
-   db = lpl.DB(c, sqlDB)
-   stockSegs = {}
-   sSegCtr = 0
-   
-   # Setup a dict of stock arrays the size of maxNumProcesses
-   for ctr in range(len(stocks)):
-      if ctr % maxNumProcesses == 0:
-         stockSegs[sSegCtr] = stocks[ctr:(ctr+maxNumProcesses)]
-         sSegCtr += 1
-         
-   lg1.debug ("stockSegs " + str(stockSegs))
-   lg1.debug ("maxNumProcesses " + str(maxNumProcesses))
-   lg1.debug ("sSegCtr " + str(sSegCtr))
-   
-   # Launch the test program in parallel x maxNumProcesses 
-   # waiting to launch the next set of stocks
-   for ctr in range(sSegCtr):
-      pid = th.launchStocks(stockSegs[ctr], maxNumProcesses, os.path.basename(workPath))
-      lg1.debug ("pid " + str(pid))
-      lg1.debug ("stockSegs[ctr] " + str(stockSegs[ctr]))
-
-      #stk = stockSegs[ctr][len(stockSegs[ctr]) - 1] last
-      stk = stockSegs[ctr][0] # first
-      
-      lg1.debug ("stk " + str(stk))
-
-      # Wait till the last stock completes testing 
-      while True:
-         db.checkDB()
-         if pid[stk].poll() == None:
-            #lg1.debug ("waiting 5 for a poll != None")
-            sleep(1)
-         else:
-            lg1.debug ("Gotta poll value of: " + str(pid[stk].poll()))
-            break
-   lg1.info ("Tests completed successfully for " + str(stocks))
-   exit(0)
-   
+   runTests(stocks)
+   exit (0)
+       
 if pid:
    numLaunchedPids = len(pid)
 
@@ -871,45 +897,61 @@ if (quitMaxProfit or doTrailingStop) and maxProfit == 0.0:
    lg1.info ("Max profit not set and it should be! ")
    exit (2)
 
+lg1.debug ("stocks " + str(stocks))
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Main loop. Loop forever. Pause trading during and after market hours 
 
-while True:
-   # Start looping at beginning of day
-   if not a1.doPreMarket():
-      if not offLine and not marketOpen:
-         if a1.getMarketBeginTime():
-            lg1.info("Waiting till the market opens...")
-            cn.waitTillMarketOpens(a1.getMarketOpenTime())
-            marketOpen += 1
+firstTime = 1
 
+while True:
+
+   # Start trading at beginning of day
+   if not a1.doPreMarket():
+      #if not marketOpen:
+         #if a.getMarketBeginTime():
+      lg1.info("Waiting till the market opens...")
+      cn.waitTillMarketOpens(a1.getMarketBeginTime())
+      #marketOpen += 1
+
+   # Start looping at beginning of day
+#   if not a1.doPreMarket():
+#      if not offLine and not marketOpen:
+#         if a1.getMarketBeginTime():
+#            lg1.info("Waiting till the market opens...")
+#            cn.waitTillMarketOpens(a1.getMarketOpenTime())
+#            marketOpen += 1
+
+   
    endBarLoopTime = cn.adjustTimeToTopMinute(cn.getTimeHrMnSecs() + (100 * timeBar))
 
    print ("cn.getTimeHrMnSecs() " + str(cn.getTimeHrMnSecs()))
    print ("endBarLoopTime " + str(endBarLoopTime))
 
-   if offLine:
+   # Set the initial price
+   if firstTime:
+      if service == "eTrade":
+         serviceValues = cn.setStockValues(stocksChart, 0, stocks)
+         lg1.debug ("serviceValues 1\n" + str(serviceValues))
+      
       for stock in stocks:
-         print ("numBars[stock] " + stock + " " + str(numBars[stock]))
-         if barCtr >= numBars[stock] - 1 or last[stock] == pr[stock].getLastToken():
-            if a[stock].inPosition():
-               a[stock].closePosition(barCtr, stocksChart[stock], bid[stock], ask[stock], forceClose)
-               exit()
+         lg1.debug ("serviceValues[stock] " + str(serviceValues[stock]))
+         bid[stock], ask[stock], last[stock], vol[stock]  = \
+            pr[stock].getNextPriceArr(serviceValues[stock], barCtr)
+      firstTime = 0
                   
-   if not offLine:
-      lg1.debug ("End bar time : " + str(endBarLoopTime))
-      lg1.debug ("Start time: " + str(cn.getTimeStamp()))
+   lg1.debug ("End bar time : " + str(endBarLoopTime))
+   lg1.debug ("Start time: " + str(cn.getTimeStamp()))
          
    for stock in stocks:
       initialVol[stock] = serviceValues[stock][svcVol]
       
-   if not offLine:
-      for stock in stocks:
-         if firstTimeThru == 0:
-            ba[stock].loadFirstBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid[stock], ask[stock], last[stock], initialVol[stock])
-            firstTimeThru += 1
-         else:
-            ba[stock].loadInitBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid[stock], ask[stock], last[stock], initialVol[stock])
+   for stock in stocks:
+      if firstTimeThru == 0:
+         ba[stock].loadFirstBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid[stock], ask[stock], last[stock], initialVol[stock])
+         firstTimeThru += 1
+      else:
+         ba[stock].loadInitBar(stocksChart[stock], cn.getTimeStamp(), barCtr, bid[stock], ask[stock], last[stock], initialVol[stock])
    
    a1.setCurrentBar(barCtr)
    a1.setNextBar(barCtr + 1)
@@ -939,15 +981,15 @@ while True:
       # Set the values from the trading service
       serviceValues = cn.setStockValues(stocksChart, barCtr, stocks)
 
-      print("serviceValues " + str(serviceValues))
+      lg1.debug ("serviceValues " + str(serviceValues))
 
       a[stock].unsetActionOnOpenBar()
       
       for stock in stocks:
-         bid[stock], ask[stock], last[stock], vol[stock] = pr[stock].getNextPriceArr(serviceValues[stock])
+         bid[stock], ask[stock], last[stock], vol[stock] = pr[stock].getNextPriceArr(serviceValues[stock], barCtr)
          vol[stock] = cn.getTotalVolume(stock) - initialVol[stock]         
 
-      print ("vol[stock] \n" + str(vol[stock]))
+      lg1.debug ("vol[stock] \n" + str(vol[stock]))
        
       # Set the profit to gain
       if not setProfit:
@@ -973,8 +1015,6 @@ while True:
 #         if exitVal > 0:
 #            lg[stock].info ("\nSTOPPED OUT: " + stock)
 #            #exit(exitVal)
-
-      lg1.debug ("stocks " + str(stocks))
 
       for stock in stocks:
          lg[stock].info ("\nSYM : " + str(stock) + "\n")

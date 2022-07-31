@@ -31,3 +31,6 @@ NVDA Gain: $ -9.7 Win %: 70.00 in 172 days with algo TB4_HL_HS_QM_OB2_OS2_CB3_CS
 NVDA Gain: $ -8.67 Win %: 63.00 in 172 days with algo TB4_HL_LO_QM_OB5_OS5_CB5_CS5_RV_AV_DB8
 NVDA Gain: $ 2.44 Win %: 73.00 in 172 days with algo TB4_HL_HS_QM_OB2_OS2_CB3_CS3_IR2
 NVDA Gain: $ 66.04 Win %: 75.00 in 172 days with algo TB4_HL_HS_QM_OB2_OS2_CB3_CS3_PM
+NVDA Gain: $ 46.01 Win %: 50.00 in 204 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_AL_LI
+NVDA Gain: $ 54.71 Win %: 49.00 in 204 days with algo TB3_OC_QM_OB2_OS2_CB2_CS5_RV_AL_DB10
+NVDA Gain: $ 73.43 Win %: 50.00 in 204 days with algo TB3_CC_QM_OB4_OS2_CB3_CS3_RV_AV

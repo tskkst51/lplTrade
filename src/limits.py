@@ -33,7 +33,9 @@ class Limits:
       self.doLoSeq = int(d['doLoSeq'])
       self.doOpenCloseSeq = int(d['doOpenCloseSeq'])      
       self.doOpensSeq = int(d['doOpensSeq'])      
-      self.doClosesSeq = int(d['doClosesSeq'])      
+      self.doClosesSeq = int(d['doClosesSeq'])
+      self.doHiBuyLoSellSeq = int(d['doHiBuyLoSellSeq'])
+
       self.doOpensCloses = int(d['doOpensCloses'])      
       self.doHiLo = int(d['doHiLo'])
       self.doExecuteOnOpen = int(d['doExecuteOnOpen'])
@@ -54,24 +56,6 @@ class Limits:
       self.lowerLows = self.lowerOpens = 0
       self.higherLows = self.higherOpens = 0
       
-      self.higherOpensBuyOpen = self.higherOpensSellOpen = 0
-      self.higherOpensBuyClose = self.higherOpensSellClose = 0
-
-      self.lowerOpensBuyOpen = self.lowerOpensSellOpen = 0
-      self.lowerOpensBuyClose = self.lowerOpensSellClose = 0
-      
-      self.higherHighsBuyOpen = self.higherHighsSellOpen = 0
-      self.higherHighsBuyClose = self.higherHighsSellClose = 0
-
-      self.higherLowsBuyOpen = self.higherLowsSellOpen = 0
-      self.higherLowsBuyClose = self.higherLowsSellClose = 0
-
-      self.lowerHighsBuyOpen = self.lowerHighsSellOpen = 0
-      self.lowerHighsBuyClose = self.lowerHighsSellClose = 0
-      
-      self.lowerLowsBuyOpen = self.lowerLowsSellOpen = 0
-      self.lowerLowsBuyClose = self.lowerLowsSellClose = 0
-            
       self.hiValues = []
       self.loValues = []
       
@@ -86,10 +70,15 @@ class Limits:
       self.rangeHi = 0.0
       self.rangeLo = 0.0
       self.stock = stock
-
+      self.minTradingDelayBars = 0
+      self.valCtr = 0
+      
       # Must have 2 decision bars when doing hiLoSeq
       if self.doHiLoSeq or self.doHiSeq or self.doLoSeq or self.doOpenCloseSeq or \
-         self.doExecuteOnOpen or self.doExecuteOnClose or self.doOpensSeq or self.doClosesSeq:
+         self.doExecuteOnOpen or self.doExecuteOnClose or self.doOpensSeq or self.doClosesSeq or self.doHiBuyLoSellSeq:
+        
+         self.lg.debug ("setting decision bars to 2")
+
          if self.openBuyBars < 2:
             self.openBuyBars = 2
          if self.closeBuyBars < 2:
@@ -120,9 +109,9 @@ class Limits:
       if self.doRangeTradeBars < self.getMaxNumTradeBars():
          maxBars = self.getMaxNumTradeBars()
          
-      self.setOpenCloseHiLoValues(barChart, bar, maxBars)
+      #self.setOpenCloseHiLoValues(barChart, bar, maxBars)
 
-      self.setHiLoConditions()
+      #self.setHiLoConditions()
 #      self.setOpenCloseHiLoConditions(self.doRangeTradeBars)
 
       # Use Hi and Los or open closes for determining range
@@ -139,93 +128,63 @@ class Limits:
       self.lg.debug("\nRange limits: " + str(self.rangeHi) + " " + str(self.rangeLo)+ "\n")
                
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setAvgBarLenOpenBuyLimit(self, barChart):
+   def setAvgBarLenOpenBuyLimit(self, last):
 
       avgBarLen = self.ba.getAvgBarLen()
       
       # Tighten up the limit when profit has been taken
-      if self.quickProfitCtr:
-         avgBarLen = avgBarLen / self.quickProfitCtr
+      #if self.quickProfitCtr:
+         #avgBarLen = avgBarLen / self.quickProfitCtr
          
-      self.openBuyLimit = self.cn.getCurrentAsk(self.stock) + avgBarLen
+      self.openBuyLimit = round(last + avgBarLen, 2)
       
       print ("AvgBarLen: setOpenBuyLimit: " + str(self.openBuyLimit))
          
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setAvgBarLenOpenSellLimit(self, barChart, bar):
+   def setAvgBarLenOpenSellLimit(self, last):
 
       avgBarLen = self.ba.getAvgBarLen()
 
       # Tighten up the limit when profit has been taken
-      if self.quickProfitCtr:
-         avgBarLen = avgBarLen / self.quickProfitCtr
+      #if self.quickProfitCtr:
+         #avgBarLen = avgBarLen / self.quickProfitCtr
 
-      self.openSellLimit = self.cn.getCurrentBid(self.stock) + avgBarLen
+      self.openSellLimit = round(last - avgBarLen, 2)
       
       print ("AvgBarLen: setOpenSellLimit: " + str(self.openSellLimit))
          
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setAvgBarLenCloseBuyLimit(self, barChart, bar):
+   def setAvgBarLenCloseBuyLimit(self, last):
 
       avgBarLen = self.ba.getAvgBarLen()
 
-      if self.ba.getBarsInPosition() > 1:
-         avgBarLen /= 2.0
+      #if self.ba.getBarsInPosition() > 1:
+         #avgBarLen /= 2.0
       
       print ("\navgBarLen: " + str(avgBarLen))
-      print ("previous buy limit: " + str(self.closeBuyLimit))
-      #print ("getCurrentAsk() " + str(self.cn.getCurrentAsk(self.stock)))
-
-      if self.ba.getBarsInPosition() == 0:
-         self.closeBuyLimit = self.cn.getCurrentAsk(self.stock) - avgBarLen
-      
-      # only raise the limit
-      #if self.closeBuyLimit == 0.0:
-      #   self.closeBuyLimit = self.cn.getCurrentAsk(self.stock) - avgBarLen
-      elif self.closeBuyLimit < self.cn.getCurrentAsk(self.stock) - avgBarLen:
-         self.closeBuyLimit = self.cn.getCurrentAsk(self.stock) - avgBarLen
+         
+      self.closeBuyLimit = round(last - avgBarLen, 2)
       
       print ("\nAvgBarLen: setCloseBuyLimit: " + str(self.closeBuyLimit))
          
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setAvgBarLenCloseSellLimit(self, barChart, bar):
+   def setAvgBarLenCloseSellLimit(self, last):
 
       avgBarLen = self.ba.getAvgBarLen()
 
-      if self.ba.getBarsInPosition() > 1:
-         avgBarLen /= 2.0
+      #if self.ba.getBarsInPosition() > 1:
+         #avgBarLen /= 2.0
         
       print ("\navgBarLen: " + str(avgBarLen))
-      print ("previous sell limit: " + str(self.closeSellLimit))
-      #print ("getCurrentBid() " + str(self.cn.getCurrentBid(self.stock)))
-
-      if self.ba.getBarsInPosition() == 0:
-         self.closeSellLimit = self.cn.getCurrentBid(self.stock) + avgBarLen
-      # only lower the limit
-      #if self.closeSellLimit == 0.0:
-      #   self.closeSellLimit = self.cn.getCurrentBid(self.stock) + avgBarLen
-      elif self.closeSellLimit > self.cn.getCurrentBid(self.stock) + avgBarLen:
-         self.closeSellLimit = self.cn.getCurrentBid(self.stock) + avgBarLen
+         
+      self.closeSellLimit = round(last + avgBarLen, 2)
       
       print ("\nAvgBarLen: setCloseSellLimit: " + str(self.closeSellLimit))
          
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setOpenBuyLimit(self, numBars):
 
-      if self.doHiLoSeq:
-         if self.aggressiveOpen:
-            self.openBuyLimit = self.getLowestHiPrice(numBars)
-            self.lg.debug("aggressiveOpen: openBuyLimit lowest hi ")
-            
-         elif self.agrBuyHiOpen:
-            self.openBuyLimit = self.getHighestOpenPrice(numBars)
-            self.lg.debug("agrBuyHiOpen: openBuyLimit highest open ")
-            
-         else:
-            self.openBuyLimit = self.getHighestHiPrice(numBars)
-            self.lg.debug("default: openBuyLimit highest hi ")
-      
-      elif self.doExecuteOnOpen:
+      if self.doExecuteOnOpen:
          if self.aggressiveOpen:
             self.openBuyLimit = self.getLowestClosePrice(numBars)
             self.lg.debug("aggressiveOpen: openBuyLimit lowest close ")
@@ -242,7 +201,9 @@ class Limits:
          if self.aggressiveOpen:
             self.openBuyLimit = self.getLowestClosePrice(numBars)
             self.lg.debug("aggressiveOpen: openBuyLimit lowest close ")
-            
+         elif self.agrBuyHiOpen:
+            self.openBuyLimit = self.getHighestOpenPrice(numBars)
+            self.lg.debug("agrBuyHiOpen: openBuyLimit highest open ")
          else:
             self.openBuyLimit = self.getHighestClosePrice(numBars)
             self.lg.debug("default: openBuyLimit highest close")
@@ -251,11 +212,9 @@ class Limits:
          if self.aggressiveOpen:
             self.openBuyLimit = self.getLowestHiPrice(numBars)
             self.lg.debug("aggressiveOpen: openBuyLimit lowest hi ")
-            
          elif self.agrBuyHiOpen:
             self.openBuyLimit = self.getHighestOpenPrice(numBars)
             self.lg.debug("agrBuyHiOpen: openBuyLimit highest open ")
-            
          else:
             self.openBuyLimit = self.getHighestHiPrice(self.openBuyBars)
             self.lg.debug("default: openBuyLimit highest hi")
@@ -278,20 +237,7 @@ class Limits:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setOpenSellLimit(self, numBars):
 
-      if self.doHiLoSeq:
-         if self.aggressiveOpen:
-            self.openSellLimit = self.getHighestLoPrice(numBars)
-            self.lg.debug ("aggressiveOpen: openSellLimit highest lo ")
-            
-         elif self.agrSellLoOpen:
-            self.openSellLimit = self.getLowestOpenPrice(numBars)
-            self.lg.debug("agrSellLoOpen: openSellLimit lowest open ")
-            
-         else:
-            self.openSellLimit = self.getLowestLoPrice(numBars)
-            self.lg.debug ("default: openSellLimit lowest lo ")
-
-      elif self.doExecuteOnOpen:
+      if self.doExecuteOnOpen:
          if self.aggressiveOpen:
             self.openSellLimit = self.getHighestOpenPrice(numBars)
             self.lg.debug ("aggressiveOpen: openSellLimit highest close ")
@@ -337,20 +283,7 @@ class Limits:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setCloseBuyLimit(self, numBars):
    
-      if self.doHiLoSeq:
-         if self.aggressiveClose:
-            self.closeBuyLimit = self.getHighestLoPrice(numBars)
-            self.lg.debug ("aggressiveClose: closeBuyLimit highest lo")
-            
-         elif self.agrBuyHiClose:
-            self.closeBuyLimit = self.getHighestClosePrice(numBars)
-            self.lg.debug("agrBuyHiClose: closeBuyLimit highest close ")
-            
-         else:
-            self.closeBuyLimit = self.getLowestLoPrice(numBars)
-            self.lg.debug ("default: closeBuyLimit lowest lo")
-      
-      elif self.doExecuteOnOpen:
+      if self.doExecuteOnOpen:
          if self.aggressiveClose:
             self.closeBuyLimit = self.getHighestClosePrice(numBars)
             self.lg.debug ("aggressiveClose: closeBuyLimit highest close")
@@ -402,20 +335,7 @@ class Limits:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setCloseSellLimit(self, numBars):
 
-      if self.doHiLoSeq:
-         if self.aggressiveClose:
-            self.closeSellLimit = self.getLowestHiPrice(numBars)
-            self.lg.debug("aggressiveClose: closeSellLimit lowest hi")
-            
-         elif self.agrSellLoClose:
-            self.closeSellLimit = self.getLowestClosePrice(numBars)
-            self.lg.debug("agrSellLoClose: closeSellLimit lowest close ")
-            
-         else:
-            self.closeSellLimit = self.getHighestHiPrice(numBars)
-            self.lg.debug("default closeSellLimit highest hi")
-      
-      elif self.doExecuteOnOpen:
+      if self.doExecuteOnOpen:
          if self.aggressiveClose:
             self.closeSellLimit = self.getLowestHiPrice(numBars)
             self.lg.debug("aggressiveClose: closeSellLimit lowest hi")
@@ -427,7 +347,6 @@ class Limits:
          else:
             self.closeSellLimit = self.getHighestClosePrice(numBars)
             self.lg.debug("doExecuteOnOpen: closeSellLimit highest close")
-            
 
       elif self.doHiLo:
          if self.aggressiveClose:
@@ -484,126 +403,176 @@ class Limits:
       self.closeSellLimit = 0.0
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setAvgBarLenLimits(self, barChart, bar):
+   def setAvgBarLenLimits(self, barChart, bar, last):
       
-      self.setCloseAvgBarLenLimits(barChart, bar)
+      self.setCloseAvgBarLenLimits(barChart, bar, last)
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setCloseAvgBarLenLimits(self, barChart, bar):
+   def setOpenAvgBarLenLimits(self, last):
       
-      self.setAvgBarLenCloseBuyLimit(barChart, bar)
-      self.setAvgBarLenCloseSellLimit(barChart, bar)
+      self.setAvgBarLenOpenBuyLimit(last)
+      self.setAvgBarLenOpenSellLimit(last)
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setCloseAvgBarLenLimits(self, last):
+      
+      self.setAvgBarLenCloseBuyLimit(last)
+      self.setAvgBarLenCloseSellLimit(last)
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isHigherOpens(self, numBars):
+      
+      vals = self.openValues
+      valsLen = len(vals)
+
+      highest = vals[valsLen - numBars]
+
+      for n in range(valsLen - numBars + 1, valsLen):
+         #print ("vals[n] " + str(vals[n]))
+         if vals[n] <= highest:
+            return 0
+         highest = vals[n]
+         
+      return 1
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def isHigherCloses(self, numBars):
+
+      vals = self.closeValues
+      valsLen = len(vals)
+
+      highest = vals[valsLen - numBars]
+
+      for n in range(valsLen - numBars + 1, valsLen):
+         if vals[n] <= highest:
+            return 0
+         highest = vals[n]
+         
+      return 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isHigherHighs(self, numBars):
-   
-      highest = self.hiValues[0]
+      
+      vals = self.hiValues
+      valsLen = len(vals)
 
-      for n in range(1, numBars):
-         hi = self.hiValues[n]
-         if hi >= highest:
+      highest = vals[valsLen - numBars]
+
+      for n in range(valsLen - numBars + 1, valsLen):
+         if vals[n] <= highest:
             return 0
-         highest = hi
+         highest = vals[n]
          
       return 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isHigherLows(self, numBars): 
-   
-      lowest = self.lowValues[0]
-      
-      for n in range(1, numBars):
-         lo = self.lowValues[n]
-         if lo >= lowest:
-            return 0
-         lowest = lo
 
+      vals = self.lowValues
+      valsLen = len(vals)
+
+      highest = vals[valsLen - numBars]
+
+      for n in range(valsLen - numBars + 1, valsLen):
+         if vals[n] <= highest:
+            return 0
+         highest = vals[n]
+         
       return 1
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isLowerHighs(self, numBars): 
-   
-      highest = self.hiValues[0]
-      
-      for n in range(1, numBars):
-         hi = self.hiValues[n]
-         if hi <= highest:
-            return 0
-         highest = hi
 
+      vals = self.hiValues
+      valsLen = len(vals)
+
+      lowest = vals[valsLen - numBars]
+               
+      for n in range(valsLen - numBars + 1, valsLen):
+         if vals[n] >= lowest:
+            return 0
+         lowest = vals[n]
+         
       return 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isLowerLows(self, numBars):
-   
-      lowest = self.lowValues[0]
-      
-      for n in range(1, numBars):
-         lo = self.lowValues[n]
-         if lo <= lowest:
+
+      vals = self.lowValues
+      valsLen = len(vals)
+
+      lowest = vals[valsLen - numBars]
+
+      for n in range(valsLen - numBars + 1, valsLen):
+         if vals[n] >= lowest:
             return 0
-         lowest = lo
+         lowest = vals[n]
          
       return 1
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isLowerOpens(self, numBars):
-    
-      lowest = self.openValues[0]
-      
-      for n in range(1, numBars):
-         lo = self.openValues[n]
-         if lo <= lowest:
-            return 0
-         lowest = lo
 
+      vals = self.openValues
+      valsLen = len(vals)
+
+      lowest = vals[valsLen - numBars]
+
+      for n in range(valsLen - numBars + 1, valsLen):
+         if vals[n] >= lowest:
+            return 0
+         lowest = vals[n]
+         
       return 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def isLowerCloses(self, numBars):
-   
-      lowest = self.closeValues[0]
-      
-      for n in range(1, numBars):
-         lo = self.closeValues[n]
-         if lo <= lowest:
-            return 0
-         lowest = lo
 
-      return 1
+      vals = self.closeValues
+      valsLen = len(vals)
 
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isHigherOpens(self, numBars):
-      
-      highest = self.openValues[0]
-      
-      for n in range(1, numBars):
-         hi = self.openValues[n]
-         if hi >= highest:
+      lowest = vals[valsLen - numBars]
+
+      for n in range(valsLen - numBars + 1, valsLen):
+         if vals[n] >= lowest:
             return 0
-         highest = hi
+         lowest = vals[n]
          
       return 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def isHigherCloses(self, numBars):
-   
-      highest = self.closeValues[0]
+   def getHighestHiPrice(self, numBars):
+
+      if numBars > len(self.hiValues):
+         return 0
+
+      arrLen = len(self.hiValues)
+      price = self.hiValues[arrLen - numBars]
+
+      print ("arrayLen " + str(arrLen))
+      print ("numBars " + str(numBars))
+      print ("price " + str(price))
       
-      for n in range(1, numBars):
-         hi = self.closeValues[n]
-         if hi >= highest:
-            return 0
-         highest = hi
-         
-      return 1
+      for n in range(arrLen - numBars, arrLen):
+         if price < self.hiValues[n]:
+            price = self.hiValues[n]
+      
+      return float(price)      
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getHighestClosePrice(self, numBars):
-   
-      price = self.closeValues[0]
 
-      for n in range(1, numBars):
+      if numBars > len(self.closeValues):
+         return 0
+
+      arrLen = len(self.closeValues)
+      price = self.closeValues[arrLen - numBars]
+
+      print ("arrayLen " + str(arrLen))
+      print ("numBars " + str(numBars))
+      print ("price " + str(price))
+      
+      for n in range(arrLen - numBars, arrLen):
          if price < self.closeValues[n]:
             price = self.closeValues[n]
 
@@ -611,10 +580,18 @@ class Limits:
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getHighestOpenPrice(self, numBars):
-   
-      price = self.openValues[0]
+
+      if numBars > len(self.openValues):
+         return 0
+
+      arrLen = len(self.openValues)
+      price = self.openValues[arrLen - numBars]
+
+      print ("arrayLen " + str(arrLen))
+      print ("numBars " + str(numBars))
+      print ("price " + str(price))
       
-      for n in range(1, numBars):
+      for n in range(arrLen - numBars, arrLen):
          if price < self.openValues[n]:
             price = self.openValues[n]
 
@@ -622,10 +599,18 @@ class Limits:
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getLowestOpenPrice(self, numBars):
+
+      if numBars > len(self.openValues):
+         return 0
+
+      arrLen = len(self.openValues)
+      price = self.openValues[arrLen - numBars]
+
+      print ("arrayLen " + str(arrLen))
+      print ("numBars " + str(numBars))
+      print ("price " + str(price))
       
-      price = self.openValues[0]
-      
-      for n in range(1, numBars):
+      for n in range(arrLen - numBars, arrLen):
          if price > self.openValues[n]:
             price = self.openValues[n]
 
@@ -633,10 +618,18 @@ class Limits:
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getLowestClosePrice(self, numBars):
-   
-      price = self.closeValues[0]
+
+      if numBars > len(self.closeValues):
+         return 0
+
+      arrLen = len(self.closeValues)
+      price = self.closeValues[arrLen - numBars]
+
+      print ("arrayLen " + str(arrLen))
+      print ("numBars " + str(numBars))
+      print ("price " + str(price))
       
-      for n in range(1, numBars):
+      for n in range(arrLen - numBars, arrLen):
          if price > self.closeValues[n]:
             price = self.closeValues[n]
 
@@ -644,10 +637,18 @@ class Limits:
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getLowestLoPrice(self, numBars):
-   
-      price = self.lowValues[0]
+
+      if numBars > len(self.lowValues):
+         return 0
+
+      arrLen = len(self.lowValues)
+      price = self.lowValues[arrLen - numBars]
+
+      print ("arrayLen " + str(arrLen))
+      print ("numBars " + str(numBars))
+      print ("price " + str(price))
       
-      for n in range(1, numBars):
+      for n in range(arrLen - numBars, arrLen):
          if price > self.lowValues[n]:
             price = self.lowValues[n]
 
@@ -655,36 +656,44 @@ class Limits:
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getHighestLoPrice(self, numBars):
-   
-      price = self.lowValues[0]
+
+      if numBars > len(self.lowValues):
+         return 0
+
+      arrLen = len(self.lowValues)
+      price = self.lowValues[arrLen - numBars]
+
+      print ("arrayLen " + str(arrLen))
+      print ("numBars " + str(numBars))
+      print ("price " + str(price))
       
-      for n in range(1, numBars):
+      for n in range(arrLen - numBars, arrLen):
          if price < self.lowValues[n]:
             price = self.lowValues[n]
-      
-      return float(price)      
-      
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getHighestHiPrice(self, numBars):
-      
-      print ("len hiValues " + str(len(self.hiValues)))
-      price = self.hiValues[0]
-      
-      for n in range(1, numBars):
-         if price < self.hiValues[n]:
-            price = self.hiValues[n]
-      
-      return float(price)      
 
+      print ("price " + str(price))
+
+      return float(price)      
+      
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getLowestHiPrice(self, numBars):
 
-      price = self.hiValues[0]
+      if numBars > len(self.hiValues):
+         return 0
+
+      arrLen = len(self.hiValues)
+      price = self.hiValues[arrLen - numBars]
+
+      print ("arrayLen " + str(arrLen))
+      print ("numBars " + str(numBars))
+      print ("price " + str(price))
       
-      for n in range(1, numBars):
+      for n in range(arrLen - numBars, arrLen):
          if price > self.hiValues[n]:
             price = self.hiValues[n]
-      
+
+      print ("price " + str(price))
+
       return float(price)      
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -758,7 +767,10 @@ class Limits:
       
       # Must have two decision bars for doHiLoSeq
       if self.doHiLoSeq or self.doHiSeq or self.doLoSeq or self.doOpenCloseSeq or \
-         self.doExecuteOnOpen or self.doExecuteOnClose or self.doOpensSeq or self.doClosesSeq:
+         self.doExecuteOnOpen or self.doExecuteOnClose or self.doOpensSeq or self.doClosesSeq or self.doHiBuyLoSellSeq:
+         
+         self.lg.debug ("setting decision bars to 2")
+
          if self.openBuyBars < 2:
             self.openBuyBars = 2
          if self.openSellBars < 2:
@@ -773,20 +785,42 @@ class Limits:
       
       maxNumTradeBars = self.getMaxNumTradeBars()
       
-      if self.tradingDelayBars < maxNumTradeBars:
-         self.tradingDelayBars = maxNumTradeBars
-      
-      print ("maxNumTradeBars " + str(maxNumTradeBars))
+#      if self.tradingDelayBars < maxNumTradeBars:
+#         self.tradingDelayBars = maxNumTradeBars
+#      
+#      print ("maxNumTradeBars " + str(maxNumTradeBars))
 
       if self.doRangeTradeBars > self.tradingDelayBars:
          self.tradingDelayBars = self.doRangeTradeBars
          
       self.lg.debug ("self.tradingDelayBars() " + str(self.tradingDelayBars))
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setMinTradingDelayBars(self):
+      
+      self.minTradingDelayBars = self.getMinNumTradeBars()
+
+      self.lg.debug ("self.minTradingDelayBars() " + str(self.minTradingDelayBars))
+      self.lg.debug ("self.tradingDelayBars() " + str(self.tradingDelayBars))
+      self.lg.debug ("self.doRangeTradeBars() " + str(self.doRangeTradeBars))
+
+#      if self.tradingDelayBars > self.minTradingDelayBars:
+#         self.minTradingDelayBars = self.tradingDelayBars
+#      
+#      if self.doRangeTradeBars > self.minTradingDelayBars:
+#         self.minTradingDelayBars = self.doRangeTradeBars
+         
+      self.lg.debug ("self.minTradingDelayBars() " + str(self.minTradingDelayBars))
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getTradingDelayBars(self):
       
       return self.tradingDelayBars
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getMinTradingDelayBars(self):
+      
+      return self.minTradingDelayBars
             
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getMaxNumTradeBars(self):
@@ -802,120 +836,159 @@ class Limits:
       if self.closeSellBars > maxNumBars:
          maxNumBars = self.closeSellBars
       
+      if self.doRangeTradeBars > maxNumBars:
+         maxNumBars = self.doRangeTradeBars
+
+      print (" " + str(maxNumBars))
+      
       return maxNumBars
-            
+
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def setOpenCloseHiLoValues(self, barChart, bar, waitBars):
+   def getMinNumTradeBars(self):
       
-      self.lg.debug ("waitBars " + str(waitBars))  
-      self.openValues = [0.0] * waitBars   
-      self.closeValues = [0.0] * waitBars  
-      self.lowValues = [0.0] * waitBars
-      self.hiValues = [0.0] * waitBars
+      minNumBars = self.openBuyBars
+      
+      if self.openSellBars < minNumBars:
+         minNumBars = self.openSellBars
+
+#      if self.closeBuyBars < minNumBars:
+#         minNumBars = self.closeBuyBars
+#
+#      if self.closeSellBars < minNumBars:
+#         minNumBars = self.closeSellBars
+      
+      return minNumBars
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setOpenCloseHiLoValues(self, barChart, bar, tradeBars):
+      
+      if bar < tradeBars:
+         tradeBars = bar
+         
+      self.openValues = [0.0] * tradeBars   
+      self.closeValues = [0.0] * tradeBars  
+      self.lowValues = [0.0] * tradeBars
+      self.hiValues = [0.0] * tradeBars
    
-      self.lg.debug("waitBars " + str(waitBars))
       self.lg.debug("bar " + str(bar))
+      self.lg.debug("tradeBars " + str(tradeBars))
+      self.lg.debug("bar - tradeBars " + str(bar - tradeBars))
 
-      for n in range(waitBars):
-         self.openValues[n] = barChart[bar - n][self.op]
-         self.closeValues[n] = barChart[bar - n][self.cl]
-         self.lowValues[n] = barChart[bar - n][self.lo]
-         self.hiValues[n] = barChart[bar - n][self.hi]
-      
-      # Remove before going live 
-           
-      for n in range(self.getMaxNumTradeBars()):
-         self.lg.debug ("open's: " + str(barChart[bar - n][self.op]))  
-      
-      for n in range(self.getMaxNumTradeBars()):
-         self.lg.debug ("close's: " + str(barChart[bar - n][self.cl]))  
-      
-      for n in range(self.getMaxNumTradeBars()):
-         self.lg.debug ("low's: " + str(barChart[bar - n][self.lo]))         
+      try:
+         i = 0
+         for n in range(bar - tradeBars, bar):
+            self.lg.debug("n " + str(barChart[n]))
+            self.lg.debug("n and i num " + str(n) + " " + str(i))
+            self.openValues[i] = barChart[n][self.op]
+            self.closeValues[i] = barChart[n][self.cl]
+            self.lowValues[i] = barChart[n][self.lo]
+            self.hiValues[i] = barChart[n][self.hi]
+            i += 1
+      except IndexError as e:
+         self.lg.debug ("IndexError " + str(e) + " " + str(i) + " " + str(n))
 
-      for n in range(self.getMaxNumTradeBars()):                
-         self.lg.debug ("hi's: " + str(barChart[bar - n][self.hi]))
+      self.lg.debug ("open's: " + str(self.openValues))  
+      self.lg.debug ("close's: " + str(self.closeValues))  
+      self.lg.debug ("low's: " + str(self.lowValues))  
+      self.lg.debug ("hi's: " + str(self.hiValues))  
 
       return 1
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setHiLoConditions(self):
    
-      self.higherOpensBuyOpen = self.isHigherOpens(self.openBuyBars)
-      self.higherOpensSellOpen = self.isHigherOpens(self.openSellBars)
-      self.higherOpensBuyClose = self.isHigherOpens(self.closeBuyBars)
-      self.higherOpensSellClose = self.isHigherOpens(self.closeSellBars)
+      self.higherOpensBuyOpen = self.higherOpensSellOpen = 0
+      self.higherOpensBuyClose = self.higherOpensSellClose = 0
+      self.lowerOpensBuyOpen = self.lowerOpensSellOpen = 0
+      self.lowerOpensBuyClose = self.lowerOpensSellClose = 0
+      self.higherHighsBuyOpen = self.higherHighsSellOpen = 0
+      self.higherHighsBuyClose = self.higherHighsSellClose = 0
+      self.higherLowsBuyOpen = self.higherLowsSellOpen = 0
+      self.higherLowsBuyClose = self.higherLowsSellClose = 0
+      self.lowerHighsBuyOpen = self.lowerHighsSellOpen = 0
+      self.lowerHighsBuyClose = self.lowerHighsSellClose = 0
+      self.lowerLowsBuyOpen = self.lowerLowsSellOpen = 0
+      self.lowerLowsBuyClose = self.lowerLowsSellClose = 0
+      self.higherClosesBuyClose = self.higherClosesSellClose = 0
+      self.lowerClosesBuyClose = self.lowerClosesSellClose = 0
+      self.higherClosesBuyOpen = self.higherClosesSellOpen = 0
+      self.lowerClosesBuyOpen = self.lowerClosesSellOpen = 0
 
-      self.lg.debug("higherOpens openBuyBars: " + str(self.higherOpensBuyOpen))
-      self.lg.debug("higherOpens openSellBars: " + str(self.higherOpensSellOpen))
-      self.lg.debug("higherOpens closeBuyBars: " + str(self.higherOpensBuyClose))
-      self.lg.debug("higherOpens closeSellBars: " + str(self.higherOpensSellClose))
+      if len(self.openValues) >= self.openBuyBars:
+         self.higherOpensBuyOpen = self.isHigherOpens(self.openBuyBars)
+         self.lowerOpensBuyOpen = self.isLowerOpens(self.openBuyBars)
+         self.higherClosesBuyOpen = self.isHigherCloses(self.openBuyBars)
+         self.lowerClosesBuyOpen = self.isLowerCloses(self.openBuyBars)
+         self.higherHighsBuyOpen = self.isHigherHighs(self.openBuyBars)
+         self.lowerHighsBuyOpen = self.isLowerHighs(self.openBuyBars)
+         self.higherLowsBuyOpen = self.isHigherLows(self.openBuyBars)
+         self.lowerLowsBuyOpen = self.isLowerLows(self.openBuyBars)
 
-      self.lowerOpensBuyOpen = self.isLowerOpens(self.openBuyBars)
-      self.lowerOpensSellOpen = self.isLowerOpens(self.openSellBars)
-      self.lowerOpensBuyClose = self.isLowerOpens(self.closeBuyBars)
-      self.lowerOpensSellClose = self.isLowerOpens(self.closeSellBars)
+      if len(self.closeValues) >= self.openSellBars:
+         self.higherOpensSellOpen = self.isHigherOpens(self.openSellBars)
+         self.lowerOpensSellOpen = self.isLowerOpens(self.openSellBars)
+         self.higherClosesSellOpen = self.isHigherCloses(self.openSellBars)
+         self.lowerClosesSellOpen = self.isLowerCloses(self.openSellBars)
+         self.higherHighsSellOpen = self.isHigherHighs(self.openSellBars)
+         self.lowerHighsSellOpen = self.isLowerHighs(self.openSellBars)
+         self.higherLowsSellOpen = self.isHigherLows(self.openSellBars)
+         self.lowerLowsSellOpen = self.isLowerLows(self.openSellBars)
+
+      if len(self.hiValues) >= self.closeBuyBars:
+         self.higherOpensBuyClose = self.isHigherOpens(self.closeBuyBars)
+         self.lowerOpensBuyClose = self.isLowerOpens(self.closeBuyBars)
+         self.higherClosesBuyClose = self.isHigherCloses(self.closeBuyBars)
+         self.lowerClosesBuyClose = self.isLowerCloses(self.closeBuyBars)
+         self.higherHighsBuyClose = self.isHigherHighs(self.closeBuyBars)
+         self.lowerHighsBuyClose = self.isLowerHighs(self.closeBuyBars)
+         self.higherLowsBuyClose = self.isHigherLows(self.closeBuyBars)
+         self.lowerLowsBuyClose = self.isLowerLows(self.closeBuyBars)
+
+      if len(self.lowValues) >= self.closeSellBars:
+         self.higherOpensSellClose = self.isHigherOpens(self.closeSellBars)
+         self.lowerOpensSellClose = self.isLowerOpens(self.closeSellBars)
+         self.higherClosesSellClose = self.isHigherCloses(self.closeSellBars)
+         self.lowerClosesSellClose = self.isLowerCloses(self.closeSellBars)
+         self.higherHighsSellClose = self.isHigherHighs(self.closeSellBars)
+         self.lowerHighsSellClose = self.isLowerHighs(self.closeSellBars)
+         self.higherLowsSellClose = self.isHigherLows(self.closeSellBars)
+         self.lowerLowsSellClose = self.isLowerLows(self.closeSellBars)      
+
+      self.lg.debug("isHigherOpens openBuyBars: " + str(self.higherOpensBuyOpen))
+      self.lg.debug("isHigherOpens openSellBars: " + str(self.higherOpensSellOpen))
+      self.lg.debug("isHigherOpens closeBuyBars: " + str(self.higherOpensBuyClose))
+      self.lg.debug("isHigherOpens closeSellBars: " + str(self.higherOpensSellClose))
 
       self.lg.debug("isLowerOpens openBuyBars: " + str(self.lowerOpensBuyOpen))
       self.lg.debug("isLowerOpens openSellBars: " + str(self.lowerOpensSellOpen))
       self.lg.debug("isLowerOpens closeBuyBars: " + str(self.lowerOpensBuyClose))
       self.lg.debug("isLowerOpens closeSellBars: " + str(self.lowerOpensSellClose))
       
-      self.higherClosesBuyOpen = self.isHigherCloses(self.openBuyBars)
-      self.higherClosesSellOpen = self.isHigherCloses(self.openSellBars)
-      self.higherClosesBuyClose = self.isHigherCloses(self.closeBuyBars)
-      self.higherClosesSellClose = self.isHigherCloses(self.closeSellBars)
-      
       self.lg.debug("isHigherCloses openBuyBars: " + str(self.higherClosesBuyOpen))
       self.lg.debug("isHigherCloses openSellBars: " + str(self.higherClosesSellOpen))
       self.lg.debug("isHigherCloses closeBuyBars: " + str(self.higherClosesBuyClose))
       self.lg.debug("isHigherCloses closeSellBars: " + str(self.higherClosesSellClose))
-
-      self.lowerClosesBuyOpen = self.isLowerCloses(self.openBuyBars)
-      self.lowerClosesSellOpen = self.isLowerCloses(self.openSellBars)
-      self.lowerClosesBuyClose = self.isLowerCloses(self.closeBuyBars)
-      self.lowerClosesSellClose = self.isLowerCloses(self.closeSellBars)
 
       self.lg.debug("isLowerCloses openBuyBars: " + str(self.lowerClosesBuyOpen))
       self.lg.debug("isLowerCloses openSellBars: " + str(self.lowerClosesSellOpen))
       self.lg.debug("isLowerCloses closeBuyBars: " + str(self.lowerClosesBuyClose))
       self.lg.debug("isLowerCloses closeSellBars: " + str(self.lowerClosesSellClose))
 
-      self.higherHighsBuyOpen = self.isHigherHighs(self.openBuyBars)
-      self.higherHighsSellOpen = self.isHigherHighs(self.openSellBars)
-      self.higherHighsBuyClose = self.isHigherHighs(self.closeBuyBars)
-      self.higherHighsSellClose = self.isHigherHighs(self.closeSellBars)
-
       self.lg.debug("isHigherHighs openBuyBars: " + str(self.higherHighsBuyOpen))
       self.lg.debug("isHigherHighs openSellBars: " + str(self.higherHighsSellOpen))
       self.lg.debug("isHigherHighs closeBuyBars: " + str(self.higherHighsBuyClose))
       self.lg.debug("isHigherHighs closeSellBars: " + str(self.higherHighsSellClose))
-
-      self.higherLowsBuyOpen = self.isHigherLows(self.openBuyBars)
-      self.higherLowsSellOpen = self.isHigherLows(self.openSellBars)
-      self.higherLowsBuyClose = self.isHigherLows(self.closeBuyBars)
-      self.higherLowsSellClose = self.isHigherLows(self.closeSellBars)
 
       self.lg.debug("isHigherLows openBuyBars: " + str(self.higherLowsBuyOpen))
       self.lg.debug("isHigherLows openSellBars: " + str(self.higherLowsSellOpen))
       self.lg.debug("isHigherLows closeBuyBars: " + str(self.higherLowsBuyClose))
       self.lg.debug("isHigherLows closeSellBars: " + str(self.higherLowsSellClose))
 
-      self.lowerHighsBuyOpen = self.isLowerHighs(self.openBuyBars)
-      self.lowerHighsSellOpen = self.isLowerHighs(self.openSellBars)
-      self.lowerHighsBuyClose = self.isLowerHighs(self.closeBuyBars)
-      self.lowerHighsSellClose = self.isLowerHighs(self.closeSellBars)
-      
       self.lg.debug("isLowerHighs openBuyBars: " + str(self.lowerHighsBuyOpen))
       self.lg.debug("isLowerHighs openSellBars: " + str(self.lowerHighsSellOpen))
       self.lg.debug("isLowerHighs closeBuyBars: " + str(self.lowerHighsBuyClose))
       self.lg.debug("isLowerHighs closeSellBars: " + str(self.lowerHighsSellClose))
 
-      self.lowerLowsBuyOpen = self.isLowerLows(self.openBuyBars)
-      self.lowerLowsSellOpen = self.isLowerLows(self.openSellBars)
-      self.lowerLowsBuyClose = self.isLowerLows(self.closeBuyBars)
-      self.lowerLowsSellClose = self.isLowerLows(self.closeSellBars)      
-      
       self.lg.debug("isLowerLows openBuyBars: " + str(self.lowerLowsBuyOpen))
       self.lg.debug("isLowerLows openSellBars: " + str(self.lowerLowsSellOpen))
       self.lg.debug("isLowerLows closeBuyBars: " + str(self.lowerLowsBuyClose))

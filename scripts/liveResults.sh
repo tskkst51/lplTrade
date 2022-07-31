@@ -8,7 +8,8 @@ lplt=""
 dt=$1
 lplt=$2
 
-wp=$(pwd)
+#wp=$(pwd)
+wp="/Users/tsk/w/lplTrade"
 
 #$HOME/bin/lplt.sh
 

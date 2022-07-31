@@ -3,10 +3,11 @@ bc module
 '''
 
 import random
+import os.path
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Barchart:
-   def __init__(self):
+   def __init__(self, path, offLine, timeBar):
    
       # Bar identifiers High, Low, Open, Close, Volume, Length, Date 
       
@@ -34,6 +35,13 @@ class Barchart:
       
       self.barCountInPosition = 0
       self.timeBarValue = 0
+
+      if offLine:
+         self.barChart = self.init()
+         ctr = self.read(path, self.barChart, timeBar)
+         
+         #print ("ctr: " + str(ctr))
+         #print ("self.barChart: " + str(self.barChart))
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def init(self):
@@ -143,6 +151,9 @@ class Barchart:
          print("setAvgVol bar: " + str(self.avgVol))
          return
 
+      # Ignore first bar  since we never act on the first bar
+      # and it is always the highest in vol? set n = 1
+      
       n = 0
       totalVol = 0
             
@@ -232,7 +243,46 @@ class Barchart:
          self.priceIdx += 1
 
       return price
-      
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def read(self, path, bc, timeBar):
+   
+      if timeBar > 1:
+         return self.readMin(path, bc, timeBar)
+         
+      ctr = 0
+      with open(path, 'r') as bcData:
+         for line in bcData:
+            line = line.strip("\n")
+            bar = line.split(",")
+                        
+            if ctr != 0:
+               bc.append(bar)
+               
+            if ctr == 0:
+               bid, ask, avg = self.getBidAskAvgLineOne(path)
+               bc[ctr][self.op] = float(avg)
+               bc[ctr][self.hi] = float(bid)
+               bc[ctr][self.lo] = float(ask)
+            else:
+               bc[ctr][self.op] = float(bar[self.op])
+               bc[ctr][self.hi] = float(bar[self.hi])
+               bc[ctr][self.lo] = float(bar[self.lo])
+
+            #bc[ctr][self.hi] = float(bar[self.hi])
+            #bc[ctr][self.lo] = float(bar[self.lo])
+            #bc[ctr][self.op] = float(bar[self.op])
+            
+            bc[ctr][self.cl] = float(bar[self.cl])
+            bc[ctr][self.vl] = int(bar[self.vl])
+            bc[ctr][self.bl] = float(bar[self.bl])
+            bc[ctr][self.sH] = int(bar[self.sH])
+            bc[ctr][self.sL] = int(bar[self.sL])
+            bc[ctr][self.dt] = str(bar[self.dt])
+            ctr += 1
+     
+      return ctr
+
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    # Create a bar chart every n minutes
    def readMin(self, path, bc, minutes):
@@ -248,7 +298,15 @@ class Barchart:
          for line in bcData:
             line = line.strip("\n")
             bar = line.split(",")
-                    
+
+            if bcCtr == 0:
+               bid, ask, avg = self.getBidAskAvgLineOne(path)
+               bc[bcCtr][self.op] = avg
+               bc[bcCtr][self.hi] = float(bid)
+               bc[bcCtr][self.lo] = float(ask)
+            else:
+               bc[bcCtr][self.op] = float(bar[self.op])
+
             if lineCtr % minutes == 0:
                bc.append(bar)
                
@@ -268,7 +326,10 @@ class Barchart:
                
                bc[bcCtr][self.hi] = round(hi, 2)
                bc[bcCtr][self.lo] = round(lo, 2)
-               bc[bcCtr][self.op] = round(op, 2)
+                  
+               print ("lineCtr: " + str(lineCtr))
+
+               #bc[bcCtr][self.op] = round(op, 2)
                bc[bcCtr][self.cl] = float(bar[self.cl])
                bc[bcCtr][self.vl] = vl
                bc[bcCtr][self.bl] = round(hi - lo, 2)
@@ -287,8 +348,13 @@ class Barchart:
             else:
                if not dirty:
                   dirty += 1
-                  op = float(bar[self.op])
                   
+                  # Use the avg of the bid + ask for the open
+                  # since Etrade uses the prev days close as today's open
+                  
+               op = float(bar[self.op])
+               hi = float(bar[self.hi])
+
                if hi < float(bar[self.hi]):
                   hi = float(bar[self.hi])
                   
@@ -311,6 +377,32 @@ class Barchart:
             
       return bcCtr
 
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getBidAskAvgLineOne(self, path):
+      
+      # Change path to price path
+      # get the avg of the bid and ask on line one
+
+      firstLineVals = []
+      
+      sym = os.path.basename(path).strip(".bc").strip("active")      
+      pPath = os.path.dirname(os.path.dirname(path)) + "/prices/active" + sym + ".pr"
+      
+      with open(pPath, 'r') as pp:
+         firstLineVals = pp.readline().split(",")
+         
+      print ("firstLineVals " + str(firstLineVals))
+
+      print (str(firstLineVals[0]))
+      print (str(firstLineVals[1]))
+
+      avg = (float(firstLineVals[0]) + float(firstLineVals[1])) / 2.0
+      print (str(avg))
+      bid = firstLineVals[0]
+      ask = firstLineVals[1]
+      
+      return bid, ask, avg
+               
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setTimeBarValue(self, timeBar):
       
@@ -433,34 +525,6 @@ class Barchart:
       
       return 
       
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def read(self, path, bc, timeBar):
-   
-      if timeBar > 1:
-         return self.readMin(path, bc, timeBar)
-         
-      ctr = 0
-      with open(path, 'r') as bcData:
-         for line in bcData:
-            line = line.strip("\n")
-            bar = line.split(",")
-                        
-            if ctr != 0:
-               bc.append(bar)
-               
-            bc[ctr][self.hi] = float(bar[self.hi])
-            bc[ctr][self.lo] = float(bar[self.lo])
-            bc[ctr][self.op] = float(bar[self.op])
-            bc[ctr][self.cl] = float(bar[self.cl])
-            bc[ctr][self.vl] = int(bar[self.vl])
-            bc[ctr][self.bl] = float(bar[self.bl])
-            bc[ctr][self.sH] = int(bar[self.sH])
-            bc[ctr][self.sL] = int(bar[self.sL])
-            bc[ctr][self.dt] = str(bar[self.dt])
-            ctr += 1
-     
-      return ctr
-
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def initWrite(self, path):
                   
@@ -637,6 +701,10 @@ class Barchart:
       
       return stocks
    
-      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getTimeStampFromBarchartFile(self, bar):
+   
+      #return ("junk")
+      return self.barChart[bar][self.dt]
 
 # end bc

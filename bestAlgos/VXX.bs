@@ -230,3 +230,6 @@ VXX Gain: $ 1.4 Win %: 100.00 in 4 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_AL
 VXX Gain: $ 1.4 Win %: 100.00 in 4 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_AV
 VXX Gain: $ 1.4 Win %: 100.00 in 4 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_RV_AL
 VXX Gain: $ 1.4 Win %: 100.00 in 4 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_RV_AV
+VXX Gain: $ 2.56 Win %: 71.00 in 7 days with algo TB5_OO_QM_OB2_OS3_CB5_CS5_RV_AV_DB6
+VXX Gain: $ 2.94 Win %: 71.00 in 7 days with algo TB5_OO_QM_OB2_OS4_CB5_CS5_RV_AV_DB6
+VXX Gain: $ 4.59 Win %: 85.00 in 7 days with algo TB1_CC_QM_OB2_OS2_CB2_CS5_SS

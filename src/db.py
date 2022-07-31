@@ -13,6 +13,8 @@ import random
 class DB:
    def __init__(self, d, day):
 
+      pgPath = "/Applications/Postgres.app/Contents/Versions/14/bin/"
+
       self.d = d
       self.dbPath = "db/" + day
       self.dbLog = "db/" + day + "/log"
@@ -20,9 +22,9 @@ class DB:
       self.tmpFile = "/tmp/dbTmp"
       self.day = day
       self.port = self.getRunningPort(day)
-      self.cl = "psql algos -p " + str(self.port) + " -q -t -c '\\a' -c \""
-      self.clF = "psql algos -p " + str(self.port) + " -q -t -c '\\a' -o " + self.tmpFile + " -c \""
-      self.timeBar = [1,2,5]
+      self.cl = pgPath + "psql algos -p " + str(self.port) + " -q -t -c '\\a' -c \""
+      self.clF = pgPath + "psql algos -p " + str(self.port) + " -q -t -c '\\a' -o " + self.tmpFile + " -c \""
+      self.timeBar = [1,3,5]
       
       # 625 rows when running 5^5 open close bars
       # 256 rows when running 4^4 open close bars 

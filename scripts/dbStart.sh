@@ -1,6 +1,7 @@
 #!/bin/bash
 
-. $HOME/profiles/db.sh
+wp="/Users/tsk/w/lplTrade"
+.  ${wp}/scripts/db.sh
 
 day=$1
 
@@ -13,4 +14,5 @@ else
    port=$(getRunningPort $day)
 fi
 
+echo port $port
 exit 0

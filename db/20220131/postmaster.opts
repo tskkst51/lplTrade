@@ -1,1 +1,0 @@
-/Applications/Postgres.app/Contents/Versions/14/bin/postgres "-D" "db/20220131" "-p" "6030"

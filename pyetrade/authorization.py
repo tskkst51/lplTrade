@@ -81,8 +81,14 @@ class ETradeOAuth(object):
             callback_uri=self.callback_url,
             signature_type="AUTH_HEADER",
         )
+        
+        print ("self.session " + str(self.session))
+
         # get request token
         self.session.fetch_request_token(self.req_token_url)
+        
+        print ("self.req_token_url " + str(self.req_token_url))
+        
         # get authorization url
         # etrade format: url?key&token
         authorization_url = self.session.authorization_url(self.auth_token_url)

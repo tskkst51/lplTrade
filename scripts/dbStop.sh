@@ -1,6 +1,9 @@
 #!/bin/bash
 
-. $HOME/profiles/db.sh
+wp="/Users/tsk/w/lplTrade"
+.  ${wp}/scripts/db.sh
+
+cd $wp || echo cant cd to wp
 
 runningDBs="db/${1}"
 

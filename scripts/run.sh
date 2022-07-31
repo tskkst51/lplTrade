@@ -30,7 +30,7 @@ py3+="${activateDir}/bin/python3"
 dayProvided=0
 
 if [[ -z $dt ]]; then
-   days=$(ls "test" | awk '{print $1'} | grep -v "mm")
+   days=`for d in $(ls test); do if [[ -f "test/${d}/bc/active${stock}.bc" ]]; then echo $d;fi;done`
 else
    dayProvided=1
    days=$dt
@@ -88,9 +88,10 @@ for algo in $algos; do
          continue
       fi
       
-      ${py3} ${wp}/bin/profileGenerator.py -d $day -a $algo > /dev/null 2>&1
+      ${py3} ${wp}/bin/profileGenerator.py -d $day -a $algo -s $stock > /dev/null 2>&1
       
-      ${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -w test/${day} -o -d -s $stock > $outFile 2>/dev/null
+      #${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -w test/${day} -o -d -s $stock > $outFile 2>/dev/null
+      ${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json_${stock} -w test/${day} -o -d -s $stock > $outFile
 
       value=$(cat $outFile | grep "Total Gain" | tail -1 | awk '{print $4}')
       echo $value on $day >> $gainFile

@@ -229,3 +229,4 @@ PANW Gain: $ 14.26 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB4_OS4_CB5_CS5_R
 PANW Gain: $ 15.59 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB4_OS4_CB5_CS5_AO
 PANW Gain: $ 21.85 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB4_OS4_CB5_CS5_AC
 PANW Gain: $ 23.18 Win %: 100.00 in 1 days with algo TB2_HL_QM_OB4_OS4_CB5_CS5_AO_AC
+PANW Gain: $ 52.9 Win %: 100.00 in 3 days with algo TB3_HI_HL_QM_OB5_OS2_CB5_CS5_AL

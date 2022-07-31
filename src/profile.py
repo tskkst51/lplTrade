@@ -19,6 +19,7 @@ import sys
 class Profile:
    def __init__(self, path):
 
+      d = {}
       with open(path) as jsonData:
          try:
             d = json.load(jsonData)
@@ -53,6 +54,7 @@ class Profile:
       d["doHiLoSeq"] = str(0)
       d["doHiLo"] = str(0)
       d["doHiSeq"] = str(0)
+      d["doHiBuyLoSellSeq"] = str(0)
       d["doLoSeq"] = str(0)
       d["doOpenCloseSeq"] = str(0)
       d["doOpensSeq"] = str(0)
@@ -89,6 +91,10 @@ class Profile:
       d["doOnlyTrends"] = str(0)
       d["doInPosTracking"] = str(0)
       d["doDynamic"] = str(0)
+      d["useAvgBarLimits"] = str(0)
+      d["doTriggers"] = str(0)
+      d["doDoubleUp"] = str(0)
+      d["doubleUpMax"] = str(0)
       
       return d
       
@@ -162,6 +168,15 @@ class Profile:
       return info 
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setDoubleUps(self, d, value, info):
+   
+      d["doDoubleUp"] = "1"      
+      d["doubleUpMax"] = str(value)      
+      info += "DU" + str(value) + " "
+      
+      return info 
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setInRangeBars(self, d, value, info):
    
       d["doRangeTradeBars"] = str(value)      
@@ -198,6 +213,10 @@ class Profile:
          d["doHiSeq"] = str(1)
          info += "HI_"
       
+      if "BL" in algo:
+         d["doHiBuyLoSellSeq"] = str(1)
+         info += "BL_"
+
       if "OC" in algo:
          d["doOpenCloseSeq"] = str(1)
          info += "OC_"
@@ -306,13 +325,13 @@ class Profile:
          d["averageVolumeClose"] = str(1)
          info += "AV_"
 
-      if "AL" in algo:
-         d["volumeLastBarClose"] = str(1)
-         info += "AL_"
-
       if "VI" in algo:
          d["averageVolumeOpen"] = str(1)
          info += "VI_"
+
+      if "AL" in algo:
+         d["volumeLastBarClose"] = str(1)
+         info += "AL_"
 
       if "LI" in algo:
          d["volumeLastBarOpen"] = str(1)
@@ -329,6 +348,23 @@ class Profile:
       if "DY" in algo:
          d["doDynamic"] = str(1)
          info += "DY_"
+         
+      if "UA" in algo:
+         d["useAvgBarLimits"] = str(1)
+         info += "UA_"
+         
+      if "TG" in algo:
+         d["doTriggers"] = str(1)
+         info += "TG_"
+         
+#      if "DU" in algo:
+#         d["doDoubleUp"] = str(1)
+#         info += "DU_"
+         
+      if "DU" in algo:
+         b, m, bar = algo.rpartition("DU")
+         bars, m, e = bar.partition("_")
+         self.setDoubleUps(d, bars, "")
          
       if "DB" in algo:
          b, m, bar = algo.rpartition("DB")

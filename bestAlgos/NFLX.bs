@@ -229,3 +229,9 @@ NFLX Gain: $ 88.17 Win %: 65.00 in 105 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_
 NFLX Gain: $ 88.17 Win %: 65.00 in 105 days with algo TB4_OC_QM_OB2_OS2_CB5_CS5_AL_TS
 NFLX Gain: $ 96.56 Win %: 57.00 in 105 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_IT_QL
 NFLX Gain: $ 101.5 Win %: 74.00 in 105 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_AV_TS
+NFLX Gain: $ 65.4 Win %: 52.00 in 129 days with algo TB5_OO_QM_OB3_OS2_CB3_CS5_HM_AV
+NFLX Gain: $ 65.4 Win %: 52.00 in 129 days with algo TB5_OO_QM_OB3_OS2_CB3_CS5_HM_AV
+NFLX Gain: $ 90.11 Win %: 51.00 in 129 days with algo TB5_OO_QM_OB3_OS2_CB3_CS5_RV_AV
+NFLX Gain: $ 72.53 Win %: 52.00 in 130 days with algo TB5_OO_QM_OB3_OS2_CB3_CS5_HM_AV
+NFLX Gain: $ 72.53 Win %: 52.00 in 130 days with algo TB5_OO_QM_OB3_OS2_CB3_CS5_HM_AV
+NFLX Gain: $ 93.3 Win %: 50.00 in 130 days with algo TB5_OO_QM_OB3_OS2_CB3_CS5_RV_AV

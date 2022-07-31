@@ -1,0 +1,31 @@
+#!/bin/bash
+
+## duplicate last line in bc files
+
+date=$1
+#dir=$1
+
+wp=$(pwd)
+
+#dt=$(date "+%m%d%Y")
+dt=$(date "+%Y%m%d")
+
+#testPaths=$(ls $dir)  
+testPaths=$(ls "test/${date}/bc")  
+
+path="${wp}/test/${date}/bc"
+
+for bChart in $testPaths; do
+#   testPaths="${dir}/${testPath}/bc"
+#   bcFiles=$(ls $testPaths) 
+   #for f in $bcFiles; do
+      #echo Modifying ${testPaths}/${f}...
+      echo Modifying ${bChart}...
+      cp ${path}/${bChart} ${path}/${bChart}.tmp
+      tail -1 ${path}/${bChart} >> ${path}/${bChart}.tmp
+      mv ${path}/${bChart}.tmp ${path}/${bChart}
+   #done
+done
+
+exit 0
+

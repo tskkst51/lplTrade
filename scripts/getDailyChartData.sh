@@ -1,6 +1,10 @@
 #!/bin/bash
 
 wp="/Users/tsk/w/lplTrade"
+tmpFile="/tmp/removeFiles.$$"
+
+removeOldData=$1
+debug=$2
 
 cd $wp
 
@@ -34,44 +38,59 @@ dt=$(date "+%Y%m%H%M")
 echo $cmd
 
 # Run twice to get em all. some aren't updated close to midnight
-#$cmd
-$cmd > logs/dailyCharts.${dt} 2>&1
-echo $dt 1 >> logs/dailyCharts.${dt}
-sleep 10
-$cmd >> logs/dailyCharts.${dt} 2>&1
-echo $dt 2 >> logs/dailyCharts.${dt}
-sleep 10
-$cmd >> logs/dailyCharts.${dt} 2>&1
-ret=$?
-echo $dt 3 >> logs/dailyCharts.${dt}
 
-if [[ $ret != 0 ]]; then
-   echo exit code is not 0
-   echo exit code is not 0 >> logs/dailyCharts.${dt}
-   exit 0
+if [[ -z $removeOldData ]]; then
+   $cmd  >> logs/dailyCharts.${dt}
+   ret=$?
+   echo return code: $rt
+fi
+
+if [[ -n $removeOldData ]]; then
+   # Remove bad data
+   token=$(tail -1 dc/TQQQ.dc | awk -F\, '{print $9}')
+   stocks=$(ls -l dc/*dc|awk '{print $9}'|awk -F\/ '{print $2}'|sed "s/\.dc//")
+   echo stocks $stocks
+   echo token $token
+   echo debug $debug
+
+   if [[ -n $debug ]]; then echo DATA BEING SHOWN NOT DELETED!; fi
+
+   for stock in $stocks; do
+      #echo stock $stock
+      newToken=$(tail -1 "dc/${stock}.dc" | awk -F\, '{print $9}')
    
-# Remove bad data
-token=$(tail -1 dc/TQQQ.dc | awk -F\, '{print $9}')
-stocks=$(ls -l dc/*dc|awk '{print $9}'|awk -F\/ '{print $2}'|sed "s/\.dc//")
-echo stocks $stocks
-echo token $token
-for stock in $stocks; do
-   #echo stock $stock
-   newToken=$(tail -1 "dc/${stock}.dc" | awk -F\, '{print $9}')
-   if [[ $newToken != $token ]]; then
-      echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      echo removing bad data from stock $stock
-      echo stock $stock
-      echo token $token
-      echo newToken $newToken
-      rm -f "dc/${stock}.dc" "dc/${stock}.gp"
-      rm -fr "exitResults/${stock}\*"
-      rm -fr "totalResults/${stock}\*"
-      rm -fr test/\*/bc/\*${stock}\*
-      rm -fr test/\*/prices/\*${stock}\*
-      rm -fr test/\*/logs/\*${stock}\*
-   fi
-done
-
+      if [[ $newToken != $token ]] && [[ $newToken != "" ]]; then
+         if [[ ${stock} == "FB" ]]; then continue; fi
+         echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         echo removing old data from stock $stock
+         echo time stamp on file $token
+         echo last recorded time from file $newToken
+         if [[ -n $debug ]]; then
+            find ./dc -type f -name "${stock}.dc" -exec echo {} \;
+            find ./dc -type f -name "${stock}.gp" -exec echo {} \;
+            find ./test -type f -name active${stock}.pr -exec echo {} \;
+            find ./test -type f -name active${stock}.bc -exec echo {} \;
+            find ./test -type f -name active${stock}.ls -exec echo {} \;
+            find ./test -type f -name active${stock}.log -exec echo {} \;
+            find ./test -type f -name active${stock}.ds -exec echo {} \;
+            find ./test -type f -name active${stock}.dm -exec echo {} \;
+         else         
+            find ./dc -type f -name ${stock}.dc -exec echo {} \; >> $tmpFile
+            find ./dc -type f -name ${stock}.gp -exec echo {} \; >> $tmpFile
+            find ./test -type f -name active${stock}.pr -exec echo {} \; >> $tmpFile
+            find ./test -type f -name active${stock}.bc -exec echo {} \; >> $tmpFile
+            find ./test -type f -name active${stock}.ls -exec echo {} \; >> $tmpFile
+            find ./test -type f -name active${stock}.log -exec echo {} \; >> $tmpFile
+            find ./test -type f -name active${stock}.ds -exec echo {} \; >> $tmpFile
+            find ./test -type f -name active${stock}.dm -exec echo {} \; >> $tmpFile
+            echo Files are not removed but are in $tmpFile
+         fi
+         
+      else
+         echo Not removing data from stock $stock
+         echo time stamp on file $token
+         echo last recorded time from file $newToken
+      fi      
+   done
+ fi
 exit 0
-

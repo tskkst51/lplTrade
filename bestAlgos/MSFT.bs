@@ -229,3 +229,6 @@ MSFT Gain: $ 43.78 Win %: 61.00 in 119 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_
 MSFT Gain: $ 57.17 Win %: 57.00 in 119 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_RV_AL_DB30
 MSFT Gain: $ 61.75 Win %: 61.00 in 119 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_AL
 MSFT Gain: $ 61.75 Win %: 61.00 in 119 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_RV_AL
+MSFT Gain: $ 48.82 Win %: 47.00 in 155 days with algo TB5_HI_QM_OB4_OS4_CB3_CS5_IT_QL_DB6
+MSFT Gain: $ 49.45 Win %: 51.00 in 155 days with algo TB5_HI_QM_OB5_OS3_CB2_CS5_RV_AL_DB6
+MSFT Gain: $ 58.92 Win %: 58.00 in 155 days with algo TB5_HI_QM_OB3_OS3_CB2_CS5_VI

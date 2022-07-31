@@ -82,7 +82,7 @@ class Log:
       self.time = time
       print ("SUCCESS: " + self.msg)
       
-   def logIt(self, action, price, barLength, time, numTrades):
+   def logIt(self, action, price, barLength, time, numTrades, gain):
       totGain = grandTotal = ""
       
       time = time.split()
@@ -91,26 +91,39 @@ class Log:
       print("Time with no year " + str(time))
 
       if action == 1:
+         print ("BUYYYYYY " + str(price))
          self.strAction = "buy"
          self.priceSet = float(price)
       elif action == 2:
+         print ("SELLLLL " + str(price))
          self.strAction = "sell"
          self.priceSet = float(price)
 
       else:
-         self.totGain = float(self.priceSet) - float(price)
-         if self.totGain > 0 and self.strAction == "sell":
-            self.wins += 1
-         elif self.totGain < 0 and self.strAction == "sell":
-            self.losses += 1
-         elif self.totGain > 0 and self.strAction == "buy":
-            self.losses += 1
-         elif self.totGain < 0 and self.strAction == "buy":
-            self.wins += 1
+         print ("gainnn " + str(gain))
+         if gain:
+            print ("gainnn " + str(gain))
+            self.totGain += gain
+            if gain > 0:
+               self.wins += 1
+            else:
+               self.losses += 1
+            #self.totGain = float(self.priceSet) - float(price) + gain
+         else:
+            self.totGain = float(self.priceSet) - float(price)
+            
+            if self.totGain > 0 and self.strAction == "sell":
+               self.wins += 1
+            elif self.totGain < 0 and self.strAction == "sell":
+               self.losses += 1
+            elif self.totGain > 0 and self.strAction == "buy":
+               self.losses += 1
+            elif self.totGain < 0 and self.strAction == "buy":
+               self.wins += 1
          
          self.totalTrades += 1
             
-         if self.strAction == "buy":
+         if self.strAction == "buy" and not gain:
             self.totGain = self.totGain*-1
                
          self.strAction = "close"

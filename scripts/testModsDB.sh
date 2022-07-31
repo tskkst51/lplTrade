@@ -10,7 +10,9 @@ function init {
    
    $HOME/bin/lplt.sh
 
-   . $LPLT/scripts/db.sh
+   wp="/Users/tsk/w/lplTrade"
+   
+   . $wp/scripts/db.sh
 
    #xattr -d com.apple.quarantine scripts/* > /dev/null 2>&1
    wp=$(pwd)
@@ -20,8 +22,6 @@ function init {
    py3+="${activateDir}/bin/python3"
    
    run="${wp}/scripts/run.sh"
-
-   numRows=10
    
    today=$(date "+%Y%m%d")
       
@@ -45,61 +45,11 @@ function init {
    fi
 }
 
-algoModifiers=(
-"RV"
-"IR4"
-"TR"
-"AV" # avg vol close
-"AL" # vol > last bar close
-"VI" # avg vol open
-"LI" # vol > last bar open
-"QP"
-"HM"
-"SS"
-"QL"
-"DB"
-"AO"
-"AC"
-"IT" # In position tracking
-"PM" # Price movement
-"TS" # Trailing stop
-"TR_QP_DB"
-"RV_TR_DB"
-"RV_AV_DB"
-"RV_AL_DB"
-"RV_QP_DB"
-"HM_TR_DB"
-"HM_AV_DB"
-"HM_QP_DB"
-"IT_QL_DB"
-"IT_QP_DB"
-"TR_IR4"
-"TR_TS"
-"TR_QP"
-"QP_IR4"
-"RV_TR"
-"RV_AV"
-"RV_AL"
-"RV_QP"
-"HM_TR"
-"HM_AV"
-"HM_AL"
-"HM_QP"
-"IT_QL"
-"IT_QP"
-"IT_TS"
-"AO_AC"
-"QP_PM"
-"AV_TS"
-"AL_TS"
-)
-
 init $1 $2
 
-numModifiers=${#algoModifiers[@]}
-numModTests=$(echo "$(($numModifiers * $dbNumModTestRows))")
-
-#totNumModTests=$(expr $dbNumModTestRows * $numModifiers)
+numModifiers=$(echo $testModDBAlgos | tr -cd ' ' | wc -c)
+numModifiers=$(echo "$(($numModifiers + 1))")
+numModTests=$(echo "$(($numModifiers * $dbMaxModTestRows))")
 
 # Make sure test DB is up and running
 isDBRunning $day
@@ -142,14 +92,13 @@ for day in $days; do
       fi
    fi
 
-   echo Symbols being tested:
-   echo $syms
+   echo Symbols being tested: $syms
       
    for sym in $syms; do
       
       # check if mod tests are complete and skip
-      count=$($cl "SELECT count(algo) FROM algoModData where sym = '${sym}'")
-            
+      #count=$($cl "SELECT count(algo) FROM algoModData where sym = '${sym}'")
+      modTestsRan=0      
       modTestsRan=$($cl "select count(algo) from algoModData where sym = '${sym}'")            
       
       if (( $modTestsRan >= $numModTests )); then
@@ -157,9 +106,9 @@ for day in $days; do
          continue
       fi
       
-      #cl=$(getCL $port $dbName)
+      echo Detected $modTestsRan ran out of max $numModTests
       
-      algos=$($cl "select algo from algoData where sym = '${sym}' order by gain,winpct asc" | tail -${numRows})
+      algos=$($cl "select algo from algoData where sym = '${sym}' order by gain,winpct asc" | tail -${dbMaxModTestRows})
             
       echo Running algos for ${sym}...
       for a in $algos; do echo $a; done
@@ -170,7 +119,7 @@ for day in $days; do
       fi
                
       for algo in ${algos}; do
-         for mod in ${algoModifiers[*]}; do
+         for mod in $testModDBAlgos; do
             modifiedAlgo="${algo}_${mod}"
 
             # Get number of decision bars and add range value to IR
@@ -212,9 +161,9 @@ for day in $days; do
                continue
             fi 
                         
-            ${py3} ${wp}/bin/profileGenerator.py -d $day -a $modifiedAlgo
+            ${py3} ${wp}/bin/profileGenerator.py -d $day -a $modifiedAlgo -s $sym
             
-            cmd="${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -w test/${day} -o -d -s $sym"
+            cmd="${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json_${sym} -w test/${day} -o -d -s $sym"
             
             $cmd > /tmp/out 2>&1
             

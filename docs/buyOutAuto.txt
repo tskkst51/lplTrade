@@ -1,0 +1,5 @@
+Ignore stocks that have been bought out on that day buy querying yahoo and searching for "buyout" in the text.
+
+curl https://finance.yahoo.com/quote/BDSI/?p=BDSI | grep -i buyout
+
+

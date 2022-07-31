@@ -229,3 +229,9 @@ OXY Gain: $ -0.44 Win %: 56.00 in 32 days with algo TB3_HL_HS_QM_OB2_OS2_CB4_CS4
 OXY Gain: $ -0.39 Win %: 46.00 in 32 days with algo TB5_HL_HI_QM_OB1_OS1_CB5_CS5_IT_QL
 OXY Gain: $ -0.24 Win %: 46.00 in 32 days with algo TB3_HL_HS_QM_OB2_OS2_CB4_CS4_HM_AV_DB10
 OXY Gain: $ 1.67 Win %: 50.00 in 32 days with algo TB3_HL_HS_QM_OB2_OS2_CB4_CS4_HM_AV
+OXY Gain: $ 9.58 Win %: 62.00 in 72 days with algo TB5_HI_QM_OB3_OS2_CB2_CS4_RV_AL_DB6
+OXY Gain: $ 14.29 Win %: 58.00 in 72 days with algo TB5_HI_QM_OB2_OS2_CB2_CS4_AL
+OXY Gain: $ 17.13 Win %: 70.00 in 72 days with algo TB5_HI_QM_OB3_OS2_CB2_CS4_AL_TS
+OXY Gain: $ -14.65 Win %: 43.00 in 72 days with algo TB5_HI_QM_OB3_OS2_CB2_CS4_RV_AL_DB6
+OXY Gain: $ -7.01 Win %: 87.00 in 72 days with algo TB5_HI_QM_OB3_OS2_CB2_CS4_AL_TS
+OXY Gain: $ 21.82 Win %: 52.00 in 72 days with algo TB5_HI_QM_OB2_OS2_CB2_CS4_AL

@@ -229,3 +229,6 @@ STX Gain: $ 7.32 Win %: 90.00 in 10 days with algo TB5_LO_QM_OB2_OS2_CB4_CS4_AL_
 STX Gain: $ 7.52 Win %: 70.00 in 10 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4_AV
 STX Gain: $ 7.52 Win %: 70.00 in 10 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4_RV_AV
 STX Gain: $ 8.47 Win %: 80.00 in 10 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4_AL
+STX Gain: $ 5.89 Win %: 62.00 in 16 days with algo TB1_HS_HL_QM_OB2_OS4_CB3_CS3_RV_AV_DB30
+STX Gain: $ 8.4 Win %: 62.00 in 16 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10
+STX Gain: $ 13.24 Win %: 75.00 in 16 days with algo TB5_HS_QM_OB2_OS2_CB4_CS5_LI
