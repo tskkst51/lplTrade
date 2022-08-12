@@ -230,3 +230,5 @@ MNST Gain: $ 4.41 Win %: 80.00 in 5 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_AC
 MNST Gain: $ 4.41 Win %: 80.00 in 5 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_AO
 MNST Gain: $ 4.41 Win %: 80.00 in 5 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_QL
 MNST Gain: $ 4.63 Win %: 100.00 in 5 days with algo TB4_OO_QM_OB3_OS3_CB4_CS4_DB8
+MNST Gain: $ 7.02 Win %: 77.00 in 9 days with algo TB1_HS_QM_OB4_OS3_CB2_CS4_LI_TG
+MNST Gain: $ 8.77 Win %: 66.00 in 9 days with algo TB1_HS_QM_OB4_OS3_CB2_CS4_LI_DU6_AL

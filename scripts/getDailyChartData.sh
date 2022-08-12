@@ -60,7 +60,7 @@ if [[ -n $removeOldData ]]; then
       newToken=$(tail -1 "dc/${stock}.dc" | awk -F\, '{print $9}')
    
       if [[ $newToken != $token ]] && [[ $newToken != "" ]]; then
-         if [[ ${stock} == "FB" ]]; then continue; fi
+         #if [[ ${stock} == "FB" ]]; then continue; fi
          echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
          echo removing old data from stock $stock
          echo time stamp on file $token

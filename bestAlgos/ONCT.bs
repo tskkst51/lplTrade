@@ -157,3 +157,6 @@ ONCT Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB1_CS1_RV
 ONCT Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB2_CS2_AV
 ONCT Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB2_CS2_HM_AV
 ONCT Gain: $ 0.91 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB2_CS2_RV_AV
+ONCT Gain: $ 0.63 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB5_OS5_CB4_CS5_SS_DU6_AL
+ONCT Gain: $ 2.02 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB5_OS5_CB4_CS5_SS_DU6
+ONCT Gain: $ 2.02 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB5_OS5_CB4_CS5_SS_DU6_UA

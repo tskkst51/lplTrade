@@ -229,3 +229,7 @@ BIIB Gain: $ 6.34 Win %: 66.00 in 9 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_
 BIIB Gain: $ 6.34 Win %: 66.00 in 9 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_HM_TR_DB30
 BIIB Gain: $ 6.77 Win %: 55.00 in 9 days with algo TB3_PL_QM_OB5_OS5_CB5_CS5_QL
 BIIB Gain: $ 10.7 Win %: 77.00 in 9 days with algo TB1_HL_HI_QM_OB1_OS1_CB5_CS5_LI
+BIIB Gain: $ 14.97 Win %: 61.00 in 13 days with algo TB3_OC_QM_OB2_OS2_CB4_CS5_HM_TR_UA
+BIIB Gain: $ 15.07 Win %: 61.00 in 13 days with algo TB3_OC_QM_OB2_OS2_CB4_CS5_HM_TR_TG
+BIIB Gain: $ 16.18 Win %: 38.00 in 13 days with algo TB3_OC_QM_OB2_OS3_CB4_CS5_HM_TR_DU6
+BIIB Gain: $ 16.18 Win %: 38.00 in 13 days with algo TB3_OC_QM_OB2_OS3_CB4_CS5_HM_TR_DU6_UA

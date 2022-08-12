@@ -160,3 +160,6 @@ NCTY Gain: $ 13.17 Win %: 100.00 in 5 days with algo TB4_CC_QM_OB3_OS3_CB5_CS5_R
 NCTY Gain: $ 9.36 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB3_OS4_CB2_CS5_AO
 NCTY Gain: $ 9.36 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB3_OS4_CB2_CS5_AO_AC
 NCTY Gain: $ 9.36 Win %: 62.00 in 8 days with algo TB3_HI_QM_OB3_OS4_CB2_CS5_AO_AC
+NCTY Gain: $ 9.54 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS4_CB2_CS5_AO_AC_DU6_UA
+NCTY Gain: $ 9.54 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS4_CB2_CS5_AO_DU6
+NCTY Gain: $ 9.54 Win %: 50.00 in 8 days with algo TB3_HI_QM_OB3_OS4_CB2_CS5_AO_DU6_UA

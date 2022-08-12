@@ -232,3 +232,15 @@ BABA Gain: $ 81.52 Win %: 58.00 in 100 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5_
 BABA Gain: $ 20.49 Win %: 48.00 in 127 days with algo TB5_LO_QM_OB4_OS3_CB5_CS4_AV_UA
 BABA Gain: $ 45.23 Win %: 57.00 in 127 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI
 BABA Gain: $ 65.27 Win %: 53.00 in 127 days with algo TB3_HI_QM_OB4_OS2_CB3_CS4_AV_UA
+BABA Gain: $ 166.66 Win %: 41.00 in 128 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_UA_AV
+BABA Gain: $ 171.02 Win %: 42.00 in 128 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_AL
+BABA Gain: $ 171.02 Win %: 42.00 in 128 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_UA_AL
+BABA Gain: $ 171.02 Win %: 42.00 in 128 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_UA_AV_AL
+BABA Gain: $ 171.02 Win %: 42.00 in 128 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_UA_AV_DU6_AL
+BABA Gain: $ 171.02 Win %: 42.00 in 128 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_UA_AV_DU6_UA_AL
+BABA Gain: $ 171.02 Win %: 42.00 in 128 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_UA_AV_DU6_UA_AL_DU6_UA_AV
+BABA Gain: $ 171.02 Win %: 42.00 in 128 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_UA_AV_DU6_UA_AL_DU6_UA_AV
+BABA Gain: $ 171.02 Win %: 42.00 in 128 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_UA_AV_DU6_UA_AL_UA
+BABA Gain: $ 171.02 Win %: 42.00 in 128 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_UA_AV_DU6_UA_AL_UA_DU6_UA_AV
+BABA Gain: $ 171.02 Win %: 42.00 in 128 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_UA_AV_DU6_UA_AL_UA_DU6_UA_AV
+BABA Gain: $ 171.02 Win %: 42.00 in 128 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_UA_AV_DU6_UA_AL_UA_UA

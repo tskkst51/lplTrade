@@ -165,3 +165,6 @@ ENSV Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_
 ENSV Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB1_OS1_CB2_CS2_AO
 ENSV Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB1_CS1_AO
 ENSV Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_AO
+ENSV Gain: $ 1.5 Win %: 38.00 in 13 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_PM_DU6_AV
+ENSV Gain: $ 3.39 Win %: 23.00 in 13 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_PM_DU6_AL
+ENSV Gain: $ 6.3 Win %: 30.00 in 13 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_PM_DU6

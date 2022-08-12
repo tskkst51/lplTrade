@@ -168,3 +168,6 @@ ADI Gain: $ 6.4 Win %: 100.00 in 5 days with algo TB3_HL_LO_QM_OB1_OS1_CB4_CS4_T
 ADI Gain: $ 6.81 Win %: 80.00 in 5 days with algo TB2_LO_QM_OB3_OS3_CB5_CS5_TR
 ADI Gain: $ 7.14 Win %: 80.00 in 5 days with algo TB2_LO_QM_OB3_OS3_CB5_CS5_TR_IR4
 ADI Gain: $ 7.42 Win %: 80.00 in 5 days with algo TB2_LO_QM_OB3_OS3_CB5_CS5_VI
+ADI Gain: $ 31.64 Win %: 62.00 in 8 days with algo TB5_PL_QM_OB1_OS5_CB5_CS2_HM_AV_DU6
+ADI Gain: $ 32.65 Win %: 62.00 in 8 days with algo TB5_PL_QM_OB1_OS5_CB5_CS2_HM_AV_DU6_AL
+ADI Gain: $ 32.65 Win %: 62.00 in 8 days with algo TB5_PL_QM_OB1_OS5_CB5_CS2_HM_AV_DU6_AL

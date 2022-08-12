@@ -149,3 +149,6 @@ YJ Gain: $ 0.75 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_AL
 YJ Gain: $ 0.75 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_LI
 YJ Gain: $ 0.81 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB1_OS1_CB5_CS5_VI
 YJ Gain: $ 0.81 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_VI
+YJ Gain: $ 1.78 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS3_CB3_CS4_IT_TS_DU6_UA
+YJ Gain: $ 1.78 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS3_CB3_CS4_IT_TS_DU6_UA_AV
+YJ Gain: $ 1.78 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS3_CB3_CS4_IT_TS_DU6_UA_AV

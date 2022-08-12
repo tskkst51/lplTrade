@@ -230,3 +230,6 @@ GTEC Gain: $ 2.92 Win %: 100.00 in 4 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3
 GTEC Gain: $ 3.08 Win %: 100.00 in 4 days with algo TB1_HL_HS_QM_OB3_OS3_CB3_CS3_VI
 GTEC Gain: $ 3.21 Win %: 100.00 in 4 days with algo TB3_HL_HS_QM_OB3_OS3_CB2_CS2_PM
 GTEC Gain: $ 3.22 Win %: 100.00 in 4 days with algo TB3_EO_EC_QM_OB4_OS4_CB3_CS3_RV
+GTEC Gain: $ 8.1 Win %: 100.00 in 6 days with algo TB1_OC_QM_OB4_OS5_CB5_CS4_RV_TR_DB30_UA
+GTEC Gain: $ 42.03 Win %: 100.00 in 6 days with algo TB1_OC_QM_OB4_OS5_CB5_CS4_RV_TR_DB30_DU6
+GTEC Gain: $ 42.03 Win %: 100.00 in 6 days with algo TB1_OC_QM_OB4_OS5_CB5_CS4_RV_TR_DB30_DU6_UA

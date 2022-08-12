@@ -230,3 +230,6 @@ VLDR Gain: $ 1.46 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB2_OS2_CB1_CS1
 VLDR Gain: $ 1.46 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB2_OS2_CB1_CS1_HM
 VLDR Gain: $ 1.46 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB2_OS2_CB1_CS1_QL
 VLDR Gain: $ 1.52 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB1_OS1_CB1_CS1_RV
+VLDR Gain: $ 5.47 Win %: 100.00 in 3 days with algo TB1_LO_QM_OB5_OS2_CB5_CS2_HM_AV_DU6_UA_AV
+VLDR Gain: $ 7.2 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB5_CS2_RV_AV_DU6
+VLDR Gain: $ 7.2 Win %: 100.00 in 3 days with algo TB3_PL_QM_OB1_OS1_CB5_CS2_RV_AV_DU6_AV

@@ -1,0 +1,20 @@
+TSLA Gain: $ -13.62 Win %: 0 in 1 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_AL_LI_DU6_AV_UA_UA_UA_UA_UA_UA_UA_UA_UA
+BIDU Gain: $ -10.81 Win %: 0 in 1 days with algo TB3_HI_HL_QM_OB3_OS3_CB5_CS3_AL_TS_DU6_AV_DU6_AV
+OXY Gain: $ -3.95 Win %: 0 in 1 days with algo TB1_EO_EC_QM_OB4_OS2_CB2_CS4_AV_UA_DU6_UA_TG
+MSFT Gain: $ -2.42 Win %: 0 in 1 days with algo TB5_HI_QM_OB5_OS3_CB2_CS5_RV_AL_DB6_DU6_UA_UA_UA_UA_UA_UA_UA_UA_UA_UA
+NFLX Gain: $ -1.56 Win %: 0 in 1 days with algo TB5_OO_QM_OB3_OS2_CB3_CS5_RV_AV
+AAPL Gain: $ -1.28 Win %: 0 in 1 days with algo TB3_EO_EC_QM_OB2_OS2_CB2_CS5_IR3_DU4_AL_UA_UA_UA_UA_UA
+FCEL Gain: $ -1.26 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS2_CB5_CS5_PM_DU6_AV_DU6_DU6_DU6_DU6_DU6_DU6_DU6_DU6_AV
+TQQQ Gain: $ -1.18 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB5_OS2_CB4_CS5_SS_DU6_DU6_DU6_DU6_DU6_DU6_DU6_DU6_DU6_DU6_DU6
+WPRT Gain: $ -0.31 Win %: 0 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS3_HM
+XPEV Gain: $ -0.17 Win %: 0 in 1 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5_AV_AV_AV_AV_AV_AV_AV_AV
+ERYP Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB3_OS3_CB5_CS5_TR
+GME Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB5_OS5_CB5_CS5_IT_QL_DB6
+BABA Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_UA_AV_DU6_UA_AL_UA_UA
+NMRD Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB3_OS3_CB5_CS5_RV
+SNAP Gain: $ 2.28 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS3_RV_TR_DB6_DU6_UA_AV_UA
+OCGN Gain: $ 3.62 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB2_OS2_CB4_CS4_TR_IR3
+NIO Gain: $ 8.06 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS4_HM_AV_DB10_DU6_DU6_AL_TG_UA_UA_UA_UA_UA
+AMZN Gain: $ 22.31 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS3_CB5_CS5_LI_DU6_UA_TG_UA_UA_UA_UA_UA
+NVDA Gain: $ 68.63 Win %: 100.00 in 1 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_AL_LI_DU6_UA_UA_UA_UA_UA_UA_UA_UA_UA_UA_DU6_UA
+Days gain with 19 stocks: 69.56 20210208

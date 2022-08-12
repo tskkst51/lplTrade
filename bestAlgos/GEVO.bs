@@ -508,3 +508,6 @@ GEVO Gain: $ 1.96 Win %: 100.00 in 4 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_IR
 GEVO Gain: $ 2.39 Win %: 85.00 in 7 days with algo TB1_LO_HL_QM_OB2_OS2_CB2_CS4_TR_IR5
 GEVO Gain: $ 2.45 Win %: 85.00 in 7 days with algo TB1_LO_HL_QM_OB2_OS2_CB2_CS4_RV_TR
 GEVO Gain: $ 2.45 Win %: 85.00 in 7 days with algo TB1_LO_HL_QM_OB2_OS2_CB2_CS4_RV_TR
+GEVO Gain: $ 11.77 Win %: 85.00 in 7 days with algo TB1_LO_HL_QM_OB2_OS2_CB2_CS4_RV_TR_DU6_AL
+GEVO Gain: $ 11.83 Win %: 85.00 in 7 days with algo TB1_LO_HL_QM_OB2_OS2_CB2_CS4_RV_TR_DU6_AV
+GEVO Gain: $ 11.83 Win %: 85.00 in 7 days with algo TB1_LO_HL_QM_OB2_OS2_CB2_CS4_RV_TR_DU6_AV

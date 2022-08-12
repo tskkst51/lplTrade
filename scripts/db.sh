@@ -12,7 +12,7 @@ dbAlgoTestName="Algo Test(s)"
 
 dbNumTestRows=625
 dbNumModTestRows=5
-dbMaxModTestRows=10
+dbMaxModTestRows=13
 dbNumBestRows=5
 dbNumBestAlgos=100
 initNumBestAlgos=25
@@ -26,9 +26,12 @@ bsEx=".bs"
 run="scripts/runDB.sh"
 postGresPath="/Applications/Postgres.app/Contents/Versions/14/bin"
 
-testDBAlgos="HL_TG_QM HS_HL_TG_QM BL_QM HL_QM HS_QM HI_QM LO_QM OC_QM OO_QM CC_QM PL_QM EO_EC_QM HS_HL_QM HI_HL_QM LO_HL_QM"
+testDBAlgos="SH_QM HL_TG_QM HS_HL_TG_QM BL_QM HL_QM HS_QM HI_QM LO_QM OC_QM OO_QM CC_QM PL_QM EO_EC_QM HS_HL_QM HI_HL_QM LO_HL_QM"
 
-testModDBAlgos="DU2 DU3 DU4 DU5 DU6 RV IR TR AV AL VI LI AV_VI AL_LI QP HM SS QL DB AO AC IT PM TS UA WT UA_WT TR_QP_DB TR_QP_QL_DB RV_TR_DB RV_AV_DB RV_AL_DB RV_QP_DB RV_QP_QL_DB HM_TR_DB HM_AV_DB HM_QP_QL_DB IT_QL_DB IT_QP_QL_DB TR_IR TR_TS TR_QP TR_QP_QL QP_IR QP_QL_IR RV_TR RV_AV RV_AL RV_QP RV_QP_QL HM_TR HM_AV HM_AL HM_QP HM_QP_QL IT_QL IT_QP IT_QP_QL IT_TS AO_AC QP_PM QP_QL_PM AV_TS AL_TS AV_IT AL_IT AV_UA AL_UA QP_QL"
+testModDBAlgos="DU6 DU6_DL SH SH_DU6 RV SR IR TR AV AL VI LI AV_VI AL_LI QP HM SS QL DB AO AC IT PM TS UA WT UA_WT TR_QP_DB TR_QP_QL_DB RV_TR_DB RV_AV_DB RV_AL_DB RV_QP_DB RV_QP_QL_DB HM_TR_DB HM_AV_DB HM_QP_QL_DB IT_QL_DB IT_QP_QL_DB TR_IR TR_TS TR_QP TR_QP_QL QP_IR QP_QL_IR RV_TR RV_AV RV_AL RV_QP RV_QP_QL HM_TR HM_AV HM_AL HM_QP HM_QP_QL IT_QL IT_QP IT_QP_QL IT_TS AO_AC QP_PM QP_QL_PM AV_TS AL_TS AV_IT AL_IT AV_UA AL_UA QP_QL"
+
+incAlgos="DU6 AV AL UA TG DU6_AV DU6_AL DU6_UA DU6_UA_AV DU6_UA_AV"
+incDBNums="10"
 
 today=$(date "+%Y%m%d")
 
@@ -338,3 +341,51 @@ function getAllDays {
    echo $dbs
 }
 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function removeDupsFromAlgoStr {
+   
+   s=$1
+
+   str=$(echo $s | sed "s/_/ /g")
+
+   fs=""
+   ctr=0
+   for t in $(echo $str); do 
+      if [[ "$fs" == *"$t"* ]]; then
+         continue
+      fi
+      if (( ctr == 0 )); then
+         fs=$t
+         ctr=$((ctr+1))
+         continue
+      fi
+      fs="${fs}_${t}" 
+   done
+
+   echo $fs
+}
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function killRunningScript {
+   
+   script=$1
+
+   thisPID=$$
+      
+   pids=$(ps -ef|grep $script |grep -v grep| awk '{print $2}')
+   
+   numPids=$(echo $pids | tr -cd ' ' | wc -c)
+   
+   if (( $numPids == 1 )); then return 0; fi
+      
+   for p in $(echo $pids); do
+      eq=$(echo "$p == $thisPID" | bc)
+      if (( $eq == 1 )); then continue; fi
+      echo killing test scripts $p
+      kill $p
+   done
+   
+   kill $(ps -ef |grep "test"|grep -v grep|awk '{print $2}')
+   
+   return 0
+}

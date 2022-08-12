@@ -1,43 +1,41 @@
-PYPL Gain: $ -8.89 Win %: 0 in 1 days with algo TB3_HL_LO_QM_OB1_OS1_CB1_CS1_HM_AV
-GROM Gain: $ -1.43 Win %: 0 in 1 days with algo TB1_PL_QM_OB1_OS1_CB2_CS2_TR
-MARK Gain: $ -1.39 Win %: 0 in 1 days with algo TB3_HI_QM_OB1_OS1_CB3_CS3_RV_AL
-CPE Gain: $ -1.15 Win %: 0 in 1 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_RV_AV
-RY Gain: $ -0.87 Win %: 0 in 1 days with algo TB1_HL_QM_OB3_OS3_CB5_CS5_AV
-PINS Gain: $ -0.79 Win %: 0 in 1 days with algo TB3_HL_HI_QM_OB5_OS5_CB5_CS5_RV
-OXY Gain: $ -0.55 Win %: 0 in 1 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_HM_TR
-MRO Gain: $ -0.51 Win %: 0 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_DB10
-RBLX Gain: $ -0.33 Win %: 0 in 1 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_HM
-XPDI Gain: $ -0.23 Win %: 0 in 1 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_PM
-CPG Gain: $ -0.15 Win %: 0 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_RV_AV
-DBVT Gain: $ -0.14 Win %: 0 in 1 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_RV_AV
-DWSN Gain: $ -0.1 Win %: 0 in 1 days with algo TB4_PL_QM_OB1_OS1_CB2_CS2_HM_TR
-AUUD Gain: $ -0.08 Win %: 0 in 1 days with algo TB4_OO_QM_OB2_OS2_CB5_CS5_RV_AV
-IMMR Gain: $ -0.05 Win %: 0 in 1 days with algo TB5_CC_QM_OB4_OS4_CB5_CS5_VI
-NOK Gain: $ -0.02 Win %: 0 in 1 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_TS
-CTIB Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB4_OS4_CB5_CS5_HM_TR
-NVDA Gain: $ 0 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB5_OS5_CB5_CS5_IR2
-Not all required args passed in, 3 required date algo stock
-Not all required args passed in, 3 required date algo stock
-Not all required args passed in, 3 required date algo stock
-Not all required args passed in, 3 required date algo stock
-Not all required args passed in, 3 required date algo stock
-Not all required args passed in, 3 required date algo stock
-Not all required args passed in, 3 required date algo stock
-Not all required args passed in, 3 required date algo stock
-Not all required args passed in, 3 required date algo stock
-Not all required args passed in, 3 required date algo stock
-Not all required args passed in, 3 required date algo stock
-VSTM Gain: $ 0 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB4_OS4_CB4_CS4_LI
-KMB Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_RV
-ERYP Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB3_OS3_CB5_CS5_TR
-RACE Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB4_OS4_CB5_CS5_AO_AC
-ZIM Gain: $ 0.59 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB1_OS1_CB5_CS5_HM_AV
-CL Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB2_OS2_CB4_CS4_QP_IR2
-ME Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5
-MU Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB1_OS1_CB5_CS5_HM_AV_DB8
-CRTD Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB5_OS5_CB5_CS5_AO
-CLF Gain: $ 1.16 Win %: 100.00 in 1 days with algo TB2_HI_QM_OB1_OS1_CB3_CS3_RV_AV
-PHUN Gain: $ 1.73 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB3_OS3_CB5_CS5_TR
-DWAC Gain: $ 10.8 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB1_OS1_CB5_CS5_RV_AV
-TSLA Gain: $ 64.36 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB4_OS4_CB5_CS5_AV
-Days gain with 42 stocks: 65.48
+PYPL Gain: $ -16.72 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+CRTD Gain: $ -16.5 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+CPE Gain: $ -15.38 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+MARK Gain: $ -7.62 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+EVA Gain: $ -4.23 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+NVDA Gain: $ -3.49 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+RBLX Gain: $ -3.23 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+MU Gain: $ -2.43 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+OXY Gain: $ -2.24 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+MRO Gain: $ -2.1 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+EQT Gain: $ -2.05 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+AUPH Gain: $ -1.93 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+OLN Gain: $ -1.92 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+PINS Gain: $ -1.49 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+CDEV Gain: $ -1.41 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+ZIM Gain: $ -1.29 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+GROM Gain: $ -1.2 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+RY Gain: $ -1.16 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+CL Gain: $ -1.13 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+SGBX Gain: $ -1.12 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+NXTP Gain: $ -0.51 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+AUUD Gain: $ -0.27 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+NOK Gain: $ -0.24 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+ME Gain: $ -0.2 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+AR Gain: $ -0.19 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+CPG Gain: $ -0.15 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+CTIB Gain: $ -0.11 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+BAK Gain: $ -0.03 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+DBVT Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+DWSN Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+IMMR Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+VSTM Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+SALM Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+ERYP Gain: $ 1.44 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+CLF Gain: $ 4.75 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+PHUN Gain: $ 8.6 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+RACE Gain: $ 15.65 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+KMB Gain: $ 17.51 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+DWAC Gain: $ 18.52 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+TSLA Gain: $ 291.6 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_AV_DU6
+Days gain with 40 stocks: 268.66 20211025

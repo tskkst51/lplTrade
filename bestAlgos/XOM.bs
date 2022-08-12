@@ -229,3 +229,6 @@ XOM Gain: $ 3.08 Win %: 70.00 in 10 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_AV_
 XOM Gain: $ 3.17 Win %: 80.00 in 10 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_HM_AV_DB30
 XOM Gain: $ 3.65 Win %: 60.00 in 10 days with algo TB1_EO_EC_QM_OB4_OS4_CB2_CS2_RV_AV
 XOM Gain: $ 3.8 Win %: 60.00 in 10 days with algo TB1_EO_EC_QM_OB4_OS4_CB2_CS2_RV_AL
+XOM Gain: $ 51.21 Win %: 44.00 in 49 days with algo TB1_OC_QM_OB3_OS4_CB3_CS5_AL_LI_DU6
+XOM Gain: $ 51.21 Win %: 44.00 in 49 days with algo TB1_OC_QM_OB3_OS4_CB3_CS5_AL_LI_DU6_AL
+XOM Gain: $ 51.21 Win %: 44.00 in 49 days with algo TB1_OC_QM_OB3_OS4_CB3_CS5_AL_LI_DU6_UA

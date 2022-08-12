@@ -174,7 +174,7 @@ done
 if (( stockProvided )); then
    scripts/testModsDB.sh $day $stock
    #scripts/bestAlgoDB.sh $stock "3"
-   ${wp}/scripts/initIncBestAlgos.sh $stock "3"
+   #${wp}/scripts/initIncBestAlgos.sh $stock "3"
 else
    scripts/testModsDB.sh $day
 fi

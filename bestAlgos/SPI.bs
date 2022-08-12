@@ -230,3 +230,6 @@ SPI Gain: $ 3.06 Win %: 50.00 in 4 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_SS
 SPI Gain: $ 3.06 Win %: 50.00 in 4 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_SS
 SPI Gain: $ 3.59 Win %: 75.00 in 4 days with algo TB1_CC_QM_OB1_OS1_CB5_CS5_RV
 SPI Gain: $ 3.59 Win %: 75.00 in 4 days with algo TB1_CC_QM_OB2_OS2_CB5_CS5_RV
+SPI Gain: $ 12.36 Win %: 57.00 in 7 days with algo TB5_EO_EC_QM_OB5_OS2_CB5_CS5_SS_DU6_UA_AV
+SPI Gain: $ 12.48 Win %: 57.00 in 7 days with algo TB5_EO_EC_QM_OB5_OS2_CB5_CS5_SS_DU6
+SPI Gain: $ 12.48 Win %: 57.00 in 7 days with algo TB5_EO_EC_QM_OB5_OS2_CB5_CS5_SS_DU6_UA

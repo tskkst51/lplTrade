@@ -165,3 +165,6 @@ TEDU Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3
 TEDU Gain: $ 0.18 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_AC
 TEDU Gain: $ 0.19 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_TS
 TEDU Gain: $ 0.19 Win %: 100.00 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB3_CS3_TS
+TEDU Gain: $ 0.3 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_DB30_DU6_UA
+TEDU Gain: $ 0.3 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB3_OS2_CB3_CS3_DB30_DU6
+TEDU Gain: $ 0.3 Win %: 100.00 in 2 days with algo TB1_CC_QM_OB3_OS2_CB3_CS3_DB30_DU6_UA

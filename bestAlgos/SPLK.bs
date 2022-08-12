@@ -230,3 +230,6 @@ SPLK Gain: $ 33.72 Win %: 83.00 in 6 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5
 SPLK Gain: $ 35.98 Win %: 100.00 in 6 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_HM_AV
 SPLK Gain: $ 36.46 Win %: 100.00 in 6 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_HM_AV
 SPLK Gain: $ 37.24 Win %: 100.00 in 6 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_HM
+SPLK Gain: $ 111.55 Win %: 66.00 in 6 days with algo TB1_LO_HL_QM_OB5_OS2_CB5_CS2_RV_AL_DU6_AL
+SPLK Gain: $ 111.55 Win %: 66.00 in 6 days with algo TB1_LO_HL_QM_OB5_OS2_CB5_CS2_RV_AL_DU6_AL
+SPLK Gain: $ 119.08 Win %: 83.00 in 6 days with algo TB1_LO_HL_QM_OB5_OS2_CB5_CS2_SS_DU6_AL

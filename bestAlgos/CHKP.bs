@@ -230,3 +230,6 @@ CHKP Gain: $ 4.63 Win %: 75.00 in 8 days with algo TB4_HS_QM_OB5_OS5_CB4_CS4_IT_
 CHKP Gain: $ 4.73 Win %: 75.00 in 8 days with algo TB4_HS_QM_OB5_OS5_CB4_CS4_TR_TS
 CHKP Gain: $ 4.75 Win %: 50.00 in 8 days with algo TB2_HL_QM_OB2_OS2_CB4_CS4_IT_QL_DB15
 CHKP Gain: $ 5.07 Win %: 75.00 in 8 days with algo TB4_HS_QM_OB5_OS5_CB4_CS4_IT_QL_DB8
+CHKP Gain: $ 6.13 Win %: 30.00 in 10 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_RV_AV_DB6_DU6_UA_AV
+CHKP Gain: $ 6.13 Win %: 30.00 in 10 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_RV_AV_DB6_DU6_UA_AV
+CHKP Gain: $ 9.18 Win %: 40.00 in 10 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_RV_AV_DB6_DU6_AL

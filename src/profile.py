@@ -95,6 +95,9 @@ class Profile:
       d["doTriggers"] = str(0)
       d["doDoubleUp"] = str(0)
       d["doubleUpMax"] = str(0)
+      d["doDoubleLimit"] = str(0)
+      d["doSessionReversals"] = str(0)
+      d["doSessionsHiLo"] = str(0)
       
       return d
       
@@ -357,10 +360,18 @@ class Profile:
          d["doTriggers"] = str(1)
          info += "TG_"
          
-#      if "DU" in algo:
-#         d["doDoubleUp"] = str(1)
-#         info += "DU_"
+      if "SR" in algo:
+         d["doSessionReversals"] = str(1)
+         info += "SR_"
          
+      if "SH" in algo:
+         d["doSessionsHiLo"] = str(1)
+         info += "SH_"
+         
+      if "DL" in algo:
+         d["doDoubleLimit"] = str(1)
+         info += "DL_"
+                  
       if "DU" in algo:
          b, m, bar = algo.rpartition("DU")
          bars, m, e = bar.partition("_")

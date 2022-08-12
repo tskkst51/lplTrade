@@ -165,3 +165,9 @@ CRIS Gain: $ 2.29 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_IT
 CRIS Gain: $ 2.29 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_QL
 CRIS Gain: $ 2.4 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB1_OS1_CB5_CS5_IR5
 CRIS Gain: $ 2.4 Win %: 100.00 in 2 days with algo TB1_EO_EC_QM_OB2_OS2_CB5_CS5_IR5
+CRIS Gain: $ 8.03 Win %: 66.00 in 3 days with algo TB1_OO_QM_OB5_OS3_CB3_CS4_RV_AL_DB30_DU6_UA_AL
+CRIS Gain: $ 8.96 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB2_OS2_CB4_CS3_LI_DU6
+CRIS Gain: $ 8.96 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB2_OS2_CB4_CS3_LI_DU6_UA
+CRIS Gain: $ 8.96 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB2_OS2_CB4_CS3_LI_DU6_UA_UA
+CRIS Gain: $ 9.21 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB2_OS2_CB4_CS3_LI_DU6_TG
+CRIS Gain: $ 9.21 Win %: 66.00 in 3 days with algo TB1_HS_QM_OB2_OS2_CB4_CS3_LI_DU6_UA_TG

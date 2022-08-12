@@ -200,9 +200,9 @@ system = os.uname()
 binPath = "/Users/tsk/w/lplTrade/bin/"
 pyPath = "/Users/tsk/w/lplW2/bin/"
 
-if system.nodename == "ML-C02C8546LVDL":
-   binPath = "/Users/tknitter/w/gitWS/lplTrade/bin/"
-   pyPath = "/Users/tknitter/w/gitWS/lplW/bin/"
+#if system.nodename == "ML-C02C8546LVDL":
+#   binPath = "/Users/tknitter/w/gitWS/lplTrade/bin/"
+#   pyPath = "/Users/tknitter/w/gitWS/lplW/bin/"
    
 #lplt = binPath + "lplt.py"
 lplt = binPath + "lpltSlave.py"
@@ -333,10 +333,25 @@ for minBar in db.getTestTimebars():
       for osb in openSellBars:
          for cbb in closeBuyBars:
             for csb in closeSellBars: 
+            
+#               # Skip all iteration bars since session reverse only uses the timeBar
+#               if obb == 2 or obb == 3 or obb == 4 or obb == 5 or \
+#                  osb == 2 or osb == 3 or osb == 4 or osb == 5 or \
+#                  csb == 2 or csb == 3 or csb == 4 or csb == 5 or \
+#                  csb == 2 or csb == 3 or csb == 4 or csb == 5:
+#                  if "_SR" in info:
+#                     continue
+
+               # Skip close bars since the session hi's lo's only uses obb osb's
+               if cbb == 2 or cbb == 3 or cbb == 4 or cbb == 5 or \
+                  csb == 2 or csb == 3 or csb == 4 or csb == 5:
+                  if "_SH" in info:
+                     continue
+
                if obb == 1 or osb == 1 or cbb == 1 or csb == 1:
                   if db.skip1MinSeqTest(algoCode):
                      continue
-              
+
                pf.initProfile(d)
                
                info = pf.setAlgoValues(d, algo, minBar, info)

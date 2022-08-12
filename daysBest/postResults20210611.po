@@ -1,0 +1,14 @@
+AMZN Gain: $ -9.93 Win %: 0 in 1 days with algo TB5_CC_QM_OB2_OS3_CB5_CS5_LI_DU6_UA_TG_UA_UA_UA_UA_UA
+ESTC Gain: $ -2.77 Win %: 0 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_HM_AV_DB30
+XBI Gain: $ -2.16 Win %: 0 in 1 days with algo TB5_CC_QM_OB3_OS3_CB4_CS4_HM_TR
+AMC Gain: $ -0.23 Win %: 0 in 1 days with algo TB5_HL_HS_QM_OB3_OS3_CB5_CS5_RV_AV
+TGT Gain: $ -0.23 Win %: 0 in 1 days with algo TB2_HS_QM_OB3_OS3_CB5_CS5_TR_QP
+JZXN Gain: $ -0.22 Win %: 0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB4_CS4_HM_AV
+WINT Gain: $ -0.17 Win %: 0 in 1 days with algo TB3_HS_QM_OB2_OS2_CB3_CS3_QL
+FCEL Gain: $ -0.12 Win %: 0 in 1 days with algo TB3_HS_HL_QM_OB2_OS2_CB5_CS5_PM_DU6_AV_DU6_DU6_DU6_DU6_DU6_DU6_DU6_DU6_AV
+BB Gain: $ 0.41 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB4_OS3_CB3_CS4_LI
+SKLZ Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB3_OS3_CB4_CS4_HM
+NCTY Gain: $ 0.81 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS4_CB2_CS5_AO_DU6_UA
+ORCL Gain: $ 1.11 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5
+UPST Gain: $ 8.89 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB1_OS1_CB5_CS5_RV
+Days gain with 13 stocks: -4.14 20210611

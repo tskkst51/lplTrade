@@ -331,3 +331,12 @@ EVK Gain: $ 3.39 Win %: 100.00 in 6 days with algo TB1_HL_HI_QM_OB3_OS3_CB4_CS4
 EVK Gain: $ 3.39 Win %: 100.00 in 6 days with algo TB1_HL_HI_QM_OB3_OS3_CB4_CS4
 EVK Gain: $ 3.59 Win %: 100.00 in 6 days with algo TB1_OC_QM_OB3_OS3_CB3_CS3_RV_AV
 EVK Gain: $ 3.6 Win %: 100.00 in 6 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_RV_AV
+EVK Gain: $ 17.11 Win %: 83.00 in 6 days with algo TB1_OC_QM_OB5_OS2_CB3_CS5_HM_AV_DU6
+EVK Gain: $ 17.11 Win %: 83.00 in 6 days with algo TB1_OC_QM_OB5_OS2_CB3_CS5_HM_AV_DU6_AV
+EVK Gain: $ 17.11 Win %: 83.00 in 6 days with algo TB1_OC_QM_OB5_OS2_CB3_CS5_HM_AV_DU6_UA
+EVK Gain: $ 17.73 Win %: 83.00 in 6 days with algo TB1_OC_QM_OB5_OS2_CB3_CS5_HM_AV_DU6_AV_TG
+EVK Gain: $ 17.73 Win %: 83.00 in 6 days with algo TB1_OC_QM_OB5_OS2_CB3_CS5_HM_AV_DU6_TG
+EVK Gain: $ 17.73 Win %: 83.00 in 6 days with algo TB1_OC_QM_OB5_OS2_CB3_CS5_HM_AV_DU6_UA_TG
+EVK Gain: $ 17.73 Win %: 83.00 in 6 days with algo TB1_OC_QM_OB5_OS2_CB3_CS5_HM_AV_DU6_UA_TG_DU6_UA_AV
+EVK Gain: $ 17.73 Win %: 83.00 in 6 days with algo TB1_OC_QM_OB5_OS2_CB3_CS5_HM_AV_DU6_UA_TG_TG
+EVK Gain: $ 17.73 Win %: 83.00 in 6 days with algo TB1_OC_QM_OB5_OS2_CB3_CS5_HM_AV_DU6_UA_TG_UA

@@ -48,8 +48,10 @@ function init {
 init $1 $2
 
 numModifiers=$(echo $testModDBAlgos | tr -cd ' ' | wc -c)
+numStandardTests=$(echo $testDBAlgos | tr -cd ' ' | wc -c)
 numModifiers=$(echo "$(($numModifiers + 1))")
-numModTests=$(echo "$(($numModifiers * $dbMaxModTestRows))")
+#numModTests=$(echo "$(($numModifiers * $dbMaxModTestRows))")
+numModTests=$(echo "$(($numModifiers * $numStandardTests))")
 
 # Make sure test DB is up and running
 isDBRunning $day
@@ -102,7 +104,7 @@ for day in $days; do
       modTestsRan=$($cl "select count(algo) from algoModData where sym = '${sym}'")            
       
       if (( $modTestsRan >= $numModTests )); then
-         echo $day ${sym} COMPLETE! ${modTestsRan} ran out of max  $numModTests
+         echo $day ${sym} COMPLETE! ${modTestsRan} ran out of max $numModTests
          continue
       fi
       

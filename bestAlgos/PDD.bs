@@ -230,3 +230,6 @@ PDD Gain: $ 9.07 Win %: 100.00 in 5 days with algo TB1_PL_QM_OB5_OS5_CB5_CS5_TS
 PDD Gain: $ 9.1 Win %: 80.00 in 5 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_RV_TR
 PDD Gain: $ 9.1 Win %: 80.00 in 5 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_RV_TR
 PDD Gain: $ 9.35 Win %: 60.00 in 5 days with algo TB4_CC_QM_OB5_OS5_CB5_CS5_RV_TR
+PDD Gain: $ 56.31 Win %: 64.00 in 14 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_AV_DU6
+PDD Gain: $ 56.31 Win %: 64.00 in 14 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_AV_DU6_AV
+PDD Gain: $ 56.31 Win %: 64.00 in 14 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_AV

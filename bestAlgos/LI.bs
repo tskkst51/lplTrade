@@ -230,3 +230,6 @@ LI Gain: $ 4.63 Win %: 85.00 in 7 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_RV
 LI Gain: $ 5.14 Win %: 100.00 in 7 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_AL
 LI Gain: $ 5.14 Win %: 100.00 in 7 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_AV
 LI Gain: $ 5.14 Win %: 100.00 in 7 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_RV_AV
+LI Gain: $ 1.4 Win %: 43.00 in 37 days with algo TB3_OO_QM_OB5_OS5_CB2_CS4_IT_QL_DB10_AL
+LI Gain: $ 3.2 Win %: 59.00 in 37 days with algo TB3_OO_QM_OB5_OS5_CB2_CS4_IT_QL_DB10_AV
+LI Gain: $ 3.2 Win %: 59.00 in 37 days with algo TB3_OO_QM_OB5_OS5_CB2_CS4_IT_QL_DB10_AV

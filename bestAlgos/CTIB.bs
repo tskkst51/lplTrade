@@ -172,3 +172,6 @@ CTIB Gain: $ 1.93 Win %: 100.00 in 5 days with algo TB2_HL_HS_QM_OB4_OS4_CB5_CS5
 CTIB Gain: $ 2.02 Win %: 100.00 in 5 days with algo TB2_HL_HS_QM_OB4_OS4_CB4_CS4_AO
 CTIB Gain: $ 2.02 Win %: 100.00 in 5 days with algo TB2_HL_HS_QM_OB4_OS4_CB5_CS5_AO
 CTIB Gain: $ 2.02 Win %: 100.00 in 5 days with algo TB2_HL_HS_QM_OB4_OS4_CB5_CS5_AO_AC
+CTIB Gain: $ 3.83 Win %: 75.00 in 4 days with algo TB1_OC_QM_OB4_OS3_CB3_CS5_HM_AV_DU6_UA
+CTIB Gain: $ 3.83 Win %: 75.00 in 4 days with algo TB1_OC_QM_OB4_OS3_CB3_CS5_HM_AV_DU6_UA_AV
+CTIB Gain: $ 3.83 Win %: 75.00 in 4 days with algo TB1_OC_QM_OB4_OS3_CB3_CS5_HM_AV_DU6_UA_AV

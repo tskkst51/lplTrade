@@ -10,13 +10,16 @@ function init {
    $HOME/bin/lplt.sh
    . $wp/scripts/db.sh
 
+   reduceSearchDBs=""
+   
    day=$1
    algo=$2
    sym=$3
    #sortPct=$4
    ss=$4
-   debug=$5
-   dontStopDB=$6
+   reduceSearchDBs=$5
+   debug=$6
+   dontStopDB=$7
    
    wp=$(pwd)
 
@@ -32,28 +35,57 @@ function init {
 
    tmpFile=$(getRandomTmpFile)
    tmpFileSort=$(getRandomTmpFile)
-   
+
+   #echo debug $debug
+      
+   if [[ -n $debug ]] && [[ $debug != "d" ]]; then debug=""; fi
+   if [[ -n $reduceSearchDBs ]] && [[ $reduceSearchDBs == "d" ]]; then reduceSearchDBs=""; fi
+   if [[ -z $sym ]]; then echo sym is empty!; exit 1 ; fi
+   if [[ -z $algo ]]; then echo Need algo; exit 1; fi
+   if [[ -n $ss ]]; then dbNumModTestRows=$ss; fi
+
    syms=$sym
    if [[ $day == "all" ]] && [[ $sym == "all" ]]; then
       syms=$(getAllSyms "all")
    elif [[ $day != "all" ]] && [[ $sym == "all" ]]; then
       syms=$(getAllSyms $day)
    fi
-   
-   if [[ -n $debug ]] && [[ $debug != "d" ]]; then debug=""; fi
-   if [[ -z $syms ]]; then echo sym is empty!; exit 1 ; fi
-   if [[ -z $algo ]]; then echo Need algo; exit 1; fi
-   if [[ -n $ss ]]; then dbNumModTestRows=$ss; fi
 
    eq="="
    echo $algo | grep "%" > /dev/null
    if [[ $? == 0 ]]; then eq="like"; fi
 
-   days=$day
+   days=$day   
+   if [[ -n $debug ]]; then
+      echo syms $syms
+      echo algo $algo
+      echo ss $ss
+      echo reduceSearchDBs $reduceSearchDBs
+   fi
+   
    if [[ $day == "all" ]]; then
       days=$(getAllDays $sym)
+      if [[ -n $reduceSearchDBs ]]; then
+         # reduce the set of DB's to search
+         ctr=0
+         numDBs=$(echo $days | tr -cd ' ' | wc -c)
+         loopCtr=$(echo "$numDBs - $reduceSearchDBs + 1" | bc)
+         if [[ -n $debug ]]; then echo numDBs $numDBs; fi
+         if [[ -n $debug ]]; then echo loopCtr $loopCtr; fi
+         for d in $(echo $days); do
+            # Skip total - n
+            ctr=$(echo "$(($ctr + 1))")
+            if (( ctr <= loopCtr )); then
+               if [[ -n $debug ]]; then echo skipping $d; fi
+               continue
+            fi
+            newDays="$newDays $d"
+         done
+         days=$newDays
+         echo Using only the last $reduceSearchDBs days: $days
+      fi
    fi
-      
+   
    if [[ -f $tmpFile ]]; then rm -f $tmpFile ; fi
    if [[ -z $days ]]; then echo day is empty!; exit 1 ; fi
    
@@ -67,7 +99,7 @@ function init {
    algoModCtr=0
 }
 
-init $1 $2 $3 $4 $5 $6
+init $1 $2 $3 $4 $5 $6 $7
 
 # Get the 10 best algoMods populate file
 

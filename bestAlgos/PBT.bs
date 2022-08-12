@@ -230,3 +230,6 @@ PBT Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB1_CS1_
 PBT Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_AL_TS
 PBT Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_AV_TS
 PBT Gain: $ 0.45 Win %: 100.00 in 3 days with algo TB3_HL_LO_QM_OB2_OS2_CB2_CS2_TS
+PBT Gain: $ 0.06 Win %: 100.00 in 6 days with algo TB3_LO_HL_QM_OB2_OS3_CB5_CS3_QP_PM
+PBT Gain: $ 0.06 Win %: 100.00 in 6 days with algo TB3_LO_HL_QM_OB2_OS3_CB5_CS3_QP_PM_AL
+PBT Gain: $ 0.06 Win %: 100.00 in 6 days with algo TB3_LO_HL_QM_OB2_OS3_CB5_CS3_QP_PM_AV

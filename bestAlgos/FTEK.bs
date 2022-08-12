@@ -172,3 +172,9 @@ FTEK Gain: $ 1.91 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4
 FTEK Gain: $ 1.91 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4_HM_AL
 FTEK Gain: $ 2.09 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB1_OS1_CB4_CS4_HM
 FTEK Gain: $ 2.09 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4_HM
+FTEK Gain: $ 6.28 Win %: 100.00 in 3 days with algo TB1_LO_QM_OB5_OS5_CB4_CS3_HM_DU6_AL
+FTEK Gain: $ 6.93 Win %: 66.00 in 3 days with algo TB1_LO_QM_OB5_OS5_CB4_CS3_SS_DU6_AL
+FTEK Gain: $ 6.98 Win %: 66.00 in 3 days with algo TB1_LO_QM_OB5_OS5_CB4_CS3_DB30_DU6_AL
+FTEK Gain: $ 6.98 Win %: 66.00 in 3 days with algo TB1_LO_QM_OB5_OS5_CB4_CS3_DB30_DU6_AL_DU6_UA
+FTEK Gain: $ 6.98 Win %: 66.00 in 3 days with algo TB1_LO_QM_OB5_OS5_CB4_CS3_DB30_DU6_AL_TG
+FTEK Gain: $ 6.98 Win %: 66.00 in 3 days with algo TB1_LO_QM_OB5_OS5_CB4_CS3_DB30_DU6_AL_UA

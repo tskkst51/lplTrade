@@ -230,3 +230,6 @@ SFIX Gain: $ 2.24 Win %: 100.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_IT
 SFIX Gain: $ 2.41 Win %: 66.00 in 3 days with algo TB1_OO_QM_OB4_OS4_CB4_CS4_PM
 SFIX Gain: $ 3.09 Win %: 33.00 in 3 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_AV
 SFIX Gain: $ 3.26 Win %: 100.00 in 3 days with algo TB1_EO_EC_QM_OB2_OS2_CB4_CS4_IR5
+SFIX Gain: $ 2.12 Win %: 33.00 in 3 days with algo TB1_OO_QM_OB3_OS4_CB4_CS4_QL_TG
+SFIX Gain: $ 12.83 Win %: 33.00 in 3 days with algo TB1_OO_QM_OB3_OS4_CB4_CS4_QL_DU6
+SFIX Gain: $ 12.83 Win %: 33.00 in 3 days with algo TB1_OO_QM_OB3_OS4_CB4_CS4_QL_DU6_UA

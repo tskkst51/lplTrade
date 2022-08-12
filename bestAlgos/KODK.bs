@@ -172,3 +172,6 @@ KODK Gain: $ 1.7 Win %: 100.00 in 2 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_RV_
 KODK Gain: $ 1.72 Win %: 100.00 in 2 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_AL
 KODK Gain: $ 1.72 Win %: 100.00 in 2 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_HM_AL
 KODK Gain: $ 1.72 Win %: 100.00 in 2 days with algo TB3_OO_QM_OB2_OS2_CB5_CS5_RV_AL
+KODK Gain: $ 12.25 Win %: 50.00 in 16 days with algo TB3_OO_QM_OB5_OS2_CB5_CS4_RV_AV_DB10_DU6
+KODK Gain: $ 12.25 Win %: 50.00 in 16 days with algo TB3_OO_QM_OB5_OS2_CB5_CS4_RV_AV_DB10_DU6_AV
+KODK Gain: $ 12.25 Win %: 50.00 in 16 days with algo TB3_OO_QM_OB5_OS2_CB5_CS4_RV_AV_DB10_DU6_UA

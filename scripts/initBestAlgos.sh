@@ -11,13 +11,16 @@ function init {
    
    $HOME/bin/lplt.sh
 
-   day=$1
+   incDBNum=""
+   reduceNumDBs=""
+   
+   sym=$1
    ss=$2
-   sym=$3
-   overideInits=$4
-   debug=$5
+   debug=$3
+   reduceNumDBs=$4
+   overideInits=$5
 
-   syms=$(getAllSyms $day)
+   syms=$(getAllSyms "all")
    
    if [[ $sym != "" ]]; then 
       syms=$sym
@@ -29,13 +32,15 @@ function init {
       
    if [[ -z $ss ]]; then ss=$dbNumModTestRows ; fi
    if [[ $overideInits != "o" ]]; then overideInits="" ; fi
-   if [[ -n $debug ]] && [[ $debug != "d" ]]; then debug=""; fi
+   if [[ -n $reduceNumDBs ]]; then incDBNum=$reduceNumDBs; else incDBNum=$incDBNums ; fi
+   if [[ -n $debug ]] && [[ $debug != "d" ]]; then debug="n"; fi
    
    echo day $day
    echo ss $ss
    echo overideInits $overideInits
    echo syms $syms
    echo debug $debug
+   echo incDBNum $incDBNum
 }
 
 init $1 $2 $3 $4 $5
@@ -53,8 +58,9 @@ symsPurged=""
 if [[ $overideInits == "o" ]]; then
    for s in $syms; do
       if [[ -f "${bestAlgosDir}/${s}${inEx}" ]]; then
-         echo skipping ${s}${inEx} 
-         continue
+         echo removing ${s}${inEx} 
+         rm ${bestAlgosDir}/${s}${inEx}
+         #continue
       fi
       symsPurged="$symsPurged ${s}"
    done
@@ -85,13 +91,18 @@ for t in $(echo "1 3 5"); do
          
          echo DB search pattern: $pattern $s
 
-         #cmd="${wp}/scripts/getDBVal.sh all $pattern $s $ss n d"
-         cmd="${wp}/scripts/getDBVal.sh all $pattern $s $ss"
-                  
-         #echo $cmd
+         #cmd="${wp}/scripts/getDBVal.sh all $pattern $s $ss"
+         if [[ -n $reduceNumDBs ]]; then
+            cmd="${wp}/scripts/getDBVal.sh all $pattern $s $ss $incDBNum r $debug d"
+         else
+            cmd="${wp}/scripts/getDBVal.sh all $pattern $s $ss n $debug d"
+         fi                  
+         
+         if [[ $debug == "d" ]]; then echo $cmd; fi
          
          # Ignore any results that were negative
          res=$($cmd)
+         #echo res $res
          for r in $(echo $res); do
             echo $r | grep -q "-"
             if [[ $? == 0 ]]; then
@@ -102,6 +113,7 @@ for t in $(echo "1 3 5"); do
          tail -${ss} $tmpFile2 >> $tmpFile
          rm -f $tmpFile2
          tmpFile2=$(getRandomTmpFile)
+         
          #$cmd >> $tmpFile
       done
    done

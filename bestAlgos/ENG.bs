@@ -172,3 +172,6 @@ ENG Gain: $ 0.84 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_IT_Q
 ENG Gain: $ 0.89 Win %: 66.00 in 3 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_SS
 ENG Gain: $ 0.9 Win %: 100.00 in 3 days with algo TB5_LO_QM_OB2_OS2_CB1_CS1_TR
 ENG Gain: $ 0.91 Win %: 66.00 in 3 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_RV_AL
+ENG Gain: $ 6.75 Win %: 75.00 in 4 days with algo TB5_EO_EC_QM_OB4_OS2_CB2_CS5_RV_AL_DB6_DU6
+ENG Gain: $ 6.75 Win %: 75.00 in 4 days with algo TB5_EO_EC_QM_OB4_OS2_CB2_CS5_RV_AL_DB6_DU6_AL
+ENG Gain: $ 6.75 Win %: 75.00 in 4 days with algo TB5_EO_EC_QM_OB4_OS2_CB2_CS5_RV_AL_DB6_DU6_UA

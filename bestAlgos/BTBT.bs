@@ -229,3 +229,6 @@ BTBT Gain: $ 11.61 Win %: 80.00 in 10 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS
 BTBT Gain: $ 12.69 Win %: 80.00 in 10 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_HM_AV
 BTBT Gain: $ 14.06 Win %: 90.00 in 10 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_RV_AV_DB30
 BTBT Gain: $ 14.55 Win %: 100.00 in 10 days with algo TB1_HL_HS_QM_OB1_OS1_CB5_CS5_HM_AV_DB30
+BTBT Gain: $ 32.65 Win %: 75.00 in 12 days with algo TB1_HS_QM_OB3_OS2_CB3_CS5_LI_DU6_AV
+BTBT Gain: $ 32.65 Win %: 75.00 in 12 days with algo TB1_HS_QM_OB3_OS2_CB3_CS5_LI_DU6_UA_AV
+BTBT Gain: $ 32.65 Win %: 75.00 in 12 days with algo TB1_HS_QM_OB3_OS2_CB3_CS5_LI_DU6_UA_AV

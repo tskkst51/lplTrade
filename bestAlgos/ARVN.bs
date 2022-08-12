@@ -183,3 +183,6 @@ ARVN Gain: $ 8.75 Win %: 55.00 in 9 days with algo TB3_HL_HS_QM_OB1_OS1_CB4_CS4_
 ARVN Gain: $ 8.75 Win %: 55.00 in 9 days with algo TB3_HL_HS_QM_OB2_OS2_CB4_CS4_RV_TR
 ARVN Gain: $ 8.93 Win %: 66.00 in 9 days with algo TB3_HL_HS_QM_OB1_OS1_CB4_CS4_HM_TR
 ARVN Gain: $ 8.93 Win %: 66.00 in 9 days with algo TB3_HL_HS_QM_OB2_OS2_CB4_CS4_HM_TR
+ARVN Gain: $ 22.24 Win %: 100.00 in 11 days with algo TB1_OO_QM_OB4_OS4_CB3_CS5_PM_DU6_UA
+ARVN Gain: $ 24.27 Win %: 72.00 in 11 days with algo TB1_OO_QM_OB2_OS4_CB3_CS5_PM_DU6
+ARVN Gain: $ 24.27 Win %: 72.00 in 11 days with algo TB1_OO_QM_OB2_OS4_CB3_CS5_PM_DU6_UA

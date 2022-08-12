@@ -286,7 +286,7 @@ def analyzeStocks(pf, pr, tg, dc, preOrPost, useLiveDailyData, stocks, onlyUpdat
       exit (1)
 
    # Candidates come from premarket movers internet site, daily charts, ETF movers
-   candidates = pr.getStockCandidates(tg, dc, stocks, findPreMarketMovers, useLiveDailyData, 1)
+   candidates = pr.getStockCandidates(tg, dc, stocks, findPreMarketMovers, findYahooMovers, useLiveDailyData, 1)
    
    # Only use candidates that have a minimum number of days test data
    if numDaysTestData:
@@ -424,6 +424,8 @@ daysBestAvgDailyGain = float(d["daysBestAvgDailyGain"])
 
 useStocksFromDailyCharts = int(d["useStocksFromDailyCharts"])
 findPreMarketMovers = int(d["findPreMarketMovers"])
+findYahooMovers = int(d["findYahooMovers"])
+
 maxStocksToTrade = int(d["maxStocksToTrade"])
 maxNumProcesses = int(d["maxNumProcesses"])
 

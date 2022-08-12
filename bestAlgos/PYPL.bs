@@ -229,3 +229,6 @@ PYPL Gain: $ 18.16 Win %: 77.00 in 9 days with algo TB3_HL_LO_QM_OB1_OS1_CB1_CS1
 PYPL Gain: $ 18.59 Win %: 88.00 in 9 days with algo TB2_CC_QM_OB2_OS2_CB3_CS3_RV_AL
 PYPL Gain: $ 18.86 Win %: 88.00 in 9 days with algo TB2_CC_QM_OB2_OS2_CB3_CS3_DB15
 PYPL Gain: $ 19.3 Win %: 88.00 in 9 days with algo TB2_CC_QM_OB2_OS2_CB3_CS3_IT_QL_DB15
+PYPL Gain: $ 81.9 Win %: 72.00 in 11 days with algo TB3_CC_QM_OB2_OS2_CB3_CS3_IT_TS_DU6_AV
+PYPL Gain: $ 81.9 Win %: 72.00 in 11 days with algo TB3_CC_QM_OB2_OS2_CB3_CS3_IT_TS_DU6_UA_AV
+PYPL Gain: $ 81.9 Win %: 72.00 in 11 days with algo TB3_CC_QM_OB2_OS2_CB3_CS3_IT_TS_DU6_UA_AV

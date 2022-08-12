@@ -165,3 +165,6 @@ DMAC Gain: $ 0.63 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB3_OS3_CB5_CS5_IT
 DMAC Gain: $ 0.63 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB3_OS3_CB5_CS5_IT_QL
 DMAC Gain: $ 0.63 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB5_CS5_IT
 DMAC Gain: $ 0.63 Win %: 100.00 in 2 days with algo TB3_PL_QM_OB4_OS4_CB5_CS5_IT_QL
+DMAC Gain: $ 0.0 Win %: 100.00 in 2 days with algo TB5_PL_QM_OB2_OS5_CB3_CS2_QP_PM_DU6_UA_AV
+DMAC Gain: $ 0.0 Win %: 100.00 in 2 days with algo TB5_PL_QM_OB2_OS5_CB3_CS2_QP_PM_UA
+DMAC Gain: $ 0.21 Win %: 50.00 in 2 days with algo TB5_PL_QM_OB2_OS5_CB3_CS2_IT_QL_DU6_AV

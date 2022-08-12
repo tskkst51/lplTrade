@@ -925,7 +925,8 @@ class Target:
          data = os.system("curl " + self.yahooUrl + " >" + path + " 2>&1")
       except (TimeoutError, URLError) as e:
          return ""
-
+      
+      b = ""
       with open(path, 'r') as yahooData:
          for line in yahooData:
             if self.yahooSearchToken in line:

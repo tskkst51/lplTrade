@@ -168,3 +168,6 @@ DOMO Gain: $ 4.75 Win %: 75.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_AC
 DOMO Gain: $ 4.75 Win %: 75.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_AO
 DOMO Gain: $ 4.75 Win %: 75.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_AO_AC
 DOMO Gain: $ 5.07 Win %: 75.00 in 4 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_LI
+DOMO Gain: $ 12.99 Win %: 75.00 in 4 days with algo TB3_CC_QM_OB2_OS3_CB4_CS2_RV_AL_DU6_AL
+DOMO Gain: $ 12.99 Win %: 75.00 in 4 days with algo TB3_CC_QM_OB2_OS3_CB4_CS2_RV_AL_DU6_UA
+DOMO Gain: $ 12.99 Win %: 75.00 in 4 days with algo TB3_CC_QM_OB2_OS3_CB4_CS2_RV_AL_DU6_UA

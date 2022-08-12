@@ -165,3 +165,6 @@ CPSH Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4
 CPSH Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_IT_QL
 CPSH Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_QL
 CPSH Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_SS
+CPSH Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS5_CB5_CS4_RV_AV_AV
+CPSH Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS5_CB5_CS4_RV_AV_TG
+CPSH Gain: $ 0.53 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB3_OS5_CB5_CS4_RV_AV_UA

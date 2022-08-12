@@ -230,3 +230,6 @@ VERU Gain: $ 1.43 Win %: 75.00 in 4 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_HM_
 VERU Gain: $ 1.49 Win %: 75.00 in 4 days with algo TB3_HL_QM_OB2_OS2_CB3_CS3_HM_TR_DB10
 VERU Gain: $ 1.71 Win %: 75.00 in 4 days with algo TB5_PL_QM_OB1_OS1_CB2_CS2_SS
 VERU Gain: $ 1.83 Win %: 75.00 in 4 days with algo TB4_HS_QM_OB5_OS5_CB3_CS3_HM_AL
+VERU Gain: $ 78.95 Win %: 68.00 in 32 days with algo TB3_HI_HL_QM_OB3_OS2_CB2_CS5_RV_TR_DB10_DU6_AL
+VERU Gain: $ 91.07 Win %: 68.00 in 32 days with algo TB5_HL_QM_OB2_OS5_CB3_CS2_SS_DU6
+VERU Gain: $ 98.85 Win %: 59.00 in 32 days with algo TB5_HL_QM_OB2_OS5_CB3_CS2_SS_DU6_AV

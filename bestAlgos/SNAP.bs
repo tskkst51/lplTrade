@@ -171,3 +171,9 @@ SNAP Gain: $ 51.61 Win %: 58.00 in 113 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_C
 SNAP Gain: $ 51.61 Win %: 58.00 in 113 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_TR_IR3
 SNAP Gain: $ 64.93 Win %: 63.00 in 113 days with algo TB3_HL_LO_QM_OB1_OS1_CB5_CS5_AL
 SNAP Gain: $ 64.93 Win %: 63.00 in 113 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS5_AL
+SNAP Gain: $ 145.9 Win %: 48.00 in 130 days with algo TB5_CC_QM_OB2_OS2_CB4_CS3_RV_TR_DB6_DU6_AV
+SNAP Gain: $ 145.9 Win %: 48.00 in 130 days with algo TB5_CC_QM_OB2_OS2_CB4_CS3_RV_TR_DB6_DU6_UA_AV
+SNAP Gain: $ 145.9 Win %: 48.00 in 130 days with algo TB5_CC_QM_OB2_OS2_CB4_CS3_RV_TR_DB6_DU6_UA_AV
+SNAP Gain: $ 145.9 Win %: 48.00 in 130 days with algo TB5_CC_QM_OB2_OS2_CB4_CS3_RV_TR_DB6_DU6_UA_AV_DU6_UA_AV
+SNAP Gain: $ 145.9 Win %: 48.00 in 130 days with algo TB5_CC_QM_OB2_OS2_CB4_CS3_RV_TR_DB6_DU6_UA_AV_UA
+SNAP Gain: $ 145.9 Win %: 48.00 in 130 days with algo TB5_CC_QM_OB2_OS2_CB4_CS3_RV_TR_DB6_DU6_UA_AV_UA

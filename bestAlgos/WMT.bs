@@ -235,3 +235,6 @@ WMT Gain: $ 24.77 Win %: 64.00 in 37 days with algo TB3_HI_HL_QM_OB5_OS3_CB5_CS5
 WMT Gain: $ 24.26 Win %: 60.00 in 38 days with algo TB3_HI_HL_QM_OB5_OS5_CB5_CS5_TR_IR3
 WMT Gain: $ 25.08 Win %: 65.00 in 38 days with algo TB3_HI_HL_QM_OB5_OS3_CB5_CS5_TR_IR3
 WMT Gain: $ 25.13 Win %: 84.00 in 38 days with algo TB3_HI_HL_QM_OB5_OS3_CB5_CS5_PM
+WMT Gain: $ 71.97 Win %: 71.00 in 38 days with algo TB3_HI_HL_QM_OB5_OS3_CB5_CS5_PM_DU6_AV
+WMT Gain: $ 76.12 Win %: 47.00 in 38 days with algo TB3_HI_HL_QM_OB5_OS3_CB5_CS5_TR_IR3_DU6_AL
+WMT Gain: $ 80.27 Win %: 50.00 in 38 days with algo TB3_HI_HL_QM_OB5_OS3_CB5_CS5_TR_IR3_DU6

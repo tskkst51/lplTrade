@@ -9,27 +9,25 @@ function init {
 
    # When run from cron ENV variables don't exist set LPLT the old way...
    wp="/Users/tsk/w/lplTrade"
-      
    . ${wp}/scripts/db.sh
+
+   day=$1
+   stock=$2
+
+   killTestScripts=""
+   if [[ -z $day ]]; then killTestScripts="yes"; fi
+   
    . ${HOME}/.bashrc
 
    ulimit -n 10000
       
    testSystem="mmT.local"
-   
-   day=$1
-   stock=$2
 
-   if [[ -z $1 ]]; then
-      day=""
-   fi
+   if [[ -z $1 ]]; then day=""; fi
    
    lpltMaster="${wp}/bin/lpltMaster.py"
    
-   if [[ ! -e $lpltMaster ]]; then
-      echo $lpltMaster not found!
-      exit 1
-   fi
+   if [[ ! -e $lpltMaster ]]; then echo $lpltMaster not found!;exit 1; fi
    
    host=$(hostname -s)
    
@@ -39,9 +37,7 @@ function init {
  
    # ML-C02C8546LVDL
    # mm
-   if [[ $host == $activeLiveHost ]]; then
-      liveHost=$activeLiveHost
-   fi
+   if [[ $host == $activeLiveHost ]]; then liveHost=$activeLiveHost; fi
    
    activateCmd=$(dirname $wp)
    activateCmd+=$activateDir
@@ -351,6 +347,12 @@ function initDB {
 
 init $1 $2
 
+# If running from cron kill any tests running since cron starts the live program
+
+if [[ $killTestScripts == "yes" ]]; then
+   killRunningScript $keepToken
+fi
+
 if [[ -n $liveHost ]] && [[ -z $day ]]; then
    initDB $dt
 else
@@ -358,11 +360,13 @@ else
 fi
 
 # Check if a rogue program is running. kill it if it is
-ps | grep $program | grep -qv grep
-
-if [[ $? == 0 ]]; then
-   kill $(ps | grep $program | awk '{printf $1 " " }')
-fi
+#ps | grep $program | grep -qv grep
+#
+#if [[ $? == 0 ]]; then
+#   # Kill the oldest keepAliveDB PID
+#   $(ps -ef|g keepAliveDB|g -v grep| awk '{print $5}')
+#   kill $(ps | grep $program | awk '{printf $1 " " }')
+#fi
 
 if [[ -n $day ]]; then
    offLine="yes"

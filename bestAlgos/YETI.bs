@@ -230,3 +230,5 @@ YETI Gain: $ 5.24 Win %: 80.00 in 5 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_AV_
 YETI Gain: $ 5.43 Win %: 100.00 in 5 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_IT_TS
 YETI Gain: $ 6.0 Win %: 100.00 in 5 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_AL_TS
 YETI Gain: $ 6.16 Win %: 100.00 in 5 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_TS
+YETI Gain: $ 41.06 Win %: 66.00 in 6 days with algo TB5_LO_QM_OB2_OS5_CB5_CS5_AV_VI_DU6_UA
+YETI Gain: $ 41.06 Win %: 66.00 in 6 days with algo TB5_LO_QM_OB2_OS5_CB5_CS5_AV_VI_DU6_UA

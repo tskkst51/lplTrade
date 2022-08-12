@@ -157,3 +157,6 @@ LIZI Gain: $ 1.36 Win %: 75.00 in 4 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_
 LIZI Gain: $ 1.36 Win %: 75.00 in 4 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_HM_AV
 LIZI Gain: $ 1.4 Win %: 75.00 in 4 days with algo TB2_HL_HS_QM_OB3_OS3_CB4_CS4_AC
 LIZI Gain: $ 1.63 Win %: 100.00 in 4 days with algo TB5_EO_EC_QM_OB2_OS2_CB5_CS5_HM_TR
+LIZI Gain: $ 10.61 Win %: 75.00 in 4 days with algo TB5_LO_QM_OB4_OS2_CB2_CS4_RV_AV_DB6_DU6
+LIZI Gain: $ 10.61 Win %: 75.00 in 4 days with algo TB5_LO_QM_OB4_OS2_CB2_CS4_RV_AV_DB6_DU6_AL
+LIZI Gain: $ 10.61 Win %: 75.00 in 4 days with algo TB5_LO_QM_OB4_OS2_CB2_CS4_RV_AV_DB6_DU6_AV

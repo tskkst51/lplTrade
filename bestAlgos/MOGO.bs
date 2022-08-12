@@ -172,3 +172,6 @@ MOGO Gain: $ 0.8 Win %: 75.00 in 4 days with algo TB2_EO_EC_QM_OB3_OS3_CB4_CS4_A
 MOGO Gain: $ 0.8 Win %: 75.00 in 4 days with algo TB2_EO_EC_QM_OB3_OS3_CB4_CS4_QL
 MOGO Gain: $ 0.8 Win %: 75.00 in 4 days with algo TB2_EO_EC_QM_OB3_OS3_CB4_CS4_SS
 MOGO Gain: $ 0.97 Win %: 75.00 in 4 days with algo TB2_EO_EC_QM_OB3_OS3_CB4_CS4_RV
+MOGO Gain: $ 2.78 Win %: 75.00 in 4 days with algo TB3_CC_QM_OB4_OS3_CB2_CS3_AV_TS_DU6_UA_AV
+MOGO Gain: $ 4.28 Win %: 100.00 in 4 days with algo TB5_HI_QM_OB2_OS4_CB4_CS5_HM_DU6
+MOGO Gain: $ 4.28 Win %: 100.00 in 4 days with algo TB5_HI_QM_OB2_OS4_CB4_CS5_HM_DU6_UA

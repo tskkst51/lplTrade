@@ -392,7 +392,7 @@ class Premarket:
       return parsedStocks      
        
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getStockCandidates(self, tg, dc, stocks, findPreMarketMovers, useLiveDailyData, ignoreBuyOutStocks):
+   def getStockCandidates(self, tg, dc, stocks, findPreMarketMovers, findYahooMovers, useLiveDailyData, ignoreBuyOutStocks):
    
       # Take static stocks and movers and get their daily charts if not already up to date
       validLDStocks = []
@@ -401,13 +401,13 @@ class Premarket:
       # Find the premarket movers
       if findPreMarketMovers:
          movers = tg.getPreMarketMovers()
-         yahooMovers = tg.getYahooPreMarketMovers()
-         
-         for stock in yahooMovers:
-            movers.append(stock)
+         if findYahooMovers:
+            yahooMovers = tg.getYahooPreMarketMovers()
+            for stock in yahooMovers:
+               movers.append(stock)
+            print ("yahooMovers " + str(yahooMovers))
 
          print ("movers " + str(movers))
-         print ("yahooMovers " + str(yahooMovers))
          
          if ignoreBuyOutStocks:
             movers = tg.ignoreBuyOutStocks(movers)

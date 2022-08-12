@@ -168,3 +168,6 @@ PATI Gain: $ 0.66 Win %: 100.00 in 2 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_AL
 PATI Gain: $ 0.66 Win %: 100.00 in 2 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_IR1
 PATI Gain: $ 0.66 Win %: 100.00 in 2 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_QL
 PATI Gain: $ 1.0 Win %: 100.00 in 2 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_SS
+PATI Gain: $ 2.66 Win %: 100.00 in 2 days with algo TB5_HI_HL_QM_OB5_OS2_CB2_CS5_SS_DU6
+PATI Gain: $ 2.66 Win %: 100.00 in 2 days with algo TB5_HI_HL_QM_OB5_OS2_CB2_CS5_SS_DU6_AL
+PATI Gain: $ 2.66 Win %: 100.00 in 2 days with algo TB5_HI_HL_QM_OB5_OS2_CB2_CS5_SS_DU6_AV

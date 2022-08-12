@@ -157,3 +157,6 @@ MOHO Gain: $ 0.34 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5
 MOHO Gain: $ 0.34 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_HM
 MOHO Gain: $ 0.34 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_HM_AV
 MOHO Gain: $ 0.34 Win %: 100.00 in 3 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_HM_TR
+MOHO Gain: $ 0.91 Win %: 66.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS2_HM_AL_DU6
+MOHO Gain: $ 0.91 Win %: 66.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS2_HM_AL_DU6_AL
+MOHO Gain: $ 0.91 Win %: 66.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS2_HM_AL_DU6_UA

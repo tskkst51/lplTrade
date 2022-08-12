@@ -232,3 +232,9 @@ JPM Gain: $ 15.97 Win %: 80.00 in 15 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4
 JPM Gain: $ 15.64 Win %: 72.00 in 22 days with algo TB5_CC_QM_OB3_OS2_CB2_CS4_RV_AV_DB6
 JPM Gain: $ 16.75 Win %: 72.00 in 22 days with algo TB3_OC_QM_OB4_OS3_CB3_CS5_HM_AV_DB10
 JPM Gain: $ 17.43 Win %: 72.00 in 22 days with algo TB3_OC_QM_OB4_OS3_CB2_CS5_HM_AV_DB10
+JPM Gain: $ 37.41 Win %: 63.00 in 22 days with algo TB3_OC_QM_OB4_OS3_CB3_CS5_HM_AV_DB10_DU6_AV
+JPM Gain: $ 37.41 Win %: 63.00 in 22 days with algo TB3_OC_QM_OB4_OS3_CB3_CS5_HM_AV_DB10_DU6_UA
+JPM Gain: $ 37.41 Win %: 63.00 in 22 days with algo TB3_OC_QM_OB4_OS3_CB3_CS5_HM_AV_DB10_DU6_UA_AV
+JPM Gain: $ 37.41 Win %: 63.00 in 22 days with algo TB3_OC_QM_OB4_OS3_CB3_CS5_HM_AV_DB10_DU6_UA_DU6_UA
+JPM Gain: $ 37.41 Win %: 63.00 in 22 days with algo TB3_OC_QM_OB4_OS3_CB3_CS5_HM_AV_DB10_DU6_UA_DU6_UA_AV
+JPM Gain: $ 37.41 Win %: 63.00 in 22 days with algo TB3_OC_QM_OB4_OS3_CB3_CS5_HM_AV_DB10_DU6_UA_UA

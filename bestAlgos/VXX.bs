@@ -233,3 +233,12 @@ VXX Gain: $ 1.4 Win %: 100.00 in 4 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_RV_A
 VXX Gain: $ 2.56 Win %: 71.00 in 7 days with algo TB5_OO_QM_OB2_OS3_CB5_CS5_RV_AV_DB6
 VXX Gain: $ 2.94 Win %: 71.00 in 7 days with algo TB5_OO_QM_OB2_OS4_CB5_CS5_RV_AV_DB6
 VXX Gain: $ 4.59 Win %: 85.00 in 7 days with algo TB1_CC_QM_OB2_OS2_CB2_CS5_SS
+VXX Gain: $ 11.9 Win %: 71.00 in 7 days with algo TB5_OO_QM_OB2_OS4_CB5_CS5_RV_AV_DB6_DU6_AL
+VXX Gain: $ 12.08 Win %: 85.00 in 7 days with algo TB1_CC_QM_OB2_OS2_CB2_CS5_SS_DU6
+VXX Gain: $ 12.08 Win %: 85.00 in 7 days with algo TB1_CC_QM_OB2_OS2_CB2_CS5_SS_DU6_UA
+VXX Gain: $ 12.08 Win %: 85.00 in 7 days with algo TB1_CC_QM_OB2_OS2_CB2_CS5_SS_DU6_UA_UA
+VXX Gain: $ 12.19 Win %: 85.00 in 7 days with algo TB1_CC_QM_OB2_OS2_CB2_CS5_SS_DU6_TG
+VXX Gain: $ 12.19 Win %: 85.00 in 7 days with algo TB1_CC_QM_OB2_OS2_CB2_CS5_SS_DU6_UA_TG
+VXX Gain: $ 12.19 Win %: 85.00 in 7 days with algo TB1_CC_QM_OB2_OS2_CB2_CS5_SS_DU6_UA_TG_TG
+VXX Gain: $ 12.19 Win %: 85.00 in 7 days with algo TB1_CC_QM_OB2_OS2_CB2_CS5_SS_DU6_UA_TG_UA
+VXX Gain: $ 12.19 Win %: 85.00 in 7 days with algo TB1_CC_QM_OB2_OS2_CB2_CS5_SS_DU6_UA_UA_TG

@@ -229,3 +229,9 @@ QCOM Gain: $ 11.04 Win %: 61.00 in 18 days with algo TB5_HL_HI_QM_OB1_OS1_CB5_CS
 QCOM Gain: $ 12.7 Win %: 66.00 in 18 days with algo TB4_LO_QM_OB2_OS2_CB5_CS5_QP_IR2
 QCOM Gain: $ 13.3 Win %: 66.00 in 18 days with algo TB4_HL_LO_QM_OB2_OS2_CB4_CS4_HM_AV
 QCOM Gain: $ 17.67 Win %: 72.00 in 18 days with algo TB4_HL_LO_QM_OB2_OS2_CB4_CS4_HM_AV_DB8
+QCOM Gain: $ 12.65 Win %: 75.00 in 33 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_AV_TS_AV
+QCOM Gain: $ 12.65 Win %: 75.00 in 33 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_AV_TS_UA
+QCOM Gain: $ 22.19 Win %: 78.00 in 33 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_AV_TS_AL
+QCOM Gain: $ 22.19 Win %: 78.00 in 33 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_AV_TS_AL_UA
+QCOM Gain: $ 22.19 Win %: 78.00 in 33 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_AV_TS_AV_AL
+QCOM Gain: $ 22.19 Win %: 78.00 in 33 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_AV_TS_UA_AL

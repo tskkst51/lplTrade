@@ -165,3 +165,6 @@ FENG Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_IT
 FENG Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_IT_QL
 FENG Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_QL
 FENG Gain: $ 0.23 Win %: 100.00 in 2 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_TR
+FENG Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS5_CB3_CS2_HM_AV_DU6_UA
+FENG Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS5_CB3_CS2_HM_AV_DU6_UA_AV
+FENG Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS5_CB3_CS2_HM_AV_DU6_UA_AV

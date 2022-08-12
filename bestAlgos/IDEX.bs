@@ -165,3 +165,12 @@ IDEX Gain: $ 1.25 Win %: 100.00 in 4 days with algo TB1_HI_QM_OB5_OS5_CB5_CS5_DB
 IDEX Gain: $ 1.34 Win %: 100.00 in 4 days with algo TB1_HI_QM_OB4_OS4_CB5_CS5_DB30
 IDEX Gain: $ 1.38 Win %: 100.00 in 4 days with algo TB1_HI_QM_OB5_OS5_CB5_CS5_HM_TR_DB30
 IDEX Gain: $ 1.47 Win %: 100.00 in 4 days with algo TB1_HI_QM_OB4_OS4_CB5_CS5_HM_TR_DB30
+IDEX Gain: $ 7.52 Win %: 75.00 in 4 days with algo TB1_HI_QM_OB5_OS4_CB3_CS5_HM_TR_DB30_DU6_AL
+IDEX Gain: $ 7.58 Win %: 75.00 in 4 days with algo TB1_HI_QM_OB5_OS4_CB3_CS5_HM_TR_DB30_DU6
+IDEX Gain: $ 7.58 Win %: 75.00 in 4 days with algo TB1_HI_QM_OB5_OS4_CB3_CS5_HM_TR_DB30_DU6_UA
+IDEX Gain: $ 7.58 Win %: 75.00 in 4 days with algo TB1_HI_QM_OB5_OS4_CB3_CS5_HM_TR_DB30_DU6_UA_DU6_UA
+IDEX Gain: $ 7.58 Win %: 75.00 in 4 days with algo TB1_HI_QM_OB5_OS4_CB3_CS5_HM_TR_DB30_DU6_UA_TG
+IDEX Gain: $ 7.58 Win %: 75.00 in 4 days with algo TB1_HI_QM_OB5_OS4_CB3_CS5_HM_TR_DB30_DU6_UA_UA
+IDEX Gain: $ 7.58 Win %: 75.00 in 4 days with algo TB1_HI_QM_OB5_OS4_CB3_CS5_HM_TR_DB30_DU6_UA_UA_DU6_UA
+IDEX Gain: $ 7.58 Win %: 75.00 in 4 days with algo TB1_HI_QM_OB5_OS4_CB3_CS5_HM_TR_DB30_DU6_UA_UA_TG
+IDEX Gain: $ 7.58 Win %: 75.00 in 4 days with algo TB1_HI_QM_OB5_OS4_CB3_CS5_HM_TR_DB30_DU6_UA_UA_UA

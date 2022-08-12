@@ -171,3 +171,6 @@ NURO Gain: $ 13.97 Win %: 54.00 in 11 days with algo TB5_OO_QM_OB4_OS4_CB5_CS5_A
 NURO Gain: $ 14.04 Win %: 63.00 in 11 days with algo TB5_OO_QM_OB4_OS4_CB5_CS5_RV_AV
 NURO Gain: $ 16.08 Win %: 63.00 in 11 days with algo TB5_OO_QM_OB4_OS4_CB5_CS5_RV_AL
 NURO Gain: $ 16.19 Win %: 63.00 in 11 days with algo TB5_OO_QM_OB5_OS5_CB5_CS5_RV_AL
+NURO Gain: $ 92.93 Win %: 66.00 in 12 days with algo TB3_OO_QM_OB5_OS2_CB2_CS5_RV_AV_DU6_UA
+NURO Gain: $ 92.93 Win %: 66.00 in 12 days with algo TB3_OO_QM_OB5_OS2_CB2_CS5_RV_AV_DU6_UA_AV
+NURO Gain: $ 92.93 Win %: 66.00 in 12 days with algo TB3_OO_QM_OB5_OS2_CB2_CS5_RV_AV_DU6_UA_AV

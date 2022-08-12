@@ -172,3 +172,6 @@ AYRO Gain: $ 1.16 Win %: 100.00 in 2 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5_RV
 AYRO Gain: $ 1.17 Win %: 100.00 in 2 days with algo TB2_EO_EC_QM_OB2_OS2_CB5_CS5_AV
 AYRO Gain: $ 1.2 Win %: 100.00 in 2 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_PM
 AYRO Gain: $ 1.2 Win %: 100.00 in 2 days with algo TB2_HS_QM_OB2_OS2_CB5_CS5_PM
+AYRO Gain: $ 6.92 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS5_CB5_CS3_PM_DU6_UA
+AYRO Gain: $ 6.92 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS5_CB5_CS3_PM_DU6_UA_AV
+AYRO Gain: $ 6.92 Win %: 100.00 in 2 days with algo TB1_HS_QM_OB3_OS5_CB5_CS3_PM_DU6_UA_AV

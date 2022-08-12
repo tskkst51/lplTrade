@@ -9,7 +9,7 @@ function init {
 
    . ${wp}/scripts/db.sh
    
-   $HOME/bin/lplt.sh
+   #$HOME/bin/lplt.sh
 
    sym=$1
    ss=$2
@@ -39,12 +39,34 @@ if [[ ! -f "${bestAlgosDir}/${sym}${inEx}" ]]; then
 fi
 
 rm -f ${tmpFile}_${sym}
+rm -f $tmpFile
 rm -f $tmpFile2
 
-for algo in $(tail -n $ss "${bestAlgosDir}/${sym}${inEx}" | awk '{print $13}' ); do
-   run.sh "" $algo $sym | grep Gain >> ${tmpFile}_${sym}
+# Remove dups from best algo file
+sort -u -k13,13 "${bestAlgosDir}/${sym}${inEx}" | sort -n -k3,3 > $tmpFile
+
+#cp $tmpFile "${bestAlgosDir}/${sym}${inEx}" 
+algos=$(tail -n $ss $tmpFile | awk '{print $13}')
+
+# Add modfiers to the best...
+for a in $(echo $algos); do
+   for ia in $(echo $incAlgos); do
+      newAlgoStr=$(removeDupsFromAlgoStr ${a}_${ia})
+      echo orig " -${a}_${ia}-"
+      echo after -${newAlgoStr}-
+      run.sh "" $newAlgoStr $sym | grep Gain >> ${tmpFile}_${sym}
+      tail -1 ${tmpFile}_${sym}
+   done
+   
+   # Run the original set again
+   run.sh "" ${a} $sym | grep Gain >> ${tmpFile}_${sym}
    tail -1 ${tmpFile}_${sym}
 done
+
+#for algo in $(tail -n $ss "${bestAlgosDir}/${sym}${inEx}" | awk '{print $13}' ); do
+#   run.sh "" $algo $sym | grep Gain >> ${tmpFile}_${sym}
+#   tail -1 ${tmpFile}_${sym}
+#done
 
 
 # Only overwrite the .in file if the new results out perform the algos in the 
@@ -56,20 +78,27 @@ if [[ -n $debug ]]; then tail -5 $tmpFile2; fi
 bestOld=$(awk '{print $4}' "${bestAlgosDir}/${sym}${inEx}" | tail -n 1)
 bestNew=$(awk '{print $4}' $tmpFile2 | tail -n 1)
 
-if [[ $bestNew > $bestOld ]]; then
-   sort -n -k4,4 ${tmpFile}_${sym} > "${bestAlgosDir}/${sym}${inEx}"
-   echo Got a new best algo value:
-   echo old: $bestOld
-   echo new: $bestNew
-else
-   echo No new best algo with another day of test data:
-   echo old: $bestOld
-   echo new: $bestNew
-   exit 1
-fi
+#if [[ -n $debug ]]; then echo old: $bestOld; fi
+#if [[ -n $debug ]]; then echo new: $bestNew; fi
+
+echo old: $bestOld
+echo new: $bestNew
+sort -n -k4,4 ${tmpFile}_${sym} > "${bestAlgosDir}/${sym}${inEx}"
+
+#if [[ $bestNew > $bestOld ]]; then
+#   echo Got a new best algo value:
+#   echo old: $bestOld
+#   echo new: $bestNew
+#else
+#   echo No new best algo with another day of test data:
+#   echo old: $bestOld
+#   echo new: $bestNew
+#   exit 1
+#fi
 
 if [[ -n $debug ]]; then echo Adding $ss algos to "${bestAlgosDir}/${sym}${bsEx}" file; fi
 
 tail -n $ss "${bestAlgosDir}/${sym}${inEx}" >> "${bestAlgosDir}/${sym}${bsEx}" 
+#cp ${bestAlgosDir}/${sym}${inEx} ${bestAlgosDir}/${sym}${bsEx} || cant copy .in to .bs
 
 exit 0

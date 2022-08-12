@@ -172,3 +172,9 @@ SILK Gain: $ 1.82 Win %: 85.00 in 7 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_
 SILK Gain: $ 2.15 Win %: 42.00 in 7 days with algo TB3_EO_EC_QM_OB3_OS3_CB4_CS4_IT_QL_DB10
 SILK Gain: $ 2.64 Win %: 71.00 in 7 days with algo TB3_EO_EC_QM_OB3_OS3_CB4_CS4_TS
 SILK Gain: $ 3.69 Win %: 85.00 in 7 days with algo TB4_HS_QM_OB3_OS3_CB5_CS5_AO_AC
+SILK Gain: $ 17.75 Win %: 57.00 in 7 days with algo TB1_OC_QM_OB2_OS4_CB4_CS3_HM_AV_DB30_DU6
+SILK Gain: $ 17.75 Win %: 57.00 in 7 days with algo TB1_OC_QM_OB2_OS4_CB4_CS3_HM_AV_DB30_DU6_AV
+SILK Gain: $ 17.75 Win %: 57.00 in 7 days with algo TB1_OC_QM_OB2_OS4_CB4_CS3_HM_AV_DB30_DU6_UA
+SILK Gain: $ 17.75 Win %: 57.00 in 7 days with algo TB1_OC_QM_OB2_OS4_CB4_CS3_HM_AV_DB30_DU6_UA_DU6_UA_AV
+SILK Gain: $ 17.75 Win %: 57.00 in 7 days with algo TB1_OC_QM_OB2_OS4_CB4_CS3_HM_AV_DB30_DU6_UA_TG
+SILK Gain: $ 17.75 Win %: 57.00 in 7 days with algo TB1_OC_QM_OB2_OS4_CB4_CS3_HM_AV_DB30_DU6_UA_UA

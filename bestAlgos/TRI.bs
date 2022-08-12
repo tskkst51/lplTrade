@@ -230,3 +230,7 @@ TRI Gain: $ 5.13 Win %: 75.00 in 4 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_IT_Q
 TRI Gain: $ 5.13 Win %: 75.00 in 4 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_QL
 TRI Gain: $ 5.67 Win %: 75.00 in 4 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_RV_AV
 TRI Gain: $ 6.52 Win %: 100.00 in 4 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_RV
+TRI Gain: $ 25.27 Win %: 70.00 in 10 days with algo TB5_HI_HL_QM_OB4_OS2_CB2_CS5_HM_AV_DB6_DU6
+TRI Gain: $ 25.27 Win %: 70.00 in 10 days with algo TB5_HI_HL_QM_OB4_OS2_CB2_CS5_HM_AV_DB6_DU6
+TRI Gain: $ 25.67 Win %: 80.00 in 10 days with algo TB5_HI_HL_QM_OB3_OS2_CB2_CS5_HM_AV_DB6_DU6
+TRI Gain: $ 25.67 Win %: 80.00 in 10 days with algo TB5_HI_HL_QM_OB3_OS2_CB2_CS5_HM_AV_DB6_DU6

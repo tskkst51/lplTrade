@@ -333,6 +333,23 @@ class Limits:
       self.lg.debug (str(self.closeBuyLimit))
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setLimitOnDoubleUpValue(self, stopLimit, inPosType):
+
+      self.lg.debug ("setLimitOnDoubleUpValue stopLimit: " + str(stopLimit))
+      self.lg.debug ("inPosType: " + str(inPosType))
+
+      # use the lower of the current stop limit or the proposed stop limit
+
+      if inPosType == 2:
+         if self.closeSellLimit < stopLimit:
+            return
+         self.closeSellLimit = stopLimit
+      elif inPosType == 1:
+         if self.closeBuyLimit > stopLimit:
+            return
+         self.closeBuyLimit = stopLimit
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setCloseSellLimit(self, numBars):
 
       if self.doExecuteOnOpen:

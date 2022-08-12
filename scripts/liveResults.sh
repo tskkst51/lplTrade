@@ -48,7 +48,9 @@ if [[ -z $stocks ]]; then
 fi
 tmpPath="/tmp/db"
 
-rm -f $tgtPath $tmpPath
+if [[ -f $tgtPath ]]; then mv $tgtPath ${tgtPath}.$$; fi
+
+rm -f $tmpPath
 
 for stock in $stocks; do
    # Skip if 0 length file
@@ -61,17 +63,17 @@ for stock in $stocks; do
    if [[ -f "${bestPath}/${stock}.bs" ]]; then
       algo=$(tail -1 ${bestPath}/${stock}.bs | awk '{print $13}')
    else
-      # Default found in preMarket.py: defaultAlgorithm
-      algo="TB1_HS_QM_OB2_OS2_CB3_CS3_DB30_IT_TS"
+      # Default found in active.json
+      algo=$(grep defaultAlgoStr profiles/active.json | awk '{print $2}' | sed "s/,//" | sed "s/\"//g")
    fi
    
-   order=$(grep $stock $orderPath | awk '{print $2}')
+   if [[ -f $orderPath ]]; then
+      order=$(grep $stock $orderPath | awk '{print $2}')
+   fi
    
    if [[ -n $lplt ]]; then
-      #run.sh $day $algo $stock "lplt" | sed '/^[0-9].*/d; /^\-.*/d; /^on.*/d' >> $tgtPath
       runRes=$(run.sh $day $algo $stock "lplt" | sed '/^[0-9].*/d; /^\-.*/d; /^on.*/d')
    else
-      #run.sh $day $algo $stock | sed '/^[0-9].*/d; /^\-.*/d; /^on.*/d' >> $tgtPath
       runRes=$(run.sh $day $algo $stock | sed '/^[0-9].*/d; /^\-.*/d; /^on.*/d')
    fi
    echo $runRes $order >> $tgtPath
@@ -83,8 +85,8 @@ mv $tmpPath $tgtPath || cant move $tgtPath
 totalWon=$(awk '{s+=$4} END {print s}' $tgtPath)
 numStocks=$(wc -l $tgtPath | awk '{print $1}')
 
-echo Days gain with $numStocks stocks: $totalWon >> $tgtPath
-echo Days gain with $numStocks stocks: $totalWon
+echo Days gain with $numStocks stocks: $totalWon $dt >> $tgtPath
+echo Days gain with $numStocks stocks: $totalWon $dt
 
 exit 0
 

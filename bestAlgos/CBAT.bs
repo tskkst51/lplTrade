@@ -230,3 +230,6 @@ CBAT Gain: $ 1.33 Win %: 100.00 in 3 days with algo TB2_HL_HS_QM_OB1_OS1_CB4_CS4
 CBAT Gain: $ 1.33 Win %: 100.00 in 3 days with algo TB2_HL_HS_QM_OB1_OS1_CB4_CS4_RV_AV
 CBAT Gain: $ 1.44 Win %: 100.00 in 3 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_QL
 CBAT Gain: $ 1.52 Win %: 100.00 in 3 days with algo TB3_HI_QM_OB3_OS3_CB3_CS3_HM_AL
+CBAT Gain: $ 6.58 Win %: 100.00 in 3 days with algo TB5_HL_QM_OB3_OS3_CB1_CS1_SS_DU6_AV
+CBAT Gain: $ 7.66 Win %: 100.00 in 3 days with algo TB3_HL_QM_OB5_OS2_CB3_CS2_AL_TS_DU6_AV
+CBAT Gain: $ 7.66 Win %: 100.00 in 3 days with algo TB3_HL_QM_OB5_OS2_CB3_CS2_AL_TS_DU6_AV

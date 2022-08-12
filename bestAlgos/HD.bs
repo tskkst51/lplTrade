@@ -229,3 +229,6 @@ HD Gain: $ 20.3 Win %: 65.00 in 23 days with algo TB5_HL_HS_QM_OB3_OS3_CB4_CS4_H
 HD Gain: $ 21.72 Win %: 65.00 in 23 days with algo TB5_OC_QM_OB3_OS3_CB5_CS5_HM_QP_DB6
 HD Gain: $ 22.04 Win %: 65.00 in 23 days with algo TB5_OC_QM_OB3_OS3_CB5_CS5_HM_QP
 HD Gain: $ 25.76 Win %: 65.00 in 23 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_HM_AV_DB6
+HD Gain: $ -26.87 Win %: 44.00 in 29 days with algo TB1_OC_QM_OB2_OS2_CB4_CS2_AV_TS
+HD Gain: $ -26.87 Win %: 44.00 in 29 days with algo TB1_OC_QM_OB2_OS2_CB4_CS2_AV_TS_AV
+HD Gain: $ -26.87 Win %: 44.00 in 29 days with algo TB1_OC_QM_OB2_OS2_CB4_CS2_AV_TS_UA
