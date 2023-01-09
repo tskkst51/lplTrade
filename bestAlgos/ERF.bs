@@ -1,4 +1,3 @@
-ERF Gain: $ -1.05 Win %: 25.00 in 4 days with algo TB2_LO_QM_OB1_OS1_CB1_CS1_TS
 ERF Gain: $ -142.82 Win %: 0 in 5 days with algo TB4_PL_QM_OB4_OS4_CB4_CS4_AO_AC
 ERF Gain: $ -8.0 Win %: 0 in 5 days with algo TB4_PL_QM_OB4_OS4_CB4_CS4_AC
 ERF Gain: $ -2.08 Win %: 20.00 in 5 days with algo TB4_PL_QM_OB4_OS4_CB4_CS4_AO
@@ -11,6 +10,7 @@ ERF Gain: $ -1.11 Win %: 0 in 5 days with algo TB3_OO_QM_OB3_OS3_CB1_CS1_HM_QP
 ERF Gain: $ -1.1 Win %: 20.00 in 5 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_AL_TS
 ERF Gain: $ -1.08 Win %: 20.00 in 5 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_AL_TS
 ERF Gain: $ -1.08 Win %: 20.00 in 5 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_AL
+ERF Gain: $ -1.05 Win %: 25.00 in 4 days with algo TB2_LO_QM_OB1_OS1_CB1_CS1_TS
 ERF Gain: $ -1.04 Win %: 0 in 5 days with algo TB3_OO_QM_OB3_OS3_CB1_CS1_RV_AL
 ERF Gain: $ -1.04 Win %: 20.00 in 5 days with algo TB3_EO_EC_QM_OB1_OS1_CB3_CS3_HM_AL
 ERF Gain: $ -1.03 Win %: 0 in 5 days with algo TB3_OO_QM_OB3_OS3_CB1_CS1_IT_QP
@@ -230,3 +230,12 @@ ERF Gain: $ 0.96 Win %: 80.00 in 5 days with algo TB4_PL_QM_OB4_OS4_CB4_CS4_AV_T
 ERF Gain: $ 0.98 Win %: 80.00 in 5 days with algo TB4_PL_QM_OB4_OS4_CB4_CS4_TR_TS
 ERF Gain: $ 1.0 Win %: 80.00 in 5 days with algo TB3_HS_QM_OB1_OS1_CB3_CS3_TR
 ERF Gain: $ 1.04 Win %: 80.00 in 5 days with algo TB4_PL_QM_OB4_OS4_CB4_CS4_HM_TR
+ERF Gain: $ 2.07 Win %: 62.00 in 27 days with algo TB1_HI_HL_QM_OB3_OS3_CB4_CS4_AC_AL
+ERF Gain: $ 3.45 Win %: 74.00 in 27 days with algo TB1_HI_HL_QM_OB3_OS3_CB4_CS4_AC
+ERF Gain: $ 3.55 Win %: 61.00 in 26 days with algo TB1_HI_HL_QM_OB3_OS3_CB4_CS4_AC_AL
+ERF Gain: $ 3.61 Win %: 74.00 in 27 days with algo TB1_HI_HL_QM_OB3_OS4_CB4_CS4_AO_AC
+ERF Gain: $ 3.83 Win %: 75.00 in 24 days with algo TB1_HI_HL_QM_OB3_OS4_CB4_CS4_AO_AC
+ERF Gain: $ 3.86 Win %: 76.00 in 26 days with algo TB1_HI_HL_QM_OB3_OS4_CB4_CS4_AO_AC
+ERF Gain: $ 3.87 Win %: 66.00 in 24 days with algo TB1_HI_HL_QM_OB3_OS3_CB4_CS4_AC_AL
+ERF Gain: $ 3.95 Win %: 73.00 in 26 days with algo TB1_HI_HL_QM_OB3_OS3_CB4_CS4_AC
+ERF Gain: $ 4.2 Win %: 79.00 in 24 days with algo TB1_HI_HL_QM_OB3_OS3_CB4_CS4_AC

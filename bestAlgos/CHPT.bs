@@ -230,3 +230,9 @@ CHPT Gain: $ 1.46 Win %: 75.00 in 4 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5_
 CHPT Gain: $ 1.9 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB5_OS5_CB4_CS4_IR4
 CHPT Gain: $ 2.01 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB5_OS5_CB4_CS4_IT_TS
 CHPT Gain: $ 2.15 Win %: 100.00 in 4 days with algo TB2_OC_QM_OB5_OS5_CB4_CS4_HM_AV
+CHPT Gain: $ 8.47 Win %: 44.00 in 9 days with algo TB5_HI_QM_OB3_OS4_CB3_CS2_AV_TS_DU8_UA_DL2
+CHPT Gain: $ 8.47 Win %: 44.00 in 9 days with algo TB5_HI_QM_OB3_OS4_CB3_CS2_AV_TS_DU8_UA_DL2
+CHPT Gain: $ 8.81 Win %: 44.00 in 9 days with algo TB5_HI_QM_OB3_OS4_CB3_CS2_AV_TS_DU8_AL_DL2
+CHPT Gain: $ 14.07 Win %: 50.00 in 10 days with algo TB5_HI_QM_OB3_OS4_CB3_CS2_AV_TS_DU8_DL2_AL
+CHPT Gain: $ 14.07 Win %: 50.00 in 10 days with algo TB5_HI_QM_OB3_OS4_CB3_CS2_AV_TS_DU8_UA_DL2_AL
+CHPT Gain: $ 14.07 Win %: 50.00 in 10 days with algo TB5_HI_QM_OB3_OS4_CB3_CS2_AV_TS_DU8_UA_DL2_AL

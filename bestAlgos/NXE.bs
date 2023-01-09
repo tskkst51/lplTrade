@@ -230,3 +230,6 @@ NXE Gain: $ 0.43 Win %: 100.00 in 2 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5_RV
 NXE Gain: $ 0.43 Win %: 100.00 in 2 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5_RV_AV_DB6
 NXE Gain: $ 0.44 Win %: 100.00 in 2 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5_RV_TR_DB6
 NXE Gain: $ 0.46 Win %: 100.00 in 2 days with algo TB5_PL_QM_OB2_OS2_CB5_CS5_AV
+NXE Gain: $ 4.65 Win %: 71.00 in 14 days with algo TB1_HS_QM_OB2_OS3_CB3_CS5_HM_AV_DU8_DL2_UA
+NXE Gain: $ 4.65 Win %: 71.00 in 14 days with algo TB1_HS_QM_OB2_OS3_CB3_CS5_HM_AV_DU8_DL2_UA
+NXE Gain: $ 4.65 Win %: 71.00 in 14 days with algo TB1_HS_QM_OB2_OS3_CB3_CS5_HM_AV_DU8_DL2_UA

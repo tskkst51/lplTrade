@@ -230,3 +230,12 @@ TJX Gain: $ 7.48 Win %: 66.00 in 6 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_RV_A
 TJX Gain: $ 7.61 Win %: 83.00 in 6 days with algo TB4_OC_QM_OB2_OS2_CB4_CS4_TR_IR2
 TJX Gain: $ 7.87 Win %: 83.00 in 6 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_HM_AV
 TJX Gain: $ 7.9 Win %: 66.00 in 6 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_PM
+TJX Gain: $ 17.87 Win %: 71.00 in 14 days with algo TB3_CC_QM_OB3_OS3_CB2_CS3_AL_TS_DU8_DL2
+TJX Gain: $ 17.87 Win %: 71.00 in 14 days with algo TB3_CC_QM_OB3_OS3_CB2_CS3_AL_TS_DU8_DL2
+TJX Gain: $ 19.37 Win %: 71.00 in 14 days with algo TB3_CC_QM_OB3_OS3_CB2_CS3_AL_TS_DU8_UA_DL2
+TJX Gain: $ 19.45 Win %: 68.00 in 16 days with algo TB3_CC_QM_OB3_OS3_CB2_CS3_AL_TS_UA_TG_DU8_DL2
+TJX Gain: $ 19.45 Win %: 68.00 in 16 days with algo TB3_CC_QM_OB3_OS3_CB2_CS3_AL_TS_UA_TG_DU8_DL2
+TJX Gain: $ 19.45 Win %: 68.00 in 16 days with algo TB3_CC_QM_OB3_OS3_CB2_CS3_AL_TS_UA_TG_DU8_DL2
+TJX Gain: $ 19.68 Win %: 73.00 in 15 days with algo TB3_CC_QM_OB3_OS3_CB2_CS3_AL_TS_UA_DU8_DL2
+TJX Gain: $ 19.68 Win %: 73.00 in 15 days with algo TB3_CC_QM_OB3_OS3_CB2_CS3_AL_TS_UA_DU8_DL2
+TJX Gain: $ 19.68 Win %: 73.00 in 15 days with algo TB3_CC_QM_OB3_OS3_CB2_CS3_AL_TS_UA_DU8_DL2

@@ -23,9 +23,15 @@ ASML Gain: $ -19.2 Win %: 62.00 in 27 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS
 ASML Gain: $ -18.87 Win %: 62.00 in 27 days with algo TB2_HL_HS_QM_OB1_OS1_CB4_CS4_IT_QP_DB15
 ASML Gain: $ -12.71 Win %: 81.00 in 27 days with algo TB5_HL_LO_QM_OB4_OS4_CB5_CS5_QP_PM
 ASML Gain: $ -11.57 Win %: 55.00 in 27 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_AC
+ASML Gain: $ -6.01 Win %: 90.00 in 40 days with algo TB1_HS_HL_QM_OB2_OS2_CB4_CS4_QP_PM_DU7_DL2_DU8_UA_AV
 ASML Gain: $ -5.49 Win %: 44.00 in 27 days with algo TB5_HL_LO_QM_OB4_OS4_CB5_CS5_HM_QP
 ASML Gain: $ -5.02 Win %: 62.00 in 27 days with algo TB5_HL_LO_QM_OB4_OS4_CB5_CS5_AO_AC
 ASML Gain: $ -3.29 Win %: 66.00 in 27 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_RV_QP_DB6
+ASML Gain: $ -2.83 Win %: 90.00 in 40 days with algo TB1_HS_HL_QM_OB2_OS2_CB4_CS4_QP_PM_DU7_AL_DL2_DU8_UA
+ASML Gain: $ -2.83 Win %: 90.00 in 40 days with algo TB1_HS_HL_QM_OB2_OS2_CB4_CS4_QP_PM_DU7_AL_DL2_UA
+ASML Gain: $ -2.83 Win %: 90.00 in 41 days with algo TB1_HS_HL_QM_OB2_OS2_CB4_CS4_QP_PM_DU7_DL2_UA_AL
+ASML Gain: $ -2.83 Win %: 90.00 in 41 days with algo TB1_HS_HL_QM_OB2_OS2_CB4_CS4_QP_PM_DU7_DL2_UA_DU8_AL
+ASML Gain: $ -2.66 Win %: 95.00 in 41 days with algo TB1_HS_HL_QM_OB2_OS2_CB4_CS4_QP_PM_DU7_DL2_UA_TG
 ASML Gain: $ -2.28 Win %: 62.00 in 27 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_TR_QP_DB6
 ASML Gain: $ -1.66 Win %: 55.00 in 27 days with algo TB5_HL_LO_QM_OB4_OS4_CB5_CS5_RV_QP
 ASML Gain: $ -1.28 Win %: 70.00 in 27 days with algo TB5_HL_LO_QM_OB4_OS4_CB5_CS5_AV_TS
@@ -183,3 +189,6 @@ ASML Gain: $ 172.17 Win %: 74.00 in 27 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_C
 ASML Gain: $ 177.45 Win %: 74.00 in 27 days with algo TB5_HL_LO_QM_OB4_OS4_CB5_CS5_RV_AV_DB6
 ASML Gain: $ 179.7 Win %: 77.00 in 27 days with algo TB5_HL_HS_QM_OB3_OS3_CB5_CS5_RV_TR
 ASML Gain: $ 185.37 Win %: 77.00 in 27 days with algo TB5_HL_HS_QM_OB3_OS3_CB5_CS5_RV_TR_DB6
+ASML Gain: $ 378.6 Win %: 53.00 in 39 days with algo TB1_HS_HL_QM_OB2_OS2_CB2_CS4_PM_DU7_AV_DL2
+ASML Gain: $ 383.39 Win %: 56.00 in 39 days with algo TB1_HS_HL_QM_OB2_OS2_CB2_CS4_PM_DU7_DL2
+ASML Gain: $ 448.49 Win %: 56.00 in 39 days with algo TB1_HS_HL_QM_OB2_OS2_CB2_CS4_PM_DU7_DL1

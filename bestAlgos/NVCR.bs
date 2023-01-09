@@ -183,3 +183,12 @@ NVCR Gain: $ 21.97 Win %: 60.00 in 10 days with algo TB5_HL_HS_QM_OB2_OS2_CB5_CS
 NVCR Gain: $ 23.16 Win %: 60.00 in 10 days with algo TB5_HL_HS_QM_OB2_OS2_CB5_CS5_AC
 NVCR Gain: $ 24.11 Win %: 60.00 in 10 days with algo TB5_HL_HS_QM_OB2_OS2_CB5_CS5_HM_AV_DB6
 NVCR Gain: $ 26.38 Win %: 70.00 in 10 days with algo TB5_HL_HS_QM_OB2_OS2_CB5_CS5_HM_AV
+NVCR Gain: $ 54.58 Win %: 54.00 in 11 days with algo TB5_HI_QM_OB5_OS2_CB2_CS5_AV_UA_DU8_DL2
+NVCR Gain: $ 54.58 Win %: 54.00 in 11 days with algo TB5_HI_QM_OB5_OS2_CB2_CS5_AV_UA_DU8_DL2
+NVCR Gain: $ 54.58 Win %: 54.00 in 11 days with algo TB5_HI_QM_OB5_OS2_CB2_CS5_AV_UA_DU8_DL2
+NVCR Gain: $ 54.58 Win %: 54.00 in 11 days with algo TB5_HI_QM_OB5_OS2_CB2_CS5_AV_UA_DU8_DL2
+NVCR Gain: $ 54.58 Win %: 54.00 in 11 days with algo TB5_HI_QM_OB5_OS2_CB2_CS5_AV_UA_DU8_DL2
+NVCR Gain: $ 54.58 Win %: 54.00 in 11 days with algo TB5_HI_QM_OB5_OS2_CB2_CS5_AV_UA_DU8_DL2_TG
+NVCR Gain: $ 59.81 Win %: 58.00 in 12 days with algo TB5_HI_QM_OB5_OS2_CB2_CS5_AV_UA_DU8_DL2_TG
+NVCR Gain: $ 59.81 Win %: 58.00 in 12 days with algo TB5_HI_QM_OB5_OS2_CB2_CS5_AV_UA_DU8_DL2_TG
+NVCR Gain: $ 59.81 Win %: 58.00 in 12 days with algo TB5_HI_QM_OB5_OS2_CB2_CS5_AV_UA_DU8_DL2_TG

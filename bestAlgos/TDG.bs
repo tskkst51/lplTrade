@@ -1,4 +1,3 @@
-TDG Gain: $ -0.13 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB5_CS5_TS
 TDG Gain: $ -104.5 Win %: 0 in 4 days with algo TB2_HS_QM_OB1_OS1_CB3_CS3_RV_AV
 TDG Gain: $ -84.38 Win %: 75.00 in 4 days with algo TB1_HS_QM_OB5_OS5_CB3_CS3_QP_PM
 TDG Gain: $ -83.84 Win %: 0 in 4 days with algo TB5_HS_QM_OB4_OS4_CB4_CS4_QP
@@ -163,8 +162,18 @@ TDG Gain: $ -2.51 Win %: 75.00 in 4 days with algo TB2_HS_QM_OB1_OS1_CB3_CS3_QP_
 TDG Gain: $ -2.49 Win %: 50.00 in 4 days with algo TB1_HS_QM_OB5_OS5_CB3_CS3_HM
 TDG Gain: $ -1.83 Win %: 50.00 in 4 days with algo TB1_HS_QM_OB5_OS5_CB3_CS3_HM_AL
 TDG Gain: $ -0.35 Win %: 75.00 in 4 days with algo TB5_HS_QM_OB4_OS4_CB4_CS4_QP_PM
+TDG Gain: $ -0.13 Win %: 66.00 in 3 days with algo TB2_EO_EC_QM_OB2_OS2_CB5_CS5_TS
 TDG Gain: $ 0.65 Win %: 50.00 in 4 days with algo TB1_HS_QM_OB5_OS5_CB3_CS3_RV
 TDG Gain: $ 2.79 Win %: 50.00 in 4 days with algo TB1_HS_QM_OB5_OS5_CB3_CS3_RV_AL_DB30
 TDG Gain: $ 2.83 Win %: 75.00 in 4 days with algo TB2_HS_QM_OB1_OS1_CB3_CS3_HM_AV_DB15
 TDG Gain: $ 3.16 Win %: 75.00 in 4 days with algo TB5_HS_QM_OB4_OS4_CB4_CS4_PM
 TDG Gain: $ 7.48 Win %: 75.00 in 4 days with algo TB2_HS_QM_OB1_OS1_CB3_CS3_HM_AL
+TDG Gain: $ 9.81 Win %: 60.00 in 5 days with algo TB5_OC_QM_OB3_OS2_CB2_CS5_WT
+TDG Gain: $ 9.81 Win %: 60.00 in 5 days with algo TB5_OC_QM_OB3_OS2_CB2_CS5_WT_TG
+TDG Gain: $ 9.81 Win %: 60.00 in 5 days with algo TB5_OC_QM_OB3_OS2_CB2_CS5_WT_UA
+TDG Gain: $ 9.81 Win %: 60.00 in 5 days with algo TB5_OC_QM_OB3_OS2_CB2_CS5_WT_UA
+TDG Gain: $ 9.81 Win %: 60.00 in 5 days with algo TB5_OC_QM_OB3_OS2_CB2_CS5_WT_UA
+TDG Gain: $ 9.81 Win %: 60.00 in 5 days with algo TB5_OC_QM_OB3_OS2_CB2_CS5_WT_UA_TG
+TDG Gain: $ 9.81 Win %: 60.00 in 5 days with algo TB5_OC_QM_OB3_OS2_CB2_CS5_WT_UA_TG
+TDG Gain: $ 9.81 Win %: 60.00 in 5 days with algo TB5_OC_QM_OB3_OS2_CB2_CS5_WT_UA_TG
+TDG Gain: $ 9.81 Win %: 60.00 in 5 days with algo TB5_OC_QM_OB3_OS2_CB2_CS5_WT_UA_TG

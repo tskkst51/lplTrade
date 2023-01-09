@@ -1,4 +1,3 @@
-ADSK Gain: $ 7.89 Win %: 83.00 in 6 days with algo TB4_EO_EC_QM_OB1_OS1_CB4_CS4_TS
 ADSK Gain: $ -21.2 Win %: 28.00 in 7 days with algo TB5_HI_QM_OB2_OS2_CB3_CS3_QP_IR1
 ADSK Gain: $ -21.2 Win %: 28.00 in 7 days with algo TB5_HI_QM_OB2_OS2_CB3_CS3_QP_IR1
 ADSK Gain: $ -17.9 Win %: 28.00 in 7 days with algo TB5_HI_QM_OB2_OS2_CB3_CS3_HM_QP_DB6
@@ -198,6 +197,7 @@ ADSK Gain: $ 7.47 Win %: 71.00 in 7 days with algo TB5_HI_QM_OB2_OS2_CB3_CS3_TS
 ADSK Gain: $ 7.47 Win %: 71.00 in 7 days with algo TB5_HI_QM_OB2_OS2_CB3_CS3_TS
 ADSK Gain: $ 7.72 Win %: 57.00 in 7 days with algo TB2_HL_LO_QM_OB5_OS5_CB5_CS5_AC
 ADSK Gain: $ 7.86 Win %: 71.00 in 7 days with algo TB4_EO_EC_QM_OB1_OS1_CB4_CS4_RV_AV_DB8
+ADSK Gain: $ 7.89 Win %: 83.00 in 6 days with algo TB4_EO_EC_QM_OB1_OS1_CB4_CS4_TS
 ADSK Gain: $ 7.96 Win %: 71.00 in 7 days with algo TB4_EO_EC_QM_OB1_OS1_CB4_CS4_AV_TS
 ADSK Gain: $ 8.05 Win %: 71.00 in 7 days with algo TB2_HL_LO_QM_OB5_OS5_CB5_CS5_RV_AL_DB15
 ADSK Gain: $ 8.33 Win %: 85.00 in 7 days with algo TB4_EO_EC_QM_OB1_OS1_CB4_CS4_IT_TS
@@ -228,5 +228,8 @@ ADSK Gain: $ 12.02 Win %: 71.00 in 7 days with algo TB2_HL_LO_QM_OB5_OS5_CB5_CS5
 ADSK Gain: $ 12.48 Win %: 57.00 in 7 days with algo TB4_EO_EC_QM_OB1_OS1_CB4_CS4_TR
 ADSK Gain: $ 12.62 Win %: 71.00 in 7 days with algo TB2_HL_LO_QM_OB5_OS5_CB5_CS5
 ADSK Gain: $ 12.62 Win %: 71.00 in 7 days with algo TB2_HL_LO_QM_OB5_OS5_CB5_CS5_QL
+ADSK Gain: $ 12.88 Win %: 66.00 in 9 days with algo TB3_EO_EC_QM_OB3_OS2_CB2_CS5_RV_TR_TG
 ADSK Gain: $ 12.93 Win %: 71.00 in 7 days with algo TB2_HL_LO_QM_OB5_OS5_CB5_CS5_AO
 ADSK Gain: $ 14.29 Win %: 71.00 in 7 days with algo TB4_EO_EC_QM_OB1_OS1_CB4_CS4_HM_TR
+ADSK Gain: $ 15.71 Win %: 88.00 in 9 days with algo TB1_HS_QM_OB4_OS5_CB5_CS4_AV_UA_AL
+ADSK Gain: $ 24.19 Win %: 33.00 in 9 days with algo TB5_CC_QM_OB2_OS5_CB5_CS4_SS_DU8_UA_DL2

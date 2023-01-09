@@ -217,8 +217,11 @@ BNTX Gain: $ 25.79 Win %: 50.00 in 32 days with algo TB2_HL_LO_QM_OB5_OS5_CB3_CS
 BNTX Gain: $ 27.47 Win %: 65.00 in 32 days with algo TB2_HL_LO_QM_OB5_OS5_CB3_CS3_LI
 BNTX Gain: $ 27.95 Win %: 68.00 in 32 days with algo TB2_HL_LO_QM_OB5_OS5_CB3_CS3_AL_TS
 BNTX Gain: $ 30.18 Win %: 53.00 in 32 days with algo TB5_HS_QM_OB5_OS5_CB4_CS4_HM_AV_DB6
+BNTX Gain: $ 31.13 Win %: 58.00 in 39 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_AV_DL1_DU5_TG
 BNTX Gain: $ 33.5 Win %: 56.00 in 32 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_TR
 BNTX Gain: $ 33.89 Win %: 78.00 in 32 days with algo TB3_EO_EC_QM_OB2_OS2_CB4_CS4_IT_TS
+BNTX Gain: $ 35.43 Win %: 58.00 in 39 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_AV_DL1_DU5_TG_UA
+BNTX Gain: $ 35.43 Win %: 58.00 in 39 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_AV_DL1_DU5_UA
 BNTX Gain: $ 36.3 Win %: 65.00 in 32 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_AV
 BNTX Gain: $ 36.63 Win %: 71.00 in 32 days with algo TB5_HL_HS_QM_OB5_OS5_CB4_CS4_AV
 BNTX Gain: $ 36.86 Win %: 56.00 in 32 days with algo TB5_HS_QM_OB5_OS5_CB4_CS4_HM_AV
@@ -229,3 +232,15 @@ BNTX Gain: $ 45.54 Win %: 59.00 in 32 days with algo TB5_HS_QM_OB5_OS5_CB4_CS4_T
 BNTX Gain: $ 52.87 Win %: 56.00 in 32 days with algo TB3_EO_EC_QM_OB5_OS5_CB4_CS4_HM_AV_DB10
 BNTX Gain: $ 58.83 Win %: 59.00 in 32 days with algo TB5_HL_HS_QM_OB5_OS5_CB4_CS4_RV_AV
 BNTX Gain: $ 62.06 Win %: 62.00 in 32 days with algo TB5_HL_HS_QM_OB5_OS5_CB4_CS4_RV_AV_DB6
+BNTX Gain: $ 150.42 Win %: 68.00 in 38 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_AV_DL1_DU5_UA
+BNTX Gain: $ 150.42 Win %: 68.00 in 38 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_AV_DL1_DU5_UA
+BNTX Gain: $ 150.42 Win %: 68.00 in 38 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_AV_DL1_DU5_UA
+BNTX Gain: $ 244.38 Win %: 65.00 in 38 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_AL_DL1_AV
+BNTX Gain: $ 244.38 Win %: 65.00 in 38 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_AL_DL1_AV
+BNTX Gain: $ 249.76 Win %: 65.00 in 38 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_AV_DL1
+BNTX Gain: $ 249.76 Win %: 65.00 in 38 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_AV_DL1
+BNTX Gain: $ 249.76 Win %: 65.00 in 38 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_AV_DL1
+BNTX Gain: $ 249.76 Win %: 65.00 in 38 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_AV_DL1_TG
+BNTX Gain: $ 260.67 Win %: 64.00 in 37 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_AV_DL2
+BNTX Gain: $ 269.03 Win %: 62.00 in 37 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_HM_TR_DU7_UA_DL2
+BNTX Gain: $ 329.7 Win %: 62.00 in 37 days with algo TB5_OO_QM_OB2_OS3_CB5_CS3_HM_AL_DU7

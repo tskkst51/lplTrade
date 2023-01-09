@@ -1,4 +1,3 @@
-AZPN Gain: $ 0.33 Win %: 66.00 in 3 days with algo TB5_OC_QM_OB1_OS1_CB1_CS1_TS
 AZPN Gain: $ -169.97 Win %: 25.00 in 4 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_IT_QL
 AZPN Gain: $ -38.84 Win %: 25.00 in 4 days with algo TB5_HL_LO_QM_OB1_OS1_CB2_CS2_RV_AV_DB6
 AZPN Gain: $ -33.99 Win %: 25.00 in 4 days with algo TB5_HL_LO_QM_OB1_OS1_CB2_CS2_AV
@@ -169,6 +168,10 @@ AZPN Gain: $ -0.6 Win %: 50.00 in 4 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_
 AZPN Gain: $ -0.29 Win %: 25.00 in 4 days with algo TB5_EO_EC_QM_OB1_OS1_CB4_CS4_TR_IR1
 AZPN Gain: $ -0.01 Win %: 25.00 in 4 days with algo TB5_HL_LO_QM_OB2_OS2_CB2_CS2_QL
 AZPN Gain: $ 0.01 Win %: 75.00 in 4 days with algo TB5_EO_EC_QM_OB1_OS1_CB4_CS4_AO
+AZPN Gain: $ 0.33 Win %: 66.00 in 3 days with algo TB5_OC_QM_OB1_OS1_CB1_CS1_TS
 AZPN Gain: $ 0.55 Win %: 75.00 in 4 days with algo TB5_EO_EC_QM_OB1_OS1_CB4_CS4_AV
 AZPN Gain: $ 1.51 Win %: 50.00 in 4 days with algo TB4_HL_LO_QM_OB2_OS2_CB2_CS2_TR_TS
 AZPN Gain: $ 3.84 Win %: 75.00 in 4 days with algo TB5_EO_EC_QM_OB1_OS1_CB4_CS4_IR1
+AZPN Gain: $ 29.14 Win %: 85.00 in 7 days with algo TB5_OO_QM_OB2_OS5_CB3_CS5_AV_DU7_UA_DL2
+AZPN Gain: $ 29.15 Win %: 85.00 in 7 days with algo TB5_OO_QM_OB2_OS5_CB3_CS5_AV_DU7_DL2
+AZPN Gain: $ 29.15 Win %: 85.00 in 7 days with algo TB5_OO_QM_OB2_OS5_CB3_CS5_AV_DU7_DL2

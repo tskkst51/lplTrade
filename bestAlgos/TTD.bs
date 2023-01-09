@@ -160,6 +160,7 @@ TTD Gain: $ -0.19 Win %: 61.00 in 18 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5
 TTD Gain: $ -0.06 Win %: 44.00 in 18 days with algo TB4_HL_HI_QM_OB5_OS5_CB5_CS5_IT_QL_DB8
 TTD Gain: $ 0.02 Win %: 55.00 in 18 days with algo TB4_HL_HI_QM_OB5_OS5_CB5_CS5_RV_TR
 TTD Gain: $ 0.14 Win %: 44.00 in 18 days with algo TB4_HL_HI_QM_OB5_OS5_CB5_CS5_IT_QL
+TTD Gain: $ 0.16 Win %: 58.00 in 24 days with algo TB1_HS_HL_QM_TG_OB2_OS2_CB5_CS3_RV_AL_DB30_UA
 TTD Gain: $ 0.21 Win %: 77.00 in 18 days with algo TB5_HL_HS_QM_OB5_OS5_CB2_CS2_PM
 TTD Gain: $ 0.38 Win %: 55.00 in 18 days with algo TB5_HL_HS_QM_OB5_OS5_CB2_CS2_HM_AV_DB6
 TTD Gain: $ 0.42 Win %: 66.00 in 18 days with algo TB4_CC_QM_OB3_OS3_CB3_CS3_TR_TS
@@ -189,6 +190,7 @@ TTD Gain: $ 2.82 Win %: 55.00 in 18 days with algo TB4_HL_HI_QM_OB5_OS5_CB5_CS5_
 TTD Gain: $ 2.88 Win %: 44.00 in 18 days with algo TB4_HL_HI_QM_OB5_OS5_CB5_CS5_LI
 TTD Gain: $ 2.91 Win %: 72.00 in 18 days with algo TB5_HL_HS_QM_OB5_OS5_CB2_CS2_HM_TR
 TTD Gain: $ 2.98 Win %: 61.00 in 18 days with algo TB5_HL_HS_QM_OB5_OS5_CB2_CS2_TS
+TTD Gain: $ 3.0 Win %: 50.00 in 24 days with algo TB1_HS_HL_QM_TG_OB2_OS2_CB5_CS3_RV_AL_DB30_DU7_UA_AV_DL2
 TTD Gain: $ 3.01 Win %: 50.00 in 18 days with algo TB4_HL_HI_QM_OB5_OS5_CB5_CS5_TR
 TTD Gain: $ 3.06 Win %: 55.00 in 18 days with algo TB5_HL_HS_QM_OB5_OS5_CB2_CS2_AL
 TTD Gain: $ 3.13 Win %: 50.00 in 18 days with algo TB5_HL_HS_QM_OB5_OS5_CB2_CS2_RV
@@ -223,9 +225,13 @@ TTD Gain: $ 10.08 Win %: 66.00 in 18 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5
 TTD Gain: $ 11.62 Win %: 88.00 in 18 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5_IT_TS
 TTD Gain: $ 11.68 Win %: 77.00 in 18 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5_PM
 TTD Gain: $ 13.1 Win %: 88.00 in 18 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5_TS
+TTD Gain: $ 14.1 Win %: 66.00 in 24 days with algo TB3_LO_QM_OB2_OS2_CB5_CS3_SR_DU7_UA_AV_DL2
 TTD Gain: $ 14.82 Win %: 77.00 in 18 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5_RV_AL
 TTD Gain: $ 14.97 Win %: 88.00 in 18 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5_TR_TS
 TTD Gain: $ 15.34 Win %: 66.00 in 18 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5_RV_AL_DB8
 TTD Gain: $ 15.47 Win %: 77.00 in 18 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5_IT_QL
 TTD Gain: $ 15.79 Win %: 83.00 in 18 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5_IT
 TTD Gain: $ 15.86 Win %: 83.00 in 18 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5_AL_TS
+TTD Gain: $ 25.87 Win %: 68.00 in 25 days with algo TB3_LO_QM_OB2_OS2_CB5_CS3_SR_DU7_UA_AV_DL2
+TTD Gain: $ 25.87 Win %: 68.00 in 25 days with algo TB3_LO_QM_OB2_OS2_CB5_CS3_SR_DU7_UA_AV_DL2
+TTD Gain: $ 25.87 Win %: 68.00 in 25 days with algo TB3_LO_QM_OB2_OS2_CB5_CS3_SR_DU7_UA_AV_DL2_TG

@@ -228,4 +228,13 @@ SPG Gain: $ 1.36 Win %: 44.00 in 9 days with algo TB5_HL_HS_QM_OB2_OS2_CB2_CS2_R
 SPG Gain: $ 2.62 Win %: 66.00 in 9 days with algo TB5_HL_HS_QM_OB2_OS2_CB2_CS2_RV_AV_DB6
 SPG Gain: $ 2.68 Win %: 55.00 in 9 days with algo TB5_HL_HS_QM_OB2_OS2_CB2_CS2_HM_AV
 SPG Gain: $ 2.94 Win %: 55.00 in 9 days with algo TB5_HL_HS_QM_OB2_OS2_CB2_CS2_AV_TS
+SPG Gain: $ 3.93 Win %: 50.00 in 14 days with algo TB5_EO_EC_QM_OB3_OS3_CB5_CS4_AV_TS_TG
+SPG Gain: $ 3.93 Win %: 50.00 in 14 days with algo TB5_EO_EC_QM_OB3_OS3_CB5_CS4_AV_TS_TG_UA
+SPG Gain: $ 3.93 Win %: 50.00 in 14 days with algo TB5_EO_EC_QM_OB3_OS3_CB5_CS4_AV_TS_UA_TG
+SPG Gain: $ 4.29 Win %: 53.00 in 15 days with algo TB5_EO_EC_QM_OB3_OS3_CB5_CS4_AV_TS_UA_TG
+SPG Gain: $ 4.29 Win %: 53.00 in 15 days with algo TB5_EO_EC_QM_OB3_OS3_CB5_CS4_AV_TS_UA_TG
+SPG Gain: $ 4.29 Win %: 53.00 in 15 days with algo TB5_EO_EC_QM_OB3_OS3_CB5_CS4_AV_TS_UA_TG
+SPG Gain: $ 4.31 Win %: 46.00 in 13 days with algo TB5_EO_EC_QM_OB3_OS3_CB5_CS4_AV_TS_UA
+SPG Gain: $ 5.01 Win %: 61.00 in 13 days with algo TB3_HL_QM_OB4_OS1_CB1_CS1_AV_TS_AL
+SPG Gain: $ 5.98 Win %: 53.00 in 13 days with algo TB5_EO_EC_QM_OB3_OS3_CB5_CS4_AV_TS_TG
 SPG Gain: $ 8.63 Win %: 88.00 in 9 days with algo TB5_HL_HS_QM_OB2_OS2_CB2_CS2_HM_AV_DB6

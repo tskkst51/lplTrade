@@ -1,6 +1,8 @@
 # ENV file for DB operations
 wp="$(echo $HOME)/w/lplTrade"
 
+absTestDir="${wp}/test"
+testDir="test"
 dbDir="db"
 dbMasterName="master"
 dbName="algos"
@@ -16,21 +18,43 @@ dbMaxModTestRows=13
 dbNumBestRows=5
 dbNumBestAlgos=100
 initNumBestAlgos=25
+numTestStocks=13
+
+seqAlgos=11
+
+# The total number of hi/lo tests are 5**5*3 = 9375
+# The total number of seq tests are 4**4*3 = 768
+
+# 18 standard tests
+# seq tests = seqAlgos * 768
+# hi/lo tests = testDBAlgos - seqAlgos * 9375
+
+# testModDBAlgos 72
+# numStandardTests 17
+# numModTests 1224
+# 20210816 TME COMPLETE! 1306 ran out of max 1224
+
+
+# This is used for restricting the number of DB's/test days used for 
+# finding the best Algo.
+dbLatestNumTestDays=15
 
 dbTmpFile="/tmp/db_"
 tmpFileSyms="/tmp/allSymbols"
-testDir="test"
 inEx=".in"
 bsEx=".bs"
 
 run="scripts/runDB.sh"
 postGresPath="/Applications/Postgres.app/Contents/Versions/14/bin"
 
-testDBAlgos="SH_QM HL_TG_QM HS_HL_TG_QM BL_QM HL_QM HS_QM HI_QM LO_QM OC_QM OO_QM CC_QM PL_QM EO_EC_QM HS_HL_QM HI_HL_QM LO_HL_QM"
+testDBAlgos="OT_QM LS_QM LH_QM SH_QM HL_TG_QM HS_HL_TG_QM BL_QM HL_QM HS_QM HI_QM LO_QM OC_QM OO_QM CC_QM PL_QM EO_EC_QM HS_HL_QM HI_HL_QM LO_HL_QM"
 
-testModDBAlgos="DU6 DU6_DL SH SH_DU6 RV SR IR TR AV AL VI LI AV_VI AL_LI QP HM SS QL DB AO AC IT PM TS UA WT UA_WT TR_QP_DB TR_QP_QL_DB RV_TR_DB RV_AV_DB RV_AL_DB RV_QP_DB RV_QP_QL_DB HM_TR_DB HM_AV_DB HM_QP_QL_DB IT_QL_DB IT_QP_QL_DB TR_IR TR_TS TR_QP TR_QP_QL QP_IR QP_QL_IR RV_TR RV_AV RV_AL RV_QP RV_QP_QL HM_TR HM_AV HM_AL HM_QP HM_QP_QL IT_QL IT_QP IT_QP_QL IT_TS AO_AC QP_PM QP_QL_PM AV_TS AL_TS AV_IT AL_IT AV_UA AL_UA QP_QL"
+testModDBAlgos="DU8_DL2 DU10_DL2 DU14_DL2 DU6 DU8 DU10 DU12 RV SR IR TR AV AL VI LI AV_VI AL_LI QP HM SS QL DB AO AC IT PM TS UA WT UA_WT TR_QP_DB TR_QP_QL_DB RV_TR_DB RV_AV_DB RV_AL_DB RV_QP_DB RV_QP_QL_DB HM_TR_DB HM_AV_DB HM_QP_QL_DB IT_QL_DB IT_QP_QL_DB TR_IR TR_TS TR_QP TR_QP_QL QP_IR QP_QL_IR RV_TR RV_AV RV_AL RV_QP RV_QP_QL HM_TR HM_AV HM_AL HM_QP HM_QP_QL IT_QL IT_QP IT_QP_QL IT_TS AO_AC QP_PM QP_QL_PM AV_TS AL_TS AV_IT AL_IT AV_UA AL_UA QP_QL"
 
-incAlgos="DU6 AV AL UA TG DU6_AV DU6_AL DU6_UA DU6_UA_AV DU6_UA_AV"
+# Removed DL1 11/15/22
+
+incAlgos="DU8_DL2 AV AL UA TG DU8_AV_DL2 DU8_AL_DL2 DU8_UA_DL2 DU8_UA_AV_DL2"
+
 incDBNums="10"
 
 today=$(date "+%Y%m%d")
@@ -38,6 +62,7 @@ today=$(date "+%Y%m%d")
 keepToken="keepAliveDB"
 
 allSystems="ML-C02C8546LVDL.local mm.local mmT.local"
+#allSystems="mmT.local"
 devSystem="ML-C02DW7S9ML7H.local"
 testSystems="mm.local mmT.local"
 
@@ -50,6 +75,8 @@ liveHostUser="tknitter"
 defaultUser="tsk"
 
 testProgram="keepAliveDb.sh"
+
+liveConfig="profiles/active.json"
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 function getTmpFile {
@@ -84,14 +111,19 @@ function getTotalAlgoModRows {
 }
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-function getNextPort {
+function isPortInUse {
 
-   randomNum=$((RANDOM%100))  
-   randomNum=$((RANDOM%100))
+	port=$1
+	
+   runningPorts=$(ps -ef | grep $dbToken | awk '{print $12}')
 
-   newPort=$(expr $randomNum + $dbStartingPort)
-   
-   echo $newPort
+	echo $runningPorts | grep -q $port
+	
+	if (( $? == 0 )); then
+		return 1
+	fi
+	
+	return 0
 }
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -118,6 +150,26 @@ function isDBRunning {
    fi
    
    return 0
+}
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function getNextPort {
+
+   randomNum=$((RANDOM%100))  
+
+   newPort=$(expr $randomNum + $dbStartingPort)
+
+   isPortInUse $newPort   
+   if (( $? == 1 )); then
+		while true; do
+   		randomNum=$((RANDOM%100))  
+			newPort=$(expr $randomNum + $dbStartingPort)
+			isPortInUse $newPort
+			if (( $? == 0 )); then break; fi
+		done
+	fi
+	
+   echo $newPort
 }
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -181,7 +233,7 @@ function getCL {
 #      port=$dbPort
 #   fi
    
-   echo "psql $db -q -p $port -t -c \a -c "
+   echo "$postGresPath/psql $db -q -p $port -t -c \a -c "
 }
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -195,7 +247,7 @@ function getCLO {
 #      port=$dbPort
 #   fi
    
-   echo "psql $db -q -p $port -t -c "
+   echo "$postGresPath/psql $db -q -p $port -t -c "
 }
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -209,7 +261,7 @@ function getCLf {
       port=$dbPort
    fi
    
-   echo "psql $db -q -p $port -t -o $tmpFile -c "
+   echo "$postGresPath/psql $db -q -p $port -t -o $tmpFile -c "
 }
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -264,7 +316,7 @@ function startDB {
    dbPath="${dbDir}/${db}"
    logPath="${dbPath}/log"
       
-   "${postGresPath}/pg_ctl" -D ${dbPath} -o "-p ${port}" -l $logPath start
+   pg_ctl -D ${dbPath} -o "-p ${port}" -l $logPath start
    
    return $?
 }
@@ -388,4 +440,35 @@ function killRunningScript {
    kill $(ps -ef |grep "test"|grep -v grep|awk '{print $2}')
    
    return 0
+}
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function numOfTestDays {
+   
+   sym=$1
+   
+   cwd=$(pwd)
+   
+   cd $absTestDir || echo cant cd to $absTestDir
+   
+   numDays=$(find . -name "active${sym}.pr" -print | wc -l)
+   
+   cd $cwd || echo cant cd to $cwd
+   
+   echo $numDays
+}
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function numOfBestAlgoDays {
+   
+   sym=$1
+   
+   days=0
+   
+   #if [[ -s "${bestAlgosDir}/${sym}.bs" ]]; then
+   if [[ -s "${bestAlgosDir}/${sym}.in" ]]; then
+      days=$(tail -1 "${bestAlgosDir}/${sym}.in" | awk '{print $9}')
+   fi
+   
+   echo $days
 }

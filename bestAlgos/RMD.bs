@@ -230,3 +230,6 @@ RMD Gain: $ 7.91 Win %: 100.00 in 1 days with algo TB4_EO_EC_QM_OB5_OS5_CB3_CS3_
 RMD Gain: $ 7.97 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB1_CS1_IT_QP_DB6
 RMD Gain: $ 7.97 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB1_CS1_QP_PM
 RMD Gain: $ 8.09 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB1_CS1_RV_QP_DB6
+RMD Gain: $ 22.07 Win %: 60.00 in 5 days with algo TB5_LO_QM_OB2_OS3_CB4_CS4_HM_TR_DB6_DU7_AL_DL2
+RMD Gain: $ 29.37 Win %: 40.00 in 5 days with algo TB5_LO_QM_OB2_OS4_CB4_CS4_TR_IR1_DU7_UA_AV_DL2
+RMD Gain: $ 29.6 Win %: 40.00 in 5 days with algo TB5_LO_QM_OB2_OS4_CB4_CS4_TR_IR1_DU7_UA_AV_DL1

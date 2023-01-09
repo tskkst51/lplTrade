@@ -1,4 +1,3 @@
-TSM Gain: $ -0.38 Win %: 50.00 in 4 days with algo TB4_HL_HS_QM_OB5_OS5_CB3_CS3_TS
 TSM Gain: $ -13.2 Win %: 16.00 in 6 days with algo TB1_HS_QM_OB5_OS5_CB5_CS5_HM_TR
 TSM Gain: $ -12.09 Win %: 16.00 in 6 days with algo TB3_OC_QM_OB3_OS3_CB2_CS2
 TSM Gain: $ -10.95 Win %: 0 in 6 days with algo TB3_HS_QM_OB3_OS3_CB5_CS5_HM
@@ -131,6 +130,7 @@ TSM Gain: $ -0.72 Win %: 33.00 in 6 days with algo TB3_OC_QM_OB3_OS3_CB2_CS2_IT_
 TSM Gain: $ -0.71 Win %: 50.00 in 6 days with algo TB3_OC_QM_OB3_OS3_CB2_CS2_QP_PM
 TSM Gain: $ -0.48 Win %: 50.00 in 6 days with algo TB4_HL_HS_QM_OB5_OS5_CB3_CS3_SS
 TSM Gain: $ -0.39 Win %: 33.00 in 6 days with algo TB3_OC_QM_OB3_OS3_CB2_CS2_HM_AV
+TSM Gain: $ -0.38 Win %: 50.00 in 4 days with algo TB4_HL_HS_QM_OB5_OS5_CB3_CS3_TS
 TSM Gain: $ -0.35 Win %: 50.00 in 6 days with algo TB4_HL_HS_QM_OB5_OS5_CB3_CS3_RV_TR
 TSM Gain: $ -0.35 Win %: 50.00 in 6 days with algo TB4_HL_HS_QM_OB5_OS5_CB3_CS3_RV_TR_DB8
 TSM Gain: $ -0.34 Win %: 50.00 in 6 days with algo TB4_HL_HS_QM_OB5_OS5_CB3_CS3_TR_QP_DB8
@@ -230,3 +230,15 @@ TSM Gain: $ 5.96 Win %: 100.00 in 6 days with algo TB1_HS_QM_OB5_OS5_CB5_CS5_RV_
 TSM Gain: $ 6.22 Win %: 66.00 in 6 days with algo TB1_HL_LO_QM_OB4_OS4_CB2_CS2_HM
 TSM Gain: $ 6.44 Win %: 66.00 in 6 days with algo TB1_HL_LO_QM_OB4_OS4_CB2_CS2_QL
 TSM Gain: $ 7.02 Win %: 50.00 in 6 days with algo TB1_HL_LO_QM_OB4_OS4_CB2_CS2_HM_AV_DB30
+TSM Gain: $ 9.87 Win %: 36.00 in 19 days with algo TB1_OO_QM_OB4_OS3_CB3_CS5_RV_DU7_UA_DL2_AV_DU8
+TSM Gain: $ 9.87 Win %: 36.00 in 19 days with algo TB1_OO_QM_OB4_OS3_CB3_CS5_RV_DU7_UA_DL2_AV_DU8
+TSM Gain: $ 9.87 Win %: 36.00 in 19 days with algo TB1_OO_QM_OB4_OS3_CB3_CS5_RV_DU7_UA_DL2_AV_DU8
+TSM Gain: $ 9.96 Win %: 38.00 in 18 days with algo TB1_OO_QM_OB4_OS3_CB3_CS5_RV_DU7_UA_DL2_AV
+TSM Gain: $ 24.99 Win %: 55.00 in 18 days with algo TB1_OO_QM_OB4_OS3_CB3_CS5_RV_DU7_UA_DL2_AL
+TSM Gain: $ 24.99 Win %: 55.00 in 18 days with algo TB1_OO_QM_OB4_OS3_CB3_CS5_RV_DU7_UA_DL2_AL
+TSM Gain: $ 27.63 Win %: 58.00 in 17 days with algo TB1_OO_QM_OB3_OS3_CB3_CS5_RV_DU7
+TSM Gain: $ 27.69 Win %: 55.00 in 18 days with algo TB1_OO_QM_OB4_OS3_CB3_CS5_RV_DU7_UA_DL2_DU8_AL
+TSM Gain: $ 27.69 Win %: 55.00 in 18 days with algo TB1_OO_QM_OB4_OS3_CB3_CS5_RV_DU7_UA_DL2_DU8_AL
+TSM Gain: $ 27.69 Win %: 55.00 in 18 days with algo TB1_OO_QM_OB4_OS3_CB3_CS5_RV_DU7_UA_DL2_DU8_AL
+TSM Gain: $ 28.13 Win %: 58.00 in 17 days with algo TB1_OO_QM_OB4_OS3_CB3_CS5_RV_DU6
+TSM Gain: $ 28.5 Win %: 58.00 in 17 days with algo TB1_OO_QM_OB4_OS3_CB3_CS5_RV_DU7

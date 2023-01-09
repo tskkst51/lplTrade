@@ -1,4 +1,3 @@
-YMM Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB4_CS4_TS
 YMM Gain: $ -92.82 Win %: 0 in 2 days with algo TB1_HL_QM_OB2_OS2_CB2_CS2_IT_QL
 YMM Gain: $ -42.18 Win %: 50.00 in 2 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1_AO_AC
 YMM Gain: $ -18.57 Win %: 50.00 in 2 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1_AO
@@ -202,6 +201,7 @@ YMM Gain: $ 0.38 Win %: 50.00 in 2 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_HM_A
 YMM Gain: $ 0.39 Win %: 50.00 in 2 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_IT_QL
 YMM Gain: $ 0.41 Win %: 50.00 in 2 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_IT
 YMM Gain: $ 0.44 Win %: 50.00 in 2 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1_TR_IR1
+YMM Gain: $ 0.45 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS2_CB4_CS4_TS
 YMM Gain: $ 0.47 Win %: 50.00 in 2 days with algo TB1_HL_QM_OB5_OS5_CB2_CS2_HM_TR
 YMM Gain: $ 0.48 Win %: 50.00 in 2 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_HM_TR
 YMM Gain: $ 0.48 Win %: 50.00 in 2 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1_VI
@@ -230,3 +230,6 @@ YMM Gain: $ 1.07 Win %: 100.00 in 2 days with algo TB1_HL_QM_OB5_OS5_CB2_CS2_AV
 YMM Gain: $ 1.07 Win %: 100.00 in 2 days with algo TB1_HL_QM_OB5_OS5_CB2_CS2_HM_AV
 YMM Gain: $ 1.12 Win %: 100.00 in 2 days with algo TB5_PL_QM_OB1_OS1_CB1_CS1_HM_TR
 YMM Gain: $ 1.16 Win %: 100.00 in 2 days with algo TB1_HL_QM_OB5_OS5_CB2_CS2_RV_AV_DB30
+YMM Gain: $ 5.57 Win %: 66.00 in 9 days with algo TB1_HS_QM_OB5_OS3_CB5_CS4_AV_UA_DU8_DL2
+YMM Gain: $ 5.57 Win %: 66.00 in 9 days with algo TB1_HS_QM_OB5_OS3_CB5_CS4_RV_AV_DU8_UA_DL2
+YMM Gain: $ 5.57 Win %: 66.00 in 9 days with algo TB1_HS_QM_OB5_OS3_CB5_CS4_RV_AV_DU8_UA_DL2

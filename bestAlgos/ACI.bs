@@ -183,3 +183,6 @@ ACI Gain: $ 3.88 Win %: 71.00 in 14 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_
 ACI Gain: $ 4.0 Win %: 78.00 in 14 days with algo TB5_HL_LO_QM_OB5_OS5_CB4_CS4_QL
 ACI Gain: $ 4.08 Win %: 71.00 in 14 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_AL_TS
 ACI Gain: $ 4.21 Win %: 78.00 in 14 days with algo TB5_HL_LO_QM_OB5_OS5_CB4_CS4_RV_AL
+ACI Gain: $ 13.95 Win %: 50.00 in 22 days with algo TB5_HI_HL_QM_OB3_OS3_CB3_CS3_LI_DU7_DL2
+ACI Gain: $ 13.98 Win %: 50.00 in 22 days with algo TB5_HI_HL_QM_OB3_OS3_CB3_CS3_LI_DU7_DL1
+ACI Gain: $ 14.38 Win %: 36.00 in 22 days with algo TB5_HI_HL_QM_OB3_OS3_CB3_CS3_LI_DU7

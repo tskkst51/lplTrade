@@ -1,4 +1,3 @@
-GPS Gain: $ 2.24 Win %: 83.00 in 6 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_TS
 GPS Gain: $ -4.18 Win %: 42.00 in 7 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_HM_AV_DB15
 GPS Gain: $ -2.99 Win %: 42.00 in 7 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_HM_AV
 GPS Gain: $ -2.94 Win %: 28.00 in 7 days with algo TB3_HL_LO_QM_OB4_OS4_CB4_CS4_RV_QP_DB10
@@ -171,6 +170,7 @@ GPS Gain: $ 2.12 Win %: 71.00 in 7 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_AL
 GPS Gain: $ 2.14 Win %: 71.00 in 7 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_RV_TR
 GPS Gain: $ 2.14 Win %: 71.00 in 7 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_TR
 GPS Gain: $ 2.24 Win %: 71.00 in 7 days with algo TB2_HL_HI_QM_OB2_OS2_CB3_CS3_QL
+GPS Gain: $ 2.24 Win %: 83.00 in 6 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_TS
 GPS Gain: $ 2.25 Win %: 71.00 in 7 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_RV_AV_DB8
 GPS Gain: $ 2.27 Win %: 57.00 in 7 days with algo TB2_HL_HI_QM_OB2_OS2_CB3_CS3_AC
 GPS Gain: $ 2.27 Win %: 71.00 in 7 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_PM
@@ -230,3 +230,9 @@ GPS Gain: $ 3.68 Win %: 100.00 in 7 days with algo TB2_HI_QM_OB3_OS3_CB4_CS4_TR_
 GPS Gain: $ 3.7 Win %: 85.00 in 7 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_AV
 GPS Gain: $ 3.7 Win %: 85.00 in 7 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_RV_AV
 GPS Gain: $ 3.81 Win %: 85.00 in 7 days with algo TB4_OO_QM_OB3_OS3_CB5_CS5_SS
+GPS Gain: $ 9.02 Win %: 53.00 in 13 days with algo TB5_OO_QM_OB5_OS2_CB3_CS5_DU6_TG
+GPS Gain: $ 9.32 Win %: 53.00 in 13 days with algo TB5_OO_QM_OB4_OS2_CB3_CS5_DU6_AL
+GPS Gain: $ 9.47 Win %: 53.00 in 13 days with algo TB5_OO_QM_OB5_OS2_CB3_CS5_DU6_AL
+GPS Gain: $ 10.65 Win %: 41.00 in 12 days with algo TB5_OO_QM_OB5_OS2_CB3_CS5_DU6
+GPS Gain: $ 10.65 Win %: 41.00 in 12 days with algo TB5_OO_QM_OB5_OS2_CB3_CS5_DU6_TG
+GPS Gain: $ 12.48 Win %: 58.00 in 12 days with algo TB1_OO_QM_OB3_OS2_CB5_CS5_DU6_AL

@@ -192,6 +192,8 @@ LOW Gain: $ 0.94 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_T
 LOW Gain: $ 1.27 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_RV_AV_DB6
 LOW Gain: $ 1.9 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_TR
 LOW Gain: $ 2.03 Win %: 100.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_PM
+LOW Gain: $ 3.27 Win %: 45.00 in 20 days with algo TB1_OC_QM_OB2_OS3_CB5_CS5_PM_UA
+LOW Gain: $ 3.27 Win %: 45.00 in 20 days with algo TB1_OC_QM_OB2_OS3_CB5_CS5_PM_UA
 LOW Gain: $ 3.68 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_RV_TR
 LOW Gain: $ 4.03 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_IT_QP
 LOW Gain: $ 4.25 Win %: 66.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_AV_TS
@@ -207,6 +209,16 @@ LOW Gain: $ 6.46 Win %: 66.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_A
 LOW Gain: $ 6.61 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_TS
 LOW Gain: $ 6.75 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_SS
 LOW Gain: $ 7.2 Win %: 66.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_HM_TR_DB6
+LOW Gain: $ 7.28 Win %: 55.00 in 20 days with algo TB1_HS_QM_OB2_OS5_CB5_CS2_RV_AL_UA
+LOW Gain: $ 7.28 Win %: 55.00 in 20 days with algo TB1_HS_QM_OB2_OS5_CB5_CS2_RV_AL_UA
+LOW Gain: $ 7.28 Win %: 55.00 in 20 days with algo TB1_HS_QM_OB2_OS5_CB5_CS2_RV_AL_UA
+LOW Gain: $ 7.28 Win %: 55.00 in 20 days with algo TB1_HS_QM_OB2_OS5_CB5_CS2_RV_AL_UA
+LOW Gain: $ 7.28 Win %: 55.00 in 20 days with algo TB1_HS_QM_OB2_OS5_CB5_CS2_RV_AL_UA
+LOW Gain: $ 7.28 Win %: 55.00 in 20 days with algo TB1_HS_QM_OB2_OS5_CB5_CS2_RV_AL_UA
+LOW Gain: $ 7.28 Win %: 55.00 in 20 days with algo TB1_HS_QM_OB2_OS5_CB5_CS2_RV_AL_UA
+LOW Gain: $ 7.28 Win %: 55.00 in 20 days with algo TB1_HS_QM_OB2_OS5_CB5_CS2_RV_AL_UA
+LOW Gain: $ 7.28 Win %: 55.00 in 20 days with algo TB1_HS_QM_OB2_OS5_CB5_CS2_RV_AL_UA
+LOW Gain: $ 7.28 Win %: 55.00 in 20 days with algo TB1_HS_QM_OB2_OS5_CB5_CS2_RV_AL_UA
 LOW Gain: $ 7.38 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_IT_TS
 LOW Gain: $ 7.39 Win %: 66.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_AL
 LOW Gain: $ 7.48 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_HM
@@ -228,4 +240,7 @@ LOW Gain: $ 11.33 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_
 LOW Gain: $ 11.33 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_AO
 LOW Gain: $ 11.33 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_AO_AC
 LOW Gain: $ 11.86 Win %: 66.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_IR1
+LOW Gain: $ 12.35 Win %: 60.00 in 20 days with algo TB5_OO_QM_OB2_OS3_CB2_CS5_AV_TS_TG
+LOW Gain: $ 12.49 Win %: 60.00 in 20 days with algo TB5_OO_QM_OB2_OS3_CB2_CS5_AV_TS_AL
 LOW Gain: $ 15.51 Win %: 83.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB4_CS4_HM_AV
+LOW Gain: $ 18.66 Win %: 55.00 in 20 days with algo TB5_OO_QM_OB2_OS3_CB2_CS5_AV_TS_DU7_AL_DL2

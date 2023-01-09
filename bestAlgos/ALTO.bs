@@ -230,3 +230,6 @@ ALTO Gain: $ 0.94 Win %: 80.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_
 ALTO Gain: $ 0.94 Win %: 80.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_RV_AL
 ALTO Gain: $ 1.45 Win %: 80.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_AV
 ALTO Gain: $ 1.45 Win %: 80.00 in 5 days with algo TB2_HL_HI_QM_OB2_OS2_CB2_CS2_RV_AV
+ALTO Gain: $ 2.95 Win %: 35.00 in 14 days with algo TB3_OO_QM_OB2_OS4_CB3_CS4_PM_DU7_AL_DL2
+ALTO Gain: $ 3.45 Win %: 42.00 in 14 days with algo TB3_OO_QM_OB2_OS4_CB3_CS4_PM_DU7_AV_DL2
+ALTO Gain: $ 3.47 Win %: 42.00 in 14 days with algo TB3_OO_QM_OB2_OS4_CB3_CS4_PM_DU7_UA_AV_DL2

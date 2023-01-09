@@ -229,3 +229,6 @@ VTNR Gain: $ 3.16 Win %: 80.00 in 10 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4
 VTNR Gain: $ 3.33 Win %: 80.00 in 10 days with algo TB5_HL_HI_QM_OB2_OS2_CB2_CS2_HM_AL
 VTNR Gain: $ 3.6 Win %: 80.00 in 10 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_RV_AL
 VTNR Gain: $ 3.73 Win %: 80.00 in 10 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_AL
+VTNR Gain: $ 7.99 Win %: 44.00 in 29 days with algo TB5_LO_QM_OB3_OS2_CB2_CS4_DU6_AL
+VTNR Gain: $ 10.25 Win %: 48.00 in 29 days with algo TB5_LO_QM_OB2_OS2_CB4_CS4_DU6
+VTNR Gain: $ 10.25 Win %: 48.00 in 29 days with algo TB5_LO_QM_OB2_OS2_CB4_CS4_DU6_TG

@@ -5,10 +5,12 @@
 dt=""
 algo=""
 stock=""
+debug=""
 
 dt=$1
 algo=$2
 stock=$3
+debug=$4
 
 numOfAlgosToVerify=7
 
@@ -35,6 +37,9 @@ else
    dayProvided=1
    days=$dt
 fi
+
+numDays=0
+numDays=$(echo $days | tr -cd ' ' | wc -c)
 
 if [[ -z $stock ]]; then
    echo Not all required args passed in, 3 required date algo stock
@@ -91,8 +96,15 @@ for algo in $algos; do
       ${py3} ${wp}/bin/profileGenerator.py -d $day -a $algo -s $stock > /dev/null 2>&1
       
       #${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -w test/${day} -o -d -s $stock > $outFile 2>/dev/null
-      ${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json_${stock} -w test/${day} -o -d -s $stock > $outFile
 
+      if [[ $debug == "d" ]]; then
+         echo debug set
+         ${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json_${stock} -w test/${day} -o -d -s $stock > $outFile
+      else
+         ${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json_${stock} -w test/${day} -o -s $stock > $outFile
+         
+      fi
+      
       value=$(cat $outFile | grep "Total Gain" | tail -1 | awk '{print $4}')
       echo $value on $day >> $gainFile
       echo $value on $day
@@ -106,7 +118,7 @@ for algo in $algos; do
    fi
 
    if [[ ! -f $gainFile ]]; then
-      echo Gain file $gainFile does not exist. exiting...
+      echo Error check the CL dam it. exiting...
       exit 1
    fi
 

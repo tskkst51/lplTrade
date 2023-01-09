@@ -168,3 +168,6 @@ SJ Gain: $ 4.7 Win %: 100.00 in 4 days with algo TB4_OC_QM_OB4_OS4_CB5_CS5_RV_TR
 SJ Gain: $ 4.7 Win %: 100.00 in 4 days with algo TB4_OC_QM_OB4_OS4_CB5_CS5_TR
 SJ Gain: $ 4.88 Win %: 100.00 in 4 days with algo TB4_OC_QM_OB4_OS4_CB5_CS5_IT
 SJ Gain: $ 4.97 Win %: 100.00 in 4 days with algo TB4_OC_QM_OB4_OS4_CB5_CS5_VI
+SJ Gain: $ 31.08 Win %: 80.00 in 5 days with algo TB5_OO_QM_OB5_OS4_CB4_CS5_WT_DU7_UA_DL2
+SJ Gain: $ 31.58 Win %: 80.00 in 5 days with algo TB5_OO_QM_OB5_OS4_CB4_CS5_RV_DU7
+SJ Gain: $ 31.58 Win %: 80.00 in 5 days with algo TB5_OO_QM_OB5_OS4_CB4_CS5_WT_DU7

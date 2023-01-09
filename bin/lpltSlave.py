@@ -84,6 +84,10 @@ def isStoppedOut():
          
          return 2
          
+   if maxNumLosses and a.getLosses() >= maxNumLosses:
+      lg.info ("EXITING Max Number of Losses: " + str(a.getLosses()))
+      return 2
+      
    return 0
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -221,6 +225,7 @@ quitMaxProfit = int(pf.gv("quitMaxProfit"))
 quitMaxLoss = int(pf.gv("quitMaxLoss"))
 marketEndTime = int(pf.gv("marketEndTime"))
 doInPosTracking = int(pf.gv("doInPosTracking"))
+maxNumLosses = int(pf.gv("maxNumLosses"))
 
 sandBox = int(c["profileConnectET"]["sandBox"])
 #offLine = int(c["profileConnectET"]["offLine"])
@@ -373,10 +378,9 @@ elif service == "eTrade":
 # Initialize algorithm,  barcharts objects
 
 bc = lpl.Barchart(barChartPath, offLine, timeBar)
-tr = lpl.Trends(d, lg, cn, bc, slave)
+tr = lpl.Trends(d, lg, cn, bc, offLine)
 lm = lpl.Limits(d, lg, cn, bc, pf, symbol)
 pa = lpl.Pattern(d, bc, lg)
-#pr = lpl.Price(cn, slave)
 pr = lpl.Price(cn, offLine)
 #ac = lpl.Account(c)
 dc = lpl.Dailychart()
@@ -544,8 +548,14 @@ bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
 # Main loop. Loop forever until EOD trading or end of after market 
 
 while True:
-         
-   bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, vol)
+   
+   if offLine:
+      bcDate = bc.getTimeStampFromBarchartFile(barCtr)
+   else:
+      bcDate = cn.getTimeStamp()
+      
+   #bc.loadInitBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, vol)
+   bc.loadInitBar(barChart, bcDate, barCtr, bid, ask, last, vol)
 
    lg.debug ("barCtr  " + str(barCtr))
          
@@ -635,7 +645,12 @@ while True:
 #            bc.displayLastNBars(barChart, 20)
 
          #if not offLine:
-         bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, lastVol)
+         if offLine:
+            bcDate = bc.getTimeStampFromBarchartFile(barCtr)
+         else:
+            bcDate = cn.getTimeStamp()
+
+         bc.loadEndBar(barChart, bcDate, barCtr, bid, ask, last, lastVol)
          
          #lg.debug ("barChart after end bar" + str(barChart))
          

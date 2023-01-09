@@ -1,4 +1,3 @@
-EJH Gain: $ 2.78 Win %: 60.00 in 5 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TS
 EJH Gain: $ -63.18 Win %: 0 in 6 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_TR_QP
 EJH Gain: $ -59.29 Win %: 16.00 in 6 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_HM_QP_DB10
 EJH Gain: $ -59.23 Win %: 16.00 in 6 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_RV_QP_DB10
@@ -76,7 +75,9 @@ EJH Gain: $ 2.23 Win %: 66.00 in 6 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_H
 EJH Gain: $ 2.51 Win %: 33.00 in 6 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_TS
 EJH Gain: $ 2.71 Win %: 50.00 in 6 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TS
 EJH Gain: $ 2.71 Win %: 50.00 in 6 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_TS
+EJH Gain: $ 2.78 Win %: 60.00 in 5 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TS
 EJH Gain: $ 3.17 Win %: 33.00 in 6 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_VI
+EJH Gain: $ 8.06 Win %: 57.00 in 7 days with algo TB5_LO_QM_OB5_OS2_CB5_CS5_RV_TR_DB6_UA
 EJH Gain: $ 9.14 Win %: 66.00 in 6 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_RV_TR_DB30
 EJH Gain: $ 9.14 Win %: 66.00 in 6 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
 EJH Gain: $ 9.76 Win %: 16.00 in 6 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_IT_QL_DB10
@@ -88,6 +89,11 @@ EJH Gain: $ 9.97 Win %: 33.00 in 6 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_RV_A
 EJH Gain: $ 10.2 Win %: 50.00 in 6 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_RV_TR_DB10
 EJH Gain: $ 10.49 Win %: 66.00 in 6 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
 EJH Gain: $ 10.53 Win %: 66.00 in 6 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_RV_AV_DB30
+EJH Gain: $ 14.77 Win %: 57.00 in 7 days with algo TB5_LO_QM_OB5_OS2_CB5_CS5_RV_TR_DB6_AL
+EJH Gain: $ 14.77 Win %: 57.00 in 7 days with algo TB5_LO_QM_OB5_OS2_CB5_CS5_RV_TR_DB6_AV
+EJH Gain: $ 14.77 Win %: 57.00 in 7 days with algo TB5_LO_QM_OB5_OS2_CB5_CS5_RV_TR_DB6_TG_AV
+EJH Gain: $ 14.77 Win %: 57.00 in 7 days with algo TB5_LO_QM_OB5_OS2_CB5_CS5_RV_TR_DB6_UA_AL
+EJH Gain: $ 14.77 Win %: 57.00 in 7 days with algo TB5_LO_QM_OB5_OS2_CB5_CS5_RV_TR_DB6_UA_AV
 EJH Gain: $ 21.09 Win %: 66.00 in 6 days with algo TB1_HL_HS_QM_OB2_OS2_CB5_CS5_LI
 EJH Gain: $ 21.79 Win %: 50.00 in 6 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_LI
 EJH Gain: $ 22 Win %: 33.00 in 6 days with algo TB3_HS_QM_OB1_OS1_CB4_CS4_RV

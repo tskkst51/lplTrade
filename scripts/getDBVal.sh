@@ -10,16 +10,18 @@ function init {
    $HOME/bin/lplt.sh
    . $wp/scripts/db.sh
 
-   reduceSearchDBs=""
+   reduceSearchDBs=0
    
    day=$1
    algo=$2
    sym=$3
-   #sortPct=$4
    ss=$4
    reduceSearchDBs=$5
    debug=$6
-   dontStopDB=$7
+   sortPct=$7
+   dontStopDB=$8
+   
+   searchAllDays=0
    
    wp=$(pwd)
 
@@ -34,12 +36,10 @@ function init {
    #tmpFileSort=$(getTmpFile "sort")
 
    tmpFile=$(getRandomTmpFile)
-   tmpFileSort=$(getRandomTmpFile)
-
-   #echo debug $debug
-      
+   tmpFileSort=$(getRandomTmpFile)      
+   
    if [[ -n $debug ]] && [[ $debug != "d" ]]; then debug=""; fi
-   if [[ -n $reduceSearchDBs ]] && [[ $reduceSearchDBs == "d" ]]; then reduceSearchDBs=""; fi
+#   if [[ -n $reduceSearchDBs ]] && [[ $reduceSearchDBs != "r" ]]; then reduceSearchDBs=""; fi
    if [[ -z $sym ]]; then echo sym is empty!; exit 1 ; fi
    if [[ -z $algo ]]; then echo Need algo; exit 1; fi
    if [[ -n $ss ]]; then dbNumModTestRows=$ss; fi
@@ -65,6 +65,7 @@ function init {
    
    if [[ $day == "all" ]]; then
       days=$(getAllDays $sym)
+      searchAllDays=1
       if [[ -n $reduceSearchDBs ]]; then
          # reduce the set of DB's to search
          ctr=0
@@ -90,16 +91,16 @@ function init {
    if [[ -z $days ]]; then echo day is empty!; exit 1 ; fi
    
    sortDB="order by gain,winpct desc"
-   sortF="-k3,3 -k4,4"
+   sortF="-k4,4 -k7,7"
    if [[ -n $sortPct ]]; then 
-      sortDB="order by winpct,gain desc"
-      sortF="-k4,4 -k3,3"
+      sortDB="order by winpct,gain asc"
+      sortF="-k7,7 -k4,4"
    fi
    algoCtr=0
    algoModCtr=0
 }
 
-init $1 $2 $3 $4 $5 $6 $7
+init $1 $2 $3 $4 $5 $6 $7 $8
 
 # Get the 10 best algoMods populate file
 
@@ -150,9 +151,9 @@ for db in $days; do
    clO=$(getCLO $port "algos")
       
    for s in $(echo $syms); do
-      $cl "select * from algoData where sym = '${s}' and algo $eq '${algo}' $sortDB" | tail -n $dbNumModTestRows > $tmpFile
+      $cl "select sym, algo, gain, winpct from algoData where sym = '${s}' and algo $eq '${algo}' $sortDB" | tail -n $dbNumModTestRows > $tmpFile
       if [[ -n $debug ]]; then
-         echo $clO "\"select * from algoData where sym = '${s}' and algo $eq '${algo}' $sortDB\""
+         echo $clO "\"select sym, algo, gain, winpct from algoData where sym = '${s}' and algo $eq '${algo}' $sortDB\""
       fi
       
       if [[ -s $tmpFile ]]; then
@@ -164,17 +165,21 @@ for db in $days; do
       fi
       
       rm -f $tmpFile
-      $cl "select * from algoModData where sym = '${s}' and algo $eq '${algo}' $sortDB" | tail -n $dbNumModTestRows > $tmpFile
+
+      $cl "select sym, algo, gain, winpct from algoModData where sym = '${s}' and algo $eq '${algo}' $sortDB" | tail -n $dbNumModTestRows > $tmpFile
+      
       if [[ -n $debug ]]; then
-         echo $clO "\"select * from algoModData where sym = '${s}' and algo $eq '${algo}' $sortDB\""
+         echo $clO "\"select sym, algo, gain, winpct from algoModData where sym = '${s}' and algo $eq '${algo}' $sortDB\""
       fi
       if [[ -s $tmpFile ]]; then
+         if (( searchAllDays == 1 )); then echo $db; fi
+
          algoModCtr=$((algoModCtr + 1))         
          cat $tmpFile >> ${tmpFileSort}_${s}
       fi
       rm -f $tmpFile
    done
-   
+
    if [[ -z $dontStopDB ]]; then
       if (( ! dbWasRunning )); then
          if [[ -n $debug ]]; then echo Stopping DB $port; fi
@@ -184,6 +189,10 @@ for db in $days; do
       fi
    fi
 done      
+
+if (( searchAllDays == 1 )); then
+   echo found pattern $algo in standard algo: $algoCtr mod: $algoModCtr
+fi
 
 rm -f $tmpFile
 

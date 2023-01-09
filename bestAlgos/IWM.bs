@@ -1,4 +1,3 @@
-IWM Gain: $ 12.7 Win %: 100.00 in 5 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_TS
 IWM Gain: $ -39.87 Win %: 16.00 in 6 days with algo TB4_HL_QM_OB2_OS2_CB4_CS4_AO_AC
 IWM Gain: $ -4.99 Win %: 50.00 in 6 days with algo TB4_HL_QM_OB2_OS2_CB4_CS4_AC
 IWM Gain: $ -4.54 Win %: 50.00 in 6 days with algo TB4_HL_QM_OB3_OS3_CB2_CS2_IT
@@ -59,6 +58,8 @@ IWM Gain: $ 6.1 Win %: 66.00 in 6 days with algo TB4_HL_QM_OB3_OS3_CB2_CS2_RV_AV
 IWM Gain: $ 6.3 Win %: 83.00 in 6 days with algo TB4_HL_QM_OB3_OS3_CB2_CS2_TR_TS
 IWM Gain: $ 6.33 Win %: 66.00 in 6 days with algo TB4_HS_QM_OB3_OS3_CB4_CS4_HM
 IWM Gain: $ 6.35 Win %: 66.00 in 6 days with algo TB4_HS_QM_OB3_OS3_CB4_CS4_QP_PM
+IWM Gain: $ 6.77 Win %: 53.00 in 13 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_DU7_UA_DL1_AL
+IWM Gain: $ 6.77 Win %: 53.00 in 13 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_UA_DU7_DL1_AL
 IWM Gain: $ 6.79 Win %: 83.00 in 6 days with algo TB4_HL_QM_OB3_OS3_CB2_CS2_AO
 IWM Gain: $ 6.81 Win %: 100.00 in 6 days with algo TB4_HL_QM_OB2_OS2_CB4_CS4_VI
 IWM Gain: $ 6.84 Win %: 66.00 in 6 days with algo TB4_HS_QM_OB3_OS3_CB4_CS4_TR
@@ -69,6 +70,10 @@ IWM Gain: $ 7.0 Win %: 66.00 in 6 days with algo TB4_HS_QM_OB3_OS3_CB4_CS4_QL
 IWM Gain: $ 7.01 Win %: 83.00 in 6 days with algo TB4_HL_QM_OB2_OS2_CB4_CS4_HM_AL
 IWM Gain: $ 7.1 Win %: 100.00 in 6 days with algo TB4_HL_QM_OB3_OS3_CB2_CS2_RV_QP
 IWM Gain: $ 7.11 Win %: 83.00 in 6 days with algo TB4_HL_QM_OB2_OS2_CB4_CS4_HM_AV_DB8
+IWM Gain: $ 7.14 Win %: 53.00 in 13 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_DU7_DL1_DU8_AL_DL2
+IWM Gain: $ 7.14 Win %: 53.00 in 13 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_DU7_DL1_DU8_AL_DL2
+IWM Gain: $ 7.14 Win %: 53.00 in 13 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_DU7_DL1_DU8_AL_DL2
+IWM Gain: $ 7.14 Win %: 53.00 in 13 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_DU7_DL1_DU8_AL_DL2
 IWM Gain: $ 7.24 Win %: 100.00 in 6 days with algo TB4_HL_QM_OB3_OS3_CB2_CS2_QP_IR2
 IWM Gain: $ 7.36 Win %: 66.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_QP_IR1
 IWM Gain: $ 7.4 Win %: 100.00 in 6 days with algo TB4_HL_QM_OB3_OS3_CB2_CS2_LI
@@ -127,6 +132,9 @@ IWM Gain: $ 10.04 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_HM_
 IWM Gain: $ 10.08 Win %: 83.00 in 6 days with algo TB4_HL_QM_OB2_OS2_CB4_CS4_QP_IR2
 IWM Gain: $ 10.25 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_HM_TR_DB6
 IWM Gain: $ 10.27 Win %: 100.00 in 6 days with algo TB4_HL_QM_OB2_OS2_CB4_CS4_TR_QP_DB8
+IWM Gain: $ 10.28 Win %: 57.00 in 14 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_DU7_DL1_DU8_AL_DL2
+IWM Gain: $ 10.28 Win %: 57.00 in 14 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_DU7_DL1_DU8_AL_DL2
+IWM Gain: $ 10.28 Win %: 57.00 in 14 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_DU7_DL1_DU8_AL_DL2
 IWM Gain: $ 10.29 Win %: 83.00 in 6 days with algo TB4_HS_QM_OB3_OS3_CB4_CS4_TS
 IWM Gain: $ 10.32 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_HM_AV_DB6
 IWM Gain: $ 10.56 Win %: 100.00 in 6 days with algo TB4_HL_QM_OB2_OS2_CB4_CS4_RV_TR
@@ -160,6 +168,7 @@ IWM Gain: $ 12.13 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_RV_
 IWM Gain: $ 12.42 Win %: 83.00 in 6 days with algo TB4_HL_QM_OB2_OS2_CB4_CS4_TS
 IWM Gain: $ 12.44 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_HM_TR
 IWM Gain: $ 12.65 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_TR
+IWM Gain: $ 12.7 Win %: 100.00 in 5 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_TS
 IWM Gain: $ 13.03 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_RV_TR
 IWM Gain: $ 13.13 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_RV_AV
 IWM Gain: $ 13.27 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_AC
@@ -172,3 +181,9 @@ IWM Gain: $ 15.04 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_PM
 IWM Gain: $ 15.24 Win %: 83.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_AL
 IWM Gain: $ 15.41 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_AV
 IWM Gain: $ 17.58 Win %: 100.00 in 6 days with algo TB5_CC_QM_OB1_OS1_CB3_CS3_SS
+IWM Gain: $ 23.82 Win %: 83.00 in 12 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_DU7
+IWM Gain: $ 24.37 Win %: 83.00 in 12 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_DU7
+IWM Gain: $ 26.47 Win %: 58.00 in 12 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_UA_DU7_AL_DL2
+IWM Gain: $ 33.52 Win %: 58.00 in 12 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_DU7_AL_DL2
+IWM Gain: $ 33.58 Win %: 75.00 in 12 days with algo TB3_OO_QM_OB2_OS2_CB5_CS2_AV_TS_DU7
+IWM Gain: $ 35.64 Win %: 58.00 in 12 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_TG_DU7_AL_DL2

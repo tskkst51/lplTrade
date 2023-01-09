@@ -45,3 +45,12 @@ LTHM Gain: $ 2.31 Win %: 52.00 in 19 days with algo TB3_HL_HS_QM_OB4_OS4_CB5_CS5
 LTHM Gain: $ 2.31 Win %: 52.00 in 19 days with algo TB3_HL_HS_QM_OB4_OS4_CB5_CS5_TR_IR3
 LTHM Gain: $ 2.37 Win %: 63.00 in 19 days with algo TB3_HL_HS_QM_OB4_OS4_CB5_CS5_AL_TS
 LTHM Gain: $ 2.44 Win %: 78.00 in 19 days with algo TB3_HL_HS_QM_OB4_OS4_CB5_CS5_VI
+LTHM Gain: $ 10.12 Win %: 75.00 in 29 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_HM_AV_DB30
+LTHM Gain: $ 10.12 Win %: 75.00 in 29 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_HM_AV_DB30_UA
+LTHM Gain: $ 10.21 Win %: 73.00 in 30 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_HM_AV_DB30_TG
+LTHM Gain: $ 10.21 Win %: 73.00 in 30 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_HM_AV_DB30_TG_UA
+LTHM Gain: $ 11.11 Win %: 73.00 in 30 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_HM_AV_DB30_TG_AL
+LTHM Gain: $ 11.33 Win %: 75.00 in 29 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_HM_AV_DB30_AL
+LTHM Gain: $ 19.84 Win %: 53.00 in 28 days with algo TB1_HS_QM_OB4_OS4_CB4_CS4_RV_AV_DU7
+LTHM Gain: $ 20.24 Win %: 64.00 in 28 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_HM_AV_DB30_DU7_UA_DL2
+LTHM Gain: $ 20.24 Win %: 64.00 in 28 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_HM_AV_DB30_DU7_UA_DL2

@@ -1,4 +1,3 @@
-PTON Gain: $ -2.41 Win %: 20.00 in 5 days with algo TB5_EO_EC_QM_OB3_OS3_CB1_CS1_TS
 PTON Gain: $ -14.85 Win %: 0 in 6 days with algo TB3_OC_QM_OB3_OS3_CB5_CS5_AV
 PTON Gain: $ -12.9 Win %: 16.00 in 6 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_RV_QP_DB6
 PTON Gain: $ -11.58 Win %: 16.00 in 6 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_IT_QP_DB6
@@ -113,6 +112,7 @@ PTON Gain: $ -2.47 Win %: 50.00 in 6 days with algo TB3_OC_QM_OB3_OS3_CB5_CS5_QP
 PTON Gain: $ -2.44 Win %: 33.00 in 6 days with algo TB5_HS_QM_OB4_OS4_CB5_CS5_RV_QP_DB6
 PTON Gain: $ -2.43 Win %: 33.00 in 6 days with algo TB5_EO_EC_QM_OB3_OS3_CB1_CS1_HM_TR
 PTON Gain: $ -2.42 Win %: 33.00 in 6 days with algo TB5_HS_QM_OB4_OS4_CB5_CS5_IR1
+PTON Gain: $ -2.41 Win %: 20.00 in 5 days with algo TB5_EO_EC_QM_OB3_OS3_CB1_CS1_TS
 PTON Gain: $ -2.33 Win %: 66.00 in 6 days with algo TB5_HS_QM_OB4_OS4_CB5_CS5_VI
 PTON Gain: $ -2.14 Win %: 33.00 in 6 days with algo TB3_HL_HS_QM_OB5_OS5_CB2_CS2_RV_QP
 PTON Gain: $ -2.14 Win %: 33.00 in 6 days with algo TB3_OC_QM_OB3_OS3_CB5_CS5_HM_QP
@@ -230,3 +230,6 @@ PTON Gain: $ 4.35 Win %: 66.00 in 6 days with algo TB3_OC_QM_OB3_OS3_CB5_CS5_IT_
 PTON Gain: $ 4.52 Win %: 66.00 in 6 days with algo TB3_OC_QM_OB3_OS3_CB5_CS5_RV
 PTON Gain: $ 4.54 Win %: 83.00 in 6 days with algo TB3_OC_QM_OB3_OS3_CB5_CS5_DB10
 PTON Gain: $ 4.71 Win %: 83.00 in 6 days with algo TB3_HL_HS_QM_OB5_OS5_CB2_CS2_AL_TS
+PTON Gain: $ 7.55 Win %: 100.00 in 9 days with algo TB5_LO_QM_OB2_OS4_CB4_CS4_AV_TS_TG
+PTON Gain: $ 7.55 Win %: 100.00 in 9 days with algo TB5_LO_QM_OB2_OS4_CB4_CS4_AV_TS_UA
+PTON Gain: $ 17.55 Win %: 55.00 in 9 days with algo TB1_HI_QM_OB4_OS2_CB2_CS5_AL_LI_DU7_UA_DL2

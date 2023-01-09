@@ -229,6 +229,9 @@ PLUG Gain: $ 7.74 Win %: 88.00 in 9 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4_
 PLUG Gain: $ 8.27 Win %: 88.00 in 9 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4_AV
 PLUG Gain: $ 8.34 Win %: 88.00 in 9 days with algo TB5_HL_HI_QM_OB4_OS4_CB4_CS4_RV_AV
 PLUG Gain: $ 8.35 Win %: 88.00 in 9 days with algo TB4_HL_LO_QM_OB2_OS2_CB5_CS5_QL
+PLUG Gain: $ 27.23 Win %: 80.00 in 15 days with algo TB5_OO_QM_OB2_OS5_CB3_CS3_AL_LI_AV_DU8_DL2
+PLUG Gain: $ 27.34 Win %: 73.00 in 15 days with algo TB5_OO_QM_OB2_OS5_CB3_CS3_AL_LI_AV_DU8_UA_DL2
+PLUG Gain: $ 27.34 Win %: 73.00 in 15 days with algo TB5_OO_QM_OB2_OS5_CB3_CS3_AL_LI_AV_DU8_UA_DL2
 PLUG Gain: $ 30.28 Win %: 66.00 in 12 days with algo TB5_OO_QM_OB3_OS5_CB5_CS3_RV_AL_DU6
 PLUG Gain: $ 30.28 Win %: 66.00 in 12 days with algo TB5_OO_QM_OB3_OS5_CB5_CS3_RV_AL_DU6_UA
 PLUG Gain: $ 30.57 Win %: 75.00 in 12 days with algo TB5_OO_QM_OB2_OS5_CB3_CS3_SS_DU6_AL

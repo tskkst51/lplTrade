@@ -24,6 +24,18 @@ function skipStocks {
   
 function init {
 
+   wp=$(pwd)
+
+   . ${wp}/scripts/db.sh
+
+   ex=$1
+   
+   if [[ -z $ex ]]; then
+      ex="in"
+   fi
+   
+   echo Using bestAlgo extension: $ex
+   
    dt=$(date "+%Y%m%d")
 
    ppdOut="/tmp/perDayPrice"
@@ -33,13 +45,26 @@ function init {
    
    wp=$(pwd)
    
+   bestFiles=$(getRandomTmpFile)
+   stkpriceDayFile=$(getRandomTmpFile)
+   
    magicNumFlag="yes"
    
-   tail -q -n 1 bestAlgos/*.bs| awk '{print $1, $4, $9}' | sed "/.*e-*/d" | sed "/Gain\:/d" | sed "/[a-z].*/d" > $stkpriceDayFile
+   ls bestAlgos/*.${ex}| grep -v -e "[0-9]" >> $bestFiles
    
+   #cat $bestFiles
+   #exit 1
+   
+   for b in $(cat $bestFiles); do
+      tail -q -n 1 $b | awk '{print $1, $4, $9}' | sed "/.*e-*/d" | sed "/Gain\:/d" | sed "/[a-z].*/d" >> $stkpriceDayFile
+   done
+   
+   minPrice=0.0
+   minPrice=$(grep minStockPrice $liveConfig | awk -F\" '{print $4}')
+
 }
 
-init $1 $2
+init $1
 
 for token in $(cat $stkpriceDayFile); do
 
@@ -52,7 +77,7 @@ for token in $(cat $stkpriceDayFile); do
       price=$token
       continue
    fi
-   
+      
    days=$token
    
    echo $stock $price $days >> /tmp/tt
@@ -66,24 +91,26 @@ for token in $(cat $stkpriceDayFile); do
    if [[ -f "dc/${stock}.dc" ]]; then
       lastPrice=$(tail -1 "dc/${stock}.dc" | awk -F, '{print $4}') 2>/dev/null
    fi
-
-   #echo lastPrice $lastPrice
-   
+         
    if [[ -z $lastPrice ]]; then
       # look for last price in minute charts
-      minChart=$(ls test/*/bc/*${stock}.bc|awk -F, 'END{print}')
-      if [[ -n $minChart ]]; then
-         lastPrice=$(tail -1 $minChart |awk -F, '{print $4}')
+      minuteChart=$(ls test/*/bc/*${stock}.bc|awk -F, 'END{print}')
+      if [[ -n $minuteChart ]]; then
+         lastPrice=$(tail -1 $minuteChart |awk -F, '{print $4}')
       else
-         echo minChart $minChart does not exist
+         echo minuteChart $minuteChart does not exist
 
       fi
    fi
-   
+
+   if [[ $(echo "$lastPrice < $minPrice" | bc) == 1 ]]; then
+      echo ${stock} excluded. Price $lastPrice is less than $minPrice
+      continue
+   fi
+
    if [[ -n $magicNumFlag ]]; then
       if [[ $days != 0 ]]; then
          magicNum=$(echo "scale=3 ; $perDayPrice / $lastPrice * $days" | bc)
-         # magicNum=$(echo "scale=3 ; $perDayPrice * $days / $lastPrice" | bc)
       else
          continue
       fi

@@ -53,6 +53,7 @@ numModifiers=$(echo "$(($numModifiers + 1))")
 #numModTests=$(echo "$(($numModifiers * $dbMaxModTestRows))")
 numModTests=$(echo "$(($numModifiers * $numStandardTests))")
 
+
 # Make sure test DB is up and running
 isDBRunning $day
 if [[ $? == 0 ]]; then
@@ -100,13 +101,19 @@ for day in $days; do
       
       # check if mod tests are complete and skip
       #count=$($cl "SELECT count(algo) FROM algoModData where sym = '${sym}'")
-      modTestsRan=0      
-      modTestsRan=$($cl "select count(algo) from algoModData where sym = '${sym}'")            
+      modTestsRan=0 
       
-      if (( $modTestsRan >= $numModTests )); then
-         echo $day ${sym} COMPLETE! ${modTestsRan} ran out of max $numModTests
-         continue
-      fi
+      echo "$cl select count(algo) from algoModData where sym = '${sym}'"    
+      modTestsRan=$($cl "select count(algo) from algoModData where sym = '${sym}'")            
+      testsRan=$($cl "select count(algo) from algoData where sym = '${sym}'")            
+      
+      echo testsRan $testsRan
+      echo modTestsRan $modTestsRan
+      
+#      if (( $modTestsRan >= $numModTests )); then
+#         echo $day ${sym} COMPLETE! $modTestsRan ran out of max $numModTests
+#         continue
+#      fi
       
       echo Detected $modTestsRan ran out of max $numModTests
       

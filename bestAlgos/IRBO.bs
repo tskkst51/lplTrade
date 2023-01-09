@@ -78,6 +78,9 @@ IRBO Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_IT
 IRBO Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_RV_AL_DB10
 IRBO Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_RV_AV_DB10
 IRBO Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_RV_TR_DB10
+IRBO Gain: $ 0.53 Win %: 50.00 in 6 days with algo TB5_HL_QM_OB1_OS1_CB5_CS3_RV_AV_DU7_DL2_AL_TG
+IRBO Gain: $ 0.53 Win %: 50.00 in 6 days with algo TB5_HL_QM_OB1_OS1_CB5_CS3_RV_AV_DU7_DL2_DU8_AL_TG
+IRBO Gain: $ 0.53 Win %: 50.00 in 6 days with algo TB5_HL_QM_OB1_OS1_CB5_CS3_RV_AV_DU7_DU8_AL_DL2_TG
 IRBO Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB2_OS2_CB4_CS4_VI
 IRBO Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_LI
 IRBO Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_VI
@@ -165,3 +168,9 @@ IRBO Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_RV
 IRBO Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_SS
 IRBO Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_TR
 IRBO Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB4_OC_QM_OB2_OS2_CB3_CS3_TR_IR2
+IRBO Gain: $ 2.56 Win %: 50.00 in 4 days with algo TB5_HL_QM_OB1_OS1_CB5_CS3_RV_AV_DU7_AL_DL2
+IRBO Gain: $ 2.56 Win %: 50.00 in 4 days with algo TB5_HL_QM_OB1_OS1_CB5_CS3_RV_AV_DU7_DL2
+IRBO Gain: $ 2.56 Win %: 50.00 in 4 days with algo TB5_HL_QM_OB1_OS1_CB5_CS3_RV_AV_DU7_DL2
+IRBO Gain: $ 2.8 Win %: 60.00 in 5 days with algo TB5_HL_QM_OB1_OS1_CB5_CS3_RV_AV_DU7_DL2_AL
+IRBO Gain: $ 2.8 Win %: 60.00 in 5 days with algo TB5_HL_QM_OB1_OS1_CB5_CS3_RV_AV_DU7_DL2_DU8_AL
+IRBO Gain: $ 2.8 Win %: 60.00 in 5 days with algo TB5_HL_QM_OB1_OS1_CB5_CS3_RV_AV_DU7_DU8_AL_DL2

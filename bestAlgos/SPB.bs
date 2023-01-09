@@ -230,3 +230,6 @@ SPB Gain: $ 2.21 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB3_CS3_AO_
 SPB Gain: $ 2.21 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB3_CS3_QL
 SPB Gain: $ 2.21 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB3_CS3_QL
 SPB Gain: $ 2.21 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB3_CS3_RV
+SPB Gain: $ 5.36 Win %: 100.00 in 4 days with algo TB5_HI_QM_OB3_OS2_CB4_CS5_IT_TS_AL
+SPB Gain: $ 5.72 Win %: 100.00 in 4 days with algo TB5_HI_QM_OB3_OS2_CB4_CS5_IT_TS
+SPB Gain: $ 5.75 Win %: 100.00 in 4 days with algo TB5_HI_QM_OB3_OS2_CB4_CS5_IT_TS_TG

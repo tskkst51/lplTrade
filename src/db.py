@@ -13,17 +13,17 @@ import random
 class DB:
    def __init__(self, d, day):
 
-      pgPath = "/Applications/Postgres.app/Contents/Versions/14/bin/"
+      self.pgPath = "/Applications/Postgres.app/Contents/Versions/14/bin/"
 
       self.d = d
       self.dbPath = "db/" + day
       self.dbLog = "db/" + day + "/log"
-      self.seqAlgos = "LO_HI_HS_OC_CC_OO_EO_EC"
+      self.seqAlgos = "HS_HI_LO_OC_EO_EC_OO_BL_LS_CC_LH"
       self.tmpFile = "/tmp/dbTmp"
       self.day = day
       self.port = self.getRunningPort(day)
-      self.cl = pgPath + "psql algos -p " + str(self.port) + " -q -t -c '\\a' -c \""
-      self.clF = pgPath + "psql algos -p " + str(self.port) + " -q -t -c '\\a' -o " + self.tmpFile + " -c \""
+      self.cl = self.pgPath + "psql algos -p " + str(self.port) + " -q -t -c '\\a' -c \""
+      self.clF = self.pgPath + "psql algos -p " + str(self.port) + " -q -t -c '\\a' -o " + self.tmpFile + " -c \""
       self.timeBar = [1,3,5]
       
       # 625 rows when running 5^5 open close bars
@@ -61,7 +61,7 @@ class DB:
 
       port = getNewPort()
       
-      status = os.popen("pg_ctl -D " + self.dbPath + " -p " + port + " -l " + self.dbLog + " start").read().splitlines()
+      status = os.popen(self.pgPath + "/pg_ctl -D " + self.dbPath + " -p " + port + " -l " + self.dbLog + " start").read().splitlines()
       
       os.environ["dbPort"] = str(status[0])
 

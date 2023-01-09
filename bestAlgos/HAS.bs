@@ -230,3 +230,6 @@ HAS Gain: $ 3.49 Win %: 100.00 in 6 days with algo TB4_HL_HS_QM_OB3_OS3_CB4_CS4_
 HAS Gain: $ 3.51 Win %: 66.00 in 6 days with algo TB5_CC_QM_OB5_OS5_CB3_CS3_AV_TS
 HAS Gain: $ 4.39 Win %: 83.00 in 6 days with algo TB4_HL_HS_QM_OB3_OS3_CB4_CS4_SS
 HAS Gain: $ 5.69 Win %: 100.00 in 6 days with algo TB4_HL_HS_QM_OB3_OS3_CB5_CS5_AC
+HAS Gain: $ 17.13 Win %: 33.00 in 9 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_AL_UA_DU7_DL2
+HAS Gain: $ 17.13 Win %: 33.00 in 9 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_AL_UA_DU7_DL2
+HAS Gain: $ 17.6 Win %: 44.00 in 9 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_PM_DU7_UA_AV_DL2

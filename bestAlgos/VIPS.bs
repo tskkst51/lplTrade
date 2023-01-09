@@ -157,3 +157,12 @@ VIPS Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_QL
 VIPS Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_RV
 VIPS Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_RV
 VIPS Gain: $ 0.66 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_RV
+VIPS Gain: $ 1.78 Win %: 66.00 in 9 days with algo TB3_OC_QM_OB3_OS2_CB4_CS2_QL_UA
+VIPS Gain: $ 2.03 Win %: 44.00 in 9 days with algo TB3_OC_QM_OB3_OS2_CB4_CS2_AO_AC_DU6_AL
+VIPS Gain: $ 2.03 Win %: 44.00 in 9 days with algo TB3_OC_QM_OB3_OS2_CB4_CS2_AO_DU6_AL
+VIPS Gain: $ 5.02 Win %: 50.00 in 10 days with algo TB3_OC_QM_OB3_OS2_CB4_CS2_AO_DU6_AL_UA
+VIPS Gain: $ 5.83 Win %: 50.00 in 10 days with algo TB3_OC_QM_OB3_OS2_CB4_CS2_AO_AC_DU6_AL_DU7
+VIPS Gain: $ 5.83 Win %: 50.00 in 10 days with algo TB3_OC_QM_OB3_OS2_CB4_CS2_AO_DU6_AL_DU7
+VIPS Gain: $ 9.54 Win %: 50.00 in 12 days with algo TB3_OO_QM_OB3_OS2_CB5_CS2_DU8_UA
+VIPS Gain: $ 9.55 Win %: 50.00 in 12 days with algo TB3_OO_QM_OB3_OS2_CB5_CS2_DU8
+VIPS Gain: $ 9.55 Win %: 50.00 in 12 days with algo TB3_OO_QM_OB3_OS2_CB5_CS2_DU8_TG

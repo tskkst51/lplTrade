@@ -1,4 +1,3 @@
-MAT Gain: $ -0.88 Win %: 42.00 in 7 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_TS
 MAT Gain: $ -16.45 Win %: 0 in 8 days with algo TB2_OO_QM_OB2_OS2_CB1_CS1_RV_QP
 MAT Gain: $ -16.41 Win %: 0 in 8 days with algo TB2_OO_QM_OB2_OS2_CB1_CS1_HM_QP
 MAT Gain: $ -15.69 Win %: 0 in 8 days with algo TB2_OO_QM_OB2_OS2_CB1_CS1_IT_QP
@@ -85,6 +84,7 @@ MAT Gain: $ -0.94 Win %: 37.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_RV
 MAT Gain: $ -0.94 Win %: 50.00 in 8 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_AL_TS
 MAT Gain: $ -0.92 Win %: 37.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_LI
 MAT Gain: $ -0.9 Win %: 50.00 in 8 days with algo TB2_OO_QM_OB2_OS2_CB1_CS1_HM_TR_DB15
+MAT Gain: $ -0.88 Win %: 42.00 in 7 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_TS
 MAT Gain: $ -0.78 Win %: 37.00 in 8 days with algo TB1_HL_LO_QM_OB2_OS2_CB2_CS2_IR5
 MAT Gain: $ -0.76 Win %: 50.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_IT_TS
 MAT Gain: $ -0.7 Win %: 37.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_IT_QP_DB8
@@ -230,3 +230,6 @@ MAT Gain: $ 2.88 Win %: 87.00 in 8 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_RV_A
 MAT Gain: $ 3.21 Win %: 87.00 in 8 days with algo TB4_HS_QM_OB1_OS1_CB4_CS4_RV_TR_DB8
 MAT Gain: $ 3.24 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_HM_AV_DB8
 MAT Gain: $ 3.49 Win %: 100.00 in 8 days with algo TB4_LO_QM_OB2_OS2_CB3_CS3_RV_AV_DB8
+MAT Gain: $ 11.82 Win %: 70.00 in 20 days with algo TB3_CC_QM_OB4_OS2_CB4_CS4_SR_DU8_AL_DL2
+MAT Gain: $ 11.97 Win %: 65.00 in 20 days with algo TB3_CC_QM_OB3_OS2_CB4_CS4_SR_DU8_AL_DL2
+MAT Gain: $ 12.04 Win %: 60.00 in 20 days with algo TB3_CC_QM_OB4_OS2_CB4_CS4_SR_DU8_AV_DL2

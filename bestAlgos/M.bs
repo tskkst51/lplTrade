@@ -229,3 +229,6 @@ M Gain: $ 7.87 Win %: 94.00 in 18 days with algo TB4_HL_HI_QM_OB1_OS1_CB4_CS4_IT
 M Gain: $ 7.93 Win %: 83.00 in 18 days with algo TB4_HL_HI_QM_OB1_OS1_CB4_CS4_RV
 M Gain: $ 9.25 Win %: 94.00 in 18 days with algo TB4_HL_HI_QM_OB1_OS1_CB4_CS4_QL
 M Gain: $ 10.07 Win %: 77.00 in 18 days with algo TB4_HL_HI_QM_OB1_OS1_CB4_CS4_AO
+M Gain: $ 25.85 Win %: 45.00 in 31 days with algo TB3_HI_QM_OB4_OS3_CB4_CS4_RV_TR_DB10_DU8_AL_DL2
+M Gain: $ 26.84 Win %: 35.00 in 31 days with algo TB3_HI_QM_OB4_OS3_CB4_CS4_RV_TR_DB10_DU8_DL2
+M Gain: $ 30.35 Win %: 35.00 in 31 days with algo TB3_HI_QM_OB4_OS3_CB4_CS4_RV_TR_DB10_DU8_UA_DL2

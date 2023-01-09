@@ -230,3 +230,6 @@ SLVO Gain: $ 0.02 Win %: 100.00 in 6 days with algo TB4_OO_QM_OB4_OS4_CB1_CS1_TR
 SLVO Gain: $ 0.02 Win %: 100.00 in 6 days with algo TB4_OO_QM_OB4_OS4_CB1_CS1_TR_QP_DB8
 SLVO Gain: $ 0.03 Win %: 83.00 in 6 days with algo TB4_OO_QM_OB4_OS4_CB1_CS1_HM_AV_DB8
 SLVO Gain: $ 0.03 Win %: 83.00 in 6 days with algo TB4_OO_QM_OB4_OS4_CB1_CS1_RV_AV_DB8
+SLVO Gain: $ 0.02 Win %: 76.00 in 21 days with algo TB3_LO_QM_OB4_OS3_CB3_CS3_DB10
+SLVO Gain: $ 0.02 Win %: 76.00 in 21 days with algo TB3_LO_QM_OB4_OS3_CB3_CS3_DB10_TG
+SLVO Gain: $ 0.02 Win %: 76.00 in 21 days with algo TB3_LO_QM_OB4_OS3_CB3_CS3_DB10_UA

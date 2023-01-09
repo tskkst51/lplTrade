@@ -33,7 +33,6 @@ function init {
    if [[ -n $sortPct ]] && [[ $sortPct == "a" ]]; then sortCol="14,14 -k7,7" ; fi
    if [[ -n $sortPct ]] && [[ $sortPct == "p" ]]; then sortCol="7,7 -k4,4" ; fi
    
-   
 }
 
 init $1 $2 $3
@@ -47,8 +46,8 @@ tmpFile2=$(getRandomTmpFile)
 
 for s in $syms; do
    for a in $testModDBAlgos; do      
-      grep "_${a}" "bestAlgos/${s}.ds" | grep -v -e "-" | awk '{print $4, $7, $9}' > "${tmpFile}_${a}"
-      grep "_${a}" "bestAlgos/${s}.ds" | awk '{print $4, $7, $9}' > "${tmpFile}_${a}_all"
+      grep "_${a}" "bestAlgos/${s}.bs" | grep -v -e "-" | awk '{print $4, $7, $9}' > "${tmpFile}_${a}"
+      grep "_${a}" "bestAlgos/${s}.bs" | awk '{print $4, $7, $9}' > "${tmpFile}_${a}_all"
    done
 done
 

@@ -232,3 +232,6 @@ PRTA Gain: $ 9.41 Win %: 66.00 in 9 days with algo TB1_HL_HI_QM_OB2_OS2_CB5_CS5_
 PRTA Gain: $ 8.7 Win %: 44.00 in 9 days with algo TB3_HI_QM_OB2_OS2_CB2_CS4_TR_IR3_DU6_UA
 PRTA Gain: $ 9.52 Win %: 55.00 in 9 days with algo TB3_CC_QM_OB2_OS2_CB3_CS4_TR_IR3_DU6
 PRTA Gain: $ 9.52 Win %: 55.00 in 9 days with algo TB3_CC_QM_OB2_OS2_CB3_CS4_TR_IR3_DU6_UA
+PRTA Gain: $ 7.34 Win %: 70.00 in 10 days with algo TB5_HI_QM_OB5_OS3_CB4_CS5_HM_AV_DB6_UA
+PRTA Gain: $ 19.09 Win %: 50.00 in 10 days with algo TB5_HI_QM_OB5_OS3_CB5_CS5_HM_AV_DB6_DU7
+PRTA Gain: $ 25.4 Win %: 50.00 in 10 days with algo TB5_HI_QM_OB5_OS3_CB4_CS5_HM_AV_DB6_DU7

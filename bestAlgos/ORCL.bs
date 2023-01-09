@@ -32,6 +32,9 @@ ORCL Gain: $ -11.19 Win %: 32.00 in 37 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_
 ORCL Gain: $ -11.09 Win %: 37.00 in 37 days with algo TB2_HL_LO_QM_OB3_OS3_CB4_CS4_HM_AV
 ORCL Gain: $ -10.95 Win %: 35.00 in 37 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_HM_AV
 ORCL Gain: $ -10.8 Win %: 32.00 in 37 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_RV_TR_DB8
+ORCL Gain: $ -10.48 Win %: 42.00 in 47 days with algo TB5_OO_QM_OB2_OS4_CB4_CS3_DU8_DL2_UA
+ORCL Gain: $ -10.48 Win %: 42.00 in 47 days with algo TB5_OO_QM_OB2_OS4_CB4_CS3_DU8_TG_DL2_UA
+ORCL Gain: $ -10.48 Win %: 42.00 in 47 days with algo TB5_OO_QM_OB2_OS4_CB4_CS3_DU8_TG_DL2_UA
 ORCL Gain: $ -9.99 Win %: 24.00 in 37 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_LI
 ORCL Gain: $ -9.54 Win %: 37.00 in 37 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_AO_AC
 ORCL Gain: $ -9.48 Win %: 35.00 in 37 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_HM_TR
@@ -40,6 +43,7 @@ ORCL Gain: $ -9.24 Win %: 35.00 in 37 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_T
 ORCL Gain: $ -9.09 Win %: 32.00 in 37 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_HM_TR_DB8
 ORCL Gain: $ -9.02 Win %: 35.00 in 37 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_TR_IR2
 ORCL Gain: $ -8.99 Win %: 35.00 in 37 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_TR_TS
+ORCL Gain: $ -8.4 Win %: 29.00 in 47 days with algo TB5_OO_QM_OB2_OS4_CB4_CS3_DU8_UA
 ORCL Gain: $ -8.07 Win %: 40.00 in 37 days with algo TB2_HL_LO_QM_OB3_OS3_CB4_CS4_AO_AC
 ORCL Gain: $ -8.0 Win %: 43.00 in 37 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_AO_AC
 ORCL Gain: $ -8.0 Win %: 43.00 in 37 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_AO_AC
@@ -52,9 +56,16 @@ ORCL Gain: $ -6.7 Win %: 35.00 in 37 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_AV
 ORCL Gain: $ -6.68 Win %: 32.00 in 37 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_RV_AV
 ORCL Gain: $ -6.63 Win %: 29.00 in 37 days with algo TB4_PL_QM_OB4_OS4_CB1_CS1_VI
 ORCL Gain: $ -5.85 Win %: 54.00 in 37 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_RV_QP_DB30
+ORCL Gain: $ -5.41 Win %: 40.00 in 47 days with algo TB5_OO_QM_OB2_OS4_CB4_CS3_DU8_TG_DL2_UA
+ORCL Gain: $ -5.41 Win %: 40.00 in 47 days with algo TB5_OO_QM_OB2_OS4_CB4_CS3_DU8_TG_DL2_UA
+ORCL Gain: $ -5.41 Win %: 40.00 in 47 days with algo TB5_OO_QM_OB2_OS4_CB4_CS3_DU8_UA_DL2
 ORCL Gain: $ -5.28 Win %: 40.00 in 37 days with algo TB2_HL_LO_QM_OB3_OS3_CB4_CS4_HM_AV_DB15
+ORCL Gain: $ -5.14 Win %: 34.00 in 47 days with algo TB5_OO_QM_OB2_OS4_CB4_CS3_DU8_TG_AL_AV
+ORCL Gain: $ -5.07 Win %: 38.00 in 47 days with algo TB5_OO_QM_OB2_OS4_CB4_CS3_DU8_AV
+ORCL Gain: $ -5.07 Win %: 38.00 in 47 days with algo TB5_OO_QM_OB2_OS4_CB4_CS3_DU8_TG_AV
 ORCL Gain: $ -4.96 Win %: 48.00 in 37 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_RV
 ORCL Gain: $ -4.95 Win %: 51.00 in 37 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_RV_AL
+ORCL Gain: $ -4.91 Win %: 34.00 in 47 days with algo TB5_OO_QM_OB2_OS4_CB4_CS3_DU8_AL
 ORCL Gain: $ -4.65 Win %: 54.00 in 37 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_AV
 ORCL Gain: $ -4.48 Win %: 54.00 in 37 days with algo TB2_HL_LO_QM_OB3_OS3_CB4_CS4_AC
 ORCL Gain: $ -4.42 Win %: 54.00 in 37 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_RV_QP_DB30
@@ -96,6 +107,7 @@ ORCL Gain: $ -1.65 Win %: 56.00 in 37 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS
 ORCL Gain: $ -1.65 Win %: 56.00 in 37 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_HM_AL
 ORCL Gain: $ -1.63 Win %: 43.00 in 37 days with algo TB2_HL_LO_QM_OB3_OS3_CB4_CS4_HM_TR
 ORCL Gain: $ -1.53 Win %: 48.00 in 37 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_RV_AL_DB30
+ORCL Gain: $ -1.48 Win %: 38.00 in 47 days with algo TB5_OO_QM_OB2_OS4_CB4_CS3_DU8_AV
 ORCL Gain: $ -1.18 Win %: 54.00 in 37 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_RV_TR_DB30
 ORCL Gain: $ -1.18 Win %: 54.00 in 37 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_RV_TR_DB30
 ORCL Gain: $ -1.04 Win %: 54.00 in 37 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_HM_QP

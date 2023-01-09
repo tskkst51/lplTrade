@@ -165,3 +165,6 @@ EOLS Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB4_OS4_CB4_CS4_AO
 EOLS Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB4_OS4_CB4_CS4_HM
 EOLS Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB4_OS4_CB4_CS4_QL
 EOLS Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB4_OS4_CB4_CS4_RV
+EOLS Gain: $ 1.01 Win %: 80.00 in 5 days with algo TB3_OO_QM_OB5_OS2_CB2_CS4_SS_UA
+EOLS Gain: $ 1.29 Win %: 60.00 in 5 days with algo TB3_LO_QM_OB2_OS4_CB3_CS5_QL_DU8_DL2
+EOLS Gain: $ 3.09 Win %: 60.00 in 5 days with algo TB3_LO_QM_OB2_OS4_CB3_CS5_QL_DU8_AL_DL2

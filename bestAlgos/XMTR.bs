@@ -230,3 +230,6 @@ XMTR Gain: $ 3.46 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_RV
 XMTR Gain: $ 3.46 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_RV_TR
 XMTR Gain: $ 3.46 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_TR
 XMTR Gain: $ 3.46 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_TR_IR5
+XMTR Gain: $ 25.59 Win %: 66.00 in 3 days with algo TB1_LO_QM_OB3_OS2_CB4_CS5_RV_AL_DU8_DL2
+XMTR Gain: $ 25.59 Win %: 66.00 in 3 days with algo TB1_LO_QM_OB3_OS2_CB4_CS5_RV_AL_DU8_UA_DL2
+XMTR Gain: $ 25.92 Win %: 66.00 in 3 days with algo TB1_LO_QM_OB3_OS2_CB4_CS5_SS_DU8_AL_DL2

@@ -208,6 +208,7 @@ BCRX Gain: $ 5.76 Win %: 61.00 in 13 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_AV
 BCRX Gain: $ 5.76 Win %: 61.00 in 13 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_AV
 BCRX Gain: $ 5.76 Win %: 61.00 in 13 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_RV_AV
 BCRX Gain: $ 5.76 Win %: 76.00 in 13 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_LI
+BCRX Gain: $ 5.77 Win %: 52.00 in 23 days with algo TB1_LO_HL_QM_OB2_OS3_CB4_CS2_AL_UA_DU7_AV_DL2
 BCRX Gain: $ 5.9 Win %: 69.00 in 13 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_DB6
 BCRX Gain: $ 5.96 Win %: 69.00 in 13 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_RV_AV_DB6
 BCRX Gain: $ 5.97 Win %: 61.00 in 13 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5
@@ -223,6 +224,8 @@ BCRX Gain: $ 6.3 Win %: 61.00 in 13 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_
 BCRX Gain: $ 6.38 Win %: 76.00 in 13 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_RV_TR_DB10
 BCRX Gain: $ 6.53 Win %: 76.00 in 13 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_IR1
 BCRX Gain: $ 6.66 Win %: 69.00 in 13 days with algo TB3_HL_HS_QM_OB4_OS4_CB4_CS4_RV_AV
+BCRX Gain: $ 6.68 Win %: 52.00 in 23 days with algo TB1_LO_HL_QM_OB2_OS4_CB4_CS2_AL_UA_DU7_AV_DL2
+BCRX Gain: $ 6.68 Win %: 52.00 in 23 days with algo TB1_LO_HL_QM_OB2_OS4_CB4_CS2_AL_UA_DU7_AV_DL2
 BCRX Gain: $ 6.76 Win %: 76.00 in 13 days with algo TB5_HL_HI_QM_OB2_OS2_CB4_CS4_AV
 BCRX Gain: $ 6.86 Win %: 69.00 in 13 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_RV_AV
 BCRX Gain: $ 6.99 Win %: 84.00 in 13 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_RV_AV_DB10

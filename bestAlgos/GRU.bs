@@ -165,3 +165,9 @@ GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_RV_QP_
 GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_RV_TR_DB15
 GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_TR_IR4
 GRU Gain: $ 0 Win %: 100.00 in 1 days with algo TB2_OC_QM_OB2_OS2_CB2_CS2_TR_QP_DB15
+GRU Gain: $ 0.0 Win %: 100.00 in 3 days with algo TB5_LO_HL_QM_OB5_OS5_CB5_CS4_VI_DU7_UA_DL2
+GRU Gain: $ 0.0 Win %: 100.00 in 3 days with algo TB5_LO_HL_QM_OB5_OS5_CB5_CS4_VI_TG
+GRU Gain: $ 0.0 Win %: 100.00 in 3 days with algo TB5_LO_HL_QM_OB5_OS5_CB5_CS4_VI_UA
+GRU Gain: $ 0.0 Win %: 100.00 in 4 days with algo TB5_LO_HL_QM_OB5_OS5_CB5_CS4_VI_UA_DU7_DL2
+GRU Gain: $ 0.0 Win %: 100.00 in 4 days with algo TB5_LO_HL_QM_OB5_OS5_CB5_CS4_VI_UA_DU7_DL2
+GRU Gain: $ 0.0 Win %: 100.00 in 4 days with algo TB5_LO_HL_QM_OB5_OS5_CB5_CS4_VI_UA_TG

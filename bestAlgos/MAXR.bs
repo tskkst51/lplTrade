@@ -1,4 +1,3 @@
-MAXR Gain: $ 2.27 Win %: 100.00 in 3 days with algo TB4_HL_LO_QM_OB3_OS3_CB5_CS5_TS
 MAXR Gain: $ -19.8 Win %: 25.00 in 4 days with algo TB2_HL_LO_QM_OB1_OS1_CB5_CS5_AO_AC
 MAXR Gain: $ -19.8 Win %: 25.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_AO_AC
 MAXR Gain: $ -12.81 Win %: 0 in 4 days with algo TB1_HL_LO_QM_OB2_OS2_CB5_CS5_AO_AC
@@ -211,6 +210,7 @@ MAXR Gain: $ 1.92 Win %: 100.00 in 4 days with algo TB4_HL_HS_QM_OB3_OS3_CB5_CS5
 MAXR Gain: $ 2.05 Win %: 50.00 in 4 days with algo TB4_HL_HS_QM_OB3_OS3_CB5_CS5_AO_AC
 MAXR Gain: $ 2.09 Win %: 100.00 in 4 days with algo TB4_HL_HS_QM_OB3_OS3_CB5_CS5_IT_TS
 MAXR Gain: $ 2.12 Win %: 100.00 in 4 days with algo TB4_HL_HS_QM_OB3_OS3_CB5_CS5_QP_IR2
+MAXR Gain: $ 2.27 Win %: 100.00 in 3 days with algo TB4_HL_LO_QM_OB3_OS3_CB5_CS5_TS
 MAXR Gain: $ 2.3 Win %: 100.00 in 4 days with algo TB2_HL_LO_QM_OB2_OS2_CB5_CS5_AV
 MAXR Gain: $ 2.39 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB3_OS3_CB4_CS4_TR_IR3
 MAXR Gain: $ 2.41 Win %: 100.00 in 4 days with algo TB4_HL_HS_QM_OB3_OS3_CB5_CS5_HM
@@ -230,3 +230,6 @@ MAXR Gain: $ 3.29 Win %: 100.00 in 4 days with algo TB4_HL_HS_QM_OB3_OS3_CB5_CS5
 MAXR Gain: $ 3.29 Win %: 100.00 in 4 days with algo TB4_HL_HS_QM_OB3_OS3_CB5_CS5_HM_TR_DB8
 MAXR Gain: $ 3.32 Win %: 75.00 in 4 days with algo TB4_HL_HS_QM_OB3_OS3_CB5_CS5_LI
 MAXR Gain: $ 3.35 Win %: 75.00 in 4 days with algo TB4_HL_HS_QM_OB3_OS3_CB5_CS5_AO
+MAXR Gain: $ 5.95 Win %: 80.00 in 5 days with algo TB5_LO_QM_OB2_OS2_CB5_CS2_TR_TS_DU6
+MAXR Gain: $ 6.64 Win %: 100.00 in 5 days with algo TB3_HI_HL_QM_OB2_OS5_CB3_CS5_VI_DU7_UA_AV_DL2
+MAXR Gain: $ 7.02 Win %: 80.00 in 5 days with algo TB5_LO_QM_OB2_OS2_CB5_CS2_TR_TS_DU7

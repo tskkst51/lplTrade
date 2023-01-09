@@ -41,3 +41,8 @@ bestAlgos/*.gn
 bestAlgos/*.all
 dc/*.gp
 analyzeResults
+dbArchiveOrig
+dbOrig
+mvdBestAlgos
+testOrig
+totalResultsOrig

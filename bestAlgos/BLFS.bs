@@ -343,3 +343,6 @@ BLFS Gain: $ 1.19 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_TS
 BLFS Gain: $ 1.22 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_IR5
 BLFS Gain: $ 1.22 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_IR5
 BLFS Gain: $ 1.55 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_DB30
+BLFS Gain: $ 3.16 Win %: 100.00 in 3 days with algo TB5_HL_QM_OB3_OS4_CB2_CS4_SH_DU6_AL
+BLFS Gain: $ 3.59 Win %: 100.00 in 3 days with algo TB5_HL_QM_OB3_OS4_CB2_CS4_DU6
+BLFS Gain: $ 3.59 Win %: 100.00 in 3 days with algo TB5_HL_QM_OB3_OS4_CB2_CS4_SH_DU6

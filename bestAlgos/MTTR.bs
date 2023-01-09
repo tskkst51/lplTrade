@@ -229,3 +229,6 @@ MTTR Gain: $ 5.94 Win %: 60.00 in 15 days with algo TB4_HL_HI_QM_OB5_OS5_CB1_CS1
 MTTR Gain: $ 6.0 Win %: 53.00 in 15 days with algo TB5_HL_HI_QM_OB4_OS4_CB5_CS5_IT_QL
 MTTR Gain: $ 6.58 Win %: 53.00 in 15 days with algo TB5_HL_HI_QM_OB4_OS4_CB5_CS5_AO
 MTTR Gain: $ 6.69 Win %: 53.00 in 15 days with algo TB5_HL_HI_QM_OB4_OS4_CB5_CS5_IT
+MTTR Gain: $ 13.34 Win %: 47.00 in 17 days with algo TB5_LO_QM_OB3_OS2_CB2_CS4_TR_IR1_DU8_UA_DL2
+MTTR Gain: $ 14.89 Win %: 52.00 in 17 days with algo TB5_LO_QM_OB3_OS2_CB2_CS4_TR_IR1_DU8_DL2
+MTTR Gain: $ 17.9 Win %: 41.00 in 17 days with algo TB3_HS_HL_QM_OB4_OS3_CB5_CS4_IT_QL_DU8_AV_DL2

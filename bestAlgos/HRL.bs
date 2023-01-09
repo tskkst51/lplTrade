@@ -208,8 +208,8 @@ HRL Gain: $ 0.6 Win %: 50.00 in 10 days with algo TB2_HL_LO_QM_OB3_OS3_CB4_CS4_I
 HRL Gain: $ 0.62 Win %: 60.00 in 10 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_TR_TS
 HRL Gain: $ 0.62 Win %: 70.00 in 10 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_SS
 HRL Gain: $ 0.64 Win %: 40.00 in 10 days with algo TB1_OC_QM_OB4_OS4_CB4_CS4_HM
-HRL Gain: $ 0.65 Win %: 40.00 in 10 days with algo TB1_OC_QM_OB4_OS4_CB4_CS4_HM_AV
 HRL Gain: $ 0.65 Win %: 100.00 in 10 days with algo TB2_HL_LO_QM_OB3_OS3_CB4_CS4_PM
+HRL Gain: $ 0.65 Win %: 40.00 in 10 days with algo TB1_OC_QM_OB4_OS4_CB4_CS4_HM_AV
 HRL Gain: $ 0.66 Win %: 60.00 in 10 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_HM_TR
 HRL Gain: $ 0.66 Win %: 60.00 in 10 days with algo TB1_HL_HI_QM_OB4_OS4_CB4_CS4_IT_QL_DB30
 HRL Gain: $ 0.67 Win %: 40.00 in 10 days with algo TB1_OC_QM_OB4_OS4_CB4_CS4_AC
@@ -229,3 +229,9 @@ HRL Gain: $ 1.46 Win %: 60.00 in 10 days with algo TB1_OC_QM_OB4_OS4_CB4_CS4_RV_
 HRL Gain: $ 1.47 Win %: 60.00 in 10 days with algo TB1_OC_QM_OB4_OS4_CB4_CS4_HM_AL
 HRL Gain: $ 1.59 Win %: 60.00 in 10 days with algo TB1_OC_QM_OB4_OS4_CB4_CS4_AL_TS
 HRL Gain: $ 1.73 Win %: 60.00 in 10 days with algo TB1_OC_QM_OB4_OS4_CB4_CS4_AL
+HRL Gain: $ 6.36 Win %: 33.00 in 24 days with algo TB5_HS_QM_OB2_OS2_CB2_CS5_DU6_DL_AV
+HRL Gain: $ 6.36 Win %: 33.00 in 24 days with algo TB5_HS_QM_OB2_OS2_CB2_CS5_DU6_DL_UA_AV
+HRL Gain: $ 6.36 Win %: 33.00 in 24 days with algo TB5_HS_QM_OB2_OS2_CB2_CS5_DU6_DL_UA_AV
+HRL Gain: $ 13.3 Win %: 40.00 in 25 days with algo TB5_HS_QM_OB2_OS2_CB2_CS5_DU6_DL_TG_DU7_UA_DL2
+HRL Gain: $ 13.81 Win %: 52.00 in 25 days with algo TB5_HS_QM_OB2_OS2_CB2_CS5_DU6_DL_TG_DU7_UA_DL1
+HRL Gain: $ 14.37 Win %: 52.00 in 25 days with algo TB5_HS_QM_OB2_OS2_CB2_CS5_DU6_DL_TG_DU7_DL1

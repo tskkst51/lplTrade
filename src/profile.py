@@ -95,10 +95,13 @@ class Profile:
       d["doTriggers"] = str(0)
       d["doDoubleUp"] = str(0)
       d["doubleUpMax"] = str(0)
-      d["doDoubleLimit"] = str(0)
+      d["doubleUpLimit"] = str(0)
       d["doSessionReversals"] = str(0)
       d["doSessionsHiLo"] = str(0)
       
+      # Auto stop is always on for now 10/20/22
+      d["doAutoStop"] = str(1)
+
       return d
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -176,6 +179,15 @@ class Profile:
       d["doDoubleUp"] = "1"      
       d["doubleUpMax"] = str(value)      
       info += "DU" + str(value) + " "
+      
+      return info 
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setDoubleUpLimits(self, d, value, info):
+   
+      d["doDoubleUp"] = "1"      
+      d["doubleUpLimit"] = str(value)      
+      info += "DL" + str(value) + " "
       
       return info 
    
@@ -259,6 +271,10 @@ class Profile:
       if "TS" in algo:
          d["doTrailingStop"] = str(1)
          info += "TS_"
+   
+      if "AS" in algo:
+         d["doAutoStop"] = str(1)
+         info += "AS_"
    
       if "SS" in algo:
          d["doSessions"] = str(1)
@@ -368,9 +384,18 @@ class Profile:
          d["doSessionsHiLo"] = str(1)
          info += "SH_"
          
+      if "LH" in algo:
+         d["doHiLoHiLoSeqInHiLoOut"] = str(1)
+         info += "LH_"
+         
+      if "LS" in algo:
+         d["doHiLoHiLoSeqInHiLoSeqOut"] = str(1)
+         info += "LS_"
+         
       if "DL" in algo:
-         d["doDoubleLimit"] = str(1)
-         info += "DL_"
+         b, m, bar = algo.rpartition("DL")
+         bars, m, e = bar.partition("_")
+         self.setDoubleUpLimits(d, bars, "")
                   
       if "DU" in algo:
          b, m, bar = algo.rpartition("DU")

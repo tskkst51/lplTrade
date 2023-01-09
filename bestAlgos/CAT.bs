@@ -183,3 +183,9 @@ CAT Gain: $ 15.71 Win %: 63.00 in 11 days with algo TB2_HL_HS_QM_OB3_OS3_CB4_CS4
 CAT Gain: $ 16.95 Win %: 63.00 in 11 days with algo TB2_HL_HS_QM_OB3_OS3_CB4_CS4_AO
 CAT Gain: $ 17.16 Win %: 81.00 in 11 days with algo TB2_HL_HI_QM_OB2_OS2_CB5_CS5_HM
 CAT Gain: $ 18.89 Win %: 72.00 in 11 days with algo TB2_HL_HI_QM_OB3_OS3_CB5_CS5_HM
+CAT Gain: $ 54.99 Win %: 41.00 in 24 days with algo TB5_HI_HL_QM_OB2_OS4_CB2_CS5_IT_QL_DB6_DU8_AL_DL2
+CAT Gain: $ 66.46 Win %: 52.00 in 23 days with algo TB5_HI_HL_QM_OB2_OS4_CB2_CS5_RV_AV_DB6_DU8_AL_DL2
+CAT Gain: $ 66.84 Win %: 52.00 in 23 days with algo TB5_HI_HL_QM_OB2_OS4_CB2_CS5_RV_AV_DB6_DU8_DL2
+CAT Gain: $ 66.84 Win %: 52.00 in 23 days with algo TB5_HI_HL_QM_OB2_OS4_CB2_CS5_RV_AV_DB6_DU8_DL2
+CAT Gain: $ 74.02 Win %: 37.00 in 24 days with algo TB5_HI_HL_QM_OB2_OS4_CB2_CS5_IT_QL_DB6_TG_DU8_AV_DL2
+CAT Gain: $ 110.5 Win %: 45.00 in 24 days with algo TB5_HI_HL_QM_OB2_OS4_CB2_CS5_IT_QL_DB6_DU8_AV_DL2

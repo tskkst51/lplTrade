@@ -1,4 +1,3 @@
-WOOF Gain: $ 1.03 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_TS
 WOOF Gain: $ -391.29 Win %: 33.00 in 3 days with algo TB2_PL_QM_OB3_OS3_CB4_CS4_AO_AC
 WOOF Gain: $ -77.51 Win %: 0 in 3 days with algo TB3_HL_QM_OB5_OS5_CB5_CS5_AO_AC
 WOOF Gain: $ -70.01 Win %: 0 in 3 days with algo TB2_PL_QM_OB3_OS3_CB4_CS4_AC
@@ -223,6 +222,7 @@ WOOF Gain: $ 0.91 Win %: 66.00 in 3 days with algo TB1_HL_QM_OB4_OS4_CB1_CS1_HM_
 WOOF Gain: $ 0.93 Win %: 66.00 in 3 days with algo TB2_HL_QM_OB1_OS1_CB3_CS3_HM
 WOOF Gain: $ 0.98 Win %: 66.00 in 3 days with algo TB2_HL_QM_OB1_OS1_CB3_CS3_TS
 WOOF Gain: $ 1.03 Win %: 66.00 in 3 days with algo TB2_HL_QM_OB1_OS1_CB3_CS3_RV
+WOOF Gain: $ 1.03 Win %: 100.00 in 2 days with algo TB4_HL_QM_OB1_OS1_CB2_CS2_TS
 WOOF Gain: $ 1.07 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB4_OS4_CB1_CS1_AL_TS
 WOOF Gain: $ 1.13 Win %: 66.00 in 3 days with algo TB2_PL_QM_OB3_OS3_CB4_CS4_TS
 WOOF Gain: $ 1.17 Win %: 100.00 in 3 days with algo TB2_HL_QM_OB1_OS1_CB3_CS3_AL_TS
@@ -230,3 +230,12 @@ WOOF Gain: $ 1.17 Win %: 100.00 in 3 days with algo TB2_PL_QM_OB3_OS3_CB4_CS4_AL
 WOOF Gain: $ 1.2 Win %: 100.00 in 3 days with algo TB2_PL_QM_OB3_OS3_CB4_CS4_HM_AL
 WOOF Gain: $ 1.26 Win %: 100.00 in 3 days with algo TB2_HL_QM_OB1_OS1_CB3_CS3_HM_AL
 WOOF Gain: $ 1.31 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB4_OS4_CB1_CS1_HM_AL
+WOOF Gain: $ 2.43 Win %: 83.00 in 6 days with algo TB3_LO_QM_OB2_OS2_CB5_CS3_RV_AV
+WOOF Gain: $ 2.59 Win %: 83.00 in 6 days with algo TB3_LO_QM_OB2_OS2_CB5_CS3_RV_AV_AL
+WOOF Gain: $ 3.11 Win %: 50.00 in 6 days with algo TB1_EO_EC_QM_OB5_OS2_CB5_CS4_DU6_TG
+WOOF Gain: $ 3.11 Win %: 50.00 in 6 days with algo TB1_EO_EC_QM_OB5_OS2_CB5_CS4_DU6_TG
+WOOF Gain: $ 3.11 Win %: 50.00 in 6 days with algo TB1_EO_EC_QM_OB5_OS2_CB5_CS4_DU6_TG
+WOOF Gain: $ 3.11 Win %: 50.00 in 6 days with algo TB1_EO_EC_QM_OB5_OS2_CB5_CS4_DU6_TG_UA
+WOOF Gain: $ 3.11 Win %: 50.00 in 6 days with algo TB1_EO_EC_QM_OB5_OS2_CB5_CS4_DU6_TG_UA
+WOOF Gain: $ 3.11 Win %: 50.00 in 6 days with algo TB1_EO_EC_QM_OB5_OS2_CB5_CS4_DU6_TG_UA
+WOOF Gain: $ 3.11 Win %: 50.00 in 6 days with algo TB1_EO_EC_QM_OB5_OS2_CB5_CS4_DU6_TG_UA

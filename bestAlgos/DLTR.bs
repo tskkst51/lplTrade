@@ -226,6 +226,9 @@ DLTR Gain: $ 16.48 Win %: 81.00 in 11 days with algo TB4_HL_HI_QM_OB1_OS1_CB3_CS
 DLTR Gain: $ 16.68 Win %: 72.00 in 11 days with algo TB4_HL_HI_QM_OB3_OS3_CB3_CS3_SS
 DLTR Gain: $ 16.87 Win %: 72.00 in 11 days with algo TB4_HL_HI_QM_OB1_OS1_CB3_CS3
 DLTR Gain: $ 16.87 Win %: 72.00 in 11 days with algo TB4_HL_HI_QM_OB1_OS1_CB3_CS3_IR2
+DLTR Gain: $ 17.38 Win %: 75.00 in 20 days with algo TB5_HI_HL_QM_OB2_OS4_CB5_CS3_DB6
 DLTR Gain: $ 18.59 Win %: 81.00 in 11 days with algo TB3_HL_HI_QM_OB2_OS2_CB4_CS4_RV_AL
 DLTR Gain: $ 18.66 Win %: 81.00 in 11 days with algo TB4_HL_HI_QM_OB3_OS3_CB3_CS3_RV_AL
 DLTR Gain: $ 19.01 Win %: 72.00 in 11 days with algo TB4_HL_HI_QM_OB3_OS3_CB3_CS3_AO
+DLTR Gain: $ 28.69 Win %: 35.00 in 20 days with algo TB5_LO_QM_OB3_OS2_CB3_CS5_AL_LI_DU8_UA_AV_DL2
+DLTR Gain: $ 43.95 Win %: 40.00 in 20 days with algo TB5_LO_QM_OB3_OS2_CB3_CS5_AL_LI_DU8_AV_DL2

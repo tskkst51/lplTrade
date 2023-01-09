@@ -230,3 +230,9 @@ SPWH Gain: $ 0.85 Win %: 80.00 in 5 days with algo TB3_HL_LO_QM_OB1_OS1_CB4_CS4_
 SPWH Gain: $ 0.87 Win %: 60.00 in 5 days with algo TB3_HL_LO_QM_OB1_OS1_CB4_CS4_RV
 SPWH Gain: $ 1.02 Win %: 80.00 in 5 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_AO
 SPWH Gain: $ 1.05 Win %: 80.00 in 5 days with algo TB3_HL_LO_QM_OB1_OS1_CB4_CS4_RV_TR
+SPWH Gain: $ 2.37 Win %: 50.00 in 8 days with algo TB5_EO_EC_QM_OB2_OS3_CB4_CS4_IR1_DU6_AV
+SPWH Gain: $ 2.37 Win %: 50.00 in 8 days with algo TB5_EO_EC_QM_OB2_OS3_CB4_CS4_IR1_DU6_UA_AV
+SPWH Gain: $ 2.37 Win %: 50.00 in 8 days with algo TB5_EO_EC_QM_OB2_OS3_CB4_CS4_IR1_DU6_UA_AV
+SPWH Gain: $ 2.37 Win %: 50.00 in 8 days with algo TB5_EO_EC_QM_OB2_OS3_CB4_CS4_IR1_DU6_UA_AV
+SPWH Gain: $ 2.37 Win %: 50.00 in 8 days with algo TB5_EO_EC_QM_OB2_OS3_CB4_CS4_IR1_DU6_UA_AV
+SPWH Gain: $ 2.37 Win %: 50.00 in 8 days with algo TB5_EO_EC_QM_OB2_OS3_CB4_CS4_IR1_DU6_UA_AV

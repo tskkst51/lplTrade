@@ -1,4 +1,3 @@
-DPST Gain: $ -2.19 Win %: 33.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TS
 DPST Gain: $ -11.65 Win %: 25.00 in 4 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_RV_QP
 DPST Gain: $ -10.66 Win %: 25.00 in 4 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_IT_QP
 DPST Gain: $ -10.66 Win %: 25.00 in 4 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_QP
@@ -89,6 +88,7 @@ DPST Gain: $ -2.29 Win %: 50.00 in 4 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_RV
 DPST Gain: $ -2.27 Win %: 25.00 in 4 days with algo TB5_HI_QM_OB5_OS5_CB1_CS1_TR_QP
 DPST Gain: $ -2.27 Win %: 25.00 in 4 days with algo TB5_HI_QM_OB5_OS5_CB1_CS1_TR_QP_DB6
 DPST Gain: $ -2.21 Win %: 50.00 in 4 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_IT_QL_DB10
+DPST Gain: $ -2.19 Win %: 33.00 in 3 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_TS
 DPST Gain: $ -2.12 Win %: 50.00 in 4 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_IT_QP
 DPST Gain: $ -2.12 Win %: 50.00 in 4 days with algo TB2_CC_QM_OB1_OS1_CB5_CS5_QP
 DPST Gain: $ -1.99 Win %: 25.00 in 4 days with algo TB5_HI_QM_OB5_OS5_CB1_CS1_RV_QP
@@ -230,3 +230,6 @@ DPST Gain: $ 3.84 Win %: 100.00 in 4 days with algo TB5_HL_HS_QM_OB3_OS3_CB5_CS5
 DPST Gain: $ 5.22 Win %: 100.00 in 4 days with algo TB5_HL_HS_QM_OB3_OS3_CB5_CS5_HM_TR_DB6
 DPST Gain: $ 5.34 Win %: 100.00 in 4 days with algo TB4_OC_QM_OB4_OS4_CB4_CS4_HM_AV
 DPST Gain: $ 5.86 Win %: 100.00 in 4 days with algo TB5_HL_HS_QM_OB3_OS3_CB5_CS5_HM_AV_DB6
+DPST Gain: $ 23.04 Win %: 45.00 in 11 days with algo TB1_OC_QM_OB2_OS5_CB5_CS5_RV_TR_DB30_DU7_UA_AV_DL1
+DPST Gain: $ 25.99 Win %: 54.00 in 11 days with algo TB3_LO_HL_QM_OB3_OS2_CB4_CS3_HM_TR_DU7_AV_DL2
+DPST Gain: $ 32.14 Win %: 63.00 in 11 days with algo TB3_LO_HL_QM_OB3_OS2_CB4_CS3_HM_TR_DU7_AV_DL1

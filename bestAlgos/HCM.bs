@@ -230,3 +230,6 @@ HCM Gain: $ 3.76 Win %: 66.00 in 6 days with algo TB2_HL_LO_QM_OB1_OS1_CB4_CS4_R
 HCM Gain: $ 3.76 Win %: 66.00 in 6 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_AV
 HCM Gain: $ 3.76 Win %: 66.00 in 6 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_HM_AV
 HCM Gain: $ 3.76 Win %: 66.00 in 6 days with algo TB2_HL_LO_QM_OB2_OS2_CB4_CS4_RV_AV
+HCM Gain: $ 0.75 Win %: 66.00 in 9 days with algo TB1_LO_QM_OB5_OS2_CB4_CS4_AV_VI_UA
+HCM Gain: $ 0.82 Win %: 66.00 in 9 days with algo TB1_LO_QM_OB5_OS2_CB4_CS4_AV_VI_TG
+HCM Gain: $ 0.87 Win %: 66.00 in 9 days with algo TB1_LO_QM_OB5_OS2_CB4_CS4_AV_VI_AL

@@ -1,4 +1,3 @@
-ULTA Gain: $ 3.47 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_TS
 ULTA Gain: $ -167.26 Win %: 0 in 2 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1_HM_QP
 ULTA Gain: $ -163.78 Win %: 0 in 2 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1_IT_QP
 ULTA Gain: $ -163.78 Win %: 0 in 2 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1_QP
@@ -88,13 +87,16 @@ ULTA Gain: $ -3.85 Win %: 50.00 in 2 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_IT
 ULTA Gain: $ -3.85 Win %: 50.00 in 2 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_TS
 ULTA Gain: $ -3.71 Win %: 0 in 2 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_AV
 ULTA Gain: $ -3.49 Win %: 50.00 in 2 days with algo TB3_OO_QM_OB4_OS4_CB4_CS4_IT_QP_DB10
+ULTA Gain: $ -3.36 Win %: 25.00 in 4 days with algo TB1_PL_QM_OB4_OS1_CB1_CS3_IT_QL_AV
 ULTA Gain: $ -3.35 Win %: 50.00 in 2 days with algo TB4_HS_QM_OB5_OS5_CB5_CS5_QP_IR2
 ULTA Gain: $ -3.3 Win %: 0 in 2 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1_QP_PM
 ULTA Gain: $ -3.08 Win %: 50.00 in 2 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_PM
 ULTA Gain: $ -3.04 Win %: 0 in 2 days with algo TB4_HS_QM_OB5_OS5_CB5_CS5_AO_AC
+ULTA Gain: $ -3.04 Win %: 25.00 in 4 days with algo TB1_PL_QM_OB4_OS1_CB1_CS3_IT_QL
 ULTA Gain: $ -2.94 Win %: 50.00 in 2 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_TR_QP
 ULTA Gain: $ -2.77 Win %: 0 in 2 days with algo TB4_HS_QM_OB5_OS5_CB5_CS5_HM_QP_DB8
 ULTA Gain: $ -2.5 Win %: 50.00 in 2 days with algo TB1_HL_QM_OB1_OS1_CB1_CS1_HM_TR
+ULTA Gain: $ -2.21 Win %: 25.00 in 4 days with algo TB1_PL_QM_OB3_OS1_CB4_CS3_IT_QL_AL
 ULTA Gain: $ -2.21 Win %: 50.00 in 2 days with algo TB4_HS_QM_OB5_OS5_CB5_CS5_VI
 ULTA Gain: $ -1.9 Win %: 50.00 in 2 days with algo TB4_HS_QM_OB5_OS5_CB5_CS5_IT_QP
 ULTA Gain: $ -1.9 Win %: 50.00 in 2 days with algo TB4_HS_QM_OB5_OS5_CB5_CS5_IT_QP_DB8
@@ -157,6 +159,7 @@ ULTA Gain: $ 3.39 Win %: 50.00 in 2 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_IT
 ULTA Gain: $ 3.39 Win %: 50.00 in 2 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_SS
 ULTA Gain: $ 3.42 Win %: 50.00 in 2 days with algo TB4_HS_QM_OB5_OS5_CB5_CS5_IT_QL
 ULTA Gain: $ 3.42 Win %: 50.00 in 2 days with algo TB4_HS_QM_OB5_OS5_CB5_CS5_IT_QL_DB8
+ULTA Gain: $ 3.47 Win %: 100.00 in 1 days with algo TB4_OO_QM_OB1_OS1_CB3_CS3_TS
 ULTA Gain: $ 3.72 Win %: 50.00 in 2 days with algo TB4_OO_QM_OB3_OS3_CB3_CS3_RV_TR
 ULTA Gain: $ 4.0 Win %: 50.00 in 2 days with algo TB4_HS_QM_OB5_OS5_CB5_CS5_SS
 ULTA Gain: $ 4.09 Win %: 100.00 in 2 days with algo TB4_OO_QM_OB2_OS2_CB3_CS3_HM_AV_DB8

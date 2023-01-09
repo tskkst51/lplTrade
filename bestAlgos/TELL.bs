@@ -229,3 +229,9 @@ TELL Gain: $ 0.77 Win %: 66.00 in 9 days with algo TB5_OC_QM_OB2_OS2_CB3_CS3_HM_
 TELL Gain: $ 0.77 Win %: 88.00 in 9 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_HM_TR_DB6
 TELL Gain: $ 0.96 Win %: 66.00 in 9 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_TR_IR1
 TELL Gain: $ 1.0 Win %: 88.00 in 9 days with algo TB5_OO_QM_OB2_OS2_CB4_CS4_HM_TR
+TELL Gain: $ -0.28 Win %: 51.00 in 33 days with algo TB5_LO_QM_OB4_OS2_CB3_CS5_TR_TS_AV
+TELL Gain: $ 0.8 Win %: 57.00 in 33 days with algo TB3_LO_HL_QM_OB3_OS3_CB3_CS4_AO_AV
+TELL Gain: $ 1.01 Win %: 60.00 in 33 days with algo TB3_LO_HL_QM_OB3_OS3_CB3_CS4_AO_UA
+TELL Gain: $ 1.01 Win %: 60.00 in 33 days with algo TB3_LO_HL_QM_OB3_OS3_CB3_CS4_AO_UA
+TELL Gain: $ 1.01 Win %: 60.00 in 33 days with algo TB3_LO_HL_QM_OB3_OS3_CB3_CS4_AO_UA
+TELL Gain: $ 4.88 Win %: 54.00 in 33 days with algo TB3_LO_HL_QM_OB3_OS3_CB3_CS4_AO_UA_DU7

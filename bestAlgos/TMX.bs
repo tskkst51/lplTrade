@@ -230,3 +230,6 @@ TMX Gain: $ 4.29 Win %: 66.00 in 3 days with algo TB4_HL_HI_QM_OB2_OS2_CB5_CS5_S
 TMX Gain: $ 4.38 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB4_OS4_CB4_CS4_AV
 TMX Gain: $ 4.62 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB4_OS4_CB4_CS4_RV_AL
 TMX Gain: $ 4.76 Win %: 100.00 in 3 days with algo TB3_EO_EC_QM_OB4_OS4_CB4_CS4_RV_AV
+TMX Gain: $ 29.59 Win %: 60.00 in 5 days with algo TB3_EO_EC_QM_OB4_OS2_CB4_CS4_RV_AV_DU7
+TMX Gain: $ 30.16 Win %: 80.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS2_CB4_CS4_AL_DU7
+TMX Gain: $ 30.3 Win %: 80.00 in 5 days with algo TB3_EO_EC_QM_OB3_OS2_CB4_CS4_RV_AL_DU7

@@ -50,12 +50,6 @@ function init {
    dt=$(date "+%Y%m%d")
    
    doResults=0
-   
-   pl=""
-   dbDir="db"
-   dbName="algos"
-   dbToken="Applications/Postgres.app"
-   dbKey="20"
 }
 
 function populateTestDir {
@@ -173,8 +167,14 @@ done
 
 if (( stockProvided )); then
    scripts/testModsDB.sh $day $stock
-   #scripts/bestAlgoDB.sh $stock "3"
-   #${wp}/scripts/initIncBestAlgos.sh $stock "3"
+   if [[ -f "${wp}/bestAlgos/${stock}.in" ]]; then
+      echo Incrementing bestAlgo for $stock
+      ${wp}/scripts/initIncBestAlgos.sh $stock 3
+   else
+      echo Initializing bestAlgo for $stock
+      ${wp}/scripts/initBestAlgos.sh $stock 2 n $numTestStocks
+   fi
+   
 else
    scripts/testModsDB.sh $day
 fi

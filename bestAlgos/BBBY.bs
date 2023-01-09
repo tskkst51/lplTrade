@@ -204,6 +204,7 @@ BBBY Gain: $ 7.18 Win %: 47.00 in 17 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_QL
 BBBY Gain: $ 7.19 Win %: 70.00 in 17 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_HM_AL
 BBBY Gain: $ 7.27 Win %: 47.00 in 17 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_SS
 BBBY Gain: $ 7.4 Win %: 58.00 in 17 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_HM
+BBBY Gain: $ 7.4 Win %: 60.00 in 28 days with algo TB5_LO_QM_OB3_OS2_CB2_CS5_QL_AL
 BBBY Gain: $ 7.71 Win %: 70.00 in 17 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_HM_AV_DB15
 BBBY Gain: $ 8.12 Win %: 64.00 in 17 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_RV_TR
 BBBY Gain: $ 8.17 Win %: 58.00 in 17 days with algo TB2_OO_QM_OB2_OS2_CB5_CS5_HM_AV
@@ -229,5 +230,10 @@ BBBY Gain: $ 12.1 Win %: 64.00 in 17 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5
 BBBY Gain: $ 12.42 Win %: 64.00 in 17 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TR_IR5
 BBBY Gain: $ 12.61 Win %: 64.00 in 17 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_TR
 BBBY Gain: $ 13.43 Win %: 70.00 in 17 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5_RV_TR
+BBBY Gain: $ 19.71 Win %: 35.00 in 28 days with algo TB5_LO_QM_OB3_OS2_CB2_CS5_QL_AL_DU8_AV_DL2
+BBBY Gain: $ 19.71 Win %: 35.00 in 28 days with algo TB5_LO_QM_OB3_OS2_CB2_CS5_QL_AL_TG_DU8_AV_DL2
+BBBY Gain: $ 49.3 Win %: 48.00 in 27 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_DB6_DU6_UA
+BBBY Gain: $ 49.3 Win %: 48.00 in 27 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_DB6_DU6_UA
+BBBY Gain: $ 49.3 Win %: 48.00 in 27 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_DB6_DU6_UA
 BBBY Gain: $ 57.9 Win %: 45.00 in 24 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_DB6_DU6
 BBBY Gain: $ 57.9 Win %: 45.00 in 24 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_DB6_DU6_UA

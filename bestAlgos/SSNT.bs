@@ -233,3 +233,6 @@ SSNT Gain: $ 0.68 Win %: 100.00 in 2 days with algo TB4_HI_QM_OB2_OS2_CB4_CS4_RV
 SSNT Gain: $ 2.51 Win %: 100.00 in 2 days with algo TB3_HS_HL_QM_TG_OB3_OS5_CB5_CS3_QL_DU6
 SSNT Gain: $ 2.51 Win %: 100.00 in 2 days with algo TB3_HS_HL_QM_TG_OB3_OS5_CB5_CS3_QL_DU6_AL
 SSNT Gain: $ 2.51 Win %: 100.00 in 2 days with algo TB3_HS_HL_QM_TG_OB3_OS5_CB5_CS3_QL_DU6_AV
+SSNT Gain: $ 5.19 Win %: 100.00 in 4 days with algo TB3_HS_HL_QM_TG_OB3_OS5_CB5_CS3_QL_DU6_AL_UA
+SSNT Gain: $ 5.19 Win %: 100.00 in 4 days with algo TB3_HS_HL_QM_TG_OB3_OS5_CB5_CS3_QL_DU6_AV_UA
+SSNT Gain: $ 5.19 Win %: 100.00 in 4 days with algo TB3_HS_HL_QM_TG_OB3_OS5_CB5_CS3_QL_DU6_UA

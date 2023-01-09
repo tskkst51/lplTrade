@@ -229,3 +229,12 @@ DE Gain: $ 50.99 Win %: 90.00 in 11 days with algo TB2_HL_HS_QM_OB2_OS2_CB3_CS3_
 DE Gain: $ 51.53 Win %: 81.00 in 11 days with algo TB2_HL_HS_QM_OB2_OS2_CB3_CS3_SS
 DE Gain: $ 53.17 Win %: 90.00 in 11 days with algo TB2_HL_HS_QM_OB2_OS2_CB3_CS3_TR
 DE Gain: $ 53.72 Win %: 90.00 in 11 days with algo TB2_HL_HS_QM_OB2_OS2_CB3_CS3_RV_TR
+DE Gain: $ 79.7 Win %: 55.00 in 18 days with algo TB3_OC_QM_OB2_OS3_CB3_CS3_HM_AV_DU8_AL_DL2_TG
+DE Gain: $ 79.7 Win %: 55.00 in 18 days with algo TB3_OC_QM_OB2_OS3_CB3_CS3_HM_AV_DU8_DL2_AL
+DE Gain: $ 79.7 Win %: 55.00 in 18 days with algo TB3_OC_QM_OB2_OS3_CB3_CS3_HM_AV_DU8_DL2_AL
+DE Gain: $ 79.7 Win %: 55.00 in 18 days with algo TB3_OC_QM_OB2_OS3_CB3_CS3_HM_AV_DU8_DL2_AL
+DE Gain: $ 79.7 Win %: 55.00 in 18 days with algo TB3_OC_QM_OB2_OS3_CB3_CS3_HM_AV_DU8_DL2_AL
+DE Gain: $ 79.7 Win %: 55.00 in 18 days with algo TB3_OC_QM_OB2_OS3_CB3_CS3_HM_AV_DU8_DL2_AL_TG
+DE Gain: $ 79.92 Win %: 58.00 in 17 days with algo TB3_OC_QM_OB2_OS3_CB3_CS3_HM_AV_DU8_DL2
+DE Gain: $ 79.92 Win %: 58.00 in 17 days with algo TB3_OC_QM_OB2_OS3_CB3_CS3_HM_AV_DU8_DL2
+DE Gain: $ 84.33 Win %: 58.00 in 17 days with algo TB3_OC_QM_OB2_OS3_CB3_CS3_HM_AV_DU8_AL_DL2

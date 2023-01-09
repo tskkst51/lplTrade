@@ -229,3 +229,9 @@ QFIN Gain: $ 6.36 Win %: 80.00 in 10 days with algo TB3_HL_QM_OB1_OS1_CB5_CS5_HM
 QFIN Gain: $ 6.46 Win %: 100.00 in 10 days with algo TB3_HL_QM_OB1_OS1_CB5_CS5_RV_AL
 QFIN Gain: $ 6.68 Win %: 100.00 in 10 days with algo TB3_HL_QM_OB1_OS1_CB5_CS5_AL
 QFIN Gain: $ 6.7 Win %: 100.00 in 10 days with algo TB3_HL_QM_OB1_OS1_CB5_CS5_HM_AL
+QFIN Gain: $ 10.89 Win %: 50.00 in 12 days with algo TB3_HI_QM_OB3_OS5_CB4_CS5_SS_DU8_UA_DL2
+QFIN Gain: $ 10.96 Win %: 58.00 in 12 days with algo TB3_HI_QM_OB3_OS5_CB4_CS5_SS_DU8_AL_DL2
+QFIN Gain: $ 13.26 Win %: 50.00 in 12 days with algo TB3_HI_QM_OB3_OS5_CB4_CS5_SS_DU8_DL2
+QFIN Gain: $ 18.8 Win %: 61.00 in 13 days with algo TB1_OC_QM_OB2_OS4_CB4_CS5_DU12_DU8_UA_DL2
+QFIN Gain: $ 28.22 Win %: 53.00 in 13 days with algo TB1_OC_QM_OB2_OS4_CB4_CS5_DU10_DU8_UA_AV_DL2
+QFIN Gain: $ 28.22 Win %: 53.00 in 13 days with algo TB1_OC_QM_OB2_OS4_CB4_CS5_DU12_DU8_UA_AV_DL2

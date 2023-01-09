@@ -229,3 +229,12 @@ ASAN Gain: $ 11.74 Win %: 56.00 in 16 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS
 ASAN Gain: $ 11.77 Win %: 50.00 in 16 days with algo TB4_HL_HI_QM_OB2_OS2_CB5_CS5_HM_AV_DB8
 ASAN Gain: $ 12.69 Win %: 75.00 in 16 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_AL_TS
 ASAN Gain: $ 12.95 Win %: 75.00 in 16 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_TR_TS
+ASAN Gain: $ 85.52 Win %: 71.00 in 21 days with algo TB1_HI_HL_QM_OB2_OS3_CB2_CS5_RV_AV_DU8_UA_DL2
+ASAN Gain: $ 107.54 Win %: 52.00 in 21 days with algo TB5_CC_QM_OB5_OS2_CB2_CS5_RV_AV_DB6
+ASAN Gain: $ 113.9 Win %: 61.00 in 21 days with algo TB1_HI_HL_QM_OB2_OS3_CB2_CS5_RV_AV_DU8_UA_DL2
+ASAN Gain: $ 77.1 Win %: 42.00 in 21 days with algo TB1_HI_HL_QM_OB2_OS3_CB2_CS5_RV_AV_DU8_UA_DL2
+ASAN Gain: $ 77.1 Win %: 42.00 in 21 days with algo TB1_HI_HL_QM_OB2_OS3_CB2_CS5_RV_AV_DU8_UA_DL2
+ASAN Gain: $ 96.17 Win %: 66.00 in 21 days with algo TB1_HI_HL_QM_OB2_OS3_CB2_CS5_RV_AV_DU8_UA_DL2
+ASAN Gain: $ 60.26 Win %: 38.00 in 21 days with algo TB5_CC_QM_OB5_OS2_CB2_CS5_RV_AV_DB6_DU7_DL2
+ASAN Gain: $ 62.1 Win %: 38.00 in 21 days with algo TB5_CC_QM_OB5_OS2_CB2_CS5_RV_AV_DB6_TG_DU7_DL2
+ASAN Gain: $ 62.1 Win %: 38.00 in 21 days with algo TB5_CC_QM_OB5_OS2_CB2_CS5_RV_AV_DB6_TG_DU7_DL2

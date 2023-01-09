@@ -229,3 +229,12 @@ MRO Gain: $ 2.08 Win %: 73.00 in 19 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_
 MRO Gain: $ 2.08 Win %: 73.00 in 19 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_SS
 MRO Gain: $ 2.1 Win %: 73.00 in 19 days with algo TB4_OO_QM_OB1_OS1_CB5_CS5_IR2
 MRO Gain: $ 2.2 Win %: 84.00 in 19 days with algo TB4_CC_QM_OB3_OS3_CB4_CS4_TR_TS
+MRO Gain: $ 6.25 Win %: 54.00 in 59 days with algo TB1_LO_QM_OB5_OS3_CB5_CS3_HM_AV_DB30_UA
+MRO Gain: $ 6.25 Win %: 54.00 in 59 days with algo TB1_LO_QM_OB5_OS3_CB5_CS3_HM_AV_DB30_UA
+MRO Gain: $ 6.25 Win %: 54.00 in 59 days with algo TB1_LO_QM_OB5_OS3_CB5_CS3_HM_AV_DB30_UA
+MRO Gain: $ 6.61 Win %: 55.00 in 58 days with algo TB1_LO_QM_OB5_OS3_CB5_CS3_HM_AV_DB30_UA
+MRO Gain: $ 6.61 Win %: 55.00 in 58 days with algo TB1_LO_QM_OB5_OS3_CB5_CS3_HM_AV_DB30_UA
+MRO Gain: $ 6.61 Win %: 55.00 in 58 days with algo TB1_LO_QM_OB5_OS3_CB5_CS3_HM_AV_DB30_UA
+MRO Gain: $ 12.27 Win %: 50.00 in 57 days with algo TB1_LO_QM_OB5_OS3_CB5_CS3_HM_AV_DB30_DU7_UA_DL1
+MRO Gain: $ 12.27 Win %: 50.00 in 57 days with algo TB1_LO_QM_OB5_OS3_CB5_CS3_HM_AV_DB30_DU7_UA_DL1
+MRO Gain: $ 16.3 Win %: 42.00 in 57 days with algo TB1_LO_QM_OB5_OS3_CB5_CS3_HM_AV_DU7

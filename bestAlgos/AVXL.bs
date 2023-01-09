@@ -1,4 +1,3 @@
-AVXL Gain: $ Win %: 60.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_PM
 AVXL Gain: $ -21.3 Win %: 20.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_RV_AV
 AVXL Gain: $ -17.83 Win %: 20.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_AV
 AVXL Gain: $ -17.77 Win %: 20.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_AO_AC
@@ -18,6 +17,9 @@ AVXL Gain: $ -5.78 Win %: 0 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_IT_QP
 AVXL Gain: $ -5.78 Win %: 0 in 5 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_IT_QP
 AVXL Gain: $ -5.67 Win %: 40.00 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_AV
 AVXL Gain: $ -5.67 Win %: 40.00 in 5 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_AV
+AVXL Gain: $ -5.67 Win %: 63.00 in 11 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2_TG
+AVXL Gain: $ -5.67 Win %: 63.00 in 11 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2_TG_AL
+AVXL Gain: $ -5.67 Win %: 63.00 in 11 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2_TG_AL
 AVXL Gain: $ -5.33 Win %: 20.00 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_QP_PM
 AVXL Gain: $ -5.33 Win %: 20.00 in 5 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_QP_PM
 AVXL Gain: $ -5.29 Win %: 40.00 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_QP
@@ -50,6 +52,7 @@ AVXL Gain: $ -0.03 Win %: 60.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3
 AVXL Gain: $ -0.02 Win %: 40.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_AC
 AVXL Gain: $ -0.02 Win %: 80.00 in 5 days with algo TB4_HL_HI_QM_OB5_OS5_CB4_CS4_PM
 AVXL Gain: $ -0.02 Win %: 80.00 in 5 days with algo TB4_HL_HI_QM_OB5_OS5_CB4_CS4_QP_PM
+AVXL Gain: $ Win %: 60.00 in 5 days with algo TB2_HL_HS_QM_OB3_OS3_CB3_CS3_PM
 AVXL Gain: $ 0.01 Win %: 80.00 in 5 days with algo TB4_HL_HI_QM_OB5_OS5_CB4_CS4_IT_QP_DB8
 AVXL Gain: $ 0.18 Win %: 60.00 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_TS
 AVXL Gain: $ 0.18 Win %: 60.00 in 5 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_TS
@@ -165,3 +168,18 @@ AVXL Gain: $ 10.78 Win %: 60.00 in 5 days with algo TB4_HL_HI_QM_OB5_OS5_CB4_CS4
 AVXL Gain: $ 10.85 Win %: 80.00 in 5 days with algo TB4_HI_QM_OB1_OS1_CB5_CS5_IR2
 AVXL Gain: $ 10.85 Win %: 80.00 in 5 days with algo TB4_HI_QM_OB2_OS2_CB5_CS5_IR2
 AVXL Gain: $ 12.05 Win %: 80.00 in 5 days with algo TB4_HL_HI_QM_OB5_OS5_CB4_CS4_HM_TR_DB8
+AVXL Gain: $ 46.34 Win %: 75.00 in 8 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_DL2
+AVXL Gain: $ 49.79 Win %: 75.00 in 8 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2
+AVXL Gain: $ 49.79 Win %: 75.00 in 8 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2
+AVXL Gain: $ 49.95 Win %: 70.00 in 10 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2_TG
+AVXL Gain: $ 49.95 Win %: 70.00 in 10 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2_TG
+AVXL Gain: $ 49.95 Win %: 70.00 in 10 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2_TG
+AVXL Gain: $ 51.27 Win %: 77.00 in 9 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2
+AVXL Gain: $ 51.27 Win %: 77.00 in 9 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2
+AVXL Gain: $ 51.27 Win %: 77.00 in 9 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2_TG
+AVXL Gain: $ 51.27 Win %: 77.00 in 9 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2_TG
+AVXL Gain: $ 51.27 Win %: 77.00 in 9 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2_TG
+AVXL Gain: $ 51.27 Win %: 77.00 in 9 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV_UA_DL2_TG
+AVXL Gain: $ 55.44 Win %: 57.00 in 7 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_UA
+AVXL Gain: $ 64.93 Win %: 71.00 in 7 days with algo TB5_OC_QM_OB4_OS2_CB2_CS3_DU8_AV
+AVXL Gain: $ 80.85 Win %: 71.00 in 7 days with algo TB5_CC_QM_OB5_OS2_CB3_CS4_DU8_AV

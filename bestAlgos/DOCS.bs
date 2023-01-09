@@ -1,4 +1,3 @@
-DOCS Gain: $ 0.01 Win %: 71.00 in 7 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_TS
 DOCS Gain: $ -134.48 Win %: 0 in 8 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_RV_QP
 DOCS Gain: $ -128.39 Win %: 0 in 8 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_HM_QP
 DOCS Gain: $ -127.03 Win %: 0 in 8 days with algo TB1_OC_QM_OB1_OS1_CB3_CS3_QP
@@ -153,6 +152,7 @@ DOCS Gain: $ -0.86 Win %: 50.00 in 8 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1
 DOCS Gain: $ -0.65 Win %: 50.00 in 8 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_AV
 DOCS Gain: $ -0.65 Win %: 50.00 in 8 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_RV_AV
 DOCS Gain: $ -0.58 Win %: 75.00 in 8 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_IT_QL
+DOCS Gain: $ 0.01 Win %: 71.00 in 7 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_TS
 DOCS Gain: $ 0.18 Win %: 62.00 in 8 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_LI
 DOCS Gain: $ 0.39 Win %: 50.00 in 8 days with algo TB4_HL_LO_QM_OB2_OS2_CB1_CS1_VI
 DOCS Gain: $ 0.46 Win %: 50.00 in 8 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_RV_AL
@@ -201,6 +201,12 @@ DOCS Gain: $ 8.63 Win %: 100.00 in 8 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5
 DOCS Gain: $ 9.02 Win %: 62.00 in 8 days with algo TB3_HL_LO_QM_OB3_OS3_CB5_CS5_VI
 DOCS Gain: $ 9.59 Win %: 50.00 in 8 days with algo TB3_HL_HS_QM_OB2_OS2_CB5_CS5_SS
 DOCS Gain: $ 10.25 Win %: 62.00 in 8 days with algo TB3_HL_LO_QM_OB3_OS3_CB5_CS5_RV_TR
+DOCS Gain: $ 10.84 Win %: 81.00 in 11 days with algo TB3_HS_QM_OB4_OS2_CB4_CS5_AV_VI_TG_AL
+DOCS Gain: $ 10.84 Win %: 81.00 in 11 days with algo TB3_HS_QM_OB4_OS2_CB4_CS5_AV_VI_TG_UA
+DOCS Gain: $ 10.84 Win %: 81.00 in 11 days with algo TB3_HS_QM_OB4_OS2_CB4_CS5_AV_VI_UA_TG
+DOCS Gain: $ 10.84 Win %: 81.00 in 11 days with algo TB3_HS_QM_OB4_OS2_CB4_CS5_AV_VI_UA_TG
+DOCS Gain: $ 10.84 Win %: 81.00 in 11 days with algo TB3_HS_QM_OB4_OS2_CB4_CS5_AV_VI_UA_TG
+DOCS Gain: $ 10.84 Win %: 81.00 in 11 days with algo TB3_HS_QM_OB4_OS2_CB4_CS5_AV_VI_UA_TG_AL
 DOCS Gain: $ 11.47 Win %: 75.00 in 8 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_RV_AV
 DOCS Gain: $ 11.51 Win %: 75.00 in 8 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_AL
 DOCS Gain: $ 11.51 Win %: 75.00 in 8 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_AV

@@ -60,6 +60,7 @@ NKLA Gain: $ -4.9 Win %: 38.00 in 18 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3
 NKLA Gain: $ -4.72 Win %: 33.00 in 18 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_RV_QP_DB30
 NKLA Gain: $ -4.64 Win %: 33.00 in 18 days with algo TB3_EO_EC_QM_OB2_OS2_CB2_CS2_HM
 NKLA Gain: $ -4.58 Win %: 38.00 in 18 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_HM_AV
+NKLA Gain: $ -4.36 Win %: 45.00 in 22 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_IT_TS
 NKLA Gain: $ -4.15 Win %: 38.00 in 18 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_QP_IR5
 NKLA Gain: $ -3.99 Win %: 27.00 in 18 days with algo TB3_EO_EC_QM_OB2_OS2_CB2_CS2_RV_AV_DB10
 NKLA Gain: $ -3.97 Win %: 38.00 in 18 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_TR_QP_DB15
@@ -82,6 +83,7 @@ NKLA Gain: $ -3.01 Win %: 55.00 in 18 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_A
 NKLA Gain: $ -3.01 Win %: 55.00 in 18 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_RV_AV
 NKLA Gain: $ -2.99 Win %: 38.00 in 18 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_IR4
 NKLA Gain: $ -2.99 Win %: 50.00 in 18 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_HM
+NKLA Gain: $ -2.87 Win %: 45.00 in 22 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_AO_AC
 NKLA Gain: $ -2.86 Win %: 38.00 in 18 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_HM_AL
 NKLA Gain: $ -2.69 Win %: 38.00 in 18 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_IT_QL_DB30
 NKLA Gain: $ -2.64 Win %: 55.00 in 18 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_TS
@@ -109,6 +111,7 @@ NKLA Gain: $ -1.33 Win %: 50.00 in 18 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_S
 NKLA Gain: $ -1.12 Win %: 27.00 in 18 days with algo TB1_HL_HI_QM_OB3_OS3_CB2_CS2_PM
 NKLA Gain: $ -1.04 Win %: 44.00 in 18 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_RV_TR_DB30
 NKLA Gain: $ -0.97 Win %: 44.00 in 18 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_RV_AV
+NKLA Gain: $ -0.93 Win %: 40.00 in 22 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_IT_QL
 NKLA Gain: $ -0.92 Win %: 50.00 in 18 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_HM_AL
 NKLA Gain: $ -0.87 Win %: 50.00 in 18 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_RV_AV_DB30
 NKLA Gain: $ -0.79 Win %: 50.00 in 18 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_AC
@@ -188,6 +191,8 @@ NKLA Gain: $ 2.36 Win %: 66.00 in 18 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3
 NKLA Gain: $ 2.38 Win %: 61.00 in 18 days with algo TB1_HL_HI_QM_OB3_OS3_CB2_CS2_AV
 NKLA Gain: $ 2.46 Win %: 77.00 in 18 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_TR_TS
 NKLA Gain: $ 2.47 Win %: 72.00 in 18 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_AL_TS
+NKLA Gain: $ 2.49 Win %: 43.00 in 23 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_IT_QL_DU6_UA_AV
+NKLA Gain: $ 2.49 Win %: 43.00 in 23 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_IT_QL_DU6_UA_AV
 NKLA Gain: $ 2.59 Win %: 66.00 in 18 days with algo TB3_EO_EC_QM_OB2_OS2_CB2_CS2_HM_TR_DB10
 NKLA Gain: $ 2.6 Win %: 72.00 in 18 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_TS
 NKLA Gain: $ 2.68 Win %: 61.00 in 18 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_RV_TR_DB30
@@ -206,6 +211,7 @@ NKLA Gain: $ 3.0 Win %: 50.00 in 18 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_
 NKLA Gain: $ 3.08 Win %: 61.00 in 18 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_PM
 NKLA Gain: $ 3.15 Win %: 66.00 in 18 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_IR5
 NKLA Gain: $ 3.22 Win %: 72.00 in 18 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_IT_TS
+NKLA Gain: $ 3.26 Win %: 43.00 in 23 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_IT_QL_DU6_UA_AV_DU8_AL_DL2
 NKLA Gain: $ 3.28 Win %: 66.00 in 18 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_TR_IR4
 NKLA Gain: $ 3.34 Win %: 61.00 in 18 days with algo TB1_EO_EC_QM_OB3_OS3_CB4_CS4_TR
 NKLA Gain: $ 3.34 Win %: 66.00 in 18 days with algo TB1_HL_HI_QM_OB3_OS3_CB2_CS2_RV_AL
@@ -229,9 +235,6 @@ NKLA Gain: $ 5.09 Win %: 61.00 in 18 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3
 NKLA Gain: $ 5.59 Win %: 72.00 in 18 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_TR_IR5
 NKLA Gain: $ 5.72 Win %: 72.00 in 18 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_TR
 NKLA Gain: $ 6.21 Win %: 72.00 in 18 days with algo TB1_HL_HI_QM_OB1_OS1_CB3_CS3_RV_TR
-NKLA Gain: $ -4.36 Win %: 45.00 in 22 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_IT_TS
-NKLA Gain: $ -2.87 Win %: 45.00 in 22 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_AO_AC
-NKLA Gain: $ -0.93 Win %: 40.00 in 22 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_IT_QL
 NKLA Gain: $ 8.92 Win %: 68.00 in 22 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_IT_TS_DU6_AV
 NKLA Gain: $ 8.92 Win %: 68.00 in 22 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_IT_TS_DU6_UA_AV
 NKLA Gain: $ 8.92 Win %: 68.00 in 22 days with algo TB5_OO_QM_OB2_OS2_CB2_CS2_IT_TS_DU6_UA_AV

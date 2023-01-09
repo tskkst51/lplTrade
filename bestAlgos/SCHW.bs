@@ -230,3 +230,9 @@ SCHW Gain: $ 5.43 Win %: 83.00 in 6 days with algo TB3_HL_HI_QM_OB1_OS1_CB5_CS5_
 SCHW Gain: $ 5.53 Win %: 100.00 in 6 days with algo TB1_HI_QM_OB4_OS4_CB4_CS4_HM_AV
 SCHW Gain: $ 5.55 Win %: 83.00 in 6 days with algo TB3_HL_HI_QM_OB1_OS1_CB5_CS5_TR_IR3
 SCHW Gain: $ 6.09 Win %: 100.00 in 6 days with algo TB2_HL_LO_QM_OB1_OS1_CB3_CS3_RV_AV_DB15
+SCHW Gain: $ 14.17 Win %: 47.00 in 17 days with algo TB5_HI_QM_OB2_OS2_CB5_CS3_RV_TR_DU7_AV_DL1
+SCHW Gain: $ 14.17 Win %: 47.00 in 17 days with algo TB5_HI_QM_OB2_OS2_CB5_CS3_RV_TR_DU7_UA_AV_DL1
+SCHW Gain: $ 14.19 Win %: 47.00 in 17 days with algo TB5_HI_QM_OB2_OS2_CB5_CS3_RV_TR_DU7_AV_DL2
+SCHW Gain: $ -2.78 Win %: 44.00 in 18 days with algo TB5_HI_QM_OB2_OS2_CB5_CS3_RV_TR_DU7_UA_AV_DL1_TG
+SCHW Gain: $ -2.76 Win %: 44.00 in 18 days with algo TB5_HI_QM_OB2_OS2_CB5_CS3_RV_TR_DU7_AL_DL2_UA
+SCHW Gain: $ -2.76 Win %: 44.00 in 18 days with algo TB5_HI_QM_OB2_OS2_CB5_CS3_RV_TR_DU7_AL_DL2_UA

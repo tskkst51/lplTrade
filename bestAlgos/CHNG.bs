@@ -157,3 +157,6 @@ CHNG Gain: $ 0.31 Win %: 50.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB1_CS1_DB1
 CHNG Gain: $ 0.31 Win %: 50.00 in 2 days with algo TB3_OC_QM_OB1_OS1_CB2_CS2_DB10
 CHNG Gain: $ 0.31 Win %: 50.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB1_CS1_DB10
 CHNG Gain: $ 0.31 Win %: 50.00 in 2 days with algo TB3_OC_QM_OB2_OS2_CB2_CS2_DB10
+CHNG Gain: $ 0.27 Win %: 62.00 in 8 days with algo TB3_HL_QM_OB3_OS1_CB3_CS1_HM_AV_DB10_TG
+CHNG Gain: $ 0.27 Win %: 62.00 in 8 days with algo TB3_HL_QM_OB3_OS1_CB3_CS1_RV_AV_DB10_TG
+CHNG Gain: $ 0.37 Win %: 62.00 in 8 days with algo TB3_HL_QM_OB3_OS1_CB2_CS1_RV_AV_DB10_TG

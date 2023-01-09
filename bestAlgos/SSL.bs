@@ -183,3 +183,12 @@ SSL Gain: $ 1.66 Win %: 59.00 in 27 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4_
 SSL Gain: $ 1.67 Win %: 62.00 in 27 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4_IT_QL_DB30
 SSL Gain: $ 1.74 Win %: 62.00 in 27 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4_DB30
 SSL Gain: $ 1.76 Win %: 74.00 in 27 days with algo TB1_HL_LO_QM_OB2_OS2_CB4_CS4_RV_AV_DB30
+SSL Gain: $ 9.76 Win %: 35.00 in 53 days with algo TB5_OO_QM_OB4_OS2_CB5_CS5_RV_AL_DU7_DL2_UA
+SSL Gain: $ 10.29 Win %: 35.00 in 53 days with algo TB5_OO_QM_OB4_OS2_CB5_CS5_RV_AL_DU7_DL2_DU8_UA
+SSL Gain: $ 12.87 Win %: 42.00 in 52 days with algo TB5_OO_QM_OB3_OS2_CB3_CS5_HM_AV_DU7_DL2
+SSL Gain: $ 13.44 Win %: 44.00 in 52 days with algo TB5_OO_QM_OB3_OS2_CB3_CS5_HM_AV_DU7_AL_DL2
+SSL Gain: $ 14.47 Win %: 42.00 in 52 days with algo TB5_OO_QM_OB3_OS2_CB3_CS5_HM_AV_DU7
+SSL Gain: $ 15.35 Win %: 42.00 in 54 days with algo TB5_OO_QM_OB4_OS2_CB5_CS5_RV_AL_DU7_DL2_AV_DU8_UA
+SSL Gain: $ 15.35 Win %: 42.00 in 54 days with algo TB5_OO_QM_OB4_OS2_CB5_CS5_RV_AL_DU7_DL2_UA_DU8_AV
+SSL Gain: $ 15.35 Win %: 42.00 in 54 days with algo TB5_OO_QM_OB4_OS2_CB5_CS5_RV_AL_DU7_DL2_UA_DU8_AV
+SSL Gain: $ 15.49 Win %: 43.00 in 53 days with algo TB5_OO_QM_OB4_OS2_CB5_CS5_RV_AL_DU7_DL2_DU8_UA_AV

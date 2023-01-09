@@ -82,6 +82,9 @@ XPEV Gain: $ -8.52 Win %: 50.00 in 86 days with algo TB3_HL_LO_QM_OB2_OS2_CB5_CS
 XPEV Gain: $ -7.28 Win %: 43.00 in 86 days with algo TB4_EO_EC_QM_OB3_OS3_CB5_CS5_HM_AV_DB8
 XPEV Gain: $ -6.47 Win %: 62.00 in 86 days with algo TB2_HL_HS_QM_OB5_OS5_CB5_CS5_QP_IR4
 XPEV Gain: $ -5.24 Win %: 52.00 in 86 days with algo TB4_EO_EC_QM_OB3_OS3_CB5_CS5_IR2
+XPEV Gain: $ -5.24 Win %: 66.00 in 116 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5_DU8_DL2
+XPEV Gain: $ -5.24 Win %: 66.00 in 116 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5_DU8_DL2
+XPEV Gain: $ -5.24 Win %: 66.00 in 116 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5_DU8_DL2
 XPEV Gain: $ -3.98 Win %: 79.00 in 86 days with algo TB2_HL_HS_QM_OB5_OS5_CB5_CS5_QP_PM
 XPEV Gain: $ -3.72 Win %: 60.00 in 86 days with algo TB2_HL_HS_QM_OB5_OS5_CB5_CS5_TR_QP_DB15
 XPEV Gain: $ -3.59 Win %: 50.00 in 86 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_VI
@@ -231,8 +234,8 @@ XPEV Gain: $ 30.4 Win %: 59.00 in 86 days with algo TB3_OC_QM_OB3_OS3_CB5_CS5_RV
 XPEV Gain: $ 37.8 Win %: 61.00 in 86 days with algo TB3_OC_QM_OB3_OS3_CB5_CS5_AV
 XPEV Gain: $ 68.73 Win %: 56.00 in 114 days with algo TB3_HL_QM_OB2_OS1_CB1_CS5_AV_TS_DU5
 XPEV Gain: $ 79.69 Win %: 57.00 in 114 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU4
-XPEV Gain: $ 96.43 Win %: 57.00 in 114 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5
 XPEV Gain: $ 85.33 Win %: 58.00 in 114 days with algo TB3_HL_QM_OB2_OS1_CB1_CS5_AV_TS_DU5_AL
+XPEV Gain: $ 96.43 Win %: 57.00 in 114 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5
 XPEV Gain: $ 96.43 Win %: 57.00 in 114 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5
 XPEV Gain: $ 96.43 Win %: 57.00 in 114 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5_AV
 XPEV Gain: $ 96.43 Win %: 57.00 in 114 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5_AV

@@ -149,3 +149,6 @@ INFL Gain: $ 0.02 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB4_OS4_CB4_CS4_HM
 INFL Gain: $ 0.02 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB4_OS4_CB4_CS4_HM_TR
 INFL Gain: $ 0.02 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB4_OS4_CB4_CS4_IR4
 INFL Gain: $ 0.02 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB4_OS4_CB4_CS4_RV
+INFL Gain: $ 2.85 Win %: 60.00 in 5 days with algo TB1_HI_QM_OB3_OS2_CB5_CS3_AV_UA_DU7
+INFL Gain: $ 2.85 Win %: 60.00 in 5 days with algo TB1_HI_QM_OB3_OS2_CB5_CS3_RV_AV_DU7
+INFL Gain: $ 3.21 Win %: 80.00 in 5 days with algo TB1_HI_QM_OB3_OS2_CB5_CS3_HM_AV_DU7

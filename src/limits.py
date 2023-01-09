@@ -35,6 +35,8 @@ class Limits:
       self.doOpensSeq = int(d['doOpensSeq'])      
       self.doClosesSeq = int(d['doClosesSeq'])
       self.doHiBuyLoSellSeq = int(d['doHiBuyLoSellSeq'])
+      self.doHiLoHiLoSeqInHiLoOut = int(d['doHiLoHiLoSeqInHiLoOut'])
+      self.doHiLoHiLoSeqInHiLoSeqOut = int(d['doHiLoHiLoSeqInHiLoSeqOut'])
 
       self.doOpensCloses = int(d['doOpensCloses'])      
       self.doHiLo = int(d['doHiLo'])
@@ -72,11 +74,14 @@ class Limits:
       self.stock = stock
       self.minTradingDelayBars = 0
       self.valCtr = 0
+      self.seqAlgos = 0
       
       # Must have 2 decision bars when doing hiLoSeq
       if self.doHiLoSeq or self.doHiSeq or self.doLoSeq or self.doOpenCloseSeq or \
-         self.doExecuteOnOpen or self.doExecuteOnClose or self.doOpensSeq or self.doClosesSeq or self.doHiBuyLoSellSeq:
-        
+         self.doExecuteOnOpen or self.doExecuteOnClose or self.doOpensSeq or self.doClosesSeq or self.doHiBuyLoSellSeq or self.doHiLoHiLoSeqInHiLoSeqOut or self.doHiLoHiLoSeqInHiLoOut:
+         
+         #or self.doOpensCloses:
+
          self.lg.debug ("setting decision bars to 2")
 
          if self.openBuyBars < 2:
@@ -87,6 +92,30 @@ class Limits:
             self.openSellBars = 2
          if self.closeSellBars < 2:
             self.closeSellBars = 2
+
+         self.seqAlgos = 1
+
+      self.higherOpensBuyOpen = self.higherOpensSellOpen = 0
+      self.higherOpensBuyClose = self.higherOpensSellClose = 0
+      self.lowerOpensBuyOpen = self.lowerOpensSellOpen = 0
+      self.lowerOpensBuyClose = self.lowerOpensSellClose = 0
+      self.higherHighsBuyOpen = self.higherHighsSellOpen = 0
+      self.higherHighsBuyClose = self.higherHighsSellClose = 0
+      self.higherLowsBuyOpen = self.higherLowsSellOpen = 0
+      self.higherLowsBuyClose = self.higherLowsSellClose = 0
+      self.lowerHighsBuyOpen = self.lowerHighsSellOpen = 0
+      self.lowerHighsBuyClose = self.lowerHighsSellClose = 0
+      self.lowerLowsBuyOpen = self.lowerLowsSellOpen = 0
+      self.lowerLowsBuyClose = self.lowerLowsSellClose = 0
+      self.higherClosesBuyClose = self.higherClosesSellClose = 0
+      self.lowerClosesBuyClose = self.lowerClosesSellClose = 0
+      self.higherClosesBuyOpen = self.higherClosesSellOpen = 0
+      self.lowerClosesBuyOpen = self.lowerClosesSellOpen = 0
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getSeqAlgos(self):
+
+      return self.seqAlgos
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setRangeLimits(self, barChart, bar):
@@ -335,10 +364,10 @@ class Limits:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setLimitOnDoubleUpValue(self, stopLimit, inPosType):
 
-      self.lg.debug ("setLimitOnDoubleUpValue stopLimit: " + str(stopLimit))
+      self.lg.debug ("IN setLimitOnDoubleUpValue stopLimit: " + str(stopLimit))
       self.lg.debug ("inPosType: " + str(inPosType))
 
-      # use the lower of the current stop limit or the proposed stop limit
+      # Use the better of the current stop limit or the proposed stop limit
 
       if inPosType == 2:
          if self.closeSellLimit < stopLimit:
@@ -348,7 +377,10 @@ class Limits:
          if self.closeBuyLimit > stopLimit:
             return
          self.closeBuyLimit = stopLimit
-      
+
+      self.lg.debug ("OUT closeBuyLimit: " + str(self.closeBuyLimit))
+      self.lg.debug ("OUT closeSellLimit: " + str(self.closeSellLimit))
+
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setCloseSellLimit(self, numBars):
 
@@ -798,10 +830,16 @@ class Limits:
             self.closeSellBars = 2
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def setTradingDelayBarsDoOnlyTrends(self, timeBar):
+      
+      # Delay 30 minutes
+      self.tradingDelayBars = 30 / timeBar
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setTradingDelayBars(self):
       
       maxNumTradeBars = self.getMaxNumTradeBars()
-      
+
 #      if self.tradingDelayBars < maxNumTradeBars:
 #         self.tradingDelayBars = maxNumTradeBars
 #      

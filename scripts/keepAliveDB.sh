@@ -14,8 +14,8 @@ function init {
    day=$1
    stock=$2
 
-   killTestScripts=""
-   if [[ -z $day ]]; then killTestScripts="yes"; fi
+   #killTestScripts=""
+   #if [[ -z $day ]]; then killTestScripts="yes"; fi
    
    . ${HOME}/.bashrc
 
@@ -65,7 +65,7 @@ function init {
    testDir="${wp}/test/${dt}"
    log="${wp}/logs/liveDebugLog_${dt}.oo"
    cmd="$py3 $lpltMaster -d -c $HOME/profiles/et.json -p $wp/profiles/active.json"
-   testCmd=""
+	testCmd="$py3 $lpltMaster -w "${wp}/test/${dt}" -o -d -c $HOME/profiles/et.json -p ${wp}/test/${dt}/profiles/active.json"
 }   
 
 function updateTestSystem {
@@ -219,7 +219,7 @@ function moveDataToArchive {
    tarNm=$1
 
    lastLiveLog=$(ls -t "liveLogs" | head -n 1)
-   mv "liveLogs/${lastLiveLog}" "test/${dt}/logs"
+   cp "liveLogs/${lastLiveLog}" "test/${dt}/logs"
    
    cd "test" || echo cant cd to test dir
    
@@ -349,15 +349,21 @@ init $1 $2
 
 # If running from cron kill any tests running since cron starts the live program
 
-if [[ $killTestScripts == "yes" ]]; then
-   killRunningScript $keepToken
+#if [[ $killTestScripts == "yes" ]]; then
+#   killRunningScript $keepToken
+#fi
+
+if [[ -n $day ]]; then 
+   initDB $day
+else
+   initDB $dt
 fi
 
-if [[ -n $liveHost ]] && [[ -z $day ]]; then
-   initDB $dt
-else
-   initDB $day
-fi
+#if [[ -n $liveHost ]] && [[ -z $day ]]; then
+#   initDB $dt
+#else
+#   initDB $day
+#fi
 
 # Check if a rogue program is running. kill it if it is
 #ps | grep $program | grep -qv grep
@@ -379,8 +385,6 @@ if [[ -n $day ]]; then
       cmd="$py3 $lpltMaster -w "${wp}/test/${day}" -o -d -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -s $stock"
        
    fi
-else
-	testCmd="$py3 $lpltMaster -w "${wp}/test/${dt}" -o -d -c $HOME/profiles/et.json -p ${wp}/test/${dt}/profiles/active.json"
 fi
 
 echo Starting $cmd $(date) ...
@@ -396,7 +400,7 @@ waiting=0
    
 tarNm="${dt}.tar"
 
-if [[ -n $liveHost ]] && [[ -z $day ]]; then
+if [[ -z $day ]]; then # Running live start tests...
    # Archive data
    echo Waiting $waiting seconds to archive results for ${dt}...
    sleep $waiting
@@ -414,7 +418,10 @@ if [[ -n $liveHost ]] && [[ -z $day ]]; then
    ${wp}/scripts/liveResults.sh $dt
    tallyLiveResults $dt   
    echo Starting tests $testCmd $dt ...
-   $testCmd
+   
+   # Not running tests due to error when running from cron FIX!
+   #$testCmd
+   
    #updateTestSystem $dt $tarNm
    cleanup
    

@@ -230,3 +230,9 @@ HOLI Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB4_CC_QM_OB2_OS2_CB1_CS1_AC
 HOLI Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB1_OS1_CB3_CS3_TS
 HOLI Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB4_CS4_HM
 HOLI Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB1_OS1_CB4_CS4_QL
+HOLI Gain: $ 8.41 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS5_HM_AV_DU6_UA
+HOLI Gain: $ 8.41 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS5_HM_AV_DU6_UA
+HOLI Gain: $ 8.41 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS5_HM_AV_DU6_UA
+HOLI Gain: $ 8.41 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS5_HM_AV_DU6_UA
+HOLI Gain: $ 8.41 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS5_HM_AV_DU6_UA_AL
+HOLI Gain: $ 8.41 Win %: 100.00 in 4 days with algo TB1_EO_EC_QM_OB2_OS2_CB2_CS5_HM_AV_DU6_UA_AL

@@ -52,6 +52,11 @@ class Barchart:
       return bc
    
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def appendBar(self, bc):
+   
+      bc.append([0.0,0.0,0.0,0.0,0,0.0,0,0,""])
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def loadFirstBar(self, bc, date, bar, bid, ask, last, vol):
    
       # We use the ask initially since etrade sets the last to be the day 
@@ -201,7 +206,9 @@ class Barchart:
    def getTimeFromFile(self, bc, bar): 
          
       bc[bar][self.dt]
-
+      
+      print ("bc[bar] :" + str(bc[bar])) 
+      
       return (bc[bar][self.dt])
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -631,11 +638,6 @@ class Barchart:
          bcData.write('%s,' % str(bc[bar][self.sH]))
          bcData.write('%s,' % str(bc[bar][self.sL]))
          bcData.write('%s' % bc[bar][self.dt] + "\n")
-
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def appendBar(self, bc):
-   
-      bc.append([0.0,0.0,0.0,0.0,0,0.0,0,0,""])
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def displayLastNBars(self, bc, bars):

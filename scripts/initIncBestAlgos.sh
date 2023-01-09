@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Use the *.in (the initial best algo file incrementally to find the 
+## Use the *.in (the initial best algo) file incrementally to find the 
 ## best based off last trading day. Use this every day for testing
 
 function init {
@@ -30,6 +30,18 @@ if [[ -n $debug ]]; then
    echo Incrementing best algos for sym ${sym}...
 fi
 
+# Don't run this program if the number of test days is found in the ".bs" file
+numTestDays=$(numOfTestDays $sym)
+numBestAlgoDays=$(numOfBestAlgoDays $sym)
+
+echo Number of test days found: $numTestDays
+echo Number of Best Algo Days found: $numBestAlgoDays
+
+if (( numTestDays == numBestAlgoDays)); then
+   echo Incremental test ${sym}: $numTestDays test days. $numBestAlgoDays bestAlgo results. skipping...
+   exit 0
+fi
+
 tmpFile=$(getRandomTmpFile)
 tmpFile2=$(getRandomTmpFile)
 
@@ -46,6 +58,7 @@ rm -f $tmpFile2
 sort -u -k13,13 "${bestAlgosDir}/${sym}${inEx}" | sort -n -k3,3 > $tmpFile
 
 #cp $tmpFile "${bestAlgosDir}/${sym}${inEx}" 
+
 algos=$(tail -n $ss $tmpFile | awk '{print $13}')
 
 # Add modfiers to the best...
@@ -83,6 +96,7 @@ bestNew=$(awk '{print $4}' $tmpFile2 | tail -n 1)
 
 echo old: $bestOld
 echo new: $bestNew
+
 sort -n -k4,4 ${tmpFile}_${sym} > "${bestAlgosDir}/${sym}${inEx}"
 
 #if [[ $bestNew > $bestOld ]]; then
@@ -100,5 +114,11 @@ if [[ -n $debug ]]; then echo Adding $ss algos to "${bestAlgosDir}/${sym}${bsEx}
 
 tail -n $ss "${bestAlgosDir}/${sym}${inEx}" >> "${bestAlgosDir}/${sym}${bsEx}" 
 #cp ${bestAlgosDir}/${sym}${inEx} ${bestAlgosDir}/${sym}${bsEx} || cant copy .in to .bs
+
+# Sort it again
+sort -n -k4,4 -k7,7 "${bestAlgosDir}/${sym}${bsEx}" > $tmpFile
+mv $tmpFile "${bestAlgosDir}/${sym}${bsEx}"
+
+sort -n -k9,9 -k7,7 -k4,4 "${bestAlgosDir}/${sym}${bsEx}" > "$bestAlgosDir/${sym}.pc"
 
 exit 0

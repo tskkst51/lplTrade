@@ -229,3 +229,9 @@ AZN Gain: $ 2.6 Win %: 55.00 in 18 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_HM_A
 AZN Gain: $ 3.11 Win %: 61.00 in 18 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_RV
 AZN Gain: $ 4.08 Win %: 72.00 in 18 days with algo TB5_HI_QM_OB5_OS5_CB3_CS3_TR
 AZN Gain: $ 4.47 Win %: 72.00 in 18 days with algo TB3_HI_QM_OB3_OS3_CB3_CS3_RV_AL_DB10
+AZN Gain: $ 13.22 Win %: 48.00 in 49 days with algo TB3_OC_QM_OB2_OS4_CB3_CS2_RV_DU7_AV_DL2_UA
+AZN Gain: $ 13.22 Win %: 48.00 in 49 days with algo TB3_OC_QM_OB2_OS4_CB3_CS2_RV_DU7_UA_AV_DL2
+AZN Gain: $ 13.28 Win %: 62.00 in 48 days with algo TB5_OO_QM_OB2_OS4_CB3_CS4_AL_TS_DU7_DL2
+AZN Gain: $ 13.28 Win %: 62.00 in 48 days with algo TB5_OO_QM_OB2_OS4_CB3_CS4_AL_TS_DU7_DL2
+AZN Gain: $ 15.03 Win %: 68.00 in 48 days with algo TB5_OO_QM_OB2_OS4_CB3_CS4_AL_TS_DU7_UA_DL2
+AZN Gain: $ 17.26 Win %: 59.00 in 49 days with algo TB3_OC_QM_OB2_OS4_CB3_CS2_RV_DU7_AV_DL2_DU5

@@ -78,6 +78,9 @@ PSTX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_TS
 PSTX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_TS
 PSTX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB1_OS1_CB5_CS5_TS
 PSTX Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_TS
+PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_AV_UA
+PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_TG
+PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_UA
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_AC
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_AL
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB1_OS1_CB5_CS5_AO
@@ -157,6 +160,12 @@ PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_RV
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_SS
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_TR
 PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_TR_IR5
-PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_AV_UA
-PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_TG
-PSTX Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_UA
+PSTX Gain: $ 0.99 Win %: 50.00 in 4 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_UA
+PSTX Gain: $ 2.23 Win %: 33.00 in 6 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_UA_DU7_TG
+PSTX Gain: $ 2.23 Win %: 33.00 in 6 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_UA_DU7_TG
+PSTX Gain: $ 2.23 Win %: 33.00 in 6 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_UA_DU7_TG
+PSTX Gain: $ 3.26 Win %: 25.00 in 4 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_TG_DU7
+PSTX Gain: $ 3.38 Win %: 25.00 in 4 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_UA_DU7
+PSTX Gain: $ 3.59 Win %: 40.00 in 5 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_UA_DU7
+PSTX Gain: $ 3.59 Win %: 40.00 in 5 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_UA_DU7
+PSTX Gain: $ 3.59 Win %: 40.00 in 5 days with algo TB1_CC_QM_OB5_OS2_CB5_CS5_RV_UA_DU7_TG

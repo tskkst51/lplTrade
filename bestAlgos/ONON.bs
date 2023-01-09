@@ -230,3 +230,6 @@ ONON Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_TR_
 ONON Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_TR_TS
 ONON Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_TS
 ONON Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB4_LO_QM_OB3_OS3_CB3_CS3_VI
+ONON Gain: $ 42.88 Win %: 66.00 in 3 days with algo TB3_OC_QM_OB2_OS2_CB3_CS2_AC_DU7_UA_DL1
+ONON Gain: $ 53.3 Win %: 66.00 in 3 days with algo TB3_OC_QM_OB2_OS2_CB3_CS2_AC_DU7
+ONON Gain: $ 54.98 Win %: 66.00 in 3 days with algo TB3_OC_QM_OB2_OS3_CB3_CS2_AL_DU7

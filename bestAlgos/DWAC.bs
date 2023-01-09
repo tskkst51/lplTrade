@@ -1,4 +1,3 @@
-DWAC Gain: $ 8.09 Win %: 100.00 in 4 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_TS
 DWAC Gain: $ -250.36 Win %: 40.00 in 5 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_HM_QP
 DWAC Gain: $ -246.35 Win %: 40.00 in 5 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_IT_QP_DB8
 DWAC Gain: $ -241.2 Win %: 20.00 in 5 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_HM_QP_DB8
@@ -187,6 +186,7 @@ DWAC Gain: $ 0.86 Win %: 80.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_QP
 DWAC Gain: $ 1.03 Win %: 80.00 in 5 days with algo TB4_HL_HS_QM_OB4_OS4_CB2_CS2_AL_TS
 DWAC Gain: $ 1.5 Win %: 80.00 in 5 days with algo TB4_HL_LO_QM_OB1_OS1_CB5_CS5_PM
 DWAC Gain: $ 7.02 Win %: 80.00 in 5 days with algo TB4_HL_HS_QM_OB4_OS4_CB2_CS2_RV
+DWAC Gain: $ 8.09 Win %: 100.00 in 4 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_TS
 DWAC Gain: $ 9.49 Win %: 60.00 in 5 days with algo TB4_HL_LO_QM_OB1_OS1_CB5_CS5_LI
 DWAC Gain: $ 10.29 Win %: 100.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_IT_TS
 DWAC Gain: $ 10.39 Win %: 100.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_TR_TS
@@ -210,6 +210,12 @@ DWAC Gain: $ 43.01 Win %: 60.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_IT
 DWAC Gain: $ 43.42 Win %: 40.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_DB10
 DWAC Gain: $ 44.85 Win %: 80.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_HM_TR
 DWAC Gain: $ 50.67 Win %: 80.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_HM_AL
+DWAC Gain: $ 51.82 Win %: 91.00 in 12 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG
+DWAC Gain: $ 51.82 Win %: 91.00 in 12 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG
+DWAC Gain: $ 51.82 Win %: 91.00 in 12 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG
+DWAC Gain: $ 52.77 Win %: 100.00 in 11 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_AL
+DWAC Gain: $ 52.77 Win %: 100.00 in 11 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_AL
+DWAC Gain: $ 52.77 Win %: 100.00 in 11 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_AL
 DWAC Gain: $ 54.02 Win %: 100.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_HM_AV_DB10
 DWAC Gain: $ 54.49 Win %: 40.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_RV_AL_DB10
 DWAC Gain: $ 55.31 Win %: 60.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_RV_TR_DB10
@@ -231,3 +237,18 @@ DWAC Gain: $ 87.02 Win %: 100.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_A
 DWAC Gain: $ 87.02 Win %: 100.00 in 5 days with algo TB3_LO_QM_OB3_OS3_CB4_CS4_RV_AV
 DWAC Gain: $ 98.72 Win %: 80.00 in 5 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_IR2
 DWAC Gain: $ 118.4 Win %: 71.00 in 7 days with algo TB3_HI_QM_OB4_OS2_CB4_CS5_AV
+DWAC Gain: $ 197.86 Win %: 70.00 in 10 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_AL_DU7_DL2
+DWAC Gain: $ 197.86 Win %: 70.00 in 10 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_AL_DU7_DL2
+DWAC Gain: $ 197.86 Win %: 70.00 in 10 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_AL_DU7_DL2
+DWAC Gain: $ 197.86 Win %: 70.00 in 10 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_AL_DU7_DL2
+DWAC Gain: $ 197.86 Win %: 70.00 in 10 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_AL_DU7_DL2
+DWAC Gain: $ 197.86 Win %: 70.00 in 10 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_AL_DU7_DL2
+DWAC Gain: $ 199.71 Win %: 66.00 in 9 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_DU7_DL2
+DWAC Gain: $ 209.72 Win %: 77.00 in 9 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_DU7_AL_DL2
+DWAC Gain: $ 209.72 Win %: 77.00 in 9 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_AL_DU7_DL2
+DWAC Gain: $ 209.72 Win %: 77.00 in 9 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_AL_DU7_DL2
+DWAC Gain: $ 209.72 Win %: 77.00 in 9 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_AL_DU7_DL2
+DWAC Gain: $ 209.72 Win %: 77.00 in 9 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_TG_DU7_AL_DL2
+DWAC Gain: $ 517.9 Win %: 87.00 in 8 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_DU6
+DWAC Gain: $ 517.9 Win %: 87.00 in 8 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_DU6
+DWAC Gain: $ 517.9 Win %: 87.00 in 8 days with algo TB3_HS_QM_OB3_OS2_CB5_CS2_AV_UA_DU6

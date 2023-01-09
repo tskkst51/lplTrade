@@ -1,4 +1,3 @@
-PSTG Gain: $ -1.64 Win %: 33.00 in 3 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_TS
 PSTG Gain: $ -14.24 Win %: 20.00 in 5 days with algo TB1_CC_QM_OB2_OS2_CB2_CS2_HM_QP_DB30
 PSTG Gain: $ -14.17 Win %: 20.00 in 5 days with algo TB1_CC_QM_OB2_OS2_CB2_CS2_RV_QP_DB30
 PSTG Gain: $ -14.14 Win %: 20.00 in 5 days with algo TB1_CC_QM_OB2_OS2_CB2_CS2_IT_QP_DB30
@@ -49,6 +48,7 @@ PSTG Gain: $ -1.85 Win %: 20.00 in 5 days with algo TB3_CC_QM_OB4_OS4_CB4_CS4_QP
 PSTG Gain: $ -1.84 Win %: 40.00 in 5 days with algo TB1_CC_QM_OB2_OS2_CB2_CS2_HM_TR_DB30
 PSTG Gain: $ -1.7 Win %: 60.00 in 5 days with algo TB3_HL_LO_QM_OB2_OS2_CB4_CS4_HM_QP_DB10
 PSTG Gain: $ -1.7 Win %: 60.00 in 5 days with algo TB3_HL_LO_QM_OB2_OS2_CB4_CS4_IT_QP_DB10
+PSTG Gain: $ -1.64 Win %: 33.00 in 3 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_TS
 PSTG Gain: $ -1.56 Win %: 40.00 in 5 days with algo TB1_CC_QM_OB2_OS2_CB2_CS2_RV_TR_DB30
 PSTG Gain: $ -1.48 Win %: 60.00 in 5 days with algo TB3_HL_LO_QM_OB2_OS2_CB4_CS4_HM_QP
 PSTG Gain: $ -1.48 Win %: 60.00 in 5 days with algo TB3_HL_LO_QM_OB2_OS2_CB4_CS4_IT_QP
@@ -184,3 +184,6 @@ PSTG Gain: $ 1.99 Win %: 80.00 in 5 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_AO_
 PSTG Gain: $ 1.99 Win %: 80.00 in 5 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_SS
 PSTG Gain: $ 2.02 Win %: 80.00 in 5 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_HM
 PSTG Gain: $ 2.5 Win %: 100.00 in 5 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_DB15
+PSTG Gain: $ 7.0 Win %: 46.00 in 13 days with algo TB5_OO_QM_OB2_OS3_CB2_CS5_SS_DU8_AV_DL2
+PSTG Gain: $ 9.13 Win %: 46.00 in 13 days with algo TB5_OO_QM_OB2_OS3_CB3_CS5_QL_DU8_AV_DL2
+PSTG Gain: $ 11.69 Win %: 38.00 in 13 days with algo TB5_OO_QM_OB2_OS3_CB3_CS5_QL_DU8_UA_AV_DL2

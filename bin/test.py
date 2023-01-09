@@ -48,6 +48,7 @@ originalProfile = {}
 parseInfo = ""
 
 tmpFile = "/tmp/pqslOut"
+testCtr = 0
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def getLastLine(path):
@@ -69,7 +70,7 @@ def getGain(line):
    return float(gain)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def parseLastLine(line, info):
+def parseLastLine(line, info, stock):
 
    if line == None or line == "":
       return
@@ -79,10 +80,9 @@ def parseLastLine(line, info):
    numLineTokens = len(lineTokens)
    
    if lineTokens[0] != "close":
-      print ("Invalid test results:" + str(line))
+      print ("Invalid test results: " + stock + " " + str(line))
       return ""
    
-   #print ("lineTokens: " + str(lineTokens))
    
    lastClose = lineTokens[1]
    gain = lineTokens[3]
@@ -399,15 +399,13 @@ for minBar in db.getTestTimebars():
                   # Create files based off of the stock, algo and date
                   #cmd = prog + args + " -c " + cdp + " -s " + stock + " -p " + tdp + " > " + outFile
                   cmd = prog + args + " -c " + cdp + " -s " + stock + " -p " + stockPath + " > " + outFile
-                              
+                  testCtr += 1
                   #print ("cmd: " + cmd)
-                  
-                  algoPath = cwd + "/exitResults/" + stock + "_" + info + ".ex"
                   
                   exitVal = os.system(cmd)
                   
                   lastLine = getLastLine(resultsPath) 
-                  parsedLine = parseLastLine(lastLine, info)
+                  parsedLine = parseLastLine(lastLine, info, stock)
                   
                   if parsedLine == "":
                      #print ("LINE: " + info + " " + day + " " + stock)
@@ -432,15 +430,12 @@ for minBar in db.getTestTimebars():
       #               writeLog(resultsPath, rsPath)
       #               writeLog(tdp, pfPath)
                                     
-                  print (str(stock) + " " + str(parsedLine))
+                  print (str(stock) + " " + str(parsedLine) + " " + str(testCtr))
                
                   # ... and save it's peices to be later examined
                   #writeParsedLine(parsePath, stock + " " + parsedLine)
                      
                   db.insertAlgoData(stock, parsedLine)
-
-                  #writeParsedLine(algoPath, day + " " + stock + " " + parsedLine)
-                  #writeParsedLineRemoveDups(algoPath, stock, day, day + " " + stock + " " + parsedLine)
                         
    pf.writeProfile(tdp, originalProfile, "") 
 

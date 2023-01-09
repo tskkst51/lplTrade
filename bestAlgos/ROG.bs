@@ -1,4 +1,13 @@
 ROG Gain: $ -42.55 Win %: 0 in 1 days with algo TB1_HL_QM_OB2_OS2_CB2_CS2_AO_AC
+ROG Gain: $ -38.17 Win %: 20.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_AV_UA_AL_DU7_DL1_DU5_DL2
+ROG Gain: $ -38.17 Win %: 20.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_HM_AV_AL_DU7_UA_DL1_DL2_DU5
+ROG Gain: $ -38.17 Win %: 20.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_HM_AV_AL_DU7_UA_DL1_DU5_DL2
+ROG Gain: $ -38.17 Win %: 20.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_RV_AV_AL_DU7_UA_DL1_DL2_DU5
+ROG Gain: $ -38.17 Win %: 20.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_RV_AV_AL_DU7_UA_DL1_DL2_DU5
+ROG Gain: $ -38.17 Win %: 20.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_RV_AV_AL_DU7_UA_DL1_DL2_DU5
+ROG Gain: $ -38.17 Win %: 20.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_RV_AV_AL_DU7_UA_DL1_DL2_TG_DU5
+ROG Gain: $ -38.17 Win %: 20.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_RV_AV_AL_DU7_UA_DL1_DL2_TG_DU5
+ROG Gain: $ -38.17 Win %: 20.00 in 5 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_RV_AV_AL_DU7_UA_DL1_DU5_DL2
 ROG Gain: $ -34.19 Win %: 0 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_AO
 ROG Gain: $ -34.19 Win %: 0 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_AO_AC
 ROG Gain: $ -25.71 Win %: 0 in 1 days with algo TB1_HL_QM_OB2_OS2_CB2_CS2_AC
@@ -76,6 +85,9 @@ ROG Gain: $ -3.02 Win %: 0 in 1 days with algo TB1_HL_QM_OB2_OS2_CB2_CS2_IT_QL
 ROG Gain: $ -3.02 Win %: 0 in 1 days with algo TB1_HL_QM_OB2_OS2_CB2_CS2_QL
 ROG Gain: $ -2.9 Win %: 0 in 1 days with algo TB1_LO_QM_OB5_OS5_CB5_CS5_HM_AV
 ROG Gain: $ -2.81 Win %: 0 in 1 days with algo TB1_HL_QM_OB3_OS3_CB1_CS1_IT_QL_DB30
+ROG Gain: $ -2.59 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_AV_UA_AL_TG
+ROG Gain: $ -2.59 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_HM_AV_AL_TG
+ROG Gain: $ -2.59 Win %: 75.00 in 4 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_RV_AV_AL_TG
 ROG Gain: $ -2.38 Win %: 0 in 1 days with algo TB1_LO_QM_OB5_OS5_CB5_CS5_IR5
 ROG Gain: $ -2.38 Win %: 0 in 1 days with algo TB1_LO_QM_OB5_OS5_CB5_CS5_IR5
 ROG Gain: $ -2.38 Win %: 0 in 1 days with algo TB1_LO_QM_OB5_OS5_CB5_CS5_QP_IR5
@@ -229,3 +241,6 @@ ROG Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB5_OS5_CB5_CS5_IT_
 ROG Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB5_OS5_CB5_CS5_QL
 ROG Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB5_OS5_CB5_CS5_TS
 ROG Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB5_OS5_CB5_CS5_TS
+ROG Gain: $ 2.46 Win %: 100.00 in 3 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_AV_UA_AL
+ROG Gain: $ 2.46 Win %: 100.00 in 3 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_HM_AV_AL
+ROG Gain: $ 2.46 Win %: 100.00 in 3 days with algo TB1_LO_QM_OB3_OS3_CB3_CS5_RV_AV_AL

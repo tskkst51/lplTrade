@@ -191,10 +191,14 @@ def getStocksFromBCDir(path):
 def getAutoStocks(orderType, numStocksToTrack):
 
    srcPath = "daysBest/latest"
-   if isinstance(orderType, int):
-      if orderType == magicNumber:
-         srcPath = "daysBest/latestMN"
+   #if isinstance(orderType, int):
+   if int(orderType) == int(magicNumber):
+      srcPath = "daysBest/latestMN"
+   elif int(orderType) == int(percent):
+      srcPath = "daysBest/latestPC"
    
+   print ("magicNumber " + str(magicNumber))
+   print ("orderType " + str(orderType))
    print ("srcPath " + str(srcPath))
    
    dstPath="profiles/autoStocks.txt"
@@ -447,6 +451,7 @@ defaultStocks = str(d["defaultStocks"])
 # Make sure stocksFileMultiplier is "1" or more...
 stocksFileMultiplier = float(d["stocksFileMultiplier"])
 numStocksToProcessInPremarket = int(d["numStocksToProcessInPremarket"])
+loopDelay = float(d["loopDelay"])
 
 masterMode = 1
 
@@ -474,6 +479,7 @@ lastMinuteOfLiveTrading = 155958
 marketOpen = 0
 firstTimeThru = 0
 magicNumber = 2
+percent = 3
 
 #new_dict = { new_list: [] for new_list in range(4)} 
 
@@ -734,8 +740,12 @@ pa1 = pa[stocks[0]]
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set end time
 
+lg1.debug ("halfDays set to: " + halfDays)
+lg1.debug ("getDateMonthDayYear " + str(cn.getDateMonthDayYear()))
+
 if str(cn.getDateMonthDayYear()) in halfDays:
    lastMinuteOfLiveTrading = int(halfDayEndTime)
+   lg1.info ("lastMinuteOfLiveTrading is set to: " + str(lastMinuteOfLiveTrading))
    
    lg1.info ("Half day trading is set to: " + halfDayEndTime)
    lg1.info ("It must be a day after a holiday: " + halfDays)
@@ -882,10 +892,10 @@ if offLine:
 pid = {}
 numLaunchedPids = 0
 
-# Use maxStocksToTrade when live
 if preMarketAnalysis and not offLine and stocksFile == "":
    pid = th.launchAlgos(algoData, maxStocksToTrade, os.path.basename(workPath))
-if not preMarketAnalysis and not offLine:
+#if not preMarketAnalysis and not offLine:
+if stocksFile != "" and not offLine:
    pid = th.launchStocks(stocks, maxStocksToTrade, os.path.basename(workPath))
 
 if offLine:
@@ -980,6 +990,10 @@ while True:
 
    # Loop until each bar has ended
    while True:
+      # Too much data causes tests to run slower. Use a delay getting data
+      if not offLine and loopDelay > 0:
+         sleep(loopDelay)
+      
       # Set the values from the trading service
       serviceValues = cn.setStockValues(stocksChart, barCtr, stocks)
 

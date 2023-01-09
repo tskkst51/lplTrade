@@ -11,7 +11,7 @@ function init {
    
    $HOME/bin/lplt.sh
 
-   incDBNum=""
+   incDBNum=0
    reduceNumDBs=""
    
    sym=$1
@@ -92,17 +92,13 @@ for t in $(echo "1 3 5"); do
          echo DB search pattern: $pattern $s
 
          #cmd="${wp}/scripts/getDBVal.sh all $pattern $s $ss"
-         if [[ -n $reduceNumDBs ]]; then
-            cmd="${wp}/scripts/getDBVal.sh all $pattern $s $ss $incDBNum r $debug d"
-         else
-            cmd="${wp}/scripts/getDBVal.sh all $pattern $s $ss n $debug d"
-         fi                  
+         cmd="${wp}/scripts/getDBVal.sh all $pattern $s $ss $incDBNum $debug d dontStopDB"
          
          if [[ $debug == "d" ]]; then echo $cmd; fi
          
          # Ignore any results that were negative
          res=$($cmd)
-         #echo res $res
+         if [[ $debug == "d" ]]; then echo res $res; fi
          for r in $(echo $res); do
             echo $r | grep -q "-"
             if [[ $? == 0 ]]; then
@@ -128,23 +124,59 @@ if [[ -f "$bestAlgosDir/${s}.in" ]]; then
    mv "$bestAlgosDir/${s}.in" "$bestAlgosDir/${s}.$$.in"
 fi
 
+if [[ -f "$bestAlgosDir/${s}.pc" ]]; then
+   mv "$bestAlgosDir/${s}.pc" "$bestAlgosDir/${s}.$$.pc"
+fi
+
 rm -f ${tmpFile2}_*
-tmpFile2=$(getRandomTmpFile)
+
 cat $tmpFile
 
+days=$(getAllDays $sym)
+ctr=0
+
+# Only run on the last $reduceNumDBs days
+if (( incDBNum > 0 )); then
+   numDays=$(echo $days | tr -cd ' ' | wc -c)
+   loopCtr=$(echo "$numDays - $incDBNum + 1" | bc)
+   for d in $(echo $days); do
+      # Skip total - n
+      ctr=$(echo "$(($ctr + 1))")
+      if (( ctr <= loopCtr )); then
+         if [[ -n $debug ]]; then echo skipping $d; fi
+         continue
+      fi
+      newDays="$newDays $d"
+   done
+   days=$newDays
+fi
+
+if [[ -n $debug ]]; then echo Running days: $days; fi
+
+tmpFile2=$(getRandomTmpFile)
+tmpFile3=$(getRandomTmpFile)
+
 for line in $(cat $tmpFile); do
-   a=$(echo $line | awk -F\| '{print $2}')
    s=$(echo $line | awk -F\| '{print $1}')
+   a=$(echo $line | awk -F\| '{print $2}')
+#   for d in echo $days; do
+#      run.sh $d $a $s | grep Gain >> ${tmpFile2}_${s}
+#   done
+   if [[ -n $debug ]]; then echo Running $s $a; fi
+   #echo run.sh \"$days\" $a $s
+   #run.sh \\"$days\\" $a $s | grep Gain >> ${tmpFile2}_${s}
    run.sh "" $a $s | grep Gain >> ${tmpFile2}_${s}
-   tail -1 ${tmpFile2}_${s} >> "/tmp/${s}.inTmp"
+   tail -1 ${tmpFile2}_${s} >> ${tmpFile3}_${s}
    tail -1 ${tmpFile2}_${s}
 done
 
 for s in $(echo $syms); do
-   sort -n -k4,4 "/tmp/${s}.inTmp" > "$bestAlgosDir/${s}.in"
+   echo Creating $bestAlgosDir/${s} in and pc files...
+   sort -n -k4,4 -k7,7 ${tmpFile3}_${s} > "$bestAlgosDir/${s}.in"
+   sort -n -k9,9 -k7,7 -k4,4 ${tmpFile3}_${s} > "$bestAlgosDir/${s}.pc"
    #sort -n -k4,4 ${tmpFile2}_${s} > "$bestAlgosDir/${s}.in"
    tail -n $dbNumBestRows "$bestAlgosDir/${s}.in"
-   rm -f "/tmp/${s}.inTmp"
+   rm -f ${tmpFile3}_${s}
 done
 
 #${wp}/scripts/dbStopAll.sh

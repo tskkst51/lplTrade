@@ -1,7 +1,3 @@
-MOMO Gain: $ Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB1_CS1_IT
-MOMO Gain: $ Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB1_CS1_IT_QL
-MOMO Gain: $ Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB1_CS1_IT_QL_DB8
-MOMO Gain: $ 0.32 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_TS
 MOMO Gain: $ -0.99 Win %: 0 in 3 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_HM_QP
 MOMO Gain: $ -0.92 Win %: 0 in 3 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_RV_AV_DB6
 MOMO Gain: $ -0.66 Win %: 33.00 in 3 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_HM_AV
@@ -95,6 +91,9 @@ MOMO Gain: $ -0.02 Win %: 33.00 in 3 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_RV
 MOMO Gain: $ -0.02 Win %: 33.00 in 3 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_TS
 MOMO Gain: $ -0.02 Win %: 66.00 in 3 days with algo TB5_HI_QM_OB1_OS1_CB3_CS3_AL
 MOMO Gain: $ -0.01 Win %: 66.00 in 3 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_IT_QP
+MOMO Gain: $ Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB1_CS1_IT
+MOMO Gain: $ Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB1_CS1_IT_QL
+MOMO Gain: $ Win %: 33.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB1_CS1_IT_QL_DB8
 MOMO Gain: $ 0.0 Win %: 66.00 in 3 days with algo TB2_HI_QM_OB5_OS5_CB1_CS1_IT_QL
 MOMO Gain: $ 0.0 Win %: 66.00 in 3 days with algo TB2_HI_QM_OB5_OS5_CB1_CS1_IT_QP
 MOMO Gain: $ 0.0 Win %: 66.00 in 3 days with algo TB2_HI_QM_OB5_OS5_CB1_CS1_LI
@@ -167,6 +166,7 @@ MOMO Gain: $ 0.22 Win %: 66.00 in 3 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_IR5
 MOMO Gain: $ 0.22 Win %: 100.00 in 3 days with algo TB2_HI_QM_OB5_OS5_CB1_CS1_HM
 MOMO Gain: $ 0.27 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB1_CS1_RV_AL
 MOMO Gain: $ 0.27 Win %: 100.00 in 3 days with algo TB4_HS_QM_OB5_OS5_CB1_CS1_RV_AL_DB8
+MOMO Gain: $ 0.32 Win %: 100.00 in 2 days with algo TB2_LO_QM_OB1_OS1_CB5_CS5_TS
 MOMO Gain: $ 0.33 Win %: 66.00 in 3 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_HM_TR
 MOMO Gain: $ 0.49 Win %: 66.00 in 3 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_AL
 MOMO Gain: $ 0.49 Win %: 66.00 in 3 days with algo TB1_LO_QM_OB2_OS2_CB5_CS5_RV_AL

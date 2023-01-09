@@ -230,3 +230,6 @@ QQC Gain: $ 0.0 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB4_CS4_TS
 QQC Gain: $ 0.0 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB4_CS4_TS
 QQC Gain: $ 0.0 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB4_CS4_VI
 QQC Gain: $ 0.0 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB3_OS3_CB4_CS4_VI
+QQC Gain: $ 0.0 Win %: 100.00 in 4 days with algo TB5_LO_HL_QM_OB2_OS4_CB2_CS4_QP_PM_DU7_UA_DL2
+QQC Gain: $ 0.0 Win %: 100.00 in 4 days with algo TB5_LO_HL_QM_OB2_OS4_CB2_CS4_QP_PM_TG
+QQC Gain: $ 0.0 Win %: 100.00 in 4 days with algo TB5_LO_HL_QM_OB2_OS4_CB2_CS4_QP_PM_UA

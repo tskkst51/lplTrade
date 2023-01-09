@@ -230,3 +230,9 @@ MVIS Gain: $ 5.84 Win %: 80.00 in 5 days with algo TB5_HI_QM_OB3_OS3_CB5_CS5_AO
 MVIS Gain: $ 5.84 Win %: 80.00 in 5 days with algo TB5_HI_QM_OB3_OS3_CB5_CS5_AO_AC
 MVIS Gain: $ 5.85 Win %: 100.00 in 5 days with algo TB5_HS_QM_OB3_OS3_CB5_CS5_HM_AV
 MVIS Gain: $ 5.88 Win %: 100.00 in 5 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_SS
+MVIS Gain: $ 1.28 Win %: 66.00 in 6 days with algo TB5_HI_QM_OB5_OS2_CB3_CS5_HM_AV_UA
+MVIS Gain: $ 1.32 Win %: 66.00 in 6 days with algo TB5_HI_QM_OB5_OS2_CB3_CS5_HM_AV_AL
+MVIS Gain: $ 12.65 Win %: 66.00 in 6 days with algo TB5_HI_QM_OB5_OS2_CB3_CS5_HM_AV_DU7
+MVIS Gain: $ 12.65 Win %: 66.00 in 6 days with algo TB5_HI_QM_OB5_OS2_CB3_CS5_HM_AV_DU7_UA
+MVIS Gain: $ 12.65 Win %: 66.00 in 6 days with algo TB5_HI_QM_OB5_OS2_CB3_CS5_HM_AV_UA_DU7
+MVIS Gain: $ 12.74 Win %: 66.00 in 6 days with algo TB5_HI_QM_OB5_OS2_CB3_CS5_HM_AV_DU7_TG

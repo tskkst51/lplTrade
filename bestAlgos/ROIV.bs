@@ -229,3 +229,9 @@ ROIV Gain: $ 0.61 Win %: 100.00 in 1 days with algo TB4_HS_QM_OB2_OS2_CB5_CS5_PM
 ROIV Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB1_CS1_QP_PM
 ROIV Gain: $ 0.73 Win %: 100.00 in 1 days with algo TB4_HL_QM_OB4_OS4_CB3_CS3_AO
 ROIV Gain: $ 0.83 Win %: 100.00 in 1 days with algo TB5_HL_QM_OB2_OS2_CB1_CS1_QP
+ROIV Gain: $ 0.85 Win %: 100.00 in 2 days with algo TB3_HS_QM_OB3_OS2_CB5_CS3_IR3_UA
+ROIV Gain: $ 0.94 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB3_OS2_CB5_CS3_IR3_DU7_AV_DL2
+ROIV Gain: $ 2.37 Win %: 50.00 in 2 days with algo TB3_HS_QM_OB3_OS2_CB5_CS3_IR3_DU7_UA_AV_DL2
+ROIV Gain: $ 2.51 Win %: 33.00 in 3 days with algo TB3_HS_QM_OB3_OS2_CB5_CS3_IR3_DU7_UA_AV_DL2_DU8_AL
+ROIV Gain: $ 2.51 Win %: 33.00 in 3 days with algo TB3_HS_QM_OB3_OS2_CB5_CS3_IR3_UA_DU8_AV_DL2
+ROIV Gain: $ 2.51 Win %: 33.00 in 3 days with algo TB3_HS_QM_OB3_OS2_CB5_CS3_IR3_UA_DU8_AV_DL2

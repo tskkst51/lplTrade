@@ -230,3 +230,6 @@ RF Gain: $ 0.7 Win %: 100.00 in 3 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_RV
 RF Gain: $ 0.8 Win %: 100.00 in 3 days with algo TB2_HL_LO_QM_OB2_OS2_CB2_CS2_VI
 RF Gain: $ 0.85 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_AV
 RF Gain: $ 0.85 Win %: 100.00 in 3 days with algo TB1_HL_QM_OB1_OS1_CB3_CS3_RV_AV
+RF Gain: $ 11.76 Win %: 55.00 in 9 days with algo TB5_LO_QM_OB2_OS2_CB5_CS4_PM_DU8_DL2_AV
+RF Gain: $ 11.76 Win %: 55.00 in 9 days with algo TB5_LO_QM_OB2_OS2_CB5_CS4_PM_DU8_DL2_UA_AV
+RF Gain: $ 11.76 Win %: 55.00 in 9 days with algo TB5_LO_QM_OB2_OS2_CB5_CS4_PM_DU8_DL2_UA_AV

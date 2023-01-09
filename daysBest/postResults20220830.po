@@ -1,0 +1,4 @@
+SOXS Gain: $ -0.66 Win %: 0 in 1 days with algo TB5_HS_QM_OB2_OS2_CB2_CS5_RV_AL_DU6_UA_TG_AV
+SHOP Gain: $ -0.45 Win %: 0 in 1 days with algo TB5_HI_QM_OB5_OS2_CB5_CS5_HM_TR_DB6_AL_TG_DU6_UA_AV
+GBNY Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_DU6_DL2
+Days gain with 3 stocks: -1.11 20220830

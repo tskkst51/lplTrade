@@ -1,4 +1,3 @@
-CHKP Gain: $ 4.29 Win %: 66.00 in 6 days with algo TB1_HL_HI_QM_OB5_OS5_CB5_CS5_TS
 CHKP Gain: $ -718.17 Win %: 0 in 8 days with algo TB2_HL_QM_OB2_OS2_CB4_CS4_AO_AC
 CHKP Gain: $ -664.36 Win %: 12.00 in 8 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_AO_AC
 CHKP Gain: $ -319.61 Win %: 0 in 8 days with algo TB2_HL_QM_OB3_OS3_CB3_CS3_AO_AC
@@ -210,6 +209,9 @@ CHKP Gain: $ 2.35 Win %: 62.00 in 8 days with algo TB4_HS_QM_OB5_OS5_CB4_CS4_HM_
 CHKP Gain: $ 2.37 Win %: 50.00 in 8 days with algo TB2_HL_QM_OB2_OS2_CB4_CS4_DB15
 CHKP Gain: $ 2.39 Win %: 62.00 in 8 days with algo TB2_HL_QM_OB3_OS3_CB3_CS3_QL
 CHKP Gain: $ 2.42 Win %: 62.00 in 8 days with algo TB4_HS_QM_OB5_OS5_CB4_CS4_RV_AL_DB8
+CHKP Gain: $ 2.51 Win %: 33.00 in 12 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_RV_AV_DB6_DU6_AL_UA
+CHKP Gain: $ 2.51 Win %: 33.00 in 12 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_RV_AV_DB6_DU6_UA_AL
+CHKP Gain: $ 2.51 Win %: 33.00 in 12 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_RV_AV_DB6_DU6_UA_AL
 CHKP Gain: $ 2.51 Win %: 50.00 in 8 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_DB15
 CHKP Gain: $ 2.51 Win %: 75.00 in 8 days with algo TB4_HS_QM_OB5_OS5_CB4_CS4_AC
 CHKP Gain: $ 2.51 Win %: 75.00 in 8 days with algo TB4_HS_QM_OB5_OS5_CB4_CS4_AO_AC
@@ -225,6 +227,7 @@ CHKP Gain: $ 3.6 Win %: 50.00 in 8 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_IT_Q
 CHKP Gain: $ 4.08 Win %: 75.00 in 8 days with algo TB4_HS_QM_OB5_OS5_CB4_CS4_IT
 CHKP Gain: $ 4.15 Win %: 50.00 in 8 days with algo TB2_HL_QM_OB3_OS3_CB3_CS3_IT_QL_DB15
 CHKP Gain: $ 4.15 Win %: 50.00 in 8 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_QL
+CHKP Gain: $ 4.29 Win %: 66.00 in 6 days with algo TB1_HL_HI_QM_OB5_OS5_CB5_CS5_TS
 CHKP Gain: $ 4.59 Win %: 50.00 in 8 days with algo TB2_HL_QM_OB4_OS4_CB4_CS4_IT_QL_DB15
 CHKP Gain: $ 4.63 Win %: 75.00 in 8 days with algo TB4_HS_QM_OB5_OS5_CB4_CS4_IT_QL
 CHKP Gain: $ 4.73 Win %: 75.00 in 8 days with algo TB4_HS_QM_OB5_OS5_CB4_CS4_TR_TS
@@ -232,4 +235,13 @@ CHKP Gain: $ 4.75 Win %: 50.00 in 8 days with algo TB2_HL_QM_OB2_OS2_CB4_CS4_IT_
 CHKP Gain: $ 5.07 Win %: 75.00 in 8 days with algo TB4_HS_QM_OB5_OS5_CB4_CS4_IT_QL_DB8
 CHKP Gain: $ 6.13 Win %: 30.00 in 10 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_RV_AV_DB6_DU6_UA_AV
 CHKP Gain: $ 6.13 Win %: 30.00 in 10 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_RV_AV_DB6_DU6_UA_AV
+CHKP Gain: $ 7.87 Win %: 64.00 in 14 days with algo TB1_HI_HL_QM_OB2_OS2_CB5_CS3_AV_UA_AL
+CHKP Gain: $ 7.87 Win %: 64.00 in 14 days with algo TB1_HI_HL_QM_OB2_OS2_CB5_CS3_AV_UA_AL
+CHKP Gain: $ 7.87 Win %: 64.00 in 14 days with algo TB1_HI_HL_QM_OB2_OS2_CB5_CS3_AV_UA_AL
+CHKP Gain: $ 8.73 Win %: 76.00 in 13 days with algo TB1_HI_HL_QM_OB2_OS2_CB5_CS3_AV_UA
+CHKP Gain: $ 8.73 Win %: 76.00 in 13 days with algo TB1_HI_HL_QM_OB2_OS2_CB5_CS3_AV_UA
+CHKP Gain: $ 8.73 Win %: 76.00 in 13 days with algo TB1_HI_HL_QM_OB2_OS2_CB5_CS3_AV_UA
+CHKP Gain: $ 8.73 Win %: 76.00 in 13 days with algo TB1_HI_HL_QM_OB2_OS2_CB5_CS3_AV_UA
+CHKP Gain: $ 8.73 Win %: 76.00 in 13 days with algo TB1_HI_HL_QM_OB2_OS2_CB5_CS3_AV_UA
+CHKP Gain: $ 8.73 Win %: 76.00 in 13 days with algo TB1_HI_HL_QM_OB2_OS2_CB5_CS3_AV_UA
 CHKP Gain: $ 9.18 Win %: 40.00 in 10 days with algo TB5_LO_QM_OB2_OS2_CB2_CS5_RV_AV_DB6_DU6_AL

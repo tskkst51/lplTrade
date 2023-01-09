@@ -134,6 +134,7 @@ PFE Gain: $ 3.28 Win %: 47.00 in 21 days with algo TB5_HI_QM_OB3_OS3_CB4_CS4_RV_
 PFE Gain: $ 3.29 Win %: 52.00 in 21 days with algo TB5_HI_QM_OB3_OS3_CB4_CS4_IT_QL_DB6
 PFE Gain: $ 3.39 Win %: 57.00 in 21 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_HM_AV
 PFE Gain: $ 3.5 Win %: 61.00 in 21 days with algo TB5_HI_QM_OB3_OS3_CB4_CS4_SS
+PFE Gain: $ 3.53 Win %: 47.00 in 34 days with algo TB3_PL_QM_OB2_OS2_CB4_CS2_RV_AV_DB10_UA_AL
 PFE Gain: $ 3.55 Win %: 52.00 in 21 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_RV_AL_DB8
 PFE Gain: $ 3.57 Win %: 47.00 in 21 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_QP
 PFE Gain: $ 3.61 Win %: 47.00 in 21 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_IT_QL_DB8
@@ -161,6 +162,7 @@ PFE Gain: $ 4.76 Win %: 57.00 in 21 days with algo TB5_HI_QM_OB3_OS3_CB4_CS4_LI
 PFE Gain: $ 4.78 Win %: 52.00 in 21 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_DB8
 PFE Gain: $ 4.8 Win %: 57.00 in 21 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_VI
 PFE Gain: $ 4.89 Win %: 47.00 in 21 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_TR
+PFE Gain: $ 4.89 Win %: 47.00 in 34 days with algo TB3_PL_QM_OB2_OS2_CB4_CS2_RV_AV_DB10_UA_AL_TG
 PFE Gain: $ 5.14 Win %: 61.00 in 21 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_RV_QP
 PFE Gain: $ 5.18 Win %: 57.00 in 21 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_AV_TS
 PFE Gain: $ 5.31 Win %: 57.00 in 21 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_TR_TS
@@ -197,6 +199,7 @@ PFE Gain: $ 6.7 Win %: 57.00 in 21 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_R
 PFE Gain: $ 6.71 Win %: 66.00 in 21 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_TR_TS
 PFE Gain: $ 6.74 Win %: 61.00 in 21 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_IT_QL
 PFE Gain: $ 6.79 Win %: 66.00 in 21 days with algo TB5_HI_QM_OB3_OS3_CB4_CS4
+PFE Gain: $ 6.83 Win %: 47.00 in 34 days with algo TB3_PL_QM_OB2_OS2_CB4_CS2_RV_AV_DB10_DU5_DL2_DU8_AL
 PFE Gain: $ 6.88 Win %: 66.00 in 21 days with algo TB5_HI_QM_OB3_OS3_CB4_CS4_TR
 PFE Gain: $ 6.9 Win %: 66.00 in 21 days with algo TB5_HI_QM_OB3_OS3_CB4_CS4_IT
 PFE Gain: $ 7.01 Win %: 66.00 in 21 days with algo TB5_HI_QM_OB3_OS3_CB4_CS4_AO
@@ -229,3 +232,15 @@ PFE Gain: $ 9.15 Win %: 57.00 in 21 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_
 PFE Gain: $ 9.23 Win %: 66.00 in 21 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_QP
 PFE Gain: $ 9.78 Win %: 76.00 in 21 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_IR2
 PFE Gain: $ 10.21 Win %: 76.00 in 21 days with algo TB4_HL_LO_QM_OB1_OS1_CB4_CS4_QP_IR2
+PFE Gain: $ 20.03 Win %: 51.00 in 33 days with algo TB3_PL_QM_OB1_OS2_CB4_CS2_RV_AV_DB10_UA_DU7_AL_DL2_TG
+PFE Gain: $ 20.03 Win %: 51.00 in 33 days with algo TB3_PL_QM_OB1_OS2_CB4_CS2_RV_AV_DB10_UA_DU7_AL_DL2_TG
+PFE Gain: $ 20.88 Win %: 50.00 in 32 days with algo TB3_PL_QM_OB1_OS2_CB4_CS2_RV_AV_DB10_DU7_UA_DL2
+PFE Gain: $ 23.29 Win %: 45.00 in 33 days with algo TB3_PL_QM_OB2_OS2_CB4_CS2_RV_AV_DB10_DU5_DL2_DU7_UA
+PFE Gain: $ 23.29 Win %: 45.00 in 33 days with algo TB3_PL_QM_OB2_OS2_CB4_CS2_RV_AV_DB10_DU5_DL2_DU7_UA
+PFE Gain: $ 23.29 Win %: 45.00 in 33 days with algo TB3_PL_QM_OB2_OS2_CB4_CS2_RV_AV_DB10_DU5_DL2_DU7_UA
+PFE Gain: $ 23.29 Win %: 45.00 in 33 days with algo TB3_PL_QM_OB2_OS2_CB4_CS2_RV_AV_DB10_DU5_DL2_DU7_UA
+PFE Gain: $ 23.29 Win %: 45.00 in 33 days with algo TB3_PL_QM_OB2_OS2_CB4_CS2_RV_AV_DB10_UA_DU7_DL2
+PFE Gain: $ 23.29 Win %: 45.00 in 33 days with algo TB3_PL_QM_OB2_OS2_CB4_CS2_RV_AV_DB10_UA_DU7_DL2
+PFE Gain: $ 23.29 Win %: 45.00 in 33 days with algo TB3_PL_QM_OB2_OS2_CB4_CS2_RV_AV_DB10_UA_DU7_DL2
+PFE Gain: $ 23.86 Win %: 46.00 in 32 days with algo TB3_PL_QM_OB2_OS2_CB4_CS2_RV_AV_DB10_DU7_UA_DL2
+PFE Gain: $ 23.86 Win %: 46.00 in 32 days with algo TB3_PL_QM_OB2_OS2_CB4_CS2_RV_AV_DB10_DU7_UA_DL2

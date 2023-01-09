@@ -167,3 +167,6 @@ ABCL Gain: $ 1.27 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_RV
 ABCL Gain: $ 1.29 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_RV_AL_DB30
 ABCL Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_RV_TR
 ABCL Gain: $ 1.31 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB3_OS3_CB4_CS4_TR
+ABCL Gain: $ 2.2 Win %: 60.00 in 5 days with algo TB1_LO_HL_QM_OB4_OS2_CB3_CS5_IR5_AV
+ABCL Gain: $ 4.42 Win %: 60.00 in 5 days with algo TB1_LO_HL_QM_OB4_OS2_CB3_CS5_IR5_DU8_AV_DL2
+ABCL Gain: $ 4.45 Win %: 60.00 in 5 days with algo TB1_LO_HL_QM_OB3_OS2_CB3_CS5_IR5_DU8_AV_DL2

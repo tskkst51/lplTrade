@@ -1,4 +1,3 @@
-MPC Gain: $ 0.17 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB2_CS2_TS
 MPC Gain: $ -9.72 Win %: 16.00 in 6 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_AL
 MPC Gain: $ -9.72 Win %: 16.00 in 6 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_AL_TS
 MPC Gain: $ -9.72 Win %: 16.00 in 6 days with algo TB1_CC_QM_OB2_OS2_CB3_CS3_RV_AL
@@ -140,6 +139,7 @@ MPC Gain: $ 0.07 Win %: 50.00 in 6 days with algo TB5_HL_HS_QM_OB5_OS5_CB1_CS1_R
 MPC Gain: $ 0.12 Win %: 33.00 in 6 days with algo TB5_EO_EC_QM_OB5_OS5_CB2_CS2_HM
 MPC Gain: $ 0.12 Win %: 33.00 in 6 days with algo TB5_HL_HS_QM_OB5_OS5_CB1_CS1_HM_QP
 MPC Gain: $ 0.12 Win %: 66.00 in 6 days with algo TB5_HL_HS_QM_OB5_OS5_CB1_CS1_LI
+MPC Gain: $ 0.17 Win %: 50.00 in 4 days with algo TB1_HL_HI_QM_OB2_OS2_CB2_CS2_TS
 MPC Gain: $ 0.19 Win %: 33.00 in 6 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_IT_QP
 MPC Gain: $ 0.19 Win %: 33.00 in 6 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_QP
 MPC Gain: $ 0.19 Win %: 33.00 in 6 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_IT_QP
@@ -218,6 +218,7 @@ MPC Gain: $ 1.07 Win %: 83.00 in 6 days with algo TB5_HL_HS_QM_OB5_OS5_CB1_CS1_H
 MPC Gain: $ 1.34 Win %: 66.00 in 6 days with algo TB5_HL_HS_QM_OB5_OS5_CB1_CS1_HM_AV_DB6
 MPC Gain: $ 1.34 Win %: 66.00 in 6 days with algo TB5_HL_HS_QM_OB5_OS5_CB1_CS1_RV_AV_DB6
 MPC Gain: $ 1.36 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB5_OS5_CB2_CS2_RV_TR_DB6
+MPC Gain: $ 1.39 Win %: 30.00 in 20 days with algo TB5_OO_QM_OB5_OS2_CB2_CS5_PM_DU7_UA_DL2_DU8_AL
 MPC Gain: $ 1.41 Win %: 66.00 in 6 days with algo TB1_HL_LO_QM_OB1_OS1_CB1_CS1_IT_QL
 MPC Gain: $ 1.42 Win %: 33.00 in 6 days with algo TB5_EO_EC_QM_OB5_OS5_CB2_CS2_LI
 MPC Gain: $ 1.42 Win %: 50.00 in 6 days with algo TB5_EO_EC_QM_OB5_OS5_CB2_CS2_TR_IR1
@@ -230,3 +231,20 @@ MPC Gain: $ 2.03 Win %: 66.00 in 6 days with algo TB1_HL_LO_QM_OB2_OS2_CB1_CS1_I
 MPC Gain: $ 2.05 Win %: 100.00 in 6 days with algo TB5_EO_EC_QM_OB5_OS5_CB2_CS2_PM
 MPC Gain: $ 2.27 Win %: 83.00 in 6 days with algo TB5_HL_HS_QM_OB5_OS5_CB1_CS1_RV_AL_DB6
 MPC Gain: $ 2.28 Win %: 66.00 in 6 days with algo TB5_HL_HS_QM_OB5_OS5_CB1_CS1_HM_AV
+MPC Gain: $ 2.57 Win %: 36.00 in 25 days with algo TB5_OO_QM_OB2_OS2_CB3_CS5_LI_DU7_UA_AV_DL2_DU8_AL_TG
+MPC Gain: $ 2.57 Win %: 36.00 in 25 days with algo TB5_OO_QM_OB2_OS2_CB3_CS5_LI_DU7_UA_AV_DL2_DU8_AL_TG
+MPC Gain: $ 2.57 Win %: 36.00 in 25 days with algo TB5_OO_QM_OB2_OS2_CB3_CS5_LI_DU7_UA_AV_DL2_DU8_AL_TG
+MPC Gain: $ 5.77 Win %: 40.00 in 20 days with algo TB5_OO_QM_OB2_OS2_CB3_CS5_LI_DU7_UA_AV_DL2_AL
+MPC Gain: $ 8.11 Win %: 39.00 in 23 days with algo TB5_OO_QM_OB2_OS2_CB3_CS5_LI_DU7_UA_AV_DL2_DU8_AL_TG
+MPC Gain: $ 8.11 Win %: 39.00 in 23 days with algo TB5_OO_QM_OB2_OS2_CB3_CS5_LI_DU7_UA_AV_DL2_DU8_AL_TG
+MPC Gain: $ 8.11 Win %: 39.00 in 23 days with algo TB5_OO_QM_OB2_OS2_CB3_CS5_LI_DU7_UA_AV_DL2_DU8_AL_TG
+MPC Gain: $ 8.41 Win %: 40.00 in 20 days with algo TB5_OO_QM_OB2_OS2_CB3_CS5_LI_DU7_UA_AV_DL2_DU8_AL
+MPC Gain: $ 8.91 Win %: 36.00 in 19 days with algo TB5_OO_QM_OB2_OS2_CB3_CS5_LI_DU7_UA_AV_DL2
+MPC Gain: $ 9.61 Win %: 57.00 in 19 days with algo TB5_OO_QM_OB5_OS2_CB2_CS5_PM_DU7_DL2
+MPC Gain: $ 10.49 Win %: 42.00 in 21 days with algo TB5_OO_QM_OB2_OS2_CB3_CS5_LI_DU7_UA_AV_DL2_DU8_AL
+MPC Gain: $ 10.49 Win %: 42.00 in 21 days with algo TB5_OO_QM_OB2_OS2_CB3_CS5_LI_DU7_UA_AV_DL2_DU8_AL
+MPC Gain: $ 10.49 Win %: 42.00 in 21 days with algo TB5_OO_QM_OB2_OS2_CB3_CS5_LI_DU7_UA_AV_DL2_DU8_AL
+MPC Gain: $ 13.52 Win %: 47.00 in 19 days with algo TB5_OO_QM_OB5_OS2_CB2_CS5_PM_DU7
+MPC Gain: $ 24.35 Win %: 40.00 in 22 days with algo TB5_OO_QM_OB5_OS2_CB2_CS5_PM_DU7_UA_DL2_DU8_AL_TG
+MPC Gain: $ 24.35 Win %: 40.00 in 22 days with algo TB5_OO_QM_OB5_OS2_CB2_CS5_PM_DU7_UA_DL2_DU8_AL_TG
+MPC Gain: $ 24.35 Win %: 40.00 in 22 days with algo TB5_OO_QM_OB5_OS2_CB2_CS5_PM_DU7_UA_DL2_DU8_AL_TG

@@ -173,3 +173,6 @@ FA Gain: $ 0.96 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_HM
 FA Gain: $ 0.96 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_IR5
 FA Gain: $ 0.96 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_IT_QL
 FA Gain: $ 0.96 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB4_OS4_CB4_CS4_RV
+FA Gain: $ 1.15 Win %: 100.00 in 2 days with algo TB1_OO_QM_OB2_OS3_CB3_CS4_LI_UA
+FA Gain: $ 1.91 Win %: 100.00 in 2 days with algo TB1_OO_QM_OB4_OS4_CB3_CS4_AV_IT_DU7_AL_DL2
+FA Gain: $ 3.37 Win %: 100.00 in 2 days with algo TB1_OO_QM_OB3_OS3_CB3_CS4_AL_IT_DU7_AV_DL2

@@ -62,7 +62,7 @@ if [[ -n $removeOldData ]]; then
       if [[ $newToken != $token ]] && [[ $newToken != "" ]]; then
          #if [[ ${stock} == "FB" ]]; then continue; fi
          echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-         echo removing old data from stock $stock
+         echo Removing old data from stock $stock
          echo time stamp on file $token
          echo last recorded time from file $newToken
          if [[ -n $debug ]]; then
@@ -87,6 +87,7 @@ if [[ -n $removeOldData ]]; then
          fi
          
       else
+         echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
          echo Not removing data from stock $stock
          echo time stamp on file $token
          echo last recorded time from file $newToken

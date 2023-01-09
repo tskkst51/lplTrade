@@ -172,3 +172,6 @@ TVTX Gain: $ 3.22 Win %: 100.00 in 3 days with algo TB2_HL_HS_QM_OB1_OS1_CB2_CS2
 TVTX Gain: $ 3.41 Win %: 66.00 in 3 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_HM_TR
 TVTX Gain: $ 3.59 Win %: 66.00 in 3 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_HM_AV
 TVTX Gain: $ 3.59 Win %: 100.00 in 3 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_RV_TR
+TVTX Gain: $ 4.49 Win %: 80.00 in 5 days with algo TB1_OO_QM_OB3_OS2_CB5_CS5_HM_TR_DU7_AV_DL2
+TVTX Gain: $ 7.86 Win %: 60.00 in 5 days with algo TB1_HI_HL_QM_OB3_OS3_CB3_CS2_RV_AV_DB30_DU7_UA_DL2
+TVTX Gain: $ 7.86 Win %: 60.00 in 5 days with algo TB1_HI_HL_QM_OB3_OS3_CB3_CS2_RV_AV_DB30_DU7_UA_DL2

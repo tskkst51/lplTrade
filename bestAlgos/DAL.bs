@@ -230,3 +230,6 @@ DAL Gain: $ 4.72 Win %: 85.00 in 7 days with algo TB4_HL_QM_OB2_OS2_CB2_CS2_AO
 DAL Gain: $ 4.84 Win %: 71.00 in 7 days with algo TB4_HL_QM_OB2_OS2_CB2_CS2_QL
 DAL Gain: $ 4.98 Win %: 71.00 in 7 days with algo TB4_HL_QM_OB2_OS2_CB2_CS2_IT
 DAL Gain: $ 4.98 Win %: 71.00 in 7 days with algo TB4_HL_QM_OB2_OS2_CB2_CS2_IT_QL
+DAL Gain: $ 19.78 Win %: 64.00 in 17 days with algo TB1_OO_QM_OB2_OS4_CB3_CS3_AV_UA_DU7_AL_DL2
+DAL Gain: $ 25.47 Win %: 70.00 in 17 days with algo TB1_OO_QM_OB2_OS4_CB3_CS3_AV_UA_DU7
+DAL Gain: $ 25.47 Win %: 70.00 in 17 days with algo TB1_OO_QM_OB2_OS4_CB3_CS3_RV_AV_DU7

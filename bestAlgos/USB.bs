@@ -1,4 +1,3 @@
-USB Gain: $ 0.4 Win %: 66.00 in 6 days with algo TB1_OC_QM_OB5_OS5_CB5_CS5_TS
 USB Gain: $ -104.25 Win %: 57.00 in 7 days with algo TB2_HL_HS_QM_OB3_OS3_CB4_CS4_SS
 USB Gain: $ -1.24 Win %: 57.00 in 7 days with algo TB1_OC_QM_OB5_OS5_CB5_CS5_AL_TS
 USB Gain: $ -1.15 Win %: 57.00 in 7 days with algo TB3_HI_QM_OB2_OS2_CB5_CS5_TR_QP_DB10
@@ -30,6 +29,7 @@ USB Gain: $ 0.35 Win %: 42.00 in 7 days with algo TB2_HL_HS_QM_OB3_OS3_CB4_CS4_R
 USB Gain: $ 0.36 Win %: 57.00 in 7 days with algo TB2_HL_HS_QM_OB3_OS3_CB4_CS4_IT_QP
 USB Gain: $ 0.36 Win %: 57.00 in 7 days with algo TB2_HL_HS_QM_OB3_OS3_CB4_CS4_QP
 USB Gain: $ 0.37 Win %: 57.00 in 7 days with algo TB1_OC_QM_OB5_OS5_CB5_CS5_HM_AL
+USB Gain: $ 0.4 Win %: 66.00 in 6 days with algo TB1_OC_QM_OB5_OS5_CB5_CS5_TS
 USB Gain: $ 0.44 Win %: 71.00 in 7 days with algo TB1_OC_QM_OB5_OS5_CB5_CS5_QP_IR5
 USB Gain: $ 0.45 Win %: 57.00 in 7 days with algo TB4_HI_QM_OB4_OS4_CB4_CS4_TR_IR2
 USB Gain: $ 0.47 Win %: 57.00 in 7 days with algo TB1_OC_QM_OB5_OS5_CB5_CS5_AV_TS
@@ -230,3 +230,9 @@ USB Gain: $ 5.5 Win %: 100.00 in 7 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_QL
 USB Gain: $ 5.68 Win %: 100.00 in 7 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_IT
 USB Gain: $ 5.68 Win %: 100.00 in 7 days with algo TB5_OO_QM_OB1_OS1_CB4_CS4_IT_QL
 USB Gain: $ 5.7 Win %: 100.00 in 7 days with algo TB3_HI_QM_OB2_OS2_CB5_CS5_AV_TS
+USB Gain: $ 10.19 Win %: 92.00 in 13 days with algo TB5_OO_QM_OB3_OS4_CB4_CS4_AV_TS_DU7_DU8_DL2
+USB Gain: $ 10.19 Win %: 92.00 in 13 days with algo TB5_OO_QM_OB3_OS4_CB4_CS4_AV_TS_DU7_DU8_DL2
+USB Gain: $ 10.58 Win %: 69.00 in 13 days with algo TB5_OO_QM_OB3_OS4_CB4_CS3_RV_AL_DU7_UA_DL2_AV
+USB Gain: $ 15.17 Win %: 66.00 in 12 days with algo TB5_OO_QM_OB3_OS4_CB4_CS3_RV_AL_DU7_UA_AV_DL2
+USB Gain: $ 16.14 Win %: 66.00 in 12 days with algo TB5_OO_QM_OB3_OS2_CB4_CS4_VI_DU7_DL2
+USB Gain: $ 16.14 Win %: 66.00 in 12 days with algo TB5_OO_QM_OB3_OS2_CB4_CS4_VI_DU7_UA_DL2

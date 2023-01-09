@@ -1,4 +1,3 @@
-ATVI Gain: $ 0.41 Win %: 60.00 in 5 days with algo TB4_HL_LO_QM_OB2_OS2_CB4_CS4_TS
 ATVI Gain: $ -691.32 Win %: 0 in 6 days with algo TB2_PL_QM_OB2_OS2_CB2_CS2_AO_AC
 ATVI Gain: $ -218.38 Win %: 0 in 6 days with algo TB2_PL_QM_OB2_OS2_CB2_CS2_AC
 ATVI Gain: $ -60.43 Win %: 33.00 in 6 days with algo TB2_PL_QM_OB2_OS2_CB2_CS2_AO
@@ -96,6 +95,7 @@ ATVI Gain: $ 0.35 Win %: 50.00 in 6 days with algo TB4_HL_HI_QM_OB2_OS2_CB5_CS5_
 ATVI Gain: $ 0.36 Win %: 66.00 in 6 days with algo TB5_LO_QM_OB5_OS5_CB4_CS4_TR_TS
 ATVI Gain: $ 0.4 Win %: 66.00 in 6 days with algo TB4_HL_HI_QM_OB2_OS2_CB5_CS5_IT_QP
 ATVI Gain: $ 0.4 Win %: 66.00 in 6 days with algo TB4_HL_HI_QM_OB2_OS2_CB5_CS5_QP
+ATVI Gain: $ 0.41 Win %: 60.00 in 5 days with algo TB4_HL_LO_QM_OB2_OS2_CB4_CS4_TS
 ATVI Gain: $ 0.42 Win %: 50.00 in 6 days with algo TB5_LO_QM_OB5_OS5_CB4_CS4_HM_TR_DB6
 ATVI Gain: $ 0.46 Win %: 33.00 in 6 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_RV_TR_DB10
 ATVI Gain: $ 0.48 Win %: 50.00 in 6 days with algo TB5_LO_QM_OB5_OS5_CB4_CS4_HM_AV_DB6
@@ -230,3 +230,6 @@ ATVI Gain: $ 5.41 Win %: 83.00 in 6 days with algo TB3_HI_QM_OB4_OS4_CB4_CS4_IT_
 ATVI Gain: $ 6.32 Win %: 83.00 in 6 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4_TR_TS
 ATVI Gain: $ 7.21 Win %: 66.00 in 6 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4_IT
 ATVI Gain: $ 7.63 Win %: 66.00 in 6 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4_IT_QL
+ATVI Gain: $ 15.67 Win %: 54.00 in 11 days with algo TB5_HI_QM_OB4_OS2_CB3_CS5_DU6_AL
+ATVI Gain: $ 18.58 Win %: 63.00 in 11 days with algo TB5_HI_QM_OB2_OS2_CB2_CS5_DU6_AV
+ATVI Gain: $ 20.12 Win %: 63.00 in 11 days with algo TB5_HI_QM_OB2_OS2_CB2_CS5_DU6_AL

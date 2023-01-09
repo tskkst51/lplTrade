@@ -178,6 +178,9 @@ V Gain: $ 4.47 Win %: 46.00 in 13 days with algo TB2_HI_QM_OB4_OS4_CB5_CS5_RV_QP
 V Gain: $ 4.57 Win %: 69.00 in 13 days with algo TB1_HL_LO_QM_OB3_OS3_CB4_CS4_HM_AV
 V Gain: $ 4.7 Win %: 53.00 in 13 days with algo TB1_HL_LO_QM_OB4_OS4_CB3_CS3_AL
 V Gain: $ 4.74 Win %: 53.00 in 13 days with algo TB2_HI_QM_OB4_OS4_CB5_CS5_AL
+V Gain: $ 4.87 Win %: 54.00 in 22 days with algo TB3_OO_QM_OB4_OS2_CB3_CS3_AV_TS_TG
+V Gain: $ 4.87 Win %: 54.00 in 22 days with algo TB3_OO_QM_OB4_OS2_CB3_CS3_AV_TS_TG_UA
+V Gain: $ 4.87 Win %: 54.00 in 22 days with algo TB3_OO_QM_OB4_OS2_CB3_CS3_AV_TS_UA_TG
 V Gain: $ 4.88 Win %: 46.00 in 13 days with algo TB1_HL_LO_QM_OB3_OS3_CB4_CS4_RV
 V Gain: $ 4.98 Win %: 46.00 in 13 days with algo TB2_HI_QM_OB4_OS4_CB5_CS5_IT
 V Gain: $ 5.38 Win %: 61.00 in 13 days with algo TB1_HL_LO_QM_OB3_OS3_CB3_CS3_AV
@@ -229,3 +232,6 @@ V Gain: $ 15.9 Win %: 69.00 in 13 days with algo TB1_HL_LO_QM_OB3_OS3_CB3_CS3_HM
 V Gain: $ 16.65 Win %: 69.00 in 13 days with algo TB1_HL_LO_QM_OB4_OS4_CB3_CS3_HM_AV
 V Gain: $ 17.51 Win %: 84.00 in 13 days with algo TB1_HL_LO_QM_OB4_OS4_CB3_CS3_HM_AV_DB30
 V Gain: $ 20.18 Win %: 69.00 in 13 days with algo TB1_HL_LO_QM_OB3_OS3_CB3_CS3_HM_AV
+V Gain: $ 30.63 Win %: 59.00 in 22 days with algo TB3_OO_QM_OB4_OS2_CB3_CS3_AV_TS_DU7_UA_DL2
+V Gain: $ 30.63 Win %: 59.00 in 22 days with algo TB3_OO_QM_OB4_OS2_CB3_CS3_AV_TS_DU7_UA_DL2
+V Gain: $ 39.48 Win %: 40.00 in 22 days with algo TB1_OO_QM_OB2_OS4_CB4_CS4_RV_AV_DB30_DU7

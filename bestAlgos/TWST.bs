@@ -1,4 +1,3 @@
-TWST Gain: $ -24.27 Win %: 40.00 in 5 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_TS
 TWST Gain: $ -92.16 Win %: 0 in 7 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_HM_QP
 TWST Gain: $ -90.69 Win %: 0 in 7 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_RV_QP
 TWST Gain: $ -89.54 Win %: 0 in 7 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_QP
@@ -21,14 +20,20 @@ TWST Gain: $ -57.6 Win %: 14.00 in 7 days with algo TB3_HL_HS_QM_OB1_OS1_CB4_CS4
 TWST Gain: $ -57.27 Win %: 14.00 in 7 days with algo TB3_HL_HS_QM_OB1_OS1_CB4_CS4_HM_QP
 TWST Gain: $ -56.83 Win %: 14.00 in 7 days with algo TB3_HL_HS_QM_OB1_OS1_CB4_CS4_QP_IR3
 TWST Gain: $ -53.57 Win %: 28.00 in 7 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_TR_QP_DB10
+TWST Gain: $ -51.08 Win %: 25.00 in 8 days with algo TB1_HL_QM_OB5_OS1_CB4_CS3_AO_TG
 TWST Gain: $ -51.03 Win %: 14.00 in 7 days with algo TB3_HL_HS_QM_OB1_OS1_CB4_CS4_RV_QP
 TWST Gain: $ -50.7 Win %: 14.00 in 7 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_TR_QP
+TWST Gain: $ -50.63 Win %: 62.00 in 8 days with algo TB1_HL_QM_OB5_OS1_CB1_CS3_LI_DU7_AV_DL2
 TWST Gain: $ -50.45 Win %: 14.00 in 7 days with algo TB3_HL_HS_QM_OB1_OS1_CB4_CS4_TR_QP
 TWST Gain: $ -46.51 Win %: 14.00 in 7 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_RV_QP_DB15
 TWST Gain: $ -45.16 Win %: 14.00 in 7 days with algo TB4_OO_QM_OB1_OS1_CB4_CS4_TR_QP_DB8
 TWST Gain: $ -43.24 Win %: 14.00 in 7 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_HM_QP_DB15
 TWST Gain: $ -39.26 Win %: 14.00 in 7 days with algo TB2_OC_QM_OB1_OS1_CB5_CS5_TR_QP_DB15
+TWST Gain: $ -37.05 Win %: 66.00 in 9 days with algo TB1_HL_QM_OB5_OS1_CB2_CS3_IT_UA_AV
+TWST Gain: $ -36.16 Win %: 22.00 in 9 days with algo TB1_HL_QM_OB5_OS1_CB2_CS3_IT_UA_TG
+TWST Gain: $ -35.99 Win %: 12.00 in 8 days with algo TB1_HL_QM_OB5_OS1_CB1_CS3_LI_TG
 TWST Gain: $ -34.84 Win %: 14.00 in 7 days with algo TB3_HL_HS_QM_OB1_OS1_CB4_CS4_HM_QP_DB10
+TWST Gain: $ -34.67 Win %: 55.00 in 9 days with algo TB1_HL_QM_OB5_OS1_CB2_CS3_IT_DU7_AV_DL2_TG
 TWST Gain: $ -31.37 Win %: 14.00 in 7 days with algo TB3_HL_HS_QM_OB1_OS1_CB4_CS4_TR_QP_DB10
 TWST Gain: $ -29.62 Win %: 28.00 in 7 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_HM
 TWST Gain: $ -28.68 Win %: 28.00 in 7 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_RV_AL_DB10
@@ -44,6 +49,7 @@ TWST Gain: $ -25.05 Win %: 28.00 in 7 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_A
 TWST Gain: $ -25.05 Win %: 28.00 in 7 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_AO
 TWST Gain: $ -24.79 Win %: 42.00 in 7 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_TS
 TWST Gain: $ -24.65 Win %: 42.00 in 7 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_IR3
+TWST Gain: $ -24.27 Win %: 40.00 in 5 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_TS
 TWST Gain: $ -24.02 Win %: 28.00 in 7 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_RV
 TWST Gain: $ -23.86 Win %: 42.00 in 7 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_RV_AV_DB10
 TWST Gain: $ -22.38 Win %: 42.00 in 7 days with algo TB3_LO_QM_OB2_OS2_CB5_CS5_TR_IR3

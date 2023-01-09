@@ -230,3 +230,6 @@ UWMC Gain: $ 0.9 Win %: 100.00 in 4 days with algo TB2_HS_QM_OB3_OS3_CB3_CS3_AC
 UWMC Gain: $ 0.95 Win %: 100.00 in 4 days with algo TB2_HL_HS_QM_OB1_OS1_CB1_CS1_AL
 UWMC Gain: $ 0.95 Win %: 100.00 in 4 days with algo TB2_HL_HS_QM_OB1_OS1_CB1_CS1_HM_AL
 UWMC Gain: $ 0.95 Win %: 100.00 in 4 days with algo TB2_HL_HS_QM_OB1_OS1_CB1_CS1_RV_AL
+UWMC Gain: $ 2.52 Win %: 57.00 in 7 days with algo TB5_OO_QM_OB4_OS2_CB2_CS4_AV_IT_DU7
+UWMC Gain: $ 2.56 Win %: 57.00 in 7 days with algo TB5_OO_QM_OB4_OS2_CB3_CS4_AV_IT_DU7
+UWMC Gain: $ 2.91 Win %: 57.00 in 7 days with algo TB5_OO_QM_OB4_OS2_CB2_CS4_AV_UA_DU7

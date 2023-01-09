@@ -192,12 +192,15 @@ LMT Gain: $ 19.18 Win %: 45.00 in 11 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4
 LMT Gain: $ 19.66 Win %: 63.00 in 11 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_RV_AV
 LMT Gain: $ 19.82 Win %: 54.00 in 11 days with algo TB2_HS_QM_OB2_OS2_CB4_CS4_RV
 LMT Gain: $ 19.85 Win %: 54.00 in 11 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_SS
+LMT Gain: $ 20.41 Win %: 57.00 in 28 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV_AV_DB6_TG
+LMT Gain: $ 20.41 Win %: 57.00 in 28 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV_AV_DB6_TG_UA
 LMT Gain: $ 20.49 Win %: 54.00 in 11 days with algo TB3_HL_HS_QM_OB5_OS5_CB5_CS5_RV_TR
 LMT Gain: $ 20.57 Win %: 63.00 in 11 days with algo TB3_HL_HS_QM_OB5_OS5_CB5_CS5_RV
 LMT Gain: $ 20.58 Win %: 72.00 in 11 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_IT
 LMT Gain: $ 20.58 Win %: 72.00 in 11 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_IT_QL
 LMT Gain: $ 20.72 Win %: 63.00 in 11 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_IT_QL_DB6
 LMT Gain: $ 20.72 Win %: 63.00 in 11 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_IT_QL_DB6
+LMT Gain: $ 21.02 Win %: 57.00 in 28 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV_AV_DB6_TG_AL
 LMT Gain: $ 21.38 Win %: 54.00 in 11 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_AL
 LMT Gain: $ 21.57 Win %: 72.00 in 11 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_DB6
 LMT Gain: $ 21.57 Win %: 72.00 in 11 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_DB6
@@ -207,6 +210,7 @@ LMT Gain: $ 22.63 Win %: 54.00 in 11 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_IT
 LMT Gain: $ 22.63 Win %: 54.00 in 11 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_IT_QL
 LMT Gain: $ 22.63 Win %: 54.00 in 11 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_IT
 LMT Gain: $ 22.63 Win %: 54.00 in 11 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_IT_QL
+LMT Gain: $ 23.18 Win %: 44.00 in 25 days with algo TB3_HI_HL_QM_OB5_OS2_CB3_CS5_IT_QL
 LMT Gain: $ 23.32 Win %: 63.00 in 11 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_HM_AV_DB6
 LMT Gain: $ 23.48 Win %: 63.00 in 11 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_AL
 LMT Gain: $ 23.48 Win %: 63.00 in 11 days with algo TB5_CC_QM_OB2_OS2_CB4_CS4_AL
@@ -228,4 +232,12 @@ LMT Gain: $ 24.24 Win %: 72.00 in 11 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_AO
 LMT Gain: $ 24.24 Win %: 72.00 in 11 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_QL
 LMT Gain: $ 24.99 Win %: 54.00 in 11 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_LI
 LMT Gain: $ 25.89 Win %: 63.00 in 11 days with algo TB5_OC_QM_OB3_OS3_CB3_CS3_HM_AL
+LMT Gain: $ 26.62 Win %: 56.00 in 25 days with algo TB3_HI_HL_QM_OB5_OS2_CB3_CS5_AO_AC_UA
 LMT Gain: $ 27.63 Win %: 63.00 in 11 days with algo TB5_CC_QM_OB1_OS1_CB4_CS4_HM_AL
+LMT Gain: $ 89.23 Win %: 35.00 in 28 days with algo TB3_LO_HL_QM_OB2_OS5_CB4_CS4_DU8
+LMT Gain: $ 96.01 Win %: 46.00 in 28 days with algo TB3_LO_HL_QM_OB2_OS5_CB4_CS4_DU8_UA
+LMT Gain: $ 114.27 Win %: 32.00 in 28 days with algo TB3_LO_HL_QM_OB2_OS5_CB4_CS4_DU8_AL
+LMT Gain: $ 125.13 Win %: 46.00 in 26 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV_AV_DB6_DU7_DL2
+LMT Gain: $ 127.74 Win %: 50.00 in 26 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV_AV_DB6_DU7_UA_DL2
+LMT Gain: $ 127.74 Win %: 50.00 in 26 days with algo TB5_CC_QM_OB2_OS2_CB5_CS5_RV_AV_DB6_DU7_UA_DL2
+LMT Gain: $ 146.92 Win %: 36.00 in 25 days with algo TB3_HI_HL_QM_OB5_OS2_CB3_CS5_IT_QL_DU7

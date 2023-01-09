@@ -218,7 +218,12 @@ TWTR Gain: $ 5.15 Win %: 100.00 in 6 days with algo TB1_HL_QM_OB1_OS1_CB2_CS2_QL
 TWTR Gain: $ 5.17 Win %: 100.00 in 6 days with algo TB1_HL_QM_OB1_OS1_CB2_CS2_RV
 TWTR Gain: $ 5.21 Win %: 100.00 in 6 days with algo TB1_HL_QM_OB2_OS2_CB2_CS2_RV
 TWTR Gain: $ 5.25 Win %: 100.00 in 6 days with algo TB1_HL_QM_OB2_OS2_CB2_CS2_QL
+TWTR Gain: $ 5.39 Win %: 63.00 in 22 days with algo TB1_OO_QM_OB2_OS3_CB3_CS5_IT_TG_AL
+TWTR Gain: $ 5.4 Win %: 59.00 in 22 days with algo TB1_OO_QM_OB2_OS3_CB3_CS5_IT
+TWTR Gain: $ 5.4 Win %: 59.00 in 22 days with algo TB1_OO_QM_OB2_OS3_CB3_CS5_IT_UA
 TWTR Gain: $ 5.45 Win %: 100.00 in 6 days with algo TB1_HL_QM_OB2_OS2_CB2_CS2_TR_TS
+TWTR Gain: $ 5.5 Win %: 63.00 in 22 days with algo TB1_OO_QM_OB2_OS3_CB3_CS5_IT_TG_UA
+TWTR Gain: $ 5.5 Win %: 63.00 in 22 days with algo TB1_OO_QM_OB2_OS3_CB3_CS5_IT_UA_TG
 TWTR Gain: $ 5.51 Win %: 66.00 in 6 days with algo TB1_HL_QM_OB1_OS1_CB2_CS2_HM_AV
 TWTR Gain: $ 5.56 Win %: 100.00 in 6 days with algo TB1_HL_QM_OB1_OS1_CB2_CS2_TR_TS
 TWTR Gain: $ 5.63 Win %: 66.00 in 6 days with algo TB1_HL_QM_OB2_OS2_CB2_CS2_RV_AV_DB30
@@ -228,5 +233,6 @@ TWTR Gain: $ 6.15 Win %: 83.00 in 6 days with algo TB1_HL_QM_OB1_OS1_CB2_CS2_SS
 TWTR Gain: $ 6.21 Win %: 100.00 in 6 days with algo TB1_HL_QM_OB2_OS2_CB2_CS2_SS
 TWTR Gain: $ 7.82 Win %: 66.00 in 6 days with algo TB1_HL_QM_OB1_OS1_CB2_CS2_AV
 TWTR Gain: $ 7.82 Win %: 66.00 in 6 days with algo TB1_HL_QM_OB1_OS1_CB2_CS2_RV_AV
+TWTR Gain: $ 8.21 Win %: 63.00 in 22 days with algo TB1_OO_QM_OB2_OS3_CB3_CS5_IT_TG
 TWTR Gain: $ 8.45 Win %: 83.00 in 6 days with algo TB1_HL_QM_OB2_OS2_CB2_CS2_AV
 TWTR Gain: $ 8.45 Win %: 83.00 in 6 days with algo TB1_HL_QM_OB2_OS2_CB2_CS2_RV_AV

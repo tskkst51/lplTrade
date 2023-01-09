@@ -165,3 +165,6 @@ FSTX Gain: $ 1.04 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB5_OS5_CB5_CS5_HM
 FSTX Gain: $ 1.04 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB5_OS5_CB5_CS5_HM_TR_DB30
 FSTX Gain: $ 1.04 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB5_OS5_CB5_CS5_QL
 FSTX Gain: $ 1.04 Win %: 100.00 in 1 days with algo TB1_LO_QM_OB5_OS5_CB5_CS5_TR
+FSTX Gain: $ 8.29 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB2_OS2_CB2_CS4_VI_DU7
+FSTX Gain: $ 8.29 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB3_OS2_CB2_CS4_VI_DU7
+FSTX Gain: $ 8.29 Win %: 100.00 in 2 days with algo TB5_OO_QM_OB4_OS2_CB2_CS4_VI_DU7

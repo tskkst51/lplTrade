@@ -230,3 +230,6 @@ AXON Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_TS
 AXON Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_VI
 AXON Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_VI
 AXON Gain: $ 2.25 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS5_TS
+AXON Gain: $ 117.02 Win %: 50.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB2_CS2_HM_DU7_UA_AV_DL2
+AXON Gain: $ 123.88 Win %: 50.00 in 2 days with algo TB1_OC_QM_OB2_OS2_CB2_CS2_HM_DU7_UA_DL2
+AXON Gain: $ 124.03 Win %: 50.00 in 2 days with algo TB1_HL_QM_OB2_OS1_CB2_CS2_HM_AL_DU7

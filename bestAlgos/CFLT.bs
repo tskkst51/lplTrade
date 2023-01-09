@@ -1,4 +1,3 @@
-CFLT Gain: $ -1.68 Win %: 0 in 1 days with algo TB2_HL_HI_QM_OB5_OS5_CB1_CS1_TS
 CFLT Gain: $ -49.49 Win %: 0 in 2 days with algo TB4_HL_HI_QM_OB2_OS2_CB5_CS5_TS
 CFLT Gain: $ -47.41 Win %: 0 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB2_CS2_RV_QP
 CFLT Gain: $ -47.41 Win %: 0 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB2_CS2_RV_QP
@@ -146,6 +145,7 @@ CFLT Gain: $ -2.03 Win %: 50.00 in 2 days with algo TB4_HL_HI_QM_OB2_OS2_CB5_CS5
 CFLT Gain: $ -2.03 Win %: 50.00 in 2 days with algo TB4_HL_HI_QM_OB2_OS2_CB5_CS5_IT_QP
 CFLT Gain: $ -2.03 Win %: 50.00 in 2 days with algo TB4_HL_HI_QM_OB2_OS2_CB5_CS5_RV_QP
 CFLT Gain: $ -1.71 Win %: 0 in 2 days with algo TB3_HL_HI_QM_OB3_OS3_CB1_CS1_QP_PM
+CFLT Gain: $ -1.68 Win %: 0 in 1 days with algo TB2_HL_HI_QM_OB5_OS5_CB1_CS1_TS
 CFLT Gain: $ -1.64 Win %: 50.00 in 2 days with algo TB3_HL_HI_QM_OB3_OS3_CB1_CS1_RV_AV
 CFLT Gain: $ -1.63 Win %: 50.00 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB2_CS2_PM
 CFLT Gain: $ -1.5 Win %: 0 in 2 days with algo TB4_HL_HI_QM_OB2_OS2_CB5_CS5_IR2
@@ -230,3 +230,6 @@ CFLT Gain: $ 4.43 Win %: 50.00 in 2 days with algo TB1_HL_HI_QM_OB2_OS2_CB2_CS2_
 CFLT Gain: $ 4.47 Win %: 100.00 in 2 days with algo TB3_HL_HI_QM_OB3_OS3_CB1_CS1_HM_AV
 CFLT Gain: $ 4.56 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB2_OS2_CB1_CS1_HM_AL
 CFLT Gain: $ 4.59 Win %: 100.00 in 2 days with algo TB4_LO_QM_OB2_OS2_CB1_CS1_AL
+CFLT Gain: $ 23.31 Win %: 100.00 in 3 days with algo TB5_LO_QM_OB2_OS3_CB5_CS4_RV_TR_DB6_DU7_UA_AV_DL2
+CFLT Gain: $ 28.31 Win %: 100.00 in 3 days with algo TB3_HI_QM_OB4_OS4_CB4_CS3_HM_TR_DB10_DU7_AV_DL1
+CFLT Gain: $ 28.31 Win %: 100.00 in 3 days with algo TB3_HI_QM_OB4_OS4_CB4_CS3_HM_TR_DB10_DU7_UA_AV_DL1
