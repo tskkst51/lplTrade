@@ -1,4 +1,3 @@
-PFGC Gain: $ -5.71 Win %: 0 in 2 days with algo TB1_PL_QM_OB3_OS3_CB3_CS3_TS
 PFGC Gain: $ -558.34 Win %: 33.00 in 3 days with algo TB1_PL_QM_OB3_OS3_CB3_CS3_AO_AC
 PFGC Gain: $ -130.49 Win %: 33.00 in 3 days with algo TB1_PL_QM_OB3_OS3_CB3_CS3_AC
 PFGC Gain: $ -25 Win %: 33.00 in 3 days with algo TB1_PL_QM_OB3_OS3_CB3_CS3_AO
@@ -9,6 +8,7 @@ PFGC Gain: $ -14.26 Win %: 33.00 in 3 days with algo TB1_PL_QM_OB3_OS3_CB3_CS3_Q
 PFGC Gain: $ -9.64 Win %: 33.00 in 3 days with algo TB1_PL_QM_OB3_OS3_CB3_CS3_HM_QP_DB30
 PFGC Gain: $ -9.51 Win %: 33.00 in 3 days with algo TB1_PL_QM_OB3_OS3_CB3_CS3_RV_QP_DB30
 PFGC Gain: $ -8.62 Win %: 33.00 in 3 days with algo TB1_PL_QM_OB3_OS3_CB3_CS3_IR5
+PFGC Gain: $ -5.71 Win %: 0 in 2 days with algo TB1_PL_QM_OB3_OS3_CB3_CS3_TS
 PFGC Gain: $ -5.71 Win %: 33.00 in 3 days with algo TB1_PL_QM_OB3_OS3_CB3_CS3_RV
 PFGC Gain: $ -5.71 Win %: 33.00 in 3 days with algo TB1_PL_QM_OB3_OS3_CB3_CS3_TS
 PFGC Gain: $ -5.65 Win %: 33.00 in 3 days with algo TB1_PL_QM_OB3_OS3_CB3_CS3_HM
@@ -172,3 +172,12 @@ PFGC Gain: $ 3.5 Win %: 100.00 in 3 days with algo TB2_OC_QM_OB3_OS3_CB5_CS5_TR
 PFGC Gain: $ 3.53 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_RV_AV
 PFGC Gain: $ 3.64 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_AV
 PFGC Gain: $ 3.64 Win %: 100.00 in 3 days with algo TB2_HS_QM_OB1_OS1_CB5_CS5_HM_AV
+PFGC Gain: $ 8.14 Win %: 80.00 in 5 days with algo TB1_HI_HL_QM_OB3_OS5_CB5_CS3_DU8
+PFGC Gain: $ 8.14 Win %: 80.00 in 5 days with algo TB1_HI_HL_QM_OB3_OS5_CB5_CS3_DU8
+PFGC Gain: $ 8.14 Win %: 80.00 in 5 days with algo TB1_HI_HL_QM_OB3_OS5_CB5_CS3_DU8
+PFGC Gain: $ 8.29 Win %: 60.00 in 5 days with algo TB1_HI_HL_QM_OB2_OS2_CB2_CS4_DU6
+PFGC Gain: $ 8.29 Win %: 60.00 in 5 days with algo TB1_HI_HL_QM_OB2_OS2_CB2_CS4_DU6
+PFGC Gain: $ 8.29 Win %: 60.00 in 5 days with algo TB1_HI_HL_QM_OB2_OS2_CB2_CS4_DU6
+PFGC Gain: $ 14.35 Win %: 60.00 in 5 days with algo TB1_HI_HL_QM_OB3_OS5_CB5_CS3_DU8_AL
+PFGC Gain: $ 14.35 Win %: 60.00 in 5 days with algo TB1_HI_HL_QM_OB3_OS5_CB5_CS3_DU8_AL
+PFGC Gain: $ 14.35 Win %: 60.00 in 5 days with algo TB1_HI_HL_QM_OB3_OS5_CB5_CS3_DU8_AL

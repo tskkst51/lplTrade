@@ -180,6 +180,9 @@ LULU Gain: $ 9.21 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5
 LULU Gain: $ 9.21 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_AL
 LULU Gain: $ 9.21 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_HM_AL
 LULU Gain: $ 9.21 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5_HM_AL
+LULU Gain: $ 9.55 Win %: 30.00 in 10 days with algo TB1_BL_QM_OB5_OS5_CB5_CS5_HM_AV_DB30_UA_AL_TG_DU8_DL2
+LULU Gain: $ 9.55 Win %: 30.00 in 10 days with algo TB1_BL_QM_OB5_OS5_CB5_CS5_HM_AV_DB30_UA_AL_TG_DU8_DL2
+LULU Gain: $ 9.55 Win %: 30.00 in 10 days with algo TB1_BL_QM_OB5_OS5_CB5_CS5_HM_AV_DB30_UA_AL_TG_DU8_DL2
 LULU Gain: $ 9.82 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_AL
 LULU Gain: $ 9.82 Win %: 100.00 in 1 days with algo TB5_HL_HI_QM_OB2_OS2_CB5_CS5_HM_AL
 LULU Gain: $ 10.49 Win %: 100.00 in 1 days with algo TB5_EO_EC_QM_OB1_OS1_CB5_CS5

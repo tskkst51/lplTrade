@@ -167,6 +167,9 @@ RACE Gain: $ 0.0 Win %: 40.00 in 15 days with algo TB4_HL_HS_QM_OB1_OS1_CB3_CS3_
 RACE Gain: $ 0.0 Win %: 100.00 in 15 days with algo TB5_EO_EC_QM_OB4_OS4_CB3_CS3_PM
 RACE Gain: $ 0.0 Win %: 100.00 in 15 days with algo TB5_EO_EC_QM_OB4_OS4_CB3_CS3_QP_PM
 RACE Gain: $ 0.0 Win %: 100.00 in 15 days with algo TB5_EO_EC_QM_OB4_OS4_CB3_CS3_VI
+RACE Gain: $ 0.0 Win %: 100.00 in 44 days with algo TB1_EO_EC_QM_OB4_OS2_CB5_CS2_AV_TS_UA_AL_DU8_DL2
+RACE Gain: $ 0.0 Win %: 100.00 in 44 days with algo TB1_EO_EC_QM_OB4_OS2_CB5_CS2_AV_TS_UA_AL_DU8_DL2
+RACE Gain: $ 0.0 Win %: 100.00 in 44 days with algo TB1_EO_EC_QM_OB4_OS2_CB5_CS2_AV_TS_UA_AL_TG
 RACE Gain: $ 0.03 Win %: 66.00 in 15 days with algo TB5_HL_HI_QM_OB5_OS5_CB1_CS1_TR_QP
 RACE Gain: $ 0.12 Win %: 53.00 in 15 days with algo TB5_HL_HI_QM_OB5_OS5_CB1_CS1_IT
 RACE Gain: $ 0.12 Win %: 53.00 in 15 days with algo TB5_HL_HI_QM_OB5_OS5_CB1_CS1_IT_QL
@@ -183,12 +186,6 @@ RACE Gain: $ 5.07 Win %: 66.00 in 15 days with algo TB4_HL_HS_QM_OB1_OS1_CB3_CS3
 RACE Gain: $ 7.47 Win %: 60.00 in 15 days with algo TB5_EO_EC_QM_OB4_OS4_CB3_CS3_SS
 RACE Gain: $ 8.22 Win %: 66.00 in 15 days with algo TB5_EO_EC_QM_OB4_OS4_CB3_CS3_RV_AV
 RACE Gain: $ 17.33 Win %: 60.00 in 15 days with algo TB4_HL_HS_QM_OB1_OS1_CB3_CS3_IT_TS
-RACE Gain: $ 39.57 Win %: 43.00 in 41 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_DU8_UA_DL2
-RACE Gain: $ 39.57 Win %: 43.00 in 41 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_DU8_UA_DL2
-RACE Gain: $ 39.57 Win %: 43.00 in 41 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_DU8_UA_DL2
-RACE Gain: $ 38.71 Win %: 42.00 in 42 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_UA_DU8_DL2
-RACE Gain: $ 38.71 Win %: 42.00 in 42 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_UA_DU8_DL2
-RACE Gain: $ 38.71 Win %: 42.00 in 42 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_UA_DU8_DL2
 RACE Gain: $ 32.46 Win %: 41.00 in 43 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_UA_DU8_DL2_DU7_DL1
 RACE Gain: $ 32.46 Win %: 41.00 in 43 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_UA_DU8_DL2_DU7_DL1
 RACE Gain: $ 32.46 Win %: 41.00 in 43 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_UA_DU8_DL2_DU7_DL1
@@ -214,3 +211,9 @@ RACE Gain: $ 36.46 Win %: 41.00 in 43 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS
 RACE Gain: $ 36.46 Win %: 41.00 in 43 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_UA_DU8_DL2
 RACE Gain: $ 36.46 Win %: 41.00 in 43 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_UA_DU8_DL2
 RACE Gain: $ 36.46 Win %: 41.00 in 43 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_UA_DU8_DL2
+RACE Gain: $ 38.71 Win %: 42.00 in 42 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_UA_DU8_DL2
+RACE Gain: $ 38.71 Win %: 42.00 in 42 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_UA_DU8_DL2
+RACE Gain: $ 38.71 Win %: 42.00 in 42 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_UA_DU8_DL2
+RACE Gain: $ 39.57 Win %: 43.00 in 41 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_DU8_UA_DL2
+RACE Gain: $ 39.57 Win %: 43.00 in 41 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_DU8_UA_DL2
+RACE Gain: $ 39.57 Win %: 43.00 in 41 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_DU8_UA_DL2

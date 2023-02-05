@@ -232,6 +232,15 @@ AMD Gain: $ 38.06 Win %: 64.00 in 37 days with algo TB5_HL_LO_QM_OB3_OS3_CB4_CS4
 AMD Gain: $ 38.2 Win %: 62.00 in 37 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_RV
 AMD Gain: $ 38.2 Win %: 62.00 in 37 days with algo TB3_OC_QM_OB3_OS3_CB4_CS4_RV
 AMD Gain: $ 51.91 Win %: 70.00 in 37 days with algo TB5_HL_LO_QM_OB3_OS3_CB4_CS4_HM_AL
+AMD Gain: $ 88.18 Win %: 60.00 in 55 days with algo TB5_LO_QM_OB2_OS3_CB3_CS5_HM_AL_DU6_DU7_DL2_DU8_AV
+AMD Gain: $ 94.92 Win %: 61.00 in 55 days with algo TB5_LO_QM_OB2_OS3_CB3_CS5_HM_AL_DU6_DU7_DL2_AV_TG
+AMD Gain: $ 102.48 Win %: 61.00 in 55 days with algo TB5_LO_QM_OB2_OS3_CB3_CS5_HM_AL_DU6_DU7_DL2_AV_TG_DU8
+AMD Gain: $ 102.48 Win %: 61.00 in 55 days with algo TB5_LO_QM_OB2_OS3_CB3_CS5_HM_AL_DU6_DU7_DL2_AV_TG_DU8
+AMD Gain: $ 102.48 Win %: 61.00 in 55 days with algo TB5_LO_QM_OB2_OS3_CB3_CS5_HM_AL_DU6_DU7_DL2_DU8_AV_TG
+AMD Gain: $ 102.48 Win %: 61.00 in 55 days with algo TB5_LO_QM_OB2_OS3_CB3_CS5_HM_AL_DU6_DU7_DL2_DU8_AV_TG
+AMD Gain: $ 102.48 Win %: 61.00 in 55 days with algo TB5_LO_QM_OB2_OS3_CB3_CS5_HM_AL_DU6_TG_DU7_AV_DL1_DU8_DL2
+AMD Gain: $ 102.48 Win %: 61.00 in 55 days with algo TB5_LO_QM_OB2_OS3_CB3_CS5_HM_AL_DU6_TG_DU7_AV_DL1_DU8_DL2
+AMD Gain: $ 102.48 Win %: 61.00 in 55 days with algo TB5_LO_QM_OB2_OS3_CB3_CS5_HM_AL_DU6_TG_DU7_AV_DL1_DU8_DL2
 AMD Gain: $ 107.05 Win %: 61.00 in 54 days with algo TB5_LO_QM_OB2_OS3_CB3_CS5_HM_AL_DU6_DU7_DL2_UA_AV
 AMD Gain: $ 107.05 Win %: 61.00 in 54 days with algo TB5_LO_QM_OB2_OS3_CB3_CS5_HM_AL_DU6_UA_DU7_AV_DL2
 AMD Gain: $ 115.05 Win %: 64.00 in 54 days with algo TB5_LO_QM_OB2_OS3_CB3_CS5_HM_AL_DU6_DU7_AV_DL2

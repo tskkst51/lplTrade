@@ -183,6 +183,9 @@ SKX Gain: $ 4.12 Win %: 75.00 in 4 days with algo TB2_OO_QM_OB1_OS1_CB3_CS3_RV_T
 SKX Gain: $ 4.19 Win %: 50.00 in 4 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_RV_TR
 SKX Gain: $ 4.22 Win %: 75.00 in 4 days with algo TB5_HI_QM_OB3_OS3_CB1_CS1_RV_TR
 SKX Gain: $ 4.25 Win %: 75.00 in 4 days with algo TB2_OO_QM_OB1_OS1_CB3_CS3_TR
+SKX Gain: $ 4.29 Win %: 87.00 in 8 days with algo TB1_HS_QM_OB4_OS2_CB5_CS5_AL_LI_UA_TG
+SKX Gain: $ 4.29 Win %: 87.00 in 8 days with algo TB1_HS_QM_OB4_OS2_CB5_CS5_AL_LI_UA_TG
+SKX Gain: $ 4.29 Win %: 87.00 in 8 days with algo TB1_HS_QM_OB4_OS2_CB5_CS5_AL_LI_UA_TG
 SKX Gain: $ 4.39 Win %: 75.00 in 4 days with algo TB4_LO_QM_OB1_OS1_CB3_CS3_TR_IR2
 SKX Gain: $ 5.51 Win %: 100.00 in 6 days with algo TB1_HS_QM_OB4_OS2_CB5_CS5_AL_LI
 SKX Gain: $ 5.51 Win %: 100.00 in 6 days with algo TB1_HS_QM_OB4_OS2_CB5_CS5_AL_LI_TG

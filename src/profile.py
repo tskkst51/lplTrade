@@ -98,9 +98,12 @@ class Profile:
       d["doubleUpLimit"] = str(0)
       d["doSessionReversals"] = str(0)
       d["doSessionsHiLo"] = str(0)
+      d["doHiLoHiLoSeqInHiLoOut"] = str(0)
+      d["doHiLoHiLoSeqInHiLoSeqOut"] = str(0)
+      d["doDoubleUpCloseEOD"] = str(0)
       
       # Auto stop is always on for now 10/20/22
-      d["doAutoStop"] = str(1)
+      #d["doAutoStop"] = str(1)
 
       return d
       
@@ -328,10 +331,6 @@ class Profile:
          d["doPriceMovement"] = str(1)
          info += "PM_"
    
-      if "QM" in algo:
-         d["quitMaxProfit"] = str(1)
-         info += "QM_"
-         
       if "QL" in algo:
          d["quitMaxLoss"] = str(1)
          info += "QL_"
@@ -391,6 +390,14 @@ class Profile:
       if "LS" in algo:
          d["doHiLoHiLoSeqInHiLoSeqOut"] = str(1)
          info += "LS_"
+         
+      if "DN" in algo:
+         d["doDoubleUpCloseEOD"] = str(1)
+         info += "DN_"
+
+      if "QM" in algo:
+         d["quitMaxProfit"] = str(1)
+         info += "QM_"
          
       if "DL" in algo:
          b, m, bar = algo.rpartition("DL")

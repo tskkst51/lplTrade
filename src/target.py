@@ -905,7 +905,7 @@ class Target:
          print ("url: " + str(url))
          try:
             status = os.system(url + " | grep -i buy")
-            print ("status: " + str(status))
+            #print ("status: " + str(status))
             if status:
                sanitizedStocks.append(stock)
                

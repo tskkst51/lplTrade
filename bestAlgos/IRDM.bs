@@ -1,4 +1,3 @@
-IRDM Gain: $ 2.79 Win %: 100.00 in 3 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_TS
 IRDM Gain: $ -9.83 Win %: 25.00 in 4 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_TR_IR1
 IRDM Gain: $ -5.04 Win %: 25.00 in 4 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_RV_AV_DB6
 IRDM Gain: $ -4.99 Win %: 50.00 in 4 days with algo TB4_HL_HI_QM_OB5_OS5_CB3_CS3_IR2
@@ -136,6 +135,7 @@ IRDM Gain: $ 2.74 Win %: 50.00 in 4 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_DB6
 IRDM Gain: $ 2.78 Win %: 50.00 in 4 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_QL
 IRDM Gain: $ 2.78 Win %: 75.00 in 4 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_RV_AL_DB8
 IRDM Gain: $ 2.78 Win %: 75.00 in 4 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_VI
+IRDM Gain: $ 2.79 Win %: 100.00 in 3 days with algo TB5_HL_LO_QM_OB2_OS2_CB5_CS5_TS
 IRDM Gain: $ 2.82 Win %: 75.00 in 4 days with algo TB4_HS_QM_OB1_OS1_CB5_CS5_PM
 IRDM Gain: $ 2.91 Win %: 50.00 in 4 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_RV
 IRDM Gain: $ 2.96 Win %: 100.00 in 4 days with algo TB3_HL_LO_QM_OB3_OS3_CB5_CS5_HM_AL
@@ -163,8 +163,20 @@ IRDM Gain: $ 4.74 Win %: 50.00 in 4 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_IT_
 IRDM Gain: $ 4.85 Win %: 100.00 in 4 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_PM
 IRDM Gain: $ 4.99 Win %: 50.00 in 4 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5
 IRDM Gain: $ 5.15 Win %: 75.00 in 4 days with algo TB4_HL_HI_QM_OB5_OS5_CB3_CS3_HM_AV_DB8
+IRDM Gain: $ 5.27 Win %: 100.00 in 5 days with algo TB5_LO_HL_QM_OB3_OS3_CB4_CS3_AL
 IRDM Gain: $ 5.29 Win %: 75.00 in 4 days with algo TB3_HL_LO_QM_OB3_OS3_CB5_CS5_DB10
+IRDM Gain: $ 5.35 Win %: 100.00 in 5 days with algo TB5_LO_HL_QM_OB3_OS3_CB4_CS2_SS
 IRDM Gain: $ 5.36 Win %: 50.00 in 4 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_AC
 IRDM Gain: $ 5.36 Win %: 50.00 in 4 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_AO_AC
 IRDM Gain: $ 5.36 Win %: 50.00 in 4 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_QL
 IRDM Gain: $ 6.21 Win %: 75.00 in 4 days with algo TB5_OC_QM_OB1_OS1_CB5_CS5_AO
+IRDM Gain: $ 6.95 Win %: 40.00 in 5 days with algo TB5_LO_HL_QM_OB3_OS3_CB4_CS3_AL_DU8_AV_DL2
+IRDM Gain: $ 6.95 Win %: 40.00 in 5 days with algo TB5_LO_HL_QM_OB3_OS3_CB4_CS3_AL_DU8_AV_DL2
+IRDM Gain: $ 6.95 Win %: 40.00 in 5 days with algo TB5_LO_HL_QM_OB3_OS3_CB4_CS3_AL_DU8_AV_DL2
+IRDM Gain: $ 6.95 Win %: 40.00 in 5 days with algo TB5_LO_HL_QM_OB3_OS3_CB4_CS3_AL_DU8_AV_DL2
+IRDM Gain: $ 6.95 Win %: 40.00 in 5 days with algo TB5_LO_HL_QM_OB3_OS3_CB4_CS3_AL_DU8_AV_DL2
+IRDM Gain: $ 6.95 Win %: 40.00 in 5 days with algo TB5_LO_HL_QM_OB3_OS3_CB4_CS3_AL_DU8_AV_DL2
+IRDM Gain: $ 6.95 Win %: 40.00 in 5 days with algo TB5_LO_HL_QM_OB3_OS3_CB4_CS3_AL_DU8_AV_DL2
+IRDM Gain: $ 6.95 Win %: 40.00 in 5 days with algo TB5_LO_HL_QM_OB3_OS3_CB4_CS3_AL_DU8_AV_DL2
+IRDM Gain: $ 6.95 Win %: 40.00 in 5 days with algo TB5_LO_HL_QM_OB3_OS3_CB4_CS3_AL_DU8_AV_DL2
+IRDM Gain: $ 6.95 Win %: 40.00 in 5 days with algo TB5_LO_HL_QM_OB3_OS3_CB4_CS3_AL_DU8_AV_DL2

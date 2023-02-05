@@ -226,9 +226,12 @@ RBLX Gain: $ 11.28 Win %: 68.00 in 16 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_R
 RBLX Gain: $ 12.4 Win %: 56.00 in 16 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_IT_QL
 RBLX Gain: $ 13.15 Win %: 56.00 in 16 days with algo TB3_HL_QM_OB2_OS2_CB4_CS4_QL
 RBLX Gain: $ 14.0 Win %: 62.00 in 16 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_PM
+RBLX Gain: $ 15.6 Win %: 55.00 in 20 days with algo TB3_HS_QM_OB2_OS2_CB5_CS2_HM_AV_DU8_AL_DL2
 RBLX Gain: $ 17.07 Win %: 68.00 in 16 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_HM_AV
 RBLX Gain: $ 23.97 Win %: 68.00 in 16 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_AV
 RBLX Gain: $ 23.97 Win %: 68.00 in 16 days with algo TB5_CC_QM_OB2_OS2_CB3_CS3_RV_AV
+RBLX Gain: $ 34.6 Win %: 65.00 in 20 days with algo TB3_HS_QM_OB2_OS2_CB5_CS2_HM_AV_DU8_UA_DL2
+RBLX Gain: $ 34.6 Win %: 65.00 in 20 days with algo TB3_HS_QM_OB2_OS2_CB5_CS2_HM_AV_DU8_UA_DL2
 RBLX Gain: $ 36.63 Win %: 68.00 in 19 days with algo TB3_OC_QM_OB2_OS3_CB2_CS4_HM_QP_QL_DB10_DU7_AV_DL1
 RBLX Gain: $ 36.63 Win %: 68.00 in 19 days with algo TB3_OC_QM_OB2_OS3_CB2_CS4_HM_QP_QL_DB10_DU7_UA_AV_DL1
 RBLX Gain: $ 52.2 Win %: 47.00 in 19 days with algo TB3_CC_QM_OB2_OS2_CB2_CS5_VI_DU7_AV_DL2

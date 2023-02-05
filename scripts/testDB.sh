@@ -75,7 +75,9 @@ if [[ -n $algo ]] && [[ $algo != "none" ]]; then
    algos=$algo
    algoProvided=1
 else
-   algos=$testDBAlgos
+   algos=$testDBAlgos # original
+   #algos="$testDBAlgosAS $testDBAlgos"
+   #algos="$testDBAlgosAS"
 fi
 }
 
@@ -143,7 +145,7 @@ for datePath in $testPaths; do
    fi
    
    for a in $(echo ${algos}); do
-      algoOpt="-a ${a}"
+      #algoOpt="-a ${a}"
       
       a=$(echo $a | sed 's/,/_/g')
       
@@ -158,7 +160,7 @@ for datePath in $testPaths; do
 
       echo Testing $day $stock $a ...
 
-      $py3 $testCmd $algoOpt $stockCL -c $HOME/profiles/et.json -w ${wp}/${datePath} -p ${wp}/${datePath}/profiles/active.json
+      $py3 $testCmd -a $a $stockCL -c $HOME/profiles/et.json -w ${wp}/${datePath} -p ${wp}/${datePath}/profiles/active.json
 
    done      
 done
@@ -168,11 +170,11 @@ done
 if (( stockProvided )); then
    scripts/testModsDB.sh $day $stock
    if [[ -f "${wp}/bestAlgos/${stock}.in" ]]; then
-      echo Incrementing bestAlgo for $stock
-      ${wp}/scripts/initIncBestAlgos.sh $stock 3
+      echo Incrementing bestAlgo for $stock DISABLED
+      #${wp}/scripts/initIncBestAlgos.sh $stock 3
    else
-      echo Initializing bestAlgo for $stock
-      ${wp}/scripts/initBestAlgos.sh $stock 2 n $numTestStocks
+      echo Initializing bestAlgo for $stock DISABLED
+      #${wp}/scripts/initBestAlgos.sh $stock 2 n $numTestStocks
    fi
    
 else

@@ -217,9 +217,11 @@ ZS Gain: $ 15.58 Win %: 40.00 in 10 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_HM
 ZS Gain: $ 16.6 Win %: 70.00 in 10 days with algo TB3_HS_QM_OB2_OS2_CB5_CS5_HM_TR
 ZS Gain: $ 19.11 Win %: 70.00 in 10 days with algo TB3_HS_QM_OB2_OS2_CB5_CS5_AV
 ZS Gain: $ 19.11 Win %: 70.00 in 10 days with algo TB3_HS_QM_OB2_OS2_CB5_CS5_RV_AV
+ZS Gain: $ 19.92 Win %: 77.00 in 18 days with algo TB3_PL_QM_OB1_OS4_CB4_CS5_HM_AL_TG
 ZS Gain: $ 20.28 Win %: 80.00 in 10 days with algo TB3_HS_QM_OB2_OS2_CB5_CS5_HM_AV
 ZS Gain: $ 20.51 Win %: 70.00 in 10 days with algo TB3_HS_QM_OB2_OS2_CB5_CS5_AL
 ZS Gain: $ 20.68 Win %: 60.00 in 10 days with algo TB3_OO_QM_OB2_OS2_CB3_CS3_QL
+ZS Gain: $ 21.26 Win %: 78.00 in 19 days with algo TB3_PL_QM_OB1_OS4_CB4_CS5_HM_AL_TG
 ZS Gain: $ 21.32 Win %: 80.00 in 10 days with algo TB5_EO_EC_QM_OB1_OS1_CB4_CS4_RV_TR
 ZS Gain: $ 21.32 Win %: 80.00 in 10 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_RV_TR
 ZS Gain: $ 22.73 Win %: 80.00 in 10 days with algo TB3_HS_QM_OB2_OS2_CB5_CS5_HM_AL
@@ -227,8 +229,12 @@ ZS Gain: $ 22.74 Win %: 70.00 in 10 days with algo TB3_HS_QM_OB2_OS2_CB5_CS5_RV_
 ZS Gain: $ 23.41 Win %: 80.00 in 10 days with algo TB5_EO_EC_QM_OB1_OS1_CB4_CS4_HM_TR
 ZS Gain: $ 23.41 Win %: 80.00 in 10 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_HM_TR
 ZS Gain: $ 24.18 Win %: 60.00 in 10 days with algo TB3_LO_QM_OB3_OS3_CB5_CS5_HM_TR
+ZS Gain: $ 27.45 Win %: 77.00 in 18 days with algo TB3_PL_QM_OB1_OS4_CB4_CS5_HM_AL
+ZS Gain: $ 27.45 Win %: 77.00 in 18 days with algo TB3_PL_QM_OB1_OS4_CB4_CS5_HM_AL
 ZS Gain: $ 27.65 Win %: 70.00 in 10 days with algo TB5_EO_EC_QM_OB1_OS1_CB4_CS4_RV_AL
 ZS Gain: $ 27.65 Win %: 70.00 in 10 days with algo TB5_EO_EC_QM_OB2_OS2_CB4_CS4_RV_AL
+ZS Gain: $ 28.79 Win %: 78.00 in 19 days with algo TB3_PL_QM_OB1_OS4_CB4_CS5_HM_AL
+ZS Gain: $ 28.79 Win %: 78.00 in 19 days with algo TB3_PL_QM_OB1_OS4_CB4_CS5_HM_AL
 ZS Gain: $ 83.8 Win %: 47.00 in 17 days with algo TB5_OO_QM_OB4_OS2_CB4_CS4_AV_VI_DU8_TG
 ZS Gain: $ 83.8 Win %: 47.00 in 17 days with algo TB5_OO_QM_OB4_OS2_CB4_CS4_AV_VI_DU8_TG
 ZS Gain: $ 83.9 Win %: 47.00 in 17 days with algo TB5_OO_QM_OB4_OS2_CB4_CS4_AV_VI_DU8

@@ -2,6 +2,9 @@ UAA Gain: $ -215.12 Win %: 25.00 in 4 days with algo TB2_PL_QM_OB1_OS1_CB3_CS3_A
 UAA Gain: $ -203.05 Win %: 25.00 in 4 days with algo TB2_PL_QM_OB1_OS1_CB3_CS3_AC
 UAA Gain: $ -8.03 Win %: 25.00 in 4 days with algo TB2_OO_QM_OB2_OS2_CB1_CS1_HM_QP
 UAA Gain: $ -8.03 Win %: 25.00 in 4 days with algo TB2_OO_QM_OB2_OS2_CB2_CS2_HM_QP
+UAA Gain: $ -7.09 Win %: 11.00 in 9 days with algo TB5_PL_QM_OB1_OS5_CB4_CS2_AV_IT_AL_TG_UA
+UAA Gain: $ -7.09 Win %: 11.00 in 9 days with algo TB5_PL_QM_OB1_OS5_CB4_CS2_AV_IT_TG_UA
+UAA Gain: $ -7.09 Win %: 11.00 in 9 days with algo TB5_PL_QM_OB1_OS5_CB4_CS4_AV_IT_TG_UA
 UAA Gain: $ -7.09 Win %: 50.00 in 4 days with algo TB2_OO_QM_OB2_OS2_CB1_CS1_RV_QP
 UAA Gain: $ -7.09 Win %: 50.00 in 4 days with algo TB2_OO_QM_OB2_OS2_CB2_CS2_RV_QP
 UAA Gain: $ -6.96 Win %: 50.00 in 4 days with algo TB2_OO_QM_OB2_OS2_CB1_CS1_IT_QP
@@ -66,6 +69,9 @@ UAA Gain: $ -2.06 Win %: 50.00 in 4 days with algo TB2_OO_QM_OB2_OS2_CB2_CS2_HM_
 UAA Gain: $ -2.04 Win %: 50.00 in 4 days with algo TB2_PL_QM_OB1_OS1_CB3_CS3_IR4
 UAA Gain: $ -1.97 Win %: 50.00 in 4 days with algo TB2_CC_QM_OB4_OS4_CB3_CS3_HM_TR
 UAA Gain: $ -1.9 Win %: 25.00 in 4 days with algo TB2_CC_QM_OB4_OS4_CB3_CS3_HM_QP_DB15
+UAA Gain: $ -1.84 Win %: 25.00 in 8 days with algo TB5_PL_QM_OB1_OS5_CB4_CS2_AV_IT_AL_UA
+UAA Gain: $ -1.84 Win %: 25.00 in 8 days with algo TB5_PL_QM_OB1_OS5_CB4_CS2_AV_IT_UA
+UAA Gain: $ -1.84 Win %: 25.00 in 8 days with algo TB5_PL_QM_OB1_OS5_CB4_CS4_AV_IT_UA
 UAA Gain: $ -1.8 Win %: 25.00 in 4 days with algo TB2_CC_QM_OB4_OS4_CB3_CS3_IR4
 UAA Gain: $ -1.8 Win %: 50.00 in 4 days with algo TB2_OO_QM_OB2_OS2_CB1_CS1_TR_QP_DB15
 UAA Gain: $ -1.8 Win %: 50.00 in 4 days with algo TB2_OO_QM_OB2_OS2_CB2_CS2_TR_QP_DB15

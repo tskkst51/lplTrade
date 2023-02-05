@@ -217,7 +217,14 @@ MRNA Gain: $ 66.0 Win %: 51.00 in 41 days with algo TB2_OO_QM_OB3_OS3_CB5_CS5_RV
 MRNA Gain: $ 71.46 Win %: 68.00 in 41 days with algo TB2_OO_QM_OB3_OS3_CB5_CS5_RV_TR
 MRNA Gain: $ 71.61 Win %: 87.00 in 41 days with algo TB3_OC_QM_OB3_OS3_CB5_CS5_AL_TS
 MRNA Gain: $ 71.83 Win %: 60.00 in 41 days with algo TB3_OC_QM_OB3_OS3_CB5_CS5_SS
+MRNA Gain: $ 72.22 Win %: 87.00 in 49 days with algo TB1_PL_QM_OB1_OS1_CB4_CS1_AV_VI_UA
+MRNA Gain: $ 72.22 Win %: 87.00 in 49 days with algo TB1_PL_QM_OB1_OS1_CB4_CS1_AV_VI_UA
+MRNA Gain: $ 72.22 Win %: 87.00 in 49 days with algo TB1_PL_QM_OB1_OS1_CB4_CS1_AV_VI_UA
+MRNA Gain: $ 74.45 Win %: 88.00 in 50 days with algo TB1_PL_QM_OB1_OS1_CB4_CS1_AV_VI_UA
+MRNA Gain: $ 74.45 Win %: 88.00 in 50 days with algo TB1_PL_QM_OB1_OS1_CB4_CS1_AV_VI_UA
+MRNA Gain: $ 74.45 Win %: 88.00 in 50 days with algo TB1_PL_QM_OB1_OS1_CB4_CS1_AV_VI_UA
 MRNA Gain: $ 75.23 Win %: 65.00 in 41 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_AO
+MRNA Gain: $ 78.4 Win %: 83.00 in 48 days with algo TB3_OC_QM_OB2_OS2_CB3_CS2_RV_AL
 MRNA Gain: $ 80.33 Win %: 58.00 in 41 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_AV
 MRNA Gain: $ 82.16 Win %: 63.00 in 41 days with algo TB4_LO_QM_OB2_OS2_CB5_CS5_LI
 MRNA Gain: $ 88.22 Win %: 58.00 in 41 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_TR
@@ -230,6 +237,7 @@ MRNA Gain: $ 101.85 Win %: 66.00 in 42 days with algo TB3_OO_QM_OB2_OS3_CB2_CS5_
 MRNA Gain: $ 102.38 Win %: 65.00 in 41 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_SS
 MRNA Gain: $ 104.68 Win %: 68.00 in 41 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_RV
 MRNA Gain: $ 118.75 Win %: 59.00 in 42 days with algo TB3_OO_QM_OB2_OS3_CB4_CS5_RV_TR
+MRNA Gain: $ 119.94 Win %: 62.00 in 48 days with algo TB3_OC_QM_OB2_OS2_CB3_CS2_RV_AL_DU8_AV_DL2
 MRNA Gain: $ 120.4 Win %: 84.00 in 45 days with algo TB3_LO_QM_OB2_OS2_CB2_CS4_TR_TS_TG_DU6_DU8_AL_DL2
 MRNA Gain: $ 123.59 Win %: 63.00 in 41 days with algo TB1_HL_LO_QM_OB3_OS3_CB5_CS5_RV_TR
 MRNA Gain: $ 124.69 Win %: 55.00 in 47 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_RV_DU7_AV_DL2_UA_DU8
@@ -239,6 +247,7 @@ MRNA Gain: $ 133.37 Win %: 51.00 in 47 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_
 MRNA Gain: $ 137.01 Win %: 56.00 in 46 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_RV_DU7_AV_DL2_UA_DU8
 MRNA Gain: $ 137.01 Win %: 56.00 in 46 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_RV_DU7_AV_DL2_UA_DU8
 MRNA Gain: $ 144.28 Win %: 52.00 in 46 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_RV_DU7_AV_DL2_UA_DU8_AL
+MRNA Gain: $ 145.31 Win %: 60.00 in 48 days with algo TB3_OC_QM_OB2_OS2_CB3_CS2_RV_AL_DU8_UA_AV_DL2
 MRNA Gain: $ 146.08 Win %: 57.00 in 45 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_RV_DU7_AV_DL2_DU8_UA
 MRNA Gain: $ 146.08 Win %: 57.00 in 45 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_RV_DU7_AV_DL2_DU8_UA
 MRNA Gain: $ 146.08 Win %: 57.00 in 45 days with algo TB3_OO_QM_OB3_OS3_CB4_CS4_RV_DU7_AV_DL2_UA_DU8

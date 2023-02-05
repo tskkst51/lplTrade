@@ -230,6 +230,9 @@ VZ Gain: $ 1.13 Win %: 75.00 in 4 days with algo TB2_PL_QM_OB1_OS1_CB5_CS5_AO
 VZ Gain: $ 1.2 Win %: 75.00 in 4 days with algo TB2_PL_QM_OB1_OS1_CB5_CS5_IT_QL
 VZ Gain: $ 1.2 Win %: 100.00 in 4 days with algo TB2_PL_QM_OB1_OS1_CB5_CS5_HM_QP
 VZ Gain: $ 1.25 Win %: 100.00 in 4 days with algo TB2_PL_QM_OB1_OS1_CB5_CS5_HM
+VZ Gain: $ 3.42 Win %: 66.00 in 24 days with algo TB5_BL_QM_OB4_OS3_CB5_CS4_AL_UA_TG
+VZ Gain: $ 3.42 Win %: 66.00 in 24 days with algo TB5_BL_QM_OB4_OS3_CB5_CS4_AL_UA_TG
+VZ Gain: $ 3.42 Win %: 66.00 in 24 days with algo TB5_BL_QM_OB4_OS3_CB5_CS4_AL_UA_TG
 VZ Gain: $ 4.02 Win %: 69.00 in 23 days with algo TB5_BL_QM_OB4_OS3_CB5_CS4_AL_UA
 VZ Gain: $ 4.02 Win %: 69.00 in 23 days with algo TB5_BL_QM_OB4_OS3_CB5_CS4_AL_UA
 VZ Gain: $ 4.02 Win %: 69.00 in 23 days with algo TB5_BL_QM_OB4_OS3_CB5_CS4_AL_UA_TG

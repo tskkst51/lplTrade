@@ -175,7 +175,10 @@ for s in $(echo $syms); do
    sort -n -k4,4 -k7,7 ${tmpFile3}_${s} > "$bestAlgosDir/${s}.in"
    sort -n -k9,9 -k7,7 -k4,4 ${tmpFile3}_${s} > "$bestAlgosDir/${s}.pc"
    #sort -n -k4,4 ${tmpFile2}_${s} > "$bestAlgosDir/${s}.in"
+   echo Best based on price...
    tail -n $dbNumBestRows "$bestAlgosDir/${s}.in"
+   echo Best based on percent...
+   tail -n $dbNumBestRows "$bestAlgosDir/${s}.pc"
    rm -f ${tmpFile3}_${s}
 done
 

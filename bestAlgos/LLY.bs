@@ -290,5 +290,8 @@ LLY Gain: $ 65.56 Win %: 51.00 in 29 days with algo TB3_LO_QM_OB2_OS5_CB3_CS4_HM
 LLY Gain: $ 67.4 Win %: 33.00 in 24 days with algo TB3_LO_HL_QM_OB2_OS2_CB5_CS4_AL_DU7_AV
 LLY Gain: $ 67.4 Win %: 33.00 in 24 days with algo TB3_LO_HL_QM_OB2_OS2_CB5_CS4_AL_DU7_AV
 LLY Gain: $ 67.4 Win %: 33.00 in 24 days with algo TB3_LO_HL_QM_OB2_OS2_CB5_CS4_AL_DU7_AV
+LLY Gain: $ 70.75 Win %: 60.00 in 30 days with algo TB3_LO_QM_OB2_OS5_CB3_CS4_HM_AV_DB10_DU8_UA_DL2
+LLY Gain: $ 70.75 Win %: 60.00 in 30 days with algo TB3_LO_QM_OB2_OS5_CB3_CS4_HM_AV_DB10_DU8_UA_DL2
 LLY Gain: $ 71.61 Win %: 34.00 in 23 days with algo TB3_LO_HL_QM_OB2_OS2_CB5_CS4_AL_DU7_AV
+LLY Gain: $ 72.06 Win %: 60.00 in 30 days with algo TB3_LO_QM_OB2_OS5_CB3_CS4_HM_AV_DB10_DU8_UA_DL2_TG
 LLY Gain: $ 73.41 Win %: 48.00 in 29 days with algo TB5_EO_EC_QM_OB3_OS2_CB5_CS2_DU6_DU8_AV_DL2

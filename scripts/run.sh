@@ -66,6 +66,10 @@ dirty=""
 
 volDate=20201118
 
+if [[ $debug == "d" ]]; then
+   echo debug set
+fi
+
 for algo in $algos; do
    a=$algo
    
@@ -98,7 +102,6 @@ for algo in $algos; do
       #${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -w test/${day} -o -d -s $stock > $outFile 2>/dev/null
 
       if [[ $debug == "d" ]]; then
-         echo debug set
          ${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json_${stock} -w test/${day} -o -d -s $stock > $outFile
       else
          ${py3} ${wp}/bin/lpltSlave.py -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json_${stock} -w test/${day} -o -s $stock > $outFile

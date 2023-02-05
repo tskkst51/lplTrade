@@ -220,6 +220,15 @@ PDD Gain: $ 6.83 Win %: 73.00 in 23 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_
 PDD Gain: $ 6.83 Win %: 73.00 in 23 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_UA_AV_DU7_AL_TG_DL2_DL1
 PDD Gain: $ 6.83 Win %: 73.00 in 23 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_UA_AV_DU7_AL_TG_DL2_DL1
 PDD Gain: $ 6.83 Win %: 73.00 in 23 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_UA_AV_DU7_AL_TG_DL2_DL1
+PDD Gain: $ 6.83 Win %: 73.00 in 23 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_UA_AV_DU7_AL_TG_DL2_DL1
+PDD Gain: $ 6.83 Win %: 73.00 in 23 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_UA_AV_DU7_AL_TG_DL2_DL1
+PDD Gain: $ 6.83 Win %: 73.00 in 23 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_UA_AV_DU7_AL_TG_DL2_DL1
+PDD Gain: $ 6.83 Win %: 73.00 in 23 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_UA_AV_DU7_AL_TG_DL2_DL1
+PDD Gain: $ 6.83 Win %: 73.00 in 23 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_UA_AV_DU7_AL_TG_DL2_DL1
+PDD Gain: $ 6.83 Win %: 73.00 in 23 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_UA_AV_DU7_AL_TG_DL2_DL1
+PDD Gain: $ 6.83 Win %: 73.00 in 23 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_UA_AV_DU7_AL_TG_DL2_DL1
+PDD Gain: $ 6.83 Win %: 73.00 in 23 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_UA_AV_DU7_AL_TG_DL2_DL1
+PDD Gain: $ 6.83 Win %: 73.00 in 23 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_UA_AV_DU7_AL_TG_DL2_DL1
 PDD Gain: $ 6.85 Win %: 80.00 in 5 days with algo TB4_CC_QM_OB1_OS1_CB5_CS5_TR_TS
 PDD Gain: $ 6.85 Win %: 80.00 in 5 days with algo TB4_CC_QM_OB2_OS2_CB5_CS5_TR_TS
 PDD Gain: $ 6.96 Win %: 80.00 in 5 days with algo TB4_CC_QM_OB5_OS5_CB5_CS5_HM

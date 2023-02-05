@@ -1,4 +1,3 @@
-ANF Gain: $ -0.11 Win %: 50.00 in 2 days with algo TB1_OC_QM_OB4_OS4_CB3_CS3_TS
 ANF Gain: $ -411.26 Win %: 33.00 in 3 days with algo TB4_PL_QM_OB5_OS5_CB2_CS2_AO_AC
 ANF Gain: $ -83.64 Win %: 33.00 in 3 days with algo TB4_PL_QM_OB5_OS5_CB2_CS2_AO
 ANF Gain: $ -5.72 Win %: 66.00 in 3 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_AV
@@ -158,6 +157,7 @@ ANF Gain: $ -0.2 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB5_OS5_CB2_CS2_H
 ANF Gain: $ -0.18 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB5_OS5_CB2_CS2_RV_AV_DB15
 ANF Gain: $ -0.16 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB5_OS5_CB2_CS2_HM_AV_DB15
 ANF Gain: $ -0.14 Win %: 66.00 in 3 days with algo TB2_HL_HI_QM_OB5_OS5_CB2_CS2_RV_TR_DB15
+ANF Gain: $ -0.11 Win %: 50.00 in 2 days with algo TB1_OC_QM_OB4_OS4_CB3_CS3_TS
 ANF Gain: $ -0.1 Win %: 66.00 in 3 days with algo TB1_OC_QM_OB4_OS4_CB3_CS3_TR
 ANF Gain: $ -0.08 Win %: 66.00 in 3 days with algo TB1_OC_QM_OB4_OS4_CB3_CS3_TS
 ANF Gain: $ -0.05 Win %: 66.00 in 3 days with algo TB4_PL_QM_OB5_OS5_CB2_CS2_LI
@@ -230,3 +230,9 @@ ANF Gain: $ 1.03 Win %: 66.00 in 3 days with algo TB4_PL_QM_OB5_OS5_CB2_CS2_QL
 ANF Gain: $ 1.3 Win %: 100.00 in 3 days with algo TB1_OC_QM_OB4_OS4_CB3_CS3_RV_AV
 ANF Gain: $ 1.56 Win %: 66.00 in 3 days with algo TB5_OC_QM_OB3_OS3_CB5_CS5_IR1
 ANF Gain: $ 1.56 Win %: 66.00 in 3 days with algo TB5_OC_QM_OB3_OS3_CB5_CS5_TR_IR1
+ANF Gain: $ 2.25 Win %: 57.00 in 7 days with algo TB5_LO_QM_OB3_OS5_CB2_CS2_RV_DU8_AL_DL2_UA_AV
+ANF Gain: $ 2.25 Win %: 57.00 in 7 days with algo TB5_LO_QM_OB3_OS5_CB2_CS2_RV_DU8_UA_AV_DL2_AL
+ANF Gain: $ 2.25 Win %: 57.00 in 7 days with algo TB5_LO_QM_OB3_OS5_CB2_CS2_RV_DU8_UA_AV_DL2_AL
+ANF Gain: $ 5.77 Win %: 66.00 in 6 days with algo TB5_LO_QM_OB3_OS5_CB2_CS2_AV_VI_DU8_UA_DL2
+ANF Gain: $ 9.1 Win %: 50.00 in 6 days with algo TB5_LO_QM_OB3_OS5_CB2_CS2_RV_DU8_UA_AV_DL2
+ANF Gain: $ 9.95 Win %: 83.00 in 6 days with algo TB5_LO_QM_OB3_OS5_CB2_CS2_RV_DU8_AL_DL2

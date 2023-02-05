@@ -63,6 +63,15 @@ BIDU Gain: $ -4.62 Win %: 44.00 in 118 days with algo TB4_HL_LO_QM_OB3_OS3_CB5_C
 BIDU Gain: $ -4.53 Win %: 46.00 in 118 days with algo TB2_HL_HS_QM_OB1_OS1_CB5_CS5_HM_TR_DB15
 BIDU Gain: $ -3.31 Win %: 61.00 in 118 days with algo TB3_OC_QM_OB2_OS2_CB5_CS5_AV_TS
 BIDU Gain: $ -0.48 Win %: 54.00 in 118 days with algo TB4_HL_LO_QM_OB3_OS3_CB5_CS5_TR_QP
+BIDU Gain: $ 0.0 Win %: 100.00 in 158 days with algo TB3_HI_HL_QM_OB3_OS3_CB5_CS3_AL_TS_DU6_AV_UA_DU7_DL2_TG_DU8
+BIDU Gain: $ 0.0 Win %: 100.00 in 158 days with algo TB3_HI_HL_QM_OB3_OS3_CB5_CS3_AL_TS_DU6_AV_UA_DU7_DL2_TG_DU8
+BIDU Gain: $ 0.0 Win %: 100.00 in 158 days with algo TB3_HI_HL_QM_OB3_OS3_CB5_CS3_AL_TS_DU6_AV_UA_DU7_DL2_TG_DU8
+BIDU Gain: $ 0.0 Win %: 100.00 in 158 days with algo TB3_HI_HL_QM_OB3_OS3_CB5_CS3_AL_TS_DU6_AV_UA_DU7_DL2_TG_DU8
+BIDU Gain: $ 0.0 Win %: 100.00 in 158 days with algo TB3_HI_HL_QM_OB3_OS3_CB5_CS3_AL_TS_DU6_AV_UA_DU7_DL2_TG_DU8
+BIDU Gain: $ 0.0 Win %: 100.00 in 158 days with algo TB3_HI_HL_QM_OB3_OS3_CB5_CS3_AL_TS_DU6_AV_UA_DU7_DL2_TG_DU8
+BIDU Gain: $ 0.0 Win %: 100.00 in 158 days with algo TB3_HI_HL_QM_OB3_OS3_CB5_CS3_AL_TS_DU6_AV_UA_DU7_DL2_TG_DU8
+BIDU Gain: $ 0.0 Win %: 100.00 in 158 days with algo TB3_HI_HL_QM_OB3_OS3_CB5_CS3_AL_TS_DU6_AV_UA_DU7_DL2_TG_DU8
+BIDU Gain: $ 0.0 Win %: 100.00 in 158 days with algo TB3_HI_HL_QM_OB3_OS3_CB5_CS3_AL_TS_DU6_AV_UA_DU7_DL2_TG_DU8
 BIDU Gain: $ 1.22 Win %: 49.00 in 118 days with algo TB4_HL_LO_QM_OB4_OS4_CB5_CS5_HM_AL
 BIDU Gain: $ 2.06 Win %: 46.00 in 118 days with algo TB2_HL_HS_QM_OB2_OS2_CB5_CS5_HM_TR_DB15
 BIDU Gain: $ 2.99 Win %: 55.00 in 118 days with algo TB4_HL_LO_QM_OB4_OS4_CB5_CS5_IT_QP

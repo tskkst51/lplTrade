@@ -149,6 +149,7 @@ SI Gain: $ 0.0 Win %: 100.00 in 9 days with algo TB2_EO_EC_QM_OB2_OS2_CB5_CS5_PM
 SI Gain: $ 0.0 Win %: 100.00 in 9 days with algo TB2_EO_EC_QM_OB2_OS2_CB5_CS5_QP_PM
 SI Gain: $ 0.0 Win %: 100.00 in 9 days with algo TB4_HL_HS_QM_OB5_OS5_CB5_CS5_PM
 SI Gain: $ 0.0 Win %: 100.00 in 9 days with algo TB4_HL_HS_QM_OB5_OS5_CB5_CS5_QP_PM
+SI Gain: $ 1.08 Win %: 94.00 in 18 days with algo TB1_LO_HL_QM_OB4_OS3_CB5_CS5_PM_TG
 SI Gain: $ 1.19 Win %: 66.00 in 9 days with algo TB5_OC_QM_OB5_OS5_CB4_CS4_AC
 SI Gain: $ 1.19 Win %: 66.00 in 9 days with algo TB5_OC_QM_OB5_OS5_CB4_CS4_AO
 SI Gain: $ 1.19 Win %: 66.00 in 9 days with algo TB5_OC_QM_OB5_OS5_CB4_CS4_AO_AC
@@ -181,6 +182,7 @@ SI Gain: $ 4.35 Win %: 55.00 in 9 days with algo TB3_HL_HS_QM_OB1_OS1_CB4_CS4_SS
 SI Gain: $ 4.47 Win %: 66.00 in 9 days with algo TB4_HL_HS_QM_OB5_OS5_CB5_CS5
 SI Gain: $ 4.47 Win %: 66.00 in 9 days with algo TB4_HL_HS_QM_OB5_OS5_CB5_CS5_SS
 SI Gain: $ 4.47 Win %: 66.00 in 9 days with algo TB4_HL_HS_QM_OB5_OS5_CB5_CS5_TR
+SI Gain: $ 4.69 Win %: 94.00 in 18 days with algo TB1_LO_HL_QM_OB4_OS3_CB5_CS5_PM_AL
 SI Gain: $ 4.7 Win %: 55.00 in 9 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_LI
 SI Gain: $ 4.7 Win %: 66.00 in 9 days with algo TB3_HL_HS_QM_OB1_OS1_CB4_CS4_TR
 SI Gain: $ 4.7 Win %: 77.00 in 9 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_AL_TS
@@ -193,6 +195,13 @@ SI Gain: $ 5.53 Win %: 44.00 in 9 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_SS
 SI Gain: $ 5.57 Win %: 33.00 in 9 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_VI
 SI Gain: $ 5.93 Win %: 77.00 in 9 days with algo TB5_OC_QM_OB5_OS5_CB4_CS4_PM
 SI Gain: $ 6.42 Win %: 44.00 in 9 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_TR
+SI Gain: $ 7.13 Win %: 100.00 in 18 days with algo TB1_LO_HL_QM_OB4_OS3_CB5_CS5_PM_AV
+SI Gain: $ 7.13 Win %: 100.00 in 18 days with algo TB1_LO_HL_QM_OB4_OS3_CB5_CS5_PM_AV
+SI Gain: $ 7.13 Win %: 100.00 in 18 days with algo TB1_LO_HL_QM_OB4_OS3_CB5_CS5_PM_AV
+SI Gain: $ 7.13 Win %: 100.00 in 18 days with algo TB1_LO_HL_QM_OB4_OS3_CB5_CS5_PM_AV_AL
+SI Gain: $ 7.13 Win %: 100.00 in 18 days with algo TB1_LO_HL_QM_OB4_OS3_CB5_CS5_PM_AV_AL
+SI Gain: $ 7.13 Win %: 100.00 in 18 days with algo TB1_LO_HL_QM_OB4_OS3_CB5_CS5_PM_AV_AL
+SI Gain: $ 7.13 Win %: 100.00 in 18 days with algo TB1_LO_HL_QM_OB4_OS3_CB5_CS5_PM_AV_AL
 SI Gain: $ 7.34 Win %: 44.00 in 9 days with algo TB5_OC_QM_OB5_OS5_CB4_CS4_RV
 SI Gain: $ 7.45 Win %: 66.00 in 9 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_IT_QL_DB6
 SI Gain: $ 7.49 Win %: 44.00 in 9 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_RV_AL

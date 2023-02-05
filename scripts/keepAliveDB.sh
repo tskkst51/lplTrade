@@ -383,6 +383,7 @@ if [[ -n $day ]]; then
 
    if [[ -n $stock ]]; then
       cmd="$py3 $lpltMaster -w "${wp}/test/${day}" -o -d -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -s $stock"
+      testCmd="$py3 $lpltMaster -w "${wp}/test/${day}" -o -d -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -s $stock" 
        
    fi
 fi
@@ -429,14 +430,8 @@ elif [[ -n $day ]]; then
    # tar up results
    cd ${wp}/db || echo cant cd to db
    tar -zcf ${day}.tar.gz $day || echo cant tar $day
-   if [[ ! -f "${wp}/dbArchive/${day}.tar.gz" ]]; then
-      mv ${day}.tar.gz ${wp}/dbArchive || echo cant mv archive ${day}.tar.gz to ${wp}/dbArchive
-   fi
+   mv ${day}.tar.gz ${wp}/dbArchive || echo cant mv archive ${day}.tar.gz to ${wp}/dbArchive
    cd $wp || echo cant cd to $wp
-   
-#   if [[ -n $liveHost ]]; then
-#      updateTestSystem $dt $tarNm
-#   fi
 fi
 
 exit 0

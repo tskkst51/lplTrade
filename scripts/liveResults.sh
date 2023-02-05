@@ -3,10 +3,10 @@
 ## Run the test trading program with the results from a days test results to find the best
 
 dt=""
-lplt=""
+useDefaultAlgo=""
 
 dt=$1
-lplt=$2
+useDefaultAlgo=$2
 
 #wp=$(pwd)
 wp="/Users/tsk/w/lplTrade"
@@ -60,7 +60,9 @@ for stock in $stocks; do
    
    algo="\"\""
    
-   if [[ -f "${bestPath}/${stock}.bs" ]]; then
+   if [[ -n $useDefaultAlgo ]]; then
+      algo=$(grep defaultAlgoStr profiles/active.json | awk '{print $2}' | sed "s/,//" | sed "s/\"//g")
+   elif [[ -f "${bestPath}/${stock}.bs" ]]; then
       algo=$(tail -1 ${bestPath}/${stock}.bs | awk '{print $13}')
    else
       # Default found in active.json
@@ -71,11 +73,7 @@ for stock in $stocks; do
       order=$(grep $stock $orderPath | awk '{print $2}')
    fi
    
-   if [[ -n $lplt ]]; then
-      runRes=$(run.sh $day $algo $stock "lplt" | sed '/^[0-9].*/d; /^\-.*/d; /^on.*/d')
-   else
-      runRes=$(run.sh $day $algo $stock | sed '/^[0-9].*/d; /^\-.*/d; /^on.*/d')
-   fi
+   runRes=$(run.sh $day $algo $stock | sed '/^[0-9].*/d; /^\-.*/d; /^on.*/d')
    echo $runRes $order >> $tgtPath
 done
 

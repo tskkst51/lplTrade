@@ -169,11 +169,14 @@ DKS Gain: $ 8.66 Win %: 76.00 in 25 days with algo TB1_OC_QM_OB5_OS4_CB5_CS5_AL_
 DKS Gain: $ 8.66 Win %: 76.00 in 25 days with algo TB1_OC_QM_OB5_OS4_CB5_CS5_AL_TS_UA_DU7_DL1
 DKS Gain: $ 8.81 Win %: 61.00 in 21 days with algo TB5_EO_EC_QM_OB5_OS5_CB3_CS3_RV_AL
 DKS Gain: $ 9.05 Win %: 57.00 in 21 days with algo TB5_EO_EC_QM_OB5_OS5_CB3_CS3_QL
+DKS Gain: $ 9.24 Win %: 69.00 in 26 days with algo TB5_QM_LS_OB2_OS4_CB5_CS2_RV_AL_DB6
+DKS Gain: $ 9.24 Win %: 69.00 in 26 days with algo TB5_QM_LS_OB2_OS4_CB5_CS2_RV_AL_DB6
 DKS Gain: $ 9.68 Win %: 57.00 in 21 days with algo TB5_EO_EC_QM_OB5_OS5_CB3_CS3_DB6
 DKS Gain: $ 9.76 Win %: 76.00 in 21 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5_TR
 DKS Gain: $ 9.77 Win %: 61.00 in 21 days with algo TB5_HL_HS_QM_OB4_OS4_CB3_CS3_AO
 DKS Gain: $ 9.78 Win %: 57.00 in 21 days with algo TB2_HL_HS_QM_OB5_OS5_CB1_CS1_HM_AV_DB15
 DKS Gain: $ 9.81 Win %: 61.00 in 21 days with algo TB2_HL_HS_QM_OB5_OS5_CB1_CS1_HM_AV
+DKS Gain: $ 9.81 Win %: 88.00 in 26 days with algo TB1_LO_HL_QM_OB5_OS2_CB5_CS5_PM
 DKS Gain: $ 10.47 Win %: 71.00 in 21 days with algo TB5_HL_LO_QM_OB1_OS1_CB5_CS5
 DKS Gain: $ 10.48 Win %: 57.00 in 21 days with algo TB5_EO_EC_QM_OB5_OS5_CB3_CS3_AC
 DKS Gain: $ 10.48 Win %: 57.00 in 21 days with algo TB5_EO_EC_QM_OB5_OS5_CB3_CS3_AO

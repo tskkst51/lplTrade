@@ -80,7 +80,7 @@ def parseLastLine(line, info, stock):
    numLineTokens = len(lineTokens)
    
    if lineTokens[0] != "close":
-      print ("Invalid test results: " + stock + " " + str(line))
+      print ("Invalid test results: " + stock + " " + info + " " + str(line))
       return ""
    
    
@@ -430,7 +430,8 @@ for minBar in db.getTestTimebars():
       #               writeLog(resultsPath, rsPath)
       #               writeLog(tdp, pfPath)
                                     
-                  print (str(stock) + " " + str(parsedLine) + " " + str(testCtr))
+                  #print (str(stock) + " " + str(parsedLine) + " " + str(testCtr))
+                  print (str(stock) + " " + str(parsedLine))
                
                   # ... and save it's peices to be later examined
                   #writeParsedLine(parsePath, stock + " " + parsedLine)

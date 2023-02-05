@@ -315,6 +315,9 @@ TAL Gain: $ 0.65 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_HM
 TAL Gain: $ 0.65 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_QL
 TAL Gain: $ 0.65 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_RV
 TAL Gain: $ 0.65 Win %: 100.00 in 2 days with algo TB2_OO_QM_OB2_OS2_CB3_CS3_SS
+TAL Gain: $ 4.87 Win %: 75.00 in 8 days with algo TB1_BL_QM_OB3_OS3_CB3_CS4_LI_DU7_AL
+TAL Gain: $ 4.87 Win %: 75.00 in 8 days with algo TB1_BL_QM_OB3_OS3_CB3_CS4_LI_DU7_UA_AL
+TAL Gain: $ 4.88 Win %: 75.00 in 8 days with algo TB1_BL_QM_OB3_OS3_CB3_CS4_LI_DU7_UA_TG_AL
 TAL Gain: $ 6.28 Win %: 75.00 in 4 days with algo TB1_HS_QM_OB2_OS3_CB3_CS3_UA_DU7_DL2
 TAL Gain: $ 6.38 Win %: 66.00 in 6 days with algo TB1_BL_QM_OB3_OS3_CB3_CS4_LI_DU7_UA
 TAL Gain: $ 6.38 Win %: 66.00 in 6 days with algo TB1_BL_QM_OB3_OS3_CB3_CS4_LI_DU7_UA

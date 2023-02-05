@@ -173,6 +173,15 @@ CSIQ Gain: $ 2.07 Win %: 75.00 in 4 days with algo TB2_PL_QM_OB1_OS1_CB3_CS3_HM_
 CSIQ Gain: $ 2.19 Win %: 75.00 in 4 days with algo TB2_PL_QM_OB3_OS3_CB3_CS3_QL
 CSIQ Gain: $ 2.32 Win %: 75.00 in 4 days with algo TB2_PL_QM_OB1_OS1_CB3_CS3_QL
 CSIQ Gain: $ 5.71 Win %: 90.00 in 10 days with algo TB5_CC_QM_OB4_OS2_CB5_CS4_AV_UA
+CSIQ Gain: $ 8.1 Win %: 100.00 in 12 days with algo TB3_OO_QM_OB4_OS3_CB5_CS5_RV_TR_DB10
+CSIQ Gain: $ 8.1 Win %: 100.00 in 12 days with algo TB3_OO_QM_OB4_OS3_CB5_CS5_RV_TR_DB10_UA
+CSIQ Gain: $ 10.83 Win %: 91.00 in 12 days with algo TB3_OO_QM_OB4_OS3_CB5_CS5_RV_TR_DB10_DU8_UA_AV_DL2
+CSIQ Gain: $ 10.83 Win %: 91.00 in 12 days with algo TB3_OO_QM_OB4_OS3_CB5_CS5_RV_TR_DB10_DU8_UA_AV_DL2
+CSIQ Gain: $ 10.83 Win %: 91.00 in 12 days with algo TB3_OO_QM_OB4_OS3_CB5_CS5_RV_TR_DB10_DU8_UA_AV_DL2
+CSIQ Gain: $ 10.83 Win %: 91.00 in 12 days with algo TB3_OO_QM_OB4_OS3_CB5_CS5_RV_TR_DB10_UA_DU8_AV_DL2
+CSIQ Gain: $ 10.83 Win %: 91.00 in 12 days with algo TB3_OO_QM_OB4_OS3_CB5_CS5_RV_TR_DB10_UA_DU8_AV_DL2
+CSIQ Gain: $ 10.83 Win %: 91.00 in 12 days with algo TB3_OO_QM_OB4_OS3_CB5_CS5_RV_TR_DB10_UA_DU8_AV_DL2
+CSIQ Gain: $ 10.83 Win %: 91.00 in 12 days with algo TB3_OO_QM_OB4_OS3_CB5_CS5_RV_TR_DB10_UA_DU8_AV_DL2
 CSIQ Gain: $ 14.04 Win %: 77.00 in 9 days with algo TB5_CC_QM_OB4_OS2_CB5_CS4_AV_UA_TG_DU7_AL_DL2
 CSIQ Gain: $ 14.56 Win %: 63.00 in 11 days with algo TB5_CC_QM_OB4_OS2_CB5_CS4_AV_UA_TG_DU8_AL_DL2
 CSIQ Gain: $ 14.56 Win %: 63.00 in 11 days with algo TB5_CC_QM_OB4_OS2_CB5_CS4_AV_UA_TG_DU8_DL2_AL

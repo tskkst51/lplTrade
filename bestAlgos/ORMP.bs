@@ -132,6 +132,9 @@ ORMP Gain: $ -0.24 Win %: 68.00 in 19 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS
 ORMP Gain: $ -0.16 Win %: 47.00 in 19 days with algo TB4_HL_HS_QM_OB2_OS2_CB4_CS4_QL
 ORMP Gain: $ -0.12 Win %: 57.00 in 19 days with algo TB3_OC_QM_OB4_OS4_CB4_CS4_AL_TS
 ORMP Gain: $ -0.06 Win %: 65.00 in 23 days with algo TB3_CC_QM_OB4_OS2_CB5_CS5_TR_TS_AL
+ORMP Gain: $ 0.0 Win %: 100.00 in 23 days with algo TB3_CC_QM_OB4_OS2_CB5_CS5_TR_TS_AV_UA_DU8_DL2
+ORMP Gain: $ 0.0 Win %: 100.00 in 23 days with algo TB3_CC_QM_OB4_OS2_CB5_CS5_TR_TS_AV_UA_DU8_DL2
+ORMP Gain: $ 0.0 Win %: 100.00 in 23 days with algo TB3_CC_QM_OB4_OS2_CB5_CS5_TR_TS_AV_UA_TG
 ORMP Gain: $ 0.07 Win %: 52.00 in 19 days with algo TB2_HL_LO_QM_OB1_OS1_CB1_CS1_HM_AL
 ORMP Gain: $ 0.09 Win %: 52.00 in 19 days with algo TB4_HL_HS_QM_OB2_OS2_CB4_CS4_HM_TR
 ORMP Gain: $ 0.24 Win %: 57.00 in 19 days with algo TB4_HL_HS_QM_OB2_OS2_CB4_CS4_RV_TR

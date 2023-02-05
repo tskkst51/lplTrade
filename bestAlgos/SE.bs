@@ -229,3 +229,6 @@ SE Gain: $ 72.85 Win %: 70.00 in 20 days with algo TB2_HL_HI_QM_OB3_OS3_CB4_CS4_
 SE Gain: $ 74.57 Win %: 70.00 in 20 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3_TR
 SE Gain: $ 75.05 Win %: 60.00 in 20 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3_HM_TR
 SE Gain: $ 78.42 Win %: 70.00 in 20 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3_RV_TR
+SE Gain: $ 83.44 Win %: 57.00 in 28 days with algo TB1_HI_HL_QM_OB3_OS2_CB2_CS4_HM_TR_DU8_AL_DL2
+SE Gain: $ 118.49 Win %: 64.00 in 28 days with algo TB1_HI_HL_QM_OB3_OS2_CB2_CS4_HM_TR_DU8_AV_DL2
+SE Gain: $ 135.98 Win %: 60.00 in 28 days with algo TB1_HI_HL_QM_OB3_OS2_CB2_CS4_HM_TR_DU8_DL2

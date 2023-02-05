@@ -232,4 +232,13 @@ ZLAB Gain: $ 19.33 Win %: 85.00 in 7 days with algo TB3_HL_HI_QM_OB1_OS1_CB4_CS4
 ZLAB Gain: $ 19.33 Win %: 85.00 in 7 days with algo TB3_HL_HI_QM_OB1_OS1_CB4_CS4_RV_AV
 ZLAB Gain: $ 20.22 Win %: 85.00 in 7 days with algo TB3_HL_HI_QM_OB1_OS1_CB4_CS4_RV_TR
 ZLAB Gain: $ 20.52 Win %: 85.00 in 7 days with algo TB3_HL_HI_QM_OB1_OS1_CB4_CS4_TR
+ZLAB Gain: $ 20.63 Win %: 55.00 in 9 days with algo TB5_CC_QM_OB2_OS2_CB5_CS2_HM_TR_DB6_UA_DU8_AL_DL2_AV
+ZLAB Gain: $ 20.63 Win %: 55.00 in 9 days with algo TB5_CC_QM_OB2_OS2_CB5_CS2_HM_TR_DB6_UA_DU8_AL_DL2_AV
+ZLAB Gain: $ 20.63 Win %: 55.00 in 9 days with algo TB5_CC_QM_OB2_OS2_CB5_CS2_HM_TR_DB6_UA_DU8_AL_DL2_AV
+ZLAB Gain: $ 20.63 Win %: 55.00 in 9 days with algo TB5_CC_QM_OB2_OS2_CB5_CS2_HM_TR_DB6_UA_DU8_AL_DL2_TG_AV
+ZLAB Gain: $ 20.63 Win %: 55.00 in 9 days with algo TB5_CC_QM_OB2_OS2_CB5_CS2_HM_TR_DB6_UA_DU8_AL_DL2_TG_AV
+ZLAB Gain: $ 20.63 Win %: 55.00 in 9 days with algo TB5_CC_QM_OB2_OS2_CB5_CS2_HM_TR_DB6_UA_DU8_AL_DL2_TG_AV
 ZLAB Gain: $ 20.68 Win %: 55.00 in 9 days with algo TB5_CC_QM_OB2_OS2_CB5_CS2_HM_TR_DB6_DU8_UA_AV_DL2
+ZLAB Gain: $ 20.68 Win %: 55.00 in 9 days with algo TB5_CC_QM_OB2_OS2_CB5_CS2_HM_TR_DB6_TG_DU8_UA_AV_DL2
+ZLAB Gain: $ 20.68 Win %: 55.00 in 9 days with algo TB5_CC_QM_OB2_OS2_CB5_CS2_HM_TR_DB6_UA_DU8_AV_DL2
+ZLAB Gain: $ 20.68 Win %: 55.00 in 9 days with algo TB5_CC_QM_OB2_OS2_CB5_CS2_HM_TR_DB6_UA_DU8_AV_DL2

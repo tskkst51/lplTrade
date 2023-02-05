@@ -1,0 +1,9 @@
+LLY Gain: $ -9.22 Win %: 0 in 1 days with algo TB5_EO_EC_QM_OB3_OS2_CB5_CS2_DU6_DU8_AV_DL2 5
+EA Gain: $ -2.66 Win %: 0 in 1 days with algo TB3_LO_HL_QM_OB5_OS2_CB4_CS4_IT_DU7_DL2 3
+DAL Gain: $ -2.62 Win %: 0 in 1 days with algo TB1_OO_QM_OB2_OS4_CB3_CS3_RV_AV_DU7 1
+STX Gain: $ -0.24 Win %: 0 in 1 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_DU7 7
+VXX Gain: $ 0.18 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB2_CS5_SS_DU6_UA_UA_TG 8
+ZS Gain: $ 1.7 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB4_OS2_CB4_CS4_AV_IT_DU8_DL2_AL 2
+BIIB Gain: $ 7.58 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS2_CB4_CS5_HM_TR_AV_DU7_DL2_AL_UA_DU8 6
+AMD Gain: $ 15.81 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB3_OS4_CB4_CS4_HM_AL_DU6_UA_AV 4
+Days gain with 8 stocks: 10.53 20230112

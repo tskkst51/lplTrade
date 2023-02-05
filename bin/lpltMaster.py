@@ -206,7 +206,7 @@ def getAutoStocks(orderType, numStocksToTrack):
    lastStock = ""
    daysBestStocks = []
    
-   assert(numDaysTestData)
+   #assert(numDaysTestData)
 
    with open(srcPath, 'r') as pp:
       lines = pp.readlines()
@@ -506,9 +506,11 @@ if clOptions.alt:
    alt = clOptions.alt
    
 if clOptions.stocks:
+   print ("d[stocks] " + str(d["stocks"]))
    stocks.append(clOptions.stocks)
    d["stocks"] = str(stocks)
-   
+print ("d[stocks] " + str(d["stocks"]))
+
 if clOptions.debug:
    debug = int(clOptions.debug)
 
@@ -550,39 +552,43 @@ if masterMode:
    timeBar = 1
    d["timeBar"] = "1"
    
-if stocksFile != "" and not onlyUpdateDailyStocks:
-   stocks = getAutoStocks(stocksFile, round(maxNumStocksToTrade * stocksFileMultiplier, 2))   
-
-elif preMarketAnalysis:
-
-   logPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
+if not offLine:
+   if stocksFile != "" and not onlyUpdateDailyStocks:
+      stocks = getAutoStocks(stocksFile, round(maxNumStocksToTrade * stocksFileMultiplier, 2))   
    
-   # Instantiate the needed objects
-   l = lpl.Log(0, 0, logPath, "/tmp/oo", 0)
-   pr = lpl.Premarket(minuteChartPath, minuteChartExt, dailyChartPath, dailyChartExt, dailyGapExt, bestAlgosPath, bestAlgosExt)
-   tg = lpl.Target(c, d, l)
-   dc = lpl.Dailychart()
+   elif preMarketAnalysis:
    
-   daysBestStocks = []
-   
-   if useDaysBest:
-      daysBestStocks = getAutoStocks(useDaysBest, numStocksToProcessInPremarket)   
-      print (" stocks after getauto" + str(daysBestStocks))
-      print (" stocks len after getauto " + str(len(daysBestStocks)))
+      logPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
       
-   algoData, stocks = analyzeStocks(pf, pr, tg, dc, "pre", useLiveDailyData, stocks, onlyUpdateDailyStocks, numDaysTestData, daysBestStocks)
+      # Instantiate the needed objects
+      l = lpl.Log(0, 0, logPath, "/tmp/oo", 0)
+      pr = lpl.Premarket(minuteChartPath, minuteChartExt, dailyChartPath, dailyChartExt, dailyGapExt, bestAlgosPath, bestAlgosExt)
+      tg = lpl.Target(c, d, l)
+      dc = lpl.Dailychart()
+      
+      daysBestStocks = []
+      
+      if useDaysBest:
+         daysBestStocks = getAutoStocks(useDaysBest, numStocksToProcessInPremarket)   
+         print (" stocks after getauto" + str(daysBestStocks))
+         print (" stocks len after getauto " + str(len(daysBestStocks)))
+         
+      algoData, stocks = analyzeStocks(pf, pr, tg, dc, "pre", useLiveDailyData, stocks, onlyUpdateDailyStocks, numDaysTestData, daysBestStocks)
+      
+      if onlyUpdateDailyStocks:
+         exit (0)
    
-   if onlyUpdateDailyStocks:
-      exit (0)
-
-   print ("pre market analysis stocks " + str(stocks))
+      print ("pre market analysis stocks " + str(stocks))
 
 # Trim list of stocks to maxNumStocksToTrade max
 
-print ("stocks before" + str(stocks))
+if offLine and clOptions.stocks:
+   stocks = clOptions.stocks
+print ("stocks before " + str(stocks))
 print ("stocks len " + str(len(stocks)))
+print ("offLine " + str(offLine))
 
-if offLine:
+if offLine and not clOptions.stocks:
    if workPath:
       stocks = getStocksFromBCDir(workPath + "/bc")
 else:

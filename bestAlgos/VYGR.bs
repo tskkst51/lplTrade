@@ -172,3 +172,6 @@ VYGR Gain: $ 2.08 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_AC
 VYGR Gain: $ 2.08 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_AO
 VYGR Gain: $ 2.08 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_QL
 VYGR Gain: $ 2.12 Win %: 100.00 in 2 days with algo TB5_HS_QM_OB1_OS1_CB5_CS5_PM
+VYGR Gain: $ 17.48 Win %: 42.00 in 7 days with algo TB1_HS_QM_OB3_OS2_CB2_CS5_DU6_AV
+VYGR Gain: $ 19.31 Win %: 42.00 in 7 days with algo TB1_HS_QM_OB3_OS2_CB2_CS5_DU6_AL
+VYGR Gain: $ 20.34 Win %: 42.00 in 7 days with algo TB1_HS_QM_OB3_OS2_CB3_CS5_DU6_AL

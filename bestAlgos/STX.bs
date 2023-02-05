@@ -229,6 +229,9 @@ STX Gain: $ 7.02 Win %: 80.00 in 10 days with algo TB5_HL_HI_QM_OB2_OS2_CB3_CS3_
 STX Gain: $ 7.32 Win %: 90.00 in 10 days with algo TB5_LO_QM_OB2_OS2_CB4_CS4_AL_TS
 STX Gain: $ 7.52 Win %: 70.00 in 10 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4_AV
 STX Gain: $ 7.52 Win %: 70.00 in 10 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4_RV_AV
+STX Gain: $ 8.15 Win %: 63.00 in 22 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_TG_UA_AV
+STX Gain: $ 8.15 Win %: 63.00 in 22 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_TG_UA_AV
+STX Gain: $ 8.15 Win %: 63.00 in 22 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_TG_UA_AV
 STX Gain: $ 8.4 Win %: 62.00 in 16 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10
 STX Gain: $ 8.47 Win %: 80.00 in 10 days with algo TB2_HL_HS_QM_OB2_OS2_CB4_CS4_AL
 STX Gain: $ 13.24 Win %: 75.00 in 16 days with algo TB5_HS_QM_OB2_OS2_CB4_CS5_LI
@@ -243,6 +246,12 @@ STX Gain: $ 23.5 Win %: 50.00 in 20 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_
 STX Gain: $ 29.49 Win %: 55.00 in 20 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_TG_UA_DU8_AV_DL2
 STX Gain: $ 29.49 Win %: 55.00 in 20 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_TG_UA_DU8_AV_DL2
 STX Gain: $ 30.47 Win %: 38.00 in 18 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_TG_DU7_AV_DL1
+STX Gain: $ 30.61 Win %: 57.00 in 21 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_TG_UA_AV_DU8_DL2
+STX Gain: $ 30.61 Win %: 57.00 in 21 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_TG_UA_AV_DU8_DL2
+STX Gain: $ 30.61 Win %: 57.00 in 21 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_TG_UA_AV_DU8_DL2
+STX Gain: $ 30.61 Win %: 57.00 in 21 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_TG_UA_AV_DU8_DL2
+STX Gain: $ 30.61 Win %: 57.00 in 21 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_TG_UA_DU8_AV_DL2
+STX Gain: $ 30.61 Win %: 57.00 in 21 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_TG_UA_DU8_AV_DL2
 STX Gain: $ 33.11 Win %: 55.00 in 18 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_TG_DU7_AV_DL2
 STX Gain: $ 37.45 Win %: 30.00 in 20 days with algo TB1_HS_HL_QM_OB2_OS4_CB3_CS3_RV_AV_DB30_DU7_DL1_UA_DL2_AL_TG
 STX Gain: $ 39.43 Win %: 27.00 in 18 days with algo TB1_HS_HL_QM_OB2_OS4_CB3_CS3_RV_AV_DB30_DU7_DL1_UA_DL2_TG
@@ -253,3 +262,6 @@ STX Gain: $ 42.15 Win %: 44.00 in 18 days with algo TB5_HS_QM_OB2_OS2_CB4_CS5_LI
 STX Gain: $ 43.75 Win %: 30.00 in 20 days with algo TB1_HS_HL_QM_OB2_OS4_CB3_CS3_RV_AV_DB30_DU7_DL1_UA_DL2_AL_TG
 STX Gain: $ 45.34 Win %: 50.00 in 18 days with algo TB1_HS_HL_QM_OB2_OS4_CB3_CS3_RV_AV_DB30_DU7
 STX Gain: $ 47.0 Win %: 61.00 in 18 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_RV_AL_DB10_DU7
+STX Gain: $ 47.91 Win %: 28.00 in 21 days with algo TB1_HS_HL_QM_OB2_OS4_CB3_CS3_RV_AV_DB30_DU7_DL1_UA_DL2_AL_TG_DU8
+STX Gain: $ 47.91 Win %: 28.00 in 21 days with algo TB1_HS_HL_QM_OB2_OS4_CB3_CS3_RV_AV_DB30_DU7_DL1_UA_DL2_AL_TG_DU8
+STX Gain: $ 47.91 Win %: 28.00 in 21 days with algo TB1_HS_HL_QM_OB2_OS4_CB3_CS3_RV_AV_DB30_DU7_DL1_UA_DL2_AL_TG_DU8

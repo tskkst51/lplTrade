@@ -177,6 +177,9 @@ ADI Gain: $ 11.74 Win %: 70.00 in 10 days with algo TB5_PL_QM_OB2_OS5_CB4_CS2_HM
 ADI Gain: $ 12.35 Win %: 66.00 in 9 days with algo TB5_PL_QM_OB2_OS5_CB4_CS2_HM_AV_DB6_UA_AL_DU5_DL2_TG
 ADI Gain: $ 12.35 Win %: 66.00 in 9 days with algo TB5_PL_QM_OB2_OS5_CB4_CS2_HM_AV_DB6_UA_AL_DU5_DL2_TG
 ADI Gain: $ 12.36 Win %: 64.00 in 14 days with algo TB5_PL_QM_OB2_OS5_CB4_CS2_HM_AV_DB6_UA_TG_AL_DU8_DL2
+ADI Gain: $ 12.62 Win %: 66.00 in 15 days with algo TB5_PL_QM_OB2_OS5_CB4_CS2_HM_AV_DB6_UA_DU8_DL2_TG
+ADI Gain: $ 12.62 Win %: 66.00 in 15 days with algo TB5_PL_QM_OB2_OS5_CB4_CS2_HM_AV_DB6_UA_DU8_DL2_TG
+ADI Gain: $ 12.62 Win %: 66.00 in 15 days with algo TB5_PL_QM_OB2_OS5_CB4_CS2_HM_AV_DB6_UA_DU8_DL2_TG
 ADI Gain: $ 14.38 Win %: 72.00 in 11 days with algo TB5_PL_QM_OB2_OS5_CB4_CS2_HM_AV_DB6_UA_TG_AL_DU8_DL2
 ADI Gain: $ 14.38 Win %: 72.00 in 11 days with algo TB5_PL_QM_OB2_OS5_CB4_CS2_HM_AV_DB6_UA_TG_AL_DU8_DL2
 ADI Gain: $ 15.35 Win %: 70.00 in 10 days with algo TB5_PL_QM_OB2_OS5_CB4_CS2_HM_AV_DB6_UA_AL_DU8_DL2
