@@ -165,18 +165,18 @@ for datePath in $testPaths; do
    done      
 done
 
-#echo stockProvided $stockProvided
-
 if (( stockProvided )); then
    scripts/testModsDB.sh $day $stock
-   if [[ -f "${wp}/bestAlgos/${stock}.in" ]]; then
-      echo Incrementing bestAlgo for $stock DISABLED
-      #${wp}/scripts/initIncBestAlgos.sh $stock 3
-   else
-      echo Initializing bestAlgo for $stock DISABLED
-      #${wp}/scripts/initBestAlgos.sh $stock 2 n $numTestStocks
+   host=$(hostname -s)
+   if [[ $host == $liveSystem ]]; then
+      echo Running initAllAlgos for $stock
+      if [[ -s "${wp}/bestAlgos/${stock}.in" ]]; then
+         echo Running initAllAlgos with reduced number of DB samples for $stock
+         ${wp}/scripts/initAllAlgos.sh $stock n 3 10
+      else
+         ${wp}/scripts/initAllAlgos.sh $stock
+      fi
    fi
-   
 else
    scripts/testModsDB.sh $day
 fi

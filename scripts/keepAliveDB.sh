@@ -65,7 +65,7 @@ function init {
    testDir="${wp}/test/${dt}"
    log="${wp}/logs/liveDebugLog_${dt}.oo"
    cmd="$py3 $lpltMaster -d -c $HOME/profiles/et.json -p $wp/profiles/active.json"
-	testCmd="$py3 $lpltMaster -w "${wp}/test/${dt}" -o -d -c $HOME/profiles/et.json -p ${wp}/test/${dt}/profiles/active.json"
+	testCmd="$py3 $lpltMaster -w "${wp}/test/${dt}" -o -c $HOME/profiles/et.json -p ${wp}/test/${dt}/profiles/active.json"
 }   
 
 function updateTestSystem {
@@ -144,11 +144,11 @@ function executeTestsRemotely {
       echo cant execute test program: 
 }
 
-function update2TestSystems {
+function updateTestSystems {
 
    tarFile="${1}.gz"
 
-   for s in $(echo $testSystems); do
+   for s in $(echo $remoteTestSystems); do
       ssh "${defaultUser}@${s}" "cd ${wp}/../lpltArchives; git pull --no-edit" || \
          echo cant git pull
          
@@ -378,12 +378,12 @@ if [[ -n $day ]]; then
    offLine="yes"
    scripts/modProfiles.sh "test" > /dev/null 2>&1
 
-   cmd="$py3 $lpltMaster -w "${wp}/test/${day}" -o -d -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json"
-   testCmd="$py3 $lpltMaster -w "${wp}/test/${day}" -o -d -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json"
+   cmd="$py3 $lpltMaster -w "${wp}/test/${day}" -o -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json"
+   testCmd="$py3 $lpltMaster -w "${wp}/test/${day}" -o -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json"
 
    if [[ -n $stock ]]; then
-      cmd="$py3 $lpltMaster -w "${wp}/test/${day}" -o -d -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -s $stock"
-      testCmd="$py3 $lpltMaster -w "${wp}/test/${day}" -o -d -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -s $stock" 
+      cmd="$py3 $lpltMaster -w "${wp}/test/${day}" -o -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -s $stock"
+      testCmd="$py3 $lpltMaster -w "${wp}/test/${day}" -o -c $HOME/profiles/et.json -p ${wp}/test/${day}/profiles/active.json -s $stock" 
        
    fi
 fi
@@ -410,13 +410,15 @@ if [[ -z $day ]]; then # Running live start tests...
    moveDataToArchive $tarNm
    pushData $tarNm
    
-   if [[ $liveHost == $activeLiveHost ]]; then
+   if [[ $liveHost == "mm" ]]; then
       # 1 live host 2 test systems
-      update2TestSystems $tarNm
+      updateTestSystems $tarNm
       #executeTestsRemotely
    fi
    
    ${wp}/scripts/liveResults.sh $dt
+   ${wp}/scripts/liveResults.sh $dt "in"
+   ${wp}/scripts/liveResults.sh $dt "pc"
    tallyLiveResults $dt   
    echo Starting tests $testCmd $dt ...
    

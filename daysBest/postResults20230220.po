@@ -1,0 +1,22 @@
+ATVI Gain: $ -0.1 Win %: 0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB2_CS5_DU6_AL 20
+ABT Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB5_CS2_TR_QP_DB10_DU7_UA_DL2 4
+ALB Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB3_OS5_CB5_CS4_RV_AL_DB30_UA_DU7_AV_DL2 8
+AN Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB4_OS2_CB4_CS4_HM_AV_DB6_DU7_DL2_DU8_AL 12
+BA Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS4_CB5_CS3_DB6_DU7_AL_DL2 13
+BTWN Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB1_PL_QM_OB2_OS1_CB2_CS4_AL_DU7_TG 3
+COTY Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS5_LI 10
+IRDM Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB5_LO_HL_QM_OB3_OS3_CB4_CS3_AL_DU8_AV_DL2 7
+ISEE Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS4_CB5_CS3_UA_DU8_DL2 1
+K Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB5_CS4_HM_TR_DB10_DU7_AL_DL2 9 17 19
+LAC Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB4_OS2_CB2_CS4_TR_TS_DU7_AV_DL2_TG 5
+META Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB3_OS2_CB4_CS5_HM_TR_DB6_DU7_UA_AV_DL1_DL2 16
+SBLK Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB3_OS3_CB3_CS5_AL_TS_DU8_AV_DL2 19
+SQM Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB3_LO_HL_QM_OB4_OS2_CB2_CS5_AO_AC_AV_DU7_DL2 6
+TVTX Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB1_HI_HL_QM_OB3_OS3_CB3_CS2_RV_AV_DB30_DU7_UA_DL2 2
+VIR Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB1_OS1_CB5_CS5_HM_AV 15
+WDAY Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB5_OS3_CB2_CS5_AL_TS_TG_DU7_DL2 21
+WEN Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_TG_OB2_OS4_CB5_CS2_HM_DU8_AV_DL2 18
+WMT Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB3_HI_HL_QM_OB5_OS3_CB5_CS5_TR_IR3_TG_DU7_AV_DL2 14
+XLK Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB3_CS3_IT_QL_DB6 17
+XLV Gain: $ 0.0 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS2_CB2_CS5_RV_AL_DU7_DL1 11
+Days gain with 21 stocks: -0.1 20230220

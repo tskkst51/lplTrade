@@ -394,71 +394,74 @@ forceClose = 1
 
 stocks = []
 
-stock = str(d["stock"])
-stocksStr = str(d["stocks"])
-stocksFile = str(d["stocksFile"])
+stock = str(pf.gv("stock"))
+stocksStr = str(pf.gv("stocks"))
+stocksFile = str(pf.gv("stocksFile"))
 stocks = stocksStr.split(',')
-etfs = str(d["etfs"])
-profileName = str(d["profileName"])
-currency = str(d["currency"])
-alt = str(d["alt"])
-timeBar = int(d["timeBar"])
-service = str(d["service"])
-algorithms = str(d["algorithms"])
-tradingDelayBars = int(d["tradingDelayBars"])
-openBuyBars = int(d["openBuyBars"])
-closeBuyBars = int(d["closeBuyBars"])
-openSellBars = int(d["openSellBars"])
-closeSellBars = int(d["closeSellBars"])
+etfs = str(pf.gv("etfs"))
+profileName = str(pf.gv("profileName"))
+currency = str(pf.gv("currency"))
+alt = str(pf.gv("alt"))
+timeBar = int(pf.gv("timeBar"))
+service = str(pf.gv("service"))
+algorithms = str(pf.gv("algorithms"))
+tradingDelayBars = int(pf.gv("tradingDelayBars"))
+openBuyBars = int(pf.gv("openBuyBars"))
+closeBuyBars = int(pf.gv("closeBuyBars"))
+openSellBars = int(pf.gv("openSellBars"))
+closeSellBars = int(pf.gv("closeSellBars"))
 profileTradeData = str(d)
-resume = int(d["resume"])
-workPath = str(d["workPath"])
-waitForTopMinute = int(d["waitForTopMinute"])
-halfDayEndTime = str(d["halfDayEndTime"])
-halfDays = str(d["halfDays"])
-preMarket = str(d["preMarket"])
-afterMarket = str(d["afterMarket"])
-preMarketAnalysis = int(d["preMarketAnalysis"])
-afterMarketAnalysis = int(d["afterMarketAnalysis"])
-afterMarketEndTime = int(d["afterMarketEndTime"])
-onlyUpdateDailyStocks = int(d["onlyUpdateDailyStocks"])
-numDaysTestData = int(d["numDaysTestData"])
-useDaysBest = int(d["useDaysBest"])
-daysBestAvgDailyGain = float(d["daysBestAvgDailyGain"])
+resume = int(pf.gv("resume"))
+workPath = str(pf.gv("workPath"))
+waitForTopMinute = int(pf.gv("waitForTopMinute"))
+halfDayEndTime = str(pf.gv("halfDayEndTime"))
+halfDays = str(pf.gv("halfDays"))
+preMarket = str(pf.gv("preMarket"))
+afterMarket = str(pf.gv("afterMarket"))
+preMarketAnalysis = int(pf.gv("preMarketAnalysis"))
+afterMarketAnalysis = int(pf.gv("afterMarketAnalysis"))
+afterMarketEndTime = int(pf.gv("afterMarketEndTime"))
+onlyUpdateDailyStocks = int(pf.gv("onlyUpdateDailyStocks"))
+numDaysTestData = int(pf.gv("numDaysTestData"))
+useDaysBest = int(pf.gv("useDaysBest"))
+daysBestAvgDailyGain = float(pf.gv("daysBestAvgDailyGain"))
 
-useStocksFromDailyCharts = int(d["useStocksFromDailyCharts"])
-findPreMarketMovers = int(d["findPreMarketMovers"])
-findYahooMovers = int(d["findYahooMovers"])
+useStocksFromDailyCharts = int(pf.gv("useStocksFromDailyCharts"))
+findPreMarketMovers = int(pf.gv("findPreMarketMovers"))
+findYahooMovers = int(pf.gv("findYahooMovers"))
 
-maxStocksToTrade = int(d["maxStocksToTrade"])
-maxNumProcesses = int(d["maxNumProcesses"])
+maxStocksToTrade = int(pf.gv("maxStocksToTrade"))
+maxNumProcesses = int(pf.gv("maxNumProcesses"))
 
-doTrailingStop = int(d["doTrailingStop"])
-maxProfit = float(d["maxProfit"])
-maxLoss = float(d["maxLoss"])
-quitMaxProfit = int(d["quitMaxProfit"])
-quitMaxLoss = int(d["quitMaxLoss"])
-useLiveDailyData = int(d["useLiveDailyData"])
-useDefaultAlgo = int(d["useDefaultAlgo"])
-useStocksWithNoTestData = int(d["useStocksWithNoTestData"])
-useTestMinuteCharts = int(d["useTestMinuteCharts"])
-minStockPrice = float(d["minStockPrice"])
-maxStockPrice = float(d["maxStockPrice"])
-excludeStocks = int(d["excludeStocks"])
-stockOrderFile = str(d["stockOrderFile"])
-defaultStocks = str(d["defaultStocks"])
+doTrailingStop = int(pf.gv("doTrailingStop"))
+maxProfit = float(pf.gv("maxProfit"))
+maxLoss = float(pf.gv("maxLoss"))
+quitMaxProfit = int(pf.gv("quitMaxProfit"))
+quitMaxLoss = int(pf.gv("quitMaxLoss"))
+useLiveDailyData = int(pf.gv("useLiveDailyData"))
+useDefaultAlgo = int(pf.gv("useDefaultAlgo"))
+useStocksWithNoTestData = int(pf.gv("useStocksWithNoTestData"))
+useTestMinuteCharts = int(pf.gv("useTestMinuteCharts"))
+minStockPrice = float(pf.gv("minStockPrice"))
+maxStockPrice = float(pf.gv("maxStockPrice"))
+excludeStocks = int(pf.gv("excludeStocks"))
+stockOrderFile = str(pf.gv("stockOrderFile"))
+defaultStocks = str(pf.gv("defaultStocks"))
+useDefaultStocks = int(pf.gv("useDefaultStocks"))
 
 # Make sure stocksFileMultiplier is "1" or more...
-stocksFileMultiplier = float(d["stocksFileMultiplier"])
-numStocksToProcessInPremarket = int(d["numStocksToProcessInPremarket"])
-loopDelay = float(d["loopDelay"])
+stocksFileMultiplier = float(pf.gv("stocksFileMultiplier"))
+numStocksToProcessInPremarket = int(pf.gv("numStocksToProcessInPremarket"))
+loopDelay = float(pf.gv("loopDelay"))
+useFirstMinuteAvgs = int(pf.gv("useFirstMinuteAvgs"))
 
 masterMode = 1
 
 # Connection service profile 'c'
-offLine = int(c["profileConnectET"]["offLine"])
-sandBox = int(c["profileConnectET"]["sandBox"])
-maxNumStocksToTrade = int(c["profileConnectET"]["maxNumStocksToTrade"])
+#offLine = int(pf.gv("offLine"))
+sandBox = int(cf.gv("sandBox"))
+maxNumStocksToTrade = int(cf.gv("maxNumStocksToTrade"))
+
 
 dailyChartPath = "dc/"
 dailyChartExt = ".dc"
@@ -506,10 +509,10 @@ if clOptions.alt:
    alt = clOptions.alt
    
 if clOptions.stocks:
-   print ("d[stocks] " + str(d["stocks"]))
+   print ("pf.gv(stocks] " + str(pf.gv("stocks")))
    stocks.append(clOptions.stocks)
-   d["stocks"] = str(stocks)
-print ("d[stocks] " + str(d["stocks"]))
+#   d["stocks"] = str(stocks)
+#print ("d[stocks] " + str(d["stocks")))
 
 if clOptions.debug:
    debug = int(clOptions.debug)
@@ -531,11 +534,11 @@ if clOptions.offLine:
 
 if clOptions.timeBar:
    timeBar = clOptions.timeBar
-   d["timeBar"] = str(timeBar)
+   #d["timeBar"] = str(timeBar)
    
 if clOptions.workPath:
    workPath = clOptions.workPath
-   d["workPath"] = str(workPath)
+   #d["workPath"] = str(workPath)
 
 if clOptions.onlyUpdateDailyStocks:
    onlyUpdateDailyStocks = 1
@@ -550,10 +553,12 @@ if offLine:
 
 if masterMode:
    timeBar = 1
-   d["timeBar"] = "1"
+   #d["timeBar"] = "1"
    
 if not offLine:
-   if stocksFile != "" and not onlyUpdateDailyStocks:
+   if useDefaultStocks:
+      stocks = defaultStocks.split(',')
+   elif stocksFile != "" and not onlyUpdateDailyStocks:
       stocks = getAutoStocks(stocksFile, round(maxNumStocksToTrade * stocksFileMultiplier, 2))   
    
    elif preMarketAnalysis:
@@ -561,7 +566,7 @@ if not offLine:
       logPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
       
       # Instantiate the needed objects
-      l = lpl.Log(0, 0, logPath, "/tmp/oo", 0)
+      l = lpl.Log(0, 0, logPath, "/tmp/oo", "", 0)
       pr = lpl.Premarket(minuteChartPath, minuteChartExt, dailyChartPath, dailyChartExt, dailyGapExt, bestAlgosPath, bestAlgosExt)
       tg = lpl.Target(c, d, l)
       dc = lpl.Dailychart()
@@ -597,7 +602,7 @@ else:
       
 
    # Insert the default stocks into the first array positions
-   if defaultStocks:   
+   if useDefaultStocks:   
       print ("stocks before defaultStocks " + str(stocks))
       print ("defaultStocks " + str(defaultStocks))
       defaultStocksArr = defaultStocks.split(",")
@@ -670,6 +675,7 @@ for stock in stocks:
    barChartPath = clOptions.profileTradeDataPath.replace("profiles", "bc")
    pricesPath = clOptions.profileTradeDataPath.replace("profiles", "prices")
    testPath = clOptions.profileTradeDataPath.replace("profiles", "test")
+   statsPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
 
    logPath = logPath.replace(".json_" + stock, stock + ".ls")
    debugPath = debugPath.replace(".json_" + stock, stock + ".dm")
@@ -677,6 +683,7 @@ for stock in stocks:
    barChartPath = barChartPath.replace(".json_" + stock, stock + ".bc")
    pricesPath = pricesPath.replace(".json_" + stock, stock + ".pr")
    testPath = testPath.replace(".json_" + stock, stock + ".tt")
+   statsPath = statsPath.replace(".json_" + stock, stock + ".st")
 
    logPath = logPath.replace(".json", "")
    debugPath = debugPath.replace(".json", "")
@@ -684,6 +691,7 @@ for stock in stocks:
    barChartPath = barChartPath.replace(".json", "")
    pricesPath = pricesPath.replace(".json", "")
    testPath = testPath.replace(".json", "")
+   statsPath = statsPath.replace(".json", "")
    
    # Populate the strings and log object
    lp = logPath + stock + ".log"
@@ -692,11 +700,12 @@ for stock in stocks:
    bp = barChartPath + stock + ".bc"
    pp = pricesPath + stock + ".pr"
    tp = testPath + stock + ".tt"
+   st = statsPath + stock + ".st"
       
    #pathsChart[stock] = {"logPath" : lp, "debugPath" : db, "barChartPath" : bp, "pricesPath" : pp, "testPath" : tp, "slaveDebugPath" : ds}
-   pathsChart[stock] = {"logPath" : lp, "debugPath" : db, "barChartPath" : bp, "pricesPath" : pp, "testPath" : tp}
+   pathsChart[stock] = {"logPath" : lp, "debugPath" : db, "barChartPath" : bp, "pricesPath" : pp, "testPath" : tp, "statsPath" : st}
       
-   lg[stock] = lpl.Log(debug, verbose, pathsChart[stock]['logPath'], pathsChart[stock]['debugPath'], offLine)
+   lg[stock] = lpl.Log(debug, verbose, pathsChart[stock]['logPath'], pathsChart[stock]['debugPath'], pathsChart[stock]['statsPath'], offLine)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize trading objects
@@ -744,6 +753,16 @@ pr1 = pr[stocks[0]]
 pa1 = pa[stocks[0]]
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+if useFirstMinuteAvgs:
+   testDir = "test/"
+   firstMinuteAvgs = []
+   if offLine:
+      testDir = cwd + "/test/"
+   for s in stocks:
+      firstMinuteAvgs.append(ba[s].getMinuteBarAvgs(s, timeBar, testDir))
+      print ("firstMinuteAvgs " + str(firstMinuteAvgs))
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set end time
 
 lg1.debug ("halfDays set to: " + halfDays)
@@ -751,10 +770,10 @@ lg1.debug ("getDateMonthDayYear " + str(cn.getDateMonthDayYear()))
 
 if str(cn.getDateMonthDayYear()) in halfDays:
    lastMinuteOfLiveTrading = int(halfDayEndTime)
-   lg1.info ("lastMinuteOfLiveTrading is set to: " + str(lastMinuteOfLiveTrading))
+   lg1.debug ("lastMinuteOfLiveTrading is set to: " + str(lastMinuteOfLiveTrading))
    
-   lg1.info ("Half day trading is set to: " + halfDayEndTime)
-   lg1.info ("It must be a day after a holiday: " + halfDays)
+   lg1.debug ("Half day trading is set to: " + halfDayEndTime)
+   lg1.debug ("It must be a day after a holiday: " + halfDays)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize files
@@ -788,24 +807,24 @@ for stock in stocks:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Display profile data
 
-lg1.info ("Reading profileTrade data from: " + clOptions.profileTradeDataPath + "\n")
-lg1.info ("Using symbol: " + symbol)
+lg1.debug ("Reading profileTrade data from: " + clOptions.profileTradeDataPath + "\n")
+lg1.debug ("Using symbol: " + symbol)
 for stock in stocks:
-   lg1.info ("Last trade: " + str(cn.getLastTrade(stock)))
-lg1.info ("Minute bar chart: " + str(timeBar))
-lg1.info ("openBuyBars: " + str(openBuyBars))
-lg1.info ("closeBuyBars: " + str(closeBuyBars))
-lg1.info ("openSellBars: " + str(openSellBars))
-lg1.info ("closeSellBars: " + str(closeSellBars))
-lg1.info ("tradingDelayBars: " + str(tradingDelayBars))
-lg1.info ("sand: " + str(sandBox))
-lg1.info ("offLine: " + str(offLine))
-lg1.info ("marketDataType: " + cn.getMarketDataType())
-lg1.info ("dateTimeUTC: " + cn.getDateTimeUTC())
-lg1.info ("dateTime: " + cn.getDateTime())
-lg1.info ("getQuoteStatus: " + cn.getQuoteStatus())
-lg1.info ("workPath: " + workPath)
-lg1.info (a1.getAlgorithmMsg())
+   lg1.debug ("Last trade: " + str(cn.getLastTrade(stock)))
+lg1.debug ("Minute bar chart: " + str(timeBar))
+lg1.debug ("openBuyBars: " + str(openBuyBars))
+lg1.debug ("closeBuyBars: " + str(closeBuyBars))
+lg1.debug ("openSellBars: " + str(openSellBars))
+lg1.debug ("closeSellBars: " + str(closeSellBars))
+lg1.debug ("tradingDelayBars: " + str(tradingDelayBars))
+lg1.debug ("sand: " + str(sandBox))
+lg1.debug ("offLine: " + str(offLine))
+lg1.debug ("marketDataType: " + cn.getMarketDataType())
+lg1.debug ("dateTimeUTC: " + cn.getDateTimeUTC())
+lg1.debug ("dateTime: " + cn.getDateTime())
+lg1.debug ("getQuoteStatus: " + cn.getQuoteStatus())
+lg1.debug ("workPath: " + workPath)
+lg1.debug (a1.getAlgorithmMsg())
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize based on live or offLine state 
@@ -843,6 +862,7 @@ if stock in stocks:
    lm[stock].setTradingDelayBars()
    ba[stock].setTimeBarValue(timeBar)
 
+barCtr = 0
 # Read in barChart and resume from it
 if resume:
    for stock in stocks:
@@ -898,10 +918,12 @@ if offLine:
 pid = {}
 numLaunchedPids = 0
 
-if preMarketAnalysis and not offLine and stocksFile == "":
+if useDefaultStocks and not offLine:
+   pid = th.launchStocks(stocks, maxStocksToTrade, os.path.basename(workPath))
+elif preMarketAnalysis and not offLine and stocksFile == "":
    pid = th.launchAlgos(algoData, maxStocksToTrade, os.path.basename(workPath))
 #if not preMarketAnalysis and not offLine:
-if stocksFile != "" and not offLine:
+elif stocksFile != "" and not offLine:
    pid = th.launchStocks(stocks, maxStocksToTrade, os.path.basename(workPath))
 
 if offLine:
@@ -912,7 +934,7 @@ if pid:
    numLaunchedPids = len(pid)
 
 if (quitMaxProfit or doTrailingStop) and maxProfit == 0.0:
-   lg1.info ("Max profit not set and it should be! ")
+   lg1.debug ("Max profit not set and it should be! ")
    exit (2)
 
 lg1.debug ("stocks " + str(stocks))
@@ -1063,6 +1085,14 @@ while True:
       
       # Beginning of next bar. 2nd clause is for offline mode
       if cn.getTimeHrMnSecs() >= endBarLoopTime or pr[stock].isNextBar(timeBar):      
+         
+         # After first bar, compare first bar movement
+#         if useFirstMinuteAvgs and barCtr == 1:
+#            firstBarLen = []
+#            for stock in firstMinuteAvgs:
+#               fbl = ba[stock].getFirstBarLen(ba[stock], 0)
+#               fbl - firstMinuteAvgs[stock]
+            
          # Only do beginning of the bar section once
          for stock in stocks:
             if dirty[stock]:

@@ -10,9 +10,10 @@ function init {
    . ${wp}/scripts/db.sh
    
    $HOME/bin/lplt.sh
-
+   
    sym=$1
-   sortPct=$2
+   ex=$2
+   ss=$3
    
    syms=$sym
    if [[ $sym == "all" ]]; then 
@@ -20,18 +21,20 @@ function init {
    else
       syms=$sym
    fi
-      
+   
+   if [[ -z $ex ]]; then ex="bs"; fi
+
    activateDir="/lplW2"
    py3=$(dirname $wp)
    py3+="${activateDir}/bin/python3"
       
    sortCol="4,4 -k7,7"
+   sortCol2="14,14 -k7,7"
+   sortCol3="7,7 -k4,4"
 
    if [[ -n $debug ]]; then echo syms: $syms; fi
    if [[ -f $tmpFile ]]; then rm -f $tmpFile ; fi
    if [[ -n $ss ]]; then dbNumModTestRows=$ss ; fi
-   if [[ -n $sortPct ]] && [[ $sortPct == "a" ]]; then sortCol="14,14 -k7,7" ; fi
-   if [[ -n $sortPct ]] && [[ $sortPct == "p" ]]; then sortCol="7,7 -k4,4" ; fi
    
 }
 
@@ -45,11 +48,20 @@ tmpFile=$(getRandomTmpFile)
 tmpFile2=$(getRandomTmpFile)
 
 for s in $syms; do
-   for a in $testModDBAlgos; do      
-      grep "_${a}" "bestAlgos/${s}.bs" | grep -v -e "-" | awk '{print $4, $7, $9}' > "${tmpFile}_${a}"
-      grep "_${a}" "bestAlgos/${s}.bs" | awk '{print $4, $7, $9}' > "${tmpFile}_${a}_all"
+   if [[ ! -s  "bestAlgos/${s}.${ex}" ]]; then 
+      missing="$missing $s"
+      continue; 
+   fi
+   for a in $testModDBAlgos $testDBAlgos; do
+      grep "_${a}" "bestAlgos/${s}.${ex}" | grep -v -e "-" | awk '{print $4, $7, $9}' > "${tmpFile}_${a}"
+      grep "_${a}" "bestAlgos/${s}.${ex}" | awk '{print $4, $7, $9}' > "${tmpFile}_${a}_all"
    done
 done
+
+if [[ -n $missing ]]; then
+   echo Missing data:
+   echo $missing
+fi 
 
 for a in $testModDBAlgos; do
    if [[ ! -s "${tmpFile}_${a}" ]]; then continue; fi
@@ -64,7 +76,9 @@ for a in $testModDBAlgos; do
    echo $a avg gain: $avgPrice avg % $avgPct in $numPrices days avg gain all: $avgPriceAll >> $tmpFile2
 done
 
-sort -n -k${sortCol} $tmpFile2
+sort -n -k${sortCol} $tmpFile2 
+sort -n -k${sortCol2} $tmpFile2
+sort -n -k${sortCol3} $tmpFile2
 #rm $tmpFile $tmpFile2
 
 exit 0

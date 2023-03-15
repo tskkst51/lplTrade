@@ -205,7 +205,8 @@ class Barchart:
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getTimeFromFile(self, bc, bar): 
          
-      bc[bar][self.dt]
+      hi = bc[bar][self.hi]
+      lo = bc[bar][self.lo]
       
       print ("bc[bar] :" + str(bc[bar])) 
       
@@ -233,6 +234,11 @@ class Barchart:
       
       return self.avgBL
       
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getFirstBarLen(self, bc, bar):
+
+      return bc[bar][self.bl]
+            
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def getPriceRange(self):
    
@@ -708,5 +714,107 @@ class Barchart:
    
       #return ("junk")
       return self.barChart[bar][self.dt]
+
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getMinuteBarHiLoLen(self, minutes, testDir):
+      
+      highest = 0.0
+      lowest = 99999999999.0
+      for bar in range(minutes):
+         hi = self.barChart[bar][self.hi]
+         lo = self.barChart[bar][self.lo]
+         print ("hi: " + str(hi))
+         print ("lo: " + str(lo))
+         if hi > highest:
+            highest = hi;
+         if lo < lowest:
+            lowest = lo
+      barLen = round(highest - lowest, 2)
+      print ("highest: " + str(highest))
+      print ("lowest: " + str(lowest))
+      print ("barLen: " + str(barLen))
+      
+      return barLen
+   
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def getMinuteBarAvgs(self, sym, minutes, testDir):
+   
+      assert(testDir)
+      
+      #print ("testDir " + testDir)
+      
+      allTestDays = []
+      for day in os.walk(testDir):
+         allTestDays = day[1]
+         break
+      
+      #print ("allTestDays " + str(allTestDays))
+      
+      if isinstance(sym, str):
+         syms = [sym]
+            
+      totBarAvg = {}
+      barLens = 0.0
+      for day in allTestDays:
+         totBarAvg[day] = {}
+         for s in syms:
+            lines = []
+            barLens = 0.0
+            totBarAvg[s] = []
+            firstBarLen = 0
+            path = testDir + day + "/bc/active" + s + ".bc"
+            if not os.path.exists(path):
+               continue
+                              
+            if os.stat(path).st_size < 10:
+               continue
+            
+            with open(path, 'r') as baFile:
+               lines = baFile.readlines()
+      
+            hi = lo = 0.0
+            # Need to subtract the lo from the hi for num minutes
+            for n in range(minutes):
+               hiVal = 0.0
+               loVal = 0.0
+               hiVal = (lines[n].split(',')[0])
+               loVal = (lines[n].split(',')[1])
+               
+               if float(hiVal) == 0.0 or float(loVal) == 0.0:
+                  continue
+               
+               try:
+                  if n == 0:
+                     hi = hiVal         
+                     lo = loVal
+                  else:
+                     if hi < hiVal:
+                        hi = hiVal
+                     if lo > loVal:
+                        lo = loVal
+               except TypeError as e:
+                  print ("TypeError bad value!!! ")
+                  print ("day " + str(day))
+                  print ("hiVal " + str(hiVal))
+                  print ("loVal " + str(loVal))
+                  print ("hi " + str(hi))
+                  print ("lo " + str(lo))
+                  
+            totBarAvg[day][s] = float(hi) - float(lo)
+            
+      avgFirstMinuteValues = {}
+      for s in syms:
+         avgFirstMinuteValues[s] = [0.0, 0, 0,0]
+         for key, value in totBarAvg.items():
+            if len(value) == 0:
+               continue
+            for k, v in value.items():
+               if k == s:
+                  print ("v " + str(v))
+                  avgFirstMinuteValues[s][0] += v
+                  avgFirstMinuteValues[s][1] += 1
+                  avgFirstMinuteValues[s][2] = avgFirstMinuteValues[s][0] / avgFirstMinuteValues[s][1]
+                  
+      return avgFirstMinuteValues
 
 # end bc

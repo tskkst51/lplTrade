@@ -34,16 +34,16 @@ def waitForPopulatedPrices(pricesPath, barChartPath):
          break
    
    barChartFD = open(barChartPath, 'r', os.O_NONBLOCK)
-   lg.info("Using " + barChartPath + " as bar chart file")
+   lg.debug("Using " + barChartPath + " as bar chart file")
 
    pricesFD = open(pricesPath, 'r', os.O_NONBLOCK)
-   lg.info("Using " + pricesPath + " as process file")
+   lg.debug("Using " + pricesPath + " as process file")
       
    
    return pricesFD, barChartFD
    
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def isStoppedOut():
+def isStoppedOut(positionTaken):
 
    if doInPosTracking:
       if a.getInPosGain():
@@ -75,7 +75,8 @@ def isStoppedOut():
       return 4
          
    if quitMaxLoss:            
-      if a.getTotalLoss() <= a.getTargetLoss() and a.getTotalLoss() != 0.0:
+      if a.getTotalLiveGain() <= a.getTargetLoss() and a.getTotalLoss() != 0.0:
+      #if a.getTotalLoss() <= a.getTargetLoss() and a.getTotalLoss() != 0.0:
          lg.info ("LOSS REACHED, Gain: Bar: " + str(a.getTotalLoss()) + " " + str(barCtr))
          lg.info ("LOSS TARGET: " + str(a.getTargetLoss()))
          lg.info ("LOSS FACTOR: " + str(maxLoss))
@@ -83,7 +84,20 @@ def isStoppedOut():
          lg.info ("LOSS TIME: " + str(barCtr * timeBar) + " minutes")
          
          return 2
+   
+   if positionTaken == stoppedOut:
+      lg.info ("STOP REACHED, Gain: Bar: " + str(a.getTotalLiveGain()) + " " + str(barCtr))
+      lg.info ("PROFIT TARGET: " + str(a.getTargetProfit()))
+      lg.info ("PROFIT LOSS: " + str(a.getTargetLoss()))
+      lg.info ("PROFIT FACTOR: " + str(maxProfit))
+      lg.info ("PROFIT CLOSE PRICE: " + str(last))
+      lg.info ("PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
+      
+      if a.getTotalLiveGain() > 0:
+         return 4
          
+      return 2
+      
    if maxNumLosses and a.getLosses() >= maxNumLosses:
       lg.info ("EXITING Max Number of Losses: " + str(a.getLosses()))
       return 2
@@ -226,9 +240,11 @@ quitMaxLoss = int(pf.gv("quitMaxLoss"))
 marketEndTime = int(pf.gv("marketEndTime"))
 doInPosTracking = int(pf.gv("doInPosTracking"))
 maxNumLosses = int(pf.gv("maxNumLosses"))
+doAutoStop = int(pf.gv("doAutoStop"))
+useFirstMinuteAvgs = int(pf.gv("useFirstMinuteAvgs"))
+useDefaultStocks = int(pf.gv("useDefaultStocks"))
 
-sandBox = int(c["profileConnectET"]["sandBox"])
-#offLine = int(c["profileConnectET"]["offLine"])
+sandBox = int(cf.gv("sandBox"))
 
 symbol = currency + alt
 
@@ -256,7 +272,7 @@ if clOptions.alt:
    
 if clOptions.stock:
    stock = clOptions.stock
-   d["stock"] = str(stock)
+   #d["stock"] = str(stock)
    
 if clOptions.debug:
    debug = int(clOptions.debug)
@@ -281,7 +297,7 @@ if clOptions.slave:
 
 if clOptions.timeBar:
    timeBar = int(clOptions.timeBar)
-   d["timeBar"] = str(timeBar)
+   #d["timeBar"] = str(timeBar)
    
 if clOptions.workPath:
    workPath = clOptions.workPath
@@ -325,16 +341,19 @@ debugPath = clOptions.profileTradeDataPath.replace("profiles", "debug")
 barChartPath = clOptions.profileTradeDataPath.replace("profiles", "bc")
 pricesPath = clOptions.profileTradeDataPath.replace("profiles", "prices")
 testPath = clOptions.profileTradeDataPath.replace("profiles", "test")
+statsPath = clOptions.profileTradeDataPath.replace("profiles", "logs")
 
 print ("logPath " + logPath)
 print ("dcPath " + dcPath)
 print ("barChartPath " + barChartPath)
+print ("statsPath " + statsPath)
 print ("clOptions.profileTradeDataPath " + clOptions.profileTradeDataPath)
 
 if "_" + stock in clOptions.profileTradeDataPath:
    logPath = logPath.replace(".json_" + stock, stock + ".ls")
    debugPath = debugPath.replace(".json_" + stock, stock + ".ds")
    barChartPath = barChartPath.replace(".json_" + stock, stock + ".bc")
+   statsPath = statsPath.replace(".json_" + stock, stock + ".st")
    
    print ("barChartPath1 " + barChartPath)
    
@@ -344,6 +363,7 @@ else:
    logPath = logPath.replace(".json", stock + ".ls")
    debugPath = debugPath.replace(".json", stock + ".ds")
    barChartPath = barChartPath.replace(".json", stock + ".bc")
+   statsPath = statsPath.replace(".json", stock + ".st")
    
    print ("barChartPath " + barChartPath)
 
@@ -355,7 +375,7 @@ print ("barChartPath " + barChartPath)
 if service == "eTrade":
    symbol = stock
 
-lg = lpl.Log(debug, verbose, logPath, debugPath, offLine)
+lg = lpl.Log(debug, verbose, logPath, debugPath, statsPath, offLine)
 
 #import trade_interface as ti
 #ti = lpl.TradeInterface({'consumer_key': self.consumer_key, 'consumer_secret' = self.consumerSecret}) 
@@ -382,7 +402,14 @@ tr = lpl.Trends(d, lg, cn, bc, offLine)
 lm = lpl.Limits(d, lg, cn, bc, pf, symbol)
 pa = lpl.Pattern(d, bc, lg)
 pr = lpl.Price(cn, offLine)
-#ac = lpl.Account(c)
+
+#if not offLine:
+#   ac = lpl.Account(c)
+#   ac.setAccount(str(cf.gv("liveAccount")))
+#   cash, margin = ac.getAccountBalance()
+#   print ("cash " + str(cash))
+#   print ("margin " + str(margin))
+
 dc = lpl.Dailychart()
 
 dy = lpl.Dynamic(timeBar, dcPath, dc, offLine)
@@ -392,19 +419,23 @@ a = lpl.Algorithm(d, lg, cn, bc, tr, lm, pa, pr, dy, offLine, stock)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize files
 
-lg.info("Using " + pricesPath + " as prices file")
+useDefaultStocks = int(pf.gv("useDefaultStocks"))
+
+sandBox = int(cf.gv("sandBox"))
+
+lg.debug("Using " + pricesPath + " as prices file")
 
 with open(debugPath, "a+", encoding="utf-8") as debugFile:
    debugFile.write(lg.infoStamp(a.getLiveProfileValues(d, clOptions.profileTradeDataPath)))
    debugFile.write(lg.header(tm.now(), stock))
 
-lg.info("Using " + debugPath + " as debug file")
+lg.debug("Using " + debugPath + " as debug file")
 
 with open(logPath, "a+", encoding="utf-8") as logFile:
    logFile.write(lg.infoStamp(a.getLiveProfileValues(d, clOptions.profileTradeDataPath)))
    logFile.write(lg.header(tm.now(), stock))
 
-lg.info("Using " + logPath + " as log file")
+lg.debug("Using " + logPath + " as log file")
 
 pricesFD, barChartFD = waitForPopulatedPrices(pricesPath, barChartPath)
 
@@ -420,29 +451,41 @@ if offLine:
             exit(1)
 
 barChart = bc.init()
-   
+
+# Rank stocks based on % move over 1st minute avg length
+# firstMinuteAvg  avg   #days  $ movement
+#                 9.95, 11,    0.9045454545454544
+firstMinuteAvgs = 0.0
+if useFirstMinuteAvgs and debug:
+   testDir = "test/"
+   if offLine:
+      testDir = cwd + "/test/"
+      lg.debug ("testDir " + str(testDir))
+   firstMinuteAvgs = bc.getMinuteBarAvgs(stock, timeBar, testDir)
+   lg.debug ("firstMinuteAvgs " + str(firstMinuteAvgs))
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Display profile data
 
-lg.info ("Reading profileTrade data from: " + clOptions.profileTradeDataPath + "\n")
-lg.info ("Using symbol: " + symbol)
-lg.info ("Last trade: " + str(cn.getLastTrade(stock)))
-lg.info ("Minute chart: " + str(timeBar))
-lg.info ("openBuyBars: " + str(openBuyBars))
-lg.info ("closeBuyBars: " + str(closeBuyBars))
-lg.info ("openSellBars: " + str(openSellBars))
-lg.info ("closeSellBars: " + str(closeSellBars))
-lg.info ("doRangeTradeBars: " + str(doRangeTradeBars))
-lg.info ("tradingDelayBars: " + str(tradingDelayBars))
-lg.info ("sand: " + str(sandBox))
-lg.info ("slave: " + str(slave))
-lg.info ("offLine: " + str(offLine))
-lg.info ("marketDataType: " + cn.getMarketDataType())
-lg.info ("dateTimeUTC: " + cn.getDateTimeUTC())
-lg.info ("dateTime: " + cn.getDateTime())
-lg.info ("getQuoteStatus: " + cn.getQuoteStatus())
-lg.info ("workPath: " + workPath)
-lg.info (a.getAlgorithmMsg())
+lg.debug ("Reading profileTrade data from: " + clOptions.profileTradeDataPath + "\n")
+lg.debug ("Using symbol: " + symbol)
+lg.debug ("Last trade: " + str(cn.getLastTrade(stock)))
+lg.debug ("Minute chart: " + str(timeBar))
+lg.debug ("openBuyBars: " + str(openBuyBars))
+lg.debug ("closeBuyBars: " + str(closeBuyBars))
+lg.debug ("openSellBars: " + str(openSellBars))
+lg.debug ("closeSellBars: " + str(closeSellBars))
+lg.debug ("doRangeTradeBars: " + str(doRangeTradeBars))
+lg.debug ("tradingDelayBars: " + str(tradingDelayBars))
+lg.debug ("sand: " + str(sandBox))
+lg.debug ("slave: " + str(slave))
+lg.debug ("offLine: " + str(offLine))
+lg.debug ("marketDataType: " + cn.getMarketDataType())
+lg.debug ("dateTimeUTC: " + cn.getDateTimeUTC())
+lg.debug ("dateTime: " + cn.getDateTime())
+lg.debug ("getQuoteStatus: " + cn.getQuoteStatus())
+lg.debug ("workPath: " + workPath)
+lg.debug (a.getAlgorithmMsg())
 
 for dItems in d.items():
    print ("ditems: " + str(dItems))
@@ -511,7 +554,7 @@ bc.setTimeBarValue(timeBar)
 dirtyProfit = 0
 
 if (quitMaxProfit or doTrailingStop) and maxProfit == 0.0:
-   lg.info ("Min profit not set! ")
+   lg.debug ("Min profit not set! ")
    exit (2)
 
 pr.initNextBar()
@@ -539,7 +582,7 @@ bc.appendBar(barChart)
 # Start trading at beginning of day
 if not offLine:
    if not a.doPreMarket():
-      lg.info("Waiting till the market opens...")
+      lg.debug("Waiting till the market opens...")
       cn.waitTillMarketOpens(a.getMarketBeginTime())
 
 bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
@@ -550,7 +593,10 @@ bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
 while True:
    
    if offLine:
-      bcDate = bc.getTimeStampFromBarchartFile(barCtr)
+      try:
+         bcDate = bc.getTimeStampFromBarchartFile(barCtr)
+      except IndexError:
+         bcDate = cn.getTimeStamp()
    else:
       bcDate = cn.getTimeStamp()
       
@@ -566,6 +612,23 @@ while True:
    a.setAllLimits(barChart, barCtr, last)
 
    tradeVol = 0 
+
+   print ("barCtr333 " + str(barCtr))
+   # After first bar, compare first bar movement
+   if useFirstMinuteAvgs and debug and barCtr == timeBar:
+      lg.trade1stBarHeader(stock, timeBar)
+      avgFbl = firstMinuteAvgs[stock][2]
+      fbl = bc.getFirstBarLen(barChart, 0)
+      if offLine:
+         fbl = bc.getMinuteBarHiLoLen(timeBar, workPath)
+      lg.stats("Live first bar: " + str(fbl))
+      lg.stats("Avg  first bar: " + str(round(firstMinuteAvgs[stock][2],2)))
+      if fbl > avgFbl:
+         lg.stats("Live first bar length is > than the average first bar length")
+         lg.stats(str(round((100.00 - avgFbl / fbl * 100), 2)) + "\n")
+      else:
+         lg.stats("Live first bar length is < than the average first bar length")
+         lg.stats("DO NOT TRADE IT!!\n")
    
    while True:
       bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
@@ -596,7 +659,7 @@ while True:
          doOnceOnOpen += 1
          a.unsetActionOnOpenBar()
 
-      exitVal = isStoppedOut()
+      exitVal = isStoppedOut(positionTaken)
       
       if exitVal > 0:
          exit(exitVal)
@@ -617,7 +680,7 @@ while True:
                if a.inPosition():
                   a.closePosition(barCtr, barChart, bid, ask, forceClose)
                   bc.loadEndBar(barChart, cn.getTimeStamp(), barCtr, bid, ask, last, tradeVol)
-               lg.info("Program exiting due to end of day trading")
+               lg.debug("Program exiting due to end of day trading")
                exit(0)
 
       tradeVol = a.getCurrentRunningVol()
@@ -644,7 +707,6 @@ while True:
 #         if not offLine:
 #            bc.displayLastNBars(barChart, 20)
 
-         #if not offLine:
          if offLine:
             bcDate = bc.getTimeStampFromBarchartFile(barCtr)
          else:
@@ -660,10 +722,11 @@ while True:
          
          # Do on close processing
          a.setActionOnCloseBar()
-         positionTaken = a.takePosition(bid, ask, last, vol, barChart, barCtr)
+         #positionTaken = a.takePosition(bid, ask, last, vol, barChart, barCtr)
+         positionTaken = a.takePosition(bid, ask, last, barChart[barCtr][vl], barChart, barCtr)
          a.unsetActionOnCloseBar()
 
-         exitVal = isStoppedOut()
+         exitVal = isStoppedOut(positionTaken)
          if exitVal > 0:
             exit(exitVal)
             
@@ -676,10 +739,10 @@ while True:
             
          # End of bar reached. 
 
-         lg.info ("Stock: " + str(stock) + "\n")
-         lg.info ("Last price: " + str(last) + " Position: " + str(positionTaken))
-         lg.info ("Average Volume: " + str(bc.getAvgVol()))
-         lg.info ("Average Bar length: " + str(bc.getAvgBarLen()))
+         lg.debug ("Stock: " + str(stock) + "\n")
+         lg.debug ("Last price: " + str(last) + " Position: " + str(positionTaken))
+         lg.debug ("Average Volume: " + str(bc.getAvgVol()))
+         lg.debug ("Average Bar length: " + str(bc.getAvgBarLen()))
 
          lg.info ("\nSYM: " + str(stock))
          lg.info ("BAR: " + str(barCtr))
@@ -692,12 +755,12 @@ while True:
          lg.info ("ASK:  " + str(ask))
          
          if offLine:
-            lg.info("END TIME: " + bc.getTimeStampFromBarchartFile(barCtr))
-            #lg.info ("END TIME: " + str(barChart[barCtr][dt]))
+            lg.debug("END TIME: " + bc.getTimeStampFromBarchartFile(barCtr))
+            #lg.debug ("END TIME: " + str(barChart[barCtr][dt]))
          else:
-            lg.info ("END TIME: " + str(cn.getTimeStamp()))
+            lg.debug ("END TIME: " + str(cn.getTimeStamp()))
             
-         lg.info ("VOL: " + str(barChart[barCtr][vl]) + "\n")
+         lg.debug ("VOL: " + str(barChart[barCtr][vl]) + "\n")
          
          barCtr += 1
 
@@ -715,7 +778,7 @@ while True:
       
       lg.debug ("positionTaken after " + str(positionTaken))
       
-      exitVal = isStoppedOut()
+      exitVal = isStoppedOut(positionTaken)
       if exitVal > 0:
          exit(exitVal)
          

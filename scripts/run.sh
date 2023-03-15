@@ -22,6 +22,8 @@ wp=$(pwd)
 
 $HOME/bin/lplt.sh
 
+. $wp/scripts/db.sh
+
 #host=$(hostname -s)
 
 activateDir="/lplW2"
@@ -30,11 +32,18 @@ py3=$(dirname $wp)
 py3+="${activateDir}/bin/python3"
 
 dayProvided=0
+rangeProvided=0
 
 if [[ -z $dt ]]; then
    days=`for d in $(ls test); do if [[ -f "test/${d}/bc/active${stock}.bc" ]]; then echo $d;fi;done`
 else
-   dayProvided=1
+   size=${#dt} 
+
+   if (( size == 1 )) || (( size == 2 )) || (( size == 3 )); then
+      rangeProvided=1
+   else
+      dayProvided=1
+   fi
    days=$dt
 fi
 
@@ -79,6 +88,10 @@ for algo in $algos; do
       rm -f $gainFile
    fi
    
+   if (( rangeProvided == 1 )); then
+      days=$(getLastNDays $stock $dt)
+   fi
+      
    for day in $days; do
       
       trap - SIGINT

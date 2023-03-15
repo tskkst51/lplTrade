@@ -60,8 +60,11 @@ class Target:
       
       self.yahooUrl = "https://finance.yahoo.com/gainers/"
       self.yahooBuyUrl = "https://finance.yahoo.com/quote/"
-      self.yahooSearchToken = "pageCategory\":\"YFINANCE:"
-      self.yahooEndToken = "\",\""
+      #self.yahooSearchToken = "pageCategory\":\"YFINANCE:"
+      self.yahooSearchToken = "aria-label=\"Select "
+      self.yahooEndToken = "\"/>"      
+      #self.yahooEndToken = "\",\""
+      
       self.numYahooStocks = 9
 
       self.rang = "/range/1/day/"
@@ -441,7 +444,7 @@ class Target:
 #                     break
             stockVals.append(stockValues)
          
-         print ("stockVals\n" + str(stockVals))
+         print ("stockVals bids asks\n" + str(stockVals))
          
          bidList = []
          askList = []
@@ -901,7 +904,7 @@ class Target:
       sanitizedStocks = []
       
       for stock in stocks:
-         url = "curl " + self.yahooBuyUrl + stock + "/?p=" + stock
+         url = "curl " + self.yahooBuyUrl + stock + "/?p=" + stock + " > /dev/null"
          print ("url: " + str(url))
          try:
             status = os.system(url + " | grep -i buy")
@@ -927,13 +930,18 @@ class Target:
          return ""
       
       b = ""
+      yahooStocks = []
       with open(path, 'r') as yahooData:
          for line in yahooData:
+            #print ("line: " + str(line))
+
             if self.yahooSearchToken in line:
                b, m, e = line.partition(self.yahooSearchToken)
                b, m, e = e.partition(self.yahooEndToken)
+               print ("yahoo s: " + b)
+               yahooStocks = b.split(",")
 
-      yahooStocks = b.split(",")
+      print ("yahooStocks: " + str(yahooStocks))
 
       # Strip out stocks with 5 digits
       for stock in yahooStocks:

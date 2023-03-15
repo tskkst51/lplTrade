@@ -20,18 +20,18 @@ class ConnectEtrade:
    def __init__(self, d, stocks="DEFAULT", debug=False, verbose=False, clMarketDataType="intraday", sandBox=False, setoffLine=False):
    
       # Set class variables
-      self.sandConsumerKey = str(d["profileConnectET"]["sandConsumerKey"])
-      self.sandConsumerSecret = str(d["profileConnectET"]["sandConsumerSecret"])
-      self.consumerKey = str(d["profileConnectET"]["consumerKey"])
-      self.consumerSecret = str(d["profileConnectET"]["consumerSecret"])
-      self.oauthKeysPath = str(d["profileConnectET"]["oauthKeysPath"])
-      self.marketDataType = str(d["profileConnectET"]["marketDataType"])
-      self.offLine = int(d["profileConnectET"]["offLine"])
-      self.usePricesFromFile = int(d["profileConnectET"]["usePricesFromFile"])
-      self.maxNumStocksToTrade = int(d["profileConnectET"]["maxNumStocksToTrade"])
-#      self.setNetworkName = str(d["profileConnectET"]["setNetworkName"])
-#      self.primaryNetworkName = str(d["profileConnectET"]["primaryNetworkName"])
-#      self.getNetworkName = str(d["profileConnectET"]["getNetworkName"])
+      self.sandConsumerKey = str(d["sandConsumerKey"])
+      self.sandConsumerSecret = str(d["sandConsumerSecret"])
+      self.consumerKey = str(d["consumerKey"])
+      self.consumerSecret = str(d["consumerSecret"])
+      self.oauthKeysPath = str(d["oauthKeysPath"])
+      self.marketDataType = str(d["marketDataType"])
+      self.offLine = int(d["offLine"])
+      self.usePricesFromFile = int(d["usePricesFromFile"])
+      self.maxNumStocksToTrade = int(d["maxNumStocksToTrade"])
+#      self.setNetworkName = str(d["setNetworkName"])
+#      self.primaryNetworkName = str(d["primaryNetworkName"])
+#      self.getNetworkName = str(d["getNetworkName"])
       self.sandBox = False
       self.debug = debug
       self.ask = 0.0

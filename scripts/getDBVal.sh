@@ -99,6 +99,8 @@ function init {
    fi
    algoCtr=0
    algoModCtr=0
+   
+   #dbStopAll.sh
 }
 
 init $1 $2 $3 $4 $5 $6 $7 $8
@@ -153,6 +155,7 @@ for db in $days; do
       
    for s in $(echo $syms); do
       $cl "select sym, algo, gain, winpct from algoData where sym = '${s}' and algo $eq '${algo}' $sortDB" | tail -n $dbNumModTestRows > $tmpFile
+      if [[ $? != 0 ]]; then echo No DB for $s on $db; fi
       if [[ -n $debug ]]; then
          echo $clO "\"select sym, algo, gain, winpct from algoData where sym = '${s}' and algo $eq '${algo}' $sortDB\""
       fi
@@ -168,7 +171,7 @@ for db in $days; do
       rm -f $tmpFile
 
       $cl "select sym, algo, gain, winpct from algoModData where sym = '${s}' and algo $eq '${algo}' $sortDB" | tail -n $dbNumModTestRows > $tmpFile
-      
+      if [[ $? != 0 ]]; then echo No DB for $s on $db; fi
       if [[ -n $debug ]]; then
          echo $clO "\"select sym, algo, gain, winpct from algoModData where sym = '${s}' and algo $eq '${algo}' $sortDB\""
       fi

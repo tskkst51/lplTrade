@@ -66,6 +66,6 @@ done
 
 echo "All tests completed... "
 #echo "Running initAllAlgos... "
-#"${wp}/scripts/initAllAlgos.sh" $sym
+${wp}/scripts/initAllAlgos.sh $sym
 
 exit 0

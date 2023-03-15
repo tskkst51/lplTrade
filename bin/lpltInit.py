@@ -6,6 +6,7 @@ import json
 import platform
 from optparse import OptionParser
 from trade_interface import TradeInterface
+import lplTrade as lpl
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Parse Command Line Options
@@ -28,21 +29,28 @@ print ("Getting connection profile from : " + clOptions.profileConnectPath + "\n
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Load profile data
 
+#pf = lpl.Profile(clOptions.profileTradeDataPath)
+cf = lpl.Profile(clOptions.profileConnectPath)
+
+#d = pf.getPFValues()
+c = cf.getPFValues()
+
+
 with open(clOptions.profileConnectPath) as jsonData:
 	c = json.load(jsonData)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Set profile data
 
-sandConsumerKey = str(c["profileConnectET"]["sandConsumerKey"])
-sandConsumerSecret = str(c["profileConnectET"]["sandConsumerSecret"])
-consumerKey = str(c["profileConnectET"]["consumerKey"])
-consumerSecret = str(c["profileConnectET"]["consumerSecret"])
-oauthKeysPath = str(c["profileConnectET"]["oauthKeysPath"])
-sandBox = int(c["profileConnectET"]["sandBox"])
-#browserPath = str(c["profileConnectET"]["browser_path_Darwin"])
-#browserPath = str(c["profileConnectET"]["browser_path_Opera"])
-browserPath = str(c["profileConnectET"]["browser_path_Brave"])
+sandConsumerKey = str(cf.gv("sandConsumerKey"))
+sandConsumerSecret = str(cf.gv("sandConsumerSecret"))
+consumerKey = str(cf.gv("consumerKey"))
+consumerSecret = str(cf.gv("consumerSecret"))
+oauthKeysPath = str(cf.gv("oauthKeysPath"))
+sandBox = int(cf.gv("sandBox"))
+#browserPath = str(cf.gv("browser_path_Darwin"))
+#browserPath = str(cf.gv("browser_path_Opera"))
+browserPath = str(cf.gv("browser_path_Brave"))
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Overide profileTradeData data with command line data

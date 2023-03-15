@@ -5,7 +5,7 @@ import random
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Log:
 
-   def __init__(self, debugFlag, verboseFlag, logPath, debugPath, offLine):
+   def __init__(self, debugFlag, verboseFlag, logPath, debugPath, statsPath, offLine):
       self.totGain = 0.0
       self.grandTotal = 0.0
       self.strAction = ""
@@ -13,12 +13,18 @@ class Log:
       self.verboseFlag = verboseFlag
       self.logPath = logPath
       self.debugPath = debugPath
+      self.statsPath = statsPath
       self.wins = 0
       self.losses = 0
       self.totalTrades = 0
       self.offLine = offLine
-      
+      self.noMsgs= 0
+      if not debugFlag:
+         self.noMsgs= 1
+         
    def debug(self, msg):
+      if self.noMsgs:
+         return
       if self.debugFlag:
          if self.offLine:
             print (msg)
@@ -27,6 +33,8 @@ class Log:
                f.write ('%s' % "DEB: " + str(msg) + "\n")
       
    def verbose(self, msg):
+      if self.noMsgs:
+         return
       if self.verboseFlag:
          if self.offLine:
             self.debug (msg)
@@ -35,6 +43,8 @@ class Log:
                f.write ('%s' % "VER: " + str(msg) + "\n")
       
    def error(self, msg):
+      if self.noMsgs:
+         return
       if self.offLine:
          self.msg = msg
          print ("ERR : " + self.msg)
@@ -43,6 +53,8 @@ class Log:
             f.write ('%s' % "ERR: " + str(msg) + "\n")
 
    def warning(self, msg):
+      if self.noMsgs:
+         return
       if self.offLine:
          self.msg = msg
          print ("WARN: " + self.msg)
@@ -57,6 +69,21 @@ class Log:
       else:
          with open(self.debugPath, 'a+') as f:
             f.write ('%s' % "INFO: " + str(msg) + "\n")
+
+   def stats(self, msg):
+#      if self.noMsgs:
+#         return
+      if self.offLine:
+         print ("STATS: " + msg)
+      with open(self.statsPath, 'a+') as f:
+         f.write (str(msg) + "\n")
+         
+   def trade1stBarHeader(self, stock, timeBar):
+      hdrLine = "~~~~~~~~~~ 1st BAR " + str(timeBar) + " minute chart " + stock + " ~~~~~~~~~~~~~~~~~~~~~~"
+      if self.offLine:
+         print ("STATS: " + hdrLine)
+      with open(self.statsPath, 'a+') as f:
+         f.write ('%s' % hdrLine + "\n")
 
    def mg(self, msg):
       self.msg = msg

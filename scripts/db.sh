@@ -13,7 +13,6 @@ dbAlgoModTestName="Algo Modifiers Test"
 dbAlgoTestName="Algo Test(s)"
 
 dbNumTestRows=625
-dbNumModTestRows=5
 dbMaxModTestRows=13
 dbNumBestRows=5
 dbNumBestAlgos=100
@@ -37,7 +36,14 @@ seqAlgos=11
 
 # This is used for restricting the number of DB's/test days used for 
 # finding the best Algo.
-dbLatestNumTestDays=15
+maxNumDays=20
+
+# Used for reducing the number of DB's searched
+incDBNums=20
+
+# Sample size of DB query result
+dbNumModTestRows=5
+
 
 dbTmpFile="/tmp/db_"
 tmpFileSyms="/tmp/allSymbols"
@@ -50,9 +56,9 @@ postGresPath="/Applications/Postgres.app/Contents/Versions/14/bin"
 testDBAlgos="LS_QM LH_QM SH_QM HL_TG_QM HS_HL_TG_QM BL_QM HL_QM HS_QM HI_QM LO_QM OC_QM OO_QM CC_QM PL_QM EO_EC_QM HS_HL_QM HI_HL_QM LO_HL_QM"
 
 # Test autoStop
-testDBAlgosAS="AS_LS_QM AS_LH_QM AS_SH_QM AS_HL_TG_QM AS_HS_HL_TG_QM AS_BL_QM AS_HL_QM AS_HS_QM AS_HI_QM AS_LO_QM AS_OC_QM AS_OO_QM AS_CC_QM AS_PL_QM AS_EO_EC_QM AS_HS_HL_QM AS_HI_HL_QM AS_LO_HL_QM"
+testDBAlgosAS="AS_LS_QM AS_LH_QM AS_SH_QM AS_HL_TG_QM AS_HS_HL_TG_QM AS_BL_QM AS_HL_QM AS_HS_QM AS_HI_QM AS_LO_QM AS_OC_QM AS_OO_QM AS_CC_QM AS_PL_QM AS_EO_EC_QM AS_HS_HL_QM AS_HI_HL_QM AS_LO_HL_QM NL_QM"
 
-testModDBAlgos="OT OT_AS AS DU8_DL2 DU6_DL2 DU6 DU8 DU10 DU6_UA DU6_UA DU6_AV DU6_AL DU6_AV_AL RV SR IR TR AV AL VI LI AV_VI AL_LI QP HM SS QL DB AO AC IT PM TS UA WT UA_WT TR_QP_DB TR_QP_QL_DB RV_TR_DB RV_AV_DB RV_AL_DB RV_QP_DB RV_QP_QL_DB HM_TR_DB HM_AV_DB HM_QP_QL_DB IT_QL_DB IT_QP_QL_DB TR_IR TR_TS TR_QP TR_QP_QL QP_IR QP_QL_IR RV_TR RV_AV RV_AL RV_QP RV_QP_QL HM_TR HM_AV HM_AL HM_QP HM_QP_QL IT_QL IT_QP IT_QP_QL IT_TS AO_AC QP_PM QP_QL_PM AV_TS AL_TS AV_IT AL_IT AV_UA AL_UA AV_AL_UA QP_QL"
+testModDBAlgos="OT OT_AS DU8_AS AS AS_DB AS_UA DU8_DL2 DU6_DL2 DU6 DU8 DU10 DU6_UA DU6_UA DU6_AV DU6_AL DU6_AV_AL RV SR IR TR AV AL VI VI_AS LI LI_AS AV_VI AL_LI QP HM SS QL DB AO AC IT PM TS UA WT UA_WT TR_QP_DB TR_QP_QL_DB RV_TR_DB RV_AV_DB RV_AL_DB RV_QP_DB RV_QP_QL_DB HM_TR_DB HM_AV_DB HM_QP_QL_DB IT_QL_DB IT_QP_QL_DB TR_IR TR_TS TR_QP TR_QP_QL QP_IR QP_QL_IR RV_TR RV_AV RV_AL RV_QP RV_QP_QL HM_TR HM_AV HM_AL HM_QP HM_QP_QL IT_QL IT_QP IT_QP_QL IT_TS AO_AC QP_PM QP_QL_PM AV_TS AL_TS AV_IT AL_IT AV_UA AL_UA AV_AL_UA QP_QL"
 
 # Used now in initBestAlgos.sh
 addedAlgos="DU8 DU8_DL2 AS UA"
@@ -60,8 +66,6 @@ addedAlgos="DU8 DU8_DL2 AS UA"
 # Removed DL1 11/15/22
 
 incAlgos="DU8_DL2 AV AL UA TG DU8_AV_DL2 DU8_AL_DL2 DU8_UA_DL2 DU8_UA_AV_DL2"
-
-incDBNums="10"
 
 today=$(date "+%Y%m%d")
 
@@ -72,10 +76,12 @@ allSystems="mm.local mmT.local"
 #allSystems="mmT.local"
 devSystem="ML-C02DW7S9ML7H.local"
 testSystems="mm.local mmT.local"
+remoteTestSystems="mmT.local"
 
 activeLiveHost="ML-C02C8546LVDL"
 
 lpltArchiveSystem="mm.local"
+liveSystem="mm"
 dbArchiveSystem="mmT.local"
 
 liveHostUser="tknitter"
@@ -478,4 +484,24 @@ function numOfBestAlgoDays {
    fi
    
    echo $days
+}
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function getLastNDays {
+   
+   sym=$1
+   range=$2
+         
+   days=$(getAllDays $sym)
+
+   totalNumDays=$(echo $days | grep -o ' ' | wc -l)
+   totalNumDays=$(echo "$totalNumDays + 1" | bc)
+
+   if (( $totalNumDays > $range )); then
+     # Reduce the set
+      firstDay=$(echo "$totalNumDays - $range + 1" | bc)
+      days=$(echo $days | cut -f${firstDay}-${totalNumDays} -d' ')
+   fi
+ 
+   echo $days  
 }

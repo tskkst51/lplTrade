@@ -105,6 +105,10 @@ class Profile:
       # Auto stop is always on for now 10/20/22
       #d["doAutoStop"] = str(1)
 
+      # Turn off 1st minute algo
+      
+      #d["useFirstMinuteAvgs"] = str(0)
+      
       return d
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -398,7 +402,7 @@ class Profile:
       if "QM" in algo:
          d["quitMaxProfit"] = str(1)
          info += "QM_"
-         
+                  
       if "DL" in algo:
          b, m, bar = algo.rpartition("DL")
          bars, m, e = bar.partition("_")

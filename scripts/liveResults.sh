@@ -3,12 +3,13 @@
 ## Run the test trading program with the results from a days test results to find the best
 
 dt=""
-useDefaultAlgo=""
+ext=""
+useDefaultAlgo="n"
 
 dt=$1
-useDefaultAlgo=$2
+ext=$2
+useDefaultAlgo=$3
 
-#wp=$(pwd)
 wp="/Users/tsk/w/lplTrade"
 
 #$HOME/bin/lplt.sh
@@ -26,18 +27,24 @@ fi
 py3=$(dirname $wp)
 py3+="${activateDir}/bin/python3"
 
-
 if [[ -z $dt ]]; then
    day=$(date "+%Y%m%d")
 else
    day=$dt
 fi
 
+if [[ -z $ext ]]; then
+   ext="bs"
+fi
+
+#if [[ $useDefaultAlgo != "n" ]]; then useDefaultAlgo="y";fi
+if [[ -n $useDefaultAlgo ]]; then useDefaultAlgo="y";fi
+
 outFile="docs/postResults.po"
 
 bcPath="test/${day}/bc"
 bestPath="bestAlgos"
-tgtPath="daysBest/postResults${day}.po"
+tgtPath="daysBest/postResults${day}.${ext}"
 orderPath="test/${day}/logs/stockOrder.ll"
 
 stocks=$(ls $bcPath | sed "s/active//" | sed "s/\.bc//")
@@ -54,16 +61,19 @@ rm -f $tmpPath
 
 for stock in $stocks; do
    # Skip if 0 length file
-   if [[ ! -s "${bcPath}/active${stock}.bc" ]]; then
-      continue
+   if [[ $useDefaultAlgo == "n" ]]; then
+      if [[ ! -s "${bcPath}/active${stock}.bc" ]]; then
+         echo "${bcPath}/active${stock}.bc doesn't exist"
+         continue
+      fi
    fi
    
    algo="\"\""
    
-   if [[ -n $useDefaultAlgo ]]; then
+   if [[ $useDefaultAlgo == "y" ]]; then
       algo=$(grep defaultAlgoStr profiles/active.json | awk '{print $2}' | sed "s/,//" | sed "s/\"//g")
-   elif [[ -f "${bestPath}/${stock}.bs" ]]; then
-      algo=$(tail -1 ${bestPath}/${stock}.bs | awk '{print $13}')
+   elif [[ -f "${bestPath}/${stock}.${ext}" ]]; then
+      algo=$(tail -1 ${bestPath}/${stock}.${ext} | awk '{print $13}')
    else
       # Default found in active.json
       algo=$(grep defaultAlgoStr profiles/active.json | awk '{print $2}' | sed "s/,//" | sed "s/\"//g")
@@ -72,7 +82,7 @@ for stock in $stocks; do
    if [[ -f $orderPath ]]; then
       order=$(grep $stock $orderPath | awk '{print $2}')
    fi
-   
+   echo Running $day $algo $stock
    runRes=$(run.sh $day $algo $stock | sed '/^[0-9].*/d; /^\-.*/d; /^on.*/d')
    echo $runRes $order >> $tgtPath
 done

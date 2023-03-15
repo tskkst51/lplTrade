@@ -11,11 +11,11 @@ import random
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class DB:
-   def __init__(self, d, day):
+   def __init__(self, day):
 
       self.pgPath = "/Applications/Postgres.app/Contents/Versions/14/bin/"
 
-      self.d = d
+      #self.d = d
       self.dbPath = "db/" + day
       self.dbLog = "db/" + day + "/log"
       self.seqAlgos = "HS_HI_LO_OC_EO_EC_OO_BL_LS_CC_LH"

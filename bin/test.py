@@ -305,7 +305,7 @@ highestGain = 0.0
 pf = lpl.Profile(tdp)
 cf = lpl.Profile(cdp)
 
-db = lpl.DB(c, day)
+db = lpl.DB(day)
 
 alreadyRan = 0
 
@@ -403,6 +403,7 @@ for minBar in db.getTestTimebars():
                   #print ("cmd: " + cmd)
                   
                   exitVal = os.system(cmd)
+                  #print ("exitVal: " + str(exitVal) + " " + stock)
                   
                   lastLine = getLastLine(resultsPath) 
                   parsedLine = parseLastLine(lastLine, info, stock)
