@@ -61,8 +61,9 @@ class Target:
       self.yahooUrl = "https://finance.yahoo.com/gainers/"
       self.yahooBuyUrl = "https://finance.yahoo.com/quote/"
       #self.yahooSearchToken = "pageCategory\":\"YFINANCE:"
-      self.yahooSearchToken = "aria-label=\"Select "
-      self.yahooEndToken = "\"/>"      
+      self.yahooSearchToken = "?p="
+      
+      self.yahooEndToken = "\" title="      
       #self.yahooEndToken = "\",\""
       
       self.numYahooStocks = 9

@@ -51,7 +51,8 @@ def isStoppedOut(positionTaken):
          lg.info ("PROFIT FACTOR: " + str(maxProfit))
          lg.info ("PROFIT CLOSE PRICE: " + str(last))
          lg.info ("PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
-         
+         if barCtr * timeBar > 60:
+            lg.info ("PROFIT TIME: " + str((barCtr * timeBar) / 60) + " hours")
          return 2
 
    if quitMaxProfit:            
@@ -243,6 +244,7 @@ maxNumLosses = int(pf.gv("maxNumLosses"))
 doAutoStop = int(pf.gv("doAutoStop"))
 useFirstMinuteAvgs = int(pf.gv("useFirstMinuteAvgs"))
 useDefaultStocks = int(pf.gv("useDefaultStocks"))
+numFirstBars = int(pf.gv("numFirstBars"))
 
 sandBox = int(cf.gv("sandBox"))
 
@@ -402,6 +404,7 @@ tr = lpl.Trends(d, lg, cn, bc, offLine)
 lm = lpl.Limits(d, lg, cn, bc, pf, symbol)
 pa = lpl.Pattern(d, bc, lg)
 pr = lpl.Price(cn, offLine)
+mo = lpl.ManualOveride(d, symbol, lplPath)
 
 #if not offLine:
 #   ac = lpl.Account(c)
@@ -414,7 +417,7 @@ dc = lpl.Dailychart()
 
 dy = lpl.Dynamic(timeBar, dcPath, dc, offLine)
 
-a = lpl.Algorithm(d, lg, cn, bc, tr, lm, pa, pr, dy, offLine, stock)
+a = lpl.Algorithm(d, lg, cn, bc, tr, lm, pa, pr, dy, mo, offLine, stock)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize files
@@ -615,7 +618,8 @@ while True:
 
    print ("barCtr333 " + str(barCtr))
    # After first bar, compare first bar movement
-   if useFirstMinuteAvgs and debug and barCtr == timeBar:
+   #if useFirstMinuteAvgs and debug and barCtr == timeBar:
+   if useFirstMinuteAvgs and debug and barCtr == numFirstBars:
       lg.trade1stBarHeader(stock, timeBar)
       avgFbl = firstMinuteAvgs[stock][2]
       fbl = bc.getFirstBarLen(barChart, 0)
@@ -628,7 +632,7 @@ while True:
          lg.stats(str(round((100.00 - avgFbl / fbl * 100), 2)) + "\n")
       else:
          lg.stats("Live first bar length is < than the average first bar length")
-         lg.stats("DO NOT TRADE IT!!\n")
+         lg.stats("Use IR logic!!\n")
    
    while True:
       bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
@@ -651,7 +655,7 @@ while True:
          a.setTargetLoss(last, maxLoss)
          lg.debug("Max loss set to: " + str(a.getTargetLoss()))
          dirtyProfit += 1
-
+      
       # Do one time on open
       if not doOnceOnOpen:
          a.setActionOnOpenBar()

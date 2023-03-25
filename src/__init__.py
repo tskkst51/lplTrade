@@ -68,3 +68,6 @@ from .dynamic import Dynamic
 
 from . import db
 from .db import DB
+
+from . import manualOveride
+from .manualOveride import ManualOveride

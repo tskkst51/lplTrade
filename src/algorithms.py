@@ -9,7 +9,7 @@ from bitarray import bitarray
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Algorithm():
 
-   def __init__(self, d, lg, cn, bc, tr, lm, pa, pr, dy, offLine=0, stock=""):
+   def __init__(self, d, lg, cn, bc, tr, lm, pa, pr, dy, mo, offLine=0, stock=""):
    
       self.d = d
       self.lg = lg
@@ -20,6 +20,7 @@ class Algorithm():
       self.pa = pa
       self.pr = pr
       self.dy = dy
+      self.mo = mo
       
       self.offLine = offLine
       self.stock = stock
@@ -72,6 +73,8 @@ class Algorithm():
       self.doubleUpLimit = int(d['doubleUpLimit'])
       self.doHiLoHiLoSeqInHiLoOut = int(d['doHiLoHiLoSeqInHiLoOut'])
       self.doHiLoHiLoSeqInHiLoSeqOut = int(d['doHiLoHiLoSeqInHiLoSeqOut'])
+      self.doManualOveride = int(d['doManualOveride'])
+      self.overideModes = str(d['overideModes'])
 
       self.averageVolumeOpen = int(d['averageVolumeOpen'])
       self.averageVolumeClose = int(d['averageVolumeClose'])
@@ -244,7 +247,7 @@ class Algorithm():
       self.numBarsInBullSessionTrend = self.numBarsInBearSessionTrend = 0
       self.lastBarsInBullSessionTrend = self.lastBarsInBearSessionTrend = 0
       
-      self.firstBarVol = 0
+      #self.firstBarVol = 0
       self.waitingForNextBar = 0
       self.triggered = 0
       self.doubledUp = 0
@@ -252,7 +255,7 @@ class Algorithm():
       self.currentGain = 0.0
       
       self.wins = 0
-      self.losses = 0
+      self.losses = 0         
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def resetAlgoLimits(self):
@@ -288,7 +291,8 @@ class Algorithm():
       
       # Since we can't know when the last bar is we set the firstBarVol on the
       # last bar which is really the first bar.   
-      self.runningVolume = self.currentVol = self.firstBarVol
+      #self.runningVolume = self.currentVol = self.firstBarVol
+      self.runningVolume = self.currentVol = 0
          
       print ("self.lm.getTradingDelayBars() " + str(self.lm.getTradingDelayBars()))
       
@@ -366,8 +370,6 @@ class Algorithm():
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def takePosition(self, bid, ask, last, vol, bc, bar):
 
-      self.algorithmCalculateRunningVolume(vol)
-
       liveGainLoss = self.setTotalLiveGain(last)
 
       # Never take a large loss
@@ -379,9 +381,9 @@ class Algorithm():
             
             #return self.stoppedOut
             
-      self.firstBarVol = 0
-      if self.doActionOnCloseBar():
-         self.firstBarVol = vol
+#      self.firstBarVol = 0
+#      if self.doActionOnCloseBar():
+#         self.firstBarVol = vol
       
       if bar == 0:
          return 0
@@ -405,7 +407,9 @@ class Algorithm():
 
       # Determine if position should be opened/closed
       action = self.takeAction(bc, bar, bid, ask, last, vol)
-      
+
+      self.algorithmCalculateRunningVolume(vol)
+
       self.lg.debug("takeAction action: " + str(action))
 
       if action == self.stoppedOut:
@@ -596,6 +600,9 @@ class Algorithm():
                self.setWaitForNextBar()
                self.lg.debug ("STOPPED OUT a")
             return self.stoppedOut
+      
+      if self.doManualOveride:
+         action = self.algorithmManualOveride(bar, bc, bid, ask, action)
 
       if action > 0:
          if self.doTriggers and not self.triggered:
@@ -607,6 +614,58 @@ class Algorithm():
       return action
       
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   def algorithmManualOveride(self, bar, bc, bid, ask, action):
+      
+      ## Algo to monitor over ride file and do as it's told
+      
+      # Read from overide file
+      
+      self.lg.debug ("In algorithmManualOveride: " + str(action))
+
+      overideValue = self.mo.getOverideValue()
+      
+      if len(overideValue) == 0:
+         return action
+         
+      print ("overideValue " + str(overideValue))
+      
+      if overideValue == "close":
+         if self.inPosition():
+            self.closePosition(bar, bc, bid, ask, 1)
+            return 0
+         else:
+            self.lg.debug ("Trying to close a position that is not open")
+            
+      elif overideValue == "openBuy":
+         if not self.inPosition():
+            return 1
+         else:
+            self.lg.debug ("Trying to open a buy position thats already open")
+            
+      elif overideValue == "openSell":
+         if not self.inPosition():
+            return 2
+         else:
+            self.lg.debug ("Trying to open a sell position thats already open")
+            
+      elif overideValue == "double":
+         if self.inPosition():
+            if self.positionType == self.buy:
+               return 1
+            if self.positionType == self.sell:
+               return 2
+         else:
+            self.lg.debug ("Trying to open a double position that is not open")
+            
+      elif overideValue == "openSell":
+         if not self.inPosition():
+            return 2
+         else:
+            self.lg.debug ("Trying to open a sell position thats already open")
+
+      return action
+      
+   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def algorithmIncreasePosition(self, last, action):
       
       ## Increase position when in a favorable position
@@ -614,6 +673,7 @@ class Algorithm():
       self.lg.debug ("In algorithmIncreasePosition: " + str(action))
 
       self.lg.debug ("getPositionType(): " + str(self.getPositionType()))
+      self.lg.debug ("openPositionPrice " + str(self.openPositionPrice))
 
       currentGain = self.getCurrentGain(last)
       
@@ -882,6 +942,10 @@ class Algorithm():
       if self.averageVolumeClose:
          if not self.inPosition() and not self.averageVolumeOpen:
             return action
+      
+      # Volume is 0 in the open of a bar so skip...
+#      if self.doActionOnOpenBar():
+#         return action
          
       # using average volume to get out of a position
       #if not self.inPosition():
@@ -1228,21 +1292,17 @@ class Algorithm():
                   return self.buy
          if self.positionType == self.buy:
             if self.lm.lowerHighsBuyClose:
-#            if self.lm.isLowerHighs(self.lm.closeBuyBars):
                self.lg.debug ("InPos Hi Seq algo. lower hi's detected")
                return self.sell
          elif self.positionType == self.sell:
             if self.lm.higherHighsSellClose:
-#            if self.lm.isHigherHighs(self.lm.closeSellBars):
                self.lg.debug ("InPos Hi Seq algo. higher hi's detected")
                return self.buy
       else:
          if self.lm.higherHighsBuyOpen:
-#         if self.lm.isHigherHighs(self.lm.openBuyBars):
             self.lg.debug ("Hi Seq algo. Higher hi's detected")
             return self.buy
          if self.lm.lowerHighsSellOpen:
-#         if self.lm.isLowerHighs(self.lm.openSellBars):
             self.lg.debug ("Hi Seq algo. Lower hi's  detected")
             return self.sell
 
@@ -1486,7 +1546,7 @@ class Algorithm():
             self.lg.debug ("algorithmOpensClosesSeq: Lower opens and Lower closes detected")
             return 2
 
-      self.lg.debug ("self.doHiLoSeq " + str(self.doHiLoSeq))
+      self.lg.debug ("doHiLoSeq flag: " + str(self.doHiLoSeq))
       self.lg.debug ("action " + str(action))
       
       return 0
@@ -2311,6 +2371,14 @@ class Algorithm():
       
       self.lg.debug("In algorithmDynamic: " + str(action))
 
+      ## PUT NEW IDEAS ON TOP W DATE
+
+      # 3/2023 If price has never gone positive after N bars reduce number of close bars
+      
+      # 3/2023 If in a position and in profit reduce close bars to get out w
+      #  larger profit.
+      #     if a new high is put in reduce close bar or turn on auto stop AS TS
+
       # determine OB and CB's based on daily chart data. 
       # get % gain at open compare with simlar day % gain and use that 
       # days results. e.g:
@@ -2324,6 +2392,8 @@ class Algorithm():
       #   doInPosTracking += 1
 
       # Turn on quick loss 
+      
+      
       
       
       # Detect range bound condition and get out or turn on IR
@@ -3346,7 +3416,8 @@ class Algorithm():
             self.lg.debug("Max loss = price * (pct * (lenPriceLimits - ctr / priceLimitDivider)) " + str(pct))
             break
 
-      self.targetLoss = round(price * pct, 2)*-1
+      #self.targetLoss = round(price * pct, 2)*-1
+      self.targetLoss = abs(round(price * pct, 2))
       
       self.lg.debug("Max Loss set to: " +  str(self.targetLoss) + " for price " + str(price))
    

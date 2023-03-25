@@ -720,18 +720,22 @@ class Barchart:
       
       highest = 0.0
       lowest = 99999999999.0
-      for bar in range(minutes):
-         hi = self.barChart[bar][self.hi]
-         lo = self.barChart[bar][self.lo]
-         print ("hi: " + str(hi))
-         print ("lo: " + str(lo))
-         if hi > highest:
-            highest = hi;
-         if lo < lowest:
-            lowest = lo
-      barLen = round(highest - lowest, 2)
-      print ("highest: " + str(highest))
-      print ("lowest: " + str(lowest))
+      if minutes > 1:
+         for bar in range(minutes):
+            hi = self.barChart[bar][self.hi]
+            lo = self.barChart[bar][self.lo]
+            print ("hi: " + str(hi))
+            print ("lo: " + str(lo))
+            if hi > highest:
+               highest = hi;
+            if lo < lowest:
+               lowest = lo
+         barLen = round(highest - lowest, 2)
+         print ("highest: " + str(highest))
+         print ("lowest: " + str(lowest))
+      else:
+         barLen = self.barChart[0][self.bl]
+         
       print ("barLen: " + str(barLen))
       
       return barLen

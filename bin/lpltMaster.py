@@ -716,6 +716,7 @@ lm = {}
 a = {}
 pr = {}
 pa = {}
+ma = {}
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Initialize algorithm,  barcharts objects
@@ -741,7 +742,8 @@ for stock in stocks:
    pa[stock] = lpl.Pattern(profileData[stock], ba[stock], lg[stock])
    dc = lpl.Dailychart()
    dy = lpl.Dynamic(timeBar, dcPath, dc, offLine)
-   a[stock] = lpl.Algorithm(profileData[stock], lg[stock], cn, ba[stock], tr[stock], lm[stock], pa[stock], pr[stock], dy, offLine, stock)
+   mo = lpl.ManualOveride(profileData[stock], symbol, cwd)
+   a[stock] = lpl.Algorithm(profileData[stock], lg[stock], cn, ba[stock], tr[stock], lm[stock], pa[stock], pr[stock], dy, mo, offLine, stock)
    ut = lpl.Util()
    th = lpl.Thred(ut, offLine, cwd, wcwd)
 
