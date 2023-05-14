@@ -169,7 +169,7 @@ if (( stockProvided )); then
    scripts/testModsDB.sh $day $stock
    host=$(hostname -s)
    if [[ $host == $liveSystem ]]; then
-      echo Running initAllAlgos for $stock
+      #echo Running initAllAlgos for $stock
       if [[ -s "${wp}/bestAlgos/${stock}.in" ]]; then
          echo Running initAllAlgos with reduced number of DB samples for $stock
          ${wp}/scripts/initAllAlgos.sh $stock n 3 10

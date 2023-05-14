@@ -1,0 +1,22 @@
+MDB Gain: $ -10.3 Win %: 0.0 in 1 days with algo TB3_LO_QM_OB2_OS4_CB3_CS3_AV_VI_DU7_UA_DL1 5
+ARGX Gain: $ -3.98 Win %: 0.0 in 1 days with algo TB1_HS_HL_QM_OB2_OS4_CB4_CS3_HM_TR_DB30_DU7_DL1 19
+SHOP Gain: $ -3.11 Win %: 0.0 in 1 days with algo TB5_CC_QM_OB2_OS5_CB5_CS5_HM_DU6 2
+RACE Gain: $ -2.94 Win %: 0.0 in 1 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_DU8_UA_DL2 17
+LMT Gain: $ -2.64 Win %: 0.0 in 1 days with algo TB3_HI_HL_QM_OB5_OS2_CB3_CS5_IT_QL_DU7 8
+IWM Gain: $ -1.76 Win %: 0.0 in 1 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_TG_DU7_AL_DL2 16
+AAL Gain: $ -1.19 Win %: 0.0 in 1 days with algo TB1_HI_HL_QM_OB2_OS2_CB5_CS2_HM_DU6_DU7 11
+GFI Gain: $ -0.37 Win %: 0.0 in 1 days with algo TB1_LO_HL_QM_OB3_OS2_CB3_CS3_HM_AV_DU7_AL 20
+PAAS Gain: $ -0.29 Win %: 0.0 in 1 days with algo TB1_HI_QM_OB4_OS2_CB5_CS3_RV_AV_DB30_DU7_DL1 12
+SLV Gain: $ -0.29 Win %: 0.0 in 1 days with algo TB5_LO_QM_OB5_OS2_CB2_CS5_AV_TS_DU7_UA_DL1 9
+ALC Gain: $ -0.28 Win %: 0.0 in 1 days with algo TB1_HI_HL_QM_OB2_OS2_CB5_CS2_HM_AV_TG_DU7 6
+RWM Gain: $ -0.28 Win %: 0.0 in 1 days with algo TB1_HI_HL_QM_OB2_OS3_CB3_CS4_AV_IT_DU8_DL2_AL_DU7 14
+AU Gain: $ -0.01 Win %: 0.0 in 1 days with algo TB3_OO_QM_OB3_OS2_CB5_CS3_HM_UA_DU8_AL_DL2_TG 7
+ERJ Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB2_OS2_CB3_CS3_HM_AV 15
+AGNC Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB4_OS2_CB2_CS4_HM_AV_DU8_UA_DL2_DU7_DL1_AL 18
+FLO Gain: $ 0.1 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS2_RV_DU7 13
+AZN Gain: $ 0.4 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS4_CB3_CS2_RV_DU7_AV_DL2_DU5 3
+INMD Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB4_OS4_CB4_CS4_TR 1
+GLD Gain: $ 1.07 Win %: 100.00 in 1 days with algo TB1_HI_HL_QM_OB4_OS2_CB5_CS5_AO_DU6 10
+GPN Gain: $ 2.52 Win %: 100.00 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_AL 4
+AEHR Gain: $ 5.5 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS5_AL_UA_DU7 21
+Days gain with 21 stocks: -17.12 20230412

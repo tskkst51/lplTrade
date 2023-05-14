@@ -273,8 +273,8 @@ class Barchart:
                bc.append(bar)
                
             if ctr == 0:
-               bid, ask, avg = self.getBidAskAvgLineOne(path)
-               bc[ctr][self.op] = float(avg)
+               bid, ask, last = self.getBidAskLastLineOne(path)
+               bc[ctr][self.op] = float(last)
                bc[ctr][self.hi] = float(bid)
                bc[ctr][self.lo] = float(ask)
             else:
@@ -313,15 +313,17 @@ class Barchart:
             bar = line.split(",")
 
             if bcCtr == 0:
-               bid, ask, avg = self.getBidAskAvgLineOne(path)
-               bc[bcCtr][self.op] = avg
-               bc[bcCtr][self.hi] = float(bid)
-               bc[bcCtr][self.lo] = float(ask)
-            else:
-               bc[bcCtr][self.op] = float(bar[self.op])
+               bid, ask, last = self.getBidAskLastLineOne(path)
+               bc[bcCtr][self.op] = last
+               #bc[bcCtr][self.hi] = float(bid)
+               #bc[bcCtr][self.lo] = float(ask)
+            #else:
+               #bc[bcCtr][self.op] = float(bar[self.op])
 
             if lineCtr % minutes == 0:
                bc.append(bar)
+               
+               print (str(bar[self.hi]))
                
                if hi < float(bar[self.hi]):
                   hi = float(bar[self.hi])
@@ -343,7 +345,10 @@ class Barchart:
                print ("lineCtr: " + str(lineCtr))
 
                #bc[bcCtr][self.op] = round(op, 2)
-               bc[bcCtr][self.cl] = float(bar[self.cl])
+               #bc[bcCtr][self.cl] = float(bar[self.cl])
+               if bcCtr != 0:
+                  bc[bcCtr][self.op] = float(bar[self.op])
+               bc[bcCtr][self.cl] = float(cl)
                bc[bcCtr][self.vl] = vl
                bc[bcCtr][self.bl] = round(hi - lo, 2)
                
@@ -365,8 +370,11 @@ class Barchart:
                   # Use the avg of the bid + ask for the open
                   # since Etrade uses the prev days close as today's open
                   
-               op = float(bar[self.op])
-               hi = float(bar[self.hi])
+               #op = float(bar[self.op])
+               cl = float(bar[self.cl])
+               #hi = float(bar[self.hi])
+
+               print (str(bar[self.hi]))
 
                if hi < float(bar[self.hi]):
                   hi = float(bar[self.hi])
@@ -391,7 +399,7 @@ class Barchart:
       return bcCtr
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getBidAskAvgLineOne(self, path):
+   def getBidAskLastLineOne(self, path):
       
       # Change path to price path
       # get the avg of the bid and ask on line one
@@ -404,17 +412,18 @@ class Barchart:
       with open(pPath, 'r') as pp:
          firstLineVals = pp.readline().split(",")
          
-      print ("firstLineVals " + str(firstLineVals))
-
-      print (str(firstLineVals[0]))
-      print (str(firstLineVals[1]))
-
-      avg = (float(firstLineVals[0]) + float(firstLineVals[1])) / 2.0
-      print (str(avg))
-      bid = firstLineVals[0]
-      ask = firstLineVals[1]
+#      print ("firstLineVals " + str(firstLineVals))
+#
+#      print (str(firstLineVals[0]))
+#      print (str(firstLineVals[1]))
+#
+#      avg = (float(firstLineVals[0]) + float(firstLineVals[1])) / 2.0
+#      print (str(avg))
+      bid = float(firstLineVals[0])
+      ask = float(firstLineVals[1])
+      last = float(firstLineVals[2])
       
-      return bid, ask, avg
+      return bid, ask, last
                
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    def setTimeBarValue(self, timeBar):
@@ -716,25 +725,27 @@ class Barchart:
       return self.barChart[bar][self.dt]
 
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   def getMinuteBarHiLoLen(self, minutes, testDir):
+   def getMinuteBarHiLoLen(self, timeBar, minutes, testDir):
       
       highest = 0.0
       lowest = 99999999999.0
-      if minutes > 1:
-         for bar in range(minutes):
-            hi = self.barChart[bar][self.hi]
-            lo = self.barChart[bar][self.lo]
-            print ("hi: " + str(hi))
-            print ("lo: " + str(lo))
-            if hi > highest:
-               highest = hi;
-            if lo < lowest:
-               lowest = lo
-         barLen = round(highest - lowest, 2)
-         print ("highest: " + str(highest))
-         print ("lowest: " + str(lowest))
-      else:
-         barLen = self.barChart[0][self.bl]
+      
+#      if timeBar > 1:
+#         for bar in range(timeBar * minutes):
+#            hi = self.barChart[bar][self.hi]
+#            lo = self.barChart[bar][self.lo]
+#            print ("hi: " + str(hi))
+#            print ("lo: " + str(lo))
+#            if hi > highest:
+#               highest = hi;
+#            if lo < lowest:
+#               lowest = lo
+#         barLen = round(highest - lowest, 2)
+#         print ("highest: " + str(highest))
+#         print ("lowest: " + str(lowest))
+#      else:
+
+      barLen = self.barChart[0][self.bl]
          
       print ("barLen: " + str(barLen))
       
@@ -807,6 +818,21 @@ class Barchart:
             totBarAvg[day][s] = float(hi) - float(lo)
             
       avgFirstMinuteValues = {}
+
+      hi = 0
+      lo = 999999999999
+
+      # Ignore the high and lo for determining a good avg
+      for key, value in totBarAvg.items():
+         if len(value) == 0:
+            continue
+         for k, v in value.items():
+            if k == s:
+               if v > hi:
+                  hi = v
+               if v < lo:
+                  lo = v
+
       for s in syms:
          avgFirstMinuteValues[s] = [0.0, 0, 0,0]
          for key, value in totBarAvg.items():
@@ -815,10 +841,15 @@ class Barchart:
             for k, v in value.items():
                if k == s:
                   print ("v " + str(v))
+                  if v == hi or v == lo:
+                     continue
                   avgFirstMinuteValues[s][0] += v
                   avgFirstMinuteValues[s][1] += 1
                   avgFirstMinuteValues[s][2] = avgFirstMinuteValues[s][0] / avgFirstMinuteValues[s][1]
                   
+      
+      print ("HHII " + str(hi))
+      print ("LLOO " + str(lo))
       return avgFirstMinuteValues
 
 # end bc

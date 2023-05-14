@@ -122,6 +122,9 @@ for algo in $algos; do
       fi
       
       value=$(cat $outFile | grep "Total Gain" | tail -1 | awk '{print $4}')
+      if [[ -z $value ]]; then
+         value=0.0
+      fi
       echo $value on $day >> $gainFile
       echo $value on $day
    done
@@ -139,10 +142,20 @@ for algo in $algos; do
    fi
 
    losers=$(grep \- $gainFile | wc -l  | awk '{print $1}')
-   winners=$(grep -v \- $gainFile | wc -l | awk '{print $1}')
+   winners=$(grep -v \- $gainFile | grep -v "0.0 " | wc -l | awk '{print $1}')
    total=$(echo "scale=2 ; $winners + $losers" | bc)
+
+#   echo $losers
+#   echo $winners
+#   echo $total
+#   cat $gainFile
    
-   winPct=$(echo "scale=2 ; $winners / $total * 100" | bc)
+   #if (( losers == 0 )) || (( winners == 0 )) || (( total == 0 )); then
+   if (( winners == 0 )) || (( total == 0 )); then
+      winPct="0.0"
+   else
+      winPct=$(echo "scale=2 ; $winners / $total * 100" | bc)
+   fi
    
    amt=$(awk '{s+=$1} END {print s}' $gainFile)
    amt=$(echo $amt | sed "/.*e-*/d")

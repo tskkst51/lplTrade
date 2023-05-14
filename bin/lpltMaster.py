@@ -79,8 +79,8 @@ parser.add_option("-i", "--onlyUpdateDailyStocks",
 def isStoppedOut(stock):
 
    if quitMaxProfit:          
-      if a[stock].getTotalGain() >= a[stock].getTargetProfit() and a[stock].getTotalGain() != 0.0:
-         lg1.info ("MAX PROFIT REACHED, Gain: Bar: " + str(a[stock].getTotalGain()) + " " + str(barCtr))
+      if a[stock].getRealizedGainLoss() >= a[stock].getTargetProfit() and a[stock].getRealizedGainLoss() != 0.0:
+         lg1.info ("MAX PROFIT REACHED, Gain: Bar: " + str(a[stock].getRealizedGainLoss()) + " " + str(barCtr))
          lg1.info ("MAX PROFIT TARGET: " + str(a[stock].getTargetProfit()))
          lg1.info ("MAX PROFIT FACTOR: " + str(maxProfit))
          lg1.info ("MAX PROFIT CLOSE PRICE: " + str(last))
@@ -90,7 +90,7 @@ def isStoppedOut(stock):
                   
          # We are out with our PROFIT
       if doTrailingStop and positionTaken[stock] == stoppedOut:
-         lg1.info ("TRAILING STOP REACHED, Gain: Bar: " + str(a[stock].getTotalGain()) + " " + str(barCtr))
+         lg1.info ("TRAILING STOP REACHED, Gain: Bar: " + str(a[stock].getRealizedGainLoss()) + " " + str(barCtr))
          lg1.info ("MAX PROFIT TARGET: " + str(a[stock].getTargetProfit()))
          lg1.info ("MAX PROFIT FACTOR: " + str(maxProfit))
          lg1.info ("MAX PROFIT CLOSE PRICE: " + str(last))
@@ -742,7 +742,7 @@ for stock in stocks:
    pa[stock] = lpl.Pattern(profileData[stock], ba[stock], lg[stock])
    dc = lpl.Dailychart()
    dy = lpl.Dynamic(timeBar, dcPath, dc, offLine)
-   mo = lpl.ManualOveride(profileData[stock], symbol, cwd)
+   mo = lpl.ManualOveride(profileData[stock], stock, cwd)
    a[stock] = lpl.Algorithm(profileData[stock], lg[stock], cn, ba[stock], tr[stock], lm[stock], pa[stock], pr[stock], dy, mo, offLine, stock)
    ut = lpl.Util()
    th = lpl.Thred(ut, offLine, cwd, wcwd)
@@ -981,7 +981,10 @@ while True:
          bid[stock], ask[stock], last[stock], vol[stock]  = \
             pr[stock].getNextPriceArr(serviceValues[stock], barCtr)
       firstTime = 0
-                  
+   else:
+      # NEW CODE TEST!!!
+      serviceValues = cn.setStockValues(stocksChart, 0, stocks)
+      
    lg1.debug ("End bar time : " + str(endBarLoopTime))
    lg1.debug ("Start time: " + str(cn.getTimeStamp()))
          

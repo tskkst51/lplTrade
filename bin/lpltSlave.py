@@ -47,7 +47,7 @@ def isStoppedOut(positionTaken):
 
    if doInPosTracking:
       if a.getInPosGain():
-         lg.info ("IN POS PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
+         lg.info ("IN POS PROFIT REACHED, Gain: Bar: " + str(a.getRealizedGainLoss()) + " " + str(barCtr))
          lg.info ("PROFIT FACTOR: " + str(maxProfit))
          lg.info ("PROFIT CLOSE PRICE: " + str(last))
          lg.info ("PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
@@ -56,8 +56,8 @@ def isStoppedOut(positionTaken):
          return 2
 
    if quitMaxProfit:            
-      if a.getTotalGain() >= a.getTargetProfit() and a.getTotalGain() != 0.0:
-         lg.info (" PROFIT REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
+      if a.getRealizedGainLoss() >= a.getTargetProfit() and a.getRealizedGainLoss() != 0.0:
+         lg.info (" PROFIT REACHED, Gain: Bar: " + str(a.getRealizedGainLoss()) + " " + str(barCtr))
          lg.info ("PROFIT TARGET: " + str(a.getTargetProfit()))
          lg.info ("PROFIT FACTOR: " + str(maxProfit))
          lg.info ("PROFIT CLOSE PRICE: " + str(last))
@@ -67,7 +67,7 @@ def isStoppedOut(positionTaken):
          
    # We are out with our PROFIT
    if doTrailingStop and positionTaken == stoppedOut:
-      lg.info ("TRAILING STOP REACHED, Gain: Bar: " + str(a.getTotalGain()) + " " + str(barCtr))
+      lg.info ("TRAILING STOP REACHED, Gain: Bar: " + str(a.getRealizedGainLoss()) + " " + str(barCtr))
       lg.info ("PROFIT TARGET: " + str(a.getTargetProfit()))
       lg.info ("PROFIT FACTOR: " + str(maxProfit))
       lg.info ("PROFIT CLOSE PRICE: " + str(last))
@@ -87,7 +87,7 @@ def isStoppedOut(positionTaken):
          return 2
    
    if positionTaken == stoppedOut:
-      lg.info ("STOP REACHED, Gain: Bar: " + str(a.getTotalLiveGain()) + " " + str(barCtr))
+      lg.info ("STOP REACHED, Gain: Bar: " + str(a.getRealizedGainLoss()) + " " + str(barCtr))
       lg.info ("PROFIT TARGET: " + str(a.getTargetProfit()))
       lg.info ("PROFIT LOSS: " + str(a.getTargetLoss()))
       lg.info ("PROFIT FACTOR: " + str(maxProfit))
@@ -101,6 +101,15 @@ def isStoppedOut(positionTaken):
       
    if maxNumLosses and a.getLosses() >= maxNumLosses:
       lg.info ("EXITING Max Number of Losses: " + str(a.getLosses()))
+      return 2
+   
+   if positionTaken == manualQuit:
+      lg.info ("MANUAL QUIT, Gain: Bar: " + str(a.getRealizedGainLoss()) + " " + str(barCtr))
+      lg.info ("PROFIT TARGET: " + str(a.getTargetProfit()))
+      lg.info ("LOSS   TARGET: " + str(a.getTargetLoss()))
+      lg.info ("PROFIT FACTOR: " + str(maxProfit))
+      lg.info ("PROFIT CLOSE PRICE: " + str(last))
+      lg.info ("PROFIT TIME: " + str(barCtr * timeBar) + " minutes")
       return 2
       
    return 0
@@ -245,6 +254,7 @@ doAutoStop = int(pf.gv("doAutoStop"))
 useFirstMinuteAvgs = int(pf.gv("useFirstMinuteAvgs"))
 useDefaultStocks = int(pf.gv("useDefaultStocks"))
 numFirstBars = int(pf.gv("numFirstBars"))
+doManualOveride = int(pf.gv("doManualOveride"))
 
 sandBox = int(cf.gv("sandBox"))
 
@@ -257,6 +267,7 @@ lastMinuteOfLiveTrading = 155930
 
 stoppedOut = 4
 exitMaxProfit = 2
+manualQuit = 7
 
 resume = 0
 lastVol = 0
@@ -623,10 +634,13 @@ while True:
       lg.trade1stBarHeader(stock, timeBar)
       avgFbl = firstMinuteAvgs[stock][2]
       fbl = bc.getFirstBarLen(barChart, 0)
-      if offLine:
-         fbl = bc.getMinuteBarHiLoLen(timeBar, workPath)
+      
+#      if offLine:
+#         fbl = bc.getMinuteBarHiLoLen(timeBar, numFirstBars, workPath)
+
       lg.stats("Live first bar: " + str(fbl))
-      lg.stats("Avg  first bar: " + str(round(firstMinuteAvgs[stock][2],2)))
+      #lg.stats("Avg  first bar: " + str(round(firstMinuteAvgs[stock][2],2)))
+      lg.stats("Avg  first bar: " + str(avgFbl))
       if fbl > avgFbl:
          lg.stats("Live first bar length is > than the average first bar length")
          lg.stats(str(round((100.00 - avgFbl / fbl * 100), 2)) + "\n")
@@ -635,6 +649,10 @@ while True:
          lg.stats("Use IR logic!!\n")
    
    while True:
+      # Turn on to test manual overide
+      if offLine and debug and doManualOveride:
+         sleep(0.0004)
+      
       bid, ask, last, vol = pr.readNextPriceLine(pricesFD, pricesPath)
       
       # Count the number of 0.0 bids/asks. If more than 5 quit. Stock is crap.
@@ -673,7 +691,7 @@ while True:
          if last == pr.getLastToken():
             if a.inPosition():
                a.closePosition(barCtr, barChart, bid, ask, forceClose)
-            if a.getTotalGain() >= a.getTargetProfit():
+            if a.getRealizedGainLoss() >= a.getTargetProfit():
                exit(2)
             else:
                exit(0)

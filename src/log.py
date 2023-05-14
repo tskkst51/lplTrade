@@ -73,8 +73,8 @@ class Log:
    def stats(self, msg):
 #      if self.noMsgs:
 #         return
-      if self.offLine:
-         print ("STATS: " + msg)
+      #if self.offLine:
+      print ("STATS: " + msg)
       with open(self.statsPath, 'a+') as f:
          f.write (str(msg) + "\n")
          

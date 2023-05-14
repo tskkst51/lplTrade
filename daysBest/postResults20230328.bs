@@ -1,0 +1,22 @@
+FUTU Gain: $ -4.96 Win %: 0 in 1 days with algo TB5_PL_QM_OB1_OS1_CB5_CS5_RV_TR_DU8_AL_DL2 6
+PDD Gain: $ -3.92 Win %: 0 in 1 days with algo TB5_HL_QM_OB3_OS4_CB1_CS5_RV_DU6_AV 18
+BIDU Gain: $ -2.05 Win %: 0 in 1 days with algo TB3_HI_HL_QM_OB3_OS3_CB5_CS3_AL_TS_DU6_AV_DU6 19
+MPC Gain: $ -1.78 Win %: 0 in 1 days with algo TB5_OO_QM_OB5_OS2_CB2_CS5_PM_DU7_UA_DL2_DU8_AL_TG 8
+SQM Gain: $ -1.1 Win %: 0 in 1 days with algo TB3_LO_HL_QM_OB4_OS2_CB2_CS5_AO_AC_AV_DU7_DL2 5
+ANET Gain: $ -1.0 Win %: 0 in 1 days with algo TB1_CC_QM_OB2_OS5_CB5_CS2_QP_QL_PM_DU6_UA_AV_DU7_AL 4
+YINN Gain: $ -0.76 Win %: 0 in 1 days with algo TB3_EO_EC_QM_OB2_OS2_CB5_CS3_AV_IT_DU7_AL_DL2 16
+GFI Gain: $ -0.67 Win %: 0 in 1 days with algo TB1_LO_HL_QM_OB3_OS2_CB3_CS3_HM_AV_DU7_AL 12
+PLD Gain: $ -0.63 Win %: 0 in 1 days with algo TB2_HL_LO_QM_OB3_OS3_CB2_CS2_AL_TS 10
+AU Gain: $ -0.42 Win %: 0 in 1 days with algo TB3_OO_QM_OB3_OS2_CB5_CS3_HM_UA_DU8_AL_DL2_TG 11
+MRK Gain: $ -0.24 Win %: 0 in 1 days with algo TB3_OO_QM_OB2_OS2_CB2_CS3_DB10_DU7_TG_AV_DL2 7
+DB Gain: $ -0.23 Win %: 0 in 1 days with algo TB1_LO_HL_QM_OB3_OS2_CB2_CS3_AV_TS_UA_DU7 14
+UBS Gain: $ -0.23 Win %: 0 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS2_AL_UA_DU8_DL2 17
+EURN Gain: $ -0.11 Win %: 0 in 1 days with algo TB3_CC_QM_OB2_OS2_CB5_CS3_AV_VI_DU8_DL2_AL 20
+ESLT Gain: $ 0.0 Win %: in 1 days with algo TB1_LO_HL_QM_OB2_OS5_CB2_CS3_QP_PM_UA_TG_DU7_DL2_DL1_DU5_DU8_AV_AL 15
+CALT Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB2_HS_QM_OB1_OS1_CB4_CS4_IT_QL 13
+LAC Gain: $ 0.8 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB4_OS2_CB2_CS4_TR_TS_DU7_AV_DL2_TG 3
+EDU Gain: $ 1.28 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS5_CB5_CS2_DU12_TG 21
+LTHM Gain: $ 1.81 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB4_CS4_HM_AV_DB30_DU7_UA_DL2 2
+LYFT Gain: $ 5.03 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB5_OS2_CB5_CS5_RV_AL_DU7_AV_DL2 9
+BABA Gain: $ 21.21 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB3_OS3_CB5_CS4_AV_VI_DU6_UA_AL_DU7 1
+Days gain with 21 stocks: 12.19 20230328

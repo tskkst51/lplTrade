@@ -1,0 +1,22 @@
+AAPL Gain: $ -1.78 Win %: 0.0 in 1 days with algo TB5_HI_QM_OB5_OS2_CB2_CS3_AS 19
+ALC Gain: $ -0.76 Win %: 0.0 in 1 days with algo TB1_HS_HL_QM_OB3_OS2_CB3_CS3_UA 10
+BKE Gain: $ -0.68 Win %: 0.0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_DU8_DL2_AS 1
+AU Gain: $ -0.45 Win %: 0.0 in 1 days with algo TB1_LO_QM_OB2_OS2_CB3_CS4_AS 15
+ON Gain: $ -0.34 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB2_OS2_CB5_CS2_AS 7 18
+MOS Gain: $ -0.31 Win %: 0.0 in 1 days with algo TB5_HS_QM_OB3_OS4_CB3_CS3_DB6 11
+AMAT Gain: $ -0.29 Win %: 0.0 in 1 days with algo TB3_OO_QM_OB2_OS5_CB5_CS5_HM_AV_DB10_DU7_TG 12
+VZ Gain: $ -0.17 Win %: 0.0 in 1 days with algo TB5_BL_QM_OB4_OS3_CB5_CS4_AL_UA_TG 6
+IONQ Gain: $ -0.14 Win %: 0.0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_DU8_DL2_AS 7
+GFI Gain: $ -0.12 Win %: 0.0 in 1 days with algo TB3_BL_QM_OB4_OS2_CB1_CS5_AS 17
+ABBV Gain: $ -0.03 Win %: 0.0 in 1 days with algo TB5_HS_HL_QM_OB3_OS2_CB2_CS5_UA 14
+T Gain: $ -0.01 Win %: 0.0 in 1 days with algo TB1_HI_HL_QM_OB3_OS3_CB5_CS4_SR 3 5 8 12 16
+AMD Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB5_LS_QM_OB5_OS4_CB2_CS4_UA 21
+ANET Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB5_HS_HL_QM_OB3_OS2_CB5_CS5_UA 5
+CIEN Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB5_HS_HL_TG_QM_OB2_OS4_CB3_CS5_UA 2
+TGT Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB5_QM_LH_OB3_OS3_CB1_CS3_UA 16
+OHI Gain: $ 0.06 Win %: 0.0 in 1 days with algo TB3_LO_HL_QM_OB4_OS4_CB4_CS5_RV_TR 20
+CSCO Gain: $ 0.07 Win %: 0.0 in 1 days with algo TB5_HI_HL_QM_OB2_OS4_CB5_CS2_UA 9
+BJ Gain: $ 0.41 Win %: 0.0 in 1 days with algo TB1_OO_QM_OB3_OS3_CB4_CS4_AL_TS_UA_TG_DU8_DL2_AV 4
+ORCL Gain: $ 0.9 Win %: 0.0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_DU8_DL2_AS 13
+COST Gain: $ 4.27 Win %: 0.0 in 1 days with algo TB3_HI_QM_OB3_OS3_CB5_CS3_AS 3
+Days gain with 21 stocks: 0.63 20230406
