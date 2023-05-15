@@ -9,7 +9,7 @@
     "stocksFileMultiplier": "1",
     "daysBestAvgDailyGain": "1.1",
     "numDaysTestData": "5",
-    "useDaysBest": "0",
+    "useDaysBest": "1",
     "useFirstMinuteAvgs": "1",
     "numFirstBars": "1",
     "numStocksToProcessInPremarket": "2800",
