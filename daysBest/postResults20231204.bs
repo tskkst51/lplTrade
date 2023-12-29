@@ -1,0 +1,22 @@
+ESTC Gain: $ -6.71 Win %: 0.0 in 1 days with algo TB1_HL_HI_QM_OB1_OS1_CB4_CS4_HM_AV_DB30 15
+BULZ Gain: $ -1.34 Win %: 0.0 in 1 days with algo TB5_BL_QM_OB5_OS2_CB5_CS4_HM_AV_DU7_UA_DL1 16
+MNSO Gain: $ -0.95 Win %: 0.0 in 1 days with algo TB1_OC_QM_OB5_OS2_CB3_CS5_DU6_DU8_DL2_UA_AV 14
+AFRM Gain: $ -0.67 Win %: 0.0 in 1 days with algo TB3_HI_QM_OB2_OS2_CB5_CS5_RV_AV 18
+AU Gain: $ -0.67 Win %: 0.0 in 1 days with algo TB3_OO_QM_OB3_OS2_CB5_CS3_HM_UA_DU8_AL_DL2_TG 9
+DELL Gain: $ -0.66 Win %: 0.0 in 1 days with algo TB1_HL_HS_QM_OB1_OS1_CB4_CS4_HM 10
+JBL Gain: $ -0.52 Win %: 0.0 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB4_CS4_SS 11
+RIOT Gain: $ -0.41 Win %: 0.0 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB3_CS3_HM 4
+PAAS Gain: $ -0.37 Win %: 0.0 in 1 days with algo TB1_HI_QM_OB4_OS2_CB5_CS3_RV_AV_DB30_DU7_DL1 17
+ANET Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB1_CC_QM_OB2_OS5_CB5_CS2_QP_QL_PM_DU6_UA_AV_DU7_AL 20
+INCY Gain: $ 0.14 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS2_CB5_CS4_RV_AV_DB30_DU7_AL_DL1 7
+GFI Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB1_LO_HL_QM_OB3_OS2_CB3_CS3_HM_AV_DU7_AL 21
+SLV Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB5_OS2_CB2_CS5_AV_TS_DU7_UA_DL1 19
+MARA Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB4_HL_LO_QM_OB1_OS1_CB5_CS5_RV_AV 2
+ALC Gain: $ 0.52 Win %: 100.00 in 1 days with algo TB1_HI_HL_QM_OB2_OS2_CB5_CS2_HM_AV_TG_DU7 5
+CCL Gain: $ 0.69 Win %: 100.00 in 1 days with algo TB1_BL_QM_OB2_OS4_CB5_CS5_DU6_DU8_AV_DL2 6
+BLDR Gain: $ 1.47 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB5_OS3_CB4_CS5_HM_AV_DB30_DU7_UA_DL2 8
+UBER Gain: $ 2.07 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS4_CB3_CS5_QL_DU7_UA_DL2 3
+COIN Gain: $ 2.19 Win %: 100.00 in 1 days with algo TB4_HL_HS_QM_OB5_OS5_CB1_CS1_RV_AV_DB8 1
+META Gain: $ 2.53 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB3_OS2_CB4_CS5_HM_TR_DB6_DU7_UA_AV_DL1_DL2 13
+GLD Gain: $ 3.14 Win %: 100.00 in 1 days with algo TB1_HI_HL_QM_OB4_OS2_CB5_CS5_AO_DU6 12
+Days gain with 21 stocks: 1.32 20231204

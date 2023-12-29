@@ -1,0 +1,4 @@
+APP Gain: $ -0.29 Win %: 0.0 in 1 days with algo TB3_HL_LO_QM_OB5_OS5_CB4_CS4_HM_TR_DB10 5
+ARGX Gain: $ -6.72 Win %: 0.0 in 1 days with algo TB1_HS_HL_QM_OB2_OS4_CB4_CS3_HM_TR_DB30_DU7_DL1 7
+BIDU Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB3_HI_HL_QM_OB3_OS3_CB5_CS3_AL_TS_DU6_AV_DU6 13
+DOCS Gain: $ -1.01 Win %: 0.0 in 1 days with algo TB3_HS_QM_OB4_OS2_CB4_CS5_AV_VI_DU6_UA 2

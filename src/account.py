@@ -95,11 +95,11 @@ class Account:
       return self.ti.get_account_balance()
    
    def getAccounttPositions(self):
-      #acct.get_account_positions()
+      return self.ti.get_account_positions()
       pass
 
-   def cancelOrder(self):
-      #acct.cancel_order(self, order_id: int) -> str:
-      pass
+#   def cancelOrder(self):
+#      self.ti.cancel_order(self, order_id: int) -> str:
+#      pass
    
    

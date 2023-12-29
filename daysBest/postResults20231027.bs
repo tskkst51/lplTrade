@@ -1,0 +1,22 @@
+NVDA Gain: $ -6.64 Win %: 0.0 in 1 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_AL_LI_DU6_UA_UA_UA_UA_UA_UA_UA_UA_UA_UA_DU6_UA 19
+HES Gain: $ -5.74 Win %: 0.0 in 1 days with algo TB3_OO_QM_OB3_OS4_CB3_CS3_DU7_DL1_AL_UA_DL2 7
+ABBV Gain: $ -5.56 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB4_OS3_CB5_CS5_HM_AV_DB6_DU7_UA_DL2 2
+AMD Gain: $ -4.0 Win %: 0.0 in 1 days with algo TB3_LO_QM_OB3_OS4_CB4_CS4_HM_AL_DU6_UA_AV 12
+DKNG Gain: $ -3.18 Win %: 0.0 in 1 days with algo TB1_HI_HL_QM_OB5_OS3_CB2_CS5_HM_AL_DU7 11
+JPM Gain: $ -2.63 Win %: 0.0 in 1 days with algo TB3_OC_QM_OB4_OS3_CB3_CS5_HM_AV_DB10_DU6_UA_UA 9
+CELH Gain: $ -2.62 Win %: 0.0 in 1 days with algo TB1_HS_HL_QM_OB2_OS4_CB5_CS4_HM_AV_DB30 16
+DLTR Gain: $ -1.6 Win %: 0.0 in 1 days with algo TB5_LO_QM_OB3_OS2_CB3_CS5_AL_LI_DU8_AV_DL2 17
+SHOP Gain: $ -1.25 Win %: 0.0 in 1 days with algo TB5_CC_QM_OB2_OS5_CB5_CS5_HM_DU6 15
+INTC Gain: $ -1.2 Win %: 0.0 in 1 days with algo TB1_OC_QM_OB2_OS4_CB4_CS5_AL_IT_DU7_UA_AV_DL2 1
+RBLX Gain: $ -0.86 Win %: 0.0 in 1 days with algo TB3_CC_QM_OB2_OS2_CB2_CS5_VI_DU7_AV_DL2 13
+F Gain: $ -0.58 Win %: 0.0 in 1 days with algo TB1_HS_HL_QM_TG_OB2_OS2_CB5_CS4_HM_AV_DU7_AL_UA 5
+VIGI Gain: $ -0.43 Win %: 0.0 in 1 days with algo TB5_LO_QM_OB2_OS4_CB5_CS2_AV_TS_DU7_AL 20
+ET Gain: $ -0.07 Win %: 0.0 in 1 days with algo TB1_EO_EC_QM_OB4_OS2_CB3_CS4_AV_TS_DU7_AL_DL2 6
+XLY Gain: $ 0.25 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB3_OS4_CB2_CS4_RV_TR_AV_AL_DU7 14
+XPEV Gain: $ 0.29 Win %: 100.00 in 1 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5_AV_AV_AV_AV_AV_AV_AV_AV 21
+MO Gain: $ 0.43 Win %: 100.00 in 1 days with algo TB1_LO_HL_QM_OB4_OS2_CB5_CS5_RV_DU8 4
+RACE Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_DU8_UA_DL2 18
+PBR Gain: $ 0.79 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB3_OS2_CB2_CS5_HM_TR_DU6_AL_UA 8
+BULZ Gain: $ 0.96 Win %: 100.00 in 1 days with algo TB5_BL_QM_OB5_OS2_CB5_CS4_HM_AV_DU7_UA_DL1 10
+AMZN Gain: $ 1.67 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS3_CB5_CS5_LI_DU6_UA_TG_DU7_AV_DL2_AL 3
+Days gain with 21 stocks: -31.32 20231027

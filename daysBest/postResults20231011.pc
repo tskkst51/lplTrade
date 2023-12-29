@@ -1,0 +1,5 @@
+BABA Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB3_LO_QM_OB2_OS4_CB3_CS3_AV_IT 1
+BIDU Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB1_OO_QM_OB2_OS2_CB3_CS5_AS 2
+SNAP Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB1_CC_QM_OB2_OS4_CB4_CS2_AS 4
+TSLA Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS3_UA 3
+Days gain with 4 stocks: 0 20231011

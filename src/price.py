@@ -384,11 +384,14 @@ class Price:
          bid = serviceValues[self.bid]
          ask = serviceValues[self.ask]
 
-         if bar == 0:
-            last = round((bid + ask) / 2, 2)
-            print ("last during 1st min " + str(last))
-         else:
-            last = serviceValues[self.last]
+#         if bar == 0:
+#            last = round((bid + ask) / 2, 2)
+#            print ("last during 1st min " + str(last))
+#         else:
+#            last = serviceValues[self.last]
+         
+         # last should be the correct value instead of taking the avg of bid/ask
+         last = serviceValues[self.last]
             
          vl = serviceValues[self.vl]
          

@@ -1,0 +1,28 @@
+AAPL Gain: $ -3.77 Win %: 0.0 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS5_AL_LI_DU8_DL2 10 14
+LLY Gain: $ -3.22 Win %: 0.0 in 1 days with algo TB3_HI_HL_QM_OB3_OS2_CB5_CS4_AS 7
+TTC Gain: $ -2.68 Win %: 0.0 in 1 days with algo TB3_LO_HL_QM_OB2_OS2_CB3_CS4_SS 1 1
+AMAT Gain: $ -1.67 Win %: 0.0 in 1 days with algo TB5_EO_EC_QM_OB3_OS5_CB4_CS4_AS 13 16
+QCOM Gain: $ -1.64 Win %: 0.0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_DU8_DL2_AS 9 10
+JBL Gain: $ -1.3 Win %: 0.0 in 1 days with algo TB3_OC_QM_OB2_OS3_CB5_CS3_AS 17 15
+AEHR Gain: $ -1.15 Win %: 0.0 in 1 days with algo TB3_HI_HL_QM_OB2_OS3_CB3_CS5_AO 6 4
+CI Gain: $ -1.13 Win %: 0.0 in 1 days with algo TB3_OO_QM_OB3_OS3_CB4_CS5_UA 21
+SITM Gain: $ -1.02 Win %: 0.0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_DU8_DL2_AS 18 12
+SNA Gain: $ -0.87 Win %: 0.0 in 1 days with algo TB3_OO_QM_OB3_OS3_CB5_CS4_HM_AV_UA 15
+OSTK Gain: $ -0.41 Win %: 0.0 in 1 days with algo TB3_PL_QM_OB3_OS5_CB5_CS2_AS 12
+BROS Gain: $ -0.37 Win %: 0.0 in 1 days with algo TB5_HI_HL_QM_OB2_OS5_CB4_CS4_UA 16
+JNJ Gain: $ -0.37 Win %: 0.0 in 1 days with algo TB3_HL_QM_OB1_OS1_CB4_CS4_DU8 21 19
+AUPH Gain: $ -0.34 Win %: 0.0 in 1 days with algo TB3_PL_QM_OB2_OS2_CB4_CS1_DU6_AV_AS 17
+CAH Gain: $ -0.33 Win %: 0.0 in 1 days with algo TB1_OC_QM_OB3_OS2_CB3_CS5_DU8_DL2 14 18
+CL Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB3_HL_QM_OB1_OS2_CB3_CS5_QP_PM_UA 11
+TIGR Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB1_HS_HL_QM_TG_OB3_OS2_CB3_CS5_DU6_AL 8 13
+UNIT Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB1_PL_QM_OB1_OS4_CB3_CS3_QP_QL_PM 3 3
+AMEH Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS4_CB5_CS3_DU8 7 5
+SOXL Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB3_BL_QM_OB4_OS4_CB5_CS5_AS 20
+DDD Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB3_OS2_CB2_CS4_AL_IT_UA 20
+IMVT Gain: $ 0.08 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB2_OS2_CB4_CS4_AS 19
+DUK Gain: $ 0.17 Win %: 100.00 in 1 days with algo TB1_HS_HL_QM_OB4_OS2_CB5_CS3_DU8 9
+VRNT Gain: $ 0.26 Win %: 100.00 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_DU8_DL2_AS 2 2
+CHPT Gain: $ 0.27 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS2_DU8_AS 5 8
+STX Gain: $ 1.08 Win %: 100.00 in 1 days with algo TB3_HI_HL_QM_OB5_OS2_CB2_CS4_HM_QP_QL_UA 4 6
+TMUS Gain: $ 1.11 Win %: 100.00 in 1 days with algo TB1_BL_QM_OB2_OS5_CB5_CS5_AS 11
+Days gain with 27 stocks: -17.14 20230907

@@ -1,0 +1,22 @@
+NVDA Gain: $ -23.94 Win %: 0.0 in 1 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_AL_LI_DU6_UA_UA_UA_UA_UA_UA_UA_UA_UA_UA_DU6_UA 19
+ON Gain: $ -5.09 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB2_OS4_CB4_CS4_RV_TR_DB6_DU7 3 10
+INTU Gain: $ -4.65 Win %: 0.0 in 1 days with algo TB1_HL_LO_QM_OB4_OS4_CB5_CS5_RV_AL_DB30 5
+PKG Gain: $ -2.35 Win %: 0.0 in 1 days with algo TB1_OC_QM_OB2_OS3_CB4_CS5_AV_TG_DU7_AL_DL2 18
+KSS Gain: $ -2.06 Win %: 0.0 in 1 days with algo TB5_BL_QM_OB2_OS3_CB4_CS5_AL_UA_AV_DU5_DL2 4
+AMAT Gain: $ -2.02 Win %: 0.0 in 1 days with algo TB4_LO_QM_OB3_OS3_CB4_CS4_HM 14
+ANF Gain: $ -0.83 Win %: 0.0 in 1 days with algo TB5_LO_QM_OB3_OS5_CB2_CS2_RV_DU8_AL_DL2 1
+MRVL Gain: $ -0.78 Win %: 0.0 in 1 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_IT_TS 20
+GLW Gain: $ -0.65 Win %: 0.0 in 1 days with algo TB1_LO_HL_QM_OB2_OS2_CB3_CS2_RV_DU5_DL2_AL_TG 9
+M Gain: $ -0.47 Win %: 0.0 in 1 days with algo TB3_HI_QM_OB4_OS3_CB4_CS4_RV_TR_DB10_DU8_UA_DL2 7 11 14 20
+C Gain: $ -0.36 Win %: 0.0 in 1 days with algo TB1_HL_QM_OB5_OS5_CB5_CS5_RV_AV_DB30 12
+ISEE Gain: $ -0.17 Win %: 0.0 in 1 days with algo TB1_HS_QM_OB3_OS4_CB5_CS3_UA_DU8_DL2 13
+VIGI Gain: $ -0.14 Win %: 0.0 in 1 days with algo TB5_LO_QM_OB2_OS4_CB5_CS2_AV_TS_DU7_AL 21
+AEO Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB1_HI_HL_QM_OB4_OS4_CB5_CS4_HM_TG_DU8_UA_AV_DL2 8
+SOXL Gain: $ 0.06 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB5_OS2_CB5_CS4_SS_AL 15
+MU Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB3_OS3_CB5_CS5_HM_QP 11
+AZN Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS4_CB3_CS2_RV_DU7_AV_DL2_DU5 17
+IONQ Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB3_OS3_CB4_CS4_LI 3
+XPEV Gain: $ 0.86 Win %: 100.00 in 1 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5_AV_AV_AV_AV_AV_AV_AV_AV 16
+A Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB3_OS5_CB4_CS5_HM_TR_DU7_UA_DL2 1 2 8 14 17 19
+WOOF Gain: $ 2.36 Win %: 100.00 in 1 days with algo TB1_EO_EC_QM_OB5_OS2_CB5_CS4_DU6_TG_UA 6
+Days gain with 21 stocks: -38.61 20230524

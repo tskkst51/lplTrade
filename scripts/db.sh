@@ -61,7 +61,7 @@ testDBAlgos="LS_QM LH_QM SH_QM HL_TG_QM BL_QM HL_QM HS_QM HI_QM LO_QM OC_QM OO_Q
 testDBAlgosAS="AS_LS_QM AS_LH_QM AS_SH_QM AS_HL_TG_QM AS_HS_HL_TG_QM AS_BL_QM AS_HL_QM AS_HS_QM AS_HI_QM AS_LO_QM AS_OC_QM AS_OO_QM AS_CC_QM AS_PL_QM AS_EO_EC_QM AS_HS_HL_QM AS_HI_HL_QM AS_LO_HL_QM NL_QM"
 
 # Tests for testModsDB.sh
-testModDBAlgos="OT OT_AS DU8_AS DU8_IT DU8_IT_AS AS IT_AS AS_DB AS_UA DU8_DL2 DU6_DL2 DU4 DU6 DU8 DU4_UA DU6_UA DU6_UA DU6_AV DU6_AL DU6_AV_AL RV SR IR TR AV AL VI VI_AS LI LI_AS AV_VI AL_LI QP HM SS QL DB AO AC IT PM TS UA WT UA_WT TR_QP_DB RV_TR_DB RV_AV_DB RV_AL_DB RV_QP_DB HM_TR_DB HM_AV_DB TR_IR TR_TS TR_QP QP_IR RV_TR RV_AV RV_AL RV_QP HM_TR HM_AV HM_AL HM_QP IT_QP IT_TS AO_AC QP_PM AV_TS AL_TS AV_IT AL_IT AV_UA AL_UA AV_AL_UA QP_QL"
+testModDBAlgos="OT OT_AS DU8_AS DU8_IT DU8_IT_AS AS IT_AS AS_DB AS_UA DU8_DL2 DU6_DL2 DU4 DU6 DU8 DU4 DU3 DU4_DL1 DU4_UA DU6_UA DU6_UA DU6_AV DU6_AL DU6_AV_AL RV SR IR TR AV AL VI VI_AS LI LI_AS AV_VI AL_LI QP HM SS QL DB AO AC IT PM TS UA WT UA_WT TR_QP_DB RV_TR_DB RV_AV_DB RV_AL_DB RV_QP_DB HM_TR_DB HM_AV_DB TR_IR TR_TS TR_QP QP_IR RV_TR RV_AV RV_AL RV_QP HM_TR HM_AV HM_AL HM_QP IT_QP IT_TS AO_AC QP_PM AV_TS AL_TS AV_IT AL_IT AV_UA AL_UA AV_AL_UA QP_QL"
 
 # Used now in initBestAlgos.sh
 addedAlgos="DU8 DU8_DL2 AS UA"
@@ -74,6 +74,7 @@ today=$(date "+%Y%m%d")
 
 keepToken="keepAliveDB"
 
+#allSystems="mm.local"
 allSystems="mm.local mmT.local"
 #allSystems="ML-C02C8546LVDL.local mm.local mmT.local"
 #allSystems="mmT.local"
@@ -93,6 +94,24 @@ defaultUser="tsk"
 testProgram="keepAliveDb.sh"
 
 liveConfig="profiles/active.json"
+
+processedAlgosFile="bestAlgos/processedAlgos.txt"
+
+processedAlgosMaxDays=2
+
+# Skip finding the best algo until every nth time
+exhaustiveAlgoTest=4
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function getProcessedAlgoStock {
+   
+   sym=$1
+   
+   echo $sym $processedAlgosFile awk '{print $1, $2}' 
+   tmpFile="${tmpFile}${sym}"
+   
+   echo $tmpFile
+}
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 function getTmpFile {

@@ -165,18 +165,30 @@ for datePath in $testPaths; do
    done      
 done
 
+# Generate the best algorithm
 if (( stockProvided )); then
    scripts/testModsDB.sh $day $stock
    host=$(hostname -s)
-   #if [[ $host == $liveSystem ]]; then
-      #echo Running initAllAlgos for $stock
-      #if [[ -s "${wp}/bestAlgos/${stock}.in" ]]; then
-         #echo Running initAllAlgos with reduced number of DB samples for $stock
-         #${wp}/scripts/initAllAlgos.sh $stock n 3 10
-      #else
-         #${wp}/scripts/initAllAlgos.sh $stock
-      #fi
-   #fi
+   if [[ $host == $liveSystem ]]; then
+      echo Running initAllAlgos for $stock
+      daysRan=$(grep $stock $processedAlgosFile | wc -l | sed "s/[ \t]*//")
+      echo $daysRan daysRan
+      
+      # Only run the exhaustive best algo search every n days
+      
+      exhaustive=$((daysRan%exhaustiveAlgoTest))  
+      
+      echo exhaustive $exhaustive
+
+      echo $stock >> $processedAlgosFile
+      if (( exhaustive != 0 )); then
+         # Reduce to 3 rows of best algo data; 10 DB's used in search
+         echo Running initAllAlgos with reduced number of DB samples for $stock
+         ${wp}/scripts/initAllAlgos.sh $stock n 3 10
+      else
+         ${wp}/scripts/initAllAlgos.sh $stock
+      fi
+   fi
 else
    scripts/testModsDB.sh $day
 fi

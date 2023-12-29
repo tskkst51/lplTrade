@@ -101,6 +101,7 @@ class Profile:
       d["doHiLoHiLoSeqInHiLoOut"] = str(0)
       d["doHiLoHiLoSeqInHiLoSeqOut"] = str(0)
       d["doDoubleUpCloseEOD"] = str(0)
+      d["noLargeLosses"] = str(0)
       
       # Auto stop is always on for now 10/20/22
       #d["doAutoStop"] = str(1)
@@ -402,6 +403,10 @@ class Profile:
       if "QM" in algo:
          d["quitMaxProfit"] = str(1)
          info += "QM_"
+                  
+      if "NL" in algo:
+         d["noLargeLosses"] = str(1)
+         info += "NL_"
                   
       if "DL" in algo:
          b, m, bar = algo.rpartition("DL")

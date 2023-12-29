@@ -448,6 +448,7 @@ excludeStocks = int(pf.gv("excludeStocks"))
 stockOrderFile = str(pf.gv("stockOrderFile"))
 defaultStocks = str(pf.gv("defaultStocks"))
 useDefaultStocks = int(pf.gv("useDefaultStocks"))
+bestAlgosExt = str(pf.gv("bestAlgosExt"))
 
 # Make sure stocksFileMultiplier is "1" or more...
 stocksFileMultiplier = float(pf.gv("stocksFileMultiplier"))
@@ -469,7 +470,7 @@ minuteChartPath = "test/bc/"
 minuteChartExt = ".bc"
 dailyGapExt = ".gp"
 bestAlgosPath = "bestAlgos/"
-bestAlgosExt = ".bs"
+#bestAlgosExt = ".bs"
 
 #symbol = currency + alt
 symbol = [""]

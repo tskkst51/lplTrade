@@ -82,8 +82,9 @@ for stock in $stocks; do
    if [[ -f $orderPath ]]; then
       order=$(grep $stock $orderPath | awk '{print $2}')
    fi
-   echo Running $day $algo $stock
+   #echo Running $day $algo $stock
    runRes=$(run.sh $day $algo $stock | sed '/^[0-9].*/d; /^\-.*/d; /^on.*/d')
+   echo $runRes
    echo $runRes $order >> $tgtPath
 done
 

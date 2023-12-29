@@ -1,0 +1,22 @@
+MDB Gain: $ -6.44 Win %: 0.0 in 1 days with algo TB3_LO_QM_OB2_OS4_CB3_CS3_AV_VI_DU7_UA_DL1 11
+EDU Gain: $ -2.95 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB2_OS5_CB5_CS2_DU12_TG 4
+STLD Gain: $ -2.38 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB2_OS2_CB2_CS3_HM_AV_DU8_UA_DL2 6
+RACE Gain: $ -1.96 Win %: 0.0 in 1 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_DU8_UA_DL2 7
+FRO Gain: $ -1.43 Win %: 0.0 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS4_TS_UA_TG_DU7_DL2 5
+SNAP Gain: $ -1.31 Win %: 0.0 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS3_RV_TR_DB6_DU6_UA_AV_DU7_TG_DU8_AL_DL2 10
+NIO Gain: $ -0.85 Win %: 0.0 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS4_HM_AV_DB10_DU6_DU6_AL_TG_UA_UA_UA_UA_UA 13
+CLF Gain: $ -0.49 Win %: 0.0 in 1 days with algo TB5_PL_QM_OB1_OS3_CB4_CS5_PM_DU8_AV_DL2 3
+NUE Gain: $ -0.26 Win %: 0.0 in 1 days with algo TB1_OC_QM_OB3_OS2_CB2_CS5_HM_TR_DB30_DU8_UA_AV_DL2 18
+TH Gain: $ -0.14 Win %: 0.0 in 1 days with algo TB3_LO_QM_OB2_OS4_CB4_CS3_QL_DU7_UA_TG 21
+ICL Gain: $ -0.03 Win %: 0.0 in 1 days with algo TB3_OO_QM_OB2_OS2_CB4_CS5_RV_AL_DB10_UA 17
+GOGL Gain: $ -0.02 Win %: 0.0 in 1 days with algo TB1_HI_HL_QM_OB2_OS2_CB2_CS4_AL_IT_DU7_AV_DL2 16
+ACI Gain: $ -0.01 Win %: 0.0 in 1 days with algo TB5_HI_HL_QM_OB3_OS3_CB3_CS3_LI_DU7 14
+ESLT Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB1_LO_HL_QM_OB2_OS5_CB2_CS3_QP_PM_UA_TG_DU7_DL2_DL1_DU5_DU8_AV_AL 12
+KALV Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB1_HI_QM_OB3_OS3_CB4_CS4_PM 9
+MT Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB5_OS2_CB5_CS5_HM_AL_DU7_UA_DL2 8
+SBLK Gain: $ 0.21 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB3_OS3_CB3_CS5_AL_TS_DU8_AV_DL2 19
+SPWR Gain: $ 0.58 Win %: 100.00 in 1 days with algo TB1_CC_QM_OB2_OS2_CB4_CS5_SS_DU7_UA_DL2 1
+AFRM Gain: $ 0.92 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB5_CS5_RV_AV 2
+ROKU Gain: $ 1.85 Win %: 100.00 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4_SS 20
+ZIM Gain: $ 2.04 Win %: 100.00 in 1 days with algo TB1_HI_HL_QM_OB2_OS3_CB2_CS5_AL_IT_DU7_TG 15
+Days gain with 21 stocks: -12.65 20231218

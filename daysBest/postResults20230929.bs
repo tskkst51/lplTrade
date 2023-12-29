@@ -1,0 +1,22 @@
+ADSK Gain: $ -4.14 Win %: 0.0 in 1 days with algo TB5_CC_QM_OB2_OS5_CB5_CS4_SS_DU8_UA_DL2 16
+KMX Gain: $ -3.43 Win %: 0.0 in 1 days with algo TB5_OC_QM_OB3_OS2_CB4_CS5_RV_AV_TG_DU7 1
+RACE Gain: $ -3.01 Win %: 0.0 in 1 days with algo TB3_EO_EC_QM_OB3_OS2_CB5_CS4_RV_AV_DU8_UA_DL2 6
+GOOG Gain: $ -2.87 Win %: 0.0 in 1 days with algo TB5_HL_HS_QM_OB1_OS1_CB5_CS5_HM_AV_DB6 9
+AMD Gain: $ -2.71 Win %: 0.0 in 1 days with algo TB3_LO_QM_OB3_OS4_CB4_CS4_HM_AL_DU6_UA_AV 4
+CAT Gain: $ -2.09 Win %: 0.0 in 1 days with algo TB5_HI_HL_QM_OB2_OS4_CB2_CS5_IT_QL_DB6_DU8_AV_DL2 10
+ON Gain: $ -2.03 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB2_OS4_CB4_CS4_RV_TR_DB6_DU7 13
+MRVL Gain: $ -0.78 Win %: 0.0 in 1 days with algo TB5_OC_QM_OB2_OS2_CB5_CS5_IT_TS 15
+UBER Gain: $ -0.46 Win %: 0.0 in 1 days with algo TB3_OO_QM_OB3_OS4_CB3_CS5_QL_DU7_UA_DL2 7
+BTU Gain: $ -0.28 Win %: 0.0 in 1 days with algo TB1_EO_EC_QM_OB4_OS2_CB2_CS5_AV_UA_DU7 3
+NXE Gain: $ -0.26 Win %: 0.0 in 1 days with algo TB1_HS_QM_OB2_OS3_CB3_CS5_HM_AV_DU8_DL2_UA 8
+SSL Gain: $ -0.05 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB4_OS2_CB5_CS5_RV_AL_DU7_DL2_DU8_UA_AV 14
+MAT Gain: $ -0.02 Win %: 0.0 in 1 days with algo TB3_CC_QM_OB4_OS2_CB4_CS4_SR_DU8_AV_DL2 5
+RWM Gain: $ 0.07 Win %: 100.00 in 1 days with algo TB1_HI_HL_QM_OB2_OS3_CB3_CS4_AV_IT_DU8_DL2_AL_DU7 18
+SOFI Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_AC 12
+NKE Gain: $ 0.34 Win %: 100.00 in 1 days with algo TB1_HS_HL_QM_OB5_OS2_CB3_CS5_SS_DU7_AL_DL1 2
+SOXL Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB5_OS2_CB5_CS4_SS_AL 19
+HRL Gain: $ 0.51 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB2_OS2_CB2_CS5_DU6_DL_TG_DU7_DL1 11
+QQQ Gain: $ 0.54 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB1_OS1_CB4_CS4_AL 20
+ABT Gain: $ 0.88 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB2_OS2_CB5_CS2_TR_QP_DB10_DU7_UA_DL2 17
+SLB Gain: $ 5.06 Win %: 100.00 in 1 days with algo TB3_BL_QM_OB5_OS3_CB5_CS4_RV_AL_DU7_UA_DL2 21
+Days gain with 21 stocks: -14.18 20230929

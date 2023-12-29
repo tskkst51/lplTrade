@@ -23389,3 +23389,134 @@ close   177.16 -2.15 -2.15 0.0%   11 1     09:42:01
 close   9.83 -0.10 -0.12 33%   80 3     15:59:02
 Total Gain/Loss:
 -8.73
+
+Live results on 20230515
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeABT.ls <==
+close   109.78 -0.05 -0.05 0.0%   90 1     15:59:01
+
+==> logs/activeASAN.ls <==
+close   17.88 -0.21 -0.37 0.0%   15 2     10:38:02
+
+==> logs/activeBABA.ls <==
+close   88.29 0.00 0.13 21%   6 14     15:59:01
+
+==> logs/activeBIDU.ls <==
+close   127.66 2.86 2.86 100%   69 1     15:59:01
+
+==> logs/activeCOIN.ls <==
+close   60.45 2.05 2.05 100%   78 1     13:32:00
+
+==> logs/activeDD.ls <==
+close   65.56 0.22 0.70 75%   42 4     15:59:01
+
+==> logs/activeEQNR.ls <==
+close   28.3 0.11 -0.09 33%   336 3     15:59:01
+
+==> logs/activeEQT.ls <==
+close   34.01 -0.14 -0.57 0.0%   2 2     10:20:01
+
+==> logs/activeESLT.ls <==
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+==> logs/activeFUTU.ls <==
+close   40.37 3.61 3.61 100%   41 1     10:07:01
+
+==> logs/activeGOOG.ls <==
+close   116.87 -1.07 -1.71 0.0%   240 5     15:59:01
+
+==> logs/activeLLY.ls <==
+close   434.13 1.90 -2.81 25%   45 4     15:59:01
+
+==> logs/activeMETA.ls <==
+close   240.02 8.65 9.13 100%   64 2     13:14:01
+
+==> logs/activeMSTR.ls <==
+close   283.09 -18.46 -18.46 0.0%   390 1     15:59:01
+
+==> logs/activeMU.ls <==
+close   64.61 1.95 1.95 100%   66 1     15:59:01
+
+==> logs/activePDD.ls <==
+close   66.06 -0.29 0.67 50%   65 8     15:59:01
+
+==> logs/activeRIOT.ls <==
+close   11.06 0.39 0.50 60%   253 5     15:59:01
+
+==> logs/activeUPS.ls <==
+close   168.82 0.39 1.73 66%   21 3     15:59:01
+
+==> logs/activeWMT.ls <==
+close   151.79 -0.11 -0.45 20%   46 5     15:59:01
+
+==> logs/activeYINN.ls <==
+close   43.18 1.47 1.47 100%   113 1     15:59:01
+Total Gain/Loss:
+0.29
+
+Live results on 20230516
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> logs/activeARGX.ls <==
+close   405.5 10.29 10.29 100%   59 1     15:59:00
+
+==> logs/activeATVI.ls <==
+close   77.81 0.08 -0.61 42%   15 7     15:59:00
+
+==> logs/activeCALT.ls <==
+close   21.34 -0.43 -0.43 0.0%   370 1     15:59:00
+
+==> logs/activeFUTU.ls <==
+close   40.44 -0.78 -0.78 0.0%   7 1     09:38:00
+
+==> logs/activeHD.ls <==
+close   282.5 2.15 -3.68 20%   70 5     15:59:00
+
+==> logs/activeIONQ.ls <==
+close   7.97 0.57 0.38 50%   120 2     15:59:00
+
+==> logs/activeISEE.ls <==
+close   37.01 0.03 -0.27 50%   71 2     15:59:00
+
+==> logs/activeK.ls <==
+close   69.52 0.10 0.12 100%   6 2     15:59:00
+
+==> logs/activeLABU.ls <==
+close   6.58 -0.15 -0.15 0.0%   44 1     10:32:00
+
+==> logs/activeLAZR.ls <==
+close   6.06 1.31 1.31 100%   176 1     12:20:01
+
+==> logs/activeLOW.ls <==
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+==> logs/activeMPC.ls <==
+close   106.59 -0.55 -1.55 0.0%   3 3     15:39:01
+
+==> logs/activeNKE.ls <==
+close   116.52 0.25 1.27 100%   18 3     15:59:00
+
+==> logs/activeRIOT.ls <==
+close   10.85 1.26 1.16 50%   370 2     15:59:00
+
+==> logs/activeSE.ls <==
+close   74.81 9.55 2.75 20%   51 5     11:19:01
+
+==> logs/activeTAP.ls <==
+close   63.21 0.34 -0.44 40%   17 5     15:59:00
+
+==> logs/activeTGT.ls <==
+close   156.83 -0.54 -0.54 0.0%   378 1     15:59:00
+
+==> logs/activeTME.ls <==
+close   7.67 0.27 0.03 33%   109 3     15:59:00
+
+==> logs/activeTTC.ls <==
+close   102.33 1.46 1.46 100%   45 1     10:18:01
+
+==> logs/activeTVTX.ls <==
+close   16.5 -0.04 -0.04 16%   3 6     15:59:00
+
+==> logs/activeXBI.ls <==
+close   85.06 0.13 -0.54 40%   8 5     15:59:00
+Total Gain/Loss:
+9.74

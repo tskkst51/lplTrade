@@ -43,7 +43,7 @@ function init {
    if [[ -z $sym ]]; then echo sym is empty!; exit 1 ; fi
    if [[ -z $algo ]]; then echo Need algo; exit 1; fi
    if [[ -n $ss ]]; then dbNumModTestRows=$ss; fi
-   if [[ -n $sortPct ]] && [[ $sortPct = "p" ]]; then sortPct="p"; else sortPct="w"; fi
+   if [[ -n $sortPct ]] && [[ $sortPct == "p" ]]; then sortPct="p"; else sortPct="w"; fi
 
    syms=$sym
    if [[ $day == "all" ]] && [[ $sym == "all" ]]; then

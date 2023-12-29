@@ -1,0 +1,22 @@
+ADBE Gain: $ -19.07 Win %: 0.0 in 1 days with algo TB1_LO_HL_QM_OB2_OS2_CB2_CS5_LI_DU8_AV_DL2 6
+AMD Gain: $ -4.86 Win %: 0.0 in 1 days with algo TB3_LO_QM_OB3_OS4_CB4_CS4_HM_AL_DU6_UA_AV 5
+TSM Gain: $ -4.22 Win %: 0.0 in 1 days with algo TB1_OO_QM_OB4_OS3_CB3_CS5_RV_DU7 18
+XBI Gain: $ -2.9 Win %: 0.0 in 1 days with algo TB5_CC_QM_OB2_OS4_CB5_CS2_RV_AL_TG_DU7 17
+ORCL Gain: $ -2.27 Win %: 0.0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5 1
+XOM Gain: $ -2.19 Win %: 0.0 in 1 days with algo TB1_OC_QM_OB3_OS4_CB3_CS5_AL_LI_DU6_UA 15
+BULZ Gain: $ -1.7 Win %: 0.0 in 1 days with algo TB5_BL_QM_OB5_OS2_CB5_CS4_HM_AV_DU7_UA_DL1 14
+APA Gain: $ -1.49 Win %: 0.0 in 1 days with algo TB5_HI_QM_OB2_OS2_CB3_CS5_AL_IT_DU8_UA_AV_DL2 16
+SLB Gain: $ -1.17 Win %: 0.0 in 1 days with algo TB3_BL_QM_OB5_OS3_CB5_CS4_RV_AL_DU7_UA_DL2 12
+BIIB Gain: $ -0.8 Win %: 0.0 in 1 days with algo TB3_OC_QM_OB2_OS2_CB4_CS5_HM_TR_AV_DU7_DL2_AL_UA_DU8_TG 4
+MPC Gain: $ -0.76 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB5_OS2_CB2_CS5_PM_DU7_UA_DL2_DU8_AL_TG 9
+JOBY Gain: $ -0.26 Win %: 0.0 in 1 days with algo TB3_OO_QM_OB2_OS4_CB4_CS5_RV_DU7_UA_AV_DL2 3
+CPG Gain: $ -0.07 Win %: 0.0 in 1 days with algo TB5_HL_HI_QM_OB3_OS3_CB5_CS5_AO_AC 21
+ESLT Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB1_LO_HL_QM_OB2_OS5_CB2_CS3_QP_PM_UA_TG_DU7_DL2_DL1_DU5_DU8_AV_AL 8
+MVIS Gain: $ 0.16 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB5_OS2_CB3_CS5_HM_AV_DU7_TG 10
+XPEV Gain: $ 0.22 Win %: 100.00 in 1 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5_AV_AV_AV_AV_AV_AV_AV_AV 13
+SOFI Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_AC 7
+CCL Gain: $ 0.31 Win %: 100.00 in 1 days with algo TB1_BL_QM_OB2_OS4_CB5_CS5_DU6_DU8_AV_DL2 2
+QCOM Gain: $ 0.39 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB5_CS5_AV_TS_UA_AL 20
+AEHR Gain: $ 2.99 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS5_AL_UA_DU7 11
+COP Gain: $ 3.06 Win %: 100.00 in 1 days with algo TB1_OC_QM_OB2_OS2_CB2_CS5_IT_QL_TG_AL_DU7 19
+Days gain with 21 stocks: -34.39 20230612

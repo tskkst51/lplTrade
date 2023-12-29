@@ -443,8 +443,11 @@ class Algorithm():
                self.lm.setAvgBarLenLimits(bc, bar, last)
 
                self.openPosition(self.buy, bar, bc, bid, ask)
+            elif action == self.manualQuit:
+               return self.manualQuit
             else: 
                self.openPosition(self.sell, bar, bc, bid, ask)
+
 
       # Close position or double up
       elif self.inPosition():
@@ -483,6 +486,7 @@ class Algorithm():
          # Forse a close. Manual Overide close was set
          elif action == self.manualQuit:
             self.closePosition(bar, bc, bid, ask, 1)
+            return self.manualQuit
 
       return action
       
@@ -622,9 +626,9 @@ class Algorithm():
       if action > 0:
          if self.doTriggers and not self.triggered:
             action = self.algorithmTriggers(action)
-            print ("Action being taken!! Triggered " + str(action))
+            self.lg.debug ("Action being taken!! Triggered " + str(action))
          else:
-            print ("Action being taken!! " + str(action))
+            self.lg.debug ("Action being taken!! " + str(action))
      
       return action
       
@@ -673,7 +677,7 @@ class Algorithm():
       self.lg.debug ("last: " + str(last))
 
       if self.getPositionType() == self.buy:
-         if currentGain < 0 and self.doubledUp < self.doubleUpMax:
+         if currentGain > 0 and self.doubledUp < self.doubleUpMax:
             if abs(currentGain) > float(self.incPosGainPct * last):
                self.lg.debug ("Adding to BUY position ")
                self.lg.debug ("CurrentGain is > : " + str(currentGain))
@@ -1490,7 +1494,7 @@ class Algorithm():
          
       return retCode      
 
-   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Take position if previous bars opens and closes are seq higher or lower
    
    def algorithmOpensClosesSeq(self, bc, bar, bid, ask, last, vol, action=0):

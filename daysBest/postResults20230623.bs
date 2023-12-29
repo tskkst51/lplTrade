@@ -1,0 +1,22 @@
+ARGX Gain: $ -7.18 Win %: 0.0 in 1 days with algo TB1_HS_HL_QM_OB2_OS4_CB4_CS3_HM_TR_DB30_DU7_DL1 20
+KMX Gain: $ -3.97 Win %: 0.0 in 1 days with algo TB5_OC_QM_OB3_OS2_CB4_CS5_RV_AV_TG_DU7 3
+GE Gain: $ -2.83 Win %: 0.0 in 1 days with algo TB1_HI_QM_OB4_OS2_CB4_CS5_AV_IT_TG_AL_DU8_DL2 6
+MMM Gain: $ -2.61 Win %: 0.0 in 1 days with algo TB1_OC_QM_OB3_OS3_CB5_CS4_SS_DU7_AV_DL1 5
+YPF Gain: $ -1.06 Win %: 0.0 in 1 days with algo TB3_OO_QM_OB4_OS2_CB4_CS4_HM_AV_DU8_DL2_UA 15
+MSFT Gain: $ -0.86 Win %: 0.0 in 1 days with algo TB5_HI_QM_OB5_OS3_CB2_CS5_RV_AL_DB6_DU6_UA_UA_UA_UA_UA_UA_UA_UA_UA_UA 18
+SOXL Gain: $ -0.69 Win %: 0.0 in 1 days with algo TB5_HS_QM_OB5_OS2_CB5_CS4_SS_AL 16
+STLD Gain: $ -0.55 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB2_OS2_CB2_CS3_HM_AV_DU8_UA_DL2 19
+BLDR Gain: $ -0.27 Win %: 0.0 in 1 days with algo TB1_OO_QM_OB5_OS3_CB4_CS5_HM_AV_DB30_DU7_UA_DL2 7
+SSL Gain: $ -0.14 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB4_OS2_CB5_CS5_RV_AL_DU7_DL2_DU8_UA_AV 13
+FRO Gain: $ -0.13 Win %: 0.0 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS4_TS_UA_TG_DU7_DL2 17
+VTRS Gain: $ -0.01 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB4_OS5_CB5_CS4_IR1_DU7_AL 4
+ASML Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB1_HS_HL_QM_OB2_OS2_CB2_CS4_PM_DU7_DL1 9
+EURN Gain: $ 0.09 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB5_CS3_AV_VI_DU8_DL2_AL 10
+UAA Gain: $ 0.11 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB1_OS5_CB4_CS4_AV_IT_DU8_DL2 12
+SPCE Gain: $ 0.13 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB2_OS2_CB4_CS4_RV 1
+DAL Gain: $ 0.23 Win %: 100.00 in 1 days with algo TB1_OO_QM_OB2_OS4_CB3_CS3_RV_AV_DU7 21
+SOFI Gain: $ 0.36 Win %: 100.00 in 1 days with algo TB4_HL_HI_QM_OB3_OS3_CB5_CS5_AC 2
+JBL Gain: $ 0.64 Win %: 100.00 in 1 days with algo TB2_HL_HS_QM_OB1_OS1_CB4_CS4_SS 8
+ORCL Gain: $ 0.65 Win %: 100.00 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5 11
+AZN Gain: $ 2.19 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS4_CB3_CS2_RV_DU7_AV_DL2_DU5 14
+Days gain with 21 stocks: -15.9 20230623

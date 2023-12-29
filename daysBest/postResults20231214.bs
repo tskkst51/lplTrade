@@ -1,0 +1,22 @@
+FITB Gain: $ -6.23 Win %: 0.0 in 1 days with algo TB1_EO_EC_QM_OB5_OS2_CB3_CS5_AV_DU7 6
+UPST Gain: $ -3.36 Win %: 0.0 in 1 days with algo TB4_HL_LO_QM_OB1_OS1_CB5_CS5_RV 14
+GFI Gain: $ -2.48 Win %: 0.0 in 1 days with algo TB1_LO_HL_QM_OB3_OS2_CB3_CS3_HM_AV_DU7_AL 2
+RUN Gain: $ -2.15 Win %: 0.0 in 1 days with algo TB1_EO_EC_QM_OB5_OS2_CB5_CS5_RV_TR_DU7_UA_AV_DL2 5
+IWM Gain: $ -1.85 Win %: 0.0 in 1 days with algo TB1_HI_QM_OB5_OS3_CB5_CS4_IT_QP_QL_TG_DU7_AL_DL2 7
+AU Gain: $ -1.39 Win %: 0.0 in 1 days with algo TB3_OO_QM_OB3_OS2_CB5_CS3_HM_UA_DU8_AL_DL2_TG 11
+ZG Gain: $ -0.9 Win %: 0.0 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB5_CS5_IR3 16
+HD Gain: $ -0.6 Win %: 0.0 in 1 days with algo TB5_LO_QM_OB1_OS1_CB5_CS5_HM_AV_DB6 20
+CAH Gain: $ -0.49 Win %: 0.0 in 1 days with algo TB3_HS_QM_OB2_OS2_CB5_CS2_AL_UA_DU7_DL2 1
+AGNC Gain: $ -0.39 Win %: 0.0 in 1 days with algo TB1_HS_QM_OB4_OS2_CB2_CS4_HM_AV_DU8_UA_DL2_DU7_DL1_AL 13
+EVO Gain: $ -0.3 Win %: 0.0 in 1 days with algo TB3_HS_QM_OB2_OS3_CB3_CS5_RV_DU7 4
+OXY Gain: $ -0.3 Win %: 0.0 in 1 days with algo TB1_EO_EC_QM_OB4_OS2_CB2_CS4_AV_UA_DU6_TG_DU7_DL2 18
+RWM Gain: $ -0.02 Win %: 0.0 in 1 days with algo TB1_HI_HL_QM_OB2_OS3_CB3_CS4_AV_IT_DU8_DL2_AL_DU7 15
+ESLT Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB1_LO_HL_QM_OB2_OS5_CB2_CS3_QP_PM_UA_TG_DU7_DL2_DL1_DU5_DU8_AV_AL 17
+XBI Gain: $ 0.56 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS4_CB5_CS2_RV_AL_TG_DU7 19
+UBS Gain: $ 0.7 Win %: 100.00 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS2_AL_UA_DU8_DL2 8
+URTY Gain: $ 1.5 Win %: 100.00 in 1 days with algo TB5_HS_HL_QM_TG_OB3_OS2_CB3_CS2_SS_DU7_DL2 12
+PLD Gain: $ 1.65 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB3_OS3_CB2_CS2_AL_TS 21
+TNA Gain: $ 1.69 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB3_CS5_IR1_DU7_AL_DL2 10
+AEHR Gain: $ 2.53 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS2_CB4_CS5_AL_UA_DU7 9
+MRNA Gain: $ 2.69 Win %: 100.00 in 1 days with algo TB5_HS_HL_QM_OB5_OS2_CB2_CS5_RV_DU7_AL_DL2 3
+Days gain with 21 stocks: -9.14 20231214

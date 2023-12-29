@@ -1,0 +1,22 @@
+TSLA Gain: $ -13.33 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB2_OS2_CB3_CS3_AL_LI_DU6_AV_UA_DU7 7
+A Gain: $ -2.44 Win %: 0.0 in 1 days with algo TB5_HS_QM_OB3_OS5_CB4_CS5_HM_TR_DU7_UA_DL2 1 7 17 18
+ABBV Gain: $ -1.58 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB4_OS3_CB5_CS5_HM_AV_DB6_DU7_UA_DL2 18
+GPN Gain: $ -1.5 Win %: 0.0 in 1 days with algo TB3_HL_HS_QM_OB1_OS1_CB5_CS5_AL 9
+PLD Gain: $ -1.42 Win %: 0.0 in 1 days with algo TB2_HL_LO_QM_OB3_OS3_CB2_CS2_AL_TS 16
+PYPL Gain: $ -0.73 Win %: 0.0 in 1 days with algo TB1_CC_QM_OB5_OS2_CB4_CS4_DU7_DL2_AL_DL1 12
+CVS Gain: $ -0.49 Win %: 0.0 in 1 days with algo TB5_CC_QM_OB2_OS4_CB5_CS2_RV_AV_DU7 14
+FCX Gain: $ -0.36 Win %: 0.0 in 1 days with algo TB1_PL_QM_OB1_OS4_CB3_CS2_AV_TS_DU8_UA_DL2 19
+XPEV Gain: $ -0.33 Win %: 0.0 in 1 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5_AV_AV_AV_AV_AV_AV_AV_AV 11
+EQNR Gain: $ -0.32 Win %: 0.0 in 1 days with algo TB1_HS_HL_QM_OB5_OS2_CB4_CS5_RV_AV_DU6_UA 5
+GFI Gain: $ -0.32 Win %: 0.0 in 1 days with algo TB1_LO_HL_QM_OB3_OS2_CB3_CS3_HM_AV_DU7_AL 21
+SBSW Gain: $ -0.12 Win %: 0.0 in 1 days with algo TB1_BL_QM_OB2_OS2_CB3_CS5_DU12_AL_UA 6
+SSL Gain: $ -0.11 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB4_OS2_CB5_CS5_RV_AL_DU7_DL2_DU8_UA_AV 3
+MNST Gain: $ -0.01 Win %: 0.0 in 1 days with algo TB5_LO_QM_OB4_OS3_CB4_CS4_RV_AL_UA 15
+KR Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB3_HI_HL_QM_OB2_OS3_CB3_CS5_TR_IR3_DU8_DL2_UA_AV 13
+CCL Gain: $ 0.03 Win %: 100.00 in 1 days with algo TB1_BL_QM_OB2_OS4_CB5_CS5_DU6_DU8_AV_DL2 20
+VIGI Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS4_CB5_CS2_AV_TS_DU7_AL 10
+YPF Gain: $ 0.49 Win %: 100.00 in 1 days with algo TB3_OO_QM_OB4_OS2_CB4_CS4_HM_AV_DU8_DL2_UA 4
+AMC Gain: $ 0.55 Win %: 100.00 in 1 days with algo TB5_PL_QM_OB5_OS2_CB2_CS5_DU12_TG_AL 1
+KEYS Gain: $ 1.68 Win %: 100.00 in 1 days with algo TB2_HL_LO_QM_OB3_OS3_CB4_CS4_TR_TS 2
+NIO Gain: $ 1.68 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS4_HM_AV_DB10_DU6_DU6_AL_TG_UA_UA_UA_UA_UA 8
+Days gain with 21 stocks: -18.14 20230814

@@ -157,7 +157,7 @@ function updateTestSystems {
    done
 }
 
-function pushData {
+function pushChartData {
    
    tarFile=$1
 
@@ -343,6 +343,19 @@ function initDB {
   
 }
 
+function pushDBData {
+
+   cd ${wp}/db || echo cant cd to db
+   tar -zcf ${day}.tar.gz $day || echo cant tar $day
+   mv ${day}.tar.gz ${wp}/dbArchive || echo cant mv archive ${day}.tar.gz to ${wp}/dbArchive
+   cd ${wp}/dbArchive || echo cant cd to dbArchive
+   git pull || echo cant git pull dbArchive
+   git add . || echo cant git add dbArchive
+   git commit -am "$day" || echo cant git commit $day
+   git push || echo cant git push dbArchive
+
+}
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 init $1 $2
@@ -408,7 +421,7 @@ if [[ -z $day ]]; then # Running live start tests...
 
    createSlaveTestData   
    moveDataToArchive $tarNm
-   pushData $tarNm
+   pushChartData $tarNm
    
    if [[ $liveHost == "mm" ]]; then
       # 1 live host 2 test systems
@@ -419,7 +432,7 @@ if [[ -z $day ]]; then # Running live start tests...
    ${wp}/scripts/liveResults.sh $dt
    ${wp}/scripts/liveResults.sh $dt "in"
    ${wp}/scripts/liveResults.sh $dt "pc"
-   tallyLiveResults $dt   
+   #tallyLiveResults $dt   
    echo Starting tests $testCmd $dt ...
    
    # Not running tests due to error when running from cron FIX!
@@ -427,14 +440,10 @@ if [[ -z $day ]]; then # Running live start tests...
    
    #updateTestSystem $dt $tarNm
    cleanup
-   
-elif [[ -n $day ]]; then
-   # tar up results
-   cd ${wp}/db || echo cant cd to db
-   tar -zcf ${day}.tar.gz $day || echo cant tar $day
-   mv ${day}.tar.gz ${wp}/dbArchive || echo cant mv archive ${day}.tar.gz to ${wp}/dbArchive
-   cd $wp || echo cant cd to $wp
 fi
+
+pushDBData 
+cd $wp || echo cant cd to $wp
 
 exit 0
 

@@ -1,0 +1,22 @@
+MSTR Gain: $ -13.28 Win %: 0.0 in 1 days with algo TB4_HL_HS_QM_OB2_OS2_CB3_CS3_RV_AV 18
+EDU Gain: $ -5.12 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB2_OS5_CB5_CS2_DU12_TG 9
+COST Gain: $ -4.31 Win %: 0.0 in 1 days with algo TB5_PL_QM_OB4_OS3_CB5_CS4_DU8_UA_TG_AV_DL2_AL 2
+ZIM Gain: $ -2.18 Win %: 0.0 in 1 days with algo TB1_HI_HL_QM_OB2_OS3_CB2_CS5_AL_IT_DU7_TG 16
+ROKU Gain: $ -2.0 Win %: 0.0 in 1 days with algo TB2_HL_HI_QM_OB2_OS2_CB4_CS4_SS 8
+INTC Gain: $ -1.73 Win %: 0.0 in 1 days with algo TB1_OC_QM_OB2_OS4_CB4_CS5_AL_IT_DU7_UA_AV_DL2 5
+ABT Gain: $ -1.01 Win %: 0.0 in 1 days with algo TB3_LO_QM_OB2_OS2_CB5_CS2_TR_QP_DB10_DU7_UA_DL2 13
+GE Gain: $ -0.92 Win %: 0.0 in 1 days with algo TB1_HI_QM_OB4_OS2_CB4_CS5_AV_IT_TG_AL_DU8_DL2 14
+FRO Gain: $ -0.85 Win %: 0.0 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS4_TS_UA_TG_DU7_DL2 6
+ALC Gain: $ -0.71 Win %: 0.0 in 1 days with algo TB1_HI_HL_QM_OB2_OS2_CB5_CS2_HM_AV_TG_DU7 19
+AZN Gain: $ -0.26 Win %: 0.0 in 1 days with algo TB3_OC_QM_OB2_OS4_CB3_CS2_RV_DU7_AV_DL2_DU5 10
+RKT Gain: $ -0.26 Win %: 0.0 in 1 days with algo TB5_LO_QM_OB2_OS2_CB3_CS4_QL_DU6_UA 3
+MARA Gain: $ -0.23 Win %: 0.0 in 1 days with algo TB4_HL_LO_QM_OB1_OS1_CB5_CS5_RV_AV 15
+ACI Gain: $ -0.11 Win %: 0.0 in 1 days with algo TB5_HI_HL_QM_OB3_OS3_CB3_CS3_LI_DU7 20
+KMB Gain: $ -0.04 Win %: 0.0 in 1 days with algo TB5_HS_QM_OB3_OS4_CB4_CS3_UA_WT_DU8_AV_DL2 7
+KHC Gain: $ 0.05 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB3_OS2_CB5_CS3_RV_QP_QL_DB10_DU6_UA_DU7_DL2 21
+XPEV Gain: $ 0.19 Win %: 100.00 in 1 days with algo TB5_LO_HL_QM_OB3_OS3_CB5_CS3_AV_TS_DU5_AV_AV_AV_AV_AV_AV_AV_AV 17
+TSCO Gain: $ 0.28 Win %: 100.00 in 1 days with algo TB5_HL_HS_QM_OB2_OS2_CB5_CS5_RV_AV_DB6 4
+BCH Gain: $ 0.62 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB3_OS2_CB5_CS3_TR_IR3_DU7_AV_DL2 11
+TAL Gain: $ 1.13 Win %: 100.00 in 1 days with algo TB1_BL_QM_OB3_OS3_CB3_CS4_LI_DU7_UA 12
+LEN Gain: $ 1.83 Win %: 100.00 in 1 days with algo TB4_HL_HS_QM_OB4_OS4_CB5_CS5_RV_AV 1
+Days gain with 21 stocks: -28.91 20231215

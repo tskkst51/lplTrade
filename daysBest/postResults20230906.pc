@@ -1,0 +1,31 @@
+LEGN Gain: $ -3.41 Win %: 0.0 in 1 days with algo TB1_HS_HL_QM_OB2_OS2_CB5_CS4_DU8 9
+CELH Gain: $ -2.66 Win %: 0.0 in 1 days with algo TB5_PL_QM_OB1_OS3_CB1_CS1_UA 13
+TSLA Gain: $ -2.5 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB2_OS3_CB2_CS5_UA 16
+AMGN Gain: $ -2.19 Win %: 0.0 in 1 days with algo TB1_CC_QM_OB2_OS2_CB5_CS2_SS_UA 14
+UPST Gain: $ -1.43 Win %: 0.0 in 1 days with algo TB3_HS_HL_QM_OB2_OS3_CB4_CS3_DU8_DL2_AS 16
+FTI Gain: $ -0.59 Win %: 0.0 in 1 days with algo TB3_HS_QM_OB3_OS2_CB4_CS3_DU6_AL_AS 10
+PFE Gain: $ -0.58 Win %: 0.0 in 1 days with algo TB1_HI_QM_OB2_OS4_CB5_CS3_DB30_DU8 12
+LAZR Gain: $ -0.47 Win %: 0.0 in 1 days with algo TB1_PL_QM_OB4_OS1_CB2_CS4_DU6_AV_AL_DU8 17
+MRK Gain: $ -0.32 Win %: 0.0 in 1 days with algo TB1_OC_QM_OB2_OS4_CB5_CS4_AS 5 13
+AAL Gain: $ -0.3 Win %: 0.0 in 1 days with algo TB1_HS_QM_OB2_OS2_CB3_CS2_AS 18
+NVDA Gain: $ -0.29 Win %: 0.0 in 1 days with algo TB1_EO_EC_QM_OB3_OS5_CB4_CS5_UA 7
+SNAP Gain: $ -0.25 Win %: 0.0 in 1 days with algo TB1_HS_QM_OB2_OS2_CB5_CS2_DU6_AS 12 8
+ACRS Gain: $ -0.17 Win %: 0.0 in 1 days with algo TB1_EO_EC_QM_OB2_OS3_CB2_CS5_AL_DU8 19
+ACI Gain: $ -0.15 Win %: 0.0 in 1 days with algo TB5_HL_QM_OB2_OS1_CB3_CS2_UA 7 15
+AAPL Gain: $ -0.12 Win %: 0.0 in 1 days with algo TB1_LO_QM_OB3_OS3_CB4_CS5_AL_LI_DU8_DL2 5
+LMT Gain: $ -0.12 Win %: 0.0 in 1 days with algo TB1_LO_HL_QM_OB2_OS3_CB5_CS2_AS 4 3
+BLDR Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB5_HS_HL_QM_OB5_OS4_CB2_CS5_UA 20
+IMMR Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB5_LO_HL_QM_OB5_OS5_CB3_CS5_QP_PM_DU8_DL2 11
+KR Gain: $ 0.0 Win %: 0.0 in 1 days with algo TB1_HS_HL_TG_QM_OB4_OS3_CB2_CS5_UA 9 18
+MNSO Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB2_OS2_CB4_CS3_AL_IT_UA 10 14
+VRTX Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB3_HS_QM_OB3_OS4_CB5_CS2_SS_UA_AL_TG_DU8_AV_DL2 17 11
+VTRS Gain: $ 0.12 Win %: 100.00 in 1 days with algo TB5_LO_QM_OB2_OS2_CB4_CS4_AO_UA 8 4
+ABBV Gain: $ 0.24 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB2_OS2_CB3_CS2_AV_UA_DU8 15 21
+ASAN Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB3_EO_EC_QM_OB2_OS2_CB4_CS5_AS 3 2
+OSTK Gain: $ 0.35 Win %: 100.00 in 1 days with algo TB3_PL_QM_OB3_OS5_CB5_CS2_AS 1 1
+UAL Gain: $ 0.37 Win %: 100.00 in 1 days with algo TB3_HI_HL_QM_OB2_OS2_CB2_CS3_WT_UA 21
+DAL Gain: $ 0.47 Win %: 100.00 in 1 days with algo TB1_LO_HL_QM_OB3_OS4_CB2_CS5_AL_IT_UA 19
+JNJ Gain: $ 1.48 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB2_OS3_CB4_CS3_UA 6 6
+ZS Gain: $ 1.88 Win %: 100.00 in 1 days with algo TB5_OO_QM_OB3_OS3_CB4_CS3_AS 20
+ROKU Gain: $ 8.24 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB3_OS2_CB3_CS5_UA 2
+Days gain with 30 stocks: -2.03 20230906

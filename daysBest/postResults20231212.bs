@@ -1,0 +1,22 @@
+ORCL Gain: $ -6.06 Win %: 0.0 in 1 days with algo TB1_HL_LO_QM_OB1_OS1_CB5_CS5 1
+LIN Gain: $ -4.29 Win %: 0.0 in 1 days with algo TB1_LO_HL_QM_OB2_OS3_CB3_CS5_AL_TS_UA_AV 2
+CAH Gain: $ -1.05 Win %: 0.0 in 1 days with algo TB3_HS_QM_OB2_OS2_CB5_CS2_AL_UA_DU7_DL2 15
+ZG Gain: $ -0.74 Win %: 0.0 in 1 days with algo TB3_HL_HI_QM_OB2_OS2_CB5_CS5_IR3 7
+ABNB Gain: $ -0.5 Win %: 0.0 in 1 days with algo TB3_HI_HL_QM_OB3_OS2_CB3_CS5_RV_AV_DB10_DU7_UA_DL1 6
+GOOG Gain: $ -0.36 Win %: 0.0 in 1 days with algo TB5_HL_HS_QM_OB1_OS1_CB5_CS5_HM_AV_DB6 16
+RTX Gain: $ -0.36 Win %: 0.0 in 1 days with algo TB3_OO_QM_OB2_OS3_CB5_CS2_RV_AV_DU7_UA_DL2 8
+APP Gain: $ -0.35 Win %: 0.0 in 1 days with algo TB3_HL_LO_QM_OB5_OS5_CB4_CS4_HM_TR_DB10 10
+ACI Gain: $ -0.27 Win %: 0.0 in 1 days with algo TB5_HI_HL_QM_OB3_OS3_CB3_CS3_LI_DU7 9
+SWN Gain: $ -0.13 Win %: 0.0 in 1 days with algo TB3_OO_QM_OB3_OS2_CB3_CS4_TR_TS_AL_UA_TG 20
+FRO Gain: $ -0.04 Win %: 0.0 in 1 days with algo TB3_CC_QM_OB2_OS2_CB3_CS4_TS_UA_TG_DU7_DL2 14
+NFLX Gain: $ -0.01 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB2_OS2_CB5_CS5_AV_TS 21
+SSL Gain: $ -0.01 Win %: 0.0 in 1 days with algo TB5_OO_QM_OB4_OS2_CB5_CS5_RV_AL_DU7_DL2_DU8_UA_AV 13
+AZN Gain: $ 0.01 Win %: 100.00 in 1 days with algo TB3_OC_QM_OB2_OS4_CB3_CS2_RV_DU7_AV_DL2_DU5 19
+EURN Gain: $ 0.02 Win %: 100.00 in 1 days with algo TB3_CC_QM_OB2_OS2_CB5_CS3_AV_VI_DU8_DL2_AL 11
+AR Gain: $ 0.2 Win %: 100.00 in 1 days with algo TB1_HI_QM_OB2_OS4_CB2_CS2_AL_TS_DU7_UA_DL2_DL1_TG_AV_DU8 18
+A Gain: $ 0.88 Win %: 100.00 in 1 days with algo TB5_HS_QM_OB3_OS5_CB4_CS5_HM_TR_DU7_UA_DL2 3 4 6 9 10 12 15 17 18 19
+SAVA Gain: $ 2.0 Win %: 100.00 in 1 days with algo TB5_CC_QM_OB3_OS3_CB3_CS3_AO_AC 3
+M Gain: $ 2.81 Win %: 100.00 in 1 days with algo TB3_HI_QM_OB4_OS3_CB4_CS4_RV_TR_DB10_DU8_UA_DL2 5 17
+HAS Gain: $ 2.96 Win %: 100.00 in 1 days with algo TB5_HI_QM_OB2_OS2_CB5_CS5_PM_DU7_UA_AV_DL2 4
+AMD Gain: $ 10.41 Win %: 100.00 in 1 days with algo TB3_LO_QM_OB3_OS4_CB4_CS4_HM_AL_DU6_UA_AV 17
+Days gain with 21 stocks: 5.12 20231212
